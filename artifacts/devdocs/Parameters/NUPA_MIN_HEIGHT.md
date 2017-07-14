@@ -3,23 +3,24 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; NUPA MIN HEIGHT
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; NUPA MIN HEIGHT<br/>
 # NUPA MIN HEIGHT
 
 This is the minimum height in inches that the nurses can enter into theHeight field on the Vitals tab.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 663
 Summary | Minimum height to allow
 Value Type | numeric
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | SYSTEM
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

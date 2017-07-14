@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGV DICOM GET COUNT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGV DICOM GET COUNT<br/>
 # MAGV DICOM GET COUNT
 
 This RPC returns the count of entries in the DICOM FAILED IMAGES(#2006.575) file with machine IDs and service types provided to theRPC.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGVRS51](http://code.osehra.org/dox/Routine_MAGVRS51_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ SERVTYPE | LITERAL | 20 |  | The service type to be matched to the service type 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

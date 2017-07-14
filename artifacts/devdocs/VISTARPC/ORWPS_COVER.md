@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ORWPS COVER
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ORWPS COVER<br/>
 # ORWPS COVER
 
 Returns a list of medications to display on the CPRS GUI cover sheet for apatient.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -17,7 +19,7 @@ Return Type | ARRAY
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -28,10 +30,10 @@ Code | {::nomarkdown}<pre><code> S FILTER=$G(FILTER,0)<br/> K ^TMP("PS",$J)<br/>
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
 Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCover.pas">rCover.pas</a>{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

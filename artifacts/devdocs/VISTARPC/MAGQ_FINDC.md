@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGQ FINDC
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGQ FINDC<br/>
 # MAGQ FINDC
 
 By placing carat delimited values in the find value parameterthe subscriber can perform a compound index lookup on an extended primary key.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGQBUT5](http://code.osehra.org/dox/Routine_MAGQBUT5_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -28,4 +30,4 @@ SCREEN | LITERAL | 30 | true | The subscriber specified DIC(&quot;S&quot;) logic
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

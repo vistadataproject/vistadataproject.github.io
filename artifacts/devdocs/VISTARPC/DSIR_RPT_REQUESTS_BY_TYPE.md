@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIR RPT REQUESTS BY TYPE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIR RPT REQUESTS BY TYPE<br/>
 # DSIR RPT REQUESTS BY TYPE
 
 
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIROIR](http://code.osehra.org/dox/Routine_DSIROIR_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -27,4 +29,4 @@ TYPES | LIST | 99 | true | This is an array of internal numbers to file 19620.61
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

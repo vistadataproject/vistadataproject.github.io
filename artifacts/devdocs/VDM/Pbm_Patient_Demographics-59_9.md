@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Pbm_Patient_Demographics-59_9
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Pbm_Patient_Demographics-59_9<br/>
+<a name="top"></a>
 # Pbm Patient Demographics (59.9)
 This file captures the date,time,and PATIENT DFN when any change occurs  in the PATIENT file (#2) on any field captured in the PBM Patient  Demographics Extract. Data in this file will be purged monthly for data  older than 75 days.
 
-<dl>
-<dt>Global</dt><dd>^PSUDEM(</dd>
-<dt>Domain</dt><dd>Patients</dd>
-</dl>
+**Global:** ^PSUDEM(
 
-### Properties
+**Domain:** Patients
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -21,4 +21,4 @@ Field | ID | Description | Datatype | Attributes | Range
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

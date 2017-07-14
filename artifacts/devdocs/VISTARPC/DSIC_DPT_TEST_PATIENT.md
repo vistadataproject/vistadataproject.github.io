@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIC DPT TEST PATIENT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIC DPT TEST PATIENT<br/>
 # DSIC DPT TEST PATIENT
 
 This will return a Boolean value indicating whether or not the patient record is a test patient or a real patient.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSICDPT](http://code.osehra.org/dox/Routine_DSICDPT_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ ISSSN | LITERAL | 1 | true | This is a Boolean flag.  If 1, then the PAT lookup 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

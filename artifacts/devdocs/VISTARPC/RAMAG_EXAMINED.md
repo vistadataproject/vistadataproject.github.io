@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; RAMAG EXAMINED
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; RAMAG EXAMINED<br/>
 # RAMAG EXAMINED
 
 The RAMAG EXAMINED remote procedure updates the status of the case (theprocedure has been performed) and creates the stub report. It also sendsrequired HL7 messages, sends changed order control "XX" to CPRS, but doesnot send VistA alerts regarding the exam status change.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [RAMAGRP2](http://code.osehra.org/dox/Routine_RAMAGRP2_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ RAMSC | LIST |  |  | Items of this list define miscellaneous/optional exam param
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

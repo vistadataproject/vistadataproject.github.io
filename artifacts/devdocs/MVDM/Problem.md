@@ -3,30 +3,21 @@ layout: default
 title: MVDM
 ---
 
-## [MVDM](TableOfContents) &#8594; Problem
-# Patient Problems
+#### [Developer Documentation](../index) &#187; [MVDM](TableOfContents) &#187; Problem<br/>
+<a name="top"></a>
+# Problem
+
+### Patient Problems
+
 Contains patient problem information.
 
-<dl>
-<dt>File Type</dt><dd>9000011</dd>
-<dt>Base VDM Class</dt><dd>Problem-9000011</dd>
-</dl>
+**Fileman ID:** 9000011
 
-### From VDM
-<dl>
-<dt>Queries</dt><dd>Problem-9000011: <pre><code>DESCRIBE $ID</code></pre>
-Problem_List_Audit-125_8: <pre><code>DESCRIBE 125_8 FILTER(.01&#x3D;$ID)</code></pre>
-</dd>
-<dt>List</dt><dd><pre><code>SELECT 9000011 FILTER(1.02&#x3D;&#x27;P&#x27;)</code></pre></dd>
-<dt>List Per Patient</dt><dd><pre><code>SELECT 9000011 FILTER(.02&#x3D;$PID&amp;&amp;1.02&#x3D;&#x27;P&#x27;)</code></pre></dd>
-</dl>
+**Base VDM Class:** [Problem-9000011](../VDM/Problem-9000011)
 
+## Property Summary
 
-### Property Summary
-
-Property Count: **36**
-
-Sub-Object Count: **2**
+**Property Count:** 36
 
 Type | Count
 --- | ---
@@ -40,9 +31,18 @@ BOOLEAN | 9
 OBJECT | 2
 UNKNOWN | 1
 
-### Properties
+**Sub-Object Count:** 2
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+ID | Label | Field ID
+--- | --- | ---
+1 | [Audits](#Audits) | Audits
+2 | [Comments](#Comments) | Comments
+
+[&uarr; Return to top](#top)<br/>
+
+## Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
 **name**{::nomarkdown}<pre><code>  name</code></pre>{:/} | STRING | *GENERATED* |  | CREATE<br/>UPDATE | 
 **Unique Identifier**{::nomarkdown}<pre><code>  uniqueId</code></pre>{:/} | NUMERIC | nmbr |  |  | 
@@ -81,46 +81,48 @@ Field | Datatype | FromVDM | Default | Attributes | Range
 **Removed**{::nomarkdown}<pre><code>  isRemoved</code></pre>{:/} | BOOLEAN | *GENERATED* |  |  | 
 **audits**{::nomarkdown}<pre><code>  audits</code></pre>{:/} | OBJECT | *GENERATED* |  |  | [Audits](#Audits)
 
-### SubObjects
-#### <a name="Comments"></a>
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>Comments</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
+## Sub-Objects
+### <a name="Audits"></a>1. Audits
 
-#### Properties
-
-Field | Datatype | FromVDM | Default | Attributes | Range
---- | --- | --- | --- | --- | ---
-**Comment identifier**{::nomarkdown}<pre><code>  commentId</code></pre>{:/} | NUMERIC | N/A |  | REQUIRED<br/>UPDATE | 
-**Comment Text**{::nomarkdown}<pre><code>  commentText</code></pre>{:/} | STRING | N/A |  | UPDATE | 
-**Date Commented Entered**{::nomarkdown}<pre><code>  enteredDate</code></pre>{:/} | DATE | N/A | $NOW |  | 
-**Entered By**{::nomarkdown}<pre><code>  enteredBy</code></pre>{:/} | STRING | N/A | $USERID |  | 
-**Facility**{::nomarkdown}<pre><code>  facility</code></pre>{:/} | POINTER | N/A | $FACILITYID |  | [Location-9999999_06](../VDM/Location-9999999_06)
-
-#### <a name="Audits"></a>
-
-<dl>
-<dt>ID</dt><dd>Audits</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
+**Field ID:** Audits
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**ID**{::nomarkdown}<pre><code>  id</code></pre>{:/} | NUMERIC | N/A |  |  | 
-**Problem**{::nomarkdown}<pre><code>  problem</code></pre>{:/} | POINTER | N/A |  |  | 
-**Field number**{::nomarkdown}<pre><code>  fieldNumber</code></pre>{:/} | NUMERIC | N/A |  |  | 
-**Modified Date**{::nomarkdown}<pre><code>  modifiedDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Who modified**{::nomarkdown}<pre><code>  whoModified</code></pre>{:/} | POINTER | N/A |  |  | 
-**Old Value**{::nomarkdown}<pre><code>  oldValue</code></pre>{:/} | STRING | N/A |  |  | 
-**New Value**{::nomarkdown}<pre><code>  newValue</code></pre>{:/} | STRING | N/A |  |  | 
-**Reason for change**{::nomarkdown}<pre><code>  reason</code></pre>{:/} | STRING | N/A |  |  | 
-**Requesting provider**{::nomarkdown}<pre><code>  requestingProvider</code></pre>{:/} | POINTER | N/A |  |  | 
-**Old Problem Entry**{::nomarkdown}<pre><code>  oldProblemEntry</code></pre>{:/} | STRING | N/A |  |  | 
+**ID**{::nomarkdown}<pre><code>  id</code></pre>{:/} | NUMERIC | *CUSTOM* |  |  | 
+**Problem**{::nomarkdown}<pre><code>  problem</code></pre>{:/} | POINTER | *CUSTOM* |  |  | 
+**Field number**{::nomarkdown}<pre><code>  fieldNumber</code></pre>{:/} | NUMERIC | *CUSTOM* |  |  | 
+**Modified Date**{::nomarkdown}<pre><code>  modifiedDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Who modified**{::nomarkdown}<pre><code>  whoModified</code></pre>{:/} | POINTER | *CUSTOM* |  |  | 
+**Old Value**{::nomarkdown}<pre><code>  oldValue</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**New Value**{::nomarkdown}<pre><code>  newValue</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Reason for change**{::nomarkdown}<pre><code>  reason</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Requesting provider**{::nomarkdown}<pre><code>  requestingProvider</code></pre>{:/} | POINTER | *CUSTOM* |  |  | 
+**Old Problem Entry**{::nomarkdown}<pre><code>  oldProblemEntry</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Comments"></a>2. Comments
+
+**Field ID:** Comments
+
+#### Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Comment identifier**{::nomarkdown}<pre><code>  commentId</code></pre>{:/} | NUMERIC | *CUSTOM* |  | REQUIRED<br/>UPDATE | 
+**Comment Text**{::nomarkdown}<pre><code>  commentText</code></pre>{:/} | STRING | *CUSTOM* |  | UPDATE | 
+**Date Commented Entered**{::nomarkdown}<pre><code>  enteredDate</code></pre>{:/} | DATE | *CUSTOM* | $NOW |  | 
+**Entered By**{::nomarkdown}<pre><code>  enteredBy</code></pre>{:/} | STRING | *CUSTOM* | $USERID |  | 
+**Facility**{::nomarkdown}<pre><code>  facility</code></pre>{:/} | POINTER | *CUSTOM* | $FACILITYID |  | [Location-9999999_06](../VDM/Location-9999999_06)
+
+[&uarr; Return to top](#top)<br/>
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:06 pm</p>{:/}
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:34 pm</p>{:/}

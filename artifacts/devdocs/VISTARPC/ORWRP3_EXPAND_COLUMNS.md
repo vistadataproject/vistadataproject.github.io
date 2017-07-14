@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ORWRP3 EXPAND COLUMNS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ORWRP3 EXPAND COLUMNS<br/>
 # ORWRP3 EXPAND COLUMNS
 
 This RPC loads and expands nested reports defined in the OE/RR Reportsfile (#101.24) for use on the Reports Tab in CPRS.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -17,7 +19,7 @@ Return Type | ARRAY
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -28,10 +30,10 @@ Code | {::nomarkdown}<pre><code> N ROOT<br/> S ROOT=$NA(LST)<br/> K @ROOT<br/> D
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
 Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas">rReports.pas</a>{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DVBAB 2507 PENDING REPORT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DVBAB 2507 PENDING REPORT<br/>
 # DVBAB 2507 PENDING REPORT
 
 Generates a report based on the status of 2507 requests.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DVBAB6](http://code.osehra.org/dox/Routine_DVBAB6_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -28,4 +30,4 @@ ELTYP | LITERAL | 1 | true | This is the elapsed time.  Values are C (calendar d
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

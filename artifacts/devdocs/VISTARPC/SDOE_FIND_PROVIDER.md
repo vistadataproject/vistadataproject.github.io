@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; SDOE FIND PROVIDER
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; SDOE FIND PROVIDER<br/>
 # SDOE FIND PROVIDER
 
 This Remote Procedure Call (RPC) returns a boolean indicatoron whether a specific provider is associated with an encounter.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [SDOERPC](http://code.osehra.org/dox/Routine_SDOERPC_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ PRACTITIONER ID | LITERAL |  | true | This is the internal entry number of an en
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; XUS DIVISION GET
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; XUS DIVISION GET<br/>
 # XUS DIVISION GET
 
 This RPC will return a list of divisions of a user.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [XUSRB2](http://code.osehra.org/dox/Routine_XUSRB2_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,7 +25,7 @@ IEN | LITERAL | 30 | true | If passed this will be the user to get the division 
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -35,10 +37,10 @@ Code | {::nomarkdown}<pre><code> N %,XUDIV<br/> S XUDIV=0,%=$$CHKDIV^XUS1(.XUDIV
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
-Executable Only | {::nomarkdown}N/A{:/}
+Executable Only | {::nomarkdown}{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

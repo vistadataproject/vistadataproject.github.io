@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGQ ABP
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGQ ABP<br/>
 # MAGQ ABP
 
 Provides a list of Active Background Processes.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGQBTM](http://code.osehra.org/dox/Routine_MAGQBTM_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ PROCESS | LITERAL | 8 | true | This value is by design either &quot;B-PROC&quot;
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

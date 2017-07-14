@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIV REPORT QUEUE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIV REPORT QUEUE<br/>
 # DSIV REPORT QUEUE
 
 Queues up the report data from file 19625 for billing reports.  
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIVICR](http://code.osehra.org/dox/Routine_DSIVICR_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ DATA | LIST | 250 | true | Contains the parameters to search for data:   DATA(&q
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

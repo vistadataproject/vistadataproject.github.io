@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; YTQ SCALEGROUP
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; YTQ SCALEGROUP<br/>
 # YTQ SCALEGROUP
 
 Returns all information from file MH SCALEGROUPS (601.86) for a specified instrument    input: CODE as instrument name   output: SCALEGROUP ID^INSTRUMENT ID^SCALEGROUP NAME^GROUP SEQUENCE^     ORDINATE TITLE^ORDINATEMIN^ORDINATEINCREMENT^ORDINATEMAX^GRID1^GRID2^     GRID3
+
+## Properties
 
 Property | Value
 --- | ---
@@ -17,4 +19,4 @@ Return Type | GLOBAL ARRAY
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

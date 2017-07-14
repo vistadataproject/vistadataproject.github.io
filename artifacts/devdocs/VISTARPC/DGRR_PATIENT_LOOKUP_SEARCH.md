@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DGRR PATIENT LOOKUP SEARCH
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DGRR PATIENT LOOKUP SEARCH<br/>
 # DGRR PATIENT LOOKUP SEARCH
 
 This rpc is set to return an xml document via VistaLink that containsthe display data for a gui patient lookup.   
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DGRRLU](http://code.osehra.org/dox/Routine_DGRRLU_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ PARAM | LIST | 999 | true | Input PARAM(&quot;SEARCH TYPE&quot;) &#x3D; type of 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

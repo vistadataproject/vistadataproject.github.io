@@ -3,23 +3,24 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; MD DEVICE SURVEY TRANSMISSION
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; MD DEVICE SURVEY TRANSMISSION<br/>
 # MD DEVICE SURVEY TRANSMISSION
 
 Used to determine if the site wants to transmit the device survey toHines.  Enter &#x27;Y&#x27; for &#x27;YES&#x27; to send the survey or &#x27;N&#x27; for &#x27;NO&#x27; to suppress the transmission.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 615
 Summary | Device Survey Transmission
 Value Type | yes
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | SYSTEM
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

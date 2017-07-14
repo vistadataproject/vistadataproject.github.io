@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ORQOR DETAIL
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ORQOR DETAIL<br/>
 # ORQOR DETAIL
 
 Returns detailed information regarding an order.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [ORWOR](http://code.osehra.org/dox/Routine_ORWOR_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,7 +25,7 @@ ORDER | LITERAL | 16 | true | Order identifier/number from file #100.
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -34,10 +36,10 @@ Code | {::nomarkdown}<pre><code> Q:'+ORID<br/> I $G(DFN) N ORVP S ORVP=DFN_";DPT
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
 Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas">Orders/rOrders.pas</a>{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

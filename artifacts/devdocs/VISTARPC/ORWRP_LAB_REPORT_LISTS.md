@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ORWRP LAB REPORT LISTS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ORWRP LAB REPORT LISTS<br/>
 # ORWRP LAB REPORT LISTS
 
 This remote procedure call returns a list of lab reports,There are no input parameters fo this rpc.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -17,7 +19,7 @@ Return Type | ARRAY
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -28,10 +30,10 @@ Code | {::nomarkdown}<pre><code> N I,J,X,X0,X2,CNT,EOF,IFN,ROOT,RPC,ORLIST,HEAD<
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
 Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas">rReports.pas</a>{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

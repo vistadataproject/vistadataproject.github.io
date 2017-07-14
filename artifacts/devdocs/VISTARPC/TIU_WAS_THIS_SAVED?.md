@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; TIU WAS THIS SAVED?
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; TIU WAS THIS SAVED?<br/>
 # TIU WAS THIS SAVED?
 
 This Boolean Remote Procedure will evaluate whether a given document wascommitted to the database, or whether the user who last edited it wasdisconnected.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [TIUSRVP1](http://code.osehra.org/dox/Routine_TIUSRVP1_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,7 +25,7 @@ TIUDA | LITERAL |  | true | This is the Internal Entry Number of the Document in
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -34,10 +36,10 @@ Code | {::nomarkdown}<pre><code> N TIUD12,TIUD13,TIUEBY,TIUAUT,TIUECS S TIUY=1<b
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
 Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas">rTIU.pas</a>{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

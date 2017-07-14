@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ORWDLR33 LC TO WC
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ORWDLR33 LC TO WC<br/>
 # ORWDLR33 LC TO WC
 
 
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [ORWDLR33](http://code.osehra.org/dox/Routine_ORWDLR33_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,7 +25,7 @@ LOCATION | LITERAL | 32 | true |
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -34,10 +36,10 @@ Code | {::nomarkdown}<pre><code> N ORDIV,ORSVC<br/> S ORDIV=DUZ(2)<br/> S ORSVC=
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
 Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODLab.pas">Orders/rODLab.pas</a>{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,29 +3,21 @@ layout: default
 title: MVDM
 ---
 
-## [MVDM](TableOfContents) &#8594; Vital
-# Patient Vitals
+#### [Developer Documentation](../index) &#187; [MVDM](TableOfContents) &#187; Vital<br/>
+<a name="top"></a>
+# Vital
+
+### Patient Vitals
+
 Contains patient vital information.
 
-<dl>
-<dt>File Type</dt><dd>120.5</dd>
-<dt>Base VDM Class</dt><dd>Gmrv_Vital_Measurement-120_5</dd>
-</dl>
+**Fileman ID:** 120.5
 
-### From VDM
-<dl>
-<dt>Queries</dt><dd>Gmrv_Vitals_Measurement-120_5: <pre><code>DESCRIBE $ID</code></pre>
-</dd>
-<dt>List</dt><dd><pre><code>SELECT 120_5 FILTER(!bound(2))</code></pre></dd>
-<dt>List Per Patient</dt><dd><pre><code>SELECT 120_5 FILTER(.02&#x3D;$PID&amp;&amp;!bound(2))</code></pre></dd>
-</dl>
+**Base VDM Class:** [Gmrv_Vital_Measurement-120_5](../VDM/Gmrv_Vital_Measurement-120_5)
 
+## Property Summary
 
-### Property Summary
-
-Property Count: **17**
-
-Sub-Object Count: **1**
+**Property Count:** 17
 
 Type | Count
 --- | ---
@@ -35,9 +27,17 @@ STRING | 7
 BOOLEAN | 1
 OBJECT | 1
 
-### Properties
+**Sub-Object Count:** 1
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+ID | Label | Field ID
+--- | --- | ---
+1 | [Removal Details](#RemovalDetails) | RemovalDetails
+
+[&uarr; Return to top](#top)<br/>
+
+## Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
 **Date/Time Vitals Taken**{::nomarkdown}<pre><code>  vitalsTakenDateTime</code></pre>{:/} | DATE-TIME | date_time_vitals_taken |  | INDEXED<br/>REQUIRED | 
 **Patient**{::nomarkdown}<pre><code>  patient</code></pre>{:/} | POINTER | patient | $PATIENTID | INDEXED | 
@@ -57,22 +57,24 @@ Field | Datatype | FromVDM | Default | Attributes | Range
 **Removal Details**{::nomarkdown}<pre><code>  removalDetails</code></pre>{:/} | OBJECT | *GENERATED* |  |  | [RemovalDetails](#RemovalDetails)
 **Facility**{::nomarkdown}<pre><code>  facility</code></pre>{:/} | POINTER | *GENERATED* |  |  | 
 
-### SubObjects
-#### <a name="RemovalDetails"></a>
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>RemovalDetails</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
+## Sub-Objects
+### <a name="RemovalDetails"></a>1. Removal Details
+
+**Field ID:** RemovalDetails
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**Date/Time Entered**{::nomarkdown}<pre><code>  dateTimeEntered</code></pre>{:/} | DATE-TIME | N/A | $NOW |  | 
-**Entered By**{::nomarkdown}<pre><code>  enteredBy</code></pre>{:/} | POINTER | N/A |  |  | 
-**Comment**{::nomarkdown}<pre><code>  comment</code></pre>{:/} | STRING | N/A |  |  | 
+**Date/Time Entered**{::nomarkdown}<pre><code>  dateTimeEntered</code></pre>{:/} | DATE-TIME | *CUSTOM* | $NOW |  | 
+**Entered By**{::nomarkdown}<pre><code>  enteredBy</code></pre>{:/} | POINTER | *CUSTOM* |  |  | 
+**Comment**{::nomarkdown}<pre><code>  comment</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+
+[&uarr; Return to top](#top)<br/>
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:06 pm</p>{:/}
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:34 pm</p>{:/}

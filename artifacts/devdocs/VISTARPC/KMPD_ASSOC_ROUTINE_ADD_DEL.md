@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; KMPD ASSOC ROUTINE ADD DEL
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; KMPD ASSOC ROUTINE ADD DEL<br/>
 # KMPD ASSOC ROUTINE ADD DEL
 
 Delete all entries in multiple field #11 (ASSOCIATED ROUTINE) in file#8972.1 (CM CODE EVALUATOR) and then add entries to multiple.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [KMPDU4](http://code.osehra.org/dox/Routine_KMPDU4_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ PARAM2 | LIST | 60 | true | Array containing routine names to be entered into fi
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

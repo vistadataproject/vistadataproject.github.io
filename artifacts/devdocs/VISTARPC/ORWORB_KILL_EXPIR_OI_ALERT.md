@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ORWORB KILL EXPIR OI ALERT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ORWORB KILL EXPIR OI ALERT<br/>
 # ORWORB KILL EXPIR OI ALERT
 
 Evaluate expiring flagged orderable item orders. If none remain, killcurrent alert for current user.  Kill for other users if alert so defined.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [ORWORB](http://code.osehra.org/dox/Routine_ORWORB_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,7 +26,7 @@ Alert type | LITERAL | 8 | true | Pointer to type of alert in the OE/RR NOTIFICA
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -35,10 +37,10 @@ Code | {::nomarkdown}<pre><code> N ORDG,ORLST S ORDG=$$DG^ORQOR1("ALL")<br/> D A
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
 Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas">rCore.pas</a>{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

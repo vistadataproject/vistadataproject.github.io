@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGV GET ACCESSION NUM
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGV GET ACCESSION NUM<br/>
 # MAGV GET ACCESSION NUM
 
 This RPC returns an accession number given a patient reference internal entry number and procedure reference internal entry number.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGVRS08](http://code.osehra.org/dox/Routine_MAGVRS08_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ OVERRIDE | LITERAL | 3 | true | This parameter should be used with EXTREME CAUTI
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

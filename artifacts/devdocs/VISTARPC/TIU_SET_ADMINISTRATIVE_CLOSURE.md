@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; TIU SET ADMINISTRATIVE CLOSURE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; TIU SET ADMINISTRATIVE CLOSURE<br/>
 # TIU SET ADMINISTRATIVE CLOSURE
 
 This remote procedure sets the file attributes necessary to close adocument by administrative action (either manually or by scanning a paperdocument that doesn't require the signature of an author as a typical TIUDocument would).
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [TIUSRVPT](http://code.osehra.org/dox/Routine_TIUSRVPT_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,7 +27,7 @@ PERSON | LITERAL |  | true | This is the IEN in the NEW PERSON file (#200) of th
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -36,10 +38,10 @@ Code | {::nomarkdown}<pre><code> N TIUX,TIUI,TIUCLBY,TIUCLTTL,TIUCAPT<br/> I '$D
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
-NOT OSEHRA CPRS | {::nomarkdown}N/A{:/}
+NOT OSEHRA CPRS | {::nomarkdown}{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

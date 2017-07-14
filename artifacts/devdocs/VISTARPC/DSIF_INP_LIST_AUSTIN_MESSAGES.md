@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIF INP LIST AUSTIN MESSAGES
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIF INP LIST AUSTIN MESSAGES<br/>
 # DSIF INP LIST AUSTIN MESSAGES
 
 Retrieve a list of Austin messages for Pricer adjustments.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIFPAY6](http://code.osehra.org/dox/Routine_DSIFPAY6_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ STOP DATE | LITERAL | 7 | true | Date to stop listing messages in FM format (tod
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

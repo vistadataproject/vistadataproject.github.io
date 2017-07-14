@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGQ CUPDTE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGQ CUPDTE<br/>
 # MAGQ CUPDTE
 
 This RPC is used by the purge routine to update the magnetic references inthe image file(#2005) for images have migrated to heretofore unmappednetwork locations.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGQBPRG](http://code.osehra.org/dox/Routine_MAGQBPRG_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ IEN | LITERAL |  | true | This is the internal entry number of the image file (#
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

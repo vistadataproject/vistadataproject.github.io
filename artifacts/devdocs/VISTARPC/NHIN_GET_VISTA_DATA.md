@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; NHIN GET VISTA DATA
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; NHIN GET VISTA DATA<br/>
 # NHIN GET VISTA DATA
 
 This RPC retrieves the requested data from VistA, and returns it in^TMP($J,"NHINV",n) as XML.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [NHINV](http://code.osehra.org/dox/Routine_NHINV_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -28,4 +30,4 @@ ITEM | LITERAL | 30 | true | The identifier of a single item to return [optional
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

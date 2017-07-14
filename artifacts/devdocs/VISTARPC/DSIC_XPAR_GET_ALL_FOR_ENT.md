@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIC XPAR GET ALL FOR ENT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIC XPAR GET ALL FOR ENT<br/>
 # DSIC XPAR GET ALL FOR ENT
 
 This will get all instances of a parameter for an entity
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSICXPR](http://code.osehra.org/dox/Routine_DSICXPR_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ DATA | LITERAL | 250 | true | DATA - required - p1~p2~~~~p6 p1 :&#x3D; optional 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

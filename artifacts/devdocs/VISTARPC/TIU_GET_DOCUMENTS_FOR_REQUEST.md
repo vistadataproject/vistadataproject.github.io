@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; TIU GET DOCUMENTS FOR REQUEST
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; TIU GET DOCUMENTS FOR REQUEST<br/>
 # TIU GET DOCUMENTS FOR REQUEST
 
 This Remote Procedure returns the list of documents associated with agiven Request (e.g., Consult Request, or Surgical Case).
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [TIUSRVLR](http://code.osehra.org/dox/Routine_TIUSRVLR_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,7 +25,7 @@ OVP | LITERAL |  | true | This is the variable pointer (e.g., &quot;12745;GMR(12
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -35,10 +37,10 @@ Code | {::nomarkdown}<pre><code> N TIUDA,TIUI<br/> S (TIUDA,TIUI)=0,TIUY=$NA(^TM
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
-NOT OSEHRA CPRS | {::nomarkdown}N/A{:/}
+NOT OSEHRA CPRS | {::nomarkdown}{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ROR GET REGISTRY INFO
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ROR GET REGISTRY INFO<br/>
 # ROR GET REGISTRY INFO
 
 The ROR GET REGISTRY INFO remote procedure returns basic information aboutthe registry.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [RORRP014](http://code.osehra.org/dox/Routine_RORRP014_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ REGISTRY | LITERAL |  | true | The REGISTRY parameter should contain either a re
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

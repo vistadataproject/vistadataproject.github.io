@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Order-100
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Order-100<br/>
+<a name="top"></a>
 # Order (100)
 This is the file of orders/requisitions made for any package through the Order Entry Option (OR).
 
-<dl>
-<dt>Global</dt><dd>^OR(100,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^OR(100,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -82,13 +82,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Pfss Account Reference**{::nomarkdown}<pre><code>  pfss_account_reference</code></pre>{:/} | 97 | The PFSS Account Reference field stores the PFSS Account Reference<br/>associated with the order. The field is a pointer to the PFSS Account<br/>Reference file (#375). | POINTER |  | [Pfss_Account-375](Pfss_Account-375)
 **Ba Shipboard Hazard**{::nomarkdown}<pre><code>  ba_shipboard_hazard</code></pre>{:/} | 98 |  | BOOLEAN |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
 
-### Subfile
-#### <a name="Order_Actions-100_008"></a>Order Actions
+## Sub-Files
+### <a name="Order_Actions-100_008"></a>Order Actions (100.008)
 
 <dl>
-<dt>ID</dt><dd>Order_Actions-100_008</dd>
-<dt>File Type</dt><dd>100.008</dd>
-<dt>Label</dt><dd>Order Actions</dd></dl>
+<dt>ID</dt><dd>Order_Actions-100_008</dd></dl>
 
 #### Properties
 
@@ -136,12 +134,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Chart Copy Printed By**{::nomarkdown}<pre><code>  chart_copy_printed_by</code></pre>{:/} | 73 | This field contains the person signed on when the chart copy 1st printed. | POINTER |  | [New_Person-200](New_Person-200)
 **Chart Copy Printer**{::nomarkdown}<pre><code>  chart_copy_printer</code></pre>{:/} | 74 | This is the device that the chart copy was 1st sent to. | STRING |  | 
 
-#### <a name="Order_Checks-100_09"></a>Order Checks
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Order_Checks-100_09"></a>Order Checks (100.09)
 
 <dl>
-<dt>ID</dt><dd>Order_Checks-100_09</dd>
-<dt>File Type</dt><dd>100.09</dd>
-<dt>Label</dt><dd>Order Checks</dd></dl>
+<dt>ID</dt><dd>Order_Checks-100_09</dd></dl>
 
 #### Properties
 
@@ -154,12 +153,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Date/time Overridden**{::nomarkdown}<pre><code>  date_time_overridden</code></pre>{:/} | .06 | This is the date/time when this order check occurred and was overridden. | DATE-TIME |  | 
 **Order Check Message**{::nomarkdown}<pre><code>  order_check_message</code></pre>{:/} | 1 | This is the actual text of the order check that was displayed to the user. | STRING |  | 
 
-#### <a name="Responses-100_045"></a>Responses
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Responses-100_045"></a>Responses (100.045)
 
 <dl>
-<dt>ID</dt><dd>Responses-100_045</dd>
-<dt>File Type</dt><dd>100.045</dd>
-<dt>Label</dt><dd>Responses</dd></dl>
+<dt>ID</dt><dd>Responses-100_045</dd></dl>
 
 #### Properties
 
@@ -172,12 +172,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Value**{::nomarkdown}<pre><code>  value</code></pre>{:/} | 1 | This contains the actual response, unless the value is a word processing<br/>type. | STRING |  | 
 **Text**{::nomarkdown}<pre><code>  text</code></pre>{:/} | 2 | This contains responses to items that are a word processing type. | STRING |  | 
 
-#### <a name="Order_Diagnoses-100_051"></a>Order Diagnoses
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Order_Diagnoses-100_051"></a>Order Diagnoses (100.051)
 
 <dl>
-<dt>ID</dt><dd>Order_Diagnoses-100_051</dd>
-<dt>File Type</dt><dd>100.051</dd>
-<dt>Label</dt><dd>Order Diagnoses</dd></dl>
+<dt>ID</dt><dd>Order_Diagnoses-100_051</dd></dl>
 
 #### Properties
 
@@ -186,6 +187,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Order Diagnoses**{::nomarkdown}<pre><code>  order_diagnoses</code></pre>{:/} | .01 |  | POINTER | INDEXED<br/>REQUIRED | [Icd_Diagnosis-80](Icd_Diagnosis-80)
 **Expression**{::nomarkdown}<pre><code>  expression</code></pre>{:/} | 1 |  | POINTER |  | [Expressions-757_01](Expressions-757_01)
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

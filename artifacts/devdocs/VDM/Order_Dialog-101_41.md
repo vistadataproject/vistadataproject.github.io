@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Order_Dialog-101_41
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Order_Dialog-101_41<br/>
+<a name="top"></a>
 # Order Dialog (101.41)
 This file contains the information needed to define how to prompt for each order, what values are acceptable, etc.
 
-<dl>
-<dt>Global</dt><dd>^ORD(101.41,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^ORD(101.41,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -47,13 +47,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Auto-accept Quick Order**{::nomarkdown}<pre><code>  autoaccept_quick_order</code></pre>{:/} | 58 | This can be set to yes for a quick order so that it can be placed simply<br/>by clicking on it in the GUI (no ordering dialog is displayed). | BOOLEAN |  | {::nomarkdown}true: <em><strong>1</strong></em>{:/}
 **Timestamp**{::nomarkdown}<pre><code>  timestamp</code></pre>{:/} | 99 | For menus, this contains the $H time the menu was last compiled for use<br/>with the Unwinder utility (^XQOR). | STRING |  | 
 
-### Subfile
-#### <a name="Items-101_412"></a>Items
+## Sub-Files
+### <a name="Items-101_412"></a>Items (101.412)
 
 <dl>
-<dt>ID</dt><dd>Items-101_412</dd>
-<dt>File Type</dt><dd>101.412</dd>
-<dt>Label</dt><dd>Items</dd></dl>
+<dt>ID</dt><dd>Items-101_412</dd></dl>
 
 #### Properties
 
@@ -97,12 +95,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Windows Condition**{::nomarkdown}<pre><code>  windows_condition</code></pre>{:/} | 113 | This is silent code that is executed when building the dialog for windows.<br/>It identifies which prompts should be included in the dialog.  The condition<br/>should leave $T false if the prompt should not be asked. | STRING |  | 
 **Windows Default**{::nomarkdown}<pre><code>  windows_default</code></pre>{:/} | 117 | This code should silently set the default value of a prompt when it is <br/>selected. | STRING |  | 
 
-#### <a name="Responses-101_416"></a>Responses
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Responses-101_416"></a>Responses (101.416)
 
 <dl>
-<dt>ID</dt><dd>Responses-101_416</dd>
-<dt>File Type</dt><dd>101.416</dd>
-<dt>Label</dt><dd>Responses</dd></dl>
+<dt>ID</dt><dd>Responses-101_416</dd></dl>
 
 #### Properties
 
@@ -114,12 +113,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Value**{::nomarkdown}<pre><code>  value</code></pre>{:/} | 1 | This contains the actual response, unless the value is a word processing<br/>type. | STRING |  | 
 **Text**{::nomarkdown}<pre><code>  text</code></pre>{:/} | 2 | This contains the actual response, for word-processing type prompts. | STRING |  | 
 
-#### <a name="Controls-101_415"></a>Controls
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Controls-101_415"></a>Controls (101.415)
 
 <dl>
-<dt>ID</dt><dd>Controls-101_415</dd>
-<dt>File Type</dt><dd>101.415</dd>
-<dt>Label</dt><dd>Controls</dd></dl>
+<dt>ID</dt><dd>Controls-101_415</dd></dl>
 
 #### Properties
 
@@ -140,6 +140,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Lower Control**{::nomarkdown}<pre><code>  lower_control</code></pre>{:/} | 13 |  | STRING |  | 
 **Tab Sequence**{::nomarkdown}<pre><code>  tab_sequence</code></pre>{:/} | 14 |  | NUMERIC |  | 
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

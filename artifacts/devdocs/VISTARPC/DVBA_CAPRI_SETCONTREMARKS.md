@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DVBA CAPRI SETCONTREMARKS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DVBA CAPRI SETCONTREMARKS<br/>
 # DVBA CAPRI SETCONTREMARKS
 
 The RPC sets remarks sent to the contractor into the new word processingfield #103 of the 2507 EXAM file 396.4. The 2507 EXAMs are connected tothe 2507 REQUEST file via a pointer.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DVBACREM](http://code.osehra.org/dox/Routine_DVBACREM_source.html)
 Return Type | WORD PROCESSING
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -26,4 +28,4 @@ EIEN | LIST | 512 | true | The is the 2507 EXAM ID from the 2507 EXAM file 396.4
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

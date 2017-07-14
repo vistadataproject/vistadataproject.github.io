@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; GMV LATEST VM
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; GMV LATEST VM<br/>
 # GMV LATEST VM
 
 This remote procedure call retrieves the latest vital records for a givenpatient. This remote procedure call is documented in Integration Agreement 4358.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [GMVGETD](http://code.osehra.org/dox/Routine_GMVGETD_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,7 +25,7 @@ GMRDFN | LITERAL | 10 | true | GMRDFN variable is a pointer to the Patient (#2) 
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -35,10 +37,10 @@ Code | {::nomarkdown}<pre><code> K ^TMP($J,"GRPC") D EN1^GMVLAT0(GMRDFN)<br/> S 
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
 DLL File | {::nomarkdown}No Source Code Available (GMV_VitalsViewEnter.dll){:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

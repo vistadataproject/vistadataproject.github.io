@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ACKQROESD
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ACKQROESD<br/>
 # ACKQROESD
 
 This is the RPC used to setup and send a deletion of an audiogram to the DDc when a deletion is processed on the home system for an audiogram that has been sent to the DDC.  It is triggered by the mDelete.OnClick action from the Enter/Edit program ACKQROES3E.EXE.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [ACKQAG05](http://code.osehra.org/dox/Routine_ACKQAG05_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -27,4 +29,4 @@ USRSER | LITERAL |  | true | This is the name of the submitting user&#x27;s serv
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

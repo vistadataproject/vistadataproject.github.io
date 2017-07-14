@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIF INP ADD ROC
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIF INP ADD ROC<br/>
 # DSIF INP ADD ROC
 
 This RPC duplicates the logic of the FBCH ADD ROC input template for file 161.5.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIFROC](http://code.osehra.org/dox/Routine_DSIFROC_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ NARR | LIST | 999 | true | Narrative (Optional - Word Processing Array)
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

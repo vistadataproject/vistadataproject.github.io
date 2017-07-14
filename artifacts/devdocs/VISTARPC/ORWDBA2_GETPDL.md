@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ORWDBA2 GETPDL
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ORWDBA2 GETPDL<br/>
 # ORWDBA2 GETPDL
 
 Returns a clinician's personal diagnosis codes.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [ORWDBA2](http://code.osehra.org/dox/Routine_ORWDBA2_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,7 +25,7 @@ ORCIEN | REFERENCE | 255 | true | The clinician&#x27;s internal ID number.
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -35,10 +37,10 @@ Code | {::nomarkdown}<pre><code> N DXC,DXD,DXDT,DXI,EM,ICD9,IEN,RF<br/> S DXDT=$
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
 Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/BA/UBACore.pas">BA/UBACore.pas</a>{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

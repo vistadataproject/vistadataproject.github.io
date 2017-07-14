@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ORAM2 ALLGOAL
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ORAM2 ALLGOAL<br/>
 # ORAM2 ALLGOAL
 
 Returns the percentage of patients in the Anticoagulation Flowsheet file(#103) whose last INRs (within the specified number of days) were in-goal.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [ORAM2](http://code.osehra.org/dox/Routine_ORAM2_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ CLINIC | LITERAL |  |  | IEN of Clinic in Hospital Location File.
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ORRHCQ QRYITR
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ORRHCQ QRYITR<br/>
 # ORRHCQ QRYITR
 
 Executes the query for a patient.  An iterator is passed in, in the format:   ListSource Subscript ^ DFN ^ Item# The value returned includes the records found and the next iterator:   PtSearched ^ RecordCount ^ ListSource Subscript ^ NextDFN ^ Next Item#
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [ORRHCQ](http://code.osehra.org/dox/Routine_ORRHCQ_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,7 +25,7 @@ ORRITR | LITERAL |  | true | Iterator used to get the next patient in the query.
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -35,10 +37,10 @@ Code | {::nomarkdown}<pre><code> S VAL=$$PTSCRN($P(ORRITR,";",2))<br/> I VAL S $
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
-NOT OSEHRA CPRS | {::nomarkdown}N/A{:/}
+NOT OSEHRA CPRS | {::nomarkdown}{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

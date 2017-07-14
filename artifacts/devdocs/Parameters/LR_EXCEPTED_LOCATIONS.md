@@ -3,23 +3,24 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; LR EXCEPTED LOCATIONS
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; LR EXCEPTED LOCATIONS<br/>
 # LR EXCEPTED LOCATIONS
 
 Collections for Saturday&#x27;s, Sunday&#x27;s, Holidays, etc. are never skippedfor excepted locations.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 175
 Summary | Excepted Locations
 Value Type | yes
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | LOCATION
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

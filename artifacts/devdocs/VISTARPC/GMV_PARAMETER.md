@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; GMV PARAMETER
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; GMV PARAMETER<br/>
 # GMV PARAMETER
 
 Sets and retrieves parameter values used by the graphical user interface. This remote procedure call is documented in Integration Agreement 4367.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [GMVPAR](http://code.osehra.org/dox/Routine_GMVPAR_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -27,7 +29,7 @@ VAL | LITERAL |  |  | The value assigned to a parameter. Values are stored in FI
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -39,10 +41,10 @@ Code | {::nomarkdown}<pre><code> N ERR,TMP,RET,TXT,IEN,IENS,ROOT<br/> S INST=$G(
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
 DLL File | {::nomarkdown}No Source Code Available (GMV_VitalsViewEnter.dll){:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

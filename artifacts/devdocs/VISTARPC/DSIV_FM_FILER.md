@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIV FM FILER
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIV FM FILER<br/>
 # DSIV FM FILER
 
 This invokes the Fileman filer to update records for an existing entry.This will allow you to update any field at the level of the FILE includingword processing fields.  It does not allow for updating different levelsof the file.  If you wish to update a subfile, then you will have to makemultiple calls to this RPC for each file or subfile.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIVFM04](http://code.osehra.org/dox/Routine_DSIVFM04_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -26,4 +28,4 @@ INPUT | LIST | 250 | true |  This list contains the fields to be updated in the 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

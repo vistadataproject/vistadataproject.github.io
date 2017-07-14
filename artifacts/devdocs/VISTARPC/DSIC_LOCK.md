@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIC LOCK
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIC LOCK<br/>
 # DSIC LOCK
 
 This will allow a GUI application issue a LOCK or UNLOCK on a global node or a record in a file.  If the LOCK is issued, it is the responsibility of the application to issue the UNLOCK.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSICLOCK](http://code.osehra.org/dox/Routine_DSICLOCK_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ FLAG | LITERAL | 2 | true | This flag indicates whether or not the global refere
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

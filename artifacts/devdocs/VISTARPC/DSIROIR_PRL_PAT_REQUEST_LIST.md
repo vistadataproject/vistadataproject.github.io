@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIROIR PRL PAT REQUEST LIST
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIROIR PRL PAT REQUEST LIST<br/>
 # DSIROIR PRL PAT REQUEST LIST
 
 This RPC returns a list of all internal entry numbers from file 19620 for a specified patient.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIROIR](http://code.osehra.org/dox/Routine_DSIROIR_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ PAT | LITERAL | 99 | true | DFN of the selected patient.
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

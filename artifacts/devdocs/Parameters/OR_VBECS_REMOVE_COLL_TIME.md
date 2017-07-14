@@ -3,20 +3,21 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; OR VBECS REMOVE COLL TIME
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; OR VBECS REMOVE COLL TIME<br/>
 # OR VBECS REMOVE COLL TIME
 
 This parameter can be used to remove any defaults for Collection Timesin the VBECS Order Dialog.  An entry of YES will set the default to nullwhen using the VBECS Blood ordering dialog. Quick orders with a defaultdefined in the quick order definition will not be affected by thisparameter.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 625
 Summary | Remove Collection Time Default
 Value Type | yes
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
@@ -24,4 +25,4 @@ Precedence | Entity
 2 | SYSTEM
 3 | PACKAGE
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

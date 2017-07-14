@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIV DM ADD DELETE QUEUE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIV DM ADD DELETE QUEUE<br/>
 # DSIV DM ADD DELETE QUEUE
 
 This will allow you to add or delete an entry to file 19621.  When you use the VistA Imaging import an image API, you are returned a queue number.  This number means that VistA Imaging background processor accepted your request and place it in a queue and will process it in due time.  After you get this successful queue message you should immediately file that data through this RPC. This file is to allow communication between the VistA Imaging background processor and the DSS Document Management system.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIVDM](http://code.osehra.org/dox/Routine_DSIVDM_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -27,4 +29,4 @@ TIU | LITERAL | 12 | true | This field contains the pointer to the TIU DOCUMENT 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

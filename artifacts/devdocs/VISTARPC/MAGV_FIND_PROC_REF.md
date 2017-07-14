@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGV FIND PROC REF
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGV FIND PROC REF<br/>
 # MAGV FIND PROC REF
 
 This remote procedure allows searching for a procedure reference based upon a fixed scalar value for one or more of its attributes.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGVRS07](http://code.osehra.org/dox/Routine_MAGVRS07_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ PROCATTS | LIST | 300 | true | Input parameters are name-value pairs sent as suc
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

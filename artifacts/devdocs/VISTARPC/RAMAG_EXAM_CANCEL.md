@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; RAMAG EXAM CANCEL
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; RAMAG EXAM CANCEL<br/>
 # RAMAG EXAM CANCEL
 
 The RAMAG EXAM CANCEL remote procedure cancels the Radiology exam(s) andsends all required notifications. If all exams that reference the same order/request are canceled, this  function can also cancel/hold the order (if the appropriate parameters areprovided).
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [RAMAGRP1](http://code.osehra.org/dox/Routine_RAMAGRP1_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -26,4 +28,4 @@ RAFLAGS | LITERAL |  |  | Flags that control execution (can be combined):   A  C
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIV LIST ENTRIES2
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIV LIST ENTRIES2<br/>
 # DSIV LIST ENTRIES2
 
 Returns INSURANCE BUFFER file entries for specified date range. Each return value has the form - BUFFER IEN^DFN^ << requested fields >> ^SSN^FLAGS^SYMBOL^DIV^IMAGES^ERR where SSN is the full patient SSN, FLAGS are the "iIEYH" flags, SYMBOL is the IIV status (where the record is in electronic processing), DIV is the users default division, and IMAGES is field #2 IMAGES SCANNED from the DSIV AUDIT file (#19625) ERR is the one-line eIV error message (if applicable)
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIVIC3](http://code.osehra.org/dox/Routine_DSIVIC3_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -27,4 +29,4 @@ MORE | LITERAL | 1 | true |  Used with the NUMS parameter, More&#x3D;0 means fir
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

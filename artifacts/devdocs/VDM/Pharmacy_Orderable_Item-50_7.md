@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Pharmacy_Orderable_Item-50_7
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Pharmacy_Orderable_Item-50_7<br/>
+<a name="top"></a>
 # Pharmacy Orderable Item (50.7)
 Order Entry name for items that can be ordered in the Pharmacy package.
 
-<dl>
-<dt>Global</dt><dd>^PS(50.7,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^PS(50.7,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -38,4 +38,4 @@ Field | ID | Description | Datatype | Attributes | Range
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

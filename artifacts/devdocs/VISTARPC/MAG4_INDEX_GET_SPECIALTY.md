@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAG4 INDEX GET SPECIALTY
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAG4 INDEX GET SPECIALTY<br/>
 # MAG4 INDEX GET SPECIALTY
 
 This call will return an array of INDEX SPECIALTY/SUBSPECIALTIESbased on the input parameters CLS (Class)and EVENT (Procedure/Event)When images are displayed, it is desirable to limit thelist of presented images to only those that are likelyto be relevant in the current context. This procedure accepts an "image category" (either an IENor the name of a category) and returns all "(sub)specialties"that generate images in that category.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGSIXGT](http://code.osehra.org/dox/Routine_MAGSIXGT_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ FLGS | LITERAL | 40 | true | ;  FLGS : An &#x27;^&#x27; delimited string;     1 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

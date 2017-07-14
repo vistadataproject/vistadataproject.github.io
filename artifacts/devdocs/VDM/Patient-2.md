@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Patient-2
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Patient-2<br/>
+<a name="top"></a>
 # Patient (2)
 The PATIENT file contains all the patients followed by the medical center/ Outpatient clinic.  At a minimum each patient entry must have a NAME,DATE OF BIRTH and SOCIAL SECURITY NUMBER.  In order to add a new patient to the PATIENT file the user must also indicate whether or not the patient is requesting to receive care as a VETERAN of the U.S. Armed Forces and specify the TYPE of patient being added to the system.  For the most part the information contained in this file is demographic in nature, i.e.,address,employment,service history,etc.,however data concerning admissions,appointments,etc.,is also stored in this file. The ADMISSION sub-field is scheduled to be moved into the new PATIENT MOVEMENT file by the end of calendar year 1989.  Care should be used when removing a patient from the PATIENT file since virtually all other DHCP modules do utilize data from this file.  Of the many fields in the file you will note that many are preceeded by an asterisk. Those fields are scheduled to be removed from the file due to either lack of use or replacement by another field/file in the next release.
 
-<dl>
-<dt>Global</dt><dd></dd>
-<dt>Domain</dt><dd>Patients</dd>
-</dl>
+**Global:** 
 
-### Properties
+**Domain:** Patients
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -484,13 +484,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Rank**{::nomarkdown}<pre><code>  rank-2</code></pre>{:/} |  | Enter the grade/rank of this operation desert shield patient. |  |  | 
 **Network Identifier**{::nomarkdown}<pre><code>  network_identifier</code></pre>{:/} | 537025 | This field holds the synonym values from the Network Health Exchange<br/>Authorized Site file indicating where a particular patient has been found<br/>to have data. | STRING |  | 
 
-### Subfile
-#### <a name="Confidential_Address_Category-2_141"></a>Confidential Address Category
+## Sub-Files
+### <a name="Confidential_Address_Category-2_141"></a>Confidential Address Category (2.141)
 
 <dl>
-<dt>ID</dt><dd>Confidential_Address_Category-2_141</dd>
-<dt>File Type</dt><dd>2.141</dd>
-<dt>Label</dt><dd>Confidential Address Category</dd></dl>
+<dt>ID</dt><dd>Confidential_Address_Category-2_141</dd></dl>
 
 #### Properties
 
@@ -499,12 +497,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Confidential Address Category**{::nomarkdown}<pre><code>  confidential_address_category</code></pre>{:/} | .01 | If the 'Confidential Address Active' prompt is answered YES,<br/>select the confidential address category for this applicant's<br/>confidential communications. | ENUMERATION | INDEXED<br/>REQUIRED | {::nomarkdown}ELIGIBILITY/ENROLLMENT: <em><strong>1</strong></em><br/>MEDICAL RECORDS: <em><strong>4</strong></em><br/>APPOINTMENT/SCHEDULING: <em><strong>2</strong></em><br/>COPAYMENTS/VETERAN BILLING: <em><strong>3</strong></em><br/>ALL OTHERS: <em><strong>5</strong></em>{:/}
 **Confidential Category Active**{::nomarkdown}<pre><code>  confidential_category_active</code></pre>{:/} | 1 | If the applicant's confidential communications for this category should<br/>be sent to the confidential address,Confidential Category Active field<br/>should be set to yes.  If not,select N or No. | BOOLEAN |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
 
-#### <a name="Insurance_Type-2_312"></a>Insurance Type
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Insurance_Type-2_312"></a>Insurance Type (2.312)
 
 <dl>
-<dt>ID</dt><dd>Insurance_Type-2_312</dd>
-<dt>File Type</dt><dd>2.312</dd>
-<dt>Label</dt><dd>Insurance Type</dd></dl>
+<dt>ID</dt><dd>Insurance_Type-2_312</dd></dl>
 
 #### Properties
 
@@ -591,12 +590,13 @@ Field | ID | Description | Datatype | Attributes | Range
 ***Name Of Insured**{::nomarkdown}<pre><code>  name_of_insured-2_312-17</code></pre>{:/} | 17 | Enter the name of the individual for which this insurance policy was<br/>issued.  If the patient and the insurance subscriber are the same,<br/>then this field will be defaulted from the patient name field.<br/> <br/>The name must contain a comma and be entered in Last,First format.<br/> <br/>This field is scheduled for deletion in May 2015. | STRING |  | 
 **Eligibility/Benefit**{::nomarkdown}<pre><code>  eligibility_benefit</code></pre>{:/} | 60 | This multiple contains all of the eligibility and benefit data<br/>for a specific insured person returned from the Payer. | OBJECT |  | [Eligibility_Benefit-2_322](#Eligibility_Benefit-2_322)
 
-#### <a name="Group_Reference_Information-2_3129"></a>Group Reference Information
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Group_Reference_Information-2_3129"></a>Group Reference Information (2.3129)
 
 <dl>
-<dt>ID</dt><dd>Group_Reference_Information-2_3129</dd>
-<dt>File Type</dt><dd>2.3129</dd>
-<dt>Label</dt><dd>Group Reference Information</dd></dl>
+<dt>ID</dt><dd>Group_Reference_Information-2_3129</dd></dl>
 
 #### Properties
 
@@ -607,12 +607,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Ref Id Qualifier (Group)**{::nomarkdown}<pre><code>  ref_id_qualifier_group</code></pre>{:/} | .03 |  Describes the type of reference ID at the REFERENCE ID (GROUP) (#.02)<br/>field.  | POINTER |  | [X12_271_Reference_Identification-365_028](X12_271_Reference_Identification-365_028)
 **Description**{::nomarkdown}<pre><code>  description</code></pre>{:/} | .04 | A free-form description to clarify the Reference ID in the REFERENCE ID<br/>(GROUP) (#.02) field.  It will be populated with the Plan,Group or Plan<br/>Network Name. | STRING |  | 
 
-#### <a name="Group_Provider_Info-2_332"></a>Group Provider Info
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Group_Provider_Info-2_332"></a>Group Provider Info (2.332)
 
 <dl>
-<dt>ID</dt><dd>Group_Provider_Info-2_332</dd>
-<dt>File Type</dt><dd>2.332</dd>
-<dt>Label</dt><dd>Group Provider Info</dd></dl>
+<dt>ID</dt><dd>Group_Provider_Info-2_332</dd></dl>
 
 #### Properties
 
@@ -622,12 +623,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Provider Code**{::nomarkdown}<pre><code>  provider_code</code></pre>{:/} | .02 | Code that identifies the type of provider (e.g.,"AD" for Admitting). | POINTER |  | [X12_271_Provider_Code-365_024](X12_271_Provider_Code-365_024)
 **Prov Reference Id**{::nomarkdown}<pre><code>  prov_reference_id</code></pre>{:/} | .03 | Provider specialty type identifier. | STRING |  | 
 
-#### <a name="Health_Care_Code_Information-2_31211"></a>Health Care Code Information
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Health_Care_Code_Information-2_31211"></a>Health Care Code Information (2.31211)
 
 <dl>
-<dt>ID</dt><dd>Health_Care_Code_Information-2_31211</dd>
-<dt>File Type</dt><dd>2.31211</dd>
-<dt>Label</dt><dd>Health Care Code Information</dd></dl>
+<dt>ID</dt><dd>Health_Care_Code_Information-2_31211</dd></dl>
 
 #### Properties
 
@@ -638,12 +640,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Diagnosis Code Qualifier**{::nomarkdown}<pre><code>  diagnosis_code_qualifier</code></pre>{:/} | .03 | Diagnosis Type Code identifying a specific industry code list ICD-9 or<br/>ICD-10. | STRING |  | 
 **Primary Or Secondary?**{::nomarkdown}<pre><code>  primary_or_secondary</code></pre>{:/} | .04 | This field indicates whether the code in the DIAGNOSIS CODE (#.02) field<br/>is a primary or secondary diagnosis. | ENUMERATION |  | {::nomarkdown}PRIMARY: <em><strong>P</strong></em><br/>SECONDARY: <em><strong>S</strong></em>{:/}
 
-#### <a name="Eligibility_Benefit-2_322"></a>Eligibility/Benefit
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Eligibility_Benefit-2_322"></a>Eligibility/Benefit (2.322)
 
 <dl>
-<dt>ID</dt><dd>Eligibility_Benefit-2_322</dd>
-<dt>File Type</dt><dd>2.322</dd>
-<dt>Label</dt><dd>Eligibility/Benefit</dd></dl>
+<dt>ID</dt><dd>Eligibility_Benefit-2_322</dd></dl>
 
 #### Properties
 
@@ -694,12 +697,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Subscriber Reference Id**{::nomarkdown}<pre><code>  subscriber_reference_id</code></pre>{:/} | 10 | Subscriber reference id multiple. | OBJECT |  | [Subscriber_Reference_Id-2_32291](#Subscriber_Reference_Id-2_32291)
 **Service Types**{::nomarkdown}<pre><code>  service_types</code></pre>{:/} | 11 |  | POINTER |  | [X12_271_Service_Type-365_013](X12_271_Service_Type-365_013)
 
-#### <a name="Contact_Information-2_3226"></a>Contact Information
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Contact_Information-2_3226"></a>Contact Information (2.3226)
 
 <dl>
-<dt>ID</dt><dd>Contact_Information-2_3226</dd>
-<dt>File Type</dt><dd>2.3226</dd>
-<dt>Label</dt><dd>Contact Information</dd></dl>
+<dt>ID</dt><dd>Contact_Information-2_3226</dd></dl>
 
 #### Properties
 
@@ -711,12 +715,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Communication Qualifier**{::nomarkdown}<pre><code>  communication_qualifier</code></pre>{:/} | .04 | Code describing type of communication number. | POINTER |  | [X12_271_Contact_Qualifier-365_021](X12_271_Contact_Qualifier-365_021)
 **Communication Number**{::nomarkdown}<pre><code>  communication_number-2_3226-1</code></pre>{:/} | 1 | Phone,fax,email,URL | STRING |  | 
 
-#### <a name="Healthcare_Services_Delivery-2_3227"></a>Healthcare Services Delivery
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Healthcare_Services_Delivery-2_3227"></a>Healthcare Services Delivery (2.3227)
 
 <dl>
-<dt>ID</dt><dd>Healthcare_Services_Delivery-2_3227</dd>
-<dt>File Type</dt><dd>2.3227</dd>
-<dt>Label</dt><dd>Healthcare Services Delivery</dd></dl>
+<dt>ID</dt><dd>Healthcare_Services_Delivery-2_3227</dd></dl>
 
 #### Properties
 
@@ -732,12 +737,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Delivery Frequency**{::nomarkdown}<pre><code>  delivery_frequency</code></pre>{:/} | .08 | Code that defines frequency of deliveries. | POINTER |  | [X12_271_Delivery_Frequency_Code-365_025](X12_271_Delivery_Frequency_Code-365_025)
 **Delivery Pattern**{::nomarkdown}<pre><code>  delivery_pattern</code></pre>{:/} | .09 | Code that defines pattern of deliveries. | POINTER |  | [X12_271_Delivery_Pattern-365_036](X12_271_Delivery_Pattern-365_036)
 
-#### <a name="Subscriber_Dates-2_3228"></a>Subscriber Dates
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Subscriber_Dates-2_3228"></a>Subscriber Dates (2.3228)
 
 <dl>
-<dt>ID</dt><dd>Subscriber_Dates-2_3228</dd>
-<dt>File Type</dt><dd>2.3228</dd>
-<dt>Label</dt><dd>Subscriber Dates</dd></dl>
+<dt>ID</dt><dd>Subscriber_Dates-2_3228</dd></dl>
 
 #### Properties
 
@@ -748,12 +754,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Date Qualifier**{::nomarkdown}<pre><code>  date_qualifier</code></pre>{:/} | .03 | Code describing the type of date. | POINTER |  | [X12_271_Date_Qualifier-365_026](X12_271_Date_Qualifier-365_026)
 **Date Format**{::nomarkdown}<pre><code>  date_format</code></pre>{:/} | .04 | Format of the date representation. | POINTER |  | [X12_271_Date_Format_Qualifier-365_032](X12_271_Date_Format_Qualifier-365_032)
 
-#### <a name="Subscriber_Additional_Info-2_3229"></a>Subscriber Additional Info
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Subscriber_Additional_Info-2_3229"></a>Subscriber Additional Info (2.3229)
 
 <dl>
-<dt>ID</dt><dd>Subscriber_Additional_Info-2_3229</dd>
-<dt>File Type</dt><dd>2.3229</dd>
-<dt>Label</dt><dd>Subscriber Additional Info</dd></dl>
+<dt>ID</dt><dd>Subscriber_Additional_Info-2_3229</dd></dl>
 
 #### Properties
 
@@ -767,12 +774,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Nature Of Injury Category**{::nomarkdown}<pre><code>  nature_of_injury_category</code></pre>{:/} | .06 | Specifies the situation or category to which the code applies. | STRING |  | 
 **Nature Of Injury Text**{::nomarkdown}<pre><code>  nature_of_injury_text</code></pre>{:/} | .07 | Describes the injured body part or parts. | STRING |  | 
 
-#### <a name="Subscriber_Reference_Id-2_32291"></a>Subscriber Reference Id
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Subscriber_Reference_Id-2_32291"></a>Subscriber Reference Id (2.32291)
 
 <dl>
-<dt>ID</dt><dd>Subscriber_Reference_Id-2_32291</dd>
-<dt>File Type</dt><dd>2.32291</dd>
-<dt>Label</dt><dd>Subscriber Reference Id</dd></dl>
+<dt>ID</dt><dd>Subscriber_Reference_Id-2_32291</dd></dl>
 
 #### Properties
 
@@ -783,12 +791,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Reference Id Qualifier**{::nomarkdown}<pre><code>  reference_id_qualifier</code></pre>{:/} | .03 | Code describing the type of reference id. | POINTER |  | [X12_271_Reference_Identification-365_028](X12_271_Reference_Identification-365_028)
 **Description**{::nomarkdown}<pre><code>  description</code></pre>{:/} | .04 | Short description of reference id. | STRING |  | 
 
-#### <a name="Service_Oef_Or_Oif-2_3215"></a>Service [Oef Or Oif]
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Service_Oef_Or_Oif-2_3215"></a>Service [Oef Or Oif] (2.3215)
 
 <dl>
-<dt>ID</dt><dd>Service_Oef_Or_Oif-2_3215</dd>
-<dt>File Type</dt><dd>2.3215</dd>
-<dt>Label</dt><dd>Service [Oef Or Oif]</dd></dl>
+<dt>ID</dt><dd>Service_Oef_Or_Oif-2_3215</dd></dl>
 
 #### Properties
 
@@ -801,12 +810,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Recorded Date/Time**{::nomarkdown}<pre><code>  recorded_date_time</code></pre>{:/} | .05 | This is a time stamp for when the data was last added/updated. | DATE-TIME |  | 
 **Entered By Site**{::nomarkdown}<pre><code>  entered_by_site</code></pre>{:/} | .06 | This is the facility where the data was originally entered.  If the<br/>data's source was not from a facility,it will be assumed to be generated<br/>from HEC (CEV) and this field will be blank. | POINTER |  | [Institution-4](Institution-4)
 
-#### <a name="Military_Service_Episode-2_3216"></a>Military Service Episode
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Military_Service_Episode-2_3216"></a>Military Service Episode (2.3216)
 
 <dl>
-<dt>ID</dt><dd>Military_Service_Episode-2_3216</dd>
-<dt>File Type</dt><dd>2.3216</dd>
-<dt>Label</dt><dd>Military Service Episode</dd></dl>
+<dt>ID</dt><dd>Military_Service_Episode-2_3216</dd></dl>
 
 #### Properties
 
@@ -820,12 +830,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Service Discharge Type**{::nomarkdown}<pre><code>  service_discharge_type</code></pre>{:/} | .06 | For this veteran applicant,select from the available list the discharge<br/>type which s/he received for this episode of military service.<br/>                                 <br/>If the military service episode has been sent from the Health Eligibility<br/>Center (HEC),the data will be locked and cannot be edited or deleted. | POINTER |  | [Type_Of_Discharge-25](Type_Of_Discharge-25)
 **Data Locked**{::nomarkdown}<pre><code>  data_locked</code></pre>{:/} | .07 | When a military service episode is sent from HEC,the Data Locked field<br/>will be set to '1' (YES).  The data in the military service episode can no<br/>longer be changed or deleted. | BOOLEAN |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
 
-#### <a name="Date_Of_Dental_Treatment-2_11"></a>Date Of Dental Treatment
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Date_Of_Dental_Treatment-2_11"></a>Date Of Dental Treatment (2.11)
 
 <dl>
-<dt>ID</dt><dd>Date_Of_Dental_Treatment-2_11</dd>
-<dt>File Type</dt><dd>2.11</dd>
-<dt>Label</dt><dd>Date Of Dental Treatment</dd></dl>
+<dt>ID</dt><dd>Date_Of_Dental_Treatment-2_11</dd></dl>
 
 #### Properties
 
@@ -835,12 +846,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Condition**{::nomarkdown}<pre><code>  condition</code></pre>{:/} | 2 | Enter the patient's condition on the date in which they received dental<br/>treatment.  Also enter the place of treatment and from whom the<br/>treatment was received.  This field allows entry of 3-100 characters. | STRING |  | 
 **Date Condition First Noticed**{::nomarkdown}<pre><code>  date_condition_first_noticed</code></pre>{:/} | 3 | Enter the date the patient states s/he first noticed this dental<br/>condition. | DATE-TIME |  | 
 
-#### <a name="Rated_Disabilities_Va-2_04"></a>Rated Disabilities (Va)
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Rated_Disabilities_Va-2_04"></a>Rated Disabilities (Va) (2.04)
 
 <dl>
-<dt>ID</dt><dd>Rated_Disabilities_Va-2_04</dd>
-<dt>File Type</dt><dd>2.04</dd>
-<dt>Label</dt><dd>Rated Disabilities (Va)</dd></dl>
+<dt>ID</dt><dd>Rated_Disabilities_Va-2_04</dd></dl>
 
 #### Properties
 
@@ -853,12 +865,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Original Effective Date**{::nomarkdown}<pre><code>  original_effective_date</code></pre>{:/} | 5 | Data will be stuffed from messages from the HEC.  This field indicates <br/>the first date that this disability was evaluated. | DATE-TIME |  | 
 **Current Effective Date**{::nomarkdown}<pre><code>  current_effective_date</code></pre>{:/} | 6 | Data will be stuffed from messages from the HEC.  This field indicates <br/>the most recent date that this disability was evaluated. | DATE-TIME |  | 
 
-#### <a name="Service_Connected_Conditions-2_05"></a>Service Connected Conditions
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Service_Connected_Conditions-2_05"></a>Service Connected Conditions (2.05)
 
 <dl>
-<dt>ID</dt><dd>Service_Connected_Conditions-2_05</dd>
-<dt>File Type</dt><dd>2.05</dd>
-<dt>Label</dt><dd>Service Connected Conditions</dd></dl>
+<dt>ID</dt><dd>Service_Connected_Conditions-2_05</dd></dl>
 
 #### Properties
 
@@ -867,12 +880,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Service Connected Conditions**{::nomarkdown}<pre><code>  service_connected_conditions</code></pre>{:/} | .01 | Enter conditions as stated by applicant for which s/he claims service<br/>connection. | STRING | REQUIRED | 
 **Percentage**{::nomarkdown}<pre><code>  percentage</code></pre>{:/} | .02 | Enter the percentage that the patient states this disability was rated<br/>at. | NUMERIC |  | 
 
-#### <a name="Cd_Status_Procedures-2_397"></a>Cd Status Procedures
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Cd_Status_Procedures-2_397"></a>Cd Status Procedures (2.397)
 
 <dl>
-<dt>ID</dt><dd>Cd_Status_Procedures-2_397</dd>
-<dt>File Type</dt><dd>2.397</dd>
-<dt>Label</dt><dd>Cd Status Procedures</dd></dl>
+<dt>ID</dt><dd>Cd_Status_Procedures-2_397</dd></dl>
 
 #### Properties
 
@@ -881,12 +895,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Cd Status Procedures**{::nomarkdown}<pre><code>  cd_status_procedures</code></pre>{:/} | .01 | This is for storage of either CPT procedure or ICD procedure codes.  ICD <br/>codes must be for the correct coding system,as determined by procedure <br/>date and stored in file 27.17 piece 9. | POINTER | INDEXED<br/>REQUIRED | [Catastrophic_Disability_Reasons-27_17](Catastrophic_Disability_Reasons-27_17)
 **Affected Extremity**{::nomarkdown}<pre><code>  affected_extremity</code></pre>{:/} | 1 | This is the affected extremity for this procedure. | ENUMERATION |  | {::nomarkdown}Right Lower Extremity: <em><strong>RLE</strong></em><br/>Bilateral Lower Extremity: <em><strong>BLE</strong></em><br/>Left Lower Extremity: <em><strong>LLE</strong></em><br/>Left Upper Extremity: <em><strong>LUE</strong></em><br/>Bilateral Upper Extremity: <em><strong>BUE</strong></em><br/>Right Upper Extremity: <em><strong>RUE</strong></em>{:/}
 
-#### <a name="Cd_Status_Conditions-2_398"></a>Cd Status Conditions
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Cd_Status_Conditions-2_398"></a>Cd Status Conditions (2.398)
 
 <dl>
-<dt>ID</dt><dd>Cd_Status_Conditions-2_398</dd>
-<dt>File Type</dt><dd>2.398</dd>
-<dt>Label</dt><dd>Cd Status Conditions</dd></dl>
+<dt>ID</dt><dd>Cd_Status_Conditions-2_398</dd></dl>
 
 #### Properties
 
@@ -896,12 +911,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Score**{::nomarkdown}<pre><code>  score</code></pre>{:/} | 1 | NOTE:  This field does not always contain the veteran's raw test<br/>score.  Sometimes you must enter specific information about the<br/>score that may apply to the determination of Catastrophic Disability.<br/>See the help text above for more details. | NUMERIC |  | 
 **Permanent Indicator**{::nomarkdown}<pre><code>  permanent_indicator</code></pre>{:/} | 2 | This field contains the Permanent Indicator,which documents the <br/>Catastrophic Disability Conditions. | ENUMERATION |  | {::nomarkdown}UNKNOWN: <em><strong>3</strong></em><br/>PERMANENT: <em><strong>1</strong></em><br/>NOT PERMANENT: <em><strong>2</strong></em>{:/}
 
-#### <a name="Cd_History_Date-2_399"></a>Cd History Date
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Cd_History_Date-2_399"></a>Cd History Date (2.399)
 
 <dl>
-<dt>ID</dt><dd>Cd_History_Date-2_399</dd>
-<dt>File Type</dt><dd>2.399</dd>
-<dt>Label</dt><dd>Cd History Date</dd></dl>
+<dt>ID</dt><dd>Cd_History_Date-2_399</dd></dl>
 
 #### Properties
 
@@ -919,12 +935,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Date Veteran Was Notified**{::nomarkdown}<pre><code>  date_veteran_was_notified</code></pre>{:/} | .3953 | Documents the date the Veteran was notified of the Catastrophically <br/>Disabled status for CD History. | DATE-TIME |  | 
 **Cd Reason**{::nomarkdown}<pre><code>  cd_reason</code></pre>{:/} | .396 | Documents the Catastrophically Disabled Reason for CD History. | OBJECT |  | [Cd_Reason-2_409](#Cd_Reason-2_409)
 
-#### <a name="Cd_Reason-2_409"></a>Cd Reason
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Cd_Reason-2_409"></a>Cd Reason (2.409)
 
 <dl>
-<dt>ID</dt><dd>Cd_Reason-2_409</dd>
-<dt>File Type</dt><dd>2.409</dd>
-<dt>Label</dt><dd>Cd Reason</dd></dl>
+<dt>ID</dt><dd>Cd_Reason-2_409</dd></dl>
 
 #### Properties
 
@@ -935,12 +952,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Score**{::nomarkdown}<pre><code>  score</code></pre>{:/} | 2 | This field stores a historical value for the SCORE subfield (#1) of the<br/>CD STATUS CONDITIONS field (#.398) of the PATIENT file (#2). | NUMERIC |  | 
 **Permanent Indicator**{::nomarkdown}<pre><code>  permanent_indicator</code></pre>{:/} | 3 | This subfield stores a historical value of the PERMANENT INDICATOR subfield<br/>(#2) of the CD STATUS CONDITIONS field (#.398) of the PATIENT file (#2). | ENUMERATION |  | {::nomarkdown}UNKNOWN: <em><strong>3</strong></em><br/>PERMANENT: <em><strong>1</strong></em><br/>NOT PERMANENT: <em><strong>2</strong></em>{:/}
 
-#### <a name="Alias-2_01"></a>Alias
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Alias-2_01"></a>Alias (2.01)
 
 <dl>
-<dt>ID</dt><dd>Alias-2_01</dd>
-<dt>File Type</dt><dd>2.01</dd>
-<dt>Label</dt><dd>Alias</dd></dl>
+<dt>ID</dt><dd>Alias-2_01</dd></dl>
 
 #### Properties
 
@@ -950,12 +968,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Alias Ssn**{::nomarkdown}<pre><code>  alias_ssn</code></pre>{:/} | 1 | If the patient was also known under a name other than that listed in<br/>the NAME field of the PATIENT file,enter the social security number<br/>used when the patient used this alias. | STRING |  | 
 **Alias Components**{::nomarkdown}<pre><code>  alias_components</code></pre>{:/} | 100.03 |  | POINTER |  | [Name_Components-20](Name_Components-20)
 
-#### <a name="Race_Information-2_02"></a>Race Information
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Race_Information-2_02"></a>Race Information (2.02)
 
 <dl>
-<dt>ID</dt><dd>Race_Information-2_02</dd>
-<dt>File Type</dt><dd>2.02</dd>
-<dt>Label</dt><dd>Race Information</dd></dl>
+<dt>ID</dt><dd>Race_Information-2_02</dd></dl>
 
 #### Properties
 
@@ -964,12 +983,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Race Information**{::nomarkdown}<pre><code>  race_information</code></pre>{:/} | .01 | Patient's race | POINTER | INDEXED<br/>REQUIRED | [Race-10](Race-10)
 **Method Of Collection**{::nomarkdown}<pre><code>  method_of_collection</code></pre>{:/} | .02 | Method used to collect patient's race | POINTER |  | [Race_And_Ethnicity_Collection_Method-10_3](Race_And_Ethnicity_Collection_Method-10_3)
 
-#### <a name="Enrollment_Clinic-2_001"></a>Enrollment Clinic
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Enrollment_Clinic-2_001"></a>Enrollment Clinic (2.001)
 
 <dl>
-<dt>ID</dt><dd>Enrollment_Clinic-2_001</dd>
-<dt>File Type</dt><dd>2.001</dd>
-<dt>Label</dt><dd>Enrollment Clinic</dd></dl>
+<dt>ID</dt><dd>Enrollment_Clinic-2_001</dd></dl>
 
 #### Properties
 
@@ -979,12 +999,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Enrollment Data**{::nomarkdown}<pre><code>  enrollment_data</code></pre>{:/} | 1 | This multiple contains the pertinant data relating to this patients<br/>enrollment in this clinic.  Data contained in this multiple includes<br/>the date the patient was enrolled,the date of discharge from the clinic<br/>and whether the patient was seen on an outpatient or ambulatory care basis. | OBJECT |  | [Enrollment_Data-2_011](#Enrollment_Data-2_011)
 **Current Status**{::nomarkdown}<pre><code>  current_status</code></pre>{:/} | 2 | This field will contain 'I' for inactive if this patient is no longer<br/>enrolled in this clinic (patient has been discharged from the clinic). | ENUMERATION |  | {::nomarkdown}INACTIVE: <em><strong>I</strong></em>{:/}
 
-#### <a name="Enrollment_Data-2_011"></a>Enrollment Data
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Enrollment_Data-2_011"></a>Enrollment Data (2.011)
 
 <dl>
-<dt>ID</dt><dd>Enrollment_Data-2_011</dd>
-<dt>File Type</dt><dd>2.011</dd>
-<dt>Label</dt><dd>Enrollment Data</dd></dl>
+<dt>ID</dt><dd>Enrollment_Data-2_011</dd></dl>
 
 #### Properties
 
@@ -996,12 +1017,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Reason For Discharge**{::nomarkdown}<pre><code>  reason_for_discharge</code></pre>{:/} | 4 | If the patient has been discharged from this clinic,this field contains the<br/>reason the patient was discharged.  This is a free text field which<br/>allows up to 80 characters to be entered. | STRING |  | 
 **Review Date**{::nomarkdown}<pre><code>  review_date</code></pre>{:/} | 5 | Enter the date on which this patients enrollment in this particular<br/>clinic was last reviewed. | DATE-TIME |  | 
 
-#### <a name="Ethnicity_Information-2_06"></a>Ethnicity Information
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Ethnicity_Information-2_06"></a>Ethnicity Information (2.06)
 
 <dl>
-<dt>ID</dt><dd>Ethnicity_Information-2_06</dd>
-<dt>File Type</dt><dd>2.06</dd>
-<dt>Label</dt><dd>Ethnicity Information</dd></dl>
+<dt>ID</dt><dd>Ethnicity_Information-2_06</dd></dl>
 
 #### Properties
 
@@ -1010,12 +1032,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Ethnicity Information**{::nomarkdown}<pre><code>  ethnicity_information</code></pre>{:/} | .01 | Patient's ethnicity | POINTER | INDEXED<br/>REQUIRED | [Ethnicity-10_2](Ethnicity-10_2)
 **Method Of Collection**{::nomarkdown}<pre><code>  method_of_collection</code></pre>{:/} | .02 | Method used to collect patient's ethnicity | POINTER |  | [Race_And_Ethnicity_Collection_Method-10_3](Race_And_Ethnicity_Collection_Method-10_3)
 
-#### <a name="Patient_Eligibilities-2_0361"></a>Patient Eligibilities
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Patient_Eligibilities-2_0361"></a>Patient Eligibilities (2.0361)
 
 <dl>
-<dt>ID</dt><dd>Patient_Eligibilities-2_0361</dd>
-<dt>File Type</dt><dd>2.0361</dd>
-<dt>Label</dt><dd>Patient Eligibilities</dd></dl>
+<dt>ID</dt><dd>Patient_Eligibilities-2_0361</dd></dl>
 
 #### Properties
 
@@ -1025,12 +1048,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Long Id**{::nomarkdown}<pre><code>  long_id</code></pre>{:/} | .03 | This field contains the patient's long ID associated with<br/>the patient's ELIGIBILITY.  For most eligibilities this is the<br/>Social Security Number.<br/> <br/>This field is triggered by the 'ELIGILBILTY(#.01)' field.  It is<br/>user defined only if this eligibility's id format allows this<br/>user interaction as indicated by the 'PROMPT USER FOR ID?(#.02)'<br/>field of the 'IDENTIFICATION FORMAT(#8.1)' file. | STRING |  | 
 **Short Id**{::nomarkdown}<pre><code>  short_id</code></pre>{:/} | .04 | This field contains the patient's short ID associated with<br/>the patient's ELIGIBILITY.  For most eligibilities,this is the<br/>last four digits of the Social Security Number.<br/> <br/>This field is uneditable and triggered by the 'LONG ID(#.03)' field. | STRING |  | 
 
-#### <a name="Ph_Date_Time_Updated-2_0534"></a>Ph Date/Time Updated
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Ph_Date_Time_Updated-2_0534"></a>Ph Date/Time Updated (2.0534)
 
 <dl>
-<dt>ID</dt><dd>Ph_Date_Time_Updated-2_0534</dd>
-<dt>File Type</dt><dd>2.0534</dd>
-<dt>Label</dt><dd>Ph Date/Time Updated</dd></dl>
+<dt>ID</dt><dd>Ph_Date_Time_Updated-2_0534</dd></dl>
 
 #### Properties
 
@@ -1042,12 +1066,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Ph Remarks**{::nomarkdown}<pre><code>  ph_remarks</code></pre>{:/} | 3 | Field will be stuffed with CURRENT PURPLE HEART REMARKS field,if any,at<br/>time of update. | ENUMERATION |  | {::nomarkdown}UNDELIVERABLE MAIL: <em><strong>6</strong></em><br/>VAMC: <em><strong>5</strong></em><br/>ENTERED IN ERROR: <em><strong>3</strong></em><br/>UNACCEPTABLE DOCUMENTATION: <em><strong>1</strong></em><br/>NO DOCUMENTATION REC'D: <em><strong>2</strong></em><br/>UNSUPPORTED PURPLE HEART: <em><strong>4</strong></em>{:/}
 **Ph User**{::nomarkdown}<pre><code>  ph_user</code></pre>{:/} | 4 | Field will be stuffed with the user who updated PH information.  If<br/>local user,then the value will be the free text user name from the<br/>NEW PERSON file.  If updated by the HEC,then the value will be <br/>"HEC User". | STRING |  | 
 
-#### <a name="Icn_History-2_0992"></a>Icn History
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Icn_History-2_0992"></a>Icn History (2.0992)
 
 <dl>
-<dt>ID</dt><dd>Icn_History-2_0992</dd>
-<dt>File Type</dt><dd>2.0992</dd>
-<dt>Label</dt><dd>Icn History</dd></dl>
+<dt>ID</dt><dd>Icn_History-2_0992</dd></dl>
 
 #### Properties
 
@@ -1058,12 +1083,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Cmor**{::nomarkdown}<pre><code>  cmor</code></pre>{:/} | 2 | CMOR at the time of the ICN change. | POINTER |  | [Institution-4](Institution-4)
 **Date/Time Of Change**{::nomarkdown}<pre><code>  date_time_of_change</code></pre>{:/} | 3 | Date/Time of change to the ICN. | DATE-TIME |  | 
 
-#### <a name="Cmor_History-2_0993"></a>Cmor History
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Cmor_History-2_0993"></a>Cmor History (2.0993)
 
 <dl>
-<dt>ID</dt><dd>Cmor_History-2_0993</dd>
-<dt>File Type</dt><dd>2.0993</dd>
-<dt>Label</dt><dd>Cmor History</dd></dl>
+<dt>ID</dt><dd>Cmor_History-2_0993</dd></dl>
 
 #### Properties
 
@@ -1074,12 +1100,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Cmor Score Calculation Date**{::nomarkdown}<pre><code>  cmor_score_calculation_date</code></pre>{:/} | 2 | Date CMOR score was last calculated at time of change. | DATE-TIME |  | 
 **Cmor Change Date**{::nomarkdown}<pre><code>  cmor_change_date</code></pre>{:/} | 3 | Date CMOR was changed. | DATE-TIME |  | 
 
-#### <a name="Disposition_LogIn_Date_Time-2_101"></a>Disposition Log-In Date/Time
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Disposition_LogIn_Date_Time-2_101"></a>Disposition Log-In Date/Time (2.101)
 
 <dl>
-<dt>ID</dt><dd>Disposition_LogIn_Date_Time-2_101</dd>
-<dt>File Type</dt><dd>2.101</dd>
-<dt>Label</dt><dd>Disposition Log-In Date/Time</dd></dl>
+<dt>ID</dt><dd>Disposition_LogIn_Date_Time-2_101</dd></dl>
 
 #### Properties
 
@@ -1126,12 +1153,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Ods At Registration?**{::nomarkdown}<pre><code>  ods_at_registration</code></pre>{:/} | 11500.01 | Enter yes if this patient was an ODS patient at the time of this registration.  Otherwise,respond no.<br/>this registration.  Otherwise,respond no. | BOOLEAN |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
 **Ods Registration Entry**{::nomarkdown}<pre><code>  ods_registration_entry-2_101</code></pre>{:/} |  | Enter the entry in the ODS REGISTRATIONS file which corresponds to this registration. |  |  | 
 
-#### <a name="Appointment-2_98"></a>Appointment
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Appointment-2_98"></a>Appointment (2.98)
 
 <dl>
-<dt>ID</dt><dd>Appointment-2_98</dd>
-<dt>File Type</dt><dd>2.98</dd>
-<dt>Label</dt><dd>Appointment</dd></dl>
+<dt>ID</dt><dd>Appointment-2_98</dd></dl>
 
 #### Properties
 
@@ -1168,12 +1196,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Desired Date Of Appointment**{::nomarkdown}<pre><code>  desired_date_of_appointment</code></pre>{:/} | 27 |  | DATE-TIME |  | 
 **Follow-Up Visit**{::nomarkdown}<pre><code>  followup_visit</code></pre>{:/} | 28 |  | BOOLEAN |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
 
-#### <a name="Archived_Data-2_12"></a>Archived Data
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Archived_Data-2_12"></a>Archived Data (2.12)
 
 <dl>
-<dt>ID</dt><dd>Archived_Data-2_12</dd>
-<dt>File Type</dt><dd>2.12</dd>
-<dt>Label</dt><dd>Archived Data</dd></dl>
+<dt>ID</dt><dd>Archived_Data-2_12</dd></dl>
 
 #### Properties
 
@@ -1182,12 +1211,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Data Type**{::nomarkdown}<pre><code>  data_type</code></pre>{:/} | .01 | This field identifies the type of data that was archived | ENUMERATION | INDEXED<br/>REQUIRED | {::nomarkdown}SPECIAL SURVEY DISP: <em><strong>SSD</strong></em><br/>APPOINTMENT: <em><strong>S</strong></em><br/>CLINIC ENROLLMENT: <em><strong>DE</strong></em>{:/}
 **Date Of Archive**{::nomarkdown}<pre><code>  date_of_archive</code></pre>{:/} | 1 | This multiple contains data pertaining to each specific archive (the<br/>date,the beginning and ending archiving dates,and the tape numbers). | OBJECT |  | [Date_Of_Archive-2_13](#Date_Of_Archive-2_13)
 
-#### <a name="Date_Of_Archive-2_13"></a>Date Of Archive
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Date_Of_Archive-2_13"></a>Date Of Archive (2.13)
 
 <dl>
-<dt>ID</dt><dd>Date_Of_Archive-2_13</dd>
-<dt>File Type</dt><dd>2.13</dd>
-<dt>Label</dt><dd>Date Of Archive</dd></dl>
+<dt>ID</dt><dd>Date_Of_Archive-2_13</dd></dl>
 
 #### Properties
 
@@ -1199,6 +1229,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **End Archive Date**{::nomarkdown}<pre><code>  end_archive_date</code></pre>{:/} | 3 | Enter the ending date the user chose for the scheduling archive. | DATE-TIME |  | 
 **Number Of Records Archived**{::nomarkdown}<pre><code>  number_of_records_archived</code></pre>{:/} | 4 | The number of records archived.  This is created automatically by the<br/>software.<br/> <br/>This software has not been released and this field is not presently<br/>used in DHCP. | NUMERIC |  | 
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

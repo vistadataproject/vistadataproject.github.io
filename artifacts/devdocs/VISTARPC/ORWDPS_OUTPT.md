@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ORWDPS OUTPT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ORWDPS OUTPT<br/>
 # ORWDPS OUTPT
 
 Checks restrictions for entering outpatient meds.  If no restrictions, a 0is returned.  If there is a restriction, it is returned in the format:     1^restriction text
+
+## Properties
 
 Property | Value
 --- | ---
@@ -17,4 +19,4 @@ Return Type | SINGLE VALUE
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGGSUR FILE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGGSUR FILE<br/>
 # MAGGSUR FILE
 
 Files the pointers in the Surgery and Image packages.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGGTSR1](http://code.osehra.org/dox/Routine_MAGGTSR1_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ DATA | LITERAL | 245 | true | Sting of &#x27;^&#x27; delimited pieces.it is the 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

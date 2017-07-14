@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; OOPS GET PRT ACC STATUS RPT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; OOPS GET PRT ACC STATUS RPT<br/>
 # OOPS GET PRT ACC STATUS RPT
 
 This broker call retrieves the data required to generate the PRINT ACCIDENTREPORT STATUS Report.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [OOPSGUIT](http://code.osehra.org/dox/Routine_OOPSGUIT_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ CALL | LITERAL | 10 | true | This input parameter contains the letter of the cal
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

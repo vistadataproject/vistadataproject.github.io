@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGGPATPROC
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGGPATPROC<br/>
 # MAGGPATPROC
 
 Return a List of All Patient Procedures in subspeciality.For use when capturing Images and linking to a Medicine Procedure.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGGTMC](http://code.osehra.org/dox/Routine_MAGGTMC_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ MAGGZY | LITERAL | 245 | true | Input is &#x27;^&#x27; delimited string of info.
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

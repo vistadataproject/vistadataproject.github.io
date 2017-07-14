@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ORWRP PRINT LAB REPORTS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ORWRP PRINT LAB REPORTS<br/>
 # ORWRP PRINT LAB REPORTS
 
 This rpc is used to print a report on the Labs tabin CPRS.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [ORWRPL](http://code.osehra.org/dox/Routine_ORWRPL_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -26,7 +28,7 @@ DATE RANGE | LITERAL | 5 | true | This parameter indicates the number of days fr
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -38,10 +40,10 @@ Code | {::nomarkdown}<pre><code> IF '$$CHK() G PRINTQ<br/> N ZTDTH,ZTRTN,ZTSK,ZT
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
 Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rLabs.pas">rLabs.pas</a>{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

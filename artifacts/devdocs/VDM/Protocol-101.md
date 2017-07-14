@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Protocol-101
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Protocol-101<br/>
+<a name="top"></a>
 # Protocol (101)
 This file contains the orderables and methods for accomplishing orders (protocols) within OE/RR.
 
-<dl>
-<dt>Global</dt><dd>^ORD(101,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^ORD(101,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -79,13 +79,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Routing Logic**{::nomarkdown}<pre><code>  routing_logic</code></pre>{:/} | 774 | M code in this field is executed only when a message is in an OUTBOUND<br/>state. Normally, Vista HL7 'broadcasts' a message to all subscribers<br/>whenever a message is generated. However, in some cases, a client may need<br/>to receive the message only if it matches a particular condition. This<br/>field allows you to set up screening logic to interpret the message and<br/>dynamically address the message to those interested in the data when it<br/>meets these conditions. The output of your routing logic routine should be<br/>the creation of a list of additional message recipients set into the<br/>HLL("LINKS") array.<br/> <br/>For details on dynamic addressing, see the documentation for HL*1.6*14. | STRING |  | 
 **Subscribers**{::nomarkdown}<pre><code>  subscribers</code></pre>{:/} | 775 |  | POINTER |  | [Protocol-101](Protocol-101)
 
-### Subfile
-#### <a name="Item-101_01"></a>Item
+## Sub-Files
+### <a name="Item-101_01"></a>Item (101.01)
 
 <dl>
-<dt>ID</dt><dd>Item-101_01</dd>
-<dt>File Type</dt><dd>101.01</dd>
-<dt>Label</dt><dd>Item</dd></dl>
+<dt>ID</dt><dd>Item-101_01</dd></dl>
 
 #### Properties
 
@@ -102,12 +100,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Help**{::nomarkdown}<pre><code>  help</code></pre>{:/} | 13 | This is the help text displayed for this item in the dialog. | STRING |  | 
 **Mode**{::nomarkdown}<pre><code>  mode</code></pre>{:/} | 14 | This tells how this item should be treated when processing the dialog.<br/>  S - suppresses inclusion of the prompt when creating the text generated<br/>      by the dialog.<br/>  E - allows the item to only be presented when editing an existing<br/>      response.<br/>  R - identifies the field as required. | STRING |  | 
 
-#### <a name="Method-101_05"></a>Method
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Method-101_05"></a>Method (101.05)
 
 <dl>
-<dt>ID</dt><dd>Method-101_05</dd>
-<dt>File Type</dt><dd>101.05</dd>
-<dt>Label</dt><dd>Method</dd></dl>
+<dt>ID</dt><dd>Method-101_05</dd></dl>
 
 #### Properties
 
@@ -116,6 +115,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Method**{::nomarkdown}<pre><code>  method</code></pre>{:/} | .01 | This is reserved for future use.  The numeric values of this field<br/>currently correspond to OE/RR actions. | NUMERIC | REQUIRED | 
 **Method Action**{::nomarkdown}<pre><code>  method_action</code></pre>{:/} | .02 | This is the code necessary to implement the method. | STRING |  | 
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

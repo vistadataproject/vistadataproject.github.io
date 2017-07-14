@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ONC VACCR RPC
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ONC VACCR RPC<br/>
 # ONC VACCR RPC
 
 This REMOTE PROCEDURE outputs OncoTrax data in the VACCR record layoutformat.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [ONCRPC](http://code.osehra.org/dox/Routine_ONCRPC_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ END | LITERAL | 7 | true | This parameter specifies the end date of DATE paramet
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

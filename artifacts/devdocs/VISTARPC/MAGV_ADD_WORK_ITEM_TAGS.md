@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGV ADD WORK ITEM TAGS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGV ADD WORK ITEM TAGS<br/>
 # MAGV ADD WORK ITEM TAGS
 
 This RPC allows tags to be added to work items in the MAG WORK ITEM file (#2006.941). Tags consist of a tag name and a tag value.  Tags and valuesmay be used to look up entries in the MAG WORK ITEM file (#2006.941).
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGVIM01](http://code.osehra.org/dox/Routine_MAGVIM01_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -27,4 +29,4 @@ UPDAPP | LITERAL |  |  | This is the application that updated the work item.
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Adverse_Reaction_Assessment-120_86
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Adverse_Reaction_Assessment-120_86<br/>
+<a name="top"></a>
 # Adverse Reaction Assessment (120.86)
 This file is a listing of all the patients who have been asked about allergies/adverse reactions. It contains a pointer to File 2 (PATIENT), a flag to indicate if the patient has or does not have an Allergy/Adverse Reaction, the person making the assessment and the date/time of the assessment.
 
-<dl>
-<dt>Global</dt><dd>^GMR(120.86,</dd>
-<dt>Domain</dt><dd>Allergies</dd>
-</dl>
+**Global:** ^GMR(120.86,
 
-### Properties
+**Domain:** Allergies
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -23,4 +23,4 @@ Field | ID | Description | Datatype | Attributes | Range
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

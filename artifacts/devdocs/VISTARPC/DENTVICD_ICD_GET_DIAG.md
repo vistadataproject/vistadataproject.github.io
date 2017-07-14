@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DENTVICD ICD GET DIAG
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DENTVICD ICD GET DIAG<br/>
 # DENTVICD ICD GET DIAG
 
 This will return specific information for a diagnosis code
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DENTVICD](http://code.osehra.org/dox/Routine_DENTVICD_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ CDT | LITERAL | 14 | true | This is the date to be used to check if the code was
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

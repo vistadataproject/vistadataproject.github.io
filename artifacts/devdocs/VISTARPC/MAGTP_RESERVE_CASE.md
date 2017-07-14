@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGTP RESERVE CASE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGTP RESERVE CASE<br/>
 # MAGTP RESERVE CASE
 
 Set/Unset a logical lock on a case for reservation
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGTP003](http://code.osehra.org/dox/Routine_MAGTP003_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -26,4 +28,4 @@ Access Number | LITERAL | 5 | true | Access Number
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

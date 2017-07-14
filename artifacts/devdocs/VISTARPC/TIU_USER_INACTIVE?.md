@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; TIU USER INACTIVE?
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; TIU USER INACTIVE?<br/>
 # TIU USER INACTIVE?
 
 RPC evaluates user's DIUSER status and termination status when selected.Returns 0 if active        1 if inactive
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [TIUSRVA](http://code.osehra.org/dox/Routine_TIUSRVA_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,7 +25,7 @@ TIUUSR | LITERAL |  | true | This is the IEN of the user in the NEW PERSON file 
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -34,10 +36,10 @@ Code | {::nomarkdown}<pre><code> S TIUY=+$$GET1^DIQ(200,TIUDA_",",7,"I")</code><
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
 Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas">rTIU.pas</a>{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

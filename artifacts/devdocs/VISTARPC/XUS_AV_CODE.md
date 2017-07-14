@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; XUS AV CODE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; XUS AV CODE<br/>
 # XUS AV CODE
 
 This API checks if a ACCESS/VERIFY code pair is valid.It returns an array of values R(0)=DUZ if sign-on was OK, zero if not OK.R(1)=(0=OK, 1,2...=Can't sign-on for some reason).R(2)=verify needs changing.R(3)=Message.R(4)=0R(5)=count of the number of lines of text, zero if none.R(5+n)=message text.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [XUSRB](http://code.osehra.org/dox/Routine_XUSRB_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,7 +25,7 @@ AVCODE | LITERAL | 60 | true | accessCode_&quot;;&quot;_verifyCode in unencrypte
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -35,10 +37,10 @@ Code | {::nomarkdown}<pre><code> N X,XUSER,XUNOW,XUDEV,XUM,XUMSG,%1,VCCH K DUZ<b
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
-Executable Only | {::nomarkdown}N/A{:/}
+Executable Only | {::nomarkdown}{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

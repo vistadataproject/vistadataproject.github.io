@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Ndc_upn-50_67
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Ndc_upn-50_67<br/>
+<a name="top"></a>
 # Ndc/upn (50.67)
 This file contains a list of National Drug Codes (NDCs) and Universal Product Numbers (UPNs).
 
-<dl>
-<dt>Global</dt><dd>^PSNDF(50.67,</dd>
-<dt>Domain</dt><dd>Allergies</dd>
-</dl>
+**Global:** ^PSNDF(50.67,
 
-### Properties
+**Domain:** Allergies
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -32,4 +32,4 @@ Field | ID | Description | Datatype | Attributes | Range
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

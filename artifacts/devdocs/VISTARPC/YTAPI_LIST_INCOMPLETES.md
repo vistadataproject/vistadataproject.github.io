@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; YTAPI LIST INCOMPLETES
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; YTAPI LIST INCOMPLETES<br/>
 # YTAPI LIST INCOMPLETES
 
 API to returm a list of incomplete psychological tests. Input Required: DFN ; ien of file 2 PatientOutput:        YSDATA(1)=[DATA]               YSDATA(X)=CODE^DATE OF ADMIN^(not) restartable
+
+## Properties
 
 Property | Value
 --- | ---
@@ -17,4 +19,4 @@ Return Type | ARRAY
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,23 +3,24 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; NUPA CURRENT MEDS DATES
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; NUPA CURRENT MEDS DATES<br/>
 # NUPA CURRENT MEDS DATES
 
 This is the number of days back to display the active meds.  If you enter45 days, for example, the assessment will search for meds that were activefrom today to 45 days ago.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 647
 Summary | Days back for current meds
 Value Type | numeric
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | SYSTEM
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

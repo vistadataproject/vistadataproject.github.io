@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; OOPS GET CASE NUMBERS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; OOPS GET CASE NUMBERS<br/>
 # OOPS GET CASE NUMBERS
 
 This call returns a list of cases that match the search criteria and are eligible for editing.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [OOPSGUI0](http://code.osehra.org/dox/Routine_OOPSGUI0_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -27,4 +29,4 @@ OPT | LITERAL |  |  | This parameter passes in the option that the broker call w
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

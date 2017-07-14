@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGG QUE LIST
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGG QUE LIST<br/>
 # MAGG QUE LIST
 
 Queues a list of images to be copied from jukebox to harddrive. 
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGGTU7](http://code.osehra.org/dox/Routine_MAGGTU7_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ LIST | LIST |  | true | The list of Image IEN&#x27;s to be queued.
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

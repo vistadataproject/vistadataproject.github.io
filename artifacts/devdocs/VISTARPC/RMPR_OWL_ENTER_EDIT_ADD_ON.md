@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; RMPR OWL ENTER EDIT ADD ON
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; RMPR OWL ENTER EDIT ADD ON<br/>
 # RMPR OWL ENTER EDIT ADD ON
 
 GUI Order controll processing.  ENTER/EDITAdd On's from material multipleof 664.2..
+
+## Properties
 
 Property | Value
 --- | ---
@@ -17,4 +19,4 @@ Return Type | ARRAY
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

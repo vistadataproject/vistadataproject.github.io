@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DENTV EXCEL EXTRACT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DENTV EXCEL EXTRACT<br/>
 # DENTV EXCEL EXTRACT
 
 This rpc will extract data from the history file (228.1) and format itso that the data can be imported into a spreadsheet.  The data will be indelimited format, with the '^' as the delimiter.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DENTVRP9](http://code.osehra.org/dox/Routine_DENTVRP9_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -28,4 +30,4 @@ STN | LITERAL | 10 | true | Contains the external facility ID (500, 500BZ, etc) 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

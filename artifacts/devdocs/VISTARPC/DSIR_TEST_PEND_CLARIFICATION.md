@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIR TEST PEND CLARIFICATION
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIR TEST PEND CLARIFICATION<br/>
 # DSIR TEST PEND CLARIFICATION
 
 
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIROI8](http://code.osehra.org/dox/Routine_DSIROI8_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ IEN | LITERAL |  | true | INPUT PARAMETER - IEN &#x3D; INTERNAL ENTRY NUMBER FOR
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

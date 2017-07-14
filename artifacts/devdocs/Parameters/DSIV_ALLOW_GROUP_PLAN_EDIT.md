@@ -3,23 +3,24 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; DSIV ALLOW GROUP PLAN EDIT
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; DSIV ALLOW GROUP PLAN EDIT<br/>
 # DSIV ALLOW GROUP PLAN EDIT
 
 This parameter controls whether the group policy fields may be edited.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 526
 Summary | ALLOW EDITING OF GROUP POLICY FIELDS
 Value Type | set of codes
 Value Domain | 0:NO;1:YES
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | SYSTEM
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

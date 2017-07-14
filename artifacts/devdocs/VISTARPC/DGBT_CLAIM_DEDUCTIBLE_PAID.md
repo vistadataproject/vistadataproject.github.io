@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DGBT CLAIM DEDUCTIBLE PAID
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DGBT CLAIM DEDUCTIBLE PAID<br/>
 # DGBT CLAIM DEDUCTIBLE PAID
 
 THIS RPC IS USED BY BENEFICIARY TRAVEL PACKAGE TO RETRIEVE TRAVEL CLAIM INFORMATION ABOUT ANY TRAVEL CLAIMS FOR PATIENT.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DGBTRDV](http://code.osehra.org/dox/Routine_DGBTRDV_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ DGBTRET | REFERENCE |  | true | THE ARRAY THE DATA WILL BE RETURNED IN.
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

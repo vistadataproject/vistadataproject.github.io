@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; GMR_Allergies-120_82
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; GMR_Allergies-120_82<br/>
+<a name="top"></a>
 # GMR Allergies (120.82)
 Contains a listing of allergies from which user can select.   Per VHA directive XXX, this file has been "locked down" by Data Standardization (DS).  The file definition (i.e. data dictionary) shall not be modified.  All additions, changes and deletions to entries in the file shall be done by Enterprise Reference Terminology (ERT) using the Master File Server (MFS), provided by Common Services (CS).  Creating and/or editing locally defined fields in the file are not permitted.  Use of locally defined fields that were created prior to VHA Directive XXX shall not be supported.
 
-<dl>
-<dt>Global</dt><dd>^GMRD(120.82,</dd>
-<dt>Domain</dt><dd>Allergies</dd>
-</dl>
+**Global:** ^GMRD(120.82,
 
-### Properties
+**Domain:** Allergies
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -26,13 +26,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **VUID**{::nomarkdown}<pre><code>  vuid</code></pre>{:/} | 99.99 | VHA Unique ID (VUID).  A unique meaningless integer<br/>assigned to reference terms VHA wide. | STRING | INDEXED<br/>REQUIRED | 
 **Effective Date/time**{::nomarkdown}<pre><code>  effective_date_time</code></pre>{:/} | 99.991 | Describes the pair Status and Effective Date/Time for each reference<br/>term. | OBJECT |  | [Effective_Date_time-120_8299](#Effective_Date_time-120_8299)
 
-### Subfile
-#### <a name="Effective_Date_time-120_8299"></a>Effective Date/time
+## Sub-Files
+### <a name="Effective_Date_time-120_8299"></a>Effective Date/time (120.8299)
 
 <dl>
-<dt>ID</dt><dd>Effective_Date_time-120_8299</dd>
-<dt>File Type</dt><dd>120.8299</dd>
-<dt>Label</dt><dd>Effective Date/time</dd></dl>
+<dt>ID</dt><dd>Effective_Date_time-120_8299</dd></dl>
 
 #### Properties
 
@@ -41,6 +39,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Effective Date/time**{::nomarkdown}<pre><code>  effective_date_time</code></pre>{:/} | .01 | This is the date/time when the Status of the reference term<br/>was established. | DATE-TIME | INDEXED<br/>REQUIRED | 
 **Status**{::nomarkdown}<pre><code>  status</code></pre>{:/} | .02 | The Status of a reference term is either 'ACTIVE' or 'INACTIVE'.  If<br/>'ACTIVE', then the term will be accessible by end-users to<br/>document a particular patient event.  If 'INACTIVE', then the term<br/>will only be accessible by the application to display legacy data. | ENUMERATION | REQUIRED | {::nomarkdown}ACTIVE: <em><strong>1</strong></em><br/>INACTIVE: <em><strong>0</strong></em>{:/}
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

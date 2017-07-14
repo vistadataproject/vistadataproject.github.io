@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; TIU_Personal_Preferences-8926
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; TIU_Personal_Preferences-8926<br/>
+<a name="top"></a>
 # TIU Personal Preferences (8926)
 This file allows the definition of Personal Preferences with respect to a variety of TIU's functions (e.g., Review Screen sort field and order, Default cosigner, default locations, location by day-of-week, suppression of review notes prompt on Progres note entry, etc.).
 
-<dl>
-<dt>Global</dt><dd>^TIU(8926,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^TIU(8926,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -29,13 +29,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Suppress Review Notes Prompt**{::nomarkdown}<pre><code>  suppress_review_notes_prompt</code></pre>{:/} | .11 | Allows user to specify whether to suppress the prompt to Review Existing<br/>Notes on entry of a Progress Note.  YES will SUPPRESS the prompt, while<br/>NO, or no entry will allow the site's default setting to take precedence. | BOOLEAN |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
 **Location By Day Of Week**{::nomarkdown}<pre><code>  location_by_day_of_week</code></pre>{:/} | 1 | This multiple provides a means of specifying the user's preferred location<br/>by day of week. | OBJECT |  | [Location_By_Day_Of_Week-8926_01](#Location_By_Day_Of_Week-8926_01)
 
-### Subfile
-#### <a name="Location_By_Day_Of_Week-8926_01"></a>Location By Day Of Week
+## Sub-Files
+### <a name="Location_By_Day_Of_Week-8926_01"></a>Location By Day Of Week (8926.01)
 
 <dl>
-<dt>ID</dt><dd>Location_By_Day_Of_Week-8926_01</dd>
-<dt>File Type</dt><dd>8926.01</dd>
-<dt>Label</dt><dd>Location By Day Of Week</dd></dl>
+<dt>ID</dt><dd>Location_By_Day_Of_Week-8926_01</dd></dl>
 
 #### Properties
 
@@ -44,6 +42,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Day Of Week**{::nomarkdown}<pre><code>  day_of_week</code></pre>{:/} | .01 | This is the day of week on which the user expects to serve patients at a<br/>particular location. | ENUMERATION | INDEXED<br/>REQUIRED | {::nomarkdown}MONDAY: <em><strong>2</strong></em><br/>TUESDAY: <em><strong>3</strong></em><br/>FRIDAY: <em><strong>6</strong></em><br/>WEDNESDAY: <em><strong>4</strong></em><br/>THURSDAY: <em><strong>5</strong></em><br/>SUNDAY: <em><strong>1</strong></em><br/>SATURDAY: <em><strong>7</strong></em>{:/}
 **Hospital Location**{::nomarkdown}<pre><code>  hospital_location</code></pre>{:/} | .02 | This is the HOSPITAL LOCATION at which the user expects to see patient on<br/>the specified day of week. | POINTER |  | [Hospital_Location-44](Hospital_Location-44)
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

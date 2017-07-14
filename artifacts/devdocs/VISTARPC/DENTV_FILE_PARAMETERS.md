@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DENTV FILE PARAMETERS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DENTV FILE PARAMETERS<br/>
 # DENTV FILE PARAMETERS
 
 This RPC allows the Dental software to file word processing type parameters.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DENTVTP0](http://code.osehra.org/dox/Routine_DENTVTP0_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -26,4 +28,4 @@ DATA | LIST | 250 | true | DATA is the value of the parameter, passed as a list 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

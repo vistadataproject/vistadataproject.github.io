@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ORQQPS LIST
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ORQQPS LIST<br/>
 # ORQQPS LIST
 
 Function returns a list of a patient's medications.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [ORQQPS](http://code.osehra.org/dox/Routine_ORQQPS_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,7 +27,7 @@ STOP DATE/TIME | LITERAL | 16 | true | Stop date/time in FileMan format indicati
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -37,10 +39,10 @@ Code | {::nomarkdown}<pre><code> K ^TMP("PS",$J),^TMP("ORPS",$J)<br/> D OCL^PSOO
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
-NOT OSEHRA CPRS | {::nomarkdown}N/A{:/}
+NOT OSEHRA CPRS | {::nomarkdown}{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

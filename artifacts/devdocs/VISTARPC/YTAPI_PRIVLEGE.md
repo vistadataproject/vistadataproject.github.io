@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; YTAPI PRIVLEGE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; YTAPI PRIVLEGE<br/>
 # YTAPI PRIVLEGE
 
 Returns user privlege to see psych test results. Input: YSCODE ;code of test or interview to check privelges forOutput:YSDATA(1)=[DATA]YSDATA(2)=1^user privileged for all tests        orYSDATA(2)=1^exempt test"        orYSDATA(2)=1^interview        orYSDATA(2)=1^exempt test        orYSDATA(2)=0^no access
+
+## Properties
 
 Property | Value
 --- | ---
@@ -17,4 +19,4 @@ Return Type | ARRAY
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

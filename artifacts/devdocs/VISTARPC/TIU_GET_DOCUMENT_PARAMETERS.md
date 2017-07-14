@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; TIU GET DOCUMENT PARAMETERS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; TIU GET DOCUMENT PARAMETERS<br/>
 # TIU GET DOCUMENT PARAMETERS
 
 This Remote Procedure returns the parameters by which a given documentor document type is to be processed.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [TIUSRVP1](http://code.osehra.org/dox/Routine_TIUSRVP1_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,7 +26,7 @@ TIUTYP | LITERAL |  | true | This is the record number of the Document Definitio
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -35,7 +37,7 @@ Code | {::nomarkdown}<pre><code> I '+$G(TIUTYP),+$G(TIUDA) S TIUTYP=+$G(^TIU(892
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
@@ -43,4 +45,4 @@ Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master
 Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas">rTIU.pas</a>{:/}
 Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas">Encounter/rPCE.pas</a>{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

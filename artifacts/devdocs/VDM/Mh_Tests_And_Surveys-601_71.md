@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Mh_Tests_And_Surveys-601_71
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Mh_Tests_And_Surveys-601_71<br/>
+<a name="top"></a>
 # Mh Tests And Surveys (601.71)
 This file defines the interviews, surveys and tests available in the  Mental Health Assistant. Attributes of the instruments include authoring  credits, target populations, normative samples and copyright information.  Actions available including privileging, reporting of full item content  and transmission to the Mental Health National Database are also specified.    Direct entry via FileMan is prohibited.
 
-<dl>
-<dt>Global</dt><dd>^YTT(601.71,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^YTT(601.71,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -54,4 +54,4 @@ Field | ID | Description | Datatype | Attributes | Range
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

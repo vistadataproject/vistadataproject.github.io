@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ROR GUI PARAMETER RENAME
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ROR GUI PARAMETER RENAME<br/>
 # ROR GUI PARAMETER RENAME
 
 The ROR GUI PARAMETER RENAME remote procedure renames the instance of the parameter.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [RORRP038](http://code.osehra.org/dox/Routine_RORRP038_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -26,4 +28,4 @@ NEWINST | LITERAL | 60 | true | New instance name for the GUI parameter.
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

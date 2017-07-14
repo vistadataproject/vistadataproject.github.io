@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIC SR DETAIL
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIC SR DETAIL<br/>
 # DSIC SR DETAIL
 
 For a surgical case, this returns the operation report, anesthesia report, nurse's report, and procedure report.  Which reports are returned depends upon the input paramter FLAG value.  It defaults to Op report and Anesthesia report.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSICSRPT](http://code.osehra.org/dox/Routine_DSICSRPT_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ FLAG | LITERAL | 4 | true | Optional parameter - string of characters indicating
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

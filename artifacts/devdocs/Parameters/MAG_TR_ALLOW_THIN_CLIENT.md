@@ -3,20 +3,21 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; MAG TR ALLOW THIN CLIENT
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; MAG TR ALLOW THIN CLIENT<br/>
 # MAG TR ALLOW THIN CLIENT
 
 This parameter controls if a user is allowed to view imagesusing thin client in TeleReader
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 628
 Summary | MAG TELEREADER ALLOW THIN CLIENT
 Value Type | yes
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
@@ -25,4 +26,4 @@ Precedence | Entity
 3 | DIVISION
 4 | SYSTEM
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

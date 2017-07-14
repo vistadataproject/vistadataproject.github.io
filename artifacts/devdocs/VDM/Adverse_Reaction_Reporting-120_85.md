@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Adverse_Reaction_Reporting-120_85
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Adverse_Reaction_Reporting-120_85<br/>
+<a name="top"></a>
 # Adverse Reaction Reporting (120.85)
 This file contains all the data for an Observed Drug reaction.
 
-<dl>
-<dt>Global</dt><dd>^GMR(120.85,</dd>
-<dt>Domain</dt><dd>Allergies</dd>
-</dl>
+**Global:** ^GMR(120.85,
 
-### Properties
+**Domain:** Allergies
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -79,13 +79,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **15 Day Report**{::nomarkdown}<pre><code>  _15_day_report</code></pre>{:/} | 64 | This field is to determine if the 15 Day Report has been completed. | BOOLEAN |  | {::nomarkdown}false: <em><strong>n</strong></em><br/>true: <em><strong>y</strong></em>{:/}
 **Report Type**{::nomarkdown}<pre><code>  report_type</code></pre>{:/} | 65 | This is the type of report issued. | ENUMERATION |  | {::nomarkdown}FOLLOWUP: <em><strong>f</strong></em><br/>INITIAL: <em><strong>i</strong></em>{:/}
 
-### Subfile
-#### <a name="Reactions-120_8502"></a>Reactions
+## Sub-Files
+### <a name="Reactions-120_8502"></a>Reactions (120.8502)
 
 <dl>
-<dt>ID</dt><dd>Reactions-120_8502</dd>
-<dt>File Type</dt><dd>120.8502</dd>
-<dt>Label</dt><dd>Reactions</dd></dl>
+<dt>ID</dt><dd>Reactions-120_8502</dd></dl>
 
 #### Properties
 
@@ -95,12 +93,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Other Reaction**{::nomarkdown}<pre><code>  other_reaction</code></pre>{:/} | 1 | If this sign/symptom cannot be found in the Sign/Symptoms (120.83) file,<br/>then the free text of what the user typed in will be here, and the<br/>signs/symptoms of OTHER REACTION will be the value of the REACTIONS field. | STRING |  | 
 **Entered By**{::nomarkdown}<pre><code>  entered_by</code></pre>{:/} | 2 | The person who entered this reaction into the system. | POINTER |  | [New_Person-200](New_Person-200)
 
-#### <a name="Suspected_Agent-120_8503"></a>Suspected Agent
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Suspected_Agent-120_8503"></a>Suspected Agent (120.8503)
 
 <dl>
-<dt>ID</dt><dd>Suspected_Agent-120_8503</dd>
-<dt>File Type</dt><dd>120.8503</dd>
-<dt>Label</dt><dd>Suspected Agent</dd></dl>
+<dt>ID</dt><dd>Suspected_Agent-120_8503</dd></dl>
 
 #### Properties
 
@@ -127,12 +126,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Like Question #6**{::nomarkdown}<pre><code>  like_question_number6</code></pre>{:/} | 16 | This question determines if the reaction reappeared after the reactant was readministered.<br/>was readministered. | BOOLEAN |  | {::nomarkdown}false: <em><strong>n</strong></em><br/>true: <em><strong>y</strong></em>{:/}
 **Likelihood**{::nomarkdown}<pre><code>  likelihood</code></pre>{:/} | 17 | If this is an observed drug allergy/adverse reaction, then this is the<br/>likelihood that this is an adverse reaction.  The data for this field is<br/>based on an algorithm used by the FDA. | ENUMERATION |  | {::nomarkdown}REMOTE: <em><strong>1</strong></em><br/>POSSIBLE: <em><strong>2</strong></em><br/>HIGHLY PROBABLE: <em><strong>4</strong></em><br/>PROBABLE: <em><strong>3</strong></em>{:/}
 
-#### <a name="Relevant_Test_lab_Data-120_8504"></a>Relevant Test/lab Data
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Relevant_Test_lab_Data-120_8504"></a>Relevant Test/lab Data (120.8504)
 
 <dl>
-<dt>ID</dt><dd>Relevant_Test_lab_Data-120_8504</dd>
-<dt>File Type</dt><dd>120.8504</dd>
-<dt>Label</dt><dd>Relevant Test/lab Data</dd></dl>
+<dt>ID</dt><dd>Relevant_Test_lab_Data-120_8504</dd></dl>
 
 #### Properties
 
@@ -142,12 +142,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Results**{::nomarkdown}<pre><code>  results</code></pre>{:/} | 1 | This field will contain the results for the particular test. | STRING |  | 
 **Collection D/t**{::nomarkdown}<pre><code>  collection_d_t</code></pre>{:/} | 2 | This field is the date the sample was collected from the patient. | DATE-TIME |  | 
 
-#### <a name="Concomitant_Drugs-120_8513"></a>Concomitant Drugs
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Concomitant_Drugs-120_8513"></a>Concomitant Drugs (120.8513)
 
 <dl>
-<dt>ID</dt><dd>Concomitant_Drugs-120_8513</dd>
-<dt>File Type</dt><dd>120.8513</dd>
-<dt>Label</dt><dd>Concomitant Drugs</dd></dl>
+<dt>ID</dt><dd>Concomitant_Drugs-120_8513</dd></dl>
 
 #### Properties
 
@@ -159,12 +160,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Last Fill Dt**{::nomarkdown}<pre><code>  last_fill_dt</code></pre>{:/} | 3 | This field is the last date that this drug was filled. | DATE-TIME |  | 
 **Sig**{::nomarkdown}<pre><code>  sig</code></pre>{:/} | 4 | This file contains the SIG code that indicates how this drug is to be given. | STRING |  | 
 
-#### <a name="Pt_Addendum-120_85315"></a>P&amp;t Addendum
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Pt_Addendum-120_85315"></a>P&amp;t Addendum (120.85315)
 
 <dl>
-<dt>ID</dt><dd>Pt_Addendum-120_85315</dd>
-<dt>File Type</dt><dd>120.85315</dd>
-<dt>Label</dt><dd>P&amp;t Addendum</dd></dl>
+<dt>ID</dt><dd>Pt_Addendum-120_85315</dd></dl>
 
 #### Properties
 
@@ -173,6 +175,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Date/time Entered**{::nomarkdown}<pre><code>  date_time_entered</code></pre>{:/} | .01 | This is the date/time the comment was entered. | DATE-TIME | INDEXED<br/>REQUIRED | 
 **Addendum**{::nomarkdown}<pre><code>  addendum</code></pre>{:/} | 1 | This is the actual comment that is being added. | STRING |  | 
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

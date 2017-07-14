@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ORQQCN FORWARD
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ORQQCN FORWARD<br/>
 # ORQQCN FORWARD
 
 Forwards a consult to a subservice of the forwarding service, as definedin file 123.5
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [ORQQCN1](http://code.osehra.org/dox/Routine_ORQQCN1_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -28,7 +30,7 @@ COMMENTS | LIST |  |  | Comments related to the forwarding action.
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -40,10 +42,10 @@ Code | {::nomarkdown}<pre><code> S:+$G(GMRCATTN)=0 GMRCATTN=""<br/> S Y=$$FR^GMR
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
 Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas">Consults/rConsults.pas</a>{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,24 +3,25 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; DENTV CODING STANDARDS
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; DENTV CODING STANDARDS<br/>
 # DENTV CODING STANDARDS
 
 The DRM Plus GUI needs to connect to an online copy of the coding standards.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 768
 Summary | Coding Standards URL
 Value Type | word processing
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | USER
 9 | SYSTEM
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; YTRP INSTRUMENT REPORT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; YTRP INSTRUMENT REPORT<br/>
 # YTRP INSTRUMENT REPORT
 
 This remote procedure allows staff to print out psychological tests andinterview reports.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [YTRPWRP](http://code.osehra.org/dox/Routine_YTRPWRP_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ YSXT | LITERAL | 60 | true | This varible contains &quot;Test Completion Date,Na
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ORWRP16 REPORT TEXT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ORWRP16 REPORT TEXT<br/>
 # ORWRP16 REPORT TEXT
 
 This rpc retrieves the report text for a report selected onthe Report tab.the report format on the roll 'n scroll version of CPRS.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [ORWRP16](http://code.osehra.org/dox/Routine_ORWRP16_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -27,7 +29,7 @@ REPORT SECTION | LITERAL | 2 | true | This parameter specifics which portion of 
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -39,10 +41,10 @@ Code | {::nomarkdown}<pre><code> IF $G(SECTION),$D(^TMP("ORDATA",$J,SECTION)) D 
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
-NOT OSEHRA CPRS | {::nomarkdown}N/A{:/}
+NOT OSEHRA CPRS | {::nomarkdown}{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

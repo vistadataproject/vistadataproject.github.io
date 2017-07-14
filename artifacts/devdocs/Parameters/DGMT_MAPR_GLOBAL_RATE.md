@@ -3,23 +3,24 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; DGMT MAPR GLOBAL RATE
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; DGMT MAPR GLOBAL RATE<br/>
 # DGMT MAPR GLOBAL RATE
 
 Used by $$MEDEXP^DGMTSCU4 to derive gross &amp; adjusted medical expense values.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 397
 Summary | Allowable Medical Expense Rates
 Value Type | free text
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | true
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | PACKAGE
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

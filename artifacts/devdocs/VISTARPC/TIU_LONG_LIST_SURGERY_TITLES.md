@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; TIU LONG LIST SURGERY TITLES
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; TIU LONG LIST SURGERY TITLES<br/>
 # TIU LONG LIST SURGERY TITLES
 
 This RPC serves data to a longlist of selectable TITLES for the classnamed in the CLNAME parameter.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [TIUSRVD](http://code.osehra.org/dox/Routine_TIUSRVD_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,7 +27,7 @@ CLNAME | LITERAL |  | true | This is the name of the class for which titles are 
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -37,10 +39,10 @@ Code | {::nomarkdown}<pre><code> N CLASS S CLNAME=$S($G(CLNAME)]"":CLNAME,1:"OPE
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
 Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rSurgery.pas">rSurgery.pas</a>{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

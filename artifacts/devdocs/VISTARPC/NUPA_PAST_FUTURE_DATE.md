@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; NUPA PAST FUTURE DATE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; NUPA PAST FUTURE DATE<br/>
 # NUPA PAST FUTURE DATE
 
 Returns a 1 or a 0 when checking to see if a date is in the past or future, based on $H.  
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [NUPABCL](http://code.osehra.org/dox/Routine_NUPABCL_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ VAR 2 | LITERAL | 1 | true | Variable should be set to &quot;P&quot; if you want
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

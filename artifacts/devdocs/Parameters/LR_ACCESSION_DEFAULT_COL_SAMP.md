@@ -3,20 +3,21 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; LR ACCESSION DEFAULT COL SAMP
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; LR ACCESSION DEFAULT COL SAMP<br/>
 # LR ACCESSION DEFAULT COL SAMP
 
 Allows the package/facility/user to set a default collection samplepresented to the user when accessioning specimens into the Laboratorysystem.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 714
 Summary | Default Accessioning Collection Sample
 Value Type | pointer
 Value Domain | 62
 Multiple Instances | true
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
@@ -24,4 +25,4 @@ Precedence | Entity
 2 | DIVISION
 3 | PACKAGE
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

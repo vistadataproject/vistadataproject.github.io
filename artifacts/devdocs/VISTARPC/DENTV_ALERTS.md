@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DENTV ALERTS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DENTV ALERTS<br/>
 # DENTV ALERTS
 
 This RPC gets Dental Alerts from file 220.  It also sets them into 220.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DENTVUTL](http://code.osehra.org/dox/Routine_DENTVUTL_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ ALERTS | LIST | 30 | true | List of Alert text entries to be added to the dental
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

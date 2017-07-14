@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGG DTTM
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGG DTTM<br/>
 # MAGG DTTM
 
 Does a FileMan conversion using %DT="T" D ^%DT,$$FMTE^XLFDT(Y,"8")
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGGTU5](http://code.osehra.org/dox/Routine_MAGGTU5_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ NOFDT | LITERAL | 1 | true | This is a Flag to tell if Future Dates are allowed.
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; SPN RAD UTL REPORT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; SPN RAD UTL REPORT<br/>
 # SPN RAD UTL REPORT
 
 
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [SPNLRM7](http://code.osehra.org/dox/Routine_SPNLRM7_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -28,4 +30,4 @@ PTLIST | LIST |  |  | DFN^DFN^DFN  354^1368^1514^1862^2171^2254^2389^2401^2459^2
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

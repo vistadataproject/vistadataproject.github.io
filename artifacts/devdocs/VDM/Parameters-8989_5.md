@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Parameters-8989_5
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Parameters-8989_5<br/>
+<a name="top"></a>
 # Parameters (8989.5)
 This file contains the actual data values for the parameters found in the PARAMETER DEFINITION file (#8989.51).
 
-<dl>
-<dt>Global</dt><dd>^XTV(8989.5,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^XTV(8989.5,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -25,4 +25,4 @@ Field | ID | Description | Datatype | Attributes | Range
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

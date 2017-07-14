@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGQ SYSTEM
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGQ SYSTEM<br/>
 # MAGQ SYSTEM
 
 This procedure provides a list of all active person file members who have the "MAG SYSTEM" security key assignned to them.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -17,4 +19,4 @@ Return Type | ARRAY
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

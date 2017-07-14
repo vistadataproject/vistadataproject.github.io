@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; VPS PRINT PATIENT LABEL
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; VPS PRINT PATIENT LABEL<br/>
 # VPS PRINT PATIENT LABEL
 
 This RPC prints patient label using the standard VistAPrint Patient Label routine (DGPLBL).
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [VPSRLBLS](http://code.osehra.org/dox/Routine_VPSRLBLS_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -28,4 +30,4 @@ VPSNUM | LITERAL | 50 | true | Patient ID. This could be SSN, DFN, VIC/CAC, ICN
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

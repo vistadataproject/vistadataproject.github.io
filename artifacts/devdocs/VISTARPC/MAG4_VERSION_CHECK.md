@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAG4 VERSION CHECK
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAG4 VERSION CHECK<br/>
 # MAG4 VERSION CHECK
 
 This remote procedure checks the version of the Imaging clientapplication. Depending on the version of the VistA Imaging KIDS install,the client application can be forced to display a warning and/orterminate.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGGTU4](http://code.osehra.org/dox/Routine_MAGGTU4_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ CLVER | LITERAL | 30 | true | The client application passes its descriptor as th
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

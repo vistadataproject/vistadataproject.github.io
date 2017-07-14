@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; TIU LINK TO FLAG
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; TIU LINK TO FLAG<br/>
 # TIU LINK TO FLAG
 
 This RPC is used to link a Progress Note to a Patient Record Flag
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [TIUPRF2](http://code.osehra.org/dox/Routine_TIUPRF2_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -26,7 +28,7 @@ DFN | LITERAL |  | true | Patient IEN (File 2)
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -38,10 +40,10 @@ Code | {::nomarkdown}<pre><code> N TIUTTL<br/> S TIUTTL=+$G(^TIU(8925,TIUIEN,0))
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
 Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fNotes.pas">fNotes.pas</a>{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

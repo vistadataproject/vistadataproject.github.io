@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ROR LOG GET ACCESS VIOLATIONS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ROR LOG GET ACCESS VIOLATIONS<br/>
 # ROR LOG GET ACCESS VIOLATIONS
 
 The ROR LOG GET ACCESS VIOLATIONS remote procedure returns the list ofaccess violation events recorded in the provided time frame.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [RORRP013](http://code.osehra.org/dox/Routine_RORRP013_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ ENDT | LITERAL |  |  | The ENDT parameter defines the end date for the search of
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

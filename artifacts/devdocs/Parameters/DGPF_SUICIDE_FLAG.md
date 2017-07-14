@@ -3,23 +3,24 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; DGPF SUICIDE FLAG
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; DGPF SUICIDE FLAG<br/>
 # DGPF SUICIDE FLAG
 
 High Risk Mental Health Patient - Reminder and flag
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 642
 Summary | PRF for Suicide Prevention
 Value Type | free text
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | PACKAGE
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

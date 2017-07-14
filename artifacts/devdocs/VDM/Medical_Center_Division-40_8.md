@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Medical_Center_Division-40_8
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Medical_Center_Division-40_8<br/>
+<a name="top"></a>
 # Medical Center Division (40.8)
 This file contains the Medical Center Divisions which are defined using the 'MAS Parameter Entry/Edit' option.  The primary facility as well as any NHCU, Domiciliary or other division should be defined within this file.
 
-<dl>
-<dt>Global</dt><dd>^DG(40.8,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^DG(40.8,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -57,13 +57,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Default Medical Record Type**{::nomarkdown}<pre><code>  default_medical_record_type</code></pre>{:/} | 100.3 | Incomplete Records Tracking will use this entry as the default Medical<br/>record type for Division when pulling patient information.  If blank,<br/>MEDICAL RECORD will be default value. | POINTER |  | [Record_Types-195_2](Record_Types-195_2)
 **Rai Subscription Number**{::nomarkdown}<pre><code>  rai_subscription_number</code></pre>{:/} | 900.01 | This field points to the subscribing RAI/MDS COTS system subscription<br/>registry for patient updates.  This subscription control number is <br/>specific to this division.  Do not change the control number once set<br/>up as this will prevent the COTS system from being updated by VistA.<br/>Use only documented API calls to create or retrieve the subscription<br/>control number. | POINTER |  | [Subscription_Control-774](Subscription_Control-774)
 
-### Subfile
-#### <a name="Employee_Health_Counts-40_801"></a>Employee Health Counts
+## Sub-Files
+### <a name="Employee_Health_Counts-40_801"></a>Employee Health Counts (40.801)
 
 <dl>
-<dt>ID</dt><dd>Employee_Health_Counts-40_801</dd>
-<dt>File Type</dt><dd>40.801</dd>
-<dt>Label</dt><dd>Employee Health Counts</dd></dl>
+<dt>ID</dt><dd>Employee_Health_Counts-40_801</dd></dl>
 
 #### Properties
 
@@ -72,12 +70,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Month/year**{::nomarkdown}<pre><code>  month_year</code></pre>{:/} | .01 | Enter the year for which employee health visits are to be tracked. | DATE-TIME | REQUIRED | 
 **Total**{::nomarkdown}<pre><code>  total</code></pre>{:/} | 1 | Enter the total number of employee health visits to this division during<br/>this month. | NUMERIC |  | 
 
-#### <a name="Census_Date-40_802"></a>Census Date
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Census_Date-40_802"></a>Census Date (40.802)
 
 <dl>
-<dt>ID</dt><dd>Census_Date-40_802</dd>
-<dt>File Type</dt><dd>40.802</dd>
-<dt>Label</dt><dd>Census Date</dd></dl>
+<dt>ID</dt><dd>Census_Date-40_802</dd></dl>
 
 #### Properties
 
@@ -103,12 +102,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Wait List Bedsection**{::nomarkdown}<pre><code>  wait_list_bedsection</code></pre>{:/} | 14 | This sub-field of the Census Date multiple is a mutiple that adds <br/>new entries without asking, inpatient AMISs use this information.ient A | OBJECT |  | [Wait_List_Bedsection-40_805](#Wait_List_Bedsection-40_805)
 **Corrections To Previous G&amp;l&#x27;s**{::nomarkdown}<pre><code>  corrections_to_previous_gls</code></pre>{:/} | 20 | This sub-field of the Census Date multiple is a word-processing field and <br/>contains the corrections to previous G&L's and is printed at the bottom <br/>Census Date Gains and Losses Sheet (G&L). | STRING |  | 
 
-#### <a name="Wait_List_Bedsection-40_805"></a>Wait List Bedsection
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Wait_List_Bedsection-40_805"></a>Wait List Bedsection (40.805)
 
 <dl>
-<dt>ID</dt><dd>Wait_List_Bedsection-40_805</dd>
-<dt>File Type</dt><dd>40.805</dd>
-<dt>Label</dt><dd>Wait List Bedsection</dd></dl>
+<dt>ID</dt><dd>Wait_List_Bedsection-40_805</dd></dl>
 
 #### Properties
 
@@ -119,12 +119,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Wait List Not In Hospital**{::nomarkdown}<pre><code>  wait_list_not_in_hospital</code></pre>{:/} | .03 | This sub-field of the Waiting List Bedsection of the Census Date Multiple <br/>is the number of patients on the waiting list for this bedsection not <br/>in the hospital. | NUMERIC |  | 
 **Wait List - Service Connected**{::nomarkdown}<pre><code>  wait_list__service_connected</code></pre>{:/} | .04 | This sub-field of the Waiting List Bedsection of the Census Date Multiple <br/>is the number of patients on the waiting list for this bedsection who are <br/>service connected.   | NUMERIC |  | 
 
-#### <a name="Op_Visit_Date-40_808"></a>Op Visit Date
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Op_Visit_Date-40_808"></a>Op Visit Date (40.808)
 
 <dl>
-<dt>ID</dt><dd>Op_Visit_Date-40_808</dd>
-<dt>File Type</dt><dd>40.808</dd>
-<dt>Label</dt><dd>Op Visit Date</dd></dl>
+<dt>ID</dt><dd>Op_Visit_Date-40_808</dd></dl>
 
 #### Properties
 
@@ -134,12 +135,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Planned Op Visits [cum]**{::nomarkdown}<pre><code>  planned_op_visits_cum</code></pre>{:/} | .02 | This field contains the number of planned cumulative outpatient<br/>visits for a given medical center as defined by top management. | NUMERIC |  | 
 **Actual Op Visits [cum]**{::nomarkdown}<pre><code>  actual_op_visits_cum</code></pre>{:/} | .03 | This field contains the actual number of cumulative outpatient<br/>visits for a medical center in a given fiscal year. | NUMERIC |  | 
 
-#### <a name="Treating_Specialty-40_806"></a>Treating Specialty
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Treating_Specialty-40_806"></a>Treating Specialty (40.806)
 
 <dl>
-<dt>ID</dt><dd>Treating_Specialty-40_806</dd>
-<dt>File Type</dt><dd>40.806</dd>
-<dt>Label</dt><dd>Treating Specialty</dd></dl>
+<dt>ID</dt><dd>Treating_Specialty-40_806</dd></dl>
 
 #### Properties
 
@@ -151,12 +153,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Tsr Order**{::nomarkdown}<pre><code>  tsr_order</code></pre>{:/} | .04 | This sub-field of the Treating Specialty multiple will be used in the<br/>print display order of the Treating Specialty Report by division.<br/>This field entry must be unique and greater than 0 for a treating<br/>specialty to appear on the TSR.  If the treating specialty should not be<br/>printed on the TSR, the value in this field should be deleted. | NUMERIC |  | 
 **Census Date**{::nomarkdown}<pre><code>  census_date</code></pre>{:/} | 10 | This sub-field of the Treating Specialty multiple is a multiple <br/>that contains the data for the Treating Speciality G&L/BSR. | OBJECT |  | [Census_Date-40_807](#Census_Date-40_807)
 
-#### <a name="Census_Date-40_807"></a>Census Date
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Census_Date-40_807"></a>Census Date (40.807)
 
 <dl>
-<dt>ID</dt><dd>Census_Date-40_807</dd>
-<dt>File Type</dt><dd>40.807</dd>
-<dt>Label</dt><dd>Census Date</dd></dl>
+<dt>ID</dt><dd>Census_Date-40_807</dd></dl>
 
 #### Properties
 
@@ -200,6 +203,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Asih Patients Remaining**{::nomarkdown}<pre><code>  asih_patients_remaining</code></pre>{:/} | 8 | This sub-field of the Census Date multiple contains the number of <br/>ASIH (Absent Sick In Hospital) Patient's Remaining at the end of <br/>the census day (not cumulative for this treating specialty. | NUMERIC |  | 
 **One Day Discharges**{::nomarkdown}<pre><code>  one_day_discharges</code></pre>{:/} | 11 | This sub-field of the Census field multiple contains the number of <br/>One Date Discharges (patients who were discharged with admission <br/>on the same day) at end end of the census day (not cumulative) <br/>for this treating specialty. | NUMERIC |  | 
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

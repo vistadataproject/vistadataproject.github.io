@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Usr_Class_Membership-8930_3
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Usr_Class_Membership-8930_3<br/>
+<a name="top"></a>
 # Usr Class Membership (8930.3)
 This file links a person from the New Person file to a class in the User Class file.  Since user class membership includes members of all subclasses, users should be made members of the most discrete class in a hierarchy of classes.  For example, if Jones is a dentist, Jones should be entered into the Dentist class.  Since Dentist is a subclass of the Provider class, Jones is then automatically a Provider.   Persons wearing several different hats can have more than one entry in the file.  For example, Smith might be a dietician also working toward a nursing degree.  Smith could be entered twice, once as a Dietician and once as a Student Nurse.
 
-<dl>
-<dt>Global</dt><dd>^USR(8930.3,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^USR(8930.3,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -23,4 +23,4 @@ Field | ID | Description | Datatype | Attributes | Range
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

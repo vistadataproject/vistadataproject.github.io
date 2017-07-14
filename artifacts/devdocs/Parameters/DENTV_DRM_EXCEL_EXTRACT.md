@@ -3,20 +3,21 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; DENTV DRM EXCEL EXTRACT
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; DENTV DRM EXCEL EXTRACT<br/>
 # DENTV DRM EXCEL EXTRACT
 
 This parameter will control whether or not the user can run the Excel extract option within DRM.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 321
 Summary | 
 Value Type | yes
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
@@ -24,4 +25,4 @@ Precedence | Entity
 5 | PACKAGE
 9 | SYSTEM
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

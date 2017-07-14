@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGG IMAGE STATISTICS QUE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGG IMAGE STATISTICS QUE<br/>
 # MAGG IMAGE STATISTICS QUE
 
 The MAGG QUEUE IMAGE STATISTICS remote procedure queues a job throughTaskMan that queries the image file(s) and returns variousstatistics/summary data. Currently, 2 queries are implemented:   Counts of images captured in the provided date range grouped by the   image status codes.   Counts of images captured in the provided date range grouped by users   and image status codes.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGGA03Q](http://code.osehra.org/dox/Routine_MAGGA03Q_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -26,4 +28,4 @@ MQUE | LITERAL |  |  | Flags for tasking reports and action on previously tasked
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

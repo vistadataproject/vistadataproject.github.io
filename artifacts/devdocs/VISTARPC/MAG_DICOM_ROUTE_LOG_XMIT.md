@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAG DICOM ROUTE LOG XMIT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAG DICOM ROUTE LOG XMIT<br/>
 # MAG DICOM ROUTE LOG XMIT
 
  +---------------------------------------------------------------+ | Property of the US Government.                                | | No permission to copy or redistribute this software is given. | | Use of unreleased versions of this software requires the user | | to execute a written test agreement with the VistA Imaging    | | Development Office of the Department of Veterans Affairs,     | | telephone (301) 734-0100.                                     | |                                                               | | The Food and Drug Administration classifies this software as  | | a medical device.  As such, it may not be changed in any way. | | Modifications to this software may result in an adulterated   | | medical device under 21CFR820, the use of which is considered | | to be a violation of US Federal Statutes.                     | +---------------------------------------------------------------+ When a file has been routed, information needs to be kept aboutthe fact that a copy has been made. In order to log thisinformation, the routing transmitter will call this RPC. This RPC will take care of all logging of statistics that isneeded after a file has been transmitted. There are six inputparameters: the internal entry number of the queue entry (D0),the internal entry number of the destination to which it wastransmitted (DEST) and the internal entry number of the locationfrom which it was transmitted (LOCATION). The input parameter(STATUS) is equal to either "SENT" or "FAILED", depending on theoutcome of the transmission. The value of the input-parameter TOis the name of the file at its destination (later to be used forpurging the file). The value of the parameter XMIT is thetimestamp of the start of the transmission.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGDRPC7](http://code.osehra.org/dox/Routine_MAGDRPC7_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -29,4 +31,4 @@ MECH | LITERAL | 10 | true | The value of this parameter is an integer value (1 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

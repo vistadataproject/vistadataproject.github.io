@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; GMV CLOSEST READING
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; GMV CLOSEST READING<br/>
 # GMV CLOSEST READING
 
 This remote procedure call returns the observation date/time and reading of the record closest to the date/time specified for the patient and vitaltype.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [GMVGETD](http://code.osehra.org/dox/Routine_GMVGETD_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -26,7 +28,7 @@ GMVFLAG | LITERAL | 1 | true | A flag to indicate if the search should look befo
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -38,10 +40,10 @@ Code | {::nomarkdown}<pre><code> N GMVADIFF,GMVADT,GMVAVAL,GMVBDIFF,GMVBDT,GMVBV
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
 DLL File | {::nomarkdown}No Source Code Available (GMV_VitalsViewEnter.dll){:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

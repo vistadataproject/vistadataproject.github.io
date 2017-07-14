@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; RORICR CDC SAVE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; RORICR CDC SAVE<br/>
 # RORICR CDC SAVE
 
 The RORICR CDC SAVE remote procedure updates the fields that are used by the ICR CDC form.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [RORRP027](http://code.osehra.org/dox/Routine_RORRP027_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -26,4 +28,4 @@ FLAGS | LITERAL |  |  | Flags that control the execution (can be combined):   H 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

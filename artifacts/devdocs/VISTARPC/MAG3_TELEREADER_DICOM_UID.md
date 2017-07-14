@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAG3 TELEREADER DICOM UID
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAG3 TELEREADER DICOM UID<br/>
 # MAG3 TELEREADER DICOM UID
 
 Returns a new TELEREADER DICOM Study, Series or SOP Instance UID
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGNGMR](http://code.osehra.org/dox/Routine_MAGNGMR_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ MAGPARAM | LIST |  | true | MAGPARAM - array with input values           MAGPARA
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

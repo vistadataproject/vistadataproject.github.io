@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIC DPT GET ICN
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIC DPT GET ICN<br/>
 # DSIC DPT GET ICN
 
 This will return the patient's Integration Control Number (ICN) and a flag indicating whether or not it is a local ICN.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSICDPT](http://code.osehra.org/dox/Routine_DSICDPT_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ ISSSN | LITERAL | 1 | true | This Boolean (0, 1) flag indicates whether or not P
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

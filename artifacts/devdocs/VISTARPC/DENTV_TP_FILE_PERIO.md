@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DENTV TP FILE PERIO
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DENTV TP FILE PERIO<br/>
 # DENTV TP FILE PERIO
 
 This RPC adds (or updates) a reocrd to the Treatment Plan Transaction/Exam file (#228.2).  The only record type supported by this RPC is the Perio type, where the TYPE field (.29) = 2.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DENTVTP4](http://code.osehra.org/dox/Routine_DENTVTP4_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ INPUT | LIST | 30 | true | This is the input array for adding or updating a Peri
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,23 +3,24 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; ORPF CHART SUMMARY SORT
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; ORPF CHART SUMMARY SORT<br/>
 # ORPF CHART SUMMARY SORT
 
 This parameter allows the Chart Copy summaries to print in forwardchronological order.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 179
 Summary | Chart Copy Summary Sort Forward
 Value Type | yes
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | SYSTEM
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

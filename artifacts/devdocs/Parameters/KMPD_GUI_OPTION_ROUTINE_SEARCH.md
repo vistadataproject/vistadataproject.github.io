@@ -3,23 +3,24 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; KMPD GUI OPTION ROUTINE SEARCH
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; KMPD GUI OPTION ROUTINE SEARCH<br/>
 # KMPD GUI OPTION ROUTINE SEARCH
 
 GUI option Routine Search.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 734
 Summary | 
 Value Type | free text
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | USER
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

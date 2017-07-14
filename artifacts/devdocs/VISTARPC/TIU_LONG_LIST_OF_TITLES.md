@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; TIU LONG LIST OF TITLES
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; TIU LONG LIST OF TITLES<br/>
 # TIU LONG LIST OF TITLES
 
 This RPC serves data to a longlist of selectable TITLES by CLASS.  e.g.,passing the class PROGRESS NOTES will return active Progress Notes titleswhich the current user is authorized to enter notes under.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [TIUSRVD](http://code.osehra.org/dox/Routine_TIUSRVD_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,7 +27,7 @@ DIR | LITERAL |  |  | This is the direction in which the longlist is scrolling f
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -37,7 +39,7 @@ Code | {::nomarkdown}<pre><code> N I,DA,CNT S I=0,CNT=44,DIR=$G(DIR,1)<br/> F  Q
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
@@ -45,4 +47,4 @@ Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master
 Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas">rTIU.pas</a>{:/}
 Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas">Options/rOptions.pas</a>{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

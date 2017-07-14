@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ORWDBA1 GETORDX
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ORWDBA1 GETORDX<br/>
 # ORWDBA1 GETORDX
 
 ARRAY OF DIAGNOSES ASSOCIATED WITH AN ORDER
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [ORWDBA1](http://code.osehra.org/dox/Routine_ORWDBA1_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,7 +25,7 @@ ORIEN | REFERENCE | 255 | true | ORDER INTERNAL REFERENCE NUMBER
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -35,10 +37,10 @@ Code | {::nomarkdown}<pre><code> N CT,DXIEN,DXN,DXREC,DXV,ICD9,ICDR,ORFMDAT,TXFA
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
-NOT OSEHRA CPRS | {::nomarkdown}N/A{:/}
+NOT OSEHRA CPRS | {::nomarkdown}{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

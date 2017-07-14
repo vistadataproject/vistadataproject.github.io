@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; TIU_Personal_Document_Type_List-8925_98
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; TIU_Personal_Document_Type_List-8925_98<br/>
+<a name="top"></a>
 # TIU Personal Document Type List (8925.98)
 This file is used to store "pick-lists" of documents (by class), for selection by the user.
 
-<dl>
-<dt>Global</dt><dd>^TIU(8925.98,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^TIU(8925.98,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -22,13 +22,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Personal Document List**{::nomarkdown}<pre><code>  personal_document_list</code></pre>{:/} | 10 | This Multiple is used for storing personal lists of documents for type<br/>selection during entry/editing. | OBJECT |  | [Personal_Document_List-8925_9801](#Personal_Document_List-8925_9801)
 **Timestamp**{::nomarkdown}<pre><code>  timestamp</code></pre>{:/} | 99 | This is the timestamp on the record in $H format which is compared with<br/>that on the compiled menu in ^XUTL("XQORM","DA;TIU(8925.98,",99) to<br/>determine whether recompilation is necessary. | STRING |  | 
 
-### Subfile
-#### <a name="Personal_Document_List-8925_9801"></a>Personal Document List
+## Sub-Files
+### <a name="Personal_Document_List-8925_9801"></a>Personal Document List (8925.9801)
 
 <dl>
-<dt>ID</dt><dd>Personal_Document_List-8925_9801</dd>
-<dt>File Type</dt><dd>8925.9801</dd>
-<dt>Label</dt><dd>Personal Document List</dd></dl>
+<dt>ID</dt><dd>Personal_Document_List-8925_9801</dd></dl>
 
 #### Properties
 
@@ -38,6 +36,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Sequence**{::nomarkdown}<pre><code>  sequence</code></pre>{:/} | .02 | This is the sequence in which you wish the document to appear in your<br/>list. | NUMERIC |  | 
 **Display Name**{::nomarkdown}<pre><code>  display_name</code></pre>{:/} | .03 | This is the name of the document to be displayed in menus. | STRING |  | 
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

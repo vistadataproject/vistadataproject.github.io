@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DENTVICD LIST
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DENTVICD LIST<br/>
 # DENTVICD LIST
 
 This will return a list of active ICD codes for a lookup value.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DENTVICD](http://code.osehra.org/dox/Routine_DENTVICD_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ DENTVA | LIST |  | true | An input array &quot;DENTVA&quot; will have to be set 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

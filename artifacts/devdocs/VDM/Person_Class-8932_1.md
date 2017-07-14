@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Person_Class-8932_1
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Person_Class-8932_1<br/>
+<a name="top"></a>
 # Person Class (8932.1)
 This file holds the CMS (HCFA) provider type data.   In 2001, ANSI ASC X12N asked the National Uniform Claim Committee (NUCC) to become the official maintainer of the Health Care Provider Taxonomy List (provider type).   PERSON CLASS is to be used for identifying provider types for roll-ups.   Patches need to review the technical description on field 90002.
 
-<dl>
-<dt>Global</dt><dd>^USC(8932.1,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^USC(8932.1,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -31,4 +31,4 @@ Field | ID | Description | Datatype | Attributes | Range
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

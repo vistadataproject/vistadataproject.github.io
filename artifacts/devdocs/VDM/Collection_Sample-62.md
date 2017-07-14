@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Collection_Sample-62
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Collection_Sample-62<br/>
+<a name="top"></a>
 # Collection Sample (62)
 Collection samples for laboratory specimens.
 
-<dl>
-<dt>Global</dt><dd>^LAB(62,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^LAB(62,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -31,13 +31,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Inactive Date**{::nomarkdown}<pre><code>  inactive_date</code></pre>{:/} | 64.9101 | This is the date on or after which the entry<br/>will no longer be active.  Inactive entries<br/>will not be available for selection<br/>in CPRS nor be able to be associated with a<br/>test in the LABORATORY TEST file (#60). | DATE-TIME |  | 
 **Collection Wkld Code**{::nomarkdown}<pre><code>  collection_wkld_code</code></pre>{:/} | 500 |  This field is used for those unique situations when an accession<br/>WKLD code can not be used. For example Bacterial culture test. By<br/>using this field you don't have to enter collection samples in file<br/>60 (LABORATORY TEST). | OBJECT |  | [Collection_Wkld_Code-62_02](#Collection_Wkld_Code-62_02)
 
-### Subfile
-#### <a name="Sct_Status_Date-62_023"></a>Sct Status Date
+## Sub-Files
+### <a name="Sct_Status_Date-62_023"></a>Sct Status Date (62.023)
 
 <dl>
-<dt>ID</dt><dd>Sct_Status_Date-62_023</dd>
-<dt>File Type</dt><dd>62.023</dd>
-<dt>Label</dt><dd>Sct Status Date</dd></dl>
+<dt>ID</dt><dd>Sct_Status_Date-62_023</dd></dl>
 
 #### Properties
 
@@ -49,12 +47,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Sct Status User**{::nomarkdown}<pre><code>  sct_status_user</code></pre>{:/} | 3 | Store the user who initiated the process to apply the STS SNOMED CT code<br/>resolution or the original mapping to this file entry. | POINTER |  | [New_Person-200](New_Person-200)
 **Sct Comment Text**{::nomarkdown}<pre><code>  sct_comment_text</code></pre>{:/} | 4 | Contains text or comments related to the mapping of a term to SNOMED CT.<br/>The text can relate to information submitted to STS for the term to be<br/>mapped, the comments returned by STS related to the mapping and<br/>any comments when attempting to apply the disposition from STS. | STRING |  | 
 
-#### <a name="Collection_Wkld_Code-62_02"></a>Collection Wkld Code
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Collection_Wkld_Code-62_02"></a>Collection Wkld Code (62.02)
 
 <dl>
-<dt>ID</dt><dd>Collection_Wkld_Code-62_02</dd>
-<dt>File Type</dt><dd>62.02</dd>
-<dt>Label</dt><dd>Collection Wkld Code</dd></dl>
+<dt>ID</dt><dd>Collection_Wkld_Code-62_02</dd></dl>
 
 #### Properties
 
@@ -63,12 +62,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Accession Area**{::nomarkdown}<pre><code>  accession_area</code></pre>{:/} | .01 |   Which accession area does the test belong that you want have<br/>accession WKLD codes triggered. | POINTER | REQUIRED | [Accession-68](Accession-68)
 **Lab Test**{::nomarkdown}<pre><code>  lab_test</code></pre>{:/} | 1 |  Enter a list of lab test that should trigger workload capture. | OBJECT |  | [Lab_Test-62_21](#Lab_Test-62_21)
 
-#### <a name="Lab_Test-62_21"></a>Lab Test
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Lab_Test-62_21"></a>Lab Test (62.21)
 
 <dl>
-<dt>ID</dt><dd>Lab_Test-62_21</dd>
-<dt>File Type</dt><dd>62.21</dd>
-<dt>Label</dt><dd>Lab Test</dd></dl>
+<dt>ID</dt><dd>Lab_Test-62_21</dd></dl>
 
 #### Properties
 
@@ -77,12 +77,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Lab Test**{::nomarkdown}<pre><code>  lab_test</code></pre>{:/} | .01 |  | POINTER | REQUIRED | [Laboratory_Test-60](Laboratory_Test-60)
 **Wkld Code**{::nomarkdown}<pre><code>  wkld_code</code></pre>{:/} | 1 |   Enter a list of WKLD code you wish to have counted when this<br/>test is accessioned. This is an alternate point for entering<br/>accession WKLD codes.  It is simular to accession WKLD codes but<br/>is by accession area and test.<br/>   This field is to be used when it is not desirable to enter<br/>collection samples to a test in file 60 (LABORATORY TEST). It<br/>is particularly useful in Microbioloby type test. | OBJECT |  | [Wkld_Code-62_211](#Wkld_Code-62_211)
 
-#### <a name="Wkld_Code-62_211"></a>Wkld Code
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Wkld_Code-62_211"></a>Wkld Code (62.211)
 
 <dl>
-<dt>ID</dt><dd>Wkld_Code-62_211</dd>
-<dt>File Type</dt><dd>62.211</dd>
-<dt>Label</dt><dd>Wkld Code</dd></dl>
+<dt>ID</dt><dd>Wkld_Code-62_211</dd></dl>
 
 #### Properties
 
@@ -91,6 +92,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Wkld Code**{::nomarkdown}<pre><code>  wkld_code</code></pre>{:/} | .01 |  Enter the WKLD code for thi | POINTER | REQUIRED | [Wkld_Code-64](Wkld_Code-64)
 **Test Multiply Factor**{::nomarkdown}<pre><code>  test_multiply_factor</code></pre>{:/} | 2 |   This field contains the a number by which the count<br/>should be multiplied by. | NUMERIC |  | 
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

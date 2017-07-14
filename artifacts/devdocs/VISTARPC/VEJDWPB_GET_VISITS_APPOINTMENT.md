@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; VEJDWPB GET VISITS APPOINTMENT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; VEJDWPB GET VISITS APPOINTMENT<br/>
 # VEJDWPB GET VISITS APPOINTMENT
 
 This will call the VEJDWPB GET SCHED APPTS rpc to get the scheduledappointments for the user inputted date range. It then loops throughs the Visit file (#9000010) "AA" cross reference tofind all visits. It then uses the uses the IN5^VADPT to get the current admission.It then uses the uses the IN5^VADPT to get the current admission.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [VEJDVST2](http://code.osehra.org/dox/Routine_VEJDVST2_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -26,4 +28,4 @@ VEDIV | LIST |  | true |  This is a list of divisions to be used to screen appoi
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; SPN LAB UTL SPECIFIC
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; SPN LAB UTL SPECIFIC<br/>
 # SPN LAB UTL SPECIFIC
 
 
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [SPNLRR7](http://code.osehra.org/dox/Routine_SPNLRR7_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -27,4 +29,4 @@ PTLIST | LIST |  |  | ICN^ICN^ICN^.... Example                  10073051^1005288
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

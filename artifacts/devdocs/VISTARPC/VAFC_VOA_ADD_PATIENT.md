@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; VAFC VOA ADD PATIENT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; VAFC VOA ADD PATIENT<br/>
 # VAFC VOA ADD PATIENT
 
 This Remote Procedure Call allows the remote creation of a VistAPATIENT (#2) record at the Preferred Facility for the VeteranOn-Line Application (VOA) project.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [VAFCPTAD](http://code.osehra.org/dox/Routine_VAFCPTAD_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ PARAM | LIST | 2000 | true | PARAM may contain the following values: (R) Require
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

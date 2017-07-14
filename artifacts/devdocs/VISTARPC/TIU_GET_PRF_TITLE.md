@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; TIU GET PRF TITLE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; TIU GET PRF TITLE<br/>
 # TIU GET PRF TITLE
 
 Returns IEN of the TIU Note Title in file 8925.1 which is associatedwith given flag for given patient.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [TIUPRF2](http://code.osehra.org/dox/Routine_TIUPRF2_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,7 +26,7 @@ FLAGID | LITERAL |  | true | The unique number for a particular Active Record Fl
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -36,10 +38,10 @@ Code | {::nomarkdown}<pre><code> N PRFARR K TIUY S TIUY=0<br/> Q:'$G(PTDFN)  Q:'
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
 Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fPatientFlagMulti.pas">fPatientFlagMulti.pas</a>{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

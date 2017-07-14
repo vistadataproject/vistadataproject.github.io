@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; YTQ IMPORT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; YTQ IMPORT<br/>
 # YTQ IMPORT
 
 Used to import a test description into the VISTA database froma mailman message created by the export function. Input: Message as message number from file 3.9Output: DATA vs ERROR
+
+## Properties
 
 Property | Value
 --- | ---
@@ -17,4 +19,4 @@ Return Type | ARRAY
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

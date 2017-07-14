@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; RG VIEW VISTA EXCEPTIONS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; RG VIEW VISTA EXCEPTIONS<br/>
 # RG VIEW VISTA EXCEPTIONS
 
 This RPC will allow the MPI IMDQ staff to view VistA exceptions for a given patient logged during a specific date range.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [RGRPC](http://code.osehra.org/dox/Routine_RGRPC_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -27,4 +29,4 @@ ERANGE | LITERAL | 7 | true | Ending Date Range for Exceptions to have been logg
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

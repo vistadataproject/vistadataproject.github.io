@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Kernel_System_Parameters-8989_3
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Kernel_System_Parameters-8989_3<br/>
+<a name="top"></a>
 # Kernel System Parameters (8989.3)
 This file holds the site parameters for this installation of the Kernel. It will have only one entry -- the domain name of the installation site. Some parameters are defined by the systems manager during the installation process.  These include Agence, volume set multiple, Default parameters. Others may be edited subsequent to installation. Spooling, response time, and audit parameters may be established.  Priorities may be set for interactive users and for TaskMan.  Defaults for fields such as timed read, auto menu, and ask device are defined for use when not otherwise specified for a user or device.
 
-<dl>
-<dt>Global</dt><dd>^XTV(8989.3,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^XTV(8989.3,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -100,13 +100,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **New Person Enumeration Finish**{::nomarkdown}<pre><code>  new_person_enumeration_finish</code></pre>{:/} | 902 | This field will note when the New Person (#200) file completed the VPID<br/>Enumeration Process. | DATE-TIME |  | 
 **Paid Enumeration Finish**{::nomarkdown}<pre><code>  paid_enumeration_finish</code></pre>{:/} | 903 | This field will note when the PAID EMPLOYEE (#450) file completed the VPID<br/>Enumeration Process. | DATE-TIME |  | 
 
-### Subfile
-#### <a name="Alpha_beta_Test_Package-8989_332"></a>Alpha/beta Test Package
+## Sub-Files
+### <a name="Alpha_beta_Test_Package-8989_332"></a>Alpha/beta Test Package (8989.332)
 
 <dl>
-<dt>ID</dt><dd>Alpha_beta_Test_Package-8989_332</dd>
-<dt>File Type</dt><dd>8989.332</dd>
-<dt>Label</dt><dd>Alpha/beta Test Package</dd></dl>
+<dt>ID</dt><dd>Alpha_beta_Test_Package-8989_332</dd></dl>
 
 #### Properties
 
@@ -119,12 +117,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Date Errors Last Reported**{::nomarkdown}<pre><code>  date_errors_last_reported</code></pre>{:/} | .05 | This field is used to keep track of the last date on which reporting of<br/>errors back to the developing ISC was performed.  The date is used as the<br/>starting date for identification of errors to report. | DATE-TIME |  | 
 **Package Namespace Or Prefix**{::nomarkdown}<pre><code>  package_namespace_or_prefix</code></pre>{:/} | 1 | This multiple field is used to identify the namespaces or prefixes used<br/>to identify the options and routines associated with the alpha or beta<br/>test package. | OBJECT |  | [Package_Namespace_Or_Prefix-8989_3321](#Package_Namespace_Or_Prefix-8989_3321)
 
-#### <a name="Package_Namespace_Or_Prefix-8989_3321"></a>Package Namespace Or Prefix
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Package_Namespace_Or_Prefix-8989_3321"></a>Package Namespace Or Prefix (8989.3321)
 
 <dl>
-<dt>ID</dt><dd>Package_Namespace_Or_Prefix-8989_3321</dd>
-<dt>File Type</dt><dd>8989.3321</dd>
-<dt>Label</dt><dd>Package Namespace Or Prefix</dd></dl>
+<dt>ID</dt><dd>Package_Namespace_Or_Prefix-8989_3321</dd></dl>
 
 #### Properties
 
@@ -133,12 +132,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Package Namespace Or Prefix**{::nomarkdown}<pre><code>  package_namespace_or_prefix</code></pre>{:/} | .01 | This field identifies one of the alpha/beta package namespaces. | STRING | INDEXED<br/>REQUIRED | 
 **Exclude Namespace Or Prefix**{::nomarkdown}<pre><code>  exclude_namespace_or_prefix</code></pre>{:/} | 1 | This multiple field is used to indicate any specific namespaces or<br/>prefixes which begin with the current namespace or prefix which should<br/>be excluded from analyses for the alpha/beta package.  Generally those<br/>namespaces which are immediately followed by the letter 'Z' are excluded | STRING |  | 
 
-#### <a name="Alphabeta_Test_Option-8989_333"></a>Alpha,beta Test Option
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Alphabeta_Test_Option-8989_333"></a>Alpha,beta Test Option (8989.333)
 
 <dl>
-<dt>ID</dt><dd>Alphabeta_Test_Option-8989_333</dd>
-<dt>File Type</dt><dd>8989.333</dd>
-<dt>Label</dt><dd>Alpha,beta Test Option</dd></dl>
+<dt>ID</dt><dd>Alphabeta_Test_Option-8989_333</dd></dl>
 
 #### Properties
 
@@ -147,12 +147,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Alpha,beta Test Option**{::nomarkdown}<pre><code>  alphabeta_test_option</code></pre>{:/} | .01 | This field identifies one option in alpha or beta test package which has<br/>been used since the last package installation. | POINTER | REQUIRED | [Option-19](Option-19)
 **Accesses Since Last Update**{::nomarkdown}<pre><code>  accesses_since_last_update</code></pre>{:/} | .02 | This field is a count of the number of accesses to the alpha or beta<br/>test package option identified in field .01 since the last package<br/>installation. | NUMERIC |  | 
 
-#### <a name="Volume_Set-8989_304"></a>Volume Set
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Volume_Set-8989_304"></a>Volume Set (8989.304)
 
 <dl>
-<dt>ID</dt><dd>Volume_Set-8989_304</dd>
-<dt>File Type</dt><dd>8989.304</dd>
-<dt>Label</dt><dd>Volume Set</dd></dl>
+<dt>ID</dt><dd>Volume_Set-8989_304</dd></dl>
 
 #### Properties
 
@@ -162,12 +163,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Max Signon Allowed**{::nomarkdown}<pre><code>  max_signon_allowed</code></pre>{:/} | 2 | This field defines the maximum number of jobs that XUS or RPC Broker will<br/>allow to sign-on to this VOLUME SET or CPU. | NUMERIC |  | 
 **Log System Rt?**{::nomarkdown}<pre><code>  log_system_rt</code></pre>{:/} | 6 | Setting this field to YES enables system response time logging,<br/>which will only take place if the necessary code exists in the<br/>application software. | BOOLEAN |  | {::nomarkdown}false: <em><strong>n</strong></em><br/>true: <em><strong>y</strong></em>{:/}
 
-#### <a name="Terminal_Server_Ip-8989_305"></a>Terminal Server Ip
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Terminal_Server_Ip-8989_305"></a>Terminal Server Ip (8989.305)
 
 <dl>
-<dt>ID</dt><dd>Terminal_Server_Ip-8989_305</dd>
-<dt>File Type</dt><dd>8989.305</dd>
-<dt>Label</dt><dd>Terminal Server Ip</dd></dl>
+<dt>ID</dt><dd>Terminal_Server_Ip-8989_305</dd></dl>
 
 #### Properties
 
@@ -177,6 +179,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **After Hours Slack**{::nomarkdown}<pre><code>  after_hours_slack</code></pre>{:/} | 1 | This field holds the after hours slack value use to delay locking the<br/>Terminal Server address.<br/>Between the hours of 4:30 pm and 8:00 am, If the FAILED ACCESS ATTEMPTS<br/>LOG has had more entries from this Terminal Server in the last 10 minutes<br/>than the slack value the TS IP address will be locked. | NUMERIC |  | 
 **Last Time Reset**{::nomarkdown}<pre><code>  last_time_reset</code></pre>{:/} | 2 | This field holds the FileMan date time that the LOCK on this Terminal<br/>Server was last cleared. | DATE-TIME |  | 
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

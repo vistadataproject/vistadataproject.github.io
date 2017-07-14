@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Lab_Section_Print-69_2
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Lab_Section_Print-69_2<br/>
+<a name="top"></a>
 # Lab Section Print (69.2)
 This file used to hold print headers for anatomic path reports and as a temporary holding file for path cumulative, incomplete and complete reports.  It may also be used for any accession area file since the NAME (.01) field is a pointer to the accession area file (68).
 
-<dl>
-<dt>Global</dt><dd>^LRO(69.2,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^LRO(69.2,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -48,13 +48,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Topography**{::nomarkdown}<pre><code>  topography</code></pre>{:/} | 61 | For entries the most recent results of tests selected below will be displayed or printed. <br/> Ex. You may want to know the results of selected chemistries for a patient who has just had a liver biopsy.  Topography entered would be LIVER<br/> For blood bank the tests entered will be displayed whenever a <br/> crossmatch is ordered or when components are displayed. | OBJECT |  | [Topography-69_61](#Topography-69_61)
 **Data Change Date**{::nomarkdown}<pre><code>  data_change_date</code></pre>{:/} | 999 | Date of the Data change | OBJECT |  | [Data_Change_Date-69_299](#Data_Change_Date-69_299)
 
-### Subfile
-#### <a name="Slide_Label-69_22"></a>Slide Label
+## Sub-Files
+### <a name="Slide_Label-69_22"></a>Slide Label (69.22)
 
 <dl>
-<dt>ID</dt><dd>Slide_Label-69_22</dd>
-<dt>File Type</dt><dd>69.22</dd>
-<dt>Label</dt><dd>Slide Label</dd></dl>
+<dt>ID</dt><dd>Slide_Label-69_22</dd></dl>
 
 #### Properties
 
@@ -63,12 +61,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Slide Label**{::nomarkdown}<pre><code>  slide_label</code></pre>{:/} | .01 |  | STRING | INDEXED<br/>REQUIRED | 
 **Print Name**{::nomarkdown}<pre><code>  print_name</code></pre>{:/} | .02 | Enter the actual text you want printed on the slide label. | STRING |  | 
 
-#### <a name="Incomplete_Reports_Queue-69_21"></a>Incomplete Reports Queue
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Incomplete_Reports_Queue-69_21"></a>Incomplete Reports Queue (69.21)
 
 <dl>
-<dt>ID</dt><dd>Incomplete_Reports_Queue-69_21</dd>
-<dt>File Type</dt><dd>69.21</dd>
-<dt>Label</dt><dd>Incomplete Reports Queue</dd></dl>
+<dt>ID</dt><dd>Incomplete_Reports_Queue-69_21</dd></dl>
 
 #### Properties
 
@@ -78,12 +77,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Inverse Date**{::nomarkdown}<pre><code>  inverse_date</code></pre>{:/} | 1 |  | NUMERIC | REQUIRED | 
 **Accession Date**{::nomarkdown}<pre><code>  accession_date</code></pre>{:/} | 2 | When specimen was accessioned. Stored in external date format.<br/> Usually only the year will be present. | STRING |  | 
 
-#### <a name="Completed_Reports_Queue-69_23"></a>Completed Reports Queue
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Completed_Reports_Queue-69_23"></a>Completed Reports Queue (69.23)
 
 <dl>
-<dt>ID</dt><dd>Completed_Reports_Queue-69_23</dd>
-<dt>File Type</dt><dd>69.23</dd>
-<dt>Label</dt><dd>Completed Reports Queue</dd></dl>
+<dt>ID</dt><dd>Completed_Reports_Queue-69_23</dd></dl>
 
 #### Properties
 
@@ -93,12 +93,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Inverse Date**{::nomarkdown}<pre><code>  inverse_date</code></pre>{:/} | 1 |  | NUMERIC |  | 
 **Accession Date**{::nomarkdown}<pre><code>  accession_date</code></pre>{:/} | 2 | When specimen accessioned. Stored in external date format.<br/> Usually only the year will be stored. | STRING |  | 
 
-#### <a name="Interim_Report_Number-69_29"></a>Interim Report Number
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Interim_Report_Number-69_29"></a>Interim Report Number (69.29)
 
 <dl>
-<dt>ID</dt><dd>Interim_Report_Number-69_29</dd>
-<dt>File Type</dt><dd>69.29</dd>
-<dt>Label</dt><dd>Interim Report Number</dd></dl>
+<dt>ID</dt><dd>Interim_Report_Number-69_29</dd></dl>
 
 #### Properties
 
@@ -107,12 +108,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Interim Report Number**{::nomarkdown}<pre><code>  interim_report_number</code></pre>{:/} | .01 |  | NUMERIC | REQUIRED | 
 **Location**{::nomarkdown}<pre><code>  location</code></pre>{:/} | 1 |  | STRING | INDEXED<br/>REQUIRED | 
 
-#### <a name="Reports_On_Demand-69_27"></a>Reports On Demand
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Reports_On_Demand-69_27"></a>Reports On Demand (69.27)
 
 <dl>
-<dt>ID</dt><dd>Reports_On_Demand-69_27</dd>
-<dt>File Type</dt><dd>69.27</dd>
-<dt>Label</dt><dd>Reports On Demand</dd></dl>
+<dt>ID</dt><dd>Reports_On_Demand-69_27</dd></dl>
 
 #### Properties
 
@@ -124,12 +126,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Dob**{::nomarkdown}<pre><code>  dob</code></pre>{:/} | .04 |   Date of Birth. | DATE-TIME |  | 
 **Id**{::nomarkdown}<pre><code>  id-_1</code></pre>{:/} | .1 |  Usually the SSN of the patient. | STRING |  | 
 
-#### <a name="Entry_Number-69_24"></a>Entry Number
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Entry_Number-69_24"></a>Entry Number (69.24)
 
 <dl>
-<dt>ID</dt><dd>Entry_Number-69_24</dd>
-<dt>File Type</dt><dd>69.24</dd>
-<dt>Label</dt><dd>Entry Number</dd></dl>
+<dt>ID</dt><dd>Entry_Number-69_24</dd></dl>
 
 #### Properties
 
@@ -139,12 +142,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Parent File**{::nomarkdown}<pre><code>  parent_file</code></pre>{:/} | .02 |  | NUMERIC |  | 
 **Name**{::nomarkdown}<pre><code>  name</code></pre>{:/} | .03 |  Name of the patient. | STRING | INDEXED | 
 
-#### <a name="Generic_List-69_26"></a>Generic List
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Generic_List-69_26"></a>Generic List (69.26)
 
 <dl>
-<dt>ID</dt><dd>Generic_List-69_26</dd>
-<dt>File Type</dt><dd>69.26</dd>
-<dt>Label</dt><dd>Generic List</dd></dl>
+<dt>ID</dt><dd>Generic_List-69_26</dd></dl>
 
 #### Properties
 
@@ -156,12 +160,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Item 4**{::nomarkdown}<pre><code>  item_4</code></pre>{:/} | .04 |  Third line of the label. | STRING |  | 
 **Item 5**{::nomarkdown}<pre><code>  item_5</code></pre>{:/} | .05 |  The forth line of the label. | STRING |  | 
 
-#### <a name="User_Request_List-69_28"></a>User Request List
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="User_Request_List-69_28"></a>User Request List (69.28)
 
 <dl>
-<dt>ID</dt><dd>User_Request_List-69_28</dd>
-<dt>File Type</dt><dd>69.28</dd>
-<dt>Label</dt><dd>User Request List</dd></dl>
+<dt>ID</dt><dd>User_Request_List-69_28</dd></dl>
 
 #### Properties
 
@@ -172,12 +177,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Lrdfn**{::nomarkdown}<pre><code>  lrdfn</code></pre>{:/} | 1 |  | OBJECT |  | [Lrdfn-69_3](#Lrdfn-69_3)
 **Lab Test Group**{::nomarkdown}<pre><code>  lab_test_group</code></pre>{:/} | 60 |  | OBJECT |  | [Lab_Test_Group-69_35](#Lab_Test_Group-69_35)
 
-#### <a name="Lrdfn-69_3"></a>Lrdfn
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Lrdfn-69_3"></a>Lrdfn (69.3)
 
 <dl>
-<dt>ID</dt><dd>Lrdfn-69_3</dd>
-<dt>File Type</dt><dd>69.3</dd>
-<dt>Label</dt><dd>Lrdfn</dd></dl>
+<dt>ID</dt><dd>Lrdfn-69_3</dd></dl>
 
 #### Properties
 
@@ -192,12 +198,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Id**{::nomarkdown}<pre><code>  id-_1</code></pre>{:/} | .1 |  | STRING |  | 
 **Patient Group**{::nomarkdown}<pre><code>  patient_group</code></pre>{:/} | 1 | To print only a specific group of patients enter that group name here. | STRING | INDEXED | 
 
-#### <a name="Lab_Test_Group-69_35"></a>Lab Test Group
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Lab_Test_Group-69_35"></a>Lab Test Group (69.35)
 
 <dl>
-<dt>ID</dt><dd>Lab_Test_Group-69_35</dd>
-<dt>File Type</dt><dd>69.35</dd>
-<dt>Label</dt><dd>Lab Test Group</dd></dl>
+<dt>ID</dt><dd>Lab_Test_Group-69_35</dd></dl>
 
 #### Properties
 
@@ -206,12 +213,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Lab Test Group**{::nomarkdown}<pre><code>  lab_test_group</code></pre>{:/} | .01 | You can have one or more groups. Each group can have up to 7 tests. | NUMERIC | REQUIRED | 
 **Test**{::nomarkdown}<pre><code>  test</code></pre>{:/} | 1 |  | OBJECT |  | [Test-69_36](#Test-69_36)
 
-#### <a name="Test-69_36"></a>Test
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Test-69_36"></a>Test (69.36)
 
 <dl>
-<dt>ID</dt><dd>Test-69_36</dd>
-<dt>File Type</dt><dd>69.36</dd>
-<dt>Label</dt><dd>Test</dd></dl>
+<dt>ID</dt><dd>Test-69_36</dd></dl>
 
 #### Properties
 
@@ -220,12 +228,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Number**{::nomarkdown}<pre><code>  number</code></pre>{:/} | .001 |  | IEN |  | 
 **Test**{::nomarkdown}<pre><code>  test</code></pre>{:/} | .01 | Up to 7 tests allowed.  The number will determine placement of the<br/> test on the display or print. | POINTER | REQUIRED | [Laboratory_Test-60](Laboratory_Test-60)
 
-#### <a name="File-69_31"></a>File
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="File-69_31"></a>File (69.31)
 
 <dl>
-<dt>ID</dt><dd>File-69_31</dd>
-<dt>File Type</dt><dd>69.31</dd>
-<dt>Label</dt><dd>File</dd></dl>
+<dt>ID</dt><dd>File-69_31</dd></dl>
 
 #### Properties
 
@@ -237,12 +246,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **User**{::nomarkdown}<pre><code>  user</code></pre>{:/} | .04 | Person who created list of entries | POINTER |  | [New_Person-200](New_Person-200)
 **File Entry**{::nomarkdown}<pre><code>  file_entry</code></pre>{:/} | 1 |  | OBJECT |  | [File_Entry-69_32](#File_Entry-69_32)
 
-#### <a name="File_Entry-69_32"></a>File Entry
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="File_Entry-69_32"></a>File Entry (69.32)
 
 <dl>
-<dt>ID</dt><dd>File_Entry-69_32</dd>
-<dt>File Type</dt><dd>69.32</dd>
-<dt>Label</dt><dd>File Entry</dd></dl>
+<dt>ID</dt><dd>File_Entry-69_32</dd></dl>
 
 #### Properties
 
@@ -253,12 +263,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Entry Comment**{::nomarkdown}<pre><code>  entry_comment</code></pre>{:/} | .02 | Description to identify the specific entry | STRING |  | 
 **Date**{::nomarkdown}<pre><code>  date</code></pre>{:/} | 1 |  | OBJECT |  | [Date-69_321](#Date-69_321)
 
-#### <a name="Date-69_321"></a>Date
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Date-69_321"></a>Date (69.321)
 
 <dl>
-<dt>ID</dt><dd>Date-69_321</dd>
-<dt>File Type</dt><dd>69.321</dd>
-<dt>Label</dt><dd>Date</dd></dl>
+<dt>ID</dt><dd>Date-69_321</dd></dl>
 
 #### Properties
 
@@ -270,12 +281,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Date Entry Printed?**{::nomarkdown}<pre><code>  date_entry_printed</code></pre>{:/} | .04 | If entry was printed then 'YES' should be entered.<br/> If entry was not printed then it should not be deleted. | BOOLEAN |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
 **Comment**{::nomarkdown}<pre><code>  comment</code></pre>{:/} | 1 |  | STRING |  | 
 
-#### <a name="Labels-69_25"></a>Labels
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Labels-69_25"></a>Labels (69.25)
 
 <dl>
-<dt>ID</dt><dd>Labels-69_25</dd>
-<dt>File Type</dt><dd>69.25</dd>
-<dt>Label</dt><dd>Labels</dd></dl>
+<dt>ID</dt><dd>Labels-69_25</dd></dl>
 
 #### Properties
 
@@ -287,12 +299,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Line 3**{::nomarkdown}<pre><code>  line_3</code></pre>{:/} | .04 |  | STRING |  | 
 **Line 4**{::nomarkdown}<pre><code>  line_4</code></pre>{:/} | .05 |  | STRING |  | 
 
-#### <a name="Topography_Category-69_211"></a>Topography Category
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Topography_Category-69_211"></a>Topography Category (69.211)
 
 <dl>
-<dt>ID</dt><dd>Topography_Category-69_211</dd>
-<dt>File Type</dt><dd>69.211</dd>
-<dt>Label</dt><dd>Topography Category</dd></dl>
+<dt>ID</dt><dd>Topography_Category-69_211</dd></dl>
 
 #### Properties
 
@@ -301,12 +314,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Topography Category**{::nomarkdown}<pre><code>  topography_category</code></pre>{:/} | .01 | Provides a default list of topography selections for anatomic pathology <br/>searches and reports.  For example if 28 is a selection then all <br/>SNOMED coded topographies beginning with 28 will be selected. | STRING | INDEXED<br/>REQUIRED | 
 **Comment**{::nomarkdown}<pre><code>  comment</code></pre>{:/} | .02 | Enter a comment associated with the topography category entry. | STRING | REQUIRED | 
 
-#### <a name="Test_List_Number-69_33"></a>Test List Number
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Test_List_Number-69_33"></a>Test List Number (69.33)
 
 <dl>
-<dt>ID</dt><dd>Test_List_Number-69_33</dd>
-<dt>File Type</dt><dd>69.33</dd>
-<dt>Label</dt><dd>Test List Number</dd></dl>
+<dt>ID</dt><dd>Test_List_Number-69_33</dd></dl>
 
 #### Properties
 
@@ -315,12 +329,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Test List Number**{::nomarkdown}<pre><code>  test_list_number</code></pre>{:/} | .01 |  | NUMERIC | REQUIRED | 
 **Test**{::nomarkdown}<pre><code>  test</code></pre>{:/} | 1 |  | OBJECT |  | [Test-69_34](#Test-69_34)
 
-#### <a name="Test-69_34"></a>Test
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Test-69_34"></a>Test (69.34)
 
 <dl>
-<dt>ID</dt><dd>Test-69_34</dd>
-<dt>File Type</dt><dd>69.34</dd>
-<dt>Label</dt><dd>Test</dd></dl>
+<dt>ID</dt><dd>Test-69_34</dd></dl>
 
 #### Properties
 
@@ -331,12 +346,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Specimen**{::nomarkdown}<pre><code>  specimen</code></pre>{:/} | .02 |  | POINTER | REQUIRED | [Topography_Field-61](Topography_Field-61)
 **Value**{::nomarkdown}<pre><code>  value</code></pre>{:/} | .03 |  | STRING | REQUIRED | 
 
-#### <a name="Topography-69_61"></a>Topography
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Topography-69_61"></a>Topography (69.61)
 
 <dl>
-<dt>ID</dt><dd>Topography-69_61</dd>
-<dt>File Type</dt><dd>69.61</dd>
-<dt>Label</dt><dd>Topography</dd></dl>
+<dt>ID</dt><dd>Topography-69_61</dd></dl>
 
 #### Properties
 
@@ -346,12 +362,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Test To Display**{::nomarkdown}<pre><code>  test_to_display</code></pre>{:/} | 1 | Most recent results, if any, will be displayed for tests selected associated with a specific topography indicated above when that organ or tissue is submitted to anatomic pathology. | OBJECT |  | [Test_To_Display-69_62](#Test_To_Display-69_62)
 **Test To Print**{::nomarkdown}<pre><code>  test_to_print</code></pre>{:/} | 2 |  | OBJECT |  | [Test_To_Print-69_63](#Test_To_Print-69_63)
 
-#### <a name="Test_To_Display-69_62"></a>Test To Display
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Test_To_Display-69_62"></a>Test To Display (69.62)
 
 <dl>
-<dt>ID</dt><dd>Test_To_Display-69_62</dd>
-<dt>File Type</dt><dd>69.62</dd>
-<dt>Label</dt><dd>Test To Display</dd></dl>
+<dt>ID</dt><dd>Test_To_Display-69_62</dd></dl>
 
 #### Properties
 
@@ -361,12 +378,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Test To Display**{::nomarkdown}<pre><code>  test_to_display</code></pre>{:/} | .01 | Most recent results, if any, will be displayed for tests selected <br/> associated with a specimen. | POINTER | REQUIRED | [Laboratory_Test-60](Laboratory_Test-60)
 **Specimen**{::nomarkdown}<pre><code>  specimen</code></pre>{:/} | .02 |  | POINTER | REQUIRED | [Topography_Field-61](Topography_Field-61)
 
-#### <a name="Test_To_Print-69_63"></a>Test To Print
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Test_To_Print-69_63"></a>Test To Print (69.63)
 
 <dl>
-<dt>ID</dt><dd>Test_To_Print-69_63</dd>
-<dt>File Type</dt><dd>69.63</dd>
-<dt>Label</dt><dd>Test To Print</dd></dl>
+<dt>ID</dt><dd>Test_To_Print-69_63</dd></dl>
 
 #### Properties
 
@@ -376,12 +394,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Test To Print**{::nomarkdown}<pre><code>  test_to_print</code></pre>{:/} | .01 |  | POINTER | REQUIRED | [Laboratory_Test-60](Laboratory_Test-60)
 **Specimen**{::nomarkdown}<pre><code>  specimen</code></pre>{:/} | .02 |  | POINTER | REQUIRED | [Topography_Field-61](Topography_Field-61)
 
-#### <a name="Data_Change_Date-69_299"></a>Data Change Date
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Data_Change_Date-69_299"></a>Data Change Date (69.299)
 
 <dl>
-<dt>ID</dt><dd>Data_Change_Date-69_299</dd>
-<dt>File Type</dt><dd>69.299</dd>
-<dt>Label</dt><dd>Data Change Date</dd></dl>
+<dt>ID</dt><dd>Data_Change_Date-69_299</dd></dl>
 
 #### Properties
 
@@ -397,12 +416,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Internal File #**{::nomarkdown}<pre><code>  internal_file_number</code></pre>{:/} | .08 |  The internal number where the data is stored. | STRING |  | 
 **Subfile Field Name**{::nomarkdown}<pre><code>  subfile_field_name</code></pre>{:/} | 1 |  | OBJECT |  | [Subfile_Field_Name-69_37](#Subfile_Field_Name-69_37)
 
-#### <a name="Subfile_Field_Name-69_37"></a>Subfile Field Name
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Subfile_Field_Name-69_37"></a>Subfile Field Name (69.37)
 
 <dl>
-<dt>ID</dt><dd>Subfile_Field_Name-69_37</dd>
-<dt>File Type</dt><dd>69.37</dd>
-<dt>Label</dt><dd>Subfile Field Name</dd></dl>
+<dt>ID</dt><dd>Subfile_Field_Name-69_37</dd></dl>
 
 #### Properties
 
@@ -412,6 +432,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Subfile Field Entry**{::nomarkdown}<pre><code>  subfile_field_entry</code></pre>{:/} | .02 |  | STRING |  | 
 **Subfile Field #**{::nomarkdown}<pre><code>  subfile_field_number</code></pre>{:/} | .03 |  | STRING |  | 
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ORWRP REPORT TEXT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ORWRP REPORT TEXT<br/>
 # ORWRP REPORT TEXT
 
 This rpc retrieves the report text for a report selected onthe Report tab.the report format on the roll 'n scroll version of CPRS.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [ORWRP](http://code.osehra.org/dox/Routine_ORWRP_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -27,7 +29,7 @@ REPORT SECTION | LITERAL | 2 | true | This parameter specifics which portion of 
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -39,11 +41,11 @@ Code | {::nomarkdown}<pre><code> N X,X0,X2,X4,I,J,ENT,RTN,ID,REMOTE,GO,OUT,MAX,S
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
 Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fLabs.pas">fLabs.pas</a>{:/}
 Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fReports.pas">fReports.pas</a>{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

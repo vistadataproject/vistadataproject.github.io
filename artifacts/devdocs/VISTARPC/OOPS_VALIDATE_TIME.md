@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; OOPS VALIDATE TIME
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; OOPS VALIDATE TIME<br/>
 # OOPS VALIDATE TIME
 
 This broker call will compare two dates (which are part of the input) based on the 3rd input paramater which is a flag indicating which type of compare should be done.  The RESULTS output indicates whether the dates pass (VALIDDATE) or fail (DATE ERROR) the compare.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [OOPSGUI2](http://code.osehra.org/dox/Routine_OOPSGUI2_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ FLAG | LITERAL |  | true | This input parm indicates the type of comparison to b
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

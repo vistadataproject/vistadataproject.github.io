@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DENTV DPT GET ICN
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DENTV DPT GET ICN<br/>
 # DENTV DPT GET ICN
 
 This RPC takes in a patient identifier and returns the patient's ICN.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DENTVUTL](http://code.osehra.org/dox/Routine_DENTVUTL_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ ISSSN | LITERAL | 1 | true | A boolean flag (0,1) which indicates whether or not
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; QACV PERSON LOOKUP VLH
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; QACV PERSON LOOKUP VLH<br/>
 # QACV PERSON LOOKUP VLH
 
 Pass the name of an employee formatted as "last_name,first_name".  The routine does a lister call on the VistA NEW PERSON file (200) to findthe next set of records that match the name. Partial name lookup issupported. For example, "Sm" will find all "Smiths" and Smurfs, "Sm,J"will find "Smith,Joe", and "Smurf,Jimmy". The routine returns the IEN, name components, title and mail code for theperson(s) who match the lookup value, in XML format. In addition, the XMLdata contains a flag indicating whether there are more matching records toreturn. If it is set to 1, then the caller can make another call to getthe next 'N' records. The XML data also contains a 'next name' and 'nextIEN' value. This is used to tell the FileMan Lister where to start lookingon subsequent calls, in order to return the next N records. These two'from' values must be passed as input parameters to subsequent calls.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [QACVEMPX](http://code.osehra.org/dox/Routine_QACVEMPX_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -26,4 +28,4 @@ PATSFRM1 | LITERAL | 35 | true | On the first call to this RPC, this parameter s
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

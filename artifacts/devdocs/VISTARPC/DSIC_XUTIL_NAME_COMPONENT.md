@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIC XUTIL NAME COMPONENT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIC XUTIL NAME COMPONENT<br/>
 # DSIC XUTIL NAME COMPONENT
 
 This will take a standard VistA person name in the format Last,First M and return the individual name components.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSICDPT](http://code.osehra.org/dox/Routine_DSICDPT_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ VNAME | LITERAL | 50 | true | This is the standard VistA person name in the form
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

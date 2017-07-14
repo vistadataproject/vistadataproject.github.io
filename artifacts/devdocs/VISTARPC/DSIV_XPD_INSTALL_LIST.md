@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIV XPD INSTALL LIST
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIV XPD INSTALL LIST<br/>
 # DSIV XPD INSTALL LIST
 
 This will return a list of all the entries in the INSTALL file.  You passin either a KIDS Build name or the name portion of the Build name (aBuild name without the version number or patch number).  All Installsmatching that name will be returned in reverse chronological order (thenewest first).
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIVXPDU](http://code.osehra.org/dox/Routine_DSIVXPDU_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ DSISTAT | LITERAL | 5 | true | This is a string of numbers which can be 0,1,2,3,
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

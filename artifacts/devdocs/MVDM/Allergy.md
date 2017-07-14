@@ -3,30 +3,21 @@ layout: default
 title: MVDM
 ---
 
-## [MVDM](TableOfContents) &#8594; Allergy
-# Patient Allergies
+#### [Developer Documentation](../index) &#187; [MVDM](TableOfContents) &#187; Allergy<br/>
+<a name="top"></a>
+# Allergy
+
+### Patient Allergies
+
 Contains patient allergy/adverse reaction information.
 
-<dl>
-<dt>File Type</dt><dd>120.8</dd>
-<dt>Base VDM Class</dt><dd>Patient_Allergies-120_8</dd>
-</dl>
+**Fileman ID:** 120.8
 
-### From VDM
-<dl>
-<dt>Queries</dt><dd>Patient_Allergy-120_8: <pre><code>DESCRIBE $ID</code></pre>
-Adverse_Reaction_Reporting-120_85: <pre><code>DESCRIBE 120_85 FILTER(.03&#x3D;$ID)</code></pre>
-</dd>
-<dt>List</dt><dd><pre><code>SELECT 120_8 FILTER(!bound(22))</code></pre></dd>
-<dt>List Per Patient</dt><dd><pre><code>SELECT 120_8 FILTER(.01&#x3D;$PID&amp;&amp;!bound(22))</code></pre></dd>
-</dl>
+**Base VDM Class:** [Patient_Allergies-120_8](../VDM/Patient_Allergies-120_8)
 
+## Property Summary
 
-### Property Summary
-
-Property Count: **16**
-
-Sub-Object Count: **5**
+**Property Count:** 16
 
 Type | Count
 --- | ---
@@ -37,9 +28,21 @@ DATE-TIME | 1
 DATE | 1
 BOOLEAN | 1
 
-### Properties
+**Sub-Object Count:** 5
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+ID | Label | Field ID
+--- | --- | ---
+1 | [Comment](#Comment) | Comment
+2 | [Id Band Marked](#IdBandMarked) | IdBandMarked
+3 | [Reactant Details](#ReactantDetails) | ReactantDetails
+4 | [Reaction](#Reaction) | Reaction
+5 | [Removal Details](#RemovalDetails) | RemovalDetails
+
+[&uarr; Return to top](#top)<br/>
+
+## Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
 **Patient**{::nomarkdown}<pre><code>  patient</code></pre>{:/} | POINTER | patient | $PATIENTID |  | 
 **Reactant**{::nomarkdown}<pre><code>  reactant</code></pre>{:/} | POINTER | *GENERATED* |  | REQUIRED | 
@@ -58,79 +61,81 @@ Field | Datatype | FromVDM | Default | Attributes | Range
 **Removal Details**{::nomarkdown}<pre><code>  removalDetails</code></pre>{:/} | OBJECT | *GENERATED* |  |  | [RemovalDetails](#RemovalDetails)
 **Comments**{::nomarkdown}<pre><code>  comments</code></pre>{:/} | OBJECT | *GENERATED* |  | CREATE<br/>UPDATE | [Comment](#Comment)
 
-### SubObjects
-#### <a name="ReactantDetails"></a>
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>ReactantDetails</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
+## Sub-Objects
+### <a name="Comment"></a>1. Comment
+
+**Field ID:** Comment
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**Drug Ingredients**{::nomarkdown}<pre><code>  drugIngredients</code></pre>{:/} | POINTER | N/A |  |  | 
-**Drug Classes**{::nomarkdown}<pre><code>  drugClasses</code></pre>{:/} | POINTER | N/A |  |  | 
+**Date/Time Comment Entered**{::nomarkdown}<pre><code>  dateTimeEntered</code></pre>{:/} | DATE-TIME | *CUSTOM* | $NOW |  | 
+**User Entering**{::nomarkdown}<pre><code>  enteredBy</code></pre>{:/} | POINTER | *CUSTOM* | $USERID |  | 
+**Comment**{::nomarkdown}<pre><code>  comment</code></pre>{:/} | STRING | *CUSTOM* |  | REQUIRED<br/>UPDATE | 
 
-#### <a name="Reaction"></a>
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>Reaction</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
 
-#### Properties
+### <a name="IdBandMarked"></a>2. Id Band Marked
 
-Field | Datatype | FromVDM | Default | Attributes | Range
---- | --- | --- | --- | --- | ---
-**Reaction**{::nomarkdown}<pre><code>  reaction</code></pre>{:/} | POINTER | reaction |  |  | 
-**Date/Time of Reaction**{::nomarkdown}<pre><code>  dateTimeOccurred</code></pre>{:/} | DATE-TIME | date_entered |  |  | 
-
-#### <a name="IdBandMarked"></a>Id Band Marked
-
-<dl>
-<dt>ID</dt><dd>IdBandMarked</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd>Id Band Marked</dd></dl>
+**Field ID:** IdBandMarked
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
 **Date/Time**{::nomarkdown}<pre><code>  dateTimeEntered</code></pre>{:/} | DATE-TIME | date_time | $NOW |  | 
 **User Entering**{::nomarkdown}<pre><code>  enteredBy</code></pre>{:/} | POINTER | user_entering | $USERID |  | 
 
-#### <a name="RemovalDetails"></a>
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>RemovalDetails</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
 
-#### Properties
+### <a name="ReactantDetails"></a>3. Reactant Details
 
-Field | Datatype | FromVDM | Default | Attributes | Range
---- | --- | --- | --- | --- | ---
-**Date/Time Entered**{::nomarkdown}<pre><code>  dateTimeEntered</code></pre>{:/} | DATE-TIME | N/A | $NOW |  | 
-**Entered By**{::nomarkdown}<pre><code>  enteredBy</code></pre>{:/} | POINTER | N/A | $USERID |  | 
-**Comment**{::nomarkdown}<pre><code>  comment</code></pre>{:/} | STRING | N/A |  |  | 
-
-#### <a name="Comment"></a>Comment
-
-<dl>
-<dt>ID</dt><dd>Comment</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd>Comment</dd></dl>
+**Field ID:** ReactantDetails
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**Date/Time Comment Entered**{::nomarkdown}<pre><code>  dateTimeEntered</code></pre>{:/} | DATE-TIME | N/A | $NOW |  | 
-**User Entering**{::nomarkdown}<pre><code>  enteredBy</code></pre>{:/} | POINTER | N/A | $USERID |  | 
-**Comment**{::nomarkdown}<pre><code>  comment</code></pre>{:/} | STRING | N/A |  | REQUIRED<br/>UPDATE | 
+**Drug Ingredients**{::nomarkdown}<pre><code>  drugIngredients</code></pre>{:/} | POINTER | *CUSTOM* |  |  | 
+**Drug Classes**{::nomarkdown}<pre><code>  drugClasses</code></pre>{:/} | POINTER | *CUSTOM* |  |  | 
+
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Reaction"></a>4. Reaction
+
+**Field ID:** Reaction
+
+#### Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Reaction**{::nomarkdown}<pre><code>  reaction</code></pre>{:/} | POINTER | reaction |  |  | 
+**Date/Time of Reaction**{::nomarkdown}<pre><code>  dateTimeOccurred</code></pre>{:/} | DATE-TIME | date_entered |  |  | 
+
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="RemovalDetails"></a>5. Removal Details
+
+**Field ID:** RemovalDetails
+
+#### Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Date/Time Entered**{::nomarkdown}<pre><code>  dateTimeEntered</code></pre>{:/} | DATE-TIME | *CUSTOM* | $NOW |  | 
+**Entered By**{::nomarkdown}<pre><code>  enteredBy</code></pre>{:/} | POINTER | *CUSTOM* | $USERID |  | 
+**Comment**{::nomarkdown}<pre><code>  comment</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+
+[&uarr; Return to top](#top)<br/>
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:06 pm</p>{:/}
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:34 pm</p>{:/}

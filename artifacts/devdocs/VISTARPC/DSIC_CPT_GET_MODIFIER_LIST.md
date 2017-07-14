@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIC CPT GET MODIFIER LIST
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIC CPT GET MODIFIER LIST<br/>
 # DSIC CPT GET MODIFIER LIST
 
 Return a list of all acceptable modifiers for a CPT code
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSICCPT](http://code.osehra.org/dox/Routine_DSICCPT_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -26,4 +28,4 @@ DFN | LITERAL | 14 | true | This is the ien to the PATIENT file.  It is not used
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

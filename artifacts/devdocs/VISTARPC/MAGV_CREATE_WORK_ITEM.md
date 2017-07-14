@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGV CREATE WORK ITEM
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGV CREATE WORK ITEM<br/>
 # MAGV CREATE WORK ITEM
 
 This RPC creates work item entries in the MAG WORK ITEM file (#2006.941).
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGVIM01](http://code.osehra.org/dox/Routine_MAGVIM01_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -30,4 +32,4 @@ CRTAPP | LITERAL |  |  | This is the application that created the work item.
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

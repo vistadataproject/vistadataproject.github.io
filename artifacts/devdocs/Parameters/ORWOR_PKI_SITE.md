@@ -3,24 +3,25 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; ORWOR PKI SITE
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; ORWOR PKI SITE<br/>
 # ORWOR PKI SITE
 
 &#x27;Yes&#x27; indicates that PKI Digital Signature functionality is enabled.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 192
 Summary | PKI Functionality Site Enabled
 Value Type | yes
 Value Domain | Y:yes;N:no
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 2 | DIVISION
 3 | SYSTEM
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

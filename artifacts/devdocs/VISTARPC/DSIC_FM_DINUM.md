@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIC FM DINUM
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIC FM DINUM<br/>
 # DSIC FM DINUM
 
 This will do a lookup on the inputted file for the requested value.  This is only for files whose .01 field is defined to be a DINUM pointer to afile.  If the lookup value in not in the inputted file, then this will add that pointer to that file.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSICFM02](http://code.osehra.org/dox/Routine_DSICFM02_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -26,4 +28,4 @@ IENS | LITERAL | 30 | true | This field is only valid if you are trying to add a
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

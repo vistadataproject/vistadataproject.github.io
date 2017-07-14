@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; RMPR ENCRYPT PCARD
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; RMPR ENCRYPT PCARD<br/>
 # RMPR ENCRYPT PCARD
 
 Remote Procedure to update the PROSTHETICS 1358 file #664 with the encrypted PCARD.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [RMPR9ENC](http://code.osehra.org/dox/Routine_RMPR9ENC_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ RMPRA | LITERAL | 30 |  |
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

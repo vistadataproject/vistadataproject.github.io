@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; TIU PERSONAL TITLE LIST
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; TIU PERSONAL TITLE LIST<br/>
 # TIU PERSONAL TITLE LIST
 
 This Remote Procedure returns the user's list of preferred titles for agiven class of documents, along with the default title, if specified.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [TIUSRVD](http://code.osehra.org/dox/Routine_TIUSRVD_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,7 +27,7 @@ INDEX | LITERAL |  | true | This is the array subscript from which to begin incr
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -36,7 +38,7 @@ Code | {::nomarkdown}<pre><code> N TIUI,TIUDA,TIUDFLT,INLST<br/> S TIUDA=+$O(^TI
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
@@ -45,4 +47,4 @@ Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master
 Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas">rTIU.pas</a>{:/}
 Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas">Consults/rConsults.pas</a>{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

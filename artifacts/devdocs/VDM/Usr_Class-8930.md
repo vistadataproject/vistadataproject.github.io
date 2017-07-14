@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Usr_Class-8930
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Usr_Class-8930<br/>
+<a name="top"></a>
 # Usr Class (8930)
 This file is intended to allow the definition of user classes in such a way that they are useful across packages.  It will undoubtedly evolve with more experience in this area.   These user classes are then used to support part of the the "authorization" concept - who may do what to a document, order, etc.   They are also used to support part of the "subscription" concept - who should receive something, e.g. a notification that a document needs signature.   The User Authorization/Subscription file points to the User Class file to allocate authorizations/subscriptions to appropriate user classes.   The User Class Membership file links users in the New Person file to User Classes.   This file supports an infinite hierarchy of subclasses, with each entry having as many subclasses as desired.  Subclasses are contained in the same file, as entries in their own right.  A class automatically contains as members all members of its subclasses, as well as explicit members of the class itself.
 
-<dl>
-<dt>Global</dt><dd>^USR(8930,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^USR(8930,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -26,4 +26,4 @@ Field | ID | Description | Datatype | Attributes | Range
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

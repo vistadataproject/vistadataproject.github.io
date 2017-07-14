@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; OOPS GET 2260 DATA
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; OOPS GET 2260 DATA<br/>
 # OOPS GET 2260 DATA
 
 This broker call will return data from ASISTS file 2260. The fields (in the array) returned will vary depending on the input parameter.One field of the input parameter is FORM. If the claim is for a 2162, all the fields associated with "2162" nodes along with zero nodes will be returned.If the form is either CA1 or CA2 all associated nodes will be returned inaddition to the zero and "CA" nodes.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [OOPSGUI2](http://code.osehra.org/dox/Routine_OOPSGUI2_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ PERS |  |  |  |
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

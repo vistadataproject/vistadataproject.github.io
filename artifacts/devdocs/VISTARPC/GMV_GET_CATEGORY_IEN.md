@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; GMV GET CATEGORY IEN
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; GMV GET CATEGORY IEN<br/>
 # GMV GET CATEGORY IEN
 
 Returns the IEN if the value is found in the GMRV VITAL CATEGORY (#120.53)file. This remote procedure call is documented in Integration Agreement 4354.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [GMVUTL8](http://code.osehra.org/dox/Routine_GMVUTL8_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,7 +25,7 @@ GMVCAT | LITERAL | 45 | true | GMVCAT &#x3D; Name of Category (from FILE 120.53)
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -35,10 +37,10 @@ Code | {::nomarkdown}<pre><code> I GMVCAT="" S RESULT=-1 Q<br/> S RESULT=+$O(^GM
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
 DLL File | {::nomarkdown}No Source Code Available (GMV_VitalsViewEnter.dll){:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

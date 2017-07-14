@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Install-9_7
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Install-9_7<br/>
+<a name="top"></a>
 # Install (9.7)
 This file contains the installation information for a site from the Kernel Installation & Distribution System.  This file should not be edited. All information is updated when a new package is installed at a site.
 
-<dl>
-<dt>Global</dt><dd>^XPD(9.7,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^XPD(9.7,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -44,13 +44,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Test#**{::nomarkdown}<pre><code>  testnumber</code></pre>{:/} | 61 | This field holds the Test Version Number from the patch module on FORUM. | NUMERIC |  | 
 **Seq#**{::nomarkdown}<pre><code>  seqnumber</code></pre>{:/} | 62 | This field holds the Release Sequence # from the Patch Module on FORUM. | NUMERIC |  | 
 
-### Subfile
-#### <a name="Preinit_Check_Points-9_713"></a>Pre-init Check Points
+## Sub-Files
+### <a name="Preinit_Check_Points-9_713"></a>Pre-init Check Points (9.713)
 
 <dl>
-<dt>ID</dt><dd>Preinit_Check_Points-9_713</dd>
-<dt>File Type</dt><dd>9.713</dd>
-<dt>Label</dt><dd>Pre-init Check Points</dd></dl>
+<dt>ID</dt><dd>Preinit_Check_Points-9_713</dd></dl>
 
 #### Properties
 
@@ -61,12 +59,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Callback**{::nomarkdown}<pre><code>  callback</code></pre>{:/} | 2 | This is a routine that will be run if this Check Point didn't complete<br/>and the install process had to be restarted. | STRING |  | 
 **Parameters**{::nomarkdown}<pre><code>  parameters</code></pre>{:/} | 3 | This is optional parameters that may be need during a restart. | STRING |  | 
 
-#### <a name="File-9_714"></a>File
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="File-9_714"></a>File (9.714)
 
 <dl>
-<dt>ID</dt><dd>File-9_714</dd>
-<dt>File Type</dt><dd>9.714</dd>
-<dt>Label</dt><dd>File</dd></dl>
+<dt>ID</dt><dd>File-9_714</dd></dl>
 
 #### Properties
 
@@ -76,12 +75,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Data Dictionary Time**{::nomarkdown}<pre><code>  data_dictionary_time</code></pre>{:/} | 1 | The time the Data Dictionary was installed at this site. | DATE-TIME |  | 
 **Data Time**{::nomarkdown}<pre><code>  data_time</code></pre>{:/} | 2 | The time the Data was installed at this site. | DATE-TIME |  | 
 
-#### <a name="Build_Components-9_715"></a>Build Components
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Build_Components-9_715"></a>Build Components (9.715)
 
 <dl>
-<dt>ID</dt><dd>Build_Components-9_715</dd>
-<dt>File Type</dt><dd>9.715</dd>
-<dt>Label</dt><dd>Build Components</dd></dl>
+<dt>ID</dt><dd>Build_Components-9_715</dd></dl>
 
 #### Properties
 
@@ -91,12 +91,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Data Time**{::nomarkdown}<pre><code>  data_time</code></pre>{:/} | 1 | This is the time the package component was installed. | DATE-TIME |  | 
 **Install Order**{::nomarkdown}<pre><code>  install_order</code></pre>{:/} | 2 | This is the order the Build Components were installed. | NUMERIC | INDEXED | 
 
-#### <a name="Postinit_Check_Points-9_716"></a>Post-init Check Points
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Postinit_Check_Points-9_716"></a>Post-init Check Points (9.716)
 
 <dl>
-<dt>ID</dt><dd>Postinit_Check_Points-9_716</dd>
-<dt>File Type</dt><dd>9.716</dd>
-<dt>Label</dt><dd>Post-init Check Points</dd></dl>
+<dt>ID</dt><dd>Postinit_Check_Points-9_716</dd></dl>
 
 #### Properties
 
@@ -107,12 +108,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Callback**{::nomarkdown}<pre><code>  callback</code></pre>{:/} | 2 | This is a routine that will be run if this Check Point didn't complete<br/>and the install process had to be restarted. | STRING |  | 
 **Parameters**{::nomarkdown}<pre><code>  parameters</code></pre>{:/} | 3 | This is optional parameters that may be need during a restart. | STRING |  | 
 
-#### <a name="Globals-9_718"></a>Globals
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Globals-9_718"></a>Globals (9.718)
 
 <dl>
-<dt>ID</dt><dd>Globals-9_718</dd>
-<dt>File Type</dt><dd>9.718</dd>
-<dt>Label</dt><dd>Globals</dd></dl>
+<dt>ID</dt><dd>Globals-9_718</dd></dl>
 
 #### Properties
 
@@ -121,12 +123,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Globals**{::nomarkdown}<pre><code>  globals</code></pre>{:/} | .01 | The name of a Global or Global root that was installed by this<br/>package. | STRING | INDEXED<br/>REQUIRED | 
 **Completed Time**{::nomarkdown}<pre><code>  completed_time</code></pre>{:/} | 1 | This is the time the Global was installed. | DATE-TIME |  | 
 
-#### <a name="Volume_Set-9_703"></a>Volume Set
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Volume_Set-9_703"></a>Volume Set (9.703)
 
 <dl>
-<dt>ID</dt><dd>Volume_Set-9_703</dd>
-<dt>File Type</dt><dd>9.703</dd>
-<dt>Label</dt><dd>Volume Set</dd></dl>
+<dt>ID</dt><dd>Volume_Set-9_703</dd></dl>
 
 #### Properties
 
@@ -138,12 +141,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Queued Task Number**{::nomarkdown}<pre><code>  queued_task_number</code></pre>{:/} | 3 | This is the Task number for the job that is updating the VOLUME SET. | NUMERIC |  | 
 **Last Update**{::nomarkdown}<pre><code>  last_update</code></pre>{:/} | 4 | This is the $H value from the job that is updating the VOLUME SET. It should<br/>be updated every 60 seconds. | STRING |  | 
 
-#### <a name="Install_Answers-9_701"></a>Install Answers
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Install_Answers-9_701"></a>Install Answers (9.701)
 
 <dl>
-<dt>ID</dt><dd>Install_Answers-9_701</dd>
-<dt>File Type</dt><dd>9.701</dd>
-<dt>Label</dt><dd>Install Answers</dd></dl>
+<dt>ID</dt><dd>Install_Answers-9_701</dd></dl>
 
 #### Properties
 
@@ -154,6 +158,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **External Answer**{::nomarkdown}<pre><code>  external_answer</code></pre>{:/} | 2 | This is the external format of the Install Question answer. | STRING |  | 
 **Answer**{::nomarkdown}<pre><code>  answer</code></pre>{:/} | 3 | This is the internal format of the Install Question answer. | STRING |  | 
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

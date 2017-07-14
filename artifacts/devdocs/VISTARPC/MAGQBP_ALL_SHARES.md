@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGQBP ALL SHARES
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGQBP ALL SHARES<br/>
 # MAGQBP ALL SHARES
 
 The output of this RPC is a list of all online magnetic shares(non-routing).  This list establishes a set of roots for the purge processto downwardly traverse and evaluate the age and VistA attributes of eachimage file for the purpose of purging archaic and archived files.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGQBUT1](http://code.osehra.org/dox/Routine_MAGQBUT1_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ TYPE | LITERAL | 8 | true | This value is used to determine if there is a screen
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

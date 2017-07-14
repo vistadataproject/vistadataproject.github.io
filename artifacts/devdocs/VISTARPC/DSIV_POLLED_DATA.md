@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIV POLLED DATA
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIV POLLED DATA<br/>
 # DSIV POLLED DATA
 
 Used to check the status of the background job kicked off by the DSIV REPORT QUEUE rpc, and to get the report results.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIVICR](http://code.osehra.org/dox/Routine_DSIVICR_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ MORE | LITERAL | 1 | true | MORE&#x3D;0 for the first call, MORE&#x3D;1 for subs
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

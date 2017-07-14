@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIF INP ADD AUTH
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIF INP ADD AUTH<br/>
 # DSIF INP ADD AUTH
 
 This RPC is used to pass in an array of values to add a new Inpatient Authorization.  It does verification for required data.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIFINP2](http://code.osehra.org/dox/Routine_DSIFINP2_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ ARRAY | LIST | 350 | true |  Input array values (add/edit RPC&#x27;s) ; Input ar
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

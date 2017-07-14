@@ -3,29 +3,21 @@ layout: default
 title: MVDM
 ---
 
-## [MVDM](TableOfContents) &#8594; Patient
+#### [Developer Documentation](../index) &#187; [MVDM](TableOfContents) &#187; Patient<br/>
+<a name="top"></a>
 # Patient
+
+### Patient
+
 No Description
 
-<dl>
-<dt>File Type</dt><dd>2</dd>
-<dt>Base VDM Class</dt><dd>Patient-2</dd>
-</dl>
+**Fileman ID:** 2
 
-### From VDM
-<dl>
-<dt>Queries</dt><dd>Patient-2: <pre><code>DESCRIBE $ID</code></pre>
-</dd>
-<dt>List</dt><dd><pre><code>SELECT 2</code></pre></dd>
-<dt>List Per Patient</dt><dd><pre><code></code></pre></dd>
-</dl>
+**Base VDM Class:** [Patient-2](../VDM/Patient-2)
 
+## Property Summary
 
-### Property Summary
-
-Property Count: **190**
-
-Sub-Object Count: **65**
+**Property Count:** 190
 
 Type | Count
 --- | ---
@@ -39,9 +31,81 @@ OBJECT | 27
 DATE-TIME | 27
 UNKNOWN | 1
 
-### Properties
+**Sub-Object Count:** 65
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+ID | Label | Field ID
+--- | --- | ---
+1 | [Contact Information](#Contact_Information-2_3226) | Contact_Information-2_3226
+2 | [Eligibility/Benefit](#Eligibility_Benefit-2_322) | Eligibility_Benefit-2_322
+3 | [Group Provider Info](#Group_Provider_Info-2_332) | Group_Provider_Info-2_332
+4 | [Group Reference Information](#Group_Reference_Information-2_3129) | Group_Reference_Information-2_3129
+5 | [Health Care Code Information](#Health_Care_Code_Information-2_31211) | Health_Care_Code_Information-2_31211
+6 | [Healthcare Services Delivery](#Healthcare_Services_Delivery-2_3227) | Healthcare_Services_Delivery-2_3227
+7 | [Subscriber Additional Info](#Subscriber_Additional_Info-2_3229) | Subscriber_Additional_Info-2_3229
+8 | [Subscriber Dates](#Subscriber_Dates-2_3228) | Subscriber_Dates-2_3228
+9 | [Subscriber Reference Id](#Subscriber_Reference_Id-2_32291) | Subscriber_Reference_Id-2_32291
+10 | [Agent Orange Exposure](#agentOrangeExposure) | agentOrangeExposure
+11 | [Alias](#alias) | alias
+12 | [Appointment](#appointment) | appointment
+13 | [Archived Data](#archivedData) | archivedData
+14 | [Confidential Address Category](#categories) | categories
+15 | [Cd History Date](#cdHistoryDate) | cdHistoryDate
+16 | [Cd Reason](#cdReason) | cdReason
+17 | [Cd Status Conditions](#cdStatusConditions) | cdStatusConditions
+18 | [Cd Status Procedures](#cdStatusProcedures) | cdStatusProcedures
+19 | [Civil Guardian](#civilGuardian) | civilGuardian
+20 | [Claim](#claim) | claim
+21 | [Cmor History](#cmorHistory) | cmorHistory
+22 | [Combat Service](#combatService) | combatService
+23 | [Combat Service](#combatService) | combatService
+24 | [Confidential Address](#confidentialAddress) | confidentialAddress
+25 | [Contacts](#contacts) | contacts
+26 | [Date Of Archive](#dateOfArchive) | dateOfArchive
+27 | [Date Of Dental Treatment](#dateOfDentalTreatment) | dateOfDentalTreatment
+28 | [Designee](#designee) | designee
+29 | [Disposition Log-In Date/Time](#dispositionLoginDateTime) | dispositionLoginDateTime
+30 | [Employer](#employer) | employer
+31 | [Enrollment Clinic](#enrollmentClinic) | enrollmentClinic
+32 | [Enrollment Data](#enrollmentData) | enrollmentData
+33 | [Ethnicity Information](#ethnicityInformation) | ethnicityInformation
+34 | [Grenada Service](#grenadaService) | grenadaService
+35 | [Icn History](#icnHistory) | icnHistory
+36 | [Ineligibility](#ineligibility) | ineligibility
+37 | [Insurance Type](#insuranceType) | insuranceType
+38 | [Lebanon Service](#lebanonService) | lebanonService
+39 | [Military Service](#militaryService) | militaryService
+40 | [Military Service Episode](#militaryServiceEpisodes) | militaryServiceEpisodes
+41 | [Panama Service](#panamaService) | panamaService
+42 | [Patient Contact](#patientContact) | patientContact
+43 | [Patient Eligibilities](#patientEligibilities) | patientEligibilities
+44 | [Permanent Address](#permanentAddress) | permanentAddress
+45 | [Persian Gulf Service](#persianGulfService) | persianGulfService
+46 | [Ph Date/Time Updated](#phDateTimeUpdated) | phDateTimeUpdated
+47 | [Pow Status](#powStatus) | powStatus
+48 | [Primary Emergency Contact](#primaryEmergencyContact) | primaryEmergencyContact
+49 | [Primary Next Of Kin](#primaryNextOfKin) | primaryNextOfKin
+50 | [Race Information](#raceInformation) | raceInformation
+51 | [Radiation Exposure](#radiationExposure) | radiationExposure
+52 | [Rated Disabilities (Va)](#ratedDisabilities) | ratedDisabilities
+53 | [Secondary Emergency Contact](#secondaryEmergencyContact) | secondaryEmergencyContact
+54 | [Secondary Next Of Kin](#secondaryNextOfKin) | secondaryNextOfKin
+55 | [Service Connected](#serviceConnected) | serviceConnected
+56 | [Service Connected Conditions](#serviceConnectedConditions) | serviceConnectedConditions
+57 | [Service [Oef Or Oif]](#serviceOefOrOifs) | serviceOefOrOifs
+58 | [Somalia Service](#somaliaService) | somaliaService
+59 | [Southwest Asian Conditions](#southwestAsianConditions) | southwestAsianConditions
+60 | [Spouse](#spouse) | spouse
+61 | [Temporary Address](#temporaryAddress) | temporaryAddress
+62 | [Treatment Factors](#treatmentFactors) | treatmentFactors
+63 | [Va Guardian](#vaGuardian) | vaGuardian
+64 | [Vietnam Service](#vietnamService) | vietnamService
+65 | [Yugoslavia Service](#yugoslaviaService) | yugoslaviaService
+
+[&uarr; Return to top](#top)<br/>
+
+## Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
 **Name**{::nomarkdown}<pre><code>  name</code></pre>{:/} | STRING | name |  |  | 
 **Sex**{::nomarkdown}<pre><code>  sex</code></pre>{:/} | ENUMERATION | sex |  |  | {::nomarkdown}MALE: <em><strong>M</strong></em><br/>FEMALE: <em><strong>F</strong></em>{:/}
@@ -234,441 +298,797 @@ Field | Datatype | FromVDM | Default | Attributes | Range
 **Patient Rank**{::nomarkdown}<pre><code>  patientRank</code></pre>{:/} |  | rank-2 |  |  | 
 **Network Identifier**{::nomarkdown}<pre><code>  networkIdentifier</code></pre>{:/} | STRING | network_identifier |  |  | 
 
-### SubObjects
-#### <a name="permanentAddress"></a>
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>permanentAddress</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
+## Sub-Objects
+### <a name="Contact_Information-2_3226"></a>1. Contact Information
 
-#### Properties
+**Field ID:** Contact_Information-2_3226
 
-Field | Datatype | FromVDM | Default | Attributes | Range
---- | --- | --- | --- | --- | ---
-**Street 1**{::nomarkdown}<pre><code>  street1</code></pre>{:/} | STRING | N/A |  |  | 
-**Street 2**{::nomarkdown}<pre><code>  street2</code></pre>{:/} | STRING | N/A |  |  | 
-**Street 3**{::nomarkdown}<pre><code>  street3</code></pre>{:/} | STRING | N/A |  |  | 
-**City**{::nomarkdown}<pre><code>  city</code></pre>{:/} | STRING | N/A |  |  | 
-**State**{::nomarkdown}<pre><code>  state</code></pre>{:/} | POINTER | N/A |  |  | State-5
-**Zip Code**{::nomarkdown}<pre><code>  zipCode</code></pre>{:/} | STRING | N/A |  |  | 
-**County**{::nomarkdown}<pre><code>  county</code></pre>{:/} | NUMERIC | N/A |  |  | 
-**Province**{::nomarkdown}<pre><code>  province</code></pre>{:/} | STRING | N/A |  |  | 
-**Postal Code**{::nomarkdown}<pre><code>  postalCode</code></pre>{:/} | STRING | N/A |  |  | 
-**Country**{::nomarkdown}<pre><code>  country</code></pre>{:/} | POINTER | N/A |  |  | Country_Code-779_004
-**Change Date Time**{::nomarkdown}<pre><code>  changeDateTime</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Change Source**{::nomarkdown}<pre><code>  changeSource</code></pre>{:/} | ENUMERATION | N/A |  |  | {::nomarkdown}USPS: <em><strong>USPS</strong></em><br/>VOA: <em><strong>VOA</strong></em><br/>VAMC: <em><strong>VAMC</strong></em><br/>HBSC: <em><strong>HBSC</strong></em><br/>BVA: <em><strong>BVA</strong></em><br/>LACS: <em><strong>LACS</strong></em><br/>HEC: <em><strong>HEC</strong></em><br/>NCOA: <em><strong>NCOA</strong></em><br/>VAINS: <em><strong>VAINS</strong></em>{:/}
-**Change Site**{::nomarkdown}<pre><code>  changeSite</code></pre>{:/} | POINTER | N/A |  |  | [Institution-4](../VDM/Institution-4)
-**Bad Address Indicator**{::nomarkdown}<pre><code>  badAddressIndicator</code></pre>{:/} | ENUMERATION | N/A |  |  | {::nomarkdown}ADDRESS NOT FOUND: <em><strong>4</strong></em><br/>OTHER: <em><strong>3</strong></em><br/>UNDELIVERABLE: <em><strong>1</strong></em><br/>HOMELESS: <em><strong>2</strong></em>{:/}
-**Change User**{::nomarkdown}<pre><code>  changeUser</code></pre>{:/} | POINTER | N/A |  |  | [New_Person-200](../VDM/New_Person-200)
-
-#### <a name="temporaryAddress"></a>
-
-<dl>
-<dt>ID</dt><dd>temporaryAddress</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
+**Fileman Sub-File ID:** 2.3226
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**Active**{::nomarkdown}<pre><code>  active</code></pre>{:/} | BOOLEAN | N/A |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
-**Street 1**{::nomarkdown}<pre><code>  street1</code></pre>{:/} | STRING | N/A |  |  | 
-**Street 2**{::nomarkdown}<pre><code>  street2</code></pre>{:/} | STRING | N/A |  |  | 
-**Street 3**{::nomarkdown}<pre><code>  street3</code></pre>{:/} | STRING | N/A |  |  | 
-**County**{::nomarkdown}<pre><code>  county</code></pre>{:/} | NUMERIC | N/A |  |  | 
-**City**{::nomarkdown}<pre><code>  city</code></pre>{:/} | STRING | N/A |  |  | 
-**State**{::nomarkdown}<pre><code>  state</code></pre>{:/} | POINTER | N/A |  |  | State-5
-**Zip Code**{::nomarkdown}<pre><code>  zipCode</code></pre>{:/} | STRING | N/A |  |  | 
-**Start Date**{::nomarkdown}<pre><code>  startDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**End Date**{::nomarkdown}<pre><code>  endDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Phone Number**{::nomarkdown}<pre><code>  phoneNumber</code></pre>{:/} | STRING | N/A |  |  | 
-**Province**{::nomarkdown}<pre><code>  province</code></pre>{:/} | STRING | N/A |  |  | 
-**Postal Code**{::nomarkdown}<pre><code>  postalCode</code></pre>{:/} | STRING | N/A |  |  | 
-**Country**{::nomarkdown}<pre><code>  country</code></pre>{:/} | POINTER | N/A |  |  | Country_Code-779_004
-**Change Date Time**{::nomarkdown}<pre><code>  changeDateTime</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Change Site**{::nomarkdown}<pre><code>  changeSite</code></pre>{:/} | POINTER | N/A |  |  | [Institution-4](../VDM/Institution-4)
+**Sequence**{::nomarkdown}<pre><code>  sequence</code></pre>{:/} | NUMERIC | sequence |  | INDEXED<br/>REQUIRED | 
+**Name**{::nomarkdown}<pre><code>  name</code></pre>{:/} | STRING | name |  |  | 
+***Communication Number**{::nomarkdown}<pre><code>  communcationNumber</code></pre>{:/} | STRING | communication_number |  |  | 
+**Communication Qualifier**{::nomarkdown}<pre><code>  communicationQualifier</code></pre>{:/} | POINTER | communication_qualifier |  |  | X12_271_Contact_Qualifier-365_021
+**Communication Number**{::nomarkdown}<pre><code>  communicationNumber</code></pre>{:/} | STRING | communication_number-2_3226-1 |  |  | 
 
-#### <a name="patientContact"></a>
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>patientContact</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
+
+### <a name="Eligibility_Benefit-2_322"></a>2. Eligibility/Benefit
+
+**Field ID:** Eligibility_Benefit-2_322
+
+**Fileman Sub-File ID:** 2.322
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**Phone Number Residence**{::nomarkdown}<pre><code>  phoneNumberResidence</code></pre>{:/} | STRING | N/A |  |  | 
-**Cellular Number Change Source**{::nomarkdown}<pre><code>  cellularNumberChangeSource</code></pre>{:/} | ENUMERATION | N/A |  |  | {::nomarkdown}HBSC: <em><strong>HBSC</strong></em><br/>VAMC: <em><strong>VAMC</strong></em><br/>VOA: <em><strong>VOA</strong></em><br/>HEC: <em><strong>HEC</strong></em>{:/}
-**Cellular Number Change Site**{::nomarkdown}<pre><code>  cellularNumberChangeSite</code></pre>{:/} | POINTER | N/A |  |  | [Institution-4](../VDM/Institution-4)
-**Pager Number Change Date Time**{::nomarkdown}<pre><code>  pagerNumberChangeDateTime</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Pager Number Change Source**{::nomarkdown}<pre><code>  pagerNumberChangeSource</code></pre>{:/} | ENUMERATION | N/A |  |  | {::nomarkdown}HBSC: <em><strong>HBSC</strong></em><br/>VAMC: <em><strong>VAMC</strong></em><br/>VOA: <em><strong>VOA</strong></em><br/>HEC: <em><strong>HEC</strong></em>{:/}
-**Pager Number Change Site**{::nomarkdown}<pre><code>  pagerNumberChangeSite</code></pre>{:/} | POINTER | N/A |  |  | [Institution-4](../VDM/Institution-4)
-**Confidential Phone Number**{::nomarkdown}<pre><code>  confidentialPhoneNumber</code></pre>{:/} | STRING | N/A |  |  | 
-**Phone Number Work**{::nomarkdown}<pre><code>  phoneNumberWork</code></pre>{:/} | STRING | N/A |  |  | 
-**Residence Number Change Date Time**{::nomarkdown}<pre><code>  residenceNumberChangeDateTime</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Residence Number Change Source**{::nomarkdown}<pre><code>  residenceNumberChangeSource</code></pre>{:/} | ENUMERATION | N/A |  |  | {::nomarkdown}HBSC: <em><strong>HBSC</strong></em><br/>VAMC: <em><strong>VAMC</strong></em><br/>VOA: <em><strong>VOA</strong></em><br/>HEC: <em><strong>HEC</strong></em>{:/}
-**Residence Number Change Site**{::nomarkdown}<pre><code>  residenceNumberChangeSite</code></pre>{:/} | POINTER | N/A |  |  | [Institution-4](../VDM/Institution-4)
-**Email Address**{::nomarkdown}<pre><code>  emailAddress</code></pre>{:/} | STRING | N/A |  |  | 
-**Email Address Indicator**{::nomarkdown}<pre><code>  emailAddressIndicator</code></pre>{:/} | BOOLEAN | N/A |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
-**Email Address Indicator Date Time**{::nomarkdown}<pre><code>  emailAddressIndicatorDateTime</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Phone Number Cellular**{::nomarkdown}<pre><code>  phoneNumberCellular</code></pre>{:/} | STRING | N/A |  |  | 
-**Pager Number**{::nomarkdown}<pre><code>  pagerNumber</code></pre>{:/} | STRING | N/A |  |  | 
-**Email Address Change Date Time**{::nomarkdown}<pre><code>  emailAddressChangeDateTime</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Email Address Change Source**{::nomarkdown}<pre><code>  emailAddressChangeSource</code></pre>{:/} | ENUMERATION | N/A |  |  | {::nomarkdown}HBSC: <em><strong>HBSC</strong></em><br/>VAMC: <em><strong>VAMC</strong></em><br/>VOA: <em><strong>VOA</strong></em><br/>HEC: <em><strong>HEC</strong></em>{:/}
-**Email Address Change Site**{::nomarkdown}<pre><code>  emailAddressChangeSite</code></pre>{:/} | POINTER | N/A |  |  | [Institution-4](../VDM/Institution-4)
-**Cellular Number Change Date Time**{::nomarkdown}<pre><code>  cellularNumberChangeDateTime</code></pre>{:/} | DATE-TIME | N/A |  |  | 
+**Eb Number**{::nomarkdown}<pre><code>  ebNumber</code></pre>{:/} | NUMERIC | eb_number |  | INDEXED<br/>REQUIRED | 
+**Eligibility/Benefit Info**{::nomarkdown}<pre><code>  eligibilityBenefitInfo</code></pre>{:/} | POINTER | eligibility_benefit_info |  |  | X12_271_Eligibility_Benefit-365_011
+**Coverage Level**{::nomarkdown}<pre><code>  coverageLevel</code></pre>{:/} | POINTER | coverage_level |  |  | X12_271_Coverage_Level-365_012
+***Service Type**{::nomarkdown}<pre><code>  serviceType</code></pre>{:/} | POINTER | service_type |  |  | X12_271_Service_Type-365_013
+**Insurance Type**{::nomarkdown}<pre><code>  insuranceType</code></pre>{:/} | POINTER | insurance_type |  |  | X12_271_Insurance_Type-365_014
+**Plan Coverage Description**{::nomarkdown}<pre><code>  planCoverageDescription</code></pre>{:/} | STRING | plan_coverage_description |  |  | 
+**Time Period Qualifier**{::nomarkdown}<pre><code>  timePeriodQualifier</code></pre>{:/} | POINTER | time_period_qualifier |  |  | X12_271_Time_Period_Qualifier-365_015
+**Monetary Amount**{::nomarkdown}<pre><code>  monetaryAmount</code></pre>{:/} | STRING | monetary_amount |  |  | 
+**Percent**{::nomarkdown}<pre><code>  percent</code></pre>{:/} | NUMERIC | percent |  |  | 
+**Quantity Qualifier**{::nomarkdown}<pre><code>  quantityQualifier</code></pre>{:/} | POINTER | quantity_qualifier |  |  | X12_271_Quantity_Qualifier-365_016
+**Quantity**{::nomarkdown}<pre><code>  quantity</code></pre>{:/} | STRING | quantity |  |  | 
+**Authorization/Certification**{::nomarkdown}<pre><code>  authorizationCertification</code></pre>{:/} | POINTER | authorization_certification |  |  | X12_271_Yes_No_Response_Code_-365_033
+**In Plan**{::nomarkdown}<pre><code>  inPlan</code></pre>{:/} | POINTER | in_plan |  |  | X12_271_Yes_No_Response_Code_-365_033
+**Procedure Coding Method**{::nomarkdown}<pre><code>  procedureCodingMethod</code></pre>{:/} | POINTER | procedure_coding_method |  |  | X12_271_Procedure_Coding_Method-365_035
+**Procedure Code**{::nomarkdown}<pre><code>  procedureCode</code></pre>{:/} | STRING | procedure_code |  |  | 
+**Procedure Modifier 1**{::nomarkdown}<pre><code>  procedureModifier1</code></pre>{:/} | STRING | procedure_modifier_1 |  |  | 
+**Procedure Modifier 2**{::nomarkdown}<pre><code>  procedureModifier2</code></pre>{:/} | STRING | procedure_modifier_2 |  |  | 
+**Procedure Modifier 3**{::nomarkdown}<pre><code>  procedureModifier3</code></pre>{:/} | STRING | procedure_modifier_3 |  |  | 
+**Procedure Modifier 4**{::nomarkdown}<pre><code>  procedureModifier4</code></pre>{:/} | STRING | procedure_modifier_4 |  |  | 
+**Notes**{::nomarkdown}<pre><code>  notes</code></pre>{:/} | STRING | notes |  |  | 
+**Entity Id Code**{::nomarkdown}<pre><code>  entityIdCode</code></pre>{:/} | POINTER | entity_id_code |  |  | X12_271_Entity_Identifier_Code-365_022
+**Entity Type**{::nomarkdown}<pre><code>  entityType</code></pre>{:/} | POINTER | entity_type |  |  | X12_271_Entity_Type_Qualifier-365_043
+**Name**{::nomarkdown}<pre><code>  name</code></pre>{:/} | STRING | name |  |  | 
+**Entity Id**{::nomarkdown}<pre><code>  entityId</code></pre>{:/} | STRING | entity_id |  |  | 
+**Entity Id Qualifier**{::nomarkdown}<pre><code>  entityIdQualifier</code></pre>{:/} | POINTER | entity_id_qualifier |  |  | X12_271_Identification_Qualifier-365_023
+**Entity Relationship Code**{::nomarkdown}<pre><code>  entityRelationshipCode</code></pre>{:/} | POINTER | entity_relationship_code |  |  | X12_271_Entity_Relationship_Code-365_031
+**Address Line 1**{::nomarkdown}<pre><code>  addressLine1</code></pre>{:/} | STRING | address_line_1 |  |  | 
+**Address Line 2**{::nomarkdown}<pre><code>  addressLine2</code></pre>{:/} | STRING | address_line_2 |  |  | 
+**City**{::nomarkdown}<pre><code>  city</code></pre>{:/} | STRING | city |  |  | 
+**State**{::nomarkdown}<pre><code>  state</code></pre>{:/} | POINTER | state |  |  | State-5
+**Zip**{::nomarkdown}<pre><code>  zip</code></pre>{:/} | STRING | zip |  |  | 
+**Country Code**{::nomarkdown}<pre><code>  countryCode</code></pre>{:/} | STRING | country_code |  |  | 
+**Location**{::nomarkdown}<pre><code>  location</code></pre>{:/} | STRING | location |  |  | 
+**Location Qualifier**{::nomarkdown}<pre><code>  locationQualifier</code></pre>{:/} | POINTER | location_qualifier |  |  | X12_271_Location_Qualifer-365_034
+**Subdivision Code**{::nomarkdown}<pre><code>  subdivisionCode</code></pre>{:/} | STRING | subdivision_code |  |  | 
+**Provider Code**{::nomarkdown}<pre><code>  providerCode</code></pre>{:/} | POINTER | provider_code |  |  | X12_271_Provider_Code-365_024
+**Reference Id**{::nomarkdown}<pre><code>  referenceId</code></pre>{:/} | STRING | reference_id |  |  | 
+**Reference Id Qualifier**{::nomarkdown}<pre><code>  referenceIdQualifier</code></pre>{:/} | POINTER | reference_id_qualifier |  |  | X12_271_Reference_Identification-365_028
+**Contact Information**{::nomarkdown}<pre><code>  contactInformation</code></pre>{:/} | OBJECT | contact_information |  |  | [Contact_Information-2_3226](#Contact_Information-2_3226)
+**Healthcare Services Delivery**{::nomarkdown}<pre><code>  healthcareServicesDelivery</code></pre>{:/} | OBJECT | healthcare_services_delivery |  |  | [Healthcare_Services_Delivery-2_3227](#Healthcare_Services_Delivery-2_3227)
+**Subscriber Dates**{::nomarkdown}<pre><code>  subscriberDates</code></pre>{:/} | OBJECT | subscriber_dates |  |  | [Subscriber_Dates-2_3228](#Subscriber_Dates-2_3228)
+**Subscriber Additional Info**{::nomarkdown}<pre><code>  subscriberAdditionalInfo</code></pre>{:/} | OBJECT | subscriber_additional_info |  |  | [Subscriber_Additional_Info-2_3229](#Subscriber_Additional_Info-2_3229)
+**Subscriber Reference Id**{::nomarkdown}<pre><code>  subscriberReferenceId</code></pre>{:/} | OBJECT | subscriber_reference_id |  |  | [Subscriber_Reference_Id-2_32291](#Subscriber_Reference_Id-2_32291)
+**Service Types**{::nomarkdown}<pre><code>  serviceTypes</code></pre>{:/} | POINTER | service_types |  |  | X12_271_Service_Type-365_013
 
-#### <a name="confidentialAddress"></a>
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>confidentialAddress</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
+
+### <a name="Group_Provider_Info-2_332"></a>3. Group Provider Info
+
+**Field ID:** Group_Provider_Info-2_332
+
+**Fileman Sub-File ID:** 2.332
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**Address Category**{::nomarkdown}<pre><code>  addressCategory</code></pre>{:/} | OBJECT | N/A |  |  | [categories](#categories)
-**Active**{::nomarkdown}<pre><code>  active</code></pre>{:/} | BOOLEAN | N/A |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
-**Street 1**{::nomarkdown}<pre><code>  street1</code></pre>{:/} | STRING | N/A |  |  | 
-**County**{::nomarkdown}<pre><code>  county</code></pre>{:/} | NUMERIC | N/A |  |  | 
-**Change Date Time**{::nomarkdown}<pre><code>  changeDateTime</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Change Site**{::nomarkdown}<pre><code>  changeSite</code></pre>{:/} | POINTER | N/A |  |  | [Institution-4](../VDM/Institution-4)
-**Province**{::nomarkdown}<pre><code>  province</code></pre>{:/} | STRING | N/A |  |  | 
-**Postal Code**{::nomarkdown}<pre><code>  postalCode</code></pre>{:/} | STRING | N/A |  |  | 
-**Country**{::nomarkdown}<pre><code>  country</code></pre>{:/} | POINTER | N/A |  |  | Country_Code-779_004
+**Sequence**{::nomarkdown}<pre><code>  sequence</code></pre>{:/} | NUMERIC | sequence |  | INDEXED<br/>REQUIRED | 
+**Provider Code**{::nomarkdown}<pre><code>  providerCode</code></pre>{:/} | POINTER | provider_code |  |  | X12_271_Provider_Code-365_024
+**Prov Reference Id**{::nomarkdown}<pre><code>  provReferenceId</code></pre>{:/} | STRING | prov_reference_id |  |  | 
+
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Group_Reference_Information-2_3129"></a>4. Group Reference Information
+
+**Field ID:** Group_Reference_Information-2_3129
+
+**Fileman Sub-File ID:** 2.3129
+
+#### Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Sequence**{::nomarkdown}<pre><code>  sequence</code></pre>{:/} | NUMERIC | sequence |  | INDEXED<br/>REQUIRED | 
+**Reference Id (Group)**{::nomarkdown}<pre><code>  referenceIdGroup</code></pre>{:/} | STRING | reference_id_group |  |  | 
+**Ref Id Qualifier (Group)**{::nomarkdown}<pre><code>  refIdQualifierGroup</code></pre>{:/} | POINTER | ref_id_qualifier_group |  |  | X12_271_Reference_Identification-365_028
+**Description**{::nomarkdown}<pre><code>  description</code></pre>{:/} | STRING | description |  |  | 
+
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Health_Care_Code_Information-2_31211"></a>5. Health Care Code Information
+
+**Field ID:** Health_Care_Code_Information-2_31211
+
+**Fileman Sub-File ID:** 2.31211
+
+#### Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Sequence**{::nomarkdown}<pre><code>  sequence</code></pre>{:/} | NUMERIC | sequence |  | INDEXED<br/>REQUIRED | 
+**Diagnosis Code**{::nomarkdown}<pre><code>  diagnosisCode</code></pre>{:/} | POINTER | diagnosis_code |  |  | [Icd_Diagnosis-80](../VDM/Icd_Diagnosis-80)
+**Diagnosis Code Qualifier**{::nomarkdown}<pre><code>  diagnosisCodeQualifier</code></pre>{:/} | STRING | diagnosis_code_qualifier |  |  | 
+**Primary Or Secondary?**{::nomarkdown}<pre><code>  primaryOrSecondary</code></pre>{:/} | ENUMERATION | primary_or_secondary |  |  | {::nomarkdown}PRIMARY: <em><strong>P</strong></em><br/>SECONDARY: <em><strong>S</strong></em>{:/}
+
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Healthcare_Services_Delivery-2_3227"></a>6. Healthcare Services Delivery
+
+**Field ID:** Healthcare_Services_Delivery-2_3227
+
+**Fileman Sub-File ID:** 2.3227
+
+#### Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Sequence**{::nomarkdown}<pre><code>  sequence</code></pre>{:/} | NUMERIC | sequence |  | INDEXED<br/>REQUIRED | 
+**Benefit Quantity**{::nomarkdown}<pre><code>  benefitQuantity</code></pre>{:/} | NUMERIC | benefit_quantity |  |  | 
+**Quantity Qualifier**{::nomarkdown}<pre><code>  quantityQualifier</code></pre>{:/} | POINTER | quantity_qualifier |  |  | X12_271_Quantity_Qualifier-365_016
+**Sample Selection Modulus**{::nomarkdown}<pre><code>  sampleSelectionModulus</code></pre>{:/} | STRING | sample_selection_modulus |  |  | 
+**Units Of Measurement**{::nomarkdown}<pre><code>  unitsOfMeasurement</code></pre>{:/} | POINTER | units_of_measurement |  |  | X12_271_Units_Of_Measurement-365_029
+**Time Periods**{::nomarkdown}<pre><code>  timePeriods</code></pre>{:/} | NUMERIC | time_periods |  |  | 
+**Time Period Qualifier**{::nomarkdown}<pre><code>  timePeriodQualifier</code></pre>{:/} | POINTER | time_period_qualifier |  |  | X12_271_Time_Period_Qualifier-365_015
+**Delivery Frequency**{::nomarkdown}<pre><code>  deliveryFrequency</code></pre>{:/} | POINTER | delivery_frequency |  |  | X12_271_Delivery_Frequency_Code-365_025
+**Delivery Pattern**{::nomarkdown}<pre><code>  deliveryPattern</code></pre>{:/} | POINTER | delivery_pattern |  |  | X12_271_Delivery_Pattern-365_036
+
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Subscriber_Additional_Info-2_3229"></a>7. Subscriber Additional Info
+
+**Field ID:** Subscriber_Additional_Info-2_3229
+
+**Fileman Sub-File ID:** 2.3229
+
+#### Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Sequence**{::nomarkdown}<pre><code>  sequence</code></pre>{:/} | NUMERIC | sequence |  | INDEXED<br/>REQUIRED | 
+**Place Of Service**{::nomarkdown}<pre><code>  placeOfService</code></pre>{:/} | POINTER | place_of_service |  |  | Place_Of_Service-353_1
+**Diagnosis**{::nomarkdown}<pre><code>  diagnosis</code></pre>{:/} | POINTER | diagnosis |  |  | [Icd_Diagnosis-80](../VDM/Icd_Diagnosis-80)
+**Qualifier**{::nomarkdown}<pre><code>  qualifier</code></pre>{:/} | POINTER | qualifier |  |  | X12_271_Code_List_Qualifier-365_044
+**Nature Of Injury Code**{::nomarkdown}<pre><code>  natureOfInjuryCode</code></pre>{:/} | POINTER | nature_of_injury_code |  |  | X12_271_Nature_Of_Injury_Codes-365_045
+**Nature Of Injury Category**{::nomarkdown}<pre><code>  natureOfInjuryCategory</code></pre>{:/} | STRING | nature_of_injury_category |  |  | 
+**Nature Of Injury Text**{::nomarkdown}<pre><code>  natureOfInjuryText</code></pre>{:/} | STRING | nature_of_injury_text |  |  | 
+
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Subscriber_Dates-2_3228"></a>8. Subscriber Dates
+
+**Field ID:** Subscriber_Dates-2_3228
+
+**Fileman Sub-File ID:** 2.3228
+
+#### Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Sequence**{::nomarkdown}<pre><code>  sequence</code></pre>{:/} | NUMERIC | sequence |  | INDEXED<br/>REQUIRED | 
+**Date**{::nomarkdown}<pre><code>  date</code></pre>{:/} | STRING | date |  |  | 
+**Date Qualifier**{::nomarkdown}<pre><code>  dateQualifier</code></pre>{:/} | POINTER | date_qualifier |  |  | X12_271_Date_Qualifier-365_026
+**Date Format**{::nomarkdown}<pre><code>  dateFormat</code></pre>{:/} | POINTER | date_format |  |  | X12_271_Date_Format_Qualifier-365_032
+
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Subscriber_Reference_Id-2_32291"></a>9. Subscriber Reference Id
+
+**Field ID:** Subscriber_Reference_Id-2_32291
+
+**Fileman Sub-File ID:** 2.32291
+
+#### Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Sequence**{::nomarkdown}<pre><code>  sequence</code></pre>{:/} | NUMERIC | sequence |  | INDEXED<br/>REQUIRED | 
+**Reference Id**{::nomarkdown}<pre><code>  referenceId</code></pre>{:/} | STRING | reference_id |  |  | 
+**Reference Id Qualifier**{::nomarkdown}<pre><code>  referenceIdQualifier</code></pre>{:/} | POINTER | reference_id_qualifier |  |  | X12_271_Reference_Identification-365_028
+**Description**{::nomarkdown}<pre><code>  description</code></pre>{:/} | STRING | description |  |  | 
+
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="agentOrangeExposure"></a>10. Agent Orange Exposure
+
+**Field ID:** agentOrangeExposure
+
+#### Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Exposure Indicated**{::nomarkdown}<pre><code>  exposureIndicated</code></pre>{:/} | ENUMERATION | *CUSTOM* |  |  | {::nomarkdown}UNKNOWN: <em><strong>U</strong></em><br/>YES: <em><strong>Y</strong></em><br/>NO: <em><strong>N</strong></em>{:/}
+**Registration Date**{::nomarkdown}<pre><code>  registrationDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Reported To Co**{::nomarkdown}<pre><code>  reportedToCo</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Exam Date**{::nomarkdown}<pre><code>  examDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Registration Number**{::nomarkdown}<pre><code>  registrationNumber</code></pre>{:/} | NUMERIC | *CUSTOM* |  |  | 
+**Exposure Location**{::nomarkdown}<pre><code>  exposureLocation</code></pre>{:/} | ENUMERATION | *CUSTOM* |  |  | {::nomarkdown}VIETNAM: <em><strong>V</strong></em><br/>OTHER: <em><strong>O</strong></em><br/>KOREAN DMZ: <em><strong>K</strong></em>{:/}
+
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="alias"></a>11. Alias
+
+**Field ID:** alias
+
+**Fileman Sub-File ID:** 2.01
+
+#### Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Alias**{::nomarkdown}<pre><code>  alias</code></pre>{:/} | STRING | alias |  | REQUIRED | 
+**Alias Ssn**{::nomarkdown}<pre><code>  aliasSsn</code></pre>{:/} | STRING | alias_ssn |  |  | 
+**Alias Components**{::nomarkdown}<pre><code>  aliasComponents</code></pre>{:/} | POINTER | alias_components |  |  | [Name_Components-20](../VDM/Name_Components-20)
+
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="appointment"></a>12. Appointment
+
+**Field ID:** appointment
+
+**Fileman Sub-File ID:** 2.98
+
+#### Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Appointment Date/Time**{::nomarkdown}<pre><code>  appointmentDateTime</code></pre>{:/} | IEN | *CUSTOM* |  |  | 
+**Clinic**{::nomarkdown}<pre><code>  clinic</code></pre>{:/} | POINTER | clinic |  | REQUIRED | [Hospital_Location-44](../VDM/Hospital_Location-44)
+**Status**{::nomarkdown}<pre><code>  status</code></pre>{:/} | ENUMERATION | status |  |  | {::nomarkdown}INPATIENT APPOINTMENT: <em><strong>I</strong></em><br/>NO ACTION TAKEN: <em><strong>NT</strong></em><br/>NO-SHOW: <em><strong>N</strong></em><br/>CANCELLED BY PATIENT & AUTO-REBOOK: <em><strong>PCA</strong></em><br/>NO-SHOW & AUTO RE-BOOK: <em><strong>NA</strong></em><br/>CANCELLED BY CLINIC: <em><strong>C</strong></em><br/>CANCELLED BY CLINIC & AUTO RE-BOOK: <em><strong>CA</strong></em><br/>CANCELLED BY PATIENT: <em><strong>PC</strong></em>{:/}
+**Lab Date/Time**{::nomarkdown}<pre><code>  labDateTime</code></pre>{:/} | DATE-TIME | lab_date_time |  |  | 
+**X-Ray Date/Time**{::nomarkdown}<pre><code>  xrayDateTime</code></pre>{:/} | DATE-TIME | xray_date_time |  |  | 
+**Ekg Date/Time**{::nomarkdown}<pre><code>  ekgDateTime</code></pre>{:/} | DATE-TIME | ekg_date_time |  |  | 
+**Routing Slip Printed**{::nomarkdown}<pre><code>  routingSlipPrinted</code></pre>{:/} | BOOLEAN | routing_slip_printed |  |  | {::nomarkdown}true: <em><strong>Y</strong></em>{:/}
+**Routing Slip Print Date**{::nomarkdown}<pre><code>  routingSlipPrintDate</code></pre>{:/} | DATE-TIME | routing_slip_print_date |  |  | 
+**Purpose Of Visit**{::nomarkdown}<pre><code>  purposeOfVisit</code></pre>{:/} | ENUMERATION | purpose_of_visit |  |  | {::nomarkdown}10-10: <em><strong>2</strong></em><br/>UNSCHED. VISIT: <em><strong>4</strong></em><br/>C&P: <em><strong>1</strong></em><br/>SCHEDULED VISIT: <em><strong>3</strong></em>{:/}
+**Appointment Type**{::nomarkdown}<pre><code>  appointmentType</code></pre>{:/} | POINTER | appointment_type |  |  | Appointment_Type-409_1
+**Special Survey Disposition**{::nomarkdown}<pre><code>  specialSurveyDisposition</code></pre>{:/} | NUMERIC | special_survey_disposition |  |  | 
+**Number Of Collateral Seen**{::nomarkdown}<pre><code>  numberOfCollateralSeen</code></pre>{:/} | NUMERIC | number_of_collateral_seen |  |  | 
+**Auto-Rebooked Appt. Date/Time**{::nomarkdown}<pre><code>  autorebookedApptDateTime</code></pre>{:/} | DATE-TIME | autorebooked_appt_date_time |  |  | 
+**Collateral Visit**{::nomarkdown}<pre><code>  collateralVisit</code></pre>{:/} | BOOLEAN | collateral_visit |  |  | {::nomarkdown}true: <em><strong>1</strong></em>{:/}
+**No-Show/Cancelled By**{::nomarkdown}<pre><code>  noshowCancelledBy</code></pre>{:/} | POINTER | noshow_cancelled_by |  |  | [New_Person-200](../VDM/New_Person-200)
+**No-Show/Cancel Date/Time**{::nomarkdown}<pre><code>  noshowCancelDateTime</code></pre>{:/} | DATE-TIME | noshow_cancel_date_time |  |  | 
+**Cancellation Reason**{::nomarkdown}<pre><code>  cancellationReason</code></pre>{:/} | POINTER | cancellation_reason |  |  | Cancellation_Reasons-409_2
+**Cancellation Remarks**{::nomarkdown}<pre><code>  cancellationRemarks</code></pre>{:/} | STRING | cancellation_remarks |  |  | 
+**Appt. Cancelled**{::nomarkdown}<pre><code>  apptCancelled</code></pre>{:/} | POINTER | appt_cancelled |  |  | [Hospital_Location-44](../VDM/Hospital_Location-44)
+**Data Entry Clerk**{::nomarkdown}<pre><code>  dataEntryClerk</code></pre>{:/} | POINTER | data_entry_clerk |  |  | [New_Person-200](../VDM/New_Person-200)
+**Date Appt. Made**{::nomarkdown}<pre><code>  dateApptMade</code></pre>{:/} | DATE-TIME | date_appt_made |  |  | 
+**Outpatient Encounter**{::nomarkdown}<pre><code>  outpatientEncounter</code></pre>{:/} | POINTER | outpatient_encounter |  |  | Outpatient_Encounter-409_68
+**Encounter Forms Printed**{::nomarkdown}<pre><code>  encounterFormsPrinted</code></pre>{:/} | BOOLEAN | encounter_forms_printed |  |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
+**Encounter Forms As Add-Ons**{::nomarkdown}<pre><code>  encounterFormsAsAddons</code></pre>{:/} | BOOLEAN | encounter_forms_as_addons |  |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
+**Encounter Conversion Status**{::nomarkdown}<pre><code>  encounterConversionStatus</code></pre>{:/} | ENUMERATION | encounter_conversion_status |  |  | {::nomarkdown}NOT CONVERTED: <em><strong>0</strong></em><br/>CONVERTED: <em><strong>1</strong></em>{:/}
+**Appointment Type Sub-Category**{::nomarkdown}<pre><code>  appointmentTypeSubcategory</code></pre>{:/} | POINTER | appointment_type_subcategory |  |  | Sharing_Agreement_SubCategory-35_2
+**Scheduling Request Type**{::nomarkdown}<pre><code>  schedulingRequestType</code></pre>{:/} | ENUMERATION | scheduling_request_type |  |  | {::nomarkdown}AUTO REBOOK: <em><strong>A</strong></em><br/>MULTIPLE APPT. BOOKING: <em><strong>M</strong></em><br/>OTHER THAN 'NEXT AVA.' (CLINICIAN REQ.): <em><strong>C</strong></em><br/>'NEXT AVAILABLE' APPT.: <em><strong>N</strong></em><br/>OTHER THAN 'NEXT AVA.' (PATIENT REQ.): <em><strong>P</strong></em><br/>WALKIN APPT.: <em><strong>W</strong></em><br/>OTHER THAN 'NEXT AVA.' APPT.: <em><strong>O</strong></em>{:/}
+**Next Ava. Appt. Indicator**{::nomarkdown}<pre><code>  nextAvaApptIndicator</code></pre>{:/} | ENUMERATION | next_ava_appt_indicator |  |  | {::nomarkdown}'NEXT AVA.' APPT. INDICATED BY USER: <em><strong>1</strong></em><br/>'NEXT AVA.' APPT. INDICATED BY CALCULATION: <em><strong>2</strong></em><br/>NOT INDICATED TO BE A 'NEXT AVA.' APPT.: <em><strong>0</strong></em><br/>'NEXT AVA.' APPT. INDICATED BY USER & CALCULATION: <em><strong>3</strong></em>{:/}
+**Desired Date Of Appointment**{::nomarkdown}<pre><code>  desiredDateOfAppointment</code></pre>{:/} | DATE-TIME | desired_date_of_appointment |  |  | 
+**Follow-Up Visit**{::nomarkdown}<pre><code>  followupVisit</code></pre>{:/} | BOOLEAN | followup_visit |  |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
+
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="archivedData"></a>13. Archived Data
+
+**Field ID:** archivedData
+
+**Fileman Sub-File ID:** 2.12
+
+#### Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Data Type**{::nomarkdown}<pre><code>  dataType</code></pre>{:/} | ENUMERATION | data_type |  | INDEXED<br/>REQUIRED | {::nomarkdown}SPECIAL SURVEY DISP: <em><strong>SSD</strong></em><br/>APPOINTMENT: <em><strong>S</strong></em><br/>CLINIC ENROLLMENT: <em><strong>DE</strong></em>{:/}
+**Date Of Archive**{::nomarkdown}<pre><code>  date_of_archive</code></pre>{:/} | OBJECT | *CUSTOM* |  |  | [dateOfArchive](#dateOfArchive)
+
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="categories"></a>14. Confidential Address Category
+
+**Field ID:** categories
+
+**Fileman Sub-File ID:** 2.141
+
+#### Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Confidential Address Category**{::nomarkdown}<pre><code>  addressCategory</code></pre>{:/} | ENUMERATION | *CUSTOM* |  | INDEXED<br/>REQUIRED | {::nomarkdown}ELIGIBILITY/ENROLLMENT: <em><strong>1</strong></em><br/>MEDICAL RECORDS: <em><strong>4</strong></em><br/>APPOINTMENT/SCHEDULING: <em><strong>2</strong></em><br/>COPAYMENTS/VETERAN BILLING: <em><strong>3</strong></em><br/>ALL OTHERS: <em><strong>5</strong></em>{:/}
+**Confidential Category Active**{::nomarkdown}<pre><code>  categoryActive</code></pre>{:/} | BOOLEAN | *CUSTOM* |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
+
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="cdHistoryDate"></a>15. Cd History Date
+
+**Field ID:** cdHistoryDate
+
+**Fileman Sub-File ID:** 2.399
+
+#### Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Cd History Date**{::nomarkdown}<pre><code>  cdHistoryDate</code></pre>{:/} | DATE-TIME | cd_history_date |  | INDEXED<br/>REQUIRED | 
+**Veteran Catastrophically Disabled?**{::nomarkdown}<pre><code>  veteranCatastrophicallyDisabled</code></pre>{:/} | BOOLEAN | veteran_catastrophically_disabled |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
+**Decided By**{::nomarkdown}<pre><code>  decidedBy</code></pre>{:/} | STRING | decided_by |  |  | 
+**Date Of Decision**{::nomarkdown}<pre><code>  dateOfDecision</code></pre>{:/} | DATE-TIME | date_of_decision |  |  | 
+**Facility Making Determination**{::nomarkdown}<pre><code>  facilityMakingDetermination</code></pre>{:/} | POINTER | facility_making_determination |  |  | [Institution-4](../VDM/Institution-4)
+**Review Date**{::nomarkdown}<pre><code>  reviewDate</code></pre>{:/} | DATE-TIME | review_date |  |  | 
+**Method Of Determination**{::nomarkdown}<pre><code>  methodOfDetermination</code></pre>{:/} | ENUMERATION | method_of_determination |  |  | {::nomarkdown}AUTOMATED RECORD REVIEW: <em><strong>1</strong></em><br/>PHYSICAL EXAMINATION: <em><strong>3</strong></em><br/>MEDICAL RECORD REVIEW: <em><strong>2</strong></em>{:/}
+**Date Veteran Requested Cd Eval**{::nomarkdown}<pre><code>  dateVeteranRequestedCdEval</code></pre>{:/} | DATE-TIME | date_veteran_requested_cd_eval |  |  | 
+**Date Facility Initiated Review**{::nomarkdown}<pre><code>  dateFacilityInitiatedReview</code></pre>{:/} | DATE-TIME | date_facility_initiated_review |  |  | 
+**Date Veteran Was Notified**{::nomarkdown}<pre><code>  dateVeteranWasNotified</code></pre>{:/} | DATE-TIME | date_veteran_was_notified |  |  | 
+**Cd Reason**{::nomarkdown}<pre><code>  cdReason</code></pre>{:/} | OBJECT | cd_reason |  |  | [cdReason](#cdReason)
+
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="cdReason"></a>16. Cd Reason
+
+**Field ID:** cdReason
+
+**Fileman Sub-File ID:** 2.409
+
+#### Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Cd Reason**{::nomarkdown}<pre><code>  cdReason</code></pre>{:/} | POINTER | cd_reason |  | INDEXED<br/>REQUIRED | Catastrophic_Disability_Reasons-27_17
+**Affected Extremity**{::nomarkdown}<pre><code>  affectedExtremity</code></pre>{:/} | ENUMERATION | affected_extremity |  |  | {::nomarkdown}RIGHT LOWER EXTREMITY: <em><strong>RLE</strong></em><br/>Bilateral Lower Extremity: <em><strong>BLE</strong></em><br/>LEFT LOWER EXTREMITY: <em><strong>LLE</strong></em><br/>LEFT UPPER EXTREMITY: <em><strong>LUE</strong></em><br/>Bilateral Upper Extremity: <em><strong>BLU</strong></em><br/>RIGHT UPPER EXTREMITY: <em><strong>RUE</strong></em>{:/}
+**Score**{::nomarkdown}<pre><code>  score</code></pre>{:/} | NUMERIC | score |  |  | 
+**Permanent Indicator**{::nomarkdown}<pre><code>  permanentIndicator</code></pre>{:/} | ENUMERATION | permanent_indicator |  |  | {::nomarkdown}UNKNOWN: <em><strong>3</strong></em><br/>PERMANENT: <em><strong>1</strong></em><br/>NOT PERMANENT: <em><strong>2</strong></em>{:/}
+
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="cdStatusConditions"></a>17. Cd Status Conditions
+
+**Field ID:** cdStatusConditions
+
+**Fileman Sub-File ID:** 2.398
+
+#### Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Cd Status Conditions**{::nomarkdown}<pre><code>  cdStatusConditions</code></pre>{:/} | POINTER | cd_status_conditions |  | INDEXED<br/>REQUIRED | Catastrophic_Disability_Reasons-27_17
+**Score**{::nomarkdown}<pre><code>  score</code></pre>{:/} | NUMERIC | score |  |  | 
+**Permanent Indicator**{::nomarkdown}<pre><code>  permanentIndicator</code></pre>{:/} | ENUMERATION | permanent_indicator |  |  | {::nomarkdown}UNKNOWN: <em><strong>3</strong></em><br/>PERMANENT: <em><strong>1</strong></em><br/>NOT PERMANENT: <em><strong>2</strong></em>{:/}
+
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="cdStatusProcedures"></a>18. Cd Status Procedures
+
+**Field ID:** cdStatusProcedures
+
+**Fileman Sub-File ID:** 2.397
+
+#### Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Cd Status Procedures**{::nomarkdown}<pre><code>  cdStatusProcedures</code></pre>{:/} | POINTER | cd_status_procedures |  | INDEXED<br/>REQUIRED | Catastrophic_Disability_Reasons-27_17
+**Affected Extremity**{::nomarkdown}<pre><code>  affectedExtremity</code></pre>{:/} | ENUMERATION | affected_extremity |  |  | {::nomarkdown}Right Lower Extremity: <em><strong>RLE</strong></em><br/>Bilateral Lower Extremity: <em><strong>BLE</strong></em><br/>Left Lower Extremity: <em><strong>LLE</strong></em><br/>Left Upper Extremity: <em><strong>LUE</strong></em><br/>Bilateral Upper Extremity: <em><strong>BUE</strong></em><br/>Right Upper Extremity: <em><strong>RUE</strong></em>{:/}
+
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="civilGuardian"></a>19. Civil Guardian
+
+**Field ID:** civilGuardian
+
+#### Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Name**{::nomarkdown}<pre><code>  name</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Relationship**{::nomarkdown}<pre><code>  relationship</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Street 1**{::nomarkdown}<pre><code>  street1</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Street 2**{::nomarkdown}<pre><code>  street2</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**City**{::nomarkdown}<pre><code>  city</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**State**{::nomarkdown}<pre><code>  state</code></pre>{:/} | POINTER | *CUSTOM* |  |  | State-5
+**Zip Code**{::nomarkdown}<pre><code>  zipCode</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Phone Number**{::nomarkdown}<pre><code>  phoneNumber</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Institution**{::nomarkdown}<pre><code>  institution</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="claim"></a>20. Claim
+
+**Field ID:** claim
+
+#### Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Claim Number**{::nomarkdown}<pre><code>  claimNumber</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Claim Folder Location**{::nomarkdown}<pre><code>  claimFolderLocation</code></pre>{:/} | POINTER | *CUSTOM* |  |  | [Institution-4](../VDM/Institution-4)
+**Covered By Health Insurance**{::nomarkdown}<pre><code>  coveredByHealthInsurance</code></pre>{:/} | ENUMERATION | *CUSTOM* |  |  | {::nomarkdown}UNKNOWN: <em><strong>U</strong></em><br/>YES: <em><strong>Y</strong></em><br/>NO: <em><strong>N</strong></em>{:/}
+
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="cmorHistory"></a>21. Cmor History
+
+**Field ID:** cmorHistory
+
+**Fileman Sub-File ID:** 2.0993
+
+#### Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Cmor History**{::nomarkdown}<pre><code>  cmorHistory</code></pre>{:/} | NUMERIC | cmor_history |  | REQUIRED | 
+**Cmor Activity Score**{::nomarkdown}<pre><code>  cmorActivityScore</code></pre>{:/} | NUMERIC | cmor_activity_score |  |  | 
+**Cmor Score Calculation Date**{::nomarkdown}<pre><code>  cmorScoreCalculationDate</code></pre>{:/} | DATE-TIME | cmor_score_calculation_date |  |  | 
+**Cmor Change Date**{::nomarkdown}<pre><code>  cmorChangeDate</code></pre>{:/} | DATE-TIME | cmor_change_date |  |  | 
+
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="combatService"></a>22. Combat Service
+
+**Field ID:** combatService
+
+#### Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Service Indicated**{::nomarkdown}<pre><code>  serviceIndicated</code></pre>{:/} | BOOLEAN | *CUSTOM* |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
+**Service Location**{::nomarkdown}<pre><code>  serviceLocation</code></pre>{:/} | POINTER | *CUSTOM* |  |  | Pow_Period-22
+**From Date**{::nomarkdown}<pre><code>  fromDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**To Date**{::nomarkdown}<pre><code>  toDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Combat Veteran End Date**{::nomarkdown}<pre><code>  combatVeteranEndDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Cv Date Edited**{::nomarkdown}<pre><code>  cvDateEdited</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="combatService"></a>23. Combat Service
+
+**Field ID:** combatService
+
+#### Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Status Indicated**{::nomarkdown}<pre><code>  statusIndicated</code></pre>{:/} | BOOLEAN | *CUSTOM* |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
+**Current Status**{::nomarkdown}<pre><code>  currentStatus</code></pre>{:/} | ENUMERATION | *CUSTOM* |  |  | {::nomarkdown}CONFIRMED: <em><strong>3</strong></em><br/>IN PROCESS: <em><strong>2</strong></em><br/>PENDING: <em><strong>1</strong></em>{:/}
+**Current Remarks**{::nomarkdown}<pre><code>  currentRemarks</code></pre>{:/} | ENUMERATION | *CUSTOM* |  |  | {::nomarkdown}UNDELIVERABLE MAIL: <em><strong>6</strong></em><br/>VAMC: <em><strong>5</strong></em><br/>ENTERED IN ERROR: <em><strong>3</strong></em><br/>UNACCEPTABLE DOCUMENTATION: <em><strong>1</strong></em><br/>NO DOCUMENTATION REC'D: <em><strong>2</strong></em><br/>UNSUPPORTED PURPLE HEART: <em><strong>4</strong></em>{:/}
+**Division**{::nomarkdown}<pre><code>  division</code></pre>{:/} | POINTER | *CUSTOM* |  |  | [Institution-4](../VDM/Institution-4)
+
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="confidentialAddress"></a>24. Confidential Address
+
+**Field ID:** confidentialAddress
+
+#### Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Address Category**{::nomarkdown}<pre><code>  addressCategory</code></pre>{:/} | OBJECT | *CUSTOM* |  |  | [categories](#categories)
+**Active**{::nomarkdown}<pre><code>  active</code></pre>{:/} | BOOLEAN | *CUSTOM* |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
+**Street 1**{::nomarkdown}<pre><code>  street1</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**County**{::nomarkdown}<pre><code>  county</code></pre>{:/} | NUMERIC | *CUSTOM* |  |  | 
+**Change Date Time**{::nomarkdown}<pre><code>  changeDateTime</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Change Site**{::nomarkdown}<pre><code>  changeSite</code></pre>{:/} | POINTER | *CUSTOM* |  |  | [Institution-4](../VDM/Institution-4)
+**Province**{::nomarkdown}<pre><code>  province</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Postal Code**{::nomarkdown}<pre><code>  postalCode</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Country**{::nomarkdown}<pre><code>  country</code></pre>{:/} | POINTER | *CUSTOM* |  |  | Country_Code-779_004
 **Street 2**{::nomarkdown}<pre><code>  street2</code></pre>{:/} | STRING | confidential_street_line_2 |  |  | 
 **Street 3**{::nomarkdown}<pre><code>  street3</code></pre>{:/} | STRING | confidential_street_line_3 |  |  | 
 **City**{::nomarkdown}<pre><code>  city</code></pre>{:/} | STRING | confidential_address_city |  |  | 
 **State**{::nomarkdown}<pre><code>  state</code></pre>{:/} | POINTER | confidential_address_state |  |  | State-5
-**Zip Code**{::nomarkdown}<pre><code>  zipCode</code></pre>{:/} | STRING | N/A |  |  | 
+**Zip Code**{::nomarkdown}<pre><code>  zipCode</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
 **Start Date**{::nomarkdown}<pre><code>  startDate</code></pre>{:/} | DATE-TIME | confidential_start_date |  |  | 
 **End Date**{::nomarkdown}<pre><code>  endDate</code></pre>{:/} | DATE-TIME | confidential_end_date |  |  | 
 
-#### <a name="categories"></a>Confidential Address Category
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>categories</dd>
-<dt>File Type</dt><dd>2.141</dd>
-<dt>Label</dt><dd>Confidential Address Category</dd></dl>
 
-#### Properties
+### <a name="contacts"></a>25. Contacts
 
-Field | Datatype | FromVDM | Default | Attributes | Range
---- | --- | --- | --- | --- | ---
-**Confidential Address Category**{::nomarkdown}<pre><code>  addressCategory</code></pre>{:/} | ENUMERATION | N/A |  | INDEXED<br/>REQUIRED | {::nomarkdown}ELIGIBILITY/ENROLLMENT: <em><strong>1</strong></em><br/>MEDICAL RECORDS: <em><strong>4</strong></em><br/>APPOINTMENT/SCHEDULING: <em><strong>2</strong></em><br/>COPAYMENTS/VETERAN BILLING: <em><strong>3</strong></em><br/>ALL OTHERS: <em><strong>5</strong></em>{:/}
-**Confidential Category Active**{::nomarkdown}<pre><code>  categoryActive</code></pre>{:/} | BOOLEAN | N/A |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
-
-#### <a name="ineligibility"></a>
-
-<dl>
-<dt>ID</dt><dd>ineligibility</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
+**Field ID:** contacts
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**Ineligible Date**{::nomarkdown}<pre><code>  ineligibleDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Missing Person Date**{::nomarkdown}<pre><code>  missingPersonDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Missing Or Ineligible**{::nomarkdown}<pre><code>  missingOrIneligible</code></pre>{:/} | STRING | N/A |  |  | 
-**Ineligible Twx Source**{::nomarkdown}<pre><code>  ineligibleTwxSource</code></pre>{:/} | ENUMERATION | N/A |  |  | {::nomarkdown}REGIONAL OFFICE: <em><strong>2</strong></em><br/>VAMC: <em><strong>1</strong></em><br/>RPC: <em><strong>3</strong></em>{:/}
-**Ineligible Twx City**{::nomarkdown}<pre><code>  ineligibleTwxCity</code></pre>{:/} | STRING | N/A |  |  | 
-**Ineligible Twx State**{::nomarkdown}<pre><code>  ineligibleTwxState</code></pre>{:/} | POINTER | N/A |  |  | State-5
-**Ineligible Varo Decision**{::nomarkdown}<pre><code>  ineligibleVaroDecision</code></pre>{:/} | STRING | N/A |  |  | 
-**Missing Person Twx Source**{::nomarkdown}<pre><code>  missingPersonTwxSource</code></pre>{:/} | ENUMERATION | N/A |  |  | {::nomarkdown}REGIONAL OFFICE: <em><strong>2</strong></em><br/>VAMC: <em><strong>1</strong></em><br/>RPC: <em><strong>3</strong></em>{:/}
-**Missing Person Twx City**{::nomarkdown}<pre><code>  missingPersonTwxCity</code></pre>{:/} | STRING | N/A |  |  | 
-**Missing Person Twx State**{::nomarkdown}<pre><code>  missingPersonTwxState</code></pre>{:/} | POINTER | N/A |  |  | State-5
+**Primary Next Of Kin**{::nomarkdown}<pre><code>  primaryNextOfKin</code></pre>{:/} | OBJECT | *CUSTOM* |  |  | [primaryNextOfKin](#primaryNextOfKin)
+**Secondary Next Of Kin**{::nomarkdown}<pre><code>  secondaryNextOfKin</code></pre>{:/} | OBJECT | *CUSTOM* |  |  | [secondaryNextOfKin](#secondaryNextOfKin)
+**Va Guardian**{::nomarkdown}<pre><code>  vaGuardian</code></pre>{:/} | OBJECT | *CUSTOM* |  |  | [vaGuardian](#vaGuardian)
+**Civil Guardian**{::nomarkdown}<pre><code>  civilGuardian</code></pre>{:/} | OBJECT | *CUSTOM* |  |  | [civilGuardian](#civilGuardian)
+**Employer**{::nomarkdown}<pre><code>  employer</code></pre>{:/} | OBJECT | *CUSTOM* |  |  | [employer](#employer)
+**Spouses Employer**{::nomarkdown}<pre><code>  spousesEmployer</code></pre>{:/} | OBJECT | *CUSTOM* |  |  | [spouse](#spouse)
+**Primary Emergency Contact**{::nomarkdown}<pre><code>  primaryEmergencyContact</code></pre>{:/} | OBJECT | *CUSTOM* |  |  | [primaryEmergencyContact](#primaryEmergencyContact)
+**Secondary Emergency Contact**{::nomarkdown}<pre><code>  secondaryEmergencyContact</code></pre>{:/} | OBJECT | *CUSTOM* |  |  | [secondaryEmergencyContact](#secondaryEmergencyContact)
+**Designee**{::nomarkdown}<pre><code>  designee</code></pre>{:/} | OBJECT | *CUSTOM* |  |  | [designee](#designee)
 
-#### <a name="contacts"></a>
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>contacts</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
+
+### <a name="dateOfArchive"></a>26. Date Of Archive
+
+**Field ID:** dateOfArchive
+
+**Fileman Sub-File ID:** 2.13
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**Primary Next Of Kin**{::nomarkdown}<pre><code>  primaryNextOfKin</code></pre>{:/} | OBJECT | N/A |  |  | [primaryNextOfKin](#primaryNextOfKin)
-**Secondary Next Of Kin**{::nomarkdown}<pre><code>  secondaryNextOfKin</code></pre>{:/} | OBJECT | N/A |  |  | [secondaryNextOfKin](#secondaryNextOfKin)
-**Va Guardian**{::nomarkdown}<pre><code>  vaGuardian</code></pre>{:/} | OBJECT | N/A |  |  | [vaGuardian](#vaGuardian)
-**Civil Guardian**{::nomarkdown}<pre><code>  civilGuardian</code></pre>{:/} | OBJECT | N/A |  |  | [civilGuardian](#civilGuardian)
-**Employer**{::nomarkdown}<pre><code>  employer</code></pre>{:/} | OBJECT | N/A |  |  | [employer](#employer)
-**Spouses Employer**{::nomarkdown}<pre><code>  spousesEmployer</code></pre>{:/} | OBJECT | N/A |  |  | [spouse](#spouse)
-**Primary Emergency Contact**{::nomarkdown}<pre><code>  primaryEmergencyContact</code></pre>{:/} | OBJECT | N/A |  |  | [primaryEmergencyContact](#primaryEmergencyContact)
-**Secondary Emergency Contact**{::nomarkdown}<pre><code>  secondaryEmergencyContact</code></pre>{:/} | OBJECT | N/A |  |  | [secondaryEmergencyContact](#secondaryEmergencyContact)
-**Designee**{::nomarkdown}<pre><code>  designee</code></pre>{:/} | OBJECT | N/A |  |  | [designee](#designee)
+**Date Of Archive**{::nomarkdown}<pre><code>  dateOfArchive</code></pre>{:/} | DATE-TIME | date_of_archive |  | REQUIRED | 
+**Tape #**{::nomarkdown}<pre><code>  tapeNumber</code></pre>{:/} | STRING | tape_number |  |  | 
+**Begin Archive Date**{::nomarkdown}<pre><code>  beginArchiveDate</code></pre>{:/} | DATE-TIME | begin_archive_date |  |  | 
+**End Archive Date**{::nomarkdown}<pre><code>  endArchiveDate</code></pre>{:/} | DATE-TIME | end_archive_date |  |  | 
+**Number Of Records Archived**{::nomarkdown}<pre><code>  numberOfRecordsArchived</code></pre>{:/} | NUMERIC | number_of_records_archived |  |  | 
 
-#### <a name="primaryNextOfKin"></a>
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>primaryNextOfKin</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
+
+### <a name="dateOfDentalTreatment"></a>27. Date Of Dental Treatment
+
+**Field ID:** dateOfDentalTreatment
+
+**Fileman Sub-File ID:** 2.11
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**Work Phone Number**{::nomarkdown}<pre><code>  workPhoneNumber</code></pre>{:/} | STRING | N/A |  |  | 
-**Primary Nok Change Date Time**{::nomarkdown}<pre><code>  primaryNokChangeDateTime</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Name**{::nomarkdown}<pre><code>  name</code></pre>{:/} | STRING | N/A |  |  | 
-**Relationship To Patient**{::nomarkdown}<pre><code>  relationshipToPatient</code></pre>{:/} | STRING | N/A |  |  | 
-**Is Address Same As Patients**{::nomarkdown}<pre><code>  isAddressSameAsPatients</code></pre>{:/} | BOOLEAN | N/A |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
-**Street 1**{::nomarkdown}<pre><code>  street1</code></pre>{:/} | STRING | N/A |  |  | 
-**Street 2**{::nomarkdown}<pre><code>  street2</code></pre>{:/} | STRING | N/A |  |  | 
-**Street 3**{::nomarkdown}<pre><code>  street3</code></pre>{:/} | STRING | N/A |  |  | 
-**City**{::nomarkdown}<pre><code>  city</code></pre>{:/} | STRING | N/A |  |  | 
-**State**{::nomarkdown}<pre><code>  state</code></pre>{:/} | POINTER | N/A |  |  | State-5
-**Zip Code**{::nomarkdown}<pre><code>  zipCode</code></pre>{:/} | STRING | N/A |  |  | 
-**Phone Number**{::nomarkdown}<pre><code>  phoneNumber</code></pre>{:/} | STRING | N/A |  |  | 
-**Name Components**{::nomarkdown}<pre><code>  nameComponents</code></pre>{:/} | POINTER | N/A |  |  | [Name_Components-20](../VDM/Name_Components-20)
+**Date Of Dental Treatment**{::nomarkdown}<pre><code>  dateOfDentalTreatment</code></pre>{:/} | DATE-TIME | date_of_dental_treatment |  | REQUIRED | 
+**Condition**{::nomarkdown}<pre><code>  condition</code></pre>{:/} | STRING | condition |  |  | 
+**Date Condition First Noticed**{::nomarkdown}<pre><code>  dateConditionFirstNoticed</code></pre>{:/} | DATE-TIME | date_condition_first_noticed |  |  | 
 
-#### <a name="secondaryNextOfKin"></a>
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>secondaryNextOfKin</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
+
+### <a name="designee"></a>28. Designee
+
+**Field ID:** designee
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**Work Phone Number**{::nomarkdown}<pre><code>  workPhoneNumber</code></pre>{:/} | STRING | N/A |  |  | 
-**Secondary Nok Change Date Time**{::nomarkdown}<pre><code>  secondaryNokChangeDateTime</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Name**{::nomarkdown}<pre><code>  name</code></pre>{:/} | STRING | N/A |  |  | 
-**Relationship To Patient**{::nomarkdown}<pre><code>  relationshipToPatient</code></pre>{:/} | STRING | N/A |  |  | 
-**Address Same As Patients**{::nomarkdown}<pre><code>  addressSameAsPatients</code></pre>{:/} | BOOLEAN | N/A |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
-**Street 1**{::nomarkdown}<pre><code>  street1</code></pre>{:/} | STRING | N/A |  |  | 
-**Street 2**{::nomarkdown}<pre><code>  street2</code></pre>{:/} | STRING | N/A |  |  | 
-**Street 3**{::nomarkdown}<pre><code>  street3</code></pre>{:/} | STRING | N/A |  |  | 
-**City**{::nomarkdown}<pre><code>  city</code></pre>{:/} | STRING | N/A |  |  | 
-**State**{::nomarkdown}<pre><code>  state</code></pre>{:/} | POINTER | N/A |  |  | State-5
-**Zip Code**{::nomarkdown}<pre><code>  zipCode</code></pre>{:/} | STRING | N/A |  |  | 
-**Phone Number**{::nomarkdown}<pre><code>  phoneNumber</code></pre>{:/} | STRING | N/A |  |  | 
-**Name Components**{::nomarkdown}<pre><code>  nameComponents</code></pre>{:/} | POINTER | N/A |  |  | [Name_Components-20](../VDM/Name_Components-20)
-
-#### <a name="vaGuardian"></a>
-
-<dl>
-<dt>ID</dt><dd>vaGuardian</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
-
-#### Properties
-
-Field | Datatype | FromVDM | Default | Attributes | Range
---- | --- | --- | --- | --- | ---
-**Name**{::nomarkdown}<pre><code>  name</code></pre>{:/} | STRING | N/A |  |  | 
-**Relationship**{::nomarkdown}<pre><code>  relationship</code></pre>{:/} | STRING | N/A |  |  | 
-**Street 1**{::nomarkdown}<pre><code>  street1</code></pre>{:/} | STRING | N/A |  |  | 
-**Street 2**{::nomarkdown}<pre><code>  street2</code></pre>{:/} | STRING | N/A |  |  | 
-**City**{::nomarkdown}<pre><code>  city</code></pre>{:/} | STRING | N/A |  |  | 
-**State**{::nomarkdown}<pre><code>  state</code></pre>{:/} | POINTER | N/A |  |  | State-5
-**Zip Code**{::nomarkdown}<pre><code>  zipCode</code></pre>{:/} | STRING | N/A |  |  | 
-**Phone Number**{::nomarkdown}<pre><code>  phoneNumber</code></pre>{:/} | STRING | N/A |  |  | 
-**Institution**{::nomarkdown}<pre><code>  institution</code></pre>{:/} | POINTER | N/A |  |  | [Institution-4](../VDM/Institution-4)
-
-#### <a name="civilGuardian"></a>
-
-<dl>
-<dt>ID</dt><dd>civilGuardian</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
-
-#### Properties
-
-Field | Datatype | FromVDM | Default | Attributes | Range
---- | --- | --- | --- | --- | ---
-**Name**{::nomarkdown}<pre><code>  name</code></pre>{:/} | STRING | N/A |  |  | 
-**Relationship**{::nomarkdown}<pre><code>  relationship</code></pre>{:/} | STRING | N/A |  |  | 
-**Street 1**{::nomarkdown}<pre><code>  street1</code></pre>{:/} | STRING | N/A |  |  | 
-**Street 2**{::nomarkdown}<pre><code>  street2</code></pre>{:/} | STRING | N/A |  |  | 
-**City**{::nomarkdown}<pre><code>  city</code></pre>{:/} | STRING | N/A |  |  | 
-**State**{::nomarkdown}<pre><code>  state</code></pre>{:/} | POINTER | N/A |  |  | State-5
-**Zip Code**{::nomarkdown}<pre><code>  zipCode</code></pre>{:/} | STRING | N/A |  |  | 
-**Phone Number**{::nomarkdown}<pre><code>  phoneNumber</code></pre>{:/} | STRING | N/A |  |  | 
-**Institution**{::nomarkdown}<pre><code>  institution</code></pre>{:/} | STRING | N/A |  |  | 
-
-#### <a name="employer"></a>
-
-<dl>
-<dt>ID</dt><dd>employer</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
-
-#### Properties
-
-Field | Datatype | FromVDM | Default | Attributes | Range
---- | --- | --- | --- | --- | ---
-**Name**{::nomarkdown}<pre><code>  name</code></pre>{:/} | STRING | N/A |  |  | 
-**Status**{::nomarkdown}<pre><code>  status</code></pre>{:/} | ENUMERATION | N/A |  |  | {::nomarkdown}EMPLOYED PART TIME: <em><strong>2</strong></em><br/>SELF EMPLOYED: <em><strong>4</strong></em><br/>RETIRED: <em><strong>5</strong></em><br/>UNKNOWN: <em><strong>9</strong></em><br/>NOT EMPLOYED: <em><strong>3</strong></em><br/>EMPLOYED FULL TIME: <em><strong>1</strong></em><br/>ACTIVE MILITARY DUTY: <em><strong>6</strong></em>{:/}
-**Date Of Retirement**{::nomarkdown}<pre><code>  dateOfRetirement</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Is Government Agency**{::nomarkdown}<pre><code>  isGovernmentAgency</code></pre>{:/} | BOOLEAN | N/A |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
-**Street 1**{::nomarkdown}<pre><code>  street1</code></pre>{:/} | STRING | N/A |  |  | 
-**Street 2**{::nomarkdown}<pre><code>  street2</code></pre>{:/} | STRING | N/A |  |  | 
-**Street 3**{::nomarkdown}<pre><code>  street3</code></pre>{:/} | STRING | N/A |  |  | 
-**City**{::nomarkdown}<pre><code>  city</code></pre>{:/} | STRING | N/A |  |  | 
-**State**{::nomarkdown}<pre><code>  state</code></pre>{:/} | POINTER | N/A |  |  | State-5
-**Zip Code**{::nomarkdown}<pre><code>  zipCode</code></pre>{:/} | STRING | N/A |  |  | 
-**Phone Number**{::nomarkdown}<pre><code>  phoneNumber</code></pre>{:/} | STRING | N/A |  |  | 
-
-#### <a name="spouse"></a>
-
-<dl>
-<dt>ID</dt><dd>spouse</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
-
-#### Properties
-
-Field | Datatype | FromVDM | Default | Attributes | Range
---- | --- | --- | --- | --- | ---
-**Name**{::nomarkdown}<pre><code>  name</code></pre>{:/} | STRING | N/A |  |  | 
-**Occupation**{::nomarkdown}<pre><code>  occupation</code></pre>{:/} | STRING | N/A |  |  | 
-**Status**{::nomarkdown}<pre><code>  status</code></pre>{:/} | ENUMERATION | N/A |  |  | {::nomarkdown}EMPLOYED PART TIME: <em><strong>2</strong></em><br/>SELF EMPLYED: <em><strong>4</strong></em><br/>RETIRED: <em><strong>5</strong></em><br/>UNKNOWN: <em><strong>9</strong></em><br/>NOT EMPLOYED: <em><strong>3</strong></em><br/>EMPLOYED FULL TIME: <em><strong>1</strong></em><br/>ACTIVE MILITARY DUTY: <em><strong>6</strong></em>{:/}
-**Retirement Date**{::nomarkdown}<pre><code>  retirementDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Street 1**{::nomarkdown}<pre><code>  street1</code></pre>{:/} | STRING | N/A |  |  | 
-**Street 2**{::nomarkdown}<pre><code>  street2</code></pre>{:/} | STRING | N/A |  |  | 
-**Street 3**{::nomarkdown}<pre><code>  street3</code></pre>{:/} | STRING | N/A |  |  | 
-**City**{::nomarkdown}<pre><code>  city</code></pre>{:/} | STRING | N/A |  |  | 
-**State**{::nomarkdown}<pre><code>  state</code></pre>{:/} | POINTER | N/A |  |  | State-5
-**Zip Code**{::nomarkdown}<pre><code>  zipCode</code></pre>{:/} | STRING | N/A |  |  | 
-**Phone Number**{::nomarkdown}<pre><code>  phoneNumber</code></pre>{:/} | STRING | N/A |  |  | 
-
-#### <a name="primaryEmergencyContact"></a>
-
-<dl>
-<dt>ID</dt><dd>primaryEmergencyContact</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
-
-#### Properties
-
-Field | Datatype | FromVDM | Default | Attributes | Range
---- | --- | --- | --- | --- | ---
-**Phone Number**{::nomarkdown}<pre><code>  phoneNumber</code></pre>{:/} | STRING | N/A |  |  | 
-**Change Date Time**{::nomarkdown}<pre><code>  changeDateTime</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Is Same As Next Of Kin**{::nomarkdown}<pre><code>  isSameAsNextOfKin</code></pre>{:/} | BOOLEAN | N/A |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
-**Name**{::nomarkdown}<pre><code>  name</code></pre>{:/} | STRING | N/A |  |  | 
-**Relationship To Patient**{::nomarkdown}<pre><code>  relationshipToPatient</code></pre>{:/} | STRING | N/A |  |  | 
-**Street 1**{::nomarkdown}<pre><code>  street1</code></pre>{:/} | STRING | N/A |  |  | 
-**Street 2**{::nomarkdown}<pre><code>  street2</code></pre>{:/} | STRING | N/A |  |  | 
-**Street 3**{::nomarkdown}<pre><code>  street3</code></pre>{:/} | STRING | N/A |  |  | 
-**City**{::nomarkdown}<pre><code>  city</code></pre>{:/} | STRING | N/A |  |  | 
-**State**{::nomarkdown}<pre><code>  state</code></pre>{:/} | POINTER | N/A |  |  | State-5
-**Zip Code**{::nomarkdown}<pre><code>  zipCode</code></pre>{:/} | STRING | N/A |  |  | 
-**Phone Number**{::nomarkdown}<pre><code>  phoneNumber</code></pre>{:/} | STRING | N/A |  |  | 
-**Name Components**{::nomarkdown}<pre><code>  nameComponents</code></pre>{:/} | POINTER | N/A |  |  | [Name_Components-20](../VDM/Name_Components-20)
-
-#### <a name="secondaryEmergencyContact"></a>
-
-<dl>
-<dt>ID</dt><dd>secondaryEmergencyContact</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
-
-#### Properties
-
-Field | Datatype | FromVDM | Default | Attributes | Range
---- | --- | --- | --- | --- | ---
-**Work Phone Number**{::nomarkdown}<pre><code>  workPhoneNumber</code></pre>{:/} | STRING | N/A |  |  | 
-**Name**{::nomarkdown}<pre><code>  name</code></pre>{:/} | STRING | N/A |  |  | 
-**Change Date Time**{::nomarkdown}<pre><code>  changeDateTime</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Relationship To Patient**{::nomarkdown}<pre><code>  relationshipToPatient</code></pre>{:/} | STRING | N/A |  |  | 
-**Street 1**{::nomarkdown}<pre><code>  street1</code></pre>{:/} | STRING | N/A |  |  | 
-**Street 2**{::nomarkdown}<pre><code>  street2</code></pre>{:/} | STRING | N/A |  |  | 
-**Street 3**{::nomarkdown}<pre><code>  street3</code></pre>{:/} | STRING | N/A |  |  | 
-**City**{::nomarkdown}<pre><code>  city</code></pre>{:/} | STRING | N/A |  |  | 
-**State**{::nomarkdown}<pre><code>  state</code></pre>{:/} | POINTER | N/A |  |  | State-5
-**Zip Code**{::nomarkdown}<pre><code>  zipCode</code></pre>{:/} | STRING | N/A |  |  | 
-**Phone Number**{::nomarkdown}<pre><code>  phoneNumber</code></pre>{:/} | STRING | N/A |  |  | 
-**Name Components**{::nomarkdown}<pre><code>  nameComponents</code></pre>{:/} | POINTER | N/A |  |  | [Name_Components-20](../VDM/Name_Components-20)
-
-#### <a name="designee"></a>
-
-<dl>
-<dt>ID</dt><dd>designee</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
-
-#### Properties
-
-Field | Datatype | FromVDM | Default | Attributes | Range
---- | --- | --- | --- | --- | ---
-**Work Phone Number**{::nomarkdown}<pre><code>  workPhoneNumber</code></pre>{:/} | STRING | N/A |  |  | 
-**Is Same As Next Of Kin**{::nomarkdown}<pre><code>  isSameAsNextOfKin</code></pre>{:/} | BOOLEAN | N/A |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
-**Name**{::nomarkdown}<pre><code>  name</code></pre>{:/} | STRING | N/A |  |  | 
+**Work Phone Number**{::nomarkdown}<pre><code>  workPhoneNumber</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Is Same As Next Of Kin**{::nomarkdown}<pre><code>  isSameAsNextOfKin</code></pre>{:/} | BOOLEAN | *CUSTOM* |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
+**Name**{::nomarkdown}<pre><code>  name</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
 **Change Date Time**{::nomarkdown}<pre><code>  changeDateTime</code></pre>{:/} | DATE-TIME | designee_change_date_time |  |  | 
-**Relationship To Patient**{::nomarkdown}<pre><code>  relationshipToPatient</code></pre>{:/} | STRING | N/A |  |  | 
-**Street 1**{::nomarkdown}<pre><code>  street1</code></pre>{:/} | STRING | N/A |  |  | 
-**Street 2**{::nomarkdown}<pre><code>  street2</code></pre>{:/} | STRING | N/A |  |  | 
-**Street 3**{::nomarkdown}<pre><code>  street3</code></pre>{:/} | STRING | N/A |  |  | 
-**City**{::nomarkdown}<pre><code>  city</code></pre>{:/} | STRING | N/A |  |  | 
-**State**{::nomarkdown}<pre><code>  state</code></pre>{:/} | POINTER | N/A |  |  | State-5
-**Zip Code**{::nomarkdown}<pre><code>  zipCode</code></pre>{:/} | STRING | N/A |  |  | 
-**Phone Number**{::nomarkdown}<pre><code>  phoneNumber</code></pre>{:/} | STRING | N/A |  |  | 
-**Name Components**{::nomarkdown}<pre><code>  nameComponents</code></pre>{:/} | POINTER | N/A |  |  | [Name_Components-20](../VDM/Name_Components-20)
+**Relationship To Patient**{::nomarkdown}<pre><code>  relationshipToPatient</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Street 1**{::nomarkdown}<pre><code>  street1</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Street 2**{::nomarkdown}<pre><code>  street2</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Street 3**{::nomarkdown}<pre><code>  street3</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**City**{::nomarkdown}<pre><code>  city</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**State**{::nomarkdown}<pre><code>  state</code></pre>{:/} | POINTER | *CUSTOM* |  |  | State-5
+**Zip Code**{::nomarkdown}<pre><code>  zipCode</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Phone Number**{::nomarkdown}<pre><code>  phoneNumber</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Name Components**{::nomarkdown}<pre><code>  nameComponents</code></pre>{:/} | POINTER | *CUSTOM* |  |  | [Name_Components-20](../VDM/Name_Components-20)
 
-#### <a name="serviceConnected"></a>
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>serviceConnected</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
+
+### <a name="dispositionLoginDateTime"></a>29. Disposition Log-In Date/Time
+
+**Field ID:** dispositionLoginDateTime
+
+**Fileman Sub-File ID:** 2.101
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**Is Service Connected**{::nomarkdown}<pre><code>  isServiceConnected</code></pre>{:/} | BOOLEAN | N/A |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
-**Award Date**{::nomarkdown}<pre><code>  awardDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Pt Effective Date**{::nomarkdown}<pre><code>  ptEffectiveDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Eff Date Combined Sc Eval**{::nomarkdown}<pre><code>  effDateCombinedScEval</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Service Connected Percentage**{::nomarkdown}<pre><code>  serviceConnectedPercentage</code></pre>{:/} | NUMERIC | N/A |  |  | 
-**Receiving Va Disability**{::nomarkdown}<pre><code>  receivingVaDisability</code></pre>{:/} | ENUMERATION | N/A |  |  | {::nomarkdown}UNKNOWN: <em><strong>U</strong></em><br/>YES: <em><strong>Y</strong></em><br/>NO: <em><strong>N</strong></em>{:/}
-**Amount Of Va Disability**{::nomarkdown}<pre><code>  amountOfVaDisability</code></pre>{:/} | NUMERIC | N/A |  |  | 
-**Pt**{::nomarkdown}<pre><code>  pt</code></pre>{:/} | BOOLEAN | N/A |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
-**Unemployable**{::nomarkdown}<pre><code>  unemployable</code></pre>{:/} | BOOLEAN | N/A |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
-**Monetary Ben Verify Date**{::nomarkdown}<pre><code>  monetaryBenVerifyDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Ineligible Reason**{::nomarkdown}<pre><code>  ineligibleReason</code></pre>{:/} | STRING | N/A |  |  | 
-**Agency Allied Country**{::nomarkdown}<pre><code>  agencyAlliedCountry</code></pre>{:/} | POINTER | N/A |  |  | Other_Federal_Agency-35
-**Category Of Beneficiary**{::nomarkdown}<pre><code>  categoryOfBeneficiary</code></pre>{:/} | POINTER | N/A |  |  | Category_Of_Beneficiary-45_82
+**Log In Date/Time**{::nomarkdown}<pre><code>  logInDateTime</code></pre>{:/} | DATE-TIME | log_in_date_time |  | INDEXED<br/>REQUIRED | 
+**10-10T Registration**{::nomarkdown}<pre><code>  1010tRegistration</code></pre>{:/} | BOOLEAN | _1010t_registration |  |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
+**Status**{::nomarkdown}<pre><code>  status</code></pre>{:/} | ENUMERATION | status |  |  | {::nomarkdown}APPLICATION WITHOUT EXAM: <em><strong>2</strong></em><br/>10/10 VISIT: <em><strong>0</strong></em><br/>UNSCHEDULED: <em><strong>1</strong></em>{:/}
+**Type Of Benefit Applied For**{::nomarkdown}<pre><code>  type_of_benefit_applied_for</code></pre>{:/} | ENUMERATION | *CUSTOM* |  |  | {::nomarkdown}OUTPATIENT MEDICAL: <em><strong>3</strong></em><br/>DOMICILIARY: <em><strong>2</strong></em><br/>HOSPITAL: <em><strong>1</strong></em><br/>OUTPATIENT DENTAL: <em><strong>4</strong></em><br/>NURSING HOME CARE: <em><strong>5</strong></em>{:/}
+**Type Of Care Applied For**{::nomarkdown}<pre><code>  typeOfCareAppliedFor</code></pre>{:/} | ENUMERATION | type_of_care_applied_for |  |  | {::nomarkdown}STERILIZATION: <em><strong>3</strong></em><br/>PREGNANCY: <em><strong>4</strong></em><br/>DENTAL: <em><strong>1</strong></em><br/>PLASTIC SURGERY: <em><strong>2</strong></em><br/>ALL OTHER: <em><strong>5</strong></em>{:/}
+**Facility Applying To**{::nomarkdown}<pre><code>  facilityApplyingTo</code></pre>{:/} | POINTER | facility_applying_to |  |  | [Medical_Center_Division-40_8](../VDM/Medical_Center_Division-40_8)
+**Who Entered 10/10**{::nomarkdown}<pre><code>  who_entered_10_10</code></pre>{:/} | POINTER | *CUSTOM* |  |  | [New_Person-200](../VDM/New_Person-200)
+**Log Out Date Time**{::nomarkdown}<pre><code>  logOutDateTime</code></pre>{:/} | DATE-TIME | log_out_date_time |  |  | 
+**Disposition**{::nomarkdown}<pre><code>  disposition</code></pre>{:/} | POINTER | disposition |  |  | Disposition-37
+**Reason For Late Disposition**{::nomarkdown}<pre><code>  reasonForLateDisposition</code></pre>{:/} | POINTER | reason_for_late_disposition |  |  | Disposition_Late_Reason-30
+**Who Dispositioned**{::nomarkdown}<pre><code>  whoDispositioned</code></pre>{:/} | POINTER | who_dispositioned |  |  | [New_Person-200](../VDM/New_Person-200)
+**Description Of Incident**{::nomarkdown}<pre><code>  descriptionOfIncident</code></pre>{:/} | STRING | description_of_incident |  |  | 
+***Eligible For Medicaid**{::nomarkdown}<pre><code>  eligibleForMedicaid</code></pre>{:/} | BOOLEAN | eligible_for_medicaid |  |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
+**Registration Eligibility Code**{::nomarkdown}<pre><code>  registrationEligibilityCode</code></pre>{:/} | POINTER | registration_eligibility_code |  |  | [Eligibility_Code-8](../VDM/Eligibility_Code-8)
+**Elig Verified At Registration**{::nomarkdown}<pre><code>  eligVerifiedAtRegistration</code></pre>{:/} | BOOLEAN | elig_verified_at_registration |  |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
+**Sc At Registration**{::nomarkdown}<pre><code>  scAtRegistration</code></pre>{:/} | BOOLEAN | sc_at_registration |  |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
+**Sc% At Registration**{::nomarkdown}<pre><code>  scAtRegistration2_101-16</code></pre>{:/} | NUMERIC | sc_at_registration-2_101-16 |  |  | 
+**Amis 420 Segment**{::nomarkdown}<pre><code>  amis420Segment</code></pre>{:/} | POINTER | amis_420_segment |  |  | Amis_Segment-391_1
+**Outpatient Encounter**{::nomarkdown}<pre><code>  outpatientEncounter</code></pre>{:/} | POINTER | outpatient_encounter |  |  | Outpatient_Encounter-409_68
+**Encounter Conversion Status**{::nomarkdown}<pre><code>  encounterConversionStatus</code></pre>{:/} | ENUMERATION | encounter_conversion_status |  |  | {::nomarkdown}NOT CONVERTED: <em><strong>0</strong></em><br/>CONVERTED: <em><strong>1</strong></em>{:/}
+**Need Related To Occupation**{::nomarkdown}<pre><code>  needRelatedToOccupation</code></pre>{:/} | ENUMERATION | need_related_to_occupation |  |  | {::nomarkdown}UNKNOWN: <em><strong>U</strong></em><br/>YES: <em><strong>Y</strong></em><br/>NO: <em><strong>N</strong></em>{:/}
+**Workmen&#x27;S Comp Claim Filed**{::nomarkdown}<pre><code>  workmensCompClaimFiled</code></pre>{:/} | BOOLEAN | workmens_comp_claim_filed |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
+**Workmen&#x27;S Comp Claim Number**{::nomarkdown}<pre><code>  workmensCompClaimNumber</code></pre>{:/} | STRING | workmens_comp_claim_number |  |  | 
+**Need Related To An Accident**{::nomarkdown}<pre><code>  needRelatedToAnAccident</code></pre>{:/} | ENUMERATION | need_related_to_an_accident |  |  | {::nomarkdown}UNKNOWN: <em><strong>U</strong></em><br/>YES: <em><strong>Y</strong></em><br/>NO: <em><strong>N</strong></em>{:/}
+**Injury Caused By**{::nomarkdown}<pre><code>  injuryCausedBy</code></pre>{:/} | STRING | injury_caused_by |  |  | 
+**Injuring Parties Insurance**{::nomarkdown}<pre><code>  injuringPartiesInsurance</code></pre>{:/} | POINTER | injuring_parties_insurance |  |  | Insurance_Company-36
+**Filed Against Injuring Party**{::nomarkdown}<pre><code>  filedAgainstInjuringParty</code></pre>{:/} | BOOLEAN | filed_against_injuring_party |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
+**Attorney&#x27;S Name**{::nomarkdown}<pre><code>  attorneysName</code></pre>{:/} | STRING | attorneys_name |  |  | 
+**A-Address 1**{::nomarkdown}<pre><code>  aaddress1</code></pre>{:/} | STRING | aaddress_1 |  |  | 
+**A-Address 2**{::nomarkdown}<pre><code>  aaddress2</code></pre>{:/} | STRING | aaddress_2 |  |  | 
+**A-Address 3**{::nomarkdown}<pre><code>  aaddress3</code></pre>{:/} | STRING | aaddress_3 |  |  | 
+**A-City**{::nomarkdown}<pre><code>  acity</code></pre>{:/} | STRING | acity |  |  | 
+**A-State**{::nomarkdown}<pre><code>  astate</code></pre>{:/} | POINTER | astate |  |  | State-5
+**A-Zip Code**{::nomarkdown}<pre><code>  azipCode</code></pre>{:/} | STRING | azip_code |  |  | 
+**A-Phone**{::nomarkdown}<pre><code>  aphone</code></pre>{:/} | STRING | aphone |  |  | 
+**A-Zip+4**{::nomarkdown}<pre><code>  azip4</code></pre>{:/} | STRING | azip4 |  |  | 
+**Active**{::nomarkdown}<pre><code>  active</code></pre>{:/} | ENUMERATION | active |  | INDEXED | {::nomarkdown}ACTIVE: <em><strong>1</strong></em>{:/}
+**Attorney&#x27;S Name Components**{::nomarkdown}<pre><code>  attorneysNameComponents</code></pre>{:/} | POINTER | attorneys_name_components |  |  | [Name_Components-20](../VDM/Name_Components-20)
+**Ods At Registration?**{::nomarkdown}<pre><code>  odsAtRegistration</code></pre>{:/} | BOOLEAN | ods_at_registration |  |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
+**Ods Registration Entry**{::nomarkdown}<pre><code>  odsRegistrationEntry</code></pre>{:/} |  | ods_registration_entry-2_101 |  |  | 
 
-#### <a name="claim"></a>
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>claim</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
+
+### <a name="employer"></a>30. Employer
+
+**Field ID:** employer
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**Claim Number**{::nomarkdown}<pre><code>  claimNumber</code></pre>{:/} | STRING | N/A |  |  | 
-**Claim Folder Location**{::nomarkdown}<pre><code>  claimFolderLocation</code></pre>{:/} | POINTER | N/A |  |  | [Institution-4](../VDM/Institution-4)
-**Covered By Health Insurance**{::nomarkdown}<pre><code>  coveredByHealthInsurance</code></pre>{:/} | ENUMERATION | N/A |  |  | {::nomarkdown}UNKNOWN: <em><strong>U</strong></em><br/>YES: <em><strong>Y</strong></em><br/>NO: <em><strong>N</strong></em>{:/}
+**Name**{::nomarkdown}<pre><code>  name</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Status**{::nomarkdown}<pre><code>  status</code></pre>{:/} | ENUMERATION | *CUSTOM* |  |  | {::nomarkdown}EMPLOYED PART TIME: <em><strong>2</strong></em><br/>SELF EMPLOYED: <em><strong>4</strong></em><br/>RETIRED: <em><strong>5</strong></em><br/>UNKNOWN: <em><strong>9</strong></em><br/>NOT EMPLOYED: <em><strong>3</strong></em><br/>EMPLOYED FULL TIME: <em><strong>1</strong></em><br/>ACTIVE MILITARY DUTY: <em><strong>6</strong></em>{:/}
+**Date Of Retirement**{::nomarkdown}<pre><code>  dateOfRetirement</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Is Government Agency**{::nomarkdown}<pre><code>  isGovernmentAgency</code></pre>{:/} | BOOLEAN | *CUSTOM* |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
+**Street 1**{::nomarkdown}<pre><code>  street1</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Street 2**{::nomarkdown}<pre><code>  street2</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Street 3**{::nomarkdown}<pre><code>  street3</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**City**{::nomarkdown}<pre><code>  city</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**State**{::nomarkdown}<pre><code>  state</code></pre>{:/} | POINTER | *CUSTOM* |  |  | State-5
+**Zip Code**{::nomarkdown}<pre><code>  zipCode</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Phone Number**{::nomarkdown}<pre><code>  phoneNumber</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
 
-#### <a name="insuranceType"></a>Insurance Type
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>insuranceType</dd>
-<dt>File Type</dt><dd>2.312</dd>
-<dt>Label</dt><dd>Insurance Type</dd></dl>
+
+### <a name="enrollmentClinic"></a>31. Enrollment Clinic
+
+**Field ID:** enrollmentClinic
+
+**Fileman Sub-File ID:** 2.001
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Enrollment Clinic**{::nomarkdown}<pre><code>  enrollmentClinic</code></pre>{:/} | POINTER | enrollment_clinic |  | INDEXED<br/>REQUIRED | [Hospital_Location-44](../VDM/Hospital_Location-44)
+**Enrollment Data**{::nomarkdown}<pre><code>  enrollmentData</code></pre>{:/} | OBJECT | enrollment_data |  |  | [enrollmentData](#enrollmentData)
+**Current Status**{::nomarkdown}<pre><code>  currentStatus</code></pre>{:/} | ENUMERATION | current_status |  |  | {::nomarkdown}INACTIVE: <em><strong>I</strong></em>{:/}
+
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="enrollmentData"></a>32. Enrollment Data
+
+**Field ID:** enrollmentData
+
+**Fileman Sub-File ID:** 2.011
+
+#### Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Date Of Enrollment**{::nomarkdown}<pre><code>  dateOfEnrollment</code></pre>{:/} | DATE-TIME | date_of_enrollment |  | REQUIRED | 
+**Opt Or Ac**{::nomarkdown}<pre><code>  optOrAc</code></pre>{:/} | ENUMERATION | opt_or_ac |  |  | {::nomarkdown}OPT: <em><strong>O</strong></em><br/>AC: <em><strong>A</strong></em>{:/}
+**Date Of Discharge**{::nomarkdown}<pre><code>  dateOfDischarge</code></pre>{:/} | DATE-TIME | date_of_discharge |  |  | 
+**Reason For Discharge**{::nomarkdown}<pre><code>  reasonForDischarge</code></pre>{:/} | STRING | reason_for_discharge |  |  | 
+**Review Date**{::nomarkdown}<pre><code>  reviewDate</code></pre>{:/} | DATE-TIME | review_date |  |  | 
+
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="ethnicityInformation"></a>33. Ethnicity Information
+
+**Field ID:** ethnicityInformation
+
+**Fileman Sub-File ID:** 2.06
+
+#### Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Ethnicity Information**{::nomarkdown}<pre><code>  ethnicityInformation</code></pre>{:/} | POINTER | ethnicity_information |  | INDEXED<br/>REQUIRED | Ethnicity-10_2
+**Method Of Collection**{::nomarkdown}<pre><code>  methodOfCollection</code></pre>{:/} | POINTER | method_of_collection |  |  | Race_And_Ethnicity_Collection_Method-10_3
+
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="grenadaService"></a>34. Grenada Service
+
+**Field ID:** grenadaService
+
+#### Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Service Indicated**{::nomarkdown}<pre><code>  serviceIndicated</code></pre>{:/} | ENUMERATION | *CUSTOM* |  |  | {::nomarkdown}UNKNOWN: <em><strong>U</strong></em><br/>YES: <em><strong>Y</strong></em><br/>NO: <em><strong>N</strong></em>{:/}
+**From Date**{::nomarkdown}<pre><code>  fromDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**To Date**{::nomarkdown}<pre><code>  toDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="icnHistory"></a>35. Icn History
+
+**Field ID:** icnHistory
+
+**Fileman Sub-File ID:** 2.0992
+
+#### Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Icn History**{::nomarkdown}<pre><code>  icnHistory</code></pre>{:/} | NUMERIC | icn_history |  | REQUIRED | 
+**Icn Checksum**{::nomarkdown}<pre><code>  icnChecksum</code></pre>{:/} | NUMERIC | icn_checksum |  |  | 
+**Cmor**{::nomarkdown}<pre><code>  cmor</code></pre>{:/} | POINTER | cmor |  |  | [Institution-4](../VDM/Institution-4)
+**Date/Time Of Change**{::nomarkdown}<pre><code>  dateTimeOfChange</code></pre>{:/} | DATE-TIME | date_time_of_change |  |  | 
+
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="ineligibility"></a>36. Ineligibility
+
+**Field ID:** ineligibility
+
+#### Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Ineligible Date**{::nomarkdown}<pre><code>  ineligibleDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Missing Person Date**{::nomarkdown}<pre><code>  missingPersonDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Missing Or Ineligible**{::nomarkdown}<pre><code>  missingOrIneligible</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Ineligible Twx Source**{::nomarkdown}<pre><code>  ineligibleTwxSource</code></pre>{:/} | ENUMERATION | *CUSTOM* |  |  | {::nomarkdown}REGIONAL OFFICE: <em><strong>2</strong></em><br/>VAMC: <em><strong>1</strong></em><br/>RPC: <em><strong>3</strong></em>{:/}
+**Ineligible Twx City**{::nomarkdown}<pre><code>  ineligibleTwxCity</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Ineligible Twx State**{::nomarkdown}<pre><code>  ineligibleTwxState</code></pre>{:/} | POINTER | *CUSTOM* |  |  | State-5
+**Ineligible Varo Decision**{::nomarkdown}<pre><code>  ineligibleVaroDecision</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Missing Person Twx Source**{::nomarkdown}<pre><code>  missingPersonTwxSource</code></pre>{:/} | ENUMERATION | *CUSTOM* |  |  | {::nomarkdown}REGIONAL OFFICE: <em><strong>2</strong></em><br/>VAMC: <em><strong>1</strong></em><br/>RPC: <em><strong>3</strong></em>{:/}
+**Missing Person Twx City**{::nomarkdown}<pre><code>  missingPersonTwxCity</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Missing Person Twx State**{::nomarkdown}<pre><code>  missingPersonTwxState</code></pre>{:/} | POINTER | *CUSTOM* |  |  | State-5
+
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="insuranceType"></a>37. Insurance Type
+
+**Field ID:** insuranceType
+
+**Fileman Sub-File ID:** 2.312
+
+#### Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
 **Insurance Type**{::nomarkdown}<pre><code>  insuranceType</code></pre>{:/} | POINTER | insurance_type |  | INDEXED<br/>REQUIRED | Insurance_Company-36
 **Group Plan**{::nomarkdown}<pre><code>  groupPlan</code></pre>{:/} | POINTER | group_plan |  |  | Group_Insurance_Plan-355_3
@@ -751,544 +1171,325 @@ Field | Datatype | FromVDM | Default | Attributes | Range
 ***Name Of Insured**{::nomarkdown}<pre><code>  nameOfInsured</code></pre>{:/} | STRING | name_of_insured-2_312-17 |  |  | 
 **Eligibility/Benefit**{::nomarkdown}<pre><code>  eligibilityBenefit</code></pre>{:/} | OBJECT | eligibility_benefit |  |  | [Eligibility_Benefit-2_322](#Eligibility_Benefit-2_322)
 
-#### <a name="Group_Reference_Information-2_3129"></a>Group Reference Information
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>Group_Reference_Information-2_3129</dd>
-<dt>File Type</dt><dd>2.3129</dd>
-<dt>Label</dt><dd>Group Reference Information</dd></dl>
 
-#### Properties
+### <a name="lebanonService"></a>38. Lebanon Service
 
-Field | Datatype | FromVDM | Default | Attributes | Range
---- | --- | --- | --- | --- | ---
-**Sequence**{::nomarkdown}<pre><code>  sequence</code></pre>{:/} | NUMERIC | sequence |  | INDEXED<br/>REQUIRED | 
-**Reference Id (Group)**{::nomarkdown}<pre><code>  referenceIdGroup</code></pre>{:/} | STRING | reference_id_group |  |  | 
-**Ref Id Qualifier (Group)**{::nomarkdown}<pre><code>  refIdQualifierGroup</code></pre>{:/} | POINTER | ref_id_qualifier_group |  |  | X12_271_Reference_Identification-365_028
-**Description**{::nomarkdown}<pre><code>  description</code></pre>{:/} | STRING | description |  |  | 
-
-#### <a name="Group_Provider_Info-2_332"></a>Group Provider Info
-
-<dl>
-<dt>ID</dt><dd>Group_Provider_Info-2_332</dd>
-<dt>File Type</dt><dd>2.332</dd>
-<dt>Label</dt><dd>Group Provider Info</dd></dl>
+**Field ID:** lebanonService
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**Sequence**{::nomarkdown}<pre><code>  sequence</code></pre>{:/} | NUMERIC | sequence |  | INDEXED<br/>REQUIRED | 
-**Provider Code**{::nomarkdown}<pre><code>  providerCode</code></pre>{:/} | POINTER | provider_code |  |  | X12_271_Provider_Code-365_024
-**Prov Reference Id**{::nomarkdown}<pre><code>  provReferenceId</code></pre>{:/} | STRING | prov_reference_id |  |  | 
+**Service Indicated**{::nomarkdown}<pre><code>  serviceIndicated</code></pre>{:/} | ENUMERATION | *CUSTOM* |  |  | {::nomarkdown}UNKNOWN: <em><strong>U</strong></em><br/>YES: <em><strong>Y</strong></em><br/>NO: <em><strong>N</strong></em>{:/}
+**From Date**{::nomarkdown}<pre><code>  fromDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**To Date**{::nomarkdown}<pre><code>  toDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
 
-#### <a name="Health_Care_Code_Information-2_31211"></a>Health Care Code Information
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>Health_Care_Code_Information-2_31211</dd>
-<dt>File Type</dt><dd>2.31211</dd>
-<dt>Label</dt><dd>Health Care Code Information</dd></dl>
+
+### <a name="militaryService"></a>39. Military Service
+
+**Field ID:** militaryService
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**Sequence**{::nomarkdown}<pre><code>  sequence</code></pre>{:/} | NUMERIC | sequence |  | INDEXED<br/>REQUIRED | 
-**Diagnosis Code**{::nomarkdown}<pre><code>  diagnosisCode</code></pre>{:/} | POINTER | diagnosis_code |  |  | [Icd_Diagnosis-80](../VDM/Icd_Diagnosis-80)
-**Diagnosis Code Qualifier**{::nomarkdown}<pre><code>  diagnosisCodeQualifier</code></pre>{:/} | STRING | diagnosis_code_qualifier |  |  | 
-**Primary Or Secondary?**{::nomarkdown}<pre><code>  primaryOrSecondary</code></pre>{:/} | ENUMERATION | primary_or_secondary |  |  | {::nomarkdown}PRIMARY: <em><strong>P</strong></em><br/>SECONDARY: <em><strong>S</strong></em>{:/}
-
-#### <a name="Eligibility_Benefit-2_322"></a>Eligibility/Benefit
-
-<dl>
-<dt>ID</dt><dd>Eligibility_Benefit-2_322</dd>
-<dt>File Type</dt><dd>2.322</dd>
-<dt>Label</dt><dd>Eligibility/Benefit</dd></dl>
-
-#### Properties
-
-Field | Datatype | FromVDM | Default | Attributes | Range
---- | --- | --- | --- | --- | ---
-**Eb Number**{::nomarkdown}<pre><code>  ebNumber</code></pre>{:/} | NUMERIC | eb_number |  | INDEXED<br/>REQUIRED | 
-**Eligibility/Benefit Info**{::nomarkdown}<pre><code>  eligibilityBenefitInfo</code></pre>{:/} | POINTER | eligibility_benefit_info |  |  | X12_271_Eligibility_Benefit-365_011
-**Coverage Level**{::nomarkdown}<pre><code>  coverageLevel</code></pre>{:/} | POINTER | coverage_level |  |  | X12_271_Coverage_Level-365_012
-***Service Type**{::nomarkdown}<pre><code>  serviceType</code></pre>{:/} | POINTER | service_type |  |  | X12_271_Service_Type-365_013
-**Insurance Type**{::nomarkdown}<pre><code>  insuranceType</code></pre>{:/} | POINTER | insurance_type |  |  | X12_271_Insurance_Type-365_014
-**Plan Coverage Description**{::nomarkdown}<pre><code>  planCoverageDescription</code></pre>{:/} | STRING | plan_coverage_description |  |  | 
-**Time Period Qualifier**{::nomarkdown}<pre><code>  timePeriodQualifier</code></pre>{:/} | POINTER | time_period_qualifier |  |  | X12_271_Time_Period_Qualifier-365_015
-**Monetary Amount**{::nomarkdown}<pre><code>  monetaryAmount</code></pre>{:/} | STRING | monetary_amount |  |  | 
-**Percent**{::nomarkdown}<pre><code>  percent</code></pre>{:/} | NUMERIC | percent |  |  | 
-**Quantity Qualifier**{::nomarkdown}<pre><code>  quantityQualifier</code></pre>{:/} | POINTER | quantity_qualifier |  |  | X12_271_Quantity_Qualifier-365_016
-**Quantity**{::nomarkdown}<pre><code>  quantity</code></pre>{:/} | STRING | quantity |  |  | 
-**Authorization/Certification**{::nomarkdown}<pre><code>  authorizationCertification</code></pre>{:/} | POINTER | authorization_certification |  |  | X12_271_Yes_No_Response_Code_-365_033
-**In Plan**{::nomarkdown}<pre><code>  inPlan</code></pre>{:/} | POINTER | in_plan |  |  | X12_271_Yes_No_Response_Code_-365_033
-**Procedure Coding Method**{::nomarkdown}<pre><code>  procedureCodingMethod</code></pre>{:/} | POINTER | procedure_coding_method |  |  | X12_271_Procedure_Coding_Method-365_035
-**Procedure Code**{::nomarkdown}<pre><code>  procedureCode</code></pre>{:/} | STRING | procedure_code |  |  | 
-**Procedure Modifier 1**{::nomarkdown}<pre><code>  procedureModifier1</code></pre>{:/} | STRING | procedure_modifier_1 |  |  | 
-**Procedure Modifier 2**{::nomarkdown}<pre><code>  procedureModifier2</code></pre>{:/} | STRING | procedure_modifier_2 |  |  | 
-**Procedure Modifier 3**{::nomarkdown}<pre><code>  procedureModifier3</code></pre>{:/} | STRING | procedure_modifier_3 |  |  | 
-**Procedure Modifier 4**{::nomarkdown}<pre><code>  procedureModifier4</code></pre>{:/} | STRING | procedure_modifier_4 |  |  | 
-**Notes**{::nomarkdown}<pre><code>  notes</code></pre>{:/} | STRING | notes |  |  | 
-**Entity Id Code**{::nomarkdown}<pre><code>  entityIdCode</code></pre>{:/} | POINTER | entity_id_code |  |  | X12_271_Entity_Identifier_Code-365_022
-**Entity Type**{::nomarkdown}<pre><code>  entityType</code></pre>{:/} | POINTER | entity_type |  |  | X12_271_Entity_Type_Qualifier-365_043
-**Name**{::nomarkdown}<pre><code>  name</code></pre>{:/} | STRING | name |  |  | 
-**Entity Id**{::nomarkdown}<pre><code>  entityId</code></pre>{:/} | STRING | entity_id |  |  | 
-**Entity Id Qualifier**{::nomarkdown}<pre><code>  entityIdQualifier</code></pre>{:/} | POINTER | entity_id_qualifier |  |  | X12_271_Identification_Qualifier-365_023
-**Entity Relationship Code**{::nomarkdown}<pre><code>  entityRelationshipCode</code></pre>{:/} | POINTER | entity_relationship_code |  |  | X12_271_Entity_Relationship_Code-365_031
-**Address Line 1**{::nomarkdown}<pre><code>  addressLine1</code></pre>{:/} | STRING | address_line_1 |  |  | 
-**Address Line 2**{::nomarkdown}<pre><code>  addressLine2</code></pre>{:/} | STRING | address_line_2 |  |  | 
-**City**{::nomarkdown}<pre><code>  city</code></pre>{:/} | STRING | city |  |  | 
-**State**{::nomarkdown}<pre><code>  state</code></pre>{:/} | POINTER | state |  |  | State-5
-**Zip**{::nomarkdown}<pre><code>  zip</code></pre>{:/} | STRING | zip |  |  | 
-**Country Code**{::nomarkdown}<pre><code>  countryCode</code></pre>{:/} | STRING | country_code |  |  | 
-**Location**{::nomarkdown}<pre><code>  location</code></pre>{:/} | STRING | location |  |  | 
-**Location Qualifier**{::nomarkdown}<pre><code>  locationQualifier</code></pre>{:/} | POINTER | location_qualifier |  |  | X12_271_Location_Qualifer-365_034
-**Subdivision Code**{::nomarkdown}<pre><code>  subdivisionCode</code></pre>{:/} | STRING | subdivision_code |  |  | 
-**Provider Code**{::nomarkdown}<pre><code>  providerCode</code></pre>{:/} | POINTER | provider_code |  |  | X12_271_Provider_Code-365_024
-**Reference Id**{::nomarkdown}<pre><code>  referenceId</code></pre>{:/} | STRING | reference_id |  |  | 
-**Reference Id Qualifier**{::nomarkdown}<pre><code>  referenceIdQualifier</code></pre>{:/} | POINTER | reference_id_qualifier |  |  | X12_271_Reference_Identification-365_028
-**Contact Information**{::nomarkdown}<pre><code>  contactInformation</code></pre>{:/} | OBJECT | contact_information |  |  | [Contact_Information-2_3226](#Contact_Information-2_3226)
-**Healthcare Services Delivery**{::nomarkdown}<pre><code>  healthcareServicesDelivery</code></pre>{:/} | OBJECT | healthcare_services_delivery |  |  | [Healthcare_Services_Delivery-2_3227](#Healthcare_Services_Delivery-2_3227)
-**Subscriber Dates**{::nomarkdown}<pre><code>  subscriberDates</code></pre>{:/} | OBJECT | subscriber_dates |  |  | [Subscriber_Dates-2_3228](#Subscriber_Dates-2_3228)
-**Subscriber Additional Info**{::nomarkdown}<pre><code>  subscriberAdditionalInfo</code></pre>{:/} | OBJECT | subscriber_additional_info |  |  | [Subscriber_Additional_Info-2_3229](#Subscriber_Additional_Info-2_3229)
-**Subscriber Reference Id**{::nomarkdown}<pre><code>  subscriberReferenceId</code></pre>{:/} | OBJECT | subscriber_reference_id |  |  | [Subscriber_Reference_Id-2_32291](#Subscriber_Reference_Id-2_32291)
-**Service Types**{::nomarkdown}<pre><code>  serviceTypes</code></pre>{:/} | POINTER | service_types |  |  | X12_271_Service_Type-365_013
-
-#### <a name="Contact_Information-2_3226"></a>Contact Information
-
-<dl>
-<dt>ID</dt><dd>Contact_Information-2_3226</dd>
-<dt>File Type</dt><dd>2.3226</dd>
-<dt>Label</dt><dd>Contact Information</dd></dl>
-
-#### Properties
-
-Field | Datatype | FromVDM | Default | Attributes | Range
---- | --- | --- | --- | --- | ---
-**Sequence**{::nomarkdown}<pre><code>  sequence</code></pre>{:/} | NUMERIC | sequence |  | INDEXED<br/>REQUIRED | 
-**Name**{::nomarkdown}<pre><code>  name</code></pre>{:/} | STRING | name |  |  | 
-***Communication Number**{::nomarkdown}<pre><code>  communcationNumber</code></pre>{:/} | STRING | communication_number |  |  | 
-**Communication Qualifier**{::nomarkdown}<pre><code>  communicationQualifier</code></pre>{:/} | POINTER | communication_qualifier |  |  | X12_271_Contact_Qualifier-365_021
-**Communication Number**{::nomarkdown}<pre><code>  communicationNumber</code></pre>{:/} | STRING | communication_number-2_3226-1 |  |  | 
-
-#### <a name="Healthcare_Services_Delivery-2_3227"></a>Healthcare Services Delivery
-
-<dl>
-<dt>ID</dt><dd>Healthcare_Services_Delivery-2_3227</dd>
-<dt>File Type</dt><dd>2.3227</dd>
-<dt>Label</dt><dd>Healthcare Services Delivery</dd></dl>
-
-#### Properties
-
-Field | Datatype | FromVDM | Default | Attributes | Range
---- | --- | --- | --- | --- | ---
-**Sequence**{::nomarkdown}<pre><code>  sequence</code></pre>{:/} | NUMERIC | sequence |  | INDEXED<br/>REQUIRED | 
-**Benefit Quantity**{::nomarkdown}<pre><code>  benefitQuantity</code></pre>{:/} | NUMERIC | benefit_quantity |  |  | 
-**Quantity Qualifier**{::nomarkdown}<pre><code>  quantityQualifier</code></pre>{:/} | POINTER | quantity_qualifier |  |  | X12_271_Quantity_Qualifier-365_016
-**Sample Selection Modulus**{::nomarkdown}<pre><code>  sampleSelectionModulus</code></pre>{:/} | STRING | sample_selection_modulus |  |  | 
-**Units Of Measurement**{::nomarkdown}<pre><code>  unitsOfMeasurement</code></pre>{:/} | POINTER | units_of_measurement |  |  | X12_271_Units_Of_Measurement-365_029
-**Time Periods**{::nomarkdown}<pre><code>  timePeriods</code></pre>{:/} | NUMERIC | time_periods |  |  | 
-**Time Period Qualifier**{::nomarkdown}<pre><code>  timePeriodQualifier</code></pre>{:/} | POINTER | time_period_qualifier |  |  | X12_271_Time_Period_Qualifier-365_015
-**Delivery Frequency**{::nomarkdown}<pre><code>  deliveryFrequency</code></pre>{:/} | POINTER | delivery_frequency |  |  | X12_271_Delivery_Frequency_Code-365_025
-**Delivery Pattern**{::nomarkdown}<pre><code>  deliveryPattern</code></pre>{:/} | POINTER | delivery_pattern |  |  | X12_271_Delivery_Pattern-365_036
-
-#### <a name="Subscriber_Dates-2_3228"></a>Subscriber Dates
-
-<dl>
-<dt>ID</dt><dd>Subscriber_Dates-2_3228</dd>
-<dt>File Type</dt><dd>2.3228</dd>
-<dt>Label</dt><dd>Subscriber Dates</dd></dl>
-
-#### Properties
-
-Field | Datatype | FromVDM | Default | Attributes | Range
---- | --- | --- | --- | --- | ---
-**Sequence**{::nomarkdown}<pre><code>  sequence</code></pre>{:/} | NUMERIC | sequence |  | INDEXED<br/>REQUIRED | 
-**Date**{::nomarkdown}<pre><code>  date</code></pre>{:/} | STRING | date |  |  | 
-**Date Qualifier**{::nomarkdown}<pre><code>  dateQualifier</code></pre>{:/} | POINTER | date_qualifier |  |  | X12_271_Date_Qualifier-365_026
-**Date Format**{::nomarkdown}<pre><code>  dateFormat</code></pre>{:/} | POINTER | date_format |  |  | X12_271_Date_Format_Qualifier-365_032
-
-#### <a name="Subscriber_Additional_Info-2_3229"></a>Subscriber Additional Info
-
-<dl>
-<dt>ID</dt><dd>Subscriber_Additional_Info-2_3229</dd>
-<dt>File Type</dt><dd>2.3229</dd>
-<dt>Label</dt><dd>Subscriber Additional Info</dd></dl>
-
-#### Properties
-
-Field | Datatype | FromVDM | Default | Attributes | Range
---- | --- | --- | --- | --- | ---
-**Sequence**{::nomarkdown}<pre><code>  sequence</code></pre>{:/} | NUMERIC | sequence |  | INDEXED<br/>REQUIRED | 
-**Place Of Service**{::nomarkdown}<pre><code>  placeOfService</code></pre>{:/} | POINTER | place_of_service |  |  | Place_Of_Service-353_1
-**Diagnosis**{::nomarkdown}<pre><code>  diagnosis</code></pre>{:/} | POINTER | diagnosis |  |  | [Icd_Diagnosis-80](../VDM/Icd_Diagnosis-80)
-**Qualifier**{::nomarkdown}<pre><code>  qualifier</code></pre>{:/} | POINTER | qualifier |  |  | X12_271_Code_List_Qualifier-365_044
-**Nature Of Injury Code**{::nomarkdown}<pre><code>  natureOfInjuryCode</code></pre>{:/} | POINTER | nature_of_injury_code |  |  | X12_271_Nature_Of_Injury_Codes-365_045
-**Nature Of Injury Category**{::nomarkdown}<pre><code>  natureOfInjuryCategory</code></pre>{:/} | STRING | nature_of_injury_category |  |  | 
-**Nature Of Injury Text**{::nomarkdown}<pre><code>  natureOfInjuryText</code></pre>{:/} | STRING | nature_of_injury_text |  |  | 
-
-#### <a name="Subscriber_Reference_Id-2_32291"></a>Subscriber Reference Id
-
-<dl>
-<dt>ID</dt><dd>Subscriber_Reference_Id-2_32291</dd>
-<dt>File Type</dt><dd>2.32291</dd>
-<dt>Label</dt><dd>Subscriber Reference Id</dd></dl>
-
-#### Properties
-
-Field | Datatype | FromVDM | Default | Attributes | Range
---- | --- | --- | --- | --- | ---
-**Sequence**{::nomarkdown}<pre><code>  sequence</code></pre>{:/} | NUMERIC | sequence |  | INDEXED<br/>REQUIRED | 
-**Reference Id**{::nomarkdown}<pre><code>  referenceId</code></pre>{:/} | STRING | reference_id |  |  | 
-**Reference Id Qualifier**{::nomarkdown}<pre><code>  referenceIdQualifier</code></pre>{:/} | POINTER | reference_id_qualifier |  |  | X12_271_Reference_Identification-365_028
-**Description**{::nomarkdown}<pre><code>  description</code></pre>{:/} | STRING | description |  |  | 
-
-#### <a name="treatmentFactors"></a>
-
-<dl>
-<dt>ID</dt><dd>treatmentFactors</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
-
-#### Properties
-
-Field | Datatype | FromVDM | Default | Attributes | Range
---- | --- | --- | --- | --- | ---
-**Radiation Exposure**{::nomarkdown}<pre><code>  radiationExposure</code></pre>{:/} | OBJECT | N/A |  |  | [radiationExposure](#radiationExposure)
-**Agent Orange Exposure**{::nomarkdown}<pre><code>  agentOrangeExposure</code></pre>{:/} | OBJECT | N/A |  |  | [agentOrangeExposure](#agentOrangeExposure)
-**Southwest Asian Conditions**{::nomarkdown}<pre><code>  southwestAsianConditions</code></pre>{:/} | OBJECT | N/A |  |  | [southwestAsianConditions](#southwestAsianConditions)
-
-#### <a name="radiationExposure"></a>
-
-<dl>
-<dt>ID</dt><dd>radiationExposure</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
-
-#### Properties
-
-Field | Datatype | FromVDM | Default | Attributes | Range
---- | --- | --- | --- | --- | ---
-**Exposure Indicated**{::nomarkdown}<pre><code>  exposureIndicated</code></pre>{:/} | ENUMERATION | N/A |  |  | {::nomarkdown}UNKNOWN: <em><strong>U</strong></em><br/>YES: <em><strong>Y</strong></em><br/>NO: <em><strong>N</strong></em>{:/}
-**Registration Date**{::nomarkdown}<pre><code>  registrationDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Exposure Method**{::nomarkdown}<pre><code>  exposureMethod</code></pre>{:/} | ENUMERATION | N/A |  |  | {::nomarkdown}H/N AND ATMOSPHERIC TESTING: <em><strong>4</strong></em><br/>OTHER: <em><strong>7</strong></em><br/>HIROSHIMA/NAGASAKI: <em><strong>2</strong></em><br/>EXPOSURE AT NUCLEAR FACILITY: <em><strong>6</strong></em><br/>UNDERGROUND NUCLEAR TESTING: <em><strong>5</strong></em><br/>ATMOSPHERIC NUCLEAR TESTING: <em><strong>3</strong></em>{:/}
-
-#### <a name="agentOrangeExposure"></a>
-
-<dl>
-<dt>ID</dt><dd>agentOrangeExposure</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
-
-#### Properties
-
-Field | Datatype | FromVDM | Default | Attributes | Range
---- | --- | --- | --- | --- | ---
-**Exposure Indicated**{::nomarkdown}<pre><code>  exposureIndicated</code></pre>{:/} | ENUMERATION | N/A |  |  | {::nomarkdown}UNKNOWN: <em><strong>U</strong></em><br/>YES: <em><strong>Y</strong></em><br/>NO: <em><strong>N</strong></em>{:/}
-**Registration Date**{::nomarkdown}<pre><code>  registrationDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Reported To Co**{::nomarkdown}<pre><code>  reportedToCo</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Exam Date**{::nomarkdown}<pre><code>  examDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Registration Number**{::nomarkdown}<pre><code>  registrationNumber</code></pre>{:/} | NUMERIC | N/A |  |  | 
-**Exposure Location**{::nomarkdown}<pre><code>  exposureLocation</code></pre>{:/} | ENUMERATION | N/A |  |  | {::nomarkdown}VIETNAM: <em><strong>V</strong></em><br/>OTHER: <em><strong>O</strong></em><br/>KOREAN DMZ: <em><strong>K</strong></em>{:/}
-
-#### <a name="southwestAsianConditions"></a>
-
-<dl>
-<dt>ID</dt><dd>southwestAsianConditions</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
-
-#### Properties
-
-Field | Datatype | FromVDM | Default | Attributes | Range
---- | --- | --- | --- | --- | ---
-**Southwest Asia Conditions?**{::nomarkdown}<pre><code>  exposureIndicated</code></pre>{:/} | ENUMERATION | N/A |  |  | {::nomarkdown}UNKNOWN: <em><strong>U</strong></em><br/>YES: <em><strong>Y</strong></em><br/>NO: <em><strong>N</strong></em>{:/}
-**Sw Asia Cond Registration Date**{::nomarkdown}<pre><code>  registrationDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Sw Asia Cond Exam Date**{::nomarkdown}<pre><code>  examDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-
-#### <a name="militaryService"></a>
-
-<dl>
-<dt>ID</dt><dd>militaryService</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
-
-#### Properties
-
-Field | Datatype | FromVDM | Default | Attributes | Range
---- | --- | --- | --- | --- | ---
-**Period Of Service**{::nomarkdown}<pre><code>  periodOfService</code></pre>{:/} | POINTER | N/A |  |  | Period_Of_Service-21
-**Discharge Type Last**{::nomarkdown}<pre><code>  dischargeTypeLast</code></pre>{:/} | POINTER | N/A |  |  | Type_Of_Discharge-25
-**Branch Last**{::nomarkdown}<pre><code>  branchLast</code></pre>{:/} | POINTER | N/A |  |  | Branch_Of_Service-23
-**Entry Date Last**{::nomarkdown}<pre><code>  entryDateLast</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Separation Date Last**{::nomarkdown}<pre><code>  separationDateLast</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Service Number Last**{::nomarkdown}<pre><code>  serviceNumberLast</code></pre>{:/} | STRING | N/A |  |  | 
-**Second Episode**{::nomarkdown}<pre><code>  secondEpisode</code></pre>{:/} | BOOLEAN | N/A |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
-**Discharge Type Ntl**{::nomarkdown}<pre><code>  dischargeTypeNtl</code></pre>{:/} | POINTER | N/A |  |  | Type_Of_Discharge-25
-**Branch Ntl**{::nomarkdown}<pre><code>  branchNtl</code></pre>{:/} | POINTER | N/A |  |  | Branch_Of_Service-23
-**Component Last**{::nomarkdown}<pre><code>  componentLast</code></pre>{:/} | ENUMERATION | N/A |  |  | {::nomarkdown}ACTIVATED RESERVE: <em><strong>V</strong></em><br/>ACTIVATED NG: <em><strong>G</strong></em><br/>REGULAR: <em><strong>R</strong></em>{:/}
-**Component Ntl**{::nomarkdown}<pre><code>  componentNtl</code></pre>{:/} | ENUMERATION | N/A |  |  | {::nomarkdown}ACTIVATED RESERVE: <em><strong>V</strong></em><br/>ACTIVATED NG: <em><strong>G</strong></em><br/>REGULAR: <em><strong>R</strong></em>{:/}
-**Component Nntl**{::nomarkdown}<pre><code>  componentNntl</code></pre>{:/} | ENUMERATION | N/A |  |  | {::nomarkdown}ACTIVATED RESERVE: <em><strong>V</strong></em><br/>ACTIVATED NG: <em><strong>G</strong></em><br/>REGULAR: <em><strong>R</strong></em>{:/}
-**Entry Date Ntl**{::nomarkdown}<pre><code>  entryDateNtl</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Separation Date Ntl**{::nomarkdown}<pre><code>  separationDateNtl</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Service Number Ntl**{::nomarkdown}<pre><code>  serviceNumberNtl</code></pre>{:/} | STRING | N/A |  |  | 
-**Third Episode**{::nomarkdown}<pre><code>  thirdEpisode</code></pre>{:/} | BOOLEAN | N/A |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
-**Discharge Type Nntl**{::nomarkdown}<pre><code>  dischargeTypeNntl</code></pre>{:/} | POINTER | N/A |  |  | Type_Of_Discharge-25
-**Branch Nntl**{::nomarkdown}<pre><code>  branchNntl</code></pre>{:/} | POINTER | N/A |  |  | Branch_Of_Service-23
-**Entry Date Nntl**{::nomarkdown}<pre><code>  entryDateNntl</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Separation Date Nntl**{::nomarkdown}<pre><code>  separationDateNntl</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Service Number Nntl**{::nomarkdown}<pre><code>  serviceNumberNntl</code></pre>{:/} | STRING | N/A |  |  | 
-**Verification Date**{::nomarkdown}<pre><code>  verificationDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Filipino Veteran Proof**{::nomarkdown}<pre><code>  filipinoVeteranProof</code></pre>{:/} | ENUMERATION | N/A |  |  | {::nomarkdown}NO PROOF: <em><strong>NO</strong></em><br/>REPORT OF BIRTH ABROAD OF US CITIZEN: <em><strong>BA</strong></em><br/>US BIRTH CERTIFICATE: <em><strong>BC</strong></em><br/>VERIFICATION OF PERMANENT RESIDENCY: <em><strong>PR</strong></em><br/>VA COMPENSATION AT FULL DOLLAR RATE: <em><strong>VA</strong></em><br/>US PASSPORT: <em><strong>PP</strong></em><br/>VERIFICATION OF NATURALIZATION: <em><strong>NA</strong></em>{:/}
-**Service Oef Or Oif**{::nomarkdown}<pre><code>  serviceOefOrOif</code></pre>{:/} | OBJECT | N/A |  |  | [serviceOefOrOifs](#serviceOefOrOifs)
+**Period Of Service**{::nomarkdown}<pre><code>  periodOfService</code></pre>{:/} | POINTER | *CUSTOM* |  |  | Period_Of_Service-21
+**Discharge Type Last**{::nomarkdown}<pre><code>  dischargeTypeLast</code></pre>{:/} | POINTER | *CUSTOM* |  |  | Type_Of_Discharge-25
+**Branch Last**{::nomarkdown}<pre><code>  branchLast</code></pre>{:/} | POINTER | *CUSTOM* |  |  | Branch_Of_Service-23
+**Entry Date Last**{::nomarkdown}<pre><code>  entryDateLast</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Separation Date Last**{::nomarkdown}<pre><code>  separationDateLast</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Service Number Last**{::nomarkdown}<pre><code>  serviceNumberLast</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Second Episode**{::nomarkdown}<pre><code>  secondEpisode</code></pre>{:/} | BOOLEAN | *CUSTOM* |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
+**Discharge Type Ntl**{::nomarkdown}<pre><code>  dischargeTypeNtl</code></pre>{:/} | POINTER | *CUSTOM* |  |  | Type_Of_Discharge-25
+**Branch Ntl**{::nomarkdown}<pre><code>  branchNtl</code></pre>{:/} | POINTER | *CUSTOM* |  |  | Branch_Of_Service-23
+**Component Last**{::nomarkdown}<pre><code>  componentLast</code></pre>{:/} | ENUMERATION | *CUSTOM* |  |  | {::nomarkdown}ACTIVATED RESERVE: <em><strong>V</strong></em><br/>ACTIVATED NG: <em><strong>G</strong></em><br/>REGULAR: <em><strong>R</strong></em>{:/}
+**Component Ntl**{::nomarkdown}<pre><code>  componentNtl</code></pre>{:/} | ENUMERATION | *CUSTOM* |  |  | {::nomarkdown}ACTIVATED RESERVE: <em><strong>V</strong></em><br/>ACTIVATED NG: <em><strong>G</strong></em><br/>REGULAR: <em><strong>R</strong></em>{:/}
+**Component Nntl**{::nomarkdown}<pre><code>  componentNntl</code></pre>{:/} | ENUMERATION | *CUSTOM* |  |  | {::nomarkdown}ACTIVATED RESERVE: <em><strong>V</strong></em><br/>ACTIVATED NG: <em><strong>G</strong></em><br/>REGULAR: <em><strong>R</strong></em>{:/}
+**Entry Date Ntl**{::nomarkdown}<pre><code>  entryDateNtl</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Separation Date Ntl**{::nomarkdown}<pre><code>  separationDateNtl</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Service Number Ntl**{::nomarkdown}<pre><code>  serviceNumberNtl</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Third Episode**{::nomarkdown}<pre><code>  thirdEpisode</code></pre>{:/} | BOOLEAN | *CUSTOM* |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
+**Discharge Type Nntl**{::nomarkdown}<pre><code>  dischargeTypeNntl</code></pre>{:/} | POINTER | *CUSTOM* |  |  | Type_Of_Discharge-25
+**Branch Nntl**{::nomarkdown}<pre><code>  branchNntl</code></pre>{:/} | POINTER | *CUSTOM* |  |  | Branch_Of_Service-23
+**Entry Date Nntl**{::nomarkdown}<pre><code>  entryDateNntl</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Separation Date Nntl**{::nomarkdown}<pre><code>  separationDateNntl</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Service Number Nntl**{::nomarkdown}<pre><code>  serviceNumberNntl</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Verification Date**{::nomarkdown}<pre><code>  verificationDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Filipino Veteran Proof**{::nomarkdown}<pre><code>  filipinoVeteranProof</code></pre>{:/} | ENUMERATION | *CUSTOM* |  |  | {::nomarkdown}NO PROOF: <em><strong>NO</strong></em><br/>REPORT OF BIRTH ABROAD OF US CITIZEN: <em><strong>BA</strong></em><br/>US BIRTH CERTIFICATE: <em><strong>BC</strong></em><br/>VERIFICATION OF PERMANENT RESIDENCY: <em><strong>PR</strong></em><br/>VA COMPENSATION AT FULL DOLLAR RATE: <em><strong>VA</strong></em><br/>US PASSPORT: <em><strong>PP</strong></em><br/>VERIFICATION OF NATURALIZATION: <em><strong>NA</strong></em>{:/}
+**Service Oef Or Oif**{::nomarkdown}<pre><code>  serviceOefOrOif</code></pre>{:/} | OBJECT | *CUSTOM* |  |  | [serviceOefOrOifs](#serviceOefOrOifs)
 **Military Service Episode**{::nomarkdown}<pre><code>  militaryServiceEpisode</code></pre>{:/} | OBJECT | military_service_episode |  |  | [militaryServiceEpisodes](#militaryServiceEpisodes)
-**Vietnam Service**{::nomarkdown}<pre><code>  vietnamService</code></pre>{:/} | OBJECT | N/A |  |  | [vietnamService](#vietnamService)
-**Persian Gulf Service**{::nomarkdown}<pre><code>  persianGulfService</code></pre>{:/} | OBJECT | N/A |  |  | [persianGulfService](#persianGulfService)
-**Somalia Service**{::nomarkdown}<pre><code>  somaliaService</code></pre>{:/} | OBJECT | N/A |  |  | [somaliaService](#somaliaService)
-**Yugoslavia Service**{::nomarkdown}<pre><code>  yugoslaviaService</code></pre>{:/} | OBJECT | N/A |  |  | [yugoslaviaService](#yugoslaviaService)
-**Lebanon Service**{::nomarkdown}<pre><code>  lebanonService</code></pre>{:/} | OBJECT | N/A |  |  | [lebanonService](#lebanonService)
-**Grenada Service**{::nomarkdown}<pre><code>  grenadaService</code></pre>{:/} | OBJECT | N/A |  |  | [grenadaService](#grenadaService)
-**Panama Service**{::nomarkdown}<pre><code>  panamaService</code></pre>{:/} | OBJECT | N/A |  |  | [panamaService](#panamaService)
-**Pow Status**{::nomarkdown}<pre><code>  powStatus</code></pre>{:/} | OBJECT | N/A |  |  | [powStatus](#powStatus)
-**Combat Service**{::nomarkdown}<pre><code>  combatService</code></pre>{:/} | OBJECT | N/A |  |  | [combatService](#combatService)
-**Purple Heart Status**{::nomarkdown}<pre><code>  purpleHeartStatus</code></pre>{:/} | OBJECT | N/A |  |  | [combatService](#combatService)
-**Purple Heart Date Time Updated**{::nomarkdown}<pre><code>  purpleHeartDateTimeUpdated</code></pre>{:/} | OBJECT | N/A |  |  | [phDateTimeUpdated](#phDateTimeUpdated)
+**Vietnam Service**{::nomarkdown}<pre><code>  vietnamService</code></pre>{:/} | OBJECT | *CUSTOM* |  |  | [vietnamService](#vietnamService)
+**Persian Gulf Service**{::nomarkdown}<pre><code>  persianGulfService</code></pre>{:/} | OBJECT | *CUSTOM* |  |  | [persianGulfService](#persianGulfService)
+**Somalia Service**{::nomarkdown}<pre><code>  somaliaService</code></pre>{:/} | OBJECT | *CUSTOM* |  |  | [somaliaService](#somaliaService)
+**Yugoslavia Service**{::nomarkdown}<pre><code>  yugoslaviaService</code></pre>{:/} | OBJECT | *CUSTOM* |  |  | [yugoslaviaService](#yugoslaviaService)
+**Lebanon Service**{::nomarkdown}<pre><code>  lebanonService</code></pre>{:/} | OBJECT | *CUSTOM* |  |  | [lebanonService](#lebanonService)
+**Grenada Service**{::nomarkdown}<pre><code>  grenadaService</code></pre>{:/} | OBJECT | *CUSTOM* |  |  | [grenadaService](#grenadaService)
+**Panama Service**{::nomarkdown}<pre><code>  panamaService</code></pre>{:/} | OBJECT | *CUSTOM* |  |  | [panamaService](#panamaService)
+**Pow Status**{::nomarkdown}<pre><code>  powStatus</code></pre>{:/} | OBJECT | *CUSTOM* |  |  | [powStatus](#powStatus)
+**Combat Service**{::nomarkdown}<pre><code>  combatService</code></pre>{:/} | OBJECT | *CUSTOM* |  |  | [combatService](#combatService)
+**Purple Heart Status**{::nomarkdown}<pre><code>  purpleHeartStatus</code></pre>{:/} | OBJECT | *CUSTOM* |  |  | [combatService](#combatService)
+**Purple Heart Date Time Updated**{::nomarkdown}<pre><code>  purpleHeartDateTimeUpdated</code></pre>{:/} | OBJECT | *CUSTOM* |  |  | [phDateTimeUpdated](#phDateTimeUpdated)
 
-#### <a name="serviceOefOrOifs"></a>Service [Oef Or Oif]
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>serviceOefOrOifs</dd>
-<dt>File Type</dt><dd>2.3215</dd>
-<dt>Label</dt><dd>Service [Oef Or Oif]</dd></dl>
+
+### <a name="militaryServiceEpisodes"></a>40. Military Service Episode
+
+**Field ID:** militaryServiceEpisodes
+
+**Fileman Sub-File ID:** 2.3216
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**Location Of Service**{::nomarkdown}<pre><code>  locationOfService</code></pre>{:/} | ENUMERATION | N/A |  | INDEXED<br/>REQUIRED | {::nomarkdown}UNKNOWN OEF/OIF: <em><strong>3</strong></em><br/>OIF: <em><strong>1</strong></em><br/>OEF: <em><strong>2</strong></em>{:/}
-**Oef/Oif From Date**{::nomarkdown}<pre><code>  oefOifFromDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Oef/Oif To Date**{::nomarkdown}<pre><code>  oefOifToDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Data Locked**{::nomarkdown}<pre><code>  dataLocked</code></pre>{:/} | BOOLEAN | N/A |  |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
-**Recorded Date/Time**{::nomarkdown}<pre><code>  recordedDateTime</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Entered By Site**{::nomarkdown}<pre><code>  enteredBySite</code></pre>{:/} | POINTER | N/A |  |  | [Institution-4](../VDM/Institution-4)
+**Service Entry Date**{::nomarkdown}<pre><code>  entryDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  | INDEXED<br/>REQUIRED | 
+**Service Separation Date**{::nomarkdown}<pre><code>  separationDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Service Branch**{::nomarkdown}<pre><code>  branch</code></pre>{:/} | POINTER | *CUSTOM* |  |  | Branch_Of_Service-23
+**Service Component**{::nomarkdown}<pre><code>  component</code></pre>{:/} | ENUMERATION | *CUSTOM* |  |  | {::nomarkdown}ACTIVATED RESERVE: <em><strong>V</strong></em><br/>ACTIVATED NG: <em><strong>G</strong></em><br/>REGULAR: <em><strong>R</strong></em>{:/}
+**Service Number**{::nomarkdown}<pre><code>  number</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Service Discharge Type**{::nomarkdown}<pre><code>  dischargeType</code></pre>{:/} | POINTER | *CUSTOM* |  |  | Type_Of_Discharge-25
+**Data Locked**{::nomarkdown}<pre><code>  dataLocked</code></pre>{:/} | BOOLEAN | *CUSTOM* |  |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
 
-#### <a name="militaryServiceEpisodes"></a>Military Service Episode
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>militaryServiceEpisodes</dd>
-<dt>File Type</dt><dd>2.3216</dd>
-<dt>Label</dt><dd>Military Service Episode</dd></dl>
+
+### <a name="panamaService"></a>41. Panama Service
+
+**Field ID:** panamaService
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**Service Entry Date**{::nomarkdown}<pre><code>  entryDate</code></pre>{:/} | DATE-TIME | N/A |  | INDEXED<br/>REQUIRED | 
-**Service Separation Date**{::nomarkdown}<pre><code>  separationDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Service Branch**{::nomarkdown}<pre><code>  branch</code></pre>{:/} | POINTER | N/A |  |  | Branch_Of_Service-23
-**Service Component**{::nomarkdown}<pre><code>  component</code></pre>{:/} | ENUMERATION | N/A |  |  | {::nomarkdown}ACTIVATED RESERVE: <em><strong>V</strong></em><br/>ACTIVATED NG: <em><strong>G</strong></em><br/>REGULAR: <em><strong>R</strong></em>{:/}
-**Service Number**{::nomarkdown}<pre><code>  number</code></pre>{:/} | STRING | N/A |  |  | 
-**Service Discharge Type**{::nomarkdown}<pre><code>  dischargeType</code></pre>{:/} | POINTER | N/A |  |  | Type_Of_Discharge-25
-**Data Locked**{::nomarkdown}<pre><code>  dataLocked</code></pre>{:/} | BOOLEAN | N/A |  |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
+**Service Indicated**{::nomarkdown}<pre><code>  serviceIndicated</code></pre>{:/} | ENUMERATION | *CUSTOM* |  |  | {::nomarkdown}UNKNOWN: <em><strong>U</strong></em><br/>YES: <em><strong>Y</strong></em><br/>NO: <em><strong>N</strong></em>{:/}
+**From Date**{::nomarkdown}<pre><code>  fromDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**To Date**{::nomarkdown}<pre><code>  toDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
 
-#### <a name="vietnamService"></a>
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>vietnamService</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
+
+### <a name="patientContact"></a>42. Patient Contact
+
+**Field ID:** patientContact
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**Service Indicated**{::nomarkdown}<pre><code>  serviceIndicated</code></pre>{:/} | ENUMERATION | N/A |  |  | {::nomarkdown}UNKNOWN: <em><strong>U</strong></em><br/>YES: <em><strong>Y</strong></em><br/>NO: <em><strong>N</strong></em>{:/}
-**From Date**{::nomarkdown}<pre><code>  fromDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**To Date**{::nomarkdown}<pre><code>  toDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
+**Phone Number Residence**{::nomarkdown}<pre><code>  phoneNumberResidence</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Cellular Number Change Source**{::nomarkdown}<pre><code>  cellularNumberChangeSource</code></pre>{:/} | ENUMERATION | *CUSTOM* |  |  | {::nomarkdown}HBSC: <em><strong>HBSC</strong></em><br/>VAMC: <em><strong>VAMC</strong></em><br/>VOA: <em><strong>VOA</strong></em><br/>HEC: <em><strong>HEC</strong></em>{:/}
+**Cellular Number Change Site**{::nomarkdown}<pre><code>  cellularNumberChangeSite</code></pre>{:/} | POINTER | *CUSTOM* |  |  | [Institution-4](../VDM/Institution-4)
+**Pager Number Change Date Time**{::nomarkdown}<pre><code>  pagerNumberChangeDateTime</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Pager Number Change Source**{::nomarkdown}<pre><code>  pagerNumberChangeSource</code></pre>{:/} | ENUMERATION | *CUSTOM* |  |  | {::nomarkdown}HBSC: <em><strong>HBSC</strong></em><br/>VAMC: <em><strong>VAMC</strong></em><br/>VOA: <em><strong>VOA</strong></em><br/>HEC: <em><strong>HEC</strong></em>{:/}
+**Pager Number Change Site**{::nomarkdown}<pre><code>  pagerNumberChangeSite</code></pre>{:/} | POINTER | *CUSTOM* |  |  | [Institution-4](../VDM/Institution-4)
+**Confidential Phone Number**{::nomarkdown}<pre><code>  confidentialPhoneNumber</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Phone Number Work**{::nomarkdown}<pre><code>  phoneNumberWork</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Residence Number Change Date Time**{::nomarkdown}<pre><code>  residenceNumberChangeDateTime</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Residence Number Change Source**{::nomarkdown}<pre><code>  residenceNumberChangeSource</code></pre>{:/} | ENUMERATION | *CUSTOM* |  |  | {::nomarkdown}HBSC: <em><strong>HBSC</strong></em><br/>VAMC: <em><strong>VAMC</strong></em><br/>VOA: <em><strong>VOA</strong></em><br/>HEC: <em><strong>HEC</strong></em>{:/}
+**Residence Number Change Site**{::nomarkdown}<pre><code>  residenceNumberChangeSite</code></pre>{:/} | POINTER | *CUSTOM* |  |  | [Institution-4](../VDM/Institution-4)
+**Email Address**{::nomarkdown}<pre><code>  emailAddress</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Email Address Indicator**{::nomarkdown}<pre><code>  emailAddressIndicator</code></pre>{:/} | BOOLEAN | *CUSTOM* |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
+**Email Address Indicator Date Time**{::nomarkdown}<pre><code>  emailAddressIndicatorDateTime</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Phone Number Cellular**{::nomarkdown}<pre><code>  phoneNumberCellular</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Pager Number**{::nomarkdown}<pre><code>  pagerNumber</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Email Address Change Date Time**{::nomarkdown}<pre><code>  emailAddressChangeDateTime</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Email Address Change Source**{::nomarkdown}<pre><code>  emailAddressChangeSource</code></pre>{:/} | ENUMERATION | *CUSTOM* |  |  | {::nomarkdown}HBSC: <em><strong>HBSC</strong></em><br/>VAMC: <em><strong>VAMC</strong></em><br/>VOA: <em><strong>VOA</strong></em><br/>HEC: <em><strong>HEC</strong></em>{:/}
+**Email Address Change Site**{::nomarkdown}<pre><code>  emailAddressChangeSite</code></pre>{:/} | POINTER | *CUSTOM* |  |  | [Institution-4](../VDM/Institution-4)
+**Cellular Number Change Date Time**{::nomarkdown}<pre><code>  cellularNumberChangeDateTime</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
 
-#### <a name="persianGulfService"></a>
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>persianGulfService</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
+
+### <a name="patientEligibilities"></a>43. Patient Eligibilities
+
+**Field ID:** patientEligibilities
+
+**Fileman Sub-File ID:** 2.0361
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**Service Indicated**{::nomarkdown}<pre><code>  serviceIndicated</code></pre>{:/} | ENUMERATION | N/A |  |  | {::nomarkdown}UNKNOWN: <em><strong>U</strong></em><br/>YES: <em><strong>Y</strong></em><br/>NO: <em><strong>N</strong></em>{:/}
-**From Date**{::nomarkdown}<pre><code>  fromDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**To Date**{::nomarkdown}<pre><code>  toDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
+**Eligibility**{::nomarkdown}<pre><code>  eligibility</code></pre>{:/} | POINTER | eligibility |  | INDEXED<br/>REQUIRED | [Eligibility_Code-8](../VDM/Eligibility_Code-8)
+**Long Id**{::nomarkdown}<pre><code>  longId</code></pre>{:/} | STRING | long_id |  |  | 
+**Short Id**{::nomarkdown}<pre><code>  shortId</code></pre>{:/} | STRING | short_id |  |  | 
 
-#### <a name="somaliaService"></a>
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>somaliaService</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
+
+### <a name="permanentAddress"></a>44. Permanent Address
+
+**Field ID:** permanentAddress
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**Service Indicated**{::nomarkdown}<pre><code>  serviceIndicated</code></pre>{:/} | ENUMERATION | N/A |  |  | {::nomarkdown}UNKNOWN: <em><strong>U</strong></em><br/>YES: <em><strong>Y</strong></em><br/>NO: <em><strong>N</strong></em>{:/}
-**From Date**{::nomarkdown}<pre><code>  fromDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**To Date**{::nomarkdown}<pre><code>  toDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
+**Street 1**{::nomarkdown}<pre><code>  street1</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Street 2**{::nomarkdown}<pre><code>  street2</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Street 3**{::nomarkdown}<pre><code>  street3</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**City**{::nomarkdown}<pre><code>  city</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**State**{::nomarkdown}<pre><code>  state</code></pre>{:/} | POINTER | *CUSTOM* |  |  | State-5
+**Zip Code**{::nomarkdown}<pre><code>  zipCode</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**County**{::nomarkdown}<pre><code>  county</code></pre>{:/} | NUMERIC | *CUSTOM* |  |  | 
+**Province**{::nomarkdown}<pre><code>  province</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Postal Code**{::nomarkdown}<pre><code>  postalCode</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Country**{::nomarkdown}<pre><code>  country</code></pre>{:/} | POINTER | *CUSTOM* |  |  | Country_Code-779_004
+**Change Date Time**{::nomarkdown}<pre><code>  changeDateTime</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Change Source**{::nomarkdown}<pre><code>  changeSource</code></pre>{:/} | ENUMERATION | *CUSTOM* |  |  | {::nomarkdown}USPS: <em><strong>USPS</strong></em><br/>VOA: <em><strong>VOA</strong></em><br/>VAMC: <em><strong>VAMC</strong></em><br/>HBSC: <em><strong>HBSC</strong></em><br/>BVA: <em><strong>BVA</strong></em><br/>LACS: <em><strong>LACS</strong></em><br/>HEC: <em><strong>HEC</strong></em><br/>NCOA: <em><strong>NCOA</strong></em><br/>VAINS: <em><strong>VAINS</strong></em>{:/}
+**Change Site**{::nomarkdown}<pre><code>  changeSite</code></pre>{:/} | POINTER | *CUSTOM* |  |  | [Institution-4](../VDM/Institution-4)
+**Bad Address Indicator**{::nomarkdown}<pre><code>  badAddressIndicator</code></pre>{:/} | ENUMERATION | *CUSTOM* |  |  | {::nomarkdown}ADDRESS NOT FOUND: <em><strong>4</strong></em><br/>OTHER: <em><strong>3</strong></em><br/>UNDELIVERABLE: <em><strong>1</strong></em><br/>HOMELESS: <em><strong>2</strong></em>{:/}
+**Change User**{::nomarkdown}<pre><code>  changeUser</code></pre>{:/} | POINTER | *CUSTOM* |  |  | [New_Person-200](../VDM/New_Person-200)
 
-#### <a name="yugoslaviaService"></a>
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>yugoslaviaService</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
+
+### <a name="persianGulfService"></a>45. Persian Gulf Service
+
+**Field ID:** persianGulfService
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**Service Indicated**{::nomarkdown}<pre><code>  serviceIndicated</code></pre>{:/} | ENUMERATION | N/A |  |  | {::nomarkdown}UNKNOWN: <em><strong>U</strong></em><br/>YES: <em><strong>Y</strong></em><br/>NO: <em><strong>N</strong></em>{:/}
-**From Date**{::nomarkdown}<pre><code>  fromDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**To Date**{::nomarkdown}<pre><code>  toDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
+**Service Indicated**{::nomarkdown}<pre><code>  serviceIndicated</code></pre>{:/} | ENUMERATION | *CUSTOM* |  |  | {::nomarkdown}UNKNOWN: <em><strong>U</strong></em><br/>YES: <em><strong>Y</strong></em><br/>NO: <em><strong>N</strong></em>{:/}
+**From Date**{::nomarkdown}<pre><code>  fromDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**To Date**{::nomarkdown}<pre><code>  toDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
 
-#### <a name="lebanonService"></a>
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>lebanonService</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
+
+### <a name="phDateTimeUpdated"></a>46. Ph Date/Time Updated
+
+**Field ID:** phDateTimeUpdated
+
+**Fileman Sub-File ID:** 2.0534
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**Service Indicated**{::nomarkdown}<pre><code>  serviceIndicated</code></pre>{:/} | ENUMERATION | N/A |  |  | {::nomarkdown}UNKNOWN: <em><strong>U</strong></em><br/>YES: <em><strong>Y</strong></em><br/>NO: <em><strong>N</strong></em>{:/}
-**From Date**{::nomarkdown}<pre><code>  fromDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**To Date**{::nomarkdown}<pre><code>  toDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
+**Ph Date/Time Updated**{::nomarkdown}<pre><code>  phDateTimeUpdated</code></pre>{:/} | DATE-TIME | *CUSTOM* |  | INDEXED<br/>REQUIRED | 
+**Ph?**{::nomarkdown}<pre><code>  ph</code></pre>{:/} | BOOLEAN | *CUSTOM* |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
+**Ph Status**{::nomarkdown}<pre><code>  phStatus</code></pre>{:/} | ENUMERATION | *CUSTOM* |  |  | {::nomarkdown}CONFIRMED: <em><strong>3</strong></em><br/>IN PROCESS: <em><strong>2</strong></em><br/>PENDING: <em><strong>1</strong></em>{:/}
+**Ph Remarks**{::nomarkdown}<pre><code>  phRemarks</code></pre>{:/} | ENUMERATION | *CUSTOM* |  |  | {::nomarkdown}UNDELIVERABLE MAIL: <em><strong>6</strong></em><br/>VAMC: <em><strong>5</strong></em><br/>ENTERED IN ERROR: <em><strong>3</strong></em><br/>UNACCEPTABLE DOCUMENTATION: <em><strong>1</strong></em><br/>NO DOCUMENTATION REC'D: <em><strong>2</strong></em><br/>UNSUPPORTED PURPLE HEART: <em><strong>4</strong></em>{:/}
+**Ph User**{::nomarkdown}<pre><code>  phUser</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
 
-#### <a name="grenadaService"></a>
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>grenadaService</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
+
+### <a name="powStatus"></a>47. Pow Status
+
+**Field ID:** powStatus
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**Service Indicated**{::nomarkdown}<pre><code>  serviceIndicated</code></pre>{:/} | ENUMERATION | N/A |  |  | {::nomarkdown}UNKNOWN: <em><strong>U</strong></em><br/>YES: <em><strong>Y</strong></em><br/>NO: <em><strong>N</strong></em>{:/}
-**From Date**{::nomarkdown}<pre><code>  fromDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**To Date**{::nomarkdown}<pre><code>  toDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
+**Status Indicated**{::nomarkdown}<pre><code>  statusIndicated</code></pre>{:/} | ENUMERATION | *CUSTOM* |  |  | {::nomarkdown}UNKNOWN: <em><strong>U</strong></em><br/>YES: <em><strong>Y</strong></em><br/>NO: <em><strong>N</strong></em>{:/}
+**Confinement Location**{::nomarkdown}<pre><code>  confinementLocation</code></pre>{:/} | POINTER | *CUSTOM* |  |  | Pow_Period-22
+**From Date**{::nomarkdown}<pre><code>  fromDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**To Date**{::nomarkdown}<pre><code>  toDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Status Verified**{::nomarkdown}<pre><code>  statusVerified</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
 
-#### <a name="panamaService"></a>
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>panamaService</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
+
+### <a name="primaryEmergencyContact"></a>48. Primary Emergency Contact
+
+**Field ID:** primaryEmergencyContact
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**Service Indicated**{::nomarkdown}<pre><code>  serviceIndicated</code></pre>{:/} | ENUMERATION | N/A |  |  | {::nomarkdown}UNKNOWN: <em><strong>U</strong></em><br/>YES: <em><strong>Y</strong></em><br/>NO: <em><strong>N</strong></em>{:/}
-**From Date**{::nomarkdown}<pre><code>  fromDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**To Date**{::nomarkdown}<pre><code>  toDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
+**Phone Number**{::nomarkdown}<pre><code>  phoneNumber</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Change Date Time**{::nomarkdown}<pre><code>  changeDateTime</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Is Same As Next Of Kin**{::nomarkdown}<pre><code>  isSameAsNextOfKin</code></pre>{:/} | BOOLEAN | *CUSTOM* |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
+**Name**{::nomarkdown}<pre><code>  name</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Relationship To Patient**{::nomarkdown}<pre><code>  relationshipToPatient</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Street 1**{::nomarkdown}<pre><code>  street1</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Street 2**{::nomarkdown}<pre><code>  street2</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Street 3**{::nomarkdown}<pre><code>  street3</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**City**{::nomarkdown}<pre><code>  city</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**State**{::nomarkdown}<pre><code>  state</code></pre>{:/} | POINTER | *CUSTOM* |  |  | State-5
+**Zip Code**{::nomarkdown}<pre><code>  zipCode</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Phone Number**{::nomarkdown}<pre><code>  phoneNumber</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Name Components**{::nomarkdown}<pre><code>  nameComponents</code></pre>{:/} | POINTER | *CUSTOM* |  |  | [Name_Components-20](../VDM/Name_Components-20)
 
-#### <a name="powStatus"></a>
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>powStatus</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
+
+### <a name="primaryNextOfKin"></a>49. Primary Next Of Kin
+
+**Field ID:** primaryNextOfKin
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**Status Indicated**{::nomarkdown}<pre><code>  statusIndicated</code></pre>{:/} | ENUMERATION | N/A |  |  | {::nomarkdown}UNKNOWN: <em><strong>U</strong></em><br/>YES: <em><strong>Y</strong></em><br/>NO: <em><strong>N</strong></em>{:/}
-**Confinement Location**{::nomarkdown}<pre><code>  confinementLocation</code></pre>{:/} | POINTER | N/A |  |  | Pow_Period-22
-**From Date**{::nomarkdown}<pre><code>  fromDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**To Date**{::nomarkdown}<pre><code>  toDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Status Verified**{::nomarkdown}<pre><code>  statusVerified</code></pre>{:/} | DATE-TIME | N/A |  |  | 
+**Work Phone Number**{::nomarkdown}<pre><code>  workPhoneNumber</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Primary Nok Change Date Time**{::nomarkdown}<pre><code>  primaryNokChangeDateTime</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Name**{::nomarkdown}<pre><code>  name</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Relationship To Patient**{::nomarkdown}<pre><code>  relationshipToPatient</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Is Address Same As Patients**{::nomarkdown}<pre><code>  isAddressSameAsPatients</code></pre>{:/} | BOOLEAN | *CUSTOM* |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
+**Street 1**{::nomarkdown}<pre><code>  street1</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Street 2**{::nomarkdown}<pre><code>  street2</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Street 3**{::nomarkdown}<pre><code>  street3</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**City**{::nomarkdown}<pre><code>  city</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**State**{::nomarkdown}<pre><code>  state</code></pre>{:/} | POINTER | *CUSTOM* |  |  | State-5
+**Zip Code**{::nomarkdown}<pre><code>  zipCode</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Phone Number**{::nomarkdown}<pre><code>  phoneNumber</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Name Components**{::nomarkdown}<pre><code>  nameComponents</code></pre>{:/} | POINTER | *CUSTOM* |  |  | [Name_Components-20](../VDM/Name_Components-20)
 
-#### <a name="combatService"></a>
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>combatService</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
+
+### <a name="raceInformation"></a>50. Race Information
+
+**Field ID:** raceInformation
+
+**Fileman Sub-File ID:** 2.02
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**Service Indicated**{::nomarkdown}<pre><code>  serviceIndicated</code></pre>{:/} | BOOLEAN | N/A |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
-**Service Location**{::nomarkdown}<pre><code>  serviceLocation</code></pre>{:/} | POINTER | N/A |  |  | Pow_Period-22
-**From Date**{::nomarkdown}<pre><code>  fromDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**To Date**{::nomarkdown}<pre><code>  toDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Combat Veteran End Date**{::nomarkdown}<pre><code>  combatVeteranEndDate</code></pre>{:/} | DATE-TIME | N/A |  |  | 
-**Cv Date Edited**{::nomarkdown}<pre><code>  cvDateEdited</code></pre>{:/} | DATE-TIME | N/A |  |  | 
+**Race Information**{::nomarkdown}<pre><code>  raceInformation</code></pre>{:/} | POINTER | race_information |  | INDEXED<br/>REQUIRED | Race-10
+**Method Of Collection**{::nomarkdown}<pre><code>  methodOfCollection</code></pre>{:/} | POINTER | method_of_collection |  |  | Race_And_Ethnicity_Collection_Method-10_3
 
-#### <a name="combatService"></a>
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>combatService</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
+
+### <a name="radiationExposure"></a>51. Radiation Exposure
+
+**Field ID:** radiationExposure
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**Status Indicated**{::nomarkdown}<pre><code>  statusIndicated</code></pre>{:/} | BOOLEAN | N/A |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
-**Current Status**{::nomarkdown}<pre><code>  currentStatus</code></pre>{:/} | ENUMERATION | N/A |  |  | {::nomarkdown}CONFIRMED: <em><strong>3</strong></em><br/>IN PROCESS: <em><strong>2</strong></em><br/>PENDING: <em><strong>1</strong></em>{:/}
-**Current Remarks**{::nomarkdown}<pre><code>  currentRemarks</code></pre>{:/} | ENUMERATION | N/A |  |  | {::nomarkdown}UNDELIVERABLE MAIL: <em><strong>6</strong></em><br/>VAMC: <em><strong>5</strong></em><br/>ENTERED IN ERROR: <em><strong>3</strong></em><br/>UNACCEPTABLE DOCUMENTATION: <em><strong>1</strong></em><br/>NO DOCUMENTATION REC'D: <em><strong>2</strong></em><br/>UNSUPPORTED PURPLE HEART: <em><strong>4</strong></em>{:/}
-**Division**{::nomarkdown}<pre><code>  division</code></pre>{:/} | POINTER | N/A |  |  | [Institution-4](../VDM/Institution-4)
+**Exposure Indicated**{::nomarkdown}<pre><code>  exposureIndicated</code></pre>{:/} | ENUMERATION | *CUSTOM* |  |  | {::nomarkdown}UNKNOWN: <em><strong>U</strong></em><br/>YES: <em><strong>Y</strong></em><br/>NO: <em><strong>N</strong></em>{:/}
+**Registration Date**{::nomarkdown}<pre><code>  registrationDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Exposure Method**{::nomarkdown}<pre><code>  exposureMethod</code></pre>{:/} | ENUMERATION | *CUSTOM* |  |  | {::nomarkdown}H/N AND ATMOSPHERIC TESTING: <em><strong>4</strong></em><br/>OTHER: <em><strong>7</strong></em><br/>HIROSHIMA/NAGASAKI: <em><strong>2</strong></em><br/>EXPOSURE AT NUCLEAR FACILITY: <em><strong>6</strong></em><br/>UNDERGROUND NUCLEAR TESTING: <em><strong>5</strong></em><br/>ATMOSPHERIC NUCLEAR TESTING: <em><strong>3</strong></em>{:/}
 
-#### <a name="phDateTimeUpdated"></a>Ph Date/Time Updated
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>phDateTimeUpdated</dd>
-<dt>File Type</dt><dd>2.0534</dd>
-<dt>Label</dt><dd>Ph Date/Time Updated</dd></dl>
 
-#### Properties
+### <a name="ratedDisabilities"></a>52. Rated Disabilities (Va)
 
-Field | Datatype | FromVDM | Default | Attributes | Range
---- | --- | --- | --- | --- | ---
-**Ph Date/Time Updated**{::nomarkdown}<pre><code>  phDateTimeUpdated</code></pre>{:/} | DATE-TIME | N/A |  | INDEXED<br/>REQUIRED | 
-**Ph?**{::nomarkdown}<pre><code>  ph</code></pre>{:/} | BOOLEAN | N/A |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
-**Ph Status**{::nomarkdown}<pre><code>  phStatus</code></pre>{:/} | ENUMERATION | N/A |  |  | {::nomarkdown}CONFIRMED: <em><strong>3</strong></em><br/>IN PROCESS: <em><strong>2</strong></em><br/>PENDING: <em><strong>1</strong></em>{:/}
-**Ph Remarks**{::nomarkdown}<pre><code>  phRemarks</code></pre>{:/} | ENUMERATION | N/A |  |  | {::nomarkdown}UNDELIVERABLE MAIL: <em><strong>6</strong></em><br/>VAMC: <em><strong>5</strong></em><br/>ENTERED IN ERROR: <em><strong>3</strong></em><br/>UNACCEPTABLE DOCUMENTATION: <em><strong>1</strong></em><br/>NO DOCUMENTATION REC'D: <em><strong>2</strong></em><br/>UNSUPPORTED PURPLE HEART: <em><strong>4</strong></em>{:/}
-**Ph User**{::nomarkdown}<pre><code>  phUser</code></pre>{:/} | STRING | N/A |  |  | 
+**Field ID:** ratedDisabilities
 
-#### <a name="dateOfDentalTreatment"></a>Date Of Dental Treatment
-
-<dl>
-<dt>ID</dt><dd>dateOfDentalTreatment</dd>
-<dt>File Type</dt><dd>2.11</dd>
-<dt>Label</dt><dd>Date Of Dental Treatment</dd></dl>
+**Fileman Sub-File ID:** 2.04
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
---- | --- | --- | --- | --- | ---
-**Date Of Dental Treatment**{::nomarkdown}<pre><code>  dateOfDentalTreatment</code></pre>{:/} | DATE-TIME | date_of_dental_treatment |  | REQUIRED | 
-**Condition**{::nomarkdown}<pre><code>  condition</code></pre>{:/} | STRING | condition |  |  | 
-**Date Condition First Noticed**{::nomarkdown}<pre><code>  dateConditionFirstNoticed</code></pre>{:/} | DATE-TIME | date_condition_first_noticed |  |  | 
-
-#### <a name="ratedDisabilities"></a>Rated Disabilities (Va)
-
-<dl>
-<dt>ID</dt><dd>ratedDisabilities</dd>
-<dt>File Type</dt><dd>2.04</dd>
-<dt>Label</dt><dd>Rated Disabilities (Va)</dd></dl>
-
-#### Properties
-
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
 **Rated Disabilities (Va)**{::nomarkdown}<pre><code>  ratedDisabilitiesVa</code></pre>{:/} | POINTER | rated_disabilities_va |  | REQUIRED | Disability_Condition-31
 **Disability %**{::nomarkdown}<pre><code>  disability</code></pre>{:/} | NUMERIC | disability_ |  |  | 
@@ -1297,335 +1498,266 @@ Field | Datatype | FromVDM | Default | Attributes | Range
 **Original Effective Date**{::nomarkdown}<pre><code>  originalEffectiveDate</code></pre>{:/} | DATE-TIME | original_effective_date |  |  | 
 **Current Effective Date**{::nomarkdown}<pre><code>  currentEffectiveDate</code></pre>{:/} | DATE-TIME | current_effective_date |  |  | 
 
-#### <a name="serviceConnectedConditions"></a>Service Connected Conditions
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>serviceConnectedConditions</dd>
-<dt>File Type</dt><dd>2.05</dd>
-<dt>Label</dt><dd>Service Connected Conditions</dd></dl>
+
+### <a name="secondaryEmergencyContact"></a>53. Secondary Emergency Contact
+
+**Field ID:** secondaryEmergencyContact
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Work Phone Number**{::nomarkdown}<pre><code>  workPhoneNumber</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Name**{::nomarkdown}<pre><code>  name</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Change Date Time**{::nomarkdown}<pre><code>  changeDateTime</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Relationship To Patient**{::nomarkdown}<pre><code>  relationshipToPatient</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Street 1**{::nomarkdown}<pre><code>  street1</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Street 2**{::nomarkdown}<pre><code>  street2</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Street 3**{::nomarkdown}<pre><code>  street3</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**City**{::nomarkdown}<pre><code>  city</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**State**{::nomarkdown}<pre><code>  state</code></pre>{:/} | POINTER | *CUSTOM* |  |  | State-5
+**Zip Code**{::nomarkdown}<pre><code>  zipCode</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Phone Number**{::nomarkdown}<pre><code>  phoneNumber</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Name Components**{::nomarkdown}<pre><code>  nameComponents</code></pre>{:/} | POINTER | *CUSTOM* |  |  | [Name_Components-20](../VDM/Name_Components-20)
+
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="secondaryNextOfKin"></a>54. Secondary Next Of Kin
+
+**Field ID:** secondaryNextOfKin
+
+#### Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Work Phone Number**{::nomarkdown}<pre><code>  workPhoneNumber</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Secondary Nok Change Date Time**{::nomarkdown}<pre><code>  secondaryNokChangeDateTime</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Name**{::nomarkdown}<pre><code>  name</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Relationship To Patient**{::nomarkdown}<pre><code>  relationshipToPatient</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Address Same As Patients**{::nomarkdown}<pre><code>  addressSameAsPatients</code></pre>{:/} | BOOLEAN | *CUSTOM* |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
+**Street 1**{::nomarkdown}<pre><code>  street1</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Street 2**{::nomarkdown}<pre><code>  street2</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Street 3**{::nomarkdown}<pre><code>  street3</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**City**{::nomarkdown}<pre><code>  city</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**State**{::nomarkdown}<pre><code>  state</code></pre>{:/} | POINTER | *CUSTOM* |  |  | State-5
+**Zip Code**{::nomarkdown}<pre><code>  zipCode</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Phone Number**{::nomarkdown}<pre><code>  phoneNumber</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Name Components**{::nomarkdown}<pre><code>  nameComponents</code></pre>{:/} | POINTER | *CUSTOM* |  |  | [Name_Components-20](../VDM/Name_Components-20)
+
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="serviceConnected"></a>55. Service Connected
+
+**Field ID:** serviceConnected
+
+#### Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Is Service Connected**{::nomarkdown}<pre><code>  isServiceConnected</code></pre>{:/} | BOOLEAN | *CUSTOM* |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
+**Award Date**{::nomarkdown}<pre><code>  awardDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Pt Effective Date**{::nomarkdown}<pre><code>  ptEffectiveDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Eff Date Combined Sc Eval**{::nomarkdown}<pre><code>  effDateCombinedScEval</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Service Connected Percentage**{::nomarkdown}<pre><code>  serviceConnectedPercentage</code></pre>{:/} | NUMERIC | *CUSTOM* |  |  | 
+**Receiving Va Disability**{::nomarkdown}<pre><code>  receivingVaDisability</code></pre>{:/} | ENUMERATION | *CUSTOM* |  |  | {::nomarkdown}UNKNOWN: <em><strong>U</strong></em><br/>YES: <em><strong>Y</strong></em><br/>NO: <em><strong>N</strong></em>{:/}
+**Amount Of Va Disability**{::nomarkdown}<pre><code>  amountOfVaDisability</code></pre>{:/} | NUMERIC | *CUSTOM* |  |  | 
+**Pt**{::nomarkdown}<pre><code>  pt</code></pre>{:/} | BOOLEAN | *CUSTOM* |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
+**Unemployable**{::nomarkdown}<pre><code>  unemployable</code></pre>{:/} | BOOLEAN | *CUSTOM* |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
+**Monetary Ben Verify Date**{::nomarkdown}<pre><code>  monetaryBenVerifyDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Ineligible Reason**{::nomarkdown}<pre><code>  ineligibleReason</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Agency Allied Country**{::nomarkdown}<pre><code>  agencyAlliedCountry</code></pre>{:/} | POINTER | *CUSTOM* |  |  | Other_Federal_Agency-35
+**Category Of Beneficiary**{::nomarkdown}<pre><code>  categoryOfBeneficiary</code></pre>{:/} | POINTER | *CUSTOM* |  |  | Category_Of_Beneficiary-45_82
+
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="serviceConnectedConditions"></a>56. Service Connected Conditions
+
+**Field ID:** serviceConnectedConditions
+
+**Fileman Sub-File ID:** 2.05
+
+#### Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
 **Service Connected Conditions**{::nomarkdown}<pre><code>  serviceConnectedConditions</code></pre>{:/} | STRING | service_connected_conditions |  | REQUIRED | 
 **Percentage**{::nomarkdown}<pre><code>  percentage</code></pre>{:/} | NUMERIC | percentage |  |  | 
 
-#### <a name="cdStatusProcedures"></a>Cd Status Procedures
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>cdStatusProcedures</dd>
-<dt>File Type</dt><dd>2.397</dd>
-<dt>Label</dt><dd>Cd Status Procedures</dd></dl>
 
-#### Properties
+### <a name="serviceOefOrOifs"></a>57. Service [Oef Or Oif]
 
-Field | Datatype | FromVDM | Default | Attributes | Range
---- | --- | --- | --- | --- | ---
-**Cd Status Procedures**{::nomarkdown}<pre><code>  cdStatusProcedures</code></pre>{:/} | POINTER | cd_status_procedures |  | INDEXED<br/>REQUIRED | Catastrophic_Disability_Reasons-27_17
-**Affected Extremity**{::nomarkdown}<pre><code>  affectedExtremity</code></pre>{:/} | ENUMERATION | affected_extremity |  |  | {::nomarkdown}Right Lower Extremity: <em><strong>RLE</strong></em><br/>Bilateral Lower Extremity: <em><strong>BLE</strong></em><br/>Left Lower Extremity: <em><strong>LLE</strong></em><br/>Left Upper Extremity: <em><strong>LUE</strong></em><br/>Bilateral Upper Extremity: <em><strong>BUE</strong></em><br/>Right Upper Extremity: <em><strong>RUE</strong></em>{:/}
+**Field ID:** serviceOefOrOifs
 
-#### <a name="cdStatusConditions"></a>Cd Status Conditions
-
-<dl>
-<dt>ID</dt><dd>cdStatusConditions</dd>
-<dt>File Type</dt><dd>2.398</dd>
-<dt>Label</dt><dd>Cd Status Conditions</dd></dl>
+**Fileman Sub-File ID:** 2.3215
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**Cd Status Conditions**{::nomarkdown}<pre><code>  cdStatusConditions</code></pre>{:/} | POINTER | cd_status_conditions |  | INDEXED<br/>REQUIRED | Catastrophic_Disability_Reasons-27_17
-**Score**{::nomarkdown}<pre><code>  score</code></pre>{:/} | NUMERIC | score |  |  | 
-**Permanent Indicator**{::nomarkdown}<pre><code>  permanentIndicator</code></pre>{:/} | ENUMERATION | permanent_indicator |  |  | {::nomarkdown}UNKNOWN: <em><strong>3</strong></em><br/>PERMANENT: <em><strong>1</strong></em><br/>NOT PERMANENT: <em><strong>2</strong></em>{:/}
+**Location Of Service**{::nomarkdown}<pre><code>  locationOfService</code></pre>{:/} | ENUMERATION | *CUSTOM* |  | INDEXED<br/>REQUIRED | {::nomarkdown}UNKNOWN OEF/OIF: <em><strong>3</strong></em><br/>OIF: <em><strong>1</strong></em><br/>OEF: <em><strong>2</strong></em>{:/}
+**Oef/Oif From Date**{::nomarkdown}<pre><code>  oefOifFromDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Oef/Oif To Date**{::nomarkdown}<pre><code>  oefOifToDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Data Locked**{::nomarkdown}<pre><code>  dataLocked</code></pre>{:/} | BOOLEAN | *CUSTOM* |  |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
+**Recorded Date/Time**{::nomarkdown}<pre><code>  recordedDateTime</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Entered By Site**{::nomarkdown}<pre><code>  enteredBySite</code></pre>{:/} | POINTER | *CUSTOM* |  |  | [Institution-4](../VDM/Institution-4)
 
-#### <a name="cdHistoryDate"></a>Cd History Date
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>cdHistoryDate</dd>
-<dt>File Type</dt><dd>2.399</dd>
-<dt>Label</dt><dd>Cd History Date</dd></dl>
+
+### <a name="somaliaService"></a>58. Somalia Service
+
+**Field ID:** somaliaService
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**Cd History Date**{::nomarkdown}<pre><code>  cdHistoryDate</code></pre>{:/} | DATE-TIME | cd_history_date |  | INDEXED<br/>REQUIRED | 
-**Veteran Catastrophically Disabled?**{::nomarkdown}<pre><code>  veteranCatastrophicallyDisabled</code></pre>{:/} | BOOLEAN | veteran_catastrophically_disabled |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
-**Decided By**{::nomarkdown}<pre><code>  decidedBy</code></pre>{:/} | STRING | decided_by |  |  | 
-**Date Of Decision**{::nomarkdown}<pre><code>  dateOfDecision</code></pre>{:/} | DATE-TIME | date_of_decision |  |  | 
-**Facility Making Determination**{::nomarkdown}<pre><code>  facilityMakingDetermination</code></pre>{:/} | POINTER | facility_making_determination |  |  | [Institution-4](../VDM/Institution-4)
-**Review Date**{::nomarkdown}<pre><code>  reviewDate</code></pre>{:/} | DATE-TIME | review_date |  |  | 
-**Method Of Determination**{::nomarkdown}<pre><code>  methodOfDetermination</code></pre>{:/} | ENUMERATION | method_of_determination |  |  | {::nomarkdown}AUTOMATED RECORD REVIEW: <em><strong>1</strong></em><br/>PHYSICAL EXAMINATION: <em><strong>3</strong></em><br/>MEDICAL RECORD REVIEW: <em><strong>2</strong></em>{:/}
-**Date Veteran Requested Cd Eval**{::nomarkdown}<pre><code>  dateVeteranRequestedCdEval</code></pre>{:/} | DATE-TIME | date_veteran_requested_cd_eval |  |  | 
-**Date Facility Initiated Review**{::nomarkdown}<pre><code>  dateFacilityInitiatedReview</code></pre>{:/} | DATE-TIME | date_facility_initiated_review |  |  | 
-**Date Veteran Was Notified**{::nomarkdown}<pre><code>  dateVeteranWasNotified</code></pre>{:/} | DATE-TIME | date_veteran_was_notified |  |  | 
-**Cd Reason**{::nomarkdown}<pre><code>  cdReason</code></pre>{:/} | OBJECT | cd_reason |  |  | [cdReason](#cdReason)
+**Service Indicated**{::nomarkdown}<pre><code>  serviceIndicated</code></pre>{:/} | ENUMERATION | *CUSTOM* |  |  | {::nomarkdown}UNKNOWN: <em><strong>U</strong></em><br/>YES: <em><strong>Y</strong></em><br/>NO: <em><strong>N</strong></em>{:/}
+**From Date**{::nomarkdown}<pre><code>  fromDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**To Date**{::nomarkdown}<pre><code>  toDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
 
-#### <a name="cdReason"></a>Cd Reason
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>cdReason</dd>
-<dt>File Type</dt><dd>2.409</dd>
-<dt>Label</dt><dd>Cd Reason</dd></dl>
+
+### <a name="southwestAsianConditions"></a>59. Southwest Asian Conditions
+
+**Field ID:** southwestAsianConditions
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**Cd Reason**{::nomarkdown}<pre><code>  cdReason</code></pre>{:/} | POINTER | cd_reason |  | INDEXED<br/>REQUIRED | Catastrophic_Disability_Reasons-27_17
-**Affected Extremity**{::nomarkdown}<pre><code>  affectedExtremity</code></pre>{:/} | ENUMERATION | affected_extremity |  |  | {::nomarkdown}RIGHT LOWER EXTREMITY: <em><strong>RLE</strong></em><br/>Bilateral Lower Extremity: <em><strong>BLE</strong></em><br/>LEFT LOWER EXTREMITY: <em><strong>LLE</strong></em><br/>LEFT UPPER EXTREMITY: <em><strong>LUE</strong></em><br/>Bilateral Upper Extremity: <em><strong>BLU</strong></em><br/>RIGHT UPPER EXTREMITY: <em><strong>RUE</strong></em>{:/}
-**Score**{::nomarkdown}<pre><code>  score</code></pre>{:/} | NUMERIC | score |  |  | 
-**Permanent Indicator**{::nomarkdown}<pre><code>  permanentIndicator</code></pre>{:/} | ENUMERATION | permanent_indicator |  |  | {::nomarkdown}UNKNOWN: <em><strong>3</strong></em><br/>PERMANENT: <em><strong>1</strong></em><br/>NOT PERMANENT: <em><strong>2</strong></em>{:/}
+**Southwest Asia Conditions?**{::nomarkdown}<pre><code>  exposureIndicated</code></pre>{:/} | ENUMERATION | *CUSTOM* |  |  | {::nomarkdown}UNKNOWN: <em><strong>U</strong></em><br/>YES: <em><strong>Y</strong></em><br/>NO: <em><strong>N</strong></em>{:/}
+**Sw Asia Cond Registration Date**{::nomarkdown}<pre><code>  registrationDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Sw Asia Cond Exam Date**{::nomarkdown}<pre><code>  examDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
 
-#### <a name="alias"></a>Alias
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>alias</dd>
-<dt>File Type</dt><dd>2.01</dd>
-<dt>Label</dt><dd>Alias</dd></dl>
+
+### <a name="spouse"></a>60. Spouse
+
+**Field ID:** spouse
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**Alias**{::nomarkdown}<pre><code>  alias</code></pre>{:/} | STRING | alias |  | REQUIRED | 
-**Alias Ssn**{::nomarkdown}<pre><code>  aliasSsn</code></pre>{:/} | STRING | alias_ssn |  |  | 
-**Alias Components**{::nomarkdown}<pre><code>  aliasComponents</code></pre>{:/} | POINTER | alias_components |  |  | [Name_Components-20](../VDM/Name_Components-20)
+**Name**{::nomarkdown}<pre><code>  name</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Occupation**{::nomarkdown}<pre><code>  occupation</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Status**{::nomarkdown}<pre><code>  status</code></pre>{:/} | ENUMERATION | *CUSTOM* |  |  | {::nomarkdown}EMPLOYED PART TIME: <em><strong>2</strong></em><br/>SELF EMPLYED: <em><strong>4</strong></em><br/>RETIRED: <em><strong>5</strong></em><br/>UNKNOWN: <em><strong>9</strong></em><br/>NOT EMPLOYED: <em><strong>3</strong></em><br/>EMPLOYED FULL TIME: <em><strong>1</strong></em><br/>ACTIVE MILITARY DUTY: <em><strong>6</strong></em>{:/}
+**Retirement Date**{::nomarkdown}<pre><code>  retirementDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Street 1**{::nomarkdown}<pre><code>  street1</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Street 2**{::nomarkdown}<pre><code>  street2</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Street 3**{::nomarkdown}<pre><code>  street3</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**City**{::nomarkdown}<pre><code>  city</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**State**{::nomarkdown}<pre><code>  state</code></pre>{:/} | POINTER | *CUSTOM* |  |  | State-5
+**Zip Code**{::nomarkdown}<pre><code>  zipCode</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Phone Number**{::nomarkdown}<pre><code>  phoneNumber</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
 
-#### <a name="raceInformation"></a>Race Information
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>raceInformation</dd>
-<dt>File Type</dt><dd>2.02</dd>
-<dt>Label</dt><dd>Race Information</dd></dl>
+
+### <a name="temporaryAddress"></a>61. Temporary Address
+
+**Field ID:** temporaryAddress
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**Race Information**{::nomarkdown}<pre><code>  raceInformation</code></pre>{:/} | POINTER | race_information |  | INDEXED<br/>REQUIRED | Race-10
-**Method Of Collection**{::nomarkdown}<pre><code>  methodOfCollection</code></pre>{:/} | POINTER | method_of_collection |  |  | Race_And_Ethnicity_Collection_Method-10_3
+**Active**{::nomarkdown}<pre><code>  active</code></pre>{:/} | BOOLEAN | *CUSTOM* |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
+**Street 1**{::nomarkdown}<pre><code>  street1</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Street 2**{::nomarkdown}<pre><code>  street2</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Street 3**{::nomarkdown}<pre><code>  street3</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**County**{::nomarkdown}<pre><code>  county</code></pre>{:/} | NUMERIC | *CUSTOM* |  |  | 
+**City**{::nomarkdown}<pre><code>  city</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**State**{::nomarkdown}<pre><code>  state</code></pre>{:/} | POINTER | *CUSTOM* |  |  | State-5
+**Zip Code**{::nomarkdown}<pre><code>  zipCode</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Start Date**{::nomarkdown}<pre><code>  startDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**End Date**{::nomarkdown}<pre><code>  endDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Phone Number**{::nomarkdown}<pre><code>  phoneNumber</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Province**{::nomarkdown}<pre><code>  province</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Postal Code**{::nomarkdown}<pre><code>  postalCode</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Country**{::nomarkdown}<pre><code>  country</code></pre>{:/} | POINTER | *CUSTOM* |  |  | Country_Code-779_004
+**Change Date Time**{::nomarkdown}<pre><code>  changeDateTime</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**Change Site**{::nomarkdown}<pre><code>  changeSite</code></pre>{:/} | POINTER | *CUSTOM* |  |  | [Institution-4](../VDM/Institution-4)
 
-#### <a name="enrollmentClinic"></a>Enrollment Clinic
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>enrollmentClinic</dd>
-<dt>File Type</dt><dd>2.001</dd>
-<dt>Label</dt><dd>Enrollment Clinic</dd></dl>
+
+### <a name="treatmentFactors"></a>62. Treatment Factors
+
+**Field ID:** treatmentFactors
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**Enrollment Clinic**{::nomarkdown}<pre><code>  enrollmentClinic</code></pre>{:/} | POINTER | enrollment_clinic |  | INDEXED<br/>REQUIRED | [Hospital_Location-44](../VDM/Hospital_Location-44)
-**Enrollment Data**{::nomarkdown}<pre><code>  enrollmentData</code></pre>{:/} | OBJECT | enrollment_data |  |  | [enrollmentData](#enrollmentData)
-**Current Status**{::nomarkdown}<pre><code>  currentStatus</code></pre>{:/} | ENUMERATION | current_status |  |  | {::nomarkdown}INACTIVE: <em><strong>I</strong></em>{:/}
+**Radiation Exposure**{::nomarkdown}<pre><code>  radiationExposure</code></pre>{:/} | OBJECT | *CUSTOM* |  |  | [radiationExposure](#radiationExposure)
+**Agent Orange Exposure**{::nomarkdown}<pre><code>  agentOrangeExposure</code></pre>{:/} | OBJECT | *CUSTOM* |  |  | [agentOrangeExposure](#agentOrangeExposure)
+**Southwest Asian Conditions**{::nomarkdown}<pre><code>  southwestAsianConditions</code></pre>{:/} | OBJECT | *CUSTOM* |  |  | [southwestAsianConditions](#southwestAsianConditions)
 
-#### <a name="enrollmentData"></a>Enrollment Data
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>enrollmentData</dd>
-<dt>File Type</dt><dd>2.011</dd>
-<dt>Label</dt><dd>Enrollment Data</dd></dl>
+
+### <a name="vaGuardian"></a>63. Va Guardian
+
+**Field ID:** vaGuardian
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**Date Of Enrollment**{::nomarkdown}<pre><code>  dateOfEnrollment</code></pre>{:/} | DATE-TIME | date_of_enrollment |  | REQUIRED | 
-**Opt Or Ac**{::nomarkdown}<pre><code>  optOrAc</code></pre>{:/} | ENUMERATION | opt_or_ac |  |  | {::nomarkdown}OPT: <em><strong>O</strong></em><br/>AC: <em><strong>A</strong></em>{:/}
-**Date Of Discharge**{::nomarkdown}<pre><code>  dateOfDischarge</code></pre>{:/} | DATE-TIME | date_of_discharge |  |  | 
-**Reason For Discharge**{::nomarkdown}<pre><code>  reasonForDischarge</code></pre>{:/} | STRING | reason_for_discharge |  |  | 
-**Review Date**{::nomarkdown}<pre><code>  reviewDate</code></pre>{:/} | DATE-TIME | review_date |  |  | 
+**Name**{::nomarkdown}<pre><code>  name</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Relationship**{::nomarkdown}<pre><code>  relationship</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Street 1**{::nomarkdown}<pre><code>  street1</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Street 2**{::nomarkdown}<pre><code>  street2</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**City**{::nomarkdown}<pre><code>  city</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**State**{::nomarkdown}<pre><code>  state</code></pre>{:/} | POINTER | *CUSTOM* |  |  | State-5
+**Zip Code**{::nomarkdown}<pre><code>  zipCode</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Phone Number**{::nomarkdown}<pre><code>  phoneNumber</code></pre>{:/} | STRING | *CUSTOM* |  |  | 
+**Institution**{::nomarkdown}<pre><code>  institution</code></pre>{:/} | POINTER | *CUSTOM* |  |  | [Institution-4](../VDM/Institution-4)
 
-#### <a name="ethnicityInformation"></a>Ethnicity Information
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>ethnicityInformation</dd>
-<dt>File Type</dt><dd>2.06</dd>
-<dt>Label</dt><dd>Ethnicity Information</dd></dl>
+
+### <a name="vietnamService"></a>64. Vietnam Service
+
+**Field ID:** vietnamService
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**Ethnicity Information**{::nomarkdown}<pre><code>  ethnicityInformation</code></pre>{:/} | POINTER | ethnicity_information |  | INDEXED<br/>REQUIRED | Ethnicity-10_2
-**Method Of Collection**{::nomarkdown}<pre><code>  methodOfCollection</code></pre>{:/} | POINTER | method_of_collection |  |  | Race_And_Ethnicity_Collection_Method-10_3
+**Service Indicated**{::nomarkdown}<pre><code>  serviceIndicated</code></pre>{:/} | ENUMERATION | *CUSTOM* |  |  | {::nomarkdown}UNKNOWN: <em><strong>U</strong></em><br/>YES: <em><strong>Y</strong></em><br/>NO: <em><strong>N</strong></em>{:/}
+**From Date**{::nomarkdown}<pre><code>  fromDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**To Date**{::nomarkdown}<pre><code>  toDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
 
-#### <a name="patientEligibilities"></a>Patient Eligibilities
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>patientEligibilities</dd>
-<dt>File Type</dt><dd>2.0361</dd>
-<dt>Label</dt><dd>Patient Eligibilities</dd></dl>
+
+### <a name="yugoslaviaService"></a>65. Yugoslavia Service
+
+**Field ID:** yugoslaviaService
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
-**Eligibility**{::nomarkdown}<pre><code>  eligibility</code></pre>{:/} | POINTER | eligibility |  | INDEXED<br/>REQUIRED | [Eligibility_Code-8](../VDM/Eligibility_Code-8)
-**Long Id**{::nomarkdown}<pre><code>  longId</code></pre>{:/} | STRING | long_id |  |  | 
-**Short Id**{::nomarkdown}<pre><code>  shortId</code></pre>{:/} | STRING | short_id |  |  | 
+**Service Indicated**{::nomarkdown}<pre><code>  serviceIndicated</code></pre>{:/} | ENUMERATION | *CUSTOM* |  |  | {::nomarkdown}UNKNOWN: <em><strong>U</strong></em><br/>YES: <em><strong>Y</strong></em><br/>NO: <em><strong>N</strong></em>{:/}
+**From Date**{::nomarkdown}<pre><code>  fromDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
+**To Date**{::nomarkdown}<pre><code>  toDate</code></pre>{:/} | DATE-TIME | *CUSTOM* |  |  | 
 
-#### <a name="icnHistory"></a>Icn History
-
-<dl>
-<dt>ID</dt><dd>icnHistory</dd>
-<dt>File Type</dt><dd>2.0992</dd>
-<dt>Label</dt><dd>Icn History</dd></dl>
-
-#### Properties
-
-Field | Datatype | FromVDM | Default | Attributes | Range
---- | --- | --- | --- | --- | ---
-**Icn History**{::nomarkdown}<pre><code>  icnHistory</code></pre>{:/} | NUMERIC | icn_history |  | REQUIRED | 
-**Icn Checksum**{::nomarkdown}<pre><code>  icnChecksum</code></pre>{:/} | NUMERIC | icn_checksum |  |  | 
-**Cmor**{::nomarkdown}<pre><code>  cmor</code></pre>{:/} | POINTER | cmor |  |  | [Institution-4](../VDM/Institution-4)
-**Date/Time Of Change**{::nomarkdown}<pre><code>  dateTimeOfChange</code></pre>{:/} | DATE-TIME | date_time_of_change |  |  | 
-
-#### <a name="cmorHistory"></a>Cmor History
-
-<dl>
-<dt>ID</dt><dd>cmorHistory</dd>
-<dt>File Type</dt><dd>2.0993</dd>
-<dt>Label</dt><dd>Cmor History</dd></dl>
-
-#### Properties
-
-Field | Datatype | FromVDM | Default | Attributes | Range
---- | --- | --- | --- | --- | ---
-**Cmor History**{::nomarkdown}<pre><code>  cmorHistory</code></pre>{:/} | NUMERIC | cmor_history |  | REQUIRED | 
-**Cmor Activity Score**{::nomarkdown}<pre><code>  cmorActivityScore</code></pre>{:/} | NUMERIC | cmor_activity_score |  |  | 
-**Cmor Score Calculation Date**{::nomarkdown}<pre><code>  cmorScoreCalculationDate</code></pre>{:/} | DATE-TIME | cmor_score_calculation_date |  |  | 
-**Cmor Change Date**{::nomarkdown}<pre><code>  cmorChangeDate</code></pre>{:/} | DATE-TIME | cmor_change_date |  |  | 
-
-#### <a name="dispositionLoginDateTime"></a>Disposition Log-In Date/Time
-
-<dl>
-<dt>ID</dt><dd>dispositionLoginDateTime</dd>
-<dt>File Type</dt><dd>2.101</dd>
-<dt>Label</dt><dd>Disposition Log-In Date/Time</dd></dl>
-
-#### Properties
-
-Field | Datatype | FromVDM | Default | Attributes | Range
---- | --- | --- | --- | --- | ---
-**Log In Date/Time**{::nomarkdown}<pre><code>  logInDateTime</code></pre>{:/} | DATE-TIME | log_in_date_time |  | INDEXED<br/>REQUIRED | 
-**10-10T Registration**{::nomarkdown}<pre><code>  1010tRegistration</code></pre>{:/} | BOOLEAN | _1010t_registration |  |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
-**Status**{::nomarkdown}<pre><code>  status</code></pre>{:/} | ENUMERATION | status |  |  | {::nomarkdown}APPLICATION WITHOUT EXAM: <em><strong>2</strong></em><br/>10/10 VISIT: <em><strong>0</strong></em><br/>UNSCHEDULED: <em><strong>1</strong></em>{:/}
-**Type Of Benefit Applied For**{::nomarkdown}<pre><code>  type_of_benefit_applied_for</code></pre>{:/} | ENUMERATION | N/A |  |  | {::nomarkdown}OUTPATIENT MEDICAL: <em><strong>3</strong></em><br/>DOMICILIARY: <em><strong>2</strong></em><br/>HOSPITAL: <em><strong>1</strong></em><br/>OUTPATIENT DENTAL: <em><strong>4</strong></em><br/>NURSING HOME CARE: <em><strong>5</strong></em>{:/}
-**Type Of Care Applied For**{::nomarkdown}<pre><code>  typeOfCareAppliedFor</code></pre>{:/} | ENUMERATION | type_of_care_applied_for |  |  | {::nomarkdown}STERILIZATION: <em><strong>3</strong></em><br/>PREGNANCY: <em><strong>4</strong></em><br/>DENTAL: <em><strong>1</strong></em><br/>PLASTIC SURGERY: <em><strong>2</strong></em><br/>ALL OTHER: <em><strong>5</strong></em>{:/}
-**Facility Applying To**{::nomarkdown}<pre><code>  facilityApplyingTo</code></pre>{:/} | POINTER | facility_applying_to |  |  | [Medical_Center_Division-40_8](../VDM/Medical_Center_Division-40_8)
-**Who Entered 10/10**{::nomarkdown}<pre><code>  who_entered_10_10</code></pre>{:/} | POINTER | N/A |  |  | [New_Person-200](../VDM/New_Person-200)
-**Log Out Date Time**{::nomarkdown}<pre><code>  logOutDateTime</code></pre>{:/} | DATE-TIME | log_out_date_time |  |  | 
-**Disposition**{::nomarkdown}<pre><code>  disposition</code></pre>{:/} | POINTER | disposition |  |  | Disposition-37
-**Reason For Late Disposition**{::nomarkdown}<pre><code>  reasonForLateDisposition</code></pre>{:/} | POINTER | reason_for_late_disposition |  |  | Disposition_Late_Reason-30
-**Who Dispositioned**{::nomarkdown}<pre><code>  whoDispositioned</code></pre>{:/} | POINTER | who_dispositioned |  |  | [New_Person-200](../VDM/New_Person-200)
-**Description Of Incident**{::nomarkdown}<pre><code>  descriptionOfIncident</code></pre>{:/} | STRING | description_of_incident |  |  | 
-***Eligible For Medicaid**{::nomarkdown}<pre><code>  eligibleForMedicaid</code></pre>{:/} | BOOLEAN | eligible_for_medicaid |  |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
-**Registration Eligibility Code**{::nomarkdown}<pre><code>  registrationEligibilityCode</code></pre>{:/} | POINTER | registration_eligibility_code |  |  | [Eligibility_Code-8](../VDM/Eligibility_Code-8)
-**Elig Verified At Registration**{::nomarkdown}<pre><code>  eligVerifiedAtRegistration</code></pre>{:/} | BOOLEAN | elig_verified_at_registration |  |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
-**Sc At Registration**{::nomarkdown}<pre><code>  scAtRegistration</code></pre>{:/} | BOOLEAN | sc_at_registration |  |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
-**Sc% At Registration**{::nomarkdown}<pre><code>  scAtRegistration2_101-16</code></pre>{:/} | NUMERIC | sc_at_registration-2_101-16 |  |  | 
-**Amis 420 Segment**{::nomarkdown}<pre><code>  amis420Segment</code></pre>{:/} | POINTER | amis_420_segment |  |  | Amis_Segment-391_1
-**Outpatient Encounter**{::nomarkdown}<pre><code>  outpatientEncounter</code></pre>{:/} | POINTER | outpatient_encounter |  |  | Outpatient_Encounter-409_68
-**Encounter Conversion Status**{::nomarkdown}<pre><code>  encounterConversionStatus</code></pre>{:/} | ENUMERATION | encounter_conversion_status |  |  | {::nomarkdown}NOT CONVERTED: <em><strong>0</strong></em><br/>CONVERTED: <em><strong>1</strong></em>{:/}
-**Need Related To Occupation**{::nomarkdown}<pre><code>  needRelatedToOccupation</code></pre>{:/} | ENUMERATION | need_related_to_occupation |  |  | {::nomarkdown}UNKNOWN: <em><strong>U</strong></em><br/>YES: <em><strong>Y</strong></em><br/>NO: <em><strong>N</strong></em>{:/}
-**Workmen&#x27;S Comp Claim Filed**{::nomarkdown}<pre><code>  workmensCompClaimFiled</code></pre>{:/} | BOOLEAN | workmens_comp_claim_filed |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
-**Workmen&#x27;S Comp Claim Number**{::nomarkdown}<pre><code>  workmensCompClaimNumber</code></pre>{:/} | STRING | workmens_comp_claim_number |  |  | 
-**Need Related To An Accident**{::nomarkdown}<pre><code>  needRelatedToAnAccident</code></pre>{:/} | ENUMERATION | need_related_to_an_accident |  |  | {::nomarkdown}UNKNOWN: <em><strong>U</strong></em><br/>YES: <em><strong>Y</strong></em><br/>NO: <em><strong>N</strong></em>{:/}
-**Injury Caused By**{::nomarkdown}<pre><code>  injuryCausedBy</code></pre>{:/} | STRING | injury_caused_by |  |  | 
-**Injuring Parties Insurance**{::nomarkdown}<pre><code>  injuringPartiesInsurance</code></pre>{:/} | POINTER | injuring_parties_insurance |  |  | Insurance_Company-36
-**Filed Against Injuring Party**{::nomarkdown}<pre><code>  filedAgainstInjuringParty</code></pre>{:/} | BOOLEAN | filed_against_injuring_party |  |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
-**Attorney&#x27;S Name**{::nomarkdown}<pre><code>  attorneysName</code></pre>{:/} | STRING | attorneys_name |  |  | 
-**A-Address 1**{::nomarkdown}<pre><code>  aaddress1</code></pre>{:/} | STRING | aaddress_1 |  |  | 
-**A-Address 2**{::nomarkdown}<pre><code>  aaddress2</code></pre>{:/} | STRING | aaddress_2 |  |  | 
-**A-Address 3**{::nomarkdown}<pre><code>  aaddress3</code></pre>{:/} | STRING | aaddress_3 |  |  | 
-**A-City**{::nomarkdown}<pre><code>  acity</code></pre>{:/} | STRING | acity |  |  | 
-**A-State**{::nomarkdown}<pre><code>  astate</code></pre>{:/} | POINTER | astate |  |  | State-5
-**A-Zip Code**{::nomarkdown}<pre><code>  azipCode</code></pre>{:/} | STRING | azip_code |  |  | 
-**A-Phone**{::nomarkdown}<pre><code>  aphone</code></pre>{:/} | STRING | aphone |  |  | 
-**A-Zip+4**{::nomarkdown}<pre><code>  azip4</code></pre>{:/} | STRING | azip4 |  |  | 
-**Active**{::nomarkdown}<pre><code>  active</code></pre>{:/} | ENUMERATION | active |  | INDEXED | {::nomarkdown}ACTIVE: <em><strong>1</strong></em>{:/}
-**Attorney&#x27;S Name Components**{::nomarkdown}<pre><code>  attorneysNameComponents</code></pre>{:/} | POINTER | attorneys_name_components |  |  | [Name_Components-20](../VDM/Name_Components-20)
-**Ods At Registration?**{::nomarkdown}<pre><code>  odsAtRegistration</code></pre>{:/} | BOOLEAN | ods_at_registration |  |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
-**Ods Registration Entry**{::nomarkdown}<pre><code>  odsRegistrationEntry</code></pre>{:/} |  | ods_registration_entry-2_101 |  |  | 
-
-#### <a name="appointment"></a>Appointment
-
-<dl>
-<dt>ID</dt><dd>appointment</dd>
-<dt>File Type</dt><dd>2.98</dd>
-<dt>Label</dt><dd>Appointment</dd></dl>
-
-#### Properties
-
-Field | Datatype | FromVDM | Default | Attributes | Range
---- | --- | --- | --- | --- | ---
-**Appointment Date/Time**{::nomarkdown}<pre><code>  appointmentDateTime</code></pre>{:/} | IEN | N/A |  |  | 
-**Clinic**{::nomarkdown}<pre><code>  clinic</code></pre>{:/} | POINTER | clinic |  | REQUIRED | [Hospital_Location-44](../VDM/Hospital_Location-44)
-**Status**{::nomarkdown}<pre><code>  status</code></pre>{:/} | ENUMERATION | status |  |  | {::nomarkdown}INPATIENT APPOINTMENT: <em><strong>I</strong></em><br/>NO ACTION TAKEN: <em><strong>NT</strong></em><br/>NO-SHOW: <em><strong>N</strong></em><br/>CANCELLED BY PATIENT & AUTO-REBOOK: <em><strong>PCA</strong></em><br/>NO-SHOW & AUTO RE-BOOK: <em><strong>NA</strong></em><br/>CANCELLED BY CLINIC: <em><strong>C</strong></em><br/>CANCELLED BY CLINIC & AUTO RE-BOOK: <em><strong>CA</strong></em><br/>CANCELLED BY PATIENT: <em><strong>PC</strong></em>{:/}
-**Lab Date/Time**{::nomarkdown}<pre><code>  labDateTime</code></pre>{:/} | DATE-TIME | lab_date_time |  |  | 
-**X-Ray Date/Time**{::nomarkdown}<pre><code>  xrayDateTime</code></pre>{:/} | DATE-TIME | xray_date_time |  |  | 
-**Ekg Date/Time**{::nomarkdown}<pre><code>  ekgDateTime</code></pre>{:/} | DATE-TIME | ekg_date_time |  |  | 
-**Routing Slip Printed**{::nomarkdown}<pre><code>  routingSlipPrinted</code></pre>{:/} | BOOLEAN | routing_slip_printed |  |  | {::nomarkdown}true: <em><strong>Y</strong></em>{:/}
-**Routing Slip Print Date**{::nomarkdown}<pre><code>  routingSlipPrintDate</code></pre>{:/} | DATE-TIME | routing_slip_print_date |  |  | 
-**Purpose Of Visit**{::nomarkdown}<pre><code>  purposeOfVisit</code></pre>{:/} | ENUMERATION | purpose_of_visit |  |  | {::nomarkdown}10-10: <em><strong>2</strong></em><br/>UNSCHED. VISIT: <em><strong>4</strong></em><br/>C&P: <em><strong>1</strong></em><br/>SCHEDULED VISIT: <em><strong>3</strong></em>{:/}
-**Appointment Type**{::nomarkdown}<pre><code>  appointmentType</code></pre>{:/} | POINTER | appointment_type |  |  | Appointment_Type-409_1
-**Special Survey Disposition**{::nomarkdown}<pre><code>  specialSurveyDisposition</code></pre>{:/} | NUMERIC | special_survey_disposition |  |  | 
-**Number Of Collateral Seen**{::nomarkdown}<pre><code>  numberOfCollateralSeen</code></pre>{:/} | NUMERIC | number_of_collateral_seen |  |  | 
-**Auto-Rebooked Appt. Date/Time**{::nomarkdown}<pre><code>  autorebookedApptDateTime</code></pre>{:/} | DATE-TIME | autorebooked_appt_date_time |  |  | 
-**Collateral Visit**{::nomarkdown}<pre><code>  collateralVisit</code></pre>{:/} | BOOLEAN | collateral_visit |  |  | {::nomarkdown}true: <em><strong>1</strong></em>{:/}
-**No-Show/Cancelled By**{::nomarkdown}<pre><code>  noshowCancelledBy</code></pre>{:/} | POINTER | noshow_cancelled_by |  |  | [New_Person-200](../VDM/New_Person-200)
-**No-Show/Cancel Date/Time**{::nomarkdown}<pre><code>  noshowCancelDateTime</code></pre>{:/} | DATE-TIME | noshow_cancel_date_time |  |  | 
-**Cancellation Reason**{::nomarkdown}<pre><code>  cancellationReason</code></pre>{:/} | POINTER | cancellation_reason |  |  | Cancellation_Reasons-409_2
-**Cancellation Remarks**{::nomarkdown}<pre><code>  cancellationRemarks</code></pre>{:/} | STRING | cancellation_remarks |  |  | 
-**Appt. Cancelled**{::nomarkdown}<pre><code>  apptCancelled</code></pre>{:/} | POINTER | appt_cancelled |  |  | [Hospital_Location-44](../VDM/Hospital_Location-44)
-**Data Entry Clerk**{::nomarkdown}<pre><code>  dataEntryClerk</code></pre>{:/} | POINTER | data_entry_clerk |  |  | [New_Person-200](../VDM/New_Person-200)
-**Date Appt. Made**{::nomarkdown}<pre><code>  dateApptMade</code></pre>{:/} | DATE-TIME | date_appt_made |  |  | 
-**Outpatient Encounter**{::nomarkdown}<pre><code>  outpatientEncounter</code></pre>{:/} | POINTER | outpatient_encounter |  |  | Outpatient_Encounter-409_68
-**Encounter Forms Printed**{::nomarkdown}<pre><code>  encounterFormsPrinted</code></pre>{:/} | BOOLEAN | encounter_forms_printed |  |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
-**Encounter Forms As Add-Ons**{::nomarkdown}<pre><code>  encounterFormsAsAddons</code></pre>{:/} | BOOLEAN | encounter_forms_as_addons |  |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
-**Encounter Conversion Status**{::nomarkdown}<pre><code>  encounterConversionStatus</code></pre>{:/} | ENUMERATION | encounter_conversion_status |  |  | {::nomarkdown}NOT CONVERTED: <em><strong>0</strong></em><br/>CONVERTED: <em><strong>1</strong></em>{:/}
-**Appointment Type Sub-Category**{::nomarkdown}<pre><code>  appointmentTypeSubcategory</code></pre>{:/} | POINTER | appointment_type_subcategory |  |  | Sharing_Agreement_SubCategory-35_2
-**Scheduling Request Type**{::nomarkdown}<pre><code>  schedulingRequestType</code></pre>{:/} | ENUMERATION | scheduling_request_type |  |  | {::nomarkdown}AUTO REBOOK: <em><strong>A</strong></em><br/>MULTIPLE APPT. BOOKING: <em><strong>M</strong></em><br/>OTHER THAN 'NEXT AVA.' (CLINICIAN REQ.): <em><strong>C</strong></em><br/>'NEXT AVAILABLE' APPT.: <em><strong>N</strong></em><br/>OTHER THAN 'NEXT AVA.' (PATIENT REQ.): <em><strong>P</strong></em><br/>WALKIN APPT.: <em><strong>W</strong></em><br/>OTHER THAN 'NEXT AVA.' APPT.: <em><strong>O</strong></em>{:/}
-**Next Ava. Appt. Indicator**{::nomarkdown}<pre><code>  nextAvaApptIndicator</code></pre>{:/} | ENUMERATION | next_ava_appt_indicator |  |  | {::nomarkdown}'NEXT AVA.' APPT. INDICATED BY USER: <em><strong>1</strong></em><br/>'NEXT AVA.' APPT. INDICATED BY CALCULATION: <em><strong>2</strong></em><br/>NOT INDICATED TO BE A 'NEXT AVA.' APPT.: <em><strong>0</strong></em><br/>'NEXT AVA.' APPT. INDICATED BY USER & CALCULATION: <em><strong>3</strong></em>{:/}
-**Desired Date Of Appointment**{::nomarkdown}<pre><code>  desiredDateOfAppointment</code></pre>{:/} | DATE-TIME | desired_date_of_appointment |  |  | 
-**Follow-Up Visit**{::nomarkdown}<pre><code>  followupVisit</code></pre>{:/} | BOOLEAN | followup_visit |  |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
-
-#### <a name="archivedData"></a>Archived Data
-
-<dl>
-<dt>ID</dt><dd>archivedData</dd>
-<dt>File Type</dt><dd>2.12</dd>
-<dt>Label</dt><dd>Archived Data</dd></dl>
-
-#### Properties
-
-Field | Datatype | FromVDM | Default | Attributes | Range
---- | --- | --- | --- | --- | ---
-**Data Type**{::nomarkdown}<pre><code>  dataType</code></pre>{:/} | ENUMERATION | data_type |  | INDEXED<br/>REQUIRED | {::nomarkdown}SPECIAL SURVEY DISP: <em><strong>SSD</strong></em><br/>APPOINTMENT: <em><strong>S</strong></em><br/>CLINIC ENROLLMENT: <em><strong>DE</strong></em>{:/}
-**Date Of Archive**{::nomarkdown}<pre><code>  date_of_archive</code></pre>{:/} | OBJECT | N/A |  |  | [dateOfArchive](#dateOfArchive)
-
-#### <a name="dateOfArchive"></a>Date Of Archive
-
-<dl>
-<dt>ID</dt><dd>dateOfArchive</dd>
-<dt>File Type</dt><dd>2.13</dd>
-<dt>Label</dt><dd>Date Of Archive</dd></dl>
-
-#### Properties
-
-Field | Datatype | FromVDM | Default | Attributes | Range
---- | --- | --- | --- | --- | ---
-**Date Of Archive**{::nomarkdown}<pre><code>  dateOfArchive</code></pre>{:/} | DATE-TIME | date_of_archive |  | REQUIRED | 
-**Tape #**{::nomarkdown}<pre><code>  tapeNumber</code></pre>{:/} | STRING | tape_number |  |  | 
-**Begin Archive Date**{::nomarkdown}<pre><code>  beginArchiveDate</code></pre>{:/} | DATE-TIME | begin_archive_date |  |  | 
-**End Archive Date**{::nomarkdown}<pre><code>  endArchiveDate</code></pre>{:/} | DATE-TIME | end_archive_date |  |  | 
-**Number Of Records Archived**{::nomarkdown}<pre><code>  numberOfRecordsArchived</code></pre>{:/} | NUMERIC | number_of_records_archived |  |  | 
+[&uarr; Return to top](#top)<br/>
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:06 pm</p>{:/}
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:34 pm</p>{:/}

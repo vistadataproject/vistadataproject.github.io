@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; YTQ EXPORTED MAIL
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; YTQ EXPORTED MAIL<br/>
 # YTQ EXPORTED MAIL
 
 Returns a list of mail created by the export utility in reverse date order. Input: NONEOutput: DATA vs EROR       1)Message #^Subject line^date       .       .       x)Message #^Subject line^date
+
+## Properties
 
 Property | Value
 --- | ---
@@ -17,4 +19,4 @@ Return Type | GLOBAL ARRAY
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

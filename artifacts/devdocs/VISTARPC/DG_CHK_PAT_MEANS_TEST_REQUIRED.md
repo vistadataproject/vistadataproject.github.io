@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DG CHK PAT MEANS TEST REQUIRED
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DG CHK PAT MEANS TEST REQUIRED<br/>
 # DG CHK PAT MEANS TEST REQUIRED
 
 CHECKS WHETHER MEANS TEST IS REQUIRED FOR PATIENTRETURNS 1 OR 0
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DPTLK6](http://code.osehra.org/dox/Routine_DPTLK6_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ DFN | LITERAL |  | true | PATIENT FILE IEN
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

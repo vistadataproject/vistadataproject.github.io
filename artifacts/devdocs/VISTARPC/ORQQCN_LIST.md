@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ORQQCN LIST
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ORQQCN LIST<br/>
 # ORQQCN LIST
 
 Returns a list of consult requests for a patient within optional date rangeand optional service.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [ORQQCN](http://code.osehra.org/dox/Routine_ORQQCN_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -26,7 +28,7 @@ SERVICE | LITERAL | 16 |  | Optional consulting service from the Request Service
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -37,10 +39,10 @@ Code | {::nomarkdown}<pre><code> N I,J,SITE,SEQ,DIFF,ORSRV,ORLOC,GMRCOER<br/> S 
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
 Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas">Consults/rConsults.pas</a>{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

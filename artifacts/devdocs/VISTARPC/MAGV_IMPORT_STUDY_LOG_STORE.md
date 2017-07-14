@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGV IMPORT STUDY LOG STORE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGV IMPORT STUDY LOG STORE<br/>
 # MAGV IMPORT STUDY LOG STORE
 
 Collects study-level data for objects imported by Imaging Importer II application (MAG*3.0*118).
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGVIM03](http://code.osehra.org/dox/Routine_MAGVIM03_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -33,4 +35,4 @@ OBJFAIL | LITERAL | 6 |  | Count of requested objects which failed to be importe
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DENTV DD FIELD UPDATE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DENTV DD FIELD UPDATE<br/>
 # DENTV DD FIELD UPDATE
 
 This call will allow the updating of certain fields in file 228.You can delete a locally added medical CPT code.You can edit the diagnosis codes mapped to any CPT code.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DENTVRP3](http://code.osehra.org/dox/Routine_DENTVRP3_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ KEY | LITERAL | 1 | true | Check which security key this user has. The default v
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

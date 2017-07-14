@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ORAM1 LOG
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ORAM1 LOG<br/>
 # ORAM1 LOG
 
 Updates Anticoagulation Flowsheet file (#103) and adds log entry.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [ORAM1](http://code.osehra.org/dox/Routine_ORAM1_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ COMP | LITERAL |  |  | COMP&#x3D;0 Will remove this entry&#x27;s complication in
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

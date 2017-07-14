@@ -3,20 +3,21 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; ORWDQ QUICK VIEW
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; ORWDQ QUICK VIEW<br/>
 # ORWDQ QUICK VIEW
 
 This parameter contains the name of a personal quick order list for aspecific display group.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 36
 Summary | Personal Quick Order List
 Value Type | free text
 Value Domain | 3:30
 Multiple Instances | true
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
@@ -27,4 +28,4 @@ Precedence | Entity
 20 | DIVISION
 30 | PACKAGE
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

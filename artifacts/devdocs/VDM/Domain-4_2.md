@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Domain-4_2
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Domain-4_2<br/>
+<a name="top"></a>
 # Domain (4.2)
 This file is used to name all of the domains to which MailMan messages may be routed.  Each name in this file corresponds to the right side of a MailMan address-the part following the "@".   Domains may have synonyms, allowing users to name sites with one name, while MailMan uses the more formal Domain Naming conventions.   This file also controls whether messages are queued for immediate transmission and into what queue they are dropped.  Any domain may have a relay domain, which controls the routing as follows:   If a domain has a named relay domain, the message is put in the queue for the relay domain.   If not, and the domain has a TRANSMISSION SCRIPT, then the message is put in the queue for that domain.   Otherwise, the message is put in the queue for the Parent domain, as defined at MailMan initialization time.
 
-<dl>
-<dt>Global</dt><dd>^DIC(4.2,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^DIC(4.2,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -54,13 +54,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Directory Requests Flag**{::nomarkdown}<pre><code>  directory_requests_flag</code></pre>{:/} | 50 | This field controls whether or not the XMMGR-DIRECTORY-ALL option<br/>will send a message requesting the user directory for the domain.<br/> <br/>If the value is null or zero, no request will be made.<br/>If the value is a positive integer, a request will be made<br/>at the same time as other domains with the same number in this<br/>field are made.  A task must be set up and scheduled for each<br/>number assigned using the XMDIR-REQUEST-ALL option, which is then<br/>run every 90 days (or according to what you change the reschedule<br/>value to). | NUMERIC | INDEXED | 
 ***message Statistics Month**{::nomarkdown}<pre><code>  message_statistics_month</code></pre>{:/} | 100 | Message statistics are collected by month.<br/> <br/>SEE FIELD 7 ABOUT '*' | STRING | DEPRECATED | 
 
-### Subfile
-#### <a name="Transmission_Script-4_21"></a>Transmission Script
+## Sub-Files
+### <a name="Transmission_Script-4_21"></a>Transmission Script (4.21)
 
 <dl>
-<dt>ID</dt><dd>Transmission_Script-4_21</dd>
-<dt>File Type</dt><dd>4.21</dd>
-<dt>Label</dt><dd>Transmission Script</dd></dl>
+<dt>ID</dt><dd>Transmission_Script-4_21</dd></dl>
 
 #### Properties
 
@@ -76,6 +74,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Text**{::nomarkdown}<pre><code>  text</code></pre>{:/} | 2 | This is the text of the script.  See description above. | STRING |  | 
 **Transmission Script Notes**{::nomarkdown}<pre><code>  transmission_script_notes</code></pre>{:/} | 99 | Keep notes that are important for systems management here. | STRING |  | 
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

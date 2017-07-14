@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ORRC ORDERS BY ID
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ORRC ORDERS BY ID<br/>
 # ORRC ORDERS BY ID
 
 This call returns the Detailed Display report for the given order IDs.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [ORRCOR](http://code.osehra.org/dox/Routine_ORRCOR_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ ORDERS | LIST |  | true | This is the list of order IDs in the form ORx:##, wher
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

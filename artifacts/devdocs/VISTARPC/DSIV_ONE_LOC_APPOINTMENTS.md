@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIV ONE LOC APPOINTMENTS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIV ONE LOC APPOINTMENTS<br/>
 # DSIV ONE LOC APPOINTMENTS
 
 Request all appointments for one hospital location, with insuranceflag.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIVIC1](http://code.osehra.org/dox/Routine_DSIVIC1_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -30,4 +32,4 @@ MORE | LITERAL | 1 | true | Contains a 1 if this is a second call to the rpc to 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

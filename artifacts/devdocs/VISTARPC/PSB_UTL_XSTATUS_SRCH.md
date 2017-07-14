@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; PSB UTL XSTATUS SRCH
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; PSB UTL XSTATUS SRCH<br/>
 # PSB UTL XSTATUS SRCH
 
 RESULTS(0)=returned line countRESULTS(1)=patients location during activityRESULTS(2)=medication^ordernumberRESULTS(3)= action fileman date&timeRESULTS(4)= scheduled administration fileman date&time
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [PSBVDLU3](http://code.osehra.org/dox/Routine_PSBVDLU3_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ PARAMS | LITERAL |  | true | ^ piece#1 - DFN (required)#2 - OrderNumber#3 - Acti
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

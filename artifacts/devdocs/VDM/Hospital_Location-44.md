@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Hospital_Location-44
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Hospital_Location-44<br/>
+<a name="top"></a>
 # Hospital Location (44)
 Contains locations found in the hospital (ie. Wards, Clinics)  *********DO NOT RE-INDEX THIS FILE**********
 
-<dl>
-<dt>Global</dt><dd>^SC(</dd>
-<dt>Domain</dt><dd>Problems</dd>
-</dl>
+**Global:** ^SC(
 
-### Properties
+**Domain:** Problems
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -86,8 +86,8 @@ Field | ID | Description | Datatype | Attributes | Range
 ***record Tracking Communication**{::nomarkdown}<pre><code>  record_tracking_communication</code></pre>{:/} | 2006 |  | ENUMERATION | DEPRECATED | 
 ***communication Format**{::nomarkdown}<pre><code>  communication_format</code></pre>{:/} | 2007 |  | STRING | DEPRECATED | 
 ***record Request Device**{::nomarkdown}<pre><code>  record_request_device</code></pre>{:/} | 2008 |  | STRING | DEPRECATED | 
-***rt At Home Retreiver**{::nomarkdown}<pre><code>  rt_at_home_retreiver</code></pre>{:/} | 2009 |  | POINTER | DEPRECATED | N/A
-***rt Not At Home Retreiver**{::nomarkdown}<pre><code>  rt_not_at_home_retreiver</code></pre>{:/} | 2010 |  | POINTER | DEPRECATED | N/A
+***rt At Home Retreiver**{::nomarkdown}<pre><code>  rt_at_home_retreiver</code></pre>{:/} | 2009 |  | POINTER | DEPRECATED | 
+***rt Not At Home Retreiver**{::nomarkdown}<pre><code>  rt_not_at_home_retreiver</code></pre>{:/} | 2010 |  | POINTER | DEPRECATED | 
 ***record Request Priority**{::nomarkdown}<pre><code>  record_request_priority</code></pre>{:/} | 2011 |  | NUMERIC | DEPRECATED | 
 ***record Appointment Status**{::nomarkdown}<pre><code>  record_appointment_status</code></pre>{:/} | 2012 |  | ENUMERATION | DEPRECATED | 
 **Prohibit Access To Clinic?**{::nomarkdown}<pre><code>  prohibit_access_to_clinic</code></pre>{:/} | 2500 | Should only privileged users have access to book to this clinic? | BOOLEAN |  | {::nomarkdown}true: <em><strong>Y</strong></em>{:/}
@@ -112,13 +112,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Autofinish Rx Site**{::nomarkdown}<pre><code>  autofinish_rx_site</code></pre>{:/} | 22900 | This field is a pointer to File#59, Outpatient Site, that this hospital <br/>location is associated with.  If this field is not set autofinishing of <br/>Rx's for this hospital location will not take place. | POINTER |  | [Outpatient_Site-59](Outpatient_Site-59)
 **Autofinish Clinic Printer**{::nomarkdown}<pre><code>  autofinish_clinic_printer</code></pre>{:/} | 22901 | Printer where autofinished Rx's will print for a particular clinic. | POINTER |  | [Device-3_5](Device-3_5)
 
-### Subfile
-#### <a name="Appointment-44_001"></a>Appointment
+## Sub-Files
+### <a name="Appointment-44_001"></a>Appointment (44.001)
 
 <dl>
-<dt>ID</dt><dd>Appointment-44_001</dd>
-<dt>File Type</dt><dd>44.001</dd>
-<dt>Label</dt><dd>Appointment</dd></dl>
+<dt>ID</dt><dd>Appointment-44_001</dd></dl>
 
 #### Properties
 
@@ -128,12 +126,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Patient**{::nomarkdown}<pre><code>  patient</code></pre>{:/} | 2 | Patient for whom this data relates. | OBJECT |  | [Patient-44_003](#Patient-44_003)
 **Message**{::nomarkdown}<pre><code>  message</code></pre>{:/} | 1400 | Message generated when clerk attempting to make appointment and<br/>patient has appointment same day in another or same clinic to<br/>alert them of same. | STRING |  | 
 
-#### <a name="Patient-44_003"></a>Patient
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Patient-44_003"></a>Patient (44.003)
 
 <dl>
-<dt>ID</dt><dd>Patient-44_003</dd>
-<dt>File Type</dt><dd>44.003</dd>
-<dt>Label</dt><dd>Patient</dd></dl>
+<dt>ID</dt><dd>Patient-44_003</dd></dl>
 
 #### Properties
 
@@ -159,12 +158,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Appointment Cancelled?**{::nomarkdown}<pre><code>  appointment_cancelled</code></pre>{:/} | 310 | Was appointment cancelled? | ENUMERATION |  | {::nomarkdown}CANCELLED: <em><strong>C</strong></em>{:/}
 **Consult Link**{::nomarkdown}<pre><code>  consult_link</code></pre>{:/} | 688 | This field links the appointment to a consult. | POINTER | INDEXED | [Request_consultation-123](Request_consultation-123)
 
-#### <a name="Cancel_Date_time_Begin-44_05"></a>Cancel Date/time Begin
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Cancel_Date_time_Begin-44_05"></a>Cancel Date/time Begin (44.05)
 
 <dl>
-<dt>ID</dt><dd>Cancel_Date_time_Begin-44_05</dd>
-<dt>File Type</dt><dd>44.05</dd>
-<dt>Label</dt><dd>Cancel Date/time Begin</dd></dl>
+<dt>ID</dt><dd>Cancel_Date_time_Begin-44_05</dd></dl>
 
 #### Properties
 
@@ -173,12 +173,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Cancel Date/time Begin**{::nomarkdown}<pre><code>  cancel_date_time_begin</code></pre>{:/} | .01 | Date/time a clinic started cancellation period. | DATE-TIME | REQUIRED | 
 **Cancel Ending Time**{::nomarkdown}<pre><code>  cancel_ending_time</code></pre>{:/} | 1 | Date/time a clinic ended cancellation period. | STRING |  | 
 
-#### <a name="Chart_Check-44_006"></a>Chart Check
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Chart_Check-44_006"></a>Chart Check (44.006)
 
 <dl>
-<dt>ID</dt><dd>Chart_Check-44_006</dd>
-<dt>File Type</dt><dd>44.006</dd>
-<dt>Label</dt><dd>Chart Check</dd></dl>
+<dt>ID</dt><dd>Chart_Check-44_006</dd></dl>
 
 #### Properties
 
@@ -187,12 +188,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Date**{::nomarkdown}<pre><code>  date</code></pre>{:/} | .01 | Date chart was checked for availability for this appointment. | DATE-TIME | REQUIRED | 
 **Patient**{::nomarkdown}<pre><code>  patient</code></pre>{:/} | 2 | Patient associated with appointment data. | POINTER |  | [Patient-2](Patient-2)
 
-#### <a name="Availability-44_002"></a>Availability
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Availability-44_002"></a>Availability (44.002)
 
 <dl>
-<dt>ID</dt><dd>Availability-44_002</dd>
-<dt>File Type</dt><dd>44.002</dd>
-<dt>Label</dt><dd>Availability</dd></dl>
+<dt>ID</dt><dd>Availability-44_002</dd></dl>
 
 #### Properties
 
@@ -201,12 +203,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Availability**{::nomarkdown}<pre><code>  availability</code></pre>{:/} | .01 | Clinic availability information. | DATE-TIME | REQUIRED | 
 **Schedule Time**{::nomarkdown}<pre><code>  schedule_time</code></pre>{:/} | 2 | Time slots or pattern scheduled for a specific clinic. | OBJECT |  | [Schedule_Time-44_004](#Schedule_Time-44_004)
 
-#### <a name="Schedule_Time-44_004"></a>Schedule Time
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Schedule_Time-44_004"></a>Schedule Time (44.004)
 
 <dl>
-<dt>ID</dt><dd>Schedule_Time-44_004</dd>
-<dt>File Type</dt><dd>44.004</dd>
-<dt>Label</dt><dd>Schedule Time</dd></dl>
+<dt>ID</dt><dd>Schedule_Time-44_004</dd></dl>
 
 #### Properties
 
@@ -215,12 +218,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Schedule Time**{::nomarkdown}<pre><code>  schedule_time</code></pre>{:/} | .01 | Time slots or pattern scheduled for a specific clinic. | STRING | REQUIRED | 
 **Number Of Patients**{::nomarkdown}<pre><code>  number_of_patients</code></pre>{:/} | 1 | Number of patients allowed to be booked for time slots. | NUMERIC |  | 
 
-#### <a name="Pattern-44_005"></a>Pattern
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Pattern-44_005"></a>Pattern (44.005)
 
 <dl>
-<dt>ID</dt><dd>Pattern-44_005</dd>
-<dt>File Type</dt><dd>44.005</dd>
-<dt>Label</dt><dd>Pattern</dd></dl>
+<dt>ID</dt><dd>Pattern-44_005</dd></dl>
 
 #### Properties
 
@@ -230,12 +234,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Current Availability**{::nomarkdown}<pre><code>  current_availability</code></pre>{:/} | 1 | Current clinic availability.  What slots are and are not available<br/>for specified clinic days. | STRING |  | 
 **Special Availability Flag**{::nomarkdown}<pre><code>  special_availability_flag</code></pre>{:/} | 3 | This node's existence indicates there is a 'special' availability set up<br/>for this date and the master pattern for this date should be taken from<br/>the "OST" node with the same date, not the "T0"-"T6" master pattern nodes. | DATE-TIME |  | 
 
-#### <a name="Special_Pattern-44_0002"></a>Special Pattern
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Special_Pattern-44_0002"></a>Special Pattern (44.0002)
 
 <dl>
-<dt>ID</dt><dd>Special_Pattern-44_0002</dd>
-<dt>File Type</dt><dd>44.0002</dd>
-<dt>Label</dt><dd>Special Pattern</dd></dl>
+<dt>ID</dt><dd>Special_Pattern-44_0002</dd></dl>
 
 #### Properties
 
@@ -244,12 +249,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Pattern Date**{::nomarkdown}<pre><code>  pattern_date</code></pre>{:/} | .01 | Date a particular pattern was established by user. | DATE-TIME | REQUIRED | 
 **Original Availability**{::nomarkdown}<pre><code>  original_availability</code></pre>{:/} | 1 | First or original availability pattern set up for a clinic. | STRING |  | 
 
-#### <a name="Sunday_Template-44_06"></a>Sunday Template
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Sunday_Template-44_06"></a>Sunday Template (44.06)
 
 <dl>
-<dt>ID</dt><dd>Sunday_Template-44_06</dd>
-<dt>File Type</dt><dd>44.06</dd>
-<dt>Label</dt><dd>Sunday Template</dd></dl>
+<dt>ID</dt><dd>Sunday_Template-44_06</dd></dl>
 
 #### Properties
 
@@ -258,12 +264,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Limit Date**{::nomarkdown}<pre><code>  limit_date</code></pre>{:/} | .01 | The pattern stored at this date is applicable for Sundays from the previous<br/>entry's date up to but not including this date.  If there is no previous<br/>entry date, this date is the first Sunday when appointments may be made to<br/>this clinic.  If the date equals 9999999, this pattern is effective<br/>indefinitely for Sundays from the previous entry date. | NUMERIC | REQUIRED | 
 **Master Pattern**{::nomarkdown}<pre><code>  master_pattern</code></pre>{:/} | 1 | Master pattern set up by user on specified date for Sundays.  All patterns<br/>stored. | STRING |  | 
 
-#### <a name="Monday_Template-44_07"></a>Monday Template
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Monday_Template-44_07"></a>Monday Template (44.07)
 
 <dl>
-<dt>ID</dt><dd>Monday_Template-44_07</dd>
-<dt>File Type</dt><dd>44.07</dd>
-<dt>Label</dt><dd>Monday Template</dd></dl>
+<dt>ID</dt><dd>Monday_Template-44_07</dd></dl>
 
 #### Properties
 
@@ -272,12 +279,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Limit Date**{::nomarkdown}<pre><code>  limit_date</code></pre>{:/} | .01 | The pattern stored at this date is applicable for Mondays from the previous<br/>entry's date up to but not including this date.  If there is no previous<br/>entry date, this date is the first Monday when appointments may be made to<br/>this clinic.  If the date equals 9999999, this pattern is effective<br/>indefinitely for Mondays from the previous entry date. | NUMERIC | REQUIRED | 
 **Master Pattern**{::nomarkdown}<pre><code>  master_pattern</code></pre>{:/} | 1 | Master pattern set up by user for clinic for Mondays. | STRING |  | 
 
-#### <a name="Tuesday_Template-44_08"></a>Tuesday Template
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Tuesday_Template-44_08"></a>Tuesday Template (44.08)
 
 <dl>
-<dt>ID</dt><dd>Tuesday_Template-44_08</dd>
-<dt>File Type</dt><dd>44.08</dd>
-<dt>Label</dt><dd>Tuesday Template</dd></dl>
+<dt>ID</dt><dd>Tuesday_Template-44_08</dd></dl>
 
 #### Properties
 
@@ -286,12 +294,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Limit Date**{::nomarkdown}<pre><code>  limit_date</code></pre>{:/} | .01 | The pattern stored at this date is applicable for Tuesdays from the previous<br/>entry's date up to but not including this date.  If there is no previous<br/>entry date, this date is the first Tuesday when appointments may be made to<br/>this clinic.  If the date equals 9999999, this pattern is effective<br/>indefinitely for Tuesdays from the previous entry date. | NUMERIC | REQUIRED | 
 **Master Pattern**{::nomarkdown}<pre><code>  master_pattern</code></pre>{:/} | 1 | Master Pattern set up for clinic for Tuesdays. | STRING |  | 
 
-#### <a name="Wednesday_Template-44_09"></a>Wednesday Template
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Wednesday_Template-44_09"></a>Wednesday Template (44.09)
 
 <dl>
-<dt>ID</dt><dd>Wednesday_Template-44_09</dd>
-<dt>File Type</dt><dd>44.09</dd>
-<dt>Label</dt><dd>Wednesday Template</dd></dl>
+<dt>ID</dt><dd>Wednesday_Template-44_09</dd></dl>
 
 #### Properties
 
@@ -300,12 +309,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Limit Date**{::nomarkdown}<pre><code>  limit_date</code></pre>{:/} | .01 | The pattern stored at this date is applicable for Wednesdays from the previous<br/>entry's date up to but not including this date.  If there is no previous<br/>entry date, this date is the first Wednesday when appointments may be made to<br/>this clinic.  If the date equals 9999999, this pattern is effective<br/>indefinitely for Wednesdays from the previous entry date. | NUMERIC | REQUIRED | 
 **Master Pattern**{::nomarkdown}<pre><code>  master_pattern</code></pre>{:/} | 1 | Master pattern set up for clinic for wednesdays. | STRING |  | 
 
-#### <a name="Thursday_Template-44_008"></a>Thursday Template
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Thursday_Template-44_008"></a>Thursday Template (44.008)
 
 <dl>
-<dt>ID</dt><dd>Thursday_Template-44_008</dd>
-<dt>File Type</dt><dd>44.008</dd>
-<dt>Label</dt><dd>Thursday Template</dd></dl>
+<dt>ID</dt><dd>Thursday_Template-44_008</dd></dl>
 
 #### Properties
 
@@ -314,12 +324,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Limit Date**{::nomarkdown}<pre><code>  limit_date</code></pre>{:/} | .01 | The pattern stored at this date is applicable for Thursdays from the previous<br/>entry's date up to but not including this date.  If there is no previous<br/>entry date, this date is the first Thursday when appointments may be made to<br/>this clinic.  If the date equals 9999999, this pattern is effective<br/>indefinitely for Thursdays from the previous entry date. | NUMERIC | REQUIRED | 
 **Master Pattern**{::nomarkdown}<pre><code>  master_pattern</code></pre>{:/} | 1 | Master pattern set up for clinic for thursdays. | STRING |  | 
 
-#### <a name="Friday_Template-44_009"></a>Friday Template
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Friday_Template-44_009"></a>Friday Template (44.009)
 
 <dl>
-<dt>ID</dt><dd>Friday_Template-44_009</dd>
-<dt>File Type</dt><dd>44.009</dd>
-<dt>Label</dt><dd>Friday Template</dd></dl>
+<dt>ID</dt><dd>Friday_Template-44_009</dd></dl>
 
 #### Properties
 
@@ -328,12 +339,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Limit Date**{::nomarkdown}<pre><code>  limit_date</code></pre>{:/} | .01 | The pattern stored at this date is applicable for Fridays from the previous<br/>entry's date up to but not including this date.  If there is no previous<br/>entry date, this date is the first Friday when appointments may be made to<br/>this clinic.  If the date equals 9999999, this pattern is effective<br/>indefinitely for Fridays from the previous entry date. | NUMERIC | REQUIRED | 
 **Master Pattern**{::nomarkdown}<pre><code>  master_pattern</code></pre>{:/} | 1 | Master pattern set up for clinic for fridays. | STRING |  | 
 
-#### <a name="Saturday_Template-44_0001"></a>Saturday Template
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Saturday_Template-44_0001"></a>Saturday Template (44.0001)
 
 <dl>
-<dt>ID</dt><dd>Saturday_Template-44_0001</dd>
-<dt>File Type</dt><dd>44.0001</dd>
-<dt>Label</dt><dd>Saturday Template</dd></dl>
+<dt>ID</dt><dd>Saturday_Template-44_0001</dd></dl>
 
 #### Properties
 
@@ -342,12 +354,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Limit Date**{::nomarkdown}<pre><code>  limit_date</code></pre>{:/} | .01 | The pattern stored at this date is applicable for Saturdays from the previous<br/>entry's date up to but not including this date.  If there is no previous<br/>entry date, this date is the first Saturday when appointments may be made to<br/>this clinic.  If the date equals 9999999, this pattern is effective<br/>indefinitely for Saturdays from the previous entry date. | NUMERIC | REQUIRED | 
 **Master Pattern**{::nomarkdown}<pre><code>  master_pattern</code></pre>{:/} | 1 | Master pattern set up for clinic for saturdays. | STRING |  | 
 
-#### <a name="Provider-44_1"></a>Provider
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Provider-44_1"></a>Provider (44.1)
 
 <dl>
-<dt>ID</dt><dd>Provider-44_1</dd>
-<dt>File Type</dt><dd>44.1</dd>
-<dt>Label</dt><dd>Provider</dd></dl>
+<dt>ID</dt><dd>Provider-44_1</dd></dl>
 
 #### Properties
 
@@ -356,12 +369,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Provider**{::nomarkdown}<pre><code>  provider</code></pre>{:/} | .01 | Enter in this field the providers associated with this clinic.  These<br/>providers will then be displayed when updating the provider through<br/>Appointment Management or Check Out to assist the user in entering<br/>the correct provider. | POINTER | INDEXED<br/>REQUIRED | [New_Person-200](New_Person-200)
 **Default Provider**{::nomarkdown}<pre><code>  default_provider</code></pre>{:/} | .02 | Enter 'YES' in this field if the provider is the default for this<br/>clinic.  Otherwise, enter 'NO'. | BOOLEAN |  | {::nomarkdown}false: <em><strong>1</strong></em><br/>true: <em><strong>0</strong></em>{:/}
 
-#### <a name="Diagnosis-44_11"></a>Diagnosis
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Diagnosis-44_11"></a>Diagnosis (44.11)
 
 <dl>
-<dt>ID</dt><dd>Diagnosis-44_11</dd>
-<dt>File Type</dt><dd>44.11</dd>
-<dt>Label</dt><dd>Diagnosis</dd></dl>
+<dt>ID</dt><dd>Diagnosis-44_11</dd></dl>
 
 #### Properties
 
@@ -370,12 +384,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Diagnosis**{::nomarkdown}<pre><code>  diagnosis</code></pre>{:/} | .01 | This is a diagnosis associated with this clinic.  This diagnosis will<br/>be displayed when updating the diagnosis through Appointment Management<br/>or Check Out to assist the user in entering the correct diagnosis. | POINTER | INDEXED<br/>REQUIRED | [Icd_Diagnosis-80](Icd_Diagnosis-80)
 **Default Diagnosis**{::nomarkdown}<pre><code>  default_diagnosis</code></pre>{:/} | .02 | This field indicates whether or not this ICD code is this clinic's <br/>default diagnosis for an ICD version. Only one ICD code for an ICD version<br/>may be the default code for a clinic. | BOOLEAN |  | {::nomarkdown}false: <em><strong>1</strong></em><br/>true: <em><strong>0</strong></em>{:/}
 
-#### <a name="Team_Positions-44_40457"></a>Team Positions
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Team_Positions-44_40457"></a>Team Positions (44.40457)
 
 <dl>
-<dt>ID</dt><dd>Team_Positions-44_40457</dd>
-<dt>File Type</dt><dd>44.40457</dd>
-<dt>Label</dt><dd>Team Positions</dd></dl>
+<dt>ID</dt><dd>Team_Positions-44_40457</dd></dl>
 
 #### Properties
 
@@ -384,6 +399,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Team Positions**{::nomarkdown}<pre><code>  team_positions</code></pre>{:/} | .01 | This is populated via a trigger on the ASSOCIATED CLINIC (#.09) Field<br/>of the TEAM POSITION (#404.57) File. | POINTER | INDEXED<br/>REQUIRED | [Team_Position-404_57](Team_Position-404_57)
 **Team**{::nomarkdown}<pre><code>  team</code></pre>{:/} | .02 |  | POINTER | INDEXED | [Team-404_51](Team-404_51)
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

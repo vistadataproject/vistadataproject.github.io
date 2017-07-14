@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DENTVX2 GETWP
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DENTVX2 GETWP<br/>
 # DENTVX2 GETWP
 
 This RPC takes in an entity, parameter name, and instance number and returns the word processing information for the given instance of the parameter.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DENTVX2](http://code.osehra.org/dox/Routine_DENTVX2_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ INST | LITERAL | 30 | true | This is the instance of the parameter you wish to r
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGV GET RAD STD RPTS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGV GET RAD STD RPTS<br/>
 # MAGV GET RAD STD RPTS
 
 Returns entries in the STANDARD REPORTS file (#74.1) for presentationto users of the Importer III Application. (MAG*3.0*136).
+
+## Properties
 
 Property | Value
 --- | ---
@@ -17,4 +19,4 @@ Return Type | ARRAY
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; NUPA SCREEN
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; NUPA SCREEN<br/>
 # NUPA SCREEN
 
 Allows M code to be executed from inside a Delphi program.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [NUPABCL](http://code.osehra.org/dox/Routine_NUPABCL_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ CODE | LITERAL |  | true | Code to execute.  If you set variable NUPa to a resul
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

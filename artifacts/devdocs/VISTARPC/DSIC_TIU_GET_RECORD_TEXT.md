@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIC TIU GET RECORD TEXT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIC TIU GET RECORD TEXT<br/>
 # DSIC TIU GET RECORD TEXT
 
 This was mainly written to allow one M routine to get the text of any signed progress note.  This function is exposed to the GUI.  However, GUI applications should use the TIU get document RPC in lieu of this RPC in most cases.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSICTIU1](http://code.osehra.org/dox/Routine_DSICTIU1_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ ACTION | LITERAL | 10 | true | This parameter is not well documented within TIU.
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

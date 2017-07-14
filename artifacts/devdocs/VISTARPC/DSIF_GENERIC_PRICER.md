@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIF GENERIC PRICER
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIF GENERIC PRICER<br/>
 # DSIF GENERIC PRICER
 
 Used to build a transaction to send to the Austin Pricer systemthis data will NOT be stored anywhere. It serves only as a tool todetermine reimbursement rates.  
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIFINP3](http://code.osehra.org/dox/Routine_DSIFINP3_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -29,4 +31,4 @@ CHARGES | LITERAL | 35 | true | CHARGES &#x3D; &quot;Billed Charges;Amount Claim
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

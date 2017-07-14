@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; VAFC LOCAL GETCORRESPONDINGIDS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; VAFC LOCAL GETCORRESPONDINGIDS<br/>
 # VAFC LOCAL GETCORRESPONDINGIDS
 
 Given a patient DFN, ICN, or EDIPI, this Remote Procedure Call returns a list of Treating Facilities, including SOURCE ID, station number, and IDENTIFIER STATUS.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [VAFCTFU2](http://code.osehra.org/dox/Routine_VAFCTFU2_source.html)
 Return Type | WORD PROCESSING
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ Patient Identifier | WORD PROCESSING | 255 | true | The patient identifier will 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

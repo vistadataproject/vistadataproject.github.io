@@ -3,20 +3,21 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; ORQQPL SUPPRESS CODES
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; ORQQPL SUPPRESS CODES<br/>
 # ORQQPL SUPPRESS CODES
 
 This parameter determines whether the user will be shown SNOMED CT and ICD codes when searching for patient problems.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 760
 Summary | Suppress Codes in Lexicon Problem Search
 Value Type | yes
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
@@ -26,4 +27,4 @@ Precedence | Entity
 20 | SYSTEM
 25 | PACKAGE
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

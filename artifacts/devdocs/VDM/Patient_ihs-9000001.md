@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Patient_ihs-9000001
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Patient_ihs-9000001<br/>
+<a name="top"></a>
 # Patient/ihs (9000001)
 This file is IHS's primary patient data file.  The NAME (.01) field of this  file is a pointer to the VA's patient file (#2).  Fields in  common between the two dictionaries actually exist only in the VA patient  file and are referenced by the IHS patient file as computed fields.  All  other files containing patient data have backward pointers linking them to  this file.  The linkage is by patient name and the internal FileMan gener- ated number of the ancillary file is the same number used in this file.     All applications developed for the RPMS which require patient data will point to this file.
 
-<dl>
-<dt>Global</dt><dd>^AUPNPAT(</dd>
-<dt>Domain</dt><dd>Patients</dd>
-</dl>
+**Global:** ^AUPNPAT(
 
-### Properties
+**Domain:** Patients
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -20,13 +20,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Location Of Home**{::nomarkdown}<pre><code>  location_of_home</code></pre>{:/} | 1201 | This is the directions to get to the patients home. | STRING |  | 
 **Health Record No.**{::nomarkdown}<pre><code>  health_record_no</code></pre>{:/} | 4101 | This multiple contains the different health record identifiers by facility.<br/>IHS uses a 6 character identifier.<br/>The VA uses the social security number which may be up to 10 <br/>characters.   | OBJECT |  | [Health_Record_No-9000001_41](#Health_Record_No-9000001_41)
 
-### Subfile
-#### <a name="Health_Record_No-9000001_41"></a>Health Record No.
+## Sub-Files
+### <a name="Health_Record_No-9000001_41"></a>Health Record No. (9000001.41)
 
 <dl>
-<dt>ID</dt><dd>Health_Record_No-9000001_41</dd>
-<dt>File Type</dt><dd>9000001.41</dd>
-<dt>Label</dt><dd>Health Record No.</dd></dl>
+<dt>ID</dt><dd>Health_Record_No-9000001_41</dd></dl>
 
 #### Properties
 
@@ -38,6 +36,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Record Status**{::nomarkdown}<pre><code>  record_status</code></pre>{:/} | .05 | This field is used by the IHS Multi-Facility Integration (MFI) package<br/>to determine whether to stop integrating data at a facility for a <br/>particular patient and location facility. | ENUMERATION |  | {::nomarkdown}DELETED: <em><strong>D</strong></em><br/>INACTIVATED: <em><strong>I</strong></em><br/>MERGED: <em><strong>M</strong></em>{:/}
 **Stop Integration**{::nomarkdown}<pre><code>  stop_integration</code></pre>{:/} | .06 | This field is used by the Mult-Facility Integration (MFI) package,<br/>created by IHS,to indicate this patients data should no longer be<br/>integrated by MFI. | BOOLEAN |  | {::nomarkdown}false: <em><strong>1</strong></em><br/>true: <em><strong>0</strong></em>{:/}
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

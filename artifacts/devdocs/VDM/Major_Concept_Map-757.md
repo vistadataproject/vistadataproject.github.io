@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Major_Concept_Map-757
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Major_Concept_Map-757<br/>
+<a name="top"></a>
 # Major Concept Map (757)
 This file is a map of Major Concepts within the Lexicon Utility and contained in the expression file (#757.01).  While the primary purpose  of this file is for file maintenance, it also supports various other  functions such as the display of classification codes by linking concepts to codes and the ability to filter out unwanted search responses by linking concepts to semantic classes and types.
 
-<dl>
-<dt>Global</dt><dd>^LEX(757,</dd>
-<dt>Domain</dt><dd>Problems</dd>
-</dl>
+**Global:** ^LEX(757,
 
-### Properties
+**Domain:** Problems
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -22,4 +22,4 @@ Field | ID | Description | Datatype | Attributes | Range
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

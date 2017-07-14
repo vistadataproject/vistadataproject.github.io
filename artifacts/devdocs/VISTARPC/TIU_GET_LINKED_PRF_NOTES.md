@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; TIU GET LINKED PRF NOTES
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; TIU GET LINKED PRF NOTES<br/>
 # TIU GET LINKED PRF NOTES
 
 Returns list of SIGNED, LINKED PRF notes for given patient, for givenPRF Title
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [TIUPRF2](http://code.osehra.org/dox/Routine_TIUPRF2_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,7 +27,7 @@ REVORDER | LITERAL | 1 | true | Optional.  Boolean flag, with 1 indicating to su
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -37,10 +39,10 @@ Code | {::nomarkdown}<pre><code> N TIUDG,ACTID,TIUIDATE,TIUEDATE,TIUIEN,TIUACT,S
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
 Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fPatientFlagMulti.pas">fPatientFlagMulti.pas</a>{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

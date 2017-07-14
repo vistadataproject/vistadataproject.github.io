@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Laboratory_Test-60
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Laboratory_Test-60<br/>
+<a name="top"></a>
 # Laboratory Test (60)
 This is the file that holds the names and ordering, display of tests.
 
-<dl>
-<dt>Global</dt><dd>^LAB(60,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^LAB(60,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -43,7 +43,7 @@ Field | ID | Description | Datatype | Attributes | Range
 **Result Nlt Code**{::nomarkdown}<pre><code>  result_nlt_code</code></pre>{:/} | 64.1 | This is the workload procedure code associated with this test.  It is used<br/>in compiling laboratory workload statistics. | POINTER |  | [Wkld_Code-64](Wkld_Code-64)
 **Catalog Item**{::nomarkdown}<pre><code>  catalog_item</code></pre>{:/} | 64.2 | This field is used to indicate that this entry is to be included in the<br/>Electronic Catalog. | BOOLEAN |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
 **Edit Code**{::nomarkdown}<pre><code>  edit_code</code></pre>{:/} | 98 | Points to EXECUTE CODE file. | POINTER |  | [Execute_Code-62_07](Execute_Code-62_07)
-***batch Data Code**{::nomarkdown}<pre><code>  batch_data_code</code></pre>{:/} | 99.1 | No longer used.  Will be deleted after 1/89. | POINTER | DEPRECATED | N/A
+***batch Data Code**{::nomarkdown}<pre><code>  batch_data_code</code></pre>{:/} | 99.1 | No longer used.  Will be deleted after 1/89. | POINTER | DEPRECATED | 
 **Execute On Data Review**{::nomarkdown}<pre><code>  execute_on_data_review</code></pre>{:/} | 99.2 | At the time a test or panel of tests is reviewed, the execute code is run. | POINTER |  | [Execute_Code-62_07](Execute_Code-62_07)
 **Site/specimen**{::nomarkdown}<pre><code>  site_specimen</code></pre>{:/} | 100 | Processing specimen type for each entry in the Lab Collection Sample field.<br/>Example:  Sodium can be determined on serum and urine.  Entries in <br/>this field are not appropriate (or even used) if the test is a panel of<br/> tests. | OBJECT |  | [Site_specimen-60_01](#Site_specimen-60_01)
 **General Processing Inst.**{::nomarkdown}<pre><code>  general_processing_inst</code></pre>{:/} | 110 | This may include any processing instructions pertinent to this test. | STRING |  | 
@@ -63,13 +63,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Hcpcs Code**{::nomarkdown}<pre><code>  hcpcs_code</code></pre>{:/} | 507 | HCFA Common Procedure Coding System (HCPCS) is a coding system that is <br/>composed of Level I codes (CPT codes), Level II codes (national codes),<br/>and Level III codes (local codes). Level I (CPT) codes are five digit<br/>numeric codes that describe procedures and tests. CPT codes are developed <br/>and maintained by the AMA with annual updates. Level II (national) codes <br/>are five digit alpha numeric codes that describe pharmaceuticals,<br/>supplies, procedures, tests and services. Level II codes are developed and<br/>maintained by CMS with quarterly updates. Level III (local) codes are five<br/>digit alpha numeric codes that are being phased out by the fiscal <br/>intermediaries. | POINTER |  | [Cpt-81](Cpt-81)
 **Ama Compliant/billable Panel**{::nomarkdown}<pre><code>  ama_compliant_billable_panel</code></pre>{:/} | 508 | If this panel test is an AMA compliant or otherwise billable panel,<br/>enter a 'Yes' in this field.  If this field is set to 'Yes' and a valid <br/>CPT code is on file, the CPT code for the panel will be sent to PCE for <br/>billing purposes as a bundled panel.<br/> <br/>If this field is set to 'No', the panel will be unbundled into it's <br/>individual atomic tests and the CPT codes for those atomic tests will be <br/>sent to PCE for billing purposes.<br/> <br/>Note: This field is only functional for a panel test. This field is <br/>ignored for an atomic test.<br/> <br/>Refer to the Clinical Indicator Data Capture (CIDC) implementation<br/>guide for further instruction for managing this field.<br/> | BOOLEAN |  | {::nomarkdown}false: <em><strong>1</strong></em><br/>true: <em><strong>0</strong></em>{:/}
 
-### Subfile
-#### <a name="Accession_Area-60_11"></a>Accession Area
+## Sub-Files
+### <a name="Accession_Area-60_11"></a>Accession Area (60.11)
 
 <dl>
-<dt>ID</dt><dd>Accession_Area-60_11</dd>
-<dt>File Type</dt><dd>60.11</dd>
-<dt>Label</dt><dd>Accession Area</dd></dl>
+<dt>ID</dt><dd>Accession_Area-60_11</dd></dl>
 
 #### Properties
 
@@ -78,12 +76,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Institution**{::nomarkdown}<pre><code>  institution</code></pre>{:/} | .01 | This is the appropriate institution/division this test is performed at.<br/>If this test is part of a panel that does not have an accession area<br/>defined for the panel, that panel will be expanded based on the<br/>institution/division the program is operating under.  I.e., if the<br/>institution doesn't find a match, the panel test ordered will not<br/>include this test. | POINTER | REQUIRED | [Institution-4](Institution-4)
 **Accession Area**{::nomarkdown}<pre><code>  accession_area</code></pre>{:/} | 1 | This is the appropriate accession area for this test.  If the test is a<br/>panel, all tests on that panel will be assigned to the entered accession<br/>area.  If some of the panel's tests go to other accession areas, leave this<br/>field blank.  This will be the default accession area for this test. | POINTER |  | [Accession-68](Accession-68)
 
-#### <a name="Site_specimen-60_01"></a>Site/specimen
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Site_specimen-60_01"></a>Site/specimen (60.01)
 
 <dl>
-<dt>ID</dt><dd>Site_specimen-60_01</dd>
-<dt>File Type</dt><dd>60.01</dd>
-<dt>Label</dt><dd>Site/specimen</dd></dl>
+<dt>ID</dt><dd>Site_specimen-60_01</dd></dl>
 
 #### Properties
 
@@ -101,18 +100,19 @@ Field | ID | Description | Datatype | Attributes | Range
 **Default Value**{::nomarkdown}<pre><code>  default_value</code></pre>{:/} | 9 | Leave blank or enter the most common (say, >80% of the time) response for<br/>the test. | STRING |  | 
 **Therapeutic Low**{::nomarkdown}<pre><code>  therapeutic_low</code></pre>{:/} | 9.2 | This is the low end value of the therapeutic range.  Used to flag results.<br/>If both the low and high are defined it will print in this manner:<br/>        low : 10<br/>        high : 50<br/>If only the low is defined and it is numeric it will print in this<br/>manner: <br/>        low: 10<br/>If only the low is defined and it is alphanumeric it will print in <br/>this manner:<br/>        NORMAL<br/>If only the high is defined and it is numeric it will print in this <br/>manner:<br/>        high: 50<br/>If only the high is defined and it is alphanumeric it will print in<br/>this manner:<br/>        >1000 | STRING |  | 
 **Therapeutic High**{::nomarkdown}<pre><code>  therapeutic_high</code></pre>{:/} | 9.3 | This is the high end value of the therapeutic range.  Used to flag results.<br/>If both the low and high are defined it will print in this manner:<br/>        low : 10<br/>        high : 50<br/>If only the low is defined and it is numeric it will print in this<br/>manner: <br/>        low: 10<br/>If only the low is defined and it is alphanumeric it will print in <br/>this manner:<br/>        NORMAL<br/>If only the high is defined and it is numeric it will print in this <br/>manner:<br/>        high: 50<br/>If only the high is defined and it is alphanumeric it will print in<br/>this manner:<br/>        >1000 | STRING |  | 
-***amis/rcs 14-4**{::nomarkdown}<pre><code>  amis_rcs_144</code></pre>{:/} | 10 | No longer used.  Will be deleted after this version  | POINTER | DEPRECATED | N/A
+***amis/rcs 14-4**{::nomarkdown}<pre><code>  amis_rcs_144</code></pre>{:/} | 10 | No longer used.  Will be deleted after this version  | POINTER | DEPRECATED | 
 **Use For Reference Testing**{::nomarkdown}<pre><code>  use_for_reference_testing</code></pre>{:/} | 13 | Indicates if the reference ranges and units associated with this<br/>specimen type can be used when manually entering results of testing<br/>performed at another laboratory. | BOOLEAN |  | {::nomarkdown}false: <em><strong>1</strong></em><br/>true: <em><strong>0</strong></em>{:/}
 **Foreign Computer System**{::nomarkdown}<pre><code>  foreign_computer_system</code></pre>{:/} | 20 | Reserved for future use. Do not use. | OBJECT |  | [Foreign_Computer_System-60_2](#Foreign_Computer_System-60_2)
 **Loinc Code**{::nomarkdown}<pre><code>  loinc_code</code></pre>{:/} | 95.3 |  This field contains the pointer to the LAB LOINC (#95.3) file.  | POINTER | INDEXED | [Lab_Loinc-95_3](Lab_Loinc-95_3)
 **Specimen Cpt**{::nomarkdown}<pre><code>  specimen_cpt</code></pre>{:/} | 96 |  | OBJECT |  | [Specimen_Cpt-60_196](#Specimen_Cpt-60_196)
 
-#### <a name="Foreign_Computer_System-60_2"></a>Foreign Computer System
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Foreign_Computer_System-60_2"></a>Foreign Computer System (60.2)
 
 <dl>
-<dt>ID</dt><dd>Foreign_Computer_System-60_2</dd>
-<dt>File Type</dt><dd>60.2</dd>
-<dt>Label</dt><dd>Foreign Computer System</dd></dl>
+<dt>ID</dt><dd>Foreign_Computer_System-60_2</dd></dl>
 
 #### Properties
 
@@ -123,12 +123,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Integer**{::nomarkdown}<pre><code>  integer</code></pre>{:/} | 2 | RESERVED FOR FUTURE USE | BOOLEAN |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
 **Unit Conversion**{::nomarkdown}<pre><code>  unit_conversion</code></pre>{:/} | 3 | RESERVED FOR FUTURE USE | STRING |  | 
 
-#### <a name="Specimen_Cpt-60_196"></a>Specimen Cpt
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Specimen_Cpt-60_196"></a>Specimen Cpt (60.196)
 
 <dl>
-<dt>ID</dt><dd>Specimen_Cpt-60_196</dd>
-<dt>File Type</dt><dd>60.196</dd>
-<dt>Label</dt><dd>Specimen Cpt</dd></dl>
+<dt>ID</dt><dd>Specimen_Cpt-60_196</dd></dl>
 
 #### Properties
 
@@ -137,12 +138,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Specimen Cpt**{::nomarkdown}<pre><code>  specimen_cpt</code></pre>{:/} | .01 | A CPT associated with the specimen | POINTER | INDEXED<br/>REQUIRED | [Cpt-81](Cpt-81)
 **Active Date (csv)**{::nomarkdown}<pre><code>  active_date_csv</code></pre>{:/} | 1 | This the active date of the SPECIMEN CPT for CSV purposes. | DATE-TIME |  | 
 
-#### <a name="Lab_Test_Included_In_Panel-60_02"></a>Lab Test Included In Panel
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Lab_Test_Included_In_Panel-60_02"></a>Lab Test Included In Panel (60.02)
 
 <dl>
-<dt>ID</dt><dd>Lab_Test_Included_In_Panel-60_02</dd>
-<dt>File Type</dt><dd>60.02</dd>
-<dt>Label</dt><dd>Lab Test Included In Panel</dd></dl>
+<dt>ID</dt><dd>Lab_Test_Included_In_Panel-60_02</dd></dl>
 
 #### Properties
 
@@ -152,12 +154,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Lab Test**{::nomarkdown}<pre><code>  lab_test</code></pre>{:/} | .01 | If the entry is to be changed or the number sequence is to be changed, the<br/>entry must be first deleted to be moved to a different position in the<br/>panel. | POINTER | INDEXED<br/>REQUIRED | [Laboratory_Test-60](Laboratory_Test-60)
 **Ap Multiply Factor**{::nomarkdown}<pre><code>  ap_multiply_factor</code></pre>{:/} | .02 | For workload if procedure is counted more than once the number<br/> of times counted is entered here.<br/> Used only for cytology workload and labels. | NUMERIC |  | 
 
-#### <a name="Collection_Sample-60_03"></a>Collection Sample
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Collection_Sample-60_03"></a>Collection Sample (60.03)
 
 <dl>
-<dt>ID</dt><dd>Collection_Sample-60_03</dd>
-<dt>File Type</dt><dd>60.03</dd>
-<dt>Label</dt><dd>Collection Sample</dd></dl>
+<dt>ID</dt><dd>Collection_Sample-60_03</dd></dl>
 
 #### Properties
 
@@ -173,12 +176,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Required Comment**{::nomarkdown}<pre><code>  required_comment</code></pre>{:/} | 7 | Enter a comment or statement that may be required in regards to this test.<br/>Points to EXECUTE CODE file. | POINTER |  | [Execute_Code-62_07](Execute_Code-62_07)
 **Sample Wkld Code**{::nomarkdown}<pre><code>  sample_wkld_code</code></pre>{:/} | 500 |  If there is a particular WKLD code which is associate the assaying<br/>this type of specimen, enter that WKLD code here. For example<br/>spinal fluid electrophoresis, this specimen must be concentrated<br/>before the procedure can be performed. | OBJECT |  | [Sample_Wkld_Code-60_14](#Sample_Wkld_Code-60_14)
 
-#### <a name="Sample_Wkld_Code-60_14"></a>Sample Wkld Code
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Sample_Wkld_Code-60_14"></a>Sample Wkld Code (60.14)
 
 <dl>
-<dt>ID</dt><dd>Sample_Wkld_Code-60_14</dd>
-<dt>File Type</dt><dd>60.14</dd>
-<dt>Label</dt><dd>Sample Wkld Code</dd></dl>
+<dt>ID</dt><dd>Sample_Wkld_Code-60_14</dd></dl>
 
 #### Properties
 
@@ -188,12 +192,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Sample Wkld Code #**{::nomarkdown}<pre><code>  sample_wkld_code_number</code></pre>{:/} | 1 |  This field contains the actual WKLD Code number. | STRING |  | 
 **Test Multiply Factor**{::nomarkdown}<pre><code>  test_multiply_factor</code></pre>{:/} | 2 |  If this particular WKLD code should be multiplied in order to receive<br/>proper count. Enter that number here. The default is 1.<br/>  NOTE: This field is identical the field found in the Verify<br/>WKLD code field sub file. | NUMERIC |  | 
 
-#### <a name="Verify_Wkld_Code-60_12"></a>Verify Wkld Code
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Verify_Wkld_Code-60_12"></a>Verify Wkld Code (60.12)
 
 <dl>
-<dt>ID</dt><dd>Verify_Wkld_Code-60_12</dd>
-<dt>File Type</dt><dd>60.12</dd>
-<dt>Label</dt><dd>Verify Wkld Code</dd></dl>
+<dt>ID</dt><dd>Verify_Wkld_Code-60_12</dd></dl>
 
 #### Properties
 
@@ -204,12 +209,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Test Multiply Factor**{::nomarkdown}<pre><code>  test_multiply_factor</code></pre>{:/} | 2 |  If this WKLD code should be counted more than once, enter the number of<br/>times it should be counted to get the total correct workload. If the field<br/>is blank, then it will automatically be counted 1 time.<br/>   Note: In version prior to V5.2, this field was named the Default Yes<br/>field. That field is not used with V5.2 and greater. | NUMERIC |  | 
 **Protect Suffix**{::nomarkdown}<pre><code>  protect_suffix</code></pre>{:/} | 3 | If you wish to prevent the suffix from being converted to another suffix<br/>during verification. Enter YES in this field.<br/>  Codes which do not have a .0000 suffix need not be protected. They are<br/>not changed during verification. | BOOLEAN |  | {::nomarkdown}true: <em><strong>1</strong></em>{:/}
 
-#### <a name="Accession_Wkld_Code-60_13"></a>Accession Wkld Code
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Accession_Wkld_Code-60_13"></a>Accession Wkld Code (60.13)
 
 <dl>
-<dt>ID</dt><dd>Accession_Wkld_Code-60_13</dd>
-<dt>File Type</dt><dd>60.13</dd>
-<dt>Label</dt><dd>Accession Wkld Code</dd></dl>
+<dt>ID</dt><dd>Accession_Wkld_Code-60_13</dd></dl>
 
 #### Properties
 
@@ -219,12 +225,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Accession Wkld Code #**{::nomarkdown}<pre><code>  accession_wkld_code_number</code></pre>{:/} | 1 |   This field contains the actual WKLD Code number. | NUMERIC |  | 
 **Test Multiply Factor**{::nomarkdown}<pre><code>  test_multiply_factor</code></pre>{:/} | 2 |   If this WKLD code should be counted more than once, enter that number<br/>here. The default is 1.<br/>  This field is identical to the multiply field in the verification WKLD<br/>code sub file. | NUMERIC |  | 
 
-#### <a name="Site_Notes_Date-60_0505"></a>Site Notes Date
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Site_Notes_Date-60_0505"></a>Site Notes Date (60.0505)
 
 <dl>
-<dt>ID</dt><dd>Site_Notes_Date-60_0505</dd>
-<dt>File Type</dt><dd>60.0505</dd>
-<dt>Label</dt><dd>Site Notes Date</dd></dl>
+<dt>ID</dt><dd>Site_Notes_Date-60_0505</dd></dl>
 
 #### Properties
 
@@ -233,6 +240,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Site Notes Date**{::nomarkdown}<pre><code>  site_notes_date</code></pre>{:/} | .01 | Date of the note. | DATE-TIME | INDEXED<br/>REQUIRED | 
 **Text**{::nomarkdown}<pre><code>  text</code></pre>{:/} | 1 |  Actual text of the note for this test. | STRING |  | 
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

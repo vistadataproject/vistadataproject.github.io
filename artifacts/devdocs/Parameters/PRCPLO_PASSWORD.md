@@ -3,22 +3,23 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; PRCPLO PASSWORD
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; PRCPLO PASSWORD<br/>
 # PRCPLO PASSWORD
 
 This parameter will store the user login password for the ClinicalLogistics Report Server.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 517
 Summary | PRCPLO PASSWORD
 Value Type | free text
 Value Domain | $L(X)&lt;35
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

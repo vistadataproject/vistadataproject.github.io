@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIR REFORMAT REPORTS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIR REFORMAT REPORTS<br/>
 # DSIR REFORMAT REPORTS
 
 This RPC will take a given report array and resize the length to fit into a smaller print area.  It takes into account header and footer lines and resizes the main body of the report.  It may return more pages than the input array.  Example: Report A is 60 lines with 3 lines of header and 2 lines of footer.  Report A has 50 lines of body.  Report A needs to print on a preprinted form that only allows for 40 lines of text.  Calling the RPC will return an 80 line array that will have lines 1 through 3 being header, lines 4 through 38 being text and lines 39 and 40 being footer.  Lines 41 through 43 will be copies of lines 1 through 3, lines 44 through 78 will be the remaining text with blank lines to fill to line 78 and lines 79 and 80 will be copies of lines 39 and 40.  If there are blank lines that can be removed from the bottom of the body to fit onto one page they will be removed so that the report will fit.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIROIR](http://code.osehra.org/dox/Routine_DSIROIR_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -27,4 +29,4 @@ INCOMING (OLD) REPORT | LIST |  | true | This is the array of the old report to 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

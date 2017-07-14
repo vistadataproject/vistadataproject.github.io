@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; EC GETPRODEFS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; EC GETPRODEFS<br/>
 # EC GETPRODEFS
 
 This broker entry point returns the defaults for procedure data entry.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [ECUERPC](http://code.osehra.org/dox/Routine_ECUERPC_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ ECARY | LITERAL |  | true | Input value, ECARY, contains the following values se
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIF INP GET NOTIFICATIONS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIF INP GET NOTIFICATIONS<br/>
 # DSIF INP GET NOTIFICATIONS
 
 Pass in existing patient IEN, returns a list of existing notifications
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIFINP0](http://code.osehra.org/dox/Routine_DSIFINP0_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ DFN | LITERAL | 25 | true |
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,20 +3,21 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; PXRM GEC STATUS CHECK
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; PXRM GEC STATUS CHECK<br/>
 # PXRM GEC STATUS CHECK
 
 None
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 391
 Summary | Gec Status Check
 Value Type | yes
 Value Domain | 801.5
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
@@ -24,4 +25,4 @@ Precedence | Entity
 1 | USER
 2 | TEAM
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

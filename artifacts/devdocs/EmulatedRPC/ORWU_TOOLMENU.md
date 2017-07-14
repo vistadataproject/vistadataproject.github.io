@@ -3,23 +3,28 @@ layout: default
 title: VISTA Emulator Documentation
 ---
 
-## [Emulated RPCs](TableOfContents) &#8594; ORWU TOOLMENU
+#### [Developer Documentation](../index) &#187; [Emulated RPCs](TableOfContents) &#187; ORWU TOOLMENU<br/>
 # ORWU TOOLMENU
 
 Returns a list of items for the CPRS GUI Tools menu.
 
+**Native RPC Documentation:** [ORWU TOOLMENU](../VISTARPC/ORWU_TOOLMENU)
+
+**MUMPS Implementation:** [TOOLMENU^ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
+
+## Properties
+
 Property | Value
 --- | ---
-Domain | Non-Clinical: Parameters
-VISTA RPC Documentation | [ORWU TOOLMENU](../VISTARPC/ORWU_TOOLMENU)
-MUMPS Implementation | [TOOLMENU^ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
-Type | READ
+Type | Non-Clinical
+Domain | Parameters
+Class | READ
 Complexity | LOW
-Uses | N/A
+Uses | 
 Return Type | ARRAY
-Return Description | N/A
+Return Description | 
 File Types Used | None
 Parameters Used | [ORWT TOOLS MENU](../Parameters/ORWT_TOOLS_MENU)
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:06 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:34 pm</p>{:/}

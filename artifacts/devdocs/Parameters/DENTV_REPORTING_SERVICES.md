@@ -3,24 +3,25 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; DENTV REPORTING SERVICES
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; DENTV REPORTING SERVICES<br/>
 # DENTV REPORTING SERVICES
 
 The DRM Plus GUI needs to access an online interactive reporting services report.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 767
 Summary | Reporting Services URL
 Value Type | word processing
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | USER
 9 | SYSTEM
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

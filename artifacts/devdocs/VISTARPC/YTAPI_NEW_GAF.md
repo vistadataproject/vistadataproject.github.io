@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; YTAPI NEW GAF
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; YTAPI NEW GAF<br/>
 # YTAPI NEW GAF
 
 Allows entry of a new GAF rating. Input Required:        DFN  - Patient IEN        GAF - GAF Score (Axis 5)        DATE - Date/Time of Diagnosis        STAFF - Diagnosis By DUZOutput: only reports success vs. error        YSDATA(1)=[DATA] VS. YSDATA(1)=[ERROR]
+
+## Properties
 
 Property | Value
 --- | ---
@@ -17,4 +19,4 @@ Return Type | ARRAY
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

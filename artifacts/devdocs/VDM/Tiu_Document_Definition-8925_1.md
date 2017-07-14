@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Tiu_Document_Definition-8925_1
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Tiu_Document_Definition-8925_1<br/>
+<a name="top"></a>
 # TIU Document Definition (8925.1)
 This file stores Document Definitions, which identify and define behavior for documents stored in the TIU DOCUMENTS FILE (#8925).  For consistency with the V-file schema, it may be viewed as the "Attribute Dictionary" for the Text Integration Utilities.   It also stores Objects, which can be embedded in a Document Definition's Boilerplate Text (Overprint). Objects contain M code which gets a piece of data and inserts it in the document's Boilerplate Text when a document is entered.   Warning: objects embedded in boilerplate text are looked up by multiple index (i.e. DIC(0) contains 'M'). Current code (see routine CHECK^TIUFLF3) checks all present indexes to make sure object names, abbreviations and print names are not ambiguous for this lookup. If new indexes are added, this code MUST BE UPDATED to check the new index as well.   Some entries in this file are developed Nationally and exported across the country.  Others are created by local sites.  Entries in the first category are marked National Standard and are not editable by sites.   This file does NOT allow multiple entries OF THE SAME TYPE with the same name.  That is, within a given Type, there are no duplicate names. (This refers to the .01 field, the Technical name of the entry.)   This file does not allow a parent to have items with the same name, even if the items have different internal file numbers (i.e. are different file entries).  Again, this refers to the .01 Technical name of the entry.   Because of ownership considerations, the file does NOT allow an entry to be an item under more than 1 parent.  If the same item is desired under more than 1 parent, the item must be copied into a new entry.  There is one exception:  Document Definitions of Type Component which have been marked Shared may have more than one parent.   The Document Definition Utility TIUF categorizes certain fields as Basic, Technical, or Upload, and displays these fields together as a group when user edits or views a Document Definition. BASIC fields include Name, Abbreviation, Print Name, Type, Personal Owner, Class Owner, Status, In Use, Shared, Orphan, Has Boiltxt, National Standard, OK to Distribute, and Suppress Visit Selection. TECHNICAL fields include Entry Action, Exit Action, Edit Template, Print Method, Print Form Header, Print Form Number, Print Group, Allow Custom Form Headers, Visit Linkage Method, Validation Method, and Object Method. UPLOAD fields include Upload Target File, Laygo Allowed, Target Text Field Subscript, Upload Look-up Method, Upload Post-Filing Code, Upload Filing Error Code, and multiples Upload Captioned ASCII Header and Upload Delimited ASCII Header.   The Document Definition file contains extensive, detailed field descriptions. Likewise, some protocols (File 101) used in TIU have extensive and careful descriptions in the Protocol file. Many of these descriptions are used in TIU for online help. If it becomes necessary for a national programmer to edit these descriptions, the programmer should check to make sure all online help is still displayed properly.   Users are expected to use the Document Definition Utility TIUF to enter, edit, and delete file entries.  In fact, the file prohibits the deletion of entries through generic Fileman Options.  It also prohibits the edit through generic Fileman of a few critical fields: Type, Status, Shared, and National Standard.  Adding and Deleting (but not editing) Items is also prohibited through generic Fileman options.  Abbreviation and Print Name of OBJECTS cannot be edited through generic Fileman Options.   This does NOT imply that it is SAFE to use generic Fileman to edit other fields.  Users are cautioned that edit through generic Fileman bypasses many safeguards built in to the Document Definition Utility and can create havoc unless the user THOROUGHLY UNDERSTANDS the File and its uses.   If users find needs which are not met through TIUF, please communicate them to the TIU development team.                                                            *****************   WARNING: Using generic Fileman options to edit entries can cause SERIOUS database problems.                                  ****************
 
-<dl>
-<dt>Global</dt><dd>^TIU(8925.1,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^TIU(8925.1,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -67,13 +67,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Map Attempted**{::nomarkdown}<pre><code>  map_attempted</code></pre>{:/} | 1502 | This is the date/time at which the user attempted to map the Local Title <br/>to a VHA Enterprise Title. | DATE-TIME |  | 
 **Map Attempted By**{::nomarkdown}<pre><code>  map_attempted_by</code></pre>{:/} | 1503 | This is the person who attempted to map the Local Title to a VHA <br/>Enterprise Title. | POINTER |  | [New_Person-200](New_Person-200)
 
-### Subfile
-#### <a name="Upload_Delimited_Ascii_Header-8925_11"></a>Upload Delimited Ascii Header
+## Sub-Files
+### <a name="Upload_Delimited_Ascii_Header-8925_11"></a>Upload Delimited Ascii Header (8925.11)
 
 <dl>
-<dt>ID</dt><dd>Upload_Delimited_Ascii_Header-8925_11</dd>
-<dt>File Type</dt><dd>8925.11</dd>
-<dt>Label</dt><dd>Upload Delimited Ascii Header</dd></dl>
+<dt>ID</dt><dd>Upload_Delimited_Ascii_Header-8925_11</dd></dl>
 
 #### Properties
 
@@ -88,12 +86,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Required Field?**{::nomarkdown}<pre><code>  required_field</code></pre>{:/} | .07 | This field is used to determine whether a given header piece is required<br/>by the application (e.g., Author and Attending Physician may be required<br/>for the ongoing processing of a Discharge Summary).  Records lacking<br/>required fields WILL be entered if possible into the target file but will<br/>generate Missing Field Error Alerts. | BOOLEAN |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
 **Transform Code**{::nomarkdown}<pre><code>  transform_code</code></pre>{:/} | 1 | This standard MUMPS code transforms the transcribed value of the header<br/>piece into a format acceptable to FileMan (e.g., patient social security<br/>number 555-12-1212 must be transformed to 555121212 or to whatever<br/>(external) format FileMan accepts when a user edits the social security<br/>number field in the target file).<br/> <br/>Field values are transformed before being set into Special Lookup<br/>Variables and before being set into Target Text File Fields.<br/> <br/>Field is necessary only if transcribed piece is not in the format Fileman<br/>accepts for the target file. | STRING |  | 
 
-#### <a name="Upload_Captioned_Ascii_Header-8925_12"></a>Upload Captioned Ascii Header
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Upload_Captioned_Ascii_Header-8925_12"></a>Upload Captioned Ascii Header (8925.12)
 
 <dl>
-<dt>ID</dt><dd>Upload_Captioned_Ascii_Header-8925_12</dd>
-<dt>File Type</dt><dd>8925.12</dd>
-<dt>Label</dt><dd>Upload Captioned Ascii Header</dd></dl>
+<dt>ID</dt><dd>Upload_Captioned_Ascii_Header-8925_12</dd></dl>
 
 #### Properties
 
@@ -108,12 +107,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Required Field?**{::nomarkdown}<pre><code>  required_field</code></pre>{:/} | .07 | This field is used to determine whether a given header item is required<br/>by the application (e.g., Author and Attending Physician may be required<br/>for the ongoing processing of a Discharge Summary).  Records lacking<br/>required fields WILL be entered into the target file, if possible, but<br/>will generate Missing Field Error Alerts. | BOOLEAN |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
 **Transform Code**{::nomarkdown}<pre><code>  transform_code</code></pre>{:/} | 1 | This standard MUMPS code transforms the transcribed value of the header<br/>item into a format acceptable to FileMan (e.g., patient social security<br/>number 555-12-1212 must be transformed to 555121212 or to whatever<br/>(external) format FileMan accepts when a user edits the social security<br/>number field in the target file).<br/> <br/>Field values are transformed before being set into Special Lookup<br/>Variables and before being set into target file fields.<br/> <br/>Field is necessary only if transcribed item is not in the format Fileman<br/>accepts for the target file. | STRING |  | 
 
-#### <a name="Item-8925_14"></a>Item
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Item-8925_14"></a>Item (8925.14)
 
 <dl>
-<dt>ID</dt><dd>Item-8925_14</dd>
-<dt>File Type</dt><dd>8925.14</dd>
-<dt>Label</dt><dd>Item</dd></dl>
+<dt>ID</dt><dd>Item-8925_14</dd></dl>
 
 #### Properties
 
@@ -124,12 +124,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Sequence**{::nomarkdown}<pre><code>  sequence</code></pre>{:/} | 3 | Item Sequence, if entered, determines item's order under its parent. If<br/>items have no sequence, item order is alphabetic by item Menu Text.<br/>Sequence must be between .01 and 999. | NUMERIC | INDEXED | 
 **Menu Text**{::nomarkdown}<pre><code>  menu_text</code></pre>{:/} | 4 | Item Menu Text is the short name users will see for Classes and Document<br/>Classes when selecting them from 3-COLUMN MENUS.  Document Definitions are<br/>selected from 3-column menus when viewing documents across many patients<br/>and when viewing many kinds of documents at the same time (e.g. Progress<br/>Notes and Discharge Summaries).<br/> <br/>To edit the Menu Text of a Document Definition, you must be viewing the<br/>Document Definition as an ITEM of its PARENT. Select 'Detailed Display'<br/>for the PARENT and then 'Items'.<br/> <br/>Menu Text has 1 - 20 characters. Menu Text must not begin with a space or<br/>with 'All'.  The Document Definition Utility TIUF automatically sets the<br/>Item Menu Text to the first 20 characters of the Item's Name when an entry<br/>is first added as an item. (If an entry's Name begins with 'All' its Menu<br/>Text is given 'AlX' as its first 3 characters.) The utility does NOT<br/>update Menu Text if the entry Name is later changed, since this would<br/>overwrite what a site may have carefully set up.  Menu Text is required.<br/> <br/>Menu Text can affect item order under a parent since order is alphabetic<br/>by menu text if items do not have sequence numbers. | STRING | REQUIRED | 
 
-#### <a name="Processing_Steps-8925_113"></a>Processing Steps
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Processing_Steps-8925_113"></a>Processing Steps (8925.113)
 
 <dl>
-<dt>ID</dt><dd>Processing_Steps-8925_113</dd>
-<dt>File Type</dt><dd>8925.113</dd>
-<dt>Label</dt><dd>Processing Steps</dd></dl>
+<dt>ID</dt><dd>Processing_Steps-8925_113</dd></dl>
 
 #### Properties
 
@@ -141,12 +142,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Resulting Status**{::nomarkdown}<pre><code>  resulting_status</code></pre>{:/} | .04 | This is the status of the document following completion of the step in <br/>question.  For instance, if a discharge summary is to be registered as<br/>unsigned following verification, this would be indicated in the RESULTING <br/>STATUS field. | POINTER |  | [Usr_Record_Status-8930_6](Usr_Record_Status-8930_6)
 **Condition Text**{::nomarkdown}<pre><code>  condition_text</code></pre>{:/} | .05 |  | STRING |  | 
 
-#### <a name="Dialog-8925_114"></a>Dialog
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Dialog-8925_114"></a>Dialog (8925.114)
 
 <dl>
-<dt>ID</dt><dd>Dialog-8925_114</dd>
-<dt>File Type</dt><dd>8925.114</dd>
-<dt>Label</dt><dd>Dialog</dd></dl>
+<dt>ID</dt><dd>Dialog-8925_114</dd></dl>
 
 #### Properties
 
@@ -165,6 +167,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Windows Condition**{::nomarkdown}<pre><code>  windows_condition</code></pre>{:/} | 113 | This is silent code which is executed when building the dialog for<br/>Windows.  It identifies which prompts should be included in the dialog.<br/>The condition should leave $T failse if the prompt should not be asked. | STRING |  | 
 **Windows Default**{::nomarkdown}<pre><code>  windows_default</code></pre>{:/} | 117 | This code should silently set the default value of a prompt when it is<br/>selected. | STRING |  | 
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

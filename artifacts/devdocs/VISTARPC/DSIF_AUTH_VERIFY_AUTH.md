@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIF AUTH VERIFY AUTH
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIF AUTH VERIFY AUTH<br/>
 # DSIF AUTH VERIFY AUTH
 
 Look to see if a patient has a valid authorization and if it has payments against it.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIFENA3](http://code.osehra.org/dox/Routine_DSIFENA3_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ AUTH IEN | LITERAL | 25 | true | Internal Number of the Authorization
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

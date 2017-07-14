@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; VBECS LAB TEST RESULTS LOOKUP
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; VBECS LAB TEST RESULTS LOOKUP<br/>
 # VBECS LAB TEST RESULTS LOOKUP
 
 This RPC returns XML containing a list of Laboratory test results for a patient within a given date range. The data returned is provided by the Lab API RR^LR7OR1 in the ^TMP("LRRR" global array in the following format. ^TMP("LRRR",$J,DFN,SUB,inverse d/t,sequence #)  = Test^result^L/N flag^units^reference range^result status^^^Nat'l Code^Name^System^Verified b y^^Therapeutic flag^Print Name^Accession^Order# XML Mapping:VistaPatientId element =  DFNLabTestId element =       TestTestPrintName element =   Print NameTestResult element =      resultTestDate element =        inverse d/t (Converted to HL7 format)  XML Example:<LabTests>    <LabTest>        <VistaPatientId>378793</VistaPatientId>        <LabTestId>3</LabTestId>        <TestPrintName>HGB</TestPrintName>        <TestResult>14.1</TestResult>        <TestDate>20010910122446-0600</TestDate>    </LabTest>    <LabTest>         <VistaPatientId>378793</VistaPatientId>         <LabTestId>3</LabTestId>         <TestPrintName>HGB</TestPrintName>         <TestResult>14.4</TestResult>         <TestDate>20010430115535-0600</TestDate>    </LabTest></LabTests>
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [VBECRPCA](http://code.osehra.org/dox/Routine_VBECRPCA_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -27,4 +29,4 @@ PATS | LITERAL | 999 | true | An array of Patient IENs used to search for Lab te
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

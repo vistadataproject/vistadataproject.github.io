@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIV PATIENT INSURANCE DATA
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIV PATIENT INSURANCE DATA<br/>
 # DSIV PATIENT INSURANCE DATA
 
 Wraps $$INSUR^IBBAPI to return insurance data for patient.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIVIC3](http://code.osehra.org/dox/Routine_DSIVIC3_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -26,4 +28,4 @@ FIELDS | LITERAL | 80 | true | List of fields to be returned (default is all).
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

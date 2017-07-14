@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Service_section-49
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Service_section-49<br/>
+<a name="top"></a>
 # Service/section (49)
 This file is a list of the services and sections within the services. Some of the entries may be 'MIS COSTING SECTIONS' for use with the cost accounting part of the Management Information System software. A section is an MIS section if there is a code entered in the field called MIS COSTING CODE.  In the cost accounting system all medical center costs will be tied to a particular section.  When MIS sections change, do not delete the old section.  Instead, change the fields under the multiple field called "DATE CLOSED" to identify which sections are no longer in use.
 
-<dl>
-<dt>Global</dt><dd>^DIC(49,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^DIC(49,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -35,13 +35,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **National Service**{::nomarkdown}<pre><code>  national_service</code></pre>{:/} | 730 | This field is a pointer to the National Service File #730, and is<br/>used to link the locally built 'Service/Section' file to the<br/>standardized list of nationally recognized services. | POINTER | INDEXED | [National_Service-730](National_Service-730)
 **Coordinator (irm)**{::nomarkdown}<pre><code>  coordinator_irm</code></pre>{:/} | 16000 | This field is used by kernel to link a NEW PERSON entry through the<br/>service/section pointer back to a New Person entry for access help. | POINTER | INDEXED | [New_Person-200](New_Person-200)
 
-### Subfile
-#### <a name="Date_Closed-49_07"></a>Date Closed
+## Sub-Files
+### <a name="Date_Closed-49_07"></a>Date Closed (49.07)
 
 <dl>
-<dt>ID</dt><dd>Date_Closed-49_07</dd>
-<dt>File Type</dt><dd>49.07</dd>
-<dt>Label</dt><dd>Date Closed</dd></dl>
+<dt>ID</dt><dd>Date_Closed-49_07</dd></dl>
 
 #### Properties
 
@@ -50,6 +48,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Date Closed**{::nomarkdown}<pre><code>  date_closed</code></pre>{:/} | .01 | This field contains a date/time when this service or section closed for<br/>hospital use. | DATE-TIME | REQUIRED | 
 **Date Re-opened**{::nomarkdown}<pre><code>  date_reopened</code></pre>{:/} | 1 | This field contains a date/time when this closed service or section<br/>was reopened for hospital use. | DATE-TIME |  | 
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

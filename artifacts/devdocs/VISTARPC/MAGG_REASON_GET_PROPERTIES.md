@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGG REASON GET PROPERTIES
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGG REASON GET PROPERTIES<br/>
 # MAGG REASON GET PROPERTIES
 
 This remote procedure returns the reason properties from the MAG REASONfile (#2005.88)
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGGA01](http://code.osehra.org/dox/Routine_MAGGA01_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ FLAGS | LITERAL |  |  | Flags that control execution (can be combined):   C  By 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

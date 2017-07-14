@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ORAM1 ACDATA
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ORAM1 ACDATA<br/>
 # ORAM1 ACDATA
 
 Retrieves record header information (e.g., indication for treatment,permissions, risks, goals, etc.) for the current patient.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [ORAM1](http://code.osehra.org/dox/Routine_ORAM1_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ VISITDATE | LITERAL |  |  | This is the Date of Service (i.e., visit date) when 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

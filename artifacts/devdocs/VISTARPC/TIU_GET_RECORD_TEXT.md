@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; TIU GET RECORD TEXT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; TIU GET RECORD TEXT<br/>
 # TIU GET RECORD TEXT
 
 This RPC will get the textual portion of a TIU Document Record.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [TIUSRVR1](http://code.osehra.org/dox/Routine_TIUSRVR1_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,7 +25,7 @@ TIUDA | LITERAL | 10 | true |
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -34,7 +36,7 @@ Code | {::nomarkdown}<pre><code> N TIUL,TIUREC,TIUARR,TIUGDATA,TIUNAME,TIUPRM0,T
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
@@ -43,4 +45,4 @@ Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master
 Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rSurgery.pas">rSurgery.pas</a>{:/}
 Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas">rTIU.pas</a>{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

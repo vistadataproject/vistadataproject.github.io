@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Oe_rr_Report-101_24
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Oe_rr_Report-101_24<br/>
+<a name="top"></a>
 # Oe/rr Report (101.24)
 This file contains definitions and parameters used in various reports within CPRS.   Entry numbers >1000 are reserved for national use.  Any local entries should be added to a number <1000.  If this convention is not followed, you run the risk of having your local entries overwritten by a patch or future release of CPRS.
 
-<dl>
-<dt>Global</dt><dd>^ORD(101.24,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^ORD(101.24,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -60,13 +60,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Column Headers**{::nomarkdown}<pre><code>  column_headers</code></pre>{:/} | 3 |  | OBJECT |  | [Column_Headers-101_243](#Column_Headers-101_243)
 **Item**{::nomarkdown}<pre><code>  item</code></pre>{:/} | 10 |  | OBJECT |  | [Item-101_241](#Item-101_241)
 
-### Subfile
-#### <a name="Column_Headers-101_243"></a>Column Headers
+## Sub-Files
+### <a name="Column_Headers-101_243"></a>Column Headers (101.243)
 
 <dl>
-<dt>ID</dt><dd>Column_Headers-101_243</dd>
-<dt>File Type</dt><dd>101.243</dd>
-<dt>Label</dt><dd>Column Headers</dd></dl>
+<dt>ID</dt><dd>Column_Headers-101_243</dd></dl>
 
 #### Properties
 
@@ -84,12 +82,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Width**{::nomarkdown}<pre><code>  width</code></pre>{:/} | .1 | This field is for the column width.  No value needs to be entered because<br/>the value is actually obtained from a User level parameter.  The field<br/>is defined here to reserve the 10 piece of this node so that future<br/>field definitions won't break the RPC used in CPRS to get column properties<br/>where the width is stored in the 10 piece. | NUMERIC |  | 
 **Hdr Modifier**{::nomarkdown}<pre><code>  hdr_modifier</code></pre>{:/} | 1 | This is code executed when HDR data needs to be modified.<br/>When this field is executed, the variable ORX will have the value<br/>passed in from the HDR.  If this value needs to be manipulated, set the<br/>new value into ORX.  If the value is ignored (not to be displayed),<br/>then set the value of ORX="-1-" | STRING |  | 
 
-#### <a name="Item-101_241"></a>Item
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Item-101_241"></a>Item (101.241)
 
 <dl>
-<dt>ID</dt><dd>Item-101_241</dd>
-<dt>File Type</dt><dd>101.241</dd>
-<dt>Label</dt><dd>Item</dd></dl>
+<dt>ID</dt><dd>Item-101_241</dd></dl>
 
 #### Properties
 
@@ -99,6 +98,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Header Text**{::nomarkdown}<pre><code>  header_text</code></pre>{:/} | .02 | This is the header to be used. | STRING |  | 
 **Sequence**{::nomarkdown}<pre><code>  sequence</code></pre>{:/} | .03 | This is the sequence number for this report. | NUMERIC |  | 
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

@@ -3,23 +3,24 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; DVBAB CAPRI VVA USER
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; DVBAB CAPRI VVA USER<br/>
 # DVBAB CAPRI VVA USER
 
 This is the username that CAPRI passes to the Virtual VA web service.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 750
 Summary | CAPRI VIRTUALVA USER
 Value Type | free text
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | PACKAGE
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

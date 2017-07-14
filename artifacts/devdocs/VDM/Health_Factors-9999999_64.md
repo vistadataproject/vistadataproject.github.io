@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Health_Factors-9999999_64
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Health_Factors-9999999_64<br/>
+<a name="top"></a>
 # Health Factors (9999999.64)
 This file contains a descriptive name of health factors, and their health factor category.   Changes to this data dictionary should be coordinated thru the IHS DBA.
 
-<dl>
-<dt>Global</dt><dd>^AUTTHF(</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^AUTTHF(
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -30,4 +30,4 @@ Field | ID | Description | Datatype | Attributes | Range
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

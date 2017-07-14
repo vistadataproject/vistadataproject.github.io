@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIF BATCH LIST REJECTED ITEMS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIF BATCH LIST REJECTED ITEMS<br/>
 # DSIF BATCH LIST REJECTED ITEMS
 
  ; Input: Batch # (IEN, if passed in as "nnn;") ; Output: ;    ; If B9 ;    ; ^TMP($J,"DSIFLRJ",1)=ien of 162.5 invoice file ; ; If B3 ; ; ^TMP($J,"DSIFLRJ",x)=ien of 162 payment file.  (may be multiple lines rejected) ; ; ^TMP($J,"DSIFLRJ",x)=ien of 162 payment file.  (may be multiple lines rejected) ;
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIFLRJ](http://code.osehra.org/dox/Routine_DSIFLRJ_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -27,4 +29,4 @@ FBFROM |  |  |  |
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

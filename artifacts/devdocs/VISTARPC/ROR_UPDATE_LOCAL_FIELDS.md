@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ROR UPDATE LOCAL FIELDS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ROR UPDATE LOCAL FIELDS<br/>
 # ROR UPDATE LOCAL FIELDS
 
 The ROR UPDATE LOCAL FIELDS remote procedure updates a list ofregistry-specific field definitions in the the ROR LOCAL FIELD file(#799.53).
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [RORRP040](http://code.osehra.org/dox/Routine_RORRP040_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ LFLST | LIST |  |  | Reference to a local variable that contains a list of local
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

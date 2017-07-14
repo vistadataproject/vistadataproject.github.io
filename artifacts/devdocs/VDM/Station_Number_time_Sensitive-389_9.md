@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Station_Number_time_Sensitive-389_9
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Station_Number_time_Sensitive-389_9<br/>
+<a name="top"></a>
 # Station Number (time Sensitive) (389.9)
 The purpose of this file is to allow DHCP software flexibility and reliability when the station number of a medical center changes or when one or more stations have merged into one station.   Adding or modifing entries in this file may affect many DHCP applications. Control of entry into this file should be carefully controlled by the IRM Service Chief.
 
-<dl>
-<dt>Global</dt><dd>^VA(389.9,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^VA(389.9,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -27,4 +27,4 @@ Field | ID | Description | Datatype | Attributes | Range
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

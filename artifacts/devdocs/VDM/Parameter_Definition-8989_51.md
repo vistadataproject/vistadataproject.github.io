@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Parameter_Definition-8989_51
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Parameter_Definition-8989_51<br/>
+<a name="top"></a>
 # Parameter Definition (8989.51)
 This file contains the characteristics of parameters.  Entries in this file must be namespaced and they are exported by the package which owns them.
 
-<dl>
-<dt>Global</dt><dd>^XTV(8989.51,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^XTV(8989.51,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -36,13 +36,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Description**{::nomarkdown}<pre><code>  description</code></pre>{:/} | 20 | A description of the parameter may be entered here. | STRING |  | 
 **Allowable Entities**{::nomarkdown}<pre><code>  allowable_entities</code></pre>{:/} | 30 | This multiple contains a list of entities (pointers to files) for which the <br/>parameter may be validly set. | OBJECT |  | [Allowable_Entities-8989_513](#Allowable_Entities-8989_513)
 
-### Subfile
-#### <a name="Allowable_Entities-8989_513"></a>Allowable Entities
+## Sub-Files
+### <a name="Allowable_Entities-8989_513"></a>Allowable Entities (8989.513)
 
 <dl>
-<dt>ID</dt><dd>Allowable_Entities-8989_513</dd>
-<dt>File Type</dt><dd>8989.513</dd>
-<dt>Label</dt><dd>Allowable Entities</dd></dl>
+<dt>ID</dt><dd>Allowable_Entities-8989_513</dd></dl>
 
 #### Properties
 
@@ -51,6 +49,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Precedence**{::nomarkdown}<pre><code>  precedence</code></pre>{:/} | .01 | A single parameter may be set for several different types of entities.  This <br/>lists the order in which entities are searched for a defined value.  For <br/>example, if a parameter may be set for a package, a location, and a user, <br/>and the respective precedents are 3, 2, 1, the value of the user parameter <br/>would be returned.  If it did not exist, the value of the location <br/>parameter.  If that did not exist, then the value of the package parameter. | NUMERIC | INDEXED<br/>REQUIRED | 
 **Entity File**{::nomarkdown}<pre><code>  entity_file</code></pre>{:/} | .02 | This identifies an entity for which the parameter can be legally entered.  <br/>Entities are simply variable pointers.  The files which are eligible to be<br/>entities are listed in the PARAMETER ENTITY file. | POINTER | REQUIRED | [Parameter_Entity-8989_518](Parameter_Entity-8989_518)
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

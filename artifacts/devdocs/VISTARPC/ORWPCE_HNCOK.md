@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ORWPCE HNCOK
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ORWPCE HNCOK<br/>
 # ORWPCE HNCOK
 
 Returns TRUE if the Head and/or Neck Cancer patches have been installed
+
+## Properties
 
 Property | Value
 --- | ---
@@ -17,7 +19,7 @@ Return Type | SINGLE VALUE
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -27,10 +29,10 @@ Code | {::nomarkdown}<pre><code> S ORY=0<br/> I $$PATCH^XPDUTL("DG*5.3*397"),$$P
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
 Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas">Encounter/rPCE.pas</a>{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

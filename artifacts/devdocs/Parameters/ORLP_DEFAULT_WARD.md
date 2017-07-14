@@ -3,24 +3,25 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; ORLP DEFAULT WARD
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; ORLP DEFAULT WARD<br/>
 # ORLP DEFAULT WARD
 
 Ward for default list of patients.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 57
 Summary | Ward
 Value Type | pointer
 Value Domain | 42
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | USER
 2 | SERVICE
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

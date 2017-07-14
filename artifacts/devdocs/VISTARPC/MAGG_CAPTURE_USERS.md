@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGG CAPTURE USERS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGG CAPTURE USERS<br/>
 # MAGG CAPTURE USERS
 
 This call will find users that have captured images in a date range.The list of users can be filtered by the FLAGS parameterThe Flags Parameter can contain'C' for images captured on the Capture Workstation  and/or'I' for images captured throught the Import API.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGGA03U](http://code.osehra.org/dox/Routine_MAGGA03U_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ TODATE | LITERAL | 20 | true | The latest Date to search for users.
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

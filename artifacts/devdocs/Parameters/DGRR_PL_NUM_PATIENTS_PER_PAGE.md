@@ -3,24 +3,25 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; DGRR PL NUM PATIENTS PER PAGE
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; DGRR PL NUM PATIENTS PER PAGE<br/>
 # DGRR PL NUM PATIENTS PER PAGE
 
 This parameter is a numeric value containing the number of patients to be displayed per page.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 433
 Summary | Number of Patients per Page
 Value Type | numeric
 Value Domain | 5:20
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 5 | DIVISION
 10 | PACKAGE
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

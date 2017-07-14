@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIV ONE LOC APPTS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIV ONE LOC APPTS<br/>
 # DSIV ONE LOC APPTS
 
 Request all appointments for one hospital location with insurance flag, check-in user, check-out user, and manual patient flag.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIVIC5](http://code.osehra.org/dox/Routine_DSIVIC5_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -30,4 +32,4 @@ BUF | LITERAL | 1 | true | This field can be set to 1 to screen out (not return)
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

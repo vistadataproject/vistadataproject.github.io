@@ -3,20 +3,21 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; DSIV ICB ENABLE NO INS LIMIT
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; DSIV ICB ENABLE NO INS LIMIT<br/>
 # DSIV ICB ENABLE NO INS LIMIT
 
 Enable NO INSURANCE age limit verification.  When set, NO INSURANCE buffer entries will not be automatically processed for patients older than the age set in the parameter.  For example, 1&#x3D;65 means check agelimit verification (do not process No Insurance) for patients older than65.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 635
 Summary | ENABLE NO INSURANCE LIMIT
 Value Type | free text
 Value Domain | 1:5
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
@@ -24,4 +25,4 @@ Precedence | Entity
 2 | DIVISION
 3 | USER
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

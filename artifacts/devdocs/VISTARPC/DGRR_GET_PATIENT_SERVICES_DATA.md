@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DGRR GET PATIENT SERVICES DATA
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DGRR GET PATIENT SERVICES DATA<br/>
 # DGRR GET PATIENT SERVICES DATA
 
 This RPC will return an XML via VistaLink containing Patient ServiceDemographic information for any given Patient ICN
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DGRRPSGT](http://code.osehra.org/dox/Routine_DGRRPSGT_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ PARAM | LIST | 999 | true | Input Parameters:   (Rq) Required parameter  (Op) Op
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

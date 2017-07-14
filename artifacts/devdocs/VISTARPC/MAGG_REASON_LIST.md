@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGG REASON LIST
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGG REASON LIST<br/>
 # MAGG REASON LIST
 
 This remote procedure returns the list of reasons for actions performed onimages. This data is loaded from the MAG REASON file (#2005.88).
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGGA01](http://code.osehra.org/dox/Routine_MAGGA01_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ PART | LITERAL |  |  | The partial match restriction (case sensitive). For examp
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

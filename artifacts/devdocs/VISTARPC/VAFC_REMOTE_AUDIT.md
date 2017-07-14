@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; VAFC REMOTE AUDIT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; VAFC REMOTE AUDIT<br/>
 # VAFC REMOTE AUDIT
 
 This Remote Procedure Call will allow users to pull an audit reportfrom a remote site.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [VAFCRPC](http://code.osehra.org/dox/Routine_VAFCRPC_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -26,4 +28,4 @@ EDT | LITERAL | 30 | true |
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

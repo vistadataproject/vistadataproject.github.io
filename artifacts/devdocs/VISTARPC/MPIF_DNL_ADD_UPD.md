@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MPIF DNL ADD UPD
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MPIF DNL ADD UPD<br/>
 # MPIF DNL ADD UPD
 
 This RPC has been established to allow the remote creation of records into the MPI DO NOT LINK (#985.26) file.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MPIRPC](http://code.osehra.org/dox/Routine_MPIRPC_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -32,4 +34,4 @@ INACT | LITERAL | 1 |  | This field will be used to pass whether the user/applic
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,23 +3,24 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; NUPA SEND WOMENS H CONSULT
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; NUPA SEND WOMENS H CONSULT<br/>
 # NUPA SEND WOMENS H CONSULT
 
 Allows each site to determine if they want the nurses to be able to sendWomen&#x27;s Health consults.  If you say NO here, the &quot;Women&#x27;s Health Consult&quot;button on page 2 of the GU tab will be grayed out.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 672
 Summary | Send Women&#x27;s Health consult
 Value Type | yes
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | SYSTEM
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

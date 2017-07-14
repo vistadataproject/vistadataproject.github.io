@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Cmop_System-550
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Cmop_System-550<br/>
+<a name="top"></a>
 # Cmop System (550)
 The system parameters in this file manage operations of the Consolidated  Mail Outpatient Pharmacy for the medical center. This information controls the transmission of data to the Consolidated Mail Outpatient Pharmacy host facility selected by the medical center. Information in this file  must be entered or edited ONLY through the Consolidated Mail Outpatient  Pharmacy package options.
 
-<dl>
-<dt>Global</dt><dd>^PSX(550,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^PSX(550,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -29,13 +29,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Non-cs Days To Transmit**{::nomarkdown}<pre><code>  noncs_days_to_transmit</code></pre>{:/} | 11 | The number of days into the future the NON-CS process will look to pick up<br/>prescriptions for a patient already in the transmission. | NUMERIC |  | 
 **Cs Days To Transmit**{::nomarkdown}<pre><code>  cs_days_to_transmit</code></pre>{:/} | 12 | The number of days into the future the CS process will look to pick up<br/>prescriptions for a patient already in the transmission. | NUMERIC |  | 
 
-### Subfile
-#### <a name="Activate_inactivate_Dt_tm-550_04"></a>Activate/inactivate Dt/tm
+## Sub-Files
+### <a name="Activate_inactivate_Dt_tm-550_04"></a>Activate/inactivate Dt/tm (550.04)
 
 <dl>
-<dt>ID</dt><dd>Activate_inactivate_Dt_tm-550_04</dd>
-<dt>File Type</dt><dd>550.04</dd>
-<dt>Label</dt><dd>Activate/inactivate Dt/tm</dd></dl>
+<dt>ID</dt><dd>Activate_inactivate_Dt_tm-550_04</dd></dl>
 
 #### Properties
 
@@ -48,12 +46,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Action Type**{::nomarkdown}<pre><code>  action_type</code></pre>{:/} | 4 | The type of action (Activate/Inactivate) for this entry. | ENUMERATION |  | {::nomarkdown}INACTIVATION NOTICE: <em><strong>I</strong></em><br/>ACTIVATION REQUEST: <em><strong>A</strong></em>{:/}
 **Remote Initiator**{::nomarkdown}<pre><code>  remote_initiator</code></pre>{:/} | 5 | Name of the CMOP person who sent the message. | STRING |  | 
 
-#### <a name="Auto_Transmit-550_07"></a>Auto Transmit
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Auto_Transmit-550_07"></a>Auto Transmit (550.07)
 
 <dl>
-<dt>ID</dt><dd>Auto_Transmit-550_07</dd>
-<dt>File Type</dt><dd>550.07</dd>
-<dt>Label</dt><dd>Auto Transmit</dd></dl>
+<dt>ID</dt><dd>Auto_Transmit-550_07</dd></dl>
 
 #### Properties
 
@@ -67,12 +66,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Task Number**{::nomarkdown}<pre><code>  task_number</code></pre>{:/} | 6 | This is the task number used to reschedule the job. | NUMERIC |  | 
 **Number Of Days To Transmit**{::nomarkdown}<pre><code>  number_of_days_to_transmit</code></pre>{:/} | 7 | This number determines the number of days to add to the current date to<br/>calculate the transmit through date for CMOP auto transmissions. | NUMERIC |  | 
 
-#### <a name="Purge_Dt_tm-550_08"></a>Purge Dt/tm
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Purge_Dt_tm-550_08"></a>Purge Dt/tm (550.08)
 
 <dl>
-<dt>ID</dt><dd>Purge_Dt_tm-550_08</dd>
-<dt>File Type</dt><dd>550.08</dd>
-<dt>Label</dt><dd>Purge Dt/tm</dd></dl>
+<dt>ID</dt><dd>Purge_Dt_tm-550_08</dd></dl>
 
 #### Properties
 
@@ -83,12 +83,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Start Seq #**{::nomarkdown}<pre><code>  start_seq_number</code></pre>{:/} | 3 |  <br/>The starting message number of the data transmission. | NUMERIC |  | 
 **End Seq #**{::nomarkdown}<pre><code>  end_seq_number</code></pre>{:/} | 4 |  <br/>The last message number of the data transmission. | NUMERIC |  | 
 
-#### <a name="Auto_Transmit_Cs-550_09"></a>Auto Transmit Cs
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Auto_Transmit_Cs-550_09"></a>Auto Transmit Cs (550.09)
 
 <dl>
-<dt>ID</dt><dd>Auto_Transmit_Cs-550_09</dd>
-<dt>File Type</dt><dd>550.09</dd>
-<dt>Label</dt><dd>Auto Transmit Cs</dd></dl>
+<dt>ID</dt><dd>Auto_Transmit_Cs-550_09</dd></dl>
 
 #### Properties
 
@@ -102,6 +103,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Task Number**{::nomarkdown}<pre><code>  task_number</code></pre>{:/} | 6 | This is the task number used to reschedule the job. | NUMERIC |  | 
 **Number Of Days To Transmit**{::nomarkdown}<pre><code>  number_of_days_to_transmit</code></pre>{:/} | 7 | This number determines the number of days to add to the current date to<br/>calculate the transmit through date for CMOP auto transmissions. | NUMERIC |  | 
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

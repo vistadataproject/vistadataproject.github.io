@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; SCRP SELECTION SOURCE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; SCRP SELECTION SOURCE<br/>
 # SCRP SELECTION SOURCE
 
 This RPC returns a list of entries that is displayedto the user as part of the entry selection process.This process occurs during query template setup. Itinvolves the user indicating which divsions, teams,roles, clinics, practitioners and user classes s/hedesires information about on a report.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [SCRPBK1](http://code.osehra.org/dox/Routine_SCRPBK1_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -27,4 +29,4 @@ SELECTIONS | LIST |  | true | This array contains all of the selections already 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

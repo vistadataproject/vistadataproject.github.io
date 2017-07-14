@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Reminder_Dialog-801_41
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Reminder_Dialog-801_41<br/>
+<a name="top"></a>
 # Reminder Dialog (801.41)
 This file is used to define all of the components that work together to  define a reminder dialog. Reminder dialog definitions are used by the CPRS  GUI for reminder resolution.     This file contains a combination of nationally distributed entries, local  auto-generated entries, site and VISN exchanged entries and local manually  created entries. Nationally distributed dialog, element, and group  entries have their name prefixed with VA-. Nationally distributed Prompts,  Forced Value, Result Groups, and Result Elements have their name prefixed  with PXRM. Entries in this file may be auto-generated via the Dialog  Management Menu option. Manually created dialog entries should use local  namespacing conventions. Nationally distributed entries will have their  class type defined as National. Entries created at the VISN level should be  defined as VISN and entries created at a site should be defined as Local.     This file is similar to the option file where there are different types of  entries (reminder dialog, dialog elements (sentences), prompts, and groups  of elements, result elements and groups of result elements). Where an option  has menu items, the dialog file has components that are entered, with the  sequence field as the .01 field.    A prompt is defined for PCE prompts, WH Notification Purpose, or as locally  created comment check-boxes. The prompts will not have any components within  them. PXRM-prefixed prompts are distributed in this file with the Clinical  Reminder package.     A dialog element is defined primarily to represent sentences to display in  the CPRS window with a check-box. When the user checks the sentence off, the FINDING ITEM in the dialog element and the ADDITIONAL FINDINGS will be added  to the list of PCE updates, orders, WH Notification Purposes, and mental  health tests. The updates won't occur on the CPRS GUI until the user clicks  on the FINISH button. Dialog elements may have components added to them.  Auto-generated components will be based on the additional prompts defined in  the Finding Type Parameters. Once a dialog element is auto-generated, the  sites can modify them.     Dialog elements may also be instructional text or a header. The FINDING ITEM  and components would not be defined in dialog elements.     A dialog group is similar to menu options. It groups dialog elements and  dialog groups within its component multiple. The dialog group can be defined  with a finding item and a check-box. The components in the group can be  hidden from the CPRS GUI window until the dialog group is checked off.    A result element contains special logic that uses information entered during  the resolution process to create a sentence to add to the progress note. The  special logic contains a CONDITION that, when true, will use the ALTERNATE  PROGRESS NOTE TEXT field to update the progress note. A separate result  element is used for each separate sentence needed. The result element is  only used with mental health test finding items. Default result elements are  distributed for common mental health tests, prefixed with PXRM and the  mental health test name. Sites may copy them and modify their local versions  as needed.     A result group contains all of the result elements that need to be checked  to create sentences for one mental health test finding. The dialog element  for the test will have its RESULT GROUP/ELEMENT field defined with the  result group. Default result groups for mental health tests are distributed  with the Clinical Reminders package. Sites may copy them and modify their local  versions as needed.    Sites should name locally created items according to their local naming  convention.
 
-<dl>
-<dt>Global</dt><dd>^PXRMD(801.41,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^PXRMD(801.41,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -62,13 +62,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **POV Header**{::nomarkdown}<pre><code>  pov_header</code></pre>{:/} | 141 | This field is used to set the diagnosis header text to display in CPRS <br/>when using a Taxonomy. | STRING |  | 
 **Cpt Header**{::nomarkdown}<pre><code>  cpt_header</code></pre>{:/} | 142 | This field is used to set the Procedure Text to display in CPRS when <br/>using a Taxonomy. | STRING |  | 
 
-### Subfile
-#### <a name="Components-801_412"></a>Components
+## Sub-Files
+### <a name="Components-801_412"></a>Components (801.412)
 
 <dl>
-<dt>ID</dt><dd>Components-801_412</dd>
-<dt>File Type</dt><dd>801.412</dd>
-<dt>Label</dt><dd>Components</dd></dl>
+<dt>ID</dt><dd>Components-801_412</dd></dl>
 
 #### Properties
 
@@ -81,12 +79,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Exclude From Pn Text**{::nomarkdown}<pre><code>  exclude_from_pn_text</code></pre>{:/} | 8 | This flag is used to control whether or not a component will be<br/>excluded from the progress note text when the component is acted upon. | BOOLEAN |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
 **Required**{::nomarkdown}<pre><code>  required</code></pre>{:/} | 9 |  | BOOLEAN |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
 
-#### <a name="Checkbox_Sequence-801_4145"></a>Checkbox Sequence
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Checkbox_Sequence-801_4145"></a>Checkbox Sequence (801.4145)
 
 <dl>
-<dt>ID</dt><dd>Checkbox_Sequence-801_4145</dd>
-<dt>File Type</dt><dd>801.4145</dd>
-<dt>Label</dt><dd>Checkbox Sequence</dd></dl>
+<dt>ID</dt><dd>Checkbox_Sequence-801_4145</dd></dl>
 
 #### Properties
 
@@ -95,12 +94,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Checkbox Sequence**{::nomarkdown}<pre><code>  checkbox_sequence</code></pre>{:/} | .01 |  | NUMERIC | INDEXED<br/>REQUIRED | 
 **Text**{::nomarkdown}<pre><code>  text</code></pre>{:/} | 2 |  | STRING |  | 
 
-#### <a name="Edit_History-801_44"></a>Edit History
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Edit_History-801_44"></a>Edit History (801.44)
 
 <dl>
-<dt>ID</dt><dd>Edit_History-801_44</dd>
-<dt>File Type</dt><dd>801.44</dd>
-<dt>Label</dt><dd>Edit History</dd></dl>
+<dt>ID</dt><dd>Edit_History-801_44</dd></dl>
 
 #### Properties
 
@@ -110,6 +110,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Edit By**{::nomarkdown}<pre><code>  edit_by</code></pre>{:/} | 1 | This is the person who did the editing. This field is set automatically<br/>and should not be changed by the user. | POINTER |  | [New_Person-200](New_Person-200)
 **Edit Comments**{::nomarkdown}<pre><code>  edit_comments</code></pre>{:/} | 2 | This word-processing field can be used to record the changes made<br/>during the editing session. | STRING |  | 
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

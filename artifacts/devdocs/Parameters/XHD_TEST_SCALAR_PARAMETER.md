@@ -3,24 +3,25 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; XHD TEST SCALAR PARAMETER
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; XHD TEST SCALAR PARAMETER<br/>
 # XHD TEST SCALAR PARAMETER
 
 This is a test parameter for integration testing of the HealtheVet Desktop Configurator module. It has no use in production applications.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 330
 Summary | Scalar Test
 Value Type | numeric
 Value Domain | 0:100
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | USER
 2 | PACKAGE
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

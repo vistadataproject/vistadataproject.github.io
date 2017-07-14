@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Option-19
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Option-19<br/>
+<a name="top"></a>
 # Option (19)
 Information in this file is used to drive the menu system.  Options are created, associated with others on menus, locked, set out-of-order, assigned prohibited times or devices, or given entry/exit actions.  The Edit Options of Menu Management should be used (instead of VA FileMan) so that the global root (DIC) and other such fields are given the correct values.  Options may be tailored by setting FileMan variables via this file.  The Order Enter/Results Reporting package is accessed by using the appropriate option type.  It is cross-referenced by name, menu text, uppercase menu text, type, item, synonym, help frame, out-of-order message, lock, prohibited times, restricted devices, and priority. 
 
-<dl>
-<dt>Global</dt><dd>^DIC(19,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^DIC(19,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -123,13 +123,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Protected Variables**{::nomarkdown}<pre><code>  protected_variables</code></pre>{:/} | 1840 | This field holds a list of variables that need to be protected<br/>when another package call KILL^XUSCLEAN.  These should all be<br/>documented package wide variables.<br/>The format is that of a list of variable names separated by commas.<br/>i.e. DUZ,DTIME,DT | STRING |  | 
 ***special Queueing**{::nomarkdown}<pre><code>  special_queueing</code></pre>{:/} | 1916 | This field is OBSOLETE,  Please use the new Option scheduling File. | ENUMERATION | DEPRECATED | 
 
-### Subfile
-#### <a name="Times_days_Prohibited-19_391"></a>Times/days Prohibited
+## Sub-Files
+### <a name="Times_days_Prohibited-19_391"></a>Times/days Prohibited (19.391)
 
 <dl>
-<dt>ID</dt><dd>Times_days_Prohibited-19_391</dd>
-<dt>File Type</dt><dd>19.391</dd>
-<dt>Label</dt><dd>Times/days Prohibited</dd></dl>
+<dt>ID</dt><dd>Times_days_Prohibited-19_391</dd></dl>
 
 #### Properties
 
@@ -138,12 +136,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Times Prohibited**{::nomarkdown}<pre><code>  times_prohibited</code></pre>{:/} | .01 | This field may be used to set prohibited times for specific days of the<br/>week.  The PROHIBITED TIME RANGE may be specified alone to apply to all<br/>days as 0800-1630 to prohibit use between 8:00 am and 4:30 pm.<br/> <br/>The time range specified may be prohibited on one or more specific days<br/>of the week by entry of the desired prohibited days in the next field of<br/>this subfield. | STRING | INDEXED<br/>REQUIRED | 
 **Days Prohibited**{::nomarkdown}<pre><code>  days_prohibited</code></pre>{:/} | .02 | This field may be used to prohibit use of the option on particular<br/>days of the week. | STRING |  | 
 
-#### <a name="Queuing_Required-19_392"></a>Queuing Required
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Queuing_Required-19_392"></a>Queuing Required (19.392)
 
 <dl>
-<dt>ID</dt><dd>Queuing_Required-19_392</dd>
-<dt>File Type</dt><dd>19.392</dd>
-<dt>Label</dt><dd>Queuing Required</dd></dl>
+<dt>ID</dt><dd>Queuing_Required-19_392</dd></dl>
 
 #### Properties
 
@@ -152,12 +151,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Time Period**{::nomarkdown}<pre><code>  time_period</code></pre>{:/} | .01 | This field is used to specify a time period for the days of the week<br/>specified in field .02 during which the option may be run, but output must<br/>be queued to a time outside the dates and times specified. | STRING | INDEXED<br/>REQUIRED | 
 **Day(s) For Time Period**{::nomarkdown}<pre><code>  days_for_time_period</code></pre>{:/} | .02 | This field is used to specify one or more specific days of the week<br/>when the option must be queued to a time outside those specified in the<br/>.01 field. | STRING |  | 
 
-#### <a name="Menu-19_01"></a>Menu
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Menu-19_01"></a>Menu (19.01)
 
 <dl>
-<dt>ID</dt><dd>Menu-19_01</dd>
-<dt>File Type</dt><dd>19.01</dd>
-<dt>Label</dt><dd>Menu</dd></dl>
+<dt>ID</dt><dd>Menu-19_01</dd></dl>
 
 #### Properties
 
@@ -167,12 +167,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Synonym**{::nomarkdown}<pre><code>  synonym</code></pre>{:/} | 2 | An abbreviation which will appear to the left of the menu text<br/>on the display of a menu.  Options are selectable by synonyms<br/>as well as menu text. | STRING |  | 
 **Display Order**{::nomarkdown}<pre><code>  display_order</code></pre>{:/} | 3 | The field determines the order in which the items of a menu appear<br/>when displayed. If this field is entered, it takes precedence over<br/>the order determined by the synonyms. | NUMERIC |  | 
 
-#### <a name="Fr0n-19_02"></a>Fr(0,n)
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Fr0n-19_02"></a>Fr(0,n) (19.02)
 
 <dl>
-<dt>ID</dt><dd>Fr0n-19_02</dd>
-<dt>File Type</dt><dd>19.02</dd>
-<dt>Label</dt><dd>Fr(0,n)</dd></dl>
+<dt>ID</dt><dd>Fr0n-19_02</dd></dl>
 
 #### Properties
 
@@ -181,12 +182,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Subscript Level Number**{::nomarkdown}<pre><code>  subscript_level_number</code></pre>{:/} | .01 | Number equal to one of the "N" subscripts that FileMan must sort through<br/>on the global or cross-reference defined by the BY(0) input variable to<br/>the FileMan print routine, EN1^DIP. Used to set an entry into the FR(0,N)<br/>input array (sort FROM value for the Nth subscript). | NUMERIC | INDEXED<br/>REQUIRED | 
 **From Value**{::nomarkdown}<pre><code>  from_value</code></pre>{:/} | 1 | This optional field can be filled out for any of the "N" subscripts that<br/>FileMan must sort through on the global defined in BY(0).  This field only<br/>has meaning when something has been defined in BY(0), and it indicates the<br/>"START WITH" value for subscript "N".  For example, when FileMan builds<br/>the code for sorting through a cross-reference defined in BY(0), if an<br/>entry exists in the first multiple for this field, the value of this field<br/>will be used as the starting point for sorting on the first variable<br/>subscript in the cross-reference. | STRING |  | 
 
-#### <a name="To0n-19_03"></a>To(0,n)
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="To0n-19_03"></a>To(0,n) (19.03)
 
 <dl>
-<dt>ID</dt><dd>To0n-19_03</dd>
-<dt>File Type</dt><dd>19.03</dd>
-<dt>Label</dt><dd>To(0,n)</dd></dl>
+<dt>ID</dt><dd>To0n-19_03</dd></dl>
 
 #### Properties
 
@@ -195,12 +197,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Subscript Level Number**{::nomarkdown}<pre><code>  subscript_level_number</code></pre>{:/} | .01 | Number equal to one of the "N" subscripts that FileMan must sort through <br/>on the global or cross-reference defined by the BY(0) input variable to<br/>the FileMan print routine, EN1^DIP. Used to set an entry into the TO(0,N)<br/>input array (sort TO value for the Nth subscript).  | NUMERIC | INDEXED<br/>REQUIRED | 
 **To Value**{::nomarkdown}<pre><code>  to_value</code></pre>{:/} | 1 | This optional field can be filled out for any of the "N" subscripts that<br/>FileMan must sort through on the global defined in BY(0).  This field only<br/>has meaning when something has been defined in BY(0), and it indicates the<br/>"GO TO" value for subscript "N".  For example, when FileMan builds the<br/>code for sorting through a cross-reference defined in BY(0), if an entry<br/>exists in the first multiple for this field, the value of this field<br/>will be used as the ending point for sorting on the first variable<br/>subscript in the cross-reference. | STRING |  | 
 
-#### <a name="Dispar0n-19_04"></a>Dispar(0,n)
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Dispar0n-19_04"></a>Dispar(0,n) (19.04)
 
 <dl>
-<dt>ID</dt><dd>Dispar0n-19_04</dd>
-<dt>File Type</dt><dd>19.04</dd>
-<dt>Label</dt><dd>Dispar(0,n)</dd></dl>
+<dt>ID</dt><dd>Dispar0n-19_04</dd></dl>
 
 #### Properties
 
@@ -211,12 +214,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Subheader Format Characters**{::nomarkdown}<pre><code>  subheader_format_characters</code></pre>{:/} | 2 | Subheader formatting characters for printing the "Nth" subscript from the<br/>BY(0) global/cross-reference.  Used to set second piece of DISPAR(0,N)<br/>input variable to the FileMan print, EN1^DIP. If defined, it should<br/>contain any subheader formatting characters that are normally entered<br/>AFTER a sort field in the FileMan interactive mode for printing data.  See<br/>the FileMan User's manual section on How to Display and Print File Data<br/>for more information. (ex. ;C3;"SUBHEADER TITLE:" to begin printing<br/>subheader in column 3, with a literal caption.) | STRING |  | 
 **Subheader Output Transform**{::nomarkdown}<pre><code>  subheader_output_transform</code></pre>{:/} | 3 | Output transform code for printing the "Nth" subscript subheader from the<br/>BY(0) global/cross-reference.  Used to set DISPAR(0,N,"OUT") input<br/>variable to the FileMan print, EN1^DIP. For instance, it could transform<br/>an inverse date into a printable date.  If defined, it should contain<br/>MUMPS code that transforms the internal value of the subscript "Y", into<br/>it's external form, also in variable "Y". | STRING |  | 
 
-#### <a name="Rpc-19_05"></a>Rpc
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Rpc-19_05"></a>Rpc (19.05)
 
 <dl>
-<dt>ID</dt><dd>Rpc-19_05</dd>
-<dt>File Type</dt><dd>19.05</dd>
-<dt>Label</dt><dd>Rpc</dd></dl>
+<dt>ID</dt><dd>Rpc-19_05</dd></dl>
 
 #### Properties
 
@@ -226,6 +230,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Rpckey**{::nomarkdown}<pre><code>  rpckey</code></pre>{:/} | 1 | This field is the free-text name from the Security Key File that will be<br/>checked when this remote procedure call is requested to the broker.<br/>If the user does not hold this key then the request will be denied. | STRING |  | 
 **Rules**{::nomarkdown}<pre><code>  rules</code></pre>{:/} | 2 | This field contains standard M code that will be executed when this<br/>remote procedure call is requested from the broker.  The variable<br/>XQRPCOK is set to 1 and the code is executed. If the value of that<br/>variable is reset to 0 by the RULES code, then the request is denied. | STRING |  | 
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

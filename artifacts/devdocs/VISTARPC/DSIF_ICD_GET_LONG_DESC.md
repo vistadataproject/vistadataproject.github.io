@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIF ICD GET LONG DESC
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIF ICD GET LONG DESC<br/>
 # DSIF ICD GET LONG DESC
 
 This RPC will return the long description (max 245 characters) for the specified code.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIFICD](http://code.osehra.org/dox/Routine_DSIFICD_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ DSIFDT | LITERAL |  |  | This is the date you wish to search to apply code set v
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

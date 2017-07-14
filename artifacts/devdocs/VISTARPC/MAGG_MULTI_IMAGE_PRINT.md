@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGG MULTI IMAGE PRINT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGG MULTI IMAGE PRINT<br/>
 # MAGG MULTI IMAGE PRINT
 
 Log multiple images printed for a patient in the MULTI IMAGE PRINT file ^MAG(2006.961
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGGROI](http://code.osehra.org/dox/Routine_MAGGROI_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ IMGARR | LIST |  | true | An array of &quot;^&quot; delimited string of values f
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

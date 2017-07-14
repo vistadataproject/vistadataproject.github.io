@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Device-3_5
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Device-3_5<br/>
+<a name="top"></a>
 # Device (3.5)
 This file defines all input/output devices that can be accessed from this CPU (definitions are not account-specific).  Each device is identified with a unique name.  Each is associated with a $I value which may correspond with a hardware port or, on layered systems, a host file or directory.  If there are several devices for the same volume set and $I, one may be given sign-on system status.  Devices may also be assigned to hunt groups to share work.  This file is cross-referenced by name, $I, volume set(CPU), and sign-on/system device.  It is also cross-referenced by hunt group, local synonym, mnemonic, subtype, and form currently mounted.
 
-<dl>
-<dt>Global</dt><dd>^%ZIS(1,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^%ZIS(1,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -88,13 +88,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Open Timeout**{::nomarkdown}<pre><code>  open_timeout</code></pre>{:/} | 2010 | If a specific timeout is needed when an open is performed,<br/>enter the value of the timeout into this field.  This will enable %ZIS<br/>to "hang" for the number of seconds specified in this field to achieve<br/>a connection rather than using the default of zero. | NUMERIC |  | 
 **Nvs Passover Flag**{::nomarkdown}<pre><code>  nvs_passover_flag</code></pre>{:/} | 18000 | This field is a flag which will allow for the devices so selected to be<br/>skipped in the NVS TEST ACCOUNT initialization process.  If the test<br/>database has a different path to the device in question, some editting may<br/>be needed. | BOOLEAN |  | {::nomarkdown}true: <em><strong>1</strong></em>{:/}
 
-### Subfile
-#### <a name="Despool_Devices-3_532"></a>Despool Devices
+## Sub-Files
+### <a name="Despool_Devices-3_532"></a>Despool Devices (3.532)
 
 <dl>
-<dt>ID</dt><dd>Despool_Devices-3_532</dd>
-<dt>File Type</dt><dd>3.532</dd>
-<dt>Label</dt><dd>Despool Devices</dd></dl>
+<dt>ID</dt><dd>Despool_Devices-3_532</dd></dl>
 
 #### Properties
 
@@ -103,6 +101,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Despool Devices**{::nomarkdown}<pre><code>  despool_devices</code></pre>{:/} | .01 | The printer used in the despool process associated with<br/>the current spool device. | POINTER | INDEXED<br/>REQUIRED | [Device-3_5](Device-3_5)
 **Copies**{::nomarkdown}<pre><code>  copies</code></pre>{:/} | 1 |  | NUMERIC |  | 
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

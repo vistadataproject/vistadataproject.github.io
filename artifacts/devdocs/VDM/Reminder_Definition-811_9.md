@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Reminder_Definition-811_9
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Reminder_Definition-811_9<br/>
+<a name="top"></a>
 # Reminder Definition (811.9)
 This file contains Clinical Reminder definitions. For a detailed description of the contents of this file, see the Clinical Reminders Manager Manual. Additional information may be found at the Clinical Reminders web site: http//vista.domain.ext/reminders  This file contains a combination of nationally distributed and local entries. Any local entries are assigned an internal entry number prefixed with your site number. Nationally distributed entries have their name prefixed with VA-. Local entry names cannot start with VA-.
 
-<dl>
-<dt>Global</dt><dd>^PXD(811.9,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^PXD(811.9,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -71,13 +71,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Usage**{::nomarkdown}<pre><code>  usage</code></pre>{:/} | 103 | The Usage field describes how the reminder definition can be<br/>used. This field must contain C or * if the reminder is to be selected<br/>in CPRS. The L or the O values will override all other values. For<br/>example, if L and C are defined in the Usage field, the Reminder<br/>will not show on the cover sheet in CPRS, because L is in the<br/>Usage field.<br/> <br/>This is free text field and can contain any combination of the<br/>following codes: <br/>                                 <br/>             Code  Usage <br/>              C    CPRS  <br/>              L    Reminder Patient List<br/>              O    Reminder Order Checks<br/>              P    Patient<br/>              R    Reminder Reports  <br/>              X    Reminder Extracts  <br/>              *    All of the above, except L, O, and P.<br/> | STRING | REQUIRED | 
 **Edit History**{::nomarkdown}<pre><code>  edit_history</code></pre>{:/} | 110 | This multiple is used to record a history of changes made to the<br/>definition. | OBJECT |  | [Edit_History-811_9001](#Edit_History-811_9001)
 
-### Subfile
-#### <a name="Baseline_Age_Findings-811_97"></a>Baseline Age Findings
+## Sub-Files
+### <a name="Baseline_Age_Findings-811_97"></a>Baseline Age Findings (811.97)
 
 <dl>
-<dt>ID</dt><dd>Baseline_Age_Findings-811_97</dd>
-<dt>File Type</dt><dd>811.97</dd>
-<dt>Label</dt><dd>Baseline Age Findings</dd></dl>
+<dt>ID</dt><dd>Baseline_Age_Findings-811_97</dd></dl>
 
 #### Properties
 
@@ -91,12 +89,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **No. Of Age Match Lines**{::nomarkdown}<pre><code>  no_of_age_match_lines</code></pre>{:/} | 5 | This is the number of lines in the age match text. If the number ends<br/>with "T" then the text contains TIU objects. This field is set<br/>automatically during reminder edit and should never be edited by hand. | STRING |  | 
 **No. Of Age No Match Lines**{::nomarkdown}<pre><code>  no_of_age_no_match_lines</code></pre>{:/} | 6 | This is the number of lines in the age no match text. If the number ends<br/>with "T" then the text contains TIU objects. This field is set<br/>automatically during reminder edit and should never be edited by hand.<br/> | STRING |  | 
 
-#### <a name="Findings-811_902"></a>Findings
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Findings-811_902"></a>Findings (811.902)
 
 <dl>
-<dt>ID</dt><dd>Findings-811_902</dd>
-<dt>File Type</dt><dd>811.902</dd>
-<dt>Label</dt><dd>Findings</dd></dl>
+<dt>ID</dt><dd>Findings-811_902</dd></dl>
 
 #### Properties
 
@@ -130,12 +129,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Use Start Date**{::nomarkdown}<pre><code>  use_start_date</code></pre>{:/} | 27 | For findings that have a Start Date and a Stop Date the default is<br/>to use the Stop Date as the date of the finding. Enter a YES for<br/>this field if you want to use the Start Date as the date of the<br/>finding. | BOOLEAN |  | {::nomarkdown}false: <em><strong>1</strong></em><br/>true: <em><strong>0</strong></em>{:/}
 **Include Visit Data**{::nomarkdown}<pre><code>  include_visit_data</code></pre>{:/} | 28 | This applies only to V file findings; if it is "YES" then data from<br/>the associated visit will be available for use in a Condition. The<br/>default is "NO."<br/><br/> | BOOLEAN |  | {::nomarkdown}false: <em><strong>1</strong></em><br/>true: <em><strong>0</strong></em>{:/}
 
-#### <a name="Function_Findings-811_925"></a>Function Findings
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Function_Findings-811_925"></a>Function Findings (811.925)
 
 <dl>
-<dt>ID</dt><dd>Function_Findings-811_925</dd>
-<dt>File Type</dt><dd>811.925</dd>
-<dt>Label</dt><dd>Function Findings</dd></dl>
+<dt>ID</dt><dd>Function_Findings-811_925</dd></dl>
 
 #### Properties
 
@@ -157,12 +157,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **No. Found Text Lines**{::nomarkdown}<pre><code>  no_found_text_lines</code></pre>{:/} | 41 | This is the number of lines in the found text. If the number ends<br/>with "T" then the text contains TIU objects. This field is set<br/>automatically during reminder edit and should never be edited by hand.<br/> | STRING |  | 
 **No. Not Found Text Lines**{::nomarkdown}<pre><code>  no_not_found_text_lines</code></pre>{:/} | 42 | This is the number of lines in the not found text. If the number ends<br/>with "T" then the text contains TIU objects. This field is set<br/>automatically during reminder edit and should never be edited by hand.<br/> | STRING |  | 
 
-#### <a name="Function_List-811_9255"></a>Function List
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Function_List-811_9255"></a>Function List (811.9255)
 
 <dl>
-<dt>ID</dt><dd>Function_List-811_9255</dd>
-<dt>File Type</dt><dd>811.9255</dd>
-<dt>Label</dt><dd>Function List</dd></dl>
+<dt>ID</dt><dd>Function_List-811_9255</dd></dl>
 
 #### Properties
 
@@ -172,12 +173,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Function**{::nomarkdown}<pre><code>  function</code></pre>{:/} | .02 | FUNCTION is a pointer to the Function File, #802.4. For example, if<br/>the function string is MIN_DATE(1,2)>MAX_DATE(3) then function<br/>number 1 is MIN_DATE and FUNCTION is the pointer to the MIN_DATE<br/>funtion in file #802.4 | POINTER |  | [Reminder_Function_Finding_Functions-802_4](Reminder_Function_Finding_Functions-802_4)
 **Function Argument List**{::nomarkdown}<pre><code>  function_argument_list</code></pre>{:/} | 20 | The FUNCTION ARGUMENT LIST multiple is the list of arguments<br/>(finding numbers) for each function in the function string. For<br/>example, if the function string is MIN_DATE(1,2)>MAX_DATE(3) then<br/>the argument list for function number 1 is 1 and 2 and the argument<br/>list for function 2 is 3.<br/> | NUMERIC |  | 
 
-#### <a name="Custom_Date_Due_Arg_List-811_948"></a>Custom Date Due Arg List
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Custom_Date_Due_Arg_List-811_948"></a>Custom Date Due Arg List (811.948)
 
 <dl>
-<dt>ID</dt><dd>Custom_Date_Due_Arg_List-811_948</dd>
-<dt>File Type</dt><dd>811.948</dd>
-<dt>Label</dt><dd>Custom Date Due Arg List</dd></dl>
+<dt>ID</dt><dd>Custom_Date_Due_Arg_List-811_948</dd></dl>
 
 #### Properties
 
@@ -187,12 +189,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Frequency**{::nomarkdown}<pre><code>  frequency</code></pre>{:/} | .02 | This is the frequency that is associated with the finding defined in<br/>the .01 field of the CUSTOM DATE DUE ARGUMENT LIST. It is created<br/>automatically and should never be set by hand. | STRING |  | 
 **Operator**{::nomarkdown}<pre><code>  operator</code></pre>{:/} | .03 | This is the operator '+" or '-' that is associated with the finding<br/>defined in the .01 field of the CUSTOM DATE DUE ARGUMENT LIST. It is<br/>created automatically and should never be set by hand.<br/> | STRING |  | 
 
-#### <a name="Web_Sites-811_9002"></a>Web Sites
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Web_Sites-811_9002"></a>Web Sites (811.9002)
 
 <dl>
-<dt>ID</dt><dd>Web_Sites-811_9002</dd>
-<dt>File Type</dt><dd>811.9002</dd>
-<dt>Label</dt><dd>Web Sites</dd></dl>
+<dt>ID</dt><dd>Web_Sites-811_9002</dd></dl>
 
 #### Properties
 
@@ -202,12 +205,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Web Site Title**{::nomarkdown}<pre><code>  web_site_title</code></pre>{:/} | .02 | This is the web site title that is used by the CPRS GUI. It will<br/>appear after a right click, allowing the user to select the web<br/>site. | STRING |  | 
 **Web Site Description**{::nomarkdown}<pre><code>  web_site_description</code></pre>{:/} | 1 | This field contains a description of the Web site. | STRING |  | 
 
-#### <a name="Edit_History-811_9001"></a>Edit History
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Edit_History-811_9001"></a>Edit History (811.9001)
 
 <dl>
-<dt>ID</dt><dd>Edit_History-811_9001</dd>
-<dt>File Type</dt><dd>811.9001</dd>
-<dt>Label</dt><dd>Edit History</dd></dl>
+<dt>ID</dt><dd>Edit_History-811_9001</dd></dl>
 
 #### Properties
 
@@ -217,6 +221,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Edit By**{::nomarkdown}<pre><code>  edit_by</code></pre>{:/} | 1 | This is the person who did the editing. This field is set automatically<br/>and should not be changed by the user. | POINTER |  | [New_Person-200](New_Person-200)
 **Edit Comments**{::nomarkdown}<pre><code>  edit_comments</code></pre>{:/} | 2 | This word-processing field can be used to record the changes made<br/>during the editing session. | STRING |  | 
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

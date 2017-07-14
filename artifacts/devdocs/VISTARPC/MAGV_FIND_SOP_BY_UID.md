@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGV FIND SOP BY UID
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGV FIND SOP BY UID<br/>
 # MAGV FIND SOP BY UID
 
 This RPC looks up SOPs by SOP UID.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGVRS21](http://code.osehra.org/dox/Routine_MAGVRS21_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ SOPUID | LITERAL |  |  | The SOP UID used to look up the series.
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

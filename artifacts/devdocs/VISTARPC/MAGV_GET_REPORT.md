@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGV GET REPORT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGV GET REPORT<br/>
 # MAGV GET REPORT
 
 This RPC, given the internal entry number of an entry on the IMAGINGPROCEDURE REFERENCE File (#2005.61) that references a VA procedure,returns an array containing the report text for that procedure and associated attributes.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGVRS08](http://code.osehra.org/dox/Routine_MAGVRS08_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ OVERRIDE | LITERAL | 3 |  | This parameter should be used with EXTREME CAUTION. 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

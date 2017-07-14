@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; VPS LAST5
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; VPS LAST5<br/>
 # VPS LAST5
 
  Returns a list of patients matching LastNameInitial_Last4SSN based onRestricted Patient List.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [VPSRPC5](http://code.osehra.org/dox/Routine_VPSRPC5_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ VPSID | LITERAL | 30 | true | String literal containing patient&#x27;s last name
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

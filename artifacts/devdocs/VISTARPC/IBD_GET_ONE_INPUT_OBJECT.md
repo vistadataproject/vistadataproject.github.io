@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; IBD GET ONE INPUT OBJECT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; IBD GET ONE INPUT OBJECT<br/>
 # IBD GET ONE INPUT OBJECT
 
 This call will return specific information about any one input objectregardless of type.  Developers should first use the RPC to return theavailable input objects (either by form or by clinic).   There are 3 types of input objects, lists (both static and dynamic),hand print fields, and multiple choice fields.  Each input objectmay be associated with selection rules and data qualifiers.  Thereare 4 selection rules:    0 := any number (including zero)   1 := exactly one   2 := at most one (0 or 1)   3 := at least one (1 or more) There are also a number of data qualifiers that are used to describe thedata, for example, primary, secondary, add to problem list, etc.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [IBDFRPC1](http://code.osehra.org/dox/Routine_IBDFRPC1_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ IBDF | LIST |  | true | The following variables are required:   IBDF(&quot;PI&qu
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

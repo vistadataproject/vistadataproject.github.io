@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIRRPT6 RQSTRS REPORT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIRRPT6 RQSTRS REPORT<br/>
 # DSIRRPT6 RQSTRS REPORT
 
 This RPC will return entries from the DSIR NEW REQUESTORS file (#19620.12) in alphabetical order.  The report can be pulled for all requestors or in an alphabetic range, and further sorted by those flagged as Active, Inactive or Both.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIRRPT6](http://code.osehra.org/dox/Routine_DSIRRPT6_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -27,4 +29,4 @@ ESTART | LITERAL | 14 | true | This is the FileMan format date/time to start the
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

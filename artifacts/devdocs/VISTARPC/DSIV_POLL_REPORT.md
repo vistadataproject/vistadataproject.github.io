@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIV POLL REPORT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIV POLL REPORT<br/>
 # DSIV POLL REPORT
 
 Used to check the status of the background job kicked off by the DSIV EXCEPTION REPORT2 rpc, and to get the report data.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIVICR1](http://code.osehra.org/dox/Routine_DSIVICR1_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ MORE | LITERAL | 1 | true | Contains a flag (MORE&#x3D;1) when there were more r
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

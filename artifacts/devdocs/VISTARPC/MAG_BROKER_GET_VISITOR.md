@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAG BROKER GET VISITOR
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAG BROKER GET VISITOR<br/>
 # MAG BROKER GET VISITOR
 
 Wraps code underlying RPC: XUS GET VISITOR to check for expired authentication token.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGS2BSE](http://code.osehra.org/dox/Routine_MAGS2BSE_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ MAGTKN | LITERAL | 256 | true | The Broker Security Enhancement (BSE) token to v
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

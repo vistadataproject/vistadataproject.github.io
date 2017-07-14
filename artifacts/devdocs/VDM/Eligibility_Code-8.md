@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Eligibility_Code-8
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Eligibility_Code-8<br/>
+<a name="top"></a>
 # Eligibility Code (8)
 The ELIGIBILITY CODE file contains all the eligibility codes that can be assigned to a patient.  All entries in this file must be associated with an entry in the MAS ELIGIBILITY CODE file.    The MAS ELIGIBILITY CODE(#8.1) file consists of those codes which have been established by VACO MAS.  Currently there are 18 eligibility codes in use by the Dept of Veterans Affairs.   The site is not allowed to add entries to the MAS ELIGIBILITY CODE file. However,the site is permitted to add local entries to the ELIGIBILITY CODE file.  To add/edit eligibility codes use the option "Eligibility Code Enter/Edit [DG ELIG CODE ENTER/EDIT]".  The option is on the "Eligibility/ID Maintenance Menu [DG ELIG MAINTENANCE]" menu.   Normally,adding local codes is not needed. However,the VA/DOD sharing agreement software,being developed by the Dallas ISC,does need and use this functionality.  
 
-<dl>
-<dt>Global</dt><dd>^DIC(8,</dd>
-<dt>Domain</dt><dd>Patients</dd>
-</dl>
+**Global:** ^DIC(8,
 
-### Properties
+**Domain:** Patients
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -32,4 +32,4 @@ Field | ID | Description | Datatype | Attributes | Range
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

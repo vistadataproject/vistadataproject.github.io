@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Wv_Procedure-790_1
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Wv_Procedure-790_1<br/>
+<a name="top"></a>
 # Wv Procedure (790.1)
 This file contains the Women Veterans Health's database of procedures  actually performed and the data associated with them.
 
-<dl>
-<dt>Global</dt><dd>^WV(790.1,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^WV(790.1,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -60,4 +60,4 @@ Field | ID | Description | Datatype | Attributes | Range
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

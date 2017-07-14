@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Expressions-757_01
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Expressions-757_01<br/>
+<a name="top"></a>
 # Expressions (757.01)
 This file contains all text pertaining to the Major Concepts, Concept Synonyms,  Concept Lexical Variants, Synonymous Lexical Variants, and Modified Concepts.  It includes displayable text, distinguishing text (that portion of text that makes a modified concept different from the parent concept) and the term definitions (when available).  Searches are conducted using the special look-up routine LEXA1.
 
-<dl>
-<dt>Global</dt><dd>^LEX(757.01,</dd>
-<dt>Domain</dt><dd>Problems</dd>
-</dl>
+**Global:** ^LEX(757.01,
 
-### Properties
+**Domain:** Problems
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -35,13 +35,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Source**{::nomarkdown}<pre><code>  source</code></pre>{:/} | 16 | This indicates the source volcabulary (and source file) for the volcabulary.<br/>This field is used primarily in filtering (screen) the search and for<br/>Lexicon Maintenance. | POINTER |  | [Source-757_14](Source-757_14)
 **Designation Code**{::nomarkdown}<pre><code>  designation_code</code></pre>{:/} | 18 | The purpose of this multiple is to store designation IDs in the Lexicon. <br/>Designation is a word that terminologists use to encompass concept name, <br/>preferred term, expression, code text, synonyms, etc. In some systems <br/>such as SNOMED CT as well as the concept having a code (the SNOMED CT <br/>code), the individual designations (terms) belong to the concept each <br/>have their own codes (designation identifiers). | OBJECT |  | [Designation_Code-757_118](#Designation_Code-757_118)
 
-### Subfile
-#### <a name="Designation_Code-757_118"></a>Designation Code
+## Sub-Files
+### <a name="Designation_Code-757_118"></a>Designation Code (757.118)
 
 <dl>
-<dt>ID</dt><dd>Designation_Code-757_118</dd>
-<dt>File Type</dt><dd>757.118</dd>
-<dt>Label</dt><dd>Designation Code</dd></dl>
+<dt>ID</dt><dd>Designation_Code-757_118</dd></dl>
 
 #### Properties
 
@@ -51,6 +49,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Coding System**{::nomarkdown}<pre><code>  coding_system</code></pre>{:/} | 1 | This is the classification system (ICD/CPT/DSM etc) from which the <br/>Designation Code (field #.01) is derived. | POINTER |  | [Coding_Systems-757_03](Coding_Systems-757_03)
 **Hierarchy**{::nomarkdown}<pre><code>  hierarchy</code></pre>{:/} | 2 | This is the SNOMED CT Hierarchy that the concept belongs to. | POINTER |  | [Snomed_Ct_Hierarchy-757_018](Snomed_Ct_Hierarchy-757_018)
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ROR GUI PARAMETER SET
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ROR GUI PARAMETER SET<br/>
 # ROR GUI PARAMETER SET
 
 The ROR GUI PARAMETER SET remote procedure stores the parameter value andassociates it with the provided entity (see the DBIA #2263 for more details).
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [RORRP038](http://code.osehra.org/dox/Routine_RORRP038_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ VALUE | LIST |  |  | The VALUE parameter defines the value of the GUI parameter.
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

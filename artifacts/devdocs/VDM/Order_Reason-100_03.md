@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Order_Reason-100_03
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Order_Reason-100_03<br/>
+<a name="top"></a>
 # Order Reason (100.03)
 This file is used to define the possible reasons for DC'ing/cancelling an order.  The entries are identified by package so that each package can have their own set of reasons.  Sites may wish to modify the entries in this file to fit their needs.  It is important to maintain the correct links to the Radiology Reason file if modifications are made.  These links are maintained in the CODE field.  For Radiology reasons, the code field is the internal # of the radiology reason file followed by the characters RA.   This file points the the Nature of Order file.  This relationship is what identifies the appropriate actions to take for any DC Reason.
 
-<dl>
-<dt>Global</dt><dd>^ORD(100.03,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^ORD(100.03,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -26,4 +26,4 @@ Field | ID | Description | Datatype | Attributes | Range
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

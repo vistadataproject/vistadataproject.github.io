@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGV IMPORT STUDY LOG REPORT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGV IMPORT STUDY LOG REPORT<br/>
 # MAGV IMPORT STUDY LOG REPORT
 
 Exports data from the MAGV IMPORT STUDY LOG file (#2006.9421) as formatted reports.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGVIM03](http://code.osehra.org/dox/Routine_MAGVIM03_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ STOPDT | LITERAL | 8 | true | The date, as YYYYMMDD, bracketing the end of the q
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

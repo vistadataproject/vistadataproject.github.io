@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DENTV PROVIDER ADD UPDATE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DENTV PROVIDER ADD UPDATE<br/>
 # DENTV PROVIDER ADD UPDATE
 
 This RPC allows Dental Record Manager to add/edit their Dental Providers.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DENTVRP5](http://code.osehra.org/dox/Routine_DENTVRP5_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ DATA | LIST |  | true | The input array contains the Dental Provider information
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

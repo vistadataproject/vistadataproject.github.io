@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; XWB IS RPC AVAILABLE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; XWB IS RPC AVAILABLE<br/>
 # XWB IS RPC AVAILABLE
 
 If RPC is installed, available in relevant context, and of proper versionreturns 1.  Otherwise, returns 0.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [XWBLIB](http://code.osehra.org/dox/Routine_XWBLIB_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ VERSION NUMBER | LITERAL | 11 | true | Minimum version number of the RPC. This p
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

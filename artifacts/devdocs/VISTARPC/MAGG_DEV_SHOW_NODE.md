@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGG DEV SHOW NODE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGG DEV SHOW NODE<br/>
 # MAGG DEV SHOW NODE
 
 For help in development and testing.It returns the NODE from Imaging file to view in raw form.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGGTSYS](http://code.osehra.org/dox/Routine_MAGGTSYS_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ NODE | LITERAL | 30 | true | This is the node of file ^MAG(2005,NODE to be displ
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

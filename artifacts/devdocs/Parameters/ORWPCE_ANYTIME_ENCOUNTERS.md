@@ -3,20 +3,21 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; ORWPCE ANYTIME ENCOUNTERS
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; ORWPCE ANYTIME ENCOUNTERS<br/>
 # ORWPCE ANYTIME ENCOUNTERS
 
 Allows encounter data to be entered at any time, even when a note is notbeing edited.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 4714
 Summary | Anytime Encounters
 Value Type | set of codes
 Value Domain | 0:NO;1:YES
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
@@ -25,4 +26,4 @@ Precedence | Entity
 4 | DIVISION
 5 | SYSTEM
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

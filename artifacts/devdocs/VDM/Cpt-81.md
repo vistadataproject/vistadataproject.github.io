@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Cpt-81
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Cpt-81<br/>
+<a name="top"></a>
 # Cpt (81)
 This file contains the Current Procedural Terminology (CPT) codes published by the American Medical Association (AMA) and the HCPCS codes, published by the Health Care Financing Administration (HCFA). The entries in this file are "descriptive terms and identifying codes for reporting services and procedures performed by physicians."   If an entry needs to be added, modified or deleted a patch will be issued instructing the site how to make the change.  Otherwise, this table file should not be edited in anyway by the site.   Per VHA Directive 10-93-142, this file definition should not be modified.
 
-<dl>
-<dt>Global</dt><dd>^ICPT(</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^ICPT(
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -31,13 +31,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Short Name (versioned)**{::nomarkdown}<pre><code>  short_name_versioned</code></pre>{:/} | 61 | This is a history of the Procedures (short text) to include the date the<br/>text was first used along with the text. | OBJECT |  | [Short_Name_versioned-81_061](#Short_Name_versioned-81_061)
 **Description (versioned)**{::nomarkdown}<pre><code>  description_versioned</code></pre>{:/} | 62 | This is a history of the descriptive text to include the date the <br/>text was first used and the text used. | OBJECT |  | [Description_versioned-81_062](#Description_versioned-81_062)
 
-### Subfile
-#### <a name="Effective_Date-81_02"></a>Effective Date
+## Sub-Files
+### <a name="Effective_Date-81_02"></a>Effective Date (81.02)
 
 <dl>
-<dt>ID</dt><dd>Effective_Date-81_02</dd>
-<dt>File Type</dt><dd>81.02</dd>
-<dt>Label</dt><dd>Effective Date</dd></dl>
+<dt>ID</dt><dd>Effective_Date-81_02</dd></dl>
 
 #### Properties
 
@@ -46,12 +44,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Effective Date**{::nomarkdown}<pre><code>  effective_date</code></pre>{:/} | .01 | Date from which current status is effective. | DATE-TIME | INDEXED<br/>REQUIRED | 
 **Status**{::nomarkdown}<pre><code>  status</code></pre>{:/} | .02 |  | ENUMERATION | REQUIRED | {::nomarkdown}ACTIVE: <em><strong>1</strong></em><br/>INACTIVE: <em><strong>0</strong></em>{:/}
 
-#### <a name="Short_Name_versioned-81_061"></a>Short Name (versioned)
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Short_Name_versioned-81_061"></a>Short Name (versioned) (81.061)
 
 <dl>
-<dt>ID</dt><dd>Short_Name_versioned-81_061</dd>
-<dt>File Type</dt><dd>81.061</dd>
-<dt>Label</dt><dd>Short Name (versioned)</dd></dl>
+<dt>ID</dt><dd>Short_Name_versioned-81_061</dd></dl>
 
 #### Properties
 
@@ -60,12 +59,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Version Date**{::nomarkdown}<pre><code>  version_date</code></pre>{:/} | .01 | This is the date the procedure text was first used. | DATE-TIME | INDEXED<br/>REQUIRED | 
 **Short Name (versioned)**{::nomarkdown}<pre><code>  short_name_versioned</code></pre>{:/} | 1 | This is the procedure that was used beginning on the 'effective date.' | STRING |  | 
 
-#### <a name="Description_versioned-81_062"></a>Description (versioned)
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Description_versioned-81_062"></a>Description (versioned) (81.062)
 
 <dl>
-<dt>ID</dt><dd>Description_versioned-81_062</dd>
-<dt>File Type</dt><dd>81.062</dd>
-<dt>Label</dt><dd>Description (versioned)</dd></dl>
+<dt>ID</dt><dd>Description_versioned-81_062</dd></dl>
 
 #### Properties
 
@@ -74,6 +74,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Version Date**{::nomarkdown}<pre><code>  version_date</code></pre>{:/} | .01 | This is the date the description was first used. | DATE-TIME | INDEXED<br/>REQUIRED | 
 **Description (versioned)**{::nomarkdown}<pre><code>  description_versioned</code></pre>{:/} | 1 | This is the long description (multiple line).  | STRING |  | 
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

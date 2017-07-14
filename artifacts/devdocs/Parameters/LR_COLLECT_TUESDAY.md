@@ -3,24 +3,25 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; LR COLLECT TUESDAY
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; LR COLLECT TUESDAY<br/>
 # LR COLLECT TUESDAY
 
 This determines if routine collection is done on this day.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 77
 Summary | Collect on Tuesday
 Value Type | yes
 Value Domain | 0:1
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | SYSTEM
 2 | PACKAGE
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

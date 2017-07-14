@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MPIF REMOTE FULL ICN STATS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MPIF REMOTE FULL ICN STATS<br/>
 # MPIF REMOTE FULL ICN STATS
 
 This RPC will return the counts for National ICNs, Local ICNs, Merged records (-9 nodes), no ICNs, last run for remote ICN assignment and if full enumeration has completed.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -17,4 +19,4 @@ Return Type | ARRAY
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

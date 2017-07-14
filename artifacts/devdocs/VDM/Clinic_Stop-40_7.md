@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Clinic_Stop-40_7
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Clinic_Stop-40_7<br/>
+<a name="top"></a>
 # Clinic Stop (40.7)
 The Clinic Stop file (#40.7) contains all AMIS Stop Codes and their  associated Name, Restriction Type (E-Either, P-Primary Only, or  S-Secondary Only), and if applicable, Restriction Date (for P or S  Restriction Types).  If a clinic stop entry is inactive, there is an Inactive Date.   This file has been "Locked Down" so that Fileman and other user updates  are not allowed.  Changes may be made only through VistA Maintenance (VM)  patches coordinated with the Managerial Cost Accounting Office (MCAO) and Enterprise Product Services (EPS). The file definition (data dictionary) shall not be modified.  All additions, changes, inactivations, and reactivations to entries in the file shall be accomplished only by VM patches.  Creating new Stop Codes or local Stop Codes, and/or editing fields in the file, is not permitted.
 
-<dl>
-<dt>Global</dt><dd>^DIC(40.7,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^DIC(40.7,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -26,4 +26,4 @@ Field | ID | Description | Datatype | Attributes | Range
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

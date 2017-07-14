@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ORWDX SAVE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ORWDX SAVE<br/>
 # ORWDX SAVE
 
 Save the order by passing in the following information:        ORVP=DFN        ORNP=Provider        ORL=Location        DLG=Order Dialog,        ORDG=Display Group        ORIT=Quick Order Dialog,        ORIFN=null if new order        ORDIALOG=Response List
+
+## Properties
 
 Property | Value
 --- | ---
@@ -17,7 +19,7 @@ Return Type | ARRAY
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -28,10 +30,10 @@ Code | {::nomarkdown}<pre><code> N ORDUZ,ORSTS,OREVENT,ORCAT,ORDA,ORTS,ORNEW,ORC
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
 Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas">Orders/rODBase.pas</a>{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

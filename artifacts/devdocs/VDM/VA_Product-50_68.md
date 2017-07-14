@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; VA_Product-50_68
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; VA_Product-50_68<br/>
+<a name="top"></a>
 # VA Product (50.68)
 Per VHA Directive 2005-044, this file has been "locked down" by Data Standardization (DS). The file definition (i.e. data dictionary) shall not be modified. All additions, changes and deletions to entries in the file shall be done by Enterprise Reference Terminology (ERT) using the Master File Server (MFS), provided by Common Services (CS). Creating and/or editing locally defined fields in the file are not permitted. Use of locally defined fields that were created prior to VHA Directive 2005-044 shall not be supported.   This file contains a list of available drug products.
 
-<dl>
-<dt>Global</dt><dd>^PSNDF(50.68,</dd>
-<dt>Domain</dt><dd>Allergies</dd>
-</dl>
+**Global:** ^PSNDF(50.68,
 
-### Properties
+**Domain:** Allergies
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -55,13 +55,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Fda Med Guide**{::nomarkdown}<pre><code>  fda_med_guide</code></pre>{:/} | 100 | This field contains the filename of the FDA Medication Guide associated<br/>with this VA Product. This field can only be edited on the National <br/>Drug File Management System. | STRING |  | 
 **Service Code**{::nomarkdown}<pre><code>  service_code</code></pre>{:/} | 2000 | This field contains a Charge Description Master (CDM) Change Control board<br/>assigned Service Code. The value should be a number between 600001-699999. | NUMERIC |  | 
 
-### Subfile
-#### <a name="Active_Ingredients-50_6814"></a>Active Ingredients
+## Sub-Files
+### <a name="Active_Ingredients-50_6814"></a>Active Ingredients (50.6814)
 
 <dl>
-<dt>ID</dt><dd>Active_Ingredients-50_6814</dd>
-<dt>File Type</dt><dd>50.6814</dd>
-<dt>Label</dt><dd>Active Ingredients</dd></dl>
+<dt>ID</dt><dd>Active_Ingredients-50_6814</dd></dl>
 
 #### Properties
 
@@ -71,12 +69,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Strength**{::nomarkdown}<pre><code>  strength</code></pre>{:/} | 1 | This is the strength of the ingredient. | STRING |  | 
 **Units**{::nomarkdown}<pre><code>  units</code></pre>{:/} | 2 | This is the unit of measure. | POINTER |  | [Drug_Units-50_607](Drug_Units-50_607)
 
-#### <a name="Reduced_Copay-50_6845"></a>Reduced Copay
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Reduced_Copay-50_6845"></a>Reduced Copay (50.6845)
 
 <dl>
-<dt>ID</dt><dd>Reduced_Copay-50_6845</dd>
-<dt>File Type</dt><dd>50.6845</dd>
-<dt>Label</dt><dd>Reduced Copay</dd></dl>
+<dt>ID</dt><dd>Reduced_Copay-50_6845</dd></dl>
 
 #### Properties
 
@@ -85,12 +84,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Start Date**{::nomarkdown}<pre><code>  start_date</code></pre>{:/} | .01 | This is the effective date for the reduced co-pay for the VA Product. | DATE-TIME | INDEXED<br/>REQUIRED | 
 **Stop Date**{::nomarkdown}<pre><code>  stop_date</code></pre>{:/} | .02 | This is the stop date for the reduced co-pay for the VA Product. If<br/>not present, it indicates that the reduced co-pay applies from the <br/>start date onwards. | DATE-TIME |  | 
 
-#### <a name="Effective_Date_time-50_6899"></a>Effective Date/time
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Effective_Date_time-50_6899"></a>Effective Date/time (50.6899)
 
 <dl>
-<dt>ID</dt><dd>Effective_Date_time-50_6899</dd>
-<dt>File Type</dt><dd>50.6899</dd>
-<dt>Label</dt><dd>Effective Date/time</dd></dl>
+<dt>ID</dt><dd>Effective_Date_time-50_6899</dd></dl>
 
 #### Properties
 
@@ -99,6 +99,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Effective Date/time**{::nomarkdown}<pre><code>  effective_date_time</code></pre>{:/} | .01 | This is the date/time when the Status of the reference term was established. | DATE-TIME | INDEXED<br/>REQUIRED | 
 **Status**{::nomarkdown}<pre><code>  status</code></pre>{:/} | .02 | The Status of a reference term is either 'ACTIVE' or 'INACTIVE'. If the term'ACTIVE', then the term will be accessible by end-users to document a particular patient event. If 'INACTIVE', then the term will only be accessible by the application<br/>to display legacy data. | ENUMERATION | REQUIRED | {::nomarkdown}ACTIVE: <em><strong>1</strong></em><br/>INACTIVE: <em><strong>0</strong></em>{:/}
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

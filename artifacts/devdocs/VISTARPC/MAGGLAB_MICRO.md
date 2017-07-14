@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGGLAB MICRO
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGGLAB MICRO<br/>
 # MAGGLAB MICRO
 
 ;The line tag MICRO is used for selection of Microscopic Objective.An array of entries in the Microscopic Objective file are returned.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -17,4 +19,4 @@ Return Type | ARRAY
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

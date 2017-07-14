@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGQ DEL NLOC
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGQ DEL NLOC<br/>
 # MAGQ DEL NLOC
 
 This is used to remove Network Location entriesand requires the user to have the MAG SYS key.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGQBU6A](http://code.osehra.org/dox/Routine_MAGQBU6A_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ Network location file entry | LITERAL | 30 | true | This is the Network Location
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAG4 CP CONSULT TO TIUDA
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAG4 CP CONSULT TO TIUDA<br/>
 # MAG4 CP CONSULT TO TIUDA
 
  Imaging Capture workstation calls this RPC to get a TIU IEN to attach images to. This call simply calls a CP API, which accepts DFN, Consult #, Visit String (optional), Complete|Do not Complete the | transaction.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGGSCP](http://code.osehra.org/dox/Routine_MAGGSCP_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -26,4 +28,4 @@ MAGCMP | LITERAL | 10 | true |  Flag:  tells to Complete (1) or Not Complete (0)
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

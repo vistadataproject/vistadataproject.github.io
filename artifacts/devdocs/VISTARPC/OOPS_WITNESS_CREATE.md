@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; OOPS WITNESS CREATE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; OOPS WITNESS CREATE<br/>
 # OOPS WITNESS CREATE
 
 This broker call will add a new Witness record for a case in the ASISTS Accident Reporting File (#2260).  It is called by the CA1 form in Delphi. 
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [OOPSGUI2](http://code.osehra.org/dox/Routine_OOPSGUI2_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -26,4 +28,4 @@ COMMENT | LITERAL | 256 | true | The input will be a string containing the comme
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

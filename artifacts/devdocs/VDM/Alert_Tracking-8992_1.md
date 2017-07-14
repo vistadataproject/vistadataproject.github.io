@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Alert_Tracking-8992_1
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Alert_Tracking-8992_1<br/>
+<a name="top"></a>
 # Alert Tracking (8992.1)
 This file is used to track the content and interactions with an alert. Every alert which is generated is initially filed within this file.  Each entry has the date and time the alert was generated, which user generated the alert, whether the alert was generated in a background task, what action was to be taken if any (the entry point or option name to be used) and the data string, if any, for use with the alert.  There is a multiple field which also identifies each user that the alert was sent to, and when the user initially saw the displayed text, when the alert was selected for processing, when the processing was completed, and when the alert was deleted after processing or associated with another user's processing, or when the alert was deleted by a clean-up operation.   Unless a longer lifetime is specified for the specific alert, it will be deleted from the file after 30 days.  If a longer lifetime is specified, it will not be deleted until after that period passes.
 
-<dl>
-<dt>Global</dt><dd>^XTV(8992.1,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^XTV(8992.1,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -33,13 +33,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Long Info Text**{::nomarkdown}<pre><code>  long_info_text</code></pre>{:/} | 4 |  | STRING |  | 
 **Recipient**{::nomarkdown}<pre><code>  recipient</code></pre>{:/} | 20 |  | OBJECT |  | [Recipient-8992_11](#Recipient-8992_11)
 
-### Subfile
-#### <a name="Recipient-8992_11"></a>Recipient
+## Sub-Files
+### <a name="Recipient-8992_11"></a>Recipient (8992.11)
 
 <dl>
-<dt>ID</dt><dd>Recipient-8992_11</dd>
-<dt>File Type</dt><dd>8992.11</dd>
-<dt>Label</dt><dd>Recipient</dd></dl>
+<dt>ID</dt><dd>Recipient-8992_11</dd></dl>
 
 #### Properties
 
@@ -58,12 +56,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Forwarded Date/time**{::nomarkdown}<pre><code>  forwarded_date_time</code></pre>{:/} | 2 |  | OBJECT |  | [Forwarded_Date_time-8992_112](#Forwarded_Date_time-8992_112)
 **Surrogate For**{::nomarkdown}<pre><code>  surrogate_for</code></pre>{:/} | 3 |  | OBJECT |  | [Surrogate_For-8992_113](#Surrogate_For-8992_113)
 
-#### <a name="Recipient_Type-8992_111"></a>Recipient Type
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Recipient_Type-8992_111"></a>Recipient Type (8992.111)
 
 <dl>
-<dt>ID</dt><dd>Recipient_Type-8992_111</dd>
-<dt>File Type</dt><dd>8992.111</dd>
-<dt>Label</dt><dd>Recipient Type</dd></dl>
+<dt>ID</dt><dd>Recipient_Type-8992_111</dd></dl>
 
 #### Properties
 
@@ -74,12 +73,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Acting As Surrogate**{::nomarkdown}<pre><code>  acting_as_surrogate</code></pre>{:/} | .03 | This field is used to identify those recipients who were sent the alert <br/>because they were selected as an active surrogate for the originally <br/>intended user.  In most cases only the Y (YES) entries will be entered. | BOOLEAN |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
 **Alert Date/time**{::nomarkdown}<pre><code>  alert_date_time</code></pre>{:/} | .04 | This is the date and time the alert was sent/forwarded to the <br/>current recipient with this recipient type | DATE-TIME |  | 
 
-#### <a name="Forwarded_Date_time-8992_112"></a>Forwarded Date/time
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Forwarded_Date_time-8992_112"></a>Forwarded Date/time (8992.112)
 
 <dl>
-<dt>ID</dt><dd>Forwarded_Date_time-8992_112</dd>
-<dt>File Type</dt><dd>8992.112</dd>
-<dt>Label</dt><dd>Forwarded Date/time</dd></dl>
+<dt>ID</dt><dd>Forwarded_Date_time-8992_112</dd></dl>
 
 #### Properties
 
@@ -90,12 +90,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Forwarded By Or For**{::nomarkdown}<pre><code>  forwarded_by_or_for</code></pre>{:/} | .03 | This is a record of the individual who forwarded the alert, or on whose <br/>behalf the alert was forwarded if it was forwarded automatically. | POINTER |  | [New_Person-200](New_Person-200)
 **Forwarding Comment**{::nomarkdown}<pre><code>  forwarding_comment</code></pre>{:/} | 1.01 | This is the comment which was sent to the recipient along with the <br/>forwarded alert. | STRING |  | 
 
-#### <a name="Surrogate_For-8992_113"></a>Surrogate For
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Surrogate_For-8992_113"></a>Surrogate For (8992.113)
 
 <dl>
-<dt>ID</dt><dd>Surrogate_For-8992_113</dd>
-<dt>File Type</dt><dd>8992.113</dd>
-<dt>Label</dt><dd>Surrogate For</dd></dl>
+<dt>ID</dt><dd>Surrogate_For-8992_113</dd></dl>
 
 #### Properties
 
@@ -105,6 +106,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Date/time - Surrogate For**{::nomarkdown}<pre><code>  date_time__surrogate_for</code></pre>{:/} | .02 | This field has the date/time when the alert was sent to the current <br/>recipient while acting as a surrogate for the originally intended <br/>recipient. | DATE-TIME |  | 
 **Date-time Returned**{::nomarkdown}<pre><code>  datetime_returned</code></pre>{:/} | .03 | This field is a record for the date-time that an alert for which this <br/>recipient was acting as a surrogate was returned to the originally <br/>intended recipient of the alert. | DATE-TIME |  | 
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

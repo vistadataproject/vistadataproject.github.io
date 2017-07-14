@@ -3,20 +3,21 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; TIU MED HSTYPE
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; TIU MED HSTYPE<br/>
 # TIU MED HSTYPE
 
 None
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 609
 Summary | Health Summary Type for MED
 Value Type | pointer
 Value Domain | 142:AMEQ
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
@@ -25,4 +26,4 @@ Precedence | Entity
 3 | DIVISION
 4 | SYSTEM
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

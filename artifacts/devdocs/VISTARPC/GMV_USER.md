@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; GMV USER
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; GMV USER<br/>
 # GMV USER
 
 Retrieves data about the user (e.g., parameter settings). This remote procedure call is documented in Integration Agreement 4366.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [GMVRPCU](http://code.osehra.org/dox/Routine_GMVRPCU_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,7 +26,7 @@ DATA | LITERAL | 100 | true | Other data as required for the call.
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -36,10 +38,10 @@ Code | {::nomarkdown}<pre><code> N GMV,GMVCAT,GMVDESC,GMVENT,GMVERR,GMVFDA,GMVFL
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
 DLL File | {::nomarkdown}No Source Code Available (GMV_VitalsViewEnter.dll){:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

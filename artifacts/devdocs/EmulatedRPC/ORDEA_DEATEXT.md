@@ -3,23 +3,28 @@ layout: default
 title: VISTA Emulator Documentation
 ---
 
-## [Emulated RPCs](TableOfContents) &#8594; ORDEA DEATEXT
+#### [Developer Documentation](../index) &#187; [Emulated RPCs](TableOfContents) &#187; ORDEA DEATEXT<br/>
 # ORDEA DEATEXT
 
 Returns the text to show on the signature dialog mandated by DEA for when a controlled substanceorder is selected to be signed.
 
+**Native RPC Documentation:** [ORDEA DEATEXT](../VISTARPC/ORDEA_DEATEXT)
+
+**MUMPS Implementation:** [DEATEXT^ORDEA](http://code.osehra.org/dox/Routine_ORDEA_source.html)
+
+## Properties
+
 Property | Value
 --- | ---
-Domain | Non-Clinical: Parameters
-VISTA RPC Documentation | [ORDEA DEATEXT](../VISTARPC/ORDEA_DEATEXT)
-MUMPS Implementation | [DEATEXT^ORDEA](http://code.osehra.org/dox/Routine_ORDEA_source.html)
-Type | READ
+Type | Non-Clinical
+Domain | Parameters
+Class | READ
 Complexity | MEDIUM
-Uses | N/A
+Uses | 
 Return Type | SINGLE VALUE
-Return Description | N/A
+Return Description | 
 File Types Used | None
 Parameters Used | [OR DEA TEXT](../Parameters/OR_DEA_TEXT)
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:06 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:34 pm</p>{:/}

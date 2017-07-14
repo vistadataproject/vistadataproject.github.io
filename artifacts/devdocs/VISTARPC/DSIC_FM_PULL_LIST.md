@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIC FM PULL LIST
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIC FM PULL LIST<br/>
 # DSIC FM PULL LIST
 
 Returns values to populate a list box of choices for a field that isSET OF CODES or POINTER or VARIABLE POINTER type.VARIABLE POINTER.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSICFM](http://code.osehra.org/dox/Routine_DSICFM_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -27,4 +29,4 @@ MASK | LITERAL | 245 | true | An optional mask that constrains the values to be 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

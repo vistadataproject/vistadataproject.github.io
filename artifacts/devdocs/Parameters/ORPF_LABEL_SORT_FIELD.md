@@ -3,23 +3,24 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; ORPF LABEL SORT FIELD
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; ORPF LABEL SORT FIELD<br/>
 # ORPF LABEL SORT FIELD
 
 This is the field as defined at the ^OR(100,ifn,4.5 level in file 100to be used to sort labels by.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 186
 Summary | Label Sort Field
 Value Type | free text
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | true
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | SYSTEM
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

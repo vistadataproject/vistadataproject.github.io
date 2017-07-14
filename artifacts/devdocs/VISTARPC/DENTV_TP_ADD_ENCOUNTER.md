@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DENTV TP ADD ENCOUNTER
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DENTV TP ADD ENCOUNTER<br/>
 # DENTV TP ADD ENCOUNTER
 
 This will add a new record to the dental encounter file, 228.1
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DENTVTP2](http://code.osehra.org/dox/Routine_DENTVTP2_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ DATA | LIST | 255 | true | DATA(sub) &#x3D; value  where    sub     Req  Descrip
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

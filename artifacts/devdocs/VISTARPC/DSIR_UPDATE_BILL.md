@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIR UPDATE BILL
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIR UPDATE BILL<br/>
 # DSIR UPDATE BILL
 
 This RPC is used to create and edit the ROI Bill entries.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIRBIL](http://code.osehra.org/dox/Routine_DSIRBIL_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ DATA | LIST | 999 | true | Array of data for the fields in file 19620.2 (Require
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

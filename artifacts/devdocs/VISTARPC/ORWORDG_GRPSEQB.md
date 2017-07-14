@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ORWORDG GRPSEQB
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ORWORDG GRPSEQB<br/>
 # ORWORDG GRPSEQB
 
 Returns expanded list of display groups.for the current site/user.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -17,7 +19,7 @@ Return Type | ARRAY
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -27,10 +29,10 @@ Code | {::nomarkdown}<pre><code> N C,I,X<br/> D GRPSEQ(.X)<br/> S C=0,I=0<br/> F
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
-NOT OSEHRA CPRS | {::nomarkdown}N/A{:/}
+NOT OSEHRA CPRS | {::nomarkdown}{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

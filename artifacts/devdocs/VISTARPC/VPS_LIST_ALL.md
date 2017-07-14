@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; VPS LIST ALL
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; VPS LIST ALL<br/>
 # VPS LIST ALL
 
 Returns a list of patients with names start with (** NOT PREFIXED BY **) the input value. Only 44 records will be returned to the caller. e.q: If Patient File contains patient names 'AA', 'AB', 'BB', 'BC, 'CC', 'CD'in this order and caller passes in 'A', all of those patients will beincluded in the list.If 'GG', 'KK', 'LL' are the 44th, 45th, and 46th patients in the patient name order, 'KK' and 'LL' will not be included. To get the next patients, caller must request the next batch of 44 records. For this reason, this RPC accepts two different format of'LIST FROM' text: 1. FROM = PATIENT NAME. This format will return records start with (** NOT PREFIXED BY **) FROM (PATIENT NAME) 2. FROM = LAST IEN^LAST PATIENT NAME. This format with return the next batch of 44 records after the LAST PATIENT NAME.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [VPSRPC5](http://code.osehra.org/dox/Routine_VPSRPC5_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -26,4 +28,4 @@ DIR | LITERAL | 2 | true | Input parameter DIR determines the order of the outpu
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

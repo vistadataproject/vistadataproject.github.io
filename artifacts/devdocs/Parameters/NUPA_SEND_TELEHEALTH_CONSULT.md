@@ -3,23 +3,24 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; NUPA SEND TELEHEALTH CONSULT
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; NUPA SEND TELEHEALTH CONSULT<br/>
 # NUPA SEND TELEHEALTH CONSULT
 
 Allows each site to determine if they want the nurses to be able to sendTelehealth consults.  If you say NO here, the &quot;Telehealth Consult&quot; buttonon page 2 of the Discharge Planning tab will be grayed out.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 655
 Summary | Send Telehealth Consult
 Value Type | yes
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | SYSTEM
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

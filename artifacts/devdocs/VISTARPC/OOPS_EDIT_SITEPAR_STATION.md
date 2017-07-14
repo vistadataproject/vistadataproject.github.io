@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; OOPS EDIT SITEPAR STATION
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; OOPS EDIT SITEPAR STATION<br/>
 # OOPS EDIT SITEPAR STATION
 
 This broker call will either add a new Station subfile to the Site parameterfile or will allow for editing an existing Station subfile.  If the StationIEN is passed in the INPUT parameter, the record will be edited.  If a StationIEN is not passed in the input parameter, a new record will be created.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [OOPSGUI6](http://code.osehra.org/dox/Routine_OOPSGUI6_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ FORM | LITERAL | 30 | true |
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

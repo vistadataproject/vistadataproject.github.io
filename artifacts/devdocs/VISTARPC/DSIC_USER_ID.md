@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIC USER ID
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIC USER ID<br/>
 # DSIC USER ID
 
 For a given user DUZ value, return all IDs for that individual.  These IDs include SSN, NPI, and the local alternate identifiers if they exist.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSICDUZ](http://code.osehra.org/dox/Routine_DSICDUZ_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ FLAGS | LITERAL | 15 | true | A string of characters indicating which identifier
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

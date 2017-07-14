@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGV GET PAT ORDERS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGV GET PAT ORDERS<br/>
 # MAGV GET PAT ORDERS
 
 Returns an array of CONsult or RADiology orders for an inputENTERPRISE PATIENT IDENTIFIER.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGVIM02](http://code.osehra.org/dox/Routine_MAGVIM02_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -29,4 +31,4 @@ ORDER DATE FILTER END | LITERAL | 8 | true | A date formatted as MMDDYYYY.
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

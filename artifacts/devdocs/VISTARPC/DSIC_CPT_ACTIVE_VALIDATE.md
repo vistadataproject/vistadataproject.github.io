@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIC CPT ACTIVE VALIDATE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIC CPT ACTIVE VALIDATE<br/>
 # DSIC CPT ACTIVE VALIDATE
 
 This will tell you whether or not a CPT code is active as of the date that you pass in.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSICCPT](http://code.osehra.org/dox/Routine_DSICCPT_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ SRC | LITERAL | 1 | true | This boolean flag (1 or 0) indicates whether or not L
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

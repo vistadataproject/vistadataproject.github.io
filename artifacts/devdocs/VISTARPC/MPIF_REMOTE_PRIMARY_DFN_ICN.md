@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MPIF REMOTE PRIMARY DFN ICN
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MPIF REMOTE PRIMARY DFN ICN<br/>
 # MPIF REMOTE PRIMARY DFN ICN
 
 This remote procedure call will return the primary DFN and ICN fora particular station and DFN.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MPIFRPC3](http://code.osehra.org/dox/Routine_MPIFRPC3_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ DFN | LITERAL | 20 | true | This is a patient&#x27;s internal IEN in the PATIENT
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

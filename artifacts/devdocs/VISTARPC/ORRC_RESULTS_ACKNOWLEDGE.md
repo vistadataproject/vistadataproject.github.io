@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ORRC RESULTS ACKNOWLEDGE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ORRC RESULTS ACKNOWLEDGE<br/>
 # ORRC RESULTS ACKNOWLEDGE
 
 This call will mark new results as being acknowledged by the user; itwill return a true or false value for each order ID if successfully saved.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [ORRCACK](http://code.osehra.org/dox/Routine_ORRCACK_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ ORDERS | LIST |  | true | This is the list of order ID&#x27;s whose results may 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

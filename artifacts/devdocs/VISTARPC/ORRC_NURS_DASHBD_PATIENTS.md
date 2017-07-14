@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ORRC NURS DASHBD PATIENTS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ORRC NURS DASHBD PATIENTS<br/>
 # ORRC NURS DASHBD PATIENTS
 
 This call returns a list of patients with recent activity (new results,vitals, or appointments) or items that need attention (tasks that are due,generic text or unverified orders) for nursing users.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [ORRCDPT1](http://code.osehra.org/dox/Routine_ORRCDPT1_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ LIST | LIST |  | true | These are the lists from which to return patients with d
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

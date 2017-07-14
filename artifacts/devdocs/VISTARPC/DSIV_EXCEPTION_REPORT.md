@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIV EXCEPTION REPORT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIV EXCEPTION REPORT<br/>
 # DSIV EXCEPTION REPORT
 
 Retrieves ICB Exception data from 19625.1.  A nightly job queued from option DSIV NIGHTLY REPORT processes the report - this rpc now just returns the data.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIVICR2](http://code.osehra.org/dox/Routine_DSIVICR2_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -26,4 +28,4 @@ LOCS | LIST | 50 | true | Contains an array of clinics to include or exclude fro
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

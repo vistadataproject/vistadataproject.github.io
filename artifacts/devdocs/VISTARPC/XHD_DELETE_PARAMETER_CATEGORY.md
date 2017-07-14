@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; XHD DELETE PARAMETER CATEGORY
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; XHD DELETE PARAMETER CATEGORY<br/>
 # XHD DELETE PARAMETER CATEGORY
 
 This call deletes parameter categories from the M backing store. If the second parameter, DELKIDS is passed as "1" (boolean true by M programming convention), all descendents of the category in question will also be deleted.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [XHDPCAT](http://code.osehra.org/dox/Routine_XHDPCAT_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ DELKIDS | LITERAL |  | true | This boolean flag indicates whether to delete all 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

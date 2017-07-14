@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ROR UPDATE COORDINATORS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ROR UPDATE COORDINATORS<br/>
 # ROR UPDATE COORDINATORS
 
 The ROR UPDATE COORDINATORS remote procedure updates the list of registry coordinators that is stored in the COORDINATOR (14) multiple of the ROR REGISTRY PARAMETERS file (#798.1).
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [RORRP023](http://code.osehra.org/dox/Routine_RORRP023_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ RCLST | LIST |  | true | The RCLST parameter should be an array containing a lis
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

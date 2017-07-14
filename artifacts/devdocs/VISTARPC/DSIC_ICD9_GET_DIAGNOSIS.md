@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIC ICD9 GET DIAGNOSIS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIC ICD9 GET DIAGNOSIS<br/>
 # DSIC ICD9 GET DIAGNOSIS
 
 This will return specific information for a diagnosis code
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSICDRG](http://code.osehra.org/dox/Routine_DSICDRG_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -26,4 +28,4 @@ SCR | LITERAL | 2 | true | This is a single or double character code used to scr
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

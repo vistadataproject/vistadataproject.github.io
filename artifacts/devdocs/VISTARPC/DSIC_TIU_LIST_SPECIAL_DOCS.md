@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIC TIU LIST SPECIAL DOCS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIC TIU LIST SPECIAL DOCS<br/>
 # DSIC TIU LIST SPECIAL DOCS
 
 There are certain TIU documents which are in special classes.  These documents are linked to other VistA files.  The TIU Document file has a Fileman Variable Pointer linking that document to the owning file.  Surgical Notes and Clinical Procedure notes are of this type.  This RPC will return a list of TIU notes assoicated with a specific variable pointer.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSICTIU1](http://code.osehra.org/dox/Routine_DSICTIU1_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ REC | LITERAL | 20 | true | This parameter is optional.  However, if the DSICVP 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

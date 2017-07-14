@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DENTV GET PROVIDER SPECIALTIES
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DENTV GET PROVIDER SPECIALTIES<br/>
 # DENTV GET PROVIDER SPECIALTIES
 
 Gets a list of all active Provider Specialties from file 220.52.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -17,4 +19,4 @@ Return Type | ARRAY
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

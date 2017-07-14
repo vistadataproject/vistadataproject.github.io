@@ -3,23 +3,24 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; PSB IV COLUMN WIDTHS
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; PSB IV COLUMN WIDTHS<br/>
 # PSB IV COLUMN WIDTHS
 
 This paramater is set by the users adjusting the IV column widthIt is stored in the format nnn/nnn/nnn/nnn/nnn/nnn/nnn/nnn/nnn
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 100
 Summary | IV Column Widths
 Value Type | free text
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | USER
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

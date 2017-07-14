@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; RMPR LIST PCARD
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; RMPR LIST PCARD<br/>
 # RMPR LIST PCARD
 
 RPC to pass all the credit card numbers of a user.  Only credit card numers that belong to a user or surrogate user will be passed by this rpc.number that belongs to a user or surrogate user will be passed by thisRPC.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -17,4 +19,4 @@ Return Type | ARRAY
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

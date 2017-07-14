@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; OOPS VALIDATE AND SIGN
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; OOPS VALIDATE AND SIGN<br/>
 # OOPS VALIDATE AND SIGN
 
 This broker call handles the validation of data prior to a user entering their electronic signature code.  It also validates the electronic signature code and then assures that the users electronic signature code, the date/time of signature, and the users DUZ is filed in the Vista database.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [OOPSGUI1](http://code.osehra.org/dox/Routine_OOPSGUI1_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ SIGN | LITERAL | 256 | true | This parameter passes in the text to be encrypted,
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

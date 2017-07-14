@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIV FM LIST
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIV FM LIST<br/>
 # DSIV FM LIST
 
 The RPC provides a wrapper around the LIST^DIC API. It exposes more of the functionality of the API than the DSIV DDR LISTER RPC. For a lookup value, return all entries starting from that lookup value and which collates after that lookup value.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIVFM05](http://code.osehra.org/dox/Routine_DSIVFM05_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ INPUT | LIST | 250 | true |  The INPUT(n) &#x3D; tag^value  where   tag &#x3D; L
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

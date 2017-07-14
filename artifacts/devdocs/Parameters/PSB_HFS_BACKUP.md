@@ -3,23 +3,24 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; PSB HFS BACKUP
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; PSB HFS BACKUP<br/>
 # PSB HFS BACKUP
 
 Name of an HFS directory that all BCMA processes will be able to access through ^%ZISH for printing documents.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 277
 Summary | Backup HFS Directory
 Value Type | free text
 Value Domain | 1:50
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | DIVISION
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

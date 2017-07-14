@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ORRC TASK ADD
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ORRC TASK ADD<br/>
 # ORRC TASK ADD
 
 This call will accept data to create a new entry in the Patient Taskfile #102.3 and return the new identifier.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [ORRCTSK](http://code.osehra.org/dox/Routine_ORRCTSK_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ DATA | LITERAL |  | true | This is a string of ^-delimited attributes of a new t
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

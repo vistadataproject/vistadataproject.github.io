@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; YTQ WP ALL
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; YTQ WP ALL<br/>
 # YTQ WP ALL
 
 Returns any Word processing field data for any file. Used to returnintoductions as an example. Input: FILEN as the nimber of the file        FIELD; as the field numberOuput: IEN of the entry^line of text
+
+## Properties
 
 Property | Value
 --- | ---
@@ -17,4 +19,4 @@ Return Type | GLOBAL ARRAY
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

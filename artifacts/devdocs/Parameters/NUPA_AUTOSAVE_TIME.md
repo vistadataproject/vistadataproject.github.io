@@ -3,23 +3,24 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; NUPA AUTOSAVE TIME
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; NUPA AUTOSAVE TIME<br/>
 # NUPA AUTOSAVE TIME
 
 Number of minutes of before an autosave will occur.  Default is 3.  Rangecan be 3-10.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 679
 Summary | Number of minutes until autosave
 Value Type | numeric
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | SYSTEM
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

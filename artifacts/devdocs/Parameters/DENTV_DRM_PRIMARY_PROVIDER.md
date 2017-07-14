@@ -3,20 +3,21 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; DENTV DRM PRIMARY PROVIDER
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; DENTV DRM PRIMARY PROVIDER<br/>
 # DENTV DRM PRIMARY PROVIDER
 
 This parameter controls which users (other than Admin users) can edit a patient&#x27;s Primary and Secondary Provider settings.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 395
 Summary | Define Primary/Secondary Providers
 Value Type | yes
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
@@ -24,4 +25,4 @@ Precedence | Entity
 5 | PACKAGE
 9 | SYSTEM
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

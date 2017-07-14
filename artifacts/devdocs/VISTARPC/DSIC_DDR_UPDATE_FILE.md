@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIC DDR UPDATE FILE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIC DDR UPDATE FILE<br/>
 # DSIC DDR UPDATE FILE
 
 This will add a new record to a file, but only at the top level of the file.   It does not allow for adding a new record to a multiple.  Additional fields to be filed at the same time can be passed.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSICDDR0](http://code.osehra.org/dox/Routine_DSICDDR0_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ DATA | LIST | 250 | true | This is a list of fields which will have data for fil
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

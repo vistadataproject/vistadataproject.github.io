@@ -3,20 +3,21 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; OR ALLERGY ENTERED IN ERROR
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; OR ALLERGY ENTERED IN ERROR<br/>
 # OR ALLERGY ENTERED IN ERROR
 
 This parameter will control whether or not a user has access tothe entered in error functionality available on the cover sheetin CPRS GUI.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 423
 Summary | Mark allergy/adr as entered in error
 Value Type | yes
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
@@ -25,4 +26,4 @@ Precedence | Entity
 3 | DIVISION
 4 | SYSTEM
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

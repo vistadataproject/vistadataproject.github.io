@@ -3,20 +3,21 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; ORCH USE LAST TAB
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; ORCH USE LAST TAB<br/>
 # ORCH USE LAST TAB
 
 When this parameter is set to yes, CPRS will open to the last selected tabwhenever changing patients.  When set to no, CPRS will open to the tabidentified by ORCH INITIAL TAB.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 4673
 Summary | Use Last Selected Tab on Patient Change
 Value Type | yes
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
@@ -25,4 +26,4 @@ Precedence | Entity
 7 | SYSTEM
 10 | PACKAGE
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

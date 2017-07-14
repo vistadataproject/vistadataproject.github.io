@@ -3,23 +3,24 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; PSB BKUP IPH
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; PSB BKUP IPH<br/>
 # PSB BKUP IPH
 
 The BCMA Backup Contingency software uses this parameter. During the Workstation initialization process this tell the process how many days of historic Inpatient Medication Orders to capture. It is based off the fact the order was active during that time.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 312
 Summary | BCMA Contingency Active Pharm Order
 Value Type | numeric
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | PACKAGE
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

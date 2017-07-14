@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; GMV QUALIFIER TABLE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; GMV QUALIFIER TABLE<br/>
 # GMV QUALIFIER TABLE
 
 Prints a list of categories and qualifiers associated with individualvital types (e.g., blood pressure). Data comes from the GMRV VitalQualifier (#120.52) file and the GMRV Vital Category (#120.53) file.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [GMVCAQU](http://code.osehra.org/dox/Routine_GMVCAQU_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ GMVDATA | LITERAL | 150 | true | A multi-piece variable that identifies the valu
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; XUS KEY CHECK
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; XUS KEY CHECK<br/>
 # XUS KEY CHECK
 
 This API will check if the user (DUZ) holds a security key or an array ofkeys.If a single security KEY is sent the result is returned in R(0).If an array is sent down then the return array has the same order as thecalling array.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [XUSRB](http://code.osehra.org/dox/Routine_XUSRB_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ KEY | LIST | 30 | true | If key is a single value it holds the one key to check.
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIRBIL0 BLSOUT BILLS DUE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIRBIL0 BLSOUT BILLS DUE<br/>
 # DSIRBIL0 BLSOUT BILLS DUE
 
 This routine retrieves a requestor from the provided request and createsan outstanding bill report for that requestor. 
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIRBIL0](http://code.osehra.org/dox/Routine_DSIRBIL0_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ IEN | LITERAL | 20 | true | This is a pointer to the ROI Instance file (19620). 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ORWPCE DIAG
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ORWPCE DIAG<br/>
 # ORWPCE DIAG
 
 Returns a list of diagnosis codes for a clinic location.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -17,7 +19,7 @@ Return Type | ARRAY
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -28,7 +30,7 @@ Code | {::nomarkdown}<pre><code> N ORI S ORI=0<br/> S:'+$G(ORDATE) ORDATE=DT<br/
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
@@ -36,4 +38,4 @@ Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master
 Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/BA/fBAOptionsDiagnoses.pas">BA/fBAOptionsDiagnoses.pas</a>{:/}
 Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas">Encounter/rPCE.pas</a>{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

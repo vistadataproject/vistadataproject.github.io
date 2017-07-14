@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Gmrv_Vital_Measurement-120_5
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Gmrv_Vital_Measurement-120_5<br/>
+<a name="top"></a>
 # Gmrv Vital Measurement (120.5)
 This file contains vital sign information and other measurement data for a  patient.
 
-<dl>
-<dt>Global</dt><dd>^GMR(120.5,</dd>
-<dt>Domain</dt><dd>Vitals</dd>
-</dl>
+**Global:** ^GMR(120.5,
 
-### Properties
+**Domain:** Vitals
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -29,13 +29,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Reason Entered In Error**{::nomarkdown}<pre><code>  reason_entered_in_error</code></pre>{:/} | 4 | This multiple contains a list of reasons for entering a vital measurement <br/>in error. | OBJECT |  | [Reason_Entered_In_Error-120_506](#Reason_Entered_In_Error-120_506)
 **Qualifier**{::nomarkdown}<pre><code>  qualifier</code></pre>{:/} | 5 | A list of qualifiers associated with this measurement. | POINTER |  | [Gmrv_Vital_Qualifier-120_52](Gmrv_Vital_Qualifier-120_52)
 
-### Subfile
-#### <a name="Reason_Entered_In_Error-120_506"></a>Reason Entered In Error
+## Sub-Files
+### <a name="Reason_Entered_In_Error-120_506"></a>Reason Entered In Error (120.506)
 
 <dl>
-<dt>ID</dt><dd>Reason_Entered_In_Error-120_506</dd>
-<dt>File Type</dt><dd>120.506</dd>
-<dt>Label</dt><dd>Reason Entered In Error</dd></dl>
+<dt>ID</dt><dd>Reason_Entered_In_Error-120_506</dd></dl>
 
 #### Properties
 
@@ -44,6 +42,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Reason Entered In Error**{::nomarkdown}<pre><code>  reason_entered_in_error</code></pre>{:/} | .01 | This field records the reason for entering the data in error. | ENUMERATION | REQUIRED | {::nomarkdown}INCORRECT READING: <em><strong>2</strong></em><br/>INVALID RECORD: <em><strong>4</strong></em><br/>INCORRECT DATE/TIME: <em><strong>1</strong></em><br/>INCORRECT PATIENT: <em><strong>3</strong></em>{:/}
 **Date Reason Entered In Error**{::nomarkdown}<pre><code>  date_reason_entered_in_error</code></pre>{:/} | .02 |  | DATE-TIME |  | 
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

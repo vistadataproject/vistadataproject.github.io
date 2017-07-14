@@ -3,23 +3,24 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; ORPF CHART COPY FORMAT
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; ORPF CHART COPY FORMAT<br/>
 # ORPF CHART COPY FORMAT
 
 This is the format used when printing chart copies of the orders for thehospital.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 112
 Summary | Chart Copy Format
 Value Type | pointer
 Value Domain | 100.23
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | SYSTEM
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

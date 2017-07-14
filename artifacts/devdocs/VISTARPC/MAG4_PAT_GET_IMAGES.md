@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAG4 PAT GET IMAGES
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAG4 PAT GET IMAGES<br/>
 # MAG4 PAT GET IMAGES
 
 This Remote Procedure Call is used to filter out those specialty for whicha given image category may be relevant. When images are displayed, it is desirable to limit the list of presentedimages to only those that are likely to be relevant in the currentcontext. This procedure accepts a patient-IEN (DFN) and optionally also a category,type, event and specialty. This procedure will return a list of all images for that patient thatmatch the specified other input parameters. NOTE: This remote procedure is kept for backward compatibility only.       Please use the MAG4 IMAGE LIST remote procedure for any new      development.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGSIXG1](http://code.osehra.org/dox/Routine_MAGSIXG1_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -33,4 +35,4 @@ PKG | LITERAL |  |  | Internal or external values of the PACKAGE INDEX field (40
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; EC CLASHELP
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; EC CLASHELP<br/>
 # EC CLASHELP
 
 RPC Broker entry point for classification help.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [ECUERPC1](http://code.osehra.org/dox/Routine_ECUERPC1_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ ECARY | LITERAL |  | true | Input key ECARY consist of the following pieces:-ECD
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

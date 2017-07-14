@@ -3,24 +3,25 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; DENTV EXAM RADIOGRAPHS REQ
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; DENTV EXAM RADIOGRAPHS REQ<br/>
 # DENTV EXAM RADIOGRAPHS REQ
 
 The value stored in this parameter will flag the DRM Plus GUI to either Require Radiographs for every exam (or) just periodic/comprehensive exams based on boolean value.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 765
 Summary | 
 Value Type | yes
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 5 | USER
 10 | SYSTEM
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

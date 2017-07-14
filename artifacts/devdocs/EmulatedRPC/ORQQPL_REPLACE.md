@@ -3,29 +3,34 @@ layout: default
 title: VISTA Emulator Documentation
 ---
 
-## [Emulated RPCs](TableOfContents) &#8594; ORQQPL REPLACE
+#### [Developer Documentation](../index) &#187; [Emulated RPCs](TableOfContents) &#187; ORQQPL REPLACE<br/>
 # ORQQPL REPLACE
 
 REPLACES A PROBLEM THAT WAS PREVIOUSLY DELETED
 
+**Native RPC Documentation:** [ORQQPL REPLACE](../VISTARPC/ORQQPL_REPLACE)
+
+**MUMPS Implementation:** [REPLACE^ORQQPL2](http://code.osehra.org/dox/Routine_ORQQPL2_source.html)
+
+## Properties
+
 Property | Value
 --- | ---
+Type | Clinical
 Domain | Problems
-VISTA RPC Documentation | [ORQQPL REPLACE](../VISTARPC/ORQQPL_REPLACE)
-MUMPS Implementation | [REPLACE^ORQQPL2](http://code.osehra.org/dox/Routine_ORQQPL2_source.html)
-Type | CHANGE
+Class | CHANGE
 Complexity | MEDIUM
-Uses | N/A
+Uses | 
 Return Type | SINGLE VALUE
-Return Description | N/A
+Return Description | 
 File Types Used | [9000011](../VDM/Problem-9000011), [125.8](../VDM/Problem_List_Audit-125_8)
 Parameters Used | GMPIFN
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Required | Description | Example
 --- | --- | --- | --- | ---
 GMPIFN | REFERENCE | true | IFN OF PROBLEM | 1
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:06 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:34 pm</p>{:/}

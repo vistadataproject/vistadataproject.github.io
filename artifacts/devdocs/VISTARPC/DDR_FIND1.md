@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DDR FIND1
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DDR FIND1<br/>
 # DDR FIND1
 
 This function returns the internal entry number of a record using$$FIND1^DIC.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DDR2](http://code.osehra.org/dox/Routine_DDR2_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ PARAMETERS | LIST | 512 | true | This array contains the following parameters ne
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

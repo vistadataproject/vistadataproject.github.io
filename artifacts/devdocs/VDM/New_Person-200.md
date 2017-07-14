@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; New_Person-200
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; New_Person-200<br/>
+<a name="top"></a>
 # New Person (200)
 This file contains data on employees, users, practitioners, etc. who were previously in Files 3,6,16 and others.   DHCP packages must check with the KERNEL developers to see that a given number/namespace is clear for them to use.   Field numbers 53-59.9 reserved for Pharm.  Nodes and X-ref 'PS*'. Field numbers 70-79.9 reserved for Radiology  Nodes and X-ref 'RA*'. Field numbers 720-725 reserved for DSSM  Nodes and X-ref 'EC*' and 'AEC*'. Field numbers 740-749.9 reserved for QA  Nodes and X-ref 'QA*'. Field numbers 654-654.9 reserved for Social work  Node 654 and X-ref 'SW*'. Field numbers 500-500.9 reserved for mailman  Node 500 and X-ref 'XM*' and 'AXM*'. Field numbers 740-749.9 reserved for QA  Nodes and X-ref 'QA*'. Field numbers 910-910.9 reserved for Police Package  Node and X-ref 'ESP'
 
-<dl>
-<dt>Global</dt><dd>^VA(200,</dd>
-<dt>Domain</dt><dd>Problems</dd>
-</dl>
+**Global:** ^VA(200,
 
-### Properties
+**Domain:** Problems
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -213,13 +213,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Ess People**{::nomarkdown}<pre><code>  ess_people</code></pre>{:/} | 776000 |  | STRING |  | 
 **Ess Customer Id**{::nomarkdown}<pre><code>  ess_customer_id</code></pre>{:/} | 776001 |  | STRING |  | 
 
-### Subfile
-#### <a name="User_Class-200_07"></a>User Class
+## Sub-Files
+### <a name="User_Class-200_07"></a>User Class (200.07)
 
 <dl>
-<dt>ID</dt><dd>User_Class-200_07</dd>
-<dt>File Type</dt><dd>200.07</dd>
-<dt>Label</dt><dd>User Class</dd></dl>
+<dt>ID</dt><dd>User_Class-200_07</dd></dl>
 
 #### Properties
 
@@ -228,12 +226,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **User Class**{::nomarkdown}<pre><code>  user_class</code></pre>{:/} | .01 |  | POINTER | INDEXED<br/>REQUIRED | [User_Class-201](User_Class-201)
 **Isprimary**{::nomarkdown}<pre><code>  isprimary</code></pre>{:/} | 2 | This field notes if this User Class is the primary User Class for this <br/>user.  If returning just one User Class then this is the one to be <br/>returned. | BOOLEAN |  | {::nomarkdown}false: <em><strong>1</strong></em><br/>true: <em><strong>0</strong></em>{:/}
 
-#### <a name="Division-200_02"></a>Division
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Division-200_02"></a>Division (200.02)
 
 <dl>
-<dt>ID</dt><dd>Division-200_02</dd>
-<dt>File Type</dt><dd>200.02</dd>
-<dt>Label</dt><dd>Division</dd></dl>
+<dt>ID</dt><dd>Division-200_02</dd></dl>
 
 #### Properties
 
@@ -242,12 +241,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Division**{::nomarkdown}<pre><code>  division</code></pre>{:/} | .01 | The name of a Division that this user may sign on to. | POINTER | INDEXED<br/>REQUIRED | [Institution-4](Institution-4)
 **Default**{::nomarkdown}<pre><code>  default</code></pre>{:/} | 1 | This field is used to indicate that a particular division should be<br/>presented to the user as a default when selecting a division.  This will<br/>only affect users that have more than one division.<br/>A cross reference will only allow one entry to have this flag set. | BOOLEAN |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
 
-#### <a name="Alert_Date_Time-200_194"></a>Alert Date Time
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Alert_Date_Time-200_194"></a>Alert Date Time (200.194)
 
 <dl>
-<dt>ID</dt><dd>Alert_Date_Time-200_194</dd>
-<dt>File Type</dt><dd>200.194</dd>
-<dt>Label</dt><dd>Alert Date Time</dd></dl>
+<dt>ID</dt><dd>Alert_Date_Time-200_194</dd></dl>
 
 #### Properties
 
@@ -265,12 +265,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **First Data Piece**{::nomarkdown}<pre><code>  first_data_piece</code></pre>{:/} | .1 | This field and all following ^-separated fields are processed as a single<br/>entity and are returned in the variable XQADATA for use by the application<br/>which generated the alert.  The package may pass a series of variables<br/>using any desired separator in the variable XQADATA at the time the alert<br/>is setup.  When the alert is processed the value of XQADATA is returned to<br/>the application and may be used to establish parameters related to the<br/>alert without requiring interaction or provision of information by the<br/>user.  In this way information related to patient entry number, specific<br/>internal numbers for the desired data, etc may be stored and returned. | STRING |  | 
 **Data String**{::nomarkdown}<pre><code>  data_string</code></pre>{:/} | 1 |  | STRING |  | 
 
-#### <a name="Delegated_Options-200_19"></a>Delegated Options
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Delegated_Options-200_19"></a>Delegated Options (200.19)
 
 <dl>
-<dt>ID</dt><dd>Delegated_Options-200_19</dd>
-<dt>File Type</dt><dd>200.19</dd>
-<dt>Label</dt><dd>Delegated Options</dd></dl>
+<dt>ID</dt><dd>Delegated_Options-200_19</dd></dl>
 
 #### Properties
 
@@ -281,12 +282,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Date Delegated**{::nomarkdown}<pre><code>  date_delegated</code></pre>{:/} | 2 | This field records the date when this option was added to the list<br/>of options this user may delegate to others. | DATE-TIME |  | 
 **Editable**{::nomarkdown}<pre><code>  editable</code></pre>{:/} | 3 | This field indicates whether this use is allowed to edit this option. | BOOLEAN |  | {::nomarkdown}false: <em><strong>1</strong></em><br/>true: <em><strong>0</strong></em>{:/}
 
-#### <a name="Menu_Template-200_198"></a>Menu Template
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Menu_Template-200_198"></a>Menu Template (200.198)
 
 <dl>
-<dt>ID</dt><dd>Menu_Template-200_198</dd>
-<dt>File Type</dt><dd>200.198</dd>
-<dt>Label</dt><dd>Menu Template</dd></dl>
+<dt>ID</dt><dd>Menu_Template-200_198</dd></dl>
 
 #### Properties
 
@@ -295,12 +297,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Menu Template**{::nomarkdown}<pre><code>  menu_template</code></pre>{:/} | .01 |  | STRING | INDEXED<br/>REQUIRED | 
 **Pathway**{::nomarkdown}<pre><code>  pathway</code></pre>{:/} | 1 | This multiple contains the information on the option sequence specified<br/>for a given MENU TEMPLATE. | STRING |  | 
 
-#### <a name="Uci-200_01"></a>Uci
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Uci-200_01"></a>Uci (200.01)
 
 <dl>
-<dt>ID</dt><dd>Uci-200_01</dd>
-<dt>File Type</dt><dd>200.01</dd>
-<dt>Label</dt><dd>Uci</dd></dl>
+<dt>ID</dt><dd>Uci-200_01</dd></dl>
 
 #### Properties
 
@@ -309,12 +312,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Uci**{::nomarkdown}<pre><code>  uci</code></pre>{:/} | .01 | This is one of a set of UCI's that this user may choose to work in<br/>at sign-on time. | STRING | INDEXED<br/>REQUIRED | 
 **Routines (rn1:rn2)**{::nomarkdown}<pre><code>  routines_rn1rn2</code></pre>{:/} | 2 | This is a list of routines that the user may choose to run when signing on<br/>to this UCI.  The routines are seperated by ':'s. | STRING |  | 
 
-#### <a name="Accessible_File-200_032"></a>Accessible File
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Accessible_File-200_032"></a>Accessible File (200.032)
 
 <dl>
-<dt>ID</dt><dd>Accessible_File-200_032</dd>
-<dt>File Type</dt><dd>200.032</dd>
-<dt>Label</dt><dd>Accessible File</dd></dl>
+<dt>ID</dt><dd>Accessible_File-200_032</dd></dl>
 
 #### Properties
 
@@ -329,12 +333,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Write Access**{::nomarkdown}<pre><code>  write_access</code></pre>{:/} | 5 | This field is a flag that, when set to 1, gives the user write access to<br/>the file (in the .01 field) represented in this record. | BOOLEAN |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
 **Audit Access**{::nomarkdown}<pre><code>  audit_access</code></pre>{:/} | 6 | This field is a flag that, when set to 1, gives the user audit access to<br/>the file (in the .01 field) represented in this record. | BOOLEAN |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
 
-#### <a name="Effective_Date_time-200_042"></a>Effective Date/time
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Effective_Date_time-200_042"></a>Effective Date/time (200.042)
 
 <dl>
-<dt>ID</dt><dd>Effective_Date_time-200_042</dd>
-<dt>File Type</dt><dd>200.042</dd>
-<dt>Label</dt><dd>Effective Date/time</dd></dl>
+<dt>ID</dt><dd>Effective_Date_time-200_042</dd></dl>
 
 #### Properties
 
@@ -344,12 +349,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Status**{::nomarkdown}<pre><code>  status</code></pre>{:/} | .02 | The Status of an NPI is either 'ACTIVE' or 'INACTIVE'. I 'ACTIVE' then <br/>the NPI will be accessible by end-users to document a particular <br/>provider. If 'INACTIVE', then the NPI will only be accessible by the <br/>application to display legacy data. | ENUMERATION | REQUIRED | {::nomarkdown}ACTIVE: <em><strong>1</strong></em><br/>INACTIVE: <em><strong>0</strong></em>{:/}
 **Npi**{::nomarkdown}<pre><code>  npi</code></pre>{:/} | .03 | Each VHA Billable Practitioner should have applied for the NPI through<br/>CMS' National Plan and Provider Enumeration System (NPPES).  NPI<br/>Confirmation Letters are sent by CMS and indicate the NPI assigned.<br/>Practitioners may present their NPI Confirmation Letter as a source<br/>document to verify the accuracy of the NPI or you may contact your Local<br/>NPI Maintenance Team Leader for assistance. | STRING | INDEXED<br/>REQUIRED | 
 
-#### <a name="Keys-200_051"></a>Keys
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Keys-200_051"></a>Keys (200.051)
 
 <dl>
-<dt>ID</dt><dd>Keys-200_051</dd>
-<dt>File Type</dt><dd>200.051</dd>
-<dt>Label</dt><dd>Keys</dd></dl>
+<dt>ID</dt><dd>Keys-200_051</dd></dl>
 
 #### Properties
 
@@ -360,12 +366,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Date Given**{::nomarkdown}<pre><code>  date_given</code></pre>{:/} | 2 | This is the date that the security key was given to the person.<br/>There is know history. | DATE-TIME |  | 
 **Review Date**{::nomarkdown}<pre><code>  review_date</code></pre>{:/} | 3 | This is the date after which the persons need for this security key should<br/>be reviewed. | DATE-TIME |  | 
 
-#### <a name="Delegated_Keys-200_052"></a>Delegated Keys
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Delegated_Keys-200_052"></a>Delegated Keys (200.052)
 
 <dl>
-<dt>ID</dt><dd>Delegated_Keys-200_052</dd>
-<dt>File Type</dt><dd>200.052</dd>
-<dt>Label</dt><dd>Delegated Keys</dd></dl>
+<dt>ID</dt><dd>Delegated_Keys-200_052</dd></dl>
 
 #### Properties
 
@@ -376,12 +383,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Date Delegated**{::nomarkdown}<pre><code>  date_delegated</code></pre>{:/} | 2 | This is the date that the security key was given to be delegated. | DATE-TIME |  | 
 **May Re-delegate**{::nomarkdown}<pre><code>  may_redelegate</code></pre>{:/} | 3 | Re-delegation means that the person has total control over the key,<br/>the person may not only delegate the key to others but may also give<br/>others the authorization to delegate it. | ENUMERATION |  | {::nomarkdown}YES: <em><strong>1</strong></em><br/>no: <em><strong>0</strong></em><br/>yes: <em><strong>1</strong></em><br/>NO: <em><strong>0</strong></em>{:/}
 
-#### <a name="Licensing_State-200_541"></a>Licensing State
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Licensing_State-200_541"></a>Licensing State (200.541)
 
 <dl>
-<dt>ID</dt><dd>Licensing_State-200_541</dd>
-<dt>File Type</dt><dd>200.541</dd>
-<dt>Label</dt><dd>Licensing State</dd></dl>
+<dt>ID</dt><dd>Licensing_State-200_541</dd></dl>
 
 #### Properties
 
@@ -391,12 +399,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **License Number**{::nomarkdown}<pre><code>  license_number</code></pre>{:/} | 1 | This is the licence number that was issued to a provider by the sate<br/>he is licenced in. | STRING | REQUIRED | 
 **Expiration Date**{::nomarkdown}<pre><code>  expiration_date</code></pre>{:/} | 2 | This is the expiration date of the provider's licence issued by the state.<br/>by the state. | DATE-TIME | REQUIRED | 
 
-#### <a name="State_Issuing_Dea_Number-200_55"></a>State Issuing Dea Number
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="State_Issuing_Dea_Number-200_55"></a>State Issuing Dea Number (200.55)
 
 <dl>
-<dt>ID</dt><dd>State_Issuing_Dea_Number-200_55</dd>
-<dt>File Type</dt><dd>200.55</dd>
-<dt>Label</dt><dd>State Issuing Dea Number</dd></dl>
+<dt>ID</dt><dd>State_Issuing_Dea_Number-200_55</dd></dl>
 
 #### Properties
 
@@ -405,12 +414,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **State Issuing Dea Number**{::nomarkdown}<pre><code>  state_issuing_dea_number</code></pre>{:/} | .01 | This is the state which has issued a State DEA# to a provider.  Not all<br/>states require a seperate DEA # | POINTER | INDEXED<br/>REQUIRED | [State-5](State-5)
 **State Dea Number**{::nomarkdown}<pre><code>  state_dea_number</code></pre>{:/} | 1 | This is the DEA # issued by an individual state, it is not required<br/>by all states and in some cases may be the same as the Federal<br/>DEA #. | STRING | REQUIRED | 
 
-#### <a name="Cprs_Tab-200_010113"></a>Cprs Tab
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Cprs_Tab-200_010113"></a>Cprs Tab (200.010113)
 
 <dl>
-<dt>ID</dt><dd>Cprs_Tab-200_010113</dd>
-<dt>File Type</dt><dd>200.010113</dd>
-<dt>Label</dt><dd>Cprs Tab</dd></dl>
+<dt>ID</dt><dd>Cprs_Tab-200_010113</dd></dl>
 
 #### Properties
 
@@ -420,12 +430,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Effective Date**{::nomarkdown}<pre><code>  effective_date</code></pre>{:/} | .02 | This is the effective date of access to the CPRS tab. | DATE-TIME | REQUIRED | 
 **Expiration Date**{::nomarkdown}<pre><code>  expiration_date</code></pre>{:/} | .03 | This is the expiration date of access to the CPRS tab. | DATE-TIME |  | 
 
-#### <a name="Secondary_Menu_Options-200_03"></a>Secondary Menu Options
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Secondary_Menu_Options-200_03"></a>Secondary Menu Options (200.03)
 
 <dl>
-<dt>ID</dt><dd>Secondary_Menu_Options-200_03</dd>
-<dt>File Type</dt><dd>200.03</dd>
-<dt>Label</dt><dd>Secondary Menu Options</dd></dl>
+<dt>ID</dt><dd>Secondary_Menu_Options-200_03</dd></dl>
 
 #### Properties
 
@@ -434,12 +445,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Secondary Menu Options**{::nomarkdown}<pre><code>  secondary_menu_options</code></pre>{:/} | .01 | This is an option which is merged with the users primary menu<br/>and XUCOMMAND option, giving the user this option on all of her/his<br/>menus. | POINTER | INDEXED<br/>REQUIRED | [Option-19](Option-19)
 **Synonym**{::nomarkdown}<pre><code>  synonym</code></pre>{:/} | 2 | This is a user-specific synonym which may be used in addressing this<br/>option. | STRING |  | 
 
-#### <a name="Personal_Diagnoses_List-200_0351"></a>Personal Diagnoses List
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Personal_Diagnoses_List-200_0351"></a>Personal Diagnoses List (200.0351)
 
 <dl>
-<dt>ID</dt><dd>Personal_Diagnoses_List-200_0351</dd>
-<dt>File Type</dt><dd>200.0351</dd>
-<dt>Label</dt><dd>Personal Diagnoses List</dd></dl>
+<dt>ID</dt><dd>Personal_Diagnoses_List-200_0351</dd></dl>
 
 #### Properties
 
@@ -448,12 +460,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Diagnosis**{::nomarkdown}<pre><code>  diagnosis</code></pre>{:/} | .01 | A diagnosis in the provider's preferred list. | POINTER | INDEXED<br/>REQUIRED | [Icd_Diagnosis-80](Icd_Diagnosis-80)
 **Expression**{::nomarkdown}<pre><code>  expression</code></pre>{:/} | 1 | This is the diagnosis code's Lexicon<br/>expression as stored in the EXPRESSION file,<br/>file # 757.01. | POINTER |  | [Expressions-757_01](Expressions-757_01)
 
-#### <a name="Network_Address-200_005"></a>Network Address
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Network_Address-200_005"></a>Network Address (200.005)
 
 <dl>
-<dt>ID</dt><dd>Network_Address-200_005</dd>
-<dt>File Type</dt><dd>200.005</dd>
-<dt>Label</dt><dd>Network Address</dd></dl>
+<dt>ID</dt><dd>Network_Address-200_005</dd></dl>
 
 #### Properties
 
@@ -474,12 +487,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Private Administrative Domain**{::nomarkdown}<pre><code>  private_administrative_domain</code></pre>{:/} | 98 | For X.400 addresses this field is standard.  For mapping into the SMTP<br/>mail system (MailMan is an SMTP mail system.), this field is filled in<br/>with a special string.  'DHCP' will be interpreted as ".VA.GOV" for all<br/>Department of Veterans' Affairs SMTP systems.  If the address does have<br/>"DHCP' in this field, MailMan will try to deliver it to a VA site.  If<br/>the address has anything else, MailMan will try to deliver to an X.400<br/>system as of 11/90.  Later there may be additional special PRMDs. | STRING |  | 
 **Administrative Domain**{::nomarkdown}<pre><code>  administrative_domain</code></pre>{:/} | 99 | The Administrative domain is the carrier of the electronic channels.  Some<br/>examples of carriers in the US are US SPRINT, AT&T and MCI Communications.<br/>This field is required only for X.400 addresses. | STRING |  | 
 
-#### <a name="Visited_From-200_06"></a>Visited From
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Visited_From-200_06"></a>Visited From (200.06)
 
 <dl>
-<dt>ID</dt><dd>Visited_From-200_06</dd>
-<dt>File Type</dt><dd>200.06</dd>
-<dt>Label</dt><dd>Visited From</dd></dl>
+<dt>ID</dt><dd>Visited_From-200_06</dd></dl>
 
 #### Properties
 
@@ -492,12 +506,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Last Visited**{::nomarkdown}<pre><code>  last_visited</code></pre>{:/} | 4 | This field is updated each time a visitor arrives from the site in the .01<br/>field. | DATE-TIME |  | 
 **Phone At Site**{::nomarkdown}<pre><code>  phone_at_site</code></pre>{:/} | 5 | This field may contain a phone number for the visitor at their home site.<br/>Since phone numbers are not always entered, this field may be blank. | STRING |  | 
 
-#### <a name="Person_Class-200_05"></a>Person Class
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Person_Class-200_05"></a>Person Class (200.05)
 
 <dl>
-<dt>ID</dt><dd>Person_Class-200_05</dd>
-<dt>File Type</dt><dd>200.05</dd>
-<dt>Label</dt><dd>Person Class</dd></dl>
+<dt>ID</dt><dd>Person_Class-200_05</dd></dl>
 
 #### Properties
 
@@ -507,12 +522,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Effective Date**{::nomarkdown}<pre><code>  effective_date</code></pre>{:/} | 2 | This field is trigger by adding a new person class. | DATE-TIME | INDEXED<br/>REQUIRED | 
 **Expiration Date**{::nomarkdown}<pre><code>  expiration_date</code></pre>{:/} | 3 | This field is the date after which this class becomes inactive.<br/>This field must be not less than the EFFECTIVE DATE and not greater <br/>than the DATE INACTIVATED field(#4) of the Person Class entry in the<br/>PERSON CLASS file(#8932.1).<br/>       <br/>It will get triggered if a new Person Class is entered or someone<br/>edits the field to inactivate the class. | DATE-TIME |  | 
 
-#### <a name="Defined_Formats_For_Lm-200_0089832"></a>Defined Formats For Lm
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Defined_Formats_For_Lm-200_0089832"></a>Defined Formats For Lm (200.0089832)
 
 <dl>
-<dt>ID</dt><dd>Defined_Formats_For_Lm-200_0089832</dd>
-<dt>File Type</dt><dd>200.0089832</dd>
-<dt>Label</dt><dd>Defined Formats For Lm</dd></dl>
+<dt>ID</dt><dd>Defined_Formats_For_Lm-200_0089832</dd></dl>
 
 #### Properties
 
@@ -522,12 +538,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Default**{::nomarkdown}<pre><code>  default</code></pre>{:/} | 1 | If set to yes, this format line will be used as the default format line<br/>when using the screen editor.  If a document already has a format line<br/>defined, then the document format will be used. | BOOLEAN | INDEXED | {::nomarkdown}false: <em><strong>n</strong></em><br/>true: <em><strong>y</strong></em>{:/}
 **Format Line**{::nomarkdown}<pre><code>  format_line</code></pre>{:/} | 2 | This field stores the predefined format lines of the user. | STRING |  | 
 
-#### <a name="Defined_Phrases_For_Lm-200_0089833"></a>Defined Phrases For Lm
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Defined_Phrases_For_Lm-200_0089833"></a>Defined Phrases For Lm (200.0089833)
 
 <dl>
-<dt>ID</dt><dd>Defined_Phrases_For_Lm-200_0089833</dd>
-<dt>File Type</dt><dd>200.0089833</dd>
-<dt>Label</dt><dd>Defined Phrases For Lm</dd></dl>
+<dt>ID</dt><dd>Defined_Phrases_For_Lm-200_0089833</dd></dl>
 
 #### Properties
 
@@ -536,6 +553,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Keyword**{::nomarkdown}<pre><code>  keyword</code></pre>{:/} | .01 | The predefined phrase 'keyword' used to select the phrase. | STRING | INDEXED<br/>REQUIRED | 
 **Phrase**{::nomarkdown}<pre><code>  phrase</code></pre>{:/} | 1 | The phrase to be inserted into the document. | STRING |  | 
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

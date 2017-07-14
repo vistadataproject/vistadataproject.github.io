@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Mas_Eligibility_Code-8_1
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Mas_Eligibility_Code-8_1<br/>
+<a name="top"></a>
 # Mas Eligibility Code (8.1)
 The MAS ELIGIBILITY CODE file consists of those codes which have been established by VACO MAS.  Currently there are 18 eligibility codes in use by the Dept of Veterans Affairs.  Addition to this file of local codes or modification of those codes distributed by the MAS package developers could have a negative impact on the performance of the MAS module as well as other modules.   If local codes are desired,the site can enter them in the ELIGIBILITY CODE file (#8).  Each code entered in the ELIGIBILITY CODE file must point to an entry in MAS ELIGIBILITY CODE file via the MAS ELIGIBILITY CODE field.
 
-<dl>
-<dt>Global</dt><dd>^DIC(8.1,</dd>
-<dt>Domain</dt><dd>Patients</dd>
-</dl>
+**Global:** ^DIC(8.1,
 
-### Properties
+**Domain:** Patients
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -27,4 +27,4 @@ Field | ID | Description | Datatype | Attributes | Range
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

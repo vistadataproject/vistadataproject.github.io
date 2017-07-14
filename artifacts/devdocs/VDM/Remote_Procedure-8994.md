@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Remote_Procedure-8994
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Remote_Procedure-8994<br/>
+<a name="top"></a>
 # Remote Procedure (8994)
 This file is used as a repository of server-based procedures in the context of the Client/Server architecture.  By using the Remote Procedure Call (RPC) Broker, applications running on client workstations can invoke (call) the procedures in this file to be executed by the server and the results will be returned to the client application.  Each remote procedure entry is associated with an entry point (ROUTINE with optional TAG).  Calls to these procedures can include parameters of different value types.  The resulting value of the call can be either a string, a list of strings or a word processing string as indicated by the RETURN VALUE TYPE field (.04).  The remote procedure may be available for use by anyone or its use may be restricted to one or more application.  The range of availability is indicated by the AVAILABILITY field.  IF THERE IS NO ENTRY IN THE AVAILABILITY FIELD, then the procedure is assumed to be PUBLIC.  A remote procedure may be removed from service for a period of time by setting the INACTIVE field.  A request for use of a procedure which is marked inactive will result in an error being returned to the originating application.
 
-<dl>
-<dt>Global</dt><dd>^XWB(8994,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^XWB(8994,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -31,13 +31,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Input Parameter**{::nomarkdown}<pre><code>  input_parameter</code></pre>{:/} | 2 | Input parameter is what RPC Broker passes into your remote procedure.  The<br/>name that you may call the input parameter has no special meaning to the<br/>Broker.  However, you should choose a name that best describes the data<br/>that the parameter is used for. | OBJECT |  | [Input_Parameter-8994_02](#Input_Parameter-8994_02)
 **Return Parameter Description**{::nomarkdown}<pre><code>  return_parameter_description</code></pre>{:/} | 3 |  | STRING |  | 
 
-### Subfile
-#### <a name="Input_Parameter-8994_02"></a>Input Parameter
+## Sub-Files
+### <a name="Input_Parameter-8994_02"></a>Input Parameter (8994.02)
 
 <dl>
-<dt>ID</dt><dd>Input_Parameter-8994_02</dd>
-<dt>File Type</dt><dd>8994.02</dd>
-<dt>Label</dt><dd>Input Parameter</dd></dl>
+<dt>ID</dt><dd>Input_Parameter-8994_02</dd></dl>
 
 #### Properties
 
@@ -50,6 +48,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Sequence Number**{::nomarkdown}<pre><code>  sequence_number</code></pre>{:/} | .05 | This number should correspond to the position of this parameter in the<br/>formal list of the function.  Consider that the return parameter that<br/>Broker passes in, by reference, is the very first parameter with the<br/>sequence number of 0.  The next parameter is the first application-supplied<br/>parameter with the sequence of 1.<br/><br/>Example:<br/><br/>  Your entry point may look like:<br/><br/>    EN(RESULT,USER,DATE)       ;this will do something<br/><br/>      In this case the parameter corresponding to USER should have sequence<br/>      number 1 and the DATE parameter should be 2. | NUMERIC | INDEXED | 
 **Description**{::nomarkdown}<pre><code>  description</code></pre>{:/} | 1 |  | STRING |  | 
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

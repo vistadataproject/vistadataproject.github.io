@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DENTV GET UNFILED DETAIL
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DENTV GET UNFILED DETAIL<br/>
 # DENTV GET UNFILED DETAIL
 
 This procedure will take in a single IEN to return all data for the IEN in ^TMP("DENT",$J,N)=value.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DENTVTP7](http://code.osehra.org/dox/Routine_DENTVTP7_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ IEN | LITERAL |  | true | This input should be a number coinciding with an IEN f
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Holiday-40_5
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Holiday-40_5<br/>
+<a name="top"></a>
 # Holiday (40.5)
 This file is used to record institutional holidays.  It is referenced by the XUWORKDY routine.  It is not distributed with data.  It is cross-referenced by date.
 
-<dl>
-<dt>Global</dt><dd>^HOLIDAY(</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^HOLIDAY(
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -21,4 +21,4 @@ Field | ID | Description | Datatype | Attributes | Range
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

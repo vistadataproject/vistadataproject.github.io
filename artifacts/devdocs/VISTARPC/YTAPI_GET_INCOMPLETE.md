@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; YTAPI GET INCOMPLETE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; YTAPI GET INCOMPLETE<br/>
 # YTAPI GET INCOMPLETE
 
 API to retrive partially completed psychological tests. Input Required: DFN ;ien of file 2 Patient                YSCODE ; code for entry in file 601 Psycholgical TestingOutput:        YSDATA(1)=[DATA]        YSDATA(2)=INSTRUMENT^DATE ENTERED^DATE ADMINISTERED CLERICALLY^NEXT ITEM^VALID RESPONSE STRING^CLERK TEST^ORDERED BY^DATE BEGUN        YSDATA(3)=responses 1-200        YSDATA(4)=responses 201-400        YSDATA(5)=responses 401-600
+
+## Properties
 
 Property | Value
 --- | ---
@@ -17,4 +19,4 @@ Return Type | ARRAY
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

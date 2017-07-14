@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGQBP UPDATE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGQBP UPDATE<br/>
 # MAGQBP UPDATE
 
 Nulls the appropriate magnetic network location reference.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGQBPG2](http://code.osehra.org/dox/Routine_MAGQBPG2_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -26,4 +28,4 @@ Device | LITERAL |  | true | &#x27;NET&#x27; or &#x27;JB&#x27; to specify which 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

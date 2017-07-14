@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; IBARXM QUERY SUPPRESS USER
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; IBARXM QUERY SUPPRESS USER<br/>
 # IBARXM QUERY SUPPRESS USER
 
 This RPC is used to query only the information for pharmacy co-paymentbilling that has happened for the given month/year.The RPC should be used only for queries, which will not allow the user to see information, because the user data will not be transmitted to remote system.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [IBARXMR](http://code.osehra.org/dox/Routine_IBARXMR_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ IBICN | LITERAL | 40 | true | This is the patient&#x27;s ICN for reference to an
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

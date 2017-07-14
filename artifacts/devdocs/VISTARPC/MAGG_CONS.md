@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGG CONS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGG CONS<br/>
 # MAGG CONS
 
 This function returns the boolean value used to determinewhether the Imaging site is operating in the Consolidationmode.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -17,4 +19,4 @@ Return Type | SINGLE VALUE
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

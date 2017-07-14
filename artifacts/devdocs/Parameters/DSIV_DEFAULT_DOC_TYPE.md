@@ -3,24 +3,25 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; DSIV DEFAULT DOC TYPE
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; DSIV DEFAULT DOC TYPE<br/>
 # DSIV DEFAULT DOC TYPE
 
 THIS IS THE DEFAULT DOCUMENT TYPE USED FOR FILING INSURANCE CARD IMAGES TO VISTA IMAGING
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 533
 Summary | DEFAULT DOCUMENT TYPE
 Value Type | free text
 Value Domain | 1:240
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | SYSTEM
 5 | DIVISION
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

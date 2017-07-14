@@ -3,20 +3,21 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; ORWDP WINPRINT DEFAULT
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; ORWDP WINPRINT DEFAULT<br/>
 # ORWDP WINPRINT DEFAULT
 
 If set to YES, CPRS GUI will display Windows standard printer selectiondialog instead of the VistA printer selection dialog. If set to NO, the standard VistA printer selection dialog will bedisplayed, still allowing selection of a Windows printer, but requiring anadditional prompt.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 32
 Summary | Use Windows printer as default?
 Value Type | yes
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
@@ -25,4 +26,4 @@ Precedence | Entity
 3 | SYSTEM
 4 | PACKAGE
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Request_Services-123_5
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Request_Services-123_5<br/>
+<a name="top"></a>
 # Request Services (123.5)
 This file allows services and specialties to be grouped in a hierarchy  representing the sites services available.  This grouping capability may be used with Review screens to filter out consults to a  service, sub-service, specialty, or sub-specialty of consults/requests.    The main entry in this file is the "ALL SERVICES" entry.  Other entries should be subordinate in its hierarchy.   The "ALL SERVICES" entry is used to display the hierarchy of the hospital services when the Clinician ordering a consult is prompted for "Select TO Service/Specialty:" to send the consult to.
 
-<dl>
-<dt>Global</dt><dd>^GMR(123.5,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^GMR(123.5,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -63,13 +63,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Administrative**{::nomarkdown}<pre><code>  administrative</code></pre>{:/} | 150 | Entering 'YES" here will cause any orders placed to this service to have <br/>a corresponding entry of 'YES' in the ADMINISTRATIVE field of the REQUEST <br/>CONSULTATION FILE, #123.  Administrative requests are to be excluded from <br/>the CONSULTS PERFORMANCE MONITOR report [GMRC RPT PERF MONITOR]. | BOOLEAN |  | {::nomarkdown}false: <em><strong>1</strong></em><br/>true: <em><strong>0</strong></em>{:/}
 **Associated Stop Code**{::nomarkdown}<pre><code>  associated_stop_code</code></pre>{:/} | 688 |  | POINTER |  | [Clinic_Stop-40_7](Clinic_Stop-40_7)
 
-### Subfile
-#### <a name="Subservice-123_51"></a>Sub-service
+## Sub-Files
+### <a name="Subservice-123_51"></a>Sub-service (123.51)
 
 <dl>
-<dt>ID</dt><dd>Subservice-123_51</dd>
-<dt>File Type</dt><dd>123.51</dd>
-<dt>Label</dt><dd>Sub-service</dd></dl>
+<dt>ID</dt><dd>Subservice-123_51</dd></dl>
 
 #### Properties
 
@@ -78,12 +76,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Sub-service/specialty**{::nomarkdown}<pre><code>  subservice_specialty</code></pre>{:/} | .01 | This is the menu of sub-service/specialties that are grouped under this<br/>Service.  The sub-service/specialty entries must each be defined as <br/>entries in this file.<br/>  <br/>There is no limit on how deep the hierarchy of services may be defined.<br/>The only requirements are the "ALL SERVICES" entry be at the top of the<br/>hierarchy and a service can not be a sub-service to itself or any other <br/>sub-service hierarchy which can be traced back to itself as a parent <br/>service. | POINTER | INDEXED<br/>REQUIRED | [Request_Services-123_5](Request_Services-123_5)
 **Mnemonic**{::nomarkdown}<pre><code>  mnemonic</code></pre>{:/} | 2 | This is a mnemonic associated with the service being entered as a sub-<br/>service.  For example, if the service is Pulmonary, PU could be<br/>could be defined as the mnemonic. | STRING |  | 
 
-#### <a name="Notification_By_Pt_Location-123_54"></a>Notification By Pt Location
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Notification_By_Pt_Location-123_54"></a>Notification By Pt Location (123.54)
 
 <dl>
-<dt>ID</dt><dd>Notification_By_Pt_Location-123_54</dd>
-<dt>File Type</dt><dd>123.54</dd>
-<dt>Label</dt><dd>Notification By Pt Location</dd></dl>
+<dt>ID</dt><dd>Notification_By_Pt_Location-123_54</dd></dl>
 
 #### Properties
 
@@ -93,12 +92,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Individual To Notify**{::nomarkdown}<pre><code>  individual_to_notify</code></pre>{:/} | 1 | This is the Individual that is assigned to this location for this <br/>Service.  When a consult/request order for this Service is released<br/>from OE/RR for a patient at this location, this individual will <br/>receive the new order notification.<br/>Enter the individual who should receive notifications when a consult <br/>order is released from OE/RR FOR this service, FROM this location. | POINTER |  | [New_Person-200](New_Person-200)
 **Team To Notify**{::nomarkdown}<pre><code>  team_to_notify</code></pre>{:/} | 2 | This is the Team that is assigned to this location for the Service. | POINTER | INDEXED | [Oe_rr_List-100_21](Oe_rr_List-100_21)
 
-#### <a name="Administrative_Update_Users-123_555"></a>Administrative Update Users
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Administrative_Update_Users-123_555"></a>Administrative Update Users (123.555)
 
 <dl>
-<dt>ID</dt><dd>Administrative_Update_Users-123_555</dd>
-<dt>File Type</dt><dd>123.555</dd>
-<dt>Label</dt><dd>Administrative Update Users</dd></dl>
+<dt>ID</dt><dd>Administrative_Update_Users-123_555</dd></dl>
 
 #### Properties
 
@@ -107,12 +107,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Administrative Update User**{::nomarkdown}<pre><code>  administrative_update_user</code></pre>{:/} | .01 | This multiple allows the administrative users for a service to be<br/>identified.  Administrative users update actions may be different from the<br/>service update users' actions. | POINTER | INDEXED<br/>REQUIRED | [New_Person-200](New_Person-200)
 **Notification Recipient**{::nomarkdown}<pre><code>  notification_recipient</code></pre>{:/} | .02 | This field, if set to YES will include this user in the list of<br/>notification recipients for this service.  | BOOLEAN |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
 
-#### <a name="Administrative_Update_Teams-123_58"></a>Administrative Update Teams
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Administrative_Update_Teams-123_58"></a>Administrative Update Teams (123.58)
 
 <dl>
-<dt>ID</dt><dd>Administrative_Update_Teams-123_58</dd>
-<dt>File Type</dt><dd>123.58</dd>
-<dt>Label</dt><dd>Administrative Update Teams</dd></dl>
+<dt>ID</dt><dd>Administrative_Update_Teams-123_58</dd></dl>
 
 #### Properties
 
@@ -121,6 +122,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Administrative Update Team**{::nomarkdown}<pre><code>  administrative_update_team</code></pre>{:/} | .01 | This field allows team lists from the OE/RR LIST (#100.21) file to be<br/>entered. All provider/users of the teams will have administrative update<br/>authority for requests directed to this service. | POINTER | INDEXED<br/>REQUIRED | [Oe_rr_List-100_21](Oe_rr_List-100_21)
 **Notification Recipients**{::nomarkdown}<pre><code>  notification_recipients</code></pre>{:/} | .02 | This field, if set to YES will include the users on the specified team in<br/>the list of notification recipients for this service. | BOOLEAN |  | {::nomarkdown}false: <em><strong>1</strong></em><br/>true: <em><strong>0</strong></em>{:/}
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

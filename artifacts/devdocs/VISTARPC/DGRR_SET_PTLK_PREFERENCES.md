@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DGRR SET PTLK PREFERENCES
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DGRR SET PTLK PREFERENCES<br/>
 # DGRR SET PTLK PREFERENCES
 
 This remote procedure call updates the division/institutional preferences passed to the call. It returns an xml document containing the stationnumber and status.  If update was successful, status is returned astrue.  If errors were encountered during the update, false is returnedwith an error message.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DGRRLU4](http://code.osehra.org/dox/Routine_DGRRLU4_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ PARAMS | LIST |  |  | PARAMS(&quot;stationNumber&quot;)&#x3D;station number for 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

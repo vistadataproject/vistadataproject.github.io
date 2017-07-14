@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; VBECS DSS EXTRACT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; VBECS DSS EXTRACT<br/>
 # VBECS DSS EXTRACT
 
 This RPC inserts or updates post transfusion related data in the VBECS DSSEXTRACT file (#6002.03). The data is passed into the VBECDSS routine through the input parameters and a success indicator is returned to the Blood Bank medical device.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [VBECDSS](http://code.osehra.org/dox/Routine_VBECDSS_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ PARAMS | LITERAL | 999 | true | PARAMS(&quot;TRANSACTION ID&quot;) &#x3D; Unique
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

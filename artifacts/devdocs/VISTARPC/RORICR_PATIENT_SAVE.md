@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; RORICR PATIENT SAVE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; RORICR PATIENT SAVE<br/>
 # RORICR PATIENT SAVE
 
 The RORICR PATIENT SAVE remote procedure updates the patient's record inthe registry (or creates one).
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [RORRP034](http://code.osehra.org/dox/Routine_RORRP034_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -26,4 +28,4 @@ CANCEL | LITERAL |  |  | Cancel the update and unlock the patient&#x27;s registr
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

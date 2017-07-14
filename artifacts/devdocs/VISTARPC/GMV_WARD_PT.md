@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; GMV WARD PT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; GMV WARD PT<br/>
 # GMV WARD PT
 
 This procedure lists patients registered on a particular MAS ward.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [GMVGETD](http://code.osehra.org/dox/Routine_GMVGETD_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ GMRWARD | LITERAL | 30 | true | GMRWARD contains the name of ward from Ward Loca
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

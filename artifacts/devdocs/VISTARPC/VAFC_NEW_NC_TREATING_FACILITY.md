@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; VAFC NEW NC TREATING FACILITY
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; VAFC NEW NC TREATING FACILITY<br/>
 # VAFC NEW NC TREATING FACILITY
 
 This Remote Procedure Call will be used by the North Chicago Common Registration User Interface (UI).  Given a patient DFN and DOD EDIPI, the RPC adds an active Department of Defense correlation to the VistA TREATING FACILITY LIST (#391.91) file if it does not exist.  It returns a list of Treating Facilities, including Source Identifier, Identifier Type, Assigning Authority, Assigning Facility, Identifier Status, and an indicator if the entry was entered into File 391.91.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [VAFCTFU2](http://code.osehra.org/dox/Routine_VAFCTFU2_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ DOD Identifier | LITERAL | 255 | true | The DOD Identifier will be EDIPI data wi
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

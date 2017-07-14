@@ -3,22 +3,23 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; PSBIV COLUMN WIDTH
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; PSBIV COLUMN WIDTH<br/>
 # PSBIV COLUMN WIDTH
 
 None
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 90
 Summary | 
-Value Type | N/A
-Value Domain | N/A
+Value Type | 
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

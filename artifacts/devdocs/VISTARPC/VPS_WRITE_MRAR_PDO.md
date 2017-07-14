@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; VPS WRITE MRAR PDO
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; VPS WRITE MRAR PDO<br/>
 # VPS WRITE MRAR PDO
 
 Called by the Vetlink Kiosk system.  The RPC will accept 4 input parameters; and will return output when processing completes or ends with an exception.  Vetlink Kiosk has the Medication Review Allergy Review modules where a  veteran can review and make changes to his medicationsand any allergies.  The MRAR can also be facilitated by a provider.  Thelocal arrays identify the field to be updated along with the respectivedata changes and serves to the RPC.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [VPSMRAR1](http://code.osehra.org/dox/Routine_VPSMRAR1_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -26,4 +28,4 @@ VPSTYP | LITERAL | 7 | true | Patient ID Type. Valid Values for this parameter a
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

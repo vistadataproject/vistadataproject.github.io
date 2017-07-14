@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGV SET DGW CONFIG
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGV SET DGW CONFIG<br/>
 # MAGV SET DGW CONFIG
 
 Set DGW configuration settings in the MAGV GATEWAY CONFIGURATIONFile (#2006.9191).
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGVDGWP](http://code.osehra.org/dox/Routine_MAGVDGWP_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -28,4 +30,4 @@ LOCATION | LITERAL | 8 |  | DICOM GATEWAY LOCATION CODE(Site Location/Station nu
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,23 +3,24 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; DENTV EXAM NEXT REQUIRED
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; DENTV EXAM NEXT REQUIRED<br/>
 # DENTV EXAM NEXT REQUIRED
 
 This parameter will be used to distinguish how a provider wants the exam screen to function. If yes, the next button throughout the exam template will skip to the next required item, bypassing all optional data.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 687
 Summary | DENTV EXAM NEXT REQUIRED
 Value Type | yes
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | USER
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

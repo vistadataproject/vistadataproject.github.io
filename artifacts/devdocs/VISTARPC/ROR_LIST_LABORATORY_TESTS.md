@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ROR LIST LABORATORY TESTS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ROR LIST LABORATORY TESTS<br/>
 # ROR LIST LABORATORY TESTS
 
 The ROR LIST LABORATORY TESTS remote procedure returns a list of laboratory tests (defined in the LABORATORY TEST file), which conform the criteria.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [RORRP018](http://code.osehra.org/dox/Routine_RORRP018_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -27,4 +29,4 @@ FROM | LITERAL |  |  | The index entry(s) from which to begin the list  ^01: Fro
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

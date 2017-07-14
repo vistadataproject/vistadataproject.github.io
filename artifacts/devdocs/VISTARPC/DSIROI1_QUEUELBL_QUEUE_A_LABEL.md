@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIROI1 QUEUELBL QUEUE A LABEL
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIROI1 QUEUELBL QUEUE A LABEL<br/>
 # DSIROI1 QUEUELBL QUEUE A LABEL
 
 This routine adds a label to an individual clerk's queue for batch printing.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIROI1](http://code.osehra.org/dox/Routine_DSIROI1_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ AIEN | LITERAL | 20 | true | AIEN is the address IEN.  This points at file 19620
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

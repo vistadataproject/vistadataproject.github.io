@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Patient_Allergies-120_8
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Patient_Allergies-120_8<br/>
+<a name="top"></a>
 # Patient Allergies (120.8)
 Contains patient allergy/adverse reaction information.
 
-<dl>
-<dt>Global</dt><dd>^GMR(120.8,</dd>
-<dt>Domain</dt><dd>Allergies</dd>
-</dl>
+**Global:** ^GMR(120.8,
 
-### Properties
+**Domain:** Allergies
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -39,13 +39,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **User Entering In Error**{::nomarkdown}<pre><code>  user_entering_in_error</code></pre>{:/} | 24 | The person who entered this allergy/adverse reaction in error. | POINTER |  | [New_Person-200](New_Person-200)
 **Comments**{::nomarkdown}<pre><code>  comments</code></pre>{:/} | 26 | List of comments entered about this reaction. | OBJECT |  | [Comments-120_826](#Comments-120_826)
 
-### Subfile
-#### <a name="Reactions-120_81"></a>Reactions
+## Sub-Files
+### <a name="Reactions-120_81"></a>Reactions (120.81)
 
 <dl>
-<dt>ID</dt><dd>Reactions-120_81</dd>
-<dt>File Type</dt><dd>120.81</dd>
-<dt>Label</dt><dd>Reactions</dd></dl>
+<dt>ID</dt><dd>Reactions-120_81</dd></dl>
 
 #### Properties
 
@@ -56,12 +54,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Entered By**{::nomarkdown}<pre><code>  entered_by</code></pre>{:/} | 2 | The person who entered this reaction into the system. | POINTER |  | [New_Person-200](New_Person-200)
 **Date Entered**{::nomarkdown}<pre><code>  date_entered</code></pre>{:/} | 3 | This is where the user would enter the date that the reaction<br/>(Sign/Symptom) occurred or was entered into the computer. | DATE-TIME |  | 
 
-#### <a name="Chart_Marked-120_813"></a>Chart Marked
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Chart_Marked-120_813"></a>Chart Marked (120.813)
 
 <dl>
-<dt>ID</dt><dd>Chart_Marked-120_813</dd>
-<dt>File Type</dt><dd>120.813</dd>
-<dt>Label</dt><dd>Chart Marked</dd></dl>
+<dt>ID</dt><dd>Chart_Marked-120_813</dd></dl>
 
 #### Properties
 
@@ -70,12 +69,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Date/time**{::nomarkdown}<pre><code>  date_time</code></pre>{:/} | .01 | This field contains the date/time the user indicated to ART that the<br/>patient's chart was marked for this reactant. | DATE-TIME | INDEXED<br/>REQUIRED | 
 **User Entering**{::nomarkdown}<pre><code>  user_entering</code></pre>{:/} | 1 | This is the user who indicated that the chart was marked. | POINTER |  | [New_Person-200](New_Person-200)
 
-#### <a name="Id_Band_Marked-120_814"></a>Id Band Marked
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Id_Band_Marked-120_814"></a>Id Band Marked (120.814)
 
 <dl>
-<dt>ID</dt><dd>Id_Band_Marked-120_814</dd>
-<dt>File Type</dt><dd>120.814</dd>
-<dt>Label</dt><dd>Id Band Marked</dd></dl>
+<dt>ID</dt><dd>Id_Band_Marked-120_814</dd></dl>
 
 #### Properties
 
@@ -84,12 +84,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Date/time**{::nomarkdown}<pre><code>  date_time</code></pre>{:/} | .01 | This is the date/time the user indicated to the ATS that the patient's ID<br/>Band was marked for this reactant. | DATE-TIME | INDEXED<br/>REQUIRED | 
 **User Entering**{::nomarkdown}<pre><code>  user_entering</code></pre>{:/} | 1 | This is the user who indicated the ID band was marked. | POINTER |  | [New_Person-200](New_Person-200)
 
-#### <a name="Comments-120_826"></a>Comments
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Comments-120_826"></a>Comments (120.826)
 
 <dl>
-<dt>ID</dt><dd>Comments-120_826</dd>
-<dt>File Type</dt><dd>120.826</dd>
-<dt>Label</dt><dd>Comments</dd></dl>
+<dt>ID</dt><dd>Comments-120_826</dd></dl>
 
 #### Properties
 
@@ -100,6 +101,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Comment Type**{::nomarkdown}<pre><code>  comment_type</code></pre>{:/} | 1.5 | This field indicates the type of comments. If this field is<br/>answered "V", then these comments are verifier entered.  If this field is<br/>answered "O", then these are observer comments.  If this field is answered<br/>"E", then these are entered in error comments. | ENUMERATION | INDEXED | {::nomarkdown}OBSERVED: <em><strong>O</strong></em><br/>ERRORED: <em><strong>E</strong></em><br/>VERIFIED: <em><strong>V</strong></em>{:/}
 **Comments**{::nomarkdown}<pre><code>  comments</code></pre>{:/} | 2 | This field contains comments that were entered.<br/>                                            <br/>                                               | STRING |  | 
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

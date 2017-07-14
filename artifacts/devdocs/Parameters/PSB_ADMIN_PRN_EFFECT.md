@@ -3,23 +3,24 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; PSB ADMIN PRN EFFECT
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; PSB ADMIN PRN EFFECT<br/>
 # PSB ADMIN PRN EFFECT
 
 The number of minutes allowed to elapse between PRN administration and entry of PRN Effectiveness.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 275
 Summary | Allowed Mins to Enter PRN Effect
 Value Type | numeric
 Value Domain | 10:960:0
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | DIVISION
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

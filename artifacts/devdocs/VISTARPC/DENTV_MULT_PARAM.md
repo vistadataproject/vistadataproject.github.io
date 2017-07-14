@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DENTV MULT PARAM
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DENTV MULT PARAM<br/>
 # DENTV MULT PARAM
 
 This will return all instances for a parameter.  The Parameter should be multi-instance.  The difference between this call and the national XPAR call is that this call will return a value for every parameter-instance combination regardless of entity.  It will return the value for the entity of highest precedence.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DENTVRX1](http://code.osehra.org/dox/Routine_DENTVRX1_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ OTHER | LIST | 40 | true | This list array will allow you send in specific entit
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

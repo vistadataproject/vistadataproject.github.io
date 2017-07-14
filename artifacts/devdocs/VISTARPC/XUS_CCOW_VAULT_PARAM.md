@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; XUS CCOW VAULT PARAM
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; XUS CCOW VAULT PARAM<br/>
 # XUS CCOW VAULT PARAM
 
 This RPC returns a value for use with the CCOW vault.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -17,7 +19,7 @@ Return Type | ARRAY
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -27,10 +29,10 @@ Code | {::nomarkdown}<pre><code> N I,XU4<br/> S RET(0)="" I '$$BROKER^XWBLIB Q<b
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
-Executable Only | {::nomarkdown}N/A{:/}
+Executable Only | {::nomarkdown}{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

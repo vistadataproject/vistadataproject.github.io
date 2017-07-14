@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; PSB GETORDERTAB
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; PSB GETORDERTAB<br/>
 # PSB GETORDERTAB
 
 Gives the client VDL information for the specified patient and time frame.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [PSBVDLTB](http://code.osehra.org/dox/Routine_PSBVDLTB_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -27,4 +29,4 @@ PSBCLINORD | LITERAL | 1 | true | This parameter is a True/False flag (1/0).  If
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

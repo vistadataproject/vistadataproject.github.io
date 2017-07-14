@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Package-9_4
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Package-9_4<br/>
+<a name="top"></a>
 # Package (9.4)
 This file identifies the elements of a package that will be transported by the initialization routines created by DIFROM.  The prefix determines which namespaced entries will be retrieved from the Option, Bulletin, Help Frame, Function, and Security Key Files as well as the namespace that will be used to name the INIT routines built by running DIFROM. The Excluded Namespace field may be used to leave out some of these items. The File Multiple determines which files are sent with the package and whether data is included.  Print, Input, Sort and Screen (FORM) templates are brought in by namespace, for the files listed in the File multiple.  In addition, there are multiples for each type of template, that allow the user to specify individual templates outside the namespace to retrieve.  Routines to be run before and after the INIT are specified in the Environment Check Routine, Pre-init after User Commit, and Post-Initialization Routine fields. The remaining fields are simply for documentation.
 
-<dl>
-<dt>Global</dt><dd>^DIC(9.4,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^DIC(9.4,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -25,7 +25,7 @@ Field | ID | Description | Datatype | Attributes | Range
 **Input Template**{::nomarkdown}<pre><code>  input_template</code></pre>{:/} | 8 | The names of the Input Templates being sent with this Package<br/>This multiple is used to send non-namespaced templates in an INIT.<br/>Namespaced templates are sent automatically and need not be listed<br/>separately. | OBJECT |  | [Input_Template-9_47](#Input_Template-9_47)
 **Sort Template**{::nomarkdown}<pre><code>  sort_template</code></pre>{:/} | 9 | The names of the Sort Templates being sent with this Package.<br/>This multiple is used to send non-namespaced templates in an INIT.<br/>Namespaced templates are sent automatically and need not be listed<br/>separately. | OBJECT |  | [Sort_Template-9_48](#Sort_Template-9_48)
 **Screen Template (form)**{::nomarkdown}<pre><code>  screen_template_form</code></pre>{:/} | 9.1 | The names of Screen Templates (from the FORM file) associated with<br/>this package. | OBJECT |  | [Screen_Template_form-9_485](#Screen_Template_form-9_485)
-***menu**{::nomarkdown}<pre><code>  menu</code></pre>{:/} | 9.5 | This is the name of a menu-type option in another namespace. | OBJECT | DEPRECATED | N/A
+***menu**{::nomarkdown}<pre><code>  menu</code></pre>{:/} | 9.5 | This is the name of a menu-type option in another namespace. | OBJECT | DEPRECATED | 
 **Developer (person/site)**{::nomarkdown}<pre><code>  developer_person_site</code></pre>{:/} | 10 | The name of the principal Developer and Site for this Package. | STRING |  | 
 ***lowest File Number**{::nomarkdown}<pre><code>  lowest_file_number</code></pre>{:/} | 10.6 | Inclusive lower bound of the range of file numbers allocated to this package. | NUMERIC | DEPRECATED | 
 ***highest File Number**{::nomarkdown}<pre><code>  highest_file_number</code></pre>{:/} | 11 | Inclusive upper bound of the range of file numbers assigned to this package. | NUMERIC | DEPRECATED | 
@@ -45,13 +45,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Mail Group**{::nomarkdown}<pre><code>  mail_group</code></pre>{:/} | 1938 | This field points to a mail group that will receive a mail message from<br/>KIDS when a package or patch is installed. | POINTER |  | [Mail_Group-3_8](Mail_Group-3_8)
 **Synonym**{::nomarkdown}<pre><code>  synonym</code></pre>{:/} | 15007 |  | STRING |  | 
 
-### Subfile
-#### <a name="File-9_44"></a>File
+## Sub-Files
+### <a name="File-9_44"></a>File (9.44)
 
 <dl>
-<dt>ID</dt><dd>File-9_44</dd>
-<dt>File Type</dt><dd>9.44</dd>
-<dt>Label</dt><dd>File</dd></dl>
+<dt>ID</dt><dd>File-9_44</dd></dl>
 
 #### Properties
 
@@ -67,12 +65,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **May User Override Data Update**{::nomarkdown}<pre><code>  may_user_override_data_update</code></pre>{:/} | 222.9 | YES means that the user has the option to determine whether or not<br/>to bring in the data that has been sent with the package.  However,<br/>he does not get the ability to change from merge to overwrite or<br/>from overwrite to merge.<br/> <br/>No means that the developer of the INIT will control whether the data<br/>will be installed at the target site. | BOOLEAN |  | {::nomarkdown}false: <em><strong>n</strong></em><br/>true: <em><strong>y</strong></em>{:/}
 **Screen To Determine DD Update**{::nomarkdown}<pre><code>  screen_to_determine_dd_update</code></pre>{:/} | 223 | This field contains standard MUMPS code which is used to determine<br/>whether or not a data dictionary should be updated.  This code must<br/>set $T.  If $T=1, the DD will be updated.  If $T=0, it will not.<br/> <br/>This code will be executed within VA FileMan which may be being called<br/>from within MailMan which is being called from within MenuMan.<br/>Namespace your variables. | STRING |  | 
 
-#### <a name="Print_Template-9_46"></a>Print Template
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Print_Template-9_46"></a>Print Template (9.46)
 
 <dl>
-<dt>ID</dt><dd>Print_Template-9_46</dd>
-<dt>File Type</dt><dd>9.46</dd>
-<dt>Label</dt><dd>Print Template</dd></dl>
+<dt>ID</dt><dd>Print_Template-9_46</dd></dl>
 
 #### Properties
 
@@ -81,12 +80,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Print Template**{::nomarkdown}<pre><code>  print_template</code></pre>{:/} | .01 | The name of a Print Template being sent with this Package.<br/>This multiple is used to send non-namespaced templates in an INIT.<br/>Namespaced templates are sent automatically and need not be listed<br/>separately.  Selected Fields for Export and Export templates cannot be<br/>sent; entering their names here will have no effect. | STRING | REQUIRED | 
 **File**{::nomarkdown}<pre><code>  file</code></pre>{:/} | 2 | The FileMan file for this Print Template. | POINTER | REQUIRED | [File-1](File-1)
 
-#### <a name="Input_Template-9_47"></a>Input Template
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Input_Template-9_47"></a>Input Template (9.47)
 
 <dl>
-<dt>ID</dt><dd>Input_Template-9_47</dd>
-<dt>File Type</dt><dd>9.47</dd>
-<dt>Label</dt><dd>Input Template</dd></dl>
+<dt>ID</dt><dd>Input_Template-9_47</dd></dl>
 
 #### Properties
 
@@ -95,12 +95,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Input Template**{::nomarkdown}<pre><code>  input_template</code></pre>{:/} | .01 | The name of an Input Template being sent with this Package.<br/>This multiple is used to send non-namespaced templates in an INIT.<br/>Namespaced templates are sent automatically and need not be listed<br/>separately. | STRING | REQUIRED | 
 **File**{::nomarkdown}<pre><code>  file</code></pre>{:/} | 2 | The name of the FileMan file for this Input Template. | POINTER | REQUIRED | [File-1](File-1)
 
-#### <a name="Sort_Template-9_48"></a>Sort Template
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Sort_Template-9_48"></a>Sort Template (9.48)
 
 <dl>
-<dt>ID</dt><dd>Sort_Template-9_48</dd>
-<dt>File Type</dt><dd>9.48</dd>
-<dt>Label</dt><dd>Sort Template</dd></dl>
+<dt>ID</dt><dd>Sort_Template-9_48</dd></dl>
 
 #### Properties
 
@@ -109,12 +110,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Sort Template**{::nomarkdown}<pre><code>  sort_template</code></pre>{:/} | .01 | The name of a Sort Template being sent with this Package.<br/>This multiple is used to send non-namespaced templates in an INIT.<br/>Namespaced templates are sent automatically and need not be listed<br/>separately. | STRING | REQUIRED | 
 **File**{::nomarkdown}<pre><code>  file</code></pre>{:/} | 2 | The FileMan file for this Sort Template. | POINTER | REQUIRED | [File-1](File-1)
 
-#### <a name="Screen_Template_form-9_485"></a>Screen Template (form)
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Screen_Template_form-9_485"></a>Screen Template (form) (9.485)
 
 <dl>
-<dt>ID</dt><dd>Screen_Template_form-9_485</dd>
-<dt>File Type</dt><dd>9.485</dd>
-<dt>Label</dt><dd>Screen Template (form)</dd></dl>
+<dt>ID</dt><dd>Screen_Template_form-9_485</dd></dl>
 
 #### Properties
 
@@ -123,12 +125,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Screen Template (form)**{::nomarkdown}<pre><code>  screen_template_form</code></pre>{:/} | .01 | The name of a Screen Template (from the FORM file) associated with<br/>this Package. | STRING | REQUIRED | 
 **File**{::nomarkdown}<pre><code>  file</code></pre>{:/} | 2 | The name of the FileMan file for this Screen Template (FORM). | POINTER | REQUIRED | [File-1](File-1)
 
-#### <a name="Affects_Record_Merge-9_402"></a>Affects Record Merge
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Affects_Record_Merge-9_402"></a>Affects Record Merge (9.402)
 
 <dl>
-<dt>ID</dt><dd>Affects_Record_Merge-9_402</dd>
-<dt>File Type</dt><dd>9.402</dd>
-<dt>Label</dt><dd>Affects Record Merge</dd></dl>
+<dt>ID</dt><dd>Affects_Record_Merge-9_402</dd></dl>
 
 #### Properties
 
@@ -138,12 +141,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Name Of Merge Routine**{::nomarkdown}<pre><code>  name_of_merge_routine</code></pre>{:/} | 3 | This field holds the routine name to call when two records in<br/>an affected file are to be merged. This allows the package to<br/>do any repointing or other clean-up needed before the records<br/>are merged. | STRING |  | 
 **Record Has Package Data**{::nomarkdown}<pre><code>  record_has_package_data</code></pre>{:/} | 4 |  | STRING |  | 
 
-#### <a name="Version-9_49"></a>Version
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Version-9_49"></a>Version (9.49)
 
 <dl>
-<dt>ID</dt><dd>Version-9_49</dd>
-<dt>File Type</dt><dd>9.49</dd>
-<dt>Label</dt><dd>Version</dd></dl>
+<dt>ID</dt><dd>Version-9_49</dd></dl>
 
 #### Properties
 
@@ -156,12 +160,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Description Of Enhancements**{::nomarkdown}<pre><code>  description_of_enhancements</code></pre>{:/} | 41 | This is a description of the enhancements being distributed with this<br/>release. | STRING |  | 
 **Patch Application History**{::nomarkdown}<pre><code>  patch_application_history</code></pre>{:/} | 1105 |  | OBJECT |  | [Patch_Application_History-9_4901](#Patch_Application_History-9_4901)
 
-#### <a name="Patch_Application_History-9_4901"></a>Patch Application History
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Patch_Application_History-9_4901"></a>Patch Application History (9.4901)
 
 <dl>
-<dt>ID</dt><dd>Patch_Application_History-9_4901</dd>
-<dt>File Type</dt><dd>9.4901</dd>
-<dt>Label</dt><dd>Patch Application History</dd></dl>
+<dt>ID</dt><dd>Patch_Application_History-9_4901</dd></dl>
 
 #### Properties
 
@@ -172,6 +177,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Applied By**{::nomarkdown}<pre><code>  applied_by</code></pre>{:/} | .03 |  | POINTER |  | [New_Person-200](New_Person-200)
 **Description**{::nomarkdown}<pre><code>  description</code></pre>{:/} | 1 | This is a description of the patch being distributed with this release. | STRING |  | 
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

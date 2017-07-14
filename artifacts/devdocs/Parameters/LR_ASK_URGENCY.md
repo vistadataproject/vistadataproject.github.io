@@ -3,23 +3,24 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; LR ASK URGENCY
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; LR ASK URGENCY<br/>
 # LR ASK URGENCY
 
 Answer YES to this field to prompt with urgency for every test whenordering through OE/RR.  Tests with a forced urgency as defined in theLaboratory test file overide this parameter.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 193
 Summary | Ask Urgency
 Value Type | yes
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | LOCATION
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

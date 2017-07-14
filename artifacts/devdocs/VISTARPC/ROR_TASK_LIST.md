@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ROR TASK LIST
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ROR TASK LIST<br/>
 # ROR TASK LIST
 
 The ROR TASK LIST remote procedure returns a list of user's tasks scheduled from the GUI.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [RORRP010](http://code.osehra.org/dox/Routine_RORRP010_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ USER | LITERAL |  |  | A user IEN (DUZ) can be assigned to the USER parameter. O
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

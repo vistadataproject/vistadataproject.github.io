@@ -3,23 +3,24 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; SDEC MENTAL HEALTH STOP CODES
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; SDEC MENTAL HEALTH STOP CODES<br/>
 # SDEC MENTAL HEALTH STOP CODES
 
 None
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 816
 Summary | Scheduling Mental Health Stop Codes
 Value Type | yes
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | true
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | PACKAGE
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

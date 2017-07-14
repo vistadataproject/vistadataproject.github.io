@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIV ACCEPT BUFFER ENTRY
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIV ACCEPT BUFFER ENTRY<br/>
 # DSIV ACCEPT BUFFER ENTRY
 
 Processes INSURANCE BUFFER file entry to insurance filesand patient insurance type multiple.  Marks buffer entrySTATUS=ACCEPTED.  This RPC should perform the same actionsas the List Manager "Accept" action.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIVICA](http://code.osehra.org/dox/Routine_DSIVICA_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -36,4 +38,4 @@ IBDATA | LITERAL | 100 | true | IBDATA array containts the following variables a
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

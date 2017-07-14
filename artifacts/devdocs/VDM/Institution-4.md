@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Institution-4
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Institution-4<br/>
+<a name="top"></a>
 # Institution (4)
 This file contains a listing of VA institutions.  It is cross-referenced by name and station number.  The Number field is no longer meaningful (it had previously referenced the station number).
 
-<dl>
-<dt>Global</dt><dd>^DIC(4,</dd>
-<dt>Domain</dt><dd>Problems</dd>
-</dl>
+**Global:** ^DIC(4,
 
-### Properties
+**Domain:** Problems
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -54,13 +54,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **History**{::nomarkdown}<pre><code>  history</code></pre>{:/} | 999.1 |  | OBJECT |  | [History-4_999](#History-4_999)
 **Identifier**{::nomarkdown}<pre><code>  identifier</code></pre>{:/} | 9999 |  | OBJECT |  | [Identifier-4_9999](#Identifier-4_9999)
 
-### Subfile
-#### <a name="Contact-4_03"></a>Contact
+## Sub-Files
+### <a name="Contact-4_03"></a>Contact (4.03)
 
 <dl>
-<dt>ID</dt><dd>Contact-4_03</dd>
-<dt>File Type</dt><dd>4.03</dd>
-<dt>Label</dt><dd>Contact</dd></dl>
+<dt>ID</dt><dd>Contact-4_03</dd></dl>
 
 #### Properties
 
@@ -70,12 +68,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Area**{::nomarkdown}<pre><code>  area</code></pre>{:/} | .02 | Pointer to the part of the site the contact works in. | POINTER |  | [Hospital_Location-44](Hospital_Location-44)
 **Phone #**{::nomarkdown}<pre><code>  phone_number</code></pre>{:/} | .03 | Telephone number. | STRING |  | 
 
-#### <a name="Associations-4_014"></a>Associations
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Associations-4_014"></a>Associations (4.014)
 
 <dl>
-<dt>ID</dt><dd>Associations-4_014</dd>
-<dt>File Type</dt><dd>4.014</dd>
-<dt>Label</dt><dd>Associations</dd></dl>
+<dt>ID</dt><dd>Associations-4_014</dd></dl>
 
 #### Properties
 
@@ -84,12 +83,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Associations**{::nomarkdown}<pre><code>  associations</code></pre>{:/} | .01 | This multiple field is used to link groups if Institutions into<br/>associations. | POINTER | INDEXED<br/>REQUIRED | [Institution_Association_Types-4_05](Institution_Association_Types-4_05)
 **Parent Of Association**{::nomarkdown}<pre><code>  parent_of_association</code></pre>{:/} | 1 | This field points back to the Institution file to indicate the<br/>parent of the association. | POINTER |  | [Institution-4](Institution-4)
 
-#### <a name="Effective_Date_time-4_042"></a>Effective Date/time
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Effective_Date_time-4_042"></a>Effective Date/time (4.042)
 
 <dl>
-<dt>ID</dt><dd>Effective_Date_time-4_042</dd>
-<dt>File Type</dt><dd>4.042</dd>
-<dt>Label</dt><dd>Effective Date/time</dd></dl>
+<dt>ID</dt><dd>Effective_Date_time-4_042</dd></dl>
 
 #### Properties
 
@@ -99,12 +99,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Status**{::nomarkdown}<pre><code>  status</code></pre>{:/} | .02 | The Status of an NPI is either 'ACTIVE' or 'INACTIVE'. I 'ACTIVE' then <br/>the NPI will be accessible by end-users to document a particular provider.<br/>If 'INACTIVE', then the NPI will only be accessible by the application to<br/>display legacy data. | ENUMERATION | REQUIRED | {::nomarkdown}ACTIVE: <em><strong>1</strong></em><br/>INACTIVE: <em><strong>0</strong></em>{:/}
 **Npi**{::nomarkdown}<pre><code>  npi</code></pre>{:/} | .03 | Unique National Provider ID. A unique meaningless integer assigned to<br/>providers.  | STRING | INDEXED<br/>REQUIRED | 
 
-#### <a name="Taxonomy_Code-4_043"></a>Taxonomy Code
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Taxonomy_Code-4_043"></a>Taxonomy Code (4.043)
 
 <dl>
-<dt>ID</dt><dd>Taxonomy_Code-4_043</dd>
-<dt>File Type</dt><dd>4.043</dd>
-<dt>Label</dt><dd>Taxonomy Code</dd></dl>
+<dt>ID</dt><dd>Taxonomy_Code-4_043</dd></dl>
 
 #### Properties
 
@@ -114,12 +115,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Primary Code**{::nomarkdown}<pre><code>  primary_code</code></pre>{:/} | .02 | Only one code can be the primary taxonomy code for a provider. When a <br/>specific taxonomy code is identified it is the primary code that will be <br/>the default. | BOOLEAN | INDEXED | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
 **Status**{::nomarkdown}<pre><code>  status</code></pre>{:/} | .03 | If a taxonomy code listed for a provider is a currently active code (one <br/>they use today), then the status should be marked with an 'A'. At times a<br/>provider will no longer use a taxonomy code. This code will be marked with<br/>an 'I' for inactive. Codes should not be removed from a provider's list.<br/>They should be activated or inactivated. | ENUMERATION |  | {::nomarkdown}ACTIVE: <em><strong>A</strong></em><br/>INACTIVE: <em><strong>I</strong></em>{:/}
 
-#### <a name="History-4_999"></a>History
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="History-4_999"></a>History (4.999)
 
 <dl>
-<dt>ID</dt><dd>History-4_999</dd>
-<dt>File Type</dt><dd>4.999</dd>
-<dt>Label</dt><dd>History</dd></dl>
+<dt>ID</dt><dd>History-4_999</dd></dl>
 
 #### Properties
 
@@ -133,12 +135,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Deactivated Facility / Sta #**{::nomarkdown}<pre><code>  deactivated_facility___sta_number</code></pre>{:/} | .07 |  | ENUMERATION |  | {::nomarkdown}DEACTIVATED: <em><strong>1</strong></em>{:/}
 **Activated Facility**{::nomarkdown}<pre><code>  activated_facility</code></pre>{:/} | .08 |  | ENUMERATION |  | {::nomarkdown}ACTIVATED: <em><strong>1</strong></em>{:/}
 
-#### <a name="Identifier-4_9999"></a>Identifier
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Identifier-4_9999"></a>Identifier (4.9999)
 
 <dl>
-<dt>ID</dt><dd>Identifier-4_9999</dd>
-<dt>File Type</dt><dd>4.9999</dd>
-<dt>Label</dt><dd>Identifier</dd></dl>
+<dt>ID</dt><dd>Identifier-4_9999</dd></dl>
 
 #### Properties
 
@@ -149,6 +152,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Effective Date/time**{::nomarkdown}<pre><code>  effective_date_time</code></pre>{:/} | .03 | Describes the pair Status and Effective Date/Time for each reference term. | DATE-TIME |  | 
 **Status**{::nomarkdown}<pre><code>  status</code></pre>{:/} | .04 | The Status of a reference term is either 'ACTIVE' or 'INACTIVE', then the <br/>term will be accessible by end-users to document a particular patient <br/>event. If 'INACTIVE', then the term will only be accessible by the <br/>application to display legacy data. | ENUMERATION |  | {::nomarkdown}ACTIVE: <em><strong>1</strong></em><br/>INACTIVE: <em><strong>0</strong></em>{:/}
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

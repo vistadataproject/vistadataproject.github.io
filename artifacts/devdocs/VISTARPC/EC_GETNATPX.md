@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; EC GETNATPX
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; EC GETNATPX<br/>
 # EC GETNATPX
 
 Returns an array of active, inactive or both of Event Capture national and local Procedures from file #725.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [ECUMRPC](http://code.osehra.org/dox/Routine_ECUMRPC_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ ECARY | LITERAL |  |  | Input variable ECARY contains the following subscripted 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

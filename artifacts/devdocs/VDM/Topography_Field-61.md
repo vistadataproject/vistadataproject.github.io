@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Topography_Field-61
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Topography_Field-61<br/>
+<a name="top"></a>
 # Topography Field (61)
 This is the TOPOGRAPHY file of SNOMED
 
-<dl>
-<dt>Global</dt><dd>^LAB(61,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^LAB(61,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -35,13 +35,11 @@ Field | ID | Description | Datatype | Attributes | Range
 ***negative Bacteriology Comment**{::nomarkdown}<pre><code>  negative_bacteriology_comment</code></pre>{:/} | 63.05 | This comment facilitates batch entry of microbiology results.  The text contained in this field is the default comment for the named specimen. | STRING | DEPRECATED | 
 **Inactive Date**{::nomarkdown}<pre><code>  inactive_date</code></pre>{:/} | 64.9103 | This is the date on or after which the entry will no longer be active.  <br/>Inactive entries will not be available for selection in CPRS nor be able<br/>to be associated with a test in the LABORATORY TEST file (#60).   | DATE-TIME |  | 
 
-### Subfile
-#### <a name="Journal_Reference-61_02"></a>Journal Reference
+## Sub-Files
+### <a name="Journal_Reference-61_02"></a>Journal Reference (61.02)
 
 <dl>
-<dt>ID</dt><dd>Journal_Reference-61_02</dd>
-<dt>File Type</dt><dd>61.02</dd>
-<dt>Label</dt><dd>Journal Reference</dd></dl>
+<dt>ID</dt><dd>Journal_Reference-61_02</dd></dl>
 
 #### Properties
 
@@ -55,12 +53,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Date**{::nomarkdown}<pre><code>  date</code></pre>{:/} | 5 | Date of article. | DATE-TIME |  | 
 **List On Patient Record**{::nomarkdown}<pre><code>  list_on_patient_record</code></pre>{:/} | 6 | If this reference is to be listed on a patient record whenever this specimen is used, this field requires a YES entry. | BOOLEAN |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
 
-#### <a name="Sct_Status_Date-61_023"></a>Sct Status Date
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Sct_Status_Date-61_023"></a>Sct Status Date (61.023)
 
 <dl>
-<dt>ID</dt><dd>Sct_Status_Date-61_023</dd>
-<dt>File Type</dt><dd>61.023</dd>
-<dt>Label</dt><dd>Sct Status Date</dd></dl>
+<dt>ID</dt><dd>Sct_Status_Date-61_023</dd></dl>
 
 #### Properties
 
@@ -72,6 +71,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Sct Status User**{::nomarkdown}<pre><code>  sct_status_user</code></pre>{:/} | 3 | Store the user who initiated the process to apply the STS SNOMED CT code <br/>resolution or the original mapping to this file entry. | POINTER |  | [New_Person-200](New_Person-200)
 **Sct Comment Text**{::nomarkdown}<pre><code>  sct_comment_text</code></pre>{:/} | 4 | Contains text or comments related to the mapping of a term to SNOMED CT.<br/>The text can relate to information submitted to STS for the term to be <br/>mapped, the comments returned by STS related to the mapping and <br/>any comments when attempting to apply the disposition from STS. | STRING |  | 
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

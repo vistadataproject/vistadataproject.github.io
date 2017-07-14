@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGV TRAVERSE SOP
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGV TRAVERSE SOP<br/>
 # MAGV TRAVERSE SOP
 
 This RPC allows the user to traverse the entries on the IMAGE SOP INSTANCEFile (#2005.64) that are indexed under an entry on the IMAGE SERIES File(#2005.63).
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGVRS09](http://code.osehra.org/dox/Routine_MAGVRS09_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ CHILDIEN | LITERAL | 10 |  | This is the internal entry number of the entry on t
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

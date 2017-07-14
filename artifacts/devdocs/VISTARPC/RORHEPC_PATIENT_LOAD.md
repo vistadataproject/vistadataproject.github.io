@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; RORHEPC PATIENT LOAD
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; RORHEPC PATIENT LOAD<br/>
 # RORHEPC PATIENT LOAD
 
 The RORHEPC PATIENT LOAD remote procedure loads the patient's data fromthe Hepatitis C registry and prepares the record for editing.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [RORRP036](http://code.osehra.org/dox/Routine_RORRP036_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ LOCK | LITERAL |  |  | If this parameter is defined and not zero then the RPC wi
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

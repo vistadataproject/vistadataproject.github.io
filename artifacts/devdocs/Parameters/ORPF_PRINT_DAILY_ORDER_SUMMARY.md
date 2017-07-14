@@ -3,23 +3,24 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; ORPF PRINT DAILY ORDER SUMMARY
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; ORPF PRINT DAILY ORDER SUMMARY<br/>
 # ORPF PRINT DAILY ORDER SUMMARY
 
 This parameter specifies to the nightly background job ORTASK 24HR SUMMARYthat a daily order summary should be queued to the device specified in theDAILY ORDER SUMMARY DEVICE field.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 136
 Summary | Print Daily Order Summary
 Value Type | yes
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | LOCATION
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

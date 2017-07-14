@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIF INP EDIT 7078
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIF INP EDIT 7078<br/>
 # DSIF INP EDIT 7078
 
 This RPC allows the update of certain fields in the 7078 and FEE PATIENT files.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIFNOT6](http://code.osehra.org/dox/Routine_DSIFNOT6_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -36,4 +38,4 @@ CONTRACT IEN | LITERAL | 25 | true | IEN of the FEE BASIS CONTRACT file (Optiona
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

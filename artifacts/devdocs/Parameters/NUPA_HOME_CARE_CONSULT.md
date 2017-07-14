@@ -3,20 +3,21 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; NUPA HOME CARE CONSULT
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; NUPA HOME CARE CONSULT<br/>
 # NUPA HOME CARE CONSULT
 
 This is the name of the Home Care Consult used in each division of yoursite.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 651
 Summary | Home Care consult name
 Value Type | pointer
 Value Domain | 123.5
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
@@ -24,4 +25,4 @@ Precedence | Entity
 2 | DIVISION
 3 | SYSTEM
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

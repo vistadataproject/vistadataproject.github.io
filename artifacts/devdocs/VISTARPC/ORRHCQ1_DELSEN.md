@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ORRHCQ1 DELSEN
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ORRHCQ1 DELSEN<br/>
 # ORRHCQ1 DELSEN
 
 Deletes the sensitive patient from the sensitive patient list generatedfor the currently executing query.  No further evaluation of the patients record will take place.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [ORRHCQ1](http://code.osehra.org/dox/Routine_ORRHCQ1_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ DFN | LITERAL | 80 | true | The DFN of the record to remove.
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

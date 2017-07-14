@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; YTQ GET REPORT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; YTQ GET REPORT<br/>
 # YTQ GET REPORT
 
 Gets a report format from MH REPORTS file (#601.93)        Input: CODE as instrument name        Output:[DATA]^IENS of 601.93 vs [ERROR]                 LINE# ^ line text
+
+## Properties
 
 Property | Value
 --- | ---
@@ -17,4 +19,4 @@ Return Type | GLOBAL ARRAY
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

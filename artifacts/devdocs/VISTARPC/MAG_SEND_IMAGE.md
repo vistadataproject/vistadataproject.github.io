@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAG SEND IMAGE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAG SEND IMAGE<br/>
 # MAG SEND IMAGE
 
 QUEUE IMAGE TO A DESTINATION
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGROI01](http://code.osehra.org/dox/Routine_MAGROI01_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -26,4 +28,4 @@ TYPE | LITERAL | 1 | true | Type of Image: 1:DOS, 2:DICOM
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

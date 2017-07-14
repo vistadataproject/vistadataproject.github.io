@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; VPS PATIENT WRISTBAND PRINT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; VPS PATIENT WRISTBAND PRINT<br/>
 # VPS PATIENT WRISTBAND PRINT
 
 This RPC prints patient wristband to VistA printer using VistA standard patPatient Wristband Print routine (DGPWB).
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [VPSWRIST](http://code.osehra.org/dox/Routine_VPSWRIST_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ VPSNUM | LITERAL | 50 | true | Patient ID. This could be DFN, SSN, ICN, VIC/CAC
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

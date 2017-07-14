@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIV EXCEPTION REPORT2
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIV EXCEPTION REPORT2<br/>
 # DSIV EXCEPTION REPORT2
 
 Kicks off a background job to run the ICB Exception report (users who did not enter buffer entries in a timely manner).
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIVICR1](http://code.osehra.org/dox/Routine_DSIVICR1_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -26,4 +28,4 @@ DSIVLOCS | LIST | 30 | true | Contains a list of clinics to return for the repor
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

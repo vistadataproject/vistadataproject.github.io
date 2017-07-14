@@ -3,20 +3,21 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; DENTV DRM DEF STARTUP TAB
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; DENTV DRM DEF STARTUP TAB<br/>
 # DENTV DRM DEF STARTUP TAB
 
 Enter the major tab that the DRM GUI should open up in when launched.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 320
 Summary | Default DRM Startup Tab
 Value Type | set of codes
 Value Domain | 0:CoverPage;1:Clinical;2:History;3:EncounterChart
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
@@ -24,4 +25,4 @@ Precedence | Entity
 5 | PACKAGE
 9 | SYSTEM
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; VAFC REMOTE PDAT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; VAFC REMOTE PDAT<br/>
 # VAFC REMOTE PDAT
 
 This Remote Procedure Call will return the text Patient MPI/PD Data Inquiry report to a remote site.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [VAFCRPC](http://code.osehra.org/dox/Routine_VAFCRPC_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ SSN | LITERAL | 9 | true |
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,20 +3,21 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; ORK GLUCOPHAGE CREATININE
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; ORK GLUCOPHAGE CREATININE<br/>
 # ORK GLUCOPHAGE CREATININE
 
 The number of days to look back in time for patient&#x27;s most recentcreatinine.  This value is used in the Glucophage - Lab Results ordercheck.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 258
 Summary | Creatinine Results for Glucophage
 Value Type | numeric
 Value Domain | 0:10000:0
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
@@ -25,4 +26,4 @@ Precedence | Entity
 3 | SYSTEM
 4 | PACKAGE
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

@@ -3,18 +3,18 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Drug_Ingredients-50_416
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Drug_Ingredients-50_416<br/>
+<a name="top"></a>
 # Drug Ingredients (50.416)
 None
 
-<dl>
-<dt>Global</dt><dd>^PS(50.416,</dd>
-<dt>Domain</dt><dd>Allergies</dd>
-</dl>
+**Global:** ^PS(50.416,
 
-### Properties
+**Domain:** Allergies
+
+## Properties
 
 <strong>None</strong>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

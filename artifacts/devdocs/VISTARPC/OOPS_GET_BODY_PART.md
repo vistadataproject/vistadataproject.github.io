@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; OOPS GET BODY PART
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; OOPS GET BODY PART<br/>
 # OOPS GET BODY PART
 
 Call this to return a list of body parts from file ^OOPS(2261.1 that do nothave a numeric value in the code field.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -17,4 +19,4 @@ Return Type | ARRAY
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

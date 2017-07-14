@@ -3,20 +3,21 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; DENTV TP CODE BOILERPLATE
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; DENTV TP CODE BOILERPLATE<br/>
 # DENTV TP CODE BOILERPLATE
 
 This parameter contains word processing templates that are stuffed into the progress note for the associated ADA codes in the Dental transaction.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 375
 Summary | CODE BOILERPLATE (COMPREHENSIVE EXAM)
 Value Type | word processing
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | true
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
@@ -24,4 +25,4 @@ Precedence | Entity
 5 | PACKAGE
 10 | SYSTEM
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

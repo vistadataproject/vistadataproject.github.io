@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; SPN INPAT CARE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; SPN INPAT CARE<br/>
 # SPN INPAT CARE
 
 Returns detailed information for Applications for Inpatient Care for a list of given patients (list of ICNs) based on a date range. 
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [SPNJRPIC](http://code.osehra.org/dox/Routine_SPNJRPIC_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ TDATE | LITERAL |  |  | Date to end search at.
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

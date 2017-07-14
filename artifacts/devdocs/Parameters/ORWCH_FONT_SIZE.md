@@ -3,20 +3,21 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; ORWCH FONT SIZE
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; ORWCH FONT SIZE<br/>
 # ORWCH FONT SIZE
 
 This saves the preferred font size for CPRS Chart.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 4678
 Summary | Font Size for Chart
 Value Type | numeric
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
@@ -24,4 +25,4 @@ Precedence | Entity
 7 | DIVISION
 8 | SYSTEM
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

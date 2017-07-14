@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ORQQVI VITALS FOR DATE RANGE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ORQQVI VITALS FOR DATE RANGE<br/>
 # ORQQVI VITALS FOR DATE RANGE
 
 Function returns a patient's vital measurements between start date and stop date.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [ORQQVI](http://code.osehra.org/dox/Routine_ORQQVI_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,7 +27,7 @@ STOP DATE/TIME | LITERAL | 16 |  | Stop date/time for vital retrieval in Fileman
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -37,10 +39,10 @@ Code | {::nomarkdown}<pre><code> K ^UTILITY($J,"GMRVD")<br/> S GMRVSTR="BP;HT;WT
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
-NOT OSEHRA CPRS | {::nomarkdown}N/A{:/}
+NOT OSEHRA CPRS | {::nomarkdown}{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

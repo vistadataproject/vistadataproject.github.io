@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIC ACTIVE USER LIST
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIC ACTIVE USER LIST<br/>
 # DSIC ACTIVE USER LIST
 
 This will return a list of active users matching the lookup value.  You can pass in additional screening logic if so desired, such as security keys. It is the programmers responsibility to ensure that the total length of the date returned in each return value does not exceed 250 characters.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSICDUZ](http://code.osehra.org/dox/Routine_DSICDUZ_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ SCR | LIST | 250 | true | This RPC will return a list of active users.  You may 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

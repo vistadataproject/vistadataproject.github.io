@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIC ACTIVE PERSON CLASS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIC ACTIVE PERSON CLASS<br/>
 # DSIC ACTIVE PERSON CLASS
 
 This will return a user's active person class for a given date.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSICDUZ](http://code.osehra.org/dox/Routine_DSICDUZ_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ DATE | LITERAL | 14 | true | This is a Fileman date.time for the date to check f
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

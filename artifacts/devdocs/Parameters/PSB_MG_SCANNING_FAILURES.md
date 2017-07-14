@@ -3,23 +3,24 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; PSB MG SCANNING FAILURES
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; PSB MG SCANNING FAILURES<br/>
 # PSB MG SCANNING FAILURES
 
 Mailgroup to notify when an item is documented as not able to be scanned.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 502
 Summary | BCMA Scanning Failures Mail Group
 Value Type | pointer
 Value Domain | 3.8
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 2 | DIVISION
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

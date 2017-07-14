@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIC XPAR MULT ACTION
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIC XPAR MULT ACTION<br/>
 # DSIC XPAR MULT ACTION
 
 This is a multi-function front end to the Parameter APIs.  It allows you with a single RPC call to take edit type actions on several parameter/entity/instance combinations. You can only do these actions:  add, change, or delete Each entry in the passed list is treated as if it was a separate RPC call.  Thus each entry is totally independent of the others.  So you can mix and match parameters, entities, instances, and actions.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSICXPR](http://code.osehra.org/dox/Routine_DSICXPR_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ DSICLIST | LIST | 250 | true | DSICLIST - required - p1^p2^p3^p4^p5^p6^p7  where
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

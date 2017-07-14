@@ -3,24 +3,25 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; ORWOR COVER RETRIEVAL
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; ORWOR COVER RETRIEVAL<br/>
 # ORWOR COVER RETRIEVAL
 
 This parameter controls whether each cover sheet section is loaded in theforeground or background.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 246
 Summary | Cover Sheet Retrieval Mode
 Value Type | yes
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | true
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | SYSTEM
 2 | PACKAGE
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

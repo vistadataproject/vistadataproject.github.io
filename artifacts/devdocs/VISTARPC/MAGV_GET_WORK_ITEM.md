@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGV GET WORK ITEM
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGV GET WORK ITEM<br/>
 # MAGV GET WORK ITEM
 
 This RPC returns all of the data elements for a single entry in theMAG WORK ITEM file (#2006.941).
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGVIM01](http://code.osehra.org/dox/Routine_MAGVIM01_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -27,4 +29,4 @@ UPDAPP | LITERAL |  |  | This is the application/service that has updated the wo
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

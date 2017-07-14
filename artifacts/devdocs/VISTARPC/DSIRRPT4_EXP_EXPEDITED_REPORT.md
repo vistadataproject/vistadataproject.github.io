@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIRRPT4 EXP EXPEDITED REPORT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIRRPT4 EXP EXPEDITED REPORT<br/>
 # DSIRRPT4 EXP EXPEDITED REPORT
 
 This procedure schedules or runs the Expedited Processing Report.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIRRPT4](http://code.osehra.org/dox/Routine_DSIRRPT4_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -27,4 +29,4 @@ ESTART | LITERAL | 15 | true | This is the earliest start time for a task to lau
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

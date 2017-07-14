@@ -3,24 +3,25 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; DENTV DRM PLUS POSITION
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; DENTV DRM PLUS POSITION<br/>
 # DENTV DRM PLUS POSITION
 
 This parameter will contain the saved window position for a user. This is so that once a user sets a window location, they will not have to reset it upon reopening DRM Plus.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 685
 Summary | DRM POSITION
 Value Type | free text
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | USER
 5 | SYSTEM
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

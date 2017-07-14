@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Wv_Notification_Purpose-790_404
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Wv_Notification_Purpose-790_404<br/>
+<a name="top"></a>
 # Wv Notification Purpose (790.404)
 This file contains reasons for the notification i.e., the notification is in response to (a) the results of a test or procedure or (b) the scheduling of future treatment needs.  The other fields in this file are used to (1) assign a priority (urgent, as soon as possible, routine), (2) associate a synonym or abbreviation, (3) flag an entry as active or inactive, (4) store the text of the letter, (5) calculate default print dates for letters to patients on breast and cervical treatment needs, and (6) indicate whether a letter should be printed today or in the future.   Letters may be created and edited by the case manager through the Add/Edit a Notification Purpose & Letter option.  All information in this file, can be printed through the Print Notification Purpose & Letter File option. Notification information can be entered into a patient's record through the Add a New Notification and Edit a Notification options.
 
-<dl>
-<dt>Global</dt><dd>^WV(790.404,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^WV(790.404,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -30,4 +30,4 @@ Field | ID | Description | Datatype | Attributes | Range
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

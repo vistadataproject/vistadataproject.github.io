@@ -3,23 +3,24 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; DGPF QUERY TRY LIMIT
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; DGPF QUERY TRY LIMIT<br/>
 # DGPF QUERY TRY LIMIT
 
 This value is used by the Patient Record Flags module to control the maximum number of query attempts that are allowed. 
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 453
 Summary | Patient Record Flags Query Try Limit
 Value Type | numeric
 Value Domain | 1:30
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | PACKAGE
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

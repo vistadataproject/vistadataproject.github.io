@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Hl7_Message_Exceptions-79_3
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Hl7_Message_Exceptions-79_3<br/>
+<a name="top"></a>
 # Hl7 Message Exceptions (79.3)
 None
 
-<dl>
-<dt>Global</dt><dd>^RA(79.3,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^RA(79.3,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -26,4 +26,4 @@ Field | ID | Description | Datatype | Attributes | Range
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

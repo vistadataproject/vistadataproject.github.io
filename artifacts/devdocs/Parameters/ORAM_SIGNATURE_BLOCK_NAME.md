@@ -3,24 +3,25 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; ORAM SIGNATURE BLOCK NAME
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; ORAM SIGNATURE BLOCK NAME<br/>
 # ORAM SIGNATURE BLOCK NAME
 
 Signing name to be used in the letter signature blocks.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 593
 Summary | Signature Block Name or Clinic
 Value Type | free text
 Value Domain | 1:45
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | LOCATION
 2 | DIVISION
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

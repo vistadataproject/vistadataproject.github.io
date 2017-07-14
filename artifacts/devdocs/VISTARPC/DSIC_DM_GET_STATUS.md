@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIC DM GET STATUS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIC DM GET STATUS<br/>
 # DSIC DM GET STATUS
 
 This will return the status(es) of import requests for an individual DSS application. If you pass the transaction ID then the status of thattransaction will be returned.  You can also retrieve the statuses of allrequests or all requests of a certain status.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSICDM](http://code.osehra.org/dox/Routine_DSICDM_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -26,4 +28,4 @@ APP | LITERAL | 7 | true | This is the application code assigned to a DSS applic
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

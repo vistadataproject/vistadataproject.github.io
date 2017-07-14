@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Medication_Routes-51_2
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Medication_Routes-51_2<br/>
+<a name="top"></a>
 # Medication Routes (51.2)
 None
 
-<dl>
-<dt>Global</dt><dd>^PS(51.2,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^PS(51.2,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -28,13 +28,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Dsply On Ivp/ivpb Tab In Bcma?**{::nomarkdown}<pre><code>  dsply_on_ivp_ivpb_tab_in_bcma</code></pre>{:/} | 9 |  | BOOLEAN |  | {::nomarkdown}false: <em><strong>1</strong></em><br/>true: <em><strong>0</strong></em>{:/}
 **Standard Medication Route**{::nomarkdown}<pre><code>  standard_medication_route</code></pre>{:/} | 10 | This is a pointer to the Standard Medication Routes (#51.23) File. This <br/>link will allow standardization of the local Medication Route, to be used <br/>for various purposes, such as using a Standard Med Route for Vendor order <br/>checks. | POINTER |  | [Standard_Medication_Routes-51_23](Standard_Medication_Routes-51_23)
 
-### Subfile
-#### <a name="Standard_Med_Route_Change_Log-51_27"></a>Standard Med Route Change Log
+## Sub-Files
+### <a name="Standard_Med_Route_Change_Log-51_27"></a>Standard Med Route Change Log (51.27)
 
 <dl>
-<dt>ID</dt><dd>Standard_Med_Route_Change_Log-51_27</dd>
-<dt>File Type</dt><dd>51.27</dd>
-<dt>Label</dt><dd>Standard Med Route Change Log</dd></dl>
+<dt>ID</dt><dd>Standard_Med_Route_Change_Log-51_27</dd></dl>
 
 #### Properties
 
@@ -45,6 +43,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Old Value**{::nomarkdown}<pre><code>  old_value</code></pre>{:/} | 2 | This is the previous value of the STANDARD MEDICATION ROUTE (#10) Field <br/>when a change is made. It can be null, if there was no previous value. It <br/>is set from the PSSMEDX routine, which is invoked from the new style cross<br/>reference of the STANDARD MEDICATION ROUTE (#10) Field of the MEDICATION<br/>ROUTES (#51.2) File. | POINTER |  | [Standard_Medication_Routes-51_23](Standard_Medication_Routes-51_23)
 **New Value**{::nomarkdown}<pre><code>  new_value</code></pre>{:/} | 3 | This is the new value of the STANDARD MEDICATION ROUTE (#10) Field when a<br/>change is made. It can be null, if there is no new value. It is set from<br/>the PSSMEDX routine, which is invoked from the new style cross reference<br/>of the STANDARD MEDICATION ROUTE (#10) Field of the MEDICATION ROUTES<br/>(#51.2) File. | POINTER |  | [Standard_Medication_Routes-51_23](Standard_Medication_Routes-51_23)
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

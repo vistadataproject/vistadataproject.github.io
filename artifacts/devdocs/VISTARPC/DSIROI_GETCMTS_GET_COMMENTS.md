@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIROI GETCMTS GET COMMENTS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIROI GETCMTS GET COMMENTS<br/>
 # DSIROI GETCMTS GET COMMENTS
 
 This routine can return a set of comments including patient comments from the 5345, internal comments, and alerts. 
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIROI](http://code.osehra.org/dox/Routine_DSIROI_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ SEL | LITERAL | 5 | true |  SEL &#x3D; COMMENT SELECTION (required)     This is 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

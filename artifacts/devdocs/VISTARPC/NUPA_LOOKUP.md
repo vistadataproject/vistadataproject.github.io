@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; NUPA LOOKUP
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; NUPA LOOKUP<br/>
 # NUPA LOOKUP
 
 Does lookups on files.  Returns info in ^TMP("DILIST",$J) or -1 if recordnot in file.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [NUPABCL](http://code.osehra.org/dox/Routine_NUPABCL_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ PARAMETERS | LIST |  | true | Array of format: PAR(&quot;F&quot;)&#x3D;The file 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

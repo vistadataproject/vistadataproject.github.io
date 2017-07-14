@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGVA GET JUKEBOX WL
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGVA GET JUKEBOX WL<br/>
 # MAGVA GET JUKEBOX WL
 
 Returns Jukebox Write Location by Station number or Institution IEN
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGVAG03](http://code.osehra.org/dox/Routine_MAGVAG03_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ MAGPARAM | LIST |  | true |  MAGPARAM(&quot;STATION NUMBER&quot;) &#x3D; STATION
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

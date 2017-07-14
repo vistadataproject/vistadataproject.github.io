@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; OOPS MANUAL XMIT DATA
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; OOPS MANUAL XMIT DATA<br/>
 # OOPS MANUAL XMIT DATA
 
 This broker call is the front end for calling the routine to transmitdata to the AAC for DOL (CA1 and CA2s) or to transmit data to the National Database (NDB).
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [OOPSGUI7](http://code.osehra.org/dox/Routine_OOPSGUI7_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ INPUT | LITERAL | 256 | true | This input parameter contains the date that the c
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIF PAY MED PAYMENT ADD EDIT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIF PAY MED PAYMENT ADD EDIT<br/>
 # DSIF PAY MED PAYMENT ADD EDIT
 
 Use to add/edit Medical Payment data
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIFPAY3](http://code.osehra.org/dox/Routine_DSIFPAY3_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -31,4 +33,4 @@ DSIFDATA | LIST | 255 | true |  ; DSIFDATA array (New fields added DSIF*3.2*2) ;
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Mail_Group-3_8
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Mail_Group-3_8<br/>
+<a name="top"></a>
 # Mail Group (3.8)
 This file holds the names of all groups known to MailMan, and their members.
 
-<dl>
-<dt>Global</dt><dd>^XMB(3.8,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^XMB(3.8,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -33,13 +33,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Fax Recipient**{::nomarkdown}<pre><code>  fax_recipient</code></pre>{:/} | 14 |  |  |  | 
 **Fax Group**{::nomarkdown}<pre><code>  fax_group</code></pre>{:/} | 15 |  |  |  | 
 
-### Subfile
-#### <a name="Member-3_81"></a>Member
+## Sub-Files
+### <a name="Member-3_81"></a>Member (3.81)
 
 <dl>
-<dt>ID</dt><dd>Member-3_81</dd>
-<dt>File Type</dt><dd>3.81</dd>
-<dt>Label</dt><dd>Member</dd></dl>
+<dt>ID</dt><dd>Member-3_81</dd></dl>
 
 #### Properties
 
@@ -48,12 +46,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Member**{::nomarkdown}<pre><code>  member</code></pre>{:/} | .01 | The local user who is a member of this mail group.<br/>The user must have an access code and a mailbox. | POINTER | REQUIRED | [New_Person-200](New_Person-200)
 **Type**{::nomarkdown}<pre><code>  type-1</code></pre>{:/} | 1 | This field indicates what type of recipient this is.<br/><br/>If this field has nothing in it, it indicates that this recipient is<br/>a primary recipient, and may reply.<br/><br/>CC:  indicates that the recipient is being sent a copy, but is not the<br/>primary recipient.  The recipient may reply.<br/> <br/>INFO: indicates that the recipient may not reply to the message; the<br/>message is being transmitted to the recipient for information purposes<br/>only. | ENUMERATION |  | {::nomarkdown}CC: <em><strong>C</strong></em><br/>INFO: <em><strong>I</strong></em>{:/}
 
-#### <a name="Member_Groups-3_811"></a>Member Groups
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Member_Groups-3_811"></a>Member Groups (3.811)
 
 <dl>
-<dt>ID</dt><dd>Member_Groups-3_811</dd>
-<dt>File Type</dt><dd>3.811</dd>
-<dt>Label</dt><dd>Member Groups</dd></dl>
+<dt>ID</dt><dd>Member_Groups-3_811</dd></dl>
 
 #### Properties
 
@@ -62,6 +61,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Member Group Name**{::nomarkdown}<pre><code>  member_group_name</code></pre>{:/} | .01 | This is a pointer to another entry in this Mail Group file.<br/>See the description of the multiple for more information. | POINTER | INDEXED<br/>REQUIRED | [Mail_Group-3_8](Mail_Group-3_8)
 **Type**{::nomarkdown}<pre><code>  type-1</code></pre>{:/} | 1 | This field indicates what type of recipient this is.<br/><br/>If this field has nothing in it, it indicates that this recipient is<br/>a primary recipient, and may reply.<br/><br/>CC:  indicates that the recipient is being sent a copy, but is not the<br/>primary recipient.  The recipient may reply.<br/><br/>INFO: indicates that the recipient may not reply to the message; the<br/>message is being transmitted to the recipient for information purposes<br/>only. | ENUMERATION |  | {::nomarkdown}CC: <em><strong>C</strong></em><br/>INFO: <em><strong>I</strong></em>{:/}
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

@@ -3,20 +3,21 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; ORQQPX REMINDER FOLDERS
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; ORQQPX REMINDER FOLDERS<br/>
 # ORQQPX REMINDER FOLDERS
 
 This parameter is used and set by the CPRS GUI.  Each letter representsa reminder folder that is visible in the reminders tree.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 4711
 Summary | Reminder Folders
 Value Type | free text
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
@@ -26,4 +27,4 @@ Precedence | Entity
 5 | SYSTEM
 6 | PACKAGE
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

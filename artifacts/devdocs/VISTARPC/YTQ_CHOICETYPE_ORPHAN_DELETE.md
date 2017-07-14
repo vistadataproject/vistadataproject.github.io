@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; YTQ CHOICETYPE ORPHAN DELETE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; YTQ CHOICETYPE ORPHAN DELETE<br/>
 # YTQ CHOICETYPE ORPHAN DELETE
 
 This API will safely remove all CHOICETYPES (601.751) that have no question (601.72) referncing them.         INPUT: none        OUTPUT: list of choicetypes deleted
+
+## Properties
 
 Property | Value
 --- | ---
@@ -17,4 +19,4 @@ Return Type | ARRAY
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,26 +3,31 @@ layout: default
 title: VISTA Emulator Documentation
 ---
 
-## [Emulated RPCs](TableOfContents) &#8594; ORQQPL PROBLEM LIST
+#### [Developer Documentation](../index) &#187; [Emulated RPCs](TableOfContents) &#187; ORQQPL PROBLEM LIST<br/>
 # ORQQPL PROBLEM LIST
 
 Problem list for CPRS GUI client
 
+**Native RPC Documentation:** [ORQQPL PROBLEM LIST](../VISTARPC/ORQQPL_PROBLEM_LIST)
+
+**MUMPS Implementation:** [PROBL^ORQQPL3](http://code.osehra.org/dox/Routine_ORQQPL3_source.html)
+
+## Properties
+
 Property | Value
 --- | ---
+Type | Clinical
 Domain | Problems
-VISTA RPC Documentation | [ORQQPL PROBLEM LIST](../VISTARPC/ORQQPL_PROBLEM_LIST)
-MUMPS Implementation | [PROBL^ORQQPL3](http://code.osehra.org/dox/Routine_ORQQPL3_source.html)
-Type | CHANGE
+Class | CHANGE
 Complexity | HIGH
-Uses | N/A
+Uses | 
 Return Type | ARRAY
-Return Description | N/A
+Return Description | 
 File Types Used | [9000011](../VDM/Problem-9000011)
 Parameters Used | DFN, GMPSTAT, ORIDT
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Required | Description | Example
 --- | --- | --- | --- | ---
@@ -30,4 +35,4 @@ DFN | REFERENCE | true | Patient IEN | 25
 GMPSTAT | LITERAL |  | Problem status filter: A - active, I - inactive, B - Both active and inactive, R - removed | A
 ORIDT | DATE |  | Problem date filter? This parameter is typically passed in as zero | 0
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:06 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:34 pm</p>{:/}

@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAG FILEMAN FIELD ATTS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAG FILEMAN FIELD ATTS<br/>
 # MAG FILEMAN FIELD ATTS
 
 This remote procedure returns a list of attributes and attribute values for a field in a FileMan file.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGUFFLA](http://code.osehra.org/dox/Routine_MAGUFFLA_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ FIELDNO | LITERAL | 20 | true | This is the field within the specified FileMan f
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; KMPD SEARCH BY LIST
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; KMPD SEARCH BY LIST<br/>
 # KMPD SEARCH BY LIST
 
 Search By list.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [KMPDU7](http://code.osehra.org/dox/Routine_KMPDU7_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ DATAGLOBAL | LITERAL | 30 | true | Global containing data.Ex: ^TMP($J)
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

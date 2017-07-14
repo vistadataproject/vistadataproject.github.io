@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Imaging_Type-79_2
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Imaging_Type-79_2<br/>
+<a name="top"></a>
 # Imaging Type (79.2)
 This file contains, for each imaging type entry, parameters that the module uses during various stages of exam and report processing and inquiring. The parameter switches allow the 'customizing' of the module for each type of imaging.   WARNING:  ENTRIES SHOULD NOT BE DELETED FROM THIS FILE.    Data Storage  ------------ The data for the 'IMAGING TYPE' file is stored in the ^RA(79.2, global. At the present time this file is very static after day-one initialization is complete.  However, it still should be journaled. It should also be translated if the operating system supports this function.    Input Templates  --------------- The following is a list of input templates used by the package and the entry in the OPTIONS file (#19) that uses the template:                        Compiled  Name                Routine  Description; Option(s)  ----                -------  ----------------------  RA IMAGE PARAMETERS          Used to specify timeout seconds and whether                               the hardware system the module is running on                               is under fail-soft mode;                               RA FAILSOFT    RA ON-LINE CRITERIA          Used to indicate how long certain data should                               remain on file before it can be purged;                               RA PURGE   If any modifications to these input templates are needed for local purposes, then great care should be taken not to degrade any branching logic in the template.    Print Templates  ---------------  The following is a list of print templates used by the package:    Name                  Description; Option(s)  ----                  ----------------------  RA ACTIVITY LOG       Prints a list of the activity log entries for the                        imaging type;
 
-<dl>
-<dt>Global</dt><dd>^RA(79.2,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^RA(79.2,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -32,13 +32,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Activity Log**{::nomarkdown}<pre><code>  activity_log</code></pre>{:/} | 100 | This multiple field contains a log of actions that have been taken on this<br/>imaging record. | OBJECT |  | [Activity_Log-79_23](#Activity_Log-79_23)
 **Work Rvu (wrvu) Scaling Factor**{::nomarkdown}<pre><code>  work_rvu_wrvu_scaling_factor</code></pre>{:/} | 200 | Identifies the 'Society of Chairmen in Academic Radiology Departments' <br/>(SCARD) scaling factor for a specific imaging type by calendar year.  | OBJECT |  | [Work_Rvu_wrvu_Scaling_Factor-79_22](#Work_Rvu_wrvu_Scaling_Factor-79_22)
 
-### Subfile
-#### <a name="Activity_Log-79_23"></a>Activity Log
+## Sub-Files
+### <a name="Activity_Log-79_23"></a>Activity Log (79.23)
 
 <dl>
-<dt>ID</dt><dd>Activity_Log-79_23</dd>
-<dt>File Type</dt><dd>79.23</dd>
-<dt>Label</dt><dd>Activity Log</dd></dl>
+<dt>ID</dt><dd>Activity_Log-79_23</dd></dl>
 
 #### Properties
 
@@ -51,12 +49,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **No. Of Reports Processed**{::nomarkdown}<pre><code>  no_of_reports_processed</code></pre>{:/} | 5 | This field is automatically entered by the system after the data purge<br/>routine is finished purging. This statistic is compiled during the<br/>data purge. It represents the number of report records that had at least<br/>some data purged. Depending on the values of the 'cut-off-days' parameters,<br/>the type of data purged may vary. | NUMERIC |  | 
 **No. Of Requests Processed**{::nomarkdown}<pre><code>  no_of_requests_processed</code></pre>{:/} | 6 | This field is automatically entered by the system after the data<br/>purge routine is finished purging. This statistic is compiled<br/>during the data purge. It represents the number of request records<br/>that have been purged. | NUMERIC |  | 
 
-#### <a name="Work_Rvu_wrvu_Scaling_Factor-79_22"></a>Work Rvu (wrvu) Scaling Factor
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Work_Rvu_wrvu_Scaling_Factor-79_22"></a>Work Rvu (wrvu) Scaling Factor (79.22)
 
 <dl>
-<dt>ID</dt><dd>Work_Rvu_wrvu_Scaling_Factor-79_22</dd>
-<dt>File Type</dt><dd>79.22</dd>
-<dt>Label</dt><dd>Work Rvu (wrvu) Scaling Factor</dd></dl>
+<dt>ID</dt><dd>Work_Rvu_wrvu_Scaling_Factor-79_22</dd></dl>
 
 #### Properties
 
@@ -65,6 +64,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Calendar Year**{::nomarkdown}<pre><code>  calendar_year</code></pre>{:/} | .01 | This field identifies the calendar year to associate a specific 'Society<br/>of Chairmen in Academic Radiology Departments' (SCARD) scaling factor to <br/>imaging type specific procedures with an associated wRVU value. | NUMERIC | INDEXED<br/>REQUIRED | 
 **Scaling Factor**{::nomarkdown}<pre><code>  scaling_factor</code></pre>{:/} | 2 | This field identifies the appropriate scaling factor applied to the wRVU<br/>value for an imaging type specific rad/nuc med procedure. | NUMERIC |  | 
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

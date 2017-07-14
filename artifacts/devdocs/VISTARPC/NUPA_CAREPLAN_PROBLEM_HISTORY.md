@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; NUPA CAREPLAN PROBLEM HISTORY
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; NUPA CAREPLAN PROBLEM HISTORY<br/>
 # NUPA CAREPLAN PROBLEM HISTORY
 
 Provides the history for a selected problem & intervention in a patient's care plan for the current admission.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [NUPABCL1](http://code.osehra.org/dox/Routine_NUPABCL1_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ DA  | LITERAL |  | true | Three piece variable.  Pieces are: 1. IEN of problem f
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

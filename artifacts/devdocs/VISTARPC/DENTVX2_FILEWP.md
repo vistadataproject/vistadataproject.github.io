@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DENTVX2 FILEWP
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DENTVX2 FILEWP<br/>
 # DENTVX2 FILEWP
 
 This RPC takes in an entity, parameter name, instance number, and the data to be filed.  
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DENTVX2](http://code.osehra.org/dox/Routine_DENTVX2_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -26,4 +28,4 @@ DATA | LIST | 250 | true | This is an array which contains the data to be stored
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

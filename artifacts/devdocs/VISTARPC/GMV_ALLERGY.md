@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; GMV ALLERGY
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; GMV ALLERGY<br/>
 # GMV ALLERGY
 
 This remote procedure call retrieves the patient's allergy information. This remote procedure call is documented in Integration Agreement 4350.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [GMVUTL3](http://code.osehra.org/dox/Routine_GMVUTL3_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,7 +25,7 @@ DFN | LITERAL | 30 | true | DFN is a pointer to the PATIENT file (#2).
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -34,10 +36,10 @@ Code | {::nomarkdown}<pre><code> N GMRAL,GMVALG,GN D EN1^GMRADPT M GMVALG=GMRAL<
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
 DLL File | {::nomarkdown}No Source Code Available (GMV_VitalsViewEnter.dll){:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

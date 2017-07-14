@@ -3,24 +3,25 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; ORAM CONSULT REQUEST SERVICE
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; ORAM CONSULT REQUEST SERVICE<br/>
 # ORAM CONSULT REQUEST SERVICE
 
 This is the reference to the Consult Request Service with which Consultdata will be associated for the Anticoagulation clinic. It is used only ifthe linkage with the Consult Package is enabled.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 577
 Summary | Consult Request Service Name
 Value Type | pointer
 Value Domain | 123.5:AEMQ
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | LOCATION
 2 | DIVISION
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

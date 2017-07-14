@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; GMR_Allergy_Site_Parameters-120_84
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; GMR_Allergy_Site_Parameters-120_84<br/>
+<a name="top"></a>
 # GMR Allergy Site Parameters (120.84)
 Site configurable features for the Adverse Reaction Tracking package.
 
-<dl>
-<dt>Global</dt><dd>^GMRD(120.84,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^GMRD(120.84,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -49,4 +49,4 @@ Field | ID | Description | Datatype | Attributes | Range
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

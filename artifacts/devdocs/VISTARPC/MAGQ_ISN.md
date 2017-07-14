@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGQ ISN
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGQ ISN<br/>
 # MAGQ ISN
 
 This is the mail message component of the "ImageGroupNotify" method.This report is sent to the MAG SERVER mail group in order to alertmembers of the occurance of image file size variance.  This is indicativeof a network and Clinical imaging event requiring action to correct theclinical database.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGUSIT](http://code.osehra.org/dox/Routine_MAGUSIT_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ Jukebox size | LITERAL | 1 | true | This is the Jukebox file size integer proper
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

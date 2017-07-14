@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; XUS DIVISION SET
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; XUS DIVISION SET<br/>
 # XUS DIVISION SET
 
 This RPC is used to set the user's selected Division in DUZ(2) duringsign-on.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [XUSRB2](http://code.osehra.org/dox/Routine_XUSRB2_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,7 +25,7 @@ DIV | LITERAL | 12 | true |
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -34,10 +36,10 @@ Code | {::nomarkdown}<pre><code> S RET=0,DIV=$$FIND1^DIC(200.02,","_DUZ_",","MX"
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
-Executable Only | {::nomarkdown}N/A{:/}
+Executable Only | {::nomarkdown}{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

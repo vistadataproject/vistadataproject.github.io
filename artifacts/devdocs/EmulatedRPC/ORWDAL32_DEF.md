@@ -3,23 +3,28 @@ layout: default
 title: VISTA Emulator Documentation
 ---
 
-## [Emulated RPCs](TableOfContents) &#8594; ORWDAL32 DEF
+#### [Developer Documentation](../index) &#187; [Emulated RPCs](TableOfContents) &#187; ORWDAL32 DEF<br/>
 # ORWDAL32 DEF
 
 Returns default values and list sets for Allergy ordering dialog.
 
+**Native RPC Documentation:** [ORWDAL32 DEF](../VISTARPC/ORWDAL32_DEF)
+
+**MUMPS Implementation:** [DEF^ORWDAL32](http://code.osehra.org/dox/Routine_ORWDAL32_source.html)
+
+## Properties
+
 Property | Value
 --- | ---
-Domain | Non-Clinical: Files
-VISTA RPC Documentation | [ORWDAL32 DEF](../VISTARPC/ORWDAL32_DEF)
-MUMPS Implementation | [DEF^ORWDAL32](http://code.osehra.org/dox/Routine_ORWDAL32_source.html)
-Type | READ
+Type | Non-Clinical
+Domain | Files
+Class | READ
 Complexity | DIFFICULT
-Uses | N/A
+Uses | 
 Return Type | SINGLE VALUE
-Return Description | N/A
+Return Description | 
 File Types Used | 120.83, 120.84
 Parameters Used | None
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:06 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:34 pm</p>{:/}

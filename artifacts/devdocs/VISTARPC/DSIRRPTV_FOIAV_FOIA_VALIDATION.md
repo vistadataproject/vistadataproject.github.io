@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIRRPTV FOIAV FOIA VALIDATION
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIRRPTV FOIAV FOIA VALIDATION<br/>
 # DSIRRPTV FOIAV FOIA VALIDATION
 
 This RPC will return a global array of all records thkat were looked atfor the year end FOIA report.  It will contain the internal requestnumber and patient name/FOIA indicator, and a one for any block on thereport that the given request was included on.  It also contains allrecord that, during the report period, were entered in error or of thetype of request/requestor type of an excluded state reporting agency.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIRRPTV](http://code.osehra.org/dox/Routine_DSIRRPTV_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -27,4 +29,4 @@ ESTART | LITERAL | 15 | true | Earliet time to start the scheaduled task.
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

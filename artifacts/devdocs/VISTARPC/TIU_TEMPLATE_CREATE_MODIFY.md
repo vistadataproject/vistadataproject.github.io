@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; TIU TEMPLATE CREATE MODIFY
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; TIU TEMPLATE CREATE MODIFY<br/>
 # TIU TEMPLATE CREATE MODIFY
 
 This remote procedure allows creation and update of Templates.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [TIUSRVT](http://code.osehra.org/dox/Routine_TIUSRVT_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,10 +27,10 @@ TIUX | LIST |  | true | This array contains the data to be filed in the Template
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
-Executable Only | {::nomarkdown}N/A{:/}
+Executable Only | {::nomarkdown}{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

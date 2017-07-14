@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Accession-68
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Accession-68<br/>
+<a name="top"></a>
 # Accession (68)
   This file contains entries which represent the functional subdivisions or departments of the laboratory, referred to by the Laboratory package software as accession areas.  The file is used to define the site-specific information needed by your laboratory for each accession area.  This  includes the type of accession transform (or how often the accession  numbers assigned to test performed in that area will be reset to 1), the abbreviation of the area (which becomes part of the accession identifying the specimen and test results), the order in which the data for tests performed in the area will be displayed and other specific information.   Definitions of variables used:  LRDFN = Internal entry in LR( that is being worked on.  LRIDT = Inverse date/time that data is stored at. ^LR(LRDFN,"CH",  LRAA = internal value of accession area ^LRO(68,  LRAD = date working on in accession area ^LRO(68,LRAA,1,  LRAN = accession number working on ^LRO(68,LRAA,1,LRAD,1,  LRODT = order date ^LRO(69,  LRSN = order entry within date ^LRO(69,LRORD,1, CROSS REFERENCE DESCRIPTION:  ^LRO(68,"B",'ACCESSION AREA',LRAA)  ^LRO(68,"AC",LRDFN,'DATE RESULTS AVAILABLE','DATA NODE') =     used by the cumulative  ^LRO(68,"AD",'LAB SECTION',LRAC)  ^LRO(68,"AVS",LRAA,LRAD,LRAN)=LRDFN^LRIDT     used by micro verify by supervisor  ^LRO(68,"MI",LRDFN,LRIDT)     used by micro for cumulative report  ^LRO(68,LRAA,1,LRAD,1,LRAN,"AE")     used for WKLD count     ^LRO(68,LRAA,1,LRAD,1,"B",'ENTRY FILE 69',LRAN)  ^LRO(68,LRAA,1,LRAD,1,"C",'IDENTITY',LRAN)  ^LRO(68,LRAA,1,LRAD,1,"E",'LAB ARRIVAL TIME',LRAN)  ^LRO(68,LRAA,1,LRAD,1,"D",'ORDER #',LRAN)  ^LRO(68,LRAA,1,LRAD,1,"AC",'DATE/TIME COMPLETE',LRAN)  ^LRO(68,LRAA,1,LRAD,1,"AD",'DATE COMPLETE',LRAN)  ^LRO(68,LRAA,1,LRAD,4,"B",'LAB TEST',LRAN)
 
-<dl>
-<dt>Global</dt><dd>^LRO(68,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^LRO(68,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -24,14 +24,14 @@ Field | ID | Description | Datatype | Attributes | Range
 **Acc Code**{::nomarkdown}<pre><code>  acc_code</code></pre>{:/} | .051 | Mumps code that is triggered by the Accession Transform field. | STRING |  | 
 **Verification Code**{::nomarkdown}<pre><code>  verification_code</code></pre>{:/} | .06 | Points to EXECUTE CODE file. | POINTER |  | [Execute_Code-62_07](Execute_Code-62_07)
 **Ver Code**{::nomarkdown}<pre><code>  ver_code</code></pre>{:/} | .061 | Triggered by the Verification Code field. | STRING |  | 
-***identity Control**{::nomarkdown}<pre><code>  identity_control</code></pre>{:/} | .07 | No longer used.  Will be deleted in later version. | POINTER | DEPRECATED | N/A
+***identity Control**{::nomarkdown}<pre><code>  identity_control</code></pre>{:/} | .07 | No longer used.  Will be deleted in later version. | POINTER | DEPRECATED | 
 ***ident Code**{::nomarkdown}<pre><code>  ident_code</code></pre>{:/} | .071 | No longer used.  Will be deleted in later version. | STRING | DEPRECATED | 
 **Print Order**{::nomarkdown}<pre><code>  print_order</code></pre>{:/} | .08 | The print order of the Accession Area.  If the entry is less than 1 it will not be displayed. | NUMERIC |  | 
 **Bypass Rollover**{::nomarkdown}<pre><code>  bypass_rollover</code></pre>{:/} | .085 | If you choose not to bypass rollover (i.e., have a null entry), then any unverified data will be "rolled over" to the next day.  You will not be allowed to have a duplicate accession number. | BOOLEAN |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
 **Abbreviation**{::nomarkdown}<pre><code>  abbreviation</code></pre>{:/} | .09 | Abbreviation for the accession area.  Must have programmer privileges to alter this entry. | STRING | REQUIRED | 
 **Associated Division**{::nomarkdown}<pre><code>  associated_division</code></pre>{:/} | .091 |  | POINTER |  | [Institution-4](Institution-4)
 **Type Of Accession Number**{::nomarkdown}<pre><code>  type_of_accession_number</code></pre>{:/} | .092 | This field determines whether a full unique accession number is used for<br/>barcoding and messages between instruments.  The unique accession number<br/>is built from three different numbers, the accession area, the date, and<br/>the accession entry number. If 'S'hort is selected, the accession number<br/>used in barcodes and for input at the instrument keypad is treated the <br/>same as it was traditionally.  The 'L'ong unique accession will always be<br/>generated, it just won't be used in communicating with the instrument, or <br/>for barcoding.  <br/>Examples of the four accession transform<br/>types are:<br/><br/> Daily/Weekly:   3242889999<br/> where     32 is the Accession area identifier (field .091)<br/>            4 is the last digit of the year (1994)<br/>          288 is the Julian date for Oct 15, 1994<br/>         9999 is the 9,999th accession for that date<br/> If the 'L'ong version was 3242889999, 'S'hort would be 9999<br/> If the 'L'ong version was 3242880001, 'S'hort would be 1<br/><br/> Yearly:   3294999999<br/> where      32 is the Accession area identifier (field .091)<br/>            94 is the last two digits of the year (1994)<br/>        999999 is the 999,999th accession for that year<br/> If the 'L'ong version was 3294999999, 'S'hort would be 999999<br/> If the 'L'ong version was 3294000001, 'S'hort would be 1<br/><br/> Quarterly:   3240499999<br/> where      32 is the Accession area identifier (field .091)<br/>             4 is the last digit of the year (1994)<br/>            04 is the fourth quarter of 1994<br/>         99999 is the 99,999th accession for that quarter<br/> If the 'L'ong version was 3240499999, 'S'hort would be 99999<br/> If the 'L'ong version was 3240400001, 'S'hort would be 1<br/><br/> Monthly:   3241299999<br/> where      32 is the Accession area identifier (field .091)<br/>             4 is the last digit of the year (1994)<br/>            12 is the twelfth month of 1994<br/>         99999 is the 99,999th accession for that month<br/> If the 'L'ong version was 3241299999, 'S'hort would be 99999<br/> If the 'L'ong version was 3241200001, 'S'hort would be 1 | ENUMERATION |  | {::nomarkdown}SHORT: <em><strong>S</strong></em><br/>LONG: <em><strong>L</strong></em>{:/}
-***lab Section**{::nomarkdown}<pre><code>  lab_section</code></pre>{:/} | .095 |   THIS FIELD HAS BEEN MARKED FOR DELETION IN FUTURE VERSIONS<br/>THE FIELD LAB DIVISION (#.19) WILL BE USED INSTEAD PER WORKLOAD<br/>REVISION. | POINTER | DEPRECATED | N/A
+***lab Section**{::nomarkdown}<pre><code>  lab_section</code></pre>{:/} | .095 |   THIS FIELD HAS BEEN MARKED FOR DELETION IN FUTURE VERSIONS<br/>THE FIELD LAB DIVISION (#.19) WILL BE USED INSTEAD PER WORKLOAD<br/>REVISION. | POINTER | DEPRECATED | 
 **Non Lab Accession Area**{::nomarkdown}<pre><code>  non_lab_accession_area</code></pre>{:/} | .097 |  This field indicates if this particular accession area is operated by<br/>another service other than Pathology & Laboratory Medicine. If this<br/>accession area in staffed or funded from non Pathology sources, mark this<br/>field yes.<br/>   An example would be Blood Gas laboratory staffed or funded by<br/>Medicine service.<br/> <br/>HOWEVER<br/>If this accession area is used by Point of Care (ie. Nurses entering<br/>finger stick glucose) do not set this field to yes. Because in this case<br/>the location is relevant to DSS database.<br/> <br/>This field is used by the Laboratory DSS workload extraction routine to<br/>determine if the patient location should be passed or not. | BOOLEAN |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
 **Responsible Official**{::nomarkdown}<pre><code>  responsible_official</code></pre>{:/} | .1 | The responsible official in the laboratory.  Usually the Chief of Laboratory Service, or his designee. | POINTER |  | [New_Person-200](New_Person-200)
 **Inhibit Area Label Printing**{::nomarkdown}<pre><code>  inhibit_area_label_printing</code></pre>{:/} | .11 | A YES entry stops all label printing for this accession area. | BOOLEAN |  | {::nomarkdown}false: <em><strong>1</strong></em><br/>true: <em><strong>0</strong></em>{:/}
@@ -52,13 +52,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Collect Std/qc/repeats**{::nomarkdown}<pre><code>  collect_std_qc_repeats</code></pre>{:/} | 11 |  If you wish to have the verification process to prompt the user for<br/>Standards, QC and Repeats after each session enter a Yes.<br/> This will cause the counts entered to be added to all test<br/>the user verified during that particular session.<br/> The function of entering this data can be also done by the option<br/>STD/QC/REPS/MANUAL WKLD COUNT [LR WKLD STD/QC/REPS] found on the <br/>Process Menu [LR DO!]. | BOOLEAN |  | {::nomarkdown}true: <em><strong>1</strong></em>{:/}
 **External Service Area**{::nomarkdown}<pre><code>  external_service_area</code></pre>{:/} | 12 | This field determines if the Accession Area is defined for send out tests. | BOOLEAN |  | {::nomarkdown}false: <em><strong>1</strong></em><br/>true: <em><strong>0</strong></em>{:/}
 
-### Subfile
-#### <a name="Instrumentation_Controls-68_09"></a>Instrumentation Controls
+## Sub-Files
+### <a name="Instrumentation_Controls-68_09"></a>Instrumentation Controls (68.09)
 
 <dl>
-<dt>ID</dt><dd>Instrumentation_Controls-68_09</dd>
-<dt>File Type</dt><dd>68.09</dd>
-<dt>Label</dt><dd>Instrumentation Controls</dd></dl>
+<dt>ID</dt><dd>Instrumentation_Controls-68_09</dd></dl>
 
 #### Properties
 
@@ -67,12 +65,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Instrumentation Controls**{::nomarkdown}<pre><code>  instrumentation_controls</code></pre>{:/} | .01 | You may only change the selection you have chosen by "selecting"<br/>another one.  If you wish to change THIS one, you must delete it first.<br/>(The internal FileMan number is significant, so we can't change the text.) | POINTER | REQUIRED | [Auto_Instrument-62_4](Auto_Instrument-62_4)
 **Control Name**{::nomarkdown}<pre><code>  control_name</code></pre>{:/} | 1 | The control that should always be placed with the accession number to be<br/>defined with the ACC # field .001 | OBJECT |  | [Control_Name-68_1](#Control_Name-68_1)
 
-#### <a name="Control_Name-68_1"></a>Control Name
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Control_Name-68_1"></a>Control Name (68.1)
 
 <dl>
-<dt>ID</dt><dd>Control_Name-68_1</dd>
-<dt>File Type</dt><dd>68.1</dd>
-<dt>Label</dt><dd>Control Name</dd></dl>
+<dt>ID</dt><dd>Control_Name-68_1</dd></dl>
 
 #### Properties
 
@@ -81,12 +80,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Acc #**{::nomarkdown}<pre><code>  acc_number</code></pre>{:/} | .001 | The numeric part of the accession to be assigned for the indicated<br/>control, if the number is available and automatic accessioning of<br/>controls is tasked. | IEN |  | 
 **Control Name**{::nomarkdown}<pre><code>  control_name</code></pre>{:/} | .01 | The control that should always be placed with the accession number to be defined with the ACC # field .001. | POINTER | REQUIRED | [Lab_Control_Name-62_3](Lab_Control_Name-62_3)
 
-#### <a name="Date-68_01"></a>Date
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Date-68_01"></a>Date (68.01)
 
 <dl>
-<dt>ID</dt><dd>Date-68_01</dd>
-<dt>File Type</dt><dd>68.01</dd>
-<dt>Label</dt><dd>Date</dd></dl>
+<dt>ID</dt><dd>Date-68_01</dd></dl>
 
 #### Properties
 
@@ -101,12 +101,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Bull Algorithm Control Data**{::nomarkdown}<pre><code>  bull_algorithm_control_data</code></pre>{:/} | 6 | Data is stored here for use in Bull's algorithm. | OBJECT |  | [Bull_Algorithm_Control_Data-68_07](#Bull_Algorithm_Control_Data-68_07)
 **Multi-rule VA Qc**{::nomarkdown}<pre><code>  multirule_va_qc</code></pre>{:/} | 7 | Quality control comparisons based on Westergard's suggested use of<br/>the Multi-rule Shewhart determinations are stored under this multiple. | OBJECT |  | [Multirule_VA_Qc-68_11](#Multirule_VA_Qc-68_11)
 
-#### <a name="Accession_Number-68_02"></a>Accession Number
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Accession_Number-68_02"></a>Accession Number (68.02)
 
 <dl>
-<dt>ID</dt><dd>Accession_Number-68_02</dd>
-<dt>File Type</dt><dd>68.02</dd>
-<dt>Label</dt><dd>Accession Number</dd></dl>
+<dt>ID</dt><dd>Accession_Number-68_02</dd></dl>
 
 #### Properties
 
@@ -150,12 +151,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Count For Wkld**{::nomarkdown}<pre><code>  count_for_wkld</code></pre>{:/} | 93 |  This field is set to 1 if this accession has been counted for <br/>workload. This is set automatically by the tally routines.<br/>  NOTE: THIS FIELD SHOULD NOT BE SET MANUALLY. | ENUMERATION |  | {::nomarkdown}YES: <em><strong>1</strong></em><br/>no: <em><strong>0</strong></em><br/>yes: <em><strong>1</strong></em><br/>NO: <em><strong>0</strong></em>{:/}
 **Ordering Location**{::nomarkdown}<pre><code>  ordering_location</code></pre>{:/} | 94 |  This field contains the location placing the order for this patient. | POINTER |  | [Hospital_Location-44](Hospital_Location-44)
 
-#### <a name="Tests-68_04"></a>Tests
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Tests-68_04"></a>Tests (68.04)
 
 <dl>
-<dt>ID</dt><dd>Tests-68_04</dd>
-<dt>File Type</dt><dd>68.04</dd>
-<dt>Label</dt><dd>Tests</dd></dl>
+<dt>ID</dt><dd>Tests-68_04</dd></dl>
 
 #### Properties
 
@@ -174,12 +176,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Parent Test**{::nomarkdown}<pre><code>  parent_test</code></pre>{:/} | 8.1 |  This field contains the parent ordered test. In the case of panel test,<br/>this field will contain the original ordered test. | POINTER |  | [Laboratory_Test-60](Laboratory_Test-60)
 **Shipping Manifest**{::nomarkdown}<pre><code>  shipping_manifest</code></pre>{:/} | 9 | This fields is used at the collection site to determine the exact<br/>placement of each test.  This field will contain the shipping manifest<br/>code for referral or send out lab tests.  For all local tests the field<br/>will be null. | POINTER |  | [Lab_Shipping_Manifest-62_8](Lab_Shipping_Manifest-62_8)
 
-#### <a name="Wkld_Code-68_14"></a>Wkld Code
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Wkld_Code-68_14"></a>Wkld Code (68.14)
 
 <dl>
-<dt>ID</dt><dd>Wkld_Code-68_14</dd>
-<dt>File Type</dt><dd>68.14</dd>
-<dt>Label</dt><dd>Wkld Code</dd></dl>
+<dt>ID</dt><dd>Wkld_Code-68_14</dd></dl>
 
 #### Properties
 
@@ -198,12 +201,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Work Area**{::nomarkdown}<pre><code>  work_area</code></pre>{:/} | 6 |  This is the lowest level used to credit workload. This field may be<br/>the same as the LAB SUBSECTION entry.<br/> i.e., ELECTROPHORESIS | POINTER |  | [Accession-68](Accession-68)
 **Manual Edit**{::nomarkdown}<pre><code>  manual_edit</code></pre>{:/} | 12 |  If this data is entered manually via a edit template. This field would<br/>indicate if the data was not stuffed automatically. | BOOLEAN |  | {::nomarkdown}true: <em><strong>1</strong></em>{:/}
 
-#### <a name="Specimen-68_05"></a>Specimen
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Specimen-68_05"></a>Specimen (68.05)
 
 <dl>
-<dt>ID</dt><dd>Specimen-68_05</dd>
-<dt>File Type</dt><dd>68.05</dd>
-<dt>Label</dt><dd>Specimen</dd></dl>
+<dt>ID</dt><dd>Specimen-68_05</dd></dl>
 
 #### Properties
 
@@ -213,12 +217,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Collection Sample**{::nomarkdown}<pre><code>  collection_sample</code></pre>{:/} | 1 | The collection sample is from file 62. | POINTER |  | [Collection_Sample-62](Collection_Sample-62)
 **Test**{::nomarkdown}<pre><code>  test</code></pre>{:/} | 2 |  This field contains the test ordered for this patient/specimen | OBJECT |  | [Test-68_13](#Test-68_13)
 
-#### <a name="Test-68_13"></a>Test
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Test-68_13"></a>Test (68.13)
 
 <dl>
-<dt>ID</dt><dd>Test-68_13</dd>
-<dt>File Type</dt><dd>68.13</dd>
-<dt>Label</dt><dd>Test</dd></dl>
+<dt>ID</dt><dd>Test-68_13</dd></dl>
 
 #### Properties
 
@@ -228,12 +233,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Tissue Block(s)**{::nomarkdown}<pre><code>  tissue_blocks</code></pre>{:/} | 1 | Used for path examination. | STRING |  | 
 **Total Slides**{::nomarkdown}<pre><code>  total_slides</code></pre>{:/} | 2 |  This field contains the number of slides used to process this specimen. | NUMERIC |  | 
 
-#### <a name="Bull_Algorithm_Control_Data-68_07"></a>Bull Algorithm Control Data
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Bull_Algorithm_Control_Data-68_07"></a>Bull Algorithm Control Data (68.07)
 
 <dl>
-<dt>ID</dt><dd>Bull_Algorithm_Control_Data-68_07</dd>
-<dt>File Type</dt><dd>68.07</dd>
-<dt>Label</dt><dd>Bull Algorithm Control Data</dd></dl>
+<dt>ID</dt><dd>Bull_Algorithm_Control_Data-68_07</dd></dl>
 
 #### Properties
 
@@ -245,12 +251,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Mean Data Value 2**{::nomarkdown}<pre><code>  mean_data_value_2</code></pre>{:/} | 3 | The Mean Data Value 2 from the Auto Instrument file is reproduced here. | NUMERIC |  | 
 **Mean Data Value 3**{::nomarkdown}<pre><code>  mean_data_value_3</code></pre>{:/} | 4 | The Mean Data Value 3 from the Auto Instrument file is reproduced here. | NUMERIC |  | 
 
-#### <a name="Multirule_VA_Qc-68_11"></a>Multi-rule VA Qc
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Multirule_VA_Qc-68_11"></a>Multi-rule VA Qc (68.11)
 
 <dl>
-<dt>ID</dt><dd>Multirule_VA_Qc-68_11</dd>
-<dt>File Type</dt><dd>68.11</dd>
-<dt>Label</dt><dd>Multi-rule VA Qc</dd></dl>
+<dt>ID</dt><dd>Multirule_VA_Qc-68_11</dd></dl>
 
 #### Properties
 
@@ -260,6 +267,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Control Data**{::nomarkdown}<pre><code>  control_data</code></pre>{:/} | 1 | Data from the Multi-rule Shewhart determinations are stored here for<br/>intermediate computations. | POINTER |  | [Laboratory_Test-60](Laboratory_Test-60)
 **Reject Reason**{::nomarkdown}<pre><code>  reject_reason</code></pre>{:/} | 2 | A brief description of the reason to re-examine the controls. | STRING |  | 
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

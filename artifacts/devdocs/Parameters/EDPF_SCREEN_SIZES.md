@@ -3,20 +3,21 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; EDPF SCREEN SIZES
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; EDPF SCREEN SIZES<br/>
 # EDPF SCREEN SIZES
 
 This list contains the screen sizes that are selectable for the EDIS display board.  It generally lists the sizes of LCD or Plasma screens that may be used for the large display.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 618
 Summary | Available Screen Sizes
 Value Type | free text
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | true
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
@@ -24,4 +25,4 @@ Precedence | Entity
 7 | SYSTEM
 10 | PACKAGE
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

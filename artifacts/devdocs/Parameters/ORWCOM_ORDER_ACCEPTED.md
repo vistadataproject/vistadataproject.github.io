@@ -3,20 +3,21 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; ORWCOM ORDER ACCEPTED
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; ORWCOM ORDER ACCEPTED<br/>
 # ORWCOM ORDER ACCEPTED
 
 COM Objects to activate on order acceptance
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 4744
 Summary | COM Object on Order Acceptance
 Value Type | pointer
 Value Domain | 101.15
 Multiple Instances | true
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
@@ -25,4 +26,4 @@ Precedence | Entity
 5 | DIVISION
 6 | SYSTEM
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

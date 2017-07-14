@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Ward_Location-42
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Ward_Location-42<br/>
+<a name="top"></a>
 # Ward Location (42)
 This file contains all the facility ward locations and their related data, i.e., Operating Beds,  Bedsection, etc.  The wards  are created/edited using the WARD DEFINITION option of the ADT module. WARD DEFINITION option of the ADT module. contains all statistical data, by date, necessary for the computation of the daily Bed Status report.
 
-<dl>
-<dt>Global</dt><dd>^DIC(42,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^DIC(42,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -37,13 +37,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **G&amp;l Header**{::nomarkdown}<pre><code>  gl_header</code></pre>{:/} | 804 | This field is free text (1 to 89 characters in length) and contains the <br/>name that you want to print for this ward on the Bed Status Report. | STRING |  | 
 ***nserv**{::nomarkdown}<pre><code>  nserv</code></pre>{:/} | 1491 | Enter the nursing service associated with this ward. | ENUMERATION | DEPRECATED | 
 
-### Subfile
-#### <a name="Authorized_Beds_Date-42_09"></a>Authorized Beds Date
+## Sub-Files
+### <a name="Authorized_Beds_Date-42_09"></a>Authorized Beds Date (42.09)
 
 <dl>
-<dt>ID</dt><dd>Authorized_Beds_Date-42_09</dd>
-<dt>File Type</dt><dd>42.09</dd>
-<dt>Label</dt><dd>Authorized Beds Date</dd></dl>
+<dt>ID</dt><dd>Authorized_Beds_Date-42_09</dd></dl>
 
 #### Properties
 
@@ -52,12 +50,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Authorized Beds Date**{::nomarkdown}<pre><code>  authorized_beds_date</code></pre>{:/} | .01 | Enter the date on which these authorized beds were assigned.  This<br/>assignment comes from VA Central Office. | DATE-TIME | INDEXED<br/>REQUIRED | 
 **Number Of Authorized Beds**{::nomarkdown}<pre><code>  number_of_authorized_beds</code></pre>{:/} | 2 | Enter in this field the number of beds this ward is authorized.  This<br/>data is used by the G&L and bed status reports. | NUMERIC | REQUIRED | 
 
-#### <a name="Outofservice_Date-42_08"></a>Out-of-service Date
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Outofservice_Date-42_08"></a>Out-of-service Date (42.08)
 
 <dl>
-<dt>ID</dt><dd>Outofservice_Date-42_08</dd>
-<dt>File Type</dt><dd>42.08</dd>
-<dt>Label</dt><dd>Out-of-service Date</dd></dl>
+<dt>ID</dt><dd>Outofservice_Date-42_08</dd></dl>
 
 #### Properties
 
@@ -75,12 +74,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Bed Status Display End Date**{::nomarkdown}<pre><code>  bed_status_display_end_date</code></pre>{:/} | .1 | Enter the date on which you would like this out-of-service period to<br/>cease to display on the bed status report. | DATE-TIME |  | 
 **Number Beds Oos**{::nomarkdown}<pre><code>  number_beds_oos</code></pre>{:/} | .11 | If the entire ward is not placed out-of-service, enter the number of<br/>individual beds being placed out-of-service. | NUMERIC |  | 
 
-#### <a name="Totals-42_05"></a>Totals
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Totals-42_05"></a>Totals (42.05)
 
 <dl>
-<dt>ID</dt><dd>Totals-42_05</dd>
-<dt>File Type</dt><dd>42.05</dd>
-<dt>Label</dt><dd>Totals</dd></dl>
+<dt>ID</dt><dd>Totals-42_05</dd></dl>
 
 #### Properties
 
@@ -94,12 +94,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Plan Cum Disch Month**{::nomarkdown}<pre><code>  plan_cum_disch_month</code></pre>{:/} | 3 | This field is a multiple that adds new entry without asking. | OBJECT |  | [Plan_Cum_Disch_Month-42_07](#Plan_Cum_Disch_Month-42_07)
 **Cum Title**{::nomarkdown}<pre><code>  cum_title</code></pre>{:/} | 4 | This field is free text (1 to 20 characters in length) and is the title <br/>you want to print for the Cumulative Totals Section of the Bed Status <br/>Report. | STRING |  | 
 
-#### <a name="Plan_Cum_Disch_Month-42_07"></a>Plan Cum Disch Month
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Plan_Cum_Disch_Month-42_07"></a>Plan Cum Disch Month (42.07)
 
 <dl>
-<dt>ID</dt><dd>Plan_Cum_Disch_Month-42_07</dd>
-<dt>File Type</dt><dd>42.07</dd>
-<dt>Label</dt><dd>Plan Cum Disch Month</dd></dl>
+<dt>ID</dt><dd>Plan_Cum_Disch_Month-42_07</dd></dl>
 
 #### Properties
 
@@ -108,6 +109,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Plan Cum Disch Month**{::nomarkdown}<pre><code>  plan_cum_disch_month</code></pre>{:/} | .01 | This sub-field of the multiple 'Plan Cum Disch Month' field is also  <br/>a multiple and contains a set of codes for the month for which <br/>you would like to enter the planned cumulative discharges. | ENUMERATION | REQUIRED | {::nomarkdown}MAR: <em><strong>6</strong></em><br/>FEB: <em><strong>5</strong></em><br/>AUG: <em><strong>11</strong></em><br/>SEP: <em><strong>12</strong></em><br/>APR: <em><strong>7</strong></em><br/>JUN: <em><strong>9</strong></em><br/>JUL: <em><strong>10</strong></em><br/>JAN: <em><strong>4</strong></em><br/>MAY: <em><strong>8</strong></em><br/>NOV: <em><strong>2</strong></em><br/>DEC: <em><strong>3</strong></em><br/>OCT: <em><strong>1</strong></em>{:/}
 **Planned Discharges For Month**{::nomarkdown}<pre><code>  planned_discharges_for_month</code></pre>{:/} | 1 | This sub-field of the multiple 'Plan Cum Disch Month' field contains <br/>the number of discharges planned for the month selected from 0 to 9999. | NUMERIC |  | 
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

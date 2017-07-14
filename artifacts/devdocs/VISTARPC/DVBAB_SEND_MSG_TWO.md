@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DVBAB SEND MSG TWO
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DVBAB SEND MSG TWO<br/>
 # DVBAB SEND MSG TWO
 
 THIS RPC IS THE SECOND FOR THE CAPRI MSG 2507 EXAMTHIS ONE PRODUCES A MESSAGE FOR EACH EXAM THAT IS COMPLETED
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DVBAB1A](http://code.osehra.org/dox/Routine_DVBAB1A_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ ELIST | LIST |  |  | 2507 EXAM LIST #396.4
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

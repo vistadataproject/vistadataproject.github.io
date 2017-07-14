@@ -3,24 +3,25 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; ORPF NEW ORDERS DEFAULT
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; ORPF NEW ORDERS DEFAULT<br/>
 # ORPF NEW ORDERS DEFAULT
 
 This parameter determines the default action to be presented at the end ofthe Review New Orders screen; the action &#x27;Next Screen&#x27; will be used untilthe last screen of orders, if there are more than one.  If there is noaction specified here, then &#x27;Sign All Orders&#x27; will be used.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 256
 Summary | New Orders Default
 Value Type | set of codes
 Value Domain | 0:Sign All Orders;1:Sign &amp; Release;
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 5 | SYSTEM
 9 | PACKAGE
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

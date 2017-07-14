@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Clinical_Reminder_Parameters-800
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Clinical_Reminder_Parameters-800<br/>
+<a name="top"></a>
 # Clinical Reminder Parameters (800)
 This file contains the parameters used by the Clinical Reminders package.
 
-<dl>
-<dt>Global</dt><dd>^PXRM(800,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^PXRM(800,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -35,13 +35,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Formatted Disclaimer**{::nomarkdown}<pre><code>  formatted_disclaimer</code></pre>{:/} | 16 | This file contains two fields to store a disclaimer: DEFAULT<br/>REMINDER DISCLAIMER and SITE REMINDER DISCLAIMER. The DEFAULT<br/>REMINDER DISCLAIMER is distributed with the package. A site<br/>can create and store their own disclaimer in the SITE REMINDER<br/>DISCLAIMER field. If the SITE REMINDER DISCLAIMER is defined it is<br/>used otherwise the DEFAULT REMINDER DISCLAIMER is used.<br/><br/>The disclaimer needs to be formatted before it can be displayed so<br/>for efficiency purposes the disclaimer is formatted once and stored<br/>in this field. The formatting takes place whenever the SITE REMINDER<br/>DISCLAIMER is edited or deleted.<br/><br/> | STRING |  | 
 **Maximum Number Of Mh Questions**{::nomarkdown}<pre><code>  maximum_number_of_mh_questions</code></pre>{:/} | 17 | When setting up a reminder dialog element, if a mental health test<br/>has more questions then the value defined in this field the<br/>test cannot be used in a dialog element. When PXRM*2.0*6 is<br/>installed the value will be set to 35. This parameter can be edited<br/>using the PAR option on the Reminders Managers Menu.<br/><br/> | NUMERIC |  | 
 
-### Subfile
-#### <a name="Web_Sites-800_04"></a>Web Sites
+## Sub-Files
+### <a name="Web_Sites-800_04"></a>Web Sites (800.04)
 
 <dl>
-<dt>ID</dt><dd>Web_Sites-800_04</dd>
-<dt>File Type</dt><dd>800.04</dd>
-<dt>Label</dt><dd>Web Sites</dd></dl>
+<dt>ID</dt><dd>Web_Sites-800_04</dd></dl>
 
 #### Properties
 
@@ -51,6 +49,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Web Site Title**{::nomarkdown}<pre><code>  web_site_title</code></pre>{:/} | .02 | This is the WEB SITE TITLE. This field is optional. If entered, this will <br/>display in the 'Reference Information' window of CPRS GUI instead of the <br/>full URL. | STRING |  | 
 **Web Site Description**{::nomarkdown}<pre><code>  web_site_description</code></pre>{:/} | 1 | This is a description of the web site. It can be used to explain why<br/>the particular site is included. It is for reference information only<br/>and not displayed to the user. | STRING |  | 
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

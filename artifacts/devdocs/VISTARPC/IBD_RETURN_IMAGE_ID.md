@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; IBD RETURN IMAGE ID
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; IBD RETURN IMAGE ID<br/>
 # IBD RETURN IMAGE ID
 
 Returns a numeric between 1 and 9999999 that is used as part of the filename to store the next unknown image as.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -17,4 +19,4 @@ Return Type | SINGLE VALUE
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

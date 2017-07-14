@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGV SEARCH BY ATTRIBUTE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGV SEARCH BY ATTRIBUTE<br/>
 # MAGV SEARCH BY ATTRIBUTE
 
 This remote procedure accepts an array of one or more name-value pairsof FileMan field names and exact match values, and returns a list ofinternal entry numbers of matching entries.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGVRS42](http://code.osehra.org/dox/Routine_MAGVRS42_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ FILE | LITERAL | 15 | true | This is the number of the FileMan file to be search
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIF PAY DELETE PAYMENT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIF PAY DELETE PAYMENT<br/>
 # DSIF PAY DELETE PAYMENT
 
 Allows deletion of payment data based on flags supplied, usually requires supervisor key.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIFPAY2](http://code.osehra.org/dox/Routine_DSIFPAY2_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ PTID | LITERAL | 45 | true | FBID&#x3D;IEN of Fee Basis Patient file:(1)^IEN of 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIV GET EIV PATIENT REPORT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIV GET EIV PATIENT REPORT<br/>
 # DSIV GET EIV PATIENT REPORT
 
 Returns one to many patient eIV reports from the Insurance Type multiple in the patient file.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIVIC3](http://code.osehra.org/dox/Routine_DSIVIC3_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ DSIVPATP | LITERAL | 10 | true | Contains the pointer to the patient policy IEN 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

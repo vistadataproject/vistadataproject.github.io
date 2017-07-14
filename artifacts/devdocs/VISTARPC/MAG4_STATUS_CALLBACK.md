@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAG4 STATUS CALLBACK
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAG4 STATUS CALLBACK<br/>
 # MAG4 STATUS CALLBACK
 
 This RPC is called from the Imaging Delphi component whenan image/images have been imported via the Imaging Import APIbeing developed for use by Clinical Procedures.This call is used in the test version of Import API, it will be replaced in the released version.  In the released version the Imaging BackGround Processor will be calling the Status Callbackroutine of CP.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGGSIUI](http://code.osehra.org/dox/Routine_MAGGSIUI_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ STATARR | LIST |  | true | This array has the following structure:STATARR(0)&#x3
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

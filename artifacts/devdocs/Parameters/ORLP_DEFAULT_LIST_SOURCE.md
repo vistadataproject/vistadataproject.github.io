@@ -3,24 +3,25 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; ORLP DEFAULT LIST SOURCE
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; ORLP DEFAULT LIST SOURCE<br/>
 # ORLP DEFAULT LIST SOURCE
 
 Default preference for patient list source.  Valid values include:  T:Team/Personal ListW:Ward ListC:Clinic ListP:Provider ListS:Specialty ListM:Combination List
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 55
 Summary | Select Patient From
 Value Type | set of codes
 Value Domain | T:Team/Personal List;W:Ward List;C:Clinic List;P:Provider List;S:Specialty List;M:Combination List
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | USER
 2 | SERVICE
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; VAFC AA UPDATE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; VAFC AA UPDATE<br/>
 # VAFC AA UPDATE
 
 This remote procedure call will update assigning authority passed in by MPI to VAFC ASSIGNING AUTHORITY file #391.92.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [VAFCRPC](http://code.osehra.org/dox/Routine_VAFCRPC_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ ARRAA | LIST | 2000 | true | ARRAA may contain the following values:The values a
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIR GET REASONS FOR REQUEST
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIR GET REASONS FOR REQUEST<br/>
 # DSIR GET REASONS FOR REQUEST
 
 Retrieve entries from file 19620.31 DSIR REQUEST REASON.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -17,4 +19,4 @@ Return Type | ARRAY
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

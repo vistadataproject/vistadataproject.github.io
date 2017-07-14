@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIV FM GET FIELD ATTRIB MULT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIV FM GET FIELD ATTRIB MULT<br/>
 # DSIV FM GET FIELD ATTRIB MULT
 
 This will return field attributes from a selected file for one or more fields.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIVFM06](http://code.osehra.org/dox/Routine_DSIVFM06_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ DSIN | LIST | 50 | true |  DSIN(i) :&#x3D; label ^ value   for i &#x3D; 0,1,2,3,
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

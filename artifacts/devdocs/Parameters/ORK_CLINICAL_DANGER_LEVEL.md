@@ -3,20 +3,21 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; ORK CLINICAL DANGER LEVEL
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; ORK CLINICAL DANGER LEVEL<br/>
 # ORK CLINICAL DANGER LEVEL
 
 Package, System, Division indicate the clinical danger level of an ordercheck.  Valid levels include High, Moderate, Low.  The clinical danger level is used in sorting for order check display and prompting for override.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 85
 Summary | Order Check Clinical Danger Level
 Value Type | set of codes
 Value Domain | 1:High;2:Moderate;3:Low
 Multiple Instances | true
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
@@ -24,4 +25,4 @@ Precedence | Entity
 2 | SYSTEM
 3 | PACKAGE
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

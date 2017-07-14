@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIC ACTIVE USER
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIC ACTIVE USER<br/>
 # DSIC ACTIVE USER
 
 This will determine if a user (DUZ value) is valid and is active.  Also, additionally screening logic can be passed in to validate a user.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSICDUZ](http://code.osehra.org/dox/Routine_DSICDUZ_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ DSISCR | LIST | 250 | true | You may pass additional screening criteria to be ch
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

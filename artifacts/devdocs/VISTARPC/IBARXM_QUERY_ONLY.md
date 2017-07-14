@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; IBARXM QUERY ONLY
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; IBARXM QUERY ONLY<br/>
 # IBARXM QUERY ONLY
 
 This RPC is used to query only the information for pharmacy co-paymentbilling that has happened for the given month/year.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [IBARXMR](http://code.osehra.org/dox/Routine_IBARXMR_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ IBM | LITERAL | 7 | true | This is in fileman format the month/year for which th
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

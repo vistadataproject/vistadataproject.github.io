@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MDCP UPDATE MESSAGE STATUS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MDCP UPDATE MESSAGE STATUS<br/>
 # MDCP UPDATE MESSAGE STATUS
 
 This call will update the status of an entry in file 704.002(the CLIO_HL7_LOG file).  Note that if the status passed through is 'PROCESSED', the CP INSTRUMENT file entry pointed to by field .03 will be checked to see if it has a routine in its .11 field.  If it does, the HL7 message will be copied to a temp global and the PROCESSING ROUTINE will be invoked.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MDCPHL7B](http://code.osehra.org/dox/Routine_MDCPHL7B_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -26,4 +28,4 @@ MDCPISCR | LITERAL |  | true | If MDCPDFN is set, this tells the linetag that MD
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

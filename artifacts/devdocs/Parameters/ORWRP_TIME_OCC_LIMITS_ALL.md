@@ -3,20 +3,21 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; ORWRP TIME/OCC LIMITS ALL
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; ORWRP TIME/OCC LIMITS ALL<br/>
 # ORWRP TIME/OCC LIMITS ALL
 
 This parameter sets a default for all reports found on the Reports Tabin CPRS.  Individual values of this parameter, for each report can beset by editing the parameter ORWRP TIME/OCC LIMITS INDV.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 4739
 Summary | Default time/occ for all reports
 Value Type | free text
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
@@ -25,4 +26,4 @@ Precedence | Entity
 6 | SYSTEM
 9 | PACKAGE
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

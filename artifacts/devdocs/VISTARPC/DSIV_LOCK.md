@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIV LOCK
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIV LOCK<br/>
 # DSIV LOCK
 
 Lock or unlock a global reference from a GUI client
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIVLOCK](http://code.osehra.org/dox/Routine_DSIVLOCK_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -26,4 +28,4 @@ FUN | LITERAL | 1 | true | Flag to indicate if the call is extrinsic or RPC   1:
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

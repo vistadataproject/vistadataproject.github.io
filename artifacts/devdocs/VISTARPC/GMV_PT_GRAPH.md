@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; GMV PT GRAPH
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; GMV PT GRAPH<br/>
 # GMV PT GRAPH
 
 Prints Vitals/Measurements Graphic Reports.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [GMVSR0](http://code.osehra.org/dox/Routine_GMVSR0_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ GMVDATA | LITERAL | 150 | true | A multi-piece variable that identifies the valu
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Fh_Site_Parameters-119_9
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Fh_Site_Parameters-119_9<br/>
+<a name="top"></a>
 # Fh Site Parameters (119.9)
 This file contains an extensive set of site parameters designed to indicate characteristics of the Nutrition and Food Service and/or different methods by which the Service wishes the program to perform.
 
-<dl>
-<dt>Global</dt><dd>^FH(119.9,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^FH(119.9,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -79,13 +79,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Will You Use Tray Tickets?**{::nomarkdown}<pre><code>  will_you_use_tray_tickets</code></pre>{:/} | 100 | This field is optional and it is used to indicate whether the user<br/>wants to use the Tray Tickets or not.  If the answer is Yes, you will<br/>be asked whether you want the heading for the Tray Tickets to<br/>be printed on the bottom or not and also you will be receiving a<br/>no diet pattern message on diet activity for patients that do<br/>not have a diet pattern which is related to the tray tickets.<br/>If the answer is No, you will not be asked the question and<br/>receive the message. | BOOLEAN |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
 **Outpatient Meals Installed**{::nomarkdown}<pre><code>  outpatient_meals_installed</code></pre>{:/} | 101 | Field to note if outpatient meals build has been installed previously. | BOOLEAN |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
 
-### Subfile
-#### <a name="Label_Printers-119_93"></a>Label Printers
+## Sub-Files
+### <a name="Label_Printers-119_93"></a>Label Printers (119.93)
 
 <dl>
-<dt>ID</dt><dd>Label_Printers-119_93</dd>
-<dt>File Type</dt><dd>119.93</dd>
-<dt>Label</dt><dd>Label Printers</dd></dl>
+<dt>ID</dt><dd>Label_Printers-119_93</dd></dl>
 
 #### Properties
 
@@ -94,12 +92,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Label Printers**{::nomarkdown}<pre><code>  label_printers</code></pre>{:/} | .01 | This field is a pointer to the Device File and indicates a printer used<br/>for printing diet labels, tubefeeding labels, supplemental feeding labels<br/>or other labels. | POINTER | INDEXED<br/>REQUIRED | [Device-3_5](Device-3_5)
 **Size Of Labels**{::nomarkdown}<pre><code>  size_of_labels</code></pre>{:/} | 1 | This field indicates the size and type of label stock on the printer.<br/>You may choose from the following selections:<br/><br/>1)  3-1/2 x 15/16 - Single strip track-fed labels.<br/>2)  4 x 1-7/16    - Single strip track-fed labels.<br/>3)  2-5/8 x 1 - Laser label sheets, ie AVERY 5160, 30 labels per sheet.<br/>4)  4 x 1-1/3 - Laser label sheets, ie AVERY 5162, 14 labels per sheet. | ENUMERATION |  | {::nomarkdown}4 x 1-1/3 (Laser labels - 14 labels per sheet): <em><strong>4</strong></em><br/>2-5/8 x 1 (Laser labels - 30 labels per sheet): <em><strong>3</strong></em><br/>3-1/2 x 15/16 (Single strip labels): <em><strong>1</strong></em><br/>4 x 1-7/16 (Single strip labels): <em><strong>2</strong></em>{:/}
 
-#### <a name="Lab_Test-119_9001"></a>Lab Test
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Lab_Test-119_9001"></a>Lab Test (119.9001)
 
 <dl>
-<dt>ID</dt><dd>Lab_Test-119_9001</dd>
-<dt>File Type</dt><dd>119.9001</dd>
-<dt>Label</dt><dd>Lab Test</dd></dl>
+<dt>ID</dt><dd>Lab_Test-119_9001</dd></dl>
 
 #### Properties
 
@@ -112,12 +111,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Print Order**{::nomarkdown}<pre><code>  print_order</code></pre>{:/} | 4 | This number, called Print Order:<br/>(a) will allow grouping of similar lab tests;<br/>(b) will allow selection of only the lab test with the latest value from<br/>among the group of tests with the same number;<br/>(c) will also specify the print order of the lab test  in Nutrition<br/>Profile report.<br/>If the value of Print Order is not defined for the test then the system<br/>first prints all numbered tests and then prints tests without numbers in<br/>order providing by Lab package. | NUMERIC |  | 
 **Serum Albumin?**{::nomarkdown}<pre><code>  serum_albumin</code></pre>{:/} | 5 | This field, if answered YES, indicates that the lab test<br/>is a serum albumin test. | BOOLEAN |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
 
-#### <a name="Drug_Classifications-119_985"></a>Drug Classifications
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Drug_Classifications-119_985"></a>Drug Classifications (119.985)
 
 <dl>
-<dt>ID</dt><dd>Drug_Classifications-119_985</dd>
-<dt>File Type</dt><dd>119.985</dd>
-<dt>Label</dt><dd>Drug Classifications</dd></dl>
+<dt>ID</dt><dd>Drug_Classifications-119_985</dd></dl>
 
 #### Properties
 
@@ -129,6 +129,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Print Order**{::nomarkdown}<pre><code>  print_order</code></pre>{:/} | 5 | This is a print order of a specific Drug Classification. | NUMERIC |  | 
 **Create Alert**{::nomarkdown}<pre><code>  create_alert</code></pre>{:/} | 6 | If set to YES, alert will be created for patient that is taking <br/>medication with this type of Drug. | BOOLEAN |  | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

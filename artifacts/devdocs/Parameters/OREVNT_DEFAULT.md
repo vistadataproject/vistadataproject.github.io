@@ -3,20 +3,21 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; OREVNT DEFAULT
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; OREVNT DEFAULT<br/>
 # OREVNT DEFAULT
 
 This parameter is used to provide a default Release Event in the eventlistbox presented when the user clicks on the &#x27;Write Delayed Orders&#x27;button in CPRS GUI.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 200
 Summary | Default Release Event
 Value Type | pointer
 Value Domain | 100.5
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
@@ -27,4 +28,4 @@ Precedence | Entity
 5 | SERVICE
 6 | DIVISION
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

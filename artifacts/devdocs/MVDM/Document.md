@@ -3,29 +3,21 @@ layout: default
 title: MVDM
 ---
 
-## [MVDM](TableOfContents) &#8594; Document
+#### [Developer Documentation](../index) &#187; [MVDM](TableOfContents) &#187; Document<br/>
+<a name="top"></a>
 # Document
+
+### Document
+
 No Description
 
-<dl>
-<dt>File Type</dt><dd>8925</dd>
-<dt>Base VDM Class</dt><dd>Tiu_Document-8925</dd>
-</dl>
+**Fileman ID:** 8925
 
-### From VDM
-<dl>
-<dt>Queries</dt><dd>Tiu_Document-8925: <pre><code>DESCRIBE $ID</code></pre>
-</dd>
-<dt>List</dt><dd><pre><code>SELECT 8925 FILTER(!bound(1611))</code></pre></dd>
-<dt>List Per Patient</dt><dd><pre><code>SELECT 8925 FILTER(.02&#x3D;$PID&amp;&amp;!bound(1611))</code></pre></dd>
-</dl>
+**Base VDM Class:** [Tiu_Document-8925](../VDM/Tiu_Document-8925)
 
+## Property Summary
 
-### Property Summary
-
-Property Count: **20**
-
-Sub-Object Count: **2**
+**Property Count:** 20
 
 Type | Count
 --- | ---
@@ -35,9 +27,18 @@ DATE-TIME | 3
 BOOLEAN | 2
 OBJECT | 2
 
-### Properties
+**Sub-Object Count:** 2
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+ID | Label | Field ID
+--- | --- | ---
+1 | [Removal Details](#RemovalDetails) | RemovalDetails
+2 | [Signing Details](#SigningDetails) | SigningDetails
+
+[&uarr; Return to top](#top)<br/>
+
+## Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
 **Patient**{::nomarkdown}<pre><code>  patient</code></pre>{:/} | POINTER | patient |  | REQUIRED | Patient_IHS-9000001
 **Document Type**{::nomarkdown}<pre><code>  documentType</code></pre>{:/} | POINTER | document_type |  | REQUIRED | [Tiu_Document_Definition-8925_1](../VDM/Tiu_Document_Definition-8925_1)
@@ -60,17 +61,31 @@ Field | Datatype | FromVDM | Default | Attributes | Range
 **Is Removed**{::nomarkdown}<pre><code>  isRemoved</code></pre>{:/} | BOOLEAN | *GENERATED* |  |  | 
 **Removal Details**{::nomarkdown}<pre><code>  removalDetails</code></pre>{:/} | OBJECT | *GENERATED* |  |  | [RemovalDetails](#RemovalDetails)
 
-### SubObjects
-#### <a name="SigningDetails"></a>
+[&uarr; Return to top](#top)<br/>
 
-<dl>
-<dt>ID</dt><dd>SigningDetails</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
+## Sub-Objects
+### <a name="RemovalDetails"></a>1. Removal Details
+
+**Field ID:** RemovalDetails
 
 #### Properties
 
-Field | Datatype | FromVDM | Default | Attributes | Range
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Date/Time Entered**{::nomarkdown}<pre><code>  dateTimeEntered</code></pre>{:/} | DATE-TIME | deletion_date |  |  | 
+**Entered By**{::nomarkdown}<pre><code>  enteredBy</code></pre>{:/} | POINTER | deleted_by |  |  | 
+**Reason For Document Deletion**{::nomarkdown}<pre><code>  reasonForDocumentDeletion</code></pre>{:/} | ENUMERATION | reason_for_deletion |  |  | {::nomarkdown}0: <em><strong>privacy act</strong></em><br/>1: <em><strong>administrative</strong></em>{:/}
+
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="SigningDetails"></a>2. Signing Details
+
+**Field ID:** SigningDetails
+
+#### Properties
+
+Label/Field ID | Datatype | FromVDM | Default | Attributes | Range
 --- | --- | --- | --- | --- | ---
 **Signature Date/Time**{::nomarkdown}<pre><code>  dateTimeEntered</code></pre>{:/} | DATE-TIME | signature_date_time |  |  | 
 **Signed By**{::nomarkdown}<pre><code>  enteredBy</code></pre>{:/} | POINTER | signed_by |  |  | [New_Person-200](../VDM/New_Person-200)
@@ -78,21 +93,9 @@ Field | Datatype | FromVDM | Default | Attributes | Range
 **Signature Block Title**{::nomarkdown}<pre><code>  signatureBlockTitle</code></pre>{:/} | STRING | signature_block_title |  |  | 
 **Signature Mode**{::nomarkdown}<pre><code>  signatureMode</code></pre>{:/} | ENUMERATION | signature_mode |  |  | {::nomarkdown}0: <em><strong>electronic</strong></em><br/>1: <em><strong>chart</strong></em>{:/}
 
-#### <a name="RemovalDetails"></a>
-
-<dl>
-<dt>ID</dt><dd>RemovalDetails</dd>
-<dt>File Type</dt><dd></dd>
-<dt>Label</dt><dd></dd></dl>
-
-#### Properties
-
-Field | Datatype | FromVDM | Default | Attributes | Range
---- | --- | --- | --- | --- | ---
-**Date/Time Entered**{::nomarkdown}<pre><code>  dateTimeEntered</code></pre>{:/} | DATE-TIME | deletion_date |  |  | 
-**Entered By**{::nomarkdown}<pre><code>  enteredBy</code></pre>{:/} | POINTER | deleted_by |  |  | 
-**Reason For Document Deletion**{::nomarkdown}<pre><code>  reasonForDocumentDeletion</code></pre>{:/} | ENUMERATION | reason_for_deletion |  |  | {::nomarkdown}0: <em><strong>privacy act</strong></em><br/>1: <em><strong>administrative</strong></em>{:/}
+[&uarr; Return to top](#top)<br/>
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:06 pm</p>{:/}
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:34 pm</p>{:/}

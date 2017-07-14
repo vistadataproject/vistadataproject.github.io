@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAG3 LOGACTION
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAG3 LOGACTION<br/>
 # MAG3 LOGACTION
 
 Certain actions performed by a user are tracked for statistical purposesin the IMAGING WINDOWS SESSIONS and IMAGING WINDOWS WORKSTATIONS files.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGGTAU](http://code.osehra.org/dox/Routine_MAGGTAU_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ ACTION | LITERAL | 256 | true | LOGACT calls ACTION^MAGGTAU to log action.      
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

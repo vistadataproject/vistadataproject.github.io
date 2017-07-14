@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; IBD VALIDATE USER
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; IBD VALIDATE USER<br/>
 # IBD VALIDATE USER
 
 This call is used to validate user information and for display on theShow User screen.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [IBDFBK1](http://code.osehra.org/dox/Routine_IBDFBK1_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ IBDAV | LIST | 40 | true | validates that user is holder of specified security k
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

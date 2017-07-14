@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DVBAB AMIS REPORT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DVBAB AMIS REPORT<br/>
 # DVBAB AMIS REPORT
 
 Returns an AMIS report for specified search criteria.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DVBAB3](http://code.osehra.org/dox/Routine_DVBAB3_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -28,4 +30,4 @@ DVBAPRTY | LITERAL | 4 | true | Priority of Exam code which inidicates which pri
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

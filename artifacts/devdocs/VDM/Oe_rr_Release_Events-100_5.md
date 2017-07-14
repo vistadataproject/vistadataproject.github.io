@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Oe_rr_Release_Events-100_5
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Oe_rr_Release_Events-100_5<br/>
+<a name="top"></a>
 # Oe/rr Release Events (100.5)
 This file contains the locally-defined events that can release delayed orders within each division.   It is strongly recommended that this file not be edited with File Manager.  Please use the edit options provided within CPRS.
 
-<dl>
-<dt>Global</dt><dd>^ORD(100.5,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^ORD(100.5,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -34,13 +34,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Copy Active Orders**{::nomarkdown}<pre><code>  copy_active_orders</code></pre>{:/} | 13 | This field determines whether or not the user will be presented <br/>with the patient's active orders, which may then be copied to the <br/>delayed event being created.<br/> <br/>If this field is set to no then the user will not see the <br/>patient's active orders and will not be allowed to copy any <br/>current orders.<br/> <br/>If this field is set to yes then the user will be shown the <br/>patient's active orders and the user may select orders to be <br/>copied to the delayed event.  The list of active orders will be <br/>presented to the user after the ORDER DIALOG for the release <br/>event is processed (if it exists) and before the ORDER SET/MENU <br/>for the release event is processed (if it exists). | BOOLEAN |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
 **Parent**{::nomarkdown}<pre><code>  parent</code></pre>{:/} | 14 | For release events that have a common trigger event (e.g. same<br/>treating specialty or same locations) but require different names<br/>or display text a parent-child relationship can be set up.  The parent<br/>contains the base trigger event logic while the child contains the<br/>information unique to this event.  In a sense, the child events are<br/>"synonyms" to the parent event as all childen are related to the parent.<br/>When the trigger event occurs that would release orders for the parent<br/>all the child orders related to that parent are also released. | POINTER | INDEXED | [Oe_rr_Release_Events-100_5](Oe_rr_Release_Events-100_5)
 
-### Subfile
-#### <a name="Activation_History-100_52"></a>Activation History
+## Sub-Files
+### <a name="Activation_History-100_52"></a>Activation History (100.52)
 
 <dl>
-<dt>ID</dt><dd>Activation_History-100_52</dd>
-<dt>File Type</dt><dd>100.52</dd>
-<dt>Label</dt><dd>Activation History</dd></dl>
+<dt>ID</dt><dd>Activation_History-100_52</dd></dl>
 
 #### Properties
 
@@ -49,12 +47,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Activation Date/time**{::nomarkdown}<pre><code>  activation_date_time</code></pre>{:/} | .01 |  | DATE-TIME | INDEXED<br/>REQUIRED | 
 **Inactivation Date/time**{::nomarkdown}<pre><code>  inactivation_date_time</code></pre>{:/} | 1 |  | DATE-TIME |  | 
 
-#### <a name="Included_Treating_Specialties-100_51"></a>Included Treating Specialties
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Included_Treating_Specialties-100_51"></a>Included Treating Specialties (100.51)
 
 <dl>
-<dt>ID</dt><dd>Included_Treating_Specialties-100_51</dd>
-<dt>File Type</dt><dd>100.51</dd>
-<dt>Label</dt><dd>Included Treating Specialties</dd></dl>
+<dt>ID</dt><dd>Included_Treating_Specialties-100_51</dd></dl>
 
 #### Properties
 
@@ -63,12 +62,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Included Treating Specialties**{::nomarkdown}<pre><code>  included_treating_specialties</code></pre>{:/} | .01 | This is a treating specialty that can satisfy this event; if defined,<br/>then the patient's new specialty must match one in this list for any<br/>delayed orders to be released.  A specialty may only be included in one<br/>active delay event at a time.<br/> <br/>If locations are also defined for this event then both the treating<br/>specialty and the location must match for orders to be released. | POINTER | INDEXED<br/>REQUIRED | [Facility_Treating_Specialty-45_7](Facility_Treating_Specialty-45_7)
 **Default**{::nomarkdown}<pre><code>  default</code></pre>{:/} | 1 |  | BOOLEAN | INDEXED | {::nomarkdown}true: <em><strong>1</strong></em>{:/}
 
-#### <a name="Edit_History-100_512"></a>Edit History
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Edit_History-100_512"></a>Edit History (100.512)
 
 <dl>
-<dt>ID</dt><dd>Edit_History-100_512</dd>
-<dt>File Type</dt><dd>100.512</dd>
-<dt>Label</dt><dd>Edit History</dd></dl>
+<dt>ID</dt><dd>Edit_History-100_512</dd></dl>
 
 #### Properties
 
@@ -78,6 +78,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Who Entered/edited**{::nomarkdown}<pre><code>  who_entered_edited</code></pre>{:/} | 1 | This field identifies the person who entered or edited the event | POINTER |  | [New_Person-200](New_Person-200)
 **Action**{::nomarkdown}<pre><code>  action</code></pre>{:/} | 2 | This field describes whether the event was newly entered or if it<br/>was edited. | ENUMERATION |  | {::nomarkdown}EDIT: <em><strong>E</strong></em><br/>NEW: <em><strong>N</strong></em>{:/}
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

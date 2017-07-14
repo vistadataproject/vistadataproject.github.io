@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; GMRCSTU COMPLETION STATISTICS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; GMRCSTU COMPLETION STATISTICS<br/>
 # GMRCSTU COMPLETION STATISTICS
 
 This returns a report of completion time statistics for a consultservice/grouper for a given set of statuses and date range.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [GMRCSTU](http://code.osehra.org/dox/Routine_GMRCSTU_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ END DATE | LITERAL | 7 | true | This is the ending date range for the report.  N
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

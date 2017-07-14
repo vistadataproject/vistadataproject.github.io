@@ -3,20 +3,21 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; ORWRP ADHOC LOOKUP
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; ORWRP ADHOC LOOKUP<br/>
 # ORWRP ADHOC LOOKUP
 
  This parameter determines the lookup used to populate the Adhoc Health Summary types in CPRS Report Tab, when an Adhoc report is requested.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 4747
 Summary | Adhoc Health Summary Lookup
 Value Type | set of codes
 Value Domain | 0:Name;1:Abbreviation;2:Display Header
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
@@ -25,4 +26,4 @@ Precedence | Entity
 3 | SYSTEM
 5 | PACKAGE
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

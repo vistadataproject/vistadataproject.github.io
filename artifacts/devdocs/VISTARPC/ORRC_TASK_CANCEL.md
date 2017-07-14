@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ORRC TASK CANCEL
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ORRC TASK CANCEL<br/>
 # ORRC TASK CANCEL
 
 This call accepts a list of patient task ID's to be marked as canceled.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [ORRCTSK](http://code.osehra.org/dox/Routine_ORRCTSK_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ TASKS | LIST |  | true | This is a list of task identifiers in the form TSK:##, 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

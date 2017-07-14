@@ -3,29 +3,34 @@ layout: default
 title: VISTA Emulator Documentation
 ---
 
-## [Emulated RPCs](TableOfContents) &#8594; ORWU HASKEY
+#### [Developer Documentation](../index) &#187; [Emulated RPCs](TableOfContents) &#187; ORWU HASKEY<br/>
 # ORWU HASKEY
 
 Returns 1 if a user holds a security key, otherwise 0.
 
+**Native RPC Documentation:** [ORWU HASKEY](../VISTARPC/ORWU_HASKEY)
+
+**MUMPS Implementation:** [HASKEY^ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
+
+## Properties
+
 Property | Value
 --- | ---
-Domain | Non-Clinical: Others
-VISTA RPC Documentation | [ORWU HASKEY](../VISTARPC/ORWU_HASKEY)
-MUMPS Implementation | [HASKEY^ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
-Type | READ
+Type | Non-Clinical
+Domain | Others
+Class | READ
 Complexity | EASY
-Uses | N/A
+Uses | 
 Return Type | SINGLE VALUE
-Return Description | N/A
+Return Description | 
 File Types Used | None
 Parameters Used | None
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Required | Description | Example
 --- | --- | --- | --- | ---
 KEY | LITERAL | true | Number of Key | 1
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:06 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:34 pm</p>{:/}

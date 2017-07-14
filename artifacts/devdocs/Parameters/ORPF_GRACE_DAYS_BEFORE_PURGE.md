@@ -3,23 +3,24 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; ORPF GRACE DAYS BEFORE PURGE
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; ORPF GRACE DAYS BEFORE PURGE<br/>
 # ORPF GRACE DAYS BEFORE PURGE
 
 This parameter is the number of days that should pass before an order is purged.  Only orders with a status of discontinued, complete, expired,cancelled, changed, and lapsed will be purged.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 180
 Summary | Grace Days before Purge
 Value Type | numeric
 Value Domain | 30:99999
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | SYSTEM
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

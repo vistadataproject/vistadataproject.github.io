@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIC FM EXTERNAL
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIC FM EXTERNAL<br/>
 # DSIC FM EXTERNAL
 
 This will convert an internal formatted data to external format.  This differs from the GET Fileman calls in that a record ien is not required.  However, it is the responsibility of the developer to make sure that for the particular file (or subfile) and field that the DD will output the data without an internal number (e.g., DA is not defined).
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSICFM06](http://code.osehra.org/dox/Routine_DSICFM06_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ VALUE | LITERAL | 100 | true | This is the value in internal Fileman format to b
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

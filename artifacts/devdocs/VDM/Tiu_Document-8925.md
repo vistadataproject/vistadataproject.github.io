@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Tiu_Document-8925
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Tiu_Document-8925<br/>
+<a name="top"></a>
 # Tiu Document (8925)
 This file stores textual information for the clinical record database. Though it is designed to initially accommodate Progress Notes, Consult  Reports, and Discharge Summaries, it is intended to be sufficiently flexible to accommodate textual reports or provider narrative of any length or type, and to potentially accommodate such data transmitted  from remote sites, which may be excluded from the corresponding local  DHCP Package databases (e.g., Operative Reports, Radiology Reports,  Pathology Reports, etc.) to avoid confusion with local workload.
 
-<dl>
-<dt>Global</dt><dd>^TIU(8925,</dd>
-<dt>Domain</dt><dd>Documents</dd>
-</dl>
+**Global:** ^TIU(8925,
 
-### Properties
+**Domain:** Documents
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -92,4 +92,4 @@ Field | ID | Description | Datatype | Attributes | Range
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAG DOD GET STUDIES IEN
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAG DOD GET STUDIES IEN<br/>
 # MAG DOD GET STUDIES IEN
 
 This Remote Procedure returns information about studies,based upon the IEN (File #2005 or #2005.1) of the image group, Patient Number,Study-Level Only Flag, and Include Deleted Images Flag that are provided as parameters.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGDQR21](http://code.osehra.org/dox/Routine_MAGDQR21_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -26,4 +28,4 @@ FLAGS | LITERAL | 1 | true | This parameter is an indicator whether to include o
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

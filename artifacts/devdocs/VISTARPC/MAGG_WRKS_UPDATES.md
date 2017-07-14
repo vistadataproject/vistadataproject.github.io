@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGG WRKS UPDATES
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGG WRKS UPDATES<br/>
 # MAGG WRKS UPDATES
 
 Using this remote procedure, the workstation updates its record in theIMAGING WINDOWS WORKSTATION file (#2006.81) and starts a new session.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGGTAU](http://code.osehra.org/dox/Routine_MAGGTAU_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ DATA | LITERAL | 245 | true | Data that should be stored in the IMAGING WINDOWS 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

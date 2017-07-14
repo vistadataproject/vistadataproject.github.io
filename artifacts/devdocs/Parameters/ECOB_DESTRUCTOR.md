@@ -3,23 +3,24 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; ECOB DESTRUCTOR
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; ECOB DESTRUCTOR<br/>
 # ECOB DESTRUCTOR
 
 None
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 564
 Summary | Destructor API for an object
 Value Type | free text
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | true
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | PACKAGE
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

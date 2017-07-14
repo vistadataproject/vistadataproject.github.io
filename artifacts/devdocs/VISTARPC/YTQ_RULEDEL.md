@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; YTQ RULEDEL
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; YTQ RULEDEL<br/>
 # YTQ RULEDEL
 
 Deletes a rule and all associated skips and instrument rules   Input: IEN as ien of file 601.82   Output Data vs Error
+
+## Properties
 
 Property | Value
 --- | ---
@@ -17,4 +19,4 @@ Return Type | ARRAY
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

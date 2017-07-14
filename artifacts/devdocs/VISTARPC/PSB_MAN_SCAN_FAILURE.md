@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; PSB MAN SCAN FAILURE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; PSB MAN SCAN FAILURE<br/>
 # PSB MAN SCAN FAILURE
 
 SCANFAIL(RESULTS,PSBPARAM)      ;  TEJ 05/12/2006  BCMA-Managing Scanning Failures (MSF)        ;       Process Scanning Failures        ;               Parameters:        ;               Input (via GUI):        ;        Per Wristband  (0)      -       Pat IEN ^ ^ Failure Reason ^ User's Comment ^ "W" ^-1 (keyed)        ;                                               ;        Per Medication        ;                       (0)      -       Pat IEN ^ Order Number ^ Failure Reason ^ User's Comment ^ "M" ^-1 (keyed)        ;                       (1)      -       tag^ unique identifier        ;        ;          (example)    (1)      -       ADD^IEN of FAILED item        ;                               ;               Output:        ;                 Entry into database ^PSB(53.89)        ;                 Electronic Mail - Message Data per Scan Failure        ;                         ;                 RESULTS(0)=1        ;                 RESULTS(1)= 1 (Success) or -1 (Nonsuccess)        ;
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [PSBVDLU3](http://code.osehra.org/dox/Routine_PSBVDLU3_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ PSBPARAM | LIST |  | true | Data to initiate scanning failure process.  Input: O
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

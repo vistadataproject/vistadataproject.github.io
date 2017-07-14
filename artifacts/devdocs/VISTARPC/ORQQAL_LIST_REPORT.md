@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ORQQAL LIST REPORT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ORQQAL LIST REPORT<br/>
 # ORQQAL LIST REPORT
 
 Returns a list of allergens, severity and signs/symptoms in a reportformat which can be used in a "detailed" display.  This RPC was set upto support the listing of allergies when selected from the Patient Postingslist.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [ORQQAL](http://code.osehra.org/dox/Routine_ORQQAL_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,7 +25,7 @@ PATIENT ID | LITERAL | 16 | true | The record number of the patient from the Pat
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -35,10 +37,10 @@ Code | {::nomarkdown}<pre><code> N I,J,K,SEVER,CR,GMRAIDT ;216<br/> S CR=$CHAR(1
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
 Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCover.pas">rCover.pas</a>{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

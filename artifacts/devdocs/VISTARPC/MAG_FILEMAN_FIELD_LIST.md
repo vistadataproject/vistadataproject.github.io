@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAG FILEMAN FIELD LIST
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAG FILEMAN FIELD LIST<br/>
 # MAG FILEMAN FIELD LIST
 
 This remote procedure returns a list of fields from a FileMan file or subfile in either alpha or numeric order.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGUFFLL](http://code.osehra.org/dox/Routine_MAGUFFLL_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ ORDER | LITERAL | 1 | true | This is the desired return order for the field list
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

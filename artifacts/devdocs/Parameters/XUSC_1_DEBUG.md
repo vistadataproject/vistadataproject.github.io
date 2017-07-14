@@ -3,23 +3,24 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; XUSC1 DEBUG
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; XUSC1 DEBUG<br/>
 # XUSC1 DEBUG
 
 This parameter controls if the XUSC1 client code records debug info intothe ^TMP global.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 308
 Summary | Set Debug mode for XUSC1
 Value Type | set of codes
 Value Domain | 0:Disabled;1:Enabled
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | SYSTEM
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Nature_Of_Order-100_02
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Nature_Of_Order-100_02<br/>
+<a name="top"></a>
 # Nature Of Order (100.02)
 This file should not be added to or deleted from.  It determines the actions that are to be taken based on the nature of an order or change to an order.   Per VHA Directive 2005-044, this file has been "locked down" by Data  Standardization (DS).  The file definition (i.e. data dictionary) shall  not be modified.  All additions, changes and deletions to entries in the  file shall be done by Enterprise Reference Terminology (ERT) using the  Master File Server (MFS), provided by Common Services (CS).   Creating  and/or editing locally defined fields in the file are not permitted.  Use  of locally defined fields that were created prior to VHA Directive  2005-044 shall not be supported.   The Orders Domain has approved editing of the following fields in this file:  - PRINT CHART COPY (#.12)  - PRINT DAILY SUMMARY (#.13)  - PRINT WORK COPY (#.15)  - INCLUDE IN ACTIVE ORDERS (#.16) This may be accomplished via the option "Print Parameters for Nature of  Order" [ORCL NATURE], on the "Print/Report Parameters" [OR PARAM PRINTS]  menu.
 
-<dl>
-<dt>Global</dt><dd>^ORD(100.02,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^ORD(100.02,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -33,13 +33,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **VUID**{::nomarkdown}<pre><code>  vuid</code></pre>{:/} | 99.99 | VHA Unique ID (VUID). A unique meaningless integer assigned to reference <br/>terms VHA wide. | STRING | INDEXED<br/>REQUIRED | 
 **Effective Date/time**{::nomarkdown}<pre><code>  effective_date_time</code></pre>{:/} | 99.991 | Describes the pair Status and Effective Date/Time for each reference term. | OBJECT |  | [Effective_Date_time-100_0299](#Effective_Date_time-100_0299)
 
-### Subfile
-#### <a name="Effective_Date_time-100_0299"></a>Effective Date/time
+## Sub-Files
+### <a name="Effective_Date_time-100_0299"></a>Effective Date/time (100.0299)
 
 <dl>
-<dt>ID</dt><dd>Effective_Date_time-100_0299</dd>
-<dt>File Type</dt><dd>100.0299</dd>
-<dt>Label</dt><dd>Effective Date/time</dd></dl>
+<dt>ID</dt><dd>Effective_Date_time-100_0299</dd></dl>
 
 #### Properties
 
@@ -48,6 +46,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Effective Date/time**{::nomarkdown}<pre><code>  effective_date_time</code></pre>{:/} | .01 | This is the date/time when the Status of the reference term was established. | DATE-TIME | INDEXED<br/>REQUIRED | 
 **Status**{::nomarkdown}<pre><code>  status</code></pre>{:/} | .02 | The Status of a reference term is either 'ACTIVE' or 'INACTIVE'.  If <br/>'ACTIVE', then the term will be accessible by end-users to document a <br/>particular patient event.  If 'INACTIVE', then the term will only be <br/>accessible by the application to display legacy data. | ENUMERATION | REQUIRED | {::nomarkdown}ACTIVE: <em><strong>1</strong></em><br/>INACTIVE: <em><strong>0</strong></em>{:/}
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

@@ -3,24 +3,25 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; HMP CPRS PATH
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; HMP CPRS PATH<br/>
 # HMP CPRS PATH
 
 None
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 807
 Summary | CPRS Location
 Value Type | word processing
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | USER
 4 | SYSTEM
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

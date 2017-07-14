@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DDR LOCK UNLOCK NODE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DDR LOCK UNLOCK NODE<br/>
 # DDR LOCK UNLOCK NODE
 
 This function will lock or unlock an M global node.  Also,this function allows the calling application to specify thetimeout (in seconds) for a 'lock' command.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DDR1](http://code.osehra.org/dox/Routine_DDR1_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ PARAMETERS | LIST | 512 |  | This array contains the following parameter necessa
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

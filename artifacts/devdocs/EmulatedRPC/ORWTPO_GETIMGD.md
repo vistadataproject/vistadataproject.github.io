@@ -3,23 +3,28 @@ layout: default
 title: VISTA Emulator Documentation
 ---
 
-## [Emulated RPCs](TableOfContents) &#8594; ORWTPO GETIMGD
+#### [Developer Documentation](../index) &#187; [Emulated RPCs](TableOfContents) &#187; ORWTPO GETIMGD<br/>
 # ORWTPO GETIMGD
 
 Returns the image report system defaults in a semicolon-delimimted string.
 
+**Native RPC Documentation:** [ORWTPO GETIMGD](../VISTARPC/ORWTPO_GETIMGD)
+
+**MUMPS Implementation:** [GETIMGD^ORWTPO](http://code.osehra.org/dox/Routine_ORWTPO_source.html)
+
+## Properties
+
 Property | Value
 --- | ---
-Domain | Non-Clinical: Parameters
-VISTA RPC Documentation | [ORWTPO GETIMGD](../VISTARPC/ORWTPO_GETIMGD)
-MUMPS Implementation | [GETIMGD^ORWTPO](http://code.osehra.org/dox/Routine_ORWTPO_source.html)
-Type | READ
+Type | Non-Clinical
+Domain | Parameters
+Class | READ
 Complexity | LOW
-Uses | N/A
+Uses | 
 Return Type | SINGLE VALUE
-Return Description | N/A
+Return Description | 
 File Types Used | None
 Parameters Used | [ORCH CONTEXT REPORTS](../Parameters/ORCH_CONTEXT_REPORTS)
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:06 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:34 pm</p>{:/}

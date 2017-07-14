@@ -3,23 +3,24 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; DENTV DRM ELIGIBILITY
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; DENTV DRM ELIGIBILITY<br/>
 # DENTV DRM ELIGIBILITY
 
 This parameter determines whether or not a user can edit dental patient eligibility information on the DRM Plus Cover Page.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 454
 Summary | DRM ELIGIBILITY EDIT?
 Value Type | yes
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | USER
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

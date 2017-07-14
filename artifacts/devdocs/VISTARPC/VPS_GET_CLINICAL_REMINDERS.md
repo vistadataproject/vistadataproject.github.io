@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; VPS GET CLINICAL REMINDERS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; VPS GET CLINICAL REMINDERS<br/>
 # VPS GET CLINICAL REMINDERS
 
 Called by the Vetlink Kiosk system. The RPC returns the DUE NOW Clinical Reminders for the patient.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [VPSPTCR](http://code.osehra.org/dox/Routine_VPSPTCR_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -27,4 +29,4 @@ USERCLASS | LITERAL | 50 | true | User Class IENs separated by &quot;^&quot;.
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

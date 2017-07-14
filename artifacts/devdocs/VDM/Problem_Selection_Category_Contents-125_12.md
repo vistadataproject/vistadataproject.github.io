@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Problem_Selection_Category_Contents-125_12
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Problem_Selection_Category_Contents-125_12<br/>
+<a name="top"></a>
 # Problem Selection Category Contents (125.12)
 This file contains the problems that make up the categories defined in file #125.11; these are groups of commonly selected, similar problems. Each entry in this file links one problem to a single category, and may have a sequence number and ICD code assigned to it.  Problems may appear in more than one category.
 
-<dl>
-<dt>Global</dt><dd>^GMPL(125.12,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^GMPL(125.12,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -26,4 +26,4 @@ Field | ID | Description | Datatype | Attributes | Range
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

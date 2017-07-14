@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DENTV NEW EXTRACT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DENTV NEW EXTRACT<br/>
 # DENTV NEW EXTRACT
 
 This RPC queues off the Dental Extract at a user designated time.  Upon completion of the extract, a TCP/IP client will be called from the tasked job to send the data to a text file.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DENTVRP8](http://code.osehra.org/dox/Routine_DENTVRP8_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ INPUT | LIST | 30 | true | This is the input array for queuing the Dental Extrac
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

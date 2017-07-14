@@ -3,20 +3,21 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; ORCH CONTEXT MEDS
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; ORCH CONTEXT MEDS<br/>
 # ORCH CONTEXT MEDS
 
 Specifies a date range (in days) for Meds tab display that dictates the length of time orders are displayed.  The parameter provides strings of delimited (&quot;; ) pieces, the first two of which are always a relative date range.  Users can determine the date range of medications that display on the Medications tab through the Tools/Options pull-down menu in CPRS. This parameter functions independently of display settings for the Orders tab.  If you need to alter the display range for expired medication orders on the Orders tab, please adjust the ORWOR EXPIRED ORDERS parameter accordingly.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 248
 Summary | Meds Tab Context
 Value Type | free text
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
@@ -24,4 +25,4 @@ Precedence | Entity
 5 | SYSTEM
 9 | PACKAGE
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

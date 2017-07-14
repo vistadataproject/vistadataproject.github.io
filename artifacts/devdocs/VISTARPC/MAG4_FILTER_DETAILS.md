@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAG4 FILTER DETAILS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAG4 FILTER DETAILS<br/>
 # MAG4 FILTER DETAILS
 
 Returns the property values of a single filter
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGGSFLT](http://code.osehra.org/dox/Routine_MAGGSFLT_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ FLTIEN | LITERAL | 245 | true | This is the filter ien in the IMAGE LIST FILTERS
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

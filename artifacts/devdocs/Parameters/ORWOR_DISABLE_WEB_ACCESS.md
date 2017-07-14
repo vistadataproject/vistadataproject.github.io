@@ -3,20 +3,21 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; ORWOR DISABLE WEB ACCESS
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; ORWOR DISABLE WEB ACCESS<br/>
 # ORWOR DISABLE WEB ACCESS
 
 When this parameter is set to yes, web links in the CPRS GUI will bedisabled or hidden.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 4675
 Summary | Disable web links in GUI
 Value Type | yes
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
@@ -25,4 +26,4 @@ Precedence | Entity
 7 | SYSTEM
 10 | PACKAGE
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

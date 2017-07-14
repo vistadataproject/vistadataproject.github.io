@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Laboratory_Site-69_9
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Laboratory_Site-69_9<br/>
+<a name="top"></a>
 # Laboratory Site (69.9)
 This file holds specific information which defines certain site parameters relating to the actual functioning of your laboratory.  The parameters include the official laboratory site name, whether the physician's name must be entered when ordering and/or accessioning tests, what type of accession label format (if any) the lab will be using, and scheduled hours of routine phlebotomy collection times, as well as others.
 
-<dl>
-<dt>Global</dt><dd>^LAB(69.9,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^LAB(69.9,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -104,13 +104,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Ap Esig On**{::nomarkdown}<pre><code>  ap_esig_on</code></pre>{:/} | 619 | This field is used to activate the electronic signature function for Anatomic<br/>Pathology reports.  If the flag is turned on, at the time a report is<br/>verified/released, the user will be prompted for an electronic signature.  The<br/>document will then be stored in TIU.  If the flag is off, the report will be<br/>verified/released without electronic signature and the document will not be<br/>stored in TIU. | BOOLEAN |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
 **Panel Process Date**{::nomarkdown}<pre><code>  panel_process_date</code></pre>{:/} | 620 | The day of the month used for processing panel tests that contain <br/>pending atomic tests for the prior calendar month.  This should be<br/>one day prior to the monthly PCE roll-up date. | DATE-TIME |  | 
 
-### Subfile
-#### <a name="Immed_Lab_Collect_Div-69_9006"></a>Immed Lab Collect Div.
+## Sub-Files
+### <a name="Immed_Lab_Collect_Div-69_9006"></a>Immed Lab Collect Div. (69.9006)
 
 <dl>
-<dt>ID</dt><dd>Immed_Lab_Collect_Div-69_9006</dd>
-<dt>File Type</dt><dd>69.9006</dd>
-<dt>Label</dt><dd>Immed Lab Collect Div.</dd></dl>
+<dt>ID</dt><dd>Immed_Lab_Collect_Div-69_9006</dd></dl>
 
 #### Properties
 
@@ -144,12 +142,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Sat End Time**{::nomarkdown}<pre><code>  sat_end_time</code></pre>{:/} | 7.2 |  | NUMERIC |  | 
 **Immed Collect On**{::nomarkdown}<pre><code>  immed_collect_on</code></pre>{:/} | 8 |  | BOOLEAN |  | {::nomarkdown}true: <em><strong>1</strong></em>{:/}
 
-#### <a name="Blood_Bank_Defaults-69_98"></a>Blood Bank Defaults
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Blood_Bank_Defaults-69_98"></a>Blood Bank Defaults (69.98)
 
 <dl>
-<dt>ID</dt><dd>Blood_Bank_Defaults-69_98</dd>
-<dt>File Type</dt><dd>69.98</dd>
-<dt>Label</dt><dd>Blood Bank Defaults</dd></dl>
+<dt>ID</dt><dd>Blood_Bank_Defaults-69_98</dd></dl>
 
 #### Properties
 
@@ -167,12 +166,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Major Section**{::nomarkdown}<pre><code>  major_section</code></pre>{:/} | .1 |  | POINTER |  | [Accession-68](Accession-68)
 **Subsection**{::nomarkdown}<pre><code>  subsection</code></pre>{:/} | .11 |  | POINTER |  | [Accession-68](Accession-68)
 
-#### <a name="Blood_Bank_Institution-69_981"></a>Blood Bank Institution
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Blood_Bank_Institution-69_981"></a>Blood Bank Institution (69.981)
 
 <dl>
-<dt>ID</dt><dd>Blood_Bank_Institution-69_981</dd>
-<dt>File Type</dt><dd>69.981</dd>
-<dt>Label</dt><dd>Blood Bank Institution</dd></dl>
+<dt>ID</dt><dd>Blood_Bank_Institution-69_981</dd></dl>
 
 #### Properties
 
@@ -185,12 +185,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Donor Subsection**{::nomarkdown}<pre><code>  donor_subsection</code></pre>{:/} | .05 |  | POINTER |  | [Accession-68](Accession-68)
 **Multiple Accession Area**{::nomarkdown}<pre><code>  multiple_accession_area</code></pre>{:/} | .06 |  | ENUMERATION |  | {::nomarkdown}YES: <em><strong>1</strong></em><br/>no: <em><strong>0</strong></em><br/>yes: <em><strong>1</strong></em><br/>NO: <em><strong>0</strong></em>{:/}
 
-#### <a name="Hospital_Site-69_99"></a>Hospital Site
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Hospital_Site-69_99"></a>Hospital Site (69.99)
 
 <dl>
-<dt>ID</dt><dd>Hospital_Site-69_99</dd>
-<dt>File Type</dt><dd>69.99</dd>
-<dt>Label</dt><dd>Hospital Site</dd></dl>
+<dt>ID</dt><dd>Hospital_Site-69_99</dd></dl>
 
 #### Properties
 
@@ -201,12 +202,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Ask Urgency**{::nomarkdown}<pre><code>  ask_urgency</code></pre>{:/} | 4 | Answer YES to this field to prompt with urgency for every test when <br/>ordering through OE/RR.  Tests with a forced urgency as defined in the<br/>Laboratory test file overide this parameter. | BOOLEAN |  | {::nomarkdown}false: <em><strong>1</strong></em><br/>true: <em><strong>0</strong></em>{:/}
 **Default Type For Quick Orders**{::nomarkdown}<pre><code>  default_type_for_quick_orders</code></pre>{:/} | 5 | The entry in this field will determine the type of collection that 'Quick<br/>Orders' will have assigned to them.<br/>ex: Ward Collect, Send Patient or Lab Collect | ENUMERATION |  | {::nomarkdown}LAB COLLECT: <em><strong>LC</strong></em><br/>WARD COLLECT: <em><strong>WC</strong></em><br/>SEND PATIENT: <em><strong>SP</strong></em>{:/}
 
-#### <a name="Printer_Division-69_9007"></a>Printer Division
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Printer_Division-69_9007"></a>Printer Division (69.9007)
 
 <dl>
-<dt>ID</dt><dd>Printer_Division-69_9007</dd>
-<dt>File Type</dt><dd>69.9007</dd>
-<dt>Label</dt><dd>Printer Division</dd></dl>
+<dt>ID</dt><dd>Printer_Division-69_9007</dd></dl>
 
 #### Properties
 
@@ -216,12 +218,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Log Printer For Routine Lc**{::nomarkdown}<pre><code>  log_printer_for_routine_lc</code></pre>{:/} | .02 | This is the device you want the Routine Lab Collect Request to print on.<br/>It is recommended that this printer be different one than the one used for<br/>immediate collect listing.  If this field is vacant, the program defaults <br/>to field #303 Log Printer for Routine LC. | POINTER |  | [Device-3_5](Device-3_5)
 **Accession Printer**{::nomarkdown}<pre><code>  accession_printer</code></pre>{:/} | .03 |  | POINTER |  | [Device-3_5](Device-3_5)
 
-#### <a name="Label_Device-69_9008"></a>Label Device
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Label_Device-69_9008"></a>Label Device (69.9008)
 
 <dl>
-<dt>ID</dt><dd>Label_Device-69_9008</dd>
-<dt>File Type</dt><dd>69.9008</dd>
-<dt>Label</dt><dd>Label Device</dd></dl>
+<dt>ID</dt><dd>Label_Device-69_9008</dd></dl>
 
 #### Properties
 
@@ -234,12 +237,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Alternate Label Routine**{::nomarkdown}<pre><code>  alternate_label_routine</code></pre>{:/} | .05 | Site can enter an alternate label routine to be used instead of the standard<br/>lab label routines used by the lab package when printing labels using this<br/>device. | STRING |  | 
 **Default Accession Area**{::nomarkdown}<pre><code>  default_accession_area</code></pre>{:/} | .06 | This field is used by the label software when printing test or future<br/>order labels. When printing these types of labels, there is no accession<br/>area identified to obtain additional label characteristics such as type<br/>of barcode or accession area alternate label routine.<br/> <br/>The accession area designated for this device will be used by the software<br/>to obtain accession area specific characteristics when printing labels which<br/>are not associated with any particular accession area. Examples of these<br/>characteristics are barcode type, number of pad digits for barcode number,<br/>and alternate label routine. | POINTER |  | [Accession-68](Accession-68)
 
-#### <a name="Phlebotomy_Order_Cutoff_Time-69_9001"></a>Phlebotomy Order Cut-off Time
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Phlebotomy_Order_Cutoff_Time-69_9001"></a>Phlebotomy Order Cut-off Time (69.9001)
 
 <dl>
-<dt>ID</dt><dd>Phlebotomy_Order_Cutoff_Time-69_9001</dd>
-<dt>File Type</dt><dd>69.9001</dd>
-<dt>Label</dt><dd>Phlebotomy Order Cut-off Time</dd></dl>
+<dt>ID</dt><dd>Phlebotomy_Order_Cutoff_Time-69_9001</dd></dl>
 
 #### Properties
 
@@ -250,12 +254,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **$h Format For Collection Time**{::nomarkdown}<pre><code>  h_format_for_collection_time</code></pre>{:/} | 2 | This field is computed from what is entered in the PHLEBOTOMY<br/>COLLECTION field. | NUMERIC | INDEXED<br/>REQUIRED | 
 **Division**{::nomarkdown}<pre><code>  division</code></pre>{:/} | 3 | Allows a multi-division site to define which collection times are<br/>applicable to which division.  OE/RR-LAB interface uses this to screen<br/>out times for Lab Collection.<br/>DUZ(2) ((users division)) and only allows them to select from collection<br/>times that are appropriate for their division. | POINTER |  | [Institution-4](Institution-4)
 
-#### <a name="Archive_Data-69_9003"></a>Archive Data
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Archive_Data-69_9003"></a>Archive Data (69.9003)
 
 <dl>
-<dt>ID</dt><dd>Archive_Data-69_9003</dd>
-<dt>File Type</dt><dd>69.9003</dd>
-<dt>Label</dt><dd>Archive Data</dd></dl>
+<dt>ID</dt><dd>Archive_Data-69_9003</dd></dl>
 
 #### Properties
 
@@ -267,12 +272,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Status**{::nomarkdown}<pre><code>  status</code></pre>{:/} | 3 | This field indicates the current status of the archive process. | ENUMERATION |  | {::nomarkdown}Purge done: <em><strong>5</strong></em><br/>Clear: <em><strong>3</strong></em><br/>Purging: <em><strong>4</strong></em><br/>Searching: <em><strong>1</strong></em><br/>Search done: <em><strong>2</strong></em>{:/}
 **For Data Before Date**{::nomarkdown}<pre><code>  for_data_before_date</code></pre>{:/} | 4 | The date prior to which data may be archived. | DATE-TIME |  | 
 
-#### <a name="Division_Parameters-69_9618"></a>Division Parameters
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Division_Parameters-69_9618"></a>Division Parameters (69.9618)
 
 <dl>
-<dt>ID</dt><dd>Division_Parameters-69_9618</dd>
-<dt>File Type</dt><dd>69.9618</dd>
-<dt>Label</dt><dd>Division Parameters</dd></dl>
+<dt>ID</dt><dd>Division_Parameters-69_9618</dd></dl>
 
 #### Properties
 
@@ -281,6 +287,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Division Parameters**{::nomarkdown}<pre><code>  division_parameters</code></pre>{:/} | .01 |  | POINTER | INDEXED<br/>REQUIRED | [Institution-4](Institution-4)
 **Venipuncture Default Acc Area**{::nomarkdown}<pre><code>  venipuncture_default_acc_area</code></pre>{:/} | 618 | This field will allow the site to assign the venipuncture LMIP workload to<br/>a specific ACCESSION AREA. If this field is blank, the venipuncture<br/>workload software will use the ACCESSION AREA name that begins with 'HEM'.<br/>If there is no ACCESSION AREA with a name beginning with 'HEM', ACCESSION<br/>AREA the internal file number of 10 will be used as the default<br/>Venipuncture Accession Area. | POINTER |  | [Accession-68](Accession-68)
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

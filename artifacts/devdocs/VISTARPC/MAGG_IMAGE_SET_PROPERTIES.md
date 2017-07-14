@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGG IMAGE SET PROPERTIES
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGG IMAGE SET PROPERTIES<br/>
 # MAGG IMAGE SET PROPERTIES
 
 This remote procedure updates one or more image properties (fields of therecord of the IMAGE file (#2005)). If one of the following fields is updated in the parent or the child of agroup that has only one image, then the changes are replicated to thechild or parent respectively: SHORT DESCRIPTION (10), TYPE INDEX (42),PROC/EVENT INDEX (43), SPEC/SUBSPEC INDEX (44), ORIGIN INDEX (45),CREATION DATE (110), CONTROLLED IMAGE (112), STATUS (113), and STATUSREASON (113.3).
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGGA02](http://code.osehra.org/dox/Routine_MAGGA02_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ PROPVALS | LIST |  |  | Items of this list define new values of image properties
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

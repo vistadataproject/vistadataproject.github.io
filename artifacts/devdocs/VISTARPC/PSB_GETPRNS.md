@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; PSB GETPRNS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; PSB GETPRNS<br/>
 # PSB GETPRNS
 
 Returns all administrations of a PRN order that have NOT had the PRNEffectiveness documented in the current admission or within the hours defined in PRN documentation site parameter whichever is greater of the two.  When the PRN medication is administered a flag is set based on the given PRN Reason.  This flag will dictate whether BCMA will mandate aPAIN SCORE measurement with PRN documentation.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [PSBPRN](http://code.osehra.org/dox/Routine_PSBPRN_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ PSBSIOPI | LITERAL | 1 | true | This parameter is a true/false flag (1/0).  If t
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

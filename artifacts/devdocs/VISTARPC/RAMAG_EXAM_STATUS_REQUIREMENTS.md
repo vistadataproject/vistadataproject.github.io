@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; RAMAG EXAM STATUS REQUIREMENTS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; RAMAG EXAM STATUS REQUIREMENTS<br/>
 # RAMAG EXAM STATUS REQUIREMENTS
 
 The RAMAG EXAM STATUS REQUIREMENTS remote procedure returns a descriptorthat indicates conditions that should be met in order to successfully perform an action on an exam/case record. These conditions are defined by the sites and stored in the EXAMINATIONSTATUS file (#72). See the .1 and .5 nodes of the data dictionary of thefile #74 for more details.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [RAMAGRP2](http://code.osehra.org/dox/Routine_RAMAGRP2_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ RAPROC | LITERAL |  |  | Radiology procedure IEN (file #71). This parameter is r
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

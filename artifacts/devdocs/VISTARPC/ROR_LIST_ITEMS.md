@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ROR LIST ITEMS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ROR LIST ITEMS<br/>
 # ROR LIST ITEMS
 
 The ROR LIST ITEMS remote procedure returns a list of registry-specific items from the ROR LIST ITEM file.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [RORRP012](http://code.osehra.org/dox/Routine_RORRP012_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ TYPE | LITERAL |  | true | The TYPE parameter defines type of the items that sho
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

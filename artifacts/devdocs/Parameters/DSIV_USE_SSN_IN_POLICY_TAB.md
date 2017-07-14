@@ -3,23 +3,24 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; DSIV USE SSN IN POLICY TAB
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; DSIV USE SSN IN POLICY TAB<br/>
 # DSIV USE SSN IN POLICY TAB
 
 This parameter determines if the ICB system will enable or disable the SSN field value display in the policy.  0&#x3D;No, 1&#x3D;Yes.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 546
 Summary | ICB USE SSN FIELD IN POLICY TAB
 Value Type | set of codes
 Value Domain | 0:NO;1:YES
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | SYSTEM
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

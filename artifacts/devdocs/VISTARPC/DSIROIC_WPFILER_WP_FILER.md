@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIROIC WPFILER WP FILER
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIROIC WPFILER WP FILER<br/>
 # DSIROIC WPFILER WP FILER
 
 This RPC is used to update comments is several places withing the Release of Information Record Manager (ROI/DSIR)
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIROIC](http://code.osehra.org/dox/Routine_DSIROIC_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ STRLIST | LIST | 9999 | true | STRLIST - List (ARRAY) of lines to be filed
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

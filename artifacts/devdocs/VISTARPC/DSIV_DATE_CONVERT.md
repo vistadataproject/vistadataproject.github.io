@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIV DATE CONVERT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIV DATE CONVERT<br/>
 # DSIV DATE CONVERT
 
 This will take a date in any format and convert it to any other format.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIVDT](http://code.osehra.org/dox/Routine_DSIVDT_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -27,4 +29,4 @@ TIMEFMT | LITERAL | 1 | true |  Optional - controls what portion of the time par
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

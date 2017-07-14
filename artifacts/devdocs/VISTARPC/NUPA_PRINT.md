@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; NUPA PRINT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; NUPA PRINT<br/>
 # NUPA PRINT
 
 Prints an array to a printer
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [NUPABCL](http://code.osehra.org/dox/Routine_NUPABCL_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ ARRAY | LIST |  | true | Array of data to print, in format  ARRAY(1), ARRAY(2), 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

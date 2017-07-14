@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIROIC PATID GET DFN AND NAME
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIROIC PATID GET DFN AND NAME<br/>
 # DSIROIC PATID GET DFN AND NAME
 
 Get patient information form a request.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIROIC](http://code.osehra.org/dox/Routine_DSIROIC_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ IEN | LITERAL | 30 | true | IEN of a request in 19620 fro which patient informat
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

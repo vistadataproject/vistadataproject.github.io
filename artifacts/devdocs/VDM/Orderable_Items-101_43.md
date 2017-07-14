@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Orderable_Items-101_43
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Orderable_Items-101_43<br/>
+<a name="top"></a>
 # Orderable Items (101.43)
 This file contains the orderable items for use within OE/RR.
 
-<dl>
-<dt>Global</dt><dd>^ORD(101.43,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^ORD(101.43,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -56,13 +56,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Blood Component**{::nomarkdown}<pre><code>  blood_component</code></pre>{:/} | 6001 |  | BOOLEAN |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
 **Diagnostic Test**{::nomarkdown}<pre><code>  diagnostic_test</code></pre>{:/} | 6002 |  | ENUMERATION |  | {::nomarkdown}YES: <em><strong>1</strong></em><br/>TAS: <em><strong>2</strong></em><br/>NO: <em><strong>0</strong></em>{:/}
 
-### Subfile
-#### <a name="Set_Membership-101_439"></a>Set Membership
+## Sub-Files
+### <a name="Set_Membership-101_439"></a>Set Membership (101.439)
 
 <dl>
-<dt>ID</dt><dd>Set_Membership-101_439</dd>
-<dt>File Type</dt><dd>101.439</dd>
-<dt>Label</dt><dd>Set Membership</dd></dl>
+<dt>ID</dt><dd>Set_Membership-101_439</dd></dl>
 
 #### Properties
 
@@ -71,12 +69,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Set**{::nomarkdown}<pre><code>  set</code></pre>{:/} | .01 | This is the name of a set to which this orderable item belongs. | STRING | INDEXED<br/>REQUIRED | 
 **Qo Only**{::nomarkdown}<pre><code>  qo_only</code></pre>{:/} | 2 | This field determines if the item may be ordered via the regular order<br/>dialog for this Set, or only via predefined quick orders. | BOOLEAN |  | {::nomarkdown}true: <em><strong>1</strong></em>{:/}
 
-#### <a name="Components-101_431"></a>Components
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Components-101_431"></a>Components (101.431)
 
 <dl>
-<dt>ID</dt><dd>Components-101_431</dd>
-<dt>File Type</dt><dd>101.431</dd>
-<dt>Label</dt><dd>Components</dd></dl>
+<dt>ID</dt><dd>Components-101_431</dd></dl>
 
 #### Properties
 
@@ -87,6 +86,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Code**{::nomarkdown}<pre><code>  code</code></pre>{:/} | 3 | This is the code assigned to this item by the authoritative package from a<br/>national standard coding system such as CPT or SNOMED. | STRING |  | 
 **Coding System**{::nomarkdown}<pre><code>  coding_system</code></pre>{:/} | 4 | This is the system used to generate the code assigned in field 3. | ENUMERATION |  | {::nomarkdown}NATIONAL DRUG FILE: <em><strong>NDF</strong></em><br/>CPT4: <em><strong>CPT4</strong></em><br/>NATIONAL LAB TEST FILE: <em><strong>NLT</strong></em>{:/}
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

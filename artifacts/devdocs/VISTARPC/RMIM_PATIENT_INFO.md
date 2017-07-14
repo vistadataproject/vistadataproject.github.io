@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; RMIM PATIENT INFO
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; RMIM PATIENT INFO<br/>
 # RMIM PATIENT INFO
 
 Input parameter is PATIENT DFN.Output parameter is a ^ delimited string as follows:DFN^PATIENT NAME^SSN^DOB^AGE^SEX^MARITAL STATUS^ACTIVE DUTY^CITY^STATE^ZIP^COUNTY^TELEPHONE
+
+## Properties
 
 Property | Value
 --- | ---
@@ -17,4 +19,4 @@ Return Type | ARRAY
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

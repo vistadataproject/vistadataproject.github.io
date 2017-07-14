@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAG DICOM STORE GATEWAY INFO
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAG DICOM STORE GATEWAY INFO<br/>
 # MAG DICOM STORE GATEWAY INFO
 
 This Remote Procedure stores information about a DICOM Gatewayin the VistA system.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGDQR05](http://code.osehra.org/dox/Routine_MAGDQR05_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -26,4 +28,4 @@ VERSION | LIST | 32000 | true | This parameter is an array.The entries in this a
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

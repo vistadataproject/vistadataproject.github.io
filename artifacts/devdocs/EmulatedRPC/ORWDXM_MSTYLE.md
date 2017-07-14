@@ -3,23 +3,28 @@ layout: default
 title: VISTA Emulator Documentation
 ---
 
-## [Emulated RPCs](TableOfContents) &#8594; ORWDXM MSTYLE
+#### [Developer Documentation](../index) &#187; [Emulated RPCs](TableOfContents) &#187; ORWDXM MSTYLE<br/>
 # ORWDXM MSTYLE
 
 Returns the menu style for the system
 
+**Native RPC Documentation:** [ORWDXM MSTYLE](../VISTARPC/ORWDXM_MSTYLE)
+
+**MUMPS Implementation:** [MSTYLE^ORWDXM](http://code.osehra.org/dox/Routine_ORWDXM_source.html)
+
+## Properties
+
 Property | Value
 --- | ---
-Domain | Non-Clinical: Parameters
-VISTA RPC Documentation | [ORWDXM MSTYLE](../VISTARPC/ORWDXM_MSTYLE)
-MUMPS Implementation | [MSTYLE^ORWDXM](http://code.osehra.org/dox/Routine_ORWDXM_source.html)
-Type | READ
+Type | Non-Clinical
+Domain | Parameters
+Class | READ
 Complexity | LOW
-Uses | N/A
+Uses | 
 Return Type | SINGLE VALUE
-Return Description | N/A
+Return Description | 
 File Types Used | None
 Parameters Used | [ORWDXM ORDER MENU STYLE](../Parameters/ORWDXM_ORDER_MENU_STYLE)
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:06 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:34 pm</p>{:/}

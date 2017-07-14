@@ -3,24 +3,25 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; ORAM INDICATIONS FOR CARE
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; ORAM INDICATIONS FOR CARE<br/>
 # ORAM INDICATIONS FOR CARE
 
 These are the Indications for care and their associated ICD-9-CM codes.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 602
 Summary | Indications for Care (ICD-9-CM)
 Value Type | pointer
 Value Domain | 80
 Multiple Instances | true
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | SYSTEM
 2 | PACKAGE
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ORQQLR SEARCH RANGE OUTPT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ORQQLR SEARCH RANGE OUTPT<br/>
 # ORQQLR SEARCH RANGE OUTPT
 
 Returns the date search range in number of days (e.g. 90) to begin the search before today.  For example, a value of 90 would indicate to limit thesearch between ninety day. Limited to Outpatients.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -17,7 +19,7 @@ Return Type | SINGLE VALUE
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -27,10 +29,10 @@ Code | {::nomarkdown}<pre><code> N DIFF,SDT,EDT,ORSRV<br/> S ORSRV=$G(^VA(200,DU
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
-NOT OSEHRA CPRS | {::nomarkdown}N/A{:/}
+NOT OSEHRA CPRS | {::nomarkdown}{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

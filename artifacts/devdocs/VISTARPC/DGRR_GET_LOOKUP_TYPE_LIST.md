@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DGRR GET LOOKUP TYPE LIST
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DGRR GET LOOKUP TYPE LIST<br/>
 # DGRR GET LOOKUP TYPE LIST
 
 Returns an XML document containing a list of wards or a list ofclinics (depending on what was requested)
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DGRRLU3](http://code.osehra.org/dox/Routine_DGRRLU3_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ PARAM | LIST | 99 | true | PARAM(&quot;TYPE&quot;)&#x3D;&quot;ward&quot; returns
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

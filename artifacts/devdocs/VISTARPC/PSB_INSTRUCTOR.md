@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; PSB INSTRUCTOR
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; PSB INSTRUCTOR<br/>
 # PSB INSTRUCTOR
 
 Used by frmInstructor to validate that an instructor is at the client with a student.  Validation is acheived via the instructor entering their SSN and electronic signature code.  This is then validated against the NEW PERSON file (#200).  If a valid user is obtained, that user must posses the PSB INSTRUCTOR key to be passed back as an eligible instructor for the student.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [PSBRPC](http://code.osehra.org/dox/Routine_PSBRPC_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ PSBVER |  |  | true | Verify Codeinstructor into the edtESIG component on frmIns
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

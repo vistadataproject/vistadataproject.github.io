@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGV RAD EXAM ORDER
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGV RAD EXAM ORDER<br/>
 # MAGV RAD EXAM ORDER
 
 Wraps a call to the RAMAG EXAM ORDER remote procedure, and re-formatsthe output for the DICOM Importer II application. Returns the IEN ofthe new order in the RAD/NUC MED ORDERS file (#75.1), oran array of error messages.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGVIM05](http://code.osehra.org/dox/Routine_MAGVIM05_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -31,4 +33,4 @@ RAMSC | LIST |  |  | Items of this list define miscellaneous/optional order para
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

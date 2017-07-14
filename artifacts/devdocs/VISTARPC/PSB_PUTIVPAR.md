@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; PSB PUTIVPAR
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; PSB PUTIVPAR<br/>
 # PSB PUTIVPAR
 
 Sets 53.66 or parameters file w/input from 53.66 if ward is not "ALL"
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [PSBPARIV](http://code.osehra.org/dox/Routine_PSBPARIV_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ PSBDIV | LITERAL | 1 | true | ^1&#x3D;IEN of division as in the Ward Location fi
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

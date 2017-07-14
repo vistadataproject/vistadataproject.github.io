@@ -3,24 +3,25 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; ORWCH WIDTH
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; ORWCH WIDTH<br/>
 # ORWCH WIDTH
 
 This records the width property for a control in CPRSChart (Patient ChartGUI).  In particular, it is used for recording the positions of splitterbars.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 205
 Summary | Control Width
 Value Type | numeric
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | true
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | USER
 5 | PACKAGE
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

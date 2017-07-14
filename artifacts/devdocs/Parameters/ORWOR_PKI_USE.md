@@ -3,20 +3,21 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; ORWOR PKI USE
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; ORWOR PKI USE<br/>
 # ORWOR PKI USE
 
 &#x27;Yes&#x27; indicates the user can Digitally Sign Schedule II Medication orders.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 92
 Summary | Allow PKI Functionality
 Value Type | yes
 Value Domain | Y:yes;N:no
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
@@ -25,4 +26,4 @@ Precedence | Entity
 3 | SYSTEM
 4 | PACKAGE
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

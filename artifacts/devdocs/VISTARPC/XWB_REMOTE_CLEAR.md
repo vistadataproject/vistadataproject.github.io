@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; XWB REMOTE CLEAR
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; XWB REMOTE CLEAR<br/>
 # XWB REMOTE CLEAR
 
 This RPC is used to CLEAR the data under a HANDLE in the ^XTMP global.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [XWBDRPC](http://code.osehra.org/dox/Routine_XWBDRPC_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,7 +25,7 @@ HANDLE | LITERAL | 30 | true | This is the HANDLE from the XWB REMOTE RPC.
 
 
 
-### MUMPS Method Description
+## MUMPS Method Description
 
 Property | Value
 --- | ---
@@ -34,10 +36,10 @@ Code | {::nomarkdown}<pre><code> K ^XTMP(HDL),^TMP("XWBHDL",$J,HDL)<br/> S RET(0
 
 
 
-### CPRS
+## CPRS
 
 File Type | Description
 --- | ---
-NOT OSEHRA CPRS | {::nomarkdown}N/A{:/}
+NOT OSEHRA CPRS | {::nomarkdown}{:/}
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

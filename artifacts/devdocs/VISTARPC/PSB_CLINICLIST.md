@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; PSB CLINICLIST
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; PSB CLINICLIST<br/>
 # PSB CLINICLIST
 
 Returns Active Clinic names based on Search criteria.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [PSBRPC](http://code.osehra.org/dox/Routine_PSBRPC_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ CONTAINS | LITERAL | 30 | true | Second search criteria, if populated, then this
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

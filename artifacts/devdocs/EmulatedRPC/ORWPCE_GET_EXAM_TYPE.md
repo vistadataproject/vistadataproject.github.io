@@ -3,23 +3,28 @@ layout: default
 title: VISTA Emulator Documentation
 ---
 
-## [Emulated RPCs](TableOfContents) &#8594; ORWPCE GET EXAM TYPE
+#### [Developer Documentation](../index) &#187; [Emulated RPCs](TableOfContents) &#187; ORWPCE GET EXAM TYPE<br/>
 # ORWPCE GET EXAM TYPE
 
 Returns the list of active exam types.
 
+**Native RPC Documentation:** [ORWPCE GET EXAM TYPE](../VISTARPC/ORWPCE_GET_EXAM_TYPE)
+
+**MUMPS Implementation:** [EXAMTYPE^ORWPCE2](http://code.osehra.org/dox/Routine_ORWPCE2_source.html)
+
+## Properties
+
 Property | Value
 --- | ---
-Domain | Non-Clinical: Files
-VISTA RPC Documentation | [ORWPCE GET EXAM TYPE](../VISTARPC/ORWPCE_GET_EXAM_TYPE)
-MUMPS Implementation | [EXAMTYPE^ORWPCE2](http://code.osehra.org/dox/Routine_ORWPCE2_source.html)
-Type | READ
+Type | Non-Clinical
+Domain | Files
+Class | READ
 Complexity | LOW
-Uses | N/A
+Uses | 
 Return Type | ARRAY
-Return Description | N/A
+Return Description | 
 File Types Used | [9999999.15](../VDM/Exam-9999999_15)
 Parameters Used | None
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:06 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:34 pm</p>{:/}

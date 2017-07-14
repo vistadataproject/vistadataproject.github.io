@@ -3,20 +3,21 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; MAG IMAGE ALLOW ANNOTATE
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; MAG IMAGE ALLOW ANNOTATE<br/>
 # MAG IMAGE ALLOW ANNOTATE
 
 This parameter controls if a user is allowed to annotate image(s) by checkingUSER, SERVICE, DIVISION and SYSTEM Levels.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 731
 Summary | MAG IMAGE ALLOW ANNOTATE
 Value Type | yes
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
@@ -25,4 +26,4 @@ Precedence | Entity
 3 | DIVISION
 4 | SYSTEM
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

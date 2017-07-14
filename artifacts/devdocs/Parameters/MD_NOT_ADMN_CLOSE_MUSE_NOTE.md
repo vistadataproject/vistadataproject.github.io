@@ -3,23 +3,24 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; MD NOT ADMN CLOSE MUSE NOTE
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; MD NOT ADMN CLOSE MUSE NOTE<br/>
 # MD NOT ADMN CLOSE MUSE NOTE
 
 This parameter is used to indicate the note should not be administratively closed with the proxy user CLINICAL, DEVICE PROXY SERVICE but the interpreter of the procedure for the MUSE device.The default is &quot;No&quot;.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 611
 Summary | NOT ADMN Close Muse Note
 Value Type | yes
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | SYSTEM
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

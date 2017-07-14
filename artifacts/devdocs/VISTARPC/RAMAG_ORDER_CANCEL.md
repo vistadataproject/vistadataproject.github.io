@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; RAMAG ORDER CANCEL
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; RAMAG ORDER CANCEL<br/>
 # RAMAG ORDER CANCEL
 
 The RAMAG ORDER CANCEL remote procedure cancels/holds the Radiology orderand sends all required notifications. NOTE: If there are active cases in the RAD/NUC MED PATIENT file (#70)      associated with an order, this remote procedure neither cancels      nor holds the order and returns the error code -42.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [RAMAGRP1](http://code.osehra.org/dox/Routine_RAMAGRP1_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ RAMSC | LIST |  |  | Items of this list define miscellaneous/optional parameters
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

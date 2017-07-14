@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MAGGADDIMAGE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MAGGADDIMAGE<br/>
 # MAGGADDIMAGE
 
 RPC Call to add new entry to Image File using UPDATE^DIE.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MAGGTIA](http://code.osehra.org/dox/Routine_MAGGTIA_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ MAGGZ | LIST |  | true | MAGGZ is an array of fields and their entries.   i.e. M
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

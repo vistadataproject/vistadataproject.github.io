@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ORRHCR SAVDEF
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ORRHCR SAVDEF<br/>
 # ORRHCR SAVDEF
 
 Accepts a set of name-value pairs that describe a newly created customreport.  This creates a new entry in CPRS QUERY DEFINITION.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [ORRHCR](http://code.osehra.org/dox/Routine_ORRHCR_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ DEF | LIST |  | true | This is the list of name-value pairs that represent a rep
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

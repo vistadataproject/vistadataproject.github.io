@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIC DPT GET DEMO
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIC DPT GET DEMO<br/>
 # DSIC DPT GET DEMO
 
 This will return specific patient demographic elements for a patient
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSICDPT](http://code.osehra.org/dox/Routine_DSICDPT_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -27,4 +29,4 @@ DSIFLG | LITERAL | 1 | true | This boolean value (1 or 0) will determine the dat
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

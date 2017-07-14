@@ -3,29 +3,34 @@ layout: default
 title: VISTA Emulator Documentation
 ---
 
-## [Emulated RPCs](TableOfContents) &#8594; ORWLEX GETFREQ
+#### [Developer Documentation](../index) &#187; [Emulated RPCs](TableOfContents) &#187; ORWLEX GETFREQ<br/>
 # ORWLEX GETFREQ
 
 This call wraps the Lexicon API $$FREQ^LEXU to satisfy the requirements of the ICD-10-CM diagnosis search.
 
+**Native RPC Documentation:** [ORWLEX GETFREQ](../VISTARPC/ORWLEX_GETFREQ)
+
+**MUMPS Implementation:** [GETFREQ^ORWLEX](http://code.osehra.org/dox/Routine_ORWLEX_source.html)
+
+## Properties
+
 Property | Value
 --- | ---
-Domain | Non-Clinical: Others
-VISTA RPC Documentation | [ORWLEX GETFREQ](../VISTARPC/ORWLEX_GETFREQ)
-MUMPS Implementation | [GETFREQ^ORWLEX](http://code.osehra.org/dox/Routine_ORWLEX_source.html)
-Type | UTILITY
+Type | Non-Clinical
+Domain | Others
+Class | UTILITY
 Complexity | LOW
-Uses | N/A
+Uses | 
 Return Type | SINGLE VALUE
-Return Description | N/A
+Return Description | 
 File Types Used | None
 Parameters Used | None
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Required | Description | Example
 --- | --- | --- | --- | ---
 ORSRCHTX | LITERAL | true | the search text/term | HYPERTENSION
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:06 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:34 pm</p>{:/}

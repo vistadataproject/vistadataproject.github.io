@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; VEJDWPB GET SC CONDITIONS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; VEJDWPB GET SC CONDITIONS<br/>
 # VEJDWPB GET SC CONDITIONS
 
 This will return a string indicating whether the service conditionquestions need to be asked:   Agent Orange exposure   Environmental Contaminant exposure   Service Connected   Military Sexual Trauma   Head & Neck Cancer If VST is not passed, then APPT must be the scheduling appointmentdate/time and LOC must be the the hospital location data If VST is passed, then APPT and LOC are optional.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [VEJDVST](http://code.osehra.org/dox/Routine_VEJDVST_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ DATA | LITERAL | 80 | true |  DATA &#x3D; DFN ^ APPT ^ LOC ^ VST where  DFN &#x3
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

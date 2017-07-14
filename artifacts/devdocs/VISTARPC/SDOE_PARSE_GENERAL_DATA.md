@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; SDOE PARSE GENERAL DATA
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; SDOE PARSE GENERAL DATA<br/>
 # SDOE PARSE GENERAL DATA
 
 This Remote Procedure Call (RPC) will parse the data returned bythe 'SDOE GET GENERAL DATA' RPC into individual field nodes. 
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [SDOERPC](http://code.osehra.org/dox/Routine_SDOERPC_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ ENCOUNTER PARSE FORMAT | LITERAL |  | true | Defines format for parsed data.Vali
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

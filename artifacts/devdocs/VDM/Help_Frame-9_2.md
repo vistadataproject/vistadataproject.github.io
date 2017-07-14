@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Help_Frame-9_2
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Help_Frame-9_2<br/>
+<a name="top"></a>
 # Help Frame (9.2)
 This file contains the text of help frames created via the Help Processor (XQH).  Help frames may be associated with options or with data dictionary fields to provide on-line instruction.  The file is cross-referenced by name, header, date entered, author, and editor.   
 
-<dl>
-<dt>Global</dt><dd>^DIC(9.2,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^DIC(9.2,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -29,13 +29,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Entry Execute Statement**{::nomarkdown}<pre><code>  entry_execute_statement</code></pre>{:/} | 10.1 | This field is used to include an M code statement which is executed as the<br/>user enters this help frame. | STRING |  | 
 **Exit Execute Statement**{::nomarkdown}<pre><code>  exit_execute_statement</code></pre>{:/} | 10.2 | This field is used to provide an M code statement which is to be executed<br/>as the user exits the current help frame (whether moving into another help<br/>frame or back out of the current help frame). | STRING |  | 
 
-### Subfile
-#### <a name="Related_Frame-9_22"></a>Related Frame
+## Sub-Files
+### <a name="Related_Frame-9_22"></a>Related Frame (9.22)
 
 <dl>
-<dt>ID</dt><dd>Related_Frame-9_22</dd>
-<dt>File Type</dt><dd>9.22</dd>
-<dt>Label</dt><dd>Related Frame</dd></dl>
+<dt>ID</dt><dd>Related_Frame-9_22</dd></dl>
 
 #### Properties
 
@@ -44,6 +42,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Related Frame Keyword**{::nomarkdown}<pre><code>  related_frame_keyword</code></pre>{:/} | .01 | A keyword appears in the text surrounded by brackets.  When the user<br/>enters the keyword, a related frame will be displayed with more detailed<br/>information on the topic suggested by the keyword. | STRING | INDEXED<br/>REQUIRED | 
 **Related Frame**{::nomarkdown}<pre><code>  related_frame</code></pre>{:/} | 1 | The internal name of another help-frame which can be invoked by the<br/>keyword to obtain more detailed information on a sub-topic. | POINTER | INDEXED | [Help_Frame-9_2](Help_Frame-9_2)
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

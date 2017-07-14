@@ -3,24 +3,25 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; XHD PRISM DESKTOP THEME
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; XHD PRISM DESKTOP THEME<br/>
 # XHD PRISM DESKTOP THEME
 
 This parameter determines what Theme (i.e., HealtheVet Desktop Theme or current Windows Theme) to apply to the Desktop.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 465
 Summary | Desktop Theme
 Value Type | free text
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | USER
 2 | PACKAGE
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

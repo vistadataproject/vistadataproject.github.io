@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; ACKQROES
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ACKQROES<br/>
 # ACKQROES
 
 This is the RPC used to setup and send to the DDC, thesigned audiometric data file entry to the DDC from the application Audiogram Enter/Edit (AKCQROES3E.EXE). It is triggered bythe saving of a signed entry in 509850.9.  The RPC calls routine START^ACKQAG03 which in turn calls EN^ACKQAG04. The VADPT utilities are also used.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [ACKQAG03](http://code.osehra.org/dox/Routine_ACKQAG03_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -27,4 +29,4 @@ USRSER | LITERAL | 32 | true | This is the name of the submitting user&#x27;s se
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

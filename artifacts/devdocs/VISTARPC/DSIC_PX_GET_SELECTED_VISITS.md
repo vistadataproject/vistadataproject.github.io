@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIC PX GET SELECTED VISITS
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIC PX GET SELECTED VISITS<br/>
 # DSIC PX GET SELECTED VISITS
 
 This will return information on selected visits for a patient based upon the screening factors.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSICPX3](http://code.osehra.org/dox/Routine_DSICPX3_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ DATA | LIST | 256 | true | Setup up Parm.Mult[&#x27;&quot;sub&quot;&#x27;] :&#x3
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

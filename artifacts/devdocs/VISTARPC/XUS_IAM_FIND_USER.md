@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; XUS IAM FIND USER
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; XUS IAM FIND USER<br/>
 # XUS IAM FIND USER
 
 This restricted RPC is used exclusively by the Identity and Access Management (IAM) Provisioning application to find a list of users that satisfy a collection of input criteria. One or more of the input array values must be set by the calling application. The XUSHOWSSN Security Key is required to do lookups using Personally Identifiable Information (PII) such as Social Security Number (SSN) or Date of Birth (DOB).
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [XUESSO3](http://code.osehra.org/dox/Routine_XUESSO3_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -28,4 +30,4 @@ AUTHCODE | LITERAL | 80 | true | Security Phrase for IAM Provisioning Applicatio
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

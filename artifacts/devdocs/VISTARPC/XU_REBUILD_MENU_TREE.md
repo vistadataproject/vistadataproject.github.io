@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; XU REBUILD MENU TREE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; XU REBUILD MENU TREE<br/>
 # XU REBUILD MENU TREE
 
 This API rebuilds the menu trees and display nodes for a single user (DUZ). It returns 0 if unsuccessful, 1 if successful.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -17,4 +19,4 @@ Return Type | SINGLE VALUE
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

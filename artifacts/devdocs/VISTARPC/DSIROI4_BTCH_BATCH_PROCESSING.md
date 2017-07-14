@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIROI4 BTCH BATCH PROCESSING
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIROI4 BTCH BATCH PROCESSING<br/>
 # DSIROI4 BTCH BATCH PROCESSING
 
 This RPC clones requests in a batch manner.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIROI4](http://code.osehra.org/dox/Routine_DSIROI4_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ SELLIST | LIST | 60 | true | A list of requestors or patients as follows:   REQU
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

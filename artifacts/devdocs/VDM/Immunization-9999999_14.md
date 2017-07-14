@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Immunization-9999999_14
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Immunization-9999999_14<br/>
+<a name="top"></a>
 # Immunization (9999999.14)
 Per VHA Directive, this file has been "locked down" by Data  Standardization (DS). The file definition (i.e. data dictionary) shall  not be modified. All additions, changes and deletions to entries in the file shall be done by Enterprise Reference Terminology (ERT) using the Master File Server (MFS), provided by the Common Services (CS). Creating and/or editing locally defined fields in the file are not permitted. Use of locally defined fields that were created prior to the VHA Directive shall not be supported.   In order to preserve the continuity of files shared by the Indian Health Service and the Department of Veterans Affairs, this file includes fields used by Indian Health Service that will not be used by the Department of Veterans Affairs. These fields may point to other files and routines not deployed by the Department of Veterans Affairs. Inclusion of these fields, as designed, was approved by the DBA. These fields were initially introduced with the release of the VISTA IMMUNIZATION ENHANCEMENTS 1.0 (PX*1*201) for the VistA Immunization Enhancements Project. Additional fields may be included in later enhancements.    This file is a list of Immunizations and associated codes developed specifically for use in the IHS. This file contains a full descriptive  name for each Immunization, plus a shortened name of Ten Characters  which is used on the Health Summary and on reports where space is  limited, plus a Two Digit Code for each Immunization.
 
-<dl>
-<dt>Global</dt><dd>^AUTTIMM(</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^AUTTIMM(
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -64,13 +64,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Acronym**{::nomarkdown}<pre><code>  acronym</code></pre>{:/} | 8802 | This standardized vaccine acronym for this immunization is intended to <br/>provide a uniform approach to vaccine references. | STRING | INDEXED | 
 **Selectable For Historic**{::nomarkdown}<pre><code>  selectable_for_historic</code></pre>{:/} | 8803 | This field determines whether an inactive immunization is selectable when <br/>documenting a historic administration. | BOOLEAN | REQUIRED | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
 
-### Subfile
-#### <a name="Coding_System-9999999_143"></a>Coding System
+## Sub-Files
+### <a name="Coding_System-9999999_143"></a>Coding System (9999999.143)
 
 <dl>
-<dt>ID</dt><dd>Coding_System-9999999_143</dd>
-<dt>File Type</dt><dd>9999999.143</dd>
-<dt>Label</dt><dd>Coding System</dd></dl>
+<dt>ID</dt><dd>Coding_System-9999999_143</dd></dl>
 
 #### Properties
 
@@ -79,12 +77,13 @@ Field | ID | Description | Datatype | Attributes | Range
 **Coding System**{::nomarkdown}<pre><code>  coding_system</code></pre>{:/} | .01 | This field indicates the coding system associated with the codes <br/>identifying this immunization. | STRING | INDEXED<br/>REQUIRED | 
 **Code**{::nomarkdown}<pre><code>  code</code></pre>{:/} | .02 | This multiple stores the code(s) representing this immunization within <br/>this coding system. | STRING |  | 
 
-#### <a name="Effective_Date_time-9999999_1499"></a>Effective Date/time
+[&uarr; Return to top](#top)<br/>
+
+
+### <a name="Effective_Date_time-9999999_1499"></a>Effective Date/time (9999999.1499)
 
 <dl>
-<dt>ID</dt><dd>Effective_Date_time-9999999_1499</dd>
-<dt>File Type</dt><dd>9999999.1499</dd>
-<dt>Label</dt><dd>Effective Date/time</dd></dl>
+<dt>ID</dt><dd>Effective_Date_time-9999999_1499</dd></dl>
 
 #### Properties
 
@@ -93,6 +92,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Effective Date/time**{::nomarkdown}<pre><code>  effective_date_time</code></pre>{:/} | .01 | This is the date/time when the Status of the reference term was <br/>established. | DATE-TIME | INDEXED<br/>REQUIRED | 
 **Status**{::nomarkdown}<pre><code>  status</code></pre>{:/} | .02 | The Status of a reference term is either 'ACTIVE' or 'INACTIVE'. If <br/>'ACTIVE', then the term will be accessible by end-users to document a<br/>particular patient event. If 'INACTIVE', then the term will only be<br/>accessible by the application to display legacy data. | ENUMERATION | REQUIRED | {::nomarkdown}ACTIVE: <em><strong>1</strong></em><br/>INACTIVE: <em><strong>0</strong></em>{:/}
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

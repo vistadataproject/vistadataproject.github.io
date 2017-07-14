@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; RG REMOTE HL7 TASK
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; RG REMOTE HL7 TASK<br/>
 # RG REMOTE HL7 TASK
 
 This remote procedure call will return the currently runningHealth Level Seven (HL7) tasks from a remote site to theMaster Patient Index (MPI).
+
+## Properties
 
 Property | Value
 --- | ---
@@ -17,4 +19,4 @@ Return Type | ARRAY
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

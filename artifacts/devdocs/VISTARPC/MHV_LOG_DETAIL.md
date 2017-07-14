@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; MHV LOG DETAIL
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; MHV LOG DETAIL<br/>
 # MHV LOG DETAIL
 
 Retrieve an MHV application log entry.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [MHVUL2](http://code.osehra.org/dox/Routine_MHVUL2_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ JOB | LITERAL | 15 | true | Job number of log entry.
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

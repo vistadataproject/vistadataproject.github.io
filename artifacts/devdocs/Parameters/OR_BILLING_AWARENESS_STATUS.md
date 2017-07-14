@@ -3,23 +3,24 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; OR BILLING AWARENESS STATUS
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; OR BILLING AWARENESS STATUS<br/>
 # OR BILLING AWARENESS STATUS
 
 Status of Billing Awareness Utilization
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 383
 Summary | Status of Billing Awareness Utilization
 Value Type | set of codes
 Value Domain | 0:NO;1:YES
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
 1 | SYSTEM
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

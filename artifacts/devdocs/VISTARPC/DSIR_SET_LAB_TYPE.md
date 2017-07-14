@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIR SET LAB TYPE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIR SET LAB TYPE<br/>
 # DSIR SET LAB TYPE
 
 Routine for setting the requested lab type for a given request.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIROI1](http://code.osehra.org/dox/Routine_DSIROI1_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ TYP | LITERAL | 2 | true | INPUT PARAMETER    TYP &#x3D; SELECTED LAB TYPE - A N
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

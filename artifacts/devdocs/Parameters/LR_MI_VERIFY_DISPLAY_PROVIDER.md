@@ -3,20 +3,21 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; LR MI VERIFY DISPLAY PROVIDER
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; LR MI VERIFY DISPLAY PROVIDER<br/>
 # LR MI VERIFY DISPLAY PROVIDER
 
 This parameter allows the site/division/user to indicate if the orderingprovider information should be displayed to the user during microbiologyresult data entry.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 711
 Summary | Display Provider in Micro Result Entry
 Value Type | yes
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
@@ -24,4 +25,4 @@ Precedence | Entity
 2 | DIVISION
 3 | PACKAGE
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

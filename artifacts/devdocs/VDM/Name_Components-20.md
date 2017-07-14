@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Name_Components-20
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Name_Components-20<br/>
+<a name="top"></a>
 # Name Components (20)
 This file, introduced with Name Standardization (Patch XU*8.0*134), holds the component parts of a person's name as follows:     Family (Last) Name (field #1)   Given (First) Name (field #2)   Middle Name (field #3)    Prefix (field #4)   Suffix (field #5)   Degree (field #6)   The "source name" that has these components is identified by the following three fields:                                                          File (field #.01)   Field (field #.02)   IENS (field #.03)   The "ANAME" cross-reference on the Family (Last) Name, Given (First) Name, Middle Name, and Suffix fields keeps each component in synchronization with the corresponding source name. In the case of Patch XU*8.0*134, the source name is the .01 field (the Name field) of the NEW PERSON file (#200).   The Degree and Prefix fields are not considered part of a standard name, but can be used to build formatted names for display.
 
-<dl>
-<dt>Global</dt><dd>^VA(20,</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^VA(20,
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -30,4 +30,4 @@ Field | ID | Description | Datatype | Attributes | Range
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

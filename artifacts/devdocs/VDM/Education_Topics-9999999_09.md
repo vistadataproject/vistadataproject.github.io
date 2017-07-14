@@ -3,16 +3,16 @@ layout: default
 title: VDM
 ---
 
-## [VDM](TableOfContents) &#8594; Education_Topics-9999999_09
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Education_Topics-9999999_09<br/>
+<a name="top"></a>
 # Education Topics (9999999.09)
 This file defines the names of education topics to be tracked at your site. Education topics that are not to be used should be marked "Inactive" in the Active Status field.   Changes to this data dictionary should be coordinated thru the IHS DBA.   A x-ref on the MNEMONIC field was added to version 93.2.
 
-<dl>
-<dt>Global</dt><dd>^AUTTEDT(</dd>
-<dt>Domain</dt><dd>Non-Clinical</dd>
-</dl>
+**Global:** ^AUTTEDT(
 
-### Properties
+**Domain:** Non-Clinical
+
+## Properties
 
 Field | ID | Description | Datatype | Attributes | Range
 --- | --- | --- | --- | --- | ---
@@ -23,13 +23,11 @@ Field | ID | Description | Datatype | Attributes | Range
 **Educational Outcome**{::nomarkdown}<pre><code>  educational_outcome</code></pre>{:/} | 11 | This is a statement about what outcome is expected when providing this<br/>patient education.  It may reflect education plan and goals. | STRING |  | 
 **Educational Standards**{::nomarkdown}<pre><code>  educational_standards</code></pre>{:/} | 12 | This is the standards that and educator should use to teach the patient<br/>or family or significant other. | STRING |  | 
 
-### Subfile
-#### <a name="Subtopic-9999999_091001"></a>Subtopic
+## Sub-Files
+### <a name="Subtopic-9999999_091001"></a>Subtopic (9999999.091001)
 
 <dl>
-<dt>ID</dt><dd>Subtopic-9999999_091001</dd>
-<dt>File Type</dt><dd>9999999.091001</dd>
-<dt>Label</dt><dd>Subtopic</dd></dl>
+<dt>ID</dt><dd>Subtopic-9999999_091001</dd></dl>
 
 #### Properties
 
@@ -38,6 +36,9 @@ Field | ID | Description | Datatype | Attributes | Range
 **Subtopic**{::nomarkdown}<pre><code>  subtopic</code></pre>{:/} | .01 |  | POINTER | INDEXED<br/>REQUIRED | [Education_Topics-9999999_09](Education_Topics-9999999_09)
 **Sequence**{::nomarkdown}<pre><code>  sequence</code></pre>{:/} | 3 | This field defines the sequence the item should be presented in, as it<br/>relates to other items making up the education topic. | NUMERIC |  | 
 
+[&uarr; Return to top](#top)<br/>
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:28 pm</p>{:/}

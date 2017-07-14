@@ -3,20 +3,21 @@ layout: default
 title: Parameters
 ---
 
-## [Parameters](TableOfContents) &#8594; ORWLR LC CHANGED TO WC
+#### [Developer Documentation](../index) &#187; [Parameters](TableOfContents) &#187; ORWLR LC CHANGED TO WC<br/>
 # ORWLR LC CHANGED TO WC
 
 When the system automatically changes lab collect orders to ward collect, provides instructions to the user regarding specimen collection for those changed orders.
 
+## Properties
+
 Property | Value
 --- | ---
-ID | 496
 Summary | MESSAGE FOR LC CHANGED TO WC
 Value Type | free text
-Value Domain | N/A
+Value Domain | 
 Multiple Instances | false
 
-### Allowable Entities
+## Allowable Entities
 
 Precedence | Entity
 --- | ---
@@ -26,4 +27,4 @@ Precedence | Entity
 20 | SYSTEM
 25 | PACKAGE
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:29 pm</p>{:/}

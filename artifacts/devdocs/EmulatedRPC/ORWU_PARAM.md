@@ -3,29 +3,34 @@ layout: default
 title: VISTA Emulator Documentation
 ---
 
-## [Emulated RPCs](TableOfContents) &#8594; ORWU PARAM
+#### [Developer Documentation](../index) &#187; [Emulated RPCs](TableOfContents) &#187; ORWU PARAM<br/>
 # ORWU PARAM
 
 Simple call to return a parameter value.  The call assumes the currentuser, default entities, and one instance.
 
+**Native RPC Documentation:** [ORWU PARAM](../VISTARPC/ORWU_PARAM)
+
+**MUMPS Implementation:** [PARAM^ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
+
+## Properties
+
 Property | Value
 --- | ---
-Domain | Non-Clinical: Parameters
-VISTA RPC Documentation | [ORWU PARAM](../VISTARPC/ORWU_PARAM)
-MUMPS Implementation | [PARAM^ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
-Type | READ
+Type | Non-Clinical
+Domain | Parameters
+Class | READ
 Complexity | EASY
-Uses | N/A
+Uses | 
 Return Type | SINGLE VALUE
-Return Description | N/A
+Return Description | 
 File Types Used | None
 Parameters Used | VARIABLE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Required | Description | Example
 --- | --- | --- | --- | ---
 APARAM | LITERAL | true | the parameter to call and return value from | ORWOR AUTO CLOSE PT MSG
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:06 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:34 pm</p>{:/}

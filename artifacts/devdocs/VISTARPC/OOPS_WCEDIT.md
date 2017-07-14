@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; OOPS WCEDIT
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; OOPS WCEDIT<br/>
 # OOPS WCEDIT
 
 This call clears the Supervisor signature and related fields if the WorkersCompensation specialist has edited fields INJURED PERFORMING DUTY (#146),NOT INJURED PERFORMING JOB (#147), INJURY CAUSED BY EMPLOYEE (#148),CAUSED BY EMPLOYEE EXPLAIN (#149), SUPERVISOR NOT AGREE EXPLAN (#164), or REASON AGENCY CONTROVERTS COP (#165) after the Supervisor signed.  It also sets the field WORKER'S COMP EDIT (#199) so the required bulletin will be sent.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [OOPSGUI7](http://code.osehra.org/dox/Routine_OOPSGUI7_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -25,4 +27,4 @@ FORM | LITERAL | 10 | true | This is the form type which can be 2162, CA1, or CA
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

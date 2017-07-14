@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; VPS EDIT PATIENT DEMOGRAPHIC
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; VPS EDIT PATIENT DEMOGRAPHIC<br/>
 # VPS EDIT PATIENT DEMOGRAPHIC
 
 Called by the Vetlink Kiosk system. The VAMC staff will make changes tothe patient demographic record via the Vecna Kiosk and submit the changesto VistA.  The RPC will accept 3 parameters.  The first parameterrepresents the return value as required by RPC Broker, the 2nd parameteris an input value which is the patient DFN, and the 3rd parameter is aninput value which is the list of data changes that will update one to manyfields in the PATIENT file (#2).  Integration Agreement 5799 identifiesthe fields that could potentially be edited.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [VPSRPC2](http://code.osehra.org/dox/Routine_VPSRPC2_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ VPSLST | LIST |  | true | Local array where each field that is to be updated in 
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

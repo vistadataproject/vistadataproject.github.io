@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIV NO INSURANCE
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIV NO INSURANCE<br/>
 # DSIV NO INSURANCE
 
 Allows ICB to set the NO COVERAGE VERIFICATION DATE in the Billing Patient (#354) file.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIVIC2](http://code.osehra.org/dox/Routine_DSIVIC2_source.html)
 Return Type | ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ DATA | LIST | 80 | true | Contains the field and value to update for ICB file 35
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

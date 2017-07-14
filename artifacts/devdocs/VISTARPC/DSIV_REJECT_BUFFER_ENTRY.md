@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DSIV REJECT BUFFER ENTRY
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DSIV REJECT BUFFER ENTRY<br/>
 # DSIV REJECT BUFFER ENTRY
 
 Processes INSURANCE BUFFER file entry to STATUS=REJECT.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DSIVICR](http://code.osehra.org/dox/Routine_DSIVICR_source.html)
 Return Type | SINGLE VALUE
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -24,4 +26,4 @@ IVMREPTR | LITERAL | 4 | true | Internal entry number in IVM REASONS FOR NOT UPL
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}

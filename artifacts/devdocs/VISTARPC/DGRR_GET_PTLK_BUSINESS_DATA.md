@@ -3,10 +3,12 @@ layout: default
 title: VISTA RPC Documentation
 ---
 
-## [VISTA RPCs](TableOfContents) &#8594; DGRR GET PTLK BUSINESS DATA
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; DGRR GET PTLK BUSINESS DATA<br/>
 # DGRR GET PTLK BUSINESS DATA
 
 Returns XML document containing data needed to perform business logicchecks on patient lookup.
+
+## Properties
 
 Property | Value
 --- | ---
@@ -15,7 +17,7 @@ Routine | [DGRRLU1](http://code.osehra.org/dox/Routine_DGRRLU1_source.html)
 Return Type | GLOBAL ARRAY
 
 
-### Input Parameters
+## Input Parameters
 
 Name | Type | Maximum Data Length | Required | Description
 --- | --- | --- | --- | ---
@@ -23,4 +25,4 @@ PARAM | LIST |  |  | PARAM(&quot;PatientId_Type&quot;) &#x3D; DFN (default) or I
 
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 13th 2017, 2:13:30 pm</p>{:/}
