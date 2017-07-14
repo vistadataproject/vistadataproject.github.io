@@ -31,13 +31,11 @@ The following sections describe first how to install the **nodeVISTA Server** an
 
 The following outlines how to install **nodeVISTA** server in a VirtualBox virtual machine.
 
-* Download and install [Git](https://git-scm.com/downloads)
-
-* Download and install [Virtualbox](https://www.virtualbox.org/wiki/Downloads?replytocom=98578) and Extension Pack.
-
-* Download and install [Vagrant](https://www.vagrantup.com/downloads.html)
-
-* Configure your favorite Terminal emulator. This varies depending on your operating system: (a) on MacOS, use the default [Terminal](http://www.macworld.co.uk/feature/mac-software/how-use-terminal-on-mac-3608274/) or download [iTerm](https://www.iterm2.com); (b) on Linux, use the default [Terminal](https://help.ubuntu.com/community/UsingTheTerminal) or download [Terminator](https://gnometerminator.blogspot.com/p/introduction.html); (c) on Windows use the default [Command Prompt](https://www.lifewire.com/how-to-open-command-prompt-2618089) or download [ConEmu](https://conemu.github.io)  ).
+### Prerequisites
+* [Git](https://git-scm.com/downloads)
+* [Virtualbox](https://www.virtualbox.org/wiki/Downloads?replytocom=98578) and Extension Pack.
+* [Vagrant](https://www.vagrantup.com/downloads.html)
+* __Terminal emulator__. This varies depending on your operating system: (a) on MacOS, use the default [Terminal](http://www.macworld.co.uk/feature/mac-software/how-use-terminal-on-mac-3608274/) or download [iTerm](https://www.iterm2.com); (b) on Linux, use the default [Terminal](https://help.ubuntu.com/community/UsingTheTerminal) or download [Terminator](https://gnometerminator.blogspot.com/p/introduction.html); (c) on Windows use the default [Command Prompt](https://www.lifewire.com/how-to-open-command-prompt-2618089) or download [ConEmu](https://conemu.github.io)  ).
 
 
 * Open a Terminal and enter the following commands:
