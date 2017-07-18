@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">Secure Read and Write Interface for VA VISTA</span>
+        <nav>
+            <a href="/demo">Demo</a>
+            <a href="/artifacts/developer">DevDocs</a>
+            <a href="https://github.com/vistadataproject">Github</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--vdm--order_dialog-101_41"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">VDM</a> » Order_Dialog-101_41<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="order-dialog-10141">Order Dialog (101.41)</h1>
+<p>This file contains the information needed to define how to prompt for each order, what values are acceptable, etc.</p>
+
+<p><strong>Global:</strong> ^ORD(101.41,</p>
+
+<p><strong>Domain:</strong> Non-Clinical</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>.01</td>
+      <td>This is the name of the dialog; entries that were converted from the<br />Protocol file will retain the same name.  Namespacing is not required,<br />but still encouraged.</td>
+      <td>STRING</td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Display Text</strong><pre><code>  display_text</code></pre></td>
+      <td>2</td>
+      <td>The text of this dialog’s name as it appears on a menu or subheader.</td>
+      <td>STRING</td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Disable</strong><pre><code>  disable</code></pre></td>
+      <td>3</td>
+      <td>This field disables use of this dialog when it contains text.  The text<br />should be a short message explaining why use of this dialog has been<br />disabled, as it will be displayed if this dialog is selected.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Type</strong><pre><code>  type-4</code></pre></td>
+      <td>4</td>
+      <td>This field defines the type of order dialog to be processed.  Control<br />will be passed to the OE/RR Dialog Processor for dialog items; menu types<br />are used for displaying and selecting dialog items.  Action types will only<br />execute the entry and exit actions, ignoring any items that may exist; these<br />dialogs should not create entries in the Orders file.</td>
+      <td>ENUMERATION</td>
+      <td>REQUIRED</td>
+      <td>prompt: <em><strong>P</strong></em><br/>dialog: <em><strong>D</strong></em><br/>menu: <em><strong>M</strong></em><br/>order set: <em><strong>O</strong></em><br/>quick order: <em><strong>Q</strong></em><br/>action: <em><strong>A</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Display Group</strong><pre><code>  display_group</code></pre></td>
+      <td>5</td>
+      <td>This field determines what display group this dialog has been defined for.<br />It will define which orderable items are selectable with this dialog,<br />as well as what service to send the order to when it is complete.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Display_Group-100_98">Display_Group-100_98</a></td>
+    </tr>
+    <tr>
+      <td><strong>Signature Required</strong><pre><code>  signature_required</code></pre></td>
+      <td>6</td>
+      <td>This field indicates what signature will be required for orders created by<br />this dialog, to be considered complete and ready to release to the service<br />for action.  If this flag is set to NO and the dialog contains a prompt<br />for item(s) from the Orderable Item file, the order created may still<br />require a signature if any of the items ordered are individually flagged<br />as requiring a signature.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>NONE: <em><strong>0</strong></em><br/>ORELSE: <em><strong>1</strong></em><br/>ORES: <em><strong>2</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Package</strong><pre><code>  package</code></pre></td>
+      <td>7</td>
+      <td>This is the VISTA package that is intended to receive orders created by<br />this dialog; this is required for creating the HL7 messages to pass the<br />order.</td>
+      <td>POINTER</td>
+      <td>INDEXED</td>
+      <td><a href="Package-9_4">Package-9_4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Verify Order</strong><pre><code>  verify_order</code></pre></td>
+      <td>8</td>
+      <td>This field is a flag, which determines if the order created by this dialog<br />will be presented to the user for verification before saving in the Orders<br />file; for most quick orders, this flag should be set to 0 (no).</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Ask For Another Order</strong><pre><code>  ask_for_another_order</code></pre></td>
+      <td>9</td>
+      <td>This field allows the user to add another order from this dialog, when the<br />initial order is accepted and placed; if set to YES, the user will be<br />asked “Add another <dialog display="" text=""> order?" to allow for either<br />exiting the processor or adding an additional order of the same type.<br />This field can also be set to YES-DON'T ASK to force the processor to<br />automatically drop into prompting for another order without asking first.</dialog></td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>YES: <em><strong>1</strong></em><br/>YES-DON'T ASK: <em><strong>2</strong></em><br/>NO: <em><strong>0</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Items</strong><pre><code>  items</code></pre></td>
+      <td>10</td>
+      <td>This field contains the components for dialogs:<br />     Dialogs      -&gt; prompts<br />     Quick orders -&gt; prompts (completed)<br />     Order sets   -&gt; dialogs or quick orders<br />     Menus        -&gt; dialogs, quick orders, or order sets</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Items-101_412">Items-101_412</a></td>
+    </tr>
+    <tr>
+      <td><strong>Data Type</strong><pre><code>  data_type</code></pre></td>
+      <td>11</td>
+      <td>This is the type of data being prompted for; this field is used to define<br />a call to the reader (^DIR) in most cases.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>free text: <em><strong>F</strong></em><br/>set of codes: <em><strong>S</strong></em><br/>numeric: <em><strong>N</strong></em><br/>yes/no: <em><strong>Y</strong></em><br/>date/time: <em><strong>D</strong></em><br/>word processing: <em><strong>W</strong></em><br/>free text date/time: <em><strong>R</strong></em><br/>pointer: <em><strong>P</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Domain</strong><pre><code>  domain</code></pre></td>
+      <td>12</td>
+      <td>This is a parameter that may be used to further specify the data type.<br />The string stored here should be appropriate for the second ^-piece of<br />DIR(0) when used with the data type field.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Id</strong><pre><code>  id-13</code></pre></td>
+      <td>13</td>
+      <td>This field may contain a single word identifier which will be<br />stored with the user response in the Orders file #100, where it<br />will be indexed for quick reference to certain values in the<br />order dialog.  The following are some examples of values<br />currently in use:<br /> <br />   START      -&gt; Start date/time<br />   STOP       -&gt; Stop date/time<br />   SCHEDULE   -&gt; Administration Schedule<br />   ORDERABLE  -&gt; Orderable Item<br />   DRUG       -&gt; Dispense Drug<br />   CANCEL     -&gt; Cancel Future Orders flag<br />   COMMENT    -&gt; Word processing comments<br /> <br />These values must be unique among entries within an order dialog<br />but do not need to be unique across the entire file.  Be sure to<br />check the IDs assigned to generic text entries to make sure that<br />all IDs are unique.  In order to avoid potential problems it’s<br />recommended that you use unique IDs for any local entries that you<br />create.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Validation</strong><pre><code>  validation</code></pre></td>
+      <td>17</td>
+      <td>This is MUMPS code that will be executed at the time of releasing an<br />order created with this dialog; dialog responses may be checked again<br />here before releasing the order to the service.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Additional Text</strong><pre><code>  additional_text</code></pre></td>
+      <td>19</td>
+      <td>This is MUMPS code that will be executed when order ORIFN created by this<br />dialog is about to be displayed; any string that should be appended to the<br />order text should be returned in Y.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong><pre><code>  description</code></pre></td>
+      <td>20</td>
+      <td>This is a description of the dialog and its uses.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Responses</strong><pre><code>  responses</code></pre></td>
+      <td>21</td>
+      <td>This multiple contains any responses to prompts that have been pre-answered<br />to create a quick order.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Responses-101_416">Responses-101_416</a></td>
+    </tr>
+    <tr>
+      <td><strong>Entry Action</strong><pre><code>  entry_action</code></pre></td>
+      <td>30</td>
+      <td>This is MUMPS code that will be executed at the top of a dialog, prior to<br />the execution of any prompts; it may perform functions such as listing<br />the recent Radiology exams before ordering a new one, or alerting the<br />user to an existing diet order before making a change.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Quick Setup</strong><pre><code>  quick_setup</code></pre></td>
+      <td>31</td>
+      <td>This is MUMPS code that will be executed in the place of the Entry Action<br />when creating quick orders for this dialog; variables may be set here<br />instead to bypass the usual dependence on specific patient values.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Exit Action</strong><pre><code>  exit_action</code></pre></td>
+      <td>40</td>
+      <td>This is MUMPS code that will be executed upon completion of processing the<br />dialog; it is currently used only with dialog-type entries.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Controls</strong><pre><code>  controls</code></pre></td>
+      <td>50</td>
+      <td> </td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Controls-101_415">Controls-101_415</a></td>
+    </tr>
+    <tr>
+      <td><strong>Column Width</strong><pre><code>  column_width</code></pre></td>
+      <td>51</td>
+      <td>This is the width, in characters, for each column in a menu.  For example,<br />to have 3 columns on an 80 character device, enter a width of 26.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Mnemonic Width</strong><pre><code>  mnemonic_width</code></pre></td>
+      <td>52</td>
+      <td>This field allows the width of item mnemonics to be varied; the default<br />value is 5.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Path Switch</strong><pre><code>  path_switch</code></pre></td>
+      <td>53</td>
+      <td>This switch allows the user, when traversing back UP the tree of menus and<br />items, to select a new path back down the tree.  In other words, the menu<br />is redisplayed when returning to that menu’s level in the tree and<br />processing back down the tree is possible from that point.  If nothing is<br />selected from the menu, the path continues back up the tree.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Listbox Text</strong><pre><code>  listbox_text</code></pre></td>
+      <td>54</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Window Form Id</strong><pre><code>  window_form_id</code></pre></td>
+      <td>55</td>
+      <td>This field tells the GUI DELPHI code which form to use to process the<br />order dialog.  Each number represents a unique form.  Following are some<br />of the more common codes and their corresponding form in DELPHI.<br /> <br />    Form Name     Windows Form ID<br />    ———     —————<br />  OD_ACTIVITY           100<br />  OD_ALLERGY            105<br />  OD_CONSULT            110<br />  OD_PROCEDURE          112<br />  OD_DIET_TXT           115<br />  OD_DIET               117<br />  OD_LAB                120<br />  OD_MEDINPT            130<br />  OD_MEDS               135<br />  OD_MEDOUTPT           140<br />  OD_NURSING            150<br />  OD_MISC               151<br />  OD_GENERIC            152<br />  OD_IMAGING            160<br />  OD_VITALS             171 <br />  OD_MEDIV              180<br />  OD_TEXTONLY           999</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Create Parent Order</strong><pre><code>  create_parent_order</code></pre></td>
+      <td>56</td>
+      <td>This flag indicates whether a parent order should be created to group<br />together all the orders created by this order set; this flag is only<br />valid with SET type order dialogs.  If this value is YES, a parent<br />order will be created, and only the parent will be presented on the<br />orders list for display and action; NO will prevent a parent from being<br />created and all orders will be created and displayed independently.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Display Subheader</strong><pre><code>  display_subheader</code></pre></td>
+      <td>57</td>
+      <td>This flag indicates whether a subheader is to be displayed for each order<br />in this set as it is processed and placed; this flag is only valid with<br />SET type order dialogs.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Auto-accept Quick Order</strong><pre><code>  autoaccept_quick_order</code></pre></td>
+      <td>58</td>
+      <td>This can be set to yes for a quick order so that it can be placed simply<br />by clicking on it in the GUI (no ordering dialog is displayed).</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Timestamp</strong><pre><code>  timestamp</code></pre></td>
+      <td>99</td>
+      <td>For menus, this contains the $H time the menu was last compiled for use<br />with the Unwinder utility (^XQOR).</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-files">Sub-Files</h2>
+<h3 id="items-101412"><a name="Items-101_412"></a>Items (101.412)</h3>
+
+<dl>
+<dt>ID</dt><dd>Items-101_412</dd></dl>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Sequence</strong><pre><code>  sequence</code></pre></td>
+      <td>.01</td>
+      <td>This field specifies the order in which this item will be displayed or<br />processed.</td>
+      <td>NUMERIC</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Input Transform</strong><pre><code>  input_transform</code></pre></td>
+      <td>.1</td>
+      <td>This is code that will be used as the third piece of DIR(0) when asking<br />this prompt.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Parent</strong><pre><code>  parent</code></pre></td>
+      <td>1</td>
+      <td>This field controls the behavior of this prompt.  If a parent is defined<br />here, this prompt will be asked from within the parent’s dialog; when it<br />is invoked independently based on its position sequence number, the child<br />prompt will be ignored.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Order_Dialog-101_41">Order_Dialog-101_41</a></td>
+    </tr>
+    <tr>
+      <td><strong>Item</strong><pre><code>  item</code></pre></td>
+      <td>2</td>
+      <td>This field points to an order dialog which is subordinate to this dialog.<br />NOTE:  The parent dialog menu or one of its ancestors may not be entered<br />as an item.</td>
+      <td>POINTER</td>
+      <td>INDEXED</td>
+      <td><a href="Order_Dialog-101_41">Order_Dialog-101_41</a></td>
+    </tr>
+    <tr>
+      <td><strong>Mnemonic</strong><pre><code>  mnemonic</code></pre></td>
+      <td>3</td>
+      <td>This is a short abbreviation for this item dialog to be used when this<br />dialog is displayed for selection.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Display Text</strong><pre><code>  display_text</code></pre></td>
+      <td>4</td>
+      <td>This field allows the text that normally appears for this item to be<br />replaced with alternate text for use in this dialog or menu.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Display Only?</strong><pre><code>  display_only</code></pre></td>
+      <td>5</td>
+      <td>This field identifies an item as being free text for display purposes<br />only.  The text in the Display Text field will be displayed, but it<br />is not selectable; if designated as a header, the text will be underlined.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>YES: <em><strong>1</strong></em><br/>YES-HEADER: <em><strong>2</strong></em><br/>NO: <em><strong>0</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Required</strong><pre><code>  required</code></pre></td>
+      <td>6</td>
+      <td>This field indicates that the user must enter a response to this prompt.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Multiple Valued</strong><pre><code>  multiple_valued</code></pre></td>
+      <td>7</td>
+      <td>This field determines if this prompt will be allowed to have multiple<br />values, or be prompted for only once; if this prompt is a sub-dialog,<br />the entire dialog will be asked once or many times, as a group.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Max Number Of Multiples</strong><pre><code>  max_number_of_multiples</code></pre></td>
+      <td>7.1</td>
+      <td>This is the maximum number of values that may be entered for this prompt,<br />if it is flagged as being multiple-valued.  For example, a diet order may<br />have up to 5 diet modifications entered, where 5 is the maximum allowed<br />that would be entered here.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Title</strong><pre><code>  title</code></pre></td>
+      <td>7.2</td>
+      <td>This is text that will be used in place of the prompt when the order is<br />displayed for place, edit, or cancel, or at the top of a multiple-valued<br />prompt.  The Display Text for the prompt will be used together with the<br />instance number to prompt for user input; for example if Title=”Lab Tests:”<br />and Display Text=”Test:” the user would see<br />  Lab Tests:<br />  1. Test:<br />  2. Test:</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Prompt</strong><pre><code>  prompt</code></pre></td>
+      <td>7.3</td>
+      <td>This field contains text that will be appended to the beginning of the<br />display text when prompting for additional values; if this field is<br />empty, then “Another “ will be used.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ask On Edit Only</strong><pre><code>  ask_on_edit_only</code></pre></td>
+      <td>8</td>
+      <td>This field determines the behaviour of the dialog driver for this prompt;<br />if no value or the defined default is usually correct for this prompt,<br />enter YES here to have this prompt skipped on the first pass through this<br />dialog when creating an order.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Ask On Action</strong><pre><code>  ask_on_action</code></pre></td>
+      <td>9</td>
+      <td>This field determines the behaviour of the dialog driver for this prompt<br />when taking a particular action on an order created by this dialog.  If<br />this string contains “R”, this prompt will be asked when renewing an order;<br />if this string contains “C”, this prompt will be asked when changing an<br />order; if this string contains “W”, this prompt will be asked when<br />rewriting an order.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Index</strong><pre><code>  index</code></pre></td>
+      <td>10</td>
+      <td>For pointer-type prompts, this is the index to use when searching the file;<br />it must be in the form of a regular cross-reference.  To search on multiple<br />indices, enter a string of index names separated by semi-colons, i.e. “B;C”.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Help Message</strong><pre><code>  help_message</code></pre></td>
+      <td>11</td>
+      <td>This field contains the help message to be presented when the user enters<br />a question mark at this prompt.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Special Lookup Routine</strong><pre><code>  special_lookup_routine</code></pre></td>
+      <td>12</td>
+      <td>This field contains a routine to execute that will replace the standard<br />DIC lookup for this prompt; it must be entered here as LINETAG;ROUTINE<br />using a ; instead of ^ and where LINETAG is optional.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ask On Condition</strong><pre><code>  ask_on_condition</code></pre></td>
+      <td>13</td>
+      <td>This is MUMPS code that sets $T to determine if this prompt should be asked<br />or simply given a default value and presented to the user for acceptance<br />or editing.  For example, the prompt “Pregnant: “ may have code here to<br />check the sex of the current patient, i.e. I ORSEX=”F” will allow it to be<br />asked only for female patients.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Screen</strong><pre><code>  screen</code></pre></td>
+      <td>14</td>
+      <td>For pointer-type prompts, this field may contain MUMPS code that will be<br />set into DIC(“S”) to screen the possible choices in the pointed-to file.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Post-selection Action</strong><pre><code>  postselection_action</code></pre></td>
+      <td>15</td>
+      <td>This is code that will be executed after a response is entered to this<br />prompt; if this prompt should be re-asked, kill the variable DONE.<br />If execution of the ordering dialog should be stopped, set ORQUIT=1.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Xecutable Help</strong><pre><code>  xecutable_help</code></pre></td>
+      <td>16</td>
+      <td>This is code that is to be executed when the user enters two or more<br />question marks at this prompt.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Default</strong><pre><code>  default</code></pre></td>
+      <td>17</td>
+      <td>This is code that is to be executed to determine the appropriate default<br />value for this prompt, setting Y=internal form of this value.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Default Word-processing Text</strong><pre><code>  default_wordprocessing_text</code></pre></td>
+      <td>18</td>
+      <td>This is default text to be stuffed into this word-processing prompt.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Entry Action</strong><pre><code>  entry_action</code></pre></td>
+      <td>19</td>
+      <td>This is code that will be executed at the beginning of the processing of<br />this prompt, before the Default and Ask on Condition fields are executed;<br />any special setup required for this field should be done here.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Exit Action</strong><pre><code>  exit_action</code></pre></td>
+      <td>20</td>
+      <td>This is code that will be executed at the very end of the processing of<br />this prompt, after prompting and the Validation field is executed;<br />any special cleanup should be done here.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Order Text Sequence</strong><pre><code>  order_text_sequence</code></pre></td>
+      <td>21</td>
+      <td>This field indicates the order in which values will be concatenated<br />together to build the order text; this may differ from the prompting<br />order defined in the .01 Sequence field.</td>
+      <td>NUMERIC</td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Format</strong><pre><code>  format</code></pre></td>
+      <td>22</td>
+      <td>This is a string of characters that will define any exceptions to how<br />the external form of this value is generated.  Possible values include:<br />  Pointer         -&gt; &lt;field #&gt;~&lt;piece in RPC list of field #&gt;, default =.01<br />  Set of Codes    -&gt; 1~<piece in="" RPC="" list="" of="" code=""> to use code for name<br />  Date/Time       -&gt; Format string to pass $$FMTE^XLFDT (default = 2)<br />  <br />  Suppress value  -&gt; @<br />  Replace value   -&gt; @<ptr> where ptr is the Dialog IEN of the prompt<br />                      whose value, when present, supersedes this value<br />  Required value  -&gt; *<ptr> where ptr is the Dialog IEN of the prompt<br />                      whose value is required to be present to include<br />                      this value<br />  Ignore if same  -&gt; =<ptr> where ptr is the Dialog IEN of the prompt<br />                      whose value, if the external form is the same,<br />                      supersedes this value</ptr></ptr></ptr></piece></td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Omit Text</strong><pre><code>  omit_text</code></pre></td>
+      <td>23</td>
+      <td>This is the external form of a value that is not to be included when building<br />the order text.  E.g. to include the urgency in the order text unless it<br />is routine, enter “ROUTINE” here.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Leading Text</strong><pre><code>  leading_text</code></pre></td>
+      <td>24</td>
+      <td>This field contains text that will be appended to the order text<br />immediately in front of this value, e.g. “Instructions:”.  If this text<br />is contained in a variable, enter @NAME where NAME is the variable name.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Trailing Text</strong><pre><code>  trailing_text</code></pre></td>
+      <td>25</td>
+      <td>This field contains text that will be appended to the order text<br />immediately following this value, e.g. “refills”.  If this text is<br />contained in a variable, enter @NAME where NAME is the variable name.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Start New Line</strong><pre><code>  start_new_line</code></pre></td>
+      <td>26</td>
+      <td>This field determines if this value is concatenated onto the current line<br />when building the order text, or if a new line is started with this value.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Word-wrap</strong><pre><code>  wordwrap</code></pre></td>
+      <td>27</td>
+      <td>This field determines if this text should be wrapped when added to the<br />order text, or appended line by line as stored in the file; this is only<br />used for word-processing type prompts.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>DON'T WRAP: <em><strong>1</strong></em><br/>WRAP: <em><strong>0</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Windows Control</strong><pre><code>  windows_control</code></pre></td>
+      <td>101</td>
+      <td>Stores the type of Windows control necessary to get the data for this<br />prompt.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Api Name</strong><pre><code>  api_name</code></pre></td>
+      <td>102</td>
+      <td>This is the API that should be called when the control is used.  How the API<br />is used varys with the control.  Examples are: filling list boxes, getting<br />boilerplate text, etc.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Api Parameter #1</strong><pre><code>  api_parameter_number1</code></pre></td>
+      <td>103</td>
+      <td>A parameter that is used by the API call may be stored here.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Windows Condition</strong><pre><code>  windows_condition</code></pre></td>
+      <td>113</td>
+      <td>This is silent code that is executed when building the dialog for windows.<br />It identifies which prompts should be included in the dialog.  The condition<br />should leave $T false if the prompt should not be asked.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Windows Default</strong><pre><code>  windows_default</code></pre></td>
+      <td>117</td>
+      <td>This code should silently set the default value of a prompt when it is <br />selected.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="responses-101416"><a name="Responses-101_416"></a>Responses (101.416)</h3>
+
+<dl>
+<dt>ID</dt><dd>Responses-101_416</dd></dl>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Item Entry</strong><pre><code>  item_entry</code></pre></td>
+      <td>.01</td>
+      <td>This is the internal entry number of the prompt in the Item multiple<br />by which this response was obtained.</td>
+      <td>NUMERIC</td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dialog</strong><pre><code>  dialog</code></pre></td>
+      <td>.02</td>
+      <td>This is a pointer to the dialog prompt, which is in the Order Dialog file<br />as type prompt.</td>
+      <td>POINTER</td>
+      <td>INDEXED</td>
+      <td><a href="Order_Dialog-101_41">Order_Dialog-101_41</a></td>
+    </tr>
+    <tr>
+      <td><strong>Instance</strong><pre><code>  instance</code></pre></td>
+      <td>.03</td>
+      <td>In the case of multiple answers for the same item, this identifies the<br />individual instance.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Value</strong><pre><code>  value</code></pre></td>
+      <td>1</td>
+      <td>This contains the actual response, unless the value is a word processing<br />type.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Text</strong><pre><code>  text</code></pre></td>
+      <td>2</td>
+      <td>This contains the actual response, for word-processing type prompts.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="controls-101415"><a name="Controls-101_415"></a>Controls (101.415)</h3>
+
+<dl>
+<dt>ID</dt><dd>Controls-101_415</dd></dl>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Logical Name</strong><pre><code>  logical_name</code></pre></td>
+      <td>.01</td>
+      <td>This is the name by which controls can refer to each other.</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Item</strong><pre><code>  item</code></pre></td>
+      <td>2</td>
+      <td> </td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Order_Dialog-101_41">Order_Dialog-101_41</a></td>
+    </tr>
+    <tr>
+      <td><strong>Create Sequence</strong><pre><code>  create_sequence</code></pre></td>
+      <td>3</td>
+      <td> </td>
+      <td>NUMERIC</td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Control Type</strong><pre><code>  control_type</code></pre></td>
+      <td>4</td>
+      <td> </td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>LongCombo: <em><strong>7</strong></em><br/>Edit: <em><strong>2</strong></em><br/>Button: <em><strong>1</strong></em><br/>Label: <em><strong>0</strong></em><br/>SimpleCombo: <em><strong>5</strong></em><br/>ListBox: <em><strong>4</strong></em><br/>Memo: <em><strong>3</strong></em><br/>DropDownList: <em><strong>6</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Label</strong><pre><code>  label-5</code></pre></td>
+      <td>5</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Beside</strong><pre><code>  beside</code></pre></td>
+      <td>6</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Below</strong><pre><code>  below</code></pre></td>
+      <td>7</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Width</strong><pre><code>  width</code></pre></td>
+      <td>8</td>
+      <td> </td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Left Control</strong><pre><code>  left_control</code></pre></td>
+      <td>9</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Right Control</strong><pre><code>  right_control</code></pre></td>
+      <td>10</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Height</strong><pre><code>  height</code></pre></td>
+      <td>11</td>
+      <td> </td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Upper Control</strong><pre><code>  upper_control</code></pre></td>
+      <td>12</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lower Control</strong><pre><code>  lower_control</code></pre></td>
+      <td>13</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Tab Sequence</strong><pre><code>  tab_sequence</code></pre></td>
+      <td>14</td>
+      <td> </td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on July 17th 2017, 6:14:41 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-07-17T18:14:48-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+      
+    </div>
+
+  </body>
+</html>

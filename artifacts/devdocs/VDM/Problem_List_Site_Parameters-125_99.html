@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">Secure Read and Write Interface for VA VISTA</span>
+        <nav>
+            <a href="/demo">Demo</a>
+            <a href="/artifacts/developer">DevDocs</a>
+            <a href="https://github.com/vistadataproject">Github</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--vdm--problem_list_site_parameters-125_99"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">VDM</a> » Problem_List_Site_Parameters-125_99<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="problem-list-site-parameters-12599">Problem List Site Parameters (125.99)</h1>
+<p>This file controls the behavior of the Problem List application for each site where it is installed.    There should be only one entry in this file!!</p>
+
+<p><strong>Global:</strong> ^GMPL(125.99,</p>
+
+<p><strong>Domain:</strong> Non-Clinical</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Number</strong><pre><code>  number</code></pre></td>
+      <td>.001</td>
+      <td>This is the internal number of this file entry.</td>
+      <td>IEN</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>.01</td>
+      <td>This is the name of the site, commonly HOSPITAL or VAMC.</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Verify Transcribed Problems</strong><pre><code>  verify_transcribed_problems</code></pre></td>
+      <td>1</td>
+      <td>This is a toggle which determines whether the PL application will<br />flag entries made by a non-clinical user, and allow for subsequent<br />confirmation of the entry by a clinician.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Prompt For Chart Copy</strong><pre><code>  prompt_for_chart_copy</code></pre></td>
+      <td>2</td>
+      <td>This is a toggle which determines whether the PL application will<br />prompt the user to print a new chartable copy of the patient’s list<br />when exiting the application or changing patients, if the current<br />patient’s list has been modified.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>YES, ASK: <em><strong>1</strong></em><br/>NO, DON'T ASK: <em><strong>0</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>*use Clinical Lexicon</strong><pre><code>  use_clinical_lexicon</code></pre></td>
+      <td>3</td>
+      <td><strong><em>This field is marked for deletion in preparation for the Problem<br />List Data Standardization project and will be deleted 18 months from<br />the release of patch GMPL</em>2<em>36.</em></strong> <br /> <br />This is a toggle which determines whether the PL application will <br />allow the user to search the Clinical Lexicon when adding or editing <br />a problem; if a term is selected from the CL Utility, the standardized<br />text will be displayed on the problem list, otherwise the text entered<br />by the user to search on will be displayed.  Problems which are taken<br />from the CLU may already be coded to ICD9, and this code is returned <br />to the PL application if available.  Duplicate problems can be screened<br />out, and searches by problem performed when this link to the CLU exists.<br /> <br />If this flag is set to NO, the user will be prompted for his/her free<br />text description of the problem only, when adding or editing a problem.<br />No search will be performed at that time on the CLU, and no link made<br />from the problem to an entry in the CLU.</td>
+      <td>BOOLEAN</td>
+      <td>DEPRECATED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Display Order</strong><pre><code>  display_order</code></pre></td>
+      <td>4</td>
+      <td>This flag allows each site to control how the problem list is displayed,<br />whether chronologically or reverse-chronologically by date recorded.<br />This ordering will be the same both onscreen and on the printed copy.<br />When new problems are added to a patient’s list, they will be added as the<br />most recent problems, i.e. at the top of the list if reverse-chronological<br />or at the bottom if chronological.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>REVERSE-CHRONOLOGICAL: <em><strong>R</strong></em><br/>CHRONOLOGICAL: <em><strong>C</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Screen Duplicate Entries</strong><pre><code>  screen_duplicate_entries</code></pre></td>
+      <td>6</td>
+      <td>If YES is entered in this field duplicate problems (those having the same <br />ICD9 code) will NOT be added to the problem list.  The primary purpose of<br />this field in to screen entries added via the scannable encounter form.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>true: <em><strong>1</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on July 17th 2017, 6:14:41 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-07-17T18:14:48-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+      
+    </div>
+
+  </body>
+</html>

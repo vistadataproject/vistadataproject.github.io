@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VISTA RPC Documentation &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">Secure Read and Write Interface for VA VISTA</span>
+        <nav>
+            <a href="/demo">Demo</a>
+            <a href="/artifacts/developer">DevDocs</a>
+            <a href="https://github.com/vistadataproject">Github</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--native-rpcs--orwcv1-coversheet-list"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">Native RPCs</a> » ORWCV1 COVERSHEET LIST<br /></h4>
+<h1 id="orwcv1-coversheet-list">ORWCV1 COVERSHEET LIST</h1>
+
+<p>This remote procedure call returns a list of Cover Sheet reports,There are no input parameters fo this rpc.</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Label</td>
+      <td>COVERLST</td>
+    </tr>
+    <tr>
+      <td>MUMPS Implementation</td>
+      <td><a href="http://code.osehra.org/dox/Routine_ORWCV1_source.html">ORWCV1</a></td>
+    </tr>
+    <tr>
+      <td>Return Type</td>
+      <td>ARRAY</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="mumps-method-description">MUMPS Method Description</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Method</td>
+      <td><a href="http://code.osehra.org/dox/Routine_ORWCV1_source.html">COVERLST^ORWCV1</a></td>
+    </tr>
+    <tr>
+      <td>Method Comment</td>
+      <td>return data for coversheet</td>
+    </tr>
+    <tr>
+      <td>First Comment</td>
+      <td><pre><code>RPC: ORWCV1 COVERSHEET LIST</code></pre></td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td><pre><code> N I,J,X,X0,X2,CNT,EOF,ROOT,RPC,LIST,DETAIL,HEAD<br/> S EOF="$$END",ROOT=$NA(LST),(CNT,I)=0<br/> D GETLST^XPAR(.LIST,"ALL","ORWCV1 COVERSHEET LIST")<br/> F  S I=$O(LIST(I)) Q:'I  Q:'$D(^ORD(101.24,$P(LIST(I),"^",2),0))  S X0=^(0),X2=$G(^(2)) D<br/> . Q:$P(X0,"^",12)="L"<br/> . S RPC=$P($G(^XWB(8994,+$P(X0,"^",13),0)),"^"),DETAIL=""<br/> . I $P(X0,"^",18) S DETAIL=$P($G(^ORD(101.24,+$P(X0,"^",18),0)),"^",13),DETAIL=$P($G(^XWB(8994,+DETAIL,0)),"^")<br/> . S HEAD=$P(X0,"^") I $L($P(X2,"^",3)) S HEAD=$P(X2,"^",3)<br/> . S X=$P(X0,"^",2)_"^"_HEAD_"^"_$P(X0,"^",3)_"^"_$P(X0,"^",12)_"^"_$P(X0,"^",7)_"^"_RPC_"^"_$P(X0,"^",9)<br/> . S X=X_"^"_$P(X0,"^",10)_"^"_$P(X0,"^",11)_"^"_$P(X0,"^",14)_"^"_$P(X0,"^",15)_"^"_$P(X2,"^")_"^"_$P(X0,"^",4)_"^"_$P(X0,"^",16)_"^"_$P(X0,"^",17)_"^"_DETAIL_"^"_LIST(I)<br/> . D SETITEM(.ROOT,X)</code></pre></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="cprs">CPRS</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>File Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pascal File</td>
+      <td><a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCover.pas">rCover.pas</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <br/><p style="font-size: 11px">Document generated on July 17th 2017, 6:14:43 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-07-17T18:14:48-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+      
+    </div>
+
+  </body>
+</html>

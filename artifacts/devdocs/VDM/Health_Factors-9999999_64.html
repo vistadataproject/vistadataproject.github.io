@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">Secure Read and Write Interface for VA VISTA</span>
+        <nav>
+            <a href="/demo">Demo</a>
+            <a href="/artifacts/developer">DevDocs</a>
+            <a href="https://github.com/vistadataproject">Github</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--vdm--health_factors-9999999_64"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">VDM</a> » Health_Factors-9999999_64<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="health-factors-999999964">Health Factors (9999999.64)</h1>
+<p>This file contains a descriptive name of health factors, and their health factor category.   Changes to this data dictionary should be coordinated thru the IHS DBA.</p>
+
+<p><strong>Global:</strong> ^AUTTHF(</p>
+
+<p><strong>Domain:</strong> Non-Clinical</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Factor</strong><pre><code>  factor</code></pre></td>
+      <td>.01</td>
+      <td>This is the name of the Health Factor (e.g., Current Smoker, Non-Tobacco User)</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Category</strong><pre><code>  category</code></pre></td>
+      <td>.03</td>
+      <td>This is the Health Factor that categorizes several factors into one group.<br />For instance, Non smoker and Frequent Smoker would have the category of<br />Tobacco.<br /> <br />Enter the name of the Health Factor Category.</td>
+      <td>POINTER</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="Health_Factors-9999999_64">Health_Factors-9999999_64</a></td>
+    </tr>
+    <tr>
+      <td><strong>Short Name</strong><pre><code>  short_name</code></pre></td>
+      <td>.04</td>
+      <td>(Optional)<br />This is a ‘short name’ for this health factor. If defined, it will be<br />used on the Health Factors Component of the Health Summary<br /> <br />Enter a 2-10 character short name for this health factor.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Use Only With Sex</strong><pre><code>  use_only_with_sex</code></pre></td>
+      <td>.05</td>
+      <td>(Optional)<br />This is the sex that this health factor is used for.<br /> <br />Enter an “F” for female or an “M” for male.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>MALE: <em><strong>M</strong></em><br/>FEMALE: <em><strong>F</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Lower Age</strong><pre><code>  lower_age</code></pre></td>
+      <td>.06</td>
+      <td>(Optional)<br />This is the lower age limit that might apply to this health factor.<br /> <br />Enter an age between 0 and 99999.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Upper Age</strong><pre><code>  upper_age</code></pre></td>
+      <td>.07</td>
+      <td>(Optional)<br />This is the upper age limit that applies to this health factor. <br /> <br />Enter a number between 0 and 99999.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Display On Health Summary</strong><pre><code>  display_on_health_summary</code></pre></td>
+      <td>.08</td>
+      <td>(Optional)<br />This allows the health factor to be displayed on Health Summaries.<br /> <br />Enter a yes to display or a no to not display.</td>
+      <td>BOOLEAN</td>
+      <td>REQUIRED</td>
+      <td>false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Synonym</strong><pre><code>  synonym</code></pre></td>
+      <td>.09</td>
+      <td>(Optional)<br />This this the synonym for this health factor.<br /> <br />Enter a 3 to 30 character synonym for this health factor.</td>
+      <td>STRING</td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Entry Type</strong><pre><code>  entry_type</code></pre></td>
+      <td>.1</td>
+      <td>This is the type of health factor, (e.g.,”F” for factor or “C” for category).<br /> <br />Enter an “F” for factor or a “C” for category.</td>
+      <td>ENUMERATION</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td>CATEGORY: <em><strong>C</strong></em><br/>FACTOR: <em><strong>F</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Inactive Flag</strong><pre><code>  inactive_flag</code></pre></td>
+      <td>.11</td>
+      <td>This field is used to inactivate a health factor type. If this field<br />contains a “1” then the health factor is inactive.  Inactive health<br />factors cannot be selected in the manual data entry process.  Health<br />factor entries should be made inactive when they are no longer used.  Do<br />not delete the entry or change the meaning of the health factor entry.<br /> <br />To make an inactive health factor active, enter the “@” symbol to delete<br />the “1” from the field.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>INACTIVE: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Not Used With</strong><pre><code>  not_used_with</code></pre></td>
+      <td>1101</td>
+      <td>Some health factors are not used with others. This is the group of health<br />factors that this factor is not used with.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Health_Factors-9999999_64">Health_Factors-9999999_64</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on July 17th 2017, 6:14:41 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-07-17T18:14:48-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+      
+    </div>
+
+  </body>
+</html>

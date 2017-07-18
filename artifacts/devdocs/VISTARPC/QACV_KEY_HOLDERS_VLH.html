@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VISTA RPC Documentation &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">Secure Read and Write Interface for VA VISTA</span>
+        <nav>
+            <a href="/demo">Demo</a>
+            <a href="/artifacts/developer">DevDocs</a>
+            <a href="https://github.com/vistadataproject">Github</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--native-rpcs--qacv-key-holders-vlh"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">Native RPCs</a> » QACV KEY HOLDERS VLH<br /></h4>
+<h1 id="qacv-key-holders-vlh">QACV KEY HOLDERS VLH</h1>
+
+<p>Pass a list of SECURITY KEY names. The routine returns the next ‘n’ persons who have been granted access to one or more of the keys in the list. The routine returns the IEN, name components, title and mail code for theperson(s) who match the lookup value, in XML format. In addition, the XMLheader contains a flag indicating whether there are more matching recordsto return. If it is set to 1, then the caller can make another call to getthe next ‘N’ records. The XML header also contains a ‘next name’ and ‘nextIEN’ value. These values are used like the FROM array in a FileMan Lister call LIST^DIC. They are used to tell the routine where to start looking onsubsequent calls, in order to return the next N records. These two ‘from’values must be passed as input parameters to subsequent calls.</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Label</td>
+      <td>EN</td>
+    </tr>
+    <tr>
+      <td>MUMPS Implementation</td>
+      <td><a href="http://code.osehra.org/dox/Routine_QACVEMPX_source.html">QACVEMPX</a></td>
+    </tr>
+    <tr>
+      <td>Return Type</td>
+      <td>GLOBAL ARRAY</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="input-parameters">Input Parameters</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Maximum Data Length</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>KEYLIST</td>
+      <td>LIST</td>
+      <td>30</td>
+      <td>true</td>
+      <td>An array containing names of one or more SECURITY KEYS in the VistA system. The array looks like LIST(N)=KEYNAME where N is a integer.</td>
+    </tr>
+    <tr>
+      <td>PATSROWS</td>
+      <td>LITERAL</td>
+      <td>12</td>
+      <td>true</td>
+      <td>Number of employees to return in each call. If not passed, the defaultvalue will be the next 10 matching employees.</td>
+    </tr>
+    <tr>
+      <td>PATSFRM0</td>
+      <td>LITERAL</td>
+      <td>35</td>
+      <td>true</td>
+      <td>On the first call to this RPC, this parameter should be set to the emptystring "". On subsequent calls to find more matches to the same lookup value, the parameter must be set to the "patsFrom0" attribute value fromthe XML document output by the previous call. The attribute will contain the starting NAME value for the next search.</td>
+    </tr>
+    <tr>
+      <td>PATSFRM1</td>
+      <td>LITERAL</td>
+      <td>35</td>
+      <td>true</td>
+      <td>On the first call to this RPC, this parameter should be set to the emptystring "". On subsequent calls to find more matches to the same lookup value, the parameter must be set to the "patsFrom1" attribute value fromthe XML document output by the previous call. The attribute will contain the starting IEN value for the next search.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <br/><p style="font-size: 11px">Document generated on July 17th 2017, 6:14:43 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-07-17T18:14:48-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+      
+    </div>
+
+  </body>
+</html>

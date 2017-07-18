@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">Secure Read and Write Interface for VA VISTA</span>
+        <nav>
+            <a href="/demo">Demo</a>
+            <a href="/artifacts/developer">DevDocs</a>
+            <a href="https://github.com/vistadataproject">Github</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--allergy"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Allergy<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="allergy">Allergy</h1>
+
+<h3 id="patient-allergies">Patient Allergies</h3>
+
+<p>Contains patient allergy/adverse reaction information.</p>
+
+<p><strong>Fileman ID:</strong> 120.8</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Patient_Allergies-120_8">Patient_Allergies-120_8</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 16</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>POINTER</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>DATE-TIME</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>DATE</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 5</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#Comment">Comment</a></td>
+      <td>Comment</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#IdBandMarked">Id Band Marked</a></td>
+      <td>IdBandMarked</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="#ReactantDetails">Reactant Details</a></td>
+      <td>ReactantDetails</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><a href="#Reaction">Reaction</a></td>
+      <td>Reaction</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><a href="#RemovalDetails">Removal Details</a></td>
+      <td>RemovalDetails</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Patient</strong><pre><code>  patient</code></pre></td>
+      <td>POINTER</td>
+      <td>patient</td>
+      <td>$PATIENTID</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Reactant</strong><pre><code>  reactant</code></pre></td>
+      <td>POINTER</td>
+      <td><em>GENERATED</em></td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Reactant Details</strong><pre><code>  reactantDetails</code></pre></td>
+      <td>OBJECT</td>
+      <td><em>GENERATED</em></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#ReactantDetails">ReactantDetails</a></td>
+    </tr>
+    <tr>
+      <td><strong>Allergy Type</strong><pre><code>  allergyType</code></pre></td>
+      <td>ENUMERATION</td>
+      <td><em>GENERATED</em></td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>DRUG</strong></em><br/>1: <em><strong>DRUG, FOOD</strong></em><br/>2: <em><strong>FOOD</strong></em><br/>3: <em><strong>OTHER</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Mechanism</strong><pre><code>  mechanism</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>mechanism</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>ALLERGY</strong></em><br/>1: <em><strong>PHARMACOLOGIC</strong></em><br/>2: <em><strong>UNKNOWN</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Origination Date/Time</strong><pre><code>  dateTimeEntered</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>origination_date_time</td>
+      <td>$NOW</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Originator</strong><pre><code>  enteredBy</code></pre></td>
+      <td>POINTER</td>
+      <td>originator</td>
+      <td>$USERID</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Facility where entered</strong><pre><code>  enteredAtFacility</code></pre></td>
+      <td>POINTER</td>
+      <td><em>GENERATED</em></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Observed/Historical</strong><pre><code>  observedOrHistorical</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>observed_historical</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>OBSERVED</strong></em><br/>1: <em><strong>HISTORICAL</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Reactions</strong><pre><code>  reactions</code></pre></td>
+      <td>OBJECT</td>
+      <td>reactions</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#Reaction">Reaction</a></td>
+    </tr>
+    <tr>
+      <td><strong>Allergy Severity</strong><pre><code>  allergySeverity</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>Adverse_Reaction_Reporting-120_85:severity</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>MILD</strong></em><br/>1: <em><strong>MODERATE</strong></em><br/>2: <em><strong>SEVERE</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Date Occurred</strong><pre><code>  dateOccurred</code></pre></td>
+      <td>DATE</td>
+      <td>Adverse_Reaction_Reporting-120_85:date_time_of_event</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Id Band Marked</strong><pre><code>  idBandMarked</code></pre></td>
+      <td>OBJECT</td>
+      <td>id_band_marked</td>
+      <td> </td>
+      <td>CREATE<br />UPDATE</td>
+      <td><a href="#IdBandMarked">IdBandMarked</a></td>
+    </tr>
+    <tr>
+      <td><strong>Removed</strong><pre><code>  isRemoved</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>entered_in_error</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Removal Details</strong><pre><code>  removalDetails</code></pre></td>
+      <td>OBJECT</td>
+      <td><em>GENERATED</em></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#RemovalDetails">RemovalDetails</a></td>
+    </tr>
+    <tr>
+      <td><strong>Comments</strong><pre><code>  comments</code></pre></td>
+      <td>OBJECT</td>
+      <td><em>GENERATED</em></td>
+      <td> </td>
+      <td>CREATE<br />UPDATE</td>
+      <td><a href="#Comment">Comment</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-comment"><a name="Comment"></a>1. Comment</h3>
+
+<p><strong>Field ID:</strong> Comment</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Date/Time Comment Entered</strong><pre><code>  dateTimeEntered</code></pre></td>
+      <td>DATE-TIME</td>
+      <td><em>CUSTOM</em></td>
+      <td>$NOW</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>User Entering</strong><pre><code>  enteredBy</code></pre></td>
+      <td>POINTER</td>
+      <td><em>CUSTOM</em></td>
+      <td>$USERID</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Comment</strong><pre><code>  comment</code></pre></td>
+      <td>STRING</td>
+      <td><em>CUSTOM</em></td>
+      <td> </td>
+      <td>REQUIRED<br />UPDATE</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-id-band-marked"><a name="IdBandMarked"></a>2. Id Band Marked</h3>
+
+<p><strong>Field ID:</strong> IdBandMarked</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Date/Time</strong><pre><code>  dateTimeEntered</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_time</td>
+      <td>$NOW</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>User Entering</strong><pre><code>  enteredBy</code></pre></td>
+      <td>POINTER</td>
+      <td>user_entering</td>
+      <td>$USERID</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="3-reactant-details"><a name="ReactantDetails"></a>3. Reactant Details</h3>
+
+<p><strong>Field ID:</strong> ReactantDetails</p>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Drug Ingredients</strong><pre><code>  drugIngredients</code></pre></td>
+      <td>POINTER</td>
+      <td><em>CUSTOM</em></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Drug Classes</strong><pre><code>  drugClasses</code></pre></td>
+      <td>POINTER</td>
+      <td><em>CUSTOM</em></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="4-reaction"><a name="Reaction"></a>4. Reaction</h3>
+
+<p><strong>Field ID:</strong> Reaction</p>
+
+<h4 id="properties-4">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Reaction</strong><pre><code>  reaction</code></pre></td>
+      <td>POINTER</td>
+      <td>reaction</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Date/Time of Reaction</strong><pre><code>  dateTimeOccurred</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_entered</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="5-removal-details"><a name="RemovalDetails"></a>5. Removal Details</h3>
+
+<p><strong>Field ID:</strong> RemovalDetails</p>
+
+<h4 id="properties-5">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Date/Time Entered</strong><pre><code>  dateTimeEntered</code></pre></td>
+      <td>DATE-TIME</td>
+      <td><em>CUSTOM</em></td>
+      <td>$NOW</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Entered By</strong><pre><code>  enteredBy</code></pre></td>
+      <td>POINTER</td>
+      <td><em>CUSTOM</em></td>
+      <td>$USERID</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Comment</strong><pre><code>  comment</code></pre></td>
+      <td>STRING</td>
+      <td><em>CUSTOM</em></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on July 17th 2017, 6:14:47 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-07-17T18:14:48-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+      
+    </div>
+
+  </body>
+</html>

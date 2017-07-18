@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">Secure Read and Write Interface for VA VISTA</span>
+        <nav>
+            <a href="/demo">Demo</a>
+            <a href="/artifacts/developer">DevDocs</a>
+            <a href="https://github.com/vistadataproject">Github</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--vdm--device-3_5"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">VDM</a> » Device-3_5<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="device-35">Device (3.5)</h1>
+<p>This file defines all input/output devices that can be accessed from this CPU (definitions are not account-specific).  Each device is identified with a unique name.  Each is associated with a $I value which may correspond with a hardware port or, on layered systems, a host file or directory.  If there are several devices for the same volume set and $I, one may be given sign-on system status.  Devices may also be assigned to hunt groups to share work.  This file is cross-referenced by name, $I, volume set(CPU), and sign-on/system device.  It is also cross-referenced by hunt group, local synonym, mnemonic, subtype, and form currently mounted.</p>
+
+<p><strong>Global:</strong> ^%ZIS(1,</p>
+
+<p><strong>Domain:</strong> Non-Clinical</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>.01</td>
+      <td>This is the name of the device. It is used at the ‘DEVICE’ prompt<br />to select this device. It should not be the internal name for<br />the device but a logical one.<br />It must start with 1 uppercase and not contain lowercase.</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Location Of Terminal</strong><pre><code>  location_of_terminal</code></pre></td>
+      <td>.02</td>
+      <td>This is a free text description of where the device is located,<br />e.g. Ward 2A nurse station, etc.</td>
+      <td>STRING</td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Mnemonic</strong><pre><code>  mnemonic</code></pre></td>
+      <td>.03</td>
+      <td>These are alternate names which may be used to select the device.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Local Synonym</strong><pre><code>  local_synonym</code></pre></td>
+      <td>.04</td>
+      <td>This is an alternate name which may be used to select the device.<br />When using the LOCAL SYNONYM to select the device, selection can only<br />occur on the local CPU.  For example, if you assigned a LOCAL SYNONYM<br />to one device on the local CPU, and the same name to a device on<br />the remote CPU, selection using the LOCAL SYNONYM will return<br />the device on the local CPU.</td>
+      <td>STRING</td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Purge Old Print Queue Files</strong><pre><code>  purge_old_print_queue_files</code></pre></td>
+      <td>.13</td>
+      <td>This field determines whether old HFS files associated with entries in the<br />PRINT QUEUE JOB (#3.52) file should be deleted. It only applies to devices<br />of the PRINT QUEUE type. For print queues, an intermediate host file is<br />created in the PRINT_QUEUES subdirectory. <br /><br />Normally, these files are automatically deleted once they have been submitted<br />to the print queue.  For those files that are not automatically deleted,<br />there is a scheduled option that will periodically delete host files that<br />have been somehow left in existence past their usefulness.<br /><br />Setting this field to NO will prevent the purge option from deleting HFS files<br />created via this device.  Setting this field to NO should only be done on<br />a temporary basis while troubleshooting a problem involving a print queue. <br /><br />The default value for this field is YES.  <br /><br /><br /></td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>$i</strong><pre><code>  i</code></pre></td>
+      <td>1</td>
+      <td>This field holds the Hardware port name that the OS can identify when<br />referencing a port on a CPU.<br />On layered systems where opening of host files is supported,<br />this field may hold the host file name.<br />When defining a spool device entry(TYPE=”SPL”) on VAX DSM or MSM-Unix,<br />enter the name of directory where spool host files will be created.</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Volume Set(cpu)</strong><pre><code>  volume_setcpu</code></pre></td>
+      <td>1.9</td>
+      <td>This field holds the name of the CPU to which this device belongs.<br />This field holds the name of the CPU where the physical port resides.<br />On DSM-11, VAX DSM, this field may hold the name of the Volume Set.<br />On M/11+, this field may hold the name of the Directory Set.<br /> <br />If no name has been entered for this field, this device is assumed<br />to be accessible from all CPUs in the network.  In other words,<br />when this device is referenced, the device handler will operate<br />as if this device is resident on the local CPU.  <br /> <br />For example, if there is a device that uses the same $I on each CPU,<br />one entry can be made in the Device File by leaving the ‘Volume<br />Set(CPU)’ Field null.  This shortcut will work only if the same $I<br />has been associated with this device on every CPU.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Sign-on/system Device</strong><pre><code>  signon_system_device</code></pre></td>
+      <td>1.95</td>
+      <td>If answered ‘YES’, this field identifies that this entry is the primary<br />device among those device entries that have the same $I with the same<br />VOLUME SET(CPU).<br /> <br />Among those device entries that have a common $I and CPU,<br />only one of these entries can have this field set to ‘YES’.<br />If none of the common device entries are set to ‘YES’, the<br />default device will be identified by the first device on<br />the CPU x-ref.  The default device is used when the device<br />handler is invoked with $I as the device to be selected.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Type</strong><pre><code>  type-2</code></pre></td>
+      <td>2</td>
+      <td>This field has the general type of device on the CPU.  ‘TRM’ is the most<br />common entry.<br />      TRM – Terminal devices such as most crts and printers<br />             should be associated with a corresponding device entry<br />             with a type of ‘TRM’.<br />      HFS – Host File Server is only available on mumps platforms<br />             that exists on a layered system(e.g.: VMS, UNIX, NT, etc.).<br />             This type and the associated functionality provides<br />             the vehicle to read and write to host level files.<br />             Instead of directing reports to a printer, the results<br />             could be placed into a VMS, NT or UNIX file.  This would<br />             allow a non-mumps based statistical package or spreadsheet<br />             to use data produced by the mumps based application by<br />             simply extracting data from the host file.<br />     VTRM – Virtual Terminal Server devices are those that are associated<br />             with a dynamically created mumps port identification($I).<br />             A generic device entry with a device type of ‘VTRM’<br />             can be established for users who log into the system<br />             through terminal servers.<br />      RES – Resources is a type used for special sequencing of tasks<br />             that do not require a particular device.<br />     CHAN – Network Channels are high speed devices that use network<br />             protocols such as TCP/IP.<br />      OTH – Other devices that do not fit a particular category<br />             should be given a type of ‘OTH’.<br />       MT – Magtape device should have a type of ‘MT’.<br />      SPL – Spool device is a predefined allocated disk space similar<br />             to SDP.  However, access to the spool device can be achieved<br />             from multiple users simultaneously.<br />      BAR – Bar code reader.  This type identifies the device<br />             as a barcode reader.<br />      SDP – Sequential Disk Processor is a predefined allocated<br />             disk space used for sequential processing.  On DSM-11<br />             and M/11+ systems, devices 59 thru 62 are reserved for SDP.<br />             On MSM, the Sequential Block Processor(SBP) is essentially<br />             the same as SDP. This has been replaced with HFS.<br />     IMPC – Imaging work station device(reserved for future use for<br />             DHCP Imaging Project).<br />     PQ   – Print Queues.  This type of device will be used on<br />             Cache/VMS,Linux, or Unix systems to create host files and<br />             pass them to a print server.  Print Queue devices are<br />             not used on Windows systems.<br /><br /></td>
+      <td>ENUMERATION</td>
+      <td>REQUIRED</td>
+      <td>SPOOL: <em><strong>SPL</strong></em><br/>BARCODE READER: <em><strong>BAR</strong></em><br/>SDP: <em><strong>SDP</strong></em><br/>VIRTUAL TERMINAL: <em><strong>VTRM</strong></em><br/>NETWORK CHANNEL: <em><strong>CHAN</strong></em><br/>PRINT QUEUE: <em><strong>PQ</strong></em><br/>TERMINAL: <em><strong>TRM</strong></em><br/>MAGTAPE: <em><strong>MT</strong></em><br/>OTHER: <em><strong>OTH</strong></em><br/>IMAGING WORK STATION: <em><strong>IMPC</strong></em><br/>HOST FILE SERVER: <em><strong>HFS</strong></em><br/>RESOURCES: <em><strong>RES</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Subtype</strong><pre><code>  subtype</code></pre></td>
+      <td>3</td>
+      <td>This field tells what type of terminal is on a terminal port.<br />It has a great impact on whether the proper terminal control codes<br />get sent to the terminal.</td>
+      <td>POINTER</td>
+      <td>REQUIRED</td>
+      <td>Terminal_Type-3_2</td>
+    </tr>
+    <tr>
+      <td><strong>Ask Device</strong><pre><code>  ask_device</code></pre></td>
+      <td>4</td>
+      <td>This field controls if the ‘DEVICE’ question is asked when a call<br />is made to ^%ZIS.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Ask Parameters</strong><pre><code>  ask_parameters</code></pre></td>
+      <td>5</td>
+      <td>On devices of TYPE ‘TRM’ and ‘VTRM’, this field controls<br />if the ‘RIGHT MARGIN’ question is asked after selecting the device.<br />On devices of TYPE ‘MT’, ‘SDP’, ‘BAR’, and ‘OTH’, this field controls<br />if the ‘ADDRESS/PARAMETERS’ question is asked after selecting the device.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Ask Host File</strong><pre><code>  ask_host_file</code></pre></td>
+      <td>5.1</td>
+      <td>Answer ‘yes’ if ‘HOST FILE NAME:’ should be asked when the device<br />is selected.  TYPE must be ‘HFS’.  Only applicable on layered systems<br />that support host files.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Ask Hfs I/o Operation</strong><pre><code>  ask_hfs_i_o_operation</code></pre></td>
+      <td>5.2</td>
+      <td>For systems that support host files, this field may be used instead<br />of ‘ADDRESS/PARAMETERS’ to specify more general parameters.<br /> <br />If ‘Ask Parameters’ is null or ‘NO’, set this field to ‘YES’ and the<br />device handler will ask for INPUT/OUTPUT OPERATION upon selecting a<br />device.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Queuing</strong><pre><code>  queuing</code></pre></td>
+      <td>5.5</td>
+      <td>When this field is set to FORCED and queuing is allowed by the calling<br />program (%ZIS[“Q”), the Device Handler will return IO(“Q”)=1 upon<br />device selection and the job will be queued.  That is, the user<br />does not need to enter “Q” to invoke queuing and will not be prompted<br />with the question about wanting output queued.  If the program <br />does not allow queuing (%ZIS’[“Q”), the user will see the following<br />message: Sorry, QUEUING is required for this device.<br /> <br />Set this field to NOT ALLOWED if queuing is not possible or desired<br />for this device.<br /> <br />Set this field to ALLOWED if queuing is possible for this device.<br />When this field is set to ALLOWED, the application/user will determine<br />if queuing is desired.  Setting this field to null is the same as<br />setting this field to ALLOWED.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>FORCED: <em><strong>1</strong></em><br/>NOT ALLOWED: <em><strong>2</strong></em><br/>ALLOWED: <em><strong>0</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Out-of-service Date</strong><pre><code>  outofservice_date</code></pre></td>
+      <td>6</td>
+      <td>If entered then this device cannot be selected if the current date is<br />greater than, or the same as, the date specified.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Nearest Phone</strong><pre><code>  nearest_phone</code></pre></td>
+      <td>7</td>
+      <td>The location of the telephone nearest to this device.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Key Operator</strong><pre><code>  key_operator</code></pre></td>
+      <td>8</td>
+      <td>The name of the person who usually uses this device.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Margin Width</strong><pre><code>  margin_width</code></pre></td>
+      <td>9</td>
+      <td>This field if it has data will override the Right Margin field value<br />from the Terminal type file.<br />Leave this field blank unless you are sure that you need to have a<br />different Right Margin than what is in the terminal type file.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Page Length</strong><pre><code>  page_length</code></pre></td>
+      <td>11</td>
+      <td>This field, if it has data, will override the Page Length field value<br />from the Terminal type file.<br />Leave this field blank unless you are sure that you need to have a<br />different Page Length than what is in the terminal type file.<br /> <br />If this is a CRT then this is the number of lines which can<br />be displayed on the screen, otherwise, for printers, it is<br />the number of print lines per page.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Suppress Form Feed At Close</strong><pre><code>  suppress_form_feed_at_close</code></pre></td>
+      <td>11.2</td>
+      <td>This field is used flag devices that should not have form feeds issued<br />at the time the device is closed.<br />This field should be answered ‘YES’ for label printers.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Security</strong><pre><code>  security</code></pre></td>
+      <td>15</td>
+      <td>The users DUZ(0) (fileman access) must contain at least one of the<br />characters in this field for the user to be able to select this device.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Closest Printer</strong><pre><code>  closest_printer</code></pre></td>
+      <td>16</td>
+      <td>This is the name of the nearest printer, it is selected at the <br />“DEVICE” prompt simply by entering “P”.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Device-3_5">Device-3_5</a></td>
+    </tr>
+    <tr>
+      <td><strong>Form Currently Mounted</strong><pre><code>  form_currently_mounted</code></pre></td>
+      <td>17</td>
+      <td>This describes the type of form currently in the printer.</td>
+      <td>STRING</td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Open Parameters</strong><pre><code>  open_parameters</code></pre></td>
+      <td>19</td>
+      <td>These parameters are used to open a device with specified<br />characteristics/addresses.<br />This field is primarily used with non-terminal devices such<br />as magtape and SDP.<br />For SDP, use (block:0) on M/11; (0:block:drive) on DSM.<br />For Magtape, use (“VAL4”:0:2048) on both M/11 and DSM.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Close Parameters</strong><pre><code>  close_parameters</code></pre></td>
+      <td>19.3</td>
+      <td>This field holds the parameters to be used in a MUMPS CLOSE statement.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Use Parameters</strong><pre><code>  use_parameters</code></pre></td>
+      <td>19.5</td>
+      <td>This field holds the parameters to be used in a MUMPS USE statement.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Pre-open Execute</strong><pre><code>  preopen_execute</code></pre></td>
+      <td>19.7</td>
+      <td>This is the Xecutable MUMPS code which is used by %ZIS before opening<br />the device.  Setting %ZISQUIT=1 in the PRE-OPEN EXECUTE code<br />will signal %ZIS to reject the selected device.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Post-close Execute</strong><pre><code>  postclose_execute</code></pre></td>
+      <td>19.8</td>
+      <td>This is the Xecutable MUMPS code which is used by %ZISC after closing<br />the device.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Micom Printer Contention Port</strong><pre><code>  micom_printer_contention_port</code></pre></td>
+      <td>21</td>
+      <td>This field is reserved for future use to determine whether the device<br />uses printer contention.  It would be a preliminary check to decide<br />whether it is necessary to invoke the printer contention programs.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Modem</strong><pre><code>  modem</code></pre></td>
+      <td>23</td>
+      <td>If this device is connected to a modem, this is the name of the type<br />of modem, as found in the TERMINAL TYPE file.  Modem names must begin<br />with “M-“.  This field is used by MailMan for controlling the auto-dialer.<br />If the device is used only for dial-in (receives calls only, never places<br />them), then this field is not necessary.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Terminal_Type-3_2</td>
+    </tr>
+    <tr>
+      <td><strong>Priority At Run Time</strong><pre><code>  priority_at_run_time</code></pre></td>
+      <td>25</td>
+      <td>This field, if set, will be used by the Task Manager to set a job’s<br />operating system run priority. Lowest priority is 1, and 10 is the<br />highest.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Taskman Print A Header Page</strong><pre><code>  taskman_print_a_header_page</code></pre></td>
+      <td>26</td>
+      <td>If this field is set to YES then, Taskman will print a header page<br />before the job is started to form a break between reports.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>n</strong></em><br/>true: <em><strong>y</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Password</strong><pre><code>  password</code></pre></td>
+      <td>27</td>
+      <td>Passwords are used for an additional level of security on devices such as<br />modems.  If a value is entered in this field, all users trying to log on to<br />this device will be prompted for the password before being prompted for the<br />access code.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Slaved From Device</strong><pre><code>  slaved_from_device</code></pre></td>
+      <td>28</td>
+      <td>This field may permit queuing to slaved devices.  Given hard-wiring such<br />that a display terminal may be identified with a device name, queuing may<br />take place to the slaved device ($I=0).  Enter the device name of the<br />display terminal in this field.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Device-3_5">Device-3_5</a></td>
+    </tr>
+    <tr>
+      <td><strong>Auto Despool</strong><pre><code>  auto_despool</code></pre></td>
+      <td>31</td>
+      <td>Answer ‘YES’ if the report is to be automatically despooled.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Despool Devices</strong><pre><code>  despool_devices</code></pre></td>
+      <td>32</td>
+      <td>This is the list of printers that reports will be printed during<br />the despool process for the named spool device.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Despool_Devices-3_532">Despool_Devices-3_532</a></td>
+    </tr>
+    <tr>
+      <td><strong>Generate Spl Doc Name</strong><pre><code>  generate_spl_doc_name</code></pre></td>
+      <td>33</td>
+      <td>Answer ‘YES’ to this field if the spool document name is to be<br />automatically generated.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Resource Slots</strong><pre><code>  resource_slots</code></pre></td>
+      <td>35</td>
+      <td>Enter a value that will identify the limit of concurrent jobs<br />that may own the same resource.  If no data is entered, the<br />device handler will use a default value of 1.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Global Lock</strong><pre><code>  global_lock</code></pre></td>
+      <td>36</td>
+      <td>This field tells the device handler if it should use a global lock<br />to control access to a device.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>1</strong></em><br/>true: <em><strong>0</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Open Count</strong><pre><code>  open_count</code></pre></td>
+      <td>51</td>
+      <td>This field holds a count of the number of times that %ZIS has <br />successfully open this device.<br />The reason is to find LAT devices that are still in use.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Timed Read (# Of Seconds)</strong><pre><code>  timed_read_number_of_seconds</code></pre></td>
+      <td>51.1</td>
+      <td>The number of seconds for timed reads at this device. It is overridden<br />by the Timed Read specification in the USER File.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*reserved</strong><pre><code>  reserved</code></pre></td>
+      <td>51.12</td>
+      <td> </td>
+      <td>STRING</td>
+      <td>DEPRECATED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*reserved</strong><pre><code>  reserved-51_13</code></pre></td>
+      <td>51.13</td>
+      <td> </td>
+      <td>STRING</td>
+      <td>DEPRECATED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*reserved</strong><pre><code>  reserved-51_14</code></pre></td>
+      <td>51.14</td>
+      <td> </td>
+      <td>STRING</td>
+      <td>DEPRECATED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*reserved</strong><pre><code>  reserved-51_15</code></pre></td>
+      <td>51.15</td>
+      <td> </td>
+      <td>STRING</td>
+      <td>DEPRECATED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong># Of Attempts</strong><pre><code>  number_of_attempts</code></pre></td>
+      <td>51.2</td>
+      <td>The number of sign-on attempts before the device is locked from use.<br />This may be ignored by setting the BYPASS DEVICE LOCK-OUT field in<br />the KERNEL SITE PARAMETERS File. The minimum value is set by the VA<br />INFORMATION SYSTEM ACCOUNT AND PASSWORD MANAGEMENT POLICY.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lock-out Time</strong><pre><code>  lockout_time</code></pre></td>
+      <td>51.3</td>
+      <td>This is the amount of time that the device must be idle before <br />the lock will release. This may be ignored by setting the BYPASS<br />DEVICE LOCK-OUT field in the KERNEL SITE PARAMETERS File.<br />The minimum value is set by the VA INFORMATION SYSTEM ACCOUNT AND PASSWORD<br />MANAGEMENT POLICY.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Multiple Sign-on</strong><pre><code>  multiple_signon</code></pre></td>
+      <td>51.4</td>
+      <td>Specifies whether or not the user of this device can be already signed<br />on the system. It is overridden by the Multiple Sign-on specification in<br />the USER File.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>NOT ALLOWED: <em><strong>0</strong></em><br/>ALLOWED: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Ask Device Type At Sign-on</strong><pre><code>  ask_device_type_at_signon</code></pre></td>
+      <td>51.5</td>
+      <td>This field (if filled in) will over ride the ones in the KERNEL site<br />parameter file. This is overridden by the same specification in the<br />NEW PERSON File.<br />It controls if the user/terminal should be asked for a terminal type during<br />sign-on.<br />If set to YES then a <ENQ> is sent to the terminal to collect the answer back<br />message, if valid the terminal type is set to this. Otherwise the user is<br />prompted.<br />If set to NO then the one from the Last Sign-on field or device subtype will<br />be used.</ENQ></td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>YES, ASK: <em><strong>1</strong></em><br/>NO, DON'T ASK: <em><strong>0</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Auto Menu</strong><pre><code>  auto_menu</code></pre></td>
+      <td>51.6</td>
+      <td>This field controls whether the Auto-menu function will be turned on<br />for this device. If it is turned on, it acts just as if the user<br />types a “?” before each prompt. This is overridden by the same<br />specification in the USER File.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>NO MENUS GENERATED: <em><strong>0</strong></em><br/>MENUS GENERATED: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>*reserved</strong><pre><code>  reserved-51_7</code></pre></td>
+      <td>51.7</td>
+      <td> </td>
+      <td>STRING</td>
+      <td>DEPRECATED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Tied Routine</strong><pre><code>  tied_routine</code></pre></td>
+      <td>51.8</td>
+      <td>This field, if filled in, has the name of a routine that is run<br />before the ‘ACCESS CODE’ question is asked. Use with care.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Type-ahead</strong><pre><code>  typeahead</code></pre></td>
+      <td>51.9</td>
+      <td>Should the user of this device have ‘Type-Ahead’ turned on or off.<br />This will be overridden by the same specification in the USER File.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>NOT ALLOWED: <em><strong>N</strong></em><br/>ALLOWED: <em><strong>Y</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Perform Device Checking</strong><pre><code>  perform_device_checking</code></pre></td>
+      <td>51.91</td>
+      <td>This field, if set, will override the default in the KERNEL SITE<br />PARAMETERS File.<br /> <br />Device checking involves checking for device lockout, prohibited access<br />times, etc. If turned off, logon will be faster.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>1</strong></em><br/>true: <em><strong>0</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Secondary $i</strong><pre><code>  secondary_i</code></pre></td>
+      <td>52</td>
+      <td>This field holds the $IO value to be used if this is the secondary system<br />in a mixed OS environment.  It is not used otherwise.<br />It is only used for output devices.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lat Server Node</strong><pre><code>  lat_server_node</code></pre></td>
+      <td>61</td>
+      <td>This is the DECserver/terminal server node name that the device is on.<br />It is used by XTLATSET to build data files for VMS startup.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lat Server Port</strong><pre><code>  lat_server_port</code></pre></td>
+      <td>62</td>
+      <td>This is the port on the DECserver/terminal server that this device is<br />connected to. It can be entered in the LC-2-5 form or 31 form.<br />On EQUINOX it is in the PORT_31 form.<br />This field is used by XTLATSET to build VMS datafiles for startup.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Vms Device Type</strong><pre><code>  vms_device_type</code></pre></td>
+      <td>63</td>
+      <td>This is a flag that is passed into the file LT_PTR.DAT by the routine <br />XTLATSET to select how this port should be setup in VMS by the<br />SYS$MANAGER:SYSPRINT.COM file when it runs.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>PASTHRU/NOWRAP: <em><strong>p</strong></em><br/>HOSTSYNC/NOWRAP: <em><strong>m</strong></em><br/>LAB INSTRUMENT: <em><strong>l</strong></em><br/>YES SPOOLED: <em><strong>y</strong></em><br/>NOT SPOOLED: <em><strong>n</strong></em><br/>NOWRAP: <em><strong>w</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Lat Port Speed</strong><pre><code>  lat_port_speed</code></pre></td>
+      <td>64</td>
+      <td>This field holds the value that will be passed to the TSC_LOAD.COM<br />file for loading the DECserver permanent database.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>3: <em><strong>300</strong></em><br/>12: <em><strong>1200</strong></em><br/>24: <em><strong>2400</strong></em><br/>48: <em><strong>4800</strong></em><br/>96: <em><strong>9600</strong></em><br/>192: <em><strong>19200</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Print Server Name Or Address</strong><pre><code>  print_server_name_or_address</code></pre></td>
+      <td>65</td>
+      <td>This field contains the FQDN (fully qualified domain name) or specific<br />TCP/IP address of a remote server (e.g., for LPD/LPR printing) or device<br />(e.g., for telnet printer).</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Telnet Port</strong><pre><code>  telnet_port</code></pre></td>
+      <td>66</td>
+      <td>This field contains the telnet port of a remote device (e.g., a telnet<br />printer).  The allowable range is a number between 2000 and 65534.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Remote Printer Name</strong><pre><code>  remote_printer_name</code></pre></td>
+      <td>67</td>
+      <td>This is the Name of the Remote Printer that is referenced by<br />the “PRINT SERVER NAME OR ADDRESS” and “TELNET PORT” fields.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Windows Network Printer Name</strong><pre><code>  windows_network_printer_name</code></pre></td>
+      <td>75</td>
+      <td>This is the Windows network name for the printer (e.g., <br />’\vhaistfpc4\IST-HP4525-1’). It is used by Windows applications that <br />interact with VistA and need a printer identified for output purposes.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lab Label Printer</strong><pre><code>  lab_label_printer</code></pre></td>
+      <td>101</td>
+      <td>This field is used only if the current device has a label printer associated<br />with it.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Device-3_5">Device-3_5</a></td>
+    </tr>
+    <tr>
+      <td><strong>Primary Menu Option</strong><pre><code>  primary_menu_option</code></pre></td>
+      <td>201</td>
+      <td>This field, if filled in, contains the primary menu that is run from this<br />device. It overrides the user’s primary menu.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Option-19">Option-19</a></td>
+    </tr>
+    <tr>
+      <td><strong>Barcode Avail</strong><pre><code>  barcode_avail</code></pre></td>
+      <td>646</td>
+      <td>This field is used by Augie Turano’s pharmacy barcode software.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Prohibited Times For Sign-on</strong><pre><code>  prohibited_times_for_signon</code></pre></td>
+      <td>2009</td>
+      <td>This field allows a device to be locked out for certain periods of the<br />day. The time period for which logons will be prohibited is specified<br />in the form HHMM-HHMM. For example, 1630-0800 would lock out the device<br />from 4:30 PM to 8:00 AM.<br /> <br />If device checking is bypassed for this device, these times are ignored.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Use Timeout On Opens</strong><pre><code>  use_timeout_on_opens</code></pre></td>
+      <td>2009.5</td>
+      <td>This field determines whether a timeout will be used<br />to open the device.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>y</strong></em><br/>true: <em><strong>n</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Open Timeout</strong><pre><code>  open_timeout</code></pre></td>
+      <td>2010</td>
+      <td>If a specific timeout is needed when an open is performed,<br />enter the value of the timeout into this field.  This will enable %ZIS<br />to “hang” for the number of seconds specified in this field to achieve<br />a connection rather than using the default of zero.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Nvs Passover Flag</strong><pre><code>  nvs_passover_flag</code></pre></td>
+      <td>18000</td>
+      <td>This field is a flag which will allow for the devices so selected to be<br />skipped in the NVS TEST ACCOUNT initialization process.  If the test<br />database has a different path to the device in question, some editting may<br />be needed.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>true: <em><strong>1</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-files">Sub-Files</h2>
+<h3 id="despool-devices-3532"><a name="Despool_Devices-3_532"></a>Despool Devices (3.532)</h3>
+
+<dl>
+<dt>ID</dt><dd>Despool_Devices-3_532</dd></dl>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Despool Devices</strong><pre><code>  despool_devices</code></pre></td>
+      <td>.01</td>
+      <td>The printer used in the despool process associated with<br />the current spool device.</td>
+      <td>POINTER</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="Device-3_5">Device-3_5</a></td>
+    </tr>
+    <tr>
+      <td><strong>Copies</strong><pre><code>  copies</code></pre></td>
+      <td>1</td>
+      <td> </td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on July 17th 2017, 6:14:41 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-07-17T18:14:48-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+      
+    </div>
+
+  </body>
+</html>

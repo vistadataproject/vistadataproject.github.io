@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VISTA RPC Documentation &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">Secure Read and Write Interface for VA VISTA</span>
+        <nav>
+            <a href="/demo">Demo</a>
+            <a href="/artifacts/developer">DevDocs</a>
+            <a href="https://github.com/vistadataproject">Github</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--native-rpcs--dsiv-fm-filer"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">Native RPCs</a> » DSIV FM FILER<br /></h4>
+<h1 id="dsiv-fm-filer">DSIV FM FILER</h1>
+
+<p>This invokes the Fileman filer to update records for an existing entry.This will allow you to update any field at the level of the FILE includingword processing fields.  It does not allow for updating different levelsof the file.  If you wish to update a subfile, then you will have to makemultiple calls to this RPC for each file or subfile.</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Label</td>
+      <td>FILE</td>
+    </tr>
+    <tr>
+      <td>MUMPS Implementation</td>
+      <td><a href="http://code.osehra.org/dox/Routine_DSIVFM04_source.html">DSIVFM04</a></td>
+    </tr>
+    <tr>
+      <td>Return Type</td>
+      <td>ARRAY</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="input-parameters">Input Parameters</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Maximum Data Length</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>FILE</td>
+      <td>LITERAL</td>
+      <td>20</td>
+      <td>true</td>
+      <td>This is the file (or subfile) number for record which you wish to update</td>
+    </tr>
+    <tr>
+      <td>IENS</td>
+      <td>LITERAL</td>
+      <td>50</td>
+      <td>true</td>
+      <td>This is the standard Fileman IENS for calling the Fileman DBS APIs.  Theformat of iens is as follows (must have trailing commas):   record#, - to update a record at the top level of a file    sub1,ifn1, - to update multiple record sub1 in the file for record ifn1   sub2,sub1,ifn1 - update a multiple within a multiple within a file</td>
+    </tr>
+    <tr>
+      <td>FLAG</td>
+      <td>LITERAL</td>
+      <td>1</td>
+      <td>true</td>
+      <td>This parameter is optional.  If passed it must be equal to "T"FLAG="T" indicates that you wish transaction processing to occur.  Thatis, all of the fields must successfully be updated or none of them areupdated.  Without this flag, Fileman will update those fields that he can.</td>
+    </tr>
+    <tr>
+      <td>INPUT</td>
+      <td>LIST</td>
+      <td>250</td>
+      <td>true</td>
+      <td>This list contains the fields to be updated in the file (or subfile). The format of INPUT(x) = p1^p2^p3  where     x - the subscript of INPUT can be anything, numeric, string    p1 - required - this is the field number at the level in the file    p2 - optional - default value is "I" - this flag indicates the type        value being passed in, internal format, external format, word        processing          p2 = I - value is in Fileman internal format          p2 = E - value is on external format          p2 = W or WA - this field is a word processing field               see notes below for additional details for this    p3 - required - this is the value to be entered for this field#  Notes on word process fields —————————-   if INPUT(x) = field#^W^@ then delete any existing text for this record   if INPUT(x) = field#^W^text then this will first remove any existing                 text that may exist.  It will then add the new text   if INPUT(x) = field#^WA^text then this will not delete the existing                 text but will append the new text to the existing text if                 there is any    For the same field# all lines of the array must have the same value for   the second piece.  That is, all must be W or WA.  You cannot have some   as W and some as WA.  Each field# can have its own type.  Field 1 could   be W and field 2 could be WA.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <br/><p style="font-size: 11px">Document generated on July 17th 2017, 6:14:43 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-07-17T18:14:48-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+      
+    </div>
+
+  </body>
+</html>

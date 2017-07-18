@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">Secure Read and Write Interface for VA VISTA</span>
+        <nav>
+            <a href="/demo">Demo</a>
+            <a href="/artifacts/developer">DevDocs</a>
+            <a href="https://github.com/vistadataproject">Github</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--vdm--remote_procedure-8994"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">VDM</a> » Remote_Procedure-8994<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="remote-procedure-8994">Remote Procedure (8994)</h1>
+<p>This file is used as a repository of server-based procedures in the context of the Client/Server architecture.  By using the Remote Procedure Call (RPC) Broker, applications running on client workstations can invoke (call) the procedures in this file to be executed by the server and the results will be returned to the client application.  Each remote procedure entry is associated with an entry point (ROUTINE with optional TAG).  Calls to these procedures can include parameters of different value types.  The resulting value of the call can be either a string, a list of strings or a word processing string as indicated by the RETURN VALUE TYPE field (.04).  The remote procedure may be available for use by anyone or its use may be restricted to one or more application.  The range of availability is indicated by the AVAILABILITY field.  IF THERE IS NO ENTRY IN THE AVAILABILITY FIELD, then the procedure is assumed to be PUBLIC.  A remote procedure may be removed from service for a period of time by setting the INACTIVE field.  A request for use of a procedure which is marked inactive will result in an error being returned to the originating application.</p>
+
+<p><strong>Global:</strong> ^XWB(8994,</p>
+
+<p><strong>Domain:</strong> Non-Clinical</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>.01</td>
+      <td> </td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Tag</strong><pre><code>  tag</code></pre></td>
+      <td>.02</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Routine</strong><pre><code>  routine</code></pre></td>
+      <td>.03</td>
+      <td> </td>
+      <td>STRING</td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Return Value Type</strong><pre><code>  return_value_type</code></pre></td>
+      <td>.04</td>
+      <td>This field tells RPC Broker how to process the resulting data from the call.<br /><br />SINGLE VALUE: Broker will return the value of the return parameter (first<br />   parameter in the formal list).  For example,<br />       TAG(RESULT)     ;<br />               S RESULT=”DOE, JOHN”<br />               Q<br /><br />ARRAY: Using $ORDER Broker will traverse the return parameter (first<br />   parameter in the formal list), returning all elements of the array.<br />   For example,<br />       TAG(RESULT)     ;<br />               S RESULT(1)=”ONE”<br />               S RESULT(2)=”TWO”<br />               Q<br /><br />WORD PROCESSING: This type is treated exactly the same way as the ARRAY,<br />   with one exception that the WORD WRAP ON field is used to<br />   control whether each line returned is terminated with CR + LF characters.<br />   See WORD WRAP ON field description for more information.<br /><br />GLOBAL ARRAY: Return value parameter should be set to a closed global<br />   reference in ^TMP. The global’s data nodes will be traversed using<br />   $QUERY, and all data values on global nodes descendant from the global<br />   reference are returned.  This type is especially useful for returning data<br />   from VA FileMan word processing fields, where each line is on a<br />   0-subscripted node.<br /><br />   Important: The global reference you pass is killed by the Broker at the<br />              end of RPC Execution as part of RPC cleanup. Do not pass a<br />              global reference that is not in ^TMP or that should not be<br />              killed.<br /><br />   This type is useful for returning large amounts of data to the client,<br />   where using the ARRAY type can exceed the symbol table limit and crash<br />   your RPC.<br /><br />   For example, to return sign-on introductory text you could do this,<br />       TAG(RESULT)     ;<br />               M RESULT=^XTV(8989.3,1,”INTRO”)<br />               K RESULT(0)  ;this node is not needed<br />               Q<br /><br />GLOBAL INSTANCE: Using this type Broker will return the value of a global<br />   node.  For example the following code will return the whole 0th node<br />   from the NEW PERSON file for the current user.<br />       TAG(RESULT)     ;<br />               S RESULT=$NA(^VA(200,DUZ,0))<br />               Q</td>
+      <td>ENUMERATION</td>
+      <td>REQUIRED</td>
+      <td>GLOBAL INSTANCE: <em><strong>5</strong></em><br/>ARRAY: <em><strong>2</strong></em><br/>SINGLE VALUE: <em><strong>1</strong></em><br/>GLOBAL ARRAY: <em><strong>4</strong></em><br/>WORD PROCESSING: <em><strong>3</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Availability</strong><pre><code>  availability</code></pre></td>
+      <td>.05</td>
+      <td>This field is used to indicate the availability of the API to various<br />users.<br /><br />PUBLIC indicates that the API is available for general use by any package,<br />and it is not necessary to either indicate that the API is being used or<br />to request permission to use it.<br /><br />SUBSCRIPTION indicates that the API is available to those packages that<br />wish to use it, BUT the package needs to indicate that it is using the API<br />or subscribing to it.<br /><br />AGREEMENT indicates that the API is available to packages, other than the<br />developing package, only by means of an integration agreement on its<br />usage.<br /><br />RESTRICTED indicates that the API is not available for reference by any<br />package other than the package which developed it.  Entry of the input and<br />return parameter information is at the option of the developing package in<br />this case.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>RESTRICTED: <em><strong>R</strong></em><br/>AGREEMENT: <em><strong>A</strong></em><br/>PUBLIC: <em><strong>P</strong></em><br/>SUBSCRIPTION: <em><strong>S</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Inactive</strong><pre><code>  inactive</code></pre></td>
+      <td>.06</td>
+      <td>This field is used to indicate that the RPC is not available for use for<br />some reason.  An RPC can be marked as completely unusable (1), unusable<br />locally (2), or unusable remotely (3).  Local use means in the account the<br />user is logged into; remote use means in an account other than the one the<br />user is directly logged into (i.e., a ‘Remote RPC’).  The Broker will not<br />run an RPC that is marked as unusable in the applicable context.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>ACTIVE: <em><strong>0</strong></em><br/>REMOTE INACTIVE (ACTIVE LOCALLY): <em><strong>3</strong></em><br/>INACTIVE: <em><strong>1</strong></em><br/>LOCAL INACTIVE (ACTIVE REMOTELY): <em><strong>2</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Client Manager</strong><pre><code>  client_manager</code></pre></td>
+      <td>.07</td>
+      <td>This field is used to identify those APIs which may be initiated to<br />control the client or to send data to the client unrelated to requests<br />from the client.  These actions usually require additional information on<br />the configuration which is present.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Word Wrap On</strong><pre><code>  word_wrap_on</code></pre></td>
+      <td>.08</td>
+      <td>Affects GLOBAL ARRAY and WORD PROCESSING return value types only. If set to<br />FALSE, all data values are returned in a single concatenated string in<br />Results[0]. If set to TRUE, each array node on the M side is returned as a<br />distinct array item in the Results property of the TRPCBroker.<br /><br />If you’re returning some text to the client and you’d rather let the<br />memo box of the client control the wrapping of lines, set WORD WRAP ON<br />to FALSE.  On the other hand, if you want to preserve line breaks as they<br />exist on the server, set WORD WRAP ON to TRUE.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>TRUE: <em><strong>1</strong></em><br/>FALSE: <em><strong>0</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Version</strong><pre><code>  version</code></pre></td>
+      <td>.09</td>
+      <td>A number to identify the version of the Remote Procedure.  Currently this<br />number is only checked if the Remote Procedure is being run on a foreign<br />server.  If a version number is passed to the Broker by the application<br />requesting that the Remote Procedure be run on the foreign server, the<br />Remote Procedure will only be run if the value of this field is equal to<br />or greater than the passed version number.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Suppress Rdv User Setup</strong><pre><code>  suppress_rdv_user_setup</code></pre></td>
+      <td>.1</td>
+      <td>This field controls how Remote Data View handles the setup of a user to<br />run the RPC. If the field is set to No or is blank than the remote users<br />data will be set up in the New Person file and DUZ for the process will be<br />set to the user. If the field is set to Yes at the remote site the remote<br />user data will NOT be entered into the New Person file and DUZ will be set<br />to the Postmaster.<br /> <br />This field should not be set to Yes for RPC’s that collect patient data.<br />If there is any question about why a RPC has this set to yes contact the<br />DBA for the VA.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>1</strong></em><br/>true: <em><strong>0</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>App Proxy Allowed</strong><pre><code>  app_proxy_allowed</code></pre></td>
+      <td>.11</td>
+      <td>This field must be set to Allowed if this RPC is to be run by an <br />APPLICATION PROXY user.<br />The default is to NOT allow access.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>1</strong></em><br/>true: <em><strong>0</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong><pre><code>  description</code></pre></td>
+      <td>1</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Input Parameter</strong><pre><code>  input_parameter</code></pre></td>
+      <td>2</td>
+      <td>Input parameter is what RPC Broker passes into your remote procedure.  The<br />name that you may call the input parameter has no special meaning to the<br />Broker.  However, you should choose a name that best describes the data<br />that the parameter is used for.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Input_Parameter-8994_02">Input_Parameter-8994_02</a></td>
+    </tr>
+    <tr>
+      <td><strong>Return Parameter Description</strong><pre><code>  return_parameter_description</code></pre></td>
+      <td>3</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-files">Sub-Files</h2>
+<h3 id="input-parameter-899402"><a name="Input_Parameter-8994_02"></a>Input Parameter (8994.02)</h3>
+
+<dl>
+<dt>ID</dt><dd>Input_Parameter-8994_02</dd></dl>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Input Parameter</strong><pre><code>  input_parameter</code></pre></td>
+      <td>.01</td>
+      <td>This field is used to identify an input parameter for the API.</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Parameter Type</strong><pre><code>  parameter_type</code></pre></td>
+      <td>.02</td>
+      <td>This field is used to indicate the type (Literal, List, Reference, or Word<br />Processing entry) of value passed by this parameter.  The Literal, List,<br />and Reference types correspond to the TParamType of the same name.  A Word<br />Processing type would also be a List TParamType.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>LITERAL: <em><strong>1</strong></em><br/>LIST: <em><strong>2</strong></em><br/>REFERENCE: <em><strong>4</strong></em><br/>WORD PROCESSING: <em><strong>3</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Maximum Data Length</strong><pre><code>  maximum_data_length</code></pre></td>
+      <td>.03</td>
+      <td>This field indicates the maximum length that would be expected for the<br />parameter value.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Required</strong><pre><code>  required</code></pre></td>
+      <td>.04</td>
+      <td>This field is used to indicate that the input parameter is a required<br />argument in the API call.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Sequence Number</strong><pre><code>  sequence_number</code></pre></td>
+      <td>.05</td>
+      <td>This number should correspond to the position of this parameter in the<br />formal list of the function.  Consider that the return parameter that<br />Broker passes in, by reference, is the very first parameter with the<br />sequence number of 0.  The next parameter is the first application-supplied<br />parameter with the sequence of 1.<br /><br />Example:<br /><br />  Your entry point may look like:<br /><br />    EN(RESULT,USER,DATE)       ;this will do something<br /><br />      In this case the parameter corresponding to USER should have sequence<br />      number 1 and the DATE parameter should be 2.</td>
+      <td>NUMERIC</td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong><pre><code>  description</code></pre></td>
+      <td>1</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on July 17th 2017, 6:14:41 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-07-17T18:14:48-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+      
+    </div>
+
+  </body>
+</html>

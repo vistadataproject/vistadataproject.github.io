@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">Secure Read and Write Interface for VA VISTA</span>
+        <nav>
+            <a href="/demo">Demo</a>
+            <a href="/artifacts/developer">DevDocs</a>
+            <a href="https://github.com/vistadataproject">Github</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--vdm--tiu_personal_preferences-8926"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">VDM</a> » TIU_Personal_Preferences-8926<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="tiu-personal-preferences-8926">TIU Personal Preferences (8926)</h1>
+<p>This file allows the definition of Personal Preferences with respect to a variety of TIU’s functions (e.g., Review Screen sort field and order, Default cosigner, default locations, location by day-of-week, suppression of review notes prompt on Progres note entry, etc.).</p>
+
+<p><strong>Global:</strong> ^TIU(8926,</p>
+
+<p><strong>Domain:</strong> Non-Clinical</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>User Name</strong><pre><code>  user_name</code></pre></td>
+      <td>.01</td>
+      <td>This is the person whose preferences are represented by the record.</td>
+      <td>POINTER</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Default Location</strong><pre><code>  default_location</code></pre></td>
+      <td>.02</td>
+      <td>This hospital location is presented to the user as the default location<br />when the user enters outpatient TIU documents.  The location must be<br />an active clinic and may not be an Occasion of Service location or a<br />Disposition location.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Hospital_Location-44">Hospital_Location-44</a></td>
+    </tr>
+    <tr>
+      <td><strong>Review Screen Sort Field</strong><pre><code>  review_screen_sort_field</code></pre></td>
+      <td>.03</td>
+      <td>This is the attribute by which the multiple patient documents review<br />screen lists will be sorted for the current user.  In the absence of a<br />specific entry, the list will be sorted by reference date.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>status: <em><strong>S</strong></em><br/>patient: <em><strong>P</strong></em><br/>completion date: <em><strong>C</strong></em><br/>author: <em><strong>A</strong></em><br/>expected cosigner: <em><strong>E</strong></em><br/>reference date: <em><strong>R</strong></em><br/>document type: <em><strong>D</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Review Screen Sort Order</strong><pre><code>  review_screen_sort_order</code></pre></td>
+      <td>.04</td>
+      <td>This is the order in which the following review screen list(s) should be<br />sorted according to the specified sort field (i.e., Ascending or<br />Descending):<br />   - multiple patient documents (several options)<br />   - option Review Progress Notes [TIU OE/RR REVIEW PROG NOTES] <br />The default will be ascending, with unsigned stat documents at the top<br />of the list.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>descending: <em><strong>D</strong></em><br/>ascending: <em><strong>A</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Display Menus</strong><pre><code>  display_menus</code></pre></td>
+      <td>.05</td>
+      <td>This field determines whether the menus for document type, search<br />category, etc. should be automatically displayed (at least until you get<br />to know them better).</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>1</strong></em><br/>true: <em><strong>0</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Patient Selection Preference</strong><pre><code>  patient_selection_preference</code></pre></td>
+      <td>.06</td>
+      <td>This determines whether the user will be prompted to select one<br />patient at a time, or with the OE/RR patient look-up, which allows<br />selection of a list of patients for iterative processing.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>single: <em><strong>S</strong></em><br/>multiple: <em><strong>M</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Ask 'save Changes?' After Edit</strong><pre><code>  ask_save_changes_after_edit</code></pre></td>
+      <td>.07</td>
+      <td>This parameter enables or disables the prompt (Save changes? YES//) on exit <br />from your editor.  Enabling the prompt allows you to “abandon mistakes”, and <br />helps some users avoid the accidental storage (or potential loss) of data <br />following editing of documents.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Ask Subject For Progress Notes</strong><pre><code>  ask_subject_for_progress_notes</code></pre></td>
+      <td>.08</td>
+      <td>Enter YES if you want to be prompted for a SUBJECT when entering or<br />editing a Progress Note.  Subject is a freetext, indexed field which may<br />help you to find notes about a given topic, etc.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Default Cosigner</strong><pre><code>  default_cosigner</code></pre></td>
+      <td>.09</td>
+      <td>This is the person whose name will appear as the default when you are <br />prompted to name an expected cosigner for the Progress Notes which you<br />author.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Number Of Notes On Rev Screen</strong><pre><code>  number_of_notes_on_rev_screen</code></pre></td>
+      <td>.1</td>
+      <td>This determines the number of notes that will be included in your initial<br />list when reviewing progress notes by patient.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Suppress Review Notes Prompt</strong><pre><code>  suppress_review_notes_prompt</code></pre></td>
+      <td>.11</td>
+      <td>Allows user to specify whether to suppress the prompt to Review Existing<br />Notes on entry of a Progress Note.  YES will SUPPRESS the prompt, while<br />NO, or no entry will allow the site’s default setting to take precedence.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Location By Day Of Week</strong><pre><code>  location_by_day_of_week</code></pre></td>
+      <td>1</td>
+      <td>This multiple provides a means of specifying the user’s preferred location<br />by day of week.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Location_By_Day_Of_Week-8926_01">Location_By_Day_Of_Week-8926_01</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-files">Sub-Files</h2>
+<h3 id="location-by-day-of-week-892601"><a name="Location_By_Day_Of_Week-8926_01"></a>Location By Day Of Week (8926.01)</h3>
+
+<dl>
+<dt>ID</dt><dd>Location_By_Day_Of_Week-8926_01</dd></dl>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Day Of Week</strong><pre><code>  day_of_week</code></pre></td>
+      <td>.01</td>
+      <td>This is the day of week on which the user expects to serve patients at a<br />particular location.</td>
+      <td>ENUMERATION</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td>MONDAY: <em><strong>2</strong></em><br/>TUESDAY: <em><strong>3</strong></em><br/>FRIDAY: <em><strong>6</strong></em><br/>WEDNESDAY: <em><strong>4</strong></em><br/>THURSDAY: <em><strong>5</strong></em><br/>SUNDAY: <em><strong>1</strong></em><br/>SATURDAY: <em><strong>7</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Hospital Location</strong><pre><code>  hospital_location</code></pre></td>
+      <td>.02</td>
+      <td>This is the HOSPITAL LOCATION at which the user expects to see patient on<br />the specified day of week.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Hospital_Location-44">Hospital_Location-44</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on July 17th 2017, 6:14:41 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-07-17T18:14:48-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+      
+    </div>
+
+  </body>
+</html>

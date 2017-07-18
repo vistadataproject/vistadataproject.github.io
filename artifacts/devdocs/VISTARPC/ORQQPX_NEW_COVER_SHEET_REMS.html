@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VISTA RPC Documentation &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">Secure Read and Write Interface for VA VISTA</span>
+        <nav>
+            <a href="/demo">Demo</a>
+            <a href="/artifacts/developer">DevDocs</a>
+            <a href="https://github.com/vistadataproject">Github</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--native-rpcs--orqqpx-new-cover-sheet-rems"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">Native RPCs</a> » ORQQPX NEW COVER SHEET REMS<br /></h4>
+<h1 id="orqqpx-new-cover-sheet-rems">ORQQPX NEW COVER SHEET REMS</h1>
+
+<p>Returns a list of reminders for cover sheet evaluation.</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Label</td>
+      <td>REMLIST</td>
+    </tr>
+    <tr>
+      <td>MUMPS Implementation</td>
+      <td><a href="http://code.osehra.org/dox/Routine_ORQQPX_source.html">ORQQPX</a></td>
+    </tr>
+    <tr>
+      <td>Return Type</td>
+      <td>ARRAY</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="input-parameters">Input Parameters</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Maximum Data Length</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LOC</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td> </td>
+      <td>Location</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="mumps-method-description">MUMPS Method Description</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Method</td>
+      <td><a href="http://code.osehra.org/dox/Routine_ORQQPX_source.html">REMLIST^ORQQPX</a></td>
+    </tr>
+    <tr>
+      <td>Method Comment</td>
+      <td>Returns a list of all cover sheet reminders</td>
+    </tr>
+    <tr>
+      <td>Input Parameters</td>
+      <td>LOC</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td><pre><code> N SRV,I,J,ORLST,CODE,IDX,IEN,NEWP<br/> S SRV=$$GET1^DIQ(200,DUZ,29,"I")<br/> D NEWCVOK(.NEWP)<br/> I 'NEWP D GETLST^XPAR(.ORY,"USR^LOC.`"_$G(LOC)_"^SRV.`"_+$G(SRV)_"^DIV^SYS^PKG","ORQQPX SEARCH ITEMS","Q",.ORERR) Q<br/> D REMACCUM(.ORLST,"PKG","Q",1000)<br/> D REMACCUM(.ORLST,"SYS","Q",2000)<br/> D REMACCUM(.ORLST,"DIV","Q",3000)<br/> I +SRV D REMACCUM(.ORLST,"SRV.`"_+$G(SRV),"Q",4000)<br/> I +LOC D REMACCUM(.ORLST,"LOC.`"_+$G(LOC),"Q",5000)<br/> D REMACCUM(.ORLST,"CLASS","Q",6000)<br/> D REMACCUM(.ORLST,"USR","Q",7000)<br/> S I=0<br/> F  S I=$O(ORLST(I)) Q:'I  D<br/> .S IDX=$P(ORLST(I),U,1)<br/> .F  Q:'$D(ORY(IDX))  S IDX=IDX+1<br/> .S CODE=$E($P(ORLST(I),U,2),2)<br/> .S IEN=$E($P(ORLST(I),U,2),3,999)<br/> .I CODE="R" D ADDREM(.ORY,IDX,IEN)<br/> .I CODE="C" D ADDCAT(.ORY,IDX,IEN)<br/> K ORY("B")</code></pre></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="cprs">CPRS</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>File Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NOT OSEHRA CPRS</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <br/><p style="font-size: 11px">Document generated on July 17th 2017, 6:14:43 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-07-17T18:14:48-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+      
+    </div>
+
+  </body>
+</html>

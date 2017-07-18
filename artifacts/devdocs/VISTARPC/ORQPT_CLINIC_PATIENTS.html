@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VISTA RPC Documentation &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">Secure Read and Write Interface for VA VISTA</span>
+        <nav>
+            <a href="/demo">Demo</a>
+            <a href="/artifacts/developer">DevDocs</a>
+            <a href="https://github.com/vistadataproject">Github</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--native-rpcs--orqpt-clinic-patients"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">Native RPCs</a> » ORQPT CLINIC PATIENTS<br /></h4>
+<h1 id="orqpt-clinic-patients">ORQPT CLINIC PATIENTS</h1>
+
+<p>Returns patients with appointments at a clinic between start and stop dates</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Label</td>
+      <td>CLINPTS</td>
+    </tr>
+    <tr>
+      <td>MUMPS Implementation</td>
+      <td><a href="http://code.osehra.org/dox/Routine_ORQPTQ2_source.html">ORQPTQ2</a></td>
+    </tr>
+    <tr>
+      <td>Return Type</td>
+      <td>ARRAY</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="input-parameters">Input Parameters</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Maximum Data Length</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CLINIC ID</td>
+      <td>LITERAL</td>
+      <td>16</td>
+      <td>true</td>
+      <td>The record number of the clinic from the Hospital Location File (#44).</td>
+    </tr>
+    <tr>
+      <td>START DATE</td>
+      <td>LITERAL</td>
+      <td>16</td>
+      <td> </td>
+      <td>The start date of the clinic appointments to retrieve (not in FM format.)</td>
+    </tr>
+    <tr>
+      <td>STOP DATE</td>
+      <td>LITERAL</td>
+      <td>16</td>
+      <td> </td>
+      <td>The stop date of the clinic appointments to retrieve (not in Fileman format.)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="mumps-method-description">MUMPS Method Description</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Method</td>
+      <td><a href="http://code.osehra.org/dox/Routine_ORQPTQ2_source.html">CLINPTS^ORQPTQ2</a></td>
+    </tr>
+    <tr>
+      <td>Method Comment</td>
+      <td>RETURN LIST OF PTS W/CLINIC APPT W/IN BEGINNING AND END DATES</td>
+    </tr>
+    <tr>
+      <td>Input Parameters</td>
+      <td>CLIN, ORBDATE, OREDATE, MAXAPPTS, APPTBGN, APPTEND</td>
+    </tr>
+    <tr>
+      <td>First Comment</td>
+      <td><pre><code> PKS-8/2003: Modified for new scheduling pkg APIs.</code></pre></td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td><pre><code> I +$G(CLIN)<1 S Y(1)="^No clinic identified" Q <br/> I $$ACTLOC^ORWU(CLIN)'=1 S Y(1)="^Clinic is inactive or Occasion Of Service" Q<br/> N ORSRV,ORRESULT,ORERR,ORI,ORPT,ORPTSTAT,ORAPPT,ORCLIN,SDARRAY,NODE<br/> I $L($G(MAXAPPTS))=0 S MAXAPPTS=200<br/> S ORSRV=$G(^VA(200,DUZ,5)) I +ORSRV>0 S ORSRV=$P(ORSRV,U)<br/> I ORBDATE="" S ORBDATE=$$UP^XLFSTR($$GET^XPAR("USR^SRV.`"_+$G(ORSRV)_"^DIV^SYS^PKG","ORLP DEFAULT CLINIC START DATE",1,"E"))<br/> I OREDATE="" S OREDATE=$$UP^XLFSTR($$GET^XPAR("USR^SRV.`"_+$G(ORSRV)_"^DIV^SYS^PKG","ORLP DEFAULT CLINIC STOP DATE",1,"E"))<br/> D DT^DILF("T",ORBDATE,.ORBDATE,"","")<br/> D DT^DILF("T",OREDATE,.OREDATE,"","")<br/> I (ORBDATE=-1)!(OREDATE=-1) S Y(1)="^Error in date range." Q <br/> S OREDATE=$P(OREDATE,".")_.5 ; Add 1/2 day to end date.<br/> K ^TMP($J,"SDAMA301") ; Clean house before starting.<br/> S ORRESULT=""<br/> S ORCLIN=+CLIN<br/> S SDARRAY(1)=ORBDATE_";"_OREDATE<br/> S SDARRAY(2)=+CLIN<br/> S SDARRAY(3)="R;I;NT"<br/> S SDARRAY("SORT")="P" ;no clinic index<br/> S SDARRAY("FLDS")="3;4"  ;ApptStatus^IEN;PtName<br/> I MAXAPPTS S SDARRAY("MAX")=MAXAPPTS<br/> S ORRESULT=$$SDAPI^SDAMA301(.SDARRAY) ; DBIA 4433<br/> I ORRESULT<0 D  S Y(1)=U_ORERR Q<br/> .S ORERR=""<br/> .N IDXERR S IDXERR=$O(^TMP($J,"SDAMA301","")) Q:IDXERR'>0<br/> .S ORERR=^TMP($J,"SDAMA301",IDXERR)<br/> S (ORPT,ORI)=0<br/> I ORRESULT'>0 S Y(1)="^No appointments." Q<br/> F  S ORPT=$O(^TMP($J,"SDAMA301",ORPT)) Q:ORPT=""  D<br/> .S ORAPPT=""<br/> .F  S ORAPPT=$O(^TMP($J,"SDAMA301",ORPT,ORAPPT)) Q:ORAPPT=""  D<br/> ..S ORI=ORI+1<br/> ..S NODE=^TMP($J,"SDAMA301",ORPT,ORAPPT)<br/> ..S Y(ORI)=$TR($P(NODE,U,4),";","^") ; IEN^Name.<br/> ..S Y(ORI)=Y(ORI)_U_ORCLIN ; ^Clinic IEN.<br/> ..S Y(ORI)=Y(ORI)_U_ORAPPT ; App't.<br/> ..I $L($G(APPTEND))=0 S APPTEND=ORAPPT,APPTBGN=ORAPPT<br/> ..I ORAPPT>APPTEND S APPTEND=ORAPPT<br/> ..I ORAPPT<APPTBGN S APPTBGN=ORAPPT<br/> ..S ORPTSTAT=$P($P(NODE,U,3),";",1) ;appt status, will be transformed to pt status.<br/> ..S ORPTSTAT=$S(ORPTSTAT="I":"IPT",ORPTSTAT="R":"OPT",ORPTSTAT="NT":"OPT",1:"") ; Pt Status.<br/> ..S Y(ORI)=Y(ORI)_U_U_U_U_U_ORPTSTAT ; Pt I or O status (or "NT").<br/> K ^TMP($J,"SDAMA301") ; Clean house after finishing.</code></pre></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="cprs">CPRS</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>File Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pascal File</td>
+      <td><a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas">rCore.pas</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <br/><p style="font-size: 11px">Document generated on July 17th 2017, 6:14:43 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-07-17T18:14:48-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+      
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">Secure Read and Write Interface for VA VISTA</span>
+        <nav>
+            <a href="/demo">Demo</a>
+            <a href="/artifacts/developer">DevDocs</a>
+            <a href="https://github.com/vistadataproject">Github</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--visit"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Visit<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="visit">Visit</h1>
+
+<h3 id="visit-1">Visit</h3>
+
+<p>No Description</p>
+
+<p><strong>Fileman ID:</strong> 9000010</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Visit-9000010">Visit-9000010</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 39</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>POINTER</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>DATE-TIME</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>STRING</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 0</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Patient</strong><pre><code>  patient</code></pre></td>
+      <td>POINTER</td>
+      <td>patient_name</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>Patient_Ihs-9000001</td>
+    </tr>
+    <tr>
+      <td><strong>Date Time Event</strong><pre><code>  dateTimeEvent</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>visit_admit_datetime</td>
+      <td>$NOW</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Date Time Entered</strong><pre><code>  dateTimeEntered</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_visit_created</td>
+      <td>$NOW</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Date Time Last Modified</strong><pre><code>  dateTimeLastModified</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_last_modified</td>
+      <td>$NOW</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Date Time Checked Out</strong><pre><code>  dateTimeCheckedOut</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>check_out_datetime</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Entered By</strong><pre><code>  enteredBy</code></pre></td>
+      <td>POINTER</td>
+      <td>created_by_user</td>
+      <td>$USERID</td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Parent Visit</strong><pre><code>  parentVisit</code></pre></td>
+      <td>POINTER</td>
+      <td>parent_visit_link</td>
+      <td> </td>
+      <td> </td>
+      <td>Visit</td>
+    </tr>
+    <tr>
+      <td><strong>Visit Type</strong><pre><code>  visitType</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>encounter_type</td>
+      <td> </td>
+      <td> </td>
+      <td>PRIMARY: <em><strong>P</strong></em><br/>OCCASION OF SERVICE: <em><strong>O</strong></em><br/>STOP CODE: <em><strong>S</strong></em><br/>ANCILLARY: <em><strong>A</strong></em><br/>CREDIT STOP: <em><strong>C</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Facility</strong><pre><code>  facility</code></pre></td>
+      <td>POINTER</td>
+      <td>loc_of_encounter</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Location-9999999_06">Location-9999999_06</a></td>
+    </tr>
+    <tr>
+      <td><strong>Hospital Location</strong><pre><code>  hospitalLocation</code></pre></td>
+      <td>POINTER</td>
+      <td>hospital_location</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Hospital_Location-44">Hospital_Location-44</a></td>
+    </tr>
+    <tr>
+      <td><strong>Outside Location</strong><pre><code>  outsideLocation</code></pre></td>
+      <td>STRING</td>
+      <td>outside_location</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dependent Entry Count</strong><pre><code>  dependentEntryCount</code></pre></td>
+      <td>NUMERIC</td>
+      <td>dependent_entry_count</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Is Removed</strong><pre><code>  isRemoved</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>delete_flag</td>
+      <td> </td>
+      <td> </td>
+      <td>ACTIVE: <em><strong>0</strong></em><br/>DELETED: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Clinic Stop</strong><pre><code>  clinicStop</code></pre></td>
+      <td>POINTER</td>
+      <td>dss_id</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Clinic_Stop-40_7">Clinic_Stop-40_7</a></td>
+    </tr>
+    <tr>
+      <td><strong>Patient Eligibility</strong><pre><code>  patientEligibility</code></pre></td>
+      <td>POINTER</td>
+      <td>eligibility</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Eligibility_Code-8">Eligibility_Code-8</a></td>
+    </tr>
+    <tr>
+      <td><strong>Pfss Account</strong><pre><code>  pfssAccount</code></pre></td>
+      <td>POINTER</td>
+      <td>pfss_account_reference</td>
+      <td> </td>
+      <td> </td>
+      <td>Pfss_Account-375</td>
+    </tr>
+    <tr>
+      <td><strong>Visit Id</strong><pre><code>  visitId</code></pre></td>
+      <td>STRING</td>
+      <td>visit_id</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Patient In Or Out</strong><pre><code>  patientInOrOut</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>patient_status_in_out</td>
+      <td> </td>
+      <td> </td>
+      <td>IN: <em><strong>1</strong></em><br/>OUT: <em><strong>0</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Is Service Connected</strong><pre><code>  isServiceConnected</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>service_connected</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Agent Orange Exposure</strong><pre><code>  agentOrangeExposure</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>agent_orange_exposure</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ionizing Radiation Exposure</strong><pre><code>  ionizingRadiationExposure</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>ionizing_radiation_exposure</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Sw Asia Conditions</strong><pre><code>  swAsiaConditions</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>sw_asia_conditions</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Military Sexual Trauma</strong><pre><code>  militarySexualTrauma</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>military_sexual_trauma</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Head And Or Neck Cancer</strong><pre><code>  headAndOrNeckCancer</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>head_and_or_neck_cancer</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Combat Veteran</strong><pre><code>  combatVeteran</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>combat_veteran</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Proj 112 Shad</strong><pre><code>  proj112Shad</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>proj_112_shad</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Service Connection Edit Flag</strong><pre><code>  serviceConnectionEditFlag</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>service_connection_edit_flag</td>
+      <td> </td>
+      <td> </td>
+      <td>EDITABLE: <em><strong>0</strong></em><br/>NOT EDITABLE: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Agent Orange Edit Flag</strong><pre><code>  agentOrangeEditFlag</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>agent_orange_edit_flag</td>
+      <td> </td>
+      <td> </td>
+      <td>EDITABLE: <em><strong>0</strong></em><br/>NOT EDITABLE: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Ionizing Radiation Edit Flag</strong><pre><code>  ionizingRadiationEditFlag</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>ionizing_radiation_edit_flag</td>
+      <td> </td>
+      <td> </td>
+      <td>EDITABLE: <em><strong>0</strong></em><br/>NOT EDITABLE: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Sw Asia Conditions Edit Flag</strong><pre><code>  swAsiaConditionsEditFlag</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>sw_asia_conditions_edit_flag</td>
+      <td> </td>
+      <td> </td>
+      <td>EDITABLE: <em><strong>0</strong></em><br/>NOT EDITABLE: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Mst Edit Flag</strong><pre><code>  mstEditFlag</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>mst_edit_flag</td>
+      <td> </td>
+      <td> </td>
+      <td>EDITABLE: <em><strong>0</strong></em><br/>NOT EDITABLE: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Head And Neck Cancer Edit Flag</strong><pre><code>  headAndNeckCancerEditFlag</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>head_and_neck_cancer_edit_flag</td>
+      <td> </td>
+      <td> </td>
+      <td>EDITABLE: <em><strong>0</strong></em><br/>NOT EDITABLE: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Combat Veteran Edit Flag</strong><pre><code>  combatVeteranEditFlag</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>combat_veteran_edit_flag</td>
+      <td> </td>
+      <td> </td>
+      <td>EDITABLE: <em><strong>0</strong></em><br/>NOT EDITABLE: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Proj 112 Shad Edit Flag</strong><pre><code>  proj112ShadEditFlag</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>proj_112_shad_edit_flag</td>
+      <td> </td>
+      <td> </td>
+      <td>EDITABLE: <em><strong>0</strong></em><br/>NOT EDITABLE: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Comments</strong><pre><code>  comments</code></pre></td>
+      <td>STRING</td>
+      <td>comments</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Option Used To Enter</strong><pre><code>  optionUsedToEnter</code></pre></td>
+      <td>POINTER</td>
+      <td>option_used_to_create</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Option-19">Option-19</a></td>
+    </tr>
+    <tr>
+      <td><strong>Protocol Used To Enter</strong><pre><code>  protocolUsedToEnter</code></pre></td>
+      <td>POINTER</td>
+      <td>protocol</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Protocol-101">Protocol-101</a></td>
+    </tr>
+    <tr>
+      <td><strong>Entered With Package</strong><pre><code>  enteredWithPackage</code></pre></td>
+      <td>POINTER</td>
+      <td>package</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Package-9_4">Package-9_4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Entered With PCE Data Source</strong><pre><code>  enteredWithPCEDataSource</code></pre></td>
+      <td>POINTER</td>
+      <td>data_source</td>
+      <td> </td>
+      <td> </td>
+      <td>Pce_Data_Source-839_7</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on July 17th 2017, 6:14:47 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-07-17T18:14:48-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+      
+    </div>
+
+  </body>
+</html>

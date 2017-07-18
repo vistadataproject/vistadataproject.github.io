@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">Secure Read and Write Interface for VA VISTA</span>
+        <nav>
+            <a href="/demo">Demo</a>
+            <a href="/artifacts/developer">DevDocs</a>
+            <a href="https://github.com/vistadataproject">Github</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--vdm--orderable_items-101_43"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">VDM</a> » Orderable_Items-101_43<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="orderable-items-10143">Orderable Items (101.43)</h1>
+<p>This file contains the orderable items for use within OE/RR.</p>
+
+<p><strong>Global:</strong> ^ORD(101.43,</p>
+
+<p><strong>Domain:</strong> Non-Clinical</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>.01</td>
+      <td>This is the name of this item that will be used for displaying and searching.</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Inactivated</strong><pre><code>  inactivated</code></pre></td>
+      <td>.1</td>
+      <td>This is a date and time for inactivating this item.  If this field has a<br />value, this item will not ba available to select for ordering after this<br />date.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Notify On Order</strong><pre><code>  notify_on_order</code></pre></td>
+      <td>.91</td>
+      <td>This field is a flag to determine if a notification should be generated<br />whenever an order for this item is placed.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Notify When Resulted</strong><pre><code>  notify_when_resulted</code></pre></td>
+      <td>.92</td>
+      <td>This field is a flag to determine if a notification should be sent when<br />results are posted for an order for this item.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Synonyms</strong><pre><code>  synonyms</code></pre></td>
+      <td>1</td>
+      <td>This multiple contains synonyms for this orderable item, used when<br />searching the file.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Package Name</strong><pre><code>  package_name</code></pre></td>
+      <td>1.1</td>
+      <td>This is the name of this item as defined by the filling service.</td>
+      <td>STRING</td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Id</strong><pre><code>  id-2</code></pre></td>
+      <td>2</td>
+      <td>This is a unique identifier for this item, created from the primary key<br />passed in the Orderable Items update message from each package; it will<br />be in the form of “package code;99XXX” where XXX indicates the package<br />table originating this item (i.e. RAP, LRT, etc).</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Code</strong><pre><code>  code</code></pre></td>
+      <td>3</td>
+      <td>This is the code assigned to this item by the authoritative package,<br />from a national standard coding system such as CPT or SNOMED.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Coding System</strong><pre><code>  coding_system</code></pre></td>
+      <td>4</td>
+      <td>This is the system used to generate the code assigned in field 3.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>NATIONAL DRUG FILE: <em><strong>NDF</strong></em><br/>CPT4: <em><strong>CPT4</strong></em><br/>NATIONAL LAB TEST FILE: <em><strong>NLT</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Display Group</strong><pre><code>  display_group</code></pre></td>
+      <td>5</td>
+      <td>This is the display group that this item is a menber of; this field is<br />used for a variety of purposes such as narrowing a search for an item,<br />sorting and grouping orders, and passing the order to the service<br />for filling.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Display_Group-100_98">Display_Group-100_98</a></td>
+    </tr>
+    <tr>
+      <td><strong>Cost</strong><pre><code>  cost</code></pre></td>
+      <td>6</td>
+      <td>This is the [approximate] cost of filling an order for this item.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Authorization</strong><pre><code>  authorization</code></pre></td>
+      <td>7</td>
+      <td>This field is used to identify the level of authentication necessary to<br />release an order for this item; it will be replaced by the Clinical<br />Authorization and Subscription Utility (CASU) when it becomes available.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>PHYSICIAN: <em><strong>1</strong></em><br/>NO SIGNATURE REQUIRED: <em><strong>0</strong></em><br/>SERVICE CHIEF: <em><strong>3</strong></em><br/>COSIGNATURE: <em><strong>4</strong></em><br/>SPECIALIST: <em><strong>2</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Order Message</strong><pre><code>  order_message</code></pre></td>
+      <td>8</td>
+      <td>This field contains text that is to be displayed to the user whenever<br />this item is selected to be ordered.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Set Membership</strong><pre><code>  set_membership</code></pre></td>
+      <td>9</td>
+      <td>This field contains the names of sets to which this orderable item belongs.<br />When a set name is entered here, a cross-reference of the format “S.name”<br />is created, allowing rapid lookups on this file.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Set_Membership-101_439">Set_Membership-101_439</a></td>
+    </tr>
+    <tr>
+      <td><strong>Components</strong><pre><code>  components</code></pre></td>
+      <td>10</td>
+      <td>This multiple contains the components of this orderable item, i.e. drug<br />ingredients or tests in a lab panel.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Components-101_431">Components-101_431</a></td>
+    </tr>
+    <tr>
+      <td><strong>Inpatient Med</strong><pre><code>  inpatient_med</code></pre></td>
+      <td>50.1</td>
+      <td>This field indicates if this drug is selectable for an inpatient med order.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>YES-IV: <em><strong>2</strong></em><br/>YES: <em><strong>1</strong></em><br/>NO: <em><strong>0</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Outpatient Med</strong><pre><code>  outpatient_med</code></pre></td>
+      <td>50.2</td>
+      <td>This field indicates if this drug is selectable for an outpatient med order.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Iv Base</strong><pre><code>  iv_base</code></pre></td>
+      <td>50.3</td>
+      <td>This field indicates if this drug is selectable as a base for an IV Fluid<br />order.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Iv Additive</strong><pre><code>  iv_additive</code></pre></td>
+      <td>50.4</td>
+      <td>This field indicates if this drug is selectable as an additive for an IV<br />Fluid order.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Supply</strong><pre><code>  supply</code></pre></td>
+      <td>50.5</td>
+      <td>This field indicates if this item is selectable for a medication supply<br />order.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Non-formulary</strong><pre><code>  nonformulary</code></pre></td>
+      <td>50.6</td>
+      <td>This field indicates if this item is available in the local formulary.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Non-va Meds</strong><pre><code>  nonva_meds</code></pre></td>
+      <td>50.7</td>
+      <td>This field indicates if this drug is selectable for a non-VA med order.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Specimen</strong><pre><code>  specimen</code></pre></td>
+      <td>60.1</td>
+      <td>This is the specimen to be collected for this test; it is in the 6-piece<br />HL7 format, where the first 3 pieces are the code, name, and system of<br />the SNOMED code for this specimen, and the last 3 pieces are similarly<br />from the local Site/Specimen file.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Can Lab Collect</strong><pre><code>  can_lab_collect</code></pre></td>
+      <td>60.2</td>
+      <td>This identifies which specimens the lab phlebotomy team can collect.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Sequence</strong><pre><code>  sequence</code></pre></td>
+      <td>60.3</td>
+      <td>This field indicates the order in which specimens are presented for<br />selection, the first being the most often selected and the default.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Max Order Frequency</strong><pre><code>  max_order_frequency</code></pre></td>
+      <td>60.4</td>
+      <td>This is used to control how often this item may be ordered within a given<br />time period.  This item may be ordered only once within the number of days<br />specified in this field.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Daily Order Max</strong><pre><code>  daily_order_max</code></pre></td>
+      <td>60.5</td>
+      <td>This is the number of times within a given day that this item may be<br />ordered.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lab Section</strong><pre><code>  lab_section</code></pre></td>
+      <td>60.6</td>
+      <td>This is the lab section to which orders for this test and sample will be<br />sent.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>BLOOD BANK: <em><strong>BB</strong></em><br/>ELECTRON MICROSCOPY: <em><strong>EM</strong></em><br/>SURGICAL PATHOLOGY: <em><strong>SP</strong></em><br/>CYTOLOGY: <em><strong>CY</strong></em><br/>MICROBIOLOGY: <em><strong>MI</strong></em><br/>CHEMISTRY: <em><strong>CH</strong></em><br/>AUTOPSY: <em><strong>AU</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Type</strong><pre><code>  type-60_7</code></pre></td>
+      <td>60.7</td>
+      <td>This field indicates if this item may be selected when ordering a lab<br />test, and/or if it is included in this file for results reporting only.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>input: <em><strong>I</strong></em><br/>neither: <em><strong>N</strong></em><br/>both: <em><strong>B</strong></em><br/>output: <em><strong>O</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Contrast Media</strong><pre><code>  contrast_media</code></pre></td>
+      <td>71.1</td>
+      <td>This field indicates what contrast media, if any, is used by this<br />radiologic procedure where:<br /> <br />      I = Ionic Iodinated<br />      N = Non-ionic Iodinated<br />      L = Gadolinium<br />      C = Cholecystographic<br />      G = Gastrografin<br />      B = Barium<br />      M = Unspecified contrast media<br /> <br />This value may consist of as many of these flags as are appropriate for<br />this procedure; if empty, no contrast media is assumed.  This field is <br />used primarily for Order Checking.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Procedure Type</strong><pre><code>  procedure_type</code></pre></td>
+      <td>71.2</td>
+      <td>This field identifies the procedure type for this orderable item whether<br />broad or detailed, a series or parent exam.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>DETAILED: <em><strong>D</strong></em><br/>BROAD: <em><strong>B</strong></em><br/>PARENT: <em><strong>P</strong></em><br/>SERIES: <em><strong>S</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Imaging Type</strong><pre><code>  imaging_type</code></pre></td>
+      <td>71.3</td>
+      <td>This is the imaging type of this radiology procedure.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>CARDIOLOGY STUDIES: <em><strong>CARD</strong></em><br/>ANGIO/NEURO/INTERVENTIONAL: <em><strong>ANI</strong></em><br/>NUCLEAR MEDICINE: <em><strong>NM</strong></em><br/>RADIOLOGY: <em><strong>RAD</strong></em><br/>CT SCAN: <em><strong>CT</strong></em><br/>ULTRASOUND: <em><strong>US</strong></em><br/>MAGNETIC RESONANCE IMAGING: <em><strong>MRI</strong></em><br/>MAMMOGRAPHY: <em><strong>MAM</strong></em><br/>VASCULAR LAB: <em><strong>VAS</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Common Procedure</strong><pre><code>  common_procedure</code></pre></td>
+      <td>71.4</td>
+      <td>This field indicates that this procedure is commonly ordered from<br />Radiology, and is an entry in the Radiology Common Procedures file;<br />the number stored here is the sequence number for display.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Diet Type</strong><pre><code>  diet_type</code></pre></td>
+      <td>111.1</td>
+      <td>This field identifies the diet type associated with this orderable item,<br />if the order is for a diet modification or a tubefeeding product.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>TUBEFEEDING PRODUCT: <em><strong>T</strong></em><br/>DIET: <em><strong>D</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Precedence</strong><pre><code>  precedence</code></pre></td>
+      <td>111.2</td>
+      <td>This field is used to avoid conflicting diet modifications; items with<br />the same precedence number may not be selected together.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ask Expiration Date?</strong><pre><code>  ask_expiration_date</code></pre></td>
+      <td>111.3</td>
+      <td>This is a flag that determines if a stop date should be prompted for<br />when placing an order for this diet.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Service Usage</strong><pre><code>  service_usage</code></pre></td>
+      <td>123.1</td>
+      <td>This field contains the usage of this consult service; a value here<br />indicates that this service may NOT be selectable for ordering.  Services<br />with a 1 are used for grouping purposes only, and a 2 indicates that<br />only service personnel may order or forward consults to this service.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>GROUPER ONLY: <em><strong>1</strong></em><br/>TRACKING ONLY: <em><strong>2</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Blood Component</strong><pre><code>  blood_component</code></pre></td>
+      <td>6001</td>
+      <td> </td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Diagnostic Test</strong><pre><code>  diagnostic_test</code></pre></td>
+      <td>6002</td>
+      <td> </td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>YES: <em><strong>1</strong></em><br/>TAS: <em><strong>2</strong></em><br/>NO: <em><strong>0</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-files">Sub-Files</h2>
+<h3 id="set-membership-101439"><a name="Set_Membership-101_439"></a>Set Membership (101.439)</h3>
+
+<dl>
+<dt>ID</dt><dd>Set_Membership-101_439</dd></dl>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Set</strong><pre><code>  set</code></pre></td>
+      <td>.01</td>
+      <td>This is the name of a set to which this orderable item belongs.</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Qo Only</strong><pre><code>  qo_only</code></pre></td>
+      <td>2</td>
+      <td>This field determines if the item may be ordered via the regular order<br />dialog for this Set, or only via predefined quick orders.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>true: <em><strong>1</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="components-101431"><a name="Components-101_431"></a>Components (101.431)</h3>
+
+<dl>
+<dt>ID</dt><dd>Components-101_431</dd></dl>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>.01</td>
+      <td>This is the name of a component of this orderable item.</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Id</strong><pre><code>  id-2</code></pre></td>
+      <td>2</td>
+      <td>This is an identifier for this component, created from the 6-piece coded<br />format passed in the Orderable Items update message from each package.<br />It should be stored in the form of “package code;99XXX” where XXX <br />indicates the package table originating this item (i.e. RAP, LRT, etc.).</td>
+      <td>STRING</td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Code</strong><pre><code>  code</code></pre></td>
+      <td>3</td>
+      <td>This is the code assigned to this item by the authoritative package from a<br />national standard coding system such as CPT or SNOMED.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Coding System</strong><pre><code>  coding_system</code></pre></td>
+      <td>4</td>
+      <td>This is the system used to generate the code assigned in field 3.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>NATIONAL DRUG FILE: <em><strong>NDF</strong></em><br/>CPT4: <em><strong>CPT4</strong></em><br/>NATIONAL LAB TEST FILE: <em><strong>NLT</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on July 17th 2017, 6:14:41 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-07-17T18:14:48-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+      
+    </div>
+
+  </body>
+</html>

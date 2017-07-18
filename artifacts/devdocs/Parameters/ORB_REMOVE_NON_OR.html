@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      Parameters &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">Secure Read and Write Interface for VA VISTA</span>
+        <nav>
+            <a href="/demo">Demo</a>
+            <a href="/artifacts/developer">DevDocs</a>
+            <a href="https://github.com/vistadataproject">Github</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--parameters--orb-remove-non-or"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">Parameters</a> » ORB REMOVE NON-OR<br /></h4>
+<h1 id="orb-remove-non-or">ORB REMOVE NON-OR</h1>
+
+<p>Indicates if a non-CPRS (non-OERR) alert can be deleted withoutprocessing.  Enter the alert identifier (or a portion of the alertidentifier) for each type of alert you want to be able to remove in the CPRS GUI via the Remove button.  The alert identifier or XQAID can befound in the ALERT ID field of the ALERT file [#8992].  For this parameteruse the first few characters of the ALERT ID. For example, to remove NOISalerts enter FSC.  You may enter as many alert identifiers as desired.  Please note that most alert IDs include information specific to thepatient or instance which triggered the alert.  For this parameter youshould only enter that portion of the alert ID which is consistent for allalerts of this type.  For example, a NOIS alert's ID might actually looklike FSC-M,275546.  Entering the entire alert ID in this parameter willonly allow removal of this specific alert.  However if the parameter valueis FSC, all NOIS alerts can be removed.  Other examples of non-OR alertIDs include:  NO-ID;17;3040628.131502   [Taskman alert] - use NO-ID in parameterTIUERR,3423,1;1450;3040518.125801   [TIU error alert] - use TIUERRTIU28907;17;3040720.134827   [TIU alert] - use TIU* in parameter  *Using TIU will also enable Removing TIUERR alerts.  Use TIUERR if youonly want to Remove TIUERR alerts.</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Summary</td>
+      <td>Remove Non-OR Alerts Without Processing</td>
+    </tr>
+    <tr>
+      <td>Value Type</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>Value Domain</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Multiple Instances</td>
+      <td>true</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="allowable-entities">Allowable Entities</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Precedence</th>
+      <th>Entity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>SYSTEM</td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <br/><p style="font-size: 11px">Document generated on July 17th 2017, 6:14:42 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-07-17T18:14:48-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+      
+    </div>
+
+  </body>
+</html>

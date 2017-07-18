@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VISTA RPC Documentation &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">Secure Read and Write Interface for VA VISTA</span>
+        <nav>
+            <a href="/demo">Demo</a>
+            <a href="/artifacts/developer">DevDocs</a>
+            <a href="https://github.com/vistadataproject">Github</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--native-rpcs--orwdal32-allergy-match"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">Native RPCs</a> » ORWDAL32 ALLERGY MATCH<br /></h4>
+<h1 id="orwdal32-allergy-match">ORWDAL32 ALLERGY MATCH</h1>
+
+<p>Given a text string, return a list of possible matches from severaldifferent sources.</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Label</td>
+      <td>ALLSRCH</td>
+    </tr>
+    <tr>
+      <td>MUMPS Implementation</td>
+      <td><a href="http://code.osehra.org/dox/Routine_ORWDAL32_source.html">ORWDAL32</a></td>
+    </tr>
+    <tr>
+      <td>Return Type</td>
+      <td>ARRAY</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="input-parameters">Input Parameters</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Maximum Data Length</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>user input string</td>
+      <td>LITERAL</td>
+      <td>32</td>
+      <td>true</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="mumps-method-description">MUMPS Method Description</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Method</td>
+      <td><a href="http://code.osehra.org/dox/Routine_ORWDAL32_source.html">ALLSRCH^ORWDAL32</a></td>
+    </tr>
+    <tr>
+      <td>Method Comment</td>
+      <td>Return list of partial matches</td>
+    </tr>
+    <tr>
+      <td>Input Parameters</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td><pre><code> N ORX,ROOT,XP,CNT,ORFILE,ORSRC,ORIEN,ORREAX S ORIEN=0,CNT=0,ORSRC=0,ORFILE=""<br/> S ORX=X,X=$$UP^XLFSTR(X)<br/> F ROOT="^GMRD(120.82,""B"")","^GMRD(120.82,""D"")",$$B^PSNAPIS,$$T^PSNAPIS,"^PSDRUG(""B"")","^PSDRUG(""C"")","^PS(50.416,""P"")","^PS(50.605,""C"")" D<br/> . S ORSRC=$G(ORSRC)+1,ORFILE=$P(ROOT,",",1)_")",ORSRC(ORSRC)=$P($T(FILENAME+ORSRC),";;",2)<br/> . I (ORSRC'=2),(ORSRC'=6) S CNT=CNT+1,Y(CNT)=ORSRC_U_ORSRC(ORSRC)_U_U_U_"TOP"_U_"+"<br/> . I ORSRC=1!(ORSRC=2) D<br/> .. I $D(@ROOT@(X)) D<br/> ... I ORSRC=1,X="OTHER ALLERGY/ADVERSE REACTION" Q  ;don't send this entry<br/> ... S ORIEN=$O(@ROOT@(X,0))<br/> ... I $L($T(SCREEN^XTID)) I $$SCREEN^XTID(120.82,.01,ORIEN_",") Q  ;233 Is term active?<br/> ... I ORSRC=2 S CNT=CNT+1,Y(CNT)=ORIEN_U_$P($G(^GMRD(120.82,+ORIEN,0)),U,1)_" <"_X_">"_ROOT<br/> ... I ORSRC'=2  S CNT=CNT+1,Y(CNT)=ORIEN_U_X_ROOT<br/> ... S Y(CNT)=Y(CNT)_U_$P($G(^GMRD(120.82,+Y(CNT),0)),U,2)_U_$S(ORSRC=2:1,1:ORSRC)<br/> .. S XP=X F  S XP=$O(@ROOT@(XP)) Q:XP=""  Q:$E(XP,1,$L(X))'=X  D<br/> ... I ORSRC=1,XP="OTHER ALLERGY/ADVERSE REACTION" Q  ;don't send this entry<br/> ... S ORIEN=$O(@ROOT@(XP,0))<br/> ... I $L($T(SCREEN^XTID)) I $$SCREEN^XTID(120.82,.01,ORIEN_",") Q  ;233 Is term active?<br/> ... I ORSRC=2 S CNT=CNT+1,Y(CNT)=ORIEN_U_$P($G(^GMRD(120.82,+ORIEN,0)),U,1)_" <"_XP_">"_ROOT ; partial matches<br/> ... I ORSRC'=2  S CNT=CNT+1,Y(CNT)=ORIEN_U_XP_ROOT<br/> ... S Y(CNT)=Y(CNT)_U_$P($G(^GMRD(120.82,+Y(CNT),0)),U,2)_U_$S(ORSRC=2:1,1:ORSRC)<br/> . I (ORSRC>2),(ORSRC'=4),(ORSRC'=5),(ORSRC'=6) D<br/> .. N CODE,LIST,VAL,NAME<br/> .. S CODE=$S(ORSRC=3:"S VAL=$$TGTOG2^PSNAPIS(X,.LIST)",ORSRC=4:"D TRDNAME(X,.LIST)",ORSRC=7:"D INGSRCH(X,.LIST)",ORSRC=8:"D CLASRCH(X,.LIST)",1:"") Q:'$L(CODE)<br/> .. X CODE I $D(LIST) S ORIEN=0 F  S ORIEN=$O(LIST(ORIEN)) Q:'ORIEN  D<br/> ... S NAME=$P(LIST(ORIEN),U,2)<br/> ... Q:$E($P(LIST(ORIEN),U,2),1,$L(X))'=X<br/> ... I $L($T(SCREEN^XTID)) I $$SCREEN^XTID($S(ORSRC=3:50.6,(ORSRC=4):50.6,ORSRC=7:50.416,ORSRC=8:50.605,1:0),.01,ORIEN_",") Q<br/> ... S CNT=CNT+1,Y(CNT)=ORIEN_U_NAME_ROOT_U_"D"_U_ORSRC<br/> . I ORSRC=4 D<br/> .. N CODE,LIST,VAL,NAME<br/> .. S CODE="D TRDNAME(X,.LIST)"<br/> .. X CODE I $D(LIST) S ORIEN=0 F  S ORIEN=$O(LIST(ORIEN)) Q:'ORIEN  D<br/> ... S NAME=$P(LIST(ORIEN),U,2)<br/> ... Q:$E($P(LIST(ORIEN),U,2),1,$L(X))'=X<br/> ... I $L($T(SCREEN^XTID)) I $$SCREEN^XTID(50.6,.01,+LIST(ORIEN)_",") Q<br/> ... S CNT=CNT+1,Y(CNT)=+LIST(ORIEN)_U_NAME_ROOT_U_"D"_U_ORSRC</code></pre></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="cprs">CPRS</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>File Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pascal File</td>
+      <td><a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODAllergy.pas">Orders/rODAllergy.pas</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <br/><p style="font-size: 11px">Document generated on July 17th 2017, 6:14:43 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-07-17T18:14:48-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+      
+    </div>
+
+  </body>
+</html>

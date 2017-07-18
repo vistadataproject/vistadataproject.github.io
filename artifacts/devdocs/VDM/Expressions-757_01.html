@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">Secure Read and Write Interface for VA VISTA</span>
+        <nav>
+            <a href="/demo">Demo</a>
+            <a href="/artifacts/developer">DevDocs</a>
+            <a href="https://github.com/vistadataproject">Github</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--vdm--expressions-757_01"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">VDM</a> » Expressions-757_01<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="expressions-75701">Expressions (757.01)</h1>
+<p>This file contains all text pertaining to the Major Concepts, Concept Synonyms,  Concept Lexical Variants, Synonymous Lexical Variants, and Modified Concepts.  It includes displayable text, distinguishing text (that portion of text that makes a modified concept different from the parent concept) and the term definitions (when available).  Searches are conducted using the special look-up routine LEXA1.</p>
+
+<p><strong>Global:</strong> ^LEX(757.01,</p>
+
+<p><strong>Domain:</strong> Problems</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Displayable Text</strong><pre><code>  displayable_text</code></pre></td>
+      <td>.01</td>
+      <td>This is the text which will be used to represent the expression (Major Concept,<br />Synonym or Lexical Variant).</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Major Concept</strong><pre><code>  major_concept</code></pre></td>
+      <td>1</td>
+      <td>Pointer to the Major Concept (file #757).  If the expression is a major<br />concept, this pointer will be the same as the Expression pointer in the<br />Major Concept Map file (#757).  If it is a synonym or a lexical variant it<br />will point to it’s parent major concept.  If it is a lexical variant of a<br />synonym, it will point to the parent major concept of the synonym.</td>
+      <td>POINTER</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="Major_Concept_Map-757">Major_Concept_Map-757</a></td>
+    </tr>
+    <tr>
+      <td><strong>Type</strong><pre><code>  type-2</code></pre></td>
+      <td>2</td>
+      <td>This is a pointer to the Expression Type file (#757.011).  Examples of<br />expression types include Major Concepts, Synonyms, Lexical Variants, etc.</td>
+      <td>POINTER</td>
+      <td>REQUIRED</td>
+      <td>Expression_Type-757_011</td>
+    </tr>
+    <tr>
+      <td><strong>Scope</strong><pre><code>  scope</code></pre></td>
+      <td>3</td>
+      <td>Scope - Demonstrates the relationship of the term to the Major Concept.<br />Major Concepts, Synonyms to Major Concepts and Lexical Variants to a Major<br />Concept are (D)irectly linked.  Lexical Variants to a Synonym of a Major<br />Concept are (I)ndirectly linked.  Related concepts are either (B)roader in<br />scope, (N)arrower in scope, or an (O)ther/undefined view of the Major<br />Concept.</td>
+      <td>ENUMERATION</td>
+      <td>REQUIRED</td>
+      <td>BROADER VIEW: <em><strong>B</strong></em><br/>DIRECTLY LINKED: <em><strong>D</strong></em><br/>INDIRECTLY LINKED: <em><strong>I</strong></em><br/>RELATED VIEW: <em><strong>R</strong></em><br/>NARROWER VIEW: <em><strong>N</strong></em><br/>OTHER: <em><strong>O</strong></em><br/>CONTROLLED VIEW: <em><strong>C</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Form</strong><pre><code>  form</code></pre></td>
+      <td>4</td>
+      <td>Pointer to the Expression Form (file 757.014) which describes the lexical <br />style of an expression.  Major Concepts adopt the general form of “MAJ” while<br />all other expressions describe their forms as they relate to the Major <br />Concept (i.e., plural, singular, acronym, etc.)</td>
+      <td>POINTER</td>
+      <td>REQUIRED</td>
+      <td>Expression_Form-757_014</td>
+    </tr>
+    <tr>
+      <td><strong>Distinguishing Text</strong><pre><code>  distinguishing_text</code></pre></td>
+      <td>5</td>
+      <td>This is the text or portion of text that distinguishes this expression from<br />the Major Concept.  (null if the expression is the Major Concept)</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Definition</strong><pre><code>  definition</code></pre></td>
+      <td>6</td>
+      <td>Definition of an expression when available.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Negation</strong><pre><code>  negation</code></pre></td>
+      <td>7</td>
+      <td>This field contains words which are negated within the expression, i.e, <br />without mention of “complication”, except “thumb”, and other than an <br />“open wound”.  These type of negations will not be indexed in the word <br />index, preventing erroneous search results.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Supplemental</strong><pre><code>  supplemental</code></pre></td>
+      <td>8</td>
+      <td>Supplemental words (not found in the expression) which should be indexed<br />to assist in look-up operations.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Deactivation Flag</strong><pre><code>  deactivation_flag</code></pre></td>
+      <td>9</td>
+      <td>This field indicates that a term formerly in use by the Lexicon has<br />been deactivated and should not be used in lookups or displays.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>ACTIVE: <em><strong>0</strong></em><br/>DEACTIVATED: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Modifier Flag</strong><pre><code>  modifier_flag</code></pre></td>
+      <td>10</td>
+      <td>Number of terms that are further specified by appending a modifier (at the<br />begining of the display text) or specifier (at the end of the display text) of<br />the major concept.  Only major concepts have modifiers/specifiers.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Modifier Type</strong><pre><code>  modifier_type</code></pre></td>
+      <td>11</td>
+      <td>Flag indicated where the modifier is to be placed 1) at the begining of the<br />display text and 2) at the end of the display text.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>MODIFIER (BEGINING OF TEXT): <em><strong>1</strong></em><br/>SPECIFIER (ENDING OF TEXT): <em><strong>2</strong></em><br/>UNMODIFIED: <em><strong>0</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Descendant Flag</strong><pre><code>  descendant_flag</code></pre></td>
+      <td>12</td>
+      <td>Number of terms that are considered descendant form the major concept.  Only<br />major concepts have descendants.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Parent</strong><pre><code>  parent</code></pre></td>
+      <td>13</td>
+      <td>This is the internal entry number in the Expression file #757.01 where the<br />parent of a descendant term is located.  Only descendant terms have parents.</td>
+      <td>POINTER</td>
+      <td>INDEXED</td>
+      <td><a href="Expressions-757_01">Expressions-757_01</a></td>
+    </tr>
+    <tr>
+      <td><strong>Order</strong><pre><code>  order</code></pre></td>
+      <td>14</td>
+      <td>From time to time it is necessary to provide a specific order (sequence) for<br />modifiers and descendant terms (i.e., a list of modifiers/descendants in a <br />GUI list box).  This field is used to provide the list sequence number.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Source Category</strong><pre><code>  source_category</code></pre></td>
+      <td>15</td>
+      <td>This field indicates the “source” provided category for a term.  It<br />can be used to group terms or to locate descendant or ancestral term<br />within the source vocabulary.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Source_Category-757_13</td>
+    </tr>
+    <tr>
+      <td><strong>Source</strong><pre><code>  source</code></pre></td>
+      <td>16</td>
+      <td>This indicates the source volcabulary (and source file) for the volcabulary.<br />This field is used primarily in filtering (screen) the search and for<br />Lexicon Maintenance.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Source-757_14</td>
+    </tr>
+    <tr>
+      <td><strong>Designation Code</strong><pre><code>  designation_code</code></pre></td>
+      <td>18</td>
+      <td>The purpose of this multiple is to store designation IDs in the Lexicon. <br />Designation is a word that terminologists use to encompass concept name, <br />preferred term, expression, code text, synonyms, etc. In some systems <br />such as SNOMED CT as well as the concept having a code (the SNOMED CT <br />code), the individual designations (terms) belong to the concept each <br />have their own codes (designation identifiers).</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Designation_Code-757_118">Designation_Code-757_118</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-files">Sub-Files</h2>
+<h3 id="designation-code-757118"><a name="Designation_Code-757_118"></a>Designation Code (757.118)</h3>
+
+<dl>
+<dt>ID</dt><dd>Designation_Code-757_118</dd></dl>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Designation Code</strong><pre><code>  designation_code</code></pre></td>
+      <td>.01</td>
+      <td>The purpose of this field is to store a designation ID in the Lexicon. <br />Designation is a word that terminologists use to encompass concept name, <br />preferred term, expression, code text, synonyms, etc. In some systems <br />such as SNOMED CT as well as the concept having a code (the SNOMED CT <br />code), the individual designations (terms) belong to the concept each <br />have their own codes (designation identifiers).</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Coding System</strong><pre><code>  coding_system</code></pre></td>
+      <td>1</td>
+      <td>This is the classification system (ICD/CPT/DSM etc) from which the <br />Designation Code (field #.01) is derived.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Coding_Systems-757_03</td>
+    </tr>
+    <tr>
+      <td><strong>Hierarchy</strong><pre><code>  hierarchy</code></pre></td>
+      <td>2</td>
+      <td>This is the SNOMED CT Hierarchy that the concept belongs to.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Snomed_Ct_Hierarchy-757_018</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on July 17th 2017, 6:14:41 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-07-17T18:14:48-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+      
+    </div>
+
+  </body>
+</html>

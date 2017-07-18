@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">Secure Read and Write Interface for VA VISTA</span>
+        <nav>
+            <a href="/demo">Demo</a>
+            <a href="/artifacts/developer">DevDocs</a>
+            <a href="https://github.com/vistadataproject">Github</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--vdm--wv_procedure-790_1"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">VDM</a> » Wv_Procedure-790_1<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="wv-procedure-7901">Wv Procedure (790.1)</h1>
+<p>This file contains the Women Veterans Health’s database of procedures  actually performed and the data associated with them.</p>
+
+<p><strong>Global:</strong> ^WV(790.1,</p>
+
+<p><strong>Domain:</strong> Non-Clinical</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Accession#</strong><pre><code>  accessionnumber</code></pre></td>
+      <td>.01</td>
+      <td>This is the record number assigned by the Women’s Health package.  It is<br />composed of the procedure’s abbreviated code, a four digit year and a<br />sequential number.</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Patient</strong><pre><code>  patient</code></pre></td>
+      <td>.02</td>
+      <td>This field contains the name of the patient associated with the procedure.<br />Pointer to the WV Patient (#790) file.</td>
+      <td>POINTER</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td>Wv_Patient-790</td>
+    </tr>
+    <tr>
+      <td><strong>Procedure</strong><pre><code>  procedure</code></pre></td>
+      <td>.04</td>
+      <td>This field stores the name of the procedure performed on the patient.<br />Pointer to the WV Procedure (#790.1) file.</td>
+      <td>POINTER</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td>Wv_Procedure_Type-790_2</td>
+    </tr>
+    <tr>
+      <td><strong>Results/diagnosis</strong><pre><code>  results_diagnosis</code></pre></td>
+      <td>.05</td>
+      <td>This field stores the main result or diagnosis of the patient’s procedure.<br />Pointer to the WV Results/Diagnosis (#790.31) file.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Wv_Results_diagnosis-790_31</td>
+    </tr>
+    <tr>
+      <td><strong>Sec Result/diagnosis</strong><pre><code>  sec_result_diagnosis</code></pre></td>
+      <td>.06</td>
+      <td>This field stores a secondary outcome/diagnosis associated with the<br />procedure.  Pointer to the WV Results/Diagnosis (#790.31) file.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Wv_Results_diagnosis-790_31</td>
+    </tr>
+    <tr>
+      <td><strong>Provider</strong><pre><code>  provider</code></pre></td>
+      <td>.07</td>
+      <td>This field stores the name of the clinician who ordered and/or performed<br />this procedure.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Hpv</strong><pre><code>  hpv</code></pre></td>
+      <td>.08</td>
+      <td>This field is used to document the presence or absence of the Human<br />Papilloma Virus (HPV) in the cytology reports.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Mam Unilateral: Left Or Right</strong><pre><code>  mam_unilateral_left_or_right</code></pre></td>
+      <td>.09</td>
+      <td>Select left or right for this unilateral mammogram.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>RIGHT: <em><strong>r</strong></em><br/>LEFT: <em><strong>l</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Health Care Facility</strong><pre><code>  health_care_facility</code></pre></td>
+      <td>.1</td>
+      <td>This field identifies the name of the health care facility where this<br />procedure was performed.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Institution-4">Institution-4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Ward/clinic/location</strong><pre><code>  ward_clinic_location</code></pre></td>
+      <td>.11</td>
+      <td>This field contains the name of the ward, clinic, or location where the<br />procedure was performed.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Hospital_Location-44">Hospital_Location-44</a></td>
+    </tr>
+    <tr>
+      <td><strong>Date Of Procedure</strong><pre><code>  date_of_procedure</code></pre></td>
+      <td>.12</td>
+      <td>This field identifies the date on which the procedure was performed. Dates<br />in the future may not be entered.</td>
+      <td>DATE-TIME</td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Complete By (date)</strong><pre><code>  complete_by_date</code></pre></td>
+      <td>.13</td>
+      <td>This field contains the date used to determine that this procedure record<br />is delinquent when a close status has not been entered in the record.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Status</strong><pre><code>  status</code></pre></td>
+      <td>.14</td>
+      <td>This field contains the status (set of codes: O = Open, C = Closed).  The<br />value of this field is used in the Program Snapshot reports and the Browse<br />Patients with Needs Past Due report.</td>
+      <td>ENUMERATION</td>
+      <td>INDEXED</td>
+      <td>OPEN: <em><strong>o</strong></em><br/>CLOSED: <em><strong>c</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Radiology Mam Case#</strong><pre><code>  radiology_mam_casenumber</code></pre></td>
+      <td>.15</td>
+      <td>This field stores the VISTA Radiology/Nuclear Medicine case# for this<br />mammogram procedure when the Women’s Health package automatically imports<br />radiology procedures.</td>
+      <td>STRING</td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Processed Y/n?</strong><pre><code>  processed_y_n</code></pre></td>
+      <td>.16</td>
+      <td>This field indicates if the procedure result was entered via a Clinical <br />Reminder. <br /> <br />Answer YES to indicate the procedure result was entered by a Clinical <br />Reminder. Answer NO if the procedure result was not entered by a Clinical <br />Reminder.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>1</strong></em><br/>true: <em><strong>0</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Entering User</strong><pre><code>  entering_user</code></pre></td>
+      <td>.18</td>
+      <td>This field stores the name of the person initially creating this record.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Date First Entered</strong><pre><code>  date_first_entered</code></pre></td>
+      <td>.19</td>
+      <td>This field stores the date on which this procedure record was first<br />entered.</td>
+      <td>DATE-TIME</td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Satisfactory Exam</strong><pre><code>  satisfactory_exam</code></pre></td>
+      <td>.2</td>
+      <td>This field documents that the procedure or gynecologic exam was<br />satisfactorily performed without any impediments.  Set of codes (1 = Yes,<br />0 = No).</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>T-zone Seen Entirely</strong><pre><code>  tzone_seen_entirely</code></pre></td>
+      <td>.21</td>
+      <td>This field documents (set of codes: 1 = Yes, 0 = No) that the T-Zone in<br />the colposcopy/biopsy procedure was adequately visualized.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Lesion Outside Canal</strong><pre><code>  lesion_outside_canal</code></pre></td>
+      <td>.22</td>
+      <td>This field documents (set of codes: 1 = Yes, 0 = No) that the lesion seen<br />during the procedure was outside the canal.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Multifocal</strong><pre><code>  multifocal</code></pre></td>
+      <td>.23</td>
+      <td>This field documents (set of codes: 1 = Yes, 0 = No) that the lesion seen<br />during the procedure was multifocal (as opposed to unifocal).</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Number Of Quadrants</strong><pre><code>  number_of_quadrants</code></pre></td>
+      <td>.24</td>
+      <td>This field contains a number (0-4) that identifies the number of quadrants<br />occupied by the lesion.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Quadrant Locations</strong><pre><code>  quadrant_locations</code></pre></td>
+      <td>.245</td>
+      <td><br />The location of the affected quadrants.  Any of the following abbreviations<br />may be selected: UL,LL,UR,LR.<br />  <br />UL - Upper Left quadrant<br />LL - Lower Left quadrant<br />UR - Upper Right quadrant<br />LR - Lower Right quadrant<br />   <br />If more than one quadrant is included separate them with a comma, ie: LL,<br />UL,UR will represent the inclusion of 3 of the 4 quadrants.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ecc Dysplasia</strong><pre><code>  ecc_dysplasia</code></pre></td>
+      <td>.25</td>
+      <td>This field indicates if ectocervical dysplasia was present, if an<br />insufficient tissue sample was provided, or the sample was not examined<br />for dysplasia.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>YES: <em><strong>y</strong></em><br/>Insufficient Tissue: <em><strong>i</strong></em><br/>Not Done: <em><strong>nd</strong></em><br/>NO: <em><strong>n</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Ectocervical Biopsy</strong><pre><code>  ectocervical_biopsy</code></pre></td>
+      <td>.26</td>
+      <td>This field contains the diagnosis or impression resulting from the<br />cytology examination.  Pointer to the WV Results/Diagnosis (#790.31) file.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Wv_Results_diagnosis-790_31</td>
+    </tr>
+    <tr>
+      <td><strong>Margins Clear</strong><pre><code>  margins_clear</code></pre></td>
+      <td>.27</td>
+      <td>This field indicates tissue sample showed no pathology at the margins of<br />the tissue sample.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Std Evaluation</strong><pre><code>  std_evaluation</code></pre></td>
+      <td>.28</td>
+      <td>This field documents the findings after testing for sexually transmitted<br />diseases.  Pointer to the WV Results/Diagnosis (#790.31) file.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Wv_Results_diagnosis-790_31</td>
+    </tr>
+    <tr>
+      <td><strong>Impression</strong><pre><code>  impression</code></pre></td>
+      <td>.29</td>
+      <td>This field contains the impression of the clinician performing the exam.  <br />Pointer to the WV Results/Diagnosis (#790.31) file.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Wv_Results_diagnosis-790_31</td>
+    </tr>
+    <tr>
+      <td><strong>Screening Pap</strong><pre><code>  screening_pap</code></pre></td>
+      <td>.3</td>
+      <td>This field stores the PAP procedure associated with the follow-up<br />procedure (e.g., colposcopy).  Pointer to the WV Procedure (#790.1) file.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Wv_Procedure-790_1">Wv_Procedure-790_1</a></td>
+    </tr>
+    <tr>
+      <td><strong>Stage At Final Dx</strong><pre><code>  stage_at_final_dx</code></pre></td>
+      <td>.31</td>
+      <td>This field is used to document the clinical stage for invasive carcinoma<br />of the cervix.  If clinical stage is unknown, enter the summary (‘S-‘)<br />stage.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>S-Distant: <em><strong>7</strong></em><br/>I: <em><strong>1</strong></em><br/>Unknown: <em><strong>8</strong></em><br/>IV: <em><strong>4</strong></em><br/>II: <em><strong>2</strong></em><br/>S-Regional: <em><strong>6</strong></em><br/>S-Local: <em><strong>5</strong></em><br/>III: <em><strong>3</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Date Results Received</strong><pre><code>  date_results_received</code></pre></td>
+      <td>.32</td>
+      <td>Enter the date that the results were received/uploaded from the lab.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Final Dx Pap/colp</strong><pre><code>  final_dx_pap_colp</code></pre></td>
+      <td>.33</td>
+      <td>Enter the Final Diagnosis for this PAP/Colp case.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Wv_Results_diagnosis-790_31</td>
+    </tr>
+    <tr>
+      <td><strong>Facility Where Accessioned</strong><pre><code>  facility_where_accessioned</code></pre></td>
+      <td>.34</td>
+      <td>Select the facility where this procedure was accessioned.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Institution-4">Institution-4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Radiology Credit Method</strong><pre><code>  radiology_credit_method</code></pre></td>
+      <td>.35</td>
+      <td>This field is a set of codes that identify if the radiology exam was<br />performed at the facility or elsewhere. This value is automatically<br />entered by the Radiology/NM package when a radiology report is verified<br />and the WH site parameter is set to accept data from the Radiology/NM<br />package.<br /> <br />This piece of information will be used for WH reporting requirements to<br />determine how many radiology procedures were performed at the facility and<br />elsewhere.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>No credit: <em><strong>2</strong></em><br/>Regular Credit: <em><strong>0</strong></em><br/>Technical Component Only: <em><strong>3</strong></em><br/>Interpretation Only: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Notes</strong><pre><code>  notes</code></pre></td>
+      <td>1.01</td>
+      <td>This field allows you to enter word-processing text in which to elaborate<br />further on the results of this patients various tests.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lab Accession#</strong><pre><code>  lab_accessionnumber</code></pre></td>
+      <td>2.17</td>
+      <td>This field contains the lab accession number from the LAB DATA file (#63)<br />for the patient, if this procedure entry is a lab test.</td>
+      <td>STRING</td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lab Data File Ien</strong><pre><code>  lab_data_file_ien</code></pre></td>
+      <td>2.18</td>
+      <td>This field contains the internal entry number of the LAB DATA file (#63)<br />for the patient, if this procedure entry is a lab test.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lab Inverse Date/time</strong><pre><code>  lab_inverse_date_time</code></pre></td>
+      <td>2.19</td>
+      <td>This field contains the inverse date/time of a lab test from the LAB DATA<br />file (#63) for the patient, if this procedure entry is a lab test.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lab Subscript</strong><pre><code>  lab_subscript</code></pre></td>
+      <td>2.2</td>
+      <td>This field contains a character string that distinguishes the type of lab<br />test performed. The letters “CY” will represent a cytology test and the<br />letters “SP” will represent a surgical pathology test.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Comments</strong><pre><code>  comments</code></pre></td>
+      <td>3.01</td>
+      <td>You may enter a one-line clinical history note (limited to 78 characters).</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Reports</strong><pre><code>  reports</code></pre></td>
+      <td>9</td>
+      <td>This field is not editable through WH options.  The lab or radiology exams<br />related to this procedure are presented here.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on July 17th 2017, 6:14:41 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-07-17T18:14:48-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+      
+    </div>
+
+  </body>
+</html>

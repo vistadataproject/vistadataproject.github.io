@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">Secure Read and Write Interface for VA VISTA</span>
+        <nav>
+            <a href="/demo">Demo</a>
+            <a href="/artifacts/developer">DevDocs</a>
+            <a href="https://github.com/vistadataproject">Github</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--vdm--mh_tests_and_surveys-601_71"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">VDM</a> » Mh_Tests_And_Surveys-601_71<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="mh-tests-and-surveys-60171">Mh Tests And Surveys (601.71)</h1>
+<p>This file defines the interviews, surveys and tests available in the  Mental Health Assistant. Attributes of the instruments include authoring  credits, target populations, normative samples and copyright information.  Actions available including privileging, reporting of full item content  and transmission to the Mental Health National Database are also specified.    Direct entry via FileMan is prohibited.</p>
+
+<p><strong>Global:</strong> ^YTT(601.71,</p>
+
+<p><strong>Domain:</strong> Non-Clinical</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>.01</td>
+      <td>Name of the interview, survey or test. Often its abbreviation is used here, e.g. “BDI2”<br />instead of “Beck Depression Inventory-2”.  Each entry has a unique name.</td>
+      <td>STRING</td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Print Title</strong><pre><code>  print_title</code></pre></td>
+      <td>2</td>
+      <td>This is the full formal name of the interview, survey or test.<br />It is used on printed reports.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Version</strong><pre><code>  version</code></pre></td>
+      <td>3</td>
+      <td>Test publishers often give a version number to a published test. This <br />field does not imply VA software versioning.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Author</strong><pre><code>  author</code></pre></td>
+      <td>4</td>
+      <td>This field indicates the author of the interview, survey or test.  It is <br />meant to credit the test author and not the software author or the person <br />who entered this description. Aaron Beck is the Author of the BDI.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Publisher</strong><pre><code>  publisher</code></pre></td>
+      <td>5</td>
+      <td>This is the name of the publisher of the test. Psychological Corporation <br />is the publisher of the WAIS-R.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Publication Date</strong><pre><code>  publication_date</code></pre></td>
+      <td>7</td>
+      <td>Date of formal publication; often the copyright date</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Reference</strong><pre><code>  reference</code></pre></td>
+      <td>7.5</td>
+      <td>This is the primary journal citation for the test.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>A Privilege</strong><pre><code>  a_privilege</code></pre></td>
+      <td>8</td>
+      <td>If not null, only those users holding the specified key can administer the<br />instrument.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Security_Key-19_1</td>
+    </tr>
+    <tr>
+      <td><strong>R Privilege</strong><pre><code>  r_privilege</code></pre></td>
+      <td>9</td>
+      <td>A key name from the SECURITY KEY file (#19.1). <br />Only those users holding the specified key can produce a report of the instrument.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Operational</strong><pre><code>  operational</code></pre></td>
+      <td>10</td>
+      <td>This field allows an instrument to be “taken out of service”. If set to <br />‘N’ this instrument can no longer be administered and will not show on <br />selection lists. Reports of old administrations remain available. If set <br />to U instrument will be tagged Under Development.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>Under Development: <em><strong>U</strong></em><br/>Dropped: <em><strong>D</strong></em><br/>Yes: <em><strong>Y</strong></em><br/>Clinical Reminder: <em><strong>C</strong></em><br/>No: <em><strong>N</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Has Been Operational</strong><pre><code>  has_been_operational</code></pre></td>
+      <td>10.5</td>
+      <td>Used to define editing privileges, this field is set to yes when test is <br />first used to collect patient data.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Requires License</strong><pre><code>  requires_license</code></pre></td>
+      <td>11</td>
+      <td>This indicates whether a copyright holder must grant the rights to use<br />this Mental Health instrument.</td>
+      <td>BOOLEAN</td>
+      <td>REQUIRED</td>
+      <td>false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Purpose</strong><pre><code>  purpose</code></pre></td>
+      <td>12</td>
+      <td>Description of what the test measures.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Norm Sample</strong><pre><code>  norm_sample</code></pre></td>
+      <td>13</td>
+      <td>On what population was the normative data gathered ;ie. prisoners, <br />inpatients, college students.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Target Population</strong><pre><code>  target_population</code></pre></td>
+      <td>14</td>
+      <td>Which population is appropriate for measuring, ie vocational job seekers,<br />combat veterans, etc</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Entered By</strong><pre><code>  entered_by</code></pre></td>
+      <td>15</td>
+      <td>User who entered the information about the instrument.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Entry Date</strong><pre><code>  entry_date</code></pre></td>
+      <td>16</td>
+      <td>Date instrument was added to the system.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Last Edited By</strong><pre><code>  last_edited_by</code></pre></td>
+      <td>17</td>
+      <td>User who last edited this record.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Last Edit Date</strong><pre><code>  last_edit_date</code></pre></td>
+      <td>18</td>
+      <td>Date and time of last change to this record.</td>
+      <td>DATE-TIME</td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Is National Test</strong><pre><code>  is_national_test</code></pre></td>
+      <td>19</td>
+      <td>Specifies if instrument supported and distributed by the MHSHG informatics<br />section as opposed to those locally developed.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>License Current</strong><pre><code>  license_current</code></pre></td>
+      <td>20</td>
+      <td>If set to N indicates there is no longer an agreement with the publisher<br />to use this test.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Copyright Text</strong><pre><code>  copyright_text</code></pre></td>
+      <td>21</td>
+      <td>Text to display copyright information on the screen and printed report.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Requires Signature</strong><pre><code>  requires_signature</code></pre></td>
+      <td>22</td>
+      <td>Boolean if test requires signature before full release.</td>
+      <td>BOOLEAN</td>
+      <td>REQUIRED</td>
+      <td>false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Is Legacy</strong><pre><code>  is_legacy</code></pre></td>
+      <td>23</td>
+      <td>Boolean to specify whether test was in the MH Instruments file (#601).</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Submit To National Db</strong><pre><code>  submit_to_national_db</code></pre></td>
+      <td>24</td>
+      <td>Boolean indicating to send results to the national MHSHG database. <br />Set only by MHSHG.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Is Copyrighted</strong><pre><code>  is_copyrighted</code></pre></td>
+      <td>25</td>
+      <td>Boolean specifying whether the instrument is copyrighted.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Write Full Text</strong><pre><code>  write_full_text</code></pre></td>
+      <td>26</td>
+      <td>Boolean, if set to true, actual question text is shown on reports.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Days To Restart</strong><pre><code>  days_to_restart</code></pre></td>
+      <td>27</td>
+      <td>This field sets a limit on finishing a previously started instrument.<br />Set to zero if re-start is not allowed. Set to minus 1 if instrument can<br />be completed at any time.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Generate Pnote</strong><pre><code>  generate_pnote</code></pre></td>
+      <td>28</td>
+      <td>Select No (or leave null) to stop MHA3 from generating a TIU note.<br />Clinical Reminders do not read this flag. TIU notes are never generated<br />for a test that has an R_Privilege set.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>TIU Title</strong><pre><code>  tiu_title</code></pre></td>
+      <td>29</td>
+      <td>Title of the TIU note used to identify the progress note for this instrument.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Tiu_Document_Definition-8925_1">Tiu_Document_Definition-8925_1</a></td>
+    </tr>
+    <tr>
+      <td><strong>Consult Note Title</strong><pre><code>  consult_note_title</code></pre></td>
+      <td>30</td>
+      <td>This is the Consult Note Title associated with this instrument.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Tiu_Document_Definition-8925_1">Tiu_Document_Definition-8925_1</a></td>
+    </tr>
+    <tr>
+      <td><strong>Ys_mha_b.dll Version</strong><pre><code>  ys_mha_bdll_version</code></pre></td>
+      <td>100.01</td>
+      <td>Version number of YS_MHA_B.DLL from the Host File System (HFS).<br />It is used to verify the software configuration on a user’s workstation.<br />It should only be edited by Mental Health software.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ys_mha_b.dll Date/time</strong><pre><code>  ys_mha_bdll_date_time</code></pre></td>
+      <td>100.02</td>
+      <td>Modified date/time of YS_MHA_B.DLL from the Host File System (HFS).<br />It is used to verify the software configuration on a user’s workstation.  <br />It should only be edited by Mental Health software.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ys_mha_aux.dll Version</strong><pre><code>  ys_mha_auxdll_version</code></pre></td>
+      <td>100.03</td>
+      <td>Version number of YS_MHA_AUX.DLL from the Host File System (HFS).<br />It is used to verify the software configuration on a user’s workstation.  <br />It should only be edited by Mental Health software.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ys_mha_aux.dll Date/time</strong><pre><code>  ys_mha_auxdll_date_time</code></pre></td>
+      <td>100.04</td>
+      <td>Modified date/time of YYS_MHA_AUX.DLL from the Host File System (HFS).<br />It is used to verify the software configuration on a user’s workstation.  <br />It should only be edited by Mental Health software.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on July 17th 2017, 6:14:41 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-07-17T18:14:48-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+      
+    </div>
+
+  </body>
+</html>

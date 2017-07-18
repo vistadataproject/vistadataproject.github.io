@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">Secure Read and Write Interface for VA VISTA</span>
+        <nav>
+            <a href="/demo">Demo</a>
+            <a href="/artifacts/developer">DevDocs</a>
+            <a href="https://github.com/vistadataproject">Github</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--vdm--cmop_system-550"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">VDM</a> » Cmop_System-550<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="cmop-system-550">Cmop System (550)</h1>
+<p>The system parameters in this file manage operations of the Consolidated  Mail Outpatient Pharmacy for the medical center. This information controls the transmission of data to the Consolidated Mail Outpatient Pharmacy host facility selected by the medical center. Information in this file  must be entered or edited ONLY through the Consolidated Mail Outpatient  Pharmacy package options.</p>
+
+<p><strong>Global:</strong> ^PSX(550,</p>
+
+<p><strong>Domain:</strong> Non-Clinical</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>System</strong><pre><code>  system</code></pre></td>
+      <td>.01</td>
+      <td>This is the free text name of the CMOP system.</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Status</strong><pre><code>  status</code></pre></td>
+      <td>1</td>
+      <td>The current processing status of this facility.  ACTIVE <br />status indicates the facility is participating in transmitting data<br />to the CMOP.  INACTIVE status indicates that CMOP processing is not <br />currently available.<br /> ‘N’ for ‘Active Non-CS only’<br /> ‘C’ for ‘Active CS only’<br /> ‘B’ for ‘Active both CS and Non-CS’</td>
+      <td>ENUMERATION</td>
+      <td>INDEXED</td>
+      <td>ACTIVE: <em><strong>A</strong></em><br/>INACTIVE: <em><strong>I</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Xmit Status</strong><pre><code>  xmit_status</code></pre></td>
+      <td>2</td>
+      <td><br />This field contains a set of codes indicating the current status of the<br />job which transmits data to the CMOP.  Only one transmission may process<br />at a given time.</td>
+      <td>ENUMERATION</td>
+      <td>INDEXED</td>
+      <td>DATA RECOVERY : <em><strong>R</strong></em><br/>NO CURRENT TRANSMISSION: <em><strong>H</strong></em><br/>TRANSMITTING DATA: <em><strong>T</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Cmop Domain</strong><pre><code>  cmop_domain</code></pre></td>
+      <td>3</td>
+      <td>This is a valid MailMan domain for the Consolidated Mail Outpatient<br />Pharmacy system receiving the facility-transmitted data.</td>
+      <td>POINTER</td>
+      <td>REQUIRED</td>
+      <td><a href="Domain-4_2">Domain-4_2</a></td>
+    </tr>
+    <tr>
+      <td><strong>Activate/inactivate Dt/tm</strong><pre><code>  activate_inactivate_dt_tm</code></pre></td>
+      <td>4</td>
+      <td>The date/time of the Activate/Inactivate action.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Activate_inactivate_Dt_tm-550_04">Activate_inactivate_Dt_tm-550_04</a></td>
+    </tr>
+    <tr>
+      <td><strong>Last Batch Transmitted</strong><pre><code>  last_batch_transmitted</code></pre></td>
+      <td>6</td>
+      <td>The batch number of the last completed transmission.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Cmop_Transmission-550_2</td>
+    </tr>
+    <tr>
+      <td><strong>Auto Transmit</strong><pre><code>  auto_transmit</code></pre></td>
+      <td>7</td>
+      <td> </td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Auto_Transmit-550_07">Auto_Transmit-550_07</a></td>
+    </tr>
+    <tr>
+      <td><strong>Purge Dt/tm</strong><pre><code>  purge_dt_tm</code></pre></td>
+      <td>8</td>
+      <td> </td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Purge_Dt_tm-550_08">Purge_Dt_tm-550_08</a></td>
+    </tr>
+    <tr>
+      <td><strong>Task Number</strong><pre><code>  task_number</code></pre></td>
+      <td>9</td>
+      <td>The task number of the currently running transmission job.</td>
+      <td>NUMERIC</td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Auto Transmit Cs</strong><pre><code>  auto_transmit_cs</code></pre></td>
+      <td>10</td>
+      <td>This multiple is used to track and control the background jobs that<br />gather and transmit CMOP controlled substance prescription transmissions.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Auto_Transmit_Cs-550_09">Auto_Transmit_Cs-550_09</a></td>
+    </tr>
+    <tr>
+      <td><strong>Non-cs Days To Transmit</strong><pre><code>  noncs_days_to_transmit</code></pre></td>
+      <td>11</td>
+      <td>The number of days into the future the NON-CS process will look to pick up<br />prescriptions for a patient already in the transmission.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Cs Days To Transmit</strong><pre><code>  cs_days_to_transmit</code></pre></td>
+      <td>12</td>
+      <td>The number of days into the future the CS process will look to pick up<br />prescriptions for a patient already in the transmission.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-files">Sub-Files</h2>
+<h3 id="activateinactivate-dttm-55004"><a name="Activate_inactivate_Dt_tm-550_04"></a>Activate/inactivate Dt/tm (550.04)</h3>
+
+<dl>
+<dt>ID</dt><dd>Activate_inactivate_Dt_tm-550_04</dd></dl>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Activate/inactivate Dt/tm</strong><pre><code>  activate_inactivate_dt_tm</code></pre></td>
+      <td>.01</td>
+      <td>The date/time of the Activate/Inactivate action.<br /></td>
+      <td>DATE-TIME</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Initiator</strong><pre><code>  initiator</code></pre></td>
+      <td>1</td>
+      <td>The person initiating this action.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Cmop Response Dt/tm</strong><pre><code>  cmop_response_dt_tm</code></pre></td>
+      <td>2</td>
+      <td>The date/time the CMOP responded to the request or notification.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Cmop Response</strong><pre><code>  cmop_response</code></pre></td>
+      <td>3</td>
+      <td>This field describes the CMOP response to the request or notification.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>DISAPPROVED: <em><strong>D</strong></em><br/>NOTIFICATION RECEIVED: <em><strong>N</strong></em><br/>APPROVED: <em><strong>A</strong></em><br/>PENDING: <em><strong>P</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Action Type</strong><pre><code>  action_type</code></pre></td>
+      <td>4</td>
+      <td>The type of action (Activate/Inactivate) for this entry.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>INACTIVATION NOTICE: <em><strong>I</strong></em><br/>ACTIVATION REQUEST: <em><strong>A</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Remote Initiator</strong><pre><code>  remote_initiator</code></pre></td>
+      <td>5</td>
+      <td>Name of the CMOP person who sent the message.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="auto-transmit-55007"><a name="Auto_Transmit-550_07"></a>Auto Transmit (550.07)</h3>
+
+<dl>
+<dt>ID</dt><dd>Auto_Transmit-550_07</dd></dl>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Auto Transmit</strong><pre><code>  auto_transmit</code></pre></td>
+      <td>.01</td>
+      <td>A ‘1’ in this field indicates the facility has currently scheduled<br />background transmissions for CMOP processing.</td>
+      <td>ENUMERATION</td>
+      <td>REQUIRED</td>
+      <td>YES: <em><strong>1</strong></em><br/>NO: <em><strong>2</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Queued To Begin</strong><pre><code>  queued_to_begin</code></pre></td>
+      <td>1</td>
+      <td>The date/time of the initial background transmission.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Scheduling Frequency(hrs)</strong><pre><code>  scheduling_frequencyhrs</code></pre></td>
+      <td>2</td>
+      <td>This is the frequency (in hours) that the automatic processing will be<br />rescheduled.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Next Transmission Time</strong><pre><code>  next_transmission_time</code></pre></td>
+      <td>3</td>
+      <td>This is the date/time of the next scheduled auto transmission.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Scheduled By</strong><pre><code>  scheduled_by</code></pre></td>
+      <td>5</td>
+      <td>The name of the person who scheduled the automatic processing.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Task Number</strong><pre><code>  task_number</code></pre></td>
+      <td>6</td>
+      <td>This is the task number used to reschedule the job.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Number Of Days To Transmit</strong><pre><code>  number_of_days_to_transmit</code></pre></td>
+      <td>7</td>
+      <td>This number determines the number of days to add to the current date to<br />calculate the transmit through date for CMOP auto transmissions.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="purge-dttm-55008"><a name="Purge_Dt_tm-550_08"></a>Purge Dt/tm (550.08)</h3>
+
+<dl>
+<dt>ID</dt><dd>Purge_Dt_tm-550_08</dd></dl>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Purge Dt/tm</strong><pre><code>  purge_dt_tm</code></pre></td>
+      <td>.01</td>
+      <td>Date/time the last purge by the CMOP background manager was completed.</td>
+      <td>DATE-TIME</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Total Orders Purged</strong><pre><code>  total_orders_purged</code></pre></td>
+      <td>1</td>
+      <td>This is the total records purged from the PSX(501 global.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Start Seq #</strong><pre><code>  start_seq_number</code></pre></td>
+      <td>3</td>
+      <td><br />The starting message number of the data transmission.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>End Seq #</strong><pre><code>  end_seq_number</code></pre></td>
+      <td>4</td>
+      <td><br />The last message number of the data transmission.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="auto-transmit-cs-55009"><a name="Auto_Transmit_Cs-550_09"></a>Auto Transmit Cs (550.09)</h3>
+
+<dl>
+<dt>ID</dt><dd>Auto_Transmit_Cs-550_09</dd></dl>
+
+<h4 id="properties-4">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Auto Transmit Cs</strong><pre><code>  auto_transmit_cs</code></pre></td>
+      <td>.01</td>
+      <td>A ‘1’ in this field indicates the facility has currently scheduled<br />background controlled substances transmissions for CMOP processing.</td>
+      <td>ENUMERATION</td>
+      <td>REQUIRED</td>
+      <td>YES: <em><strong>1</strong></em><br/>NO: <em><strong>2</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Queued To Begin</strong><pre><code>  queued_to_begin</code></pre></td>
+      <td>1</td>
+      <td>The date/time of the initial background controlled substances<br />transmission.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Scheduling Frequency (hrs)</strong><pre><code>  scheduling_frequency_hrs</code></pre></td>
+      <td>2</td>
+      <td>This is the frequency (in hours) that the automatic processing will be<br />rescheduled.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Next Transmission Time</strong><pre><code>  next_transmission_time</code></pre></td>
+      <td>3</td>
+      <td>This is the date/time of the next scheduled auto transmission.</td>
+      <td>DATE-TIME</td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Scheduled By</strong><pre><code>  scheduled_by</code></pre></td>
+      <td>5</td>
+      <td>The name of the person who scheduled the automatic processing.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Task Number</strong><pre><code>  task_number</code></pre></td>
+      <td>6</td>
+      <td>This is the task number used to reschedule the job.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Number Of Days To Transmit</strong><pre><code>  number_of_days_to_transmit</code></pre></td>
+      <td>7</td>
+      <td>This number determines the number of days to add to the current date to<br />calculate the transmit through date for CMOP auto transmissions.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on July 17th 2017, 6:14:41 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-07-17T18:14:48-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+      
+    </div>
+
+  </body>
+</html>

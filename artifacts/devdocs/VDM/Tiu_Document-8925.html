@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">Secure Read and Write Interface for VA VISTA</span>
+        <nav>
+            <a href="/demo">Demo</a>
+            <a href="/artifacts/developer">DevDocs</a>
+            <a href="https://github.com/vistadataproject">Github</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--vdm--tiu_document-8925"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">VDM</a> » Tiu_Document-8925<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="tiu-document-8925">Tiu Document (8925)</h1>
+<p>This file stores textual information for the clinical record database. Though it is designed to initially accommodate Progress Notes, Consult  Reports, and Discharge Summaries, it is intended to be sufficiently flexible to accommodate textual reports or provider narrative of any length or type, and to potentially accommodate such data transmitted  from remote sites, which may be excluded from the corresponding local  DHCP Package databases (e.g., Operative Reports, Radiology Reports,  Pathology Reports, etc.) to avoid confusion with local workload.</p>
+
+<p><strong>Global:</strong> ^TIU(8925,</p>
+
+<p><strong>Domain:</strong> Documents</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Document Type</strong><pre><code>  document_type</code></pre></td>
+      <td>.01</td>
+      <td>This field points to the Tiu Document Definition file, whose entry defines<br />the components of the document and various parameters for the document’s<br />behavior.</td>
+      <td>POINTER</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="Tiu_Document_Definition-8925_1">Tiu_Document_Definition-8925_1</a></td>
+    </tr>
+    <tr>
+      <td><strong>Patient</strong><pre><code>  patient</code></pre></td>
+      <td>.02</td>
+      <td>This field contains a pointer to the patient file.</td>
+      <td>POINTER</td>
+      <td>INDEXED</td>
+      <td><a href="Patient_ihs-9000001">Patient_ihs-9000001</a></td>
+    </tr>
+    <tr>
+      <td><strong>Visit</strong><pre><code>  visit</code></pre></td>
+      <td>.03</td>
+      <td> </td>
+      <td>POINTER</td>
+      <td>INDEXED</td>
+      <td><a href="Visit-9000010">Visit-9000010</a></td>
+    </tr>
+    <tr>
+      <td><strong>Parent Document Type</strong><pre><code>  parent_document_type</code></pre></td>
+      <td>.04</td>
+      <td>This field points to the immediate parent class or document type to which the<br />current record belongs.  For example, when the current document has the type <br />SOAP - GENERAL NOTE, this field will point to PROGRESS NOTE, as the parent <br />class to which SOAP Notes belong, whereas, if the current record is a <br />SUBJECTIVE component, then this field will point to SOAP - GENERAL NOTE as <br />the parent document type to which the component belongs.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Tiu_Document_Definition-8925_1">Tiu_Document_Definition-8925_1</a></td>
+    </tr>
+    <tr>
+      <td><strong>Status</strong><pre><code>  status</code></pre></td>
+      <td>.05</td>
+      <td>This field is intended to accommodate the status of a given report.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Tiu_Status-8925_6</td>
+    </tr>
+    <tr>
+      <td><strong>Parent</strong><pre><code>  parent</code></pre></td>
+      <td>.06</td>
+      <td>In the event that the current report is an addendum or replacement, or is<br />a component of a report, this field points to the original report.</td>
+      <td>POINTER</td>
+      <td>INDEXED</td>
+      <td><a href="Tiu_Document-8925">Tiu_Document-8925</a></td>
+    </tr>
+    <tr>
+      <td><strong>Episode Begin Date/time</strong><pre><code>  episode_begin_date_time</code></pre></td>
+      <td>.07</td>
+      <td>This is the date/time at which the treatment episode associated with this<br />document was initiated (e.g., Amission date/time for a discharge summary,<br />Visit date/time for a clinic note, Transfer date/time for an interim<br />summary).  Time is optional.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Episode End Date/time</strong><pre><code>  episode_end_date_time</code></pre></td>
+      <td>.08</td>
+      <td>This is the ending date/time for the treatment episode associated with<br />this document (e.g., .  Time is optional.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Urgency</strong><pre><code>  urgency</code></pre></td>
+      <td>.09</td>
+      <td>This is the urgency with which the report should be completed.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>priority: <em><strong>P</strong></em><br/>routine: <em><strong>R</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Line Count</strong><pre><code>  line_count</code></pre></td>
+      <td>.1</td>
+      <td>This is the number of characters in the document (blank lines excluded),<br />divided by the CHARACTERS PER LINE parameter defined by your site.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Credit Stop Code On Completion</strong><pre><code>  credit_stop_code_on_completion</code></pre></td>
+      <td>.11</td>
+      <td>This boolean field indicates whether the stop code associated with a new<br />visit should be credited when the note is completed.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Mark Disch Dt For Correction</strong><pre><code>  mark_disch_dt_for_correction</code></pre></td>
+      <td>.12</td>
+      <td>This boolean field identfies those discharge summaries which were filed<br />prior to actual discharge of the patient for the nightly background<br />process to back-fill with corrected discharge dates.</td>
+      <td>BOOLEAN</td>
+      <td>INDEXED</td>
+      <td>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Visit Type</strong><pre><code>  visit_type</code></pre></td>
+      <td>.13</td>
+      <td>This field is used to identify the type of visit information related to<br />the current document.  The value is determined during processing and is<br />entered by the program.  It is used in the generation of a cross-reference<br />to identify available documents for specified visits.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Report Text</strong><pre><code>  report_text</code></pre></td>
+      <td>2</td>
+      <td>This is a word processing field that contains the report text.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Edit Text Buffer</strong><pre><code>  edit_text_buffer</code></pre></td>
+      <td>3</td>
+      <td>This field provides a temporary holding place for the body of a report to<br />prevent inadvertant record deletion or corruption in a manner independent<br />of the user’s preferred editor.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Entry Date/time</strong><pre><code>  entry_date_time</code></pre></td>
+      <td>1201</td>
+      <td>This is the date/time at which the document was originally entered into<br />the database.</td>
+      <td>DATE-TIME</td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Author/dictator</strong><pre><code>  author_dictator</code></pre></td>
+      <td>1202</td>
+      <td><br />This is the person who composed or dictated the document.</td>
+      <td>POINTER</td>
+      <td>INDEXED</td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Clinic</strong><pre><code>  clinic</code></pre></td>
+      <td>1203</td>
+      <td>This is the stop code to which the document is to be credited (e.g., if the <br />document is a progress note documenting an encounter which took place in the <br />Admitting/Screening Clinic, then select the corresponding stop code, etc.).<br /></td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Clinic_Stop-40_7">Clinic_Stop-40_7</a></td>
+    </tr>
+    <tr>
+      <td><strong>Expected Signer</strong><pre><code>  expected_signer</code></pre></td>
+      <td>1204</td>
+      <td>This is the person who is expected to enter the first-line signature for<br />the document.  Ordinarily, this would be the author.  One case in which<br />this would differ would be in the case of a Discharge Summary, when the<br />author’s signature is NOT required.  Then, the attending physician would<br />be the expected signer.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Hospital Location</strong><pre><code>  hospital_location</code></pre></td>
+      <td>1205</td>
+      <td>This is the location (WARD or CLINIC) associated with the document.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Hospital_Location-44">Hospital_Location-44</a></td>
+    </tr>
+    <tr>
+      <td><strong>Service Credit Stop</strong><pre><code>  service_credit_stop</code></pre></td>
+      <td>1206</td>
+      <td>This is the attending physician of record, who is ultimately responsible<br />for the care of the patient, and the accurate documentation of the care<br />episode.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Clinic_Stop-40_7">Clinic_Stop-40_7</a></td>
+    </tr>
+    <tr>
+      <td><strong>Secondary Visit</strong><pre><code>  secondary_visit</code></pre></td>
+      <td>1207</td>
+      <td> </td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Visit-9000010">Visit-9000010</a></td>
+    </tr>
+    <tr>
+      <td><strong>Expected Cosigner</strong><pre><code>  expected_cosigner</code></pre></td>
+      <td>1208</td>
+      <td> </td>
+      <td>POINTER</td>
+      <td>INDEXED</td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Attending Physician</strong><pre><code>  attending_physician</code></pre></td>
+      <td>1209</td>
+      <td> </td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Order Number</strong><pre><code>  order_number</code></pre></td>
+      <td>1210</td>
+      <td>This is the Order which was acted on to produce the result reported in the <br />current document.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Order-100">Order-100</a></td>
+    </tr>
+    <tr>
+      <td><strong>Visit Location</strong><pre><code>  visit_location</code></pre></td>
+      <td>1211</td>
+      <td>This is the location at which the visit/admission occurred.  As distinct <br />from the HOSPITAL LOCATION field, which represents the location at the time <br />the document was written, this is the location for the visit/admission with <br />which the note is associated.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Hospital_Location-44">Hospital_Location-44</a></td>
+    </tr>
+    <tr>
+      <td><strong>Division</strong><pre><code>  division</code></pre></td>
+      <td>1212</td>
+      <td>This field contains the institution associated with the document. It is <br />extracted from the document’s hospital location if known; otherwise it is <br />extracted from the user’s log-on division.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Institution-4">Institution-4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Reference Date</strong><pre><code>  reference_date</code></pre></td>
+      <td>1301</td>
+      <td>This is the Date (and time) by which the clinician will reference the <br />document.  For Progress Notes, this will likely be the date of the <br />provider’s encounter with the patient.  For Discharge Summaries, it will <br />correspond to the Discharge Date of the Admission referenced in the <br />document.  (If there is no Discharge Date when dictated, it will <br />correspond to the dictation date of the record instead.)<br />In all cases, this is the date by which the document will be referenced<br />and sorted.</td>
+      <td>DATE-TIME</td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Entered By</strong><pre><code>  entered_by</code></pre></td>
+      <td>1302</td>
+      <td> </td>
+      <td>POINTER</td>
+      <td>INDEXED</td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Capture Method</strong><pre><code>  capture_method</code></pre></td>
+      <td>1303</td>
+      <td> </td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>remote procedure: <em><strong>R</strong></em><br/>copy: <em><strong>O</strong></em><br/>converted: <em><strong>C</strong></em><br/>direct: <em><strong>D</strong></em><br/>upload: <em><strong>U</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Release Date/time</strong><pre><code>  release_date_time</code></pre></td>
+      <td>1304</td>
+      <td> </td>
+      <td>DATE-TIME</td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Verification Date/time</strong><pre><code>  verification_date_time</code></pre></td>
+      <td>1305</td>
+      <td> </td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Verified By</strong><pre><code>  verified_by</code></pre></td>
+      <td>1306</td>
+      <td> </td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Dictation Date</strong><pre><code>  dictation_date</code></pre></td>
+      <td>1307</td>
+      <td>This is the date (and time) on which the document was dictated by its <br />author.  In the event that a document originates by dictation, we recommend <br />that the REFERENCE DATE for the document be defaulted to dictation date, as <br />the author will be able to identify the document by the date on which s/he <br />dictated it.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Suspense Date/time</strong><pre><code>  suspense_date_time</code></pre></td>
+      <td>1308</td>
+      <td>This is the date (and time) on which the document will be removed from<br />public view.  It is currently used only for Patient Postings, although it<br />may be generalized for use with other document types, if appropriate.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Patient Movement Record</strong><pre><code>  patient_movement_record</code></pre></td>
+      <td>1401</td>
+      <td> </td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Patient_Movement-405">Patient_Movement-405</a></td>
+    </tr>
+    <tr>
+      <td><strong>Treating Specialty</strong><pre><code>  treating_specialty</code></pre></td>
+      <td>1402</td>
+      <td> </td>
+      <td>POINTER</td>
+      <td>INDEXED</td>
+      <td><a href="Facility_Treating_Specialty-45_7">Facility_Treating_Specialty-45_7</a></td>
+    </tr>
+    <tr>
+      <td><strong>Irt Record</strong><pre><code>  irt_record</code></pre></td>
+      <td>1403</td>
+      <td> </td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Incomplete_Records-393</td>
+    </tr>
+    <tr>
+      <td><strong>Service</strong><pre><code>  service</code></pre></td>
+      <td>1404</td>
+      <td> </td>
+      <td>POINTER</td>
+      <td>INDEXED</td>
+      <td><a href="Service_section-49">Service_section-49</a></td>
+    </tr>
+    <tr>
+      <td><strong>Requesting Package Reference</strong><pre><code>  requesting_package_reference</code></pre></td>
+      <td>1405</td>
+      <td>This field allows a linkage to be maintained between the TIU Document and<br />the DHCP Package for which it was generated.</td>
+      <td>POINTER</td>
+      <td>INDEXED</td>
+      <td>Request_consultation-123<br />Surgery-130</td>
+    </tr>
+    <tr>
+      <td><strong>Retracted Original</strong><pre><code>  retracted_original</code></pre></td>
+      <td>1406</td>
+      <td>This self-refering pointer identifies the original document which was <br />retracted in error to produce this record.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Tiu_Document-8925">Tiu_Document-8925</a></td>
+    </tr>
+    <tr>
+      <td><strong>Signature Date/time</strong><pre><code>  signature_date_time</code></pre></td>
+      <td>1501</td>
+      <td> </td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Signed By</strong><pre><code>  signed_by</code></pre></td>
+      <td>1502</td>
+      <td> </td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Signature Block Name</strong><pre><code>  signature_block_name</code></pre></td>
+      <td>1503</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Signature Block Title</strong><pre><code>  signature_block_title</code></pre></td>
+      <td>1504</td>
+      <td>This is the encrypted signature block title of the person who signed the<br />document.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Signature Mode</strong><pre><code>  signature_mode</code></pre></td>
+      <td>1505</td>
+      <td>This is the mode by which the signature was obtained (i.e., either<br />electronic or chart).</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>electronic: <em><strong>E</strong></em><br/>chart: <em><strong>C</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Cosignature Needed</strong><pre><code>  cosignature_needed</code></pre></td>
+      <td>1506</td>
+      <td>This boolean flag indicates to the system whether or not a cosignature is<br />needed.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Cosignature Date/time</strong><pre><code>  cosignature_date_time</code></pre></td>
+      <td>1507</td>
+      <td>This is the date/time at which cosignature was obtained.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Cosigned By</strong><pre><code>  cosigned_by</code></pre></td>
+      <td>1508</td>
+      <td> </td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Cosignature Block Name</strong><pre><code>  cosignature_block_name</code></pre></td>
+      <td>1509</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Cosignature Block Title</strong><pre><code>  cosignature_block_title</code></pre></td>
+      <td>1510</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Cosignature Mode</strong><pre><code>  cosignature_mode</code></pre></td>
+      <td>1511</td>
+      <td> </td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>electronic: <em><strong>E</strong></em><br/>chart: <em><strong>C</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Marked Signed On Chart By</strong><pre><code>  marked_signed_on_chart_by</code></pre></td>
+      <td>1512</td>
+      <td>This is the identity of the person who marked a given document ‘signed on <br />chart,’ indicating that a ‘wet’ signature of the chart copy had been obtained.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Marked Cosigned On Chart By</strong><pre><code>  marked_cosigned_on_chart_by</code></pre></td>
+      <td>1513</td>
+      <td>This is the user who marked a given document as ‘cosigned on chart.’</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Amendment Date/time</strong><pre><code>  amendment_date_time</code></pre></td>
+      <td>1601</td>
+      <td> </td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Amended By</strong><pre><code>  amended_by</code></pre></td>
+      <td>1602</td>
+      <td> </td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Amendment Signed</strong><pre><code>  amendment_signed</code></pre></td>
+      <td>1603</td>
+      <td> </td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Amendment Sign Block Name</strong><pre><code>  amendment_sign_block_name</code></pre></td>
+      <td>1604</td>
+      <td>This is the signature block name of the person who amended the document.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Amendment Sign Block Title</strong><pre><code>  amendment_sign_block_title</code></pre></td>
+      <td>1605</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Administrative Closure Date</strong><pre><code>  administrative_closure_date</code></pre></td>
+      <td>1606</td>
+      <td> </td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Admin Closure Sig Block Name</strong><pre><code>  admin_closure_sig_block_name</code></pre></td>
+      <td>1607</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Admin Closure Sig Block Title</strong><pre><code>  admin_closure_sig_block_title</code></pre></td>
+      <td>1608</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Archive/purge Date/time</strong><pre><code>  archive_purge_date_time</code></pre></td>
+      <td>1609</td>
+      <td> </td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Deleted By</strong><pre><code>  deleted_by</code></pre></td>
+      <td>1610</td>
+      <td>This is the person who deleted the document per the Privacy Act.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Deletion Date</strong><pre><code>  deletion_date</code></pre></td>
+      <td>1611</td>
+      <td>This is the date/(time optional) at which the document was deleted per the <br />Privacy Act.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Reason For Deletion</strong><pre><code>  reason_for_deletion</code></pre></td>
+      <td>1612</td>
+      <td>This is the reason for which the document was deleted, either: Privacy<br />Act, as invoked by the patient; or Administrative Action, where the note<br />needed to be removed, following signature, for administrative reasons.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>administrative: <em><strong>A</strong></em><br/>privacy act: <em><strong>P</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Administrative Closure Mode</strong><pre><code>  administrative_closure_mode</code></pre></td>
+      <td>1613</td>
+      <td>This indicates whether the document was closed manually by an<br />administrative person (in order to satisfy authentication<br />requirements), or automatically by scanning a paper document<br />bearing the signature of the patient (e.g., Consents, Advanced<br />Directives, etc.) and not requiring the signature of an author.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>manual: <em><strong>M</strong></em><br/>scanned document: <em><strong>S</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Subject (optional Description)</strong><pre><code>  subject_optional_description</code></pre></td>
+      <td>1701</td>
+      <td>This freetext field is used to help you find documents by subject (i.e.,<br />consider the subject a “key word” of sorts.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Vbc Line Count</strong><pre><code>  vbc_line_count</code></pre></td>
+      <td>1801</td>
+      <td>A VBC Line is defined as the total number of characters you can see with<br />the naked eye, divided by 65. It includes any character contained within a<br />header or footer. Spaces, carriage returns, and hidden format<br />instructions, such as bold, underline, text boxes, printer configurations,<br />spell check, etc., are not counted in the total character count. A VBC<br />Line is calculated by counting all visual characters and simply dividing<br />the total number of characters by 65 to arrive at the number of defined<br />lines.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Id Parent</strong><pre><code>  id_parent</code></pre></td>
+      <td>2101</td>
+      <td>Applies to ID (interdisciplinary) notes only.  The ID PARENT is the note<br />this note is attached to, making this note an entry in an ID note.<br /> <br />A note with an ID PARENT is referred to as an ID child note. ID parent<br />notes and ID child notes are both file entries in file 8925.<br />  <br />The entries of an interdisciplinary note consist of the first entry, which<br />is also the ID PARENT of the ID note, followed by the ID children.</td>
+      <td>POINTER</td>
+      <td>INDEXED</td>
+      <td><a href="Tiu_Document-8925">Tiu_Document-8925</a></td>
+    </tr>
+    <tr>
+      <td><strong>Visit Id</strong><pre><code>  visit_id</code></pre></td>
+      <td>15001</td>
+      <td>Unique Visit Identifier for use by CIRN.  The value of this field should<br />ONLY be modified by virtue of a change to the Visit (.03) field.</td>
+      <td>STRING</td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Procedure Summary Code</strong><pre><code>  procedure_summary_code</code></pre></td>
+      <td>70201</td>
+      <td>This field contains the summary code for this procedure once it is<br />complete.  ‘Machine Resulted’ is the initial, default code.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>Machine Resulted: <em><strong>5</strong></em><br/>Abnormal: <em><strong>2</strong></em><br/>Incomplete: <em><strong>4</strong></em><br/>Borderline: <em><strong>3</strong></em><br/>Normal: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Date/time Performed</strong><pre><code>  date_time_performed</code></pre></td>
+      <td>70202</td>
+      <td>This field contains the Date/Time when the procedure was performed.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on July 17th 2017, 6:14:41 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-07-17T18:14:48-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+      
+    </div>
+
+  </body>
+</html>

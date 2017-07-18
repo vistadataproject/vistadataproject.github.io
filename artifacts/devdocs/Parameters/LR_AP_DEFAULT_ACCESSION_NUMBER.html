@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      Parameters &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">Secure Read and Write Interface for VA VISTA</span>
+        <nav>
+            <a href="/demo">Demo</a>
+            <a href="/artifacts/developer">DevDocs</a>
+            <a href="https://github.com/vistadataproject">Github</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--parameters--lr-ap-default-accession-number"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">Parameters</a> » LR AP DEFAULT ACCESSION NUMBER<br /></h4>
+<h1 id="lr-ap-default-accession-number">LR AP DEFAULT ACCESSION NUMBER</h1>
+
+<p>When an Anatomic Pathology (AP) case is accessioned, this parameter will control how the system should assign a default accession number to the case being logged in. (Note: The user will still be able to override the default, and select a different accession number, if they so choose). 'First Available Number' - The system will start searching from number one, and the first available accession number that is found in thataccession area will be used as the default accession number for the newcase being logged in. Choosing this method will minimize the likelihood ofhaving any gaps in the accession numbering, however, there is thepossibility that some accessions might be out of sequence. 'Next Available Sequential Number' - The system will start searching from the last accession number that was logged in, and the next available number that is found in that accession area will be used as the default accession number for the new case being logged in. Choosing this method should better keep the accession numbers in sequence, but there is the possibility that some gaps in the numbering might be introduced. If no selection is made, the system will default to 'First Available Number'.</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Summary</td>
+      <td>Method of Assigning AP Accession Number</td>
+    </tr>
+    <tr>
+      <td>Value Type</td>
+      <td>set of codes</td>
+    </tr>
+    <tr>
+      <td>Value Domain</td>
+      <td>1:First Available Number;2:Next Available Sequential Number</td>
+    </tr>
+    <tr>
+      <td>Multiple Instances</td>
+      <td>true</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="allowable-entities">Allowable Entities</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Precedence</th>
+      <th>Entity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>10</td>
+      <td>PACKAGE</td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <br/><p style="font-size: 11px">Document generated on July 17th 2017, 6:14:42 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-07-17T18:14:48-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+      
+    </div>
+
+  </body>
+</html>

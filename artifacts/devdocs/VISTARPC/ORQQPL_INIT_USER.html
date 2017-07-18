@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VISTA RPC Documentation &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">Secure Read and Write Interface for VA VISTA</span>
+        <nav>
+            <a href="/demo">Demo</a>
+            <a href="/artifacts/developer">DevDocs</a>
+            <a href="https://github.com/vistadataproject">Github</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--native-rpcs--orqqpl-init-user"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">Native RPCs</a> » ORQQPL INIT USER<br /></h4>
+<h1 id="orqqpl-init-user">ORQQPL INIT USER</h1>
+
+<p>Returns user parameters for problem list</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Label</td>
+      <td>INITUSER</td>
+    </tr>
+    <tr>
+      <td>MUMPS Implementation</td>
+      <td><a href="http://code.osehra.org/dox/Routine_ORQQPL1_source.html">ORQQPL1</a></td>
+    </tr>
+    <tr>
+      <td>Return Type</td>
+      <td>ARRAY</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="input-parameters">Input Parameters</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Maximum Data Length</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DUZ</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="mumps-method-description">MUMPS Method Description</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Method</td>
+      <td><a href="http://code.osehra.org/dox/Routine_ORQQPL1_source.html">INITUSER^ORQQPL1</a></td>
+    </tr>
+    <tr>
+      <td>Method Comment</td>
+      <td>INITIALIZE FOR NEW USER</td>
+    </tr>
+    <tr>
+      <td>Input Parameters</td>
+      <td>ORDUZ</td>
+    </tr>
+    <tr>
+      <td>First Comment</td>
+      <td><pre><code> taken from INIT^GMPLMGR<br/> leave GMPLUSER on symbol table - is evaluated in EDITSAVE<br/></code></pre></td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td><pre><code> N X,PV,CTXT,GMPLPROV,ORENT<br/> S ORDUZ=$G(ORDUZ,DUZ)<br/> S GMPLUSER=$$CLINUSER(ORDUZ)<br/> S CTXT=$$GET^XPAR("ALL","ORCH CONTEXT PROBLEMS",1)<br/> S X=$G(^GMPL(125.99,1,0)) ; IN1+6^GMPLMGR<br/> S RETURN(0)=GMPLUSER ;  problem list user, or other user<br/> S RETURN(1)=$$VIEW^GMPLX1(ORDUZ) ; GMPLVIEW("VIEW") - users default view<br/> S RETURN(2)=+$P(X,U,2) ; verify transcribed problems<br/> S RETURN(3)=+$P(X,U,3) ; prompt for chart copy<br/> S RETURN(4)=+$P(X,U,4) ; use lexicon<br/> S RETURN(5)=$S($P(X,U,5)="R":1,1:0) ; chron or reverse chron listing<br/> S RETURN(6)=$S($P($G(CTXT),";",3)'="":$P($G(CTXT),";",3),1:"A")<br/> S GMPLPROV=$P($G(CTXT),";",5)<br/> I +GMPLPROV>0,$D(^VA(200,GMPLPROV)) D<br/> . S RETURN(7)=GMPLPROV_U_$P(^VA(200,GMPLPROV,0),U)<br/> E  S RETURN(7)="0^All"<br/> S RETURN(8)=$$SERVICE^GMPLX1(ORDUZ) ; user's service/section<br/> I $L(RETURN(1),"/")>1 D<br/> . S PV=RETURN(1)<br/> . S RETURN(1)=$P(PV,"/")<br/> . I RETURN(1)="C" S GMPLVIEW("CLIN")=$P(PV,"/",2,99)<br/> . I RETURN(1)="S" S GMPLVIEW("SERV")=$P(PV,"/",2,99)<br/> S RETURN(9)=$G(GMPLVIEW("SERV")) ; ??? Where from - see tech doc<br/> S RETURN(10)=$G(GMPLVIEW("CLIN")) ; ??? Where from - see tech doc<br/> S RETURN(11)=""<br/> S RETURN(12)=+$P($G(CTXT),";",4)    ; should comments display?<br/> S ORENT="ALL^SRV.`"_+$$SERVICE^GMPLX1(ORDUZ,1)<br/> S RETURN(13)=+$$GET^XPAR(ORENT,"ORQQPL SUPPRESS CODES",1) ; suppress codes?<br/> K GMPLVIEW</code></pre></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="cprs">CPRS</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>File Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pascal File</td>
+      <td><a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas">rProbs.pas</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <br/><p style="font-size: 11px">Document generated on July 17th 2017, 6:14:43 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-07-17T18:14:48-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+      
+    </div>
+
+  </body>
+</html>

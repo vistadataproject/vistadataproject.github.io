@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VISTA RPC Documentation &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">Secure Read and Write Interface for VA VISTA</span>
+        <nav>
+            <a href="/demo">Demo</a>
+            <a href="/artifacts/developer">DevDocs</a>
+            <a href="https://github.com/vistadataproject">Github</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--native-rpcs--xus-signon-setup"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">Native RPCs</a> » XUS SIGNON SETUP<br /></h4>
+<h1 id="xus-signon-setup">XUS SIGNON SETUP</h1>
+
+<p>Establishes environment necessary for DHCP sign-on</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Label</td>
+      <td>SETUP</td>
+    </tr>
+    <tr>
+      <td>MUMPS Implementation</td>
+      <td><a href="http://code.osehra.org/dox/Routine_XUSRB_source.html">XUSRB</a></td>
+    </tr>
+    <tr>
+      <td>Return Type</td>
+      <td>ARRAY</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="mumps-method-description">MUMPS Method Description</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Method</td>
+      <td><a href="http://code.osehra.org/dox/Routine_XUSRB_source.html">SETUP^XUSRB</a></td>
+    </tr>
+    <tr>
+      <td>Method Comment</td>
+      <td>RPC. XUS SIGNON SETUP - IA #1632 (API IA #4054)</td>
+    </tr>
+    <tr>
+      <td>Input Parameters</td>
+      <td>XWBUSRNM, ASOSKIP, D2</td>
+    </tr>
+    <tr>
+      <td>First Comment</td>
+      <td><pre><code>sets up environment for GUI signon</code></pre></td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td><pre><code> N X1 K DUZ<br/> S XWBUSRNM=$G(XWBUSRNM),ASOSKIP=$G(ASOSKIP)<br/> I $L($G(XWBTIP)) S IO("IP")=XWBTIP<br/> S IO("CLNM")=$$LOW^XLFSTR($G(XWBCLMAN)) D ZIO^%ZIS4<br/> D SET1^XUS(0),SET^XWBSEC("XUS XOPT",XOPT) ;p265<br/> D SAVE^XUS1 ;save the home device<br/> S RET(0)=$P(XUENV,U,3),RET(1)=$P(XUVOL,U),RET(2)=XUCI<br/> S RET(3)=$I,RET(4)=$P(XOPT,U,2),RET(5)=0<br/> S RET(6)=$G(^XMB("NETNAME")) ;DBIA #1131<br/> S RET(7)=$$PROD^XUPROD ;Tell if production.<br/> S X1=$$INHIBIT() I X1 S XWBERR=$S(X1=1:"Logons Inhibited",1:"Max Users") Q  ;p523<br/> I (+XWBUSRNM<-30),$$CHKUSER^XUSBSE1(XWBUSRNM) S RET(5)=1 D POST2 Q  ;p523 BSE CHANGE<br/> I $G(ASOSKIP) S XQXFLG("ASO")=1 ;Skip the ASO check, Not for VISITORS p523<br/> I $G(XWBVER)<1.1 S XQXFLG("ZEBRA")=-1 ;Disable for v1.0<br/> I $L(IO("CLNM")),'$G(DUZ) S DUZ=$$AUTOXWB^XUS1B() ;Only check when 1.1 CL.<br/> I $G(DUZ)>0 D  ;p523<br/> . I '$D(XUSER(0)),DUZ D USER^XUS(DUZ)<br/> . N %T S %T=$$USER^XUS1A I %T S DUZ=0 Q<br/> . D NOW,POST2 S RET(5)=1</code></pre></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="cprs">CPRS</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>File Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Executable Only</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <br/><p style="font-size: 11px">Document generated on July 17th 2017, 6:14:43 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-07-17T18:14:48-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+      
+    </div>
+
+  </body>
+</html>

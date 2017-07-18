@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VISTA RPC Documentation &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">Secure Read and Write Interface for VA VISTA</span>
+        <nav>
+            <a href="/demo">Demo</a>
+            <a href="/artifacts/developer">DevDocs</a>
+            <a href="https://github.com/vistadataproject">Github</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--native-rpcs--spn-vadpt-values"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">Native RPCs</a> » SPN VADPT VALUES<br /></h4>
+<h1 id="spn-vadpt-values">SPN VADPT VALUES</h1>
+
+<p>This RPC utilizes the CALLABLE ENTRY POINTS IN VADPT PIM manual. http://www.domain.ext/vdl/documents/Clinical/Admis_Disch_Transfer_(ADT)/pimstm.doc   (DBIA #10061) As well as the DBIA #4938 which returns the ICN.  Note that the call to VAPA API is called twice the first time forcing the return of the permanent address and a second time forcing the return of the temporary address. The Temporary address is retuned in its own subscript referenced as VAPA_TEMP_ADDRESS.   The return values are all listed in the ADT manual listed above, with the exception of the ICN and the VAPA_TEMP_ADDRESS. This call can be called by passing in either dfn or icn or both.  If both are passed in they will be validate to insure that they match the same entry in the patient file.   (global root,dfn,icn) Testing section; Note that this is a test patient. Test 1)  PASSING IN AN INVALID ICN AND A VALID DFND COL(,785,10026276877)Results:^TMP(546781790,1)=COULD NOT MATCH UP ICN WITH A DFN Test 2) PASSING IN A INVALID DFN WITH A VALID ICND COL(,78599999,1002627687)Results:^TMP(546781790,1)=DFN AND ICN ARE NOT MATCHED Test 3) PASSING IN BOTH AN INVALID DFN AND ICND COL(,78599999,1002627687999999)Results:^TMP(546781790,1)=COULD NOT MATCH UP ICN WITH A DFN Below is a successful call to this RPC passing only a dfn. D COL(,785,)Global ^TMP($J – NOTE: translation in effect^TMP(546781790,1)=VA(ICN)^1002627687^EOL999               2)=VA(BID)^3235^EOL999               3)=VA(PID)^101-01-3235^EOL999               4)=VADM(1)^EASTER,WILLIAM DAVE (C)^EOL999               5)=VADM(2)^101013235^101-01-3235^EOL999               6)=VADM(3)^2571006^OCT 6,1957^EOL999               7)=VADM(4)^49^EOL999               8)=VADM(5)^M^MALE^EOL999               9)=VADM(6)^^EOL999              10)=VADM(7)^DR KEVIN SD^EOL999              11)=VADM(8)^3^WHITE, NOT OF HISPANIC ORIGIN^EOL999              12)=VADM(9)^3^BAPTIST^EOL999              13)=VADM(10)^6^NEVER MARRIED^EOL999              14)=VADM(11)^1^EOL999              15)=VADM(11,1)^4^UNKNOWN BY PATIENT^EOL999              16)=VADM(12)^2^EOL999              17)=VADM(12,1)^2^AMERICAN INDIAN OR ALASKA NATIVE^EOL999              18)=VADM(12,1,1)^3^OBSERVER^EOL999              19)=VADM(12,2)^13^WHITE^EOL999              20)=VADM(12,2,1)^1^SELF IDENTIFICATION^EOL999              21)=BOS VAEL^EOL999              22)=VAEL(1)^2^AID &amp; ATTENDANCE^EOL999              23)=VAEL,1,4)^4^NSC, VA PENSION^EOL999              24)=VAEL,1,6)^6^OTHER FEDERAL AGENCY^EOL999              25)=VAEL,1,9)^9^SHARING AGREEMENT^EOL999              26)=VAEL,1,19)^19^TRICARE^EOL999              27)=VAEL(2)^7^VIETNAM ERA^EOL999              28)=VAEL(3)^0^EOL999              29)=VAEL(4)^1^EOL999              30)=VAEL(5)^1^EOL999              31)=VAEL(5,1)^^EOL999              32)=VAEL(5,2)^^EOL999              33)=VAEL(5,3)^^EOL999              34)=VAEL(5,4)^^EOL999              35)=VAEL(5,5)^^EOL999              36)=VAEL(5,6)^^EOL999              37)=VAEL(6)^12^NSC VETERAN^EOL999              38)=VAEL(7)^SS^EOL999              39)=VAEL(8)^V^VERIFIED^EOL999              40)=VAEL(9)^N^NO LONGER REQUIRED^EOL999              41)=BOS VAPA^EOL999              42)=VAPA(1)^5407 ROCKING HORSE LANE^EOL999              43)=VAPA(2)^NO APPT # LINE TWO OF ADDRESS^EOL999              44)=VAPA(3)^NO LINE THREE EITHER^EOL999              45)=VAPA(4)^OCEANSIDE^EOL999              46)=VAPA(5)^6^CALIFORNIA^EOL999              47)=VAPA(6)^92057^EOL999              48)=VAPA(7)^4^SAN DIEGO^EOL999              49)=VAPA(8)^760-295-9572^EOL999              50)=VAPA(9)^^EOL999              51)=VAPA(10)^^EOL999              52)=VAPA(11)^92057^92057^EOL999              53)=VAPA(12)^1^EOL999              54)=VAPA(13)^1750 w CITRACADO PKWY^EOL999              55)=VAPA(14)^UNIT 114^EOL999              56)=VAPA(15)^MOUNTAIN SHADOWS^EOL999              57)=VAPA(16)^ESCONDIDO^EOL999              58)=VAPA(17)^6^CALIFORNIA^EOL999              59)=VAPA(18)^92029^92029^EOL999              60)=VAPA(19)^4^SAN DIEGO^EOL999              61)=VAPA(20)^3061221^DEC 21,2006^EOL999              62)=VAPA(21)^3061231^DEC 31,2006^EOL999              63)=VAPA(22,2)^2^APPOINTMENT/SCHEDULING^Y^EOL999              64)=VAPA(22,3)^3^COPAYMENTS/VETERAN BILLING^^EOL999              65)=VAPA(22,4)^4^MEDICAL RECORDS^Y^EOL999              66)=VAPA_TEMP_ADDRESS(1)^5412 TEMP ADDRESS LANE^EOL999              67)=VAPA_TEMP_ADDRESS(2)^SOME BEACH TEMP LINE TWO^EOL999              68)=VAPA_TEMP_ADDRESS(3)^WITH SUN AND SAND LINE THREE^EOL999              69)=VAPA_TEMP_ADDRESS(4)^LAGUNA^EOL999              70)=VAPA_TEMP_ADDRESS(5)^6^CALIFORNIA^EOL999              71)=VAPA_TEMP_ADDRESS(6)^90210^EOL999              72)=VAPA_TEMP_ADDRESS(7)^7^ALAMEDA^EOL999              73)=VAPA_TEMP_ADDRESS(8)^800-555-1212^EOL999              74)=VAPA_TEMP_ADDRESS(9)^3061212^DEC 12,2006^EOL999              75)=VAPA_TEMP_ADDRESS(10)^3070130^JAN 30,2007^EOL999              76)=BOS VAPD^EOL999              77)=VAPD(1)^PEN^EOL999              78)=VAPD(2)^12^FLORIDA^EOL999              79)=VAPD(3)^EASTER,ELBERT JOE^EOL999              80)=VAPD(4)^EASTER,ELIZABETH L^EOL999              81)=VAPD(5)^HUGHES,ELIZABETH L^EOL999              82)=VAPD(6)^TRUCK DRIVER^EOL999              83)=VAPD(7)^1^EMPLOYED FULL TIME^EOL999</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Label</td>
+      <td>COL</td>
+    </tr>
+    <tr>
+      <td>MUMPS Implementation</td>
+      <td><a href="http://code.osehra.org/dox/Routine_SPNRPC1_source.html">SPNRPC1</a></td>
+    </tr>
+    <tr>
+      <td>Return Type</td>
+      <td>GLOBAL ARRAY</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="input-parameters">Input Parameters</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Maximum Data Length</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IEN</td>
+      <td>LITERAL</td>
+      <td>245</td>
+      <td>true</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>DFN</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td> </td>
+      <td>DFN OF PATIENT</td>
+    </tr>
+    <tr>
+      <td>ICN</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td> </td>
+      <td>ICN OF PATIENT</td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <br/><p style="font-size: 11px">Document generated on July 17th 2017, 6:14:43 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-07-17T18:14:48-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+      
+    </div>
+
+  </body>
+</html>

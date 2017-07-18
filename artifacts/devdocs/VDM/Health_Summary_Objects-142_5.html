@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">Secure Read and Write Interface for VA VISTA</span>
+        <nav>
+            <a href="/demo">Demo</a>
+            <a href="/artifacts/developer">DevDocs</a>
+            <a href="https://github.com/vistadataproject">Github</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--vdm--health_summary_objects-142_5"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">VDM</a> » Health_Summary_Objects-142_5<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="health-summary-objects-1425">Health Summary Objects (142.5)</h1>
+<p>This file contains Health Summary Types that are to be embedded into another  document as an object.  The bulk of this file is made up of display flags  which control how the object is to be embedded into the other document.</p>
+
+<p><strong>Global:</strong> ^GMT(142.5,</p>
+
+<p><strong>Domain:</strong> Non-Clinical</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>.01</td>
+      <td>This is the name of the Health Summary Object to be embedded in another <br />document.</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Object Label</strong><pre><code>  object_label</code></pre></td>
+      <td>.02</td>
+      <td>This is a string of text, 3 to 79 characters in length, that will precede <br />the object embedded in another document to identify the object that follows.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Health Summary Type</strong><pre><code>  health_summary_type</code></pre></td>
+      <td>.03</td>
+      <td>This is a pointer to the Health Summary Type that will be imbedded as an <br />object into another document.</td>
+      <td>POINTER</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td>Health_Summary_Type-142</td>
+    </tr>
+    <tr>
+      <td><strong>Report Period</strong><pre><code>  report_period</code></pre></td>
+      <td>.04</td>
+      <td>This is a pointer to the Health Summary Type that will be imbedded as an <br />object into another document.<br />elements may be excluded depending on how exclusion fields in this file are <br />set.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Suppress Components W/o Data</strong><pre><code>  suppress_components_w_o_data</code></pre></td>
+      <td>.05</td>
+      <td>If this field is set to 1 (YES) and a Health Summary component does not have <br />any data, the component will be suppressed.  If this field is not set to 1 <br />(YES) and the component does not have any data, then the component will <br />print with the statement “No data available”.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Suppress Header</strong><pre><code>  suppress_header</code></pre></td>
+      <td>.06</td>
+      <td>When this field is set to 1 (YES), Health Summary headers will be suppressed<br />when printing as an object embedded in another document.  Individual data <br />elements may be excluded depending on how exclusion fields in this file are <br />set.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Print Label</strong><pre><code>  print_label</code></pre></td>
+      <td>.07</td>
+      <td>When this field is set to 1 (YES), the Health Summary Object Label will be<br />printed prior to printing the object.  When it is set to 0 (NO) the Health <br />Summary Object Label will be ignored.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Print Blank Line After Label</strong><pre><code>  print_blank_line_after_label</code></pre></td>
+      <td>.08</td>
+      <td>If there is a Label for the object and the Label is to be printed, then a<br />blank line may be printed after the object label if this field is set to<br />1 (YES).</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Print Report Date And Time</strong><pre><code>  print_report_date_and_time</code></pre></td>
+      <td>.09</td>
+      <td>When this field is set to 1 (YES), the Health Summary report date and time <br />will be printed as part of a Health Summary object embedded in another <br />document, even if the Health Summary headers are to be suppressed.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Print Confidentiality Banner</strong><pre><code>  print_confidentiality_banner</code></pre></td>
+      <td>.1</td>
+      <td>When this field is set to 1 (YES), the Health Summary confidentiality banner <br />will be printed as part of a Health Summary object embedded in another <br />document, even if the Health Summary headers are to be suppressed.<br />suppressed.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Print Report Header</strong><pre><code>  print_report_header</code></pre></td>
+      <td>.11</td>
+      <td>When this field is set to 1 (YES), the Health Summary report header (and <br />accompanying blank line) will be printed as part of a Health Summary object<br />embedded in another document, even if the Health Summary headers are to be <br />suppressed.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Print Component Header</strong><pre><code>  print_component_header</code></pre></td>
+      <td>.12</td>
+      <td>When this field is set to 1 (YES), the Health Summary component headers will<br />be printed as part of a Health Summary object embedded in another document, <br />even if the Health Summary headers are to be suppressed.<br />Summary headers are to be suppressed.  For this field to have any effect on <br />the display, the field “PRINT COMPONENT HEADERS” must also be set to 1<br />(YES).</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Underline Component Header</strong><pre><code>  underline_component_header</code></pre></td>
+      <td>.13</td>
+      <td>When this field is set to 1 (YES), the a Component Header will be underlined <br />with a single dashed line.  For this field to have any effect on the display, <br />the field “PRINT COMPONENT HEADERS” must also be set to 1 (YES).  <br /><br />PN - Progress Notes <br />——————-<br /><data></data></td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Print Time-occurrence Limits</strong><pre><code>  print_timeoccurrence_limits</code></pre></td>
+      <td>.14</td>
+      <td>When this field is set to 1 (YES), the Health Summary report time and <br />occurrence limits will be printed with the Component Header as part of a <br />Health Summary object embedded in another document, even if the Health <br />Summary headers are to be suppressed.  For this field to have any effect on <br />the display, the field “PRINT COMPONENT HEADERS” must also be set to 1 (YES)</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Force Blank Line</strong><pre><code>  force_blank_line</code></pre></td>
+      <td>.15</td>
+      <td>When this field is set to 1 (YES), a blank line will be printed after <br />each Component Header as part of a Health Summary object embedded in another <br />document, even if the Health Summary headers are to be suppressed.  For this <br />field to have any effect on the display, the field “PRINT COMPONENT HEADERS”<br />must also be set to 1 (YES).</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Print Deceased Information</strong><pre><code>  print_deceased_information</code></pre></td>
+      <td>.16</td>
+      <td>The Health Summary has a conditional line of text that prints with each <br />Health Summary Header for patients who are deceased.  This conditional line <br />contains the word “DECEASED” and the date and time the patient died.  When <br />this field is set to 1 (YES), the conditional “Deceased” line will be <br />printed as part of a Health Summary object embedded in another document, <br />even if the Health Summary headers are to be suppressed.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Creator</strong><pre><code>  creator</code></pre></td>
+      <td>.17</td>
+      <td>The name of the individual who created the Health Summary object.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Date Created</strong><pre><code>  date_created</code></pre></td>
+      <td>.18</td>
+      <td>This is the date the Object was created.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Date Last Modified</strong><pre><code>  date_last_modified</code></pre></td>
+      <td>.19</td>
+      <td>This is the date that this object was last modified.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>National Object</strong><pre><code>  national_object</code></pre></td>
+      <td>.2</td>
+      <td>This field is a flag to indicate an object as being a nationally released <br />object.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Object Description</strong><pre><code>  object_description</code></pre></td>
+      <td>1</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Overwrite No Data</strong><pre><code>  overwrite_no_data</code></pre></td>
+      <td>2</td>
+      <td>This field stores a site defined message. This message will replace the<br />standard No Data Available message when running a TIU/HS Object.<br /></td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on July 17th 2017, 6:14:41 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-07-17T18:14:48-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+      
+    </div>
+
+  </body>
+</html>

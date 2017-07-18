@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VISTA RPC Documentation &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">Secure Read and Write Interface for VA VISTA</span>
+        <nav>
+            <a href="/demo">Demo</a>
+            <a href="/artifacts/developer">DevDocs</a>
+            <a href="https://github.com/vistadataproject">Github</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--native-rpcs--tiu-field-save"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">Native RPCs</a> » TIU FIELD SAVE<br /></h4>
+<h1 id="tiu-field-save">TIU FIELD SAVE</h1>
+
+<p>Saves a single Template Field</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Label</td>
+      <td>SAVE</td>
+    </tr>
+    <tr>
+      <td>MUMPS Implementation</td>
+      <td><a href="http://code.osehra.org/dox/Routine_TIUSRVF_source.html">TIUSRVF</a></td>
+    </tr>
+    <tr>
+      <td>Return Type</td>
+      <td>SINGLE VALUE</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="input-parameters">Input Parameters</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Maximum Data Length</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TIUDA</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>IEN of dialog field, if any</td>
+    </tr>
+    <tr>
+      <td>TIUX</td>
+      <td>LIST</td>
+      <td> </td>
+      <td> </td>
+      <td>Data to save in template field</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="mumps-method-description">MUMPS Method Description</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Method</td>
+      <td><a href="http://code.osehra.org/dox/Routine_TIUSRVF_source.html">SAVE^TIUSRVF</a></td>
+    </tr>
+    <tr>
+      <td>Method Comment</td>
+      <td>Save Template Field</td>
+    </tr>
+    <tr>
+      <td>Input Parameters</td>
+      <td>TIUDA, TIUX</td>
+    </tr>
+    <tr>
+      <td>First Comment</td>
+      <td><pre><code> Input:<br/>   TIUDA=IEN of TEMPLATE record<br/>   TIUX(SEQ)=IEN of item<br/> Output:<br/>   SUCCESS=IEN of item if successful, or<br/>           0^ Explanatory message if not</code></pre></td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td><pre><code> N FLD,TMP<br/> S SUCCESS=""<br/> I (+TIUDA'>0)!($G(TIUX(.01))'="") D  Q:$P(SUCCESS,U,1)="0"<br/> . I $L($G(TIUX(.01)))<3 D  Q<br/> . . S SUCCESS="0^Template Field name must be at least 3 characters"<br/> . S TIUX(.01)=$$UPPER^TIULS(TIUX(.01))<br/> . N FOUNDIEN<br/> . S FOUNDIEN=$O(^TIU(8927.1,"B",TIUX(.01),0))<br/> . I FOUNDIEN>0,FOUNDIEN'=TIUDA D  Q<br/> . . S SUCCESS="0^"_TIUX(.01)_" is not a unique name"<br/> . I +TIUDA'>0 D<br/> . . S TIUDA=$$CREATE($G(TIUX(.01)))<br/> S SUCCESS=TIUDA Q:'+SUCCESS<br/> D LOCK^TIUSRVF1(.TMP,TIUDA)<br/> I TMP=0 D  Q<br/> . S SUCCESS="0^Template Field currently being edited by another user"<br/> F FLD=2,10 D<br/> . I +$O(TIUX(FLD,0)) D  Q:$D(TIUX)'>9<br/> . . K ^TIU(8927.1,TIUDA,FLD)<br/> . . I $G(TIUX(FLD,1))="@" K TIUX(FLD) Q<br/> . . M ^TIU(8927.1,TIUDA,FLD)=TIUX(FLD) K TIUX(FLD)<br/> . . D SETXT0(TIUDA,FLD)<br/> I $D(TIUX)>9 D FILE(.SUCCESS,""""_TIUDA_",""",.TIUX)<br/> D UNLOCK^TIUSRVF1(.TMP,TIUDA)</code></pre></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="cprs">CPRS</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>File Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Executable Only</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <br/><p style="font-size: 11px">Document generated on July 17th 2017, 6:14:43 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-07-17T18:14:48-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+      
+    </div>
+
+  </body>
+</html>

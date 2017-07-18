@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">Secure Read and Write Interface for VA VISTA</span>
+        <nav>
+            <a href="/demo">Demo</a>
+            <a href="/artifacts/developer">DevDocs</a>
+            <a href="https://github.com/vistadataproject">Github</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--vdm--reminder_category-811_7"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">VDM</a> » Reminder_Category-811_7<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="reminder-category-8117">Reminder Category (811.7)</h1>
+<p>This file contains Reminder Categories. Reminder Categories are created at each site and are not released with the reminder package.   A Reminder Category is a list of reminders (or other reminder categories) and is used to group reminders for display in the CPRS GUI. Reminder categories are allocated to individual users, locations, service or system using the option PXRM CPRS LOOKUP CATEGORIES.  Reminder Categories can also be used in conjunction with Reminder Due Summary Reports. The user is given the option to select a Reminder Category or input a list of individual reminders.</p>
+
+<p><strong>Global:</strong> ^PXRMD(811.7,</p>
+
+<p><strong>Domain:</strong> Non-Clinical</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>.01</td>
+      <td>This is the name of the Reminder Category.</td>
+      <td>STRING</td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong><pre><code>  description</code></pre></td>
+      <td>1</td>
+      <td>This is the description of the Reminder Category.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Individual Reminders</strong><pre><code>  individual_reminders</code></pre></td>
+      <td>2</td>
+      <td>This is the list of reminders that are in this category.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Individual_Reminders-811_72">Individual_Reminders-811_72</a></td>
+    </tr>
+    <tr>
+      <td><strong>Sub-category</strong><pre><code>  subcategory</code></pre></td>
+      <td>10</td>
+      <td>This multiple allows you to include already existing categories as part<br />of a new category. Sub-categories are always listed after individual<br />reminders.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Subcategory-811_701">Subcategory-811_701</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-files">Sub-Files</h2>
+<h3 id="individual-reminders-81172"><a name="Individual_Reminders-811_72"></a>Individual Reminders (811.72)</h3>
+
+<dl>
+<dt>ID</dt><dd>Individual_Reminders-811_72</dd></dl>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Individual Reminders</strong><pre><code>  individual_reminders</code></pre></td>
+      <td>.01</td>
+      <td>This is a reminder definition.</td>
+      <td>POINTER</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="Reminder_Definition-811_9">Reminder_Definition-811_9</a></td>
+    </tr>
+    <tr>
+      <td><strong>Display Order</strong><pre><code>  display_order</code></pre></td>
+      <td>.02</td>
+      <td>This is the order in which to display this reminder definition when the <br />list of reminders in this category is displayed.</td>
+      <td>NUMERIC</td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="sub-category-811701"><a name="Subcategory-811_701"></a>Sub-category (811.701)</h3>
+
+<dl>
+<dt>ID</dt><dd>Subcategory-811_701</dd></dl>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Sub-category</strong><pre><code>  subcategory</code></pre></td>
+      <td>.01</td>
+      <td>This is an existing category that is to be included as part of a new<br />category.</td>
+      <td>POINTER</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="Reminder_Category-811_7">Reminder_Category-811_7</a></td>
+    </tr>
+    <tr>
+      <td><strong>Display Order</strong><pre><code>  display_order</code></pre></td>
+      <td>.02</td>
+      <td>This is the display order for the sub-categories. Sub-categories are<br />displayed after individual reminders.</td>
+      <td>NUMERIC</td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on July 17th 2017, 6:14:41 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-07-17T18:14:48-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+      
+    </div>
+
+  </body>
+</html>

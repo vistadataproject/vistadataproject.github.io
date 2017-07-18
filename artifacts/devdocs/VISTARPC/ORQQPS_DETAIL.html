@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VISTA RPC Documentation &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">Secure Read and Write Interface for VA VISTA</span>
+        <nav>
+            <a href="/demo">Demo</a>
+            <a href="/artifacts/developer">DevDocs</a>
+            <a href="https://github.com/vistadataproject">Github</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--native-rpcs--orqqps-detail"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">Native RPCs</a> » ORQQPS DETAIL<br /></h4>
+<h1 id="orqqps-detail">ORQQPS DETAIL</h1>
+
+<p>Returns the details of a medication order.</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Label</td>
+      <td>DETAIL</td>
+    </tr>
+    <tr>
+      <td>MUMPS Implementation</td>
+      <td><a href="http://code.osehra.org/dox/Routine_ORQQPS_source.html">ORQQPS</a></td>
+    </tr>
+    <tr>
+      <td>Return Type</td>
+      <td>ARRAY</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="input-parameters">Input Parameters</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Maximum Data Length</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PATIENT ID</td>
+      <td>LITERAL</td>
+      <td>16</td>
+      <td>true</td>
+      <td>Patient identifier from Patient file [#2].</td>
+    </tr>
+    <tr>
+      <td>MEDICATION ID</td>
+      <td>LITERAL</td>
+      <td>20</td>
+      <td>true</td>
+      <td>Medication identifier as drawn from the medication consdensed list (ORQQPSLIST).  The first piece of the condensed list.  E.g. 31945R;O, 231156U;I,944382P;O</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="mumps-method-description">MUMPS Method Description</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Method</td>
+      <td><a href="http://code.osehra.org/dox/Routine_ORQQPS_source.html">DETAIL^ORQQPS</a></td>
+    </tr>
+    <tr>
+      <td>Method Comment</td>
+      <td>return detailed information for a drug</td>
+    </tr>
+    <tr>
+      <td>Input Parameters</td>
+      <td>ORPT, ORMED</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td><pre><code> K ^TMP("PS",$J)<br/> D OEL^PSOORRL(ORPT,ORMED)<br/> N I,J,CR,X,Z,ZZ,MDR,SCH,SIG,COM,ADD,SOL,ORDATE,TYPE<br/> S I=0,J=1,CR=$CHAR(13),ORDATE=""<br/> S TYPE=$P(ORMED,";",2)<br/> S X=$G(^TMP("PS",$J,0))<br/> I '$L($G(X)) S ORY(J)="No detailed information found." Q<br/> S ORY(J)="     "_$P(X,U)<br/> I +$G(^TMP("PS",$J,"MDR",0))>0 D<br/> .S ZZ=^TMP("PS",$J,"MDR",0) F Z=1:1:ZZ D<br/> ..I Z=1 S MDR=^TMP("PS",$J,"MDR",Z,0)<br/> ..E  S MDR=MDR_", "_^TMP("PS",$J,"MDR",Z,0)<br/> I $L($G(MDR)) S ORY(J)=ORY(J)_"  "_MDR<br/> S ORY(J)=ORY(J)_"  "_$P(X,U,2)<br/> I +$G(^TMP("PS",$J,"SCH",0))>0 D<br/> .S ZZ=^TMP("PS",$J,"SCH",0) F Z=1:1:ZZ D<br/> ..I Z=1 S SCH=$P(^TMP("PS",$J,"SCH",Z,0),U)<br/> ..E  S SCH=SCH_", "_$P(^TMP("PS",$J,"SCH",Z,0),U)<br/> I $L($G(SCH)) S ORY(J)=ORY(J)_"  "_SCH<br/> S ORY(J)=ORY(J),J=J+1<br/> I +$G(^TMP("PS",$J,"SIG",0))>0 D<br/> .S ZZ=^TMP("PS",$J,"SIG",0) F Z=1:1:ZZ D<br/> ..I Z=1 S SIG=^TMP("PS",$J,"SIG",Z,0)<br/> ..E  S SIG=SIG_", "_^TMP("PS",$J,"SIG",Z,0)<br/> I $L($G(SIG)) S ORY(J)="        "_SIG,J=J+1<br/> S ORY(J)=" ",J=J+1<br/> I +$G(^TMP("PS",$J,"B",0))>0 D<br/> .S ZZ=^TMP("PS",$J,"B",0) F Z=1:1:ZZ D<br/> ..S SOL=^TMP("PS",$J,"B",Z,0),ORY(J)="        "_$P(SOL,U)_" "_$P(SOL,U,2),J=J+1<br/> I +$G(^TMP("PS",$J,"A",0))>0 D<br/> .S ZZ=^TMP("PS",$J,"A",0) F Z=1:1:ZZ D<br/> ..S ADD=^TMP("PS",$J,"A",Z,0)<br/> ..S ORY(J)="        "_$P(ADD,U)<br/> ..S IVX=$P(ADD,U,2)<br/> ..S ORY(J)=ORY(J)_$S($D(IVX):" "_IVX,1:"")_" "_$P(ADD,U,3),J=J+1<br/> I $L($G(SOL))!($L($G(ADD))) S ORY(J)=" ",J=J+1<br/> S ORY(J)="           Status: "_$P(X,U,6),J=J+1<br/> S ORDATE=$P(X,U,5) I $L($G(ORDATE)) D<br/> .D DT^DILF("ET",ORDATE,.ORDATE,"","")<br/> S ORY(J)="       Start date: "_$G(ORDATE(0)),J=J+1<br/> S ORDATE=$P(X,U,3) I $L($G(ORDATE)) D<br/> .D DT^DILF("ET",ORDATE,.ORDATE,"","")<br/> S ORY(J)="        Stop date: "_$G(ORDATE(0)),J=J+1<br/> I TYPE="O" D  ; if outpatient med<br/> .S ORY(J)="Refills remaining: "_$P(X,U,4),J=J+1<br/> .S ORY(J)="      Days supply: "_$P(X,U,7),J=J+1<br/> .S ORY(J)="         Quantity: "_$P(X,U,8),J=J+1<br/> .S ORY(J)=" ",J=J+1<br/> S ORY(J)="Comments:",J=J+1<br/> S I=0 F  S I=$O(^TMP("PS",$J,"PC",I)) Q:'I  D<br/> .S ORY(J)=^TMP("PS",$J,"PC",I,0),J=J+1<br/> K ^TMP("PS",$J)<br/></code></pre></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="cprs">CPRS</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>File Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pascal File</td>
+      <td><a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCover.pas">rCover.pas</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <br/><p style="font-size: 11px">Document generated on July 17th 2017, 6:14:43 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-07-17T18:14:48-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+      
+    </div>
+
+  </body>
+</html>

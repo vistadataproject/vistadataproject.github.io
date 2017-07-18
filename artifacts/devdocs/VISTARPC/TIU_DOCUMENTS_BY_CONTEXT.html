@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VISTA RPC Documentation &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">Secure Read and Write Interface for VA VISTA</span>
+        <nav>
+            <a href="/demo">Demo</a>
+            <a href="/artifacts/developer">DevDocs</a>
+            <a href="https://github.com/vistadataproject">Github</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--native-rpcs--tiu-documents-by-context"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">Native RPCs</a> » TIU DOCUMENTS BY CONTEXT<br /></h4>
+<h1 id="tiu-documents-by-context">TIU DOCUMENTS BY CONTEXT</h1>
+
+<p>Returns lists of TIU Documents that satisfy the following search criteria: 1 - signed documents (all)   2 - unsigned documents  3 - uncosigned documents4 - signed documents/author5 - signed documents/date range</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Label</td>
+      <td>CONTEXT</td>
+    </tr>
+    <tr>
+      <td>MUMPS Implementation</td>
+      <td><a href="http://code.osehra.org/dox/Routine_TIUSRVLO_source.html">TIUSRVLO</a></td>
+    </tr>
+    <tr>
+      <td>Return Type</td>
+      <td>GLOBAL ARRAY</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="input-parameters">Input Parameters</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Maximum Data Length</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CLASS</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td>true</td>
+      <td>This is a pointer to the Class of TIU DOCUMENTS which the user isinterested in (e.g., 3 for PROGRESS NOTES, 244 for DISCHARGE SUMMARIES,etc.).</td>
+    </tr>
+    <tr>
+      <td>CONTEXT</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td>true</td>
+      <td>This is an integer number which maps the context in which the user wishesthe notes to be returned.  The mapping is as follows: 1 - signed documents (all)2 - unsigned documents  3 - uncosigned documents4 - signed documents/author5 - signed documents/date range</td>
+    </tr>
+    <tr>
+      <td>DFN</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td>true</td>
+      <td>Pointer to Patient File (#2).</td>
+    </tr>
+    <tr>
+      <td>EARLY</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td>true</td>
+      <td>EARLY DATE/TIME in regular FileMan format for the inclusive lower bound onthe search.</td>
+    </tr>
+    <tr>
+      <td>LATE</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td>true</td>
+      <td>LATE DATE/TIME in regular FileMan format for the inclusive upper bound onthe search.</td>
+    </tr>
+    <tr>
+      <td>PERSON</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td>true</td>
+      <td>This is a pointer to the NEW PERSON FILE (#200) for the author of thedocuments to be retrieved.</td>
+    </tr>
+    <tr>
+      <td>OCCLIM</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td>true</td>
+      <td>This is the maximum number of documents to be retrieved in the currentquery.</td>
+    </tr>
+    <tr>
+      <td>SEQUENCE</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td>true</td>
+      <td>This is the sequence by reference date/time (A=ascending (OLDEST FIRST),D=descending (NEWEST FIRST)) in which the user would like the listreturned.</td>
+    </tr>
+    <tr>
+      <td>SHOWADD</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td>true</td>
+      <td>This BOOLEAN parameter determines whether addenda will be included in thereturn array, when their parent documents are identified by the searchcriteria, and vice versa. Also if SHOWADD is TRUE (1), the "+" at thebeginning of the return text will be omitted (since it offers onlyredundant information).</td>
+    </tr>
+    <tr>
+      <td>INCUND</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td>true</td>
+      <td>Optional Boolean parameter determines whether Undictated and Untranscribed documents should be returned along with Unsigneddocuments, when the CONTEXT is passed as 2.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="mumps-method-description">MUMPS Method Description</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Method</td>
+      <td><a href="http://code.osehra.org/dox/Routine_TIUSRVLO_source.html">CONTEXT^TIUSRVLO</a></td>
+    </tr>
+    <tr>
+      <td>Method Comment</td>
+      <td>main</td>
+    </tr>
+    <tr>
+      <td>Input Parameters</td>
+      <td>CLASS, CONTEXT, DFN, EARLY, LATE, PERSON, OCCLIM, SEQUENCE, SHOWADD, INCUND</td>
+    </tr>
+    <tr>
+      <td>First Comment</td>
+      <td><pre><code> --- Call with:  TIUY     - RETURN ARRAY pass by reference<br/>                 CLASS    - Pointer to TIU DOCUMENT DEFINITION #8925.1<br/>                 CONTEXT  - 1=All Signed (by PT),<br/>                          - 2="Unsigned (by PT&(AUTHOR!TANSCRIBER))<br/>                          - 3="Uncosigned (by PT&EXPECTED COSIGNER<br/>                          - 4="Signed notes (by PT&selected author)<br/>                          - 5="Signed notes (by PT&date range)<br/>                 DFN      - Pointer to Patient (#2)<br/>                [EARLY]   - FM date/time to begin search<br/>                [LATE]    - FM date/time to end search<br/>                [PERSON]  - Pointer to file 200 (DUZ if not passed)<br/>                [OCCLIM]  - Occurrence Limit (optional)<br/>                [SEQUENCE]- "A"=ascending (Regular date/time)<br/>                          - "D"=descending (Reverse date/time) (dflt)<br/>                [INCUND]  - Boolean: include undictated & untranscribed</code></pre></td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td><pre><code> S TIUY=$NA(^TMP("TIUR",$J))<br/> K @TIUY<br/> I $G(CONTEXT)'>0 Q<br/> I $G(CLASS)'>0 Q<br/> I $G(CONTEXT)=1 D STRT1^AWCMCPR1 ; TIU*1.0*181<br/> S:+$G(EARLY)'>0!(+$G(CONTEXT)=1) EARLY=0<br/> S:+$G(LATE)'>0!(+$G(CONTEXT)=1) LATE=5000000<br/> I EARLY>LATE D SWAP(.EARLY,.LATE)<br/> I $L(LATE,".")=1 D EXPRANGE(.EARLY,.LATE)<br/> S:+$G(PERSON)'>0 PERSON=DUZ<br/> S:$G(SEQUENCE)']"" SEQUENCE="D"<br/> S:+$G(OCCLIM)'>0 OCCLIM=9999999<br/> S DFN=+$G(DFN)<br/> S EARLY=9999999-EARLY,LATE=9999999-LATE ; CHANGE TO REVERSE DATES<br/> I CONTEXT=1!(CONTEXT=5) D  G CTXQ<br/> . D ACLPT(.TIUY,CLASS,DFN,LATE,EARLY,OCCLIM,SEQUENCE)<br/> I CONTEXT=2 D  G CTXQ<br/> . I DFN>0 D  Q<br/> . . D ACLAU(.TIUY,CLASS,PERSON,DFN,LATE,EARLY,SEQUENCE,$G(INCUND))<br/> . F  S DFN=$O(^TIU(8925,"ACLAU",CLASS,PERSON,DFN)) Q:DFN'>0  D ACLAU(.TIUY,CLASS,PERSON,DFN,LATE,EARLY,SEQUENCE,$G(INCUND))<br/> I CONTEXT=3 D  G CTXQ<br/> . I DFN>0 D  Q<br/> . . D ACLEC(.TIUY,CLASS,PERSON,DFN,LATE,EARLY,SEQUENCE)<br/> . F  S DFN=$O(^TIU(8925,"ACLEC",CLASS,PERSON,DFN)) Q:DFN'>0  D ACLEC(.TIUY,CLASS,PERSON,DFN,LATE,EARLY,SEQUENCE)<br/> I CONTEXT=4 D  G CTXQ<br/> . I DFN>0 D  Q<br/> . . ;VMP OIFO BAY PINES;ELR;TIU*1.0*194 REMOVED EXECUTION OF ACLSB & ADDED APTCL<br/> . . ;D ACLSB(.TIUY,CLASS,PERSON,DFN,LATE,EARLY,SEQUENCE)<br/> . . D APTCL^TIUSRVLP(.TIUY,CLASS,PERSON,DFN,LATE,EARLY,SEQUENCE)<br/> . F  S DFN=$O(^TIU(8925,"APTCL",DFN)) Q:DFN'>0  D APTCL^TIUSRVLP(.TIUY,CLASS,PERSON,DFN,LATE,EARLY,SEQUENCE)</code></pre></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="cprs">CPRS</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>File Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pascal File</td>
+      <td><a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rDCSumm.pas">rDCSumm.pas</a></td>
+    </tr>
+    <tr>
+      <td>Pascal File</td>
+      <td><a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas">rTIU.pas</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <br/><p style="font-size: 11px">Document generated on July 17th 2017, 6:14:43 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-07-17T18:14:48-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+      
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">Secure Read and Write Interface for VA VISTA</span>
+        <nav>
+            <a href="/demo">Demo</a>
+            <a href="/artifacts/developer">DevDocs</a>
+            <a href="https://github.com/vistadataproject">Github</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--problem"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Problem<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="problem">Problem</h1>
+
+<h3 id="patient-problems">Patient Problems</h3>
+
+<p>Contains patient problem information.</p>
+
+<p><strong>Fileman ID:</strong> 9000011</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Problem-9000011">Problem-9000011</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 36</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>DATE-TIME</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>DATE</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>UNKNOWN</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 2</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#Audits">Audits</a></td>
+      <td>Audits</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#Comments">Comments</a></td>
+      <td>Comments</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>name</strong><pre><code>  name</code></pre></td>
+      <td>STRING</td>
+      <td><em>GENERATED</em></td>
+      <td> </td>
+      <td>CREATE<br />UPDATE</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Unique Identifier</strong><pre><code>  uniqueId</code></pre></td>
+      <td>NUMERIC</td>
+      <td>nmbr</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Diagnosis</strong><pre><code>  diagnosis</code></pre></td>
+      <td>POINTER</td>
+      <td>diagnosis</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED<br />CREATE<br />UPDATE</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>icdd</strong><pre><code>  icdd</code></pre></td>
+      <td>STRING</td>
+      <td><em>GENERATED</em></td>
+      <td> </td>
+      <td>CREATE<br />UPDATE</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Patient</strong><pre><code>  patient</code></pre></td>
+      <td>POINTER</td>
+      <td><em>GENERATED</em></td>
+      <td>$PATIENTID</td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Date Last Modified</strong><pre><code>  lastModifiedDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_last_modified</td>
+      <td>$NOW</td>
+      <td>CREATE<br />UPDATE</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Provider Narrative</strong><pre><code>  providerNarrative</code></pre></td>
+      <td>POINTER</td>
+      <td>provider_narrative</td>
+      <td> </td>
+      <td>REQUIRED<br />CREATE<br />UPDATE</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Facility</strong><pre><code>  facility</code></pre></td>
+      <td>POINTER</td>
+      <td><em>GENERATED</em></td>
+      <td>$FACILITYID</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Date Entered</strong><pre><code>  enteredDate</code></pre></td>
+      <td>DATE</td>
+      <td>date_entered</td>
+      <td>$NOW</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Problem Status</strong><pre><code>  problemStatus</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>status</td>
+      <td> </td>
+      <td>REQUIRED<br />CREATE<br />UPDATE</td>
+      <td>0: <em><strong>ACTIVE</strong></em><br/>1: <em><strong>INACTIVE</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Date Of Onset</strong><pre><code>  onsetDate</code></pre></td>
+      <td>DATE</td>
+      <td>date_of_onset</td>
+      <td> </td>
+      <td>CREATE<br />UPDATE</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Problem</strong><pre><code>  problem</code></pre></td>
+      <td>POINTER</td>
+      <td>problem</td>
+      <td> </td>
+      <td>INDEXED<br />CREATE<br />UPDATE</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Condition</strong><pre><code>  condition</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>condition</td>
+      <td> </td>
+      <td>CREATE<br />UPDATE</td>
+      <td>0: <em><strong>TRANSCRIBED</strong></em><br/>1: <em><strong>PERMANENT</strong></em><br/>2: <em><strong>HIDDEN</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Entered By</strong><pre><code>  enteredBy</code></pre></td>
+      <td>POINTER</td>
+      <td>entered_by</td>
+      <td>$USERID</td>
+      <td>UPDATE</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Responsible Provider</strong><pre><code>  responsibleProvider</code></pre></td>
+      <td>POINTER</td>
+      <td>responsible_provider</td>
+      <td>$USERID</td>
+      <td>CREATE<br />UPDATE</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Date Resolved</strong><pre><code>  resolvedDate</code></pre></td>
+      <td>DATE</td>
+      <td>date_resolved</td>
+      <td> </td>
+      <td>UPDATE</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Clinic</strong><pre><code>  clinic</code></pre></td>
+      <td>POINTER</td>
+      <td>clinic</td>
+      <td> </td>
+      <td>CREATE<br />UPDATE</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Service Connected</strong><pre><code>  isServiceConnected</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>service_connected</td>
+      <td> </td>
+      <td>CREATE<br />UPDATE</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Agent Orange Exposure</strong><pre><code>  isAgentOrangeExposure</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>agent_orange_exposure</td>
+      <td> </td>
+      <td>CREATE<br />UPDATE</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ionizing Radiation Exposure</strong><pre><code>  isIonizingRadiationExposure</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>ionizing_radiation_exposure</td>
+      <td> </td>
+      <td>CREATE<br />UPDATE</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Persian Gulf Exposure</strong><pre><code>  isPersianGulfExposure</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>persian_gulf_exposure</td>
+      <td> </td>
+      <td>CREATE<br />UPDATE</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Priority</strong><pre><code>  priority</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>priority</td>
+      <td> </td>
+      <td>CREATE<br />UPDATE</td>
+      <td>0: <em><strong>ACUTE</strong></em><br/>1: <em><strong>CHRONIC</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Head And/Or Neck Cancer</strong><pre><code>  isHeadAndOrNeckCancer</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>head_and_or_neck_cancer</td>
+      <td> </td>
+      <td>CREATE<br />UPDATE</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Military Sexual Trauma</strong><pre><code>  isMilitarySexualTrauma</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>military_sexual_trauma</td>
+      <td> </td>
+      <td>CREATE<br />UPDATE</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Combat Veteran</strong><pre><code>  isCombatVeteran</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>combat_veteran</td>
+      <td> </td>
+      <td>CREATE<br />UPDATE</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Shipboard Hazard &amp; Defense</strong><pre><code>  isShipboardHazardDefense</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>shipboard_hazard__defense</td>
+      <td> </td>
+      <td>CREATE<br />UPDATE</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Comments</strong><pre><code>  comments</code></pre></td>
+      <td>OBJECT</td>
+      <td><em>GENERATED</em></td>
+      <td> </td>
+      <td>CREATE<br />UPDATE</td>
+      <td><a href="#Comments">Comments</a></td>
+    </tr>
+    <tr>
+      <td><strong>SNOMED CT Concept Value</strong><pre><code>  snomedCTConceptValue</code></pre></td>
+      <td> </td>
+      <td><em>GENERATED</em></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>SNOMED CT Concept Code</strong><pre><code>  snomedCTConceptCode</code></pre></td>
+      <td>STRING</td>
+      <td>snomed_ct_concept_code</td>
+      <td> </td>
+      <td>INDEXED<br />CREATE<br />UPDATE</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>SNOMED CT Designation Code</strong><pre><code>  snomedCTDesignationCode</code></pre></td>
+      <td>STRING</td>
+      <td>snomed_ct_designation_code</td>
+      <td> </td>
+      <td>CREATE<br />UPDATE</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Unique New Term Requested</strong><pre><code>  uniqueNewTermRequested</code></pre></td>
+      <td>ENUMERATION</td>
+      <td><em>GENERATED</em></td>
+      <td> </td>
+      <td>CREATE<br />UPDATE</td>
+      <td>0: <em><strong>false</strong></em><br/>1: <em><strong>true</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Unique Term Request Comment</strong><pre><code>  uniqueTermRequestComment</code></pre></td>
+      <td>STRING</td>
+      <td>unique_term_request_comment</td>
+      <td> </td>
+      <td>CREATE<br />UPDATE</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Date Of Interest</strong><pre><code>  interestDate</code></pre></td>
+      <td>DATE</td>
+      <td>date_of_interest</td>
+      <td>$NOW</td>
+      <td>CREATE<br />UPDATE</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Coding System</strong><pre><code>  codingSystem</code></pre></td>
+      <td>STRING</td>
+      <td>coding_system</td>
+      <td> </td>
+      <td>CREATE<br />UPDATE</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Removed</strong><pre><code>  isRemoved</code></pre></td>
+      <td>BOOLEAN</td>
+      <td><em>GENERATED</em></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>audits</strong><pre><code>  audits</code></pre></td>
+      <td>OBJECT</td>
+      <td><em>GENERATED</em></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#Audits">Audits</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-audits"><a name="Audits"></a>1. Audits</h3>
+
+<p><strong>Field ID:</strong> Audits</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>ID</strong><pre><code>  id</code></pre></td>
+      <td>NUMERIC</td>
+      <td><em>CUSTOM</em></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Problem</strong><pre><code>  problem</code></pre></td>
+      <td>POINTER</td>
+      <td><em>CUSTOM</em></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Field number</strong><pre><code>  fieldNumber</code></pre></td>
+      <td>NUMERIC</td>
+      <td><em>CUSTOM</em></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Modified Date</strong><pre><code>  modifiedDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td><em>CUSTOM</em></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Who modified</strong><pre><code>  whoModified</code></pre></td>
+      <td>POINTER</td>
+      <td><em>CUSTOM</em></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Old Value</strong><pre><code>  oldValue</code></pre></td>
+      <td>STRING</td>
+      <td><em>CUSTOM</em></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>New Value</strong><pre><code>  newValue</code></pre></td>
+      <td>STRING</td>
+      <td><em>CUSTOM</em></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Reason for change</strong><pre><code>  reason</code></pre></td>
+      <td>STRING</td>
+      <td><em>CUSTOM</em></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Requesting provider</strong><pre><code>  requestingProvider</code></pre></td>
+      <td>POINTER</td>
+      <td><em>CUSTOM</em></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Old Problem Entry</strong><pre><code>  oldProblemEntry</code></pre></td>
+      <td>STRING</td>
+      <td><em>CUSTOM</em></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-comments"><a name="Comments"></a>2. Comments</h3>
+
+<p><strong>Field ID:</strong> Comments</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Comment identifier</strong><pre><code>  commentId</code></pre></td>
+      <td>NUMERIC</td>
+      <td><em>CUSTOM</em></td>
+      <td> </td>
+      <td>REQUIRED<br />UPDATE</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Comment Text</strong><pre><code>  commentText</code></pre></td>
+      <td>STRING</td>
+      <td><em>CUSTOM</em></td>
+      <td> </td>
+      <td>UPDATE</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Date Commented Entered</strong><pre><code>  enteredDate</code></pre></td>
+      <td>DATE</td>
+      <td><em>CUSTOM</em></td>
+      <td>$NOW</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Entered By</strong><pre><code>  enteredBy</code></pre></td>
+      <td>STRING</td>
+      <td><em>CUSTOM</em></td>
+      <td>$USERID</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Facility</strong><pre><code>  facility</code></pre></td>
+      <td>POINTER</td>
+      <td><em>CUSTOM</em></td>
+      <td>$FACILITYID</td>
+      <td> </td>
+      <td><a href="../VDM/Location-9999999_06">Location-9999999_06</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on July 17th 2017, 6:14:47 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-07-17T18:14:48-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+      
+    </div>
+
+  </body>
+</html>

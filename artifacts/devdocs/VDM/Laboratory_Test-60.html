@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">Secure Read and Write Interface for VA VISTA</span>
+        <nav>
+            <a href="/demo">Demo</a>
+            <a href="/artifacts/developer">DevDocs</a>
+            <a href="https://github.com/vistadataproject">Github</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--vdm--laboratory_test-60"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">VDM</a> » Laboratory_Test-60<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="laboratory-test-60">Laboratory Test (60)</h1>
+<p>This is the file that holds the names and ordering, display of tests.</p>
+
+<p><strong>Global:</strong> ^LAB(60,</p>
+
+<p><strong>Domain:</strong> Non-Clinical</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>.01</td>
+      <td>This is the name of the Laboratory test you are defining in this entry.</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Test Cost</strong><pre><code>  test_cost</code></pre></td>
+      <td>1</td>
+      <td>Enter the cost of the test.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Synonym</strong><pre><code>  synonym</code></pre></td>
+      <td>2</td>
+      <td>This is another name for the test.  It may be the locally preferred name,<br />or a common misspelling.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Type</strong><pre><code>  type-3</code></pre></td>
+      <td>3</td>
+      <td>I == (Input) test can be ordered but not displayed by the computer.<br />O == (Output) test can be displayed but never ordered by itself.<br />B == (Both) test can be ordered and displayed.<br />N == (Neither) test is internal to lab only.</td>
+      <td>ENUMERATION</td>
+      <td>REQUIRED</td>
+      <td>BOTH: <em><strong>B</strong></em><br/>INPUT (CAN BE ORDERED): <em><strong>I</strong></em><br/>NEITHER: <em><strong>N</strong></em><br/>OUTPUT (CAN BE DISPLAYED): <em><strong>O</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Subscript</strong><pre><code>  subscript</code></pre></td>
+      <td>4</td>
+      <td>SUBSCRIPT is the pointer to the legal subscripts in the LR SUBSCRIPT file.  CH for Chem, Hem, Tox, Ser, Ria, etc., MI for Microbiology, BB for Blood Bank, EM for Electron Microscopy, SP for Surgical Pathology, CY for Cytology, AU for Autopsy.<br />This field is required for all orderable tests.<br /> Bank, EM for Electron Microscopy, SP for Surgical Pathology, CY for<br /> Cytology, AU for Autopsy.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>BLOOD BANK: <em><strong>BB</strong></em><br/>ELECTRON MICROSCOPY: <em><strong>EM</strong></em><br/>SURGICAL PATHOLOGY: <em><strong>SP</strong></em><br/>CYTOLOGY: <em><strong>CY</strong></em><br/>MICROBIOLOGY: <em><strong>MI</strong></em><br/>CHEM, HEM, TOX, SER, RIA, ETC.: <em><strong>CH</strong></em><br/>WORKLOAD: <em><strong>WK</strong></em><br/>AUTOPSY: <em><strong>AU</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Location (data Name)</strong><pre><code>  location_data_name</code></pre></td>
+      <td>5</td>
+      <td>LOCATION (DATA NAME) is the exact character representation of the <br />corresponding entry in the RESULTS file.  The input transform receives<br />from SUBSCRIPT of the previously defined piece, as well as the node and <br />piece information from the data definition file for the result.</td>
+      <td>STRING</td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Accession Area</strong><pre><code>  accession_area</code></pre></td>
+      <td>6</td>
+      <td>This is the appropriate institution/division this test is performed at.<br /> panel, all tests<br />on that panel will be assigned to the entered accession area.  If some of<br />the panel’s tests go to other accession areas, leave this field blank.<br />This will be the default accession area for this test.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Accession_Area-60_11">Accession_Area-60_11</a></td>
+    </tr>
+    <tr>
+      <td><strong>Unique Accession #</strong><pre><code>  unique_accession_number</code></pre></td>
+      <td>7</td>
+      <td>If this field contains YES then this test will have a unique accession number whenever it is accessioned, even though it may be ordered with other tests.  If the test may be performed with other tests on the same specimen, this field should be blank.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Unique Collection Sample</strong><pre><code>  unique_collection_sample</code></pre></td>
+      <td>8</td>
+      <td>This field should be entered only if the test is never done on any other<br />collection sample than the ONE designated in Select COLLECTION SAMPLE:<br />The system will then not bother asking if the sample is the correct one.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>1</strong></em><br/>true: <em><strong>0</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Lab Collection Sample</strong><pre><code>  lab_collection_sample</code></pre></td>
+      <td>9</td>
+      <td>This entry, for the given Laboratory Test, is THE collection sample brought<br />back on routine phlebotomy collection by the lab when they make rounds<br />on the wards.  If blank, the test CANNOT be ordered for routine collection.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Collection_Sample-62">Collection_Sample-62</a></td>
+    </tr>
+    <tr>
+      <td><strong>Required Test</strong><pre><code>  required_test</code></pre></td>
+      <td>10</td>
+      <td>This field should be YES if this is a mandatory test, i.e., if no data is reported, the default status is “pending”.<br /> reported, the default status is “pending”.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Field</strong><pre><code>  field</code></pre></td>
+      <td>13</td>
+      <td>Data Dictionary field in file 63.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Procedure (snomed)</strong><pre><code>  procedure_snomed</code></pre></td>
+      <td>14</td>
+      <td>This is the SNOMED name or code of this test.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Procedure_Field-61_5</td>
+    </tr>
+    <tr>
+      <td><strong>*quick Index</strong><pre><code>  quick_index</code></pre></td>
+      <td>15</td>
+      <td>No longer used.  Will be deleted after this version.<br />index list.  Enter YES to include, @ to delete.</td>
+      <td>BOOLEAN</td>
+      <td>DEPRECATED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Extra Labels</strong><pre><code>  extra_labels</code></pre></td>
+      <td>16</td>
+      <td>If blank, the minimum number of labels (accounting for required volume) is<br />generated.  Enter a positive number for extra copies, -1 if NO label is<br />desired.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Highest Urgency Allowed</strong><pre><code>  highest_urgency_allowed</code></pre></td>
+      <td>17</td>
+      <td>The highest urgency allowed must be stored here.<br />The smaller the number, the more urgent.</td>
+      <td>POINTER</td>
+      <td>REQUIRED</td>
+      <td>Urgency-62_05</td>
+    </tr>
+    <tr>
+      <td><strong>Forced Urgency</strong><pre><code>  forced_urgency</code></pre></td>
+      <td>18</td>
+      <td>This specifies the default urgency status of this test.<br />It points to the URGENCY file.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Urgency-62_05</td>
+    </tr>
+    <tr>
+      <td><strong>Print Name</strong><pre><code>  print_name</code></pre></td>
+      <td>51</td>
+      <td>Default test heading for cumulative results reports.  (May be different in LAB REPORTS file 64.5.)<br />in LAB REPORTS file 64.5)</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Reserved</strong><pre><code>  reserved</code></pre></td>
+      <td>52</td>
+      <td>Reserved for future use.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Print Code</strong><pre><code>  print_code</code></pre></td>
+      <td>53</td>
+      <td>Represents MUMPS code for extraction or justification of the value that<br />is in the file.  It’s particularly useful for displaying abbreviated<br />information for sets.  It could be used to append trailing zeros after a<br />decimal point.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Pretty Print Entry</strong><pre><code>  pretty_print_entry</code></pre></td>
+      <td>54</td>
+      <td>This is the Pretty Print Routine (see next field) line entry point.<br />Some programs have more than one entry to give a “special” display.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Pretty Print Routine</strong><pre><code>  pretty_print_routine</code></pre></td>
+      <td>55</td>
+      <td>If no entry is made, (and the test is type ‘O’utput or ‘B’oth), display<br />output from the [LRGEN] menu option is a general cumulative.  With a<br />program name here, [LRGEN] instead runs the alternate program for display.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Print Order</strong><pre><code>  print_order</code></pre></td>
+      <td>56</td>
+      <td>This is the print order of the test within its accession area.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>National VA Lab Code</strong><pre><code>  national_va_lab_code</code></pre></td>
+      <td>64</td>
+      <td>This field is used to map tests in file 60 to the VA National<br />Lab codes found in file 64.</td>
+      <td>POINTER</td>
+      <td>INDEXED</td>
+      <td>Wkld_Code-64</td>
+    </tr>
+    <tr>
+      <td><strong>Result Nlt Code</strong><pre><code>  result_nlt_code</code></pre></td>
+      <td>64.1</td>
+      <td>This is the workload procedure code associated with this test.  It is used<br />in compiling laboratory workload statistics.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Wkld_Code-64</td>
+    </tr>
+    <tr>
+      <td><strong>Catalog Item</strong><pre><code>  catalog_item</code></pre></td>
+      <td>64.2</td>
+      <td>This field is used to indicate that this entry is to be included in the<br />Electronic Catalog.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Edit Code</strong><pre><code>  edit_code</code></pre></td>
+      <td>98</td>
+      <td>Points to EXECUTE CODE file.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Execute_Code-62_07</td>
+    </tr>
+    <tr>
+      <td><strong>*batch Data Code</strong><pre><code>  batch_data_code</code></pre></td>
+      <td>99.1</td>
+      <td>No longer used.  Will be deleted after 1/89.</td>
+      <td>POINTER</td>
+      <td>DEPRECATED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Execute On Data Review</strong><pre><code>  execute_on_data_review</code></pre></td>
+      <td>99.2</td>
+      <td>At the time a test or panel of tests is reviewed, the execute code is run.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Execute_Code-62_07</td>
+    </tr>
+    <tr>
+      <td><strong>Site/specimen</strong><pre><code>  site_specimen</code></pre></td>
+      <td>100</td>
+      <td>Processing specimen type for each entry in the Lab Collection Sample field.<br />Example:  Sodium can be determined on serum and urine.  Entries in <br />this field are not appropriate (or even used) if the test is a panel of<br /> tests.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Site_specimen-60_01">Site_specimen-60_01</a></td>
+    </tr>
+    <tr>
+      <td><strong>General Processing Inst.</strong><pre><code>  general_processing_inst</code></pre></td>
+      <td>110</td>
+      <td>This may include any processing instructions pertinent to this test.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lab Test Included In Panel</strong><pre><code>  lab_test_included_in_panel</code></pre></td>
+      <td>200</td>
+      <td>Enter only if this is a panel of other tests, e.g. if the “Laboratory Test”<br />is ELECTROLYTES, the entries here might be, NA, CL, K, CO2.  If it’s an<br />ADMIT PROFILE, they might be ELECTROLYTES, LIVER FUNCTION, CARDIAC ENZYMES.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Lab_Test_Included_In_Panel-60_02">Lab_Test_Included_In_Panel-60_02</a></td>
+    </tr>
+    <tr>
+      <td><strong>Collection Sample</strong><pre><code>  collection_sample</code></pre></td>
+      <td>300</td>
+      <td>Enter the appropriate collection sample(s) for standard processing in the<br />lab.  These are the common names that the phlebotomists and ward personnel<br />would recognize.  The first entry is the “default” collection sample.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Collection_Sample-60_03">Collection_Sample-60_03</a></td>
+    </tr>
+    <tr>
+      <td><strong>General Ward Instructions</strong><pre><code>  general_ward_instructions</code></pre></td>
+      <td>310</td>
+      <td>Text to be seen by the ward each time the test is ordered regardless of<br />the type of collection sample.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Required Comment</strong><pre><code>  required_comment</code></pre></td>
+      <td>320</td>
+      <td>Points to EXECUTE CODE file.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Execute_Code-62_07</td>
+    </tr>
+    <tr>
+      <td><strong>Data Name</strong><pre><code>  data_name</code></pre></td>
+      <td>400</td>
+      <td>If the test is a panel, skip this entry!  If it is an individual test,<br />AND IS PART OF THE CHEM, HEM, TOX, SER, RIA, ETC. area, in order to<br />be able to ENTER results, must have an entry!  Micro, Blood Bank,<br />Anatomic Path, excluded.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Lab_Data-63</td>
+    </tr>
+    <tr>
+      <td><strong>Culture Id Prefix</strong><pre><code>  culture_id_prefix</code></pre></td>
+      <td>412</td>
+      <td>Used by the Vitek to make the accession number unique for down load.<br />  This number should be zero to nine. This number is appended to the <br />front of the accession number.<br />   If there is no entry in this field, this test will not be downloaded.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Verify Wkld Code</strong><pre><code>  verify_wkld_code</code></pre></td>
+      <td>500</td>
+      <td>The College of American Pathologists Workload codes for<br /> the test/procedure are entered here.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Verify_Wkld_Code-60_12">Verify_Wkld_Code-60_12</a></td>
+    </tr>
+    <tr>
+      <td><strong>Accession Wkld Code</strong><pre><code>  accession_wkld_code</code></pre></td>
+      <td>500.1</td>
+      <td>This subfile holds the WKLD codes to be credited during the accession<br />process.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Accession_Wkld_Code-60_13">Accession_Wkld_Code-60_13</a></td>
+    </tr>
+    <tr>
+      <td><strong>*ask Amis/cap Codes</strong><pre><code>  ask_amis_cap_codes</code></pre></td>
+      <td>501</td>
+      <td>This field is not longer used by AMIS/WORKLOAD. It will be made obsolete with<br />V5.2 and will be deleted in later release. Consult the section on workload<br />in your implementation guide.</td>
+      <td>BOOLEAN</td>
+      <td>DEPRECATED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Combine Test During Order</strong><pre><code>  combine_test_during_order</code></pre></td>
+      <td>503</td>
+      <td>This field works in conjunction with combine test field in 69.9<br />If you do not want this to be combined with any other test answer<br />  NO — A NULL ANSWER MEANS YES</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>YES: <em><strong>0</strong></em><br/>NO: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Cis Test Code</strong><pre><code>  cis_test_code</code></pre></td>
+      <td>504</td>
+      <td>This field is used by Clinical Information System such as those<br />found in MICU. This field is not used with the laboratory package it<br />self but is a special field for interface with external system computer<br />systems.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Site Notes Date</strong><pre><code>  site_notes_date</code></pre></td>
+      <td>505</td>
+      <td>This is the date of this particular note.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Site_Notes_Date-60_0505">Site_Notes_Date-60_0505</a></td>
+    </tr>
+    <tr>
+      <td><strong>Default Site/specimen Cpt</strong><pre><code>  default_site_specimen_cpt</code></pre></td>
+      <td>506</td>
+      <td>If a CPT cannot be determined by the SPECIMEN CPT (#96) field within the <br />SITE/SPECIMEN (#100) multiple, or by the HCPCS CODE (#507) field, or by<br />locating an active CPT Code in the WKLD CODE file (#64) entry pointed to<br />by the NATIONAL VA LAB CODE (#64) field, then the CPT in this field is<br />the default.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Cpt-81">Cpt-81</a></td>
+    </tr>
+    <tr>
+      <td><strong>Hcpcs Code</strong><pre><code>  hcpcs_code</code></pre></td>
+      <td>507</td>
+      <td>HCFA Common Procedure Coding System (HCPCS) is a coding system that is <br />composed of Level I codes (CPT codes), Level II codes (national codes),<br />and Level III codes (local codes). Level I (CPT) codes are five digit<br />numeric codes that describe procedures and tests. CPT codes are developed <br />and maintained by the AMA with annual updates. Level II (national) codes <br />are five digit alpha numeric codes that describe pharmaceuticals,<br />supplies, procedures, tests and services. Level II codes are developed and<br />maintained by CMS with quarterly updates. Level III (local) codes are five<br />digit alpha numeric codes that are being phased out by the fiscal <br />intermediaries.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Cpt-81">Cpt-81</a></td>
+    </tr>
+    <tr>
+      <td><strong>Ama Compliant/billable Panel</strong><pre><code>  ama_compliant_billable_panel</code></pre></td>
+      <td>508</td>
+      <td>If this panel test is an AMA compliant or otherwise billable panel,<br />enter a ‘Yes’ in this field.  If this field is set to ‘Yes’ and a valid <br />CPT code is on file, the CPT code for the panel will be sent to PCE for <br />billing purposes as a bundled panel.<br /> <br />If this field is set to ‘No’, the panel will be unbundled into it’s <br />individual atomic tests and the CPT codes for those atomic tests will be <br />sent to PCE for billing purposes.<br /> <br />Note: This field is only functional for a panel test. This field is <br />ignored for an atomic test.<br /> <br />Refer to the Clinical Indicator Data Capture (CIDC) implementation<br />guide for further instruction for managing this field.<br /></td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>1</strong></em><br/>true: <em><strong>0</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-files">Sub-Files</h2>
+<h3 id="accession-area-6011"><a name="Accession_Area-60_11"></a>Accession Area (60.11)</h3>
+
+<dl>
+<dt>ID</dt><dd>Accession_Area-60_11</dd></dl>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Institution</strong><pre><code>  institution</code></pre></td>
+      <td>.01</td>
+      <td>This is the appropriate institution/division this test is performed at.<br />If this test is part of a panel that does not have an accession area<br />defined for the panel, that panel will be expanded based on the<br />institution/division the program is operating under.  I.e., if the<br />institution doesn’t find a match, the panel test ordered will not<br />include this test.</td>
+      <td>POINTER</td>
+      <td>REQUIRED</td>
+      <td><a href="Institution-4">Institution-4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Accession Area</strong><pre><code>  accession_area</code></pre></td>
+      <td>1</td>
+      <td>This is the appropriate accession area for this test.  If the test is a<br />panel, all tests on that panel will be assigned to the entered accession<br />area.  If some of the panel’s tests go to other accession areas, leave this<br />field blank.  This will be the default accession area for this test.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Accession-68">Accession-68</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="sitespecimen-6001"><a name="Site_specimen-60_01"></a>Site/specimen (60.01)</h3>
+
+<dl>
+<dt>ID</dt><dd>Site_specimen-60_01</dd></dl>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Site/specimen</strong><pre><code>  site_specimen</code></pre></td>
+      <td>.01</td>
+      <td>Processing specimen type for each entry in the Lab Collection Sample field.<br />Example:  Sodium can be determined on serum and urine.<br />To enter a Site/specimen, a Data name must be entered.</td>
+      <td>POINTER</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="Topography_Field-61">Topography_Field-61</a></td>
+    </tr>
+    <tr>
+      <td><strong>Reference Low</strong><pre><code>  reference_low</code></pre></td>
+      <td>1</td>
+      <td>This is the user entered reference low value for this test.<br />If both the low and high are defined it will print in this manner:<br />        low : 10<br />        high : 50<br />If only the low is defined and it is numeric it will print in this<br />manner:<br />        low: 10<br />If only the low is defined and it is alphanumeric it will print in <br />this manner:<br />        NORMAL<br />If only the high is defined and it is numeric it will print in this <br />manner:<br />        high: 50<br />If only the high is defined and it is alphanumeric it will print in<br />this manner:<br />        &gt;1000</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Reference High</strong><pre><code>  reference_high</code></pre></td>
+      <td>2</td>
+      <td>This is the user entered reference high value for this test.<br />If both the low and high are defined it will print in this manner:<br />        low : 10<br />        high : 50<br />If only the low is defined and it is numeric it will print in this<br />manner: <br />        low: 10<br />If only the low is defined and it is alphanumeric it will print in <br />this manner:<br />        NORMAL<br />If only the high is defined and it is numeric it will print in this <br />manner:<br />        high: 50<br />If only the high is defined and it is alphanumeric it will print in<br />this manner:<br />        &gt;1000</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Critical Low</strong><pre><code>  critical_low</code></pre></td>
+      <td>3</td>
+      <td>This is the user entered critical low value for this test.<br />Used to flag results.<br />If both the low and high are defined it will print in this manner:<br />        low : 10<br />        high : 50<br />If only the low is defined and it is numeric it will print in this<br />manner: <br />        low: 10<br />If only the low is defined and it is alphanumeric it will print in <br />this manner:<br />        NORMAL<br />If only the high is defined and it is numeric it will print in this <br />manner:<br />        high: 50<br />If only the high is defined and it is alphanumeric it will print in<br />this manner:<br />        &gt;1000</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Critical High</strong><pre><code>  critical_high</code></pre></td>
+      <td>4</td>
+      <td>This is the user entered critical high value of this test.  Used to flag results.<br />If both the low and high are defined it will print in this manner:<br />        low : 10<br />        high : 50<br />If only the low is defined and it is numeric it will print in this<br />manner: <br />        low: 10<br />If only the low is defined and it is alphanumeric it will print in <br />this manner:<br />        NORMAL<br />If only the high is defined and it is numeric it will print in this <br />manner:<br />        high: 50<br />If only the high is defined and it is alphanumeric it will print in<br />this manner:<br />        &gt;1000</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Interpretation</strong><pre><code>  interpretation</code></pre></td>
+      <td>5.5</td>
+      <td>Enter any remark to accompany EVERY test result. These remarks may be edited and formatted with the FileMan text editor.  The text may be other range information, special conditions, etc.<br />edited and formatted with the FileMan text editor.<br />The text may be other range information, special conditions, etc.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Units</strong><pre><code>  units</code></pre></td>
+      <td>6</td>
+      <td>UNITS represents such things as grams, number of items per cubic millimeter,<br />or microliter.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Type Of Delta Check</strong><pre><code>  type_of_delta_check</code></pre></td>
+      <td>7</td>
+      <td>Points to DELTA CHECK file.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Delta_Checks-62_1</td>
+    </tr>
+    <tr>
+      <td><strong>Delta Value</strong><pre><code>  delta_value</code></pre></td>
+      <td>8</td>
+      <td>DELTA VALUE is the value that is passed to the Delta Check Code.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Default Value</strong><pre><code>  default_value</code></pre></td>
+      <td>9</td>
+      <td>Leave blank or enter the most common (say, &gt;80% of the time) response for<br />the test.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Therapeutic Low</strong><pre><code>  therapeutic_low</code></pre></td>
+      <td>9.2</td>
+      <td>This is the low end value of the therapeutic range.  Used to flag results.<br />If both the low and high are defined it will print in this manner:<br />        low : 10<br />        high : 50<br />If only the low is defined and it is numeric it will print in this<br />manner: <br />        low: 10<br />If only the low is defined and it is alphanumeric it will print in <br />this manner:<br />        NORMAL<br />If only the high is defined and it is numeric it will print in this <br />manner:<br />        high: 50<br />If only the high is defined and it is alphanumeric it will print in<br />this manner:<br />        &gt;1000</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Therapeutic High</strong><pre><code>  therapeutic_high</code></pre></td>
+      <td>9.3</td>
+      <td>This is the high end value of the therapeutic range.  Used to flag results.<br />If both the low and high are defined it will print in this manner:<br />        low : 10<br />        high : 50<br />If only the low is defined and it is numeric it will print in this<br />manner: <br />        low: 10<br />If only the low is defined and it is alphanumeric it will print in <br />this manner:<br />        NORMAL<br />If only the high is defined and it is numeric it will print in this <br />manner:<br />        high: 50<br />If only the high is defined and it is alphanumeric it will print in<br />this manner:<br />        &gt;1000</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*amis/rcs 14-4</strong><pre><code>  amis_rcs_144</code></pre></td>
+      <td>10</td>
+      <td>No longer used.  Will be deleted after this version</td>
+      <td>POINTER</td>
+      <td>DEPRECATED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Use For Reference Testing</strong><pre><code>  use_for_reference_testing</code></pre></td>
+      <td>13</td>
+      <td>Indicates if the reference ranges and units associated with this<br />specimen type can be used when manually entering results of testing<br />performed at another laboratory.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>1</strong></em><br/>true: <em><strong>0</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Foreign Computer System</strong><pre><code>  foreign_computer_system</code></pre></td>
+      <td>20</td>
+      <td>Reserved for future use. Do not use.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Foreign_Computer_System-60_2">Foreign_Computer_System-60_2</a></td>
+    </tr>
+    <tr>
+      <td><strong>Loinc Code</strong><pre><code>  loinc_code</code></pre></td>
+      <td>95.3</td>
+      <td>This field contains the pointer to the LAB LOINC (#95.3) file.</td>
+      <td>POINTER</td>
+      <td>INDEXED</td>
+      <td>Lab_Loinc-95_3</td>
+    </tr>
+    <tr>
+      <td><strong>Specimen Cpt</strong><pre><code>  specimen_cpt</code></pre></td>
+      <td>96</td>
+      <td> </td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Specimen_Cpt-60_196">Specimen_Cpt-60_196</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="foreign-computer-system-602"><a name="Foreign_Computer_System-60_2"></a>Foreign Computer System (60.2)</h3>
+
+<dl>
+<dt>ID</dt><dd>Foreign_Computer_System-60_2</dd></dl>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Foreign Computer System</strong><pre><code>  foreign_computer_system</code></pre></td>
+      <td>.01</td>
+      <td>Reserved for future use. Do not use.</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Foreign Item #</strong><pre><code>  foreign_item_number</code></pre></td>
+      <td>1</td>
+      <td>RESERVED FOR FUTURE USE</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Integer</strong><pre><code>  integer</code></pre></td>
+      <td>2</td>
+      <td>RESERVED FOR FUTURE USE</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Unit Conversion</strong><pre><code>  unit_conversion</code></pre></td>
+      <td>3</td>
+      <td>RESERVED FOR FUTURE USE</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="specimen-cpt-60196"><a name="Specimen_Cpt-60_196"></a>Specimen Cpt (60.196)</h3>
+
+<dl>
+<dt>ID</dt><dd>Specimen_Cpt-60_196</dd></dl>
+
+<h4 id="properties-4">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Specimen Cpt</strong><pre><code>  specimen_cpt</code></pre></td>
+      <td>.01</td>
+      <td>A CPT associated with the specimen</td>
+      <td>POINTER</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="Cpt-81">Cpt-81</a></td>
+    </tr>
+    <tr>
+      <td><strong>Active Date (csv)</strong><pre><code>  active_date_csv</code></pre></td>
+      <td>1</td>
+      <td>This the active date of the SPECIMEN CPT for CSV purposes.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="lab-test-included-in-panel-6002"><a name="Lab_Test_Included_In_Panel-60_02"></a>Lab Test Included In Panel (60.02)</h3>
+
+<dl>
+<dt>ID</dt><dd>Lab_Test_Included_In_Panel-60_02</dd></dl>
+
+<h4 id="properties-5">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Number</strong><pre><code>  number</code></pre></td>
+      <td>.001</td>
+      <td>This number signifies the order the tests are displayed in the Load/work<br />lists under each appropriate accession, in the Enter/Edit options, and<br />in the interim reports.</td>
+      <td>IEN</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lab Test</strong><pre><code>  lab_test</code></pre></td>
+      <td>.01</td>
+      <td>If the entry is to be changed or the number sequence is to be changed, the<br />entry must be first deleted to be moved to a different position in the<br />panel.</td>
+      <td>POINTER</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="Laboratory_Test-60">Laboratory_Test-60</a></td>
+    </tr>
+    <tr>
+      <td><strong>Ap Multiply Factor</strong><pre><code>  ap_multiply_factor</code></pre></td>
+      <td>.02</td>
+      <td>For workload if procedure is counted more than once the number<br /> of times counted is entered here.<br /> Used only for cytology workload and labels.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="collection-sample-6003"><a name="Collection_Sample-60_03"></a>Collection Sample (60.03)</h3>
+
+<dl>
+<dt>ID</dt><dd>Collection_Sample-60_03</dd></dl>
+
+<h4 id="properties-6">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Collection Sample</strong><pre><code>  collection_sample</code></pre></td>
+      <td>.01</td>
+      <td>Enter the appropriate collection sample(s) for standard processing in the lab.  These are the common names the phlebotomists and ward personnel use and would recognize.  The first entry will be the “default<br />” collection sample.  Points to the COLLECTION SAMPLE file.</td>
+      <td>POINTER</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="Collection_Sample-62">Collection_Sample-62</a></td>
+    </tr>
+    <tr>
+      <td><strong>Form Name/number</strong><pre><code>  form_name_number</code></pre></td>
+      <td>1</td>
+      <td>The identification of the proper Lab slip for this test.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Min Vol (in Mls.)</strong><pre><code>  min_vol_in_mls</code></pre></td>
+      <td>3</td>
+      <td>Number of milliliters required to perform the test.  This number is summed<br />during the creation of the routine phlebotomy collection list to compute<br />the minimum number of samples to collect.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Max. Order Freq.</strong><pre><code>  max_order_freq</code></pre></td>
+      <td>4</td>
+      <td>Use this field to control how often a test may be ordered within a certain <br />time period (# of days). The entry will then force the system to remind<br />the ordering person that the order they are placing for this test exceeds<br />the maximum order frequency.  If you enter 3, the test may only be ordered<br />once every three days.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Single Day Max Order Freq</strong><pre><code>  single_day_max_order_freq</code></pre></td>
+      <td>4.5</td>
+      <td>Enter a number specifying the maximum number of times a test can be ordered<br />in a single day.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ward Remarks</strong><pre><code>  ward_remarks</code></pre></td>
+      <td>5</td>
+      <td>Text to be seen by the ward each time the test is ordered for a specific<br />collection sample.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>**Lab Processing Instructions **<pre><code>  lab_processing_instructions_</code></pre></td>
+      <td>6</td>
+      <td>Text seen by the lab as the test is received in the accession room.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Required Comment</strong><pre><code>  required_comment</code></pre></td>
+      <td>7</td>
+      <td>Enter a comment or statement that may be required in regards to this test.<br />Points to EXECUTE CODE file.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Execute_Code-62_07</td>
+    </tr>
+    <tr>
+      <td><strong>Sample Wkld Code</strong><pre><code>  sample_wkld_code</code></pre></td>
+      <td>500</td>
+      <td>If there is a particular WKLD code which is associate the assaying<br />this type of specimen, enter that WKLD code here. For example<br />spinal fluid electrophoresis, this specimen must be concentrated<br />before the procedure can be performed.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Sample_Wkld_Code-60_14">Sample_Wkld_Code-60_14</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="sample-wkld-code-6014"><a name="Sample_Wkld_Code-60_14"></a>Sample Wkld Code (60.14)</h3>
+
+<dl>
+<dt>ID</dt><dd>Sample_Wkld_Code-60_14</dd></dl>
+
+<h4 id="properties-7">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Sample Wkld Code</strong><pre><code>  sample_wkld_code</code></pre></td>
+      <td>.01</td>
+      <td>If this test has a sample type which should have a specific<br />WKLD code associate with it, enter the WKLD code here.<br /> Example: Urine electrophoresis always has a urine protein performed.<br />enter the WKLD code for that procedure here. It will only be counted<br />for collection sample of urine.<br />  Note: This field is similar to Verify WKLD code sub-file except for<br />the treatment of the suffix and collection sample specific.</td>
+      <td>POINTER</td>
+      <td>REQUIRED</td>
+      <td>Wkld_Code-64</td>
+    </tr>
+    <tr>
+      <td><strong>Sample Wkld Code #</strong><pre><code>  sample_wkld_code_number</code></pre></td>
+      <td>1</td>
+      <td>This field contains the actual WKLD Code number.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Test Multiply Factor</strong><pre><code>  test_multiply_factor</code></pre></td>
+      <td>2</td>
+      <td>If this particular WKLD code should be multiplied in order to receive<br />proper count. Enter that number here. The default is 1.<br />  NOTE: This field is identical the field found in the Verify<br />WKLD code field sub file.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="verify-wkld-code-6012"><a name="Verify_Wkld_Code-60_12"></a>Verify Wkld Code (60.12)</h3>
+
+<dl>
+<dt>ID</dt><dd>Verify_Wkld_Code-60_12</dd></dl>
+
+<h4 id="properties-8">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Verify Wkld Code</strong><pre><code>  verify_wkld_code</code></pre></td>
+      <td>.01</td>
+      <td>The WKLD codes for this test are entered here.<br />Enter only the WKLD codes for the procedures that are done at your<br />hospital for this test.</td>
+      <td>POINTER</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td>Wkld_Code-64</td>
+    </tr>
+    <tr>
+      <td><strong>Verify Wkld Code #</strong><pre><code>  verify_wkld_code_number</code></pre></td>
+      <td>1</td>
+      <td>This contains the WKLD codes for this test.</td>
+      <td>STRING</td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Test Multiply Factor</strong><pre><code>  test_multiply_factor</code></pre></td>
+      <td>2</td>
+      <td>If this WKLD code should be counted more than once, enter the number of<br />times it should be counted to get the total correct workload. If the field<br />is blank, then it will automatically be counted 1 time.<br />   Note: In version prior to V5.2, this field was named the Default Yes<br />field. That field is not used with V5.2 and greater.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Protect Suffix</strong><pre><code>  protect_suffix</code></pre></td>
+      <td>3</td>
+      <td>If you wish to prevent the suffix from being converted to another suffix<br />during verification. Enter YES in this field.<br />  Codes which do not have a .0000 suffix need not be protected. They are<br />not changed during verification.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>true: <em><strong>1</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="accession-wkld-code-6013"><a name="Accession_Wkld_Code-60_13"></a>Accession Wkld Code (60.13)</h3>
+
+<dl>
+<dt>ID</dt><dd>Accession_Wkld_Code-60_13</dd></dl>
+
+<h4 id="properties-9">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Accession Wkld Code</strong><pre><code>  accession_wkld_code</code></pre></td>
+      <td>.01</td>
+      <td>Enter the WKLD code used to identify the accession workload for<br />this test. This field can be also used for prep procedures, ie<br />inoculating culture plates. This WKLD code count will appear<br />on the date the specimen was accessioned into the laboratory.<br />  This field functions in the same manner as the WKLD codes, <br />except it doesn’t require a completion date to be counted.<br /> For CYTOLOGY SCREENING WORKLOAD the appropriate WKLD codes are<br /> entered here.</td>
+      <td>POINTER</td>
+      <td>REQUIRED</td>
+      <td>Wkld_Code-64</td>
+    </tr>
+    <tr>
+      <td><strong>Accession Wkld Code #</strong><pre><code>  accession_wkld_code_number</code></pre></td>
+      <td>1</td>
+      <td>This field contains the actual WKLD Code number.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Test Multiply Factor</strong><pre><code>  test_multiply_factor</code></pre></td>
+      <td>2</td>
+      <td>If this WKLD code should be counted more than once, enter that number<br />here. The default is 1.<br />  This field is identical to the multiply field in the verification WKLD<br />code sub file.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="site-notes-date-600505"><a name="Site_Notes_Date-60_0505"></a>Site Notes Date (60.0505)</h3>
+
+<dl>
+<dt>ID</dt><dd>Site_Notes_Date-60_0505</dd></dl>
+
+<h4 id="properties-10">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Site Notes Date</strong><pre><code>  site_notes_date</code></pre></td>
+      <td>.01</td>
+      <td>Date of the note.</td>
+      <td>DATE-TIME</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Text</strong><pre><code>  text</code></pre></td>
+      <td>1</td>
+      <td>Actual text of the note for this test.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on July 17th 2017, 6:14:41 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-07-17T18:14:48-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+      
+    </div>
+
+  </body>
+</html>
