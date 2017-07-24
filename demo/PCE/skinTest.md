@@ -35,7 +35,11 @@ Select PPD TUBERCULIN and put comments to note this operation. Click OK and an a
 The RPC Emulator implements the RPC call with an MVDM ORWPCE SAVE operation. After creating and updating appropriate information in VISTA, the nodeVISTA manager will dispatch this create event.
 ![](../images/PCE/SkinTestRpc.png)
 
-This new skin test is now in CPRS with its associated visit,tiu Document and provider records.
+This new skin test is now in CPRS with its associated outpatient encounter, visit,tiu Document and provider records.
+![](../images/PCE/visit.png)
+
+Note the skin test has the same visit time as provider and tiu document.
 ![](../images/PCE/vSkinTest.png)
+Note the provider has the same visit time as skin test and tiu document.
 ![](../images/PCE/vProvider.png)
 
