@@ -21,7 +21,21 @@ Skin test is a subtab under Patient Care Encounter (PCE) progress note. An PCE n
 Once a new visit is set, click New Note at the bottom left cornor and select a title for the progress note.
 ![](../images/PCE/newNote.png)
 
+Now switching over to the RPC Events Tab of the nodeVISTA Management Client, notice the TIU CREATE RECORD RPC call. This call may be emulated but we will focus on emulating skin test below in this demo. 
+![](../images/PCE/tiuCreateRecord.png)
+
 ## Create a Skin Test
 
 Once a new progress note is created, textual notes may be entered here (e.g. "new skin test was placed" in the screenshot). Click Encounter above the New Note and click "Other Skin Test" button. A list of skin test options are displayed.  
 ![](../images/PCE/newSkinTest.png)
+
+Select PPD TUBERCULIN and put comments to note this operation. Click OK and an alert displays asking if you are the Primary Provider for this Encounter. Click Yes to save this skin test.
+![](../images/PCE/saveSkinTest.png)
+
+The RPC Emulator implements the RPC call with an MVDM ORWPCE SAVE operation. After creating and updating appropriate information in VISTA, the nodeVISTA manager will dispatch this create event.
+![](../images/PCE/SkinTestRpc.png)
+
+This new skin test is now in CPRS with its associated visit,tiu Document and provider records.
+![](../images/PCE/vSkinTest.png)
+![](../images/PCE/vProvider.png)
+
