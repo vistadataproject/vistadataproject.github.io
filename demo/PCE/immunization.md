@@ -32,7 +32,7 @@ Once a new progress note is created, click Encounter above the New Note and then
 Select appropriate modifier(s) and enter optional comments. Click OK and an alert display asking if you are the Primary Provider for this Encounter. Click Yes to save this procedure.
 ![](../images/PCE/saveImm.png)
 
-The RPC Emulator implements the RPC call with an MVDM ORWPCE SAVE operation. After creating and updating appropriate information in VISTA, the nodeVISTA manager will dispatch this create event.
+The RPC Emulator implements the RPC call with an ORWPCE SAVE operation. After creating and updating appropriate information in VISTA, the nodeVISTA manager will dispatch this create event.
 ![](../images/PCE/immRpc.png)
 
 This new procedure is now in CPRS with its associated outpatient encounter, visit,tiu Document and provider records.
@@ -42,4 +42,8 @@ Note the procedure has the same visit time as provider and tiu document.
 ![](../images/PCE/vImm.png)
 Note the provider has the same visit time as skin test and tiu document.
 ![](../images/PCE/vProviderImm.png)
+
+## Read the Immunization
+The RPC emulator implements the RPC call with an ORWPCE PCE4NOTE operation. 
+![](../images/PCE/readImm.png)
 
