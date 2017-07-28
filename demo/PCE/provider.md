@@ -13,27 +13,36 @@ Running the following demonstrates that re-housing the old RPC interface over a 
 
 A visit must be created before editing a note. Select an Encounter Provider (Alexander, Robert) and Visit Location (VISTA HEALTH CARE). Date/Time of Visit is default to NOW. 
 
-![](../images/PCE/newVisit.png)
+![](../images/PCE/newVisitProv.png)
 
 ## Create a Progress Note
 
 Once a new visit is set, click New Note at the bottom left cornor and select a title for the progress note.
 ![](../images/PCE/newNote.png)
 
-Now switching over to the RPC Events Tab of the nodeVISTA Management Client, notice the TIU CREATE RECORD RPC call. This call may be emulated but we will focus on emulating skin test below in this demo. 
-![](../images/PCE/tiuCreateRecord.png)
-
 ## Assign a Secondary Provider
 
-Once a new progress note is created, click Encounter above the New Note. Add a secondary provider and assign the primary one by clicking the Primary button while selecting the provider. 
+Once a new progress note is created, click Encounter above the New Note. Add a secondary provider and click Ok. 
 ![](../images/PCE/newProvider.png)
 
-The RPC Emulator implements the RPC call with an MVDM ORWPCE SAVE operation. After creating and updating appropriate information in VISTA, the nodeVISTA manager will dispatch this create event.
+CPRS asks for the primary provider. (Alternatively, you may assign it by clicking the Primary button in the previous screenshot) 
+![](../images/PCE/saveProv.png)
+
+
+The RPC Emulator implements the RPC call with an MVDM ORWPCE SAVE operation. After creating and updating appropriate information in VISTA, the nodeVISTA manager will dispatch this create event. 
 ![](../images/PCE/provRpc.png)
 
-This new procedure is now in CPRS with its associated outpatient encounter, visit,tiu Document and provider records.
-![](../images/PCE/visitProv.png)
+## Read the Provider 
+Make sure you are selecting the new note you just created and click Encounter again. The RPC Emulator implements the RPC call with an MVDM ORWPCE PCE4NOTE operation.  
+![](../images/PCE/readProv.png)
 
-Note both providers have the same visit time as tiu document.
-![](../images/PCE/providers.png)
+Switch to the MVDM Events in the nodeVISTA management client. There is a LIST event for V Provider and the provider assignment is now emulated in the listing (toward the end).
+![](../images/PCE/mvdmProv1.png)
+![](../images/PCE/mvdmProv2.png)
+
+Through nodeVISTA'S Rambler, this new provider entries are now in CPRS with their associated outpatient encounter, visit and tiu Document records.
+![](../images/PCE/visitProv.png)
+![](../images/PCE/vProvider.png)
+![](../images/PCE/vProv1.png)
+![](../images/PCE/vProv2.png)
 
