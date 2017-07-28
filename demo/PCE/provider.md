@@ -40,8 +40,7 @@ Switch to the MVDM Events in the nodeVISTA management client. There is a LIST ev
 ![](../images/PCE/mvdmProv1.png)
 ![](../images/PCE/mvdmProv2.png)
 
-Through nodeVISTA'S Rambler, this new provider entries are now in CPRS with their associated outpatient encounter, visit and tiu Document records.
-![](../images/PCE/visitProv.png)
+Through nodeVISTA'S Rambler, this new provider entries are now in CPRS with their associated visit and tiu Document records. Please note both provider entries point to the same visit.
 ![](../images/PCE/vProvider.png)
 ![](../images/PCE/vProv1.png)
 ![](../images/PCE/vProv2.png)
