@@ -19,27 +19,25 @@ Skin test is a subtab under Patient Care Encounter (PCE) progress note. An PCE n
 ## Create a Progress Note
 
 Once a new visit is set, click New Note at the bottom left cornor and select a title for the progress note.
-![](../images/PCE/newNote.png)
+![](../images/PCE/newNoteSk.png)
 
-Now switching over to the RPC Events Tab of the nodeVISTA Management Client, notice the TIU CREATE RECORD RPC call. This call may be emulated but we will focus on emulating skin test below in this demo. 
-![](../images/PCE/tiuCreateRecord.png)
 
 ## Create a Skin Test
 
-Once a new progress note is created, textual notes may be entered here (e.g. "new skin test was placed" in the screenshot). Click Encounter above the New Note and click "Other Skin Test" button. A list of skin test options are displayed.  
+Once a new progress note is created, textual notes may be entered in the blank area (e.g. "TB skin test" in the screenshot's background). Click Encounter > Skin Tests > Other Skin Test. A list of skin test options are displayed.  
 ![](../images/PCE/newSkinTest.png)
 
-Select PPD TUBERCULIN and put comments to note this operation. Click OK and an alert displays asking if you are the Primary Provider for this Encounter. Click Yes to save this skin test.
+Select PPD TUBERCULIN, enter Results, Reading and put comments to note this operation. Click OK and an alert asking if you are the Primary Provider for this Encounter. Click Yes to store this skin test.
 ![](../images/PCE/saveSkinTest.png)
 
 The RPC Emulator implements the RPC call with an MVDM ORWPCE SAVE operation. After creating and updating appropriate information in VISTA, the nodeVISTA manager will dispatch this create event.
-![](../images/PCE/SkinTestRpc.png)
+![](../images/PCE/skinTestRpc.png)
 
-This new skin test is now in CPRS with its associated outpatient encounter, visit,tiu Document and provider records.
+Switch to the MVDM Events of the nodeVISTA management client. Note that there is a new VSkinTest with the same tranction ID as the previous SAVE operation in the emulation.
+![](../images/PCE/mvdmSkinTest.png)
+
+Using the nodeVISTA'S rambler, this new skin test is now in CPRS with its associated outpatient encounter, visit,tiu Document and provider records.
 ![](../images/PCE/visit.png)
 
 Note the skin test has the same visit time as provider and tiu document.
 ![](../images/PCE/vSkinTest.png)
-Note the provider has the same visit time as skin test and tiu document.
-![](../images/PCE/vProvider.png)
-
