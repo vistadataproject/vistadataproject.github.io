@@ -14,15 +14,6 @@ ie/ for this month go into all workload and related items (orders, docs etc)
 
 REM: 9 work details (AUDIOLOGY x 2 but maybe one is a dud?) and 
 
-TODO:
-- audiology dud?
-- entered by for LAB
-- make sure health factors
-- a/c for consult
-- suggest document changes to 
-(see issues)
-- READ DOCUMENT OF PHONE as should be in person ??? ie/ CPT wrong?
-
 1. 21st has WD MH 1 with V CPT/V POV/V PROVIDER and Document off it. Document not entered til the 24th, signed on the 1st of the following month.
    * JENSEN and JENSEN: by a provider called JENSEN at a location named for him
    * CPT is less precise that the two part DSS
@@ -52,6 +43,7 @@ Note: exam_date_time is the 26th
    * still current
    * MH Aguilar Document
    * 25th has a consult -- for MH but locn is DYR MH VAUGHN ... DYR and not IOWA. Need to examine more ... seems to call for MH check
+     * probably next month 
    
 4. Audiology x 2 ... same provider, same CPT
 - first one: 25th ... but is this "real"?
@@ -71,6 +63,7 @@ Note: exam_date_time is the 26th
   - PREVENTATIVE HEALTH - SCREENING (8925_1-1040)  ---  214 lines
   - OEF_OIF INITIAL ASSESSMENT (8925_1-1753)  ---  148 lines
 - CPT is HC PRO PHONE CALL 21-30 MIN (98968) but was this a call or local??? (SEE DOCUMENTS)
+  - wrong as line: "INITIAL ASSESSMENT\r\rThe following information was reported by the veteran during an in \rperson interview:\r\rOEF/OIF BRANCH OF SERVICE, "
 - she is a registered nurse 
 - many many health factors!!!
 - patient ed: not much in popup as no enterer ... hangs off visit ie/ just the type
