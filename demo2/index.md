@@ -3,7 +3,7 @@ layout: default
 title: Workload "DSS" Demo
 ---
 
-Separate the Non Clinical: show in a "DSS Service".
+Separate the Non Clinical: show in a "Workload (DSS) Browser" uses a "VISTA DSS Service" which is sliced out of VISTA. Shows that non clinical aspects of VISTA can be cleanly separated and centralized.
 
 ```text
 Message: beyond clinical -- VISTA and Workload 
@@ -51,15 +51,17 @@ Note: exam_date_time is the 26th
    * DX Interview CPT ... multi level DSS
    * still current
    * MH Aguilar Document
+   * 25th has a consult -- for MH but locn is DYR MH VAUGHN ... DYR and not IOWA. Need to examine more ... seems to call for MH check
    
-4. Audiology x 2 
+4. Audiology x 2 ... same provider, same CPT
 - first one: 25th ... but is this "real"?
+  ... yes: 409_73-2088342 from 409_68-3668164 from 9000010-3493339 is ACCEPTED (user causing event ... 200-452 and sent 12/5, acked 12/8
+  ... do more is see dates on CPTs ...
 - second one: 26th
 ... in both cases Rogers at Rogers
 ... document in C&P AUDIOLOGY EXAM (8925_1-1435)  ---  132 lines for the 26th. 
     - episode_begin_date_time is for the 25th
 ... none for the 25th.
-   ... OPEN Q: really sent to Austin?
    
 5. General Internal Salazar: 25th
 - has a doc: C&P MEDICAL (8925_1-1331) 25/25 ... but sign is 2nd dec.
