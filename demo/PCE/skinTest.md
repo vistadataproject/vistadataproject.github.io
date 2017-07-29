@@ -41,3 +41,8 @@ Using the nodeVISTA'S rambler, this new skin test is now in CPRS with its associ
 
 Note the skin test has the same visit time as provider and tiu document.
 ![](../images/PCE/vSkinTest.png)
+
+## Read the Skin Test
+The RPC emulator implements the RPC call with an ORWPCE PCE4NOTE operation as well. 
+![](../images/PCE/readSkinTest.png)
+

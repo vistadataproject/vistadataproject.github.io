@@ -36,13 +36,12 @@ The RPC Emulator implements the RPC call with an ORWPCE SAVE operation. After cr
 Switch to the MVDM Events in the nodeVISTA management client. There is a CREATE event for VImmunization with the same tranction ID as the previous ORWPCE SAVE RPC call in the emulation. 
 ![](../images/PCE/mvdmImm.png)
 
-This new procedure is now in CPRS with its associated outpatient encounter, visit,tiu Document and provider records.
+This new immunization is now in CPRS with its associated outpatient encounter, visit,tiu Document and provider records.
 ![](../images/PCE/visitImm.png)
 
-Note the procedure has the same visit time as provider and tiu document.
+Note the immunization has the same visit time as provider and tiu document.
 ![](../images/PCE/vImm.png)
-Note the provider has the same visit time as skin test and tiu document.
-![](../images/PCE/vProviderImm.png)
+
 
 ## Read the Immunization
 The RPC emulator implements the RPC call with an ORWPCE PCE4NOTE operation as well. 
