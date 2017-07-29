@@ -12,6 +12,15 @@ ie/ for this month go into all workload and related items (orders, docs etc)
 
 REM: 9 work details (AUDIOLOGY x 2 but maybe one is a dud?) and 
 
+TODO:
+- audiology dud?
+- entered by for LAB
+- make sure health factors
+- a/c for consult
+- suggest document changes to 
+(see issues)
+- READ DOCUMENT OF PHONE as should be in person ??? ie/ CPT wrong?
+
 1. 21st has WD MH 1 with V CPT/V POV/V PROVIDER and Document off it. Document not entered til the 24th, signed on the 1st of the following month.
    * JENSEN and JENSEN: by a provider called JENSEN at a location named for him
    * CPT is less precise that the two part DSS
