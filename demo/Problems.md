@@ -117,6 +117,6 @@ Also, take a look at the create event's transaction ID. That transaction ID matc
 
 ![](images/problems/management-client/problem-inactivate-mvdm2.jpeg)
 
-  The audits are visible on the problem details output
+  Double-click on the problem to trigger the ORQQPL DETAILS rpc and view the problem details output in the nodeVISTA client
 
    ![](images/problems/management-client/problem-inactivate-modal.jpg)
