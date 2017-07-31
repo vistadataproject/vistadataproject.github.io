@@ -7,7 +7,7 @@ See the [nodeVISTA Demo Introduction](http://vistadataproject.info/demo/) postin
 
 ## Create a Problem
 
-* From the nodeVISTA CPRS patient chart, select the 'Problems' tab and click 'New Problem'
+* From the nodeVISTA CPRS patient chart, select the 'Problems' tab at the bottom of the window and click 'New Problem'
 
 ![](images/problems/cprs/problem-dialog.JPG)
 
