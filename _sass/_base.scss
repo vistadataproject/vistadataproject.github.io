@@ -86,3 +86,11 @@ tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
 }
+
+.title {
+    @extend html;
+    color: #111111;
+    font-size: 16px;
+    text-decoration: underline;
+    font-weight: bold;
+}
