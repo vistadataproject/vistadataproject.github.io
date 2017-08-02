@@ -17,7 +17,7 @@ See the [MVDM Demo](http://vistadataproject.info/demo/) posting to setup the nod
 
 * Then click on the 'Enter Vitals' button at the top right-hand side of the dialog. This will bring up the vitals entry dialog.
 
- Enter values for blood pressure, temperature, and height. 
+ After clicking on 'Exp. View', also on the top right-hand side of the top menu bar, a side menu appears. There, select 'System' Folder > 'DEMO.NODEVISTA' > Daily Vitals. At this point, you can enter values for blood pressure, temperature, and height. 
 
 ![](images/vitals/cprs/vitals-create.JPG)
 
