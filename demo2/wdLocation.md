@@ -35,7 +35,7 @@ Patient _Frank Gilbert_ was seen on the 25th. The workload is _AUDIOLOGY/C&P EXA
 
 ![](imagesLocn/LocnIOW_CP_AUDIO_ROGERS_DETAILS_25th.png)
 
-What is _NPCD_ in the property _Sent to NPCD_? That's the VA's _National Patient Care Database_ in Austin Texas. Every VISTA sends Workload data like the above to Austin.
+What is _NPCD_ in the property _Sent to NPCD_? That's the VA's _National Patient Care Database_ in Austin Texas. Every VISTA sends Workload data to Austin.
 
 ## IOW OIF/OEF CASE MGT NURSE ([1302](https://workload.vistadataproject.info/locationDetails/1302))
 
