@@ -10,15 +10,22 @@ title: Workload "DSS" Demo - Locations
 
 ## IOW C&P AUDIO RODGERS ([]())
 
-RODGERS,NANCY S
+Nancy Rodgers, an Audiologist, names this _Personal Location_. Work at this location is _AUDIOLOGY_, specifically
+_C&P EXAMS_ ...
+
+![](imagesLocn/Locn_IOW_CP_AUDIO_ROGERS_.png)
+
+On November 2008, there were 18 piece of work (workload) performed there ...
+
+![](imagesLocn/LocnIOW_CP_AUDIO_ROGERS_TIMELINE_11_08.png)
+
+Work is spread throughout the month and, as expected from the location's definition, it is all _AUDIOLOGY_ ...
 
 ![](imagesLocn/LocnIOW_CP_AUDIO_ROGERS_DETAILS.png)
-...
+
+Patient _Frank Gilbert_ was seen on the 25th. The workload is _AUDIOLOGY/C&P EXAMS_ with a very generic CPT, _DISABILITY EXAMINATION_. This is a case of the DSS codes being more precise than CPT and if you examine [other Workload in the same month](), they share the same DSS/CPT combination ... 
+
 ![](imagesLocn/LocnIOW_CP_AUDIO_ROGERS_DETAILS_25th.png)
-...
-![](imagesLocn/LocnIOW_CP_AUDIO_ROGERS_TIMELINE_11_08.png)
-...
-![](imagesLocn/Locn_IOW_CP_AUDIO_ROGERS_.png)
 
 ## IOW OIF/OEF CASE MGT NURSE ([]())
 
