@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">Secure Read and Write Interface for VA VISTA</span>
+        <nav>
+            <a href="/demo">Demo</a>
+            <a href="/artifacts/developer">DevDocs</a>
+            <a href="https://github.com/vistadataproject">Github</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--vdm--usr_authorization_subscription-8930_1"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">VDM</a> » Usr_Authorization_subscription-8930_1<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="usr-authorizationsubscription-89301">Usr Authorization/subscription (8930.1)</h1>
+<p>This file associates users with actions on documents.   Actions are of 2 kinds: authorization actions such as the signature action, which an associated user is authorized to perform, and subscription actions, such as an unsigned document notification, which the associated user “signs up to receive.”   An action may be associated with a USER CLASS in the User Class file (e.g. Staff Physician class) AND/OR with a USER ROLE in relation to the document (e.g. author of document).   If an Authorization/Subscription entry has both User Class AND User Role, the AND FLAG field permits these requirements to be “AND’ed”, that is, a user must both belong to the User Class AND must fill the User Role in order to perform the action.  If the AND FLAG has value OR, or has no value, then User Class and User Role within the same entry are “OR’ed”.   Each file entry associates an action with 1 user class and/or 1 role.  The entry makes this association for a given Document Definition (e.g. Progress Note) of a given status (e.g. Unsigned).   Multiple file entries for the SAME action/Document Definition/document status allow association with more than one user class/role.  Such entries are “OR’ed”:  that is, if a user belongs to the user class/role of one OR another of these entries, the user may perform the action.   User classes automatically INCLUDE user subclasses of the given class as defined in the User Class file.   Document Definitions exist in hierarchy in file 8925.1, with Classes at the top level, Document Classes at the next level down, and Titles under Document Classes.  Authorization/Subscription entries may be defined at any of the above levels.  For example, an authorization which applies to most or all Progress Notes should be defined at the Class level for Document Definition “Progress Note.”  On the other hand, an authorization which applies only to Progress Notes of Title “Dental Hygiene Note” should be defined at the Title level for Document Definition “Dental Hygiene Note”.   When using authorizations/subscriptions to determine whether a given user should receive/may perform a given action for a Document Definition of a given Title, code begins by checking entries for that action and status FOR THAT TITLE.  If ANY such entries exist, then entries for higher Document Definition levels will be ignored, and the user passes/fails based on that level alone.  Thus, if a Title is linked with a certain action, status and user class, then rules for that Title, action, and status should be entered for ALL user classes which can perform the action on the Title, since broader authorization (e.g. Provider class) set at higher levels (e.g. Progress Notes) is ignored.   If such entries do NOT exist, the next higher level of Document Definition is checked.  And so on.   If no entries are found on any level, no users can perform/subscribe to the action for the given Document Definition and status.</p>
+
+<p><strong>Global:</strong> ^USR(8930.1,</p>
+
+<p><strong>Domain:</strong> Non-Clinical</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Document Definition</strong><pre><code>  document_definition</code></pre></td>
+      <td>.01</td>
+      <td>This is a Document Definition of Type Class, Document Class, or Title from<br />the Document Definition File 8925.1</td>
+      <td>POINTER</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td>TIU_Document_Definition-8925_1</td>
+    </tr>
+    <tr>
+      <td><strong>Status</strong><pre><code>  status</code></pre></td>
+      <td>.02</td>
+      <td> </td>
+      <td>POINTER</td>
+      <td>REQUIRED</td>
+      <td>Usr_Record_Status-8930_6</td>
+    </tr>
+    <tr>
+      <td><strong>Action</strong><pre><code>  action</code></pre></td>
+      <td>.03</td>
+      <td>This is the action to be permitted for a given document type and status.</td>
+      <td>POINTER</td>
+      <td>REQUIRED</td>
+      <td><a href="Usr_Action-8930_8">Usr_Action-8930_8</a></td>
+    </tr>
+    <tr>
+      <td><strong>User Class</strong><pre><code>  user_class</code></pre></td>
+      <td>.04</td>
+      <td>This is the User Class which is being authorized to perform an action on a <br />document of the type and status indicated.</td>
+      <td>POINTER</td>
+      <td>INDEXED</td>
+      <td><a href="Usr_Class-8930">Usr_Class-8930</a></td>
+    </tr>
+    <tr>
+      <td><strong>And Flag</strong><pre><code>  and_flag</code></pre></td>
+      <td>.05</td>
+      <td>This field allows the ADPAC to indicate whether the conditions specified <br />by User Class and User Role should be logically “AND’ed,” or logically “OR’ed,” <br />as they will be unless otherwise specified.  i.e., if you want to specify <br />that an unsigned discharge summary may be signed by a user, where:<br /><br />User Class = Provider AND User Role = Author,<br /><br />then you’ll want to set this field to AND.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>AND: <em><strong>&</strong></em><br/>OR: <em><strong>!</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>User Role</strong><pre><code>  user_role</code></pre></td>
+      <td>.06</td>
+      <td>This identifies the role of the user with respect to the document in<br />question (e.g., Author/Dictator, Expected Signer, Expected Cosigner,<br />Attending Physician, etc.).</td>
+      <td>POINTER</td>
+      <td>INDEXED</td>
+      <td>Usr_Role-8930_2</td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong><pre><code>  description</code></pre></td>
+      <td>1</td>
+      <td><br />For most entries, the meaning of the entry will be clear from the<br />description of the associated event in the TIU Event file.  In some cases,<br />that may not suffice, in which case this field may be used to further<br /> <br />For example, if an entry associates the Signature event with a document of<br />status completed, it might help to note in the description field that such<br />a signature is a walkup signature.<br /> <br />It should not be necessary to describe consequences in this field - those<br />descriptions may be gotten from the associated protocol descriptions<br />instead.<br /> <br />This field will be used when persons associating users with user classes<br />wish to know the meaning of events associated with certain user classes.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Prerequisite Action</strong><pre><code>  prerequisite_action</code></pre></td>
+      <td>2</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Consequence</strong><pre><code>  consequence</code></pre></td>
+      <td>3</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 3rd 2017, 9:42:01 am</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-03T09:42:08-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+      
+    </div>
+
+  </body>
+</html>

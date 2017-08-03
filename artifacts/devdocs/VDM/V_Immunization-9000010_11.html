@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">Secure Read and Write Interface for VA VISTA</span>
+        <nav>
+            <a href="/demo">Demo</a>
+            <a href="/artifacts/developer">DevDocs</a>
+            <a href="https://github.com/vistadataproject">Github</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--vdm--v_immunization-9000010_11"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">VDM</a> » V_Immunization-9000010_11<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="v-immunization-900001011">V Immunization (9000010.11)</h1>
+<p>In order to preserve the continuity of files shared by the Indian Health  Service and the Department of Veterans Affairs, this file includes fields  used by Indian Health Service that will not be used by the Department of  Veterans Affairs. These fields may point to other files and routines not  deployed by the Department of Veterans Affairs. Inclusion of these fields,  as designed, was approved by the DBA.  These fields were initially  introduced with the release of the VISTA IMMUNIZATION ENHANCEMENTS 1.0  (PX<em>1</em>201) for the VistA Immunization Enhancements Project.  Additional  fields may be included in later enhancements.      This file contains immunizations specific to a particular visit for a  particular patient.  This file contains one record for each immunization.   In the VA, if a CPT code is entered into PCE that represents an immunization, than an immunization will automatically be entered in the V Immunization file.  And vice versa, if an immunization is entered into PCE that has a related CPT code, then a V CPT entry will automatically be created with the CPT code for the immunization.  The PCE Code Mapping file contains the definitions of what immunization is related to what CPT code, and vice versa.</p>
+
+<p><strong>Global:</strong> ^AUPNVIMM(</p>
+
+<p><strong>Domain:</strong> Non-Clinical</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Immunization</strong><pre><code>  immunization</code></pre></td>
+      <td>.01</td>
+      <td>This is the type of immunization that was given to the patient at the<br />encounter.</td>
+      <td>POINTER</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="Immunization-9999999_14">Immunization-9999999_14</a></td>
+    </tr>
+    <tr>
+      <td><strong>Patient Name</strong><pre><code>  patient_name</code></pre></td>
+      <td>.02</td>
+      <td>This is the patient who was given the immunization.</td>
+      <td>POINTER</td>
+      <td>REQUIRED</td>
+      <td><a href="Patient_ihs-9000001">Patient_ihs-9000001</a></td>
+    </tr>
+    <tr>
+      <td><strong>Visit</strong><pre><code>  visit</code></pre></td>
+      <td>.03</td>
+      <td>This is the encounter defined in the Visit file that represents when and<br />where the immunization was given.</td>
+      <td>POINTER</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="Visit-9000010">Visit-9000010</a></td>
+    </tr>
+    <tr>
+      <td><strong>Series</strong><pre><code>  series</code></pre></td>
+      <td>.04</td>
+      <td>This field allows the provider to specify which series of immunization<br />type was given to the patient.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>COMPLETE: <em><strong>C</strong></em><br/>PARTIALLY COMPLETE: <em><strong>P</strong></em><br/>SERIES 8: <em><strong>8</strong></em><br/>SERIES 7: <em><strong>7</strong></em><br/>SERIES 6: <em><strong>6</strong></em><br/>SERIES 5: <em><strong>5</strong></em><br/>SERIES 4: <em><strong>4</strong></em><br/>SERIES 3: <em><strong>3</strong></em><br/>SERIES 2: <em><strong>2</strong></em><br/>SERIES 1: <em><strong>1</strong></em><br/>BOOSTER: <em><strong>B</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Lot</strong><pre><code>  lot</code></pre></td>
+      <td>.05</td>
+      <td>This Indian Health Service field indicates the lot number associated <br />with this immunization.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Immunization_Lot-9999999_41</td>
+    </tr>
+    <tr>
+      <td><strong>Reaction</strong><pre><code>  reaction</code></pre></td>
+      <td>.06</td>
+      <td>This is the reaction that may have been observed by the provider as a<br />result of the immunization given.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>IRRITABILITY: <em><strong>2</strong></em><br/>ANAPHYLAXIS OR COLLAPSE: <em><strong>9</strong></em><br/>NONE: <em><strong>0</strong></em><br/>FEVER: <em><strong>1</strong></em><br/>LETHARGY: <em><strong>6</strong></em><br/>RESPIRATORY DISTRESS: <em><strong>10</strong></em><br/>OTHER: <em><strong>11</strong></em><br/>VOMITING: <em><strong>4</strong></em><br/>ARTHRITIS OR ARTHRALGIAS: <em><strong>8</strong></em><br/>LOCAL REACTION OR SWELLING: <em><strong>3</strong></em><br/>RASH OR ITCHING: <em><strong>5</strong></em><br/>CONVULSIONS: <em><strong>7</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Contraindicated</strong><pre><code>  contraindicated</code></pre></td>
+      <td>.07</td>
+      <td>This field allows the immunization to be recorded as contraindicated.<br />Reminders will include a check to see if the previous immunization was <br />contraindicated before creating reminders.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>NO (OK TO USE IN THE FUTURE): <em><strong>0</strong></em><br/>YES (DO NOT REPEAT THIS VACCINE).: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Dose Override</strong><pre><code>  dose_override</code></pre></td>
+      <td>.08</td>
+      <td>This Indian Health Service field indicates the dose override status of <br />this immunization.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>@: <em><strong>0</strong></em><br/>INVALID--ADMIN ERROR: <em><strong>4</strong></em><br/>FORCED VALID: <em><strong>9</strong></em><br/>INVALID--DEFECTIVE: <em><strong>2</strong></em><br/>INVALID--EXPIRED: <em><strong>3</strong></em><br/>INVALID--BAD STORAGE: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Injection Site</strong><pre><code>  injection_site</code></pre></td>
+      <td>.09</td>
+      <td>This Indian Health Service field identifies the body site where the <br />immunization was administered.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>Left Arm Intradermal: <em><strong>LID</strong></em><br/>Both Thighs IM: <em><strong>BTI</strong></em><br/>Oral: <em><strong>O</strong></em><br/>Left Delt IM: <em><strong>LDI</strong></em><br/>Nasal: <em><strong>IN</strong></em><br/>Right Arm SQ: <em><strong>RAS</strong></em><br/>Left Thigh SQ: <em><strong>LTS</strong></em><br/>Right Thigh IM: <em><strong>RTI</strong></em><br/>Left Arm SQ: <em><strong>LAS</strong></em><br/>Left Thigh IM: <em><strong>LTI</strong></em><br/>Right Thigh SQ: <em><strong>RTS</strong></em><br/>Right Delt IM: <em><strong>RDI</strong></em><br/>Right Arm Intradermal: <em><strong>RID</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Volume</strong><pre><code>  volume</code></pre></td>
+      <td>.11</td>
+      <td>This Indian Health Service field indicates the volume of vaccine <br />administered for this immunization.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Date Of Vac Info Statement</strong><pre><code>  date_of_vac_info_statement</code></pre></td>
+      <td>.12</td>
+      <td>This Indian Health Service field indicates the date the vaccine <br />information statement associated with this immunization was <br />offered/given to the patient.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Created By V Cpt Entry</strong><pre><code>  created_by_v_cpt_entry</code></pre></td>
+      <td>.13</td>
+      <td>This Indian Health Service field identifies the V CPT entry, if any,<br />that created this V Immunization entry.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Vac Eligibility</strong><pre><code>  vac_eligibility</code></pre></td>
+      <td>.14</td>
+      <td>This Indian Health Service field indicates the Vaccine for Children <br />(VFC) Program eligibility for this patient on this visit.</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Import From Outside Registry</strong><pre><code>  import_from_outside_registry</code></pre></td>
+      <td>.15</td>
+      <td>This Indian Health Service field indicated the import status of this <br />immunization from an outside registry.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>IMPORTED: <em><strong>1</strong></em><br/>NOT IMPORTED: <em><strong>0</strong></em><br/>EDITED AFTER IMPORT: <em><strong>2</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Ndc</strong><pre><code>  ndc</code></pre></td>
+      <td>.16</td>
+      <td>This Indian Health Service field identifies the National Drug Code <br />(NDC) for this vaccine.</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Administrative Notes</strong><pre><code>  administrative_notes</code></pre></td>
+      <td>1</td>
+      <td>This Indian Health Service field is a free text field used to document<br />administrative information about this immunization.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Vis Offered/given To Patient</strong><pre><code>  vis_offered_given_to_patient</code></pre></td>
+      <td>2</td>
+      <td>This is the Vaccine Information Statement (VIS) that was offered to the <br />patient prior to the administration of the immunization, along with the<br />date/time it was offered.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Vis_Offered_given_To_Patient-9000010_112">Vis_Offered_given_To_Patient-9000010_112</a></td>
+    </tr>
+    <tr>
+      <td><strong>Other Diagnosis</strong><pre><code>  other_diagnosis</code></pre></td>
+      <td>3</td>
+      <td>This is a list of diagnoses for this immunization event, in addition to<br />the Primary Diagnosis selected for this event.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Icd_Diagnosis-80">Icd_Diagnosis-80</a></td>
+    </tr>
+    <tr>
+      <td><strong>Remarks</strong><pre><code>  remarks</code></pre></td>
+      <td>1101</td>
+      <td>This is additional comments or remarks related to the immunization given<br />to the patient.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Event Date And Time</strong><pre><code>  event_date_and_time</code></pre></td>
+      <td>1201</td>
+      <td>This is the date and time the immunization was given.  This date and time<br />may be different from the visit date and time.  For example, for clinic<br />appointment visits, the visit date and time is the date and time of the<br />appointment, not the time the provider performed the clinical event.<br /> <br />The date may be an imprecise date.<br /> <br />Date and time may be within 30 days before or after the visit date, with the<br />restriction the date cannot be a future date.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ordering Provider</strong><pre><code>  ordering_provider</code></pre></td>
+      <td>1202</td>
+      <td>The field can be used to document the provider who ordered the<br />immunization.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Clinic</strong><pre><code>  clinic</code></pre></td>
+      <td>1203</td>
+      <td>This Indian Health Service field indicates the clinic stop associated <br />with this visit.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Clinic_Stop-40_7">Clinic_Stop-40_7</a></td>
+    </tr>
+    <tr>
+      <td><strong>Encounter Provider</strong><pre><code>  encounter_provider</code></pre></td>
+      <td>1204</td>
+      <td>This is the provider who gave this<br />immunization.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Date/time Recorded</strong><pre><code>  date_time_recorded</code></pre></td>
+      <td>1205</td>
+      <td>This timestamp field is the date and time of documentation of<br />administration of the immunization. This field is set automatically <br />when the EVENT DATE AND TIME is entered.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Immunization Documenter</strong><pre><code>  immunization_documenter</code></pre></td>
+      <td>1206</td>
+      <td>This is the person/provider who documented this immunization by entering<br />the data into the system by whatever means.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Lot Number</strong><pre><code>  lot_number</code></pre></td>
+      <td>1207</td>
+      <td>This is the lot number of the Immunization entered for this event.  It is<br />not designed to be edited manually, but automatically set when an<br />Immunization is selected.</td>
+      <td>POINTER</td>
+      <td>INDEXED</td>
+      <td>Immunization_Lot-9999999_41</td>
+    </tr>
+    <tr>
+      <td><strong>Parent</strong><pre><code>  parent</code></pre></td>
+      <td>1208</td>
+      <td>This Indian Health Service field indicates the parent immunization, if <br />any, associated with this immunization, such as for immunizations given <br />in series.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="V_Immunization-9000010_11">V_Immunization-9000010_11</a></td>
+    </tr>
+    <tr>
+      <td><strong>External Key</strong><pre><code>  external_key</code></pre></td>
+      <td>1209</td>
+      <td>This Indian Health Service free text field identifies the external key <br />associated with this immunization.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Outside Provider Name</strong><pre><code>  outside_provider_name</code></pre></td>
+      <td>1210</td>
+      <td>This Indian Health Service field contains the name of the outside <br />provider associated with this immunization.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ancillary POV</strong><pre><code>  ancillary_pov</code></pre></td>
+      <td>1213</td>
+      <td>This Indian Health Service field indicated the ancillary diagnosis <br />related to this immunization.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Icd_Diagnosis-80">Icd_Diagnosis-80</a></td>
+    </tr>
+    <tr>
+      <td><strong>User Last Update</strong><pre><code>  user_last_update</code></pre></td>
+      <td>1214</td>
+      <td>This Indian Health Service field indicates the user who last updated <br />information for this immunization.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Ordering Location</strong><pre><code>  ordering_location</code></pre></td>
+      <td>1215</td>
+      <td>This Indian Health Service field indicated the hospital location ordering <br />this immunization.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Hospital_Location-44">Hospital_Location-44</a></td>
+    </tr>
+    <tr>
+      <td><strong>Date/time Entered</strong><pre><code>  date_time_entered</code></pre></td>
+      <td>1216</td>
+      <td>This Indian Health Service field indicates the date and time that this <br />immunization information was entered into this record.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Entered By</strong><pre><code>  entered_by</code></pre></td>
+      <td>1217</td>
+      <td>This Indian Health Service field indicates the user who entered this <br />immunization record.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Date/time Last Modified</strong><pre><code>  date_time_last_modified</code></pre></td>
+      <td>1218</td>
+      <td>This Indian Health Service field indicates the date and time this <br />immunization record was last modified.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Last Modified By</strong><pre><code>  last_modified_by</code></pre></td>
+      <td>1219</td>
+      <td>This Indian Health Service field indicates the user who last modified <br />this immunization record.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Timestamp</strong><pre><code>  timestamp</code></pre></td>
+      <td>1221</td>
+      <td>Indicates the date/time the record was added or edited.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Event Information Source</strong><pre><code>  event_information_source</code></pre></td>
+      <td>1301</td>
+      <td>This is the source of the information obtained for this immunization<br />event.  If this is a new event for this patient, no entry is required.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Immunization_Info_Source-920_1</td>
+    </tr>
+    <tr>
+      <td><strong>Route Of Administration</strong><pre><code>  route_of_administration</code></pre></td>
+      <td>1302</td>
+      <td>This is the method this vaccine was administered.  Select from the list<br />provided.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Imm_Administration_Route-920_2</td>
+    </tr>
+    <tr>
+      <td><strong>Site Of Administration (body)</strong><pre><code>  site_of_administration_body</code></pre></td>
+      <td>1303</td>
+      <td>This is the area of the patient’s body through which the vaccine was<br />administered.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Imm_Administration_Site_body-920_3</td>
+    </tr>
+    <tr>
+      <td><strong>Primary Diagnosis</strong><pre><code>  primary_diagnosis</code></pre></td>
+      <td>1304</td>
+      <td>This is the primary (or initial) diagnosis for this immunization event. It<br />is selected from the ISC DIAGNOSIS file.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Icd_Diagnosis-80">Icd_Diagnosis-80</a></td>
+    </tr>
+    <tr>
+      <td><strong>Dosage</strong><pre><code>  dosage</code></pre></td>
+      <td>1312</td>
+      <td>This is the amount of this vaccine to be administered for this event.<br />It is free text, 3 to 30 characters, and should be in the format of an<br />amount followed by units of measure, such as “30 cc”.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Snomed Ct</strong><pre><code>  snomed_ct</code></pre></td>
+      <td>2601</td>
+      <td>This Indian Health Service field indicates the SNOMED Clinical Terms (CT)<br />that describe this immunization and their preferred terms.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Snomed_Ct-9000010_1126">Snomed_Ct-9000010_1126</a></td>
+    </tr>
+    <tr>
+      <td><strong>Loinc Codes</strong><pre><code>  loinc_codes</code></pre></td>
+      <td>2701</td>
+      <td>This Indian Health Service field is the LOINC codes that identifies this<br />immunization, along with their descriptions.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Loinc_Codes-9000010_1127">Loinc_Codes-9000010_1127</a></td>
+    </tr>
+    <tr>
+      <td><strong>Edited Flag</strong><pre><code>  edited_flag</code></pre></td>
+      <td>80101</td>
+      <td>This field is automatically set to 1 if PCE detects that any original<br />immunization data is being edited.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>EDITED: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Audit Trail</strong><pre><code>  audit_trail</code></pre></td>
+      <td>80102</td>
+      <td>This field is populated automatically by the PCE filing logic.  The format<br />of the field is as follows:  Pointer to PCE data source file_”-“<em>A for Add<br />or E for Edit</em>” “<em>DUZ of the person who entered the data</em>”;”…</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Comments</strong><pre><code>  comments</code></pre></td>
+      <td>81101</td>
+      <td>This is a comment related to the patient’s immunization.  The provider may enter<br />this manually via the PCE User Interface.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Verified</strong><pre><code>  verified</code></pre></td>
+      <td>81201</td>
+      <td>This is used to note how the event was verified and is automatically<br />entered by the software.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>VERIFIED BY PACKAGE: <em><strong>2</strong></em><br/>ELECTRONICALLY SIGNED: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Package</strong><pre><code>  package</code></pre></td>
+      <td>81202</td>
+      <td>This is the VistA package from which this immunization record <br />originated through PCE.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Package-9_4">Package-9_4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Data Source</strong><pre><code>  data_source</code></pre></td>
+      <td>81203</td>
+      <td>This is the data source for this immunization, automatically entered <br />through the PCS software and uneditable by users.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Pce_Data_Source-839_7</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-files">Sub-Files</h2>
+<h3 id="vis-offeredgiven-to-patient-9000010112"><a name="Vis_Offered_given_To_Patient-9000010_112"></a>Vis Offered/given To Patient (9000010.112)</h3>
+
+<dl>
+<dt>ID</dt><dd>Vis_Offered_given_To_Patient-9000010_112</dd></dl>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Vis Offered/given To Patient</strong><pre><code>  vis_offered_given_to_patient</code></pre></td>
+      <td>.01</td>
+      <td>This is the name of the Vaccine Information Statement offered to or given <br />to the patient before administration of the immunization.</td>
+      <td>POINTER</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td>Vaccine_Information_Statement-920</td>
+    </tr>
+    <tr>
+      <td><strong>Date Vis Offered/given</strong><pre><code>  date_vis_offered_given</code></pre></td>
+      <td>.02</td>
+      <td>This is the date the Vaccine Information Statement was offered to or <br />given to the patient.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="snomed-ct-90000101126"><a name="Snomed_Ct-9000010_1126"></a>Snomed Ct (9000010.1126)</h3>
+
+<dl>
+<dt>ID</dt><dd>Snomed_Ct-9000010_1126</dd></dl>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Snomed Ct</strong><pre><code>  snomed_ct</code></pre></td>
+      <td>.01</td>
+      <td>This Indian Health Service field indicates a SNOMED Clinical Term (CT)<br />that describes this immunization.</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="loinc-codes-90000101127"><a name="Loinc_Codes-9000010_1127"></a>Loinc Codes (9000010.1127)</h3>
+
+<dl>
+<dt>ID</dt><dd>Loinc_Codes-9000010_1127</dd></dl>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Loinc Codes</strong><pre><code>  loinc_codes</code></pre></td>
+      <td>.01</td>
+      <td>This Indian Health Service field is a LOINC code that identifies this<br />immunization.</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 3rd 2017, 9:42:01 am</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-03T09:42:08-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+      
+    </div>
+
+  </body>
+</html>
