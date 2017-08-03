@@ -5,24 +5,40 @@ title: MVDM Emulation Demo
 
 # MVDM Emulation Demonstration
 
-The following sections describe how to run the Master VISTA Data Model (MVDM) demo. __The demo focuses on how MVDM audits, secures, and emulates current production VISTA clients such as CPRS using the RPC Emulator__: 
+The following sections describe how to run the Master VISTA Data Model (MVDM) demo. __The demo focuses on how MVDM audits, secures, and emulates current production VISTA clients such as CPRS using the RPC Emulator__:
 
-<br><br>
+<br>
 
 ![CPRS-MVDM-Clients -width70](/demo/images/common/demo-cprs-mvdm-clients3.png)
+
+## Prerequisites
+The demo procedures described here assume that several tools have already been locally installed and configured:
+
+`nodeVISTA`{:.title}<br/>
+The **nodeVISTA** system provides the core MVDM Emulation services required for this demo. **nodeVISTA** typically runs within the context of a virtual host, managed by Vagrant.
+For inquiries and support related to the installation and configuration of a **nodeVISTA** environment, please contact a VISTA Data Project representative.
+
+`Computerized Patient Record System (CPRS)`{:.title}<br/>
+**CPRS** is a Windows-based application that provides a graphical user interface to VISTA. The required **CPRS** artifacts can be downloaded using the following links:
+
+Source | Artifact/Action | Target Path
+--- | --- | ---
+*Download/Unzip*<br> [CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip) | **CPRS_Demo_0613.exe**<br> 1. Execute  | N/A
+*Download/Unzip*<br> [CPRSChart30v75.zip ](https://demoservices.vistadataproject.info/archive/CPRSChart30v75.zip)| **CPRSChart30v75.exe** <br>1. Rename to CPRSChart.exe<br>2. Copy to target path <br> *(overwrites existing CPRSChart.exe)*  | C:\Program Files (x86)\VistA\CPRS\  
+*Download/Unzip*<br> [CPRS30v72_dll.zip](https://demoservices.vistadataproject.info/archive/CPRS30v72_dll.zip) |  **CPRS30v72_dll/** (folder)  <br> 1. Copy contents of folder to target path <br> *(overwrites contents in target folder)* | C:\Program Files (x86)\VistA\Common Files\  
+
+For inquiries and support related to the installation and configuration of **CPRS**, please contact a VISTA Data Project representative.
 
 
 ## Orientation
 1. [Open nodeVISTA Manager](#open-the-nodevista-manager)
 2. [CPRS Sign-On / RPC Emulation](#cprs-sign-on--rpc-emulation)
 
-
 ## Domain Demo HOW TOs
 * [Allergies](Allergies)
 * [Problems](Problems)
 * [Vitals](Vitals)
 * [Patient](Patient_1)
-
 
 <br><br>
 # Open the nodeVISTA Manager
@@ -32,7 +48,7 @@ The following sections describe how to run the Master VISTA Data Model (MVDM) de
     ```shell
     $ vagrant reload
     ```
-    
+
 * Enter the **nodeVISTA Manager** URL into your web browser: [http://10.2.2.100:9020/#rpcCounts](http://10.2.2.100:9020/#rpcCounts).
 
 ![nodeVISTA Manager RPC Counts -width70](/demo/images/common/management-client/rpc-counts-view.png)
