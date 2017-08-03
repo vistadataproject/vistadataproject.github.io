@@ -82,18 +82,27 @@ Frank Gilbert was seen on the 25th as part of a disability exam. Only the CPT co
 
 ## RADIOLOGY DIV 999 OOS ID 105 ([193](https://workload.vistadataproject.info/locationDetails/193))
 
-... Radiologists?
+Like other work performed by Radiologist's, XRAYs get their own "location" ...
 
 ![](imagesLocn/LocnRadiologyXRAY.png)
-...
-![](imagesLocn/LocnRadiologyXRAY_DETAILS-25th.png)
-...
-![](imagesLocn/LocnRadiologyXRAY_DETAILS.png)
-...
+
+and perhaps _XRAY DIV 999 OOS ID 105_ would have been a better name.
+
+The deep burgundy color of its timeline which stretches back to 1996 reflects large numbers of XRAYs taken in IOWA hospital over the years. 
+
 ![](imagesLocn/LocnRadiologyXRAY_TIMELINE.png)
-...
+
+In November 2008 alone, there were 149 OUTPATIENT XRAYs and 27 INPATIENT ...
+
 ![](imagesLocn/LocnRadiologyXRAY_TIMELINE_11_08.png)
-...
+
+which span the month ...
+
+![](imagesLocn/LocnRadiologyXRAY_DETAILS.png)
+
+Frank Gilbert had two on the 25th, each given a CPT. As they both occurred at the same time, they were gathered into one Workload record ...
+
+![](imagesLocn/LocnRadiologyXRAY_DETAILS-25th.png)
 
 ## ZZIOW C&P SALAZAR ([932](https://workload.vistadataproject.info/locationDetails/932))
 
