@@ -9,6 +9,12 @@ The following shows creation, and reading of patient encounter immunization usin
 
 Running the following demonstrates that re-housing the old RPC interface over a modern, CRUD-based object model provides a new level of auditing and access control for VISTA and lays bare the behavior of the system.
 
+It's better to have a clean copy of the nodeVISTA PCE data, you may run the following test specifications, which purgue all PCE related data and add one record for testing purpupses.  
+https://github.com/vistadataproject/VDM/blob/master/prototypes/PCE/rpcPCE_immunization-2-spec.js
+https://github.com/vistadataproject/VDM/blob/master/prototypes/PCE/rpcPCE_immunization-3-spec.js
+https://github.com/vistadataproject/VDM/blob/master/prototypes/PCE/rpcPCE_immunization-4-spec.js
+https://github.com/vistadataproject/VDM/blob/master/prototypes/PCE/rpcPCE_immunization-5-spec.js
+
 ## Create a Visit
 
 Immunization is a subtab under Patient Care Encounter (PCE) progress note. An PCE note is associated with a visit. Therefore, a visit must be created before editing a note. Select an Encounter Provider (Alexander, Robert) and Visit Location (VISTA HEALTH CARE). Date/Time of Visit is default to NOW. 
@@ -51,3 +57,5 @@ Note the immunization has the same visit time as provider and tiu document.
 The RPC emulator implements the RPC call with an ORWPCE PCE4NOTE operation as well. Once a progress note is saved, if you logout CPRS and relogin to select the saved note (or select a different patient and select back to the same patient), you will be able to see the ORWPCE PCE4NOTE RPC call via the management client's RPC Events.
 ![](../images/PCE/readImm.png)
 
+## Update Immunization
+This feature is not implemented yet so any updates will create a new record.
