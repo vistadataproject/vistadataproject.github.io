@@ -39,6 +39,8 @@ For inquiries and support related to the installation and configuration of **CPR
 * [Problems](Problems)
 * [Vitals](Vitals)
 * [Patient](Patient_1)
+* [PCE: Immunization](PCE/immunization)
+* [PCE: Skin Tests](PCE/skinTest)
 
 <br><br>
 # Open the nodeVISTA Manager
@@ -113,6 +115,8 @@ and the **MVDM Events** tab shows MVDM model events for emulated RPCs...
 * [Problems](Problems)
 * [Vitals](Vitals)
 * [Patient](Patient_1)
+* [PCE: Immunization](PCE/immunization)
+* [PCE: Skin Tests](PCE/skinTest)
 
 
 [ Back to top ↑](#top)
