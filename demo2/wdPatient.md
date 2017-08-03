@@ -7,7 +7,7 @@ The following looks at _Workload_ for a particular patient, [Frank Gilbert](http
 
 ![](images/AA_FrankDetails.png)
 
-which takes place over 2 years and 3 months, starting in November 2008 ... 
+which takes place over 2 years and 3 months. Specifically it examines his first month, November 2008 ... 
 
 ![](images/CalendarWorkDetails2Years3Months.png)
 
@@ -15,14 +15,21 @@ which featured Psychiatric and Physical examinations over four days ...
 
 ![](images/Calendar_11-2008_WorkDetails.png)
 
-## 21st has WD MH 1 with V CPT/V POV/V PROVIDER and Document off it. Document not entered til the 24th, signed on the 1st of the following month.
+with related documents and orders ...
 
-   * JENSEN and JENSEN: by a provider called JENSEN at a location named for him
-   * CPT is less precise that the two part DSS
-   * PRIMARY which means explicitly entered workload
-   * Sent to NPCD means work load IS sent to Austin: WHEN?????????
-   * ZZIOW means the Place name is deleted
-   * One document, a C&P that is entered (transcribed) 3 days later and signed even later
+![](images/Frank_Activity_11_2008.png)
+
+## Day 1 - 21st of November
+
+The one Workload record says that a provider, Clyde Jensen, performed a C&P EXAM. Note that the standard _CPT_ code, _DISABILITY EXAMINATION_, is less precise ...
+
+![](images/Frank_WorkDetails_21Nov.png)
+
+Note that _Sent to NPCD_ means the work load description was sent to the National Patient Care Database in Austin.
+
+One document, a C&P was entered (transcribed) 3 days later and signed even later ...
+
+![](images/Frank_Document-11-24.png)
    
 ## 25th and 28th have X RAYs
 
