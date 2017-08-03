@@ -3,23 +3,17 @@ layout: default
 title: Workload "DSS" Demo - Patient
 ---
 
-Separate the Non Clinical: show in a "Workload (DSS) Browser" uses a "VISTA DSS Service" which is sliced out of VISTA. Shows that non clinical aspects of VISTA can be cleanly separated and centralized.
-
-Message: beyond clinical -- VISTA and Workload 
-
-overall this month, the patient had two MH exams (C&P and Social work one), three X-Rays, 
-
-ie/ for this month go into all workload and related items (orders, docs etc)
-
-REM: 9 work details (AUDIOLOGY x 2 but maybe one is a dud?) and 
-
-## Frank
+The following looks at _Workload_ for a particular patient, [Frank Gilbert](https://workload.vistadataproject.info/patientDetails/7199390) ...
 
 ![](images/AA_FrankDetails.png)
-...
-![](images/Calendar_11-2008_WorkDetails.png)
-...
+
+which takes place over 2 years and 3 months, starting in November 2008 ... 
+
 ![](images/CalendarWorkDetails2Years3Months.png)
+
+which featured Psychiatric and Physical examinations over four days ...
+
+![](images/Calendar_11-2008_WorkDetails.png)
 
 ## 21st has WD MH 1 with V CPT/V POV/V PROVIDER and Document off it. Document not entered til the 24th, signed on the 1st of the following month.
 
