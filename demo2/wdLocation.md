@@ -3,7 +3,7 @@ layout: default
 title: Workload "DSS" Demo - Locations
 ---
 
-The following shows the locations where care was given to a particular patient in November 2008. It shows how _location_ is more than a physical concept in VISTA and the VA - it represents a combination of place and the type of work performed and, in many cases, also who is performing work. 
+The following screenshots from the [Veteran Workload Browser](https://workload.vistadataproject.info) show the locations where care was given to a particular patient in November 2008. It shows how "location" is more than a physical concept in VISTA and the VA - it represents a combination of place and the type of work performed and, in many cases, also who is performing work. These combinations allow a system to capture workload data for places and people. 
 
 Specifically patient [_Frank Gilbert_ was seen](https://workload.vistadataproject.info/patientCalendar/workDetails/7199390/2008/10) at seven different "locations" in November 2008:
   * five are _Personal Locations_ ("ZZIOW C&P __JENSEN__", "IOW C&P AUDIO __RODGERS__", "IOW OPTOMETRY __KNIGHT__ RETURN", "ZZIOW C&P __SALAZAR__", "IOW MH __AGUILAR__"). As well as being named for an institution (_IOW_ for Iowa) and type of work (_C&P AUDIO_, _OPTOMETRY_), these locations are named for a particular provider such a Nancy __ROGERS__ or Jayden __KNIGHT__. Such _locations_ allow a provider's time to be scheduled and the nature of work performed to be designated.
@@ -42,7 +42,7 @@ What is _NPCD_ in the property _Sent to NPCD_? That's the VA's _National Patient
 
 ## IOW OIF/OEF CASE MGT NURSE ([1302](https://workload.vistadataproject.info/locationDetails/1302))
 
-This location isn't personal - its "named for provider" property has no value. Instead the role - _NURSE_ - of the providers who use it is part of its name ...
+This location isn't personal - its "named for provider" property has no value. Instead it is named for the role _NURSE_,  the discipline of the providers who use it ...
 
 ![](imagesLocn/LocnIOW_OIF_NURSE.png)
 
@@ -57,27 +57,28 @@ _Primary Care_ is green, the color of _Medicine and Primary Care Services_ which
 Frank Gilbert was seen on the 25th ...
 
 ![](imagesLocn/LocnIOW_OIF_NURSE_DETAILS_25th.png)
-...
 
-Despite being named for a role (_NURSE_), all work performed [at this location on this month](https://workload.vistadataproject.info/locationCalendar/workDetails/1302/2008/10) is by one nurse, Edna Dawson. At least for this month, the location could have been named _IOW OIF/OEF CASE MGT DAWSON_ ...
-
-![](imagesLocn/LocnIOW_OIF_NURSE_TIMELINE.png)
-...
+Despite being named for a role (_NURSE_), all work performed [at this location on this month](https://workload.vistadataproject.info/locationCalendar/workDetails/1302/2008/10) is by one nurse, Edna Dawson. At least for this month, the location could have been named _IOW OIF/OEF CASE MGT DAWSON_.
 
 ## IOW OPTOMETRY KNIGHT RETURN ([855](https://workload.vistadataproject.info/locationDetails/855))
 
-KNIGHT,JAYDEN B
+Jayden Knight, an Optometrist in the Iowa Hospital, names this location ...
 
 ![](imagesLocn/LocnIOW_OPT_KNIGHT.png)
-...
-![](imagesLocn/LocnIOW_OPT_KNIGHT_DETAILS.png)
-...
-![](imagesLocn/LocnIOW_OPT_KNIGHT_DETAILS_25th.png)
-...
+
+and this provider has performed steady work of this sort from late in 2001 until now ...
+
 ![](imagesLocn/LocnIOW_OPT_KNIGHT_TIMELINE.png)
-...
-![](imagesLocn/LocnIOW_OPT_KNIGHT_TIMELINE_11_08.png)
-...
+
+There were six pieces of credited work in November 2008, all of type OPTOMETRY ...
+
+![](imagesLocn/LocnIOW_OPT_KNIGHT_DETAILS.png)
+
+and all colored yellow, the color of OPTOMETRY's DSS grouping, _Surgical Services_.
+
+Frank Gilbert was seen on the 25th as part of a disability exam. Only the CPT code tells us that ...
+
+![](imagesLocn/LocnIOW_OPT_KNIGHT_DETAILS_25th.png)
 
 ## RADIOLOGY DIV 999 OOS ID 105 ([193](https://workload.vistadataproject.info/locationDetails/193))
 
