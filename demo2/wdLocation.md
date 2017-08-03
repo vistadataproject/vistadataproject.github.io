@@ -103,6 +103,8 @@ Frank Gilbert had two on the 25th, each given a CPT. As they both occurred at th
 
 ![](imagesLocn/LocnRadiologyXRAY_DETAILS-25th.png)
 
+Notice that the work is described as __ANCILLARY__ - this denotes that the workload was assembled automatically by VISTA.
+
 ## ZZIOW C&P SALAZAR ([932](https://workload.vistadataproject.info/locationDetails/932))
 
 Genevieve Salazar is a Registered Nurse who names this location for General Medicine and specifically for C&P EXAMs ...
