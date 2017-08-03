@@ -31,7 +31,7 @@ Once a new progress note is created, textual notes may be entered in the blank a
 Now click the Skin Tests tab and click the Other Skin Test button. A list of skin test options are displayed.  
 ![](../images/PCE/newSkinTest.png)
 
-Select PPD TUBERCULIN, enter Results, Reading and put comments to note this operation. Click OK and an alert asking if you are the Primary Provider for this Encounter. Click Yes to store this skin test.
+Select PPD TUBERCULIN, enter Results, Reading and put comments to note this operation. Click OK and an alert asking if you are the Primary Provider for this Encounter if you haven't set the primary provider yet. Click Yes to store this skin test.
 ![](../images/PCE/saveSkinTest.png)
 
 The RPC Emulator implements the RPC call with an MVDM ORWPCE SAVE operation. After creating and updating appropriate information in VISTA, the nodeVISTA manager will dispatch this create event.
