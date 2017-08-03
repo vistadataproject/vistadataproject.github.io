@@ -10,9 +10,11 @@ Specifically patient [_Frank Gilbert_ was seen](https://workload.vistadataprojec
   * one, _IOW OIF/OEF CASE MGT NURSE_, is named for the role of the provider, _NURSE_, instead of for a specific provider
   * one, _RADIOLOGY DIV 999 OOS ID 105_, is primarily named for a class of work (_RADIOLOGY_) performed at the institution with Station Number _999_ (_IOWA_). The specific DSS code for this class of work is _105_ (_XRAY_) 
 
-__Note__: the [Location Browser shows](https://workload.vistadataproject.info/locations?page=0&pageSize=20&sortBy=label&sortDir=asc&institution=-1&division=-1&stopCode=-1&creditStopCode=-1&type44=-1&isPersonal=true&excludeDeleted=false) that _Personal Locations_ make up 698 of the 1900 locations in the _IOWA Hospital System_.
+The [Location Browser shows](https://workload.vistadataproject.info/locations?page=0&pageSize=20&sortBy=label&sortDir=asc&institution=-1&division=-1&stopCode=-1&creditStopCode=-1&type44=-1&isPersonal=true&excludeDeleted=false) that _Personal Locations_ make up 698 of the 1900 locations in the _IOWA Hospital System_.
 
 ![](imagesLocn/LocationPersonalList.png)
+
+__Note__: the Workload Data inside the _Workload Service_ finished in March 2011. In the descriptions below, "Now" means _March 2011_.
 
 ## IOW C&P AUDIO RODGERS ([947](https://workload.vistadataproject.info/locationDetails/947))
 
@@ -47,7 +49,7 @@ On November 2008, six pieces of work, all _Primary Care Medicine_ were performed
 
 ![](imagesLocn/LocnIOW_OIF_NURSE_TIMELINE_11_08.png)
 
-_Primary Care_ is green, the color of _Medicine and Primary Care Services_ which is the DSS grouping it belongs to. Note that the location's DSS is _GENERAL INTERNAL MEDICINE_, a DSS from the same DSS grouping. At some point between November 2008 and "now" (March 2011), the location's DSS changed. A browse of its timeline shows the change happened in April 2009 ...
+The location's DSS is _GENERAL INTERNAL MEDICINE_, a DSS from the same DSS grouping. At some point between November 2008 and "now" (March 2011), the location's DSS changed. A browse of its timeline shows the change happened in April 2009 ...
 
 ![](imagesLocn/LocnIOW_OIF_NURSE_TIMELINE_DSS_CHANGE.png)
 
@@ -63,7 +65,7 @@ Jayden Knight, an Optometrist in the Iowa Hospital, names this location ...
 
 ![](imagesLocn/LocnIOW_OPT_KNIGHT.png)
 
-and this provider has performed steady work of this sort from late in 2001 until now ...
+and this provider has performed steady work of this sort from late in 2001 until "now" ...
 
 ![](imagesLocn/LocnIOW_OPT_KNIGHT_TIMELINE.png)
 
