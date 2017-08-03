@@ -3,7 +3,7 @@ layout: default
 title: Workload "DSS" Demo - Locations
 ---
 
-The following screenshots from the [Veteran Workload Browser](https://workload.vistadataproject.info) show the locations where care was given to a particular patient in November 2008. It shows how "location" is more than a physical concept in VISTA and the VA - it represents a combination of place and the type of work performed and, in many cases, also who is performing work. These combinations allow a system to capture workload data for places and people. 
+The following screenshots from the [Veteran Workload Browser](https://workload.vistadataproject.info) show the locations where care was given to a particular patient in November 2008. It shows how "location" is more than a physical concept in VISTA and the VA - it represents a combination of place and the type of work performed and, in many cases, also who is performing work. These combinations allow the VISTA system to capture workload data for places and people. 
 
 Specifically patient [_Frank Gilbert_ was seen](https://workload.vistadataproject.info/patientCalendar/workDetails/7199390/2008/10) at seven different "locations" in November 2008:
   * five are _Personal Locations_ ("ZZIOW C&P __JENSEN__", "IOW C&P AUDIO __RODGERS__", "IOW OPTOMETRY __KNIGHT__ RETURN", "ZZIOW C&P __SALAZAR__", "IOW MH __AGUILAR__"). As well as being named for an institution (_IOW_ for Iowa) and type of work (_C&P AUDIO_, _OPTOMETRY_), these locations are named for a particular provider such a Nancy __ROGERS__ or Jayden __KNIGHT__. Such _locations_ allow a provider's time to be scheduled and the nature of work performed to be designated.
@@ -117,9 +117,22 @@ and Frank Gilbert was seen by her on the 25th of November 2008 for a Disability 
 
 ## IOW MH AGUILAR ([1390](https://workload.vistadataproject.info/locationDetails/1390))
 
-AGUILAR,ESSIE E ... 
+Essie Aguilar is a social worker working in mental health (_MH_) who names this location ...
+
+![](imagesLocn/LocnIOWMHAGUILAR)
+
+She has a very large workload ...
+
+![](imagesLocn/LocnIOWMHAGUILAR_Timeline)
+
+which starts in November 2008, the month we're considering here.
+
+Frank Gilbert was seen on the 26th ...
+
+![](imagesLocn/LocnIOWMHAGUILAR_Details_26)
 
 ## ZZIOW C&P JENSEN ([949](https://workload.vistadataproject.info/locationDetails/949))
 
+... __TODO__ - needs data/browser fix ...
+
 ![](imagesLocn/Locn_ZZIOW_CP_JENSEN.png)
-...
