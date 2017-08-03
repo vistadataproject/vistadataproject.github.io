@@ -107,7 +107,7 @@ Genevieve Salazar is a Registered Nurse who names this location for General Medi
 
 ![](imagesLocn/LocnZZSalazar.png)
 
-The timeline for the location shows that March 2010 had the last work. Hence __ZZ__ in front of the name. This location is no longer in use as Ms Salazar has left the Iowa Hospital. A "ZZ" prefix is a VISTA convention for marking locations as obsolete ...
+The timeline for the location shows that March 2010 had the last work - though the official retirement date was months later. Hence __ZZ__ in front of the name. This location is no longer in use as Ms Salazar has left the Iowa Hospital. A "ZZ" prefix is a VISTA convention for marking locations as obsolete ...
 
 ![](imagesLocn/LocnZZSalazarTimeline.png)
 
