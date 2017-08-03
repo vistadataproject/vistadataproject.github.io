@@ -24,11 +24,17 @@ Once a new visit is set, click New Note at the bottom left cornor and select a t
 
 ## Create a Skin Test
 
-Once a new progress note is created, textual notes may be entered in the blank area (e.g. "TB skin test" in the screenshot's background). Click Encounter > Skin Tests > Other Skin Test. A list of skin test options are displayed.  
+Once a new progress note is created, textual notes may be entered in the blank area (e.g. "TB skin test" in the screenshot's background). Then click Encounter above the New Note. Select a primary provider by Add the name first to Current Providers to this encounter and click the Primary button.
+![](../images/PCE/primary.png)
+
+
+Now click the Skin Tests tab and click the Other Skin Test button. A list of skin test options are displayed.  
 ![](../images/PCE/newSkinTest.png)
 
-Select PPD TUBERCULIN, enter Results, Reading and put comments to note this operation. Click OK and an alert asking if you are the Primary Provider for this Encounter. Click Yes to store this skin test.
+Select PPD TUBERCULIN, enter Results, Reading and put comments to note this operation. Click OK and an alert asking if you are the Primary Provider for this Encounter if you haven't set the primary provider yet. Click Yes to store this skin test.
 ![](../images/PCE/saveSkinTest.png)
+
+While the New Note in Porgress is selected, click Options > Save without Signature to ensure this note is saved.
 
 The RPC Emulator implements the RPC call with an MVDM ORWPCE SAVE operation. After creating and updating appropriate information in VISTA, the nodeVISTA manager will dispatch this create event.
 ![](../images/PCE/skinTestRpc.png)
@@ -43,6 +49,6 @@ Note the skin test has the same visit time as provider and tiu document.
 ![](../images/PCE/vSkinTest.png)
 
 ## Read the Skin Test
-The RPC emulator implements the RPC call with an ORWPCE PCE4NOTE operation as well. 
+The RPC emulator implements the RPC call with an ORWPCE PCE4NOTE operation as well. Once a progress note is saved, if you logout CPRS and relogin to select the saved note (or select a different patient and select back to the same patient), you will be able to see the ORWPCE PCE4NOTE RPC call via the management client's RPC Events. 
 ![](../images/PCE/readSkinTest.png)
 

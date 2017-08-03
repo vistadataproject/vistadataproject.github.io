@@ -28,12 +28,13 @@ Once a new progress note is created, click Encounter above the New Note. Add a s
 CPRS asks for the primary provider. (Alternatively, you may assign it by clicking the Primary button in the previous screenshot) 
 ![](../images/PCE/saveProv.png)
 
-
 The RPC Emulator implements the RPC call with an MVDM ORWPCE SAVE operation. After creating and updating appropriate information in VISTA, the nodeVISTA manager will dispatch this create event. 
 ![](../images/PCE/provRpc.png)
 
+While the New Note in Porgress is selected, click Options > Save without Signature to ensure this note is saved.
+
 ## Read the Provider 
-Make sure you are selecting the new note you just created and click Encounter again. The RPC Emulator implements the RPC call with an MVDM ORWPCE PCE4NOTE operation.  
+The RPC Emulator implements the RPC call with an MVDM ORWPCE PCE4NOTE operation.  Once a progress note is saved, if you logout CPRS and relogin to select the saved note (or select a different patient and select back to the same patient without re-login), you will be able to see the ORWPCE PCE4NOTE RPC call via the management client's RPC Events. 
 ![](../images/PCE/readProv.png)
 
 Switch to the MVDM Events in the nodeVISTA management client. There is a LIST event for V Provider and the provider assignment is now emulated in the listing (toward the end).
