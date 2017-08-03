@@ -3,12 +3,17 @@ layout: default
 title: Workload "DSS" Demo - Locations
 ---
 
-## ZZIOW C&P JENSEN ([]()) 
+Specifically patient [_Frank Gilbert_]() was seen at seven different "locations" in November 2008:
+    * five are _Personal Locations_ ("ZZIOW C&P __JENSEN__", "IOW C&P AUDIO __RODGERS__", "IOW OPTOMETRY __KNIGHT__ RETURN", "ZZIOW C&P __SALAZAR__", "IOW MH __AGUILAR__"). As well as being named for an institution (_IOW_ for Iowa) and type of work (_C&P AUDIO_, _OPTOMETRY_), these locations are named for a particular provider such a Nancy __ROGERS__ or Jayden __KNIGHT__. Such _locations_ allow a provider's time to be scheduled and the nature of work performed to be designated.
+    * one is named for the role of the provider, _NURSE_, instead of for a specific provider
+    * one, _RADIOLOGY DIV 999 OOS ID 105_ is primarily named for a class of work (_RADIOLOGY_) performed at the institution with Station Number _999_ (_IOWA_). The specific DSS code for this class of work is _105_ () 
+
+## ZZIOW C&P JENSEN ([949](https://workload.vistadataproject.info/locationDetails/949)) 
 
 ![](imagesLocn/Locn_ZZIOW_CP_JENSEN.png)
 ...
 
-## IOW C&P AUDIO RODGERS ([]())
+## IOW C&P AUDIO RODGERS ([947](https://workload.vistadataproject.info/locationDetails/947))
 
 Nancy Rodgers, an Audiologist, names this _Personal Location_. Work at this location is _AUDIOLOGY_, specifically
 _C&P EXAMS_ ...
@@ -27,7 +32,7 @@ Patient _Frank Gilbert_ was seen on the 25th. The workload is _AUDIOLOGY/C&P EXA
 
 ![](imagesLocn/LocnIOW_CP_AUDIO_ROGERS_DETAILS_25th.png)
 
-## IOW OIF/OEF CASE MGT NURSE ([]())
+## IOW OIF/OEF CASE MGT NURSE ([1302](https://workload.vistadataproject.info/locationDetails/1302))
 
 DAWSON,EDNA
 
@@ -55,7 +60,7 @@ KNIGHT,JAYDEN B
 ![](imagesLocn/LocnIOW_OPT_KNIGHT_TIMELINE_11_08.png)
 ...
 
-## RADIOLOGY DIV 999 OOS ID 105 ([]())
+## RADIOLOGY DIV 999 OOS ID 105 ([193](https://workload.vistadataproject.info/locationDetails/193))
 
 ... Radiologists?
 
@@ -70,7 +75,7 @@ KNIGHT,JAYDEN B
 ![](imagesLocn/LocnRadiologyXRAY_TIMELINE_11_08.png)
 ...
 
-## ZZIOW C&P SALAZAR ([...]())
+## ZZIOW C&P SALAZAR ([932](https://workload.vistadataproject.info/locationDetails/932))
 
 ![](imagesLocn/LocnSalazar-Extra-RAD.png)
 ...
@@ -81,6 +86,6 @@ KNIGHT,JAYDEN B
 ![](imagesLocn/LocnZZSalazarTimeline_11_08.png)
 ...
 
-## IOW MH AGUILAR ([...]())
+## IOW MH AGUILAR ([1390](https://workload.vistadataproject.info/locationDetails/1390))
 
 AGUILAR,ESSIE E ... 
