@@ -23,8 +23,8 @@ Once a new visit is set, click New Note at the bottom left cornor and select a t
 
 
 ## Create a Immunization
-
-Once a new progress note is created, click Encounter above the New Note. Select a primary provider by Add the name first to Current Providers to this encounter and click the Primary button.
+"
+Once a new progress note is created, click Encounter above the New Note. Select a primary provider by adding (Add button) the name first to Current Providers to this encounter and click the Primary button.
 ![](../images/PCE/primary.png)
 
 Select the "Immunization" tab. Enter "add" in the search box and select a procedure.   
@@ -32,7 +32,7 @@ Select the "Immunization" tab. Enter "add" in the search box and select a proced
 
 Select appropriate Series, Reaction and Contraindicted, if any, and enter optional comments. Click OK and an alert asking if you are the Primary Provider for this Encounter. Click Yes to save this procedure. 
 ![](../images/PCE/saveImm.png)
-While the New Note in Porgress selected, click Options > Save without Signature to ensure this note is saved.
+While the New Note in Porgress is selected, click Options > Save without Signature to ensure this note is saved.
 
 The RPC Emulator implements the RPC call with an ORWPCE SAVE operation. After creating and updating appropriate information in VISTA, the nodeVISTA manager will dispatch this create event.
 ![](../images/PCE/immRpc.png)
