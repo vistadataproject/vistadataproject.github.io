@@ -3,7 +3,7 @@ layout: default
 title: Workload "DSS" Demo - Locations
 ---
 
-The following screenshots from the [Veteran Workload Browser](https://workload.vistadataproject.info) show the locations where care was given to a particular patient in November 2008. It shows how "location" is more than a physical concept in VISTA and the VA - it represents a combination of place and the type of work performed and, in many cases, also who is performing work. These combinations allow the VISTA system to capture workload data for places and people. 
+The following screenshots from the [Veteran Workload Browser](https://workload.vistadataproject.info) show the locations where care was given to a particular patient in November 2008. They show how "location" is more than a physical concept in VISTA and the VA - it represents a combination of place and the type of work performed and, in many cases, who is performing work. These combinations allow the VISTA system to capture hospital workload.
 
 Specifically patient [_Frank Gilbert_ was seen](https://workload.vistadataproject.info/patientCalendar/workDetails/7199390/2008/10) at seven different "locations" in November 2008:
   * five are _Personal Locations_ ("ZZIOW C&P __JENSEN__", "IOW C&P AUDIO __RODGERS__", "IOW OPTOMETRY __KNIGHT__ RETURN", "ZZIOW C&P __SALAZAR__", "IOW MH __AGUILAR__"). As well as being named for an institution (_IOW_ for Iowa) and type of work (_C&P AUDIO_, _OPTOMETRY_), these locations are named for a particular provider such a Nancy __ROGERS__ or Jayden __KNIGHT__. Such _locations_ allow a provider's time to be scheduled and the nature of work performed to be designated.
