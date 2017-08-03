@@ -12,11 +12,6 @@ Specifically patient [_Frank Gilbert_ was seen](https://workload.vistadataprojec
 
 __Note__: the [Location Browser shows](https://workload.vistadataproject.info/locations?page=0&pageSize=20&sortBy=label&sortDir=asc&institution=-1&division=-1&stopCode=-1&creditStopCode=-1&type44=-1&isPersonal=true&excludeDeleted=false) that _Personal Locations_ make up 698 of the 1900 locations in the _IOWA Hospital System_.
 
-## ZZIOW C&P JENSEN ([949](https://workload.vistadataproject.info/locationDetails/949)) 
-
-![](imagesLocn/Locn_ZZIOW_CP_JENSEN.png)
-...
-
 ## IOW C&P AUDIO RODGERS ([947](https://workload.vistadataproject.info/locationDetails/947))
 
 Nancy Rodgers, an Audiologist, names this _Personal Location_. Work at this location is _AUDIOLOGY_, specifically
@@ -54,7 +49,7 @@ _Primary Care_ is green, the color of _Medicine and Primary Care Services_ which
 
 ![](imagesLocn/LocnIOW_OIF_NURSE_TIMELINE_DSS_CHANGE.png)
 
-Frank Gilbert was seen on the 25th ...
+Frank Gilbert was seen on the 25th and the Workload was given a Telephone CPT. This may be a mistake - CPTs used in other work for the month such as _CASE MANAGEMENT (t1016)_ or _OFFICE/OUTPATIENT VISIT EST (99211)_ seem more appropriate. Remember that CPTs for this type of Workload are manually chosen by the Provider making errors more likely ...
 
 ![](imagesLocn/LocnIOW_OIF_NURSE_DETAILS_25th.png)
 
@@ -106,15 +101,23 @@ Frank Gilbert had two on the 25th, each given a CPT. As they both occurred at th
 
 ## ZZIOW C&P SALAZAR ([932](https://workload.vistadataproject.info/locationDetails/932))
 
-![](imagesLocn/LocnSalazar-Extra-RAD.png)
-...
-![](imagesLocn/LocnSalazarDETAILS_25th.png)
-...
+Genevieve Salazar is a Registered Nurse who names this location for General Medicine and specifically for C&P EXAMs ...
+
 ![](imagesLocn/LocnZZSalazar.png)
-...
-![](imagesLocn/LocnZZSalazarTimeline_11_08.png)
-...
+
+The timeline for the location shows that March 2010 had the last work. Hence __ZZ__ in front of the name. This location is no longer in use as Ms Salazar has left the Iowa Hospital. A "ZZ" prefix is a VISTA convention for marking locations as obsolete ...
+
+![](imagesLocn/LocnZZSalazarTimeline.png)
+
+and Frank Gilbert was seen by her on the 25th of November 2008 for a Disability Exam. Here again, the CPT is less precise than the DSS combination ...
+
+![](imagesLocn/LocnSalazarDETAILS_25th.png)
 
 ## IOW MH AGUILAR ([1390](https://workload.vistadataproject.info/locationDetails/1390))
 
 AGUILAR,ESSIE E ... 
+
+## ZZIOW C&P JENSEN ([949](https://workload.vistadataproject.info/locationDetails/949))
+
+![](imagesLocn/Locn_ZZIOW_CP_JENSEN.png)
+...
