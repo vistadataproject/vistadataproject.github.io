@@ -119,17 +119,17 @@ and Frank Gilbert was seen by her on the 25th of November 2008 for a Disability 
 
 Essie Aguilar is a social worker working in mental health (_MH_) who names this location ...
 
-![](imagesLocn/LocnIOWMHAGUILAR)
+![](imagesLocn/LocnIOWMHAGUILAR.png)
 
 She has a very large workload ...
 
-![](imagesLocn/LocnIOWMHAGUILAR_Timeline)
+![](imagesLocn/LocnIOWMHAGUILAR_Timeline.png)
 
 which starts in November 2008, the month we're considering here.
 
 Frank Gilbert was seen on the 26th ...
 
-![](imagesLocn/LocnIOWMHAGUILAR_Details_26)
+![](imagesLocn/LocnIOWMHAGUILAR_Details_26.png)
 
 ## ZZIOW C&P JENSEN ([949](https://workload.vistadataproject.info/locationDetails/949))
 
