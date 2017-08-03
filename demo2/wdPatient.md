@@ -5,7 +5,6 @@ title: Workload "DSS" Demo - Patient
 
 Separate the Non Clinical: show in a "Workload (DSS) Browser" uses a "VISTA DSS Service" which is sliced out of VISTA. Shows that non clinical aspects of VISTA can be cleanly separated and centralized.
 
-```text
 Message: beyond clinical -- VISTA and Workload 
 
 overall this month, the patient had two MH exams (C&P and Social work one), three X-Rays, 
