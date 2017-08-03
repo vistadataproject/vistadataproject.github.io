@@ -34,6 +34,8 @@ Now click the Skin Tests tab and click the Other Skin Test button. A list of ski
 Select PPD TUBERCULIN, enter Results, Reading and put comments to note this operation. Click OK and an alert asking if you are the Primary Provider for this Encounter if you haven't set the primary provider yet. Click Yes to store this skin test.
 ![](../images/PCE/saveSkinTest.png)
 
+While the New Note in Porgress is selected, click Options > Save without Signature to ensure this note is saved.
+
 The RPC Emulator implements the RPC call with an MVDM ORWPCE SAVE operation. After creating and updating appropriate information in VISTA, the nodeVISTA manager will dispatch this create event.
 ![](../images/PCE/skinTestRpc.png)
 
