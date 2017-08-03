@@ -3,15 +3,17 @@ layout: default
 title: Workload "DSS" Demo - Patient
 ---
 
-The following looks at _Workload_ for a particular patient, [Frank Gilbert](https://workload.vistadataproject.info/patientDetails/7199390) ...
+The following screenshots show how the _Veteran Workload Browser_ presents the _Workload_ of a particular patient.
+
+[Frank Gilbert](https://workload.vistadataproject.info/patientDetails/7199390) ...
 
 ![](images/AA_FrankDetails.png)
 
-which takes place over 2 years and 3 months. Specifically it examines his first month, November 2008 ... 
+is cared for over 2 years and 3 months. His first month, November 2008 ... 
 
 ![](images/CalendarWorkDetails2Years3Months.png)
 
-which featured Psychiatric and Physical examinations over four days ...
+featured Psychiatric and Physical examinations over four days ...
 
 ![](images/Calendar_11-2008_WorkDetails.png)
 
@@ -30,6 +32,12 @@ Note that _Sent to NPCD_ means the work load description was sent to the Nationa
 One document, a C&P was entered (transcribed) 3 days later and signed even later ...
 
 ![](images/Frank_Document-11-24.png)
+
+## Day 2 - 25th of November
+
+This was a busy day ...
+
+![](images/Frank_Workload_Details_25th.png)
    
 ## 25th and 28th have X RAYs
 
