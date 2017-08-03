@@ -24,11 +24,15 @@ Once a new visit is set, click New Note at the bottom left cornor and select a t
 
 ## Create a Immunization
 
-Once a new progress note is created, click Encounter above the New Note and then select the "Immunization" tab. Enter "add" in the search box and select a procedure.   
+Once a new progress note is created, click Encounter above the New Note. Select a primary provider by Add the name first to Current Providers to this encounter and click the Primary button.
+![](../images/PCE/primary.png)
+
+Select the "Immunization" tab. Enter "add" in the search box and select a procedure.   
 ![](../images/PCE/newImm.png)
 
-Select appropriate Series, Reaction and Contraindicted, if any, and enter optional comments. Click OK and an alert asking if you are the Primary Provider for this Encounter. Click Yes to save this procedure.
+Select appropriate Series, Reaction and Contraindicted, if any, and enter optional comments. Click OK and an alert asking if you are the Primary Provider for this Encounter. Click Yes to save this procedure. 
 ![](../images/PCE/saveImm.png)
+While the New Note in Porgress selected, click Options > Save without Signature to ensure this note is saved.
 
 The RPC Emulator implements the RPC call with an ORWPCE SAVE operation. After creating and updating appropriate information in VISTA, the nodeVISTA manager will dispatch this create event.
 ![](../images/PCE/immRpc.png)
@@ -44,6 +48,6 @@ Note the immunization has the same visit time as provider and tiu document.
 
 
 ## Read the Immunization
-The RPC emulator implements the RPC call with an ORWPCE PCE4NOTE operation as well. 
+The RPC emulator implements the RPC call with an ORWPCE PCE4NOTE operation as well. Once a progress note is saved, if you logout CPRS and relogin to select the saved note (or select a different patient and select back to the same patient), you will be able to see the ORWPCE PCE4NOTE RPC call via the management client's RPC Events.
 ![](../images/PCE/readImm.png)
 
