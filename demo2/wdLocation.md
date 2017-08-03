@@ -12,6 +12,8 @@ Specifically patient [_Frank Gilbert_ was seen](https://workload.vistadataprojec
 
 __Note__: the [Location Browser shows](https://workload.vistadataproject.info/locations?page=0&pageSize=20&sortBy=label&sortDir=asc&institution=-1&division=-1&stopCode=-1&creditStopCode=-1&type44=-1&isPersonal=true&excludeDeleted=false) that _Personal Locations_ make up 698 of the 1900 locations in the _IOWA Hospital System_.
 
+![](imagesLocn/LocationPersonalList.png)
+
 ## IOW C&P AUDIO RODGERS ([947](https://workload.vistadataproject.info/locationDetails/947))
 
 Nancy Rodgers, an Audiologist, names this _Personal Location_. Work at this location is _AUDIOLOGY_, specifically
