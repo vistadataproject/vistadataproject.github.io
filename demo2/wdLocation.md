@@ -4,9 +4,9 @@ title: Workload "DSS" Demo - Locations
 ---
 
 Specifically patient [_Frank Gilbert_]() was seen at seven different "locations" in November 2008:
-    * five are _Personal Locations_ ("ZZIOW C&P __JENSEN__", "IOW C&P AUDIO __RODGERS__", "IOW OPTOMETRY __KNIGHT__ RETURN", "ZZIOW C&P __SALAZAR__", "IOW MH __AGUILAR__"). As well as being named for an institution (_IOW_ for Iowa) and type of work (_C&P AUDIO_, _OPTOMETRY_), these locations are named for a particular provider such a Nancy __ROGERS__ or Jayden __KNIGHT__. Such _locations_ allow a provider's time to be scheduled and the nature of work performed to be designated.
-    * one is named for the role of the provider, _NURSE_, instead of for a specific provider
-    * one, _RADIOLOGY DIV 999 OOS ID 105_ is primarily named for a class of work (_RADIOLOGY_) performed at the institution with Station Number _999_ (_IOWA_). The specific DSS code for this class of work is _105_ () 
+  * five are _Personal Locations_ ("ZZIOW C&P __JENSEN__", "IOW C&P AUDIO __RODGERS__", "IOW OPTOMETRY __KNIGHT__ RETURN", "ZZIOW C&P __SALAZAR__", "IOW MH __AGUILAR__"). As well as being named for an institution (_IOW_ for Iowa) and type of work (_C&P AUDIO_, _OPTOMETRY_), these locations are named for a particular provider such a Nancy __ROGERS__ or Jayden __KNIGHT__. Such _locations_ allow a provider's time to be scheduled and the nature of work performed to be designated.
+  * one is named for the role of the provider, _NURSE_, instead of for a specific provider
+  * one, _RADIOLOGY DIV 999 OOS ID 105_ is primarily named for a class of work (_RADIOLOGY_) performed at the institution with Station Number _999_ (_IOWA_). The specific DSS code for this class of work is _105_ () 
 
 ## ZZIOW C&P JENSEN ([949](https://workload.vistadataproject.info/locationDetails/949)) 
 
