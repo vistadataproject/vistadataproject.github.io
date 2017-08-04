@@ -14,6 +14,8 @@ This release note describes the functionality delivered in 1.3 and known outstan
   3. New Developer Documentation
   4. Issues
 
+<hr>
+
 ## Clinical/nodeVISTA 
 
 1.3 added one new clinical domain, PCE, emulated the vast majority of Meta RPCs used in the [nodeVISTA Demo](http://vistadataproject.info/demo/) and built a Lexicon Service.
@@ -209,6 +211,8 @@ As part of separating VISTA’s Clinical and Non Clinical function, the VISTA Da
 
 Upgraded the [developer documentation tools](https://github.com/vistadataproject/metaVDP/tree/master/definitions/docs), and uploaded the generated documents to the VISTA Data Project documentation GitHub repository:
   [New Developer Documentation](http://vistadataproject.info/artifacts/devdocs/)
+
+<hr>
 
 ## Outstanding Issues
   * Non Clinical:
