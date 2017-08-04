@@ -19,10 +19,10 @@ and
 
 The Workload Service and its Browser client are available at [https://workload.vistadataproject.info/](https://workload.vistadataproject.info) (login required).
 
-The _Service_ houses typical VA workload data generated from a statistical analysis of production VISTAs. The dataset depicts the workload of a fictional _IOWA Hospital_, which matches the attributes of a typical VA medical center. The _Browser_ allows you to examine workload based on time, location and patient.
+The _Service_ houses a typical VA workload dataset generated from a statistical analysis of production VISTAs. The dataset depicts the workload of a fictional _IOWA Hospital_ which matches the attributes of a typical VA medical center. The _Browser_ allows you to examine workload based on time, location and patient.
 
 ![](images/workloadServiceBanner.jpg)
 
-The following guides show the browser displaying workload based on [__Location__](location) and [__Patient__](patient).
+The following guides show the _Workload Browser_ examining workload based on [__Location__](location) and [__Patient__](patient).
 
 
