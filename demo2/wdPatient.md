@@ -3,13 +3,11 @@ layout: default
 title: Workload "DSS" Demo - Patient
 ---
 
-The following screenshots show how the _Veteran Workload Browser_ presents the _Workload_ of a particular patient.
-
-[Frank Gilbert](https://workload.vistadataproject.info/patientDetails/7199390) ...
+The following screenshots show how the _Veteran Workload Browser_ presents the _Workload_ of a particular patient, [Frank Gilbert](https://workload.vistadataproject.info/patientDetails/7199390) ...
 
 ![](images/AA_FrankDetails.png)
 
-is cared for over 2 years and 3 months. His first month, November 2008 ... 
+He was cared for over 2 years and 3 months. His first month, November 2008 ... 
 
 ![](images/CalendarWorkDetails2Years3Months.png)
 
@@ -37,7 +35,25 @@ This was a busy day with five Workload records. Two are green, the color of _Med
 
 ![](images/Frank_Workload_Details_25th.png)
 
+The first record is for a C&P Exam by Genevieve Salazar, a Registered Nurse ...
 
+![](images/WorkDetails_11-25-08_GENINTERNALSalazarInSalazar.png)
+
+which led to a document ...
+
+![](images/Document_11-25-08_CPMEDICALSalazar.png)
+
+The last is X-RAY representing two - as coded in CPT - exams ...
+
+![](images/WorkDetails-11-25-XRAY.png)
+
+And behind this workload are two Radiology reports ...
+
+![](images/RadDocument-11-25-two.png)
+
+## Day 3 - 26th of November
+
+...
    
 ## 25th and 28th have X RAYs
 
@@ -61,8 +77,6 @@ Note: exam_date_time is the 26th
 ![](images/WorkDetails-11-28-XRAY.png)
 ...
 ![](images/Order-11-25-08-RAD_XRAYOneOfThree.png)
-...
-![](images/WorkDetails-11-25-XRAY.png)
 
 ## 26th has WD MH 2
    * DX Interview CPT ... multi level DSS
@@ -89,16 +103,6 @@ Note: exam_date_time is the 26th
 ![](images/Document_12-01-08_AudiologyRogers.png)
 ...
 ![](images/WorkDetails_11-25-08-AudiologyRogersAtRogers.png)
-
-## General Internal Salazar: 25th
-
-```text
-- has a doc: C&P MEDICAL (8925_1-1331) 25/25 ... but sign is 2nd dec.
-```
-
-![](images/WorkDetails_11-25-08_GENINTERNALSalazarInSalazar.png)
-...
-![](images/Document_11-25-08_CPMEDICALSalazar.png)
 
 ## PRIMARY CARE_MEDICINE (NURSE)
 
