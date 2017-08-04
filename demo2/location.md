@@ -134,3 +134,7 @@ which starts in November 2008, the month we're considering here.
 Frank Gilbert was seen on the 26th ...
 
 ![](imagesLocn/LocnIOWMHAGUILAR_Details_26.png)
+
+Note that Ms Aguilar is not the only provider with a location for this type of work ...
+
+![](imagesLocn/Location-MHINTGRTDCARE-PERSONAL)
