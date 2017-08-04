@@ -3,9 +3,30 @@ layout: default
 title: Release Note v1.3
 ---
 
-## VDP Release V1.3 (August 3rd 2017)
+# VDP Release V1.3 (August 3rd 2017)
 
-### Non Clinical RPCs Emulation Models
+Leveraging a prod clone of VISTA, this release isolates Work Details from core Patient data. It represents, as far as we know, the first time that the work reporting of VISTA has been cleanly separated from its clinical data and represents a key milestone in the road to a Master Veteran Data Model.
+
+This release note describes the functionality delivered in 1.3 and known outstanding issues:
+
+  1. Clinical/nodeVISTA
+  2. Non Clinical/Workload
+  3. New Developer Documentation
+  4. Issues
+
+## Clinical/nodeVISTA 
+
+1.3 added one new clinical domain, PCE, emulated the vast majority of Meta RPCs used in the [nodeVISTA Demo](http://vistadataproject.info/demo/) and built a Lexicon Service.
+
+In addition, small enhancements and fixes were made to _nodeVISTA_ and _client_ GUIs including [nodeVISTA's splash screen](http://vistadataproject.info/demo/images/common/cprs/signon.png).
+
+### New Domain - Primary Care Encounter (PCE)
+
+Implementation complete for two (2) of the PCE categories
+  1. [Immunization](http://vistadataproject.info/demo/PCE/immunization)
+  2. [Skin Tests](http://vistadataproject.info/demo/PCE/skinTest)
+
+### Meta RPC Emulation
 
 The following is a list of Meta RPCs emulated in this release
 
@@ -169,26 +190,27 @@ ORWPT LEGACY<br/>
 ORWRP GET DEFAULT PRINTER<br/>
 XWB DEFERRED CLEARALL<br/>
 
-
 ### Lexicon Service
 
 Many coded terminology sets (e.g. ICD-9, ICD-10, SNOMED) within _VISTA_ are indexed and searchable via its [Lexicon Utility](https://www.va.gov/vdl/documents/Clinical/Lexicon_Utility/lextm2_0.pdf).
-The v1.3 release comes with an implemented _Javascript-based Lexicon Service_, based on VISTA's Lexicon Utility, which is used by applicable RPC emulations.
+The v1.3 release comes with an implemented _Javascript-based Lexicon Service_, based on VISTA's Lexicon Utility, which is used by applicable RPC emulations. 
 
-### Patient Care Encounter (PCE)
+In v1.4, this service will enable a range of centralized, noSQL backed emulations.
 
-Implementation complete for two (2) of the PCE categories
-  1. [Immunization](http://vistadataproject.info/demo/PCE/immunization)
-  2. [Skin Tests](http://vistadataproject.info/demo/PCE/skinTest)
+<hr>
 
-### Updated Developer Documentation
+## Non Clinical/Workload Service and Browser
+
+As part of separating VISTA’s Clinical and Non Clinical function, the VISTA Data Project (VDP) has created a Veteran Workload Service and Browser which demonstrate how VISTA manages and monitors workload. See [http://vistadataproject.info/demo2/](http://vistadataproject.info/demo2/)
+
+<hr>
+
+## Enhanced Developer Documentation
 
 Upgraded the [developer documentation tools](https://github.com/vistadataproject/metaVDP/tree/master/definitions/docs), and uploaded the generated documents to the VISTA Data Project documentation GitHub repository:
   [New Developer Documentation](http://vistadataproject.info/artifacts/devdocs/)
 
-### Workflow Demo
-
-{TBD}
-
-### Outstanding Issues
+## Outstanding Issues
+  * Non Clinical:
+    * [lab location times out](https://github.com/vistadataproject/prodclones/issues/84) 
   * **metaVDP**: PCE MVDM models require updating and inclusion in the generated developer documentation ([vistadataproject/metaVDP Issue 4](https://github.com/vistadataproject/metaVDP/issues/4))
