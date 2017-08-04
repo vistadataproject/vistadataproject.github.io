@@ -1,11 +1,11 @@
 ---
 layout: default
-title: MVDM Demo Vitals
+title: nodeVISTA Demo Vitals
 ---
 
 # Vitals
 
-See the [MVDM Demo](http://vistadataproject.info/demo/) posting to setup the nodeVISTA management client and CPRS.
+See the [nodeVISTA Demo](http://vistadataproject.info/demo/) posting to setup the nodeVISTA management client and CPRS.
 
 A discussion on nodeVISTA emulation statistics can be found below in the [Emulation Statistics](#emulation-statistics) section below.
 
