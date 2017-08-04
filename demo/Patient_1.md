@@ -1,6 +1,6 @@
 ---
 layout: default
-title: nodeVISTA(MVDM) Demo Patient Selection
+title: nodeVISTA Demo Patient Selection
 ---
 
 # Patient Selection

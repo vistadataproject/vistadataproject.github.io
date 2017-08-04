@@ -1,9 +1,9 @@
 ---
 layout: default
-title: MVDM Demo PCE skin test
+title: nodeVISTA Demo Patient Care Encounter (PCE) Skin Test
 ---
 
-Before running the following, follow the [MVDM Demo Introduction](http://vistadataproject.info/demo/) on how to setup the nodeVISTA management client and CPRS. 
+Before running the following, follow the [nodeVISTA Demo Introduction](http://vistadataproject.info/demo/) on how to setup the nodeVISTA management client and CPRS.
 
 The following shows creation, and reading of patient encounter skin test using CPRS, VISTA's client, running over a nodeVISTA manager. CPRS may think it's running over a 20 year old RPC interface but it's actually invoking RPCs through an _RPC Emulator_ that runs over _nodeVISTA_. The _nodeVISTA Manager_ shows not only what CPRS sends and receives but also the underlying MVDM activity.
 
@@ -14,7 +14,7 @@ https://github.com/vistadataproject/VDM/blob/master/prototypes/PCE/rpcPCE_skinTe
 
 ## Create a Visit
 
-Skin test is a subtab under Patient Care Encounter (PCE) progress note. An PCE note is associated with a visit. Therefore, a visit must be created before editing a note. Select an Encounter Provider (Alexander, Robert) and Visit Location (VISTA HEALTH CARE). Date/Time of Visit is default to NOW. 
+Skin test is a subtab under Patient Care Encounter (PCE) progress note. An PCE note is associated with a visit. Therefore, a visit must be created before editing a note. Select an Encounter Provider (Alexander, Robert) and Visit Location (VISTA HEALTH CARE). Date/Time of Visit is default to NOW.
 
 ![](../images/PCE/newVisit.png)
 
@@ -52,7 +52,7 @@ Note the skin test has the same visit time as provider and tiu document.
 ![](../images/PCE/vSkinTest.png)
 
 ## Read the Skin Test
-The RPC emulator implements the RPC call with an ORWPCE PCE4NOTE operation as well. Once a progress note is saved, if you logout CPRS and relogin to select the saved note (or select a different patient and select back to the same patient), you will be able to see the ORWPCE PCE4NOTE RPC call via the management client's RPC Events. 
+The RPC emulator implements the RPC call with an ORWPCE PCE4NOTE operation as well. Once a progress note is saved, if you logout CPRS and relogin to select the saved note (or select a different patient and select back to the same patient), you will be able to see the ORWPCE PCE4NOTE RPC call via the management client's RPC Events.
 ![](../images/PCE/readSkinTest.png)
 
 ## Update Skin Test

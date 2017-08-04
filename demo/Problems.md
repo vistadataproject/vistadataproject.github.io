@@ -1,6 +1,6 @@
 ---
 layout: default
-title: nodeVISTA(MVDM) Demo Problems
+title: nodeVISTA Demo Problems
 ---
 
 # Problems

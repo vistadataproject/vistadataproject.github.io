@@ -1,11 +1,11 @@
 ---
 layout: default
-title: MVDM Demo Allergies
+title: nodeVISTA Demo Allergies
 ---
 
 # Allergies
 
-Before running the following, follow the [MVDM Demo Introduction](http://vistadataproject.info/demo/) on how to setup the nodeVISTA management client and CPRS.
+Before running the following, follow the [nodeVISTA Introduction](http://vistadataproject.info/demo/) on how to setup the nodeVISTA management client and CPRS.
 
 A discussion on nodeVISTA emulation statistics can be found below in the [Emulation Statistics](#emulation-statistics) section below.
 
