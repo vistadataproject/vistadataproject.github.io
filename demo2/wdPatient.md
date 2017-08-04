@@ -3,7 +3,7 @@ layout: default
 title: Workload "DSS" Demo - Patient
 ---
 
-The following screenshots show how the _Veteran Workload Browser_ presents the _Workload_ of a particular patient, [Frank Gilbert](https://workload.vistadataproject.info/patientDetails/7199390) ...
+The following screenshots show how the _Veteran Workload Browser_ presents the _Workload_ generated when caring for a particular patient, [Frank Gilbert](https://workload.vistadataproject.info/patientDetails/7199390) ...
 
 ![](images/AA_FrankDetails.png)
 
