@@ -3,7 +3,7 @@ layout: default
 title: Workload "DSS" Demo - Patient
 ---
 
-The following screenshots show how the _Veteran Workload Browser_ presents the _Workload_ generated when caring for a particular patient, [Frank Gilbert](https://workload.vistadataproject.info/patientDetails/7199390) ...
+The following screenshots show how the [_Veteran Workload Browser_](https://workload.vistadataproject.info) presents the _Workload_ generated when caring for a particular patient, [Frank Gilbert](https://workload.vistadataproject.info/patientDetails/7199390) ...
 
 ![](imagesPat/AA_FrankDetails.png)
 
@@ -18,6 +18,8 @@ featured Psychiatric and Physical examinations over four days ...
 with related documents and orders ...
 
 ![](imagesPat/Frank_Activity_11_2008.png)
+
+__Note__: the Workload Data inside the _Workload Service_ finished in March 2011. In the descriptions below, "Now" means _March 2011_.
 
 ## Day 1 - 21st of November
 
@@ -49,7 +51,7 @@ The last is X-RAY representing two - as coded in CPT - exams. In records like th
 
 and the designation _ANCILLARY_ means that the record was automatically generated - everything from the DSS to the CPTs were populated in the background by VISTA. 
 
-Behind this workload are two Radiology reports ...
+Behind this workload were two Radiology reports ...
 
 ![](imagesPat/RadDocument-11-25-two.png)
 
@@ -79,6 +81,6 @@ with an accompanying document ...
 
 ![](imagesPat/Document_11-26-08_MHAuguilar.png)
 
-# Day 4 - 28th of November
+## Day 4 - 28th of November
 
 Another XRAY was performed.
