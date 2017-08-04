@@ -3,9 +3,9 @@ layout: default
 title: MVDM Emulation Demo
 ---
 
-# MVDM Emulation Demonstration
+# nodeVISTA Emulation Demonstration
 
-The following sections describe how to run the Master VISTA Data Model (MVDM) demo. __The demo focuses on how MVDM audits, secures, and emulates current production VISTA clients such as CPRS using the RPC Emulator__:
+The following sections describe how to run the nodeVISTA demo to exercise the Master VISTA Data Model (MVDM). __The demo focuses on how MVDM audits, secures, and emulates current production VISTA clients such as CPRS using the RPC Emulator__:
 
 <br>
 
@@ -39,8 +39,8 @@ For inquiries and support related to the installation and configuration of **CPR
 * [Problems](Problems)
 * [Vitals](Vitals)
 * [Patient](Patient_1)
-* [PCE: Immunization](PCE/immunization)
-* [PCE: Skin Tests](PCE/skinTest)
+* [Patient Care Encounter (PCE): Immunization](PCE/immunization)
+* [Patient Care Encounter (PCE): Skin Tests](PCE/skinTest)
 
 <br><br>
 # Open the nodeVISTA Manager
