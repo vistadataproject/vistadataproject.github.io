@@ -3,9 +3,9 @@ layout: default
 title: Workload "DSS" Demo
 ---
 
-VISTA is a lot more than a Clinical Care System. It also provides non clinical services which help run hospitals and clinics. One key Non Clinical Service is _Workload Measurement_, accounting for the type of work performed by providers for patients. This helps the VA monitor hospital costs and is the basis for billing. 
+VISTA is a lot more than an EHR. It also provides Non Clinical Services which help run hospitals and clinics. One key example is _Workload Measurement_, accounting for the type of work performed by providers for patients. This helps the VA monitor hospital costs and is the basis for billing. 
 
-Like much else in VISTA, the applications and utilities for Workload are bound up with clinical application routines. As part of separating VISTA's Clinical and Non Clinical function, the VISTA Data Project (VDP) has created a _Veteran Workload Service_ and _Browser_ which demonstrate how VISTA manages and monitors workload. Both service and browser provide a basis for VA-wide, VISTA-system independent workload management. Such a national service would centralize workload collection and storage.
+Like much else in VISTA, the applications and utilities for Workload are bound up with other functionality. As part of separating VISTA's Clinical and Non Clinical function, the VISTA Data Project (VDP) has created a _Veteran Workload Service_ and _Browser_ which demonstrate how VISTA manages and monitors workload. Both service and browser provide a basis for VA-wide, VISTA-system independent workload management. Such a National Service would centralize workload collection, storage and presentation.
 
 ## About Workload in the VA and VISTA
 
@@ -17,11 +17,11 @@ and
 
 ## Workload Service and Browser Demo
 
-The Workload Service and its Browser client are available at https://workload.vistadataproject.info/ (login required).
+The Workload Service and its Browser client are available at [https://workload.vistadataproject.info/](https://workload.vistadataproject.info) (login required).
 
 The _Service_ houses typical VA workload data generated from a statistical analysis of production VISTAs. The dataset depicts the workload of a fictional _IOWA Hospital_, which matches the attributes of a typical VA medical center. The _Browser_ allows you to examine workload based on time, location and patient.
 
-![](workloadServiceBanner.jpg)
+![](images/workloadServiceBanner.jpg)
 
 The following guides show the browser displaying workload based on [__Location__](location) and [__Patient__](patient).
 
