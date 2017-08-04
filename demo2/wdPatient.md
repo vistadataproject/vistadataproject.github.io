@@ -23,21 +23,21 @@ with related documents and orders ...
 
 ## Day 1 - 21st of November
 
-The one Workload record says that a provider, Clyde Jensen, performed a C&P EXAM. Note that the standard _CPT_ code, _DISABILITY EXAMINATION_, is less precise ...
+The one Workload record describes the work performed by provider Clyde Jensen. Work is defined using both VA-proprietary Decision Support System (DSS) codes and an industry-standard CPT code. In this case, the two DSSs - Psychiatry/C&P Exam - represent a more precise description than the single CPT - _Disability Examination_. _Sent to NPCD_ means the work load description was sent to the National Patient Care Database in Austin.
 
 ![](images/Frank_WorkDetails_21Nov.png)
 
-Note that _Sent to NPCD_ means the work load description was sent to the National Patient Care Database in Austin.
-
-One document, a C&P was entered (transcribed) 3 days later and signed even later ...
+One document, a C&P was entered (transcribed) 3 days later ...
 
 ![](images/Frank_Document-11-24.png)
 
 ## Day 2 - 25th of November
 
-This was a busy day ...
+This was a busy day with five Workload records. Two are green, the color of _Medicine and Primary Care Services_, two red, signifying _Ancillary and General Support Services_ and Optometry is yellow, the color of _Surgical Services_ ...
 
 ![](images/Frank_Workload_Details_25th.png)
+
+
    
 ## 25th and 28th have X RAYs
 
