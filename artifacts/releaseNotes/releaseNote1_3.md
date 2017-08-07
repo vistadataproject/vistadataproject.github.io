@@ -192,6 +192,10 @@ ORWPT LEGACY<br/>
 ORWRP GET DEFAULT PRINTER<br/>
 XWB DEFERRED CLEARALL<br/>
 
+### "Prod Clone" Cache and Analysis
+
+Full caching and analysis of Production Clone VISTA
+
 ### Lexicon Service
 
 Many coded terminology sets (e.g. ICD-9, ICD-10, SNOMED) within _VISTA_ are indexed and searchable via its [Lexicon Utility](https://www.va.gov/vdl/documents/Clinical/Lexicon_Utility/lextm2_0.pdf).
