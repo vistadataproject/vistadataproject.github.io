@@ -40,7 +40,6 @@ __Strategic Benefits__:
   * New web and mobile clients enabled with mainstream technology
   * Current clients (CPRS/JLV) supported and enforce VA Care coverage
   * May now safely incrementally retire legacy MUMPS VISTA [spaghetti]
-  * (Some) Clinical Domain Services may be implemented over COTS
 
 <br>
 
