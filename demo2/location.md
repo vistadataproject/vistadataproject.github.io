@@ -46,7 +46,7 @@ What is _NPCD_ in the property _Sent to NPCD_? That's the VA's _National Patient
 
 Clyde Jensen, a Psychiatrist, names this _Personal Location_. Mr Jensen no longer works at the hospital. No doubt the room he used is now being used by someone else but for VISTA, the "location" named for him and his work is now inactive. The prefix "ZZ" is added to the name of such locations and they get an inactivate date.
 
-![](imagesLocn/LocnZZIOW_C&P_JENSENMU_.png)
+![](imagesLocn/LocnZZIOW_C&P_JENSENMU.png)
 
 Note that inactivate dates may happen long after a locations lack of use - Mr Jensen's workload timeline shows that December 2008 was his last month but it took over a year for a system administrator to inactivate his location.
 
@@ -54,7 +54,7 @@ Note that inactivate dates may happen long after a locations lack of use - Mr Je
 
 Mr Jensen saw our patient near the end of his tenure at the hospital, on the 21st of November, and, as expected, the workload details reflects the type of work performed at this location ... 
 
-![](imagesLocn/LocnZZIOW_C&P_JENSEN_DETAILS_21st_.png)
+![](imagesLocn/LocnZZIOW_C&P_JENSEN_DETAILS_21st.png)
 
 The CPT Code, Disability Examination, is a lot less precise than the VA DSS code combination.
 
