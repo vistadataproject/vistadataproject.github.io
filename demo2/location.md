@@ -3,7 +3,7 @@ layout: default
 title: Workload "DSS" Demo - Locations
 ---
 
-The following screenshots from the [Veteran Workload Browser](https://workload.vistadataproject.info) show the locations where care was given to a particular patient in November 2008. They show how "location" is more than a physical concept in VISTA and the VA - it represents a combination of place and the type of work performed and, in many cases, who is performing work. These combinations allow the VISTA system to capture hospital workload.
+The following screenshots from the [Veteran Workload Browser](https://workload.vistadataproject.info) show the locations where care was given to a particular patient in November 2008. They show how "location" is more than a physical concept in VISTA and the VA - it represents a combination of place and the type of work performed and, in many cases, who is performing work. These combinations allow the VISTA system to capture hospital workload without forcing providers to explicitly code their work - a provider picks a location, not a code and the location sets to work code.
 
 Specifically patient [_Frank Gilbert_ was seen](https://workload.vistadataproject.info/patientCalendar/workDetails/7199390/2008/10) at seven different "locations" in November 2008:
   * five are _Personal Locations_ ("IOW C&P AUDIO __RODGERS__", "IOW OPTOMETRY __KNIGHT__ RETURN", "ZZIOW C&P __SALAZAR__", "ZZIOW C&P __JENSEN__", "IOW MH __AGUILAR__"). As well as being named for an institution (_IOW_ for Iowa) and type of work (_C&P AUDIO_, _OPTOMETRY_), these locations are named for a particular provider such a Nancy __ROGERS__ or Jayden __KNIGHT__. Such _locations_ allow a provider's time to be scheduled and the nature of work performed to be designated.
@@ -23,11 +23,13 @@ _C&P EXAMS_ ...
 
 ![](imagesLocn/Locn_IOW_CP_AUDIO_ROGERS_.png)
 
+This is "where" Nancy Rogers performs _C&P Audiology Exams_. She picks this "location" for her work to tell VISTA what she is doing.
+
 On November 2008, there were 18 piece of work (workload) performed there ...
 
 ![](imagesLocn/LocnIOW_CP_AUDIO_ROGERS_TIMELINE_11_08.png)
 
-Work is spread [throughout the month](https://workload.vistadataproject.info/locationCalendar/workDetails/947/2008/10) and, as expected from the location's definition, it is all _AUDIOLOGY_ ...
+Work is spread [throughout the month](https://workload.vistadataproject.info/locationCalendar/workDetails/947/2008/10) and it is all _AUDIOLOGY_, a value fixed in the location's definition ...
 
 ![](imagesLocn/LocnIOW_CP_AUDIO_ROGERS_DETAILS.png)
 
@@ -37,7 +39,24 @@ Patient _Frank Gilbert_ was seen on the 25th. The workload is _AUDIOLOGY/C&P EXA
 
 ![](imagesLocn/LocnIOW_CP_AUDIO_ROGERS_DETAILS_25th.png)
 
-What is _NPCD_ in the property _Sent to NPCD_? That's the VA's _National Patient Care Database_ in Austin Texas. Every VISTA sends Workload data to Austin.
+What is _NPCD_ in the property _Sent to NPCD_? That's the VA's _National Patient Care Database_ in Austin Texas. Every VISTA sends Workload data to Austin
+.
+
+## ZZIOW C&P JENSEN ([949](https://workload.vistadataproject.info/locationDetails/949))
+
+Clyde Jensen, a Psychiatrist, names this _Personal Location_. Mr Jensen no longer works at the hospital. No doubt the room he used is now being used by someone else but for VISTA, the "location" named for him and his work is now inactive. The prefix "ZZ" is added to the name of such locations and they get an inactivate date.
+
+![](imagesLocn/LocnZZIOW_C&P_JENSENMU_.png)
+
+Note that inactivate dates may happen long after a locations lack of use - Mr Jensen's workload timeline shows that December 2008 was his last month but it took over a year for a system administrator to inactivate his location.
+
+![](imagesLocn/LocnZZIOW_C&P_JENSEN_TIMELINE.png)
+
+Mr Jensen saw our patient near the end of his tenure at the hospital, on the 21st of November, and, as expected, the workload details reflects the type of work performed at this location ... 
+
+![](imagesLocn/LocnZZIOW_C&P_JENSEN_DETAILS_21st_.png)
+
+The CPT Code, Disability Examination, is a lot less precise than the VA DSS code combination.
 
 ## IOW OIF/OEF CASE MGT NURSE ([1302](https://workload.vistadataproject.info/locationDetails/1302))
 
@@ -111,7 +130,7 @@ Genevieve Salazar is a Registered Nurse who names this location for General Medi
 
 ![](imagesLocn/LocnZZSalazar.png)
 
-The timeline for the location shows that March 2010 had the last work - though the official retirement date was months later. Hence __ZZ__ in front of the name. This location is no longer in use as Ms Salazar has left the Iowa Hospital. A "ZZ" prefix is a VISTA convention for marking locations as obsolete ...
+The timeline for the location shows that March 2010 had the last work - though the official retirement date was months later. Hence __ZZ__ in front of the name. This location is no longer in use as Ms Salazar has left the Iowa Hospital ...
 
 ![](imagesLocn/LocnZZSalazarTimeline.png)
 
