@@ -16,7 +16,7 @@ Now, for the first time, VA's native transactional clinical and business data mo
 The VISTA Data Model is in turn normalized across all local VISTA system data models to create a national, standardized Master Veteran Data Model, allowing read-write transactions across all VA VISTA systems with a single, secure, veteran-centric, model-driven mechanism.
 <br>
 
-![vdp-transition](assets/vdp-transition-20170607d.png)
+![vdp-transition](assets/vdp-transition-MayPres.png)
 
 <br>
 
