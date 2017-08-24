@@ -9,7 +9,7 @@ title: Home
 
 The Veterans Information Systems Technology Architecture ([VISTA](https://en.wikipedia.org/wiki/VistA)) is the U.S. Department of Veterans Affairs integrated longitudinal  clinical, business, and administrative information system. 130 instances support the operations of over 1200 VA hospitals and clinics nationwide.  
 
-VISTA's data model - the roadmap to all of VA's institutional, business, and clinical processes and data - has evolved organically over the past 35 years but has not been surfaced and leveraged in computable form - until now. 
+VISTA's data model - the roadmap to all of VA's institutional, business, and clinical processes and data - has evolved organically over the past 35 years but has not been surfaced and leveraged in computable form. Until now. 
 
 In the VISTA Data Project (VDP), this organic data model is comprehensively represented and then incrementally normalized to produce a national, standardized Master Veteran Data Model (MVDM). An operationalized MVDM provides new web clients with a single, secure, symmetric read-write interface to every VISTA and, through _emulation_ of existing interfaces, VISTA's current clients such as CPRS work unchanged but with greatly enhanced security. 
 
