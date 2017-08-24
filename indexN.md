@@ -39,10 +39,12 @@ In _VDP_, Data Modeling starts with 100% coverage of all VISTA data in web-stand
 
 <br>
 
-VISTA currently has a variety of security (access control and auditing) mechanisms including FileMan permissions and permission to invoke this or that remote procedure call (RPC). Surprisingly _Patient_ is not a key security attribute. When considering whether a user may or may not do something patient identity is generally not considered. In addition, auditing is often turned off as a lack of knowledge about the importance of operations - is a patient record changed or read or is an operation just reading meta data - would lead to unmanageable quantities of data.
-
-By contrast, the MVDM introduces patient-centric, attribute-based access control (ABAC) to VISTA isolating patient operations from meta data access and reads from changes, all in a uniform fashion. This introduces levels of patient-centric security and industry-standard auditing to VISTA for the first time.
+VDP introduces comprehensive patient-centric security, industry standard attribute-based access control (ABAC) and tiered auditing to VISTA for the first time ...
 
 ![vdp-data-access -width70](assets/vdp-abac-2016.png)
+
+<br>
+
+__Show Me:__ browse through and run VDP's [Clinical](/demo) and [Non Clinical](/demo2) Demos.
 
 
