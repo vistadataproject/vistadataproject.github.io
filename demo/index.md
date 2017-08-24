@@ -9,7 +9,7 @@ The following sections describe how to run the nodeVISTA demo to exercise the Ma
 
 <br>
 
-![CPRS-MVDM-Clients -width70](/demo/images/common/demo-cprs-mvdm-clients3.png)
+![CPRS-MVDM-Clients -width70](/demo/images/common/demo-cprs-mvdm-clients4.png)
 
 ## Prerequisites
 The demo procedures described here assume that several tools have already been locally installed and configured:
