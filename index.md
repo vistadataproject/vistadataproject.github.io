@@ -42,6 +42,8 @@ VISTA currently has a variety of overlapping security (access control and auditi
 
 ![vdp-data-access -width70](assets/vdp-abac-2016.png)
 
-<div style="border-left: 20%">__Show Me:__ browse through and run VDP's [Clinical](/demo) and [Non Clinical](/demo2) Demos</div>
+<br>
+<br>
+__Show Me:__ browse through and run VDP's [Clinical](/demo) and [Non Clinical](/demo2) Demos.
 
 
