@@ -11,7 +11,7 @@ The Veterans Information Systems Technology Architecture ([VISTA](https://en.wik
 
 VISTA's data model - the roadmap to all of VA's institutional, business, and clinical processes and data - has evolved organically over the past 35 years but has not been surfaced and leveraged in computable form. Until now. 
 
-In the VISTA Data Project (VDP), this organic data model is comprehensively represented and then incrementally normalized to produce a national, standardized Master Veteran Data Model (MVDM). An operationalized MVDM provides new web clients with a single, secure, symmetric read-write interface to every VISTA and, through _emulation_ of existing interfaces, VISTA's current clients such as CPRS work unchanged but with greatly enhanced security. 
+In the VISTA Data Project (VDP), this organic data model is comprehensively represented and incrementally normalized to produce a national, standardized Master Veteran Data Model (MVDM). An operationalized MVDM provides new web clients with a single, secure, symmetric read-write interface to every VISTA and, through _emulation_ of existing interfaces, VISTA's current clients such as CPRS work unchanged but with greatly enhanced security. 
 
 ![vdp-transition -width70](assets/vdp-transition-MayPres.png)
 
