@@ -26,7 +26,7 @@ __Strategic Benefits__:
 
 <br>
 
-Operationalizing MVDM incrementally migrate VISTA from a spaghetti of MUMPS code to a modular, model-backed, backward-compatible server ...
+MVDM runs inside VISTA replacing a spaghetti of MUMPS. It turns VISTA into a modular, model-based, backward-compatible server ...
 
 ![vdp-modular-server -width70](assets/vdp-modularserver-MayPres.png)
 
