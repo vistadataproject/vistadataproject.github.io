@@ -24,6 +24,7 @@ __Strategic Benefits__:
   * New web and mobile clients enabled with mainstream technology
   * Current clients (CPRS/JLV) supported and enforce VA Care coverage
   * May now safely incrementally retire legacy MUMPS VISTA [spaghetti]
+  * (Some) Clinical Domain Services may be implemented over COTS
 
 <br>
 
@@ -43,8 +44,6 @@ VISTA currently has a variety of overlapping security (access control and auditi
 
 ![vdp-data-access -width70](assets/vdp-abac-2016.png)
 
-<br>
-
-__Show Me:__ browse through and run VDP's [Clinical](/demo) and [Non Clinical](/demo2) Demos.
+<div style="border-left: 20%">__Show Me:__ browse through and run VDP's [Clinical](/demo) and [Non Clinical](/demo2) Demos</div>
 
 
