@@ -7,21 +7,15 @@ title: Home
 
 # VISTA Data Project
 
-The Veterans Information Systems Technology Architecture ([VISTA](https://en.wikipedia.org/wiki/VistA)) is the U.S. Department of Veterans Affairs integrated longitudinal  clinical, business, and administrative information system that supports the operations of over 1200 VA hospitals and clinics nationwide.  
+The Veterans Information Systems Technology Architecture ([VISTA](https://en.wikipedia.org/wiki/VistA)) is the U.S. Department of Veterans Affairs integrated longitudinal  clinical, business, and administrative information system. 130 instances support the operations of over 1200 VA hospitals and clinics nationwide.  
 
-The VISTA Data Project is a data-centric, model-driven approach to VA master data management, interfacing, and security.  VISTA's data model - the roadmap to all of VA's institutional, business, and clinical processes and data - has evolved organically over the past 35 years, but has not been surfaced and leveraged in computable form. 
+The VISTA Data Project (VDP) is a data-centric, model-driven approach to VA master data management, interfacing, and security.  VISTA's data model - the roadmap to all of VA's institutional, business, and clinical processes and data - has evolved organically over the past 35 years, but has not been surfaced and leveraged in computable form. 
 
-Now, for the first time, VA's native transactional clinical and business data model - the VISTA Data Model (VDM) -  will be comprehensively exposed and then normalized to produce a national, standardized Master Veteran Data Model (MVDM), enriched, and operationalized as a single, secure, symmetric read-write, server-side interface for all clinical operational VISTA data. 
+Now, for the first time, this VISTA Data Model (VDM) is comprehensively represented and then normalized to produce a national, standardized Master Veteran Data Model (MVDM). An operationalized MVDM enables a single, secure, symmetric read-write interface for every VISTA and through _emulation_ enforces greatly enhanced security for remote procedure call (RPC) clients such as CPRS. 
 
-The VISTA Data Model is in turn normalized across all local VISTA system data models to create a national, standardized Master Veteran Data Model, allowing read-write transactions across all VA VISTA systems with a single, secure, veteran-centric, model-driven mechanism.
+The following figure summarizes the evolution of VISTA interfacing from __thousands of unique, inconsistent, insecure, unidirectional code-based legacy interfaces__ to a __consistent, secure, backward-compatible, web-client-enabling, symmetric (read and write use the same data), model-driven service interface__ ...
 
-<br>
-
-![vdp-transition](assets/vdp-transition-MayPres.png)
-
-<br>
-
-*The figure summarizes the evolution of VISTA interfacing from __thousands of unique, inconsistent, insecure, unidirectional code-based legacy interfaces__ to that of a __single, industry-standard, secure, server-side, symmetric model-driven service interface__.*
+![vdp-transition -width70](assets/vdp-transition-MayPres.png)
 
 <br>
 
@@ -33,12 +27,24 @@ __Strategic Benefits__:
 
 <br>
 
-VISTA migrates from a spaghetti of MUMPS code to a modular, model-backed backward compatible server ...
+Operationalizing MVDM migrates VISTA from a spaghetti of MUMPS code to a modular, model-backed, backward-compatible server ...
 
-![vdp-modular-server](assets/vdp-modularserver-MayPres.png)
+![vdp-modular-server -width70](assets/vdp-modularserver-MayPres.png)
 
 <br>
 
-Data Modeling is key starting with 100% coverage of all VISTA data in web-standard JSON to a normalized master model for the functionality used by CPRS, VISTA's client ...
+In _VDP_, Data Modeling starts with 100% coverage of all VISTA data in web-standard JSON and moves up to a normalized master model for the functionality used by CPRS, VISTA's client ...
 
-![vdp-data-access](assets/vdp-data-access-MayPres.png)
+![vdp-data-access -width70](assets/vdp-data-access-MayPres.png)
+
+<br>
+
+VISTA currently has a variety of overlapping security (access control and auditing) mechanisms including FileMan permissions and permission to invoke this or that remote procedure call (RPC). MVDM introduces comprehensive patient-centric security, industry standard attribute-based access control (ABAC) and tiered auditing to VISTA for the first time ...
+
+![vdp-data-access -width70](assets/vdp-abac-2016.png)
+
+<br>
+
+__Show Me:__ browse through and run VDP's [Clinical](/demo) and [Non Clinical](/demo2) Demos.
+
+
