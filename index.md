@@ -11,9 +11,7 @@ The Veterans Information Systems Technology Architecture ([VISTA](https://en.wik
 
 The VISTA Data Project (VDP) is a data-centric, model-driven approach to VA master data management, interfacing, and security.  VISTA's data model - the roadmap to all of VA's institutional, business, and clinical processes and data - has evolved organically over the past 35 years, but has not been surfaced and leveraged in computable form. 
 
-Now, for the first time, this VISTA Data Model (VDM) is comprehensively represented and then normalized to produce a national, standardized Master Veteran Data Model (MVDM). An operationalized MVDM enables a single, secure, symmetric read-write interface for every VISTA and through _emulation_ enforces greatly enhanced security for remote procedure call (RPC) clients such as CPRS. 
-
-The following figure summarizes the evolution of VISTA interfacing from __thousands of unique, inconsistent, insecure, unidirectional code-based legacy interfaces__ to a __consistent, secure, backward-compatible, web-client-enabling, symmetric (read and write use the same data), model-driven service interface__ ...
+Now, for the first time, this VISTA Data Model (VDM) is comprehensively represented and then normalized to produce a national, standardized Master Veteran Data Model (MVDM). An operationalized MVDM provides new web clients with a single, secure, symmetric read-write interface for every VISTA and through _emulation_ of existing interfaces, VISTA clients such as CPRS run unchanged but with greatly enhanced security. 
 
 ![vdp-transition -width70](assets/vdp-transition-MayPres.png)
 
@@ -28,7 +26,7 @@ __Strategic Benefits__:
 
 <br>
 
-Operationalizing MVDM migrates VISTA from a spaghetti of MUMPS code to a modular, model-backed, backward-compatible server ...
+Operationalizing MVDM incrementally migrate VISTA from a spaghetti of MUMPS code to a modular, model-backed, backward-compatible server ...
 
 ![vdp-modular-server -width70](assets/vdp-modularserver-MayPres.png)
 
