@@ -11,19 +11,9 @@ The Veterans Information Systems Technology Architecture ([VISTA](https://en.wik
 
 The VISTA Data Project is a data-centric, model-driven approach to VA master data management, interfacing, and security.  VISTA's data model - the roadmap to all of VA's institutional, business, and clinical processes and data - has evolved organically over the past 35 years, but has not been surfaced and leveraged in computable form. 
 
-Now, for the first time, VA's native transactional clinical and business data model - the VISTA Data Model -  will be comprehensively exposed, enriched, and operationalized as a single, secure, symmetric read-write, server-side interface for all clinical operational VISTA data. 
+Now, for the first time, VA's native transactional clinical and business data model - the VISTA Data Model (VDM) -  will be comprehensively exposed and then normalized to produce a national, standardized Master Veteran Data Model (MVDM), enriched, and operationalized as a single, secure, symmetric read-write, server-side interface for all clinical operational VISTA data. 
 
 The VISTA Data Model is in turn normalized across all local VISTA system data models to create a national, standardized Master Veteran Data Model, allowing read-write transactions across all VA VISTA systems with a single, secure, veteran-centric, model-driven mechanism.
-
-<br>
-
-__Key Features__:
-  * VHA-DHA Interagency project
-  * Modernization Proof of Concept
-  * Leverages DHA-developed technology
-  * Formalizes Veterans Care Model
-  * Migrate Server; Support CPRS/JLV
-  * Execution  2016-2017
 
 <br>
 
