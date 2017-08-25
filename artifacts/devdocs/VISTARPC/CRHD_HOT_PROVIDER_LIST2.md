@@ -1,0 +1,22 @@
+---
+layout: default
+title: VISTA RPC Documentation
+---
+
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; CRHD HOT PROVIDER LIST2<br/>
+# CRHD HOT PROVIDER LIST2
+
+
+
+## Properties
+
+Property | Value
+--- | ---
+Label | HOTMMEM
+MUMPS Implementation | [CRHD1](http://code.osehra.org/dox/Routine_CRHD1_source.html)
+Return Type | ARRAY
+
+
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on August 24th 2017, 2:57:41 pm</p>{:/}

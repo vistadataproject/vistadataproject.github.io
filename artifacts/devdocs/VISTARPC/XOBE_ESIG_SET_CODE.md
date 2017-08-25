@@ -1,0 +1,28 @@
+---
+layout: default
+title: VISTA RPC Documentation
+---
+
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; XOBE ESIG SET CODE<br/>
+# XOBE ESIG SET CODE
+
+Saves the user's electronic signature code in the NEW PERSON file.
+
+## Properties
+
+Property | Value
+--- | ---
+Label | SETCODE
+MUMPS Implementation | [XOBESIG](http://code.osehra.org/dox/Routine_XOBESIG_source.html)
+Return Type | SINGLE VALUE
+
+
+## Input Parameters
+
+Name | Type | Maximum Data Length | Required | Description
+--- | --- | --- | --- | ---
+ESIG | LITERAL |  |  | 
+
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on August 24th 2017, 2:57:41 pm</p>{:/}

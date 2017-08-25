@@ -1,0 +1,97 @@
+---
+layout: default
+title: VDM
+---
+
+#### [Developer Documentation](../index) &#187; [VDM](TableOfContents) &#187; Tiu_Document-8925<br/>
+<a name="top"></a>
+# Tiu Document (8925)
+This file stores textual information for the clinical record database. Though it is designed to initially accommodate Progress Notes, Consult  Reports, and Discharge Summaries, it is intended to be sufficiently flexible to accommodate textual reports or provider narrative of any length or type, and to potentially accommodate such data transmitted  from remote sites, which may be excluded from the corresponding local  DHCP Package databases (e.g., Operative Reports, Radiology Reports,  Pathology Reports, etc.) to avoid confusion with local workload.
+
+**Global:** ^TIU(8925,
+
+**Domain:** Documents
+
+## Properties
+
+Label/Field Name | Field # | Description | Datatype | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Document Type**{::nomarkdown}<pre><code>  document_type</code></pre>{:/} | .01 | This field points to the Tiu Document Definition file, whose entry defines<br/>the components of the document and various parameters for the document's<br/>behavior. | POINTER | INDEXED<br/>REQUIRED | [Tiu_Document_Definition-8925_1](Tiu_Document_Definition-8925_1)
+**Patient**{::nomarkdown}<pre><code>  patient</code></pre>{:/} | .02 | This field contains a pointer to the patient file. | POINTER | INDEXED | [Patient_ihs-9000001](Patient_ihs-9000001)
+**Visit**{::nomarkdown}<pre><code>  visit</code></pre>{:/} | .03 |  | POINTER | INDEXED | [Visit-9000010](Visit-9000010)
+**Parent Document Type**{::nomarkdown}<pre><code>  parent_document_type</code></pre>{:/} | .04 | This field points to the immediate parent class or document type to which the<br/>current record belongs.  For example, when the current document has the type <br/>SOAP - GENERAL NOTE, this field will point to PROGRESS NOTE, as the parent <br/>class to which SOAP Notes belong, whereas, if the current record is a <br/>SUBJECTIVE component, then this field will point to SOAP - GENERAL NOTE as <br/>the parent document type to which the component belongs. | POINTER |  | [Tiu_Document_Definition-8925_1](Tiu_Document_Definition-8925_1)
+**Status**{::nomarkdown}<pre><code>  status</code></pre>{:/} | .05 | This field is intended to accommodate the status of a given report. | POINTER |  | Tiu_Status-8925_6
+**Parent**{::nomarkdown}<pre><code>  parent</code></pre>{:/} | .06 | In the event that the current report is an addendum or replacement, or is<br/>a component of a report, this field points to the original report. | POINTER | INDEXED | [Tiu_Document-8925](Tiu_Document-8925)
+**Episode Begin Date/time**{::nomarkdown}<pre><code>  episode_begin_date_time</code></pre>{:/} | .07 | This is the date/time at which the treatment episode associated with this<br/>document was initiated (e.g., Amission date/time for a discharge summary,<br/>Visit date/time for a clinic note, Transfer date/time for an interim<br/>summary).  Time is optional. | DATE-TIME |  | 
+**Episode End Date/time**{::nomarkdown}<pre><code>  episode_end_date_time</code></pre>{:/} | .08 | This is the ending date/time for the treatment episode associated with<br/>this document (e.g., .  Time is optional. | DATE-TIME |  | 
+**Urgency**{::nomarkdown}<pre><code>  urgency</code></pre>{:/} | .09 | This is the urgency with which the report should be completed. | ENUMERATION |  | {::nomarkdown}priority: <em><strong>P</strong></em><br/>routine: <em><strong>R</strong></em>{:/}
+**Line Count**{::nomarkdown}<pre><code>  line_count</code></pre>{:/} | .1 | This is the number of characters in the document (blank lines excluded),<br/>divided by the CHARACTERS PER LINE parameter defined by your site. | STRING |  | 
+**Credit Stop Code On Completion**{::nomarkdown}<pre><code>  credit_stop_code_on_completion</code></pre>{:/} | .11 | This boolean field indicates whether the stop code associated with a new<br/>visit should be credited when the note is completed. | BOOLEAN |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
+**Mark Disch Dt For Correction**{::nomarkdown}<pre><code>  mark_disch_dt_for_correction</code></pre>{:/} | .12 | This boolean field identfies those discharge summaries which were filed<br/>prior to actual discharge of the patient for the nightly background<br/>process to back-fill with corrected discharge dates. | BOOLEAN | INDEXED | {::nomarkdown}true: <em><strong>1</strong></em>{:/}
+**Visit Type**{::nomarkdown}<pre><code>  visit_type</code></pre>{:/} | .13 | This field is used to identify the type of visit information related to<br/>the current document.  The value is determined during processing and is<br/>entered by the program.  It is used in the generation of a cross-reference<br/>to identify available documents for specified visits. | STRING |  | 
+**Report Text**{::nomarkdown}<pre><code>  report_text</code></pre>{:/} | 2 | This is a word processing field that contains the report text. | STRING |  | 
+**Edit Text Buffer**{::nomarkdown}<pre><code>  edit_text_buffer</code></pre>{:/} | 3 | This field provides a temporary holding place for the body of a report to<br/>prevent inadvertant record deletion or corruption in a manner independent<br/>of the user's preferred editor. | STRING |  | 
+**Entry Date/time**{::nomarkdown}<pre><code>  entry_date_time</code></pre>{:/} | 1201 | This is the date/time at which the document was originally entered into<br/>the database. | DATE-TIME | INDEXED | 
+**Author/dictator**{::nomarkdown}<pre><code>  author_dictator</code></pre>{:/} | 1202 |  <br/>This is the person who composed or dictated the document. | POINTER | INDEXED | [New_Person-200](New_Person-200)
+**Clinic**{::nomarkdown}<pre><code>  clinic</code></pre>{:/} | 1203 | This is the stop code to which the document is to be credited (e.g., if the <br/>document is a progress note documenting an encounter which took place in the <br/>Admitting/Screening Clinic, then select the corresponding stop code, etc.).<br/> | POINTER |  | [Clinic_Stop-40_7](Clinic_Stop-40_7)
+**Expected Signer**{::nomarkdown}<pre><code>  expected_signer</code></pre>{:/} | 1204 | This is the person who is expected to enter the first-line signature for<br/>the document.  Ordinarily, this would be the author.  One case in which<br/>this would differ would be in the case of a Discharge Summary, when the<br/>author's signature is NOT required.  Then, the attending physician would<br/>be the expected signer. | POINTER |  | [New_Person-200](New_Person-200)
+**Hospital Location**{::nomarkdown}<pre><code>  hospital_location</code></pre>{:/} | 1205 | This is the location (WARD or CLINIC) associated with the document. | POINTER |  | [Hospital_Location-44](Hospital_Location-44)
+**Service Credit Stop**{::nomarkdown}<pre><code>  service_credit_stop</code></pre>{:/} | 1206 | This is the attending physician of record, who is ultimately responsible<br/>for the care of the patient, and the accurate documentation of the care<br/>episode. | POINTER |  | [Clinic_Stop-40_7](Clinic_Stop-40_7)
+**Secondary Visit**{::nomarkdown}<pre><code>  secondary_visit</code></pre>{:/} | 1207 |  | POINTER |  | [Visit-9000010](Visit-9000010)
+**Expected Cosigner**{::nomarkdown}<pre><code>  expected_cosigner</code></pre>{:/} | 1208 |  | POINTER | INDEXED | [New_Person-200](New_Person-200)
+**Attending Physician**{::nomarkdown}<pre><code>  attending_physician</code></pre>{:/} | 1209 |  | POINTER |  | [New_Person-200](New_Person-200)
+**Order Number**{::nomarkdown}<pre><code>  order_number</code></pre>{:/} | 1210 | This is the Order which was acted on to produce the result reported in the <br/>current document. | POINTER |  | [Order-100](Order-100)
+**Visit Location**{::nomarkdown}<pre><code>  visit_location</code></pre>{:/} | 1211 | This is the location at which the visit/admission occurred.  As distinct <br/>from the HOSPITAL LOCATION field, which represents the location at the time <br/>the document was written, this is the location for the visit/admission with <br/>which the note is associated. | POINTER |  | [Hospital_Location-44](Hospital_Location-44)
+**Division**{::nomarkdown}<pre><code>  division</code></pre>{:/} | 1212 | This field contains the institution associated with the document. It is <br/>extracted from the document's hospital location if known; otherwise it is <br/>extracted from the user's log-on division. | POINTER |  | [Institution-4](Institution-4)
+**Reference Date**{::nomarkdown}<pre><code>  reference_date</code></pre>{:/} | 1301 | This is the Date (and time) by which the clinician will reference the <br/>document.  For Progress Notes, this will likely be the date of the <br/>provider's encounter with the patient.  For Discharge Summaries, it will <br/>correspond to the Discharge Date of the Admission referenced in the <br/>document.  (If there is no Discharge Date when dictated, it will <br/>correspond to the dictation date of the record instead.)<br/>In all cases, this is the date by which the document will be referenced<br/>and sorted. | DATE-TIME | INDEXED | 
+**Entered By**{::nomarkdown}<pre><code>  entered_by</code></pre>{:/} | 1302 |  | POINTER | INDEXED | [New_Person-200](New_Person-200)
+**Capture Method**{::nomarkdown}<pre><code>  capture_method</code></pre>{:/} | 1303 |  | ENUMERATION |  | {::nomarkdown}remote procedure: <em><strong>R</strong></em><br/>copy: <em><strong>O</strong></em><br/>converted: <em><strong>C</strong></em><br/>direct: <em><strong>D</strong></em><br/>upload: <em><strong>U</strong></em>{:/}
+**Release Date/time**{::nomarkdown}<pre><code>  release_date_time</code></pre>{:/} | 1304 |  | DATE-TIME | INDEXED | 
+**Verification Date/time**{::nomarkdown}<pre><code>  verification_date_time</code></pre>{:/} | 1305 |  | DATE-TIME |  | 
+**Verified By**{::nomarkdown}<pre><code>  verified_by</code></pre>{:/} | 1306 |  | POINTER |  | [New_Person-200](New_Person-200)
+**Dictation Date**{::nomarkdown}<pre><code>  dictation_date</code></pre>{:/} | 1307 | This is the date (and time) on which the document was dictated by its <br/>author.  In the event that a document originates by dictation, we recommend <br/>that the REFERENCE DATE for the document be defaulted to dictation date, as <br/>the author will be able to identify the document by the date on which s/he <br/>dictated it. | DATE-TIME |  | 
+**Suspense Date/time**{::nomarkdown}<pre><code>  suspense_date_time</code></pre>{:/} | 1308 | This is the date (and time) on which the document will be removed from<br/>public view.  It is currently used only for Patient Postings, although it<br/>may be generalized for use with other document types, if appropriate. | DATE-TIME |  | 
+**Patient Movement Record**{::nomarkdown}<pre><code>  patient_movement_record</code></pre>{:/} | 1401 |  | POINTER |  | [Patient_Movement-405](Patient_Movement-405)
+**Treating Specialty**{::nomarkdown}<pre><code>  treating_specialty</code></pre>{:/} | 1402 |  | POINTER | INDEXED | [Facility_Treating_Specialty-45_7](Facility_Treating_Specialty-45_7)
+**Irt Record**{::nomarkdown}<pre><code>  irt_record</code></pre>{:/} | 1403 |  | POINTER |  | Incomplete_Records-393
+**Service**{::nomarkdown}<pre><code>  service</code></pre>{:/} | 1404 |  | POINTER | INDEXED | [Service_section-49](Service_section-49)
+**Requesting Package Reference**{::nomarkdown}<pre><code>  requesting_package_reference</code></pre>{:/} | 1405 | This field allows a linkage to be maintained between the TIU Document and<br/>the DHCP Package for which it was generated. | POINTER | INDEXED | Request_consultation-123<br/>Surgery-130
+**Retracted Original**{::nomarkdown}<pre><code>  retracted_original</code></pre>{:/} | 1406 | This self-refering pointer identifies the original document which was <br/>retracted in error to produce this record. | POINTER |  | [Tiu_Document-8925](Tiu_Document-8925)
+**Signature Date/time**{::nomarkdown}<pre><code>  signature_date_time</code></pre>{:/} | 1501 |  | DATE-TIME |  | 
+**Signed By**{::nomarkdown}<pre><code>  signed_by</code></pre>{:/} | 1502 |  | POINTER |  | [New_Person-200](New_Person-200)
+**Signature Block Name**{::nomarkdown}<pre><code>  signature_block_name</code></pre>{:/} | 1503 |  | STRING |  | 
+**Signature Block Title**{::nomarkdown}<pre><code>  signature_block_title</code></pre>{:/} | 1504 | This is the encrypted signature block title of the person who signed the<br/>document. | STRING |  | 
+**Signature Mode**{::nomarkdown}<pre><code>  signature_mode</code></pre>{:/} | 1505 | This is the mode by which the signature was obtained (i.e., either<br/>electronic or chart). | ENUMERATION |  | {::nomarkdown}electronic: <em><strong>E</strong></em><br/>chart: <em><strong>C</strong></em>{:/}
+**Cosignature Needed**{::nomarkdown}<pre><code>  cosignature_needed</code></pre>{:/} | 1506 | This boolean flag indicates to the system whether or not a cosignature is<br/>needed. | BOOLEAN |  | {::nomarkdown}false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em>{:/}
+**Cosignature Date/time**{::nomarkdown}<pre><code>  cosignature_date_time</code></pre>{:/} | 1507 | This is the date/time at which cosignature was obtained. | DATE-TIME |  | 
+**Cosigned By**{::nomarkdown}<pre><code>  cosigned_by</code></pre>{:/} | 1508 |  | POINTER |  | [New_Person-200](New_Person-200)
+**Cosignature Block Name**{::nomarkdown}<pre><code>  cosignature_block_name</code></pre>{:/} | 1509 |  | STRING |  | 
+**Cosignature Block Title**{::nomarkdown}<pre><code>  cosignature_block_title</code></pre>{:/} | 1510 |  | STRING |  | 
+**Cosignature Mode**{::nomarkdown}<pre><code>  cosignature_mode</code></pre>{:/} | 1511 |  | ENUMERATION |  | {::nomarkdown}electronic: <em><strong>E</strong></em><br/>chart: <em><strong>C</strong></em>{:/}
+**Marked Signed On Chart By**{::nomarkdown}<pre><code>  marked_signed_on_chart_by</code></pre>{:/} | 1512 | This is the identity of the person who marked a given document 'signed on <br/>chart,' indicating that a 'wet' signature of the chart copy had been obtained. | POINTER |  | [New_Person-200](New_Person-200)
+**Marked Cosigned On Chart By**{::nomarkdown}<pre><code>  marked_cosigned_on_chart_by</code></pre>{:/} | 1513 | This is the user who marked a given document as 'cosigned on chart.' | POINTER |  | [New_Person-200](New_Person-200)
+**Amendment Date/time**{::nomarkdown}<pre><code>  amendment_date_time</code></pre>{:/} | 1601 |  | DATE-TIME |  | 
+**Amended By**{::nomarkdown}<pre><code>  amended_by</code></pre>{:/} | 1602 |  | POINTER |  | [New_Person-200](New_Person-200)
+**Amendment Signed**{::nomarkdown}<pre><code>  amendment_signed</code></pre>{:/} | 1603 |  | DATE-TIME |  | 
+**Amendment Sign Block Name**{::nomarkdown}<pre><code>  amendment_sign_block_name</code></pre>{:/} | 1604 | This is the signature block name of the person who amended the document. | STRING |  | 
+**Amendment Sign Block Title**{::nomarkdown}<pre><code>  amendment_sign_block_title</code></pre>{:/} | 1605 |  | STRING |  | 
+**Administrative Closure Date**{::nomarkdown}<pre><code>  administrative_closure_date</code></pre>{:/} | 1606 |  | DATE-TIME |  | 
+**Admin Closure Sig Block Name**{::nomarkdown}<pre><code>  admin_closure_sig_block_name</code></pre>{:/} | 1607 |  | STRING |  | 
+**Admin Closure Sig Block Title**{::nomarkdown}<pre><code>  admin_closure_sig_block_title</code></pre>{:/} | 1608 |  | STRING |  | 
+**Archive/purge Date/time**{::nomarkdown}<pre><code>  archive_purge_date_time</code></pre>{:/} | 1609 |  | DATE-TIME |  | 
+**Deleted By**{::nomarkdown}<pre><code>  deleted_by</code></pre>{:/} | 1610 | This is the person who deleted the document per the Privacy Act. | POINTER |  | [New_Person-200](New_Person-200)
+**Deletion Date**{::nomarkdown}<pre><code>  deletion_date</code></pre>{:/} | 1611 | This is the date/(time optional) at which the document was deleted per the <br/>Privacy Act. | DATE-TIME |  | 
+**Reason For Deletion**{::nomarkdown}<pre><code>  reason_for_deletion</code></pre>{:/} | 1612 | This is the reason for which the document was deleted, either: Privacy<br/>Act, as invoked by the patient; or Administrative Action, where the note<br/>needed to be removed, following signature, for administrative reasons. | ENUMERATION |  | {::nomarkdown}administrative: <em><strong>A</strong></em><br/>privacy act: <em><strong>P</strong></em>{:/}
+**Administrative Closure Mode**{::nomarkdown}<pre><code>  administrative_closure_mode</code></pre>{:/} | 1613 | This indicates whether the document was closed manually by an<br/>administrative person (in order to satisfy authentication<br/>requirements), or automatically by scanning a paper document<br/>bearing the signature of the patient (e.g., Consents, Advanced<br/>Directives, etc.) and not requiring the signature of an author. | ENUMERATION |  | {::nomarkdown}manual: <em><strong>M</strong></em><br/>scanned document: <em><strong>S</strong></em>{:/}
+**Subject (optional Description)**{::nomarkdown}<pre><code>  subject_optional_description</code></pre>{:/} | 1701 | This freetext field is used to help you find documents by subject (i.e.,<br/>consider the subject a "key word" of sorts. | STRING |  | 
+**Vbc Line Count**{::nomarkdown}<pre><code>  vbc_line_count</code></pre>{:/} | 1801 | A VBC Line is defined as the total number of characters you can see with<br/>the naked eye, divided by 65. It includes any character contained within a<br/>header or footer. Spaces, carriage returns, and hidden format<br/>instructions, such as bold, underline, text boxes, printer configurations,<br/>spell check, etc., are not counted in the total character count. A VBC<br/>Line is calculated by counting all visual characters and simply dividing<br/>the total number of characters by 65 to arrive at the number of defined<br/>lines. | NUMERIC |  | 
+**Id Parent**{::nomarkdown}<pre><code>  id_parent</code></pre>{:/} | 2101 | Applies to ID (interdisciplinary) notes only.  The ID PARENT is the note<br/>this note is attached to, making this note an entry in an ID note.<br/> <br/>A note with an ID PARENT is referred to as an ID child note. ID parent<br/>notes and ID child notes are both file entries in file 8925.<br/>  <br/>The entries of an interdisciplinary note consist of the first entry, which<br/>is also the ID PARENT of the ID note, followed by the ID children. | POINTER | INDEXED | [Tiu_Document-8925](Tiu_Document-8925)
+**Visit Id**{::nomarkdown}<pre><code>  visit_id</code></pre>{:/} | 15001 | Unique Visit Identifier for use by CIRN.  The value of this field should<br/>ONLY be modified by virtue of a change to the Visit (.03) field. | STRING | INDEXED | 
+**Procedure Summary Code**{::nomarkdown}<pre><code>  procedure_summary_code</code></pre>{:/} | 70201 | This field contains the summary code for this procedure once it is<br/>complete.  'Machine Resulted' is the initial, default code. | ENUMERATION |  | {::nomarkdown}Machine Resulted: <em><strong>5</strong></em><br/>Abnormal: <em><strong>2</strong></em><br/>Incomplete: <em><strong>4</strong></em><br/>Borderline: <em><strong>3</strong></em><br/>Normal: <em><strong>1</strong></em>{:/}
+**Date/time Performed**{::nomarkdown}<pre><code>  date_time_performed</code></pre>{:/} | 70202 | This field contains the Date/Time when the procedure was performed. | DATE-TIME |  | 
+
+[&uarr; Return to top](#top)<br/>
+
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on August 24th 2017, 2:57:39 pm</p>{:/}

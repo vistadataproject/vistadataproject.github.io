@@ -1,0 +1,45 @@
+---
+layout: default
+title: VISTA RPC Documentation
+---
+
+#### [Developer Documentation](../index) &#187; [Native RPCs](TableOfContents) &#187; ORQQPXRM EDUCATION SUBTOPICS<br/>
+# ORQQPXRM EDUCATION SUBTOPICS
+
+Returns array of subtopics for any given education topic
+
+## Properties
+
+Property | Value
+--- | ---
+Label | EDS
+MUMPS Implementation | [ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
+Return Type | ARRAY
+
+
+## Input Parameters
+
+Name | Type | Maximum Data Length | Required | Description
+--- | --- | --- | --- | ---
+EDUCATION TOPIC ID | LITERAL | 16 | true | Education topic (ien) from EDUCATION TOPIC file [#9999999.09]
+
+
+
+## MUMPS Method Description
+
+Property | Value
+--- | ---
+Method | [EDS^ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
+Method Comment | DBIA 3079
+Input Parameters | OREDU
+First Comment | {::nomarkdown}<pre><code><br/>ORQQPXRM EDUCATION SUMMARY</code></pre>{:/}
+
+
+
+## CPRS
+
+File Type | Description
+--- | ---
+Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas">rReminders.pas</a>{:/}
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on August 24th 2017, 2:57:41 pm</p>{:/}
