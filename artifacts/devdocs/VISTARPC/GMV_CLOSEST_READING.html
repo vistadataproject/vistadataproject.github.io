@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VISTA RPC Documentation &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--native-rpcs--gmv-closest-reading"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">Native RPCs</a> » GMV CLOSEST READING<br /></h4>
+<h1 id="gmv-closest-reading">GMV CLOSEST READING</h1>
+
+<p>This remote procedure call returns the observation date/time and reading of the record closest to the date/time specified for the patient and vitaltype.</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Label</td>
+      <td>CLOSEST</td>
+    </tr>
+    <tr>
+      <td>MUMPS Implementation</td>
+      <td><a href="http://code.osehra.org/dox/Routine_GMVGETD_source.html">GMVGETD</a></td>
+    </tr>
+    <tr>
+      <td>Return Type</td>
+      <td>SINGLE VALUE</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="input-parameters">Input Parameters</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Maximum Data Length</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GMVDFN</td>
+      <td>LITERAL</td>
+      <td>12</td>
+      <td>true</td>
+      <td>A pointer to the Patient (#2) file (i.e., DFN).</td>
+    </tr>
+    <tr>
+      <td>GMVDT</td>
+      <td>LITERAL</td>
+      <td>14</td>
+      <td>true</td>
+      <td>The date/time to search from. The default is NOW.</td>
+    </tr>
+    <tr>
+      <td>GMVT</td>
+      <td>LITERAL</td>
+      <td>5</td>
+      <td>true</td>
+      <td>The vital type abbreviation as it appears in FILE 120.51, Field 1 (e.g., WT).</td>
+    </tr>
+    <tr>
+      <td>GMVFLAG</td>
+      <td>LITERAL</td>
+      <td>1</td>
+      <td>true</td>
+      <td>A flag to indicate if the search should look before or after the date/timespecified in the GMVDT value where 1 indicates before, 2 indicates afterand 0 indicates either direction.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="mumps-method-description">MUMPS Method Description</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Method</td>
+      <td><a href="http://code.osehra.org/dox/Routine_GMVGETD_source.html">CLOSEST^GMVGETD</a></td>
+    </tr>
+    <tr>
+      <td>Method Comment</td>
+      <td>GMV CLOSEST READING [RPC entry point]</td>
+    </tr>
+    <tr>
+      <td>Input Parameters</td>
+      <td>GMVDFN, GMVDT, GMVT, GMVFLAG</td>
+    </tr>
+    <tr>
+      <td>First Comment</td>
+      <td><pre><code> Get nearest reading to date(/time) provided<br/>  Input:  GMVDFN - DFN (required)<br/>           GMVDT - FileMan date/time (optional)<br/>                   Default is NOW<br/>            GMVT - Vital Type abbreviation, FILE 120.51, Field 1 (required)<br/>         GMVFLAG - Where to look (optional)<br/>                   0 = either before or after GMVDT  (default)<br/>                   1 = before GMVDT<br/>                   2 = after GMVDT<br/> Output: RESULT - piece1^piece2<br/>          where piece1 = date/time of reading (FileMan internal format)<br/>                piece2 = reading<br/> If no records found piece 1 = -2<br/>                 and piece 2 = message text                     <br/> If an error was encountered piece1 = -1<br/>                         and piece2 = error message<br/></code></pre></td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td><pre><code> N GMVADIFF,GMVADT,GMVAVAL,GMVBDIFF,GMVBDT,GMVBVAL,GMVDATA,GMVTI<br/> S GMVDFN=+$G(GMVDFN),GMVDT=+$G(GMVDT),GMVT=$G(GMVT),GMVFLAG=+$G(GMVFLAG)<br/> S GMVFLAG=$S(GMVFLAG=2:2,GMVFLAG=1:1,1:0)<br/> I 'GMVDFN S RESULT="-1^DFN not defined" Q<br/> I '$D(^PXRMINDX(120.5,"PI",GMVDFN)) S RESULT="-2^Patient has no Vitals data on file" Q<br/> I 'GMVDT S GMVDT=$$NOW^XLFDT()<br/> I GMVT="" S RESULT="-1^Vital Type not defined" Q<br/> S GMVTI=$$GETIEN^GMVGETVT(GMVT,2)<br/> I 'GMVTI S RESULT="-1^Vital Type not found" Q<br/> I '$D(^PXRMINDX(120.5,"PI",GMVDFN,GMVTI)) S RESULT="-2^Patient has no data on file for this type" Q<br/> S (GMVADT,GMVAVAL,GMVBDT,GMVBVAL,GMVDATA)=""<br/> I GMVFLAG=0!(GMVFLAG=1) D<br/> .S GMVDATA=$$FIND(GMVDFN,GMVTI,GMVDT,0,-1)<br/> .S GMVBDT=$P(GMVDATA,U,1),GMVBVAL=$P(GMVDATA,U,2)<br/> S GMVDATA=""<br/> I GMVFLAG=0!(GMVFLAG=2) D<br/> .S GMVDATA=$$FIND(GMVDFN,GMVTI,GMVDT,0,1)<br/> .S GMVADT=$P(GMVDATA,U,1),GMVAVAL=$P(GMVDATA,U,2)<br/> I GMVFLAG=1 D<br/> .I GMVBDT'>0 S RESULT="-2^Before date not found" Q<br/> .I GMVBVAL="" S RESULT="-2^Before value not found" Q<br/> .S RESULT=GMVBDT_U_GMVBVAL<br/> I GMVFLAG=2 D<br/> .I GMVADT'>0 S RESULT="-2^After date not found" Q<br/> .I GMVAVAL="" S RESULT="-2^After value not found" Q<br/> .S RESULT=GMVADT_U_GMVAVAL<br/> I GMVFLAG=0 D<br/> .I GMVADT'>0,GMVBDT'>0 D  Q<br/> ..S RESULT="-2^No records found"<br/> .I GMVADT'>0,GMVBDT>0 D  Q<br/> ..S:GMVBVAL]"" RESULT=GMVBDT_U_GMVBVAL<br/> ..S:GMVBVAL="" RESULT="-2^No records found"<br/> .I GMVADT>0,GMVBDT'>0 D  Q<br/> ..S:GMVAVAL]"" RESULT=GMVADT_U_GMVAVAL<br/> ..S:GMVAVAL="" RESULT="-2^No records found"<br/> .I GMVADT>0,GMVBDT>0 D<br/> ..S GMVBDIFF=+$$FMDIFF^XLFDT(GMVDT,GMVBDT,2)<br/> ..S GMVADIFF=+$$FMDIFF^XLFDT(GMVADT,GMVDT,2)<br/> ..I GMVBDIFF<GMVADIFF S RESULT=GMVBDT_U_GMVBVAL<br/> ..I GMVADIFF<GMVBDIFF S RESULT=GMVADT_U_GMVAVAL<br/> ..I GMVADIFF=GMVBDIFF S RESULT=GMVADT_U_GMVAVAL</code></pre></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="cprs">CPRS</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>File Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DLL File</td>
+      <td>No Source Code Available (GMV_VitalsViewEnter.dll)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:26 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

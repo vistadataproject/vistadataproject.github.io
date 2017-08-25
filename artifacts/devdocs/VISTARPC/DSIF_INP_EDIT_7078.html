@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VISTA RPC Documentation &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--native-rpcs--dsif-inp-edit-7078"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">Native RPCs</a> » DSIF INP EDIT 7078<br /></h4>
+<h1 id="dsif-inp-edit-7078">DSIF INP EDIT 7078</h1>
+
+<p>This RPC allows the update of certain fields in the 7078 and FEE PATIENT files.</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Label</td>
+      <td>ED7078</td>
+    </tr>
+    <tr>
+      <td>MUMPS Implementation</td>
+      <td><a href="http://code.osehra.org/dox/Routine_DSIFNOT6_source.html">DSIFNOT6</a></td>
+    </tr>
+    <tr>
+      <td>Return Type</td>
+      <td>SINGLE VALUE</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="input-parameters">Input Parameters</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Maximum Data Length</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>FB7078</td>
+      <td>LITERAL</td>
+      <td>99</td>
+      <td>true</td>
+      <td>Internal Entry Number for 7078 (Required)</td>
+    </tr>
+    <tr>
+      <td>AUTHFRDT</td>
+      <td>LITERAL</td>
+      <td>7</td>
+      <td>true</td>
+      <td>Authorized From Date (Optional - FileMan Date)</td>
+    </tr>
+    <tr>
+      <td>AUTHTODT</td>
+      <td>LITERAL</td>
+      <td>7</td>
+      <td>true</td>
+      <td>Authorized To Date (Optional - FM Date)</td>
+    </tr>
+    <tr>
+      <td>DSCHDT</td>
+      <td>LITERAL</td>
+      <td>7</td>
+      <td>true</td>
+      <td>Discharge Date (Optional - FM Date)</td>
+    </tr>
+    <tr>
+      <td>ADMAUTH</td>
+      <td>LITERAL</td>
+      <td>99</td>
+      <td>true</td>
+      <td>Admitting Authority (Optional, Pointer to file 43.4 VA ADMITTING REGULATION)</td>
+    </tr>
+    <tr>
+      <td>POV</td>
+      <td>LITERAL</td>
+      <td>99</td>
+      <td>true</td>
+      <td>Purpose of Visit (Optional - Pointer to file 161.82 FEE BASIS PURPOSE OF VISIT)</td>
+    </tr>
+    <tr>
+      <td>PSA</td>
+      <td>LITERAL</td>
+      <td>99</td>
+      <td>true</td>
+      <td>Primary Service Area (Required - Pointer to file 4 INSITIUTION)</td>
+    </tr>
+    <tr>
+      <td>ACCREL</td>
+      <td>LITERAL</td>
+      <td>1</td>
+      <td>true</td>
+      <td>Accident Related (Optional Yes/No - Y : Yes, N : No)</td>
+    </tr>
+    <tr>
+      <td>PCR</td>
+      <td>LITERAL</td>
+      <td>1</td>
+      <td>true</td>
+      <td>Potential Cost Recovery Case (Optional Yes/No - Y : Yes, N : No [DEFAULT = N])</td>
+    </tr>
+    <tr>
+      <td>PATYP</td>
+      <td>LITERAL</td>
+      <td>2</td>
+      <td>true</td>
+      <td>Patient Type (Optional, Set of Codes - 00 = Surgical; 10 = Medical; 86 = Psychiatry)</td>
+    </tr>
+    <tr>
+      <td>REFPROV</td>
+      <td>LITERAL</td>
+      <td>99</td>
+      <td>true</td>
+      <td>Referring Provider (Optional - Pointer to file 200 NEW PERSON)</td>
+    </tr>
+    <tr>
+      <td>PENDISP</td>
+      <td>LITERAL</td>
+      <td>1</td>
+      <td>true</td>
+      <td>Pending Disposition (Optional)                      "" for none;                      '1' FOR FOLLOW-UP/NOT STABLE;                      '2' FOR AWAITING DISCHARGE/TRANSFER;)</td>
+    </tr>
+    <tr>
+      <td>AUTHSVC</td>
+      <td>LIST</td>
+      <td>200</td>
+      <td>true</td>
+      <td>WP Array, must start with a value of (1)=[text]</td>
+    </tr>
+    <tr>
+      <td>CONTRACT IEN</td>
+      <td>LITERAL</td>
+      <td>25</td>
+      <td>true</td>
+      <td>IEN of the FEE BASIS CONTRACT file (Optional) If contract is allowed to be deleted, pass in "@" for IEN</td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:26 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

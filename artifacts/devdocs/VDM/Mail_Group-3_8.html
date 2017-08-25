@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--vdm--mail_group-3_8"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">VDM</a> » Mail_Group-3_8<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="mail-group-38">Mail Group (3.8)</h1>
+<p>This file holds the names of all groups known to MailMan, and their members.</p>
+
+<p><strong>Global:</strong> ^XMB(3.8,</p>
+
+<p><strong>Domain:</strong> Non-Clinical</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>.01</td>
+      <td>The name of a mail group, i.e. a list of recipients who can<br />all be addressed at once by reference to this name.</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Member</strong><pre><code>  member</code></pre></td>
+      <td>2</td>
+      <td>A member of a Mail Group is a user to whom messages will be sent when the<br />message is addressed to this mail group.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Member-3_81">Member-3_81</a></td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong><pre><code>  description</code></pre></td>
+      <td>3</td>
+      <td>The definition and/or purpose of this mail group.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Type</strong><pre><code>  type-4</code></pre></td>
+      <td>4</td>
+      <td>The type of mail group determines who can send mail to it.<br />Provided there are no AUTHORIZED SENDERS specified, anyone can send mail<br />to a public group and only its members can send mail to a private group.<br />If there are AUTHORIZED SENDERS specified, only those users can address<br />the group.</td>
+      <td>ENUMERATION</td>
+      <td>REQUIRED</td>
+      <td>public: <em><strong>PU</strong></em><br/>private: <em><strong>PR</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Organizer</strong><pre><code>  organizer</code></pre></td>
+      <td>5</td>
+      <td>The user who has the privileges of an “Organizer” for<br />the mail group. For example, an organizer can add new members to a<br />“Private” mail group.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Coordinator</strong><pre><code>  coordinator</code></pre></td>
+      <td>5.1</td>
+      <td>This field is used as a screen when a user tries to edit a mail group<br />that he is a coordinator of.  If the screen fails and the user does not<br />hold the XMMGR key, he cannot edit the mail group.<br /> <br />Even if the coordinator is REMOVED from the Mail System, this field will<br />remain to indicate who created the Mail Group if others can use it.  If it<br />is a Personal Group, it will be deleted.</td>
+      <td>POINTER</td>
+      <td>INDEXED</td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Authorized Sender</strong><pre><code>  authorized_sender</code></pre></td>
+      <td>6</td>
+      <td>If you wish to restrict this mail group to only a limited set of senders,<br />name them in this field.  If no names are entered here, then it is assumed<br />that anyone may send mail to this group (if public), or only members<br />may send to it (if private).  <br /> <br />If a user attempts to send mail to a group which has one or more authorized<br />senders, but is not an authorized sender, then he is shown a list of<br />authorized senders.  He may send the message to them, and they may forward<br />it, if desired.<br /><br />NOTE:  Remote users may not send mail to any local group which has<br />authorized senders</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Allow Self Enrollment?</strong><pre><code>  allow_self_enrollment</code></pre></td>
+      <td>7</td>
+      <td>If this field is set to “YES”, then users may use the JOIN option to <br />make themselves members of the group, or to drop their names from the<br />group.  This option is only operative with public groups.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>n</strong></em><br/>true: <em><strong>y</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Reference Count</strong><pre><code>  reference_count</code></pre></td>
+      <td>8</td>
+      <td>This is a count of the number of times this mailgroup has been<br />used as a recipient of a message.  This will help site managers<br />monitor the activity of mail groups.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Last Referenced</strong><pre><code>  last_referenced</code></pre></td>
+      <td>9</td>
+      <td>This is the date on which this mail group was last referenced.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Restrictions</strong><pre><code>  restrictions</code></pre></td>
+      <td>10</td>
+      <td>This field is only applicable for PRIVATE mail groups.<br />It is ignored for PUBLIC mail groups.<br /> <br />This field controls who may address (send messages to) this<br />PRIVATE mail group.<br /> <br />If 0 (zero) or null, then the group is unrestricted, and all<br />members may address the group.<br /> <br />If 1, then only the organizer may address the group.<br />The group is a personal group.<br /><br />Note that non-members cannot address private mail groups.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>ORGANIZER ONLY: <em><strong>1</strong></em><br/>UNRESTRICTED: <em><strong>0</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Member Groups</strong><pre><code>  member_groups</code></pre></td>
+      <td>11</td>
+      <td>Member Groups are mail groups that are members of this mail group.  When<br />a Mail Group is made a member of another in this fashion, the individuals<br />of it are added to the mailing list at delivery time.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Member_Groups-3_811">Member_Groups-3_811</a></td>
+    </tr>
+    <tr>
+      <td><strong>Members - Remote</strong><pre><code>  members__remote</code></pre></td>
+      <td>12</td>
+      <td>This multiple contains remote addresses or local devices or local servers.<br />The input to the field is checked for validity at the time it is entered.<br />If the address BECOMES INCORRECT MailMan will try to inform<br />a responsible person of the non-delivery of a message.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Distribution List</strong><pre><code>  distribution_list</code></pre></td>
+      <td>13</td>
+      <td>This field will allow distribution lists to be included in Mail Groups.<br />In this way a message that must be sent to the same name at many domains<br />may easily be included in the recipient chain of a message.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Distribution_List-3_816</td>
+    </tr>
+    <tr>
+      <td><strong>Fax Recipient</strong><pre><code>  fax_recipient</code></pre></td>
+      <td>14</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Fax Group</strong><pre><code>  fax_group</code></pre></td>
+      <td>15</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-files">Sub-Files</h2>
+<h3 id="member-381"><a name="Member-3_81"></a>Member (3.81)</h3>
+
+<dl>
+<dt>ID</dt><dd>Member-3_81</dd></dl>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Member</strong><pre><code>  member</code></pre></td>
+      <td>.01</td>
+      <td>The local user who is a member of this mail group.<br />The user must have an access code and a mailbox.</td>
+      <td>POINTER</td>
+      <td>REQUIRED</td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Type</strong><pre><code>  type-1</code></pre></td>
+      <td>1</td>
+      <td>This field indicates what type of recipient this is.<br /><br />If this field has nothing in it, it indicates that this recipient is<br />a primary recipient, and may reply.<br /><br />CC:  indicates that the recipient is being sent a copy, but is not the<br />primary recipient.  The recipient may reply.<br /> <br />INFO: indicates that the recipient may not reply to the message; the<br />message is being transmitted to the recipient for information purposes<br />only.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>CC: <em><strong>C</strong></em><br/>INFO: <em><strong>I</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="member-groups-3811"><a name="Member_Groups-3_811"></a>Member Groups (3.811)</h3>
+
+<dl>
+<dt>ID</dt><dd>Member_Groups-3_811</dd></dl>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Member Group Name</strong><pre><code>  member_group_name</code></pre></td>
+      <td>.01</td>
+      <td>This is a pointer to another entry in this Mail Group file.<br />See the description of the multiple for more information.</td>
+      <td>POINTER</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="Mail_Group-3_8">Mail_Group-3_8</a></td>
+    </tr>
+    <tr>
+      <td><strong>Type</strong><pre><code>  type-1</code></pre></td>
+      <td>1</td>
+      <td>This field indicates what type of recipient this is.<br /><br />If this field has nothing in it, it indicates that this recipient is<br />a primary recipient, and may reply.<br /><br />CC:  indicates that the recipient is being sent a copy, but is not the<br />primary recipient.  The recipient may reply.<br /><br />INFO: indicates that the recipient may not reply to the message; the<br />message is being transmitted to the recipient for information purposes<br />only.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>CC: <em><strong>C</strong></em><br/>INFO: <em><strong>I</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:25 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

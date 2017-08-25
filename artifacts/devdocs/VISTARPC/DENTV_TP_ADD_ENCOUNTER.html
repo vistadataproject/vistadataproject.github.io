@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VISTA RPC Documentation &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--native-rpcs--dentv-tp-add-encounter"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">Native RPCs</a> » DENTV TP ADD ENCOUNTER<br /></h4>
+<h1 id="dentv-tp-add-encounter">DENTV TP ADD ENCOUNTER</h1>
+
+<p>This will add a new record to the dental encounter file, 228.1</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Label</td>
+      <td>ADD</td>
+    </tr>
+    <tr>
+      <td>MUMPS Implementation</td>
+      <td><a href="http://code.osehra.org/dox/Routine_DENTVTP2_source.html">DENTVTP2</a></td>
+    </tr>
+    <tr>
+      <td>Return Type</td>
+      <td>SINGLE VALUE</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="input-parameters">Input Parameters</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Maximum Data Length</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DATA</td>
+      <td>LIST</td>
+      <td>255</td>
+      <td>true</td>
+      <td>DATA(sub) = value  where    sub     Req  Description ———  —  ————————————————- "PAT"       x   DFN - pointer to patient file "VISIT"         pointer to visit file (#9000010) "APPT"          scheduled appointment Fileman date.time "NEWAPPT"       create visit, no scheduled appt or existing visit                 NOTE: VISIT supercedes APPT which supercedes NEWAPPT "LOC"       x   pointer to HOSPITAL LOCATION file (#44) "PROV"          primary provider - pointer to NEW PERSON file                 if not passed then use DUZ of existing user "PATTYPE"       I:inpatient; O:outpatient                    if not passed, then determine from MAS records "DAS CAT"   x   POINTER TO DENTAL CLASSIFICATION FILE (#220.2) "DAS BED"       POINTER TO DENTAL BED SECTION FILE (#220.4)                    required if patient an inpatient "DAS DIV"   x   station number "DAS DIS"   x   1:In progress; 2:Completed; 3:Terminated; "FLAGS"         3 bytes - each byte 0 or 1 - &lt;das&gt;&lt;des&gt;&lt;pce&gt;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:26 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

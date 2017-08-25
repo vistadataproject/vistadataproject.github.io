@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VISTA RPC Documentation &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--native-rpcs--spn-meds-1st-2-chars-va-class"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">Native RPCs</a> » SPN MEDS 1ST 2-CHARS VA CLASS<br /></h4>
+<h1 id="spn-meds-1st-2-chars-va-class">SPN MEDS 1ST 2-CHARS VA CLASS</h1>
+
+<p>This RPC returns Pharmacy data in support of the Pharmacy Supplies subscreen of the Pressure Ulcer Treatment report. The results are first placed into ^UTILITY($J), and then sorted into reverse date order and placed into ^TMP($J) NOTE: NATIONAL DRUG CLASS (NDC) is also called VA CLASSIFICATION. NOTE: This RPC will find prescriptions based on thefirst two characters of the NATIONAL DRUG CLASSbeing XX OR XA (these represent PHARMACY SUPPLIES). NOTE: To find prescriptions based on the entire 5-characterNATIONAL DRUG CLASS name, use SPN MEDS BY FULL VA CLASS    Parameter values:   DFN is ien of the pt.   CUTDATE is the date to start collection data from.   TYPE will be for the drug class.      1 is for rx’s when the first two characters of the NDC       are XA or XX.      2 is for rx’s when the first two characters of the NDC      are IM and the drug name contains INFLUENZA.         Returns:                TMP($J,X) sorted by most recent Rx                VA CLASS ^ ITEM DESCRIPTION ^ DATE DISPENSED ^ PSRX(IEN  SPN MEDS 1ST 2-CHARS VA CLASS Results:  IP 127.0.0.12Account dayt42 NOTE  this routine will find prescriptions based on theTHE FIRST TWO CHARACTERS IN THE NATIONAL DRUG CLASS IN, AM .TYPE will be for the drug class1 is rx’s that have a drug class that begin with either a XA OR XX..2 Locates RX’s the have a drug NDC that begins with ‘IM’ and the drug name has INFLUENZA in the text Returns:TMP($J,x) sorted by most recent rxVA CLASS ^ ITEM DESCRIPTION ^ DATE DISPENSED ^ PSRX(IEN Three parameters 1 1002624015  / ICN    (Patients dfn is 4570)2 Jan 01 2004  / cut date3 1 Report Generated at Fri Jan 19 17:51:17 CST 2007. parameter size: 3 Division : 552 Is connected true   SPN MEDS 1ST 2-CHARS VA CLASS Results:  XA402^POUCH,DRAINABLE,SUR-FIT NATURA 401513^MAR 31, 2005^PSRX(4302643^EOL999XA402^POUCH,DRAINABLE,SUR-FIT NATURA 401513^FEB 03, 2005^PSRX(4237949^EOL999XA604^SKIN PREP WIPE^JAN 21, 2005^PSRX(4221489^EOL999XA604^WAFER,SURFIT-NAT FLEXIBLE C#4131-67^JAN 21, 2005^PSRX(4221493^EOL999XA511^CATHETER 26FR 5CC BALLOON (EA)^NOV 18, 2004^PSRX(4160679^EOL999XA900^ADHESIVE REMOVER PAD^NOV 17, 2004^PSRX(4160676^EOL999XA400^TRAY, CATHETERIZATION W/O CATHETER^NOV 17, 2004^PSRX(4160687^EOL999XA500^URINE DRAINAGE BAG (CYSTOFLO) (ea) ^AUG 13, 2004^PSRX(4062088^EOL999XA604^WAFER,SURFIT-NAT FLEXIBLE C#4131-67^AUG 13, 2004^PSRX(4062089^EOL999XA604^WAFER,DURAHESIVE FLEXABLE #413165^JUN 28, 2004^PSRX(4007001^EOL999XA400^TRAY, CATHETERIZATION W/O CATHETER^JUN 11, 2004^PSRX(3992102^EOL999XA400^TRAY, CATHETERIZATION W/O CATHETER^MAY 14, 2004^PSRX(3962960^EOL999XA400^TRAY, CATHETERIZATION W/O CATHETER^MAY 14, 2004^PSRX(3962961^EOL999XA700^OSTO-ZYME 8 OZ^MAY 14, 2004^PSRX(3963501^EOL999XA402^POUCH,DRAINABLE,SUR-FIT NATURA 401513^APR 07, 2004^PSRX(3923827^EOL999XA604^SKIN PREP WIPE^FEB 02, 2004^PSRX(3850184^EOL999XA604^SKIN PREP WIPE^FEB 02, 2004^PSRX(3850185^EOL999XA604^WAFER,DURAHESIVE FLEXABLE #413165^JAN 30, 2004^PSRX(3850186^EOL999   SPN MEDS 1ST 2-CHARS VA CLASS Results length: 1227 Is connected true  Ran to find no data results:SPN MEDS 1ST 2-CHARS VA CLASS Results: SPN MEDS 1ST 2-CHARS VA CLASS Results length: 0</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Label</td>
+      <td>COL</td>
+    </tr>
+    <tr>
+      <td>MUMPS Implementation</td>
+      <td><a href="http://code.osehra.org/dox/Routine_SPNRPCH_source.html">SPNRPCH</a></td>
+    </tr>
+    <tr>
+      <td>Return Type</td>
+      <td>GLOBAL ARRAY</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="input-parameters">Input Parameters</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Maximum Data Length</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ICN</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>CUTDATE</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TYPE</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:26 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

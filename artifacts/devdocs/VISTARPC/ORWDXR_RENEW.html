@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VISTA RPC Documentation &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--native-rpcs--orwdxr-renew"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">Native RPCs</a> » ORWDXR RENEW<br /></h4>
+<h1 id="orwdxr-renew">ORWDXR RENEW</h1>
+
+<p>Renew an existing order.</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Label</td>
+      <td>RENEW</td>
+    </tr>
+    <tr>
+      <td>MUMPS Implementation</td>
+      <td><a href="http://code.osehra.org/dox/Routine_ORWDXR_source.html">ORWDXR</a></td>
+    </tr>
+    <tr>
+      <td>Return Type</td>
+      <td>ARRAY</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="mumps-method-description">MUMPS Method Description</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Method</td>
+      <td><a href="http://code.osehra.org/dox/Routine_ORWDXR_source.html">RENEW^ORWDXR</a></td>
+    </tr>
+    <tr>
+      <td>Method Comment</td>
+      <td>Renew an order</td>
+    </tr>
+    <tr>
+      <td>Input Parameters</td>
+      <td>ORIFN, ORVP, ORNP, ORL, FLDS, CPLX, ORAPPT</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td><pre><code> N ORDG<br/> N ORDUZ,ORSTS,OREVENT,ORCAT,ORDA,ORTS,ORNEW,ORCHECK,ORLOG,ORPKG<br/> N ORDIALOG,PRMT,X0<br/> N FSTDOSE,FST<br/> S ORDUZ=$G(FLDS("ORDUZ"))<br/> S (FSTDOSE,FST)=0<br/> I '$D(CPLX) S CPLX=0<br/> I '$G(ORAPPT) S ORAPPT=""<br/> S ORVP=ORVP_";DPT(",ORL(2)=ORL_";SC(",ORL=ORL(2)<br/> S X0=^OR(100,+ORIFN,0)<br/> S ORDG=$P(X0,U,11)<br/> S ORTS=$P(X0,U,13) ; 409 - Transfer Treating Specialty<br/> S ORPKG=$P(X0,U,14)<br/> I $D(FLDS("ORCHECK")) M ORCHECK=FLDS("ORCHECK")<br/> I $P(X0,U,5)["101.41," D                        ; version 3<br/> . S ORDIALOG=+$P(X0,U,5),ORCAT=$P(^OR(100,+ORIFN,0),U,12)<br/> . D GETDLG^ORCD(ORDIALOG),GETORDER^ORCD(+ORIFN)<br/> . I CPLX S FSTDOSE=$P($G(ORDIALOG("B","FIRST DOSE")),U,2) S:'FSTDOSE FSTDOSE=$$PTR^ORCD("OR GTX NOW")<br/> . I FSTDOSE,$G(ORDIALOG(FSTDOSE,1)) K ORDIALOG(FSTDOSE,1)<br/> E  D                                            ; version 2.5 generic<br/> . S ORDIALOG=$O(^ORD(101.41,"B","OR GXTEXT WORD PROCESSING ORDE",0))<br/> . D GETDLG^ORCD(ORDIALOG)<br/> . S PRMT=$O(^ORD(101.41,"B","OR GTX WORD PROCESSING 1",0))<br/> . S ORDIALOG(PRMT,1)=$NA(^TMP("ORWORD",$J,PRMT,1))<br/> . M ^TMP("ORWORD",$J,PRMT,1)=^OR(100,+ORIFN,1)<br/> . S PRMT=$O(^ORD(101.41,"B","OR GTX START DATE/TIME",0))<br/> . I $P(X0,U,9) S ORDIALOG(PRMT,1)=$P(X0,U,9)<br/> I +FLDS(1)=999 D  ; generic order<br/> . S ORDIALOG($$PTR^ORCD("OR GTX START DATE/TIME"),1)=$P(FLDS(1),U,2)<br/> . S ORDIALOG($$PTR^ORCD("OR GTX STOP DATE/TIME"),1)=$P(FLDS(1),U,3)<br/> I ($O(^ORD(101.41,"AB","PS MEDS",0))>0),(+FLDS(1)=130)!(+FLDS(1)=135)!(+FLDS(1)=140),'$L($G(ORDIALOG($$PTR^ORCD("OR GTX SIG"),1))) D<br/> . N ORDOSE,ORDRUG,ORCAT,ORWPSOI,PROMPT,DRUG<br/> . S ORCAT=$P($G(^OR(100,+ORIFN,0)),U,12)<br/> . S PROMPT=$$PTR^ORCD("OR GTX INSTRUCTIONS")<br/> . S ORDRUG=$G(ORDIALOG($$PTR^ORCD("OR GTX DISPENSE DRUG"),1))<br/> . S ORWPSOI=+$G(ORDIALOG($$PTR^ORCD("OR GTX ORDERABLE ITEM"),1))<br/> . I ORWPSOI S ORWPSOI=+$P($G(^ORD(101.43,+ORWPSOI,0)),U,2)<br/> . D DOSE^PSSORUTL(.ORDOSE,ORWPSOI,$S(ORCAT="I":"U",1:"O"),ORVP)       ; dflt doses<br/> . D D1^ORCDPS2  ; set up ORDOSE<br/> . S DRUG=$G(ORDOSE("DD",+ORDRUG))<br/> . I DRUG,ORCAT="O" D RESETID^ORCDPS<br/> . D SIG^ORCDPS2<br/> I +FLDS(1)=140 D  ; outpatient meds<br/> . K ORDIALOG($$PTR^ORCD("OR GTX START DATE"),1) ; remove effective dt<br/> . S ORDIALOG($$PTR^ORCD("OR GTX REFILLS"),1)=$P(FLDS(1),U,4)<br/> . S ORDIALOG($$PTR^ORCD("OR GTX ROUTING"),1)=$P(FLDS(1),U,5)<br/> . S PRMT=$$PTR^ORCD("OR GTX WORD PROCESSING 1")<br/> . K ^TMP("ORWORD",$J,PRMT,1)<br/> . S I=1 F  S I=$O(FLDS(I)) Q:'I  S ^TMP("ORWORD",$J,PRMT,1,I-1,0)=FLDS(I)<br/> . S ^TMP("ORWORD",$J,PRMT,1,0)=U_U_(I-1)_U_(I-1)_U_DT_U<br/> . S ORDIALOG(PRMT,1)=$NA(^TMP("ORWORD",$J,PRMT,1))<br/> . N SIG,PI,X S SIG=$$PTR^ORCD("OR GTX SIG")<br/> . S PI=$$PTR^ORCD("OR GTX PATIENT INSTRUCTIONS"),X=$$STR(PI)<br/> . I $L(X),$$STR(SIG)[X S ORDIALOG(PI,"FORMAT")="@" ;PI in Sig<br/> D RN^ORCSAVE<br/> S REC="" S ORIFN=+ORIFN_";"_ORDA D GETBYIFN^ORWORR(.REC,ORIFN)</code></pre></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="cprs">CPRS</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>File Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pascal File</td>
+      <td><a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas">Orders/rOrders.pas</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:26 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

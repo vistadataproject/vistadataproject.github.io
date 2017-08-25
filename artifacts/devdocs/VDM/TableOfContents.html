@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--vdm"><a href="../index">Developer Documentation</a> » VDM<br /></h4>
+<h1 id="vdm-model-definition">VDM Model Definition</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Class</th>
+      <th>File Type</th>
+      <th>Domain</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="File-1">File</a></td>
+      <td>1</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="Patient-2">Patient</a></td>
+      <td>2</td>
+      <td>Patients</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="Title-3_1">Title</a></td>
+      <td>3.1</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><a href="Device-3_5">Device</a></td>
+      <td>3.5</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><a href="Mail_Group-3_8">Mail Group</a></td>
+      <td>3.8</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><a href="Institution-4">Institution</a></td>
+      <td>4</td>
+      <td>Problems</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td><a href="Institution_Association_Types-4_05">Institution Association Types</a></td>
+      <td>4.05</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td><a href="Domain-4_2">Domain</a></td>
+      <td>4.2</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td><a href="Eligibility_Code-8">Eligibility Code</a></td>
+      <td>8</td>
+      <td>Patients</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td><a href="Mas_Eligibility_Code-8_1">Mas Eligibility Code</a></td>
+      <td>8.1</td>
+      <td>Patients</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td><a href="Help_Frame-9_2">Help Frame</a></td>
+      <td>9.2</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td><a href="Package-9_4">Package</a></td>
+      <td>9.4</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td><a href="Install-9_7">Install</a></td>
+      <td>9.7</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td><a href="Option-19">Option</a></td>
+      <td>19</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td><a href="Name_Components-20">Name Components</a></td>
+      <td>20</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td><a href="Contract_sharing_Agreements-34">Contract/sharing Agreements</a></td>
+      <td>34</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td><a href="Holiday-40_5">Holiday</a></td>
+      <td>40.5</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td><a href="Clinic_Stop-40_7">Clinic Stop</a></td>
+      <td>40.7</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td><a href="Medical_Center_Division-40_8">Medical Center Division</a></td>
+      <td>40.8</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td><a href="Ward_Location-42">Ward Location</a></td>
+      <td>42</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td><a href="Hospital_Location-44">Hospital Location</a></td>
+      <td>44</td>
+      <td>Problems</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td><a href="Facility_Treating_Specialty-45_7">Facility Treating Specialty</a></td>
+      <td>45.7</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td><a href="Service_section-49">Service/section</a></td>
+      <td>49</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td><a href="Drug-50">Drug</a></td>
+      <td>50</td>
+      <td>Allergies</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td><a href="Drug_Ingredients-50_416">Drug Ingredients</a></td>
+      <td>50.416</td>
+      <td>Allergies</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td><a href="VA_Generic-50_6">VA Generic</a></td>
+      <td>50.6</td>
+      <td>Allergies</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td><a href="VA_Drug_Class-50_605">VA Drug Class</a></td>
+      <td>50.605</td>
+      <td>Allergies</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td><a href="Dosage_Form-50_606">Dosage Form</a></td>
+      <td>50.606</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td><a href="Ndc_upn-50_67">Ndc/upn</a></td>
+      <td>50.67</td>
+      <td>Allergies</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td><a href="VA_Product-50_68">VA Product</a></td>
+      <td>50.68</td>
+      <td>Allergies</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td><a href="Pharmacy_Orderable_Item-50_7">Pharmacy Orderable Item</a></td>
+      <td>50.7</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td><a href="Medication_Instruction-51">Medication Instruction</a></td>
+      <td>51</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td><a href="Administration_Schedule-51_1">Administration Schedule</a></td>
+      <td>51.1</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td><a href="Medication_Routes-51_2">Medication Routes</a></td>
+      <td>51.2</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td><a href="Pbm_Patient_Demographics-59_9">Pbm Patient Demographics</a></td>
+      <td>59.9</td>
+      <td>Patients</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td><a href="Laboratory_Test-60">Laboratory Test</a></td>
+      <td>60</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td><a href="Topography_Field-61">Topography Field</a></td>
+      <td>61</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td><a href="Collection_Sample-62">Collection Sample</a></td>
+      <td>62</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td><a href="Accession-68">Accession</a></td>
+      <td>68</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td><a href="Lab_Section_Print-69_2">Lab Section Print</a></td>
+      <td>69.2</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td><a href="Laboratory_Site-69_9">Laboratory Site</a></td>
+      <td>69.9</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td><a href="Imaging_Type-79_2">Imaging Type</a></td>
+      <td>79.2</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td><a href="Hl7_Message_Exceptions-79_3">Hl7 Message Exceptions</a></td>
+      <td>79.3</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td><a href="Icd_Diagnosis-80">Icd Diagnosis</a></td>
+      <td>80</td>
+      <td>Problems</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td><a href="Icd_Coding_Systems-80_4">Icd Coding Systems</a></td>
+      <td>80.4</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td><a href="Cpt-81">Cpt</a></td>
+      <td>81</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td><a href="Cpt_Category-81_1">Cpt Category</a></td>
+      <td>81.1</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td><a href="Order-100">Order</a></td>
+      <td>100</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td><a href="Order_Status-100_01">Order Status</a></td>
+      <td>100.01</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td><a href="Nature_Of_Order-100_02">Nature Of Order</a></td>
+      <td>100.02</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td><a href="Order_Reason-100_03">Order Reason</a></td>
+      <td>100.03</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td><a href="Oe_rr_List-100_21">Oe/rr List</a></td>
+      <td>100.21</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td><a href="Oe_rr_Release_Events-100_5">Oe/rr Release Events</a></td>
+      <td>100.5</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td><a href="Oe_rr_Epcs_Parameters-100_7">Oe/rr Epcs Parameters</a></td>
+      <td>100.7</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td><a href="Order_Checks-100_8">Order Checks</a></td>
+      <td>100.8</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td><a href="Oe_rr_Notifications-100_9">Oe/rr Notifications</a></td>
+      <td>100.9</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>57</td>
+      <td><a href="Display_Group-100_98">Display Group</a></td>
+      <td>100.98</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td><a href="Protocol-101">Protocol</a></td>
+      <td>101</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td><a href="Or_Cprs_Tabs-101_13">Or Cprs Tabs</a></td>
+      <td>101.13</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td><a href="Oe_rr_Com_Objects-101_15">Oe/rr Com Objects</a></td>
+      <td>101.15</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>61</td>
+      <td><a href="Oe_rr_Report-101_24">Oe/rr Report</a></td>
+      <td>101.24</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td><a href="Order_Dialog-101_41">Order Dialog</a></td>
+      <td>101.41</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td><a href="Order_Urgency-101_42">Order Urgency</a></td>
+      <td>101.42</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>64</td>
+      <td><a href="Orderable_Items-101_43">Orderable Items</a></td>
+      <td>101.43</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>65</td>
+      <td><a href="Order_Quick_View-101_44">Order Quick View</a></td>
+      <td>101.44</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>66</td>
+      <td><a href="Fh_Site_Parameters-119_9">Fh Site Parameters</a></td>
+      <td>119.9</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>67</td>
+      <td><a href="Gmrv_Vital_Measurement-120_5">Gmrv Vital Measurement</a></td>
+      <td>120.5</td>
+      <td>Vitals</td>
+    </tr>
+    <tr>
+      <td>68</td>
+      <td><a href="Gmrv_Vital_Type-120_51">Gmrv Vital Type</a></td>
+      <td>120.51</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td><a href="Gmrv_Vital_Qualifier-120_52">Gmrv Vital Qualifier</a></td>
+      <td>120.52</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>70</td>
+      <td><a href="Gmrv_Vital_Category-120_53">Gmrv Vital Category</a></td>
+      <td>120.53</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>71</td>
+      <td><a href="Gmrv_Vitals_Parameters-120_57">Gmrv Vitals Parameters</a></td>
+      <td>120.57</td>
+      <td>Vitals</td>
+    </tr>
+    <tr>
+      <td>72</td>
+      <td><a href="Patient_Allergies-120_8">Patient Allergies</a></td>
+      <td>120.8</td>
+      <td>Allergies</td>
+    </tr>
+    <tr>
+      <td>73</td>
+      <td><a href="GMR_Allergies-120_82">GMR Allergies</a></td>
+      <td>120.82</td>
+      <td>Allergies</td>
+    </tr>
+    <tr>
+      <td>74</td>
+      <td><a href="Sign_symptoms-120_83">Sign/symptoms</a></td>
+      <td>120.83</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>75</td>
+      <td><a href="GMR_Allergy_Site_Parameters-120_84">GMR Allergy Site Parameters</a></td>
+      <td>120.84</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>76</td>
+      <td><a href="Adverse_Reaction_Reporting-120_85">Adverse Reaction Reporting</a></td>
+      <td>120.85</td>
+      <td>Allergies</td>
+    </tr>
+    <tr>
+      <td>77</td>
+      <td><a href="Adverse_Reaction_Assessment-120_86">Adverse Reaction Assessment</a></td>
+      <td>120.86</td>
+      <td>Allergies</td>
+    </tr>
+    <tr>
+      <td>78</td>
+      <td><a href="Request_Action_Types-123_1">Request Action Types</a></td>
+      <td>123.1</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>79</td>
+      <td><a href="Gmrc_Procedure-123_3">Gmrc Procedure</a></td>
+      <td>123.3</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td><a href="Request_Services-123_5">Request Services</a></td>
+      <td>123.5</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>81</td>
+      <td><a href="Problem_Selection_List-125">Problem Selection List</a></td>
+      <td>125</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>82</td>
+      <td><a href="Problem_Selection_List_Contents-125_1">Problem Selection List Contents</a></td>
+      <td>125.1</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>83</td>
+      <td><a href="Problem_Selection_Category_Contents-125_12">Problem Selection Category Contents</a></td>
+      <td>125.12</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>84</td>
+      <td><a href="Problem_List_Audit-125_8">Problem List Audit</a></td>
+      <td>125.8</td>
+      <td>Problems</td>
+    </tr>
+    <tr>
+      <td>85</td>
+      <td><a href="Problem_List_Site_Parameters-125_99">Problem List Site Parameters</a></td>
+      <td>125.99</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>86</td>
+      <td><a href="Health_Summary_Objects-142_5">Health Summary Objects</a></td>
+      <td>142.5</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>87</td>
+      <td><a href="New_Person-200">New Person</a></td>
+      <td>200</td>
+      <td>Problems</td>
+    </tr>
+    <tr>
+      <td>88</td>
+      <td><a href="Encounter_Form_Block-357_1">Encounter Form Block</a></td>
+      <td>357.1</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>89</td>
+      <td><a href="Selection_List-357_2">Selection List</a></td>
+      <td>357.2</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>90</td>
+      <td><a href="Selection-357_3">Selection</a></td>
+      <td>357.3</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>91</td>
+      <td><a href="Selection_Group-357_4">Selection Group</a></td>
+      <td>357.4</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>92</td>
+      <td><a href="Station_Number_time_Sensitive-389_9">Station Number (time Sensitive)</a></td>
+      <td>389.9</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>93</td>
+      <td><a href="Patient_Movement-405">Patient Movement</a></td>
+      <td>405</td>
+      <td>Patients</td>
+    </tr>
+    <tr>
+      <td>94</td>
+      <td><a href="Print_Manager_Clinic_Setup-409_95">Print Manager Clinic Setup</a></td>
+      <td>409.95</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>95</td>
+      <td><a href="Cmop_System-550">Cmop System</a></td>
+      <td>550</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>96</td>
+      <td><a href="Mh_Tests_And_Surveys-601_71">Mh Tests And Surveys</a></td>
+      <td>601.71</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>97</td>
+      <td><a href="Major_Concept_Map-757">Major Concept Map</a></td>
+      <td>757</td>
+      <td>Problems</td>
+    </tr>
+    <tr>
+      <td>98</td>
+      <td><a href="Concept_Usage-757_001">Concept Usage</a></td>
+      <td>757.001</td>
+      <td>Problems</td>
+    </tr>
+    <tr>
+      <td>99</td>
+      <td><a href="Expressions-757_01">Expressions</a></td>
+      <td>757.01</td>
+      <td>Problems</td>
+    </tr>
+    <tr>
+      <td>100</td>
+      <td><a href="Codes-757_02">Codes</a></td>
+      <td>757.02</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>101</td>
+      <td><a href="Wv_Procedure-790_1">Wv Procedure</a></td>
+      <td>790.1</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>102</td>
+      <td><a href="Wv_Notification_Purpose-790_404">Wv Notification Purpose</a></td>
+      <td>790.404</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>103</td>
+      <td><a href="Clinical_Reminder_Parameters-800">Clinical Reminder Parameters</a></td>
+      <td>800</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>104</td>
+      <td><a href="Reminder_Dialog-801_41">Reminder Dialog</a></td>
+      <td>801.41</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>105</td>
+      <td><a href="Pce_Code_Mapping-811_1">Pce Code Mapping</a></td>
+      <td>811.1</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>106</td>
+      <td><a href="Reminder_Category-811_7">Reminder Category</a></td>
+      <td>811.7</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>107</td>
+      <td><a href="Reminder_Definition-811_9">Reminder Definition</a></td>
+      <td>811.9</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>108</td>
+      <td><a href="Tiu_Document-8925">Tiu Document</a></td>
+      <td>8925</td>
+      <td>Documents</td>
+    </tr>
+    <tr>
+      <td>109</td>
+      <td><a href="Tiu_Document_Definition-8925_1">TIU Document Definition</a></td>
+      <td>8925.1</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>110</td>
+      <td><a href="TIU_Document_Parameters-8925_95">TIU Document Parameters</a></td>
+      <td>8925.95</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>111</td>
+      <td><a href="TIU_Personal_Document_Type_List-8925_98">TIU Personal Document Type List</a></td>
+      <td>8925.98</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>112</td>
+      <td><a href="TIU_Parameters-8925_99">TIU Parameters</a></td>
+      <td>8925.99</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>113</td>
+      <td><a href="TIU_Personal_Preferences-8926">TIU Personal Preferences</a></td>
+      <td>8926</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>114</td>
+      <td><a href="TIU_Template-8927">TIU Template</a></td>
+      <td>8927</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>115</td>
+      <td><a href="TIU_Template_Field-8927_1">TIU Template Field</a></td>
+      <td>8927.1</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>116</td>
+      <td><a href="Usr_Class-8930">Usr Class</a></td>
+      <td>8930</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>117</td>
+      <td><a href="Usr_Authorization_subscription-8930_1">Usr Authorization/subscription</a></td>
+      <td>8930.1</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>118</td>
+      <td><a href="Usr_Class_Membership-8930_3">Usr Class Membership</a></td>
+      <td>8930.3</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>119</td>
+      <td><a href="Usr_Action-8930_8">Usr Action</a></td>
+      <td>8930.8</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>120</td>
+      <td><a href="Person_Class-8932_1">Person Class</a></td>
+      <td>8932.1</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>121</td>
+      <td><a href="Kernel_System_Parameters-8989_3">Kernel System Parameters</a></td>
+      <td>8989.3</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>122</td>
+      <td><a href="Parameters-8989_5">Parameters</a></td>
+      <td>8989.5</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>123</td>
+      <td><a href="Parameter_Definition-8989_51">Parameter Definition</a></td>
+      <td>8989.51</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>124</td>
+      <td><a href="Parameter_Entity-8989_518">Parameter Entity</a></td>
+      <td>8989.518</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>125</td>
+      <td><a href="Alert_Tracking-8992_1">Alert Tracking</a></td>
+      <td>8992.1</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>126</td>
+      <td><a href="Remote_Procedure-8994">Remote Procedure</a></td>
+      <td>8994</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>127</td>
+      <td><a href="Patient_ihs-9000001">Patient/ihs</a></td>
+      <td>9000001</td>
+      <td>Patients</td>
+    </tr>
+    <tr>
+      <td>128</td>
+      <td><a href="Visit-9000010">Visit</a></td>
+      <td>9000010</td>
+      <td>Visits</td>
+    </tr>
+    <tr>
+      <td>129</td>
+      <td><a href="V_Immunization-9000010_11">V Immunization</a></td>
+      <td>9000010.11</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>130</td>
+      <td><a href="V_Skin_Test-9000010_12">V Skin Test</a></td>
+      <td>9000010.12</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>131</td>
+      <td><a href="Problem-9000011">Problem</a></td>
+      <td>9000011</td>
+      <td>Problems</td>
+    </tr>
+    <tr>
+      <td>132</td>
+      <td><a href="Location-9999999_06">Location</a></td>
+      <td>9999999.06</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>133</td>
+      <td><a href="Education_Topics-9999999_09">Education Topics</a></td>
+      <td>9999999.09</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>134</td>
+      <td><a href="Immunization-9999999_14">Immunization</a></td>
+      <td>9999999.14</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>135</td>
+      <td><a href="Exam-9999999_15">Exam</a></td>
+      <td>9999999.15</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>136</td>
+      <td><a href="Treatment-9999999_17">Treatment</a></td>
+      <td>9999999.17</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>137</td>
+      <td><a href="Provider_Narrative-9999999_27">Provider Narrative</a></td>
+      <td>9999999.27</td>
+      <td>Problems</td>
+    </tr>
+    <tr>
+      <td>138</td>
+      <td><a href="Skin_Test-9999999_28">Skin Test</a></td>
+      <td>9999999.28</td>
+      <td>Non-Clinical</td>
+    </tr>
+    <tr>
+      <td>139</td>
+      <td><a href="Health_Factors-9999999_64">Health Factors</a></td>
+      <td>9999999.64</td>
+      <td>Non-Clinical</td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:25 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

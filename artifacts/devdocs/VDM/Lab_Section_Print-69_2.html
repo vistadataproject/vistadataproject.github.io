@@ -1,0 +1,1597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--vdm--lab_section_print-69_2"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">VDM</a> » Lab_Section_Print-69_2<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="lab-section-print-692">Lab Section Print (69.2)</h1>
+<p>This file used to hold print headers for anatomic path reports and as a temporary holding file for path cumulative, incomplete and complete reports.  It may also be used for any accession area file since the NAME (.01) field is a pointer to the accession area file (68).</p>
+
+<p><strong>Global:</strong> ^LRO(69.2,</p>
+
+<p><strong>Domain:</strong> Non-Clinical</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>.01</td>
+      <td>The name of the Lab section print pointed to the Accession file.</td>
+      <td>POINTER</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="Accession-68">Accession-68</a></td>
+    </tr>
+    <tr>
+      <td><strong>Abbreviation</strong><pre><code>  abbreviation</code></pre></td>
+      <td>.02</td>
+      <td>Abbreviation to the name of the Lab section print</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Report Header 1</strong><pre><code>  report_header_1</code></pre></td>
+      <td>.03</td>
+      <td>First header in path report after Post operative Diagnosis.  The routine used is LRSPRPT (CY/EM/SP patient report).</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Report Header 2</strong><pre><code>  report_header_2</code></pre></td>
+      <td>.04</td>
+      <td>Second header in path report after Post operative Diagnosis.  The routine used is LRSPRPT (CY/EM/SP patient report).</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Print Snomed/icd Codes</strong><pre><code>  print_snomed_icd_codes</code></pre></td>
+      <td>.05</td>
+      <td>If lower case is to be printed for SNOMED and ICD9CM codes enter 1 or LOWER CASE.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>UPPER CASE: <em><strong>0</strong></em><br/>LOWER CASE: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Gross Description Spacing</strong><pre><code>  gross_description_spacing</code></pre></td>
+      <td>.06</td>
+      <td>If double spacing, gross descriptions for anatomic path microscopic examinations will be double spaced, otherwise single spacing will be used.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>DOUBLE: <em><strong>D</strong></em><br/>SINGLE: <em><strong>S</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Lines In A Label</strong><pre><code>  lines_in_a_label</code></pre></td>
+      <td>.07</td>
+      <td>The number of lines from the top of one label to the top of the<br /> next label.  This is used as the default value when printing<br /> various labels.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Accession Prefix</strong><pre><code>  accession_prefix</code></pre></td>
+      <td>.08</td>
+      <td>If accession prefix is entered the path report will<br /> have the accession number printed as follows:<br /> PREFIX yr accession#<br /> Ex. If S entered for the prefix, accession # is 123 and year 87<br /> the path report will print the accession as S87 123<br /> If you want a space after S enter a space after the ‘S’.<br /> To eliminate the prefix and date delete the entry. (ex. S//@ ).</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Print Sf-515 Lines</strong><pre><code>  print_sf515_lines</code></pre></td>
+      <td>.09</td>
+      <td>YES- Prints all dashed lines in the SF-515 form<br /> NO- Does not print all lines</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>1</strong></em><br/>true: <em><strong>0</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Ask Tc Codes</strong><pre><code>  ask_tc_codes</code></pre></td>
+      <td>.1</td>
+      <td>Allows coding cases for tissue committee</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>YES: <em><strong>1</strong></em><br/>no: <em><strong>0</strong></em><br/>yes: <em><strong>1</strong></em><br/>NO: <em><strong>0</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Routine Procedure 1</strong><pre><code>  routine_procedure_1</code></pre></td>
+      <td>.11</td>
+      <td>Number of times procedure is routinely performed.<br /> For EM the number of thick sections made per block.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Routine Procedure 2</strong><pre><code>  routine_procedure_2</code></pre></td>
+      <td>.12</td>
+      <td>Number of times routine procedure is performed.<br /> For EM the number of grids routinely made per block.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Report Header 3</strong><pre><code>  report_header_3</code></pre></td>
+      <td>.13</td>
+      <td>Third header in path report after Post operative Diagnosis.  The <br />routine used is LRSPRPT CY/EM/SP patient report).<br /> For surgical pathology this header will be the frozen section report.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Report Header 4</strong><pre><code>  report_header_4</code></pre></td>
+      <td>.14</td>
+      <td>Fourth header in path report after post op dx.<br /> The routine used is LRSPRPT.<br /> For surgical pathology this header will be the diagnosis field.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>New Pg For Supplementary Rpt</strong><pre><code>  new_pg_for_supplementary_rpt</code></pre></td>
+      <td>.21</td>
+      <td>If a page feed is wanted before printing the supplementary report a <br />‘YES’ is entered.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>YES: <em><strong>1</strong></em><br/>no: <em><strong>0</strong></em><br/>yes: <em><strong>1</strong></em><br/>NO: <em><strong>0</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Slide Label</strong><pre><code>  slide_label</code></pre></td>
+      <td>.3</td>
+      <td>Enter the name of the type of preparation or technique used for specimens.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Slide_Label-69_22">Slide_Label-69_22</a></td>
+    </tr>
+    <tr>
+      <td><strong>Incomplete Reports Queue</strong><pre><code>  incomplete_reports_queue</code></pre></td>
+      <td>1</td>
+      <td>Here are stored the temporary list of specimens logged-in for printing at time of microscopic exam.  The report will contain all past specimens with their SNOMED coding in free text form for Surg path, cytopath, and EM.<br /> If there are gross descriptions they will be part of the print-out.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Incomplete_Reports_Queue-69_21">Incomplete_Reports_Queue-69_21</a></td>
+    </tr>
+    <tr>
+      <td><strong>Completed Reports Queue</strong><pre><code>  completed_reports_queue</code></pre></td>
+      <td>2</td>
+      <td>This is a temporary list of final path reports to be printed on demand.<br /> Entries automatically are entered when the microscopic diagnoses or supplementary are entered for Surg path, Cytopath or Electron microscopy.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Completed_Reports_Queue-69_23">Completed_Reports_Queue-69_23</a></td>
+    </tr>
+    <tr>
+      <td><strong>Interim Report Number</strong><pre><code>  interim_report_number</code></pre></td>
+      <td>3</td>
+      <td>This field contains the numeric sequence of this particular interim report.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Interim_Report_Number-69_29">Interim_Report_Number-69_29</a></td>
+    </tr>
+    <tr>
+      <td><strong>Reports On Demand</strong><pre><code>  reports_on_demand</code></pre></td>
+      <td>4</td>
+      <td>Name of the report on demand from the Lab Data file</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Reports_On_Demand-69_27">Reports_On_Demand-69_27</a></td>
+    </tr>
+    <tr>
+      <td><strong>Entry Number</strong><pre><code>  entry_number</code></pre></td>
+      <td>5</td>
+      <td>Entry number to appropriate file</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Entry_Number-69_24">Entry_Number-69_24</a></td>
+    </tr>
+    <tr>
+      <td><strong>Generic List</strong><pre><code>  generic_list</code></pre></td>
+      <td>6</td>
+      <td>Generic label name</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Generic_List-69_26">Generic_List-69_26</a></td>
+    </tr>
+    <tr>
+      <td><strong>User Request List</strong><pre><code>  user_request_list</code></pre></td>
+      <td>7</td>
+      <td>Names of users from file 200</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#User_Request_List-69_28">User_Request_List-69_28</a></td>
+    </tr>
+    <tr>
+      <td><strong>File</strong><pre><code>  file</code></pre></td>
+      <td>8</td>
+      <td>Files for temporary lists of entries.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#File-69_31">File-69_31</a></td>
+    </tr>
+    <tr>
+      <td><strong>Labels</strong><pre><code>  labels</code></pre></td>
+      <td>9</td>
+      <td>ID number of label</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Labels-69_25">Labels-69_25</a></td>
+    </tr>
+    <tr>
+      <td><strong>Snomed &amp; Tc Coding</strong><pre><code>  snomed__tc_coding</code></pre></td>
+      <td>10</td>
+      <td>Text entered here will appear on the preliminary pathology report <br />after the cum path summary.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Topography Category</strong><pre><code>  topography_category</code></pre></td>
+      <td>11</td>
+      <td>SNOMED coded topography categories</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Topography_Category-69_211">Topography_Category-69_211</a></td>
+    </tr>
+    <tr>
+      <td><strong>Morphology Entry</strong><pre><code>  morphology_entry</code></pre></td>
+      <td>12</td>
+      <td>SNOMED morphology entries</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Morphology_Field-61_1</td>
+    </tr>
+    <tr>
+      <td><strong>Test List Number</strong><pre><code>  test_list_number</code></pre></td>
+      <td>60</td>
+      <td>The list number for a group of selected lab tests.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Test_List_Number-69_33">Test_List_Number-69_33</a></td>
+    </tr>
+    <tr>
+      <td><strong>Topography</strong><pre><code>  topography</code></pre></td>
+      <td>61</td>
+      <td>For entries the most recent results of tests selected below will be displayed or printed. <br /> Ex. You may want to know the results of selected chemistries for a patient who has just had a liver biopsy.  Topography entered would be LIVER<br /> For blood bank the tests entered will be displayed whenever a <br /> crossmatch is ordered or when components are displayed.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Topography-69_61">Topography-69_61</a></td>
+    </tr>
+    <tr>
+      <td><strong>Data Change Date</strong><pre><code>  data_change_date</code></pre></td>
+      <td>999</td>
+      <td>Date of the Data change</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Data_Change_Date-69_299">Data_Change_Date-69_299</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-files">Sub-Files</h2>
+<h3 id="slide-label-6922"><a name="Slide_Label-69_22"></a>Slide Label (69.22)</h3>
+
+<dl>
+<dt>ID</dt><dd>Slide_Label-69_22</dd></dl>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Slide Label</strong><pre><code>  slide_label</code></pre></td>
+      <td>.01</td>
+      <td> </td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Print Name</strong><pre><code>  print_name</code></pre></td>
+      <td>.02</td>
+      <td>Enter the actual text you want printed on the slide label.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="incomplete-reports-queue-6921"><a name="Incomplete_Reports_Queue-69_21"></a>Incomplete Reports Queue (69.21)</h3>
+
+<dl>
+<dt>ID</dt><dd>Incomplete_Reports_Queue-69_21</dd></dl>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Lrdfn</strong><pre><code>  lrdfn</code></pre></td>
+      <td>.01</td>
+      <td> </td>
+      <td>NUMERIC</td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Inverse Date</strong><pre><code>  inverse_date</code></pre></td>
+      <td>1</td>
+      <td> </td>
+      <td>NUMERIC</td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Accession Date</strong><pre><code>  accession_date</code></pre></td>
+      <td>2</td>
+      <td>When specimen was accessioned. Stored in external date format.<br /> Usually only the year will be present.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="completed-reports-queue-6923"><a name="Completed_Reports_Queue-69_23"></a>Completed Reports Queue (69.23)</h3>
+
+<dl>
+<dt>ID</dt><dd>Completed_Reports_Queue-69_23</dd></dl>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Lrdfn</strong><pre><code>  lrdfn</code></pre></td>
+      <td>.01</td>
+      <td>This is a temporary list of final path reports to be printed on demand.  Entries automatically are entered when the microscopic diagnoses or supplementary are entered for Surg path, Cytopath or Electron microscopy.</td>
+      <td>NUMERIC</td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Inverse Date</strong><pre><code>  inverse_date</code></pre></td>
+      <td>1</td>
+      <td> </td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Accession Date</strong><pre><code>  accession_date</code></pre></td>
+      <td>2</td>
+      <td>When specimen accessioned. Stored in external date format.<br /> Usually only the year will be stored.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="interim-report-number-6929"><a name="Interim_Report_Number-69_29"></a>Interim Report Number (69.29)</h3>
+
+<dl>
+<dt>ID</dt><dd>Interim_Report_Number-69_29</dd></dl>
+
+<h4 id="properties-4">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Interim Report Number</strong><pre><code>  interim_report_number</code></pre></td>
+      <td>.01</td>
+      <td> </td>
+      <td>NUMERIC</td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Location</strong><pre><code>  location</code></pre></td>
+      <td>1</td>
+      <td> </td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="reports-on-demand-6927"><a name="Reports_On_Demand-69_27"></a>Reports On Demand (69.27)</h3>
+
+<dl>
+<dt>ID</dt><dd>Reports_On_Demand-69_27</dd></dl>
+
+<h4 id="properties-5">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Reports On Demand</strong><pre><code>  reports_on_demand</code></pre></td>
+      <td>.01</td>
+      <td>Pointer to LAB DATA file (#63).</td>
+      <td>POINTER</td>
+      <td>REQUIRED</td>
+      <td>Lab_Data-63</td>
+    </tr>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>.02</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Sex</strong><pre><code>  sex</code></pre></td>
+      <td>.03</td>
+      <td> </td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>MALE: <em><strong>M</strong></em><br/>FEMALE: <em><strong>F</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Dob</strong><pre><code>  dob</code></pre></td>
+      <td>.04</td>
+      <td>Date of Birth.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Id</strong><pre><code>  id-_1</code></pre></td>
+      <td>.1</td>
+      <td>Usually the SSN of the patient.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="entry-number-6924"><a name="Entry_Number-69_24"></a>Entry Number (69.24)</h3>
+
+<dl>
+<dt>ID</dt><dd>Entry_Number-69_24</dd></dl>
+
+<h4 id="properties-6">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Entry Number</strong><pre><code>  entry_number</code></pre></td>
+      <td>.01</td>
+      <td> </td>
+      <td>NUMERIC</td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Parent File</strong><pre><code>  parent_file</code></pre></td>
+      <td>.02</td>
+      <td> </td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>.03</td>
+      <td>Name of the patient.</td>
+      <td>STRING</td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="generic-list-6926"><a name="Generic_List-69_26"></a>Generic List (69.26)</h3>
+
+<dl>
+<dt>ID</dt><dd>Generic_List-69_26</dd></dl>
+
+<h4 id="properties-7">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Generic Label</strong><pre><code>  generic_label</code></pre></td>
+      <td>.01</td>
+      <td>The name of the generic label.</td>
+      <td>STRING</td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Item 2</strong><pre><code>  item_2</code></pre></td>
+      <td>.02</td>
+      <td>First line of the label.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Item 3</strong><pre><code>  item_3</code></pre></td>
+      <td>.03</td>
+      <td>The second line of the label.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Item 4</strong><pre><code>  item_4</code></pre></td>
+      <td>.04</td>
+      <td>Third line of the label.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Item 5</strong><pre><code>  item_5</code></pre></td>
+      <td>.05</td>
+      <td>The forth line of the label.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="user-request-list-6928"><a name="User_Request_List-69_28"></a>User Request List (69.28)</h3>
+
+<dl>
+<dt>ID</dt><dd>User_Request_List-69_28</dd></dl>
+
+<h4 id="properties-8">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>User</strong><pre><code>  user</code></pre></td>
+      <td>.01</td>
+      <td>Points to the NEW PERSON file (#200).</td>
+      <td>POINTER</td>
+      <td>REQUIRED</td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Last Date Used</strong><pre><code>  last_date_used</code></pre></td>
+      <td>.02</td>
+      <td>The last date this was printed.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lrdfn</strong><pre><code>  lrdfn</code></pre></td>
+      <td>1</td>
+      <td> </td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Lrdfn-69_3">Lrdfn-69_3</a></td>
+    </tr>
+    <tr>
+      <td><strong>Lab Test Group</strong><pre><code>  lab_test_group</code></pre></td>
+      <td>60</td>
+      <td> </td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Lab_Test_Group-69_35">Lab_Test_Group-69_35</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="lrdfn-693"><a name="Lrdfn-69_3"></a>Lrdfn (69.3)</h3>
+
+<dl>
+<dt>ID</dt><dd>Lrdfn-69_3</dd></dl>
+
+<h4 id="properties-9">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Lrdfn</strong><pre><code>  lrdfn</code></pre></td>
+      <td>.01</td>
+      <td>Internal file number in the LAB DATA file (#63).</td>
+      <td>POINTER</td>
+      <td>REQUIRED</td>
+      <td>Lab_Data-63</td>
+    </tr>
+    <tr>
+      <td><strong>Patient Name</strong><pre><code>  patient_name</code></pre></td>
+      <td>.02</td>
+      <td>Patient’s name.</td>
+      <td>STRING</td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Sex</strong><pre><code>  sex</code></pre></td>
+      <td>.03</td>
+      <td> </td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>MALE: <em><strong>M</strong></em><br/>FEMALE: <em><strong>F</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Dob</strong><pre><code>  dob</code></pre></td>
+      <td>.04</td>
+      <td>Date of birth.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Location</strong><pre><code>  location</code></pre></td>
+      <td>.05</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>VA Patient Number</strong><pre><code>  va_patient_number</code></pre></td>
+      <td>.06</td>
+      <td>If patient is entered in file 2 the internal file number (DFN)<br /> for file 2 will appear here.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Patient-2">Patient-2</a></td>
+    </tr>
+    <tr>
+      <td><strong>Id</strong><pre><code>  id-_1</code></pre></td>
+      <td>.1</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Patient Group</strong><pre><code>  patient_group</code></pre></td>
+      <td>1</td>
+      <td>To print only a specific group of patients enter that group name here.</td>
+      <td>STRING</td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="lab-test-group-6935"><a name="Lab_Test_Group-69_35"></a>Lab Test Group (69.35)</h3>
+
+<dl>
+<dt>ID</dt><dd>Lab_Test_Group-69_35</dd></dl>
+
+<h4 id="properties-10">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Lab Test Group</strong><pre><code>  lab_test_group</code></pre></td>
+      <td>.01</td>
+      <td>You can have one or more groups. Each group can have up to 7 tests.</td>
+      <td>NUMERIC</td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Test</strong><pre><code>  test</code></pre></td>
+      <td>1</td>
+      <td> </td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Test-69_36">Test-69_36</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="test-6936"><a name="Test-69_36"></a>Test (69.36)</h3>
+
+<dl>
+<dt>ID</dt><dd>Test-69_36</dd></dl>
+
+<h4 id="properties-11">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Number</strong><pre><code>  number</code></pre></td>
+      <td>.001</td>
+      <td> </td>
+      <td>IEN</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Test</strong><pre><code>  test</code></pre></td>
+      <td>.01</td>
+      <td>Up to 7 tests allowed.  The number will determine placement of the<br /> test on the display or print.</td>
+      <td>POINTER</td>
+      <td>REQUIRED</td>
+      <td><a href="Laboratory_Test-60">Laboratory_Test-60</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="file-6931"><a name="File-69_31"></a>File (69.31)</h3>
+
+<dl>
+<dt>ID</dt><dd>File-69_31</dd></dl>
+
+<h4 id="properties-12">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>File</strong><pre><code>  file</code></pre></td>
+      <td>.01</td>
+      <td>List of selected entries in a file.</td>
+      <td>NUMERIC</td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Start Date</strong><pre><code>  start_date</code></pre></td>
+      <td>.02</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>End Date</strong><pre><code>  end_date</code></pre></td>
+      <td>.03</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>User</strong><pre><code>  user</code></pre></td>
+      <td>.04</td>
+      <td>Person who created list of entries</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>File Entry</strong><pre><code>  file_entry</code></pre></td>
+      <td>1</td>
+      <td> </td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#File_Entry-69_32">File_Entry-69_32</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="file-entry-6932"><a name="File_Entry-69_32"></a>File Entry (69.32)</h3>
+
+<dl>
+<dt>ID</dt><dd>File_Entry-69_32</dd></dl>
+
+<h4 id="properties-13">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Number</strong><pre><code>  number</code></pre></td>
+      <td>.001</td>
+      <td> </td>
+      <td>IEN</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>File Entry Name</strong><pre><code>  file_entry_name</code></pre></td>
+      <td>.01</td>
+      <td>Enter the name of the entry in the file (.01 field)</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Entry Comment</strong><pre><code>  entry_comment</code></pre></td>
+      <td>.02</td>
+      <td>Description to identify the specific entry</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Date</strong><pre><code>  date</code></pre></td>
+      <td>1</td>
+      <td> </td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Date-69_321">Date-69_321</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="date-69321"><a name="Date-69_321"></a>Date (69.321)</h3>
+
+<dl>
+<dt>ID</dt><dd>Date-69_321</dd></dl>
+
+<h4 id="properties-14">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Date</strong><pre><code>  date</code></pre></td>
+      <td>.01</td>
+      <td> </td>
+      <td>DATE-TIME</td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Related Text</strong><pre><code>  related_text</code></pre></td>
+      <td>.02</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>More Related Text</strong><pre><code>  more_related_text</code></pre></td>
+      <td>.03</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Date Entry Printed?</strong><pre><code>  date_entry_printed</code></pre></td>
+      <td>.04</td>
+      <td>If entry was printed then ‘YES’ should be entered.<br /> If entry was not printed then it should not be deleted.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Comment</strong><pre><code>  comment</code></pre></td>
+      <td>1</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="labels-6925"><a name="Labels-69_25"></a>Labels (69.25)</h3>
+
+<dl>
+<dt>ID</dt><dd>Labels-69_25</dd></dl>
+
+<h4 id="properties-15">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Label Id</strong><pre><code>  label_id</code></pre></td>
+      <td>.01</td>
+      <td> </td>
+      <td>STRING</td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Line 1</strong><pre><code>  line_1</code></pre></td>
+      <td>.02</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Line 2</strong><pre><code>  line_2</code></pre></td>
+      <td>.03</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Line 3</strong><pre><code>  line_3</code></pre></td>
+      <td>.04</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Line 4</strong><pre><code>  line_4</code></pre></td>
+      <td>.05</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="topography-category-69211"><a name="Topography_Category-69_211"></a>Topography Category (69.211)</h3>
+
+<dl>
+<dt>ID</dt><dd>Topography_Category-69_211</dd></dl>
+
+<h4 id="properties-16">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Topography Category</strong><pre><code>  topography_category</code></pre></td>
+      <td>.01</td>
+      <td>Provides a default list of topography selections for anatomic pathology <br />searches and reports.  For example if 28 is a selection then all <br />SNOMED coded topographies beginning with 28 will be selected.</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Comment</strong><pre><code>  comment</code></pre></td>
+      <td>.02</td>
+      <td>Enter a comment associated with the topography category entry.</td>
+      <td>STRING</td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="test-list-number-6933"><a name="Test_List_Number-69_33"></a>Test List Number (69.33)</h3>
+
+<dl>
+<dt>ID</dt><dd>Test_List_Number-69_33</dd></dl>
+
+<h4 id="properties-17">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Test List Number</strong><pre><code>  test_list_number</code></pre></td>
+      <td>.01</td>
+      <td> </td>
+      <td>NUMERIC</td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Test</strong><pre><code>  test</code></pre></td>
+      <td>1</td>
+      <td> </td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Test-69_34">Test-69_34</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="test-6934"><a name="Test-69_34"></a>Test (69.34)</h3>
+
+<dl>
+<dt>ID</dt><dd>Test-69_34</dd></dl>
+
+<h4 id="properties-18">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Number</strong><pre><code>  number</code></pre></td>
+      <td>.001</td>
+      <td> </td>
+      <td>IEN</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Test</strong><pre><code>  test</code></pre></td>
+      <td>.01</td>
+      <td> </td>
+      <td>POINTER</td>
+      <td>REQUIRED</td>
+      <td><a href="Laboratory_Test-60">Laboratory_Test-60</a></td>
+    </tr>
+    <tr>
+      <td><strong>Specimen</strong><pre><code>  specimen</code></pre></td>
+      <td>.02</td>
+      <td> </td>
+      <td>POINTER</td>
+      <td>REQUIRED</td>
+      <td><a href="Topography_Field-61">Topography_Field-61</a></td>
+    </tr>
+    <tr>
+      <td><strong>Value</strong><pre><code>  value</code></pre></td>
+      <td>.03</td>
+      <td> </td>
+      <td>STRING</td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="topography-6961"><a name="Topography-69_61"></a>Topography (69.61)</h3>
+
+<dl>
+<dt>ID</dt><dd>Topography-69_61</dd></dl>
+
+<h4 id="properties-19">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Topography</strong><pre><code>  topography</code></pre></td>
+      <td>.01</td>
+      <td>Enter here the specimen or organ/tissue that will be associated with the preselected tests to be displayed or printed.</td>
+      <td>POINTER</td>
+      <td>REQUIRED</td>
+      <td><a href="Topography_Field-61">Topography_Field-61</a></td>
+    </tr>
+    <tr>
+      <td><strong>Test To Display</strong><pre><code>  test_to_display</code></pre></td>
+      <td>1</td>
+      <td>Most recent results, if any, will be displayed for tests selected associated with a specific topography indicated above when that organ or tissue is submitted to anatomic pathology.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Test_To_Display-69_62">Test_To_Display-69_62</a></td>
+    </tr>
+    <tr>
+      <td><strong>Test To Print</strong><pre><code>  test_to_print</code></pre></td>
+      <td>2</td>
+      <td> </td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Test_To_Print-69_63">Test_To_Print-69_63</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="test-to-display-6962"><a name="Test_To_Display-69_62"></a>Test To Display (69.62)</h3>
+
+<dl>
+<dt>ID</dt><dd>Test_To_Display-69_62</dd></dl>
+
+<h4 id="properties-20">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Number</strong><pre><code>  number</code></pre></td>
+      <td>.001</td>
+      <td> </td>
+      <td>IEN</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Test To Display</strong><pre><code>  test_to_display</code></pre></td>
+      <td>.01</td>
+      <td>Most recent results, if any, will be displayed for tests selected <br /> associated with a specimen.</td>
+      <td>POINTER</td>
+      <td>REQUIRED</td>
+      <td><a href="Laboratory_Test-60">Laboratory_Test-60</a></td>
+    </tr>
+    <tr>
+      <td><strong>Specimen</strong><pre><code>  specimen</code></pre></td>
+      <td>.02</td>
+      <td> </td>
+      <td>POINTER</td>
+      <td>REQUIRED</td>
+      <td><a href="Topography_Field-61">Topography_Field-61</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="test-to-print-6963"><a name="Test_To_Print-69_63"></a>Test To Print (69.63)</h3>
+
+<dl>
+<dt>ID</dt><dd>Test_To_Print-69_63</dd></dl>
+
+<h4 id="properties-21">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Number</strong><pre><code>  number</code></pre></td>
+      <td>.001</td>
+      <td> </td>
+      <td>IEN</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Test To Print</strong><pre><code>  test_to_print</code></pre></td>
+      <td>.01</td>
+      <td> </td>
+      <td>POINTER</td>
+      <td>REQUIRED</td>
+      <td><a href="Laboratory_Test-60">Laboratory_Test-60</a></td>
+    </tr>
+    <tr>
+      <td><strong>Specimen</strong><pre><code>  specimen</code></pre></td>
+      <td>.02</td>
+      <td> </td>
+      <td>POINTER</td>
+      <td>REQUIRED</td>
+      <td><a href="Topography_Field-61">Topography_Field-61</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="data-change-date-69299"><a name="Data_Change_Date-69_299"></a>Data Change Date (69.299)</h3>
+
+<dl>
+<dt>ID</dt><dd>Data_Change_Date-69_299</dd></dl>
+
+<h4 id="properties-22">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Data Change Date</strong><pre><code>  data_change_date</code></pre></td>
+      <td>.01</td>
+      <td>Date the data was changed.</td>
+      <td>DATE-TIME</td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Person Changing Data</strong><pre><code>  person_changing_data</code></pre></td>
+      <td>.02</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Data Element</strong><pre><code>  data_element</code></pre></td>
+      <td>.03</td>
+      <td>Name of the test being edited.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Old Value</strong><pre><code>  old_value</code></pre></td>
+      <td>.04</td>
+      <td>Previous test result.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>New Value</strong><pre><code>  new_value</code></pre></td>
+      <td>.05</td>
+      <td>New test result.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>File</strong><pre><code>  file</code></pre></td>
+      <td>.06</td>
+      <td>File where the data is stored.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>File Entry</strong><pre><code>  file_entry</code></pre></td>
+      <td>.07</td>
+      <td>The numeric entry of the file.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Internal File #</strong><pre><code>  internal_file_number</code></pre></td>
+      <td>.08</td>
+      <td>The internal number where the data is stored.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Subfile Field Name</strong><pre><code>  subfile_field_name</code></pre></td>
+      <td>1</td>
+      <td> </td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Subfile_Field_Name-69_37">Subfile_Field_Name-69_37</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="subfile-field-name-6937"><a name="Subfile_Field_Name-69_37"></a>Subfile Field Name (69.37)</h3>
+
+<dl>
+<dt>ID</dt><dd>Subfile_Field_Name-69_37</dd></dl>
+
+<h4 id="properties-23">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Subfile Field Name</strong><pre><code>  subfile_field_name</code></pre></td>
+      <td>.01</td>
+      <td> </td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Subfile Field Entry</strong><pre><code>  subfile_field_entry</code></pre></td>
+      <td>.02</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Subfile Field #</strong><pre><code>  subfile_field_number</code></pre></td>
+      <td>.03</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:25 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

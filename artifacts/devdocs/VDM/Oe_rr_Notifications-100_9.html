@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--vdm--oe_rr_notifications-100_9"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">VDM</a> » Oe_rr_Notifications-100_9<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="oerr-notifications-1009">Oe/rr Notifications (100.9)</h1>
+<p>This file contains data used to generate notifications.  Packages determine if a notification should be sent then send the patient ID and notification ID (IEN in this file) to order entry routines.  Based on the notification IEN, data from this file is used to generate the notification and help determine its recipients.</p>
+
+<p><strong>Global:</strong> ^ORD(100.9,</p>
+
+<p><strong>Domain:</strong> Non-Clinical</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Number</strong><pre><code>  number</code></pre></td>
+      <td>.001</td>
+      <td>This is the internal entry number assigned to a notification.  Entries<br />1 through 9999 are reserved for National release by the OE/RR <br />Notifications package.<br /> <br />For local site-defined notifications, the internal entry number must be <br />specific to your VAMC in the following format:<br /> <br /><your station="" number="">&lt;incremental notification number 01-99&gt;<br /> <br />For example, if your site is number 456, your first locally created <br />notification would be 45601.</your></td>
+      <td>IEN</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>.01</td>
+      <td>This is the name of the notification.  It should match the text in the<br />MESSAGE TEXT field as closely as possible (it may be an abbreviated version<br />of the entry in MESSAGE TEXT.)  This field is displayed to users when<br />selecting or reviewing entries in this file (100.9).</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Package Id</strong><pre><code>  package_id</code></pre></td>
+      <td>.02</td>
+      <td>This entry should always be “OR” to indicate the alert (notification) is <br />processed by OE/RR.  “OR” is stuffed via a trigger x-ref in field .01.<br />This Package ID will have “;DFN;NIEN” concatenated to the end of it, to<br />make the XQAID variable which is used by the XQALERT routine to provide a<br />unique cross-reference.  The order entry notification system will check<br />the New person file to determine if this message is already pending for<br />the user.  If it already exists, the user will not receive a second message.<br /> <br />DFN is the Patient File internal entry number.<br />NIEN is the Notification File internal entry number.</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Message Text</strong><pre><code>  message_text</code></pre></td>
+      <td>.03</td>
+      <td>This text will be appended to the Patient last name and last 4 characters of<br />the social security number to create the order notification text.<br />(e.g., SMITH (4356): Unsigned orders. - Where “Unsigned orders.” is the <br />content of MESSAGE TEXT.)  Text entered into this field is the default text<br />for notifications where the text message usually comes from the package<br />(MESSAGE TYPE = PKG).</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Message Type</strong><pre><code>  message_type</code></pre></td>
+      <td>.04</td>
+      <td>MESSAGE TYPE field is used as a flag to determine where the message text originates.  If from the NOTIFICATION file, MESSAGE TYPE is ‘NOT.’  If the message comes from the package, MESSAGE TYPE is ‘PKG.’</td>
+      <td>ENUMERATION</td>
+      <td>REQUIRED</td>
+      <td>NOTIFICATION FILE PROVIDES MESSAGE: <em><strong>NOT</strong></em><br/>PACKAGE PROVIDES A VARIABLE MESSAGE: <em><strong>PKG</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Action Flag</strong><pre><code>  action_flag</code></pre></td>
+      <td>.05</td>
+      <td>This a mandatory flag used to regulate processing in XQALERT processing.<br />The flag is set to I to indicate the notification is for INFORMATION ONLY - <br />no follow-up action is to be taken.  ‘I’ notifications are deleted as each<br />user reviews them.  ‘R’ notifications have a follow-up action associated<br />with them.  The user will be taken to another routine or option when they<br />select a notification with ACTION FLAG = R and a follow-up routine/option<br />is defined.</td>
+      <td>ENUMERATION</td>
+      <td>REQUIRED</td>
+      <td>RUN ROUTINE: <em><strong>R</strong></em><br/>INFORMATION ONLY: <em><strong>I</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Entry Point</strong><pre><code>  entry_point</code></pre></td>
+      <td>.06</td>
+      <td>This is an optional field used to create the XQAROU variable to be used by<br />the XQALERT routine.  This field represents the TAG in tag^routine.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Routine Name</strong><pre><code>  routine_name</code></pre></td>
+      <td>.07</td>
+      <td>This is an optional variable identifying a routine or tag(field .06)^routine<br />used to create XQAROU for processing by XQALERT.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Non-menu Type Option Action</strong><pre><code>  nonmenu_type_option_action</code></pre></td>
+      <td>1</td>
+      <td>This is an optional field used to create the variable XQAOPT for use<br />by XQALERT.  It should indicate a non-menu type option on the user’s<br />primary or secondary menu, not on the Common menu.  The phantom jump <br />is used to navigate to the destination option and will check pathway<br />restrictions in doing so.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Option-19">Option-19</a></td>
+    </tr>
+    <tr>
+      <td><strong>Related Package</strong><pre><code>  related_package</code></pre></td>
+      <td>1.5</td>
+      <td>This field contains the name of the package where the notification originates or is triggered (e.g., LAB, MAS, Pharmacy.)</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong><pre><code>  description</code></pre></td>
+      <td>4</td>
+      <td>This field contains free text describing the notification, how it is trig-<br />gered and what action(s) delete it.</td>
+      <td>STRING</td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Follow-up Type</strong><pre><code>  followup_type</code></pre></td>
+      <td>5</td>
+      <td>This field contains the type of follow-up action to be taken.  It is used <br />by the application managing the follow-up action  (e.g. GUI interface) to<br />initiate the proper follow-up action separate from the underlying data <br />base and application layers.  Example follow-up types include: report,<br />e/s, flag.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>EXPIRING_ORDER: <em><strong>2</strong></em><br/>COSIGN_ORDER: <em><strong>8</strong></em><br/>COSIGN_PN: <em><strong>1</strong></em><br/>FLAGGED_ORDER: <em><strong>3</strong></em><br/>UNVERIFIED_MED: <em><strong>11</strong></em><br/>NEW_ORDER: <em><strong>7</strong></em><br/>NEW_CONSULT: <em><strong>6</strong></em><br/>UNSIGN_PN: <em><strong>10</strong></em><br/>REPORT: <em><strong>0</strong></em><br/>ES_ORDER: <em><strong>9</strong></em><br/>UNLINKED: <em><strong>5</strong></em><br/>ORDER: <em><strong>4</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:25 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

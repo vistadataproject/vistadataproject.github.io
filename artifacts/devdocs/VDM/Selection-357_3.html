@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--vdm--selection-357_3"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">VDM</a> » Selection-357_3<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="selection-3573">Selection (357.3)</h1>
+<p>Contains the items appearing on the SELECTION LISTS. A selection can be composed of several fields, hence can occupy several subcolumns. Only the text is stored here, not the MARKING SYMBOLS.</p>
+
+<p><strong>Global:</strong> ^IBE(357.3,</p>
+
+<p><strong>Domain:</strong> Non-Clinical</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Selection Id</strong><pre><code>  selection_id</code></pre></td>
+      <td>.01</td>
+      <td><br />The ID passed by the package.</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Place Holder Only</strong><pre><code>  place_holder_only</code></pre></td>
+      <td>.02</td>
+      <td> </td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>1</strong></em><br/>true: <em><strong>0</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Selection List</strong><pre><code>  selection_list</code></pre></td>
+      <td>.03</td>
+      <td><br />Identifies the selection list that this selection belongs on.</td>
+      <td>POINTER</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="Selection_List-357_2">Selection_List-357_2</a></td>
+    </tr>
+    <tr>
+      <td><strong>Selection Group</strong><pre><code>  selection_group</code></pre></td>
+      <td>.04</td>
+      <td><br />The SELECTION GROUP that the selection belongs to.The selection will<br />appear under the group header on the form.</td>
+      <td>POINTER</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="Selection_Group-357_4">Selection_Group-357_4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Print Order Within Group</strong><pre><code>  print_order_within_group</code></pre></td>
+      <td>.05</td>
+      <td>Determines the order that this selection entry will appear in under the<br />header for the selection group.</td>
+      <td>NUMERIC</td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Place Holder Text</strong><pre><code>  place_holder_text</code></pre></td>
+      <td>.06</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Use As Subheader?</strong><pre><code>  use_as_subheader</code></pre></td>
+      <td>.07</td>
+      <td>One use that is being made of selections that are defined as place holders<br />is to use them as subheaders. When this is done the text should be<br />included with the header for the following selections. This field is<br />used to allow that.<br /> <br />If this field is set to YES for a place holder that contains text, the<br />text will be used as a subheader (#1) and will be concatenated to the end<br />of the header passed to PCE. The subheader is in use until a place<br />holder is reached that ends it, or the group ends.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>1</strong></em><br/>true: <em><strong>0</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Stop Using Subheader?</strong><pre><code>  stop_using_subheader</code></pre></td>
+      <td>.08</td>
+      <td>This field is used to signal that the subheader in use, defined by prior<br />place holders, should be ended.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>1</strong></em><br/>true: <em><strong>0</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Quantity</strong><pre><code>  quantity</code></pre></td>
+      <td>.09</td>
+      <td>This field contains the number of occurrences for a particular selection.<br />A value placed in this field will be passed to PCE as the quantity.<br />Presently, the quantity field will only be asked for CPT codes.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Subcolumn Value</strong><pre><code>  subcolumn_value</code></pre></td>
+      <td>1</td>
+      <td><br />The selection can be composed of multiple fields. Each field occupies its<br />own subcolumn on the form.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Subcolumn_Value-357_31">Subcolumn_Value-357_31</a></td>
+    </tr>
+    <tr>
+      <td><strong>Narrative To Send To Pce</strong><pre><code>  narrative_to_send_to_pce</code></pre></td>
+      <td>2.01</td>
+      <td>Enter the narrative that should be sent to PCE when this selection is<br />scanned.  This will be the provider narrative that is shown in PCE and<br />Problem List.  If there is no entry in this field the text as it appears<br />on the form will be sent as the narrative.<br /><br />This field can only be entered for the type of interfaces that allow<br />adding this narrative, and then send the narrative to PCE.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Clinical Lexicon Entry</strong><pre><code>  clinical_lexicon_entry</code></pre></td>
+      <td>2.02</td>
+      <td>This is the clinical lexicon entry this term should be associated with.<br />Generally this is only completed for selections based on diagnosis.<br />The clinical lexicon entry will be passed to pce when this selection is<br />scanned.  This allows maintaining the patient problem list associated <br />with clinical terms.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Expressions-757_01">Expressions-757_01</a></td>
+    </tr>
+    <tr>
+      <td><strong>Second Code</strong><pre><code>  second_code</code></pre></td>
+      <td>2.03</td>
+      <td>Used to send additional codes along when one entry is bubbled.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Third Code</strong><pre><code>  third_code</code></pre></td>
+      <td>2.04</td>
+      <td>Used to pass a third code to PCE for this one entry.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Cpt Modifier</strong><pre><code>  cpt_modifier</code></pre></td>
+      <td>3</td>
+      <td> </td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Cpt_Modifier-357_33">Cpt_Modifier-357_33</a></td>
+    </tr>
+    <tr>
+      <td><strong>Icd Code Edit Date/time</strong><pre><code>  icd_code_edit_date_time</code></pre></td>
+      <td>4.01</td>
+      <td>Indicates date and time when the ICD diagnosis code was edited in the <br />block/encounter form.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Icd Changes Made By</strong><pre><code>  icd_changes_made_by</code></pre></td>
+      <td>4.02</td>
+      <td>Indicates the user who last made ICD changes to this record.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-files">Sub-Files</h2>
+<h3 id="subcolumn-value-35731"><a name="Subcolumn_Value-357_31"></a>Subcolumn Value (357.31)</h3>
+
+<dl>
+<dt>ID</dt><dd>Subcolumn_Value-357_31</dd></dl>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Subcolumn Number</strong><pre><code>  subcolumn_number</code></pre></td>
+      <td>.01</td>
+      <td><br />The order that the subcolumn should appear on the form.</td>
+      <td>NUMERIC</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Subcolumn Value</strong><pre><code>  subcolumn_value</code></pre></td>
+      <td>.02</td>
+      <td><br />The text that should appear in the subcolumn.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="cpt-modifier-35733"><a name="Cpt_Modifier-357_33"></a>Cpt Modifier (357.33)</h3>
+
+<dl>
+<dt>ID</dt><dd>Cpt_Modifier-357_33</dd></dl>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Cpt Modifier</strong><pre><code>  cpt_modifier</code></pre></td>
+      <td>.01</td>
+      <td>The two character .01 field of the CPT MODIFIER file is stored.</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>1</td>
+      <td>Description (name) of CPT Modifier.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:25 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

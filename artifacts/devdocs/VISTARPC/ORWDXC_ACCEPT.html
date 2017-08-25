@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VISTA RPC Documentation &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--native-rpcs--orwdxc-accept"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">Native RPCs</a> » ORWDXC ACCEPT<br /></h4>
+<h1 id="orwdxc-accept">ORWDXC ACCEPT</h1>
+
+<p>Return list of Order Checks on Accept Order.</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Label</td>
+      <td>ACCEPT</td>
+    </tr>
+    <tr>
+      <td>MUMPS Implementation</td>
+      <td><a href="http://code.osehra.org/dox/Routine_ORWDXC_source.html">ORWDXC</a></td>
+    </tr>
+    <tr>
+      <td>Return Type</td>
+      <td>ARRAY</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="mumps-method-description">MUMPS Method Description</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Method</td>
+      <td><a href="http://code.osehra.org/dox/Routine_ORWDXC_source.html">ACCEPT^ORWDXC</a></td>
+    </tr>
+    <tr>
+      <td>Method Comment</td>
+      <td>Return list of Order Checks on Accept Order</td>
+    </tr>
+    <tr>
+      <td>Input Parameters</td>
+      <td>DFN, FID, STRT, ORL, OIL, ORIFN, ORREN</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td><pre><code> K ^TMP($J,"OROCOUTO;"),^TMP($J,"OROCOUTI;"),^TMP($J,"ORDSGCHK_CACHE")<br/> K ^TMP($J,"ORENHCHK")<br/> N X,Y,USID,ORCHECK,ORI,ORX,ORY,%DT,ORDODSG<br/> S ORL=ORL_";SC(",X=STRT,STRT="",ORDODSG=0<br/> D:X="AM" AM^ORCSAVE2 D:X="NEXT" NEXT^ORCSAVE2<br/> I $L(X) S %DT="FTX" D ^%DT S:Y'>0 Y="" S STRT=Y<br/> S (ORI,ORX)=0 F  S ORI=$O(OIL(ORI)) Q:'ORI  D<br/> . Q:'OIL(ORI)<br/> . S USID=$$USID(OIL(ORI))<br/> . S OIL(ORI,"USID")=USID<br/> . S ORX=ORX+1,ORX(ORX)=+OIL(ORI)_"/"_FID_"/"_USID<br/> . S:$P(OIL(ORI),U,2)="PSIV" $P(ORX(ORX),"/",7)=$P($P(OIL(ORI),U,3),";")<br/> D EN^ORKCHK(.ORY,DFN,.ORX,"SELECT",.OIL,.ORDODSG)<br/> I $D(ORY) D RETURN^ORCHECK ; expects ORY, ORCHECK<br/> K ORX,ORY<br/> S (ORI,ORX)=0 F  S ORI=$O(OIL(ORI)) Q:'ORI  D<br/> . Q:'OIL(ORI)<br/> . S ORX=ORX+1<br/> . S ORX(ORX)=+OIL(ORI)_"/"_FID_"/"_OIL(ORI,"USID")_"/"_STRT<br/> . S:$P(OIL(ORI),U,2)="LR" $P(ORX(ORX),"/",6)=$P(OIL(ORI),U,3)<br/> D EN^ORKCHK(.ORY,DFN,.ORX,"ACCEPT",.OIL,.ORDODSG)<br/> I $D(ORY) D RETURN^ORCHECK   ; expects ORY, ORCHECK<br/> D FDBDOWN^ORCHECK(0)<br/> D OPOS(DFN)<br/> D CHK2LST<br/> K ^TMP($J,"OROCOUTO;"),^TMP($J,"OROCOUTI;"),^TMP($J,"DD"),^TMP($J,"ORDSGCHK_CACHE")</code></pre></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="cprs">CPRS</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>File Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pascal File</td>
+      <td><a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas">Orders/rOrders.pas</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:26 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

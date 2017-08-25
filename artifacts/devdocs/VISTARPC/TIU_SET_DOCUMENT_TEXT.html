@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VISTA RPC Documentation &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--native-rpcs--tiu-set-document-text"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">Native RPCs</a> » TIU SET DOCUMENT TEXT<br /></h4>
+<h1 id="tiu-set-document-text">TIU SET DOCUMENT TEXT</h1>
+
+<p>This RPC buffers the transmittal of text (i.e., the body of TIU Documents)from the Client to the Server. It allows documents of indefinite size tobe filed, without risk of an allocate error on the M Server.</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Label</td>
+      <td>SETTEXT</td>
+    </tr>
+    <tr>
+      <td>MUMPS Implementation</td>
+      <td><a href="http://code.osehra.org/dox/Routine_TIUSRVPT_source.html">TIUSRVPT</a></td>
+    </tr>
+    <tr>
+      <td>Return Type</td>
+      <td>SINGLE VALUE</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="input-parameters">Input Parameters</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Maximum Data Length</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TIUDA</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td>true</td>
+      <td>This is the IEN of the TIU Document in the TIU DOCUMENT file (#8925).</td>
+    </tr>
+    <tr>
+      <td>TIUX</td>
+      <td>LIST</td>
+      <td> </td>
+      <td>true</td>
+      <td>This is the array in which the body of the TIU Document is being passed,as:                  TIUX("HDR")=&lt;# of Current Page&gt;^&lt;Total # of Pages&gt;                TIUX("TEXT",1,0)=&lt;Line 1 of document body&gt;                TIUX("TEXT",2,0)=&lt;Line 2 of document body&gt;                TIUX("TEXT",3,0)=&lt;Line 3 of document body&gt;                        .                       .                        .                       .                        .                       .                TIUX("TEXT",i,0)=&lt;Line i of document body&gt;</td>
+    </tr>
+    <tr>
+      <td>SUPPRESS</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td>true</td>
+      <td>Optional parameter.  Default is 0 (no). Boolean flag that indicates whether to commit the data (as in the Save w/osignature action in CPRS), or to simply save it in the EDIT BUFFER for thedocument (as in the auto-save function).</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="mumps-method-description">MUMPS Method Description</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Method</td>
+      <td><a href="http://code.osehra.org/dox/Routine_TIUSRVPT_source.html">SETTEXT^TIUSRVPT</a></td>
+    </tr>
+    <tr>
+      <td>Method Comment</td>
+      <td>Save Text - use Buffered I/O</td>
+    </tr>
+    <tr>
+      <td>Input Parameters</td>
+      <td>TIUDA, TIUX, SUPPRESS</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td><pre><code> N PAGES,PAGE S TIUY=0,SUPPRESS=$G(SUPPRESS,0)<br/> I $S(+$G(TIUDA)'>0:1,'$D(^TIU(8925,+TIUDA,0)):1,1:0) D  Q<br/> . S TIUY="0^0^0^Attempt to file data in a Nonexistent Entry."<br/> . D ERROR(TIUY)<br/> S PAGE=$P($G(TIUX("HDR")),U),PAGES=$P($G(TIUX("HDR")),U,2)<br/> I $S('PAGE:1,'PAGES:1,1:0) D  Q<br/> . S TIUY="0^0^0^Invalid text block header"<br/> . D ERROR(TIUY)<br/> I PAGE=1 K ^TIU(8925,+TIUDA,"TEMP")<br/> M ^TIU(8925,+TIUDA,"TEMP")=TIUX("TEXT")<br/> I 'SUPPRESS,(PAGE=PAGES),$D(^TIU(8925,TIUDA,"TEMP")) D<br/> . N TIUC,TIUI,TIU,TIUD12,TIUAU,TIUEC S (TIUC,TIUI)=0<br/> . F  S TIUI=$O(^TIU(8925,TIUDA,"TEMP",TIUI)) Q:+TIUI'>0  D<br/> . . S TIUC=TIUC+1<br/> . I TIUC>0 S ^TIU(8925,TIUDA,"TEMP",0)="^^"_TIUC_U_TIUC_U_DT_"^^"<br/> . D GETTIU^TIULD(.TIU,TIUDA)<br/> . K ^TIU(8925,TIUDA,"TEXT")<br/> . S TIUC=0 F  S TIUC=$O(^TIU(8925,"DAD",TIUDA,TIUC)) Q:+TIUC'>0  D<br/> . . I +$$ISADDNDM^TIULC1(+TIUC) Q<br/> . . K ^TIU(8925,+TIUC,"TEXT")<br/> . D MERGTEXT^TIUEDI1(+TIUDA,.TIU)<br/> . K ^TIU(8925,TIUDA,"TEMP")<br/> . ; If user is neither author or expected cosigner, file VBC Line count<br/> . S TIUD12=$G(^TIU(8925,TIUDA,12)),TIUAU=$P(TIUD12,U,2),TIUEC=$P(TIUD12,U,8)<br/> . I (TIUAU]""),(DUZ'=TIUAU) D<br/> . . I (TIUEC]""),(DUZ=TIUEC) Q<br/> . . D LINES(TIUDA)<br/> S TIUY=TIUDA_U_PAGE_U_PAGES</code></pre></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="cprs">CPRS</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>File Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pascal File</td>
+      <td><a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas">rTIU.pas</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:26 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

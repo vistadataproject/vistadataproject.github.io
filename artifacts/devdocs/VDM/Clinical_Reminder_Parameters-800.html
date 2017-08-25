@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--vdm--clinical_reminder_parameters-800"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">VDM</a> » Clinical_Reminder_Parameters-800<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="clinical-reminder-parameters-800">Clinical Reminder Parameters (800)</h1>
+<p>This file contains the parameters used by the Clinical Reminders package.</p>
+
+<p><strong>Global:</strong> ^PXRM(800,</p>
+
+<p><strong>Domain:</strong> Non-Clinical</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Site Parameters</strong><pre><code>  site_parameters</code></pre></td>
+      <td>.01</td>
+      <td>This file contains parameters used by the Clinical Reminders package. <br />There is one top-level entry per site.</td>
+      <td>NUMERIC</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Default Reminder Disclaimer</strong><pre><code>  default_reminder_disclaimer</code></pre></td>
+      <td>1</td>
+      <td>This is the DEFAULT REMINDER DISCLAIMER that is distributed with the<br />package.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Site Reminder Disclaimer</strong><pre><code>  site_reminder_disclaimer</code></pre></td>
+      <td>2</td>
+      <td>This is the site-defined reminder disclaimer. If there is an entry in<br />this field, then the site-defined disclaimer will override the default<br />disclaimer.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Reminder Management Mailgroup</strong><pre><code>  reminder_management_mailgroup</code></pre></td>
+      <td>3</td>
+      <td>Members of the MailMan mail group pointed to by this field will receive<br />various types of MailMan messages concerned with managing reminders.<br /><br />Some examples: if there is an error during reminder evaluation, this<br />mail group will be sent a message notifying them of the error. When the<br />reminder indexes are built, the mail group will receive the messages<br />this process generates.<br /><br />When a message is generated, if the user is not a member of the mail<br />group and the mail group is private, then no members of the mail group<br />will receive the message. Therefore, it is recommended that the mail<br />group be public.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Mail_Group-3_8">Mail_Group-3_8</a></td>
+    </tr>
+    <tr>
+      <td><strong>Web Sites</strong><pre><code>  web_sites</code></pre></td>
+      <td>4</td>
+      <td>In the CPRS GUI, if you right-click on a reminder, one of the choices is<br />Reference Information, which will give a list of web sites that have<br />information related to the reminder. The web sites listed in this<br />multiple are the default set that apply to all reminders.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Web_Sites-800_04">Web_Sites-800_04</a></td>
+    </tr>
+    <tr>
+      <td><strong>Version</strong><pre><code>  version</code></pre></td>
+      <td>5</td>
+      <td>This is the current version number of the Clinical Reminders package.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Full Ssn</strong><pre><code>  full_ssn</code></pre></td>
+      <td>6</td>
+      <td>This field is the default for the Clinical Reminders display of Social<br />Security numbers. It is a set of codes with the possible values of “N”<br />or “Y”. If the value is “Y” then the full SSN is printed; otherwise<br />only the last four digits of the SSN are printed.<br /> <br />The standard setting for this field is N.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Initial Mst Synch Comp Date</strong><pre><code>  initial_mst_synch_comp_date</code></pre></td>
+      <td>7</td>
+      <td>This is the date and time the initial MST synchronization was completed.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Initial Mst Synch Update Count</strong><pre><code>  initial_mst_synch_update_count</code></pre></td>
+      <td>8</td>
+      <td>This is the number of updates that were made during the initial<br />synchronization.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Daily Mst Sync Comp Date</strong><pre><code>  daily_mst_sync_comp_date</code></pre></td>
+      <td>9</td>
+      <td>This is the date and time the last daily MST synchronization was completed.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Daily Mst Synch Update Count</strong><pre><code>  daily_mst_synch_update_count</code></pre></td>
+      <td>10</td>
+      <td>This is the number of updates made during the last daily MST synchronization.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Initial Mst Synch Start Date</strong><pre><code>  initial_mst_synch_start_date</code></pre></td>
+      <td>11</td>
+      <td>This is the date and time the initial Clinical Reminders MST<br />synchronization was set to run.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Daily Mst Synch Start Date</strong><pre><code>  daily_mst_synch_start_date</code></pre></td>
+      <td>12</td>
+      <td>This is the date and time the last daily Clinical Reminders MST<br />synchronization was set to start.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Truncate Employee Ssn</strong><pre><code>  truncate_employee_ssn</code></pre></td>
+      <td>13</td>
+      <td>The detailed reminders due report has the option to print the full SSN for<br />the patients selected (see FULL SSN field). However, if a patient is an<br />employee (fields 361 and 391 in PATIENT file) the SSN will be truncated.<br /> <br />If a site, for their own reasons, requires the full SSN for employees to<br />be printed on their reports then this may be done by setting the TRUNCATE<br />EMPLOYEE SSN field to ‘No’.<br /> <br />The default value installed for this field is ‘Yes’. This ensures that <br />full employee SSNs are not printed on the report.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Edit History Count</strong><pre><code>  edit_history_count</code></pre></td>
+      <td>14</td>
+      <td>The option PXRM REMINDER EDIT HISTORY is used to display the edit<br />history of a reminder definition from newest to oldest. One of the<br />questions it asks the user is how many entries to display. This<br />parameter sets the default number to display. The user can override<br />this and select any number they want.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Maximum Number Of Index Errors</strong><pre><code>  maximum_number_of_index_errors</code></pre></td>
+      <td>15</td>
+      <td>When indexing a global, details about entries that cannot be indexed<br />are reported in a MailMan message that uses a line for each error. If<br />there are large numbers of errors the message can become very large.<br />This parameter establishes the maximum number of entries to list in the<br />MailMan message so its size does not become unwieldy.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Formatted Disclaimer</strong><pre><code>  formatted_disclaimer</code></pre></td>
+      <td>16</td>
+      <td>This file contains two fields to store a disclaimer: DEFAULT<br />REMINDER DISCLAIMER and SITE REMINDER DISCLAIMER. The DEFAULT<br />REMINDER DISCLAIMER is distributed with the package. A site<br />can create and store their own disclaimer in the SITE REMINDER<br />DISCLAIMER field. If the SITE REMINDER DISCLAIMER is defined it is<br />used otherwise the DEFAULT REMINDER DISCLAIMER is used.<br /><br />The disclaimer needs to be formatted before it can be displayed so<br />for efficiency purposes the disclaimer is formatted once and stored<br />in this field. The formatting takes place whenever the SITE REMINDER<br />DISCLAIMER is edited or deleted.<br /><br /></td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Maximum Number Of Mh Questions</strong><pre><code>  maximum_number_of_mh_questions</code></pre></td>
+      <td>17</td>
+      <td>When setting up a reminder dialog element, if a mental health test<br />has more questions then the value defined in this field the<br />test cannot be used in a dialog element. When PXRM<em>2.0</em>6 is<br />installed the value will be set to 35. This parameter can be edited<br />using the PAR option on the Reminders Managers Menu.<br /><br /></td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-files">Sub-Files</h2>
+<h3 id="web-sites-80004"><a name="Web_Sites-800_04"></a>Web Sites (800.04)</h3>
+
+<dl>
+<dt>ID</dt><dd>Web_Sites-800_04</dd></dl>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Url</strong><pre><code>  url</code></pre></td>
+      <td>.01</td>
+      <td>This is the URL for the web site.</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Web Site Title</strong><pre><code>  web_site_title</code></pre></td>
+      <td>.02</td>
+      <td>This is the WEB SITE TITLE. This field is optional. If entered, this will <br />display in the ‘Reference Information’ window of CPRS GUI instead of the <br />full URL.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Web Site Description</strong><pre><code>  web_site_description</code></pre></td>
+      <td>1</td>
+      <td>This is a description of the web site. It can be used to explain why<br />the particular site is included. It is for reference information only<br />and not displayed to the user.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:25 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

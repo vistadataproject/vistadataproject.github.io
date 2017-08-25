@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VISTA RPC Documentation &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--native-rpcs--orqpt-ward-patients"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">Native RPCs</a> » ORQPT WARD PATIENTS<br /></h4>
+<h1 id="orqpt-ward-patients">ORQPT WARD PATIENTS</h1>
+
+<p>Function returns a list of patients on a ward.</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Label</td>
+      <td>WARDPTS</td>
+    </tr>
+    <tr>
+      <td>MUMPS Implementation</td>
+      <td><a href="http://code.osehra.org/dox/Routine_ORQPTQ2_source.html">ORQPTQ2</a></td>
+    </tr>
+    <tr>
+      <td>Return Type</td>
+      <td>ARRAY</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="input-parameters">Input Parameters</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Maximum Data Length</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WARD ID</td>
+      <td>LITERAL</td>
+      <td>16</td>
+      <td>true</td>
+      <td>The record number of the ward from the Ward Location File (#42).</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="mumps-method-description">MUMPS Method Description</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Method</td>
+      <td><a href="http://code.osehra.org/dox/Routine_ORQPTQ2_source.html">WARDPTS^ORQPTQ2</a></td>
+    </tr>
+    <tr>
+      <td>Method Comment</td>
+      <td>RETURN LIST OF PATIENTS IN A WARD</td>
+    </tr>
+    <tr>
+      <td>Input Parameters</td>
+      <td>WARD</td>
+    </tr>
+    <tr>
+      <td>First Comment</td>
+      <td><pre><code> SLC/PKS - Modifications for Room/Bed data on  1/19/2001.</code></pre></td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td><pre><code> I +$G(WARD)<1 S Y(1)="^No ward identified" Q <br/> N ORI,DFN,RBDAT<br/> S ORI=1,DFN=0<br/> S WARD=$P(^DIC(42,WARD,0),"^")   ;GET WARD NAME FOR "CN"  LOOKUP<br/> F  D  Q:DFN'>0<br/> .S DFN=$O(^DPT("CN",WARD,DFN)) Q:DFN'>0<br/> .S Y(ORI)=+DFN_"^"_$P(^DPT(+DFN,0),"^")<br/> .S RBDAT=""<br/> .; Add patient room/bed information where data exists:<br/> .S RBDAT=$P($G(^DPT(+DFN,.101)),U)<br/> .I RBDAT'="" D                                   ; Any R/B data?<br/> ..I $L(RBDAT)<4 S RBDAT=RBDAT_"   "              ; Add if < 4 chars.<br/> ..S RBDAT=$E(RBDAT,1,4)                          ; Get first 4 only.<br/> .S Y(ORI)=Y(ORI)_U_RBDAT                         ; Add R/B to string<br/> .S ORI=ORI+1                                     ; Increment counter.<br/> S:+$G(Y(1))<1 Y(1)="^No patients found."</code></pre></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="cprs">CPRS</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>File Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NOT OSEHRA CPRS</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:26 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

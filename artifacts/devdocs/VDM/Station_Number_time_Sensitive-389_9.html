@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--vdm--station_number_time_sensitive-389_9"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">VDM</a> » Station_Number_time_Sensitive-389_9<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="station-number-time-sensitive-3899">Station Number (time Sensitive) (389.9)</h1>
+<p>The purpose of this file is to allow DHCP software flexibility and reliability when the station number of a medical center changes or when one or more stations have merged into one station.   Adding or modifing entries in this file may affect many DHCP applications. Control of entry into this file should be carefully controlled by the IRM Service Chief.</p>
+
+<p><strong>Global:</strong> ^VA(389.9,</p>
+
+<p><strong>Domain:</strong> Non-Clinical</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Reference Number</strong><pre><code>  reference_number</code></pre></td>
+      <td>.01</td>
+      <td>This field is the reference number of the entry in the file.  It is <br />assigned by the enter/edit routine.</td>
+      <td>NUMERIC</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Effective Date</strong><pre><code>  effective_date</code></pre></td>
+      <td>.02</td>
+      <td>This is the effective date of the station number for this division.  If<br />you are creating a new division with a new station number then the entry<br />for this division should be sufficient.  If your medical center is changing<br />station numbers then an entry for this effective date is required for all<br />medical center divisions.</td>
+      <td>DATE-TIME</td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Medical Center Division</strong><pre><code>  medical_center_division</code></pre></td>
+      <td>.03</td>
+      <td>This is the medical center division that you want to create a station<br />number entry for.  You must create one entry for each medical center <br />division.  If you are changing station numbers then one entry for each<br />division is required for the new effective date.</td>
+      <td>POINTER</td>
+      <td>INDEXED</td>
+      <td><a href="Medical_Center_Division-40_8">Medical_Center_Division-40_8</a></td>
+    </tr>
+    <tr>
+      <td><strong>Station Number</strong><pre><code>  station_number</code></pre></td>
+      <td>.04</td>
+      <td>This is the 3 digit station number, if this divison has a suffix then<br />this is the station number and the suffix.</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Is Primary Division</strong><pre><code>  is_primary_division</code></pre></td>
+      <td>.05</td>
+      <td>Each station has one primary divison.  This normally is the divison where<br />the station number is 3 numberic characters with no suffix.  If this is the<br />primary division then this field should be set to ‘YES’.<br /> <br />Only one division may be the primary division at a time.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Inactive</strong><pre><code>  inactive</code></pre></td>
+      <td>.06</td>
+      <td>This field is used to inactivate a station number.  A new entry for a<br />station number for the date it became inactive is required, and this<br />field should be made set to ‘YES’ for the entry that inactivates the<br />station number.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>YES - INACTIVE: <em><strong>1</strong></em><br/>NO - ACTIVE: <em><strong>0</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Other Institution</strong><pre><code>  other_institution</code></pre></td>
+      <td>.07</td>
+      <td>If this entry in the Station Number file is for a station that is not<br />a Medical Center Division then this is the institution pointer to this <br />entry.<br /> <br />This field isn’t currently used but could be used for possibly Record<br />Tracking, Outpatient Pharmacy CMOP’s, or Reference Lab work and others<br />if only I knew what else to do with it.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Institution-4">Institution-4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Integration Name</strong><pre><code>  integration_name</code></pre></td>
+      <td>17000</td>
+      <td>This will be used for the new name for sites that have integrated.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:25 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

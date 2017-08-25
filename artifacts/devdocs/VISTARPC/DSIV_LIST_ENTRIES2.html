@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VISTA RPC Documentation &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--native-rpcs--dsiv-list-entries2"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">Native RPCs</a> » DSIV LIST ENTRIES2<br /></h4>
+<h1 id="dsiv-list-entries2">DSIV LIST ENTRIES2</h1>
+
+<p>Returns INSURANCE BUFFER file entries for specified date range. Each return value has the form - BUFFER IEN^DFN^ « requested fields » ^SSN^FLAGS^SYMBOL^DIV^IMAGES^ERR where SSN is the full patient SSN, FLAGS are the “iIEYH” flags, SYMBOL is the IIV status (where the record is in electronic processing), DIV is the users default division, and IMAGES is field #2 IMAGES SCANNED from the DSIV AUDIT file (#19625) ERR is the one-line eIV error message (if applicable)</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Label</td>
+      <td>LIST</td>
+    </tr>
+    <tr>
+      <td>MUMPS Implementation</td>
+      <td><a href="http://code.osehra.org/dox/Routine_DSIVIC3_source.html">DSIVIC3</a></td>
+    </tr>
+    <tr>
+      <td>Return Type</td>
+      <td>GLOBAL ARRAY</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="input-parameters">Input Parameters</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Maximum Data Length</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SDT</td>
+      <td>LITERAL</td>
+      <td>14</td>
+      <td>true</td>
+      <td>Start date in FileMan internal format.</td>
+    </tr>
+    <tr>
+      <td>EDT</td>
+      <td>LITERAL</td>
+      <td>14</td>
+      <td>true</td>
+      <td>Inclusive end date in FileMan internal format (optional).</td>
+    </tr>
+    <tr>
+      <td>FLDS</td>
+      <td>LITERAL</td>
+      <td>100</td>
+      <td>true</td>
+      <td>Field list (optional).  If not specified .01I;.01 are returned.</td>
+    </tr>
+    <tr>
+      <td>NUMS</td>
+      <td>LITERAL</td>
+      <td>10</td>
+      <td>true</td>
+      <td>Contains the maximum number of entries to return per rpc call. If not defined, then all entries will be returned (backward compatible).</td>
+    </tr>
+    <tr>
+      <td>MORE</td>
+      <td>LITERAL</td>
+      <td>1</td>
+      <td>true</td>
+      <td>Used with the NUMS parameter, More=0 means first call to rpc, More'=0 means get the next 'set' of NUMS records.  The data will end with a record = $END$ to tell the gui that there are no more records.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:26 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

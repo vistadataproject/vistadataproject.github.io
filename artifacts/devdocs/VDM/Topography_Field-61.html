@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--vdm--topography_field-61"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">VDM</a> » Topography_Field-61<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="topography-field-61">Topography Field (61)</h1>
+<p>This is the TOPOGRAPHY file of SNOMED</p>
+
+<p><strong>Global:</strong> ^LAB(61,</p>
+
+<p><strong>Domain:</strong> Non-Clinical</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>.01</td>
+      <td>The name of the specimen or source.</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Icdo Code</strong><pre><code>  icdo_code</code></pre></td>
+      <td>.07</td>
+      <td>The appropriate ICD0 code associated with this specimen or source.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Hl7 Code</strong><pre><code>  hl7_code</code></pre></td>
+      <td>.08</td>
+      <td> </td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ledi Hl7</strong><pre><code>  ledi_hl7</code></pre></td>
+      <td>.09</td>
+      <td>This field contains the HL7 standard specimen type code.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Lab_Electronic_Codes-64_061</td>
+    </tr>
+    <tr>
+      <td><strong>Time Aspect</strong><pre><code>  time_aspect</code></pre></td>
+      <td>.0961</td>
+      <td>This field describes the time aspect for this specimen.<br />(i.e. 24hour, point, fasting, 30 mins …)<br /> You may select any entry in the LAB ELECTRONIC CODE (#64.061) that has<br />the type of SPECIMEN.<br /> <br />This field is used to determine the correct specimen LOINC code during<br />verification of results.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Lab_Electronic_Codes-64_061</td>
+    </tr>
+    <tr>
+      <td><strong>Snomed Code</strong><pre><code>  snomed_code</code></pre></td>
+      <td>2</td>
+      <td>The code consists of the characters following “T-“ in the SNOMED reference book.</td>
+      <td>STRING</td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Sex Specific</strong><pre><code>  sex_specific</code></pre></td>
+      <td>2.5</td>
+      <td>If this specimen is specific to one sex only, enter F for female or M<br />for male.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>MALE: <em><strong>M</strong></em><br/>FEMALE: <em><strong>F</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Synonyms</strong><pre><code>  synonyms</code></pre></td>
+      <td>3</td>
+      <td>This is a multiple field.  Enter synonyms or common<br />misspellings of the specimen or organ/tissue.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Weigh</strong><pre><code>  weigh</code></pre></td>
+      <td>4</td>
+      <td>WEIGH is a YES/NO question.  Answer YES if you want this specimen to<br />be weighed for surgical pathology.  A null answer equals NO.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Collection Sample</strong><pre><code>  collection_sample</code></pre></td>
+      <td>4.1</td>
+      <td>The name of the collection sample for this specimen.<br />Points to the COLLECTION SAMPLE file.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Collection_Sample-62">Collection_Sample-62</a></td>
+    </tr>
+    <tr>
+      <td><strong>Journal Reference</strong><pre><code>  journal_reference</code></pre></td>
+      <td>5</td>
+      <td>This is a multiple field.  You may enter Journal references that apply<br />to this specimen.<br />Points to FILE #95.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Journal_Reference-61_02">Journal_Reference-61_02</a></td>
+    </tr>
+    <tr>
+      <td><strong>Abbreviation</strong><pre><code>  abbreviation</code></pre></td>
+      <td>6</td>
+      <td>This must be a 1,2, or 3 character abbreviation of the specimen.</td>
+      <td>STRING</td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Snomed Ct Id</strong><pre><code>  snomed_ct_id</code></pre></td>
+      <td>20</td>
+      <td>This is the SNOMED CT concept identifier for this entry. If this<br />entry is null then the entry is either unmapped or no valid SNOMED concept<br />term exists to map this term.<br /> <br />This field is not editable except by the Lab software.</td>
+      <td>STRING</td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Sct Code Status</strong><pre><code>  sct_code_status</code></pre></td>
+      <td>21</td>
+      <td>This field indicate the status or disposition of this entry.<br /> P  = SNOMED Preferred term<br /> S  = SNOMED Synonym term<br /> L  = Local spelling of a SNOMED term (miss-spelled)<br /> R  = Referred to national coders to determine if acceptable<br /> X  = No applicable mapping<br /> LN = New term pending LEXICON release/update.<br /> RN = STS Request New Code<br /> E  = Error encountered when applying STS disposition to file entry.</td>
+      <td>ENUMERATION</td>
+      <td>INDEXED</td>
+      <td>SYNONYM: <em><strong>S</strong></em><br/>NO APPLICABLE MAPPING: <em><strong>X</strong></em><br/>NEW TERM PENDING LEXICON UPDATE: <em><strong>LN</strong></em><br/>ERROR: <em><strong>E</strong></em><br/>STS REQUEST NEW CODE: <em><strong>RN</strong></em><br/>PREFERRED TERM: <em><strong>P</strong></em><br/>LOCAL: <em><strong>L</strong></em><br/>REFERRED: <em><strong>R</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Sct Top Concept</strong><pre><code>  sct_top_concept</code></pre></td>
+      <td>22</td>
+      <td>This field Identifies the SNOMED CT top level concept for this SNOMED<br />code. This is useful to determine the proper code when the spelling of<br />the terms are identical but have different concept (meaning).</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Lab_Electronic_Codes-64_061</td>
+    </tr>
+    <tr>
+      <td><strong>Sct Status Date</strong><pre><code>  sct_status_date</code></pre></td>
+      <td>23</td>
+      <td>This multiple tracks the status of SNOMED SCT codes referred to STS to <br />determine if the code is a valid VHA SCT term.  This field is not editable<br />except by Lab software.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Sct_Status_Date-61_023">Sct_Status_Date-61_023</a></td>
+    </tr>
+    <tr>
+      <td><strong>*negative Bacteriology Comment</strong><pre><code>  negative_bacteriology_comment</code></pre></td>
+      <td>63.05</td>
+      <td>This comment facilitates batch entry of microbiology results.  The text contained in this field is the default comment for the named specimen.</td>
+      <td>STRING</td>
+      <td>DEPRECATED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Inactive Date</strong><pre><code>  inactive_date</code></pre></td>
+      <td>64.9103</td>
+      <td>This is the date on or after which the entry will no longer be active.  <br />Inactive entries will not be available for selection in CPRS nor be able<br />to be associated with a test in the LABORATORY TEST file (#60).</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-files">Sub-Files</h2>
+<h3 id="journal-reference-6102"><a name="Journal_Reference-61_02"></a>Journal Reference (61.02)</h3>
+
+<dl>
+<dt>ID</dt><dd>Journal_Reference-61_02</dd></dl>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Title Of Article</strong><pre><code>  title_of_article</code></pre></td>
+      <td>.01</td>
+      <td>Title of an article that discusses the named specimen.</td>
+      <td>STRING</td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Author(s)</strong><pre><code>  authors</code></pre></td>
+      <td>1</td>
+      <td>Author(s) of the named article.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Medical Journal</strong><pre><code>  medical_journal</code></pre></td>
+      <td>2</td>
+      <td>The name of the medical journal containing the article.  Points to FILE #95.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Lab_Journal-95</td>
+    </tr>
+    <tr>
+      <td><strong>Volume</strong><pre><code>  volume</code></pre></td>
+      <td>3</td>
+      <td>The volume number/name that contains the article.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Starting Page</strong><pre><code>  starting_page</code></pre></td>
+      <td>4</td>
+      <td>The first page of the article.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Date</strong><pre><code>  date</code></pre></td>
+      <td>5</td>
+      <td>Date of article.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>List On Patient Record</strong><pre><code>  list_on_patient_record</code></pre></td>
+      <td>6</td>
+      <td>If this reference is to be listed on a patient record whenever this specimen is used, this field requires a YES entry.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="sct-status-date-61023"><a name="Sct_Status_Date-61_023"></a>Sct Status Date (61.023)</h3>
+
+<dl>
+<dt>ID</dt><dd>Sct_Status_Date-61_023</dd></dl>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Sct Status Date</strong><pre><code>  sct_status_date</code></pre></td>
+      <td>.01</td>
+      <td>The date the status was changed.</td>
+      <td>DATE-TIME</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Sct Status Change To</strong><pre><code>  sct_status_change_to</code></pre></td>
+      <td>1</td>
+      <td>This field track the status of terms referred to the ERT team to <br />determine if this code is a valid VHA SNOMED SCT term.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>SYNONYM: <em><strong>S</strong></em><br/>NO APPLICABLE MAPPING: <em><strong>X</strong></em><br/>NEW TERM PENDING LEXICON UPDATE: <em><strong>LN</strong></em><br/>ERROR: <em><strong>E</strong></em><br/>STS REQUEST NEW CODE: <em><strong>RN</strong></em><br/>PREFERRED TERM: <em><strong>P</strong></em><br/>LOCAL: <em><strong>L</strong></em><br/>REFERRED: <em><strong>R</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Sct Transaction Number</strong><pre><code>  sct_transaction_number</code></pre></td>
+      <td>2</td>
+      <td>Transaction number generated by Laboratory software when referring a term<br />for mediation by STS and mapping to SNOMED CT.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Sct Status User</strong><pre><code>  sct_status_user</code></pre></td>
+      <td>3</td>
+      <td>Store the user who initiated the process to apply the STS SNOMED CT code <br />resolution or the original mapping to this file entry.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Sct Comment Text</strong><pre><code>  sct_comment_text</code></pre></td>
+      <td>4</td>
+      <td>Contains text or comments related to the mapping of a term to SNOMED CT.<br />The text can relate to information submitted to STS for the term to be <br />mapped, the comments returned by STS related to the mapping and <br />any comments when attempting to apply the disposition from STS.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:25 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

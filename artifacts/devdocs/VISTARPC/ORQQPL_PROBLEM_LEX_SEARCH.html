@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VISTA RPC Documentation &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--native-rpcs--orqqpl-problem-lex-search"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">Native RPCs</a> » ORQQPL PROBLEM LEX SEARCH<br /></h4>
+<h1 id="orqqpl-problem-lex-search">ORQQPL PROBLEM LEX SEARCH</h1>
+
+<p>Get a list from clinical lexicon for display in list or combo box</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Label</td>
+      <td>LEXSRCH</td>
+    </tr>
+    <tr>
+      <td>MUMPS Implementation</td>
+      <td><a href="http://code.osehra.org/dox/Routine_ORQQPL1_source.html">ORQQPL1</a></td>
+    </tr>
+    <tr>
+      <td>Return Type</td>
+      <td>ARRAY</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="input-parameters">Input Parameters</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Maximum Data Length</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>FLAG</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td> </td>
+      <td>BACK/FORE FLAG</td>
+    </tr>
+    <tr>
+      <td>NUM</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td> </td>
+      <td>MAX NUMBER OF LIST ELEMENTS</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="mumps-method-description">MUMPS Method Description</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Method</td>
+      <td><a href="http://code.osehra.org/dox/Routine_ORQQPL1_source.html">LEXSRCH^ORQQPL1</a></td>
+    </tr>
+    <tr>
+      <td>Method Comment</td>
+      <td>Get candidate Problems from LEX file</td>
+    </tr>
+    <tr>
+      <td>Input Parameters</td>
+      <td>FROM, N, VIEW, ORDATE</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td><pre><code> N LEX,VAL,VAL1,COD,CIEN,SYS,MAX,NAME,ORIMPDT,ICDCSYS,ICDCODE<br/> S ORIMPDT=$$IMPDATE^LEXU("10D")<br/> S:'+$G(ORDATE) ORDATE=DT<br/> S:'$G(N) N=100<br/> S:'$L($G(VIEW)) VIEW="PL1"<br/> D CONFIG^LEXSET("GMPL",VIEW,ORDATE)<br/> D LOOK^LEXA(FROM,"GMPL",N,"",ORDATE)<br/> S S=0<br/> F  S S=$O(LEX("LIST",S)) Q:S<1  D<br/> . S VAL1=LEX("LIST",S)<br/> . S COD="",CIEN="",SYS="",NAME="",ICDCODE=""<br/> . S ICDCSYS=$S(ORDATE<ORIMPDT:"ICD",1:"10D")<br/> . I $L(VAL1,"CPT-4 ")>1 D<br/> .. S SYS=$S(ORDATE<ORIMPDT:"ICD-9-CM ",1:"ICD-10-CM ")<br/> .. S COD=$S(ORDATE<ORIMPDT:"799.9",1:"R69")<br/> .. S CIEN=""<br/> .. S NAME=$P(VAL1," (CPT-4")<br/> . I $L(VAL1,"DSM-IV ")>1 D<br/> .. S SYS="DSM-IV "<br/> .. S COD=$P($P(VAL1,SYS,2),")")<br/> .. S:COD["/" COD=$P(COD,"/",1)<br/> .. S ICDCODE=$$ONE^LEXU($P(VAL1,U,1),ORDATE,ICDCSYS)<br/> .. S ICDCODE=$S(ICDCODE["":COD,1:ICDCODE)<br/> .. S CIEN=+$$ICDDATA^ICDXCODE(ICDCSYS,$G(ICDCODE),ORDATE,"E")<br/> .. S NAME=$P(VAL1," (DSM-IV")<br/> .. ;<br/> . I $L(VAL1,"(TITLE 38 ")>1 D<br/> .. S SYS="TITLE 38 "<br/> .. S COD=$P($P(VAL1,SYS,2),")")<br/> .. S:COD["/" COD=$P(COD,"/",1)<br/> .. S ICDCODE=$$ONE^LEXU($P(VAL1,U,1),ORDATE,ICDCSYS)<br/> .. S ICDCODE=$S(ICDCODE["":COD,1:ICDCODE)<br/> .. S CIEN=+$$ICDDATA^ICDXCODE(ICDCSYS,$G(ICDCODE),ORDATE,"E")<br/> .. S NAME=$P(VAL1,"(TITLE 38 ")<br/> .. ;<br/> . I $L(VAL1,"ICD-9-CM ")>1 D<br/> .. S SYS="ICD-9-CM "<br/> .. S COD=$P($P(VAL1,SYS,2),")")<br/> .. S:COD["/" COD=$P(COD,"/",1)<br/> .. S CIEN=+$$ICDDATA^ICDXCODE("DIAG",$G(COD),ORDATE,"E")<br/> .. S NAME=$P(VAL1," (ICD-9-CM")<br/> .. ;<br/> . I $L(VAL1,"ICD-10-CM ")>1 D<br/> .. S SYS="ICD-10-CM "<br/> .. S COD=$P($P(VAL1,SYS,2),")")<br/> .. S:COD["/" COD=$P(COD,"/",1)<br/> .. S CIEN=+$$ICDDATA^ICDXCODE("DIAG",$G(COD),ORDATE,"E")<br/> .. S NAME=$P(VAL1," (ICD-10-CM")<br/> . I $L(NAME)=0 S NAME=$P($P(VAL1," (")," *")<br/> . ;<br/> . ; jeh Clean left over codes<br/> . S NAME=$P(NAME," (CPT-4")<br/> . S NAME=$P(NAME," (DSM-IV")<br/> . S NAME=$P(NAME,"(TITLE 38 ")<br/> . S NAME=$P(NAME," (ICD-9-CM")<br/> . S NAME=$P(NAME," (ICD-10-CM")<br/> . ;<br/> . S VAL=NAME_U_COD_U_CIEN_U_SYS ; ien^.01^icd^icdifn^system<br/> . S LIST(S)=VAL<br/> . S MAX=S<br/> I $G(MAX)'="" S LIST(MAX+1)=$G(LEX("MAT"))<br/> K ^TMP("LEXSCH",$J)</code></pre></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="cprs">CPRS</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>File Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NOT OSEHRA CPRS</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:26 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

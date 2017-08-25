@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VISTA RPC Documentation &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--native-rpcs--dentv-dd-field-update"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">Native RPCs</a> » DENTV DD FIELD UPDATE<br /></h4>
+<h1 id="dentv-dd-field-update">DENTV DD FIELD UPDATE</h1>
+
+<p>This call will allow the updating of certain fields in file 228.You can delete a locally added medical CPT code.You can edit the diagnosis codes mapped to any CPT code.</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Label</td>
+      <td>FILE</td>
+    </tr>
+    <tr>
+      <td>MUMPS Implementation</td>
+      <td><a href="http://code.osehra.org/dox/Routine_DENTVRP3_source.html">DENTVRP3</a></td>
+    </tr>
+    <tr>
+      <td>Return Type</td>
+      <td>SINGLE VALUE</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="input-parameters">Input Parameters</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Maximum Data Length</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DATA</td>
+      <td>LIST</td>
+      <td>20</td>
+      <td>true</td>
+      <td>DATA(1) = ien for file 228DATA(n) = &lt;file 228 field number&gt; ^ new value          n = 2,3,4,5,6,7 The only acceptable fields are .01,.18,.16,1.14,1.15,3,5For field .01, the only accpetable values are &lt;null&gt; or "@" indicating the desire to delete the entry. For field .16, the acceptable value is the IEN to the VA DSS Product line.  For field 5 the acceptable value is the external Dx code.  There must be at least one Dx code for each procedure.  If the other data is not sent, it will be deleted in the database.   Example: DATA(1)=100268            DATA(2)=".18^30"       RVU            DATA(3)=".16^1"        PRODUCT LINE IEN            DATA(4)="1.14^500.00"  VA COST            DATA(5)="1.15^555.00"  EQUIV PRIVATE COST            DATA(7)="3^"           ADMIN GUIDELINE            DATA(8)="5^528.3"      PRIMARY DEFAULT DX  the first entry             DATA(9)="5^528.5"      ADDITIONAL DEFAULT DX              DATA(10)="5^528.09"    ADDITIONAL DEFAULT DX            DATA(11)="5^525.40"    ADDITIONAL DEFAULT DX            DATA(12)="5^V60.0"     ADDITIONAL DEFAULT DX</td>
+    </tr>
+    <tr>
+      <td>KEY</td>
+      <td>LITERAL</td>
+      <td>1</td>
+      <td>true</td>
+      <td>Check which security key this user has. The default value is 'L', or youmay pass 'M'  If L, then see if user owns the local edit security key toedit entries in the local number space (&gt;100,000).  If you pass 'M' thenthis will check to see if the user owns the VACO security key and if sothen the user can edit any entry in the file.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:26 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

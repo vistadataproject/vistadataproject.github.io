@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--vdm--imaging_type-79_2"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">VDM</a> » Imaging_Type-79_2<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="imaging-type-792">Imaging Type (79.2)</h1>
+<p>This file contains, for each imaging type entry, parameters that the module uses during various stages of exam and report processing and inquiring. The parameter switches allow the ‘customizing’ of the module for each type of imaging.   WARNING:  ENTRIES SHOULD NOT BE DELETED FROM THIS FILE.    Data Storage  ———— The data for the ‘IMAGING TYPE’ file is stored in the ^RA(79.2, global. At the present time this file is very static after day-one initialization is complete.  However, it still should be journaled. It should also be translated if the operating system supports this function.    Input Templates  ————— The following is a list of input templates used by the package and the entry in the OPTIONS file (#19) that uses the template:                        Compiled  Name                Routine  Description; Option(s)  —-                ——-  ———————-  RA IMAGE PARAMETERS          Used to specify timeout seconds and whether                               the hardware system the module is running on                               is under fail-soft mode;                               RA FAILSOFT    RA ON-LINE CRITERIA          Used to indicate how long certain data should                               remain on file before it can be purged;                               RA PURGE   If any modifications to these input templates are needed for local purposes, then great care should be taken not to degrade any branching logic in the template.    Print Templates  —————  The following is a list of print templates used by the package:    Name                  Description; Option(s)  —-                  ———————-  RA ACTIVITY LOG       Prints a list of the activity log entries for the                        imaging type;</p>
+
+<p><strong>Global:</strong> ^RA(79.2,</p>
+
+<p><strong>Domain:</strong> Non-Clinical</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Type Of Imaging</strong><pre><code>  type_of_imaging</code></pre></td>
+      <td>.01</td>
+      <td>This field contains the name of this type of imaging.  DO NOT ADD, EDIT OR<br />DELETE imaging type names; this will cause problems between the<br />Radiology/Nuclear Med and Order Entry interface.</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Activity Log Cut-off</strong><pre><code>  activity_log_cutoff</code></pre></td>
+      <td>.11</td>
+      <td>This field contains the imaging type parameter that tells the purge<br />routine of the module how many days to keep the various activity logs<br />on-line.  The amount of days is a whole number between 90 and 99999 and is<br />determined at each site by the package coordinator and the computer<br />site manager.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Report Cut-off</strong><pre><code>  report_cutoff</code></pre></td>
+      <td>.12</td>
+      <td>This field contains the imaging type parameter that tells the purge<br />routine of the module how many days to keep the reports on-line.  The<br />report ‘impression’ will always stay on-line even after the reports<br />are purged.  The amount of days is a whole number between 90 and 99999<br />and is determined at each site by the package coordinator and the<br />computer site manager.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Clinical History Cut-off</strong><pre><code>  clinical_history_cutoff</code></pre></td>
+      <td>.13</td>
+      <td>This field contains the imaging type parameter that tells the purge<br />routine of the module how many days to keep the clinical history<br />of the visit on-line.  The amount of days is a whole number between 90 and<br />99999 and is determined by the package coordinator and the computer<br />site manager.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Tracking Time Cut-off</strong><pre><code>  tracking_time_cutoff</code></pre></td>
+      <td>.14</td>
+      <td>This field applies to sites that are using the tracking function of the<br />system to record when the exam status changes from one status to another.<br />It contains the imaging type parameter that tells the purge routine of<br />the module how many days to keep the ‘tracking time’ information on-line.<br />The amount of days is a whole number between 90 and 99999 and is<br />determined at each site by the package coordinator and the computer<br />site manager.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Order Data Cut-off</strong><pre><code>  order_data_cutoff</code></pre></td>
+      <td>.16</td>
+      <td>This field contains the imaging type parameter that tells the purge<br />routine of the module how many days to keep the orders on-line. The<br />amount of days is a whole number between 30 and 99999 and is determined<br />by the package coordinator and the computer site manager.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Abbreviation</strong><pre><code>  abbreviation</code></pre></td>
+      <td>3</td>
+      <td>This is the abbreviation associated with this type of imaging.  It is<br />between 1 and 4 characters in length and is used as a cross reference and<br />for quick look ups. DO NOT CHANGE ABBREVIATIONS; changing abbreviations<br />will cause problems between the Order Entry and Radiology/Nuc Med<br />interface.</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Operating Conditions</strong><pre><code>  operating_conditions</code></pre></td>
+      <td>4</td>
+      <td>This field contains the hardware conditions parameter that tells the system<br />the type of operating conditions that are in effect.  The available<br />conditions are: ‘N’ for normal and ‘E’ for emergency.<br /> <br />Under NORMAL conditions, the system uses the parameters set up<br />in the ‘Imaging Locations’ file to determine which input and printer<br />devices to use.  Under EMERGENCY conditions, the system ignores all the<br />location parameters set up and the user is prompted for this information.</td>
+      <td>ENUMERATION</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td>EMERGENCY(NORMAL COMPUTER DOWN): <em><strong>E</strong></em><br/>NORMAL: <em><strong>N</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Radiopharmaceuticals Used?</strong><pre><code>  radiopharmaceuticals_used</code></pre></td>
+      <td>5</td>
+      <td>This field is used to determine if radiopharmaceuticals will be used<br />for this imaging type.  If so, then the nuclear medicine logic paths of<br />this software will be triggered at all appropriate points.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Next Case Number</strong><pre><code>  next_case_number</code></pre></td>
+      <td>25</td>
+      <td>This field is used to contain the next available case number for this<br />type of imaging.  Case numbers are generated by the system in sequential<br />order and are available for reuse the following week after the exam status<br />becomes complete.  Case numbers are recycled on Sunday at 12:01 AM.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Case Number Turnover Date</strong><pre><code>  case_number_turnover_date</code></pre></td>
+      <td>26</td>
+      <td>This field contains the date the case numbers are scheduled to be recycled.<br />This date will always be the next Sunday’s date.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Introduction Text</strong><pre><code>  introduction_text</code></pre></td>
+      <td>50</td>
+      <td>This field provides a quick installation guide to be displayed when the<br />rad/nuc med system is initialized or reinitialized.  It describes aspects<br />of the module to the site manager and how to proceed.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Pfss Dept. Code</strong><pre><code>  pfss_dept_code</code></pre></td>
+      <td>90</td>
+      <td>The 3 character numeric code represents the Department Code used by the <br />PFSS project.</td>
+      <td>STRING</td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Activity Log</strong><pre><code>  activity_log</code></pre></td>
+      <td>100</td>
+      <td>This multiple field contains a log of actions that have been taken on this<br />imaging record.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Activity_Log-79_23">Activity_Log-79_23</a></td>
+    </tr>
+    <tr>
+      <td><strong>Work Rvu (wrvu) Scaling Factor</strong><pre><code>  work_rvu_wrvu_scaling_factor</code></pre></td>
+      <td>200</td>
+      <td>Identifies the ‘Society of Chairmen in Academic Radiology Departments’ <br />(SCARD) scaling factor for a specific imaging type by calendar year.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Work_Rvu_wrvu_Scaling_Factor-79_22">Work_Rvu_wrvu_Scaling_Factor-79_22</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-files">Sub-Files</h2>
+<h3 id="activity-log-7923"><a name="Activity_Log-79_23"></a>Activity Log (79.23)</h3>
+
+<dl>
+<dt>ID</dt><dd>Activity_Log-79_23</dd></dl>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Log Date</strong><pre><code>  log_date</code></pre></td>
+      <td>.01</td>
+      <td>This field is filled in automatically by the system with the date and<br />the time that the action was taken on this imaging record.</td>
+      <td>DATE-TIME</td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Type Of Action</strong><pre><code>  type_of_action</code></pre></td>
+      <td>2</td>
+      <td>This field is filled in automatically by the system with the type of<br />action that was taken on this imaging record.  Available types of action<br />are:  ‘P’ for data purge complete, ‘C’ for change image type parameters,<br />‘S’ for schedule data purge, and ‘O’ for on-line criteria modified.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>ON-LINE CRITERIA MODIFIED: <em><strong>O</strong></em><br/>SCHEDULE DATA PURGE: <em><strong>S</strong></em><br/>DATA PURGE COMPLETE: <em><strong>P</strong></em><br/>CHANGE IMAGE TYPE PARAMETERS: <em><strong>C</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Computer User</strong><pre><code>  computer_user</code></pre></td>
+      <td>3</td>
+      <td>This field points to the ‘NEW PERSON’ file and is used <br />to record the user doing the processing at the time the action <br />was taken on this imaging record.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>No. Of Exam Records Processed</strong><pre><code>  no_of_exam_records_processed</code></pre></td>
+      <td>4</td>
+      <td>This field is automatically entered by the system after the data purge<br />routine is finished purging.  This statistic is compiled during the<br />data purge.  It represents the number of exam records that had at least some<br />data purged.  Depending on the values of the ‘cut-off-days’ parameter, the<br />type of data purged may vary.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>No. Of Reports Processed</strong><pre><code>  no_of_reports_processed</code></pre></td>
+      <td>5</td>
+      <td>This field is automatically entered by the system after the data purge<br />routine is finished purging. This statistic is compiled during the<br />data purge. It represents the number of report records that had at least<br />some data purged. Depending on the values of the ‘cut-off-days’ parameters,<br />the type of data purged may vary.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>No. Of Requests Processed</strong><pre><code>  no_of_requests_processed</code></pre></td>
+      <td>6</td>
+      <td>This field is automatically entered by the system after the data<br />purge routine is finished purging. This statistic is compiled<br />during the data purge. It represents the number of request records<br />that have been purged.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="work-rvu-wrvu-scaling-factor-7922"><a name="Work_Rvu_wrvu_Scaling_Factor-79_22"></a>Work Rvu (wrvu) Scaling Factor (79.22)</h3>
+
+<dl>
+<dt>ID</dt><dd>Work_Rvu_wrvu_Scaling_Factor-79_22</dd></dl>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Calendar Year</strong><pre><code>  calendar_year</code></pre></td>
+      <td>.01</td>
+      <td>This field identifies the calendar year to associate a specific ‘Society<br />of Chairmen in Academic Radiology Departments’ (SCARD) scaling factor to <br />imaging type specific procedures with an associated wRVU value.</td>
+      <td>NUMERIC</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Scaling Factor</strong><pre><code>  scaling_factor</code></pre></td>
+      <td>2</td>
+      <td>This field identifies the appropriate scaling factor applied to the wRVU<br />value for an imaging type specific rad/nuc med procedure.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:25 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

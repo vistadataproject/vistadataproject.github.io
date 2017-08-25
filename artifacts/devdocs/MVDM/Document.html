@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--document"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Document<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="document">Document</h1>
+
+<h3 id="document-1">Document</h3>
+
+<p>No Description</p>
+
+<p><strong>Fileman ID:</strong> 8925</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Tiu_Document-8925">Tiu_Document-8925</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 20</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>POINTER</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>STRING</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>DATE-TIME</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 2</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#RemovalDetails">Removal Details</a></td>
+      <td>RemovalDetails</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#SigningDetails">Signing Details</a></td>
+      <td>SigningDetails</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Patient</strong><pre><code>  patient</code></pre></td>
+      <td>POINTER</td>
+      <td>patient</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>Patient_IHS-9000001</td>
+    </tr>
+    <tr>
+      <td><strong>Document Type</strong><pre><code>  documentType</code></pre></td>
+      <td>POINTER</td>
+      <td>document_type</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td><a href="../VDM/Tiu_Document_Definition-8925_1">Tiu_Document_Definition-8925_1</a></td>
+    </tr>
+    <tr>
+      <td><strong>Parent Document Type</strong><pre><code>  parentDocumentType</code></pre></td>
+      <td>POINTER</td>
+      <td>parent_document_type</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Tiu_Document_Definition-8925_1">Tiu_Document_Definition-8925_1</a></td>
+    </tr>
+    <tr>
+      <td><strong>Visit</strong><pre><code>  visit</code></pre></td>
+      <td>POINTER</td>
+      <td>visit</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Visit-9000010">Visit-9000010</a></td>
+    </tr>
+    <tr>
+      <td><strong>Visit Type</strong><pre><code>  visitType</code></pre></td>
+      <td>STRING</td>
+      <td>visit_type</td>
+      <td> </td>
+      <td>CREATE</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Status</strong><pre><code>  status</code></pre></td>
+      <td>POINTER</td>
+      <td>status</td>
+      <td>[object Object]</td>
+      <td> </td>
+      <td>Tiu_Status-8925_6</td>
+    </tr>
+    <tr>
+      <td><strong>Report Text</strong><pre><code>  text</code></pre></td>
+      <td>STRING</td>
+      <td>report_text</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Entry Date/Time</strong><pre><code>  dateTimeEntered</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>entry_date_time</td>
+      <td>$NOW</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Entered By</strong><pre><code>  enteredBy</code></pre></td>
+      <td>POINTER</td>
+      <td>entered_by</td>
+      <td>$USERID</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Author/Dictator</strong><pre><code>  authorDictator</code></pre></td>
+      <td>POINTER</td>
+      <td>author_dictator</td>
+      <td>$USERID</td>
+      <td>INDEXED</td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Division</strong><pre><code>  facility</code></pre></td>
+      <td>POINTER</td>
+      <td>division</td>
+      <td>$FACILITYID</td>
+      <td> </td>
+      <td><a href="../VDM/Institution-4">Institution-4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Hospital Location</strong><pre><code>  hospitalLocation</code></pre></td>
+      <td>POINTER</td>
+      <td>hospital_location</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Hospital_Location-44">Hospital_Location-44</a></td>
+    </tr>
+    <tr>
+      <td><strong>Service</strong><pre><code>  service</code></pre></td>
+      <td>POINTER</td>
+      <td>service</td>
+      <td> </td>
+      <td> </td>
+      <td>Service_Section-49</td>
+    </tr>
+    <tr>
+      <td><strong>Reference Date</strong><pre><code>  referenceDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>reference_date</td>
+      <td>$NOW</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Release Date/Time</strong><pre><code>  releaseDateTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>release_date_time</td>
+      <td>$NOW</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Expected Signer</strong><pre><code>  expectedSigner</code></pre></td>
+      <td>POINTER</td>
+      <td>expected_signer</td>
+      <td>$USERID</td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Is Signed</strong><pre><code>  isSigned</code></pre></td>
+      <td>BOOLEAN</td>
+      <td><em>GENERATED</em></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Signing Details</strong><pre><code>  signingDetails</code></pre></td>
+      <td>OBJECT</td>
+      <td><em>GENERATED</em></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#SigningDetails">SigningDetails</a></td>
+    </tr>
+    <tr>
+      <td><strong>Is Removed</strong><pre><code>  isRemoved</code></pre></td>
+      <td>BOOLEAN</td>
+      <td><em>GENERATED</em></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Removal Details</strong><pre><code>  removalDetails</code></pre></td>
+      <td>OBJECT</td>
+      <td><em>GENERATED</em></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#RemovalDetails">RemovalDetails</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-removal-details"><a name="RemovalDetails"></a>1. Removal Details</h3>
+
+<p><strong>Field ID:</strong> RemovalDetails</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Date/Time Entered</strong><pre><code>  dateTimeEntered</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>deletion_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Entered By</strong><pre><code>  enteredBy</code></pre></td>
+      <td>POINTER</td>
+      <td>deleted_by</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Reason For Document Deletion</strong><pre><code>  reasonForDocumentDeletion</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>reason_for_deletion</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>privacy act</strong></em><br/>1: <em><strong>administrative</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-signing-details"><a name="SigningDetails"></a>2. Signing Details</h3>
+
+<p><strong>Field ID:</strong> SigningDetails</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Signature Date/Time</strong><pre><code>  dateTimeEntered</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>signature_date_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Signed By</strong><pre><code>  enteredBy</code></pre></td>
+      <td>POINTER</td>
+      <td>signed_by</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Signature Block Name</strong><pre><code>  signatureBlockName</code></pre></td>
+      <td>STRING</td>
+      <td>signature_block_name</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Signature Block Title</strong><pre><code>  signatureBlockTitle</code></pre></td>
+      <td>STRING</td>
+      <td>signature_block_title</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Signature Mode</strong><pre><code>  signatureMode</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>signature_mode</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>electronic</strong></em><br/>1: <em><strong>chart</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:31 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--vdm--print_manager_clinic_setup-409_95"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">VDM</a> » Print_Manager_Clinic_Setup-409_95<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="print-manager-clinic-setup-40995">Print Manager Clinic Setup (409.95)</h1>
+<p>This file defines which encounter forms to use for a particular clinic.   Also, this file can be used to define other forms or reports to print, along with the encounter forms. The idea is that for each appointment a packet of forms can be printed, saving the effort of collating the forms manually. first time patients, and one for all patients.   Also, this file can be used to define other forms or reports to print, along with the encounter forms. The idea is that for each appointment a packet of forms can be printed, saving the effort of collating the forms manually.</p>
+
+<p><strong>Global:</strong> ^SD(409.95,</p>
+
+<p><strong>Domain:</strong> Non-Clinical</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Clinic</strong><pre><code>  clinic</code></pre></td>
+      <td>.01</td>
+      <td>Enter a clinic or ward.</td>
+      <td>POINTER</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="Hospital_Location-44">Hospital_Location-44</a></td>
+    </tr>
+    <tr>
+      <td><strong>Basic Default Encounter Form</strong><pre><code>  basic_default_encounter_form</code></pre></td>
+      <td>.02</td>
+      <td><br />The encounter form that will be printed for every appointment.</td>
+      <td>POINTER</td>
+      <td>INDEXED</td>
+      <td>Encounter_Form-357</td>
+    </tr>
+    <tr>
+      <td><strong>Supplmntl Form - Estblshed Pt.</strong><pre><code>  supplmntl_form__estblshed_pt</code></pre></td>
+      <td>.03</td>
+      <td><br />This is a supplemental form that will print only for patients that have<br />been seen in the clinic previously.</td>
+      <td>POINTER</td>
+      <td>INDEXED</td>
+      <td>Encounter_Form-357</td>
+    </tr>
+    <tr>
+      <td><strong>Supplmntl Form - First Visit</strong><pre><code>  supplmntl_form__first_visit</code></pre></td>
+      <td>.04</td>
+      <td><br />This is a supplemental for that will print only for patients that have<br />not been seen previously at the clinic.</td>
+      <td>POINTER</td>
+      <td>INDEXED</td>
+      <td>Encounter_Form-357</td>
+    </tr>
+    <tr>
+      <td><strong>Form W/o Patient Data</strong><pre><code>  form_w_o_patient_data</code></pre></td>
+      <td>.05</td>
+      <td><br />This is the encounter form that should be printed for unscheduled visits.<br />It may have a space in the top left hand corner for imprinting the<br />embossed patient card or space to write in the name, ssn, etc.</td>
+      <td>POINTER</td>
+      <td>INDEXED</td>
+      <td>Encounter_Form-357</td>
+    </tr>
+    <tr>
+      <td><strong>Supplmntl Form #1 All Patients</strong><pre><code>  supplmntl_form_number1_all_patients</code></pre></td>
+      <td>.06</td>
+      <td><br />This is a supplemental form to be used by all patients of the clinic. A<br />form in this category should not also be in one of the other categories<br />for supplemental forms, else it will be printed twice.</td>
+      <td>POINTER</td>
+      <td>INDEXED</td>
+      <td>Encounter_Form-357</td>
+    </tr>
+    <tr>
+      <td><strong>Reserved For Future Use</strong><pre><code>  reserved_for_future_use</code></pre></td>
+      <td>.07</td>
+      <td>This category was created for clinics to assign new forms that are not yet<br />complete without fear that they would be accidently printed.</td>
+      <td>POINTER</td>
+      <td>INDEXED</td>
+      <td>Encounter_Form-357</td>
+    </tr>
+    <tr>
+      <td><strong>Supplmntl Form #2 All Patients</strong><pre><code>  supplmntl_form_number2_all_patients</code></pre></td>
+      <td>.08</td>
+      <td> </td>
+      <td>POINTER</td>
+      <td>INDEXED</td>
+      <td>Encounter_Form-357</td>
+    </tr>
+    <tr>
+      <td><strong>Supplmntl Form #3 All Patients</strong><pre><code>  supplmntl_form_number3_all_patients</code></pre></td>
+      <td>.09</td>
+      <td> </td>
+      <td>POINTER</td>
+      <td>INDEXED</td>
+      <td>Encounter_Form-357</td>
+    </tr>
+    <tr>
+      <td><strong>Don't Use Pcmm Providers</strong><pre><code>  dont_use_pcmm_providers</code></pre></td>
+      <td>.1</td>
+      <td>AICS defaults to printing providers specified in PCMM if they are<br />defined otherwise the providers from the clinic setup is used.<br />Answering this field “YES” for a clinic will cause AICS to print<br />the providers from clinic setup irregardless PCMM.  This is intended<br />for use by sites bringing up PCMM but who have not completed the<br />entry of providers.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>1</strong></em><br/>true: <em><strong>0</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Report</strong><pre><code>  report</code></pre></td>
+      <td>1</td>
+      <td><br />This is a list of reports or forms that should be printed under certain<br />circumstances. The only types of forms or reports that can be printed are<br />ones that are defined in the Package Interface file.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Report-409_9501">Report-409_9501</a></td>
+    </tr>
+    <tr>
+      <td><strong>Excluded Report</strong><pre><code>  excluded_report</code></pre></td>
+      <td>2</td>
+      <td>Used to override reports defined to print for the division. <br />Reports defined to print for the division will not print if they are<br />excluded for the clinic.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Package_Interface-357_6</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-files">Sub-Files</h2>
+<h3 id="report-4099501"><a name="Report-409_9501"></a>Report (409.9501)</h3>
+
+<dl>
+<dt>ID</dt><dd>Report-409_9501</dd></dl>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Report</strong><pre><code>  report</code></pre></td>
+      <td>.01</td>
+      <td><br /> <br />An entry in the Package Interface file that should identify a routine that<br />prints the desired form or report.</td>
+      <td>POINTER</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td>Package_Interface-357_6</td>
+    </tr>
+    <tr>
+      <td><strong>Print Condition</strong><pre><code>  print_condition</code></pre></td>
+      <td>.02</td>
+      <td><br />The particular condition under which the form or report should print.</td>
+      <td>POINTER</td>
+      <td>REQUIRED</td>
+      <td>Print_Conditions-357_92</td>
+    </tr>
+    <tr>
+      <td><strong>Simplex/duplex</strong><pre><code>  simplex_duplex</code></pre></td>
+      <td>.03</td>
+      <td>Allows reports to be printed one-sided or two-sided.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>DUPLEX,SHORT-EDGE BINDING: <em><strong>2</strong></em><br/>SIMPLEX: <em><strong>0</strong></em><br/>DUPLEX,LONG-EDGE BINDING: <em><strong>1</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:25 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

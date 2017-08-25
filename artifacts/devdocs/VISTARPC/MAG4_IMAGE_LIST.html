@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VISTA RPC Documentation &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--native-rpcs--mag4-image-list"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">Native RPCs</a> » MAG4 IMAGE LIST<br /></h4>
+<h1 id="mag4-image-list">MAG4 IMAGE LIST</h1>
+
+<p>This remote procedure returns information about images that conform to the provided criteria.</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Label</td>
+      <td>GETIMGS</td>
+    </tr>
+    <tr>
+      <td>MUMPS Implementation</td>
+      <td><a href="http://code.osehra.org/dox/Routine_MAGSIXG1_source.html">MAGSIXG1</a></td>
+    </tr>
+    <tr>
+      <td>Return Type</td>
+      <td>ARRAY</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="input-parameters">Input Parameters</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Maximum Data Length</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>FLAGS</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td>true</td>
+      <td>Flags that control the execution (can be combined):   C  Capture date range. If this flag is provided, then the     remote procedure uses values of the FROMDATE and TODATE     parameters to select images that were captured in this     date range (see the DATE/TIME IMAGE SAVED field (7) and     the "AD" cross-reference).      Otherwise, values of those parameters are treated as      the date range when procedures were performed (see the     PROCEDURE/EXAM DATE/TIME field (15) and cross-references      "APDTPX" and "APDT").   D  Include only deleted images (file #2005.1)  E  Include only existing images (file #2005)   S  Return the sparse subset of images captured by the user     defined by the miscellaneous "SAVEDBY" filter parameter     (see the MISCPRMS parameter). The "SAVEDBY" becomes a     required parameter in this case.      Firstly, images are preselected according to the date      range and other criteria. Those of them that were captured     immediately before and after patient changes are stored to     the "priority" temporary buffer. The others are stored to     the regular temporary buffer.      Then, the requested maximum number of images is calculated     according to the total number of preselected entries and     the percentage value defined by the MAXNUM parameter.          If the number of entries in the "priority" buffer less     than the maximum number of images and the regular buffer     is not empty, then missing quantity of preselected images     is merged to the "priority" buffer from the regular one.      Finally, no more than maximum number of entries is copied     from the "priority" buffer to the remote procedure's     result array.       G  Include Group Images in the list of images returned.      If any image in a group has an image that matches the      status provided in the search criteria then      the group will be returned.                       If the G flag is not set then only the status of the      Group entry will be checked and the group will be      returned if it passes. If neither 'E' nor 'D' flag is provided, then an error code (-6) isreturned.</td>
+    </tr>
+    <tr>
+      <td>FROMDATE</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td> </td>
+      <td>Beginning of the date range for image selection. Date can be in internalor external FileMan format. If the parameter is not defined or empty, thenthe date range remains open on this side. Depending on the value of the FLAGS parameter, the date range filter isapplied either to the exam/procedure dates (PROCEDURE/EXAM DATE/TIME field(15)) or image capture dates (DATE/TIME IMAGE SAVED field (7)). Time parts of date range parameters are ignored and both ends of the daterange are included in the search. For example, in order to search imagesfor May 21, 2008, the internal value of both parameters should be 3080521.</td>
+    </tr>
+    <tr>
+      <td>TODATE</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td> </td>
+      <td>End of the date range for image selection. Dates can be in internal orexternal FileMan format. If the parameter is not defined or empty, thenthe date range remains open on this side. Depending on the value of the FLAGS parameter, the date range filter isapplied either to the exam/procedure dates (PROCEDURE/EXAM DATE/TIME field(15)) or image capture dates (DATE/TIME IMAGE SAVED field (7)). Time parts of date range parameters are ignored and both ends of the daterange are included in the search. For example, in order to search imagesfor May 21, 2008, the internal value of both parameters should be 3080521.</td>
+    </tr>
+    <tr>
+      <td>MISCPRMS</td>
+      <td>LIST</td>
+      <td> </td>
+      <td> </td>
+      <td>Items of this list define various filter parameters. Each item has 3 ormore pieces separated by '^':   ^01: Parameter name  ^02: Index (for multiples and word-processing values)  ^03: Value1  ^04: Value2  … The following filter parameters are supported by this remote procedure:   CAPTAPP^^{Name or Code}^{Name or Code}^…    Internal or external values of the CAPTURE APPLICATION    field (8.1) of the file #2005.   GDESC^^{Text}    Text that should be present in the SHORT DESCRIPTION    field (10) of the IMAGE file (#2005). The comparison    is case-insensitive.   IDFN^^{DFN}    Patient IEN (DFN). If this parameter is not defined, all    patients' images are considered.   ISTAT^^{Name or Code}^{Name or Code}^…    Internal or external values of the STATUS field (113)    of the file #2005. 0 (zero) code selects image records    with empty STATUS field.   IXCLASS^^{Name or IEN}^{Name or IEN}^…    Image class names or IENs (see the CLASS INDEX field (41)    of the file #2005 for details).   IXORIGIN^^{Name or Code}^{Name or Code}^…    Internal or external values of the ORIGIN INDEX field (45)    of the file #2005.   IXPKG^^{Name or Code}^{Name or Code}^…    Internal or external values of the PACKAGE INDEX field (40)    of the file #2005.   IXPROC^^{Name or IEN}^{Name or IEN}^…    Procedure/Event names or IENs (see the PROC/EVENT INDEX    field (43) of the file #2005 for details).   IXSPEC^^{Name or IEN}^{Name or IEN}^…    Specialty/SubSpecialty names or IENs (see the SPEC/SUBSPEC    INDEX field (44) of the file #2005 for details).   IXTYPE^^{Name or IEN}^{Name or IEN}^…    Image type names or IENs (see the TYPE INDEX field (42) of    the file #2005 for details).   SAVEDBY^^{DUZ}    If this parameter is defined, then only those images that were    captured by this user (see the IMAGE SAVE BY field (8) of the    file #2005 for details) are considered.   SENSIMG^^{Name or Code}^{Name or Code}^…    Internal or external values of the CONTROLLED IMAGE field (112)    of the file #2005. For pointer type parameters, pure numeric values are always treated asinternal entry numbers (IEN). Parameters can be added to the list in any order. See comments precedingthe GETIMGS^MAGSIXG1 for more details. Example:   with RPCBroker.Param[4] do    begin      PType := list;      Mult[1] := 'IXPKG^^RAD^LAB';      Mult[2] := 'IXCLASS^^1^ADMIN';      Mult[3] := 'IXORIGIN^^NON-VA^F';      Mult[4] := 'IDFN^^2341';     end;</td>
+    </tr>
+    <tr>
+      <td>MAXNUM</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td> </td>
+      <td>If this parameter is defined and greater than 0, then it determines themaximum number of images returned by the call. If the S flag is included in the value of the FLAGS parameter, then the MAXNUM parameter must be defined and greater than 0. Its value determinesthe percentage of preselected images to be returned in the result array.For example, if the value of this parameter is 35 and 230 images arepreselected (according to the user, date range, and other selectioncriteria), then 81 images will be returned.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:26 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

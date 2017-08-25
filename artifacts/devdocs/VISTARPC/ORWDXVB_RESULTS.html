@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VISTA RPC Documentation &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--native-rpcs--orwdxvb-results"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">Native RPCs</a> » ORWDXVB RESULTS<br /></h4>
+<h1 id="orwdxvb-results">ORWDXVB RESULTS</h1>
+
+<p>Return patient’s Lab Test Results associated with Blood Bank orderrequest.</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Label</td>
+      <td>RESULTS</td>
+    </tr>
+    <tr>
+      <td>MUMPS Implementation</td>
+      <td><a href="http://code.osehra.org/dox/Routine_ORWDXVB_source.html">ORWDXVB</a></td>
+    </tr>
+    <tr>
+      <td>Return Type</td>
+      <td>GLOBAL ARRAY</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="mumps-method-description">MUMPS Method Description</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Method</td>
+      <td><a href="http://code.osehra.org/dox/Routine_ORWDXVB_source.html">RESULTS^ORWDXVB</a></td>
+    </tr>
+    <tr>
+      <td>Method Comment</td>
+      <td>Get test results</td>
+    </tr>
+    <tr>
+      <td>Input Parameters</td>
+      <td>DFN, ORX</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td><pre><code> Q:'$O(ORX(0))  ;ORX contains a list of tests to retrieve results for<br/> N ORCOM,ORT,ORTST,ORTDT,ORTMP,GCNT,CCNT,GIOSL,GIOM,I,ORZ<br/> S GCNT=0,CCNT=1,GIOSL=999999,GIOM=80<br/> S OROOT=$NA(^TMP("ORVBEC",$J))<br/> K ^TMP("ORVBEC",$J)<br/> D LN<br/> S ^TMP("ORVBEC",$J,GCNT,0)=$$S^ORU4(1,CCNT,"RECENT LAB RESULTS:",.CCNT)<br/> D LN<br/> S ^TMP("ORVBEC",$J,GCNT,0)=$$S^ORU4(1,CCNT,"Test    Result    Units      Range     Collected       Accession     Sts",.CCNT)<br/> D LN<br/> S ^TMP("ORVBEC",$J,GCNT,0)=$$S^ORU4(1,CCNT,"----    ------    -----      -----     ---------       ---------     ---",.CCNT)<br/> S ORT=0 F  S ORT=$O(ORX(ORT)) Q:'ORT  S ORTST=$P(ORX(ORT),"^",1) D<br/> . K ^TMP("LRRR",$J) D RR^LR7OR1(DFN,,,,,ORTST,,1)  ;DBIA 2503<br/> . S ORTMP=$$FIRST^ORCDVBEC(DFN,ORTST) Q:'$L(ORTMP)<br/> . S ORTDT=9999999-+$P(ORTMP,",",5),ORZ=@ORTMP<br/> . D LN<br/> . S ^TMP("ORVBEC",$J,GCNT,0)=$$S^ORU4(1,CCNT,$P(ORZ,"^",15),.CCNT)_$$S^ORU4(8,CCNT,$J($P(ORZ,"^",2),7),.CCNT)_$$S^ORU4(16,CCNT,$P(ORZ,"^",3),.CCNT)_$$S^ORU4(19,CCNT,$P(ORZ,"^",4),.CCNT)_$$S^ORU4(30,CCNT,$P(ORZ,"^",5),.CCNT)<br/> . S ^(0)=^TMP("ORVBEC",$J,GCNT,0)_$$S^ORU4(40,CCNT,$$DATETIME^ORCHTAB(ORTDT),.CCNT)_$$S^ORU4(56,CCNT,$P(ORZ,"^",16),.CCNT)_$$S^ORU4(71,CCNT,$P(ORZ,"^",6),.CCNT)<br/> . S ORCOM=$P(ORTMP,",",1,5)_",""N""" ;check for comments<br/> . F  S ORTMP=$Q(@ORTMP) Q:$P(ORTMP,",",1,6)'=ORCOM  D<br/> .. D LN<br/> .. S ^TMP("ORVBEC",$J,GCNT,0)=$$S^ORU4(1,CCNT,@ORTMP,.CCNT)<br/> I GCNT<4 K ^TMP("ORVBEC",$J)<br/> K ^TMP("LRRR",$J)</code></pre></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="cprs">CPRS</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>File Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pascal File</td>
+      <td><a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODLab.pas">Orders/rODLab.pas</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:26 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

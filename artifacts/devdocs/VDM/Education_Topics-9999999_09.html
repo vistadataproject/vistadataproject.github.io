@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--vdm--education_topics-9999999_09"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">VDM</a> » Education_Topics-9999999_09<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="education-topics-999999909">Education Topics (9999999.09)</h1>
+<p>This file defines the names of education topics to be tracked at your site. Education topics that are not to be used should be marked “Inactive” in the Active Status field.   Changes to this data dictionary should be coordinated thru the IHS DBA.   A x-ref on the MNEMONIC field was added to version 93.2.</p>
+
+<p><strong>Global:</strong> ^AUTTEDT(</p>
+
+<p><strong>Domain:</strong> Non-Clinical</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>.01</td>
+      <td>This is the name of the Patient Education Topic. Patient Education Topics<br />are the subject on which a patient needs some more information in order<br />to continue on his road to better health. For example, a patient may have <br />had some podiatry work done and received foot care education. ‘foot care’<br />would be the name of the education topic.<br /> <br />Enter a Topic that is 3-30 characters in length.</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Inactive Flag</strong><pre><code>  inactive_flag</code></pre></td>
+      <td>.03</td>
+      <td>This field is used to inactivate an education topic.  If this field<br />contains a “1” then the education topic is inactive.  Inactive education<br />topics cannot be selected in the manual data entry process.  Education<br />topic entries should be made inactive when they are no longer used.  Do<br />not delete the entry or change the meaning of the education topic entry.<br /> <br />To make an inactive education topic active, enter the symbol “@” to delete<br />the “1” from the field.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>INACTIVE: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Print Name</strong><pre><code>  print_name</code></pre></td>
+      <td>.04</td>
+      <td>This is the name of the education that will be displayed in menu selection,<br />and on Health Summaries.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Subtopic</strong><pre><code>  subtopic</code></pre></td>
+      <td>10</td>
+      <td> </td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Subtopic-9999999_091001">Subtopic-9999999_091001</a></td>
+    </tr>
+    <tr>
+      <td><strong>Educational Outcome</strong><pre><code>  educational_outcome</code></pre></td>
+      <td>11</td>
+      <td>This is a statement about what outcome is expected when providing this<br />patient education.  It may reflect education plan and goals.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Educational Standards</strong><pre><code>  educational_standards</code></pre></td>
+      <td>12</td>
+      <td>This is the standards that and educator should use to teach the patient<br />or family or significant other.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-files">Sub-Files</h2>
+<h3 id="subtopic-9999999091001"><a name="Subtopic-9999999_091001"></a>Subtopic (9999999.091001)</h3>
+
+<dl>
+<dt>ID</dt><dd>Subtopic-9999999_091001</dd></dl>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Subtopic</strong><pre><code>  subtopic</code></pre></td>
+      <td>.01</td>
+      <td> </td>
+      <td>POINTER</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="Education_Topics-9999999_09">Education_Topics-9999999_09</a></td>
+    </tr>
+    <tr>
+      <td><strong>Sequence</strong><pre><code>  sequence</code></pre></td>
+      <td>3</td>
+      <td>This field defines the sequence the item should be presented in, as it<br />relates to other items making up the education topic.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:25 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

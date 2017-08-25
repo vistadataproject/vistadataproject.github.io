@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--vdm--immunization-9999999_14"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">VDM</a> » Immunization-9999999_14<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="immunization-999999914">Immunization (9999999.14)</h1>
+<p>Per VHA Directive, this file has been “locked down” by Data  Standardization (DS). The file definition (i.e. data dictionary) shall  not be modified. All additions, changes and deletions to entries in the file shall be done by Enterprise Reference Terminology (ERT) using the Master File Server (MFS), provided by the Common Services (CS). Creating and/or editing locally defined fields in the file are not permitted. Use of locally defined fields that were created prior to the VHA Directive shall not be supported.   In order to preserve the continuity of files shared by the Indian Health Service and the Department of Veterans Affairs, this file includes fields used by Indian Health Service that will not be used by the Department of Veterans Affairs. These fields may point to other files and routines not deployed by the Department of Veterans Affairs. Inclusion of these fields, as designed, was approved by the DBA. These fields were initially introduced with the release of the VISTA IMMUNIZATION ENHANCEMENTS 1.0 (PX<em>1</em>201) for the VistA Immunization Enhancements Project. Additional fields may be included in later enhancements.    This file is a list of Immunizations and associated codes developed specifically for use in the IHS. This file contains a full descriptive  name for each Immunization, plus a shortened name of Ten Characters  which is used on the Health Summary and on reports where space is  limited, plus a Two Digit Code for each Immunization.</p>
+
+<p><strong>Global:</strong> ^AUTTIMM(</p>
+
+<p><strong>Domain:</strong> Non-Clinical</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>.01</td>
+      <td>This is the name of the Immunization (e.g. Hib-Hep B).<br /> <br />Enter the Name of the Immunization using 3 to 100 characters.</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Short Name</strong><pre><code>  short_name</code></pre></td>
+      <td>.02</td>
+      <td>This is the “Short” name for this immunization such as an acronym, <br />nickname, or other name by which it might be called (e.g. Tet Tox).<br /> <br />Enter the short name using 2 to 10 characters (e.g. Tet Tox).</td>
+      <td>STRING</td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Cvx Code</strong><pre><code>  cvx_code</code></pre></td>
+      <td>.03</td>
+      <td>This is the Center for Disease Control’s (CDC) code for this vaccine,<br />known as the CVX Code.  The purpose of the CVX code is mainly when using<br />HL7 to share data regarding this vaccine.</td>
+      <td>STRING</td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Default Lot#</strong><pre><code>  default_lotnumber</code></pre></td>
+      <td>.04</td>
+      <td>This is the default lot number for this immunization.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Immunization_Lot-9999999_41</td>
+    </tr>
+    <tr>
+      <td><strong>Max # In Series</strong><pre><code>  max_number_in_series</code></pre></td>
+      <td>.05</td>
+      <td>(Optional) This is the maximum number of vaccinations that can be given<br />for this immunization.<br /> <br />Enter the number between 0 and 8 that represents the maximum allowable <br />vaccinations that can be given for this immunization.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>1: <em><strong>1</strong></em><br/>2: <em><strong>2</strong></em><br/>3: <em><strong>3</strong></em><br/>4: <em><strong>4</strong></em><br/>5: <em><strong>5</strong></em><br/>6: <em><strong>6</strong></em><br/>7: <em><strong>7</strong></em><br/>8: <em><strong>8</strong></em><br/>NON-SERIES: <em><strong>0</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Childhood Immunization</strong><pre><code>  childhood_immunization</code></pre></td>
+      <td>.06</td>
+      <td>YES in this field indicates this immunization is a childhood <br />immunization. NO in this field indicates this immunization is not a<br />childhood immunization.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>1</strong></em><br/>true: <em><strong>0</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Inactive Flag</strong><pre><code>  inactive_flag</code></pre></td>
+      <td>.07</td>
+      <td>This field is used to inactivate an immunization type.  If this field<br />contains a “1” then the immunization is inactive.  Inactive immunizations<br />cannot be selected in the manual data entry process. Immunization entries<br />should be made inactive when they are no longer used. Do not delete the<br />entry or change the meaning of the immunization entry.<br /> <br />To make an inactive immunization active,<br />enter the “@” symbol to delete the “1” from the field.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>INACTIVE: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Skin Test</strong><pre><code>  skin_test</code></pre></td>
+      <td>.08</td>
+      <td>This field indicates if this immunization is a skin test. Enter ‘1’ if <br />this immunization is a skin test. Enter ‘0’ if this immunization is not <br />a skin test.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>NOT A SKIN TEST: <em><strong>0</strong></em><br/>SKIN TEST: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Vaccine Group (series Type)</strong><pre><code>  vaccine_group_series_type</code></pre></td>
+      <td>.09</td>
+      <td>This field identifies the Imm/Serve Series Type (or “Vaccine group”) to <br />which this immunization belongs.</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Alternate Short Name</strong><pre><code>  alternate_short_name</code></pre></td>
+      <td>.1</td>
+      <td>This is an alternate short name for this immunization.</td>
+      <td>STRING</td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Cpt Code</strong><pre><code>  cpt_code</code></pre></td>
+      <td>.11</td>
+      <td>This is the CPT code associated with this immunization.</td>
+      <td>POINTER</td>
+      <td>INDEXED</td>
+      <td><a href="Cpt-81">Cpt-81</a></td>
+    </tr>
+    <tr>
+      <td><strong>Related Contraind Hl7 Codes</strong><pre><code>  related_contraind_hl7_codes</code></pre></td>
+      <td>.12</td>
+      <td>This field indicates the HL7 code(s) of any immunizations that should be<br />contraindicated when this immunization is contraindicated.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Vis Default Date</strong><pre><code>  vis_default_date</code></pre></td>
+      <td>.13</td>
+      <td>This is the default date of the Vaccine Information Statement for this <br />immunization.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Icd Diagnosis Code</strong><pre><code>  icd_diagnosis_code</code></pre></td>
+      <td>.14</td>
+      <td>This is the ICD diagnosis code associated with this immunization.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Icd Procedure Code</strong><pre><code>  icd_procedure_code</code></pre></td>
+      <td>.15</td>
+      <td>This is the ICD Procedure Code associated with this immunization.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Include In Forecast</strong><pre><code>  include_in_forecast</code></pre></td>
+      <td>.16</td>
+      <td>This field indicates if this vaccine is allowed to be forecast for <br />patients when appropriate. Enter NO to exclude this vaccine from all <br />forecasts.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>YES, INCLUDE: <em><strong>0</strong></em><br/>NO, EXCLUDE: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Include In Vac Account Report</strong><pre><code>  include_in_vac_account_report</code></pre></td>
+      <td>.17</td>
+      <td>This field indicates if this vaccine should be included in the Vaccine <br />Accountability Report. Enter NO if not.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Default Volume</strong><pre><code>  default_volume</code></pre></td>
+      <td>.18</td>
+      <td>This is the default volume for this vaccine.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Combination Immunization (y/n)</strong><pre><code>  combination_immunization_y_n</code></pre></td>
+      <td>.2</td>
+      <td>This YES/NO field identifies if this immunization is a combination<br />product or not.  If this immunization is a combination product (a<br />multi-component vaccine requiring multiple vaccine information<br />statements), enter YES.  If this immunization is not a combination<br />product, but can be represented by a single vaccine information<br />statement, enter NO.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>1</strong></em><br/>true: <em><strong>0</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Component #1</strong><pre><code>  component_number1</code></pre></td>
+      <td>.21</td>
+      <td>This is the first component of this combination vaccine.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Immunization-9999999_14">Immunization-9999999_14</a></td>
+    </tr>
+    <tr>
+      <td><strong>Component #2</strong><pre><code>  component_number2</code></pre></td>
+      <td>.22</td>
+      <td>This is the second component of this combination vaccine.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Immunization-9999999_14">Immunization-9999999_14</a></td>
+    </tr>
+    <tr>
+      <td><strong>Component #3</strong><pre><code>  component_number3</code></pre></td>
+      <td>.23</td>
+      <td>This is the third component of this combination vaccine.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Immunization-9999999_14">Immunization-9999999_14</a></td>
+    </tr>
+    <tr>
+      <td><strong>Component #4</strong><pre><code>  component_number4</code></pre></td>
+      <td>.24</td>
+      <td>This is the fourth component of this combination vaccine.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Immunization-9999999_14">Immunization-9999999_14</a></td>
+    </tr>
+    <tr>
+      <td><strong>Component #5</strong><pre><code>  component_number5</code></pre></td>
+      <td>.25</td>
+      <td>This is the fifth component of this combination vaccine.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Immunization-9999999_14">Immunization-9999999_14</a></td>
+    </tr>
+    <tr>
+      <td><strong>Component #6</strong><pre><code>  component_number6</code></pre></td>
+      <td>.26</td>
+      <td>This is the sixth component of this combination vaccine.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Immunization-9999999_14">Immunization-9999999_14</a></td>
+    </tr>
+    <tr>
+      <td><strong>Reading Required</strong><pre><code>  reading_required</code></pre></td>
+      <td>.51</td>
+      <td>This field indicates if this inoculation requires an objective reading <br />and a subjective interpretation of the reading.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Brand #1</strong><pre><code>  brand_number1</code></pre></td>
+      <td>1.01</td>
+      <td>This is the first brand name for this vaccine.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Brand #2</strong><pre><code>  brand_number2</code></pre></td>
+      <td>1.03</td>
+      <td>This is the second brand name for this vaccine.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Brand #3</strong><pre><code>  brand_number3</code></pre></td>
+      <td>1.05</td>
+      <td>This is the third brand name for this vaccine.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Brand #4</strong><pre><code>  brand_number4</code></pre></td>
+      <td>1.07</td>
+      <td>This is the fourth brand name for this vaccine.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Brand #5</strong><pre><code>  brand_number5</code></pre></td>
+      <td>1.09</td>
+      <td>This is the fifth brand name for this vaccine.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Full Name</strong><pre><code>  full_name</code></pre></td>
+      <td>1.14</td>
+      <td>This is the full name for this immunization.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Cpt Code 2nd</strong><pre><code>  cpt_code_2nd</code></pre></td>
+      <td>1.15</td>
+      <td>This is a second CPT code for this immunization.</td>
+      <td>POINTER</td>
+      <td>INDEXED</td>
+      <td><a href="Cpt-81">Cpt-81</a></td>
+    </tr>
+    <tr>
+      <td><strong>Cdc Full Vaccine Name</strong><pre><code>  cdc_full_vaccine_name</code></pre></td>
+      <td>2</td>
+      <td>This is the CDC Full Vaccine Name for this immunization.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Coding System</strong><pre><code>  coding_system</code></pre></td>
+      <td>3</td>
+      <td>This multiple stores the coding system(s) associated with the codes <br />identifying this immunization.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Coding_System-9999999_143">Coding_System-9999999_143</a></td>
+    </tr>
+    <tr>
+      <td><strong>Vaccine Information Statement</strong><pre><code>  vaccine_information_statement</code></pre></td>
+      <td>4</td>
+      <td>This multiple identifies the Vaccine Information Statement(s) <br />associated with this immunization.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Vaccine_Information_Statement-920</td>
+    </tr>
+    <tr>
+      <td><strong>Cdc Product Name</strong><pre><code>  cdc_product_name</code></pre></td>
+      <td>5</td>
+      <td>This multiple stores the CDC Product Name(s) reflecting manufacturer <br />trade names, but may not be identical to those registered trade names.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Vaccine Group Name</strong><pre><code>  vaccine_group_name</code></pre></td>
+      <td>7</td>
+      <td>This multiple field contains the VACCINE GROUP NAME(s) with which this<br />immunization is associated.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Synonym</strong><pre><code>  synonym</code></pre></td>
+      <td>10</td>
+      <td>This multiple stores locally editable synonyms for this immunization.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Replaced By Vha Standard Term</strong><pre><code>  replaced_by_vha_standard_term</code></pre></td>
+      <td>99.97</td>
+      <td>This field is populated when one Term/Concept replaces another <br />Term/Concept.  This field is controlled by standardization and should <br />only be changed by standardization processes.  This field contains a <br />pointer to a VHA standard term that replaces this entry.</td>
+      <td>POINTER</td>
+      <td>INDEXED</td>
+      <td><a href="Immunization-9999999_14">Immunization-9999999_14</a></td>
+    </tr>
+    <tr>
+      <td><strong>Master Entry For VUID</strong><pre><code>  master_entry_for_vuid</code></pre></td>
+      <td>99.98</td>
+      <td>This field identifies the Master entry for a VUID associated with a <br />Term/Concept.</td>
+      <td>BOOLEAN</td>
+      <td>REQUIRED</td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>VUID</strong><pre><code>  vuid</code></pre></td>
+      <td>99.99</td>
+      <td>VHA Unique ID (VUID). A unique meaningless integer assigned to reference<br />terms VHA wide.</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Effective Date/time</strong><pre><code>  effective_date_time</code></pre></td>
+      <td>99.991</td>
+      <td>Describes the pair Status and Effective Date/Time for each reference term.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Effective_Date_time-9999999_1499">Effective_Date_time-9999999_1499</a></td>
+    </tr>
+    <tr>
+      <td><strong>Class</strong><pre><code>  class</code></pre></td>
+      <td>100</td>
+      <td>This is the CLASS of this Immunization.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>LOCAL: <em><strong>L</strong></em><br/>NATIONAL: <em><strong>N</strong></em><br/>VISN: <em><strong>V</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Mnemonic</strong><pre><code>  mnemonic</code></pre></td>
+      <td>8801</td>
+      <td>This is the mnemonic for this Immunization.<br /> <br />Enter a 1 to 3 character mnemonic.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Acronym</strong><pre><code>  acronym</code></pre></td>
+      <td>8802</td>
+      <td>This standardized vaccine acronym for this immunization is intended to <br />provide a uniform approach to vaccine references.</td>
+      <td>STRING</td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Selectable For Historic</strong><pre><code>  selectable_for_historic</code></pre></td>
+      <td>8803</td>
+      <td>This field determines whether an inactive immunization is selectable when <br />documenting a historic administration.</td>
+      <td>BOOLEAN</td>
+      <td>REQUIRED</td>
+      <td>false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-files">Sub-Files</h2>
+<h3 id="coding-system-9999999143"><a name="Coding_System-9999999_143"></a>Coding System (9999999.143)</h3>
+
+<dl>
+<dt>ID</dt><dd>Coding_System-9999999_143</dd></dl>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Coding System</strong><pre><code>  coding_system</code></pre></td>
+      <td>.01</td>
+      <td>This field indicates the coding system associated with the codes <br />identifying this immunization.</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Code</strong><pre><code>  code</code></pre></td>
+      <td>.02</td>
+      <td>This multiple stores the code(s) representing this immunization within <br />this coding system.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="effective-datetime-99999991499"><a name="Effective_Date_time-9999999_1499"></a>Effective Date/time (9999999.1499)</h3>
+
+<dl>
+<dt>ID</dt><dd>Effective_Date_time-9999999_1499</dd></dl>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Effective Date/time</strong><pre><code>  effective_date_time</code></pre></td>
+      <td>.01</td>
+      <td>This is the date/time when the Status of the reference term was <br />established.</td>
+      <td>DATE-TIME</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Status</strong><pre><code>  status</code></pre></td>
+      <td>.02</td>
+      <td>The Status of a reference term is either ‘ACTIVE’ or ‘INACTIVE’. If <br />‘ACTIVE’, then the term will be accessible by end-users to document a<br />particular patient event. If ‘INACTIVE’, then the term will only be<br />accessible by the application to display legacy data.</td>
+      <td>ENUMERATION</td>
+      <td>REQUIRED</td>
+      <td>ACTIVE: <em><strong>1</strong></em><br/>INACTIVE: <em><strong>0</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:25 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

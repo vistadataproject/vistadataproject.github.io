@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--vdm--reminder_definition-811_9"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">VDM</a> » Reminder_Definition-811_9<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="reminder-definition-8119">Reminder Definition (811.9)</h1>
+<p>This file contains Clinical Reminder definitions. For a detailed description of the contents of this file, see the Clinical Reminders Manager Manual. Additional information may be found at the Clinical Reminders web site: http//vista.domain.ext/reminders  This file contains a combination of nationally distributed and local entries. Any local entries are assigned an internal entry number prefixed with your site number. Nationally distributed entries have their name prefixed with VA-. Local entry names cannot start with VA-.</p>
+
+<p><strong>Global:</strong> ^PXD(811.9,</p>
+
+<p><strong>Domain:</strong> Non-Clinical</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>.01</td>
+      <td>This field is the name of a clinical reminder definition. Nationally<br />distributed reminder definition names are prefixed with “VA-“. The<br />VA- prefixed reminder definitions cannot be altered by a site, but<br />may be inactivated so they will not be selectable or evaluated in<br />the CPRS GUI.<br /> <br />Local modifications can be made to any “VA-“ reminder definition by<br />copying the definition to a new one with a unique name and then<br />making modifications to the new definition which meet local<br />criteria.</td>
+      <td>STRING</td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Print Name</strong><pre><code>  print_name</code></pre></td>
+      <td>1.2</td>
+      <td>This is the name that is used when the results of a reminder evaluation<br />are displayed.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Do In Advance Time Frame</strong><pre><code>  do_in_advance_time_frame</code></pre></td>
+      <td>1.3</td>
+      <td>This field is used to let a reminder become due earlier than the<br />date determined by adding the frequency to the date when the<br />reminder was last resolved. For example, if the frequency is 1Y (one<br />year) and the DO IN ADVANCE TIME FRAME is 1M (one month), the<br />reminder would have a status of “DUE SOON” 11 months after it was<br />last resolved. After one year has passed, the STATUS would be “DUE”.<br /><br />Frequencies have the form IU where I is an integer and U is one of<br />the following units: H (hours), D (days), W (weeks), M (months), and<br />Y (years).<br /></td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Related Reminder Guideline</strong><pre><code>  related_reminder_guideline</code></pre></td>
+      <td>1.4</td>
+      <td>If a local reminder replaces a national reminder, this field can be<br />used to identify the related national reminder.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="Reminder_Definition-811_9">Reminder_Definition-811_9</a></td>
+    </tr>
+    <tr>
+      <td><strong>Inactive Flag</strong><pre><code>  inactive_flag</code></pre></td>
+      <td>1.6</td>
+      <td>Reminders that are inactive will not be evaluated. The Clinical<br />Maintenance component will return a message stating the reminder is<br />inactive and the date when it was made inactive.<br /><br />Other applications that use reminders may use this flag to determine<br />if a reminder can be selected for inclusion.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>INACTIVE: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Inactive Change Date</strong><pre><code>  inactive_change_date</code></pre></td>
+      <td>1.7</td>
+      <td>This is the date and time when the INACTIVE FLAG was last changed. It<br />is set automatically. Users should never edit this field.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ignore On N/a</strong><pre><code>  ignore_on_n_a</code></pre></td>
+      <td>1.8</td>
+      <td>This field allows the user to stop reminders from being printed in<br />the Clinical Maintenance component if the reminder is N/A. This is a<br />free text field that can contain any combination of the following<br />codes:<br /> <br />Code  Description<br /> A    N/A due to not meeting age criteria.<br /> I    N/A due to inactive reminder.<br /> R    N/A due to the wrong race.<br /> S    N/A due to the wrong sex.<br /> *    N/A for any reason.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Sex Specific</strong><pre><code>  sex_specific</code></pre></td>
+      <td>1.9</td>
+      <td>This field is used to make a reminder sex specific. If an “F” is<br />entered, the reminder applies only to females. If an “M” is entered,<br />the reminder applies only to males. If it is left blank, then the<br />reminder is applicable to either sex.<br /><br />If CUSTOM COHORT LOGIC is defined and it does not contain SEX, then<br />this field will be ignored.<br /></td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>MALE: <em><strong>M</strong></em><br/>FEMALE: <em><strong>F</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Priority</strong><pre><code>  priority</code></pre></td>
+      <td>1.91</td>
+      <td>REMINDER PRIORITY is used by the CPRS GUI for sorting purposes.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>HIGH: <em><strong>1</strong></em><br/>MEDIUM: <em><strong>2</strong></em><br/>LOW: <em><strong>3</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong><pre><code>  description</code></pre></td>
+      <td>2</td>
+      <td>This field contains a description of the clinical reminder. It is<br />used to document its purpose and intended usage.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Technical Description</strong><pre><code>  technical_description</code></pre></td>
+      <td>3</td>
+      <td>The TECHNICAL DESCRIPTION is for documenting how a reminder is<br />supposed to function and why the definition is set up the way it is.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Baseline Age Findings</strong><pre><code>  baseline_age_findings</code></pre></td>
+      <td>7</td>
+      <td>This multiple is for defining reminder frequency age ranges sets. It<br />can be used to specify different frequencies for different ages. For<br />example, you could define a frequency of every 3 years for ages 40<br />to 49 as the first age range set, a frequency of every 2 years for<br />ages 50 to 59 as the second, and a frequency of once a year for ages<br />60 to 75. With this set the reminder would be due every 3 years for<br />ages 40 to 49, every 2 years for ages 50 to 59, and once a year for<br />ages 60 to 75.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Baseline_Age_Findings-811_97">Baseline_Age_Findings-811_97</a></td>
+    </tr>
+    <tr>
+      <td><strong>Findings</strong><pre><code>  findings</code></pre></td>
+      <td>20</td>
+      <td>This multiple identifies which finding items to use when evaluating the<br />reminder. Finding items may be categorized into 4 types of findings:<br />age, patient cohort, resolution, and informational. How patient findings<br />are used depends on the values given to the various fields associated with <br />findings. See the description of those fields to learn what they do.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Findings-811_902">Findings-811_902</a></td>
+    </tr>
+    <tr>
+      <td><strong>Function Findings</strong><pre><code>  function_findings</code></pre></td>
+      <td>25</td>
+      <td>This multiple is used to define function findings; each function<br />finding is labeled by an integer: the FUNCTION FINDING NUMBER. The<br />user defines a function finding by inputting a FUNCTION FINDING<br />NUMBER and associated FUNCTION STRING. Function Findings are then<br />used in the reminder definition logic by reference to FF(FUNCTION<br />FINDING NUMBER). For example, if function findings 1 and 2 were<br />defined, then they could be used in the cohort or resolution logic as<br />FF(1) and FF(2).<br /><br />Function findings can be used in the resolution logic with one<br />caveat. They do not have a date associated with them; therefore, the<br />resolution logic must be written so that it cannot be made true<br />solely by a function finding.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Function_Findings-811_925">Function_Findings-811_925</a></td>
+    </tr>
+    <tr>
+      <td><strong>Customized Cohort Logic</strong><pre><code>  customized_cohort_logic</code></pre></td>
+      <td>30</td>
+      <td>This field may be used to define a customized Patient Cohort Logic<br />string. Typically this is done when the USE IN PATIENT COHORT LOGIC<br />fields associated with each finding do not provide the ability to<br />create the required logic string. The requirement for custom logic<br />arises when the required logic is more complex than can be<br />represented by simple concatenation of Boolean logical operators and<br />findings.<br /><br />Detailed information on how to create the custom logic string can be<br />found in the Clinical Reminders Manager Manual.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Internal Patient Cohort Logic</strong><pre><code>  internal_patient_cohort_logic</code></pre></td>
+      <td>31</td>
+      <td>This field is computed by the Clinical Reminders software and should<br />never be edited by hand.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Patient Cohort Findings Count</strong><pre><code>  patient_cohort_findings_count</code></pre></td>
+      <td>32</td>
+      <td>This field is computed by the Clinical Reminders software and should<br />never be edited by hand.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Patient Cohort Findings List</strong><pre><code>  patient_cohort_findings_list</code></pre></td>
+      <td>33</td>
+      <td>This field is computed by the Clinical Reminders software and should<br />never be edited by hand.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Customized Resolution Logic</strong><pre><code>  customized_resolution_logic</code></pre></td>
+      <td>34</td>
+      <td>This field may be used to define a customized Resolution Logic<br />string. Typically this is done when the USE IN RESOLUTION LOGIC<br />fields associated with each finding do not provide the ability to<br />create the required logic string. The requirement for custom logic<br />arises when the required logic is more complex than can be<br />represented by simple concatenation of Boolean logical operators and<br />findings.<br /><br />Detailed information on how to create the custom logic string can be<br />found in the Clinical Reminders Manager Manual.<br /></td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Internal Resolution Logic</strong><pre><code>  internal_resolution_logic</code></pre></td>
+      <td>35</td>
+      <td>This field is computed by the Clinical Reminders software and should<br />never be edited by hand.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Resolution Findings Count</strong><pre><code>  resolution_findings_count</code></pre></td>
+      <td>36</td>
+      <td>This field is computed by the Clinical Reminders software and should<br />never be edited by hand.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Resolution Findings List</strong><pre><code>  resolution_findings_list</code></pre></td>
+      <td>37</td>
+      <td>This field is computed by the Clinical Reminders software and should<br />never be edited by hand.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Age Findings Count</strong><pre><code>  age_findings_count</code></pre></td>
+      <td>40</td>
+      <td>This field is computed by the Clinical Reminders software and should<br />never be edited by hand.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Age Findings List</strong><pre><code>  age_findings_list</code></pre></td>
+      <td>41</td>
+      <td>This field is computed by the Clinical Reminders software and should<br />never be edited by hand.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Information Findings Count</strong><pre><code>  information_findings_count</code></pre></td>
+      <td>42</td>
+      <td>This field is computed by the Clinical Reminders software and should<br />never be edited by hand.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Information Findings List</strong><pre><code>  information_findings_list</code></pre></td>
+      <td>43</td>
+      <td>This field is computed by the Clinical Reminders software and should<br />never be edited by hand.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Custom Date Due</strong><pre><code>  custom_date_due</code></pre></td>
+      <td>45</td>
+      <td>When a CUSTOM DATE DUE is defined, it takes precedence over the<br />standard date due calculation. This means the normal date due<br />calculation that is based on the dates of the resolution findings<br />and the final frequency is not done. Only the dates of the findings<br />and the frequencies specified in the Custom Date Due string are<br />used. Any finding that is in the reminder definition can be used in<br />the Custom Date Due string; it is not limited to those defined as<br />resolution findings.<br /><br />The final age range will still be used to determine if the patient<br />is in the cohort; however, the frequency associated with this age<br />range is not used. Only the frequencies specified in the Custom Date<br />Due String are used. They are added to the date of the associated<br />finding to determine the dates used by either the MIN_DATE or<br />MAX_DATE functions.<br /></td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Custom Date Due Function</strong><pre><code>  custom_date_due_function</code></pre></td>
+      <td>46</td>
+      <td>This field contains the function used in the CUSTOM DATE DUE. It is<br />created automatically and should not be set by hand.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Number Of Arguments</strong><pre><code>  number_of_arguments</code></pre></td>
+      <td>47</td>
+      <td>This is the number of arguments (findings) used in the CUSTOM DATE<br />DUE. It is created automatically and should not be set by hand.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Custom Date Due Arg List</strong><pre><code>  custom_date_due_arg_list</code></pre></td>
+      <td>48</td>
+      <td>This is the list of arguments (findings) used in the CUSTOM DATE<br />DUE. It is used to efficiently calculate the resolution date from<br />the custom date due string. It is created automatically and should<br />not be set by hand.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Custom_Date_Due_Arg_List-811_948">Custom_Date_Due_Arg_List-811_948</a></td>
+    </tr>
+    <tr>
+      <td><strong>Web Sites</strong><pre><code>  web_sites</code></pre></td>
+      <td>50</td>
+      <td>This multiple contains Web sites that have information related to<br />this reminder. The list of web sites will be displayed in the CPRS<br />GUI if the user right-clicks on a reminder and then selects<br />reference information. If a particular web site is clicked on, the<br />GUI will open a browser at that web site.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Web_Sites-811_9002">Web_Sites-811_9002</a></td>
+    </tr>
+    <tr>
+      <td><strong>Linked Reminder Dialog</strong><pre><code>  linked_reminder_dialog</code></pre></td>
+      <td>51</td>
+      <td>This is the Reminder Dialog that will be used when the reminder is<br />processed in the CPRS GUI.</td>
+      <td>POINTER</td>
+      <td>INDEXED</td>
+      <td><a href="Reminder_Dialog-801_41">Reminder_Dialog-801_41</a></td>
+    </tr>
+    <tr>
+      <td><strong>General Cohort Found Text</strong><pre><code>  general_cohort_found_text</code></pre></td>
+      <td>60</td>
+      <td>This optional field defines the detailed text to display when the<br />Patient Cohort Logic is true. Detailed text is used for components<br />such as Clinical Maintenance and MyHealtheVet Detailed.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>General Cohort Not Found Text</strong><pre><code>  general_cohort_not_found_text</code></pre></td>
+      <td>61</td>
+      <td>This optional field defines the detailed text to display when the<br />Patient Cohort Logic is false. Detailed text is used for components<br />such as Clinical Maintenance and MyHealtheVet Detailed.<br /></td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong># Of Gen. Cohort Found Lines</strong><pre><code>  number_of_gen_cohort_found_lines</code></pre></td>
+      <td>62</td>
+      <td>This is the number of lines in the GENERAL COHORT FOUND TEXT. If the<br />number ends with “T” then the text contains TIU objects. This field<br />is set automatically during reminder edit and should never be edited<br />by hand.<br /></td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong># Gen. Cohort Not Found Lines</strong><pre><code>  number_gen_cohort_not_found_lines</code></pre></td>
+      <td>63</td>
+      <td>This is the number of lines in the GENERAL COHORT NOT FOUND TEXT. If<br />the number ends with “T” then the text contains TIU objects. This<br />field is set automatically during reminder edit and should never be<br />edited by hand.<br /></td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>General Res. Found Text</strong><pre><code>  general_res_found_text</code></pre></td>
+      <td>65</td>
+      <td>This optional field defines the detailed text to display when the<br />Resolution Logic is true. Detailed text is used for components such as<br />Clinical Maintenance and MyHealtheVet Detailed.<br /></td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>General Res. Not Found Text</strong><pre><code>  general_res_not_found_text</code></pre></td>
+      <td>66</td>
+      <td>This optional field defines the detailed text to display when the<br />Resolution Logic is false. Detailed text is used for components such as<br />Clinical Maintenance and MyHealtheVet Detailed.<br /></td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong># Gen. Res. Found Lines</strong><pre><code>  number_gen_res_found_lines</code></pre></td>
+      <td>67</td>
+      <td>This is the number of lines in the GENERAL RESOLUTION FOUND TEXT. If<br />the number ends with “T” then the text contains TIU objects. This<br />field is set automatically during reminder edit and should never be<br />edited by hand.<br /></td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong># Gen. Res. Not Found Lines</strong><pre><code>  number_gen_res_not_found_lines</code></pre></td>
+      <td>68</td>
+      <td>This is the number of lines in the GENERAL RESOLUTION NOT FOUND<br />TEXT. If the number ends with “T” then the text contains TIU<br />objects. This field is set automatically during reminder edit and<br />should never be edited by hand.<br /></td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Rescission Date</strong><pre><code>  rescission_date</code></pre></td>
+      <td>69</td>
+      <td>This is the rescission date for this reminder definition.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Summary Cohort Found Text</strong><pre><code>  summary_cohort_found_text</code></pre></td>
+      <td>70</td>
+      <td>This optional field defines the summary text to display when the<br />Patient Cohort Logic is true. Summary text is used for components such<br />as MyHealtheVet Summary.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Summary Cohort Not Found Text</strong><pre><code>  summary_cohort_not_found_text</code></pre></td>
+      <td>71</td>
+      <td>This optional field defines the summary text to display when the<br />Patient Cohort Logic is false. Summary text is used for components such <br />MyHealtheVet Summary.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong># Sum. Cohort Found Lines</strong><pre><code>  number_sum_cohort_found_lines</code></pre></td>
+      <td>72</td>
+      <td>This is the number of lines in the SUMMARY COHORT FOUND TEXT. If the<br />number ends with “T” then the text contains TIU objects. This field<br />is set automatically during reminder edit and should never be edited<br />by hand.  <br /></td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong># Sum. Cohort Not Found Lines</strong><pre><code>  number_sum_cohort_not_found_lines</code></pre></td>
+      <td>73</td>
+      <td>This is the number of lines in the SUMMARY COHORT NOT FOUND TEXT. If<br />the number ends with “T” then the text contains TIU objects. This<br />field is set automatically during reminder edit and should never be<br />edited by hand.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Summary Res. Found Text</strong><pre><code>  summary_res_found_text</code></pre></td>
+      <td>75</td>
+      <td>This optional field defines the summary text to display when the<br />Resolution Logic is true. Summary text is used for components such <br />as MyHealtheVet Summary.<br /></td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Summary Res. Not Found Text</strong><pre><code>  summary_res_not_found_text</code></pre></td>
+      <td>76</td>
+      <td>This optional field defines the summary text to display when the<br />Resolution Logic is false. Summary text is used for components such <br />as MyHealtheVet Summary.<br /></td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong># Sum. Res. Found Lines</strong><pre><code>  number_sum_res_found_lines</code></pre></td>
+      <td>77</td>
+      <td>This is the number of lines in the SUMMARY RESOLUTION FOUND TEXT. If<br />the number ends with “T” then the text contains TIU objects. This<br />field is set automatically during reminder edit and should never be<br />edited by hand.  <br /></td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong># Sum. Res. Not Found Lines</strong><pre><code>  number_sum_res_not_found_lines</code></pre></td>
+      <td>78</td>
+      <td>This is the number of lines in the SUMMARY RESOLUTION NOT FOUND<br />TEXT. If the number ends with “T” then the text contains TIU<br />objects. This field is set automatically during reminder edit and<br />should never be edited by hand.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Class</strong><pre><code>  class</code></pre></td>
+      <td>100</td>
+      <td>This is the CLASS of the definition. Possible classes are “N” for<br />national, “V” for VISN, and “L” for local. National definitions cannot<br />be edited by sites.<br /><br /></td>
+      <td>ENUMERATION</td>
+      <td>REQUIRED</td>
+      <td>LOCAL: <em><strong>L</strong></em><br/>NATIONAL: <em><strong>N</strong></em><br/>VISN: <em><strong>V</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Sponsor</strong><pre><code>  sponsor</code></pre></td>
+      <td>101</td>
+      <td>This is the organization or group that sponsors this definition.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Reminder_Sponsor-811_6</td>
+    </tr>
+    <tr>
+      <td><strong>Review Date</strong><pre><code>  review_date</code></pre></td>
+      <td>102</td>
+      <td>The REVIEW DATE is used to determine when the definition should be<br />reviewed to verify that it is current with the latest standards and<br />guidelines. You can find all reminder definitions whose review date<br />has passed using the Clinical Reminders Review Date Report.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Usage</strong><pre><code>  usage</code></pre></td>
+      <td>103</td>
+      <td>The Usage field describes how the reminder definition can be<br />used. This field must contain C or * if the reminder is to be selected<br />in CPRS. The L or the O values will override all other values. For<br />example, if L and C are defined in the Usage field, the Reminder<br />will not show on the cover sheet in CPRS, because L is in the<br />Usage field.<br /> <br />This is free text field and can contain any combination of the<br />following codes: <br />                                 <br />             Code  Usage <br />              C    CPRS  <br />              L    Reminder Patient List<br />              O    Reminder Order Checks<br />              P    Patient<br />              R    Reminder Reports  <br />              X    Reminder Extracts  <br />              *    All of the above, except L, O, and P.<br /></td>
+      <td>STRING</td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Edit History</strong><pre><code>  edit_history</code></pre></td>
+      <td>110</td>
+      <td>This multiple is used to record a history of changes made to the<br />definition.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Edit_History-811_9001">Edit_History-811_9001</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-files">Sub-Files</h2>
+<h3 id="baseline-age-findings-81197"><a name="Baseline_Age_Findings-811_97"></a>Baseline Age Findings (811.97)</h3>
+
+<dl>
+<dt>ID</dt><dd>Baseline_Age_Findings-811_97</dd></dl>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Reminder Frequency</strong><pre><code>  reminder_frequency</code></pre></td>
+      <td>.01</td>
+      <td>This is the frequency for the reminder. It is input as nU where n is<br />an integer between 0 and 9999 inclusive and U is a unit. Allowed<br />units are H (hours) D (days), W (weeks), M (months), and Y (years).<br />If a reminder is only to be given once in a lifetime use a frequency<br />of 99Y. The special frequency of 0Y will make a reminder never due.<br /><br /></td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Minimum Age</strong><pre><code>  minimum_age</code></pre></td>
+      <td>1</td>
+      <td>This field specifies the minimum age for defining an age range<br />associated with a frequency. Leave it blank if there is no minimum age.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Maximum Age</strong><pre><code>  maximum_age</code></pre></td>
+      <td>2</td>
+      <td>This field specifies the maximum age for defining an age range<br />associated with a frequency. Leave it blank if there is no maximum age.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Age Match Text</strong><pre><code>  age_match_text</code></pre></td>
+      <td>3</td>
+      <td>This is the text that will be displayed in the Clinical Maintenance<br />component if the patient’s age falls within the age range.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Age No Match Text</strong><pre><code>  age_no_match_text</code></pre></td>
+      <td>4</td>
+      <td>This is the text that will be displayed in the Clinical Maintenance<br />component if the patient’s age does not fall in the age range.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>No. Of Age Match Lines</strong><pre><code>  no_of_age_match_lines</code></pre></td>
+      <td>5</td>
+      <td>This is the number of lines in the age match text. If the number ends<br />with “T” then the text contains TIU objects. This field is set<br />automatically during reminder edit and should never be edited by hand.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>No. Of Age No Match Lines</strong><pre><code>  no_of_age_no_match_lines</code></pre></td>
+      <td>6</td>
+      <td>This is the number of lines in the age no match text. If the number ends<br />with “T” then the text contains TIU objects. This field is set<br />automatically during reminder edit and should never be edited by hand.<br /></td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="findings-811902"><a name="Findings-811_902"></a>Findings (811.902)</h3>
+
+<dl>
+<dt>ID</dt><dd>Findings-811_902</dd></dl>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Finding Item</strong><pre><code>  finding_item</code></pre></td>
+      <td>.01</td>
+      <td>This field identifies the finding items included in the reminder<br />definition.<br /><br />Hint: To add a second occurrence of a finding, enclose it in quotes,<br />i.e., “Prefix.Name”<br /><br /></td>
+      <td>POINTER</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="Drug-50">Drug-50</a><br /><a href="Education_Topics-9999999_09">Education_Topics-9999999_09</a><br /><a href="Exam-9999999_15">Exam-9999999_15</a><br /><a href="Health_Factors-9999999_64">Health_Factors-9999999_64</a><br /><a href="Immunization-9999999_14">Immunization-9999999_14</a><br /><a href="Laboratory_Test-60">Laboratory_Test-60</a><br /><a href="Mh_Tests_And_Surveys-601_71">Mh_Tests_And_Surveys-601_71</a><br /><a href="Orderable_Items-101_43">Orderable_Items-101_43</a><br />Rad_nuc_Med_Procedures-71<br />Reminder_Computed_Findings-811_4<br />Reminder_Taxonomy-811_2<br />Reminder_Term-811_5<br /><a href="Skin_Test-9999999_28">Skin_Test-9999999_28</a><br /><a href="VA_Drug_Class-50_605">VA_Drug_Class-50_605</a><br /><a href="VA_Generic-50_6">VA_Generic-50_6</a><br /><a href="Gmrv_Vital_Type-120_51">Gmrv_Vital_Type-120_51</a><br />Reminder_Location_List-810_9</td>
+    </tr>
+    <tr>
+      <td><strong>Minimum Age</strong><pre><code>  minimum_age</code></pre></td>
+      <td>1</td>
+      <td>This field specifies the minimum age for defining an age range<br />associated with a frequency. Leave it blank if there is no minimum age.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Maximum Age</strong><pre><code>  maximum_age</code></pre></td>
+      <td>2</td>
+      <td>This field specifies the maximum age for defining an age range<br />associated with a frequency. Leave it blank if there is no maximum age.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Reminder Frequency</strong><pre><code>  reminder_frequency</code></pre></td>
+      <td>3</td>
+      <td>If this finding is true (found) then use this frequency and the age<br />range specified by the MINIMUM AGE and MAXIMUM AGE to override the<br />baseline frequency age range set.<br /><br />It is input as nU where n is an integer between 0 and 9999 inclusive<br />and U is a unit. Allowed  units are H (hours) D (days), W (weeks), M<br />(months), and Y (years). If a reminder is only to be given once in a<br />lifetime use a frequency of 99Y. The special frequency of 0Y will<br />make a reminder never due.<br /><br /></td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Found Text</strong><pre><code>  found_text</code></pre></td>
+      <td>4</td>
+      <td>This is the text that will be displayed in the Clinical Maintenance<br />output if this finding is found (true).</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Not Found Text</strong><pre><code>  not_found_text</code></pre></td>
+      <td>5</td>
+      <td>This is the text that will be displayed in the Clinical Maintenance<br />output if the finding is not found (false).</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Rank Frequency</strong><pre><code>  rank_frequency</code></pre></td>
+      <td>6</td>
+      <td>This field is used to rank the frequency and age range sets associated<br />with a finding. If there is more than one true finding that can<br />override the baseline frequency age range set, then the determination of<br />which one to use is made based on the finding with the highest rank.<br />Ranks can range from 1 to 999 with 1 being the highest rank.<br /> <br />When the Rank field is blank (null) for all true findings that can<br />override the baseline frequency age range set, then the frequency that<br />will cause the reminder to be given most often will be used. For<br />example, if finding 1 has a frequency of 6 months, and finding 2 has a<br />frequency of 1 year, finding 1 will be used to override the baseline.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Use In Resolution Logic</strong><pre><code>  use_in_resolution_logic</code></pre></td>
+      <td>7</td>
+      <td>This optional field is used to indicate that this finding item<br />should be included as part of the resolution logic for this<br />reminder. Note - if the CUSTOMIZED RESOLUTION LOGIC is defined then<br />this field is ignored.<br /> <br />Valid entries for the USE IN RESOLUTION LOGIC field are:<br /> <br />                       EQUATES TO BOOLEAN<br />  OPERATOR   VALUE     OPERATOR LOGIC<br />  ——–   —–     ——————<br />             BLANK     not included in Resolution Logic<br />                       (Use @ to delete value)<br />   &amp;         AND       &amp;(Finding)<br />   !         OR        !(Finding)<br />   &amp;’        AND NOT   &amp;’(Finding)<br />   !’        OR NOT    !’(Finding)<br /> <br />All finding items that have a value in this field are automatically<br />combined to create the DEFAULT RESOLUTION LOGIC.<br /> <br />After all findings have been evaluated, the finding item is replaced<br />by its true or false value in the resolution logic and the<br />resolution logic is evaluated. If the resolution logic evaluates to<br />true, then the last resolution date is determined. The applicable<br />frequency is added to the resolution date to determine when the<br />reminder is next due. If the resolution logic evaluates to false,<br />then reminder is due.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>AND: <em><strong>&</strong></em><br/>AND NOT: <em><strong>&'</strong></em><br/>OR: <em><strong>!</strong></em><br/>OR NOT: <em><strong>!'</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Use In Patient Cohort Logic</strong><pre><code>  use_in_patient_cohort_logic</code></pre></td>
+      <td>8</td>
+      <td>This optional field is used to indicate that this finding item<br />should be included as part of the Patient Cohort Logic for this<br />reminder. Note - if the CUSTOMIZED COHORT LOGIC is defined then this<br />field is ignored.<br /> <br />Valid entries for the USE IN PATIENT COHORT LOGIC field are:<br /> <br />                     EQUATES TO BOOLEAN<br />  OPERATOR  VALUE     OPERATOR LOGIC<br />  ——–  —–     ——————<br />            BLANK     not included in Patient Cohort Logic<br />                      (Use @ to delete value)<br />   &amp;        AND       &amp;(Finding)<br />   !        OR        !(Finding)<br />   &amp;’       AND NOT   &amp;’(Finding)<br />   !’       OR NOT    !’(Finding)<br /> <br />All finding items that have a value in this field are automatically<br />combined to create the DEFAULT COHORT LOGIC. The default logic<br />string initially includes (SEX)&amp;(AGE), regardless of whether the<br />baseline specifies SEX and AGE criteria. Each finding item with a<br />value in the Use In Patient Cohort Logic field is appended to the<br />string by using the operator and finding item. For example, if<br />finding item 2 had an operator for this field of “&amp;” then the string<br />would be (SEX)&amp;(AGE)&amp;FI(2).<br /><br />After all findings have been evaluated, the finding item is replaced<br />by its true or false value in the cohort logic and the cohort logic<br />is evaluated. If the cohort logic evaluates to true, then the reminder<br />is applicable to the patient. If the cohort logic evaluates to false,<br />then reminder is non-applicable or N/A.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>AND: <em><strong>&</strong></em><br/>AND NOT: <em><strong>&'</strong></em><br/>OR: <em><strong>!</strong></em><br/>OR NOT: <em><strong>!'</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Beginning Date/time</strong><pre><code>  beginning_date_time</code></pre></td>
+      <td>9</td>
+      <td>This is the beginning date/time to search for the finding. When<br />combined with the ENDING DATE/TIME, they define a date range in<br />which to search for the finding.<br /><br />This can be entered in any of the acceptable FileMan date/time<br />formats and abbreviations. See the FileMan Getting Started Manual to<br />learn about acceptable FileMan date/time formats and abbreviations.<br /><br />In addition, you can use the abbreviations T-NY or NOW-NY,where N is<br />an integer and Y stands for years. The date of another finding in<br />the form FIEVAL(M,”DATE”) or FIEVAL(M,N,”DATE”) where M is the<br />number of the finding and N is an occurrence may also be used. For<br />example, FIEVAL(M,”DATE”)-3M would set the Beginning Date/Time to<br />the date of finding M minus three months. Note that when this form<br />is used and finding M is false no Beginning Date/Time can be<br />determined so this finding will be set to false.<br /><br />If this field is null, then the beginning date/time will correspond<br />with the  date/time of the oldest entry in the patient’s record.<br /></td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Use Inactive Problems</strong><pre><code>  use_inactive_problems</code></pre></td>
+      <td>10</td>
+      <td>Normally only active problems from the Problem List will be used in the<br />reminder evaluation. If USE INACTIVE PROBLEMS is set to YES then both<br />active and inactive problems will be used. Note that this field applies<br />only to taxonomy findings.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>YES: <em><strong>1</strong></em><br/>N: <em><strong>0</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Within Category Rank</strong><pre><code>  within_category_rank</code></pre></td>
+      <td>11</td>
+      <td>This field applies only to health factors. In order to understand<br />how it works, you need to understand how health factors work in the<br />reminder evaluation process. If you are not clear about this, see<br />the health factor section of the Clinical Reminder Manager Manual.<br /><br />The default behavior is to use only the most recent health factor<br />within a category. A problem can arise if there are two or more<br />health factors within a category and they both have the same date.<br />(This can happen if both health factors are given during the same<br />encounter).  When the dates are the same, the health factor with the<br />highest WITHIN CATEGORY RANK will be used. This is a numerical value<br />like RANK FREQUENCY, with 1 being the highest rank.<br /><br />If WITHIN CATEGORY RANK has the special value of 0, then the<br />categorization of health factors will be ignored and the health<br />factor will be treated as a distinct finding.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ending Date/time</strong><pre><code>  ending_date_time</code></pre></td>
+      <td>12</td>
+      <td>This is the ending date/time to search for findings. When combined<br />with the BEGINNING DATE/TIME they define a date range in which to<br />search for the finding. The ENDING DATE/TIME must be after the<br />BEGINNING DATE/TIME.<br /><br />This can be entered in any of the acceptable FileMan date/time<br />formats and abbreviations. See the FileMan Getting Started Manual to<br />learn about acceptable FileMan date/time formats and abbreviations.<br /><br />In addition, you can use the abbreviations T-NY or NOW-NY,where N is<br />an integer and Y stands for years. The date of another finding in<br />the form FIEVAL(M,”DATE”) or FIEVAL(M,N,”DATE”) where M is the<br />number of the finding and N is an occurrence may also be used. For<br />example, FIEVAL(M,”DATE”)+3M would set the Ending Date/Time to the<br />date of finding M plus three months. Note that when this form is<br />used and finding M is false no Ending Date/Time can be determined so<br />this finding will be set to false.<br /><br />If this field is null, then the ending date/time will be the end of<br />day on the reminder evaluation date.<br /></td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Mh Scale</strong><pre><code>  mh_scale</code></pre></td>
+      <td>13</td>
+      <td>This applies only to Mental Health Instrument findings. It sets the<br />default scale, i.e., the value for V in the Condition.<br /></td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Condition</strong><pre><code>  condition</code></pre></td>
+      <td>14</td>
+      <td>The CONDITION must be written in M code based on the value returned from<br />the patient results for the finding. Each type of finding has a specific<br />field that provides the value available to use in the CONDITION logic.<br />If the finding value is text, enclose the condition value in quotes <br />(e.g., “positive”). If the finding value is numeric, do not use quotes<br />(e.g., 3).<br /> <br />An IF statement is used to evaluate the value.  The value is always<br />identified as V in the statement regardless of the type of finding. If <br />the condition logic statement evaluates to true, the finding is <br />considered as found (true); otherwise the finding is considered as not<br />found (false).<br /> <br />Relational operators that may be used include: = equals, &lt; less than, &gt;<br />greater than, [ contains, ] follows and ? pattern matches. Logical<br />operators may be used to check multiple values: &amp; And, ! Or, ‘ Not. <br />         <br />Typical examples of M code are as follows:<br />    I V=3 for Education Topic’s Level of Understanding = 3<br />    I V=”H” for Health Factor’s Level/Severity=”H”<br />    I ($P(V,”/”,1)&gt;140)&amp;($P(V,”/”,2)&gt;90) for elevated blood pressure<br />    systolic and diastolic values<br />    I ($P(V,”/”,1)&gt;140)!($P(V,”/”,2)&gt;90) for elevated blood pressure<br />    systolic or diastolic values<br />    I V[“BLACK” for VA-RACE computed finding where race contains BLACK<br /> <br />Below is a brief summary for each finding type, the related field to use<br />for the value, and examples:<br /> <br />Finding type                Field Value Used        Example M Code<br /> <br /> Drug                       None<br /> Education Topic            Level of understanding  I V=3<br /> Exam                       Result                  I V=”N”<br /> Health Factor              Level/severity          I V=”H”<br /> Immunization               Series                  I V=”P”<br /> Laboratory Test            Result Value            I V&gt;130<br /> Mental Health Instrument   Raw score               I V=1<br /> Orderable Item             Status                  I V=”complete”<br /> Radiology Procedure        None<br /> Reminder Computed Finding  Determined by programmer-See Manager Manual<br /> Reminder Taxonomy          None<br /> Skin Test                  Result                  I V=”N”<br /> VA Drug Class              None<br /> VA Generic                 None<br /> Vital Measurement          Rate                    I V&gt;27<br /> <br />For details about allowed CONDITIONS for each finding type, see the<br />Clinical Reminders Manager Manual.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Condition Case Sensitive</strong><pre><code>  condition_case_sensitive</code></pre></td>
+      <td>15</td>
+      <td>When CONDITION CASE SENSITIVE is NO, then the CONDITION will be<br />evaluated without regard to case. The default is YES, so that<br />CONDITION evaluation is case sensitive.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>1</strong></em><br/>true: <em><strong>0</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Rxtype</strong><pre><code>  rxtype</code></pre></td>
+      <td>16</td>
+      <td>RXTYPE applies only to drug findings; it controls the search for<br />patient medications. The possible values for RXTYPE are “I” for<br />inpatient, “N” for non-VA meds, and “O” for outpatient. RXTYPE can<br />be any combination of these such as “NO” which will search for<br />non-VA meds and outpatient medications. If RXTYPE is blank it is<br />equivalent to a value of “INO”.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Occurrence Count</strong><pre><code>  occurrence_count</code></pre></td>
+      <td>17</td>
+      <td>This is the maximum number of occurrences of the finding in the date<br />range to return. If the OCCURRENCE COUNT is input as a positive number,<br />N, up to N of the most recent occurrences will be returned and the<br />finding will take the value of the most recent occurrence. If the<br />OCCURRENCE COUNT is input as a negative number then this behavior is<br />reversed. Up to N of the oldest occurrences will be returned and the<br />finding will take the value of the oldest occurrence in the list.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Use Status/cond In Search</strong><pre><code>  use_status_cond_in_search</code></pre></td>
+      <td>18</td>
+      <td>Give this field a value of “YES” if you want the STATUS LIST and/or<br />CONDITION applied to each result found in the date range for this<br />finding. Only results that have a status on the list or for which<br />the CONDITION is true will be retained. The maximum number to retain<br />is specified by the OCCURRENCE COUNT.<br /><br />Note - if the finding has both a STATUS LIST and a CONDITION the<br />status check will be made first; the CONDITION will be applied only<br />if the finding passes the status check.<br /><br /></td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Status List</strong><pre><code>  status_list</code></pre></td>
+      <td>21</td>
+      <td>This field applies to finding types that have an associated status.<br />When the search for patient findings is done only those findings that<br />have a status on the list can be true. The allowable values depend on<br />the finding type. If no statuses are specified then the default list<br />for each finding type will be used. The default lists can be found in<br />the Clinical Reminders Manager Manual.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Internal Condition</strong><pre><code>  internal_condition</code></pre></td>
+      <td>22</td>
+      <td>This is the internal form of the condition. It is set automatically and<br />should never be set by hand.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>V Subscript List</strong><pre><code>  v_subscript_list</code></pre></td>
+      <td>23</td>
+      <td>This is a list of V value subscripts used in the CONDITION. It is used<br />when the CONDITION is not case sensitive. This should never be set by<br />hand.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>No. Of Found Text Lines</strong><pre><code>  no_of_found_text_lines</code></pre></td>
+      <td>24</td>
+      <td>This is the number of lines in the found text. If the number ends<br />with “T” then the text contains TIU objects. This field is set<br />automatically during reminder edit and should never be edited by<br />hand.<br /></td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>No. Not Found Text Lines</strong><pre><code>  no_not_found_text_lines</code></pre></td>
+      <td>25</td>
+      <td>This is the number of lines in the not found text. If the number<br />ends with “T” then the text contains TIU objects. This field is set<br />automatically during reminder edit and should never be edited by<br />hand.<br /></td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Computed Finding Parameter</strong><pre><code>  computed_finding_parameter</code></pre></td>
+      <td>26</td>
+      <td>This field is used to pass a parameter into the computed finding.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Use Start Date</strong><pre><code>  use_start_date</code></pre></td>
+      <td>27</td>
+      <td>For findings that have a Start Date and a Stop Date the default is<br />to use the Stop Date as the date of the finding. Enter a YES for<br />this field if you want to use the Start Date as the date of the<br />finding.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>1</strong></em><br/>true: <em><strong>0</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Include Visit Data</strong><pre><code>  include_visit_data</code></pre></td>
+      <td>28</td>
+      <td>This applies only to V file findings; if it is “YES” then data from<br />the associated visit will be available for use in a Condition. The<br />default is “NO.”<br /><br /></td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>1</strong></em><br/>true: <em><strong>0</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="function-findings-811925"><a name="Function_Findings-811_925"></a>Function Findings (811.925)</h3>
+
+<dl>
+<dt>ID</dt><dd>Function_Findings-811_925</dd></dl>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Function Finding Number</strong><pre><code>  function_finding_number</code></pre></td>
+      <td>.01</td>
+      <td>This is the number of the function finding you want to create or<br />edit.</td>
+      <td>NUMERIC</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Found Text</strong><pre><code>  found_text</code></pre></td>
+      <td>1</td>
+      <td>This is the text that will be displayed in the Clinical Maintenance<br />output if  this function finding is found (true).</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Not Found Text</strong><pre><code>  not_found_text</code></pre></td>
+      <td>2</td>
+      <td>This is the text that will be displayed in the Clinical Maintenance output if <br />the function finding is not found (false).</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Function String</strong><pre><code>  function_string</code></pre></td>
+      <td>3</td>
+      <td>FUNCTION STRING is input by the user and it defines a function finding.<br /></td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Function List</strong><pre><code>  function_list</code></pre></td>
+      <td>5</td>
+      <td>FUNCTION LIST is a data structure that is used to efficiently<br />evaluate function findings. It is generated automatically and should<br />never be edited by user.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Function_List-811_9255">Function_List-811_9255</a></td>
+    </tr>
+    <tr>
+      <td><strong>Logic</strong><pre><code>  logic</code></pre></td>
+      <td>10</td>
+      <td>This is the internal representation of the function string. For<br />example, if the function string is MIN_DATE(1,2)&gt;MAX_DATE(3) then <br />the LOGIC field would be FN(1)&gt;FN(2).<br /></td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Use In Resolution Logic</strong><pre><code>  use_in_resolution_logic</code></pre></td>
+      <td>11</td>
+      <td>This optional field is used to indicate that this finding item<br />should be included as part of the resolution logic for this<br />reminder. Note - if the CUSTOMIZED RESOLUTION LOGIC is defined, then<br />this field is ignored.<br /> <br />Valid entries for the USE IN RESOLUTION LOGIC field are:<br /> <br />                       EQUATES TO BOOLEAN<br />  OPERATOR   VALUE     OPERATOR LOGIC<br />  ——–   —–     ——————<br />             BLANK     not included in Resolution Logic<br />                       (Use @ to delete value)<br />   &amp;         AND       &amp;(Finding)<br />   !         OR        !(Finding)<br />   &amp;’        AND NOT   &amp;’(Finding)<br />   !’        OR NOT    !’(Finding)<br /> <br />All finding items that have a value in this field are automatically<br />combined to create the DEFAULT RESOLUTION LOGIC.<br /> <br />After all findings have been evaluated, the finding item is replaced<br />by its true or false value in the resolution logic and the<br />resolution logic is evaluated. If the resolution logic evaluates to<br />true, then the last resolution date is determined. The applicable<br />frequency is added to the resolution date to determine when the<br />reminder is next due. If the resolution logic evaluates to false,<br />then reminder is due.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>AND: <em><strong>&</strong></em><br/>AND NOT: <em><strong>&'</strong></em><br/>OR: <em><strong>!</strong></em><br/>OR NOT: <em><strong>!'</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Use In Patient Cohort Logic</strong><pre><code>  use_in_patient_cohort_logic</code></pre></td>
+      <td>12</td>
+      <td>This optional field is used to indicate that this finding item<br />should be included as part of the Patient Cohort Logic for this<br />reminder. Note - if the CUSTOMIZED COHORT LOGIC is defined, then this<br />field is ignored.<br /> <br />Valid entries for the USE IN PATIENT COHORT LOGIC field are:<br /> <br />                     EQUATES TO BOOLEAN<br />  OPERATOR  VALUE     OPERATOR LOGIC<br />  ——–  —–     ——————<br />            BLANK     not included in Patient Cohort Logic<br />                      (Use @ to delete value)<br />   &amp;        AND       &amp;(Finding)<br />   !        OR        !(Finding)<br />   &amp;’       AND NOT   &amp;’(Finding)<br />   !’       OR NOT    !’(Finding)<br /> <br />All finding items that have a value in this field are automatically<br />combined to create the DEFAULT COHORT LOGIC. The default logic<br />string initially includes (SEX)&amp;(AGE), regardless of whether the<br />baseline specifies SEX and AGE criteria. Each finding item with a<br />value in the Use In Patient Cohort Logic field is appended to the<br />string by using the operator and finding item. For example, if<br />finding item 2 had an operator for this field of “&amp;” then the string<br />would be (SEX)&amp;(AGE)&amp;FI(2).<br /><br />After all findings have been evaluated, the finding item is replaced<br />by its true or false value in the cohort logic and the cohort logic<br />is evaluated. If the cohort logic evaluates to true, then the reminder<br />is applicable to the patient. If the cohort logic evaluates to false<br />then reminder is non-applicable or N/A.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>AND: <em><strong>&</strong></em><br/>AND NOT: <em><strong>&'</strong></em><br/>OR: <em><strong>!</strong></em><br/>OR NOT: <em><strong>!'</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Minimum Age</strong><pre><code>  minimum_age</code></pre></td>
+      <td>13</td>
+      <td>This field specifies the minimum age for defining an age range<br />associated with a frequency. Leave it blank if there is no minimum age.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Maximum Age</strong><pre><code>  maximum_age</code></pre></td>
+      <td>14</td>
+      <td>This field specifies the maximum age for defining an age range<br />associated with a frequency. Leave it blank if there is no maximum age.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Reminder Frequency</strong><pre><code>  reminder_frequency</code></pre></td>
+      <td>15</td>
+      <td>If this finding is true (found) then use this frequency and the age<br />range specified by the MINIMUM AGE and MAXIMUM AGE to override the <br />baseline frequency age range set.  <br />                                 <br />It is input as nU where n is an integer between 0 and 9999 inclusive<br />and U is a unit. Allowed units are H (hours) D (days), W (weeks), M<br />(months), and Y (years). If a reminder is only to be given once in a<br />lifetime use a frequency of 99Y. The special frequency of 0Y will<br />make a reminder never due.<br /><br /></td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Rank Frequency</strong><pre><code>  rank_frequency</code></pre></td>
+      <td>16</td>
+      <td>This field is used to rank the frequency and age range sets associated<br />with a finding. If there is more than one true finding that can<br />override the baseline frequency age range set, then the determination of<br />which one to use is made based on the finding with the highest rank.<br />Ranks can range from 1 to 999 with 1 being the highest rank.<br /> <br />When the Rank field is blank (null) for all true findings that can<br />override the baseline frequency age range set, then the frequency that<br />will cause the reminder to be given most often will be used. For<br />example, if finding 1 has a frequency of 6 months, and finding 2 has a<br />frequency of 1 year, finding 1 will be used to override the baseline.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>40</td>
+      <td>If the NAME field is present it will be displayed with the function<br />finding result in the Clinical Maintenance output. The format is<br /> Function Finding: NAME<br />If NAME is null then the format will be:<br /> Function Finding: function<br />where function is the name of the function used in the function<br />finding.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>No. Found Text Lines</strong><pre><code>  no_found_text_lines</code></pre></td>
+      <td>41</td>
+      <td>This is the number of lines in the found text. If the number ends<br />with “T” then the text contains TIU objects. This field is set<br />automatically during reminder edit and should never be edited by hand.<br /></td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>No. Not Found Text Lines</strong><pre><code>  no_not_found_text_lines</code></pre></td>
+      <td>42</td>
+      <td>This is the number of lines in the not found text. If the number ends<br />with “T” then the text contains TIU objects. This field is set<br />automatically during reminder edit and should never be edited by hand.<br /></td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="function-list-8119255"><a name="Function_List-811_9255"></a>Function List (811.9255)</h3>
+
+<dl>
+<dt>ID</dt><dd>Function_List-811_9255</dd></dl>
+
+<h4 id="properties-4">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Function Number</strong><pre><code>  function_number</code></pre></td>
+      <td>.01</td>
+      <td>FUNCTION NUMBER is an internal counter of the functions used in the<br />function string. For example, if the function string is<br />MIN_DATE(1,2)&gt;MAX_DATE(3) then function number 1 is MIN_DATE and<br />function number 2 is MAX_DATE. The function numbers correspond with<br />the internal number used in field #10 LOGIC. For the above function<br />string the LOGIC field would be FN(1)&gt;FN(2).</td>
+      <td>NUMERIC</td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Function</strong><pre><code>  function</code></pre></td>
+      <td>.02</td>
+      <td>FUNCTION is a pointer to the Function File, #802.4. For example, if<br />the function string is MIN_DATE(1,2)&gt;MAX_DATE(3) then function<br />number 1 is MIN_DATE and FUNCTION is the pointer to the MIN_DATE<br />funtion in file #802.4</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td>Reminder_Function_Finding_Functions-802_4</td>
+    </tr>
+    <tr>
+      <td><strong>Function Argument List</strong><pre><code>  function_argument_list</code></pre></td>
+      <td>20</td>
+      <td>The FUNCTION ARGUMENT LIST multiple is the list of arguments<br />(finding numbers) for each function in the function string. For<br />example, if the function string is MIN_DATE(1,2)&gt;MAX_DATE(3) then<br />the argument list for function number 1 is 1 and 2 and the argument<br />list for function 2 is 3.<br /></td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="custom-date-due-arg-list-811948"><a name="Custom_Date_Due_Arg_List-811_948"></a>Custom Date Due Arg List (811.948)</h3>
+
+<dl>
+<dt>ID</dt><dd>Custom_Date_Due_Arg_List-811_948</dd></dl>
+
+<h4 id="properties-5">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Finding</strong><pre><code>  finding</code></pre></td>
+      <td>.01</td>
+      <td>This is the number of a finding used in the custom date due string.<br />It is created automatically and should not be set by hand.</td>
+      <td>NUMERIC</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Frequency</strong><pre><code>  frequency</code></pre></td>
+      <td>.02</td>
+      <td>This is the frequency that is associated with the finding defined in<br />the .01 field of the CUSTOM DATE DUE ARGUMENT LIST. It is created<br />automatically and should never be set by hand.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Operator</strong><pre><code>  operator</code></pre></td>
+      <td>.03</td>
+      <td>This is the operator ‘+” or ‘-‘ that is associated with the finding<br />defined in the .01 field of the CUSTOM DATE DUE ARGUMENT LIST. It is<br />created automatically and should never be set by hand.<br /></td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="web-sites-8119002"><a name="Web_Sites-811_9002"></a>Web Sites (811.9002)</h3>
+
+<dl>
+<dt>ID</dt><dd>Web_Sites-811_9002</dd></dl>
+
+<h4 id="properties-6">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Url</strong><pre><code>  url</code></pre></td>
+      <td>.01</td>
+      <td>This is the URL for the web site.</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Web Site Title</strong><pre><code>  web_site_title</code></pre></td>
+      <td>.02</td>
+      <td>This is the web site title that is used by the CPRS GUI. It will<br />appear after a right click, allowing the user to select the web<br />site.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Web Site Description</strong><pre><code>  web_site_description</code></pre></td>
+      <td>1</td>
+      <td>This field contains a description of the Web site.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="edit-history-8119001"><a name="Edit_History-811_9001"></a>Edit History (811.9001)</h3>
+
+<dl>
+<dt>ID</dt><dd>Edit_History-811_9001</dd></dl>
+
+<h4 id="properties-7">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Edit Date</strong><pre><code>  edit_date</code></pre></td>
+      <td>.01</td>
+      <td>This is the date and time when the editing was done. This field is set<br />automatically and should not be changed by the user.</td>
+      <td>DATE-TIME</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Edit By</strong><pre><code>  edit_by</code></pre></td>
+      <td>1</td>
+      <td>This is the person who did the editing. This field is set automatically<br />and should not be changed by the user.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Edit Comments</strong><pre><code>  edit_comments</code></pre></td>
+      <td>2</td>
+      <td>This word-processing field can be used to record the changes made<br />during the editing session.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:25 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

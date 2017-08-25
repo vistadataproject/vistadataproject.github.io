@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--vdm--tiu_parameters-8925_99"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">VDM</a> » TIU_Parameters-8925_99<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="tiu-parameters-892599">TIU Parameters (8925.99)</h1>
+<p>This file contains the site-configurable parameters for the Text Integration Utilities package.  It will have one entry for each division, to support variable definition of package behavior at multi-divisional facilities.</p>
+
+<p><strong>Global:</strong> ^TIU(8925.99,</p>
+
+<p><strong>Domain:</strong> Non-Clinical</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Institution</strong><pre><code>  institution</code></pre></td>
+      <td>.01</td>
+      <td>Please enter the DIVISION these parameters apply to.</td>
+      <td>POINTER</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="Institution-4">Institution-4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Enable Electronic Signature</strong><pre><code>  enable_electronic_signature</code></pre></td>
+      <td>.02</td>
+      <td>Electronic signature is enabled when this parameter is set to 1. Until<br />such time as electronic signature is enabled, signatures are to be written<br />on the chart copy of the TIU document, and provision must be made for TIU<br />documents to be marked Signed on Chart.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Characters Per Line</strong><pre><code>  characters_per_line</code></pre></td>
+      <td>.03</td>
+      <td>This value (default 60) is divided into the total number of ‘actual’<br />characters in a given transcribed document to derive the line count for<br />that document.  By ‘actual’ characters, we mean all printable ASCII<br />characters, with multiple white space characters stripped. This prevents<br />transcriptionists from “stuffing” line counts by adding white space.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Grace Period For Purge</strong><pre><code>  grace_period_for_purge</code></pre></td>
+      <td>.04</td>
+      <td>OUT OF SERVICE.  Purging is disabled.<br /> <br />This is the number of days following transcription for which a document<br />will be kept, prior to purge. Allowable range is from 90 to 7300 days (20<br />years).<br /> <br />NOTE: Progress Notes and their addenda are not subject to purge,<br />regardless of this parameter. IF YOU WANT TO DISABLE PURGING ALTOGETHER,<br />LEAVE THIS PARAMETER EMPTY (or delete any existing value).</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Grace Period For Signature</strong><pre><code>  grace_period_for_signature</code></pre></td>
+      <td>.05</td>
+      <td>This is the number of days following transcription before an author or<br />Attending Physician is notified of a deficiency.  If no grace period is<br />entered, clinicians are not notified of overdue signatures.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Optimize List Building For</strong><pre><code>  optimize_list_building_for</code></pre></td>
+      <td>.06</td>
+      <td>This parameter determines whether or not TIU list building functions<br />invoke business rules, excluding from the list any documents the user is<br />not authorized to see.  Checking business rules in this way optimizes<br />list building for security.  It may be costly in terms of performance.<br /> <br />When optimized for performance (the default behavior of TIU), business<br />rules excluding notes from view are bypassed when building lists of<br />documents.<br /> <br />NOTE: This applies only to lists: when an unauthorized user attempts to<br />view the contents of a document from the resulting list, he is prevented<br />from doing so, with the following explanation:<br /> <br />Reviewing Item #1<br /> <br /> You may not VIEW this UNSIGNED NURSE’S NOTE.<br /> <br />RETURN to continue…</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>performance: <em><strong>P</strong></em><br/>security: <em><strong>S</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Suppress Review Notes Prompt</strong><pre><code>  suppress_review_notes_prompt</code></pre></td>
+      <td>.07</td>
+      <td>Applies to Progress Notes only.  When this parameter is set to YES, TIU<br />suppresses the prompt which asks if the user wishes to see available<br />progress notes before entering a new note.  This parameter is overridden<br />by the Personal Preference of same name.  If neither parameter is entered,<br />the Review Notes prompt is NOT suppressed.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Default Primary Provider</strong><pre><code>  default_primary_provider</code></pre></td>
+      <td>.08</td>
+      <td>This parameter determines the behavior of the Primary Provider prompt for<br />a standalone encounter.<br /> <br />If the parameter has no value, the prompt has no default. If the parameter<br />has value 0, the user is not prompted for primary provider. If the<br />parameter has value 1, the default for the Primary Provider prompt is the<br />site’s default provider for the given location.  If the parameter has<br />value 2, the default is the author if the author is a provider; if the<br />author is not a provider, the prompt has no default.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>AUTHOR (IF PROVIDER): <em><strong>2</strong></em><br/>DEFAULT, BY LOCATION: <em><strong>1</strong></em><br/>NONE, DON'T PROMPT: <em><strong>0</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Ascii Upload Source</strong><pre><code>  ascii_upload_source</code></pre></td>
+      <td>.09</td>
+      <td>Applies only when the ASCII upload protocol is used. This field specifies<br />the source from which documents are uploaded. (H)ost indicates to the<br />upload processor that the source of the data is an ASCII host file (VMS or<br />DOS), while (R)emote indicates that the data is read from an ASCII stream<br />coming to VISTA from a terminal emulator on a remote computer (for<br />example, an IBM PC or compatible, or an Apple Macintosh).</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>host file server: <em><strong>H</strong></em><br/>remote computer: <em><strong>R</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Record Header Signal</strong><pre><code>  record_header_signal</code></pre></td>
+      <td>.1</td>
+      <td>This is a free text tag or signal used by the upload process to determine<br />that a new document record header has been encountered.  It may be as<br />simple as the three-character string “MSH” or as complex as “HEADERBEGIN”.<br />The signal “@@@”, used by the Surgery Package option to transmit operative<br />notes, is another possibility.<br /> <br />NOTE: Although you may define this parameter independently for each<br />DIVISION, we recommend that you choose just one such signal per site.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>End Of Message Signal</strong><pre><code>  end_of_message_signal</code></pre></td>
+      <td>.11</td>
+      <td>Applies only to transfers made using the ASCII protocol.  This is the free<br />text signal to the upload process that the entire file/stream has been<br />transmitted without difficulty, and no more lines of data need to be read.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Begin Report Text Signal</strong><pre><code>  begin_report_text_signal</code></pre></td>
+      <td>.12</td>
+      <td>This is the signal to the upload processor that the fixed-field header for<br />a given report record has been fully read, and that the body of the<br />narrative report follows.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Major Delimiter</strong><pre><code>  major_delimiter</code></pre></td>
+      <td>.13</td>
+      <td>This ASCII character separates the various pieces of fixed-field<br />information in the message header. Please avoid using delimiters such as<br />”,”, or “:”, which may be contained within the data itself, using instead<br />less common symbols such as “”, “" or “~”.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Future Appointment Range</strong><pre><code>  future_appointment_range</code></pre></td>
+      <td>.14</td>
+      <td>This parameter determines how far in advance a future appointment may<br />be selected when entering a document for outpatient care.<br /> <br />Allowable values range from 1 to 180 days, defaulting to 1 day.</td>
+      <td>NUMERIC</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Pace Character</strong><pre><code>  pace_character</code></pre></td>
+      <td>.15</td>
+      <td>Applies only to transfers which use the ASCII protocol.<br /> <br />This is the ASCII value of the character which VISTA sends to the remote<br />computer to acknowledge receipt of the previous text line and to prompt<br />the remote to transmit another line. You may choose any character with an<br />ASCII value between 1 and 126.<br /> <br />If you are using the same remote to upload both MailMan messages and<br />textual reports, then we recommend using the “&gt;” symbol, ASCII 62.<br />Otherwise, we suggest using the ACK character (ASCII 6).<br /> <br />NOTE: you may need to specify the same character as part of the ASCII<br />PROTOCOL parameters of the terminal emulation software on the remote.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Upload Header Format</strong><pre><code>  upload_header_format</code></pre></td>
+      <td>.16</td>
+      <td>This field determines whether the upload filer expects delimited string or<br />captioned formats for the header of each document.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>captioned: <em><strong>C</strong></em><br/>delimited string: <em><strong>D</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Upload Protocol</strong><pre><code>  upload_protocol</code></pre></td>
+      <td>.17</td>
+      <td>This is the upload protocol used to transmit documents,<br />with a for ASCII, or k for KERMIT.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>ASCII: <em><strong>a</strong></em><br/>KERMIT: <em><strong>k</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Run Upload Filer In Foreground</strong><pre><code>  run_upload_filer_in_foreground</code></pre></td>
+      <td>.18</td>
+      <td>This parameter specifies whether to run the filer for the upload process<br />in the foreground or in the background (as a Task).<br /> <br />If no preference is specified, the filer runs in the BACKGROUND.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Enable Chart Copy Prompt</strong><pre><code>  enable_chart_copy_prompt</code></pre></td>
+      <td>.22</td>
+      <td>OUT OF SERVICE.  See TIU Document Parameter ALLOW CHART PRINT OUTSIDE MAS.</td>
+      <td>BOOLEAN</td>
+      <td> </td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Amendment Signature Block</strong><pre><code>  amendment_signature_block</code></pre></td>
+      <td>1.05</td>
+      <td>OUT OF SERVICE.  The signer’s normal signature block is used for<br />amendments.<br /> <br />This parameter allows the site to specify the format of the signature<br />block for an amendment. <br /> <br />While Business Rules determine who may amend documents, generally it is<br />the user class CHIEF,MIS who may do so. If this user is not the site’s<br />Privacy Act officer, then it may be desirable to enter a statement<br />indicating that the user is signing on behalf of the Privacy Act Officer.<br /> <br />For example, if the user’s name is John Smith, while the site’s Privacy<br />Act Officer is Jane Doe, RRT, then the AMENDMENT SIGNATURE BLOCK might be<br />entered as: “for Jane Doe, RRT, PRIVACY ACT OFFICER”.<br /> <br />The amendment information on the document would then appear as:<br /> <br />            AMENDED 10/26/92<br />            /es/ JOHN SMITH<br />            for Jane Doe, RRT, PRIVACY ACT OFFICER</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Blank Character String</strong><pre><code>  blank_character_string</code></pre></td>
+      <td>1.06</td>
+      <td>This string of characters is used by the transcriptionist to represent a<br />“blank” when a word or phrase in the dictation cannot be understood for<br />inclusion in the transcription.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Enable Notifications Date</strong><pre><code>  enable_notifications_date</code></pre></td>
+      <td>1.07</td>
+      <td>This date indicates to TIU when to begin sending signature notifications<br />(available/overdue for signature) to expected signers/cosigners.<br />Notifications are sent beginning on this date, and only for documents<br />entered on/after this date.</td>
+      <td>DATE-TIME</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Upload Error Alert Recipient</strong><pre><code>  upload_error_alert_recipient</code></pre></td>
+      <td>2</td>
+      <td>These persons receive alerts from the upload/filer process when a document<br />cannot be filed/located or has missing fields.<br /> <br />This field is OVERRIDDEN by recipients set for the given document type in<br />parameter FILING ERROR ALERT RECIPIENTS in the TIU DOCUMENT PARAMETERS<br />file.</td>
+      <td>POINTER</td>
+      <td> </td>
+      <td><a href="New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Start Of Add Sgnr Alert Period</strong><pre><code>  start_of_add_sgnr_alert_period</code></pre></td>
+      <td>3.1</td>
+      <td>This is the start date for evaluating documents that have overdue<br />additional signatures. The value must be in a FileMan date range format<br />such as 6D, 3W or 4M. If this field is left blank, all documents<br />evaluated that have a date less than the END OF ADD SGNR ALERT PERIOD<br />date will be included.<br /> <br />Since the addition of the LENGTH OF SIGNER ALERT PERIOD parameter this<br />field should be set to the same value as that field. If LENGTH OF<br />SIGNER ALERT PERIOD is left blank then set this field to 12M, the<br />default value of the LENGTH OF SIGNER ALERT PERIOD when no value is<br />entered.  LENGTH OF SIGNER ALERT PERIOD determines how far back in time<br />documents are evaluated.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>End Of Add Sgnr Alert Period</strong><pre><code>  end_of_add_sgnr_alert_period</code></pre></td>
+      <td>3.2</td>
+      <td>This is the length in time from the current date that the TIU NIGHTLY <br />TASK will stop regenerating alerts for overdue additional signatures.<br />The value must be in a FileMan date range format such as 6D, 3W or 4M. <br /> <br />If no value is entered, the TIU NIGHTLY TASK will search for documents<br />in the TIU DOCUMENT File (8925) up to the current date.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Length Of Signer Alert Period</strong><pre><code>  length_of_signer_alert_period</code></pre></td>
+      <td>3.3</td>
+      <td>This is the length of time that the TIU NIGHTLY TASK will go back prior <br />to “today” when searching for documents that have overdue signatures. <br />The value must be in a FileMan date range format such as 6D, 3W or 4M. <br /> <br />If no value is entered, the TIU NIGHTLY TASK will begin searching for <br />documents starting at 1 year prior to “today” in the TIU DOCUMENTS file <br />(8925).</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:25 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

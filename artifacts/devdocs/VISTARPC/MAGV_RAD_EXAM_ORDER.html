@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VISTA RPC Documentation &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--native-rpcs--magv-rad-exam-order"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">Native RPCs</a> » MAGV RAD EXAM ORDER<br /></h4>
+<h1 id="magv-rad-exam-order">MAGV RAD EXAM ORDER</h1>
+
+<p>Wraps a call to the RAMAG EXAM ORDER remote procedure, and re-formatsthe output for the DICOM Importer II application. Returns the IEN ofthe new order in the RAD/NUC MED ORDERS file (#75.1), oran array of error messages.</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Label</td>
+      <td>XMORDER</td>
+    </tr>
+    <tr>
+      <td>MUMPS Implementation</td>
+      <td><a href="http://code.osehra.org/dox/Routine_MAGVIM05_source.html">MAGVIM05</a></td>
+    </tr>
+    <tr>
+      <td>Return Type</td>
+      <td>ARRAY</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="input-parameters">Input Parameters</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Maximum Data Length</th>
+      <th>Required</th>
+      <th>Description</th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RADFN</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td>true</td>
+      <td>Patient IEN (DFN).</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>RAMLC</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td>true</td>
+      <td>IEN of the imaging location in the IMAGING LOCATIONS file (#79.1).</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>RAPROC</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td>true</td>
+      <td>Radiology procedure and optional modifiers  ^01: Procedure IEN in the RAD/NUC MED PROCEDURES file (#71)  ^02: Optional procedure modifiers (IENs in  …  the PROCEDURE MODIFIERS file (#71.2))  ^nn:</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>REQDTE</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td>true</td>
+      <td>Desired date for the exam in HL7 format (TS): YYYYMMDD. If time is provided, it is ignored. The date must be exact.</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>RACAT</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td>true</td>
+      <td>Exam category: internal value of the CATEGORY OF EXAM field (4) of the RAD/NUC MED ORDERS file (#75.1).</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>REQLOC</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td>true</td>
+      <td>IEN of the requesting location in the HOSPITAL LOCATION file (#44).</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>REQPHYS</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td>true</td>
+      <td>IEN of the requesting physician in the NEW PERSON file (#200).</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>REASON</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td>true</td>
+      <td>Reason for study. See the REASON FOR STUDY field (1.1) of the RAD/NUC MED ORDERS file (#75.1) for details.</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>RAMSC</td>
+      <td>LIST</td>
+      <td> </td>
+      <td> </td>
+      <td>Items of this list define miscellaneous/optional order parameters. Eachrecord has 3 or more pieces separated by '^':   ^01: Parameter name  ^02: Index (for multiples and word-processing values)  ^03: Value1  ^04: Value2  … The following parameters are supported by this remote procedure:    CLINHIST^{Seq#}^{Line of clinical history}    Text for the CLINICAL HISTORY FOR EXAM field (400)    of the file #75.1   ISOLPROC^^{n</td>
+      <td>y}    Value for the ISOLATION PROCEDURES field (24)    of the file #75.1   PREGNANT^^{n</td>
+      <td>u</td>
+      <td>y}    Value for the PREGNANT field (13) of the file #75.1   PREOPDT^^{Internal date value}    Date and time for the PRE-OP SCHEDULED DATE/TIME    field (12) of the file #75.1 in HL7 format (TS):    YYYYMMDD[HHMM[+/-ZZZZ]]. If seconds are provided,    they are ignored. The date must be exact.   REQNATURE^^{e</td>
+      <td>i</td>
+      <td>p</td>
+      <td>s</td>
+      <td>v</td>
+      <td>w}    Value for the NATURE OF (NEW) ORDER ACTIVITY field (26)    of the file #75.1   REQURG^^{1</td>
+      <td>2</td>
+      <td>9}    Value for the REQUEST URGENCY field (6)    of the file #75.1   TRANSPMODE^^{a</td>
+      <td>p</td>
+      <td>s</td>
+      <td>w}    Value for the MODE OF TRANSPORT field (19)    of the file #75.1 Records can be added to the list in any order. See the comments precedingthe $$ORDER^RAMAG02 for more details. Example:   with RPCBroker.Param[8] do    begin      PType := list;      Mult[1] := 'PREGNANT^^y';      Mult[2] := 'PREOPDT^^200001041400';      Mult[3] := 'CLINHIST^1^Clinical history line #1';      Mult[4] := 'CLINHIST^2^Clinical history line #2';      Mult[5] := 'CLINHIST^3^Clinical history line #3';    end;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:26 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

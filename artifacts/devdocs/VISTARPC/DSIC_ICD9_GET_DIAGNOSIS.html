@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VISTA RPC Documentation &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--native-rpcs--dsic-icd9-get-diagnosis"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">Native RPCs</a> » DSIC ICD9 GET DIAGNOSIS<br /></h4>
+<h1 id="dsic-icd9-get-diagnosis">DSIC ICD9 GET DIAGNOSIS</h1>
+
+<p>This will return specific information for a diagnosis code</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Label</td>
+      <td>ICD9</td>
+    </tr>
+    <tr>
+      <td>MUMPS Implementation</td>
+      <td><a href="http://code.osehra.org/dox/Routine_DSICDRG_source.html">DSICDRG</a></td>
+    </tr>
+    <tr>
+      <td>Return Type</td>
+      <td>SINGLE VALUE</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="input-parameters">Input Parameters</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Maximum Data Length</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>VICD</td>
+      <td>LITERAL</td>
+      <td>7</td>
+      <td>true</td>
+      <td>This is the ifn or .01 field value from the DIAGNOSIS file (#80)</td>
+    </tr>
+    <tr>
+      <td>FLDS</td>
+      <td>LITERAL</td>
+      <td>50</td>
+      <td>true</td>
+      <td>This is a "^"-delimited list of field values you wish returned for adiagnosis code. Acceptable field numbers:  ien - return ifn to file 80  .01 - ICD9 NAME (diagnosis code)    3 - DIAGNOSIS (short description 2-30 char)    5 - MAJOR DIAGNOSTIC CATEGORY (external value from 80.3)   10 - DESCRIPTION (long description 1-245 char)  9.5 - USE ONLY WITH SEX (M, F, or &lt;null&gt;)   15 - AGE (N:newborn;P:pediatric;A:adult)  100 - INACTIVE (1 or &lt;null&gt;)  101 - UNACCEPTABLE AS PRINCIPAL DX (1 if not acceptable)  102 - INACTIVE DATE Default value:  ien^.01^3</td>
+    </tr>
+    <tr>
+      <td>CDT</td>
+      <td>LITERAL</td>
+      <td>14</td>
+      <td>true</td>
+      <td>This date is optional.  It can be &lt;null&gt;, TODAY, NOW, or a internal Fileman format date.  Default value is TODAY.  This date will be used to check if the code was active as of that date. This parameter is not used at this time</td>
+    </tr>
+    <tr>
+      <td>SCR</td>
+      <td>LITERAL</td>
+      <td>2</td>
+      <td>true</td>
+      <td>This is a single or double character code used to screen out diagnoses.  SCR = "A" - default value - return only active codes        "U" - return codes which are acceptable as a principal diagnosis        "N" - do not screen out any codes       "AU" - return codes which are both active and acceptable as a              principal diagnosis</td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:26 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

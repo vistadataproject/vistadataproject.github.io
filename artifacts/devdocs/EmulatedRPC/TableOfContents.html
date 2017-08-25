@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VISTA Emulator Documentation &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--emulated-rpcs"><a href="../index">Developer Documentation</a> » Emulated RPCs<br /></h4>
+<h1 id="emulated-rpcs">Emulated RPCs</h1>
+
+<h2 id="rpc-emulation-summary">RPC Emulation Summary</h2>
+<p>As of <em>August 24th 2017</em>:</p>
+
+<h3 id="progress">Progress</h3>
+
+<p><strong>Overall CPRS RPC Total:</strong> 153/1050</p>
+<div class="progress">
+  <div class="progress-bar" style="width: 15%;">
+    15% (153/1050)
+  </div>
+</div>
+
+<h3 id="benchmarks">Benchmarks</h3>
+
+<p><strong>Average Performance:</strong> 3.270 msecs <em>Native</em> vs. 58.831 msecs <em>Emulated</em> (<strong>5.56%</strong>)</p>
+<div class="progress">
+  <div class="progress-bar" style="width: 5.56%;">
+    5.56%
+  </div>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Native</th>
+      <th>Emulated</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Avg: 3.270 msecs<br />Min: 0.332 msecs<br />Max: 1827.992 msecs<br />Std Dev: 40.557 msecs</td>
+      <td>Avg: 58.831 msecs<br />Min: 0.003 msecs<br />Max: 6992.282 msecs<br />Std Dev: 384.854 msecs</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="emulated-rpc-listing">Emulated RPC Listing</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Domain</th>
+      <th>Class</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="DG_CHK_BS5_XREF_ARRAY">DG CHK BS5 XREF ARRAY</a></td>
+      <td>Clinical</td>
+      <td>Patients</td>
+      <td>Unknown</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="DG_SENSITIVE_RECORD_ACCESS">DG SENSITIVE RECORD ACCESS</a></td>
+      <td>Clinical</td>
+      <td>Patients</td>
+      <td>Unknown</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="GMV_ADD_VM">GMV ADD VM</a></td>
+      <td>Clinical</td>
+      <td>Vitals</td>
+      <td>CHANGE</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><a href="GMV_DLL_VERSION">GMV DLL VERSION</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><a href="GMV_GET_VITAL_TYPE_IEN">GMV GET VITAL TYPE IEN</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><a href="GMV_MANAGER">GMV MANAGER</a></td>
+      <td>Non-Clinical</td>
+      <td>Others</td>
+      <td>UTILITY</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td><a href="GMV_MARK_ERROR">GMV MARK ERROR</a></td>
+      <td>Clinical</td>
+      <td>Vitals</td>
+      <td>CHANGE</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td><a href="GMV_PARAMETER">GMV PARAMETER</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>CHANGE</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td><a href="GMV_USER">GMV USER</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ/WRITE</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td><a href="GMV_VITALS_CAT_QUAL">GMV VITALS/CAT/QUAL</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td><a href="OR_GET_COMBAT_VET">OR GET COMBAT VET</a></td>
+      <td>Clinical</td>
+      <td>Patients</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td><a href="ORB_SORT_METHOD">ORB SORT METHOD</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td><a href="ORDEA_DEATEXT">ORDEA DEATEXT</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td><a href="OREVNTX1_DLGIEN">OREVNTX1 DLGIEN</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td><a href="ORIMO_ISCLOC">ORIMO ISCLOC</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td><a href="ORIMO_ISIVQO">ORIMO ISIVQO</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td><a href="ORPRF_HASFLG">ORPRF HASFLG</a></td>
+      <td>Clinical</td>
+      <td>Patients</td>
+      <td>Unknown</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td><a href="ORQORB_SORT">ORQORB SORT</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td><a href="ORQPT_DEFAULT_LIST_SOURCE">ORQPT DEFAULT LIST SOURCE</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td><a href="ORQQAL_DETAIL">ORQQAL DETAIL</a></td>
+      <td>Clinical</td>
+      <td>Allergies</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td><a href="ORQQAL_LIST">ORQQAL LIST</a></td>
+      <td>Clinical</td>
+      <td>Allergies</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td><a href="ORQQCN_SVC_W_SYNONYMS">ORQQCN SVC W/SYNONYMS</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td><a href="ORQQCN2_GET_CONTEXT">ORQQCN2 GET CONTEXT</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td><a href="ORQQPL_ADD_SAVE">ORQQPL ADD SAVE</a></td>
+      <td>Clinical</td>
+      <td>Problems</td>
+      <td>CHANGE</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td><a href="ORQQPL_DELETE">ORQQPL DELETE</a></td>
+      <td>Clinical</td>
+      <td>Problems</td>
+      <td>CHANGE</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td><a href="ORQQPL_DETAIL">ORQQPL DETAIL</a></td>
+      <td>Clinical</td>
+      <td>Problems</td>
+      <td>UNSTRUCTURED READ</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td><a href="ORQQPL_EDIT_SAVE">ORQQPL EDIT SAVE</a></td>
+      <td>Clinical</td>
+      <td>Problems</td>
+      <td>CHANGE</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td><a href="ORQQPL_INIT_USER">ORQQPL INIT USER</a></td>
+      <td>Non-Clinical</td>
+      <td>File/Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td><a href="ORQQPL_PROBLEM_LIST">ORQQPL PROBLEM LIST</a></td>
+      <td>Clinical</td>
+      <td>Problems</td>
+      <td>CHANGE</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td><a href="ORQQPL_REPLACE">ORQQPL REPLACE</a></td>
+      <td>Clinical</td>
+      <td>Problems</td>
+      <td>CHANGE</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td><a href="ORQQPL_UPDATE">ORQQPL UPDATE</a></td>
+      <td>Clinical</td>
+      <td>Problems</td>
+      <td>CHANGE</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td><a href="ORQQPL_USER_PROB_CATS">ORQQPL USER PROB CATS</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td><a href="ORQQPL4_LEX">ORQQPL4 LEX</a></td>
+      <td>Non-Clinical</td>
+      <td>Others</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td><a href="ORQQPX_NEW_REMINDERS_ACTIVE">ORQQPX NEW REMINDERS ACTIVE</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td><a href="ORQQPXRM_REMINDER_CATEGORIES">ORQQPXRM REMINDER CATEGORIES</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td><a href="ORQQVI_VITALS">ORQQVI VITALS</a></td>
+      <td>Clinical</td>
+      <td>Vitals</td>
+      <td>READ STRUCTURED</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td><a href="ORWCH_LDFONT">ORWCH LDFONT</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td><a href="ORWCH_LOADALL">ORWCH LOADALL</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td><a href="ORWCH_LOADSIZ">ORWCH LOADSIZ</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td><a href="ORWCH_SAVEALL">ORWCH SAVEALL</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>CHANGE</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td><a href="ORWCH_SAVFONT">ORWCH SAVFONT</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>CHANGE</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td><a href="ORWCIRN_AUTORDV">ORWCIRN AUTORDV</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td><a href="ORWCOM_ORDEROBJ">ORWCOM ORDEROBJ</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td><a href="ORWCOM_PTOBJ">ORWCOM PTOBJ</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td><a href="ORWCV1_COVERSHEET_LIST">ORWCV1 COVERSHEET LIST</a></td>
+      <td>Non-Clinical</td>
+      <td>File/Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td><a href="ORWDAL32_ALLERGY_MATCH">ORWDAL32 ALLERGY MATCH</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td><a href="ORWDAL32_CLINUSER">ORWDAL32 CLINUSER</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td><a href="ORWDAL32_DEF">ORWDAL32 DEF</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td><a href="ORWDAL32_SAVE_ALLERGY">ORWDAL32 SAVE ALLERGY</a></td>
+      <td>Clinical</td>
+      <td>Allergies</td>
+      <td>CHANGE</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td><a href="ORWDAL32_SITE_PARAMS">ORWDAL32 SITE PARAMS</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td><a href="ORWDAL32_SYMPTOMS">ORWDAL32 SYMPTOMS</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td><a href="ORWDBA1_BASTATUS">ORWDBA1 BASTATUS</a></td>
+      <td>Non-Clinical</td>
+      <td>File/Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td><a href="ORWDBA3_HINTS">ORWDBA3 HINTS</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td><a href="ORWDPS1_FAILDEA">ORWDPS1 FAILDEA</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>UTILITY</td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td><a href="ORWDPS1_ODSLCT">ORWDPS1 ODSLCT</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td><a href="ORWDPS2_DAY2QTY">ORWDPS2 DAY2QTY</a></td>
+      <td>Non-Clinical</td>
+      <td>Others</td>
+      <td>UTILITY</td>
+    </tr>
+    <tr>
+      <td>57</td>
+      <td><a href="ORWDPS2_QOGRP">ORWDPS2 QOGRP</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td><a href="ORWDPS32_AUTH">ORWDPS32 AUTH</a></td>
+      <td>Non-Clinical</td>
+      <td>File/Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td><a href="ORWDPS32_VALQTY">ORWDPS32 VALQTY</a></td>
+      <td>Non-Clinical</td>
+      <td>Others</td>
+      <td>UTILITY</td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td><a href="ORWDPS32_VALROUTE">ORWDPS32 VALROUTE</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>UTILITY</td>
+    </tr>
+    <tr>
+      <td>61</td>
+      <td><a href="ORWDPS5_LESGRP">ORWDPS5 LESGRP</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td><a href="ORWDRA32_LOCTYPE">ORWDRA32 LOCTYPE</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td><a href="ORWDX_AGAIN">ORWDX AGAIN</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>64</td>
+      <td><a href="ORWDX_DGNM">ORWDX DGNM</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>65</td>
+      <td><a href="ORWDX_DLGDEF">ORWDX DLGDEF</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>66</td>
+      <td><a href="ORWDX_WRLST">ORWDX WRLST</a></td>
+      <td>Non-Clinical</td>
+      <td>File/Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>67</td>
+      <td><a href="ORWDX2_DCREASON">ORWDX2 DCREASON</a></td>
+      <td>Non-Clinical</td>
+      <td>File/Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>68</td>
+      <td><a href="ORWDXA_ISACTOI">ORWDXA ISACTOI</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td><a href="ORWDXC_ON">ORWDXC ON</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>70</td>
+      <td><a href="ORWDXM_FORMID">ORWDXM FORMID</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>71</td>
+      <td><a href="ORWDXM_MSTYLE">ORWDXM MSTYLE</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>72</td>
+      <td><a href="ORWDXM3_ISUDQO">ORWDXM3 ISUDQO</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>73</td>
+      <td><a href="ORWDXR01_ISSPLY">ORWDXR01 ISSPLY</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>74</td>
+      <td><a href="ORWDXVB3_COLLTIM">ORWDXVB3 COLLTIM</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>75</td>
+      <td><a href="ORWDXVB3_SWPANEL">ORWDXVB3 SWPANEL</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>76</td>
+      <td><a href="ORWGRPC_ALLVIEWS">ORWGRPC ALLVIEWS</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>77</td>
+      <td><a href="ORWGRPC_GETPREF">ORWGRPC GETPREF</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>78</td>
+      <td><a href="ORWGRPC TESTSPEC">ORWGRPC TESTSPEC</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>79</td>
+      <td><a href="ORWLEX_GETFREQ">ORWLEX GETFREQ</a></td>
+      <td>Non-Clinical</td>
+      <td>Others</td>
+      <td>UTILITY</td>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td><a href="ORWOR_PKISITE">ORWOR PKISITE</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>81</td>
+      <td><a href="ORWOR_VWGET">ORWOR VWGET</a></td>
+      <td>Non-Clinical</td>
+      <td>File/Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>82</td>
+      <td><a href="ORWORB_GETSORT">ORWORB GETSORT</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>83</td>
+      <td><a href="ORWORB_SETSORT">ORWORB SETSORT</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>CHANGE</td>
+    </tr>
+    <tr>
+      <td>84</td>
+      <td><a href="ORWORDG_IEN">ORWORDG IEN</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>85</td>
+      <td><a href="ORWORDG_MAPSEQ">ORWORDG MAPSEQ</a></td>
+      <td>Non-Clinical</td>
+      <td>File/Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>86</td>
+      <td><a href="ORWPCE_ACTIVE_PROV">ORWPCE ACTIVE PROV</a></td>
+      <td>Non-Clinical</td>
+      <td>Others</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>87</td>
+      <td><a href="ORWPCE_ALWAYS_CHECKOUT">ORWPCE ALWAYS CHECKOUT</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>88</td>
+      <td><a href="ORWPCE_ANYTIME">ORWPCE ANYTIME</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>89</td>
+      <td><a href="ORWPCE_ASKPCE">ORWPCE ASKPCE</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>90</td>
+      <td><a href="ORWPCE_AUTO_VISIT_TYPE_SELECT">ORWPCE AUTO VISIT TYPE SELECT</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>91</td>
+      <td><a href="ORWPCE_DIAG">ORWPCE DIAG</a></td>
+      <td>Non-Clinical</td>
+      <td>Others</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>92</td>
+      <td><a href="ORWPCE_GET_EDUCATION_TOPICS">ORWPCE GET EDUCATION TOPICS</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>93</td>
+      <td><a href="ORWPCE_GET_EXAM_TYPE">ORWPCE GET EXAM TYPE</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>94</td>
+      <td><a href="ORWPCE_GET_EXCLUDED">ORWPCE GET EXCLUDED</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>95</td>
+      <td><a href="ORWPCE_GET_HEALTH_FACTORS_TY">ORWPCE GET HEALTH FACTORS TY</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>96</td>
+      <td><a href="ORWPCE_GET_IMMUNIZATION_TYPE">ORWPCE GET IMMUNIZATION TYPE</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>97</td>
+      <td><a href="ORWPCE_GET_SET_OF_CODES">ORWPCE GET SET OF CODES</a></td>
+      <td>Non-Clinical</td>
+      <td>Others</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>98</td>
+      <td><a href="ORWPCE_GET_SKIN_TEST_TYPE">ORWPCE GET SKIN TEST TYPE</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>99</td>
+      <td><a href="ORWPCE_GETSVC">ORWPCE GETSVC</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>UTILITY</td>
+    </tr>
+    <tr>
+      <td>100</td>
+      <td><a href="ORWPCE_HASCPT">ORWPCE HASCPT</a></td>
+      <td>Non-Clinical</td>
+      <td>Others</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>101</td>
+      <td><a href="ORWPCE_HF">ORWPCE HF</a></td>
+      <td>Non-Clinical</td>
+      <td>Others</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>102</td>
+      <td><a href="ORWPCE_IMM">ORWPCE IMM</a></td>
+      <td>Non-Clinical</td>
+      <td>Others</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>103</td>
+      <td><a href="ORWPCE_MHCLINIC">ORWPCE MHCLINIC</a></td>
+      <td>Non-Clinical</td>
+      <td>Others</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>104</td>
+      <td><a href="ORWPCE_PED">ORWPCE PED</a></td>
+      <td>Non-Clinical</td>
+      <td>Others</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>105</td>
+      <td><a href="ORWPCE_PROC">ORWPCE PROC</a></td>
+      <td>Non-Clinical</td>
+      <td>Others</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>106</td>
+      <td><a href="ORWPCE_SK">ORWPCE SK</a></td>
+      <td>Non-Clinical</td>
+      <td>Others</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>107</td>
+      <td><a href="ORWPCE_VISIT">ORWPCE VISIT</a></td>
+      <td>Non-Clinical</td>
+      <td>Others</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>108</td>
+      <td><a href="ORWPCE_XAM">ORWPCE XAM</a></td>
+      <td>Non-Clinical</td>
+      <td>Others</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>109</td>
+      <td><a href="ORWPCE1_NONCOUNT">ORWPCE1 NONCOUNT</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>110</td>
+      <td><a href="ORWPS_REASON">ORWPS REASON</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>111</td>
+      <td><a href="ORWPT_DIEDON">ORWPT DIEDON</a></td>
+      <td>Clinical</td>
+      <td>Patients</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>112</td>
+      <td><a href="ORWPT_ENCTITL">ORWPT ENCTITL</a></td>
+      <td>Clinical</td>
+      <td>Patients</td>
+      <td>Unknown</td>
+    </tr>
+    <tr>
+      <td>113</td>
+      <td><a href="ORWPT_ID_INFO">ORWPT ID INFO</a></td>
+      <td>Clinical</td>
+      <td>Patients</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>114</td>
+      <td><a href="ORWPT_INPLOC">ORWPT INPLOC</a></td>
+      <td>Clinical</td>
+      <td>Patients</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>115</td>
+      <td><a href="ORWPT_LIST_ALL">ORWPT LIST ALL</a></td>
+      <td>Clinical</td>
+      <td>Patients</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>116</td>
+      <td><a href="ORWPT SELECT">ORWPT SELECT</a></td>
+      <td>Clinical</td>
+      <td>Patients</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>117</td>
+      <td><a href="ORWPT_TOP">ORWPT TOP</a></td>
+      <td>Clinical</td>
+      <td>Patients</td>
+      <td>Unknown</td>
+    </tr>
+    <tr>
+      <td>118</td>
+      <td><a href="ORWPT1_PRCARE">ORWPT1 PRCARE</a></td>
+      <td>Clinical</td>
+      <td>Patients</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>119</td>
+      <td><a href="ORWSR_SHOW_SURG_TAB">ORWSR SHOW SURG TAB</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>120</td>
+      <td><a href="ORWTIU_GET_TIU_CONTEXT">ORWTIU GET TIU CONTEXT</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>121</td>
+      <td><a href="ORWTPD1_GETEAFL">ORWTPD1 GETEAFL</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>122</td>
+      <td><a href="ORWTPD1_GETEDATS">ORWTPD1 GETEDATS</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>123</td>
+      <td><a href="ORWTPO_CSARNGD">ORWTPO CSARNGD</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>124</td>
+      <td><a href="ORWTPO_GETIMGD">ORWTPO GETIMGD</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>125</td>
+      <td><a href="ORWU_CLINLOC">ORWU CLINLOC</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>126</td>
+      <td><a href="ORWU_EXTNAME">ORWU EXTNAME</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>UTILITY</td>
+    </tr>
+    <tr>
+      <td>127</td>
+      <td><a href="ORWU_HASKEY">ORWU HASKEY</a></td>
+      <td>Non-Clinical</td>
+      <td>Others</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>128</td>
+      <td><a href="ORWU_NEWPERS">ORWU NEWPERS</a></td>
+      <td>Non-Clinical</td>
+      <td>Others</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>129</td>
+      <td><a href="ORWU_PARAM">ORWU PARAM</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>130</td>
+      <td><a href="ORWU_PATCH">ORWU PATCH</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>131</td>
+      <td><a href="ORWU_TOOLMENU">ORWU TOOLMENU</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>132</td>
+      <td><a href="ORWU_USERINFO">ORWU USERINFO</a></td>
+      <td>Non-Clinical</td>
+      <td>File/Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>133</td>
+      <td><a href="ORWU_VALIDSIG">ORWU VALIDSIG</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>134</td>
+      <td><a href="ORWU_VERSRV">ORWU VERSRV</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>135</td>
+      <td><a href="ORWU1_NEWLOC">ORWU1 NEWLOC</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>136</td>
+      <td><a href="ORWUL_FVSUB">ORWUL FVSUB</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>137</td>
+      <td><a href="ORWUL_QV4DG">ORWUL QV4DG</a></td>
+      <td>Non-Clinical</td>
+      <td>File/Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>138</td>
+      <td><a href="TIU_GET_DEFAULT_PROVIDER">TIU GET DEFAULT PROVIDER</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>139</td>
+      <td><a href="TIU_GET_PERSONAL_PREFERENCES">TIU GET PERSONAL PREFERENCES</a></td>
+      <td>Non-Clinical</td>
+      <td>Others</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>140</td>
+      <td><a href="TIU_GET_PRINT_NAME">TIU GET PRINT NAME</a></td>
+      <td>Non-Clinical</td>
+      <td>Others</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>141</td>
+      <td><a href="TIU_IS_THIS_A_CONSULT_">TIU IS THIS A CONSULT?</a></td>
+      <td>Non-Clinical</td>
+      <td>Others</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>142</td>
+      <td><a href="TIU_IS_USER_A_PROVIDER_">TIU IS USER A PROVIDER?</a></td>
+      <td>Non-Clinical</td>
+      <td>Others</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>143</td>
+      <td><a href="TIU_ISPRF">TIU ISPRF</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>144</td>
+      <td><a href="TIU_LONG_LIST_OF_TITLES">TIU LONG LIST OF TITLES</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>145</td>
+      <td><a href="TIU_REQUIRES_COSIGNATURE">TIU REQUIRES COSIGNATURE</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>146</td>
+      <td><a href="TIU_TEMPLATE_ACCESS_LEVEL">TIU TEMPLATE ACCESS LEVEL</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>147</td>
+      <td><a href="TIU_TEMPLATE_GET_DEFAULTS">TIU TEMPLATE GET DEFAULTS</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>148</td>
+      <td><a href="TIU_TEMPLATE_GETLINK">TIU TEMPLATE GETLINK</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>149</td>
+      <td><a href="TIU_TEMPLATE_SET_DEFAULTS">TIU TEMPLATE SET DEFAULTS</a></td>
+      <td>Non-Clinical</td>
+      <td>Parameters</td>
+      <td>CHANGE</td>
+    </tr>
+    <tr>
+      <td>150</td>
+      <td><a href="XUS_GET_USER_INFO">XUS GET USER INFO</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>151</td>
+      <td><a href="XUS_INTRO_MSG">XUS INTRO MSG</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>152</td>
+      <td><a href="XUS_PKI_GET_UPN">XUS PKI GET UPN</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+    <tr>
+      <td>153</td>
+      <td><a href="XWB_GET_BROKER_INFO">XWB GET BROKER INFO</a></td>
+      <td>Non-Clinical</td>
+      <td>Files</td>
+      <td>READ</td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:30 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

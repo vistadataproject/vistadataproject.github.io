@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--vdm--sign_symptoms-120_83"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">VDM</a> » Sign_symptoms-120_83<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="signsymptoms-12083">Sign/symptoms (120.83)</h1>
+<p>A listing of possible allergic reactions.   Per VHA directive XXX, this file has been “locked down” by Data Standardization (DS).  The file definition (i.e. data dictionary) shall not be modified.  All additions, changes and deletions to entries in the file shall be done by Enterprise Reference Terminology (ERT) using the Master File Server (MFS), provided by Common Services (CS).  Creating and/or editing locally defined fields in the file are not permitted.  Use of locally defined fields that were created prior to VHA Directive XXX shall not be supported.</p>
+
+<p><strong>Global:</strong> ^GMRD(120.83,</p>
+
+<p><strong>Domain:</strong> Non-Clinical</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>.01</td>
+      <td>A sign/symptom that can be associated with an allergy.</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>National Sign/symptom</strong><pre><code>  national_sign_symptom</code></pre></td>
+      <td>1</td>
+      <td>Indicates whether this sign/symptom has been released with the national<br />package or has been added locally.</td>
+      <td>ENUMERATION</td>
+      <td> </td>
+      <td>NATIONAL SIGN/SYMPTOM: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Synonym</strong><pre><code>  synonym</code></pre></td>
+      <td>2</td>
+      <td>A list of synonyms that can also be used to look up this sign/symptom.</td>
+      <td>STRING</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Master Entry For VUID</strong><pre><code>  master_entry_for_vuid</code></pre></td>
+      <td>99.98</td>
+      <td>This field identifies the Master entry for a VUID associated with<br />a Term/Concept.</td>
+      <td>BOOLEAN</td>
+      <td>REQUIRED</td>
+      <td>false: <em><strong>0</strong></em><br/>true: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>VUID</strong><pre><code>  vuid</code></pre></td>
+      <td>99.99</td>
+      <td>VHA Unique ID (VUID).  A unique meaningless integer assigned to<br />reference terms VHA wide.</td>
+      <td>STRING</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Effective Date/time</strong><pre><code>  effective_date_time</code></pre></td>
+      <td>99.991</td>
+      <td>Describes the pair status and effective date/time for each<br />reference term.</td>
+      <td>OBJECT</td>
+      <td> </td>
+      <td><a href="#Effective_Date_time-120_8399">Effective_Date_time-120_8399</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-files">Sub-Files</h2>
+<h3 id="effective-datetime-1208399"><a name="Effective_Date_time-120_8399"></a>Effective Date/time (120.8399)</h3>
+
+<dl>
+<dt>ID</dt><dd>Effective_Date_time-120_8399</dd></dl>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field Name</th>
+      <th>Field #</th>
+      <th>Description</th>
+      <th>Datatype</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Effective Date/time</strong><pre><code>  effective_date_time</code></pre></td>
+      <td>.01</td>
+      <td>This is the date/time when the status of the reference term was<br />established</td>
+      <td>DATE-TIME</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Status</strong><pre><code>  status</code></pre></td>
+      <td>.02</td>
+      <td>The status of a reference term is either ‘ACTIVE’ or ‘INACTIVE’.  If<br />‘ACTIVE’, then the term will be accessible by end-users to <br />document a particular patient event.  If ‘INACTIVE’, then the term will<br />only be accessible by the application to display legacy data.</td>
+      <td>ENUMERATION</td>
+      <td>REQUIRED</td>
+      <td>ACTIVE: <em><strong>1</strong></em><br/>INACTIVE: <em><strong>0</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:25 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

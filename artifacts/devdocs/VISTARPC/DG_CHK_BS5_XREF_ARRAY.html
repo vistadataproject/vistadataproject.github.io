@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VISTA RPC Documentation &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--native-rpcs--dg-chk-bs5-xref-array"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">Native RPCs</a> » DG CHK BS5 XREF ARRAY<br /></h4>
+<h1 id="dg-chk-bs5-xref-array">DG CHK BS5 XREF ARRAY</h1>
+
+<p>CHECKS IF OTHER PATIENTS ON ‘BS5’ XREF WITH SAME LAST NAMERETURN 1 OR 0 IN 1ST STRING (-1 IF BAD DFN OR NO ZERO NODE).RETURNS ARRAY NODES WHERE TEXT IS PRECEEDED BY 0 AND PATIENT DATAIS PRECEEDED BY 1.  PATIENT DATA WILL BE IN FOLLOWING FORMAT: 1^DFN^PATIENT NAME^DOB^SSN</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Label</td>
+      <td>GUIBS5A</td>
+    </tr>
+    <tr>
+      <td>MUMPS Implementation</td>
+      <td><a href="http://code.osehra.org/dox/Routine_DPTLK6_source.html">DPTLK6</a></td>
+    </tr>
+    <tr>
+      <td>Return Type</td>
+      <td>ARRAY</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="input-parameters">Input Parameters</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Maximum Data Length</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DFN</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td>true</td>
+      <td>PATIENT FILE IEN</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="mumps-method-description">MUMPS Method Description</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Method</td>
+      <td><a href="http://code.osehra.org/dox/Routine_DPTLK6_source.html">GUIBS5A^DPTLK6</a></td>
+    </tr>
+    <tr>
+      <td>Method Comment</td>
+      <td>RPC checks if other patients on "BS5" xref</td>
+    </tr>
+    <tr>
+      <td>Input Parameters</td>
+      <td>DFN</td>
+    </tr>
+    <tr>
+      <td>First Comment</td>
+      <td><pre><code> with same last name<br/> returns 1 or 0 in 1st string (or -1 if bad DFN or no zero node)<br/> if 1 returns array nodes where<br/> text is preceeded by 0 (0^<text>) <br/> and patient data is preceeded by 1 (1^DFN^patient name^DOB^SSN)<br/> return type:  global array<br/> parameter:  ien of Patient file</code></pre></td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td><pre><code> K GUIDATA<br/> I '$G(DFN) S GUIDATA(1)=-1 Q<br/> I '$D(^DPT(DFN,0)) S GUIDATA(1)=-1 Q<br/> I '$$BS5^DPTLK5(DFN) S GUIDATA(1)=0 Q<br/> K ^TMP("DPTLK6",$J)<br/> S ^TMP("DPTLK6",$J,1)=1<br/> N DPT0,DPTNME,DPTSSN,DPTBS5,DPTLAST,DPTIEN,DPTCNT,DPTDOB,DPTSSN1<br/> S DPT0=^DPT(DFN,0)<br/> S DPTNME=$E(DPT0,1),DPTSSN=$E($P(DPT0,U,9),6,9)<br/> S DPTBS5=DPTNME_DPTSSN<br/> S DPTLAST=$P($P(DPT0,U),",")<br/> S ^TMP("DPTLK6",$J,2)="0^There is more than one patient whose last name is "_DPTLAST<br/> S ^TMP("DPTLK6",$J,3)="0^and whose social security number ends with "_DPTSSN<br/> S DPTCNT=3<br/> S DPTIEN=0<br/> F  S DPTIEN=$O(^DPT("BS5",DPTBS5,DPTIEN)) Q:'DPTIEN  D<br/> .S DPT0=$G(^DPT(DPTIEN,0)),DPTNME=$P($P(DPT0,U),",")<br/> .Q:DPTNME'=DPTLAST<br/> .S DPTNME=$P(DPT0,U)<br/> .I $T(DOB^DPTLK1)'="" S DPTDOB=$$DOB^DPTLK1(DPTIEN,2),DPTSSN1=$$SSN^DPTLK1(DPTIEN)<br/> .E  S DPTDOB=$P(DPT0,U,3),DPTSSN1=$P(DPT0,U,9)<br/> .S DPTCNT=DPTCNT+1<br/> .S ^TMP("DPTLK6",$J,DPTCNT)="1"_U_DPTIEN_U_DPTNME_U_DPTDOB_U_DPTSSN1<br/> S DPTCNT=DPTCNT+1<br/> S ^TMP("DPTLK6",$J,DPTCNT)="0^Are you sure you wish to continue?"<br/> M GUIDATA=^TMP("DPTLK6",$J)<br/> K ^TMP("DPTLK6",$J)</code></pre></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="cprs">CPRS</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>File Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pascal File</td>
+      <td><a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fPtSel.pas">fPtSel.pas</a></td>
+    </tr>
+    <tr>
+      <td>Pascal File</td>
+      <td><a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas">rCore.pas</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:26 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

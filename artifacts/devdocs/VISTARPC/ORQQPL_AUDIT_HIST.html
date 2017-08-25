@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VISTA RPC Documentation &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--native-rpcs--orqqpl-audit-hist"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">Native RPCs</a> » ORQQPL AUDIT HIST<br /></h4>
+<h1 id="orqqpl-audit-hist">ORQQPL AUDIT HIST</h1>
+
+<p>RETURN PROBLEM AUDIT HISTORY</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Label</td>
+      <td>HIST</td>
+    </tr>
+    <tr>
+      <td>MUMPS Implementation</td>
+      <td><a href="http://code.osehra.org/dox/Routine_ORQQPL2_source.html">ORQQPL2</a></td>
+    </tr>
+    <tr>
+      <td>Return Type</td>
+      <td>ARRAY</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="input-parameters">Input Parameters</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Maximum Data Length</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GMPIFN</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td> </td>
+      <td>INTERNAL FILE NUMBER FOR PROBLEM</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="mumps-method-description">MUMPS Method Description</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Method</td>
+      <td><a href="http://code.osehra.org/dox/Routine_ORQQPL2_source.html">HIST^ORQQPL2</a></td>
+    </tr>
+    <tr>
+      <td>Method Comment</td>
+      <td>GET AUDIT HISTORY</td>
+    </tr>
+    <tr>
+      <td>Input Parameters</td>
+      <td>GMPIFN</td>
+    </tr>
+    <tr>
+      <td>First Comment</td>
+      <td><pre><code> taken from EN^GMPLDISP</code></pre></td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td><pre><code> N IDT,AIFN,S,ORDT,TXT,I,L,GMPDT,LCNT<br/> S LCNT=0<br/> I +$O(^GMPL(125.8,"AD",GMPIFN,0))'>0 D  Q  ;BAIL OUT - NO CHANGES<br/> . S RETURN(0)="NONE"<br/> S IDT=""<br/> F  S IDT=$O(^GMPL(125.8,"AD",GMPIFN,IDT)) Q:IDT'>0  D<br/> . S AIFN=""<br/> . F  S AIFN=$O(^GMPL(125.8,"AD",GMPIFN,IDT,AIFN)) Q:AIFN'>0  D<br/> .. N FLD,GMPL0 S GMPL0=^GMPL(125.8,AIFN,0),FLD=$P(GMPL0,U,2)<br/> .. Q:(FLD=80201)!(FLD=80202)!(FLD=80002)<br/> .. D DT^GMPLHIST<br/> S S="",I=0,TXT=""<br/> F  S S=$O(GMPDT(S)) Q:S=""  D<br/> . S L=GMPDT(S,0)<br/> . I $L(L,": ")>1 D  Q  ; does line begin with date? (hope ": " can't be part of text)<br/> .. D FLUSH(.RETURN,.I,$G(ORDT),$G(TXT))<br/> .. S ORDT=$P(L,": ") ; get new date<br/> .. S TXT=$$STRIP($P(L,": ",2,999)) ; start new text string<br/> . S TXT=TXT_" "_$$STRIP(L)  ; line does not begin with date, so add to existing text line<br/> I '$D(RETURN(0)) S RETURN(0)=I<br/> D FLUSH(.RETURN,.I,$G(ORDT),$G(TXT))</code></pre></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="cprs">CPRS</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>File Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pascal File</td>
+      <td><a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas">rProbs.pas</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:26 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

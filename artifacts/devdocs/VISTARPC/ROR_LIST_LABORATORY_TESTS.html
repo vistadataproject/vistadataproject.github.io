@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VISTA RPC Documentation &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--native-rpcs--ror-list-laboratory-tests"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">Native RPCs</a> » ROR LIST LABORATORY TESTS<br /></h4>
+<h1 id="ror-list-laboratory-tests">ROR LIST LABORATORY TESTS</h1>
+
+<p>The ROR LIST LABORATORY TESTS remote procedure returns a list of laboratory tests (defined in the LABORATORY TEST file), which conform the criteria.</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Label</td>
+      <td>LABTLIST</td>
+    </tr>
+    <tr>
+      <td>MUMPS Implementation</td>
+      <td><a href="http://code.osehra.org/dox/Routine_RORRP018_source.html">RORRP018</a></td>
+    </tr>
+    <tr>
+      <td>Return Type</td>
+      <td>GLOBAL ARRAY</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="input-parameters">Input Parameters</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Maximum Data Length</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SUBSCR</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td> </td>
+      <td>List of test subscripts separated by commas (internal values of the SUBSCRIPT field of the LABORATORY TEST file):   AU  Autopsy  BB  Blood Bank  CH  CHEM, HEM, TOX, SER, RIA, ETC.  CY  Cytology  EM  Electronic Microscopy  MI  Microbiology  SP  Surgical Pathology  WK  Workload  Only tests of the types defined by this parameter are selected by theremote procedure. By default ($G(SUBSCR)=""), all tests are selected.</td>
+    </tr>
+    <tr>
+      <td>PART</td>
+      <td>LITERAL</td>
+      <td>30</td>
+      <td> </td>
+      <td>The partial match restriction.</td>
+    </tr>
+    <tr>
+      <td>FLAGS</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td> </td>
+      <td>Flags that control the execution (can be combined):   B  Backwards. Traverses the index in the opposite     direction of normal traversal.   P  Include panels (by default, the panels are     excluded from the list)</td>
+    </tr>
+    <tr>
+      <td>NUMBER</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td> </td>
+      <td>Maximum number of entries to return. A value of "*" or no value in this parameter designates all entries.</td>
+    </tr>
+    <tr>
+      <td>FROM</td>
+      <td>LITERAL</td>
+      <td> </td>
+      <td> </td>
+      <td>The index entry(s) from which to begin the list  ^01: FromName  ^02: FromIEN  For example, a FROM value of "BI" would list entries following BI. You canuse the 2-nd and 3-rd "^"- pieces of the Results[0] to continue thelisting in the subsequent procedure calls.  NOTE: The FROM value itself is not included in the      resulting list.  See description of the LIST^DIC for more details about the PART, NUMBERand FROM parameters.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:26 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

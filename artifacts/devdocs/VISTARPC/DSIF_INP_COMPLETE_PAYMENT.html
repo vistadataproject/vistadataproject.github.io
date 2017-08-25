@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      VISTA RPC Documentation &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+            <a href="/artifacts/devdocs">DevDocs</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--native-rpcs--dsif-inp-complete-payment"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">Native RPCs</a> » DSIF INP COMPLETE PAYMENT<br /></h4>
+<h1 id="dsif-inp-complete-payment">DSIF INP COMPLETE PAYMENT</h1>
+
+<p>Logic cloned from FBCHEAP to complete a CH payment</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Label</td>
+      <td>COMP</td>
+    </tr>
+    <tr>
+      <td>MUMPS Implementation</td>
+      <td><a href="http://code.osehra.org/dox/Routine_DSIFEAP_source.html">DSIFEAP</a></td>
+    </tr>
+    <tr>
+      <td>Return Type</td>
+      <td>GLOBAL ARRAY</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="input-parameters">Input Parameters</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Maximum Data Length</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DATA</td>
+      <td>LIST</td>
+      <td>25</td>
+      <td>true</td>
+      <td>; [<em>n should start with 1](Req - DATA(</em>InvIEN,n)=   1 ^ Invoice Date Received (Opt - FM Date)   2 ^ Vendor (Req - IEN to file 161.2 or changed)   4 ^ Pointer to 7078 or 583 (format: "IEN;FB7078("  or "IEN;FB583(" )   5 ^ Treatment from date (Opt - FM date);1 (Special flag for        treatment dates) (1 means bypass the treatment date verification       and allow the user to input any date)   6 ^ Treatment to date (Opt - FM date) 6.6 ^ BILLED CHARGES   7 ^ AMOUNT CLAIMED   8 ^ AMOUNT PAID   11 ^ FEE PROGRAM (Req)  Pointer to 161.8                         15 ^ New Batch IEN (Opt - if rejects) ;           20 ^ Batch IEN  24 ^ DISCHARGE DRG (Opt if Pricex flag=1, same as 24.5) 24.5 ^ DRG Weight (Req - Type a Number between 0 and 999.9999)  26 ^ NVH PRICER AMOUNT  56 ^ FPPS CLAIM ID (Opt - Enter a non-zero number from 1 to            32 digits long, 0 decimal digits)  57 ^ FPPS LINE ITEM (Opt - This response must be a number or             a list or range or ALL, e.g., 1,3,5 or 2-4,8) Note, the following have 3 pieces:     58^.01^ Adj Reason (Req if Amount Paid not equal to Amount          Claimed - Pntr to ADJUSTMENT REASON File #161.91)    58^1^Adj Group (Req as Adj Reason - Pntr to ADJUSTMENT GROUP File           #161.92)    58^2^Adj Amount (Req as Adj Reason - Numeric : Amount Claimed -           Amount Paid)    59^Seq #(1 or 2)^Remittance Remark (Opt - Pntr to REMITTANCE REMARK               File #161.93)        (For Inpatient Invoices there is a max of 2 remarks) *InvIEN = Invoice IEN (file 162.5)</td>
+    </tr>
+    <tr>
+      <td>PRICEX</td>
+      <td>LITERAL</td>
+      <td>1</td>
+      <td>true</td>
+      <td>Invoice Pricer exempt flag (1 - Yes, Null for no)</td>
+    </tr>
+    <tr>
+      <td>MEDICARE ID</td>
+      <td>LITERAL</td>
+      <td>25</td>
+      <td>true</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:26 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>
