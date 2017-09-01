@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--cmop_system"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Cmop_System<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="cmop_system">Cmop_System</h1>
+
+<h3 id="cmop-system">Cmop System</h3>
+
+<p>The system parameters in this file manage operations of the Consolidated 
+Mail Outpatient Pharmacy for the medical center. This information controls
+the transmission of data to the Consolidated Mail Outpatient Pharmacy
+host facility selected by the medical center. Information in this file 
+must be entered or edited ONLY through the Consolidated Mail Outpatient 
+Pharmacy package options.</p>
+
+<p><strong>Fileman ID:</strong> 550</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Cmop_System-550">Cmop_System-550</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 12</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 4</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#activateInactivateDtTm">Activate Inactivate Dt Tm</a></td>
+      <td>activateInactivateDtTm</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#autoTransmit">Auto Transmit</a></td>
+      <td>autoTransmit</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="#autoTransmitCs">Auto Transmit Cs</a></td>
+      <td>autoTransmitCs</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><a href="#purgeDtTm">Purge Dt Tm</a></td>
+      <td>purgeDtTm</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>System</strong><pre><code>  system</code></pre></td>
+      <td>STRING</td>
+      <td>system</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Status</strong><pre><code>  status</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>status</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td>0: <em><strong>ACTIVE</strong></em><br/>1: <em><strong>INACTIVE</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Xmit Status</strong><pre><code>  xmitStatus</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>xmit_status</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td>0: <em><strong>DATA RECOVERY </strong></em><br/>1: <em><strong>NO CURRENT TRANSMISSION</strong></em><br/>2: <em><strong>TRANSMITTING DATA</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Cmop Domain</strong><pre><code>  cmopDomain</code></pre></td>
+      <td>POINTER</td>
+      <td>cmop_domain</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td><a href="../VDM/Domain-4_2">Domain-4_2</a></td>
+    </tr>
+    <tr>
+      <td><strong>Activate/inactivate Dt/tm</strong><pre><code>  activateInactivateDtTm</code></pre></td>
+      <td>OBJECT</td>
+      <td>activate_inactivate_dt_tm</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#activateInactivateDtTm">activateInactivateDtTm</a></td>
+    </tr>
+    <tr>
+      <td><strong>Last Batch Transmitted</strong><pre><code>  lastBatchTransmitted</code></pre></td>
+      <td>POINTER</td>
+      <td>last_batch_transmitted</td>
+      <td> </td>
+      <td> </td>
+      <td>Cmop_Transmission-550_2</td>
+    </tr>
+    <tr>
+      <td><strong>Auto Transmit</strong><pre><code>  autoTransmit</code></pre></td>
+      <td>OBJECT</td>
+      <td>auto_transmit</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#autoTransmit">autoTransmit</a></td>
+    </tr>
+    <tr>
+      <td><strong>Purge Dt/tm</strong><pre><code>  purgeDtTm</code></pre></td>
+      <td>OBJECT</td>
+      <td>purge_dt_tm</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#purgeDtTm">purgeDtTm</a></td>
+    </tr>
+    <tr>
+      <td><strong>Task Number</strong><pre><code>  taskNumber</code></pre></td>
+      <td>NUMERIC</td>
+      <td>task_number</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Auto Transmit Cs</strong><pre><code>  autoTransmitCs</code></pre></td>
+      <td>OBJECT</td>
+      <td>auto_transmit_cs</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#autoTransmitCs">autoTransmitCs</a></td>
+    </tr>
+    <tr>
+      <td><strong>Non-cs Days To Transmit</strong><pre><code>  noncsDaysToTransmit</code></pre></td>
+      <td>NUMERIC</td>
+      <td>noncs_days_to_transmit</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Cs Days To Transmit</strong><pre><code>  csDaysToTransmit</code></pre></td>
+      <td>NUMERIC</td>
+      <td>cs_days_to_transmit</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-activate-inactivate-dt-tm"><a name="activateInactivateDtTm"></a>1. Activate Inactivate Dt Tm</h3>
+
+<p><strong>Field ID:</strong> activateInactivateDtTm</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Activate/inactivate Dt/tm</strong><pre><code>  activateInactivateDtTm</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>activate_inactivate_dt_tm</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Initiator</strong><pre><code>  initiator</code></pre></td>
+      <td>POINTER</td>
+      <td>initiator</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Cmop Response Dt/tm</strong><pre><code>  cmopResponseDtTm</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>cmop_response_dt_tm</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Cmop Response</strong><pre><code>  cmopResponse</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>cmop_response</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>DISAPPROVED</strong></em><br/>1: <em><strong>NOTIFICATION RECEIVED</strong></em><br/>2: <em><strong>APPROVED</strong></em><br/>3: <em><strong>PENDING</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Action Type</strong><pre><code>  actionType</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>action_type</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>INACTIVATION NOTICE</strong></em><br/>1: <em><strong>ACTIVATION REQUEST</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Remote Initiator</strong><pre><code>  remoteInitiator</code></pre></td>
+      <td>STRING</td>
+      <td>remote_initiator</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-auto-transmit"><a name="autoTransmit"></a>2. Auto Transmit</h3>
+
+<p><strong>Field ID:</strong> autoTransmit</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Auto Transmit</strong><pre><code>  autoTransmit</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>auto_transmit</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>YES</strong></em><br/>1: <em><strong>NO</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Queued To Begin</strong><pre><code>  queuedToBegin</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>queued_to_begin</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Scheduling Frequency(hrs)</strong><pre><code>  schedulingFrequencyhrs</code></pre></td>
+      <td>NUMERIC</td>
+      <td>scheduling_frequencyhrs</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Next Transmission Time</strong><pre><code>  nextTransmissionTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>next_transmission_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Scheduled By</strong><pre><code>  scheduledBy</code></pre></td>
+      <td>POINTER</td>
+      <td>scheduled_by</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Task Number</strong><pre><code>  taskNumber</code></pre></td>
+      <td>NUMERIC</td>
+      <td>task_number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Number Of Days To Transmit</strong><pre><code>  numberOfDaysToTransmit</code></pre></td>
+      <td>NUMERIC</td>
+      <td>number_of_days_to_transmit</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="3-auto-transmit-cs"><a name="autoTransmitCs"></a>3. Auto Transmit Cs</h3>
+
+<p><strong>Field ID:</strong> autoTransmitCs</p>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Auto Transmit Cs</strong><pre><code>  autoTransmitCs</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>auto_transmit_cs</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>YES</strong></em><br/>1: <em><strong>NO</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Queued To Begin</strong><pre><code>  queuedToBegin</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>queued_to_begin</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Scheduling Frequency (hrs)</strong><pre><code>  schedulingFrequencyHrs</code></pre></td>
+      <td>NUMERIC</td>
+      <td>scheduling_frequency_hrs</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Next Transmission Time</strong><pre><code>  nextTransmissionTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>next_transmission_time</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Scheduled By</strong><pre><code>  scheduledBy</code></pre></td>
+      <td>POINTER</td>
+      <td>scheduled_by</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Task Number</strong><pre><code>  taskNumber</code></pre></td>
+      <td>NUMERIC</td>
+      <td>task_number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Number Of Days To Transmit</strong><pre><code>  numberOfDaysToTransmit</code></pre></td>
+      <td>NUMERIC</td>
+      <td>number_of_days_to_transmit</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="4-purge-dt-tm"><a name="purgeDtTm"></a>4. Purge Dt Tm</h3>
+
+<p><strong>Field ID:</strong> purgeDtTm</p>
+
+<h4 id="properties-4">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Purge Dt/tm</strong><pre><code>  purgeDtTm</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>purge_dt_tm</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Total Orders Purged</strong><pre><code>  totalOrdersPurged</code></pre></td>
+      <td>NUMERIC</td>
+      <td>total_orders_purged</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Start Seq #</strong><pre><code>  startSeqNumber</code></pre></td>
+      <td>NUMERIC</td>
+      <td>start_seq_number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>End Seq #</strong><pre><code>  endSeqNumber</code></pre></td>
+      <td>NUMERIC</td>
+      <td>end_seq_number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

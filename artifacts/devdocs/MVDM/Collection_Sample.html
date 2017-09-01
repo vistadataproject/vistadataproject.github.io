@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--collection_sample"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Collection_Sample<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="collection_sample">Collection_Sample</h1>
+
+<h3 id="collection-sample">Collection Sample</h3>
+
+<p>Collection samples for laboratory specimens.</p>
+
+<p><strong>Fileman ID:</strong> 62</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Collection_Sample-62">Collection_Sample-62</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 14</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>DATE-TIME</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 4</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#collectionWkldCode">Collection Wkld Code</a></td>
+      <td>collectionWkldCode</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#labTest">Lab Test</a></td>
+      <td>labTest</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="#sctStatusDate">Sct Status Date</a></td>
+      <td>sctStatusDate</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><a href="#wkldCode">Wkld Code</a></td>
+      <td>wkldCode</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>STRING</td>
+      <td>name</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Default Specimen</strong><pre><code>  defaultSpecimen</code></pre></td>
+      <td>POINTER</td>
+      <td>default_specimen</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Topography_Field-61">Topography_Field-61</a></td>
+    </tr>
+    <tr>
+      <td><strong>Tube Top Color</strong><pre><code>  tubeTopColor</code></pre></td>
+      <td>STRING</td>
+      <td>tube_top_color</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Volume Large</strong><pre><code>  volumeLarge</code></pre></td>
+      <td>NUMERIC</td>
+      <td>volume_large</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Volume Small</strong><pre><code>  volumeSmall</code></pre></td>
+      <td>NUMERIC</td>
+      <td>volume_small</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lab Section</strong><pre><code>  labSection</code></pre></td>
+      <td>POINTER</td>
+      <td>lab_section</td>
+      <td> </td>
+      <td> </td>
+      <td>Lab_Section-62_2</td>
+    </tr>
+    <tr>
+      <td><strong>Can Lab Collect</strong><pre><code>  canLabCollect</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>can_lab_collect</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Synonym</strong><pre><code>  synonym</code></pre></td>
+      <td>STRING</td>
+      <td>synonym</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Snomed Ct Id</strong><pre><code>  snomedCtId</code></pre></td>
+      <td>STRING</td>
+      <td>snomed_ct_id</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Sct Code Status</strong><pre><code>  sctCodeStatus</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>sct_code_status</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td>0: <em><strong>SYNONYM</strong></em><br/>1: <em><strong>NO APPLICABLE MAPPING</strong></em><br/>2: <em><strong>NEW TERM PENDING LEXICON UPDATE</strong></em><br/>3: <em><strong>ERROR</strong></em><br/>4: <em><strong>STS REQUEST NEW CODE</strong></em><br/>5: <em><strong>PREFERRED TERM</strong></em><br/>6: <em><strong>LOCAL</strong></em><br/>7: <em><strong>REFERRED</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Sct Top Concept</strong><pre><code>  sctTopConcept</code></pre></td>
+      <td>POINTER</td>
+      <td>sct_top_concept</td>
+      <td> </td>
+      <td> </td>
+      <td>Lab_Electronic_Codes-64_061</td>
+    </tr>
+    <tr>
+      <td><strong>Sct Status Date</strong><pre><code>  sctStatusDate</code></pre></td>
+      <td>OBJECT</td>
+      <td>sct_status_date</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#sctStatusDate">sctStatusDate</a></td>
+    </tr>
+    <tr>
+      <td><strong>Inactive Date</strong><pre><code>  inactiveDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>inactive_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Collection Wkld Code</strong><pre><code>  collectionWkldCode</code></pre></td>
+      <td>OBJECT</td>
+      <td>collection_wkld_code</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#collectionWkldCode">collectionWkldCode</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-collection-wkld-code"><a name="collectionWkldCode"></a>1. Collection Wkld Code</h3>
+
+<p><strong>Field ID:</strong> collectionWkldCode</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Accession Area</strong><pre><code>  accessionArea</code></pre></td>
+      <td>POINTER</td>
+      <td>accession_area</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td><a href="../VDM/Accession-68">Accession-68</a></td>
+    </tr>
+    <tr>
+      <td><strong>Lab Test</strong><pre><code>  labTest</code></pre></td>
+      <td>OBJECT</td>
+      <td>lab_test</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#labTest">labTest</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-lab-test"><a name="labTest"></a>2. Lab Test</h3>
+
+<p><strong>Field ID:</strong> labTest</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Lab Test</strong><pre><code>  labTest</code></pre></td>
+      <td>POINTER</td>
+      <td>lab_test</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td><a href="../VDM/Laboratory_Test-60">Laboratory_Test-60</a></td>
+    </tr>
+    <tr>
+      <td><strong>Wkld Code</strong><pre><code>  wkldCode</code></pre></td>
+      <td>OBJECT</td>
+      <td>wkld_code</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#wkldCode">wkldCode</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="3-sct-status-date"><a name="sctStatusDate"></a>3. Sct Status Date</h3>
+
+<p><strong>Field ID:</strong> sctStatusDate</p>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Sct Status Date</strong><pre><code>  sctStatusDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>sct_status_date</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Sct Status Changed To</strong><pre><code>  sctStatusChangedTo</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>sct_status_changed_to</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>SYNONYM</strong></em><br/>1: <em><strong>NO APPLICABLE MAPPING</strong></em><br/>2: <em><strong>NEW TERM PENDING LEXICON UPDATE</strong></em><br/>3: <em><strong>ERROR</strong></em><br/>4: <em><strong>STS REQUEST NEW CODE</strong></em><br/>5: <em><strong>PREFERRED TERM</strong></em><br/>6: <em><strong>LOCAL</strong></em><br/>7: <em><strong>REFERRED</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Sct Transaction Number</strong><pre><code>  sctTransactionNumber</code></pre></td>
+      <td>STRING</td>
+      <td>sct_transaction_number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Sct Status User</strong><pre><code>  sctStatusUser</code></pre></td>
+      <td>POINTER</td>
+      <td>sct_status_user</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Sct Comment Text</strong><pre><code>  sctCommentText</code></pre></td>
+      <td>STRING</td>
+      <td>sct_comment_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="4-wkld-code"><a name="wkldCode"></a>4. Wkld Code</h3>
+
+<p><strong>Field ID:</strong> wkldCode</p>
+
+<h4 id="properties-4">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Wkld Code</strong><pre><code>  wkldCode</code></pre></td>
+      <td>POINTER</td>
+      <td>wkld_code</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>Wkld_Code-64</td>
+    </tr>
+    <tr>
+      <td><strong>Test Multiply Factor</strong><pre><code>  testMultiplyFactor</code></pre></td>
+      <td>NUMERIC</td>
+      <td>test_multiply_factor</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

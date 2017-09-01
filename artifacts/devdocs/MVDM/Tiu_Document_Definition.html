@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--tiu_document_definition"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Tiu_Document_Definition<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="tiu_document_definition">Tiu_Document_Definition</h1>
+
+<h3 id="tiu-document-definition">TIU Document Definition</h3>
+
+<p>This file stores Document Definitions, which identify and define behavior
+for documents stored in the TIU DOCUMENTS FILE (#8925).  For consistency
+with the V-file schema, it may be viewed as the "Attribute Dictionary" for
+the Text Integration Utilities.</p>
+
+<p>It also stores Objects, which can be embedded in a Document Definition's
+Boilerplate Text (Overprint). Objects contain M code which gets a piece of
+data and inserts it in the document's Boilerplate Text when a document is
+entered.</p>
+
+<p>Warning: objects embedded in boilerplate text are looked up by multiple
+index (i.e. DIC(0) contains 'M'). Current code (see routine CHECK^TIUFLF3)
+checks all present indexes to make sure object names, abbreviations and
+print names are not ambiguous for this lookup. If new indexes are added,
+this code MUST BE UPDATED to check the new index as well.</p>
+
+<p>Some entries in this file are developed Nationally and exported across the
+country.  Others are created by local sites.  Entries in the first
+category are marked National Standard and are not editable by sites.</p>
+
+<p>This file does NOT allow multiple entries OF THE SAME TYPE with the same
+name.  That is, within a given Type, there are no duplicate names. (This
+refers to the .01 field, the Technical name of the entry.)</p>
+
+<p>This file does not allow a parent to have items with the same name, even
+if the items have different internal file numbers (i.e. are different file
+entries).  Again, this refers to the .01 Technical name of the entry.</p>
+
+<p>Because of ownership considerations, the file does NOT allow an entry to
+be an item under more than 1 parent.  If the same item is desired under
+more than 1 parent, the item must be copied into a new entry.  There is
+one exception:  Document Definitions of Type Component which have been
+marked Shared may have more than one parent.</p>
+
+<p>The Document Definition Utility TIUF categorizes certain fields as Basic,
+Technical, or Upload, and displays these fields together as a group when
+user edits or views a Document Definition. BASIC fields include Name,
+Abbreviation, Print Name, Type, Personal Owner, Class Owner, Status, In
+Use, Shared, Orphan, Has Boiltxt, National Standard, OK to Distribute, and
+Suppress Visit Selection. TECHNICAL fields include Entry Action, Exit
+Action, Edit Template, Print Method, Print Form Header, Print Form Number,
+Print Group, Allow Custom Form Headers, Visit Linkage Method, Validation
+Method, and Object Method. UPLOAD fields include Upload Target File, Laygo
+Allowed, Target Text Field Subscript, Upload Look-up Method, Upload
+Post-Filing Code, Upload Filing Error Code, and multiples Upload Captioned
+ASCII Header and Upload Delimited ASCII Header.</p>
+
+<p>The Document Definition file contains extensive, detailed field
+descriptions. Likewise, some protocols (File 101) used in TIU have
+extensive and careful descriptions in the Protocol file. Many of these
+descriptions are used in TIU for online help. If it becomes necessary for
+a national programmer to edit these descriptions, the programmer should
+check to make sure all online help is still displayed properly.</p>
+
+<p>Users are expected to use the Document Definition Utility TIUF to enter,
+edit, and delete file entries.  In fact, the file prohibits the deletion
+of entries through generic Fileman Options.  It also prohibits the edit
+through generic Fileman of a few critical fields: Type, Status, Shared,
+and National Standard.  Adding and Deleting (but not editing) Items is
+also prohibited through generic Fileman options.  Abbreviation and Print
+Name of OBJECTS cannot be edited through generic Fileman Options.</p>
+
+<p>This does NOT imply that it is SAFE to use generic Fileman to edit other
+fields.  Users are cautioned that edit through generic Fileman bypasses
+many safeguards built in to the Document Definition Utility and can create
+havoc unless the user THOROUGHLY UNDERSTANDS the File and its uses.</p>
+
+<p>If users find needs which are not met through TIUF, please communicate
+them to the TIU development team.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>                           *****************
+</code></pre>
+</div>
+
+<p>WARNING: Using generic Fileman options to edit entries can cause SERIOUS
+database problems.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>                           ****************
+</code></pre>
+</div>
+
+<p><strong>Fileman ID:</strong> 8925.1</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Tiu_Document_Definition-8925_1">Tiu_Document_Definition-8925_1</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 50</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>DATE-TIME</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 5</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#dialog">Dialog</a></td>
+      <td>dialog</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#item">Item</a></td>
+      <td>item</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="#processingSteps">Processing Steps</a></td>
+      <td>processingSteps</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><a href="#uploadCaptionedAsciiHeader">Upload Captioned Ascii Header</a></td>
+      <td>uploadCaptionedAsciiHeader</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><a href="#uploadDelimitedAsciiHeader">Upload Delimited Ascii Header</a></td>
+      <td>uploadDelimitedAsciiHeader</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>STRING</td>
+      <td>name</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Abbreviation</strong><pre><code>  abbreviation</code></pre></td>
+      <td>STRING</td>
+      <td>abbreviation</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Print Name</strong><pre><code>  printName</code></pre></td>
+      <td>STRING</td>
+      <td>print_name</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Type</strong><pre><code>  type04</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>type-_04</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td>0: <em><strong>DOCUMENT CLASS</strong></em><br/>1: <em><strong>OBJECT</strong></em><br/>2: <em><strong>COMPONENT</strong></em><br/>3: <em><strong>CLASS</strong></em><br/>4: <em><strong>TITLE</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Personal Owner</strong><pre><code>  personalOwner</code></pre></td>
+      <td>POINTER</td>
+      <td>personal_owner</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Class Owner</strong><pre><code>  classOwner</code></pre></td>
+      <td>POINTER</td>
+      <td>class_owner</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td><a href="../VDM/Usr_Class-8930">Usr_Class-8930</a></td>
+    </tr>
+    <tr>
+      <td><strong>Status</strong><pre><code>  status</code></pre></td>
+      <td>POINTER</td>
+      <td>status</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td>TIU_Status-8925_6</td>
+    </tr>
+    <tr>
+      <td><strong>Shared</strong><pre><code>  shared</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>shared</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>National Standard</strong><pre><code>  nationalStandard</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>national_standard</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Posting Indicator</strong><pre><code>  postingIndicator</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>posting_indicator</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td>0: <em><strong>crisis note</strong></em><br/>1: <em><strong>warning</strong></em><br/>2: <em><strong>allergy/ADR</strong></em><br/>3: <em><strong>directive</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Upload Delimited Ascii Header</strong><pre><code>  uploadDelimitedAsciiHeader</code></pre></td>
+      <td>OBJECT</td>
+      <td>upload_delimited_ascii_header</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#uploadDelimitedAsciiHeader">uploadDelimitedAsciiHeader</a></td>
+    </tr>
+    <tr>
+      <td><strong>Upload Target File</strong><pre><code>  uploadTargetFile</code></pre></td>
+      <td>POINTER</td>
+      <td>upload_target_file</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/File-1">File-1</a></td>
+    </tr>
+    <tr>
+      <td><strong>Laygo Allowed</strong><pre><code>  laygoAllowed</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>laygo_allowed</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Target Text Field Subscript</strong><pre><code>  targetTextFieldSubscript</code></pre></td>
+      <td>STRING</td>
+      <td>target_text_field_subscript</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Boilerplate On Upload Enabled</strong><pre><code>  boilerplateOnUploadEnabled</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>boilerplate_on_upload_enabled</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Upload Captioned Ascii Header</strong><pre><code>  uploadCaptionedAsciiHeader</code></pre></td>
+      <td>OBJECT</td>
+      <td>upload_captioned_ascii_header</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#uploadCaptionedAsciiHeader">uploadCaptionedAsciiHeader</a></td>
+    </tr>
+    <tr>
+      <td><strong>Boilerplate Text</strong><pre><code>  boilerplateText</code></pre></td>
+      <td>STRING</td>
+      <td>boilerplate_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ok To Distribute</strong><pre><code>  okToDistribute</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>ok_to_distribute</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Suppress Visit Selection</strong><pre><code>  suppressVisitSelection</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>suppress_visit_selection</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Upload Look-up Method</strong><pre><code>  uploadLookupMethod</code></pre></td>
+      <td>STRING</td>
+      <td>upload_lookup_method</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Commit Action</strong><pre><code>  commitAction</code></pre></td>
+      <td>STRING</td>
+      <td>commit_action</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Release Action</strong><pre><code>  releaseAction</code></pre></td>
+      <td>STRING</td>
+      <td>release_action</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Verification Action</strong><pre><code>  verificationAction</code></pre></td>
+      <td>STRING</td>
+      <td>verification_action</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Delete Action</strong><pre><code>  deleteAction</code></pre></td>
+      <td>STRING</td>
+      <td>delete_action</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Package Reassignment Action</strong><pre><code>  packageReassignmentAction</code></pre></td>
+      <td>STRING</td>
+      <td>package_reassignment_action</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Upload Post-filing Code</strong><pre><code>  uploadPostfilingCode</code></pre></td>
+      <td>STRING</td>
+      <td>upload_postfiling_code</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Entry Action</strong><pre><code>  entryAction</code></pre></td>
+      <td>STRING</td>
+      <td>entry_action</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Exit Action</strong><pre><code>  exitAction</code></pre></td>
+      <td>STRING</td>
+      <td>exit_action</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Upload Filing Error Code</strong><pre><code>  uploadFilingErrorCode</code></pre></td>
+      <td>STRING</td>
+      <td>upload_filing_error_code</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Post-signature Code</strong><pre><code>  postsignatureCode</code></pre></td>
+      <td>STRING</td>
+      <td>postsignature_code</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Edit Template</strong><pre><code>  editTemplate</code></pre></td>
+      <td>STRING</td>
+      <td>edit_template</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Print Method</strong><pre><code>  printMethod</code></pre></td>
+      <td>STRING</td>
+      <td>print_method</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Print Form Header</strong><pre><code>  printFormHeader</code></pre></td>
+      <td>STRING</td>
+      <td>print_form_header</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Print Form Number</strong><pre><code>  printFormNumber</code></pre></td>
+      <td>STRING</td>
+      <td>print_form_number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Print Group</strong><pre><code>  printGroup</code></pre></td>
+      <td>NUMERIC</td>
+      <td>print_group</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Allow Custom Form Headers</strong><pre><code>  allowCustomFormHeaders</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>allow_custom_form_headers</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>On Browse Event</strong><pre><code>  onBrowseEvent</code></pre></td>
+      <td>STRING</td>
+      <td>on_browse_event</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>On Retract Event</strong><pre><code>  onRetractEvent</code></pre></td>
+      <td>STRING</td>
+      <td>on_retract_event</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Visit Linkage Method</strong><pre><code>  visitLinkageMethod</code></pre></td>
+      <td>STRING</td>
+      <td>visit_linkage_method</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Validation Method</strong><pre><code>  validationMethod</code></pre></td>
+      <td>STRING</td>
+      <td>validation_method</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Object Method</strong><pre><code>  objectMethod</code></pre></td>
+      <td>STRING</td>
+      <td>object_method</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Item</strong><pre><code>  item</code></pre></td>
+      <td>OBJECT</td>
+      <td>item</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#item">item</a></td>
+    </tr>
+    <tr>
+      <td><strong>Stat Auto Print Event</strong><pre><code>  statAutoPrintEvent</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>stat_auto_print_event</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Routine Auto Print Event</strong><pre><code>  routineAutoPrintEvent</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>routine_auto_print_event</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Processing Steps</strong><pre><code>  processingSteps</code></pre></td>
+      <td>OBJECT</td>
+      <td>processing_steps</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#processingSteps">processingSteps</a></td>
+    </tr>
+    <tr>
+      <td><strong>Dialog</strong><pre><code>  dialog</code></pre></td>
+      <td>OBJECT</td>
+      <td>dialog</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#dialog">dialog</a></td>
+    </tr>
+    <tr>
+      <td><strong>Timestamp</strong><pre><code>  timestamp</code></pre></td>
+      <td>STRING</td>
+      <td>timestamp</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Vha Enterprise Standard Title</strong><pre><code>  vhaEnterpriseStandardTitle</code></pre></td>
+      <td>POINTER</td>
+      <td>vha_enterprise_standard_title</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td>TIU_Vha_Enterprise_Standard_Title-8926_1</td>
+    </tr>
+    <tr>
+      <td><strong>Map Attempted</strong><pre><code>  mapAttempted</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>map_attempted</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Map Attempted By</strong><pre><code>  mapAttemptedBy</code></pre></td>
+      <td>POINTER</td>
+      <td>map_attempted_by</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-dialog"><a name="dialog"></a>1. Dialog</h3>
+
+<p><strong>Field ID:</strong> dialog</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Prompt</strong><pre><code>  prompt</code></pre></td>
+      <td>STRING</td>
+      <td>prompt</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Item Name</strong><pre><code>  itemName</code></pre></td>
+      <td>STRING</td>
+      <td>item_name</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Sequence</strong><pre><code>  sequence</code></pre></td>
+      <td>NUMERIC</td>
+      <td>sequence</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Field</strong><pre><code>  field</code></pre></td>
+      <td>STRING</td>
+      <td>field</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Required</strong><pre><code>  required</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>required</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Visible</strong><pre><code>  visible</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>visible</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Set Method</strong><pre><code>  setMethod</code></pre></td>
+      <td>STRING</td>
+      <td>set_method</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Windows Control</strong><pre><code>  windowsControl</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>windows_control</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>SimpleList</strong></em><br/>1: <em><strong>Edit</strong></em><br/>2: <em><strong>Memo</strong></em><br/>3: <em><strong>LongList</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Api Name</strong><pre><code>  apiName</code></pre></td>
+      <td>STRING</td>
+      <td>api_name</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Api Parameter #1</strong><pre><code>  apiParameterNumber1</code></pre></td>
+      <td>STRING</td>
+      <td>api_parameter_number1</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Windows Condition</strong><pre><code>  windowsCondition</code></pre></td>
+      <td>STRING</td>
+      <td>windows_condition</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Windows Default</strong><pre><code>  windowsDefault</code></pre></td>
+      <td>STRING</td>
+      <td>windows_default</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-item"><a name="item"></a>2. Item</h3>
+
+<p><strong>Field ID:</strong> item</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Item</strong><pre><code>  item</code></pre></td>
+      <td>POINTER</td>
+      <td>item</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Tiu_Document_Definition-8925_1">Tiu_Document_Definition-8925_1</a></td>
+    </tr>
+    <tr>
+      <td><strong>Mnemonic</strong><pre><code>  mnemonic</code></pre></td>
+      <td>STRING</td>
+      <td>mnemonic</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Sequence</strong><pre><code>  sequence</code></pre></td>
+      <td>NUMERIC</td>
+      <td>sequence</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Menu Text</strong><pre><code>  menuText</code></pre></td>
+      <td>STRING</td>
+      <td>menu_text</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="3-processing-steps"><a name="processingSteps"></a>3. Processing Steps</h3>
+
+<p><strong>Field ID:</strong> processingSteps</p>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Processing Step</strong><pre><code>  processingStep</code></pre></td>
+      <td>POINTER</td>
+      <td>processing_step</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Usr_Action-8930_8">Usr_Action-8930_8</a></td>
+    </tr>
+    <tr>
+      <td><strong>Sequence</strong><pre><code>  sequence</code></pre></td>
+      <td>NUMERIC</td>
+      <td>sequence</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Required?</strong><pre><code>  required</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>required</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>REQUIRED</strong></em><br/>1: <em><strong>OPTIONAL</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Resulting Status</strong><pre><code>  resultingStatus</code></pre></td>
+      <td>POINTER</td>
+      <td>resulting_status</td>
+      <td> </td>
+      <td> </td>
+      <td>Usr_Record_Status-8930_6</td>
+    </tr>
+    <tr>
+      <td><strong>Condition Text</strong><pre><code>  conditionText</code></pre></td>
+      <td>STRING</td>
+      <td>condition_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="4-upload-captioned-ascii-header"><a name="uploadCaptionedAsciiHeader"></a>4. Upload Captioned Ascii Header</h3>
+
+<p><strong>Field ID:</strong> uploadCaptionedAsciiHeader</p>
+
+<h4 id="properties-4">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Caption</strong><pre><code>  caption</code></pre></td>
+      <td>STRING</td>
+      <td>caption</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Item Name</strong><pre><code>  itemName</code></pre></td>
+      <td>STRING</td>
+      <td>item_name</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Field Number</strong><pre><code>  fieldNumber</code></pre></td>
+      <td>STRING</td>
+      <td>field_number</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lookup Local Variable Name</strong><pre><code>  lookupLocalVariableName</code></pre></td>
+      <td>STRING</td>
+      <td>lookup_local_variable_name</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Example Entry</strong><pre><code>  exampleEntry</code></pre></td>
+      <td>STRING</td>
+      <td>example_entry</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Clinician Must Dictate</strong><pre><code>  clinicianMustDictate</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>clinician_must_dictate</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Required Field?</strong><pre><code>  requiredField</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>required_field</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Transform Code</strong><pre><code>  transformCode</code></pre></td>
+      <td>STRING</td>
+      <td>transform_code</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="5-upload-delimited-ascii-header"><a name="uploadDelimitedAsciiHeader"></a>5. Upload Delimited Ascii Header</h3>
+
+<p><strong>Field ID:</strong> uploadDelimitedAsciiHeader</p>
+
+<h4 id="properties-5">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Header Piece</strong><pre><code>  headerPiece</code></pre></td>
+      <td>NUMERIC</td>
+      <td>header_piece</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Item Name</strong><pre><code>  itemName</code></pre></td>
+      <td>STRING</td>
+      <td>item_name</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Field Number</strong><pre><code>  fieldNumber</code></pre></td>
+      <td>STRING</td>
+      <td>field_number</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lookup Local Variable Name</strong><pre><code>  lookupLocalVariableName</code></pre></td>
+      <td>STRING</td>
+      <td>lookup_local_variable_name</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Example Entry</strong><pre><code>  exampleEntry</code></pre></td>
+      <td>STRING</td>
+      <td>example_entry</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Clinician Must Dictate</strong><pre><code>  clinicianMustDictate</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>clinician_must_dictate</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Required Field?</strong><pre><code>  requiredField</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>required_field</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Transform Code</strong><pre><code>  transformCode</code></pre></td>
+      <td>STRING</td>
+      <td>transform_code</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

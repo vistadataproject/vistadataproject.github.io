@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--reminder_dialog"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Reminder_Dialog<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="reminder_dialog">Reminder_Dialog</h1>
+
+<h3 id="reminder-dialog">Reminder Dialog</h3>
+
+<p>This file is used to define all of the components that work together to 
+define a reminder dialog. Reminder dialog definitions are used by the CPRS 
+GUI for reminder resolution.</p>
+
+<p>This file contains a combination of nationally distributed entries, local 
+auto-generated entries, site and VISN exchanged entries and local manually 
+created entries. Nationally distributed dialog, element, and group 
+entries have their name prefixed with VA-. Nationally distributed Prompts, 
+Forced Value, Result Groups, and Result Elements have their name prefixed 
+with PXRM. Entries in this file may be auto-generated via the Dialog 
+Management Menu option. Manually created dialog entries should use local 
+namespacing conventions. Nationally distributed entries will have their 
+class type defined as National. Entries created at the VISN level should be 
+defined as VISN and entries created at a site should be defined as Local.</p>
+
+<p>This file is similar to the option file where there are different types of 
+entries (reminder dialog, dialog elements (sentences), prompts, and groups 
+of elements, result elements and groups of result elements). Where an option 
+has menu items, the dialog file has components that are entered, with the 
+sequence field as the .01 field.</p>
+
+<p>A prompt is defined for PCE prompts, WH Notification Purpose, or as locally 
+created comment check-boxes. The prompts will not have any components within 
+them. PXRM-prefixed prompts are distributed in this file with the Clinical 
+Reminder package.</p>
+
+<p>A dialog element is defined primarily to represent sentences to display in 
+the CPRS window with a check-box. When the user checks the sentence off, the
+FINDING ITEM in the dialog element and the ADDITIONAL FINDINGS will be added 
+to the list of PCE updates, orders, WH Notification Purposes, and mental 
+health tests. The updates won't occur on the CPRS GUI until the user clicks 
+on the FINISH button. Dialog elements may have components added to them. 
+Auto-generated components will be based on the additional prompts defined in 
+the Finding Type Parameters. Once a dialog element is auto-generated, the 
+sites can modify them.</p>
+
+<p>Dialog elements may also be instructional text or a header. The FINDING ITEM 
+and components would not be defined in dialog elements.</p>
+
+<p>A dialog group is similar to menu options. It groups dialog elements and 
+dialog groups within its component multiple. The dialog group can be defined 
+with a finding item and a check-box. The components in the group can be 
+hidden from the CPRS GUI window until the dialog group is checked off.</p>
+
+<p>A result element contains special logic that uses information entered during 
+the resolution process to create a sentence to add to the progress note. The 
+special logic contains a CONDITION that, when true, will use the ALTERNATE 
+PROGRESS NOTE TEXT field to update the progress note. A separate result 
+element is used for each separate sentence needed. The result element is 
+only used with mental health test finding items. Default result elements are 
+distributed for common mental health tests, prefixed with PXRM and the 
+mental health test name. Sites may copy them and modify their local versions 
+as needed.</p>
+
+<p>A result group contains all of the result elements that need to be checked 
+to create sentences for one mental health test finding. The dialog element 
+for the test will have its RESULT GROUP/ELEMENT field defined with the 
+result group. Default result groups for mental health tests are distributed 
+with the Clinical Reminders package. Sites may copy them and modify their local 
+versions as needed.</p>
+
+<p>Sites should name locally created items according to their local naming 
+convention.</p>
+
+<p><strong>Fileman ID:</strong> 801.41</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Reminder_Dialog-801_41">Reminder_Dialog-801_41</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 45</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>DATE-TIME</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 3</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#checkboxSequence">Checkbox Sequence</a></td>
+      <td>checkboxSequence</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#components">Components</a></td>
+      <td>components</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="#editHistory">Edit History</a></td>
+      <td>editHistory</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>STRING</td>
+      <td>name</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Source Reminder</strong><pre><code>  sourceReminder</code></pre></td>
+      <td>POINTER</td>
+      <td>source_reminder</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td><a href="../VDM/Reminder_Definition-811_9">Reminder_Definition-811_9</a></td>
+    </tr>
+    <tr>
+      <td><strong>Disable</strong><pre><code>  disable</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>disable</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>DISABLE AND DO NOT SEND MESSAGE</strong></em><br/>1: <em><strong>DISABLE AND SEND MESSAGE</strong></em><br/>2: <em><strong>NO</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Type</strong><pre><code>  type4</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>type-4</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td>0: <em><strong>prompt</strong></em><br/>1: <em><strong>result group</strong></em><br/>2: <em><strong>forced value</strong></em><br/>3: <em><strong>result element</strong></em><br/>4: <em><strong>dialog element</strong></em><br/>5: <em><strong>reminder dialog</strong></em><br/>6: <em><strong>dialog group</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Caption</strong><pre><code>  caption</code></pre></td>
+      <td>STRING</td>
+      <td>caption</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Box</strong><pre><code>  box</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>box</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Number Of Indents</strong><pre><code>  numberOfIndents</code></pre></td>
+      <td>NUMERIC</td>
+      <td>number_of_indents</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Share Common Prompts</strong><pre><code>  shareCommonPrompts</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>share_common_prompts</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Group Entry</strong><pre><code>  groupEntry</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>group_entry</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>ONE OR MORE SELECTIONS</strong></em><br/>1: <em><strong>ONE SELECTION ONLY</strong></em><br/>2: <em><strong>NO SELECTION REQUIRED</strong></em><br/>3: <em><strong>ALL SELECTIONS ARE REQUIRED</strong></em><br/>4: <em><strong>NONE OR ONE SELECTION</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Components</strong><pre><code>  components</code></pre></td>
+      <td>OBJECT</td>
+      <td>components</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#components">components</a></td>
+    </tr>
+    <tr>
+      <td><strong>Resolution Type</strong><pre><code>  resolutionType</code></pre></td>
+      <td>POINTER</td>
+      <td>resolution_type</td>
+      <td> </td>
+      <td> </td>
+      <td>Reminder_Resolution_Status-801_9</td>
+    </tr>
+    <tr>
+      <td><strong>Finding Type</strong><pre><code>  findingType</code></pre></td>
+      <td>POINTER</td>
+      <td>finding_type</td>
+      <td> </td>
+      <td> </td>
+      <td>Reminder_Finding_Type_Parameter-801_45</td>
+    </tr>
+    <tr>
+      <td><strong>Finding Item</strong><pre><code>  findingItem</code></pre></td>
+      <td>POINTER</td>
+      <td>finding_item</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Education_Topics-9999999_09">Education_Topics-9999999_09</a><br /><a href="../VDM/Immunization-9999999_14">Immunization-9999999_14</a><br /><a href="../VDM/Skin_Test-9999999_28">Skin_Test-9999999_28</a><br /><a href="../VDM/Exam-9999999_15">Exam-9999999_15</a><br /><a href="../VDM/Health_Factors-9999999_64">Health_Factors-9999999_64</a><br /><a href="../VDM/Gmrv_Vital_Type-120_51">Gmrv_Vital_Type-120_51</a><br />Reminder_Taxonomy-811_2<br /><a href="../VDM/Order_Dialog-101_41">Order_Dialog-101_41</a><br /><a href="../VDM/Mh_Tests_And_Surveys-601_71">Mh_Tests_And_Surveys-601_71</a><br /><a href="../VDM/Wv_Notification_Purpose-790_404">Wv_Notification_Purpose-790_404</a></td>
+    </tr>
+    <tr>
+      <td><strong>Orderable Item</strong><pre><code>  orderableItem</code></pre></td>
+      <td>POINTER</td>
+      <td>orderable_item</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Orderable_Items-101_43">Orderable_Items-101_43</a></td>
+    </tr>
+    <tr>
+      <td><strong>Additional Findings</strong><pre><code>  additionalFindings</code></pre></td>
+      <td>POINTER</td>
+      <td>additional_findings</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Default Value</strong><pre><code>  defaultValue</code></pre></td>
+      <td>STRING</td>
+      <td>default_value</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Forced Value</strong><pre><code>  forcedValue</code></pre></td>
+      <td>STRING</td>
+      <td>forced_value</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Exclude From Progress Note</strong><pre><code>  excludeFromProgressNote</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>exclude_from_progress_note</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Prompt Caption</strong><pre><code>  promptCaption</code></pre></td>
+      <td>STRING</td>
+      <td>prompt_caption</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dialog/progress Note Text</strong><pre><code>  dialogProgressNoteText</code></pre></td>
+      <td>STRING</td>
+      <td>dialog_progress_note_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Alternate Progress Note Text</strong><pre><code>  alternateProgressNoteText</code></pre></td>
+      <td>STRING</td>
+      <td>alternate_progress_note_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Checkbox Sequence</strong><pre><code>  checkboxSequence</code></pre></td>
+      <td>OBJECT</td>
+      <td>checkbox_sequence</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#checkboxSequence">checkboxSequence</a></td>
+    </tr>
+    <tr>
+      <td><strong>Gui Process Id</strong><pre><code>  guiProcessId</code></pre></td>
+      <td>POINTER</td>
+      <td>gui_process_id</td>
+      <td> </td>
+      <td> </td>
+      <td>Reminder_Gui_Process-801_42</td>
+    </tr>
+    <tr>
+      <td><strong>Hide/show Group</strong><pre><code>  hideShowGroup</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>hide_show_group</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>HIDE</strong></em><br/>1: <em><strong>SHOW</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Suppress Checkbox</strong><pre><code>  suppressCheckbox</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>suppress_checkbox</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>SUPPRESS</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Indent Progress Note Text</strong><pre><code>  indentProgressNoteText</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>indent_progress_note_text</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>NO INDENT</strong></em><br/>1: <em><strong>INDENT</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Result Condition</strong><pre><code>  resultCondition</code></pre></td>
+      <td>STRING</td>
+      <td>result_condition</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Exclude Mh Test From Pn Text</strong><pre><code>  excludeMhTestFromPnText</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>exclude_mh_test_from_pn_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Class</strong><pre><code>  class</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>class</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>LOCAL</strong></em><br/>1: <em><strong>NATIONAL</strong></em><br/>2: <em><strong>VISN</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Sponsor</strong><pre><code>  sponsor</code></pre></td>
+      <td>POINTER</td>
+      <td>sponsor</td>
+      <td> </td>
+      <td> </td>
+      <td>Reminder_Sponsor-811_6</td>
+    </tr>
+    <tr>
+      <td><strong>Review Date</strong><pre><code>  reviewDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>review_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Edit History</strong><pre><code>  editHistory</code></pre></td>
+      <td>OBJECT</td>
+      <td>edit_history</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#editHistory">editHistory</a></td>
+    </tr>
+    <tr>
+      <td><strong>Identify</strong><pre><code>  identify</code></pre></td>
+      <td>STRING</td>
+      <td>identify</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Patient Specific</strong><pre><code>  patientSpecific</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>patient_specific</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>FALSE</strong></em><br/>1: <em><strong>TRUE</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Mh Test Required</strong><pre><code>  mhTestRequired</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>mh_test_required</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>Optional open and required complete or cancel before finish</strong></em><br/>1: <em><strong>Required open and required complete before finish</strong></em><br/>2: <em><strong>Optional open and optional complete (partial complete possible)</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Lock</strong><pre><code>  lock</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>lock</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Reminder Term</strong><pre><code>  reminderTerm</code></pre></td>
+      <td>POINTER</td>
+      <td>reminder_term</td>
+      <td> </td>
+      <td> </td>
+      <td>Reminder_Term-811_5</td>
+    </tr>
+    <tr>
+      <td><strong>Reminder Term Status</strong><pre><code>  reminderTermStatus</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>reminder_term_status</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>FALSE</strong></em><br/>1: <em><strong>TRUE</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Replacement Element/group</strong><pre><code>  replacementElementGroup</code></pre></td>
+      <td>POINTER</td>
+      <td>replacement_element_group</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Reminder_Dialog-801_41">Reminder_Dialog-801_41</a></td>
+    </tr>
+    <tr>
+      <td><strong>Mh Test</strong><pre><code>  mhTest</code></pre></td>
+      <td>POINTER</td>
+      <td>mh_test</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Mh_Tests_And_Surveys-601_71">Mh_Tests_And_Surveys-601_71</a></td>
+    </tr>
+    <tr>
+      <td><strong>Mh Scale</strong><pre><code>  mhScale</code></pre></td>
+      <td>NUMERIC</td>
+      <td>mh_scale</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Result Group List</strong><pre><code>  resultGroupList</code></pre></td>
+      <td>POINTER</td>
+      <td>result_group_list</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Taxonomy Pick List</strong><pre><code>  taxonomyPickList</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>taxonomy_pick_list</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>ALL</strong></em><br/>1: <em><strong>NO PICK LIST</strong></em><br/>2: <em><strong>DIAGNOSIS ONLY</strong></em><br/>3: <em><strong>PROCEDURE ONLY</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>POV Header</strong><pre><code>  povHeader</code></pre></td>
+      <td>STRING</td>
+      <td>pov_header</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Cpt Header</strong><pre><code>  cptHeader</code></pre></td>
+      <td>STRING</td>
+      <td>cpt_header</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-checkbox-sequence"><a name="checkboxSequence"></a>1. Checkbox Sequence</h3>
+
+<p><strong>Field ID:</strong> checkboxSequence</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Checkbox Sequence</strong><pre><code>  checkboxSequence</code></pre></td>
+      <td>NUMERIC</td>
+      <td>checkbox_sequence</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Text</strong><pre><code>  text</code></pre></td>
+      <td>STRING</td>
+      <td>text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-components"><a name="components"></a>2. Components</h3>
+
+<p><strong>Field ID:</strong> components</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Sequence</strong><pre><code>  sequence</code></pre></td>
+      <td>NUMERIC</td>
+      <td>sequence</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Item</strong><pre><code>  item</code></pre></td>
+      <td>POINTER</td>
+      <td>item</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Reminder_Dialog-801_41">Reminder_Dialog-801_41</a></td>
+    </tr>
+    <tr>
+      <td><strong>Override Prompt Caption</strong><pre><code>  overridePromptCaption</code></pre></td>
+      <td>STRING</td>
+      <td>override_prompt_caption</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Start New Line</strong><pre><code>  startNewLine</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>start_new_line</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Exclude From Pn Text</strong><pre><code>  excludeFromPnText</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>exclude_from_pn_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Required</strong><pre><code>  required</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>required</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="3-edit-history"><a name="editHistory"></a>3. Edit History</h3>
+
+<p><strong>Field ID:</strong> editHistory</p>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Edit Date</strong><pre><code>  editDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>edit_date</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Edit By</strong><pre><code>  editBy</code></pre></td>
+      <td>POINTER</td>
+      <td>edit_by</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Edit Comments</strong><pre><code>  editComments</code></pre></td>
+      <td>STRING</td>
+      <td>edit_comments</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

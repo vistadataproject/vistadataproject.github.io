@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--tiu_document_parameters"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » TIU_Document_Parameters<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="tiu_document_parameters">TIU_Document_Parameters</h1>
+
+<h3 id="tiu-document-parameters">TIU Document Parameters</h3>
+
+<p>This file stores parameters which modify the processing requirements of
+individual document types, and their decendents.</p>
+
+<p><strong>Fileman ID:</strong> 8925.95</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/TIU_Document_Parameters-8925_95">TIU_Document_Parameters-8925_95</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 34</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>POINTER</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>STRING</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 2</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#division">Division</a></td>
+      <td>division</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#processingSteps">Processing Steps</a></td>
+      <td>processingSteps</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Document Definition</strong><pre><code>  documentDefinition</code></pre></td>
+      <td>POINTER</td>
+      <td>document_definition</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td>TIU_Document_Definition-8925_1</td>
+    </tr>
+    <tr>
+      <td><strong>Require Release</strong><pre><code>  requireRelease</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>require_release</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Require Mas Verification</strong><pre><code>  requireMasVerification</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>require_mas_verification</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>YES, ALWAYS</strong></em><br/>1: <em><strong>DIRECT ENTRY ONLY</strong></em><br/>2: <em><strong>UPLOAD ONLY</strong></em><br/>3: <em><strong>NO</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Require Author To Sign</strong><pre><code>  requireAuthorToSign</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>require_author_to_sign</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>When May Chart Copy Be Printed</strong><pre><code>  whenMayChartCopyBePrinted</code></pre></td>
+      <td>POINTER</td>
+      <td>when_may_chart_copy_be_printed</td>
+      <td> </td>
+      <td> </td>
+      <td>TIU_Status-8925_6</td>
+    </tr>
+    <tr>
+      <td><strong>Routine Print Event(s)</strong><pre><code>  routinePrintEvents</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>routine_print_events</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>release</strong></em><br/>1: <em><strong>both</strong></em><br/>2: <em><strong>verification</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Stat Print Event(s)</strong><pre><code>  statPrintEvents</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>stat_print_events</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>release</strong></em><br/>1: <em><strong>both</strong></em><br/>2: <em><strong>verification</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Manual Print After Entry</strong><pre><code>  manualPrintAfterEntry</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>manual_print_after_entry</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Allow Chart Print Outside Mas</strong><pre><code>  allowChartPrintOutsideMas</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>allow_chart_print_outside_mas</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Allow &gt;1 Records Per Visit</strong><pre><code>  allow1RecordsPerVisit</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>allow_1_records_per_visit</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Enable Irt Interface</strong><pre><code>  enableIrtInterface</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>enable_irt_interface</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Irt Deficiency</strong><pre><code>  irtDeficiency</code></pre></td>
+      <td>POINTER</td>
+      <td>irt_deficiency</td>
+      <td> </td>
+      <td> </td>
+      <td>Irt_Type_Of_Deficiency-393_3</td>
+    </tr>
+    <tr>
+      <td><strong>Default Printer</strong><pre><code>  defaultPrinter</code></pre></td>
+      <td>POINTER</td>
+      <td>default_printer</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Device-3_5">Device-3_5</a></td>
+    </tr>
+    <tr>
+      <td><strong>Suppress Dx/cpt On Entry</strong><pre><code>  suppressDxCptOnEntry</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>suppress_dx_cpt_on_entry</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Force Response To Exposures</strong><pre><code>  forceResponseToExposures</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>force_response_to_exposures</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ask Dx/cpt On All Opt Visits</strong><pre><code>  askDxCptOnAllOptVisits</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>ask_dx_cpt_on_all_opt_visits</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Send Alerts On Addenda</strong><pre><code>  sendAlertsOnAddenda</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>send_alerts_on_addenda</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Order Id Entries By Title</strong><pre><code>  orderIdEntriesByTitle</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>order_id_entries_by_title</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Send Alerts On New Id Entry</strong><pre><code>  sendAlertsOnNewIdEntry</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>send_alerts_on_new_id_entry</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Send Cosignature Alert</strong><pre><code>  sendCosignatureAlert</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>send_cosignature_alert</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>Immediately</strong></em><br/>1: <em><strong>After Author has SIGNED</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Processing Steps</strong><pre><code>  processingSteps</code></pre></td>
+      <td>OBJECT</td>
+      <td>processing_steps</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#processingSteps">processingSteps</a></td>
+    </tr>
+    <tr>
+      <td><strong>Division</strong><pre><code>  division</code></pre></td>
+      <td>OBJECT</td>
+      <td>division</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#division">division</a></td>
+    </tr>
+    <tr>
+      <td><strong>Editor Set-up Code</strong><pre><code>  editorSetupCode</code></pre></td>
+      <td>STRING</td>
+      <td>editor_setup_code</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Filing Error Alert Recipients</strong><pre><code>  filingErrorAlertRecipients</code></pre></td>
+      <td>POINTER</td>
+      <td>filing_error_alert_recipients</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Users Requiring Cosignature</strong><pre><code>  usersRequiringCosignature</code></pre></td>
+      <td>POINTER</td>
+      <td>users_requiring_cosignature</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Heading</strong><pre><code>  heading</code></pre></td>
+      <td>STRING</td>
+      <td>heading</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Footer</strong><pre><code>  footer</code></pre></td>
+      <td>STRING</td>
+      <td>footer</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Closing</strong><pre><code>  closing</code></pre></td>
+      <td>STRING</td>
+      <td>closing</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Justify Heading</strong><pre><code>  justifyHeading</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>justify_heading</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>LEFT JUSTIFIED</strong></em><br/>1: <em><strong>CENTER JUSTIFIED</strong></em><br/>2: <em><strong>RIGHT JUSTIFIED</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Justify Footer</strong><pre><code>  justifyFooter</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>justify_footer</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>CENTER JUSTIFY</strong></em><br/>1: <em><strong>LEFT JUSTIFY</strong></em><br/>2: <em><strong>RIGHT JUSTIFY</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Justify Closing</strong><pre><code>  justifyClosing</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>justify_closing</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>CENTER JUSTIFY</strong></em><br/>1: <em><strong>LEFT JUSTIFY</strong></em><br/>2: <em><strong>RIGHT JUSTIFY</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Page Numbers</strong><pre><code>  pageNumbers</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>page_numbers</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Justify Page Numbers</strong><pre><code>  justifyPageNumbers</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>justify_page_numbers</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>LEFT JUSTIFIED</strong></em><br/>1: <em><strong>CENTER JUSTIFIED</strong></em><br/>2: <em><strong>RIGHT JUSTIFIED</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Insert Blank Lines</strong><pre><code>  insertBlankLines</code></pre></td>
+      <td>NUMERIC</td>
+      <td>insert_blank_lines</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-division"><a name="division"></a>1. Division</h3>
+
+<p><strong>Field ID:</strong> division</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Division</strong><pre><code>  division</code></pre></td>
+      <td>POINTER</td>
+      <td>division</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Medical_Center_Division-40_8">Medical_Center_Division-40_8</a></td>
+    </tr>
+    <tr>
+      <td><strong>Chart Copy Printer</strong><pre><code>  chartCopyPrinter</code></pre></td>
+      <td>POINTER</td>
+      <td>chart_copy_printer</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Device-3_5">Device-3_5</a></td>
+    </tr>
+    <tr>
+      <td><strong>Stat Chart Copy Printer</strong><pre><code>  statChartCopyPrinter</code></pre></td>
+      <td>POINTER</td>
+      <td>stat_chart_copy_printer</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Device-3_5">Device-3_5</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-processing-steps"><a name="processingSteps"></a>2. Processing Steps</h3>
+
+<p><strong>Field ID:</strong> processingSteps</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Processing Steps</strong><pre><code>  processingSteps</code></pre></td>
+      <td>POINTER</td>
+      <td>processing_steps</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Usr_Action-8930_8">Usr_Action-8930_8</a></td>
+    </tr>
+    <tr>
+      <td><strong>Sequence</strong><pre><code>  sequence</code></pre></td>
+      <td>NUMERIC</td>
+      <td>sequence</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Required</strong><pre><code>  required</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>required</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>REQUIRED</strong></em><br/>1: <em><strong>OPTIONAL</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Resulting Status</strong><pre><code>  resultingStatus</code></pre></td>
+      <td>POINTER</td>
+      <td>resulting_status</td>
+      <td> </td>
+      <td> </td>
+      <td>TIU_Status-8925_6</td>
+    </tr>
+    <tr>
+      <td><strong>Condition Text</strong><pre><code>  conditionText</code></pre></td>
+      <td>STRING</td>
+      <td>condition_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Condition Code</strong><pre><code>  conditionCode</code></pre></td>
+      <td>STRING</td>
+      <td>condition_code</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

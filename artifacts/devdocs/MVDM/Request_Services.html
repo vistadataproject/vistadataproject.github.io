@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--request_services"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Request_Services<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="request_services">Request_Services</h1>
+
+<h3 id="request-services">Request Services</h3>
+
+<p>This file allows services and specialties to be grouped in a hierarchy 
+representing the sites services available.  This grouping capability
+may be used with Review screens to filter out consults to a 
+service, sub-service, specialty, or sub-specialty of consults/requests.</p>
+
+<p>The main entry in this file is the "ALL SERVICES" entry.  Other entries
+should be subordinate in its hierarchy.</p>
+
+<p>The "ALL SERVICES" entry is used to display the hierarchy of the hospital
+services when the Clinician ordering a consult is prompted for
+"Select TO Service/Specialty:" to send the consult to.</p>
+
+<p><strong>Fileman ID:</strong> 123.5</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Request_Services-123_5">Request_Services-123_5</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 46</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 4</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#administrativeUpdateTeams">Administrative Update Teams</a></td>
+      <td>administrativeUpdateTeams</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#administrativeUpdateUsers">Administrative Update Users</a></td>
+      <td>administrativeUpdateUsers</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="#notificationByPtLocation">Notification By Pt Location</a></td>
+      <td>notificationByPtLocation</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><a href="#subservice">Subservice</a></td>
+      <td>subservice</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Service Name</strong><pre><code>  serviceName</code></pre></td>
+      <td>STRING</td>
+      <td>service_name</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Unrestricted Access</strong><pre><code>  unrestrictedAccess</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>unrestricted_access</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Process Parents For Updates</strong><pre><code>  processParentsForUpdates</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>process_parents_for_updates</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Process Parents For Notifs</strong><pre><code>  processParentsForNotifs</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>process_parents_for_notifs</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Provisional Dx Prompt</strong><pre><code>  provisionalDxPrompt</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>provisional_dx_prompt</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>SUPPRESS</strong></em><br/>1: <em><strong>REQUIRE</strong></em><br/>2: <em><strong>OPTIONAL</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Provisional Dx Input</strong><pre><code>  provisionalDxInput</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>provisional_dx_input</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>FREE TEXT</strong></em><br/>1: <em><strong>LEXICON</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Restrict Default Reason Edit</strong><pre><code>  restrictDefaultReasonEdit</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>restrict_default_reason_edit</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>UNRESTRICTED</strong></em><br/>1: <em><strong>ASK ON EDIT ONLY</strong></em><br/>2: <em><strong>NO EDITING</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Notify Service On Dc</strong><pre><code>  notifyServiceOnDc</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>notify_service_on_dc</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>ALWAYS</strong></em><br/>1: <em><strong>NEVER</strong></em><br/>2: <em><strong>REQUESTOR ACTION</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Reprint 513 On Dc</strong><pre><code>  reprint513OnDc</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>reprint_513_on_dc</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>ALWAYS</strong></em><br/>1: <em><strong>NEVER</strong></em><br/>2: <em><strong>REQUESTOR ACTION</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Result Mgmt User Class</strong><pre><code>  resultMgmtUserClass</code></pre></td>
+      <td>POINTER</td>
+      <td>result_mgmt_user_class</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Usr_Class-8930">Usr_Class-8930</a></td>
+    </tr>
+    <tr>
+      <td><strong>Synonym</strong><pre><code>  synonym</code></pre></td>
+      <td>STRING</td>
+      <td>synonym</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Print Name</strong><pre><code>  printName</code></pre></td>
+      <td>STRING</td>
+      <td>print_name</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Service Usage</strong><pre><code>  serviceUsage</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>service_usage</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>DISABLED</strong></em><br/>1: <em><strong>GROUPER ONLY</strong></em><br/>2: <em><strong>TRACKING ONLY</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Disable Message</strong><pre><code>  disableMessage</code></pre></td>
+      <td>STRING</td>
+      <td>disable_message</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Creator</strong><pre><code>  creator</code></pre></td>
+      <td>POINTER</td>
+      <td>creator</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Sub-service</strong><pre><code>  subservice</code></pre></td>
+      <td>OBJECT</td>
+      <td>subservice</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#subservice">subservice</a></td>
+    </tr>
+    <tr>
+      <td><strong>Internal Name</strong><pre><code>  internalName</code></pre></td>
+      <td>STRING</td>
+      <td>internal_name</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Entry Action</strong><pre><code>  entryAction</code></pre></td>
+      <td>STRING</td>
+      <td>entry_action</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Procedure Type</strong><pre><code>  procedureType</code></pre></td>
+      <td>POINTER</td>
+      <td>procedure_type</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Oe/rr Display Group</strong><pre><code>  oeRrDisplayGroup</code></pre></td>
+      <td>POINTER</td>
+      <td>oe_rr_display_group</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Display_Group-100_98">Display_Group-100_98</a></td>
+    </tr>
+    <tr>
+      <td><strong>Service Update Option</strong><pre><code>  serviceUpdateOption</code></pre></td>
+      <td>POINTER</td>
+      <td>service_update_option</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Option-19">Option-19</a></td>
+    </tr>
+    <tr>
+      <td><strong>Protocol Menu Of Request Items</strong><pre><code>  protocolMenuOfRequestItems</code></pre></td>
+      <td>POINTER</td>
+      <td>protocol_menu_of_request_items</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Protocol-101">Protocol-101</a></td>
+    </tr>
+    <tr>
+      <td><strong>Protocol Action Menu By Users</strong><pre><code>  protocolActionMenuByUsers</code></pre></td>
+      <td>POINTER</td>
+      <td>protocol_action_menu_by_users</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Protocol-101">Protocol-101</a></td>
+    </tr>
+    <tr>
+      <td><strong>Protocol Action Menu By Option</strong><pre><code>  protocolActionMenuByOption</code></pre></td>
+      <td>POINTER</td>
+      <td>protocol_action_menu_by_option</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Protocol-101">Protocol-101</a></td>
+    </tr>
+    <tr>
+      <td><strong>Related Treating Specialty</strong><pre><code>  relatedTreatingSpecialty</code></pre></td>
+      <td>POINTER</td>
+      <td>related_treating_specialty</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td><a href="../VDM/Facility_Treating_Specialty-45_7">Facility_Treating_Specialty-45_7</a></td>
+    </tr>
+    <tr>
+      <td><strong>Related Service/section</strong><pre><code>  relatedServiceSection</code></pre></td>
+      <td>POINTER</td>
+      <td>related_service_section</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Service_section-49">Service_section-49</a></td>
+    </tr>
+    <tr>
+      <td><strong>Service Individual To Notify</strong><pre><code>  serviceIndividualToNotify</code></pre></td>
+      <td>POINTER</td>
+      <td>service_individual_to_notify</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Service Printer</strong><pre><code>  servicePrinter</code></pre></td>
+      <td>POINTER</td>
+      <td>service_printer</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Device-3_5">Device-3_5</a></td>
+    </tr>
+    <tr>
+      <td><strong>Service Team(s) To Notify</strong><pre><code>  serviceTeamsToNotify</code></pre></td>
+      <td>POINTER</td>
+      <td>service_teams_to_notify</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Notification By Pt Location</strong><pre><code>  notificationByPtLocation</code></pre></td>
+      <td>OBJECT</td>
+      <td>notification_by_pt_location</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#notificationByPtLocation">notificationByPtLocation</a></td>
+    </tr>
+    <tr>
+      <td><strong>Update Users W/o Notifications</strong><pre><code>  updateUsersWONotifications</code></pre></td>
+      <td>POINTER</td>
+      <td>update_users_w_o_notifications</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Update Teams W/o Notifications</strong><pre><code>  updateTeamsWONotifications</code></pre></td>
+      <td>POINTER</td>
+      <td>update_teams_w_o_notifications</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Administrative Update Users</strong><pre><code>  administrativeUpdateUsers</code></pre></td>
+      <td>OBJECT</td>
+      <td>administrative_update_users</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#administrativeUpdateUsers">administrativeUpdateUsers</a></td>
+    </tr>
+    <tr>
+      <td><strong>Administrative Update Teams</strong><pre><code>  administrativeUpdateTeams</code></pre></td>
+      <td>OBJECT</td>
+      <td>administrative_update_teams</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#administrativeUpdateTeams">administrativeUpdateTeams</a></td>
+    </tr>
+    <tr>
+      <td><strong>Update User Classes W/o Notifs</strong><pre><code>  updateUserClassesWONotifs</code></pre></td>
+      <td>POINTER</td>
+      <td>update_user_classes_w_o_notifs</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Related Hospital Location</strong><pre><code>  relatedHospitalLocation</code></pre></td>
+      <td>POINTER</td>
+      <td>related_hospital_location</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Special Updates Individual</strong><pre><code>  specialUpdatesIndividual</code></pre></td>
+      <td>POINTER</td>
+      <td>special_updates_individual</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Default Reason For Request</strong><pre><code>  defaultReasonForRequest</code></pre></td>
+      <td>STRING</td>
+      <td>default_reason_for_request</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Prerequisite</strong><pre><code>  prerequisite</code></pre></td>
+      <td>STRING</td>
+      <td>prerequisite</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Prosthetics Service</strong><pre><code>  prostheticsService</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>prosthetics_service</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ifc Routing Site</strong><pre><code>  ifcRoutingSite</code></pre></td>
+      <td>POINTER</td>
+      <td>ifc_routing_site</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Institution-4">Institution-4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Ifc Remote Name</strong><pre><code>  ifcRemoteName</code></pre></td>
+      <td>STRING</td>
+      <td>ifc_remote_name</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ifc Sending Facility</strong><pre><code>  ifcSendingFacility</code></pre></td>
+      <td>POINTER</td>
+      <td>ifc_sending_facility</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ifc Coordinator</strong><pre><code>  ifcCoordinator</code></pre></td>
+      <td>POINTER</td>
+      <td>ifc_coordinator</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Administrative</strong><pre><code>  administrative</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>administrative</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Associated Stop Code</strong><pre><code>  associatedStopCode</code></pre></td>
+      <td>POINTER</td>
+      <td>associated_stop_code</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-administrative-update-teams"><a name="administrativeUpdateTeams"></a>1. Administrative Update Teams</h3>
+
+<p><strong>Field ID:</strong> administrativeUpdateTeams</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Administrative Update Team</strong><pre><code>  administrativeUpdateTeam</code></pre></td>
+      <td>POINTER</td>
+      <td>administrative_update_team</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Oe_rr_List-100_21">Oe_rr_List-100_21</a></td>
+    </tr>
+    <tr>
+      <td><strong>Notification Recipients</strong><pre><code>  notificationRecipients</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>notification_recipients</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-administrative-update-users"><a name="administrativeUpdateUsers"></a>2. Administrative Update Users</h3>
+
+<p><strong>Field ID:</strong> administrativeUpdateUsers</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Administrative Update User</strong><pre><code>  administrativeUpdateUser</code></pre></td>
+      <td>POINTER</td>
+      <td>administrative_update_user</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Notification Recipient</strong><pre><code>  notificationRecipient</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>notification_recipient</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="3-notification-by-pt-location"><a name="notificationByPtLocation"></a>3. Notification By Pt Location</h3>
+
+<p><strong>Field ID:</strong> notificationByPtLocation</p>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Notification By Pt Location</strong><pre><code>  notificationByPtLocation</code></pre></td>
+      <td>POINTER</td>
+      <td>notification_by_pt_location</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Ward_Location-42">Ward_Location-42</a><br /><a href="../VDM/Hospital_Location-44">Hospital_Location-44</a></td>
+    </tr>
+    <tr>
+      <td><strong>Individual To Notify</strong><pre><code>  individualToNotify</code></pre></td>
+      <td>POINTER</td>
+      <td>individual_to_notify</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Team To Notify</strong><pre><code>  teamToNotify</code></pre></td>
+      <td>POINTER</td>
+      <td>team_to_notify</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td><a href="../VDM/Oe_rr_List-100_21">Oe_rr_List-100_21</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="4-subservice"><a name="subservice"></a>4. Subservice</h3>
+
+<p><strong>Field ID:</strong> subservice</p>
+
+<h4 id="properties-4">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Sub-service/specialty</strong><pre><code>  subserviceSpecialty</code></pre></td>
+      <td>POINTER</td>
+      <td>subservice_specialty</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Request_Services-123_5">Request_Services-123_5</a></td>
+    </tr>
+    <tr>
+      <td><strong>Mnemonic</strong><pre><code>  mnemonic</code></pre></td>
+      <td>STRING</td>
+      <td>mnemonic</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

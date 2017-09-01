@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--oe_rr_report"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Oe_rr_Report<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="oe_rr_report">Oe_rr_Report</h1>
+
+<h3 id="oerr-report">Oe/rr Report</h3>
+
+<p>This file contains definitions and parameters used in various reports
+within CPRS.</p>
+
+<p>Entry numbers &gt;1000 are reserved for national use.  Any local entries
+should be added to a number &lt;1000.  If this convention is not followed,
+you run the risk of having your local entries overwritten by a patch
+or future release of CPRS.</p>
+
+<p><strong>Fileman ID:</strong> 101.24</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Oe_rr_Report-101_24">Oe_rr_Report-101_24</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 43</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IEN</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>STRING</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 2</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#columnHeaders">Column Headers</a></td>
+      <td>columnHeaders</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#item">Item</a></td>
+      <td>item</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Number</strong><pre><code>  number</code></pre></td>
+      <td>IEN</td>
+      <td>number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>STRING</td>
+      <td>name</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Id</strong><pre><code>  id02</code></pre></td>
+      <td>STRING</td>
+      <td>id-_02</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Remote</strong><pre><code>  remote</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>remote</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>YES</strong></em><br/>1: <em><strong>REMOTE ONLY</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Qualifier</strong><pre><code>  qualifier</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>qualifier</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>NutrAssess</strong></em><br/>1: <em><strong>HSType</strong></em><br/>2: <em><strong>Surgery</strong></em><br/>3: <em><strong>DateTime</strong></em><br/>4: <em><strong>Imaging</strong></em><br/>5: <em><strong>MedicineProcedure</strong></em><br/>6: <em><strong>HSWPComponent</strong></em><br/>7: <em><strong>ListView</strong></em><br/>8: <em><strong>HSComponent</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Routine</strong><pre><code>  routine</code></pre></td>
+      <td>STRING</td>
+      <td>routine</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Entry Point</strong><pre><code>  entryPoint</code></pre></td>
+      <td>STRING</td>
+      <td>entry_point</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Category</strong><pre><code>  category</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>category</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>GRAPHIC</strong></em><br/>1: <em><strong>LISTVIEW</strong></em><br/>2: <em><strong>FIXED W/HEADER</strong></em><br/>3: <em><strong>FIXED W/DATE&HEADER</strong></em><br/>4: <em><strong>FIXED W/DATE</strong></em><br/>5: <em><strong>FIXED</strong></em><br/>6: <em><strong>SPECIALIZED</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Tab</strong><pre><code>  tab</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>tab</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>LABS TAB</strong></em><br/>1: <em><strong>REPORTS TAB</strong></em><br/>2: <em><strong>COVER SHEET DETAILS</strong></em><br/>3: <em><strong>COVER SHEET</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Mixedcase</strong><pre><code>  mixedcase</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>mixedcase</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Invert</strong><pre><code>  invert</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>invert</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Text Color</strong><pre><code>  textColor</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>text_color</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>BLUE</strong></em><br/>1: <em><strong>PURPLE</strong></em><br/>2: <em><strong>AQUA</strong></em><br/>3: <em><strong>FUCHSIA</strong></em><br/>4: <em><strong>MAROON</strong></em><br/>5: <em><strong>GREEN</strong></em><br/>6: <em><strong>YELLOW</strong></em><br/>7: <em><strong>TEAL</strong></em><br/>8: <em><strong>OLIVE</strong></em><br/>9: <em><strong>BLACK</strong></em><br/>10: <em><strong>RED</strong></em><br/>11: <em><strong>LIME</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Type</strong><pre><code>  type12</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>type-_12</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>LISTMAN ONLY</strong></em><br/>1: <em><strong>MENU</strong></em><br/>2: <em><strong>SELECTION LIST</strong></em><br/>3: <em><strong>HTML</strong></em><br/>4: <em><strong>GRAPH</strong></em><br/>5: <em><strong>REPORT</strong></em><br/>6: <em><strong>LISTVIEW</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Rpc</strong><pre><code>  rpc</code></pre></td>
+      <td>POINTER</td>
+      <td>rpc</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Remote_Procedure-8994">Remote_Procedure-8994</a></td>
+    </tr>
+    <tr>
+      <td><strong>Date Format</strong><pre><code>  dateFormat</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>date_format</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>DATE WITH TIME</strong></em><br/>1: <em><strong>DATE ONLY</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Date Piece</strong><pre><code>  datePiece</code></pre></td>
+      <td>NUMERIC</td>
+      <td>date_piece</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Tab Positions</strong><pre><code>  tabPositions</code></pre></td>
+      <td>STRING</td>
+      <td>tab_positions</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Pieces</strong><pre><code>  pieces</code></pre></td>
+      <td>STRING</td>
+      <td>pieces</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Detail Report</strong><pre><code>  detailReport</code></pre></td>
+      <td>POINTER</td>
+      <td>detail_report</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Oe_rr_Report-101_24">Oe_rr_Report-101_24</a></td>
+    </tr>
+    <tr>
+      <td><strong>Report Tag</strong><pre><code>  reportTag</code></pre></td>
+      <td>STRING</td>
+      <td>report_tag</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Report Routine</strong><pre><code>  reportRoutine</code></pre></td>
+      <td>STRING</td>
+      <td>report_routine</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Report Component</strong><pre><code>  reportComponent</code></pre></td>
+      <td>POINTER</td>
+      <td>report_component</td>
+      <td> </td>
+      <td> </td>
+      <td>Health_Summary_Component-142_1</td>
+    </tr>
+    <tr>
+      <td><strong>Param 1</strong><pre><code>  param1</code></pre></td>
+      <td>STRING</td>
+      <td>param_1</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Param 2</strong><pre><code>  param2</code></pre></td>
+      <td>STRING</td>
+      <td>param_2</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Heading</strong><pre><code>  heading</code></pre></td>
+      <td>STRING</td>
+      <td>heading</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Descriptive Text</strong><pre><code>  descriptiveText</code></pre></td>
+      <td>STRING</td>
+      <td>descriptive_text</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Node</strong><pre><code>  node</code></pre></td>
+      <td>STRING</td>
+      <td>node</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Print Tag</strong><pre><code>  printTag</code></pre></td>
+      <td>STRING</td>
+      <td>print_tag</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Print Routine</strong><pre><code>  printRoutine</code></pre></td>
+      <td>STRING</td>
+      <td>print_routine</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Extract Tag</strong><pre><code>  extractTag</code></pre></td>
+      <td>STRING</td>
+      <td>extract_tag</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Extract Routine</strong><pre><code>  extractRoutine</code></pre></td>
+      <td>STRING</td>
+      <td>extract_routine</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Sort Order</strong><pre><code>  sortOrder</code></pre></td>
+      <td>STRING</td>
+      <td>sort_order</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Maximum Days Back</strong><pre><code>  maximumDaysBack</code></pre></td>
+      <td>NUMERIC</td>
+      <td>maximum_days_back</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Fhie Report</strong><pre><code>  fhieReport</code></pre></td>
+      <td>STRING</td>
+      <td>fhie_report</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Direct</strong><pre><code>  direct</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>direct</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Hdr Report</strong><pre><code>  hdrReport</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>hdr_report</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Hdr Routine</strong><pre><code>  hdrRoutine</code></pre></td>
+      <td>STRING</td>
+      <td>hdr_routine</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Hdr Entry Point</strong><pre><code>  hdrEntryPoint</code></pre></td>
+      <td>STRING</td>
+      <td>hdr_entry_point</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Fhie Data</strong><pre><code>  fhieData</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>fhie_data</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Fhie/remote Data Only</strong><pre><code>  fhieRemoteDataOnly</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>fhie_remote_data_only</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Disable</strong><pre><code>  disable</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>disable</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Column Headers</strong><pre><code>  columnHeaders</code></pre></td>
+      <td>OBJECT</td>
+      <td>column_headers</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#columnHeaders">columnHeaders</a></td>
+    </tr>
+    <tr>
+      <td><strong>Item</strong><pre><code>  item</code></pre></td>
+      <td>OBJECT</td>
+      <td>item</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#item">item</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-column-headers"><a name="columnHeaders"></a>1. Column Headers</h3>
+
+<p><strong>Field ID:</strong> columnHeaders</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Column Headers</strong><pre><code>  columnHeaders</code></pre></td>
+      <td>STRING</td>
+      <td>column_headers</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Visible</strong><pre><code>  visible</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>visible</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>YES</strong></em><br/>1: <em><strong>NO</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Sequence</strong><pre><code>  sequence</code></pre></td>
+      <td>NUMERIC</td>
+      <td>sequence</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Type</strong><pre><code>  type04</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>type-_04</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>SINGLE PIECE VALUE</strong></em><br/>1: <em><strong>WORD PROCESSING</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Include On Detail</strong><pre><code>  includeOnDetail</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>include_on_detail</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Print Length</strong><pre><code>  printLength</code></pre></td>
+      <td>NUMERIC</td>
+      <td>print_length</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Include On Print</strong><pre><code>  includeOnPrint</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>include_on_print</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Print Title</strong><pre><code>  printTitle</code></pre></td>
+      <td>STRING</td>
+      <td>print_title</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Data Type</strong><pre><code>  dataType</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>data_type</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>DATE/TIME</strong></em><br/>1: <em><strong>FREE TEXT</strong></em><br/>2: <em><strong>NUMERIC</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Width</strong><pre><code>  width</code></pre></td>
+      <td>NUMERIC</td>
+      <td>width</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Hdr Modifier</strong><pre><code>  hdrModifier</code></pre></td>
+      <td>STRING</td>
+      <td>hdr_modifier</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-item"><a name="item"></a>2. Item</h3>
+
+<p><strong>Field ID:</strong> item</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Item</strong><pre><code>  item</code></pre></td>
+      <td>POINTER</td>
+      <td>item</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Oe_rr_Report-101_24">Oe_rr_Report-101_24</a></td>
+    </tr>
+    <tr>
+      <td><strong>Header Text</strong><pre><code>  headerText</code></pre></td>
+      <td>STRING</td>
+      <td>header_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Sequence</strong><pre><code>  sequence</code></pre></td>
+      <td>NUMERIC</td>
+      <td>sequence</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--medication_instruction"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Medication_Instruction<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="medication_instruction">Medication_Instruction</h1>
+
+<h3 id="medication-instruction">Medication Instruction</h3>
+
+<p>This file holds the abbreviations which are often used when entering the
+Rx sig.  Each record holds an expansion of the abbreviation which is used
+to complete the sig as it is printed on the Rx label.  Care should be taken
+to not delete entries in this file after going into production use of the
+pharmacy package.  If an entry were deleted then any sigs that contain
+the abbreviation would not find it when printed later and thus could confuse
+the patient.</p>
+
+<p>The above description indicates that this file is not strictly 'pointed to'
+in the classical VA FileMan sense, but that logically it is nearly the
+same thing.</p>
+
+<p><strong>Fileman ID:</strong> 51</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Medication_Instruction-51">Medication_Instruction-51</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 13</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 1</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#ward">Ward</a></td>
+      <td>ward</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>STRING</td>
+      <td>name</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Synonym</strong><pre><code>  synonym</code></pre></td>
+      <td>STRING</td>
+      <td>synonym</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Expansion</strong><pre><code>  expansion</code></pre></td>
+      <td>STRING</td>
+      <td>expansion</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Other Language Expansion</strong><pre><code>  otherLanguageExpansion</code></pre></td>
+      <td>STRING</td>
+      <td>other_language_expansion</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Med Route</strong><pre><code>  medRoute</code></pre></td>
+      <td>POINTER</td>
+      <td>med_route</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Medication_Routes-51_2">Medication_Routes-51_2</a></td>
+    </tr>
+    <tr>
+      <td><strong>Schedule</strong><pre><code>  schedule</code></pre></td>
+      <td>STRING</td>
+      <td>schedule</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Instructions</strong><pre><code>  instructions</code></pre></td>
+      <td>STRING</td>
+      <td>instructions</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Additional Instruction</strong><pre><code>  additionalInstruction</code></pre></td>
+      <td>STRING</td>
+      <td>additional_instruction</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Plural</strong><pre><code>  plural</code></pre></td>
+      <td>STRING</td>
+      <td>plural</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Default Admin Times</strong><pre><code>  defaultAdminTimes</code></pre></td>
+      <td>STRING</td>
+      <td>default_admin_times</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ward</strong><pre><code>  ward</code></pre></td>
+      <td>OBJECT</td>
+      <td>ward</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#ward">ward</a></td>
+    </tr>
+    <tr>
+      <td><strong>Intended Use</strong><pre><code>  intendedUse</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>intended_use</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>INPATIENT ONLY</strong></em><br/>1: <em><strong>OUTPATIENT ONLY</strong></em><br/>2: <em><strong>IN & OUTPATIENT</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Frequency (in Minutes)</strong><pre><code>  frequencyInMinutes</code></pre></td>
+      <td>NUMERIC</td>
+      <td>frequency_in_minutes</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-ward"><a name="ward"></a>1. Ward</h3>
+
+<p><strong>Field ID:</strong> ward</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Ward</strong><pre><code>  ward</code></pre></td>
+      <td>POINTER</td>
+      <td>ward</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td><a href="../VDM/Ward_Location-42">Ward_Location-42</a></td>
+    </tr>
+    <tr>
+      <td><strong>Default Admin Times</strong><pre><code>  defaultAdminTimes</code></pre></td>
+      <td>STRING</td>
+      <td>default_admin_times</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

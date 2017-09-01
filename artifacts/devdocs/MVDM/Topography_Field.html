@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--topography_field"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Topography_Field<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="topography_field">Topography_Field</h1>
+
+<h3 id="topography-field">Topography Field</h3>
+
+<p>This is the TOPOGRAPHY file of SNOMED</p>
+
+<p><strong>Fileman ID:</strong> 61</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Topography_Field-61">Topography_Field-61</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 18</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>DATE-TIME</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 2</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#journalReference">Journal Reference</a></td>
+      <td>journalReference</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#sctStatusDate">Sct Status Date</a></td>
+      <td>sctStatusDate</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>STRING</td>
+      <td>name</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Icdo Code</strong><pre><code>  icdoCode</code></pre></td>
+      <td>STRING</td>
+      <td>icdo_code</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Hl7 Code</strong><pre><code>  hl7Code</code></pre></td>
+      <td>STRING</td>
+      <td>hl7_code</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ledi Hl7</strong><pre><code>  lediHl7</code></pre></td>
+      <td>POINTER</td>
+      <td>ledi_hl7</td>
+      <td> </td>
+      <td> </td>
+      <td>Lab_Electronic_Codes-64_061</td>
+    </tr>
+    <tr>
+      <td><strong>Time Aspect</strong><pre><code>  timeAspect</code></pre></td>
+      <td>POINTER</td>
+      <td>time_aspect</td>
+      <td> </td>
+      <td> </td>
+      <td>Lab_Electronic_Codes-64_061</td>
+    </tr>
+    <tr>
+      <td><strong>Snomed Code</strong><pre><code>  snomedCode</code></pre></td>
+      <td>STRING</td>
+      <td>snomed_code</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Sex Specific</strong><pre><code>  sexSpecific</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>sex_specific</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>MALE</strong></em><br/>1: <em><strong>FEMALE</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Synonyms</strong><pre><code>  synonyms</code></pre></td>
+      <td>STRING</td>
+      <td>synonyms</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Weigh</strong><pre><code>  weigh</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>weigh</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Collection Sample</strong><pre><code>  collectionSample</code></pre></td>
+      <td>POINTER</td>
+      <td>collection_sample</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Collection_Sample-62">Collection_Sample-62</a></td>
+    </tr>
+    <tr>
+      <td><strong>Journal Reference</strong><pre><code>  journalReference</code></pre></td>
+      <td>OBJECT</td>
+      <td>journal_reference</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#journalReference">journalReference</a></td>
+    </tr>
+    <tr>
+      <td><strong>Abbreviation</strong><pre><code>  abbreviation</code></pre></td>
+      <td>STRING</td>
+      <td>abbreviation</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Snomed Ct Id</strong><pre><code>  snomedCtId</code></pre></td>
+      <td>STRING</td>
+      <td>snomed_ct_id</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Sct Code Status</strong><pre><code>  sctCodeStatus</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>sct_code_status</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td>0: <em><strong>SYNONYM</strong></em><br/>1: <em><strong>NO APPLICABLE MAPPING</strong></em><br/>2: <em><strong>NEW TERM PENDING LEXICON UPDATE</strong></em><br/>3: <em><strong>ERROR</strong></em><br/>4: <em><strong>STS REQUEST NEW CODE</strong></em><br/>5: <em><strong>PREFERRED TERM</strong></em><br/>6: <em><strong>LOCAL</strong></em><br/>7: <em><strong>REFERRED</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Sct Top Concept</strong><pre><code>  sctTopConcept</code></pre></td>
+      <td>POINTER</td>
+      <td>sct_top_concept</td>
+      <td> </td>
+      <td> </td>
+      <td>Lab_Electronic_Codes-64_061</td>
+    </tr>
+    <tr>
+      <td><strong>Sct Status Date</strong><pre><code>  sctStatusDate</code></pre></td>
+      <td>OBJECT</td>
+      <td>sct_status_date</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#sctStatusDate">sctStatusDate</a></td>
+    </tr>
+    <tr>
+      <td><strong>*negative Bacteriology Comment</strong><pre><code>  negativeBacteriologyComment</code></pre></td>
+      <td>STRING</td>
+      <td>negative_bacteriology_comment</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Inactive Date</strong><pre><code>  inactiveDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>inactive_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-journal-reference"><a name="journalReference"></a>1. Journal Reference</h3>
+
+<p><strong>Field ID:</strong> journalReference</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Title Of Article</strong><pre><code>  titleOfArticle</code></pre></td>
+      <td>STRING</td>
+      <td>title_of_article</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Author(s)</strong><pre><code>  authors</code></pre></td>
+      <td>STRING</td>
+      <td>authors</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Medical Journal</strong><pre><code>  medicalJournal</code></pre></td>
+      <td>POINTER</td>
+      <td>medical_journal</td>
+      <td> </td>
+      <td> </td>
+      <td>Lab_Journal-95</td>
+    </tr>
+    <tr>
+      <td><strong>Volume</strong><pre><code>  volume</code></pre></td>
+      <td>STRING</td>
+      <td>volume</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Starting Page</strong><pre><code>  startingPage</code></pre></td>
+      <td>STRING</td>
+      <td>starting_page</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Date</strong><pre><code>  date</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>List On Patient Record</strong><pre><code>  listOnPatientRecord</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>list_on_patient_record</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-sct-status-date"><a name="sctStatusDate"></a>2. Sct Status Date</h3>
+
+<p><strong>Field ID:</strong> sctStatusDate</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Sct Status Date</strong><pre><code>  sctStatusDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>sct_status_date</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Sct Status Change To</strong><pre><code>  sctStatusChangeTo</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>sct_status_change_to</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>SYNONYM</strong></em><br/>1: <em><strong>NO APPLICABLE MAPPING</strong></em><br/>2: <em><strong>NEW TERM PENDING LEXICON UPDATE</strong></em><br/>3: <em><strong>ERROR</strong></em><br/>4: <em><strong>STS REQUEST NEW CODE</strong></em><br/>5: <em><strong>PREFERRED TERM</strong></em><br/>6: <em><strong>LOCAL</strong></em><br/>7: <em><strong>REFERRED</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Sct Transaction Number</strong><pre><code>  sctTransactionNumber</code></pre></td>
+      <td>STRING</td>
+      <td>sct_transaction_number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Sct Status User</strong><pre><code>  sctStatusUser</code></pre></td>
+      <td>POINTER</td>
+      <td>sct_status_user</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Sct Comment Text</strong><pre><code>  sctCommentText</code></pre></td>
+      <td>STRING</td>
+      <td>sct_comment_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--institution"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Institution<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="institution">Institution</h1>
+
+<h3 id="institution-1">Institution</h3>
+
+<p>This file contains a listing of VA institutions.  It is cross-referenced
+by name and station number.  The Number field is no longer meaningful (it
+had previously referenced the station number).</p>
+
+<p><strong>Fileman ID:</strong> 4</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Institution-4">Institution-4</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 37</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>DATE-TIME</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 6</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#associations">Associations</a></td>
+      <td>associations</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#contact">Contact</a></td>
+      <td>contact</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="#effectiveDateTime">Effective Date Time</a></td>
+      <td>effectiveDateTime</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><a href="#history">History</a></td>
+      <td>history</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><a href="#identifier">Identifier</a></td>
+      <td>identifier</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><a href="#taxonomyCode">Taxonomy Code</a></td>
+      <td>taxonomyCode</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>STRING</td>
+      <td>name</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>State</strong><pre><code>  state</code></pre></td>
+      <td>POINTER</td>
+      <td>state</td>
+      <td> </td>
+      <td> </td>
+      <td>State-5</td>
+    </tr>
+    <tr>
+      <td><strong>District</strong><pre><code>  district</code></pre></td>
+      <td>NUMERIC</td>
+      <td>district</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Short Name</strong><pre><code>  shortName</code></pre></td>
+      <td>STRING</td>
+      <td>short_name</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>VA Type Code</strong><pre><code>  vaTypeCode</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>va_type_code</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>NH</strong></em><br/>1: <em><strong>PROTH</strong></em><br/>2: <em><strong>MC,DOM,NH</strong></em><br/>3: <em><strong>DOM</strong></em><br/>4: <em><strong>MC&DOM</strong></em><br/>5: <em><strong>OC-SUB</strong></em><br/>6: <em><strong>OC-IND</strong></em><br/>7: <em><strong>MC&RO</strong></em><br/>8: <em><strong>RO&DPC</strong></em><br/>9: <em><strong>VACO-RO</strong></em><br/>10: <em><strong>OC-UNDER MMT</strong></em><br/>11: <em><strong>RPC</strong></em><br/>12: <em><strong>DPC</strong></em><br/>13: <em><strong>VACO</strong></em><br/>14: <em><strong>HOSP</strong></em><br/>15: <em><strong>RO</strong></em><br/>16: <em><strong>PDC</strong></em><br/>17: <em><strong>MC&NH</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Region</strong><pre><code>  region</code></pre></td>
+      <td>NUMERIC</td>
+      <td>region</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Street Addr. 1</strong><pre><code>  streetAddr1</code></pre></td>
+      <td>STRING</td>
+      <td>street_addr_1</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Street Addr. 2</strong><pre><code>  streetAddr2</code></pre></td>
+      <td>STRING</td>
+      <td>street_addr_2</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>City</strong><pre><code>  city</code></pre></td>
+      <td>STRING</td>
+      <td>city</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>ZIP</strong><pre><code>  zip</code></pre></td>
+      <td>STRING</td>
+      <td>zip</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Contact</strong><pre><code>  contact</code></pre></td>
+      <td>OBJECT</td>
+      <td>contact</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#contact">contact</a></td>
+    </tr>
+    <tr>
+      <td><strong>St. Addr. 1 (mailing)</strong><pre><code>  stAddr1Mailing</code></pre></td>
+      <td>STRING</td>
+      <td>st_addr_1_mailing</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>St. Addr. 2 (mailing)</strong><pre><code>  stAddr2Mailing</code></pre></td>
+      <td>STRING</td>
+      <td>st_addr_2_mailing</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>City (mailing)</strong><pre><code>  cityMailing</code></pre></td>
+      <td>STRING</td>
+      <td>city_mailing</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>State (mailing)</strong><pre><code>  stateMailing</code></pre></td>
+      <td>POINTER</td>
+      <td>state_mailing</td>
+      <td> </td>
+      <td> </td>
+      <td>State-5</td>
+    </tr>
+    <tr>
+      <td><strong>ZIP (mailing)</strong><pre><code>  zipMailing</code></pre></td>
+      <td>STRING</td>
+      <td>zip_mailing</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Multi-division Facility</strong><pre><code>  multidivisionFacility</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>multidivision_facility</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Status</strong><pre><code>  status</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>status</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td>0: <em><strong>National</strong></em><br/>1: <em><strong>Local</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Facility Type</strong><pre><code>  facilityType</code></pre></td>
+      <td>POINTER</td>
+      <td>facility_type</td>
+      <td> </td>
+      <td> </td>
+      <td>Facility_Type-4_1</td>
+    </tr>
+    <tr>
+      <td><strong>Associations</strong><pre><code>  associations</code></pre></td>
+      <td>OBJECT</td>
+      <td>associations</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#associations">associations</a></td>
+    </tr>
+    <tr>
+      <td><strong>Npi</strong><pre><code>  npi</code></pre></td>
+      <td>STRING</td>
+      <td>npi</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Effective Date/time</strong><pre><code>  effectiveDateTime</code></pre></td>
+      <td>OBJECT</td>
+      <td>effective_date_time</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#effectiveDateTime">effectiveDateTime</a></td>
+    </tr>
+    <tr>
+      <td><strong>Taxonomy Code</strong><pre><code>  taxonomyCode</code></pre></td>
+      <td>OBJECT</td>
+      <td>taxonomy_code</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#taxonomyCode">taxonomyCode</a></td>
+    </tr>
+    <tr>
+      <td><strong>Acos Hospital Id</strong><pre><code>  acosHospitalId</code></pre></td>
+      <td>STRING</td>
+      <td>acos_hospital_id</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Facility Dea Number</strong><pre><code>  facilityDeaNumber</code></pre></td>
+      <td>STRING</td>
+      <td>facility_dea_number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Facility Dea Expiration Date</strong><pre><code>  facilityDeaExpirationDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>facility_dea_expiration_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Domain</strong><pre><code>  domain</code></pre></td>
+      <td>POINTER</td>
+      <td>domain</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Domain-4_2">Domain-4_2</a></td>
+    </tr>
+    <tr>
+      <td><strong>Agency Code</strong><pre><code>  agencyCode</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>agency_code</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>VA</strong></em><br/>1: <em><strong>EHR</strong></em><br/>2: <em><strong>ARMY</strong></em><br/>3: <em><strong>IHS</strong></em><br/>4: <em><strong>AIR FORCE</strong></em><br/>5: <em><strong>OTHER</strong></em><br/>6: <em><strong>NAVY</strong></em><br/>7: <em><strong>COAST GUARD</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Reporting Station</strong><pre><code>  reportingStation</code></pre></td>
+      <td>POINTER</td>
+      <td>reporting_station</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Institution-4">Institution-4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Pointer To Agency</strong><pre><code>  pointerToAgency</code></pre></td>
+      <td>POINTER</td>
+      <td>pointer_to_agency</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>Agency-4_11</td>
+    </tr>
+    <tr>
+      <td><strong>Station Number</strong><pre><code>  stationNumber</code></pre></td>
+      <td>STRING</td>
+      <td>station_number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Official VA Name</strong><pre><code>  officialVaName</code></pre></td>
+      <td>STRING</td>
+      <td>official_va_name</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Inactive Facility Flag</strong><pre><code>  inactiveFacilityFlag</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>inactive_facility_flag</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>INACTIVE</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Billing Facility Name</strong><pre><code>  billingFacilityName</code></pre></td>
+      <td>STRING</td>
+      <td>billing_facility_name</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Current Location</strong><pre><code>  currentLocation</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>current_location</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>History</strong><pre><code>  history</code></pre></td>
+      <td>OBJECT</td>
+      <td>history</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#history">history</a></td>
+    </tr>
+    <tr>
+      <td><strong>Identifier</strong><pre><code>  identifier</code></pre></td>
+      <td>OBJECT</td>
+      <td>identifier</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#identifier">identifier</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-associations"><a name="associations"></a>1. Associations</h3>
+
+<p><strong>Field ID:</strong> associations</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Associations</strong><pre><code>  associations</code></pre></td>
+      <td>POINTER</td>
+      <td>associations</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Institution_Association_Types-4_05">Institution_Association_Types-4_05</a></td>
+    </tr>
+    <tr>
+      <td><strong>Parent Of Association</strong><pre><code>  parentOfAssociation</code></pre></td>
+      <td>POINTER</td>
+      <td>parent_of_association</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Institution-4">Institution-4</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-contact"><a name="contact"></a>2. Contact</h3>
+
+<p><strong>Field ID:</strong> contact</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Contact</strong><pre><code>  contact</code></pre></td>
+      <td>STRING</td>
+      <td>contact</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Area</strong><pre><code>  area</code></pre></td>
+      <td>POINTER</td>
+      <td>area</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Hospital_Location-44">Hospital_Location-44</a></td>
+    </tr>
+    <tr>
+      <td><strong>Phone #</strong><pre><code>  phoneNumber</code></pre></td>
+      <td>STRING</td>
+      <td>phone_number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="3-effective-date-time"><a name="effectiveDateTime"></a>3. Effective Date Time</h3>
+
+<p><strong>Field ID:</strong> effectiveDateTime</p>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Effective Date/time</strong><pre><code>  effectiveDateTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>effective_date_time</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Status</strong><pre><code>  status</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>status</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>ACTIVE</strong></em><br/>1: <em><strong>INACTIVE</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Npi</strong><pre><code>  npi</code></pre></td>
+      <td>STRING</td>
+      <td>npi</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="4-history"><a name="history"></a>4. History</h3>
+
+<p><strong>Field ID:</strong> history</p>
+
+<h4 id="properties-4">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Effective Date</strong><pre><code>  effectiveDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>effective_date</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Name (changed From)</strong><pre><code>  nameChangedFrom</code></pre></td>
+      <td>STRING</td>
+      <td>name_changed_from</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Offical VA Name (changed From)</strong><pre><code>  officalVaNameChangedFrom</code></pre></td>
+      <td>STRING</td>
+      <td>offical_va_name_changed_from</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Realigned To</strong><pre><code>  realignedTo</code></pre></td>
+      <td>POINTER</td>
+      <td>realigned_to</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td><a href="../VDM/Institution-4">Institution-4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Realigned From</strong><pre><code>  realignedFrom</code></pre></td>
+      <td>POINTER</td>
+      <td>realigned_from</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td><a href="../VDM/Institution-4">Institution-4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Deactivated Facility / Sta #</strong><pre><code>  deactivatedFacilityStaNumber</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>deactivated_facility___sta_number</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>DEACTIVATED</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Activated Facility</strong><pre><code>  activatedFacility</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>activated_facility</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>ACTIVATED</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="5-identifier"><a name="identifier"></a>5. Identifier</h3>
+
+<p><strong>Field ID:</strong> identifier</p>
+
+<h4 id="properties-5">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Coding System</strong><pre><code>  codingSystem</code></pre></td>
+      <td>STRING</td>
+      <td>coding_system</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Id</strong><pre><code>  id02</code></pre></td>
+      <td>STRING</td>
+      <td>id-_02</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Effective Date/time</strong><pre><code>  effectiveDateTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>effective_date_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Status</strong><pre><code>  status</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>status</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>ACTIVE</strong></em><br/>1: <em><strong>INACTIVE</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="6-taxonomy-code"><a name="taxonomyCode"></a>6. Taxonomy Code</h3>
+
+<p><strong>Field ID:</strong> taxonomyCode</p>
+
+<h4 id="properties-6">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Taxonomy Code</strong><pre><code>  taxonomyCode</code></pre></td>
+      <td>POINTER</td>
+      <td>taxonomy_code</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Person_Class-8932_1">Person_Class-8932_1</a></td>
+    </tr>
+    <tr>
+      <td><strong>Primary Code</strong><pre><code>  primaryCode</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>primary_code</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Status</strong><pre><code>  status</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>status</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>ACTIVE</strong></em><br/>1: <em><strong>INACTIVE</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

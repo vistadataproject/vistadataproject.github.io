@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--cpt"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Cpt<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="cpt">Cpt</h1>
+
+<h3 id="cpt-1">Cpt</h3>
+
+<p>This file contains the Current Procedural Terminology (CPT) codes
+published by the American Medical Association (AMA) and the HCPCS codes,
+published by the Health Care Financing Administration (HCFA).
+The entries in this file are "descriptive terms and identifying codes for
+reporting services and procedures performed by physicians."</p>
+
+<p>If an entry needs to be added, modified or deleted a patch will be issued
+instructing the site how to make the change.  Otherwise, this table file
+should not be edited in anyway by the site.</p>
+
+<p>Per VHA Directive 10-93-142, this file definition should not be modified.</p>
+
+<p><strong>Fileman ID:</strong> 81</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Cpt-81">Cpt-81</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 14</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>DATE-TIME</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 3</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#descriptionVersioned">Description Versioned</a></td>
+      <td>descriptionVersioned</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#effectiveDate">Effective Date</a></td>
+      <td>effectiveDate</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="#shortNameVersioned">Short Name Versioned</a></td>
+      <td>shortNameVersioned</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Cpt Code</strong><pre><code>  cptCode</code></pre></td>
+      <td>STRING</td>
+      <td>cpt_code</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Short Name</strong><pre><code>  shortName</code></pre></td>
+      <td>STRING</td>
+      <td>short_name</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Cpt Category</strong><pre><code>  cptCategory</code></pre></td>
+      <td>POINTER</td>
+      <td>cpt_category</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td><a href="../VDM/Cpt_Category-81_1">Cpt_Category-81_1</a></td>
+    </tr>
+    <tr>
+      <td><strong>Inactive Flag</strong><pre><code>  inactiveFlag</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>inactive_flag</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>INACTIVE CODE</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Source</strong><pre><code>  source</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>source</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>LOCAL</strong></em><br/>1: <em><strong>CPT</strong></em><br/>2: <em><strong>HCPCS</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Inactive Date</strong><pre><code>  inactiveDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>inactive_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Active Date</strong><pre><code>  activeDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>active_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Age(low)</strong><pre><code>  agelow</code></pre></td>
+      <td>NUMERIC</td>
+      <td>agelow</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Age(high)</strong><pre><code>  agehigh</code></pre></td>
+      <td>NUMERIC</td>
+      <td>agehigh</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Sex</strong><pre><code>  sex</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>sex</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>MALE</strong></em><br/>1: <em><strong>FEMALE</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong><pre><code>  description</code></pre></td>
+      <td>STRING</td>
+      <td>description</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Effective Date</strong><pre><code>  effectiveDate</code></pre></td>
+      <td>OBJECT</td>
+      <td>effective_date</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#effectiveDate">effectiveDate</a></td>
+    </tr>
+    <tr>
+      <td><strong>Short Name (versioned)</strong><pre><code>  shortNameVersioned</code></pre></td>
+      <td>OBJECT</td>
+      <td>short_name_versioned</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#shortNameVersioned">shortNameVersioned</a></td>
+    </tr>
+    <tr>
+      <td><strong>Description (versioned)</strong><pre><code>  descriptionVersioned</code></pre></td>
+      <td>OBJECT</td>
+      <td>description_versioned</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#descriptionVersioned">descriptionVersioned</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-description-versioned"><a name="descriptionVersioned"></a>1. Description Versioned</h3>
+
+<p><strong>Field ID:</strong> descriptionVersioned</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Version Date</strong><pre><code>  versionDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>version_date</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Description (versioned)</strong><pre><code>  descriptionVersioned</code></pre></td>
+      <td>STRING</td>
+      <td>description_versioned</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-effective-date"><a name="effectiveDate"></a>2. Effective Date</h3>
+
+<p><strong>Field ID:</strong> effectiveDate</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Effective Date</strong><pre><code>  effectiveDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>effective_date</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Status</strong><pre><code>  status</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>status</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>ACTIVE</strong></em><br/>1: <em><strong>INACTIVE</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="3-short-name-versioned"><a name="shortNameVersioned"></a>3. Short Name Versioned</h3>
+
+<p><strong>Field ID:</strong> shortNameVersioned</p>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Version Date</strong><pre><code>  versionDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>version_date</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Short Name (versioned)</strong><pre><code>  shortNameVersioned</code></pre></td>
+      <td>STRING</td>
+      <td>short_name_versioned</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

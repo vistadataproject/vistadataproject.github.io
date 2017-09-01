@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--mh_tests_and_surveys"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Mh_Tests_And_Surveys<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="mh_tests_and_surveys">Mh_Tests_And_Surveys</h1>
+
+<h3 id="mh-tests-and-surveys">Mh Tests And Surveys</h3>
+
+<p>This file defines the interviews, surveys and tests available in the 
+Mental Health Assistant. Attributes of the instruments include authoring 
+credits, target populations, normative samples and copyright information. 
+Actions available including privileging, reporting of full item content 
+and transmission to the Mental Health National Database are also specified.</p>
+
+<p>Direct entry via FileMan is prohibited.</p>
+
+<p><strong>Fileman ID:</strong> 601.71</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Mh_Tests_And_Surveys-601_71">Mh_Tests_And_Surveys-601_71</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 35</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>DATE-TIME</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 0</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>STRING</td>
+      <td>name</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Print Title</strong><pre><code>  printTitle</code></pre></td>
+      <td>STRING</td>
+      <td>print_title</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Version</strong><pre><code>  version</code></pre></td>
+      <td>STRING</td>
+      <td>version</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Author</strong><pre><code>  author</code></pre></td>
+      <td>STRING</td>
+      <td>author</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Publisher</strong><pre><code>  publisher</code></pre></td>
+      <td>STRING</td>
+      <td>publisher</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Publication Date</strong><pre><code>  publicationDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>publication_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Reference</strong><pre><code>  reference</code></pre></td>
+      <td>STRING</td>
+      <td>reference</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>A Privilege</strong><pre><code>  aPrivilege</code></pre></td>
+      <td>POINTER</td>
+      <td>a_privilege</td>
+      <td> </td>
+      <td> </td>
+      <td>Security_Key-19_1</td>
+    </tr>
+    <tr>
+      <td><strong>R Privilege</strong><pre><code>  rPrivilege</code></pre></td>
+      <td>STRING</td>
+      <td>r_privilege</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Operational</strong><pre><code>  operational</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>operational</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>Under Development</strong></em><br/>1: <em><strong>Dropped</strong></em><br/>2: <em><strong>Yes</strong></em><br/>3: <em><strong>Clinical Reminder</strong></em><br/>4: <em><strong>No</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Has Been Operational</strong><pre><code>  hasBeenOperational</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>has_been_operational</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Requires License</strong><pre><code>  requiresLicense</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>requires_license</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Purpose</strong><pre><code>  purpose</code></pre></td>
+      <td>STRING</td>
+      <td>purpose</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Norm Sample</strong><pre><code>  normSample</code></pre></td>
+      <td>STRING</td>
+      <td>norm_sample</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Target Population</strong><pre><code>  targetPopulation</code></pre></td>
+      <td>STRING</td>
+      <td>target_population</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Entered By</strong><pre><code>  enteredBy</code></pre></td>
+      <td>STRING</td>
+      <td>entered_by</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Entry Date</strong><pre><code>  entryDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>entry_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Last Edited By</strong><pre><code>  lastEditedBy</code></pre></td>
+      <td>STRING</td>
+      <td>last_edited_by</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Last Edit Date</strong><pre><code>  lastEditDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>last_edit_date</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Is National Test</strong><pre><code>  isNationalTest</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>is_national_test</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>License Current</strong><pre><code>  licenseCurrent</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>license_current</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Copyright Text</strong><pre><code>  copyrightText</code></pre></td>
+      <td>STRING</td>
+      <td>copyright_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Requires Signature</strong><pre><code>  requiresSignature</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>requires_signature</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Is Legacy</strong><pre><code>  isLegacy</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>is_legacy</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Submit To National Db</strong><pre><code>  submitToNationalDb</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>submit_to_national_db</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Is Copyrighted</strong><pre><code>  isCopyrighted</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>is_copyrighted</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Write Full Text</strong><pre><code>  writeFullText</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>write_full_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Days To Restart</strong><pre><code>  daysToRestart</code></pre></td>
+      <td>NUMERIC</td>
+      <td>days_to_restart</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Generate Pnote</strong><pre><code>  generatePnote</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>generate_pnote</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>TIU Title</strong><pre><code>  tiuTitle</code></pre></td>
+      <td>POINTER</td>
+      <td>tiu_title</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Tiu_Document_Definition-8925_1">Tiu_Document_Definition-8925_1</a></td>
+    </tr>
+    <tr>
+      <td><strong>Consult Note Title</strong><pre><code>  consultNoteTitle</code></pre></td>
+      <td>POINTER</td>
+      <td>consult_note_title</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Tiu_Document_Definition-8925_1">Tiu_Document_Definition-8925_1</a></td>
+    </tr>
+    <tr>
+      <td><strong>Ys_mha_b.dll Version</strong><pre><code>  ysMhaBdllVersion</code></pre></td>
+      <td>STRING</td>
+      <td>ys_mha_bdll_version</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ys_mha_b.dll Date/time</strong><pre><code>  ysMhaBdllDateTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>ys_mha_bdll_date_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ys_mha_aux.dll Version</strong><pre><code>  ysMhaAuxdllVersion</code></pre></td>
+      <td>STRING</td>
+      <td>ys_mha_auxdll_version</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ys_mha_aux.dll Date/time</strong><pre><code>  ysMhaAuxdllDateTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>ys_mha_auxdll_date_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--usr_class"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Usr_Class<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="usr_class">Usr_Class</h1>
+
+<h3 id="usr-class">Usr Class</h3>
+
+<p>This file is intended to allow the definition of user classes in such a
+way that they are useful across packages.  It will undoubtedly evolve with
+more experience in this area.</p>
+
+<p>These user classes are then used to support part of the the
+"authorization" concept - who may do what to a document, order, etc.</p>
+
+<p>They are also used to support part of the "subscription" concept - who
+should receive something, e.g. a notification that a document needs
+signature.</p>
+
+<p>The User Authorization/Subscription file points to the User Class file to
+allocate authorizations/subscriptions to appropriate user classes.</p>
+
+<p>The User Class Membership file links users in the New Person file to User
+Classes.</p>
+
+<p>This file supports an infinite hierarchy of subclasses, with each entry
+having as many subclasses as desired.  Subclasses are contained in the
+same file, as entries in their own right.  A class automatically contains
+as members all members of its subclasses, as well as explicit members of
+the class itself.</p>
+
+<p><strong>Fileman ID:</strong> 8930</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Usr_Class-8930">Usr_Class-8930</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 7</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 0</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>STRING</td>
+      <td>name</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Abbreviation</strong><pre><code>  abbreviation</code></pre></td>
+      <td>STRING</td>
+      <td>abbreviation</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Active</strong><pre><code>  active</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>active</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td>0: <em><strong>Active</strong></em><br/>1: <em><strong>Inactive</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Display Name</strong><pre><code>  displayName</code></pre></td>
+      <td>STRING</td>
+      <td>display_name</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Person Class</strong><pre><code>  personClass</code></pre></td>
+      <td>POINTER</td>
+      <td>person_class</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Person_Class-8932_1">Person_Class-8932_1</a></td>
+    </tr>
+    <tr>
+      <td><strong>Subclass</strong><pre><code>  subclass</code></pre></td>
+      <td>POINTER</td>
+      <td>subclass</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ok To Distribute</strong><pre><code>  okToDistribute</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>ok_to_distribute</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

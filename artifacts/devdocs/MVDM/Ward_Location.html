@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--ward_location"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Ward_Location<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="ward_location">Ward_Location</h1>
+
+<h3 id="ward-location">Ward Location</h3>
+
+<p>This file contains all the facility ward locations and their
+related data, i.e., Operating Beds,  Bedsection, etc.  The wards 
+are created/edited using the WARD DEFINITION option of the ADT module.
+WARD DEFINITION option of the ADT module.
+contains all statistical data, by date, necessary for the
+computation of the daily Bed Status report.</p>
+
+<p><strong>Fileman ID:</strong> 42</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Ward_Location-42">Ward_Location-42</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 20</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 4</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#authorizedBedsDate">Authorized Beds Date</a></td>
+      <td>authorizedBedsDate</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#outofserviceDate">Outofservice Date</a></td>
+      <td>outofserviceDate</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="#planCumDischMonth">Plan Cum Disch Month</a></td>
+      <td>planCumDischMonth</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><a href="#totals">Totals</a></td>
+      <td>totals</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>STRING</td>
+      <td>name</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Division</strong><pre><code>  division</code></pre></td>
+      <td>POINTER</td>
+      <td>division</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Medical_Center_Division-40_8">Medical_Center_Division-40_8</a></td>
+    </tr>
+    <tr>
+      <td><strong>Specialty</strong><pre><code>  specialty</code></pre></td>
+      <td>POINTER</td>
+      <td>specialty</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>Specialty-42_4</td>
+    </tr>
+    <tr>
+      <td><strong>Bedsection</strong><pre><code>  bedsection</code></pre></td>
+      <td>STRING</td>
+      <td>bedsection</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Service</strong><pre><code>  service</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>service</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td>0: <em><strong>NON-COUNT</strong></em><br/>1: <em><strong>REHAB MEDICINE</strong></em><br/>2: <em><strong>SPINAL CORD INJURY</strong></em><br/>3: <em><strong>PSYCHIATRY</strong></em><br/>4: <em><strong>NEUROLOGY</strong></em><br/>5: <em><strong>INTERMEDIATE MED</strong></em><br/>6: <em><strong>MEDICINE</strong></em><br/>7: <em><strong>DOMICILIARY</strong></em><br/>8: <em><strong>SURGERY</strong></em><br/>9: <em><strong>BLIND REHAB</strong></em><br/>10: <em><strong>NHCU</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Rai/mds Ward</strong><pre><code>  raiMdsWard</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>rai_mds_ward</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Print Ward On Wristband</strong><pre><code>  printWardOnWristband</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>print_ward_on_wristband</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Fy Target</strong><pre><code>  fyTarget</code></pre></td>
+      <td>NUMERIC</td>
+      <td>fy_target</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Seriously Ill</strong><pre><code>  seriouslyIll</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>seriously_ill</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>INCLUDE ON SERIOUSLY ILL LIST</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Terminal</strong><pre><code>  terminal</code></pre></td>
+      <td>NUMERIC</td>
+      <td>terminal</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Primary Location</strong><pre><code>  primaryLocation</code></pre></td>
+      <td>STRING</td>
+      <td>primary_location</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Intermediate Medicine - Ltc</strong><pre><code>  intermediateMedicineLtc</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>intermediate_medicine__ltc</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Synonym</strong><pre><code>  synonym</code></pre></td>
+      <td>STRING</td>
+      <td>synonym</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Hospital Location File Pointer</strong><pre><code>  hospitalLocationFilePointer</code></pre></td>
+      <td>POINTER</td>
+      <td>hospital_location_file_pointer</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td><a href="../VDM/Hospital_Location-44">Hospital_Location-44</a></td>
+    </tr>
+    <tr>
+      <td><strong>Authorized Beds Date</strong><pre><code>  authorizedBedsDate</code></pre></td>
+      <td>OBJECT</td>
+      <td>authorized_beds_date</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#authorizedBedsDate">authorizedBedsDate</a></td>
+    </tr>
+    <tr>
+      <td><strong>Out-of-service Date</strong><pre><code>  outofserviceDate</code></pre></td>
+      <td>OBJECT</td>
+      <td>outofservice_date</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#outofserviceDate">outofserviceDate</a></td>
+    </tr>
+    <tr>
+      <td><strong>G&amp;l Order</strong><pre><code>  glOrder</code></pre></td>
+      <td>NUMERIC</td>
+      <td>gl_order</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Totals</strong><pre><code>  totals</code></pre></td>
+      <td>OBJECT</td>
+      <td>totals</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#totals">totals</a></td>
+    </tr>
+    <tr>
+      <td><strong>G&amp;l Header</strong><pre><code>  glHeader</code></pre></td>
+      <td>STRING</td>
+      <td>gl_header</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*nserv</strong><pre><code>  nserv</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>nserv</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-authorized-beds-date"><a name="authorizedBedsDate"></a>1. Authorized Beds Date</h3>
+
+<p><strong>Field ID:</strong> authorizedBedsDate</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Authorized Beds Date</strong><pre><code>  authorizedBedsDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>authorized_beds_date</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Number Of Authorized Beds</strong><pre><code>  numberOfAuthorizedBeds</code></pre></td>
+      <td>NUMERIC</td>
+      <td>number_of_authorized_beds</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-outofservice-date"><a name="outofserviceDate"></a>2. Outofservice Date</h3>
+
+<p><strong>Field ID:</strong> outofserviceDate</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Out-of-service Date(s)</strong><pre><code>  outofserviceDates</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>outofservice_dates</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Reason</strong><pre><code>  reason</code></pre></td>
+      <td>POINTER</td>
+      <td>reason</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>Mas_Outofservice-405_5</td>
+    </tr>
+    <tr>
+      <td><strong>Comment</strong><pre><code>  comment</code></pre></td>
+      <td>STRING</td>
+      <td>comment</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Return To Service Date</strong><pre><code>  returnToServiceDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>return_to_service_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Oos Display End Date</strong><pre><code>  oosDisplayEndDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>oos_display_end_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Is Entire Ward Out Of Service?</strong><pre><code>  isEntireWardOutOfService</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>is_entire_ward_out_of_service</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Display Oos On G&amp;l</strong><pre><code>  displayOosOnGl</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>display_oos_on_gl</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Show On Bed Status Report</strong><pre><code>  showOnBedStatusReport</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>show_on_bed_status_report</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Include Stat's On Bed Status</strong><pre><code>  includeStatsOnBedStatus</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>include_stats_on_bed_status</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Bed Status Display End Date</strong><pre><code>  bedStatusDisplayEndDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>bed_status_display_end_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Number Beds Oos</strong><pre><code>  numberBedsOos</code></pre></td>
+      <td>NUMERIC</td>
+      <td>number_beds_oos</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="3-plan-cum-disch-month"><a name="planCumDischMonth"></a>3. Plan Cum Disch Month</h3>
+
+<p><strong>Field ID:</strong> planCumDischMonth</p>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Plan Cum Disch Month</strong><pre><code>  planCumDischMonth</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>plan_cum_disch_month</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>MAR</strong></em><br/>1: <em><strong>FEB</strong></em><br/>2: <em><strong>AUG</strong></em><br/>3: <em><strong>SEP</strong></em><br/>4: <em><strong>APR</strong></em><br/>5: <em><strong>JUN</strong></em><br/>6: <em><strong>JUL</strong></em><br/>7: <em><strong>JAN</strong></em><br/>8: <em><strong>MAY</strong></em><br/>9: <em><strong>NOV</strong></em><br/>10: <em><strong>DEC</strong></em><br/>11: <em><strong>OCT</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Planned Discharges For Month</strong><pre><code>  plannedDischargesForMonth</code></pre></td>
+      <td>NUMERIC</td>
+      <td>planned_discharges_for_month</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="4-totals"><a name="totals"></a>4. Totals</h3>
+
+<p><strong>Field ID:</strong> totals</p>
+
+<h4 id="properties-4">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Level</strong><pre><code>  level</code></pre></td>
+      <td>IEN</td>
+      <td>level</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Totals</strong><pre><code>  totals</code></pre></td>
+      <td>STRING</td>
+      <td>totals</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Target</strong><pre><code>  target</code></pre></td>
+      <td>NUMERIC</td>
+      <td>target</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Adc Cum</strong><pre><code>  adcCum</code></pre></td>
+      <td>NUMERIC</td>
+      <td>adc_cum</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Print In Cumulative Totals</strong><pre><code>  printInCumulativeTotals</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>print_in_cumulative_totals</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Plan Cum Disch Month</strong><pre><code>  planCumDischMonth</code></pre></td>
+      <td>OBJECT</td>
+      <td>plan_cum_disch_month</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#planCumDischMonth">planCumDischMonth</a></td>
+    </tr>
+    <tr>
+      <td><strong>Cum Title</strong><pre><code>  cumTitle</code></pre></td>
+      <td>STRING</td>
+      <td>cum_title</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

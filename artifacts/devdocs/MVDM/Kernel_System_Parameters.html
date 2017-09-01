@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--kernel_system_parameters"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Kernel_System_Parameters<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="kernel_system_parameters">Kernel_System_Parameters</h1>
+
+<h3 id="kernel-system-parameters">Kernel System Parameters</h3>
+
+<p>This file holds the site parameters for this installation of the Kernel.
+It will have only one entry – the domain name of the installation site.
+Some parameters are defined by the systems manager during the installation
+process.  These include Agence, volume set multiple, Default parameters.
+Others may be edited subsequent to installation. Spooling, response time,
+and audit parameters may be established.  Priorities may be set for
+interactive users and for TaskMan.  Defaults for fields such as timed
+read, auto menu, and ask device are defined for use when not otherwise
+specified for a user or device.</p>
+
+<p><strong>Fileman ID:</strong> 8989.3</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Kernel_System_Parameters-8989_3">Kernel_System_Parameters-8989_3</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 83</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IEN</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>STRING</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>DATE-TIME</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 5</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#alphaBetaTestPackage">Alpha Beta Test Package</a></td>
+      <td>alphaBetaTestPackage</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#alphabetaTestOption">Alphabeta Test Option</a></td>
+      <td>alphabetaTestOption</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="#packageNamespaceOrPrefix">Package Namespace Or Prefix</a></td>
+      <td>packageNamespaceOrPrefix</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><a href="#terminalServerIp">Terminal Server Ip</a></td>
+      <td>terminalServerIp</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><a href="#volumeSet">Volume Set</a></td>
+      <td>volumeSet</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Number</strong><pre><code>  number</code></pre></td>
+      <td>IEN</td>
+      <td>number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Domain Name</strong><pre><code>  domainName</code></pre></td>
+      <td>POINTER</td>
+      <td>domain_name</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Domain-4_2">Domain-4_2</a></td>
+    </tr>
+    <tr>
+      <td><strong>Irm Mail Group</strong><pre><code>  irmMailGroup</code></pre></td>
+      <td>STRING</td>
+      <td>irm_mail_group</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>After Hours Mail Group</strong><pre><code>  afterHoursMailGroup</code></pre></td>
+      <td>STRING</td>
+      <td>after_hours_mail_group</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Mixed Os</strong><pre><code>  mixedOs</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>mixed_os</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>VMS/Linux</strong></em><br/>1: <em><strong>No</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Local Tmp</strong><pre><code>  localTmp</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>local_tmp</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Agency Code</strong><pre><code>  agencyCode</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>agency_code</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>VA</strong></em><br/>1: <em><strong>EHR</strong></em><br/>2: <em><strong>ARMY</strong></em><br/>3: <em><strong>IHS</strong></em><br/>4: <em><strong>AIR FORCE</strong></em><br/>5: <em><strong>OTHER</strong></em><br/>6: <em><strong>NAVY</strong></em><br/>7: <em><strong>COAST GUARD</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Routine Monitoring</strong><pre><code>  routineMonitoring</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>routine_monitoring</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>All</strong></em><br/>1: <em><strong>Selected</strong></em><br/>2: <em><strong>No</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Routine N-space To Monitor</strong><pre><code>  routineNspaceToMonitor</code></pre></td>
+      <td>STRING</td>
+      <td>routine_nspace_to_monitor</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Auto-generate Access Codes</strong><pre><code>  autogenerateAccessCodes</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>autogenerate_access_codes</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Auto-generate Verify Codes</strong><pre><code>  autogenerateVerifyCodes</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>autogenerate_verify_codes</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>User Characteristics Template</strong><pre><code>  userCharacteristicsTemplate</code></pre></td>
+      <td>POINTER</td>
+      <td>user_characteristics_template</td>
+      <td> </td>
+      <td> </td>
+      <td>Input_Template-_402</td>
+    </tr>
+    <tr>
+      <td><strong>Academic Affiliation Waiver</strong><pre><code>  academicAffiliationWaiver</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>academic_affiliation_waiver</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Option Audit</strong><pre><code>  optionAudit</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>option_audit</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>NO AUDIT</strong></em><br/>1: <em><strong>ALL OPTIONS AUDITED</strong></em><br/>2: <em><strong>SPECIFIC OPTIONS AUDITED</strong></em><br/>3: <em><strong>USERS AUDITED</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Option To Audit</strong><pre><code>  optionToAudit</code></pre></td>
+      <td>POINTER</td>
+      <td>option_to_audit</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Namespace To Audit</strong><pre><code>  namespaceToAudit</code></pre></td>
+      <td>STRING</td>
+      <td>namespace_to_audit</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>User To Audit</strong><pre><code>  userToAudit</code></pre></td>
+      <td>POINTER</td>
+      <td>user_to_audit</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Initiate Audit</strong><pre><code>  initiateAudit</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>initiate_audit</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Terminate Audit</strong><pre><code>  terminateAudit</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>terminate_audit</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>New Person Identifiers</strong><pre><code>  newPersonIdentifiers</code></pre></td>
+      <td>STRING</td>
+      <td>new_person_identifiers</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ccow Token Timeout</strong><pre><code>  ccowTokenTimeout</code></pre></td>
+      <td>NUMERIC</td>
+      <td>ccow_token_timeout</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Max Spool Lines Per User</strong><pre><code>  maxSpoolLinesPerUser</code></pre></td>
+      <td>NUMERIC</td>
+      <td>max_spool_lines_per_user</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Max Spool Documents Per User</strong><pre><code>  maxSpoolDocumentsPerUser</code></pre></td>
+      <td>NUMERIC</td>
+      <td>max_spool_documents_per_user</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Max Spool Document Life-span</strong><pre><code>  maxSpoolDocumentLifespan</code></pre></td>
+      <td>NUMERIC</td>
+      <td>max_spool_document_lifespan</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Alpha/beta Test Package</strong><pre><code>  alphaBetaTestPackage</code></pre></td>
+      <td>OBJECT</td>
+      <td>alpha_beta_test_package</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#alphaBetaTestPackage">alphaBetaTestPackage</a></td>
+    </tr>
+    <tr>
+      <td><strong>Alpha,beta Test Option</strong><pre><code>  alphabetaTestOption</code></pre></td>
+      <td>OBJECT</td>
+      <td>alphabeta_test_option</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#alphabetaTestOption">alphabetaTestOption</a></td>
+    </tr>
+    <tr>
+      <td><strong>Volume Set</strong><pre><code>  volumeSet</code></pre></td>
+      <td>OBJECT</td>
+      <td>volume_set</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#volumeSet">volumeSet</a></td>
+    </tr>
+    <tr>
+      <td><strong>Dns Ip</strong><pre><code>  dnsIp</code></pre></td>
+      <td>STRING</td>
+      <td>dns_ip</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Pki Server</strong><pre><code>  pkiServer</code></pre></td>
+      <td>STRING</td>
+      <td>pki_server</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Path To Mwapi Bitmaps</strong><pre><code>  pathToMwapiBitmaps</code></pre></td>
+      <td>STRING</td>
+      <td>path_to_mwapi_bitmaps</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Security Token Service</strong><pre><code>  securityTokenService</code></pre></td>
+      <td>STRING</td>
+      <td>security_token_service</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Organization</strong><pre><code>  organization</code></pre></td>
+      <td>STRING</td>
+      <td>organization</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Organization Id</strong><pre><code>  organizationId</code></pre></td>
+      <td>STRING</td>
+      <td>organization_id</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Default # Of Attempts</strong><pre><code>  defaultNumberOfAttempts</code></pre></td>
+      <td>NUMERIC</td>
+      <td>default_number_of_attempts</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Default Lock-out Time</strong><pre><code>  defaultLockoutTime</code></pre></td>
+      <td>NUMERIC</td>
+      <td>default_lockout_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Default Multiple Sign-on</strong><pre><code>  defaultMultipleSignon</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>default_multiple_signon</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>YES</strong></em><br/>1: <em><strong>Only one IP</strong></em><br/>2: <em><strong>NO</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Ask Device Type At Sign-on</strong><pre><code>  askDeviceTypeAtSignon</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>ask_device_type_at_signon</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Default Auto-menu</strong><pre><code>  defaultAutomenu</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>default_automenu</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Default Language</strong><pre><code>  defaultLanguage</code></pre></td>
+      <td>POINTER</td>
+      <td>default_language</td>
+      <td> </td>
+      <td> </td>
+      <td>Language-_85</td>
+    </tr>
+    <tr>
+      <td><strong>Default Type-ahead</strong><pre><code>  defaultTypeahead</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>default_typeahead</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Default Timed-read (seconds)</strong><pre><code>  defaultTimedreadSeconds</code></pre></td>
+      <td>NUMERIC</td>
+      <td>default_timedread_seconds</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Bypass Device Lock-out</strong><pre><code>  bypassDeviceLockout</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>bypass_device_lockout</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Reserved</strong><pre><code>  reserved</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>reserved</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Device To Audit</strong><pre><code>  deviceToAudit</code></pre></td>
+      <td>POINTER</td>
+      <td>device_to_audit</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Failed Access Attempt Audit</strong><pre><code>  failedAccessAttemptAudit</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>failed_access_attempt_audit</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>NO AUDIT</strong></em><br/>1: <em><strong>SPECIFIED DEVICES/NO TEXT RECORDED</strong></em><br/>2: <em><strong>ALL DEVICES/NO TEXT RECORDED</strong></em><br/>3: <em><strong>SPECIFIED DEVICES/TEXT RECORDED</strong></em><br/>4: <em><strong>ALL DEVICES/TEXT RECORDED</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Reserved</strong><pre><code>  reserved213</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>reserved-213</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lifetime Of Verify Code</strong><pre><code>  lifetimeOfVerifyCode</code></pre></td>
+      <td>NUMERIC</td>
+      <td>lifetime_of_verify_code</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Interactive User's Priority</strong><pre><code>  interactiveUsersPriority</code></pre></td>
+      <td>NUMERIC</td>
+      <td>interactive_users_priority</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Default Institution</strong><pre><code>  defaultInstitution</code></pre></td>
+      <td>POINTER</td>
+      <td>default_institution</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td><a href="../VDM/Institution-4">Institution-4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Default Auto Sign-on</strong><pre><code>  defaultAutoSignon</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>default_auto_signon</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>Disabled</strong></em><br/>1: <em><strong>Yes</strong></em><br/>2: <em><strong>No</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Default Multiple Sign-on Limit</strong><pre><code>  defaultMultipleSignonLimit</code></pre></td>
+      <td>NUMERIC</td>
+      <td>default_multiple_signon_limit</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Broker Activity Timeout</strong><pre><code>  brokerActivityTimeout</code></pre></td>
+      <td>NUMERIC</td>
+      <td>broker_activity_timeout</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Gui Post Sign-on</strong><pre><code>  guiPostSignon</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>gui_post_signon</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>Send/Show</strong></em><br/>1: <em><strong>Don't Send/Show</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Intro Message</strong><pre><code>  introMessage</code></pre></td>
+      <td>STRING</td>
+      <td>intro_message</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Post Sign-in Message</strong><pre><code>  postSigninMessage</code></pre></td>
+      <td>STRING</td>
+      <td>post_signin_message</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Peer Systems</strong><pre><code>  peerSystems</code></pre></td>
+      <td>STRING</td>
+      <td>peer_systems</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Log Resource Usage?</strong><pre><code>  logResourceUsage</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>log_resource_usage</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Primary Hfs Directory</strong><pre><code>  primaryHfsDirectory</code></pre></td>
+      <td>STRING</td>
+      <td>primary_hfs_directory</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Secondary Hfs Directory</strong><pre><code>  secondaryHfsDirectory</code></pre></td>
+      <td>STRING</td>
+      <td>secondary_hfs_directory</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Facility Iso</strong><pre><code>  facilityIso</code></pre></td>
+      <td>POINTER</td>
+      <td>facility_iso</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Facility Cio</strong><pre><code>  facilityCio</code></pre></td>
+      <td>POINTER</td>
+      <td>facility_cio</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Ip Security On</strong><pre><code>  ipSecurityOn</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>ip_security_on</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Failed Attempts Limit - Irm</strong><pre><code>  failedAttemptsLimitIrm</code></pre></td>
+      <td>NUMERIC</td>
+      <td>failed_attempts_limit__irm</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Failed Attempts Limit - Aod</strong><pre><code>  failedAttemptsLimitAod</code></pre></td>
+      <td>NUMERIC</td>
+      <td>failed_attempts_limit__aod</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>User Locking</strong><pre><code>  userLocking</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>user_locking</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Last Run Failed Attempts Check</strong><pre><code>  lastRunFailedAttemptsCheck</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>last_run_failed_attempts_check</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Default Ts Slack</strong><pre><code>  defaultTsSlack</code></pre></td>
+      <td>NUMERIC</td>
+      <td>default_ts_slack</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Keep Threshold</strong><pre><code>  keepThreshold</code></pre></td>
+      <td>NUMERIC</td>
+      <td>keep_threshold</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Total Count Increase</strong><pre><code>  totalCountIncrease</code></pre></td>
+      <td>NUMERIC</td>
+      <td>total_count_increase</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Terminal Server Ip</strong><pre><code>  terminalServerIp</code></pre></td>
+      <td>OBJECT</td>
+      <td>terminal_server_ip</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#terminalServerIp">terminalServerIp</a></td>
+    </tr>
+    <tr>
+      <td><strong>Production</strong><pre><code>  production</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>production</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>System Id</strong><pre><code>  systemId</code></pre></td>
+      <td>STRING</td>
+      <td>system_id</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Sid Last Checked</strong><pre><code>  sidLastChecked</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>sid_last_checked</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Logical Disk Name</strong><pre><code>  logicalDiskName</code></pre></td>
+      <td>STRING</td>
+      <td>logical_disk_name</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Physical Disk</strong><pre><code>  physicalDisk</code></pre></td>
+      <td>STRING</td>
+      <td>physical_disk</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Error Limit</strong><pre><code>  errorLimit</code></pre></td>
+      <td>NUMERIC</td>
+      <td>error_limit</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Send Error Summary</strong><pre><code>  sendErrorSummary</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>send_error_summary</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Keep Error Trap</strong><pre><code>  keepErrorTrap</code></pre></td>
+      <td>NUMERIC</td>
+      <td>keep_error_trap</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Keep Error Summary</strong><pre><code>  keepErrorSummary</code></pre></td>
+      <td>NUMERIC</td>
+      <td>keep_error_summary</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>New Person Enumeration Started</strong><pre><code>  newPersonEnumerationStarted</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>new_person_enumeration_started</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Paid Enumeration Started</strong><pre><code>  paidEnumerationStarted</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>paid_enumeration_started</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>New Person Enumeration Finish</strong><pre><code>  newPersonEnumerationFinish</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>new_person_enumeration_finish</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Paid Enumeration Finish</strong><pre><code>  paidEnumerationFinish</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>paid_enumeration_finish</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-alpha-beta-test-package"><a name="alphaBetaTestPackage"></a>1. Alpha Beta Test Package</h3>
+
+<p><strong>Field ID:</strong> alphaBetaTestPackage</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Alpha/beta Test Package</strong><pre><code>  alphaBetaTestPackage</code></pre></td>
+      <td>POINTER</td>
+      <td>alpha_beta_test_package</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Package-9_4">Package-9_4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Date Last Updated</strong><pre><code>  dateLastUpdated</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_last_updated</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Adressee For Usage Reporting</strong><pre><code>  adresseeForUsageReporting</code></pre></td>
+      <td>STRING</td>
+      <td>adressee_for_usage_reporting</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Version Number</strong><pre><code>  versionNumber</code></pre></td>
+      <td>STRING</td>
+      <td>version_number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Date Errors Last Reported</strong><pre><code>  dateErrorsLastReported</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_errors_last_reported</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Package Namespace Or Prefix</strong><pre><code>  packageNamespaceOrPrefix</code></pre></td>
+      <td>OBJECT</td>
+      <td>package_namespace_or_prefix</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#packageNamespaceOrPrefix">packageNamespaceOrPrefix</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-alphabeta-test-option"><a name="alphabetaTestOption"></a>2. Alphabeta Test Option</h3>
+
+<p><strong>Field ID:</strong> alphabetaTestOption</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Alpha,beta Test Option</strong><pre><code>  alphabetaTestOption</code></pre></td>
+      <td>POINTER</td>
+      <td>alphabeta_test_option</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td><a href="../VDM/Option-19">Option-19</a></td>
+    </tr>
+    <tr>
+      <td><strong>Accesses Since Last Update</strong><pre><code>  accessesSinceLastUpdate</code></pre></td>
+      <td>NUMERIC</td>
+      <td>accesses_since_last_update</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="3-package-namespace-or-prefix"><a name="packageNamespaceOrPrefix"></a>3. Package Namespace Or Prefix</h3>
+
+<p><strong>Field ID:</strong> packageNamespaceOrPrefix</p>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Package Namespace Or Prefix</strong><pre><code>  packageNamespaceOrPrefix</code></pre></td>
+      <td>STRING</td>
+      <td>package_namespace_or_prefix</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Exclude Namespace Or Prefix</strong><pre><code>  excludeNamespaceOrPrefix</code></pre></td>
+      <td>STRING</td>
+      <td>exclude_namespace_or_prefix</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="4-terminal-server-ip"><a name="terminalServerIp"></a>4. Terminal Server Ip</h3>
+
+<p><strong>Field ID:</strong> terminalServerIp</p>
+
+<h4 id="properties-4">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Terminal Server Ip</strong><pre><code>  terminalServerIp</code></pre></td>
+      <td>STRING</td>
+      <td>terminal_server_ip</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>After Hours Slack</strong><pre><code>  afterHoursSlack</code></pre></td>
+      <td>NUMERIC</td>
+      <td>after_hours_slack</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Last Time Reset</strong><pre><code>  lastTimeReset</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>last_time_reset</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="5-volume-set"><a name="volumeSet"></a>5. Volume Set</h3>
+
+<p><strong>Field ID:</strong> volumeSet</p>
+
+<h4 id="properties-5">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Volume Set</strong><pre><code>  volumeSet</code></pre></td>
+      <td>STRING</td>
+      <td>volume_set</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Max Signon Allowed</strong><pre><code>  maxSignonAllowed</code></pre></td>
+      <td>NUMERIC</td>
+      <td>max_signon_allowed</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Log System Rt?</strong><pre><code>  logSystemRt</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>log_system_rt</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

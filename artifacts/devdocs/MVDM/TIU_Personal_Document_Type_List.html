@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--tiu_personal_document_type_list"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » TIU_Personal_Document_Type_List<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="tiu_personal_document_type_list">TIU_Personal_Document_Type_List</h1>
+
+<h3 id="tiu-personal-document-type-list">TIU Personal Document Type List</h3>
+
+<p>This file is used to store "pick-lists" of documents (by class), for
+selection by the user.</p>
+
+<p><strong>Fileman ID:</strong> 8925.98</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/TIU_Personal_Document_Type_List-8925_98">TIU_Personal_Document_Type_List-8925_98</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 5</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>POINTER</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>STRING</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 1</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#personalDocumentList">Personal Document List</a></td>
+      <td>personalDocumentList</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Person</strong><pre><code>  person</code></pre></td>
+      <td>POINTER</td>
+      <td>person</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Parent Document Class</strong><pre><code>  parentDocumentClass</code></pre></td>
+      <td>POINTER</td>
+      <td>parent_document_class</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Tiu_Document_Definition-8925_1">Tiu_Document_Definition-8925_1</a></td>
+    </tr>
+    <tr>
+      <td><strong>Default Type</strong><pre><code>  defaultType</code></pre></td>
+      <td>POINTER</td>
+      <td>default_type</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Tiu_Document_Definition-8925_1">Tiu_Document_Definition-8925_1</a></td>
+    </tr>
+    <tr>
+      <td><strong>Personal Document List</strong><pre><code>  personalDocumentList</code></pre></td>
+      <td>OBJECT</td>
+      <td>personal_document_list</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#personalDocumentList">personalDocumentList</a></td>
+    </tr>
+    <tr>
+      <td><strong>Timestamp</strong><pre><code>  timestamp</code></pre></td>
+      <td>STRING</td>
+      <td>timestamp</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-personal-document-list"><a name="personalDocumentList"></a>1. Personal Document List</h3>
+
+<p><strong>Field ID:</strong> personalDocumentList</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Title</strong><pre><code>  title</code></pre></td>
+      <td>POINTER</td>
+      <td>title</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Tiu_Document_Definition-8925_1">Tiu_Document_Definition-8925_1</a></td>
+    </tr>
+    <tr>
+      <td><strong>Sequence</strong><pre><code>  sequence</code></pre></td>
+      <td>NUMERIC</td>
+      <td>sequence</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Display Name</strong><pre><code>  displayName</code></pre></td>
+      <td>STRING</td>
+      <td>display_name</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

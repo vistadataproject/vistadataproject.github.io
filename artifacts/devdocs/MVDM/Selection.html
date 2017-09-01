@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--selection"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Selection<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="selection">Selection</h1>
+
+<h3 id="selection-1">Selection</h3>
+
+<p>Contains the items appearing on the SELECTION LISTS. A selection can be
+composed of several fields, hence can occupy several subcolumns. Only the
+text is stored here, not the MARKING SYMBOLS.</p>
+
+<p><strong>Fileman ID:</strong> 357.3</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Selection-357_3">Selection-357_3</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 17</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>DATE-TIME</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 2</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#cptModifier">Cpt Modifier</a></td>
+      <td>cptModifier</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#subcolumnValue">Subcolumn Value</a></td>
+      <td>subcolumnValue</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Selection Id</strong><pre><code>  selectionId</code></pre></td>
+      <td>STRING</td>
+      <td>selection_id</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Place Holder Only</strong><pre><code>  placeHolderOnly</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>place_holder_only</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Selection List</strong><pre><code>  selectionList</code></pre></td>
+      <td>POINTER</td>
+      <td>selection_list</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Selection_List-357_2">Selection_List-357_2</a></td>
+    </tr>
+    <tr>
+      <td><strong>Selection Group</strong><pre><code>  selectionGroup</code></pre></td>
+      <td>POINTER</td>
+      <td>selection_group</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Selection_Group-357_4">Selection_Group-357_4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Print Order Within Group</strong><pre><code>  printOrderWithinGroup</code></pre></td>
+      <td>NUMERIC</td>
+      <td>print_order_within_group</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Place Holder Text</strong><pre><code>  placeHolderText</code></pre></td>
+      <td>STRING</td>
+      <td>place_holder_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Use As Subheader?</strong><pre><code>  useAsSubheader</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>use_as_subheader</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Stop Using Subheader?</strong><pre><code>  stopUsingSubheader</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>stop_using_subheader</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Quantity</strong><pre><code>  quantity</code></pre></td>
+      <td>NUMERIC</td>
+      <td>quantity</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Subcolumn Value</strong><pre><code>  subcolumnValue</code></pre></td>
+      <td>OBJECT</td>
+      <td>subcolumn_value</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#subcolumnValue">subcolumnValue</a></td>
+    </tr>
+    <tr>
+      <td><strong>Narrative To Send To Pce</strong><pre><code>  narrativeToSendToPce</code></pre></td>
+      <td>STRING</td>
+      <td>narrative_to_send_to_pce</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Clinical Lexicon Entry</strong><pre><code>  clinicalLexiconEntry</code></pre></td>
+      <td>POINTER</td>
+      <td>clinical_lexicon_entry</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Expressions-757_01">Expressions-757_01</a></td>
+    </tr>
+    <tr>
+      <td><strong>Second Code</strong><pre><code>  secondCode</code></pre></td>
+      <td>STRING</td>
+      <td>second_code</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Third Code</strong><pre><code>  thirdCode</code></pre></td>
+      <td>STRING</td>
+      <td>third_code</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Cpt Modifier</strong><pre><code>  cptModifier</code></pre></td>
+      <td>OBJECT</td>
+      <td>cpt_modifier</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#cptModifier">cptModifier</a></td>
+    </tr>
+    <tr>
+      <td><strong>Icd Code Edit Date/time</strong><pre><code>  icdCodeEditDateTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>icd_code_edit_date_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Icd Changes Made By</strong><pre><code>  icdChangesMadeBy</code></pre></td>
+      <td>POINTER</td>
+      <td>icd_changes_made_by</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-cpt-modifier"><a name="cptModifier"></a>1. Cpt Modifier</h3>
+
+<p><strong>Field ID:</strong> cptModifier</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Cpt Modifier</strong><pre><code>  cptModifier</code></pre></td>
+      <td>STRING</td>
+      <td>cpt_modifier</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>STRING</td>
+      <td>name</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-subcolumn-value"><a name="subcolumnValue"></a>2. Subcolumn Value</h3>
+
+<p><strong>Field ID:</strong> subcolumnValue</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Subcolumn Number</strong><pre><code>  subcolumnNumber</code></pre></td>
+      <td>NUMERIC</td>
+      <td>subcolumn_number</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Subcolumn Value</strong><pre><code>  subcolumnValue</code></pre></td>
+      <td>STRING</td>
+      <td>subcolumn_value</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

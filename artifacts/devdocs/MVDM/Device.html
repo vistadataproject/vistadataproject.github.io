@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--device"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Device<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="device">Device</h1>
+
+<h3 id="device-1">Device</h3>
+
+<p>This file defines all input/output devices that can be accessed from
+this CPU (definitions are not account-specific).  Each device is
+identified with a unique name.  Each is associated with a $I value
+which may correspond with a hardware port or, on layered systems,
+a host file or directory.  If there are several devices for the same
+volume set and $I, one may be given sign-on system status.  Devices
+may also be assigned to hunt groups to share work.  This file is
+cross-referenced by name, $I, volume set(CPU), and sign-on/system
+device.  It is also cross-referenced by hunt group, local synonym,
+mnemonic, subtype, and form currently mounted.</p>
+
+<p><strong>Fileman ID:</strong> 3.5</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Device-3_5">Device-3_5</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 71</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>DATE-TIME</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 1</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#despoolDevices">Despool Devices</a></td>
+      <td>despoolDevices</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>STRING</td>
+      <td>name</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Location Of Terminal</strong><pre><code>  locationOfTerminal</code></pre></td>
+      <td>STRING</td>
+      <td>location_of_terminal</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Mnemonic</strong><pre><code>  mnemonic</code></pre></td>
+      <td>STRING</td>
+      <td>mnemonic</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Local Synonym</strong><pre><code>  localSynonym</code></pre></td>
+      <td>STRING</td>
+      <td>local_synonym</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Purge Old Print Queue Files</strong><pre><code>  purgeOldPrintQueueFiles</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>purge_old_print_queue_files</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>$i</strong><pre><code>  i</code></pre></td>
+      <td>STRING</td>
+      <td>i</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Volume Set(cpu)</strong><pre><code>  volumeSetcpu</code></pre></td>
+      <td>STRING</td>
+      <td>volume_setcpu</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Sign-on/system Device</strong><pre><code>  signonSystemDevice</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>signon_system_device</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Type</strong><pre><code>  type2</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>type-2</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>SPOOL</strong></em><br/>1: <em><strong>BARCODE READER</strong></em><br/>2: <em><strong>SDP</strong></em><br/>3: <em><strong>VIRTUAL TERMINAL</strong></em><br/>4: <em><strong>NETWORK CHANNEL</strong></em><br/>5: <em><strong>PRINT QUEUE</strong></em><br/>6: <em><strong>TERMINAL</strong></em><br/>7: <em><strong>MAGTAPE</strong></em><br/>8: <em><strong>OTHER</strong></em><br/>9: <em><strong>IMAGING WORK STATION</strong></em><br/>10: <em><strong>HOST FILE SERVER</strong></em><br/>11: <em><strong>RESOURCES</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Subtype</strong><pre><code>  subtype</code></pre></td>
+      <td>POINTER</td>
+      <td>subtype</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>Terminal_Type-3_2</td>
+    </tr>
+    <tr>
+      <td><strong>Ask Device</strong><pre><code>  askDevice</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>ask_device</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ask Parameters</strong><pre><code>  askParameters</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>ask_parameters</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ask Host File</strong><pre><code>  askHostFile</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>ask_host_file</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ask Hfs I/o Operation</strong><pre><code>  askHfsIOOperation</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>ask_hfs_i_o_operation</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Queuing</strong><pre><code>  queuing</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>queuing</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>FORCED</strong></em><br/>1: <em><strong>NOT ALLOWED</strong></em><br/>2: <em><strong>ALLOWED</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Out-of-service Date</strong><pre><code>  outofserviceDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>outofservice_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Nearest Phone</strong><pre><code>  nearestPhone</code></pre></td>
+      <td>STRING</td>
+      <td>nearest_phone</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Key Operator</strong><pre><code>  keyOperator</code></pre></td>
+      <td>STRING</td>
+      <td>key_operator</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Margin Width</strong><pre><code>  marginWidth</code></pre></td>
+      <td>NUMERIC</td>
+      <td>margin_width</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Page Length</strong><pre><code>  pageLength</code></pre></td>
+      <td>NUMERIC</td>
+      <td>page_length</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Suppress Form Feed At Close</strong><pre><code>  suppressFormFeedAtClose</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>suppress_form_feed_at_close</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Security</strong><pre><code>  security</code></pre></td>
+      <td>STRING</td>
+      <td>security</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Closest Printer</strong><pre><code>  closestPrinter</code></pre></td>
+      <td>POINTER</td>
+      <td>closest_printer</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Device-3_5">Device-3_5</a></td>
+    </tr>
+    <tr>
+      <td><strong>Form Currently Mounted</strong><pre><code>  formCurrentlyMounted</code></pre></td>
+      <td>STRING</td>
+      <td>form_currently_mounted</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Open Parameters</strong><pre><code>  openParameters</code></pre></td>
+      <td>STRING</td>
+      <td>open_parameters</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Close Parameters</strong><pre><code>  closeParameters</code></pre></td>
+      <td>STRING</td>
+      <td>close_parameters</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Use Parameters</strong><pre><code>  useParameters</code></pre></td>
+      <td>STRING</td>
+      <td>use_parameters</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Pre-open Execute</strong><pre><code>  preopenExecute</code></pre></td>
+      <td>STRING</td>
+      <td>preopen_execute</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Post-close Execute</strong><pre><code>  postcloseExecute</code></pre></td>
+      <td>STRING</td>
+      <td>postclose_execute</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Micom Printer Contention Port</strong><pre><code>  micomPrinterContentionPort</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>micom_printer_contention_port</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Modem</strong><pre><code>  modem</code></pre></td>
+      <td>POINTER</td>
+      <td>modem</td>
+      <td> </td>
+      <td> </td>
+      <td>Terminal_Type-3_2</td>
+    </tr>
+    <tr>
+      <td><strong>Priority At Run Time</strong><pre><code>  priorityAtRunTime</code></pre></td>
+      <td>NUMERIC</td>
+      <td>priority_at_run_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Taskman Print A Header Page</strong><pre><code>  taskmanPrintAHeaderPage</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>taskman_print_a_header_page</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Password</strong><pre><code>  password</code></pre></td>
+      <td>STRING</td>
+      <td>password</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Slaved From Device</strong><pre><code>  slavedFromDevice</code></pre></td>
+      <td>POINTER</td>
+      <td>slaved_from_device</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Device-3_5">Device-3_5</a></td>
+    </tr>
+    <tr>
+      <td><strong>Auto Despool</strong><pre><code>  autoDespool</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>auto_despool</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Despool Devices</strong><pre><code>  despoolDevices</code></pre></td>
+      <td>OBJECT</td>
+      <td>despool_devices</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#despoolDevices">despoolDevices</a></td>
+    </tr>
+    <tr>
+      <td><strong>Generate Spl Doc Name</strong><pre><code>  generateSplDocName</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>generate_spl_doc_name</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Resource Slots</strong><pre><code>  resourceSlots</code></pre></td>
+      <td>NUMERIC</td>
+      <td>resource_slots</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Global Lock</strong><pre><code>  globalLock</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>global_lock</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Open Count</strong><pre><code>  openCount</code></pre></td>
+      <td>NUMERIC</td>
+      <td>open_count</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Timed Read (# Of Seconds)</strong><pre><code>  timedReadNumberOfSeconds</code></pre></td>
+      <td>NUMERIC</td>
+      <td>timed_read_number_of_seconds</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*reserved</strong><pre><code>  reserved</code></pre></td>
+      <td>STRING</td>
+      <td>reserved</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*reserved</strong><pre><code>  reserved5113</code></pre></td>
+      <td>STRING</td>
+      <td>reserved-51_13</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*reserved</strong><pre><code>  reserved5114</code></pre></td>
+      <td>STRING</td>
+      <td>reserved-51_14</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*reserved</strong><pre><code>  reserved5115</code></pre></td>
+      <td>STRING</td>
+      <td>reserved-51_15</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong># Of Attempts</strong><pre><code>  numberOfAttempts</code></pre></td>
+      <td>NUMERIC</td>
+      <td>number_of_attempts</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lock-out Time</strong><pre><code>  lockoutTime</code></pre></td>
+      <td>NUMERIC</td>
+      <td>lockout_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Multiple Sign-on</strong><pre><code>  multipleSignon</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>multiple_signon</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>NOT ALLOWED</strong></em><br/>1: <em><strong>ALLOWED</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Ask Device Type At Sign-on</strong><pre><code>  askDeviceTypeAtSignon</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>ask_device_type_at_signon</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>YES, ASK</strong></em><br/>1: <em><strong>NO, DON'T ASK</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Auto Menu</strong><pre><code>  autoMenu</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>auto_menu</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>NO MENUS GENERATED</strong></em><br/>1: <em><strong>MENUS GENERATED</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>*reserved</strong><pre><code>  reserved517</code></pre></td>
+      <td>STRING</td>
+      <td>reserved-51_7</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Tied Routine</strong><pre><code>  tiedRoutine</code></pre></td>
+      <td>STRING</td>
+      <td>tied_routine</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Type-ahead</strong><pre><code>  typeahead</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>typeahead</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>NOT ALLOWED</strong></em><br/>1: <em><strong>ALLOWED</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Perform Device Checking</strong><pre><code>  performDeviceChecking</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>perform_device_checking</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Secondary $i</strong><pre><code>  secondaryI</code></pre></td>
+      <td>STRING</td>
+      <td>secondary_i</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lat Server Node</strong><pre><code>  latServerNode</code></pre></td>
+      <td>STRING</td>
+      <td>lat_server_node</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lat Server Port</strong><pre><code>  latServerPort</code></pre></td>
+      <td>STRING</td>
+      <td>lat_server_port</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Vms Device Type</strong><pre><code>  vmsDeviceType</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>vms_device_type</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>PASTHRU/NOWRAP</strong></em><br/>1: <em><strong>HOSTSYNC/NOWRAP</strong></em><br/>2: <em><strong>LAB INSTRUMENT</strong></em><br/>3: <em><strong>YES SPOOLED</strong></em><br/>4: <em><strong>NOT SPOOLED</strong></em><br/>5: <em><strong>NOWRAP</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Lat Port Speed</strong><pre><code>  latPortSpeed</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>lat_port_speed</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>3</strong></em><br/>1: <em><strong>12</strong></em><br/>2: <em><strong>24</strong></em><br/>3: <em><strong>48</strong></em><br/>4: <em><strong>96</strong></em><br/>5: <em><strong>192</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Print Server Name Or Address</strong><pre><code>  printServerNameOrAddress</code></pre></td>
+      <td>STRING</td>
+      <td>print_server_name_or_address</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Telnet Port</strong><pre><code>  telnetPort</code></pre></td>
+      <td>NUMERIC</td>
+      <td>telnet_port</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Remote Printer Name</strong><pre><code>  remotePrinterName</code></pre></td>
+      <td>STRING</td>
+      <td>remote_printer_name</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Windows Network Printer Name</strong><pre><code>  windowsNetworkPrinterName</code></pre></td>
+      <td>STRING</td>
+      <td>windows_network_printer_name</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lab Label Printer</strong><pre><code>  labLabelPrinter</code></pre></td>
+      <td>POINTER</td>
+      <td>lab_label_printer</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Device-3_5">Device-3_5</a></td>
+    </tr>
+    <tr>
+      <td><strong>Primary Menu Option</strong><pre><code>  primaryMenuOption</code></pre></td>
+      <td>POINTER</td>
+      <td>primary_menu_option</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Option-19">Option-19</a></td>
+    </tr>
+    <tr>
+      <td><strong>Barcode Avail</strong><pre><code>  barcodeAvail</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>barcode_avail</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Prohibited Times For Sign-on</strong><pre><code>  prohibitedTimesForSignon</code></pre></td>
+      <td>STRING</td>
+      <td>prohibited_times_for_signon</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Use Timeout On Opens</strong><pre><code>  useTimeoutOnOpens</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>use_timeout_on_opens</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Open Timeout</strong><pre><code>  openTimeout</code></pre></td>
+      <td>NUMERIC</td>
+      <td>open_timeout</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Nvs Passover Flag</strong><pre><code>  nvsPassoverFlag</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>nvs_passover_flag</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-despool-devices"><a name="despoolDevices"></a>1. Despool Devices</h3>
+
+<p><strong>Field ID:</strong> despoolDevices</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Despool Devices</strong><pre><code>  despoolDevices</code></pre></td>
+      <td>POINTER</td>
+      <td>despool_devices</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Device-3_5">Device-3_5</a></td>
+    </tr>
+    <tr>
+      <td><strong>Copies</strong><pre><code>  copies</code></pre></td>
+      <td>NUMERIC</td>
+      <td>copies</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

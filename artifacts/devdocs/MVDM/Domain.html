@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--domain"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Domain<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="domain">Domain</h1>
+
+<h3 id="domain-1">Domain</h3>
+
+<p>This file is used to name all of the domains to which MailMan messages
+may be routed.  Each name in this file corresponds to the right side
+of a MailMan address-the part following the "@".</p>
+
+<p>Domains may have synonyms, allowing users to name sites with one name,
+while MailMan uses the more formal Domain Naming conventions.</p>
+
+<p>This file also controls whether messages are queued for immediate transmission
+and into what queue they are dropped.  Any domain may have a relay domain,
+which controls the routing as follows:</p>
+
+<p>If a domain has a named relay domain, the message is put in the queue for
+the relay domain.</p>
+
+<p>If not, and the domain has a TRANSMISSION SCRIPT, then the message is put
+in the queue for that domain.</p>
+
+<p>Otherwise, the message is put in the queue for the Parent domain, as defined
+at MailMan initialization time.</p>
+
+<p><strong>Fileman ID:</strong> 4.2</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Domain-4_2">Domain-4_2</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 37</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>DATE-TIME</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 1</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#transmissionScript">Transmission Script</a></td>
+      <td>transmissionScript</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>STRING</td>
+      <td>name</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Flags</strong><pre><code>  flags</code></pre></td>
+      <td>STRING</td>
+      <td>flags</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Security Key</strong><pre><code>  securityKey</code></pre></td>
+      <td>STRING</td>
+      <td>security_key</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Validation Number</strong><pre><code>  validationNumber</code></pre></td>
+      <td>NUMERIC</td>
+      <td>validation_number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>New Validation Number</strong><pre><code>  newValidationNumber</code></pre></td>
+      <td>NUMERIC</td>
+      <td>new_validation_number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Disable Turn Command</strong><pre><code>  disableTurnCommand</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>disable_turn_command</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Relay Domain</strong><pre><code>  relayDomain</code></pre></td>
+      <td>POINTER</td>
+      <td>relay_domain</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Domain-4_2">Domain-4_2</a></td>
+    </tr>
+    <tr>
+      <td><strong>Transmission Script</strong><pre><code>  transmissionScript</code></pre></td>
+      <td>OBJECT</td>
+      <td>transmission_script</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#transmissionScript">transmissionScript</a></td>
+    </tr>
+    <tr>
+      <td><strong>Notes</strong><pre><code>  notes</code></pre></td>
+      <td>STRING</td>
+      <td>notes</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Synonym</strong><pre><code>  synonym</code></pre></td>
+      <td>STRING</td>
+      <td>synonym</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Station</strong><pre><code>  station</code></pre></td>
+      <td>STRING</td>
+      <td>station</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Mcts Routing Indicator</strong><pre><code>  mctsRoutingIndicator</code></pre></td>
+      <td>STRING</td>
+      <td>mcts_routing_indicator</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dhcp Routing Indicator</strong><pre><code>  dhcpRoutingIndicator</code></pre></td>
+      <td>STRING</td>
+      <td>dhcp_routing_indicator</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Mailman Host</strong><pre><code>  mailmanHost</code></pre></td>
+      <td>STRING</td>
+      <td>mailman_host</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ftp Blob Ip Address</strong><pre><code>  ftpBlobIpAddress</code></pre></td>
+      <td>STRING</td>
+      <td>ftp_blob_ip_address</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Tcp/ip Poll Flag</strong><pre><code>  tcpIpPollFlag</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>tcp_ip_poll_flag</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td>0: <em><strong>DO NOT POLL</strong></em><br/>1: <em><strong>POLL</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Ftp</strong><pre><code>  ftp</code></pre></td>
+      <td>STRING</td>
+      <td>ftp</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ftp Blob Directory</strong><pre><code>  ftpBlobDirectory</code></pre></td>
+      <td>STRING</td>
+      <td>ftp_blob_directory</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*outgoing Message Count</strong><pre><code>  outgoingMessageCount</code></pre></td>
+      <td>NUMERIC</td>
+      <td>outgoing_message_count</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*outgoing Line Count</strong><pre><code>  outgoingLineCount</code></pre></td>
+      <td>NUMERIC</td>
+      <td>outgoing_line_count</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*incoming Message Count</strong><pre><code>  incomingMessageCount</code></pre></td>
+      <td>NUMERIC</td>
+      <td>incoming_message_count</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*incoming Line Count</strong><pre><code>  incomingLineCount</code></pre></td>
+      <td>NUMERIC</td>
+      <td>incoming_line_count</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*error Last Reported</strong><pre><code>  errorLastReported</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>error_last_reported</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*number Of Recoverable Errors</strong><pre><code>  numberOfRecoverableErrors</code></pre></td>
+      <td>NUMERIC</td>
+      <td>number_of_recoverable_errors</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*progress Report</strong><pre><code>  progressReport</code></pre></td>
+      <td>STRING</td>
+      <td>progress_report</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*message In Transit</strong><pre><code>  messageInTransit</code></pre></td>
+      <td>NUMERIC</td>
+      <td>message_in_transit</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*line Last Transmitted</strong><pre><code>  lineLastTransmitted</code></pre></td>
+      <td>NUMERIC</td>
+      <td>line_last_transmitted</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*errors This Transmission</strong><pre><code>  errorsThisTransmission</code></pre></td>
+      <td>NUMERIC</td>
+      <td>errors_this_transmission</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*rate Of Transmission</strong><pre><code>  rateOfTransmission</code></pre></td>
+      <td>NUMERIC</td>
+      <td>rate_of_transmission</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*characters Rec'd</strong><pre><code>  charactersRecd</code></pre></td>
+      <td>NUMERIC</td>
+      <td>characters_recd</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*characters Sent</strong><pre><code>  charactersSent</code></pre></td>
+      <td>NUMERIC</td>
+      <td>characters_sent</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Poll List</strong><pre><code>  pollList</code></pre></td>
+      <td>NUMERIC</td>
+      <td>poll_list</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Physical Link Device</strong><pre><code>  physicalLinkDevice</code></pre></td>
+      <td>STRING</td>
+      <td>physical_link_device</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*network Device</strong><pre><code>  networkDevice</code></pre></td>
+      <td>STRING</td>
+      <td>network_device</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*transmission Task#</strong><pre><code>  transmissionTasknumber</code></pre></td>
+      <td>NUMERIC</td>
+      <td>transmission_tasknumber</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Directory Requests Flag</strong><pre><code>  directoryRequestsFlag</code></pre></td>
+      <td>NUMERIC</td>
+      <td>directory_requests_flag</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*message Statistics Month</strong><pre><code>  messageStatisticsMonth</code></pre></td>
+      <td>STRING</td>
+      <td>message_statistics_month</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-transmission-script"><a name="transmissionScript"></a>1. Transmission Script</h3>
+
+<p><strong>Field ID:</strong> transmissionScript</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Transmission Script</strong><pre><code>  transmissionScript</code></pre></td>
+      <td>STRING</td>
+      <td>transmission_script</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Priority</strong><pre><code>  priority</code></pre></td>
+      <td>NUMERIC</td>
+      <td>priority</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Number Of Attempts</strong><pre><code>  numberOfAttempts</code></pre></td>
+      <td>NUMERIC</td>
+      <td>number_of_attempts</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Type</strong><pre><code>  type12</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>type-1_2</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>TCP/IP Channel</strong></em><br/>1: <em><strong>File Transfer Protocol</strong></em><br/>2: <em><strong>Interactive / TalkMan</strong></em><br/>3: <em><strong>Simple Mail Transfer Protocol</strong></em><br/>4: <em><strong>OTHER</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Physical Link / Device</strong><pre><code>  physicalLinkDevice</code></pre></td>
+      <td>STRING</td>
+      <td>physical_link___device</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Network Address (mailman Host)</strong><pre><code>  networkAddressMailmanHost</code></pre></td>
+      <td>STRING</td>
+      <td>network_address_mailman_host</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Out Of Service</strong><pre><code>  outOfService</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>out_of_service</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>out of service</strong></em><br/>1: <em><strong>in service</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Text</strong><pre><code>  text</code></pre></td>
+      <td>STRING</td>
+      <td>text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Transmission Script Notes</strong><pre><code>  transmissionScriptNotes</code></pre></td>
+      <td>STRING</td>
+      <td>transmission_script_notes</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

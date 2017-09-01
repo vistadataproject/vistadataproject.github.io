@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--selection_list"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Selection_List<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="selection_list">Selection_List</h1>
+
+<h3 id="selection-list">Selection List</h3>
+
+<p>This file contains descriptions of 'selection lists'.  A selection list is
+a rectangular area in a block that contains a list. The list has 'columns'
+of 'selections'. The columns have 'subcolumns', which can either contain
+text or  a 'marking area'.  A marking area is an area on the form designed
+to be checked to indicate that a choice is being made from the list.</p>
+
+<p><strong>Fileman ID:</strong> 357.2</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Selection_List-357_2">Selection_List-357_2</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 19</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 2</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#listColumn">List Column</a></td>
+      <td>listColumn</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#subcolumnNumber">Subcolumn Number</a></td>
+      <td>subcolumnNumber</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>STRING</td>
+      <td>name</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Block</strong><pre><code>  block</code></pre></td>
+      <td>POINTER</td>
+      <td>block</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Encounter_Form_Block-357_1">Encounter_Form_Block-357_1</a></td>
+    </tr>
+    <tr>
+      <td><strong>Subcolumn Header Appearance</strong><pre><code>  subcolumnHeaderAppearance</code></pre></td>
+      <td>STRING</td>
+      <td>subcolumn_header_appearance</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Column Header</strong><pre><code>  columnHeader</code></pre></td>
+      <td>STRING</td>
+      <td>column_header</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Column Header Appearance</strong><pre><code>  columnHeaderAppearance</code></pre></td>
+      <td>STRING</td>
+      <td>column_header_appearance</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Subcolumns Separated With?</strong><pre><code>  subcolumnsSeparatedWith</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>subcolumns_separated_with</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>TWO SPACES</strong></em><br/>1: <em><strong>LINE</strong></em><br/>2: <em><strong>SPACE/LINE/SPACE</strong></em><br/>3: <em><strong>ONE SPACE</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Extra Lines For Selections</strong><pre><code>  extraLinesForSelections</code></pre></td>
+      <td>NUMERIC</td>
+      <td>extra_lines_for_selections</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Group Header Appearance</strong><pre><code>  groupHeaderAppearance</code></pre></td>
+      <td>STRING</td>
+      <td>group_header_appearance</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Selection Interface</strong><pre><code>  selectionInterface</code></pre></td>
+      <td>POINTER</td>
+      <td>selection_interface</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>Package_Interface-357_6</td>
+    </tr>
+    <tr>
+      <td><strong>Underline Selections?</strong><pre><code>  underlineSelections</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>underline_selections</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Number Of Columns</strong><pre><code>  numberOfColumns</code></pre></td>
+      <td>NUMERIC</td>
+      <td>number_of_columns</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dynamic Selections</strong><pre><code>  dynamicSelections</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>dynamic_selections</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Print Complete</strong><pre><code>  printComplete</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>print_complete</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Number Of Other</strong><pre><code>  numberOfOther</code></pre></td>
+      <td>NUMERIC</td>
+      <td>number_of_other</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>What To Allocate Space For</strong><pre><code>  whatToAllocateSpaceFor</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>what_to_allocate_space_for</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>CODE ONLY</strong></em><br/>1: <em><strong>NARRATIVE AND CODE</strong></em><br/>2: <em><strong>NARRATIVE ONLY</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>What To Send To Pce</strong><pre><code>  whatToSendToPce</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>what_to_send_to_pce</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>CODE ONLY</strong></em><br/>1: <em><strong>NARRATIVE AND CODE</strong></em><br/>2: <em><strong>NARRATIVE ONLY</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Clinical Reminder Display Type</strong><pre><code>  clinicalReminderDisplayType</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>clinical_reminder_display_type</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>DUE NOW ONLY</strong></em><br/>1: <em><strong>ALL REMINDERS</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>List Column</strong><pre><code>  listColumn</code></pre></td>
+      <td>OBJECT</td>
+      <td>list_column</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#listColumn">listColumn</a></td>
+    </tr>
+    <tr>
+      <td><strong>Subcolumn Number</strong><pre><code>  subcolumnNumber</code></pre></td>
+      <td>OBJECT</td>
+      <td>subcolumn_number</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#subcolumnNumber">subcolumnNumber</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-list-column"><a name="listColumn"></a>1. List Column</h3>
+
+<p><strong>Field ID:</strong> listColumn</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>List Column Number</strong><pre><code>  listColumnNumber</code></pre></td>
+      <td>NUMERIC</td>
+      <td>list_column_number</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>List Column's Starting Row</strong><pre><code>  listColumnsStartingRow</code></pre></td>
+      <td>NUMERIC</td>
+      <td>list_columns_starting_row</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>List Column's Starting Column</strong><pre><code>  listColumnsStartingColumn</code></pre></td>
+      <td>NUMERIC</td>
+      <td>list_columns_starting_column</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>List Column Height</strong><pre><code>  listColumnHeight</code></pre></td>
+      <td>NUMERIC</td>
+      <td>list_column_height</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-subcolumn-number"><a name="subcolumnNumber"></a>2. Subcolumn Number</h3>
+
+<p><strong>Field ID:</strong> subcolumnNumber</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Subcolumn Number</strong><pre><code>  subcolumnNumber</code></pre></td>
+      <td>NUMERIC</td>
+      <td>subcolumn_number</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Subcolumn Header</strong><pre><code>  subcolumnHeader</code></pre></td>
+      <td>STRING</td>
+      <td>subcolumn_header</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Subcolumn Width</strong><pre><code>  subcolumnWidth</code></pre></td>
+      <td>NUMERIC</td>
+      <td>subcolumn_width</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Type Of Subcolumn</strong><pre><code>  typeOfSubcolumn</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>type_of_subcolumn</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>TEXT</strong></em><br/>1: <em><strong>MARKING</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Subcolumn's Data</strong><pre><code>  subcolumnsData</code></pre></td>
+      <td>NUMERIC</td>
+      <td>subcolumns_data</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Marking Area</strong><pre><code>  markingArea</code></pre></td>
+      <td>POINTER</td>
+      <td>marking_area</td>
+      <td> </td>
+      <td> </td>
+      <td>Marking_Area_Type-357_91</td>
+    </tr>
+    <tr>
+      <td><strong>Allow Editing Of Text?</strong><pre><code>  allowEditingOfText</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>allow_editing_of_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Do Not Underline Marking Area?</strong><pre><code>  doNotUnderlineMarkingArea</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>do_not_underline_marking_area</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Data Qualifier</strong><pre><code>  dataQualifier</code></pre></td>
+      <td>POINTER</td>
+      <td>data_qualifier</td>
+      <td> </td>
+      <td> </td>
+      <td>Aics_Data_Qualifiers-357_98</td>
+    </tr>
+    <tr>
+      <td><strong>Selection Rule</strong><pre><code>  selectionRule</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>selection_rule</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>ANY NUMBER</strong></em><br/>1: <em><strong>AT LEAST ONE (1 or more)</strong></em><br/>2: <em><strong>EXACTLY ONE</strong></em><br/>3: <em><strong>AT MOST ONE (0 or 1)</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

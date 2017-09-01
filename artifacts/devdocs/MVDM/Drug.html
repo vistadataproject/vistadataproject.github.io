@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--drug"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Drug<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="drug">Drug</h1>
+
+<h3 id="drug-1">Drug</h3>
+
+<p>This file holds the information related to each drug that can be used
+to fill a prescription.  It is pointed to from several other files and
+should be handled carefully, usually only by special individuals in the
+pharmacy service.  Entries are not typically deleted, but rather made
+inactive by entering an inactive date.</p>
+
+<p>This file must be built by Pharmacy Service BEFORE going on-line.  It is
+common to use another centers file and edit it to match your center's
+unique formulary.</p>
+
+<p><strong>Fileman ID:</strong> 50</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Drug-50">Drug-50</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 79</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IEN</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>STRING</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>DATE-TIME</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 9</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#activityLog">Activity Log</a></td>
+      <td>activityLog</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#atcCanister">Atc Canister</a></td>
+      <td>atcCanister</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="#clozapineLabTest">Clozapine Lab Test</a></td>
+      <td>clozapineLabTest</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><a href="#localPossibleDosage">Local Possible Dosage</a></td>
+      <td>localPossibleDosage</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><a href="#ndcByOutpatientSite">Ndc By Outpatient Site</a></td>
+      <td>ndcByOutpatientSite</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><a href="#oldNames">Old Names</a></td>
+      <td>oldNames</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td><a href="#opai">Opai</a></td>
+      <td>opai</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td><a href="#possibleDosages">Possible Dosages</a></td>
+      <td>possibleDosages</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td><a href="#synonym">Synonym</a></td>
+      <td>synonym</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Number</strong><pre><code>  number</code></pre></td>
+      <td>IEN</td>
+      <td>number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Generic Name</strong><pre><code>  genericName</code></pre></td>
+      <td>STRING</td>
+      <td>generic_name</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>VA Classification</strong><pre><code>  vaClassification</code></pre></td>
+      <td>STRING</td>
+      <td>va_classification</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Pharmacy Orderable Item</strong><pre><code>  pharmacyOrderableItem</code></pre></td>
+      <td>POINTER</td>
+      <td>pharmacy_orderable_item</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td><a href="../VDM/Pharmacy_Orderable_Item-50_7">Pharmacy_Orderable_Item-50_7</a></td>
+    </tr>
+    <tr>
+      <td><strong>Dea, Special Hdlg</strong><pre><code>  deaSpecialHdlg</code></pre></td>
+      <td>STRING</td>
+      <td>dea_special_hdlg</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Maximum Dose Per Day</strong><pre><code>  maximumDosePerDay</code></pre></td>
+      <td>NUMERIC</td>
+      <td>maximum_dose_per_day</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Standard Sig</strong><pre><code>  standardSig</code></pre></td>
+      <td>STRING</td>
+      <td>standard_sig</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Fsn</strong><pre><code>  fsn</code></pre></td>
+      <td>STRING</td>
+      <td>fsn</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Warning Label</strong><pre><code>  warningLabel</code></pre></td>
+      <td>STRING</td>
+      <td>warning_label</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>New Warning Label List</strong><pre><code>  newWarningLabelList</code></pre></td>
+      <td>STRING</td>
+      <td>new_warning_label_list</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Gender Specific Lbls On All Rx</strong><pre><code>  genderSpecificLblsOnAllRx</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>gender_specific_lbls_on_all_rx</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Synonym</strong><pre><code>  synonym</code></pre></td>
+      <td>OBJECT</td>
+      <td>synonym</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#synonym">synonym</a></td>
+    </tr>
+    <tr>
+      <td><strong>Reorder Level</strong><pre><code>  reorderLevel</code></pre></td>
+      <td>NUMERIC</td>
+      <td>reorder_level</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Order Unit</strong><pre><code>  orderUnit</code></pre></td>
+      <td>POINTER</td>
+      <td>order_unit</td>
+      <td> </td>
+      <td> </td>
+      <td>Order_Unit-51_5</td>
+    </tr>
+    <tr>
+      <td><strong>Price Per Order Unit</strong><pre><code>  pricePerOrderUnit</code></pre></td>
+      <td>NUMERIC</td>
+      <td>price_per_order_unit</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Normal Amount To Order</strong><pre><code>  normalAmountToOrder</code></pre></td>
+      <td>NUMERIC</td>
+      <td>normal_amount_to_order</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dispense Unit</strong><pre><code>  dispenseUnit</code></pre></td>
+      <td>STRING</td>
+      <td>dispense_unit</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dispense Units Per Order Unit</strong><pre><code>  dispenseUnitsPerOrderUnit</code></pre></td>
+      <td>NUMERIC</td>
+      <td>dispense_units_per_order_unit</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Price Per Dispense Unit</strong><pre><code>  pricePerDispenseUnit</code></pre></td>
+      <td>NUMERIC</td>
+      <td>price_per_dispense_unit</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Source Of Supply</strong><pre><code>  sourceOfSupply</code></pre></td>
+      <td>STRING</td>
+      <td>source_of_supply</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Expiration Date</strong><pre><code>  expirationDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>expiration_date</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lab Test Monitor</strong><pre><code>  labTestMonitor</code></pre></td>
+      <td>POINTER</td>
+      <td>lab_test_monitor</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Laboratory_Test-60">Laboratory_Test-60</a></td>
+    </tr>
+    <tr>
+      <td><strong>Monitor Max Days</strong><pre><code>  monitorMaxDays</code></pre></td>
+      <td>NUMERIC</td>
+      <td>monitor_max_days</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Specimen Type</strong><pre><code>  specimenType</code></pre></td>
+      <td>POINTER</td>
+      <td>specimen_type</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Topography_Field-61">Topography_Field-61</a></td>
+    </tr>
+    <tr>
+      <td><strong>Monitor Routine</strong><pre><code>  monitorRoutine</code></pre></td>
+      <td>STRING</td>
+      <td>monitor_routine</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lab Monitor Mark</strong><pre><code>  labMonitorMark</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>lab_monitor_mark</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Clozapine Lab Test</strong><pre><code>  clozapineLabTest</code></pre></td>
+      <td>OBJECT</td>
+      <td>clozapine_lab_test</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#clozapineLabTest">clozapineLabTest</a></td>
+    </tr>
+    <tr>
+      <td><strong>National Drug File Entry</strong><pre><code>  nationalDrugFileEntry</code></pre></td>
+      <td>POINTER</td>
+      <td>national_drug_file_entry</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td><a href="../VDM/VA_Generic-50_6">VA_Generic-50_6</a></td>
+    </tr>
+    <tr>
+      <td><strong>VA Product Name</strong><pre><code>  vaProductName</code></pre></td>
+      <td>STRING</td>
+      <td>va_product_name</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Psndf VA Product Name Entry</strong><pre><code>  psndfVaProductNameEntry</code></pre></td>
+      <td>POINTER</td>
+      <td>psndf_va_product_name_entry</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/VA_Product-50_68">VA_Product-50_68</a></td>
+    </tr>
+    <tr>
+      <td><strong>Package Size</strong><pre><code>  packageSize</code></pre></td>
+      <td>POINTER</td>
+      <td>package_size</td>
+      <td> </td>
+      <td> </td>
+      <td>Package_Size-50_609</td>
+    </tr>
+    <tr>
+      <td><strong>Package Type</strong><pre><code>  packageType</code></pre></td>
+      <td>POINTER</td>
+      <td>package_type</td>
+      <td> </td>
+      <td> </td>
+      <td>Package_Type-50_608</td>
+    </tr>
+    <tr>
+      <td><strong>National Drug Class</strong><pre><code>  nationalDrugClass</code></pre></td>
+      <td>POINTER</td>
+      <td>national_drug_class</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td><a href="../VDM/VA_Drug_Class-50_605">VA_Drug_Class-50_605</a></td>
+    </tr>
+    <tr>
+      <td><strong>Cmop Id</strong><pre><code>  cmopId</code></pre></td>
+      <td>STRING</td>
+      <td>cmop_id</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Op External Dispense</strong><pre><code>  opExternalDispense</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>op_external_dispense</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>National Formulary Indicator</strong><pre><code>  nationalFormularyIndicator</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>national_formulary_indicator</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ndc</strong><pre><code>  ndc</code></pre></td>
+      <td>STRING</td>
+      <td>ndc</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ndc By Outpatient Site</strong><pre><code>  ndcByOutpatientSite</code></pre></td>
+      <td>OBJECT</td>
+      <td>ndc_by_outpatient_site</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#ndcByOutpatientSite">ndcByOutpatientSite</a></td>
+    </tr>
+    <tr>
+      <td><strong>Drug Text Entry</strong><pre><code>  drugTextEntry</code></pre></td>
+      <td>POINTER</td>
+      <td>drug_text_entry</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Action Profile Message (op)</strong><pre><code>  actionProfileMessageOp</code></pre></td>
+      <td>STRING</td>
+      <td>action_profile_message_op</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Current Inventory</strong><pre><code>  currentInventory</code></pre></td>
+      <td>NUMERIC</td>
+      <td>current_inventory</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Local Non-formulary</strong><pre><code>  localNonformulary</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>local_nonformulary</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>N/F</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Visn Non-formulary</strong><pre><code>  visnNonformulary</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>visn_nonformulary</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>V-N/F</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Day (nd) Or Dose (nl) Limit</strong><pre><code>  dayNdOrDoseNlLimit</code></pre></td>
+      <td>STRING</td>
+      <td>day_nd_or_dose_nl_limit</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Unit Dose Med Route</strong><pre><code>  unitDoseMedRoute</code></pre></td>
+      <td>POINTER</td>
+      <td>unit_dose_med_route</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Medication_Routes-51_2">Medication_Routes-51_2</a></td>
+    </tr>
+    <tr>
+      <td><strong>Unit Dose Schedule Type</strong><pre><code>  unitDoseScheduleType</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>unit_dose_schedule_type</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>FILL on REQUEST</strong></em><br/>1: <em><strong>PRN</strong></em><br/>2: <em><strong>ON CALL</strong></em><br/>3: <em><strong>ONE TIME</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Unit Dose Schedule</strong><pre><code>  unitDoseSchedule</code></pre></td>
+      <td>STRING</td>
+      <td>unit_dose_schedule</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Corresponding Outpatient Drug</strong><pre><code>  correspondingOutpatientDrug</code></pre></td>
+      <td>POINTER</td>
+      <td>corresponding_outpatient_drug</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Drug-50">Drug-50</a></td>
+    </tr>
+    <tr>
+      <td><strong>Application Packages' Use</strong><pre><code>  applicationPackagesUse</code></pre></td>
+      <td>STRING</td>
+      <td>application_packages_use</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*primary Drug</strong><pre><code>  primaryDrug</code></pre></td>
+      <td>POINTER</td>
+      <td>primary_drug</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Formulary Alternative</strong><pre><code>  formularyAlternative</code></pre></td>
+      <td>POINTER</td>
+      <td>formulary_alternative</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Daw Code</strong><pre><code>  dawCode</code></pre></td>
+      <td>NUMERIC</td>
+      <td>daw_code</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ncpdp Dispense Unit</strong><pre><code>  ncpdpDispenseUnit</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>ncpdp_dispense_unit</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>GRAMS</strong></em><br/>1: <em><strong>MILLILITERS</strong></em><br/>2: <em><strong>EACH</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Ncpdp Quantity Multiplier</strong><pre><code>  ncpdpQuantityMultiplier</code></pre></td>
+      <td>NUMERIC</td>
+      <td>ncpdp_quantity_multiplier</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Inactive Date</strong><pre><code>  inactiveDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>inactive_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Message</strong><pre><code>  message</code></pre></td>
+      <td>STRING</td>
+      <td>message</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Restriction</strong><pre><code>  restriction</code></pre></td>
+      <td>STRING</td>
+      <td>restriction</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Atc Canister</strong><pre><code>  atcCanister</code></pre></td>
+      <td>OBJECT</td>
+      <td>atc_canister</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#atcCanister">atcCanister</a></td>
+    </tr>
+    <tr>
+      <td><strong>*atc Canister</strong><pre><code>  atcCanister2121</code></pre></td>
+      <td>NUMERIC</td>
+      <td>atc_canister-212_1</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Atc Mnemonic</strong><pre><code>  atcMnemonic</code></pre></td>
+      <td>STRING</td>
+      <td>atc_mnemonic</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Cmop Dispense</strong><pre><code>  cmopDispense</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>cmop_dispense</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Activity Log</strong><pre><code>  activityLog</code></pre></td>
+      <td>OBJECT</td>
+      <td>activity_log</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#activityLog">activityLog</a></td>
+    </tr>
+    <tr>
+      <td><strong>Quantity Dispense Message</strong><pre><code>  quantityDispenseMessage</code></pre></td>
+      <td>STRING</td>
+      <td>quantity_dispense_message</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Inpatient Pharmacy Location</strong><pre><code>  inpatientPharmacyLocation</code></pre></td>
+      <td>STRING</td>
+      <td>inpatient_pharmacy_location</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ar/ws Amis Category</strong><pre><code>  arWsAmisCategory</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>ar_ws_amis_category</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>Field 22 - Blood Products</strong></em><br/>1: <em><strong>Field 06 or 07 - Units of Issue</strong></em><br/>2: <em><strong>Field 03 or 04 - Doses by Type</strong></em><br/>3: <em><strong>Field 17 - Fluids and Admin Sets</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Ar/ws Amis Conversion Number</strong><pre><code>  arWsAmisConversionNumber</code></pre></td>
+      <td>NUMERIC</td>
+      <td>ar_ws_amis_conversion_number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Service Code</strong><pre><code>  serviceCode</code></pre></td>
+      <td>NUMERIC</td>
+      <td>service_code</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ifcap Item Number</strong><pre><code>  ifcapItemNumber</code></pre></td>
+      <td>POINTER</td>
+      <td>ifcap_item_number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Old Names</strong><pre><code>  oldNames</code></pre></td>
+      <td>OBJECT</td>
+      <td>old_names</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#oldNames">oldNames</a></td>
+    </tr>
+    <tr>
+      <td><strong>Strength</strong><pre><code>  strength</code></pre></td>
+      <td>NUMERIC</td>
+      <td>strength</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Unit</strong><pre><code>  unit</code></pre></td>
+      <td>POINTER</td>
+      <td>unit</td>
+      <td> </td>
+      <td> </td>
+      <td>Drug_Units-50_607</td>
+    </tr>
+    <tr>
+      <td><strong>Possible Dosages</strong><pre><code>  possibleDosages</code></pre></td>
+      <td>OBJECT</td>
+      <td>possible_dosages</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#possibleDosages">possibleDosages</a></td>
+    </tr>
+    <tr>
+      <td><strong>Local Possible Dosage</strong><pre><code>  localPossibleDosage</code></pre></td>
+      <td>OBJECT</td>
+      <td>local_possible_dosage</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#localPossibleDosage">localPossibleDosage</a></td>
+    </tr>
+    <tr>
+      <td><strong>Corresponding Inpatient Drug</strong><pre><code>  correspondingInpatientDrug</code></pre></td>
+      <td>POINTER</td>
+      <td>corresponding_inpatient_drug</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Drug-50">Drug-50</a></td>
+    </tr>
+    <tr>
+      <td><strong>Opai</strong><pre><code>  opai</code></pre></td>
+      <td>OBJECT</td>
+      <td>opai</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#opai">opai</a></td>
+    </tr>
+    <tr>
+      <td><strong>*lab Test Monitor</strong><pre><code>  labTestMonitor623002</code></pre></td>
+      <td>POINTER</td>
+      <td>lab_test_monitor-623002</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*monitor Max Days</strong><pre><code>  monitorMaxDays623003</code></pre></td>
+      <td>NUMERIC</td>
+      <td>monitor_max_days-623003</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*specimen Type</strong><pre><code>  specimenType623004</code></pre></td>
+      <td>POINTER</td>
+      <td>specimen_type-623004</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*monitor Routine</strong><pre><code>  monitorRoutine623008</code></pre></td>
+      <td>STRING</td>
+      <td>monitor_routine-623008</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-activity-log"><a name="activityLog"></a>1. Activity Log</h3>
+
+<p><strong>Field ID:</strong> activityLog</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Activity Log</strong><pre><code>  activityLog</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>activity_log</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Reason</strong><pre><code>  reason</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>reason</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>EDIT</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Initiator Of Activity</strong><pre><code>  initiatorOfActivity</code></pre></td>
+      <td>POINTER</td>
+      <td>initiator_of_activity</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Field Edited</strong><pre><code>  fieldEdited</code></pre></td>
+      <td>STRING</td>
+      <td>field_edited</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>New Value</strong><pre><code>  newValue</code></pre></td>
+      <td>STRING</td>
+      <td>new_value</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ndf Update</strong><pre><code>  ndfUpdate</code></pre></td>
+      <td>STRING</td>
+      <td>ndf_update</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-atc-canister"><a name="atcCanister"></a>2. Atc Canister</h3>
+
+<p><strong>Field ID:</strong> atcCanister</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Ward Group For Atc Canister</strong><pre><code>  wardGroupForAtcCanister</code></pre></td>
+      <td>POINTER</td>
+      <td>ward_group_for_atc_canister</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td>Ward_Group-57_5</td>
+    </tr>
+    <tr>
+      <td><strong>Atc Canister</strong><pre><code>  atcCanister</code></pre></td>
+      <td>NUMERIC</td>
+      <td>atc_canister</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="3-clozapine-lab-test"><a name="clozapineLabTest"></a>3. Clozapine Lab Test</h3>
+
+<p><strong>Field ID:</strong> clozapineLabTest</p>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Lab Test Monitor</strong><pre><code>  labTestMonitor</code></pre></td>
+      <td>POINTER</td>
+      <td>lab_test_monitor</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td><a href="../VDM/Laboratory_Test-60">Laboratory_Test-60</a></td>
+    </tr>
+    <tr>
+      <td><strong>Monitor Max Days</strong><pre><code>  monitorMaxDays</code></pre></td>
+      <td>NUMERIC</td>
+      <td>monitor_max_days</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Specimen Type</strong><pre><code>  specimenType</code></pre></td>
+      <td>POINTER</td>
+      <td>specimen_type</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Topography_Field-61">Topography_Field-61</a></td>
+    </tr>
+    <tr>
+      <td><strong>Type Of Test</strong><pre><code>  typeOfTest</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>type_of_test</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>WBC</strong></em><br/>1: <em><strong>ANC</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="4-local-possible-dosage"><a name="localPossibleDosage"></a>4. Local Possible Dosage</h3>
+
+<p><strong>Field ID:</strong> localPossibleDosage</p>
+
+<h4 id="properties-4">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Local Possible Dosage</strong><pre><code>  localPossibleDosage</code></pre></td>
+      <td>STRING</td>
+      <td>local_possible_dosage</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Package</strong><pre><code>  package</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>package</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>Inpatient</strong></em><br/>1: <em><strong>Outpatient</strong></em><br/>2: <em><strong>Both</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Bcma Units Per Dose</strong><pre><code>  bcmaUnitsPerDose</code></pre></td>
+      <td>NUMERIC</td>
+      <td>bcma_units_per_dose</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Other Language Dosage Name</strong><pre><code>  otherLanguageDosageName</code></pre></td>
+      <td>STRING</td>
+      <td>other_language_dosage_name</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dose Unit</strong><pre><code>  doseUnit</code></pre></td>
+      <td>POINTER</td>
+      <td>dose_unit</td>
+      <td> </td>
+      <td> </td>
+      <td>Dose_Units-51_24</td>
+    </tr>
+    <tr>
+      <td><strong>Numeric Dose</strong><pre><code>  numericDose</code></pre></td>
+      <td>NUMERIC</td>
+      <td>numeric_dose</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="5-ndc-by-outpatient-site"><a name="ndcByOutpatientSite"></a>5. Ndc By Outpatient Site</h3>
+
+<p><strong>Field ID:</strong> ndcByOutpatientSite</p>
+
+<h4 id="properties-5">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Outpatient Site</strong><pre><code>  outpatientSite</code></pre></td>
+      <td>POINTER</td>
+      <td>outpatient_site</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td>Outpatient_Site-59</td>
+    </tr>
+    <tr>
+      <td><strong>Last Local Ndc</strong><pre><code>  lastLocalNdc</code></pre></td>
+      <td>STRING</td>
+      <td>last_local_ndc</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Last Cmop Ndc</strong><pre><code>  lastCmopNdc</code></pre></td>
+      <td>STRING</td>
+      <td>last_cmop_ndc</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="6-old-names"><a name="oldNames"></a>6. Old Names</h3>
+
+<p><strong>Field ID:</strong> oldNames</p>
+
+<h4 id="properties-6">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Old Names</strong><pre><code>  oldNames</code></pre></td>
+      <td>STRING</td>
+      <td>old_names</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Date Changed</strong><pre><code>  dateChanged</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_changed</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="7-opai"><a name="opai"></a>7. Opai</h3>
+
+<p><strong>Field ID:</strong> opai</p>
+
+<h4 id="properties-7">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Division</strong><pre><code>  division</code></pre></td>
+      <td>POINTER</td>
+      <td>division</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td>Outpatient_Site-59</td>
+    </tr>
+    <tr>
+      <td><strong>Window Dns Name</strong><pre><code>  windowDnsName</code></pre></td>
+      <td>POINTER</td>
+      <td>window_dns_name</td>
+      <td> </td>
+      <td> </td>
+      <td>Pharmacy_Automated_Dispensing_Devices-52_53</td>
+    </tr>
+    <tr>
+      <td><strong>Mail Dns Name</strong><pre><code>  mailDnsName</code></pre></td>
+      <td>POINTER</td>
+      <td>mail_dns_name</td>
+      <td> </td>
+      <td> </td>
+      <td>Pharmacy_Automated_Dispensing_Devices-52_53</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="8-possible-dosages"><a name="possibleDosages"></a>8. Possible Dosages</h3>
+
+<p><strong>Field ID:</strong> possibleDosages</p>
+
+<h4 id="properties-8">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Dispense Units Per Dose</strong><pre><code>  dispenseUnitsPerDose</code></pre></td>
+      <td>NUMERIC</td>
+      <td>dispense_units_per_dose</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dose</strong><pre><code>  dose</code></pre></td>
+      <td>NUMERIC</td>
+      <td>dose</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Package</strong><pre><code>  package</code></pre></td>
+      <td>STRING</td>
+      <td>package</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Bcma Units Per Dose</strong><pre><code>  bcmaUnitsPerDose</code></pre></td>
+      <td>NUMERIC</td>
+      <td>bcma_units_per_dose</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="9-synonym"><a name="synonym"></a>9. Synonym</h3>
+
+<p><strong>Field ID:</strong> synonym</p>
+
+<h4 id="properties-9">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Synonym</strong><pre><code>  synonym</code></pre></td>
+      <td>STRING</td>
+      <td>synonym</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Intended Use</strong><pre><code>  intendedUse</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>intended_use</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>DRUG ACCOUNTABILITY</strong></em><br/>1: <em><strong>TRADE NAME</strong></em><br/>2: <em><strong>CONTROLLED SUBSTANCES</strong></em><br/>3: <em><strong>QUICK CODE</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Ndc Code</strong><pre><code>  ndcCode</code></pre></td>
+      <td>STRING</td>
+      <td>ndc_code</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Vsn</strong><pre><code>  vsn</code></pre></td>
+      <td>STRING</td>
+      <td>vsn</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Order Unit</strong><pre><code>  orderUnit</code></pre></td>
+      <td>POINTER</td>
+      <td>order_unit</td>
+      <td> </td>
+      <td> </td>
+      <td>Order_Unit-51_5</td>
+    </tr>
+    <tr>
+      <td><strong>Price Per Order Unit</strong><pre><code>  pricePerOrderUnit</code></pre></td>
+      <td>NUMERIC</td>
+      <td>price_per_order_unit</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dispense Units Per Order Unit</strong><pre><code>  dispenseUnitsPerOrderUnit</code></pre></td>
+      <td>NUMERIC</td>
+      <td>dispense_units_per_order_unit</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Price Per Dispense Unit</strong><pre><code>  pricePerDispenseUnit</code></pre></td>
+      <td>NUMERIC</td>
+      <td>price_per_dispense_unit</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Vendor</strong><pre><code>  vendor</code></pre></td>
+      <td>STRING</td>
+      <td>vendor</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

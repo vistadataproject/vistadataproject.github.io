@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--encounter_form_block"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Encounter_Form_Block<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="encounter_form_block">Encounter_Form_Block</h1>
+
+<h3 id="encounter-form-block">Encounter Form Block</h3>
+
+<p>Warning: Do Not Re-Index this file.  If this file should accidentally
+         be re-indexed, use the option to Recompile All Forms.  This will
+         correct any printing problems that might occur.</p>
+
+<p>This file contains the description of encounter form blocks.  A block is a
+rectangular areas on an encounter form.  Blocks are the basic building unit
+of encounter forms.  All data on a form is contained within a block and the
+block is sized and positioned to create a usable form.</p>
+
+<p><strong>Fileman ID:</strong> 357.1</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Encounter_Form_Block-357_1">Encounter_Form_Block-357_1</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 15</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 4</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#compiledBubbles">Compiled Bubbles</a></td>
+      <td>compiledBubbles</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#compiledHandPrintFields">Compiled Hand Print Fields</a></td>
+      <td>compiledHandPrintFields</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="#compiledStrings">Compiled Strings</a></td>
+      <td>compiledStrings</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><a href="#compiledVerticalLines">Compiled Vertical Lines</a></td>
+      <td>compiledVerticalLines</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>STRING</td>
+      <td>name</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Form</strong><pre><code>  form</code></pre></td>
+      <td>POINTER</td>
+      <td>form</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td>Encounter_Form-357</td>
+    </tr>
+    <tr>
+      <td><strong>Block's Starting Row</strong><pre><code>  blocksStartingRow</code></pre></td>
+      <td>NUMERIC</td>
+      <td>blocks_starting_row</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Block's Starting Column</strong><pre><code>  blocksStartingColumn</code></pre></td>
+      <td>NUMERIC</td>
+      <td>blocks_starting_column</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Width In Characters</strong><pre><code>  widthInCharacters</code></pre></td>
+      <td>NUMERIC</td>
+      <td>width_in_characters</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Height In Lines</strong><pre><code>  heightInLines</code></pre></td>
+      <td>NUMERIC</td>
+      <td>height_in_lines</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Outline Type</strong><pre><code>  outlineType</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>outline_type</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>INVISIBLE</strong></em><br/>1: <em><strong>SOLID LINE</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Block Header</strong><pre><code>  blockHeader</code></pre></td>
+      <td>STRING</td>
+      <td>block_header</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Header Appearance</strong><pre><code>  headerAppearance</code></pre></td>
+      <td>STRING</td>
+      <td>header_appearance</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Brief Description</strong><pre><code>  briefDescription</code></pre></td>
+      <td>STRING</td>
+      <td>brief_description</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Toolkit Order</strong><pre><code>  toolkitOrder</code></pre></td>
+      <td>NUMERIC</td>
+      <td>toolkit_order</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Compiled Strings</strong><pre><code>  compiledStrings</code></pre></td>
+      <td>OBJECT</td>
+      <td>compiled_strings</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#compiledStrings">compiledStrings</a></td>
+    </tr>
+    <tr>
+      <td><strong>Compiled Vertical Lines</strong><pre><code>  compiledVerticalLines</code></pre></td>
+      <td>OBJECT</td>
+      <td>compiled_vertical_lines</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#compiledVerticalLines">compiledVerticalLines</a></td>
+    </tr>
+    <tr>
+      <td><strong>Compiled Bubbles</strong><pre><code>  compiledBubbles</code></pre></td>
+      <td>OBJECT</td>
+      <td>compiled_bubbles</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#compiledBubbles">compiledBubbles</a></td>
+    </tr>
+    <tr>
+      <td><strong>Compiled Hand Print Fields</strong><pre><code>  compiledHandPrintFields</code></pre></td>
+      <td>OBJECT</td>
+      <td>compiled_hand_print_fields</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#compiledHandPrintFields">compiledHandPrintFields</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-compiled-bubbles"><a name="compiledBubbles"></a>1. Compiled Bubbles</h3>
+
+<p><strong>Field ID:</strong> compiledBubbles</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Row</strong><pre><code>  row</code></pre></td>
+      <td>NUMERIC</td>
+      <td>row</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Column</strong><pre><code>  column</code></pre></td>
+      <td>NUMERIC</td>
+      <td>column</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Type Of Data</strong><pre><code>  typeOfData</code></pre></td>
+      <td>POINTER</td>
+      <td>type_of_data</td>
+      <td> </td>
+      <td> </td>
+      <td>Package_Interface-357_6</td>
+    </tr>
+    <tr>
+      <td><strong>Value</strong><pre><code>  value</code></pre></td>
+      <td>STRING</td>
+      <td>value</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Field Name</strong><pre><code>  fieldName</code></pre></td>
+      <td>STRING</td>
+      <td>field_name</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Field Id</strong><pre><code>  fieldId</code></pre></td>
+      <td>STRING</td>
+      <td>field_id</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Selection Rule</strong><pre><code>  selectionRule</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>selection_rule</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>AT LEAST ONE</strong></em><br/>1: <em><strong>ANY NUMBER</strong></em><br/>2: <em><strong>EXACTLY ONE</strong></em><br/>3: <em><strong>AT MOST ONE</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Displayed Text</strong><pre><code>  displayedText</code></pre></td>
+      <td>STRING</td>
+      <td>displayed_text</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Displayed Header</strong><pre><code>  displayedHeader</code></pre></td>
+      <td>STRING</td>
+      <td>displayed_header</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Data Qualifier</strong><pre><code>  dataQualifier</code></pre></td>
+      <td>POINTER</td>
+      <td>data_qualifier</td>
+      <td> </td>
+      <td> </td>
+      <td>Aics_Data_Qualifiers-357_98</td>
+    </tr>
+    <tr>
+      <td><strong>Dynamic?</strong><pre><code>  dynamic</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>dynamic</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Item Count</strong><pre><code>  itemCount</code></pre></td>
+      <td>NUMERIC</td>
+      <td>item_count</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Quantity</strong><pre><code>  quantity</code></pre></td>
+      <td>NUMERIC</td>
+      <td>quantity</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Subheader</strong><pre><code>  subheader</code></pre></td>
+      <td>STRING</td>
+      <td>subheader</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-compiled-hand-print-fields"><a name="compiledHandPrintFields"></a>2. Compiled Hand Print Fields</h3>
+
+<p><strong>Field ID:</strong> compiledHandPrintFields</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Row For Hand Print</strong><pre><code>  rowForHandPrint</code></pre></td>
+      <td>NUMERIC</td>
+      <td>row_for_hand_print</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Column For Hand Print</strong><pre><code>  columnForHandPrint</code></pre></td>
+      <td>NUMERIC</td>
+      <td>column_for_hand_print</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Width</strong><pre><code>  width</code></pre></td>
+      <td>NUMERIC</td>
+      <td>width</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Type Of Data</strong><pre><code>  typeOfData</code></pre></td>
+      <td>POINTER</td>
+      <td>type_of_data</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>Package_Interface-357_6</td>
+    </tr>
+    <tr>
+      <td><strong>Number Of Hand Print Lines</strong><pre><code>  numberOfHandPrintLines</code></pre></td>
+      <td>NUMERIC</td>
+      <td>number_of_hand_print_lines</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Field Id</strong><pre><code>  fieldId</code></pre></td>
+      <td>STRING</td>
+      <td>field_id</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Field Name</strong><pre><code>  fieldName</code></pre></td>
+      <td>STRING</td>
+      <td>field_name</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Displayed Header</strong><pre><code>  displayedHeader</code></pre></td>
+      <td>STRING</td>
+      <td>displayed_header</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Data Qualifier</strong><pre><code>  dataQualifier</code></pre></td>
+      <td>POINTER</td>
+      <td>data_qualifier</td>
+      <td> </td>
+      <td> </td>
+      <td>Aics_Data_Qualifiers-357_98</td>
+    </tr>
+    <tr>
+      <td><strong>Item Number</strong><pre><code>  itemNumber</code></pre></td>
+      <td>NUMERIC</td>
+      <td>item_number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Print?</strong><pre><code>  print</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>print</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>NO, DO NOT PRINT</strong></em><br/>1: <em><strong>YES, FOR ICR</strong></em><br/>2: <em><strong>YES, NOT FOR ICR</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Read?</strong><pre><code>  read</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>read</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>NO, DO NOT READ</strong></em><br/>1: <em><strong>YES, READ WITHOUT ICR</strong></em><br/>2: <em><strong>YES, READ WITH ICR</strong></em><br/>3: <em><strong>YES, ICR PRINT FORMAT, READ WITHOUT ICR</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Data Element</strong><pre><code>  dataElement</code></pre></td>
+      <td>POINTER</td>
+      <td>data_element</td>
+      <td> </td>
+      <td> </td>
+      <td>Aics_Data_Elements-359_1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="3-compiled-strings"><a name="compiledStrings"></a>3. Compiled Strings</h3>
+
+<p><strong>Field ID:</strong> compiledStrings</p>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>String Row</strong><pre><code>  stringRow</code></pre></td>
+      <td>NUMERIC</td>
+      <td>string_row</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Column</strong><pre><code>  column</code></pre></td>
+      <td>NUMERIC</td>
+      <td>column</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Options</strong><pre><code>  options</code></pre></td>
+      <td>STRING</td>
+      <td>options</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Width</strong><pre><code>  width</code></pre></td>
+      <td>NUMERIC</td>
+      <td>width</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>String</strong><pre><code>  string</code></pre></td>
+      <td>STRING</td>
+      <td>string</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="4-compiled-vertical-lines"><a name="compiledVerticalLines"></a>4. Compiled Vertical Lines</h3>
+
+<p><strong>Field ID:</strong> compiledVerticalLines</p>
+
+<h4 id="properties-4">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Vertical Line Row</strong><pre><code>  verticalLineRow</code></pre></td>
+      <td>NUMERIC</td>
+      <td>vertical_line_row</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Column</strong><pre><code>  column</code></pre></td>
+      <td>NUMERIC</td>
+      <td>column</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Length</strong><pre><code>  length</code></pre></td>
+      <td>NUMERIC</td>
+      <td>length</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Character</strong><pre><code>  character</code></pre></td>
+      <td>STRING</td>
+      <td>character</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

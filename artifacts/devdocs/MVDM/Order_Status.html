@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--order_status"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Order_Status<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="order_status">Order_Status</h1>
+
+<h3 id="order-status">Order Status</h3>
+
+<p>This file contains the possible statuses that may be associated with
+an order in OE/RR.</p>
+
+<p>Per VHA Directive 2005-044, this file has been "locked down" by Data 
+Standardization (DS).  The file definition (i.e. data dictionary) shall 
+not be modified.  All additions, changes and deletions to entries in the 
+file shall be done by Enterprise Reference Terminology (ERT) using the 
+Master File Server (MFS), provided by Common Services (CS).   Creating 
+and/or editing locally defined fields in the file are not permitted.  Use 
+of locally defined fields that were created prior to VHA Directive 
+2005-044 shall not be supported.</p>
+
+<p><strong>Fileman ID:</strong> 100.01</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Order_Status-100_01">Order_Status-100_01</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 8</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IEN</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>STRING</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 1</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#effectiveDateTime">Effective Date Time</a></td>
+      <td>effectiveDateTime</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Number</strong><pre><code>  number</code></pre></td>
+      <td>IEN</td>
+      <td>number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>STRING</td>
+      <td>name</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Short Name</strong><pre><code>  shortName</code></pre></td>
+      <td>STRING</td>
+      <td>short_name</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Abbreviation</strong><pre><code>  abbreviation</code></pre></td>
+      <td>STRING</td>
+      <td>abbreviation</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong><pre><code>  description</code></pre></td>
+      <td>STRING</td>
+      <td>description</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Master Entry For VUID</strong><pre><code>  masterEntryForVuid</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>master_entry_for_vuid</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>VUID</strong><pre><code>  vuid</code></pre></td>
+      <td>STRING</td>
+      <td>vuid</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Effective Date/time</strong><pre><code>  effectiveDateTime</code></pre></td>
+      <td>OBJECT</td>
+      <td>effective_date_time</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#effectiveDateTime">effectiveDateTime</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-effective-date-time"><a name="effectiveDateTime"></a>1. Effective Date Time</h3>
+
+<p><strong>Field ID:</strong> effectiveDateTime</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Effective Date/time</strong><pre><code>  effectiveDateTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>effective_date_time</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Status</strong><pre><code>  status</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>status</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>ACTIVE</strong></em><br/>1: <em><strong>INACTIVE</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--icd_diagnosis"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Icd_Diagnosis<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="icd_diagnosis">Icd_Diagnosis</h1>
+
+<h3 id="icd-diagnosis">Icd Diagnosis</h3>
+
+<p>ICD Diagnosis file #80 contains codes from the International 
+Classification of Diseases (ICD) Clinical Modification (CM) 
+provided by the Centers for Medicare and Medicaid Services 
+(CMS) and the National Center for Health Statistics (NCHS).
+This file contains both the 9th (ICD-9-CM) and 10th (ICD-10-CM)
+Revisions.</p>
+
+<p>If an entry needs to be added, modified or deleted, a patch will
+be issued containing the change.</p>
+
+<p>This table file should NOT be edited in anyway by the site.</p>
+
+<p><strong>Fileman ID:</strong> 80</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Icd_Diagnosis-80">Icd_Diagnosis-80</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 23</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 9</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#ageHigh">Age High</a></td>
+      <td>ageHigh</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#ageLow">Age Low</a></td>
+      <td>ageLow</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="#complicationComorbidity">Complication Comorbidity</a></td>
+      <td>complicationComorbidity</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><a href="#description">Description</a></td>
+      <td>description</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><a href="#diagnosis">Diagnosis</a></td>
+      <td>diagnosis</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><a href="#drgGrouper">Drg Grouper</a></td>
+      <td>drgGrouper</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td><a href="#majorDiagnosticCategory">Major Diagnostic Category</a></td>
+      <td>majorDiagnosticCategory</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td><a href="#sex">Sex</a></td>
+      <td>sex</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td><a href="#status">Status</a></td>
+      <td>status</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Code Number</strong><pre><code>  codeNumber</code></pre></td>
+      <td>STRING</td>
+      <td>code_number</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Coding System</strong><pre><code>  codingSystem</code></pre></td>
+      <td>POINTER</td>
+      <td>coding_system</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Icd_Coding_Systems-80_4">Icd_Coding_Systems-80_4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Pdx Exclusion Code</strong><pre><code>  pdxExclusionCode</code></pre></td>
+      <td>POINTER</td>
+      <td>pdx_exclusion_code</td>
+      <td> </td>
+      <td> </td>
+      <td>Drg_Cc_Exclusions-82_13</td>
+    </tr>
+    <tr>
+      <td><strong>Identifier</strong><pre><code>  identifier</code></pre></td>
+      <td>STRING</td>
+      <td>identifier</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Unacceptable As Principal Dx</strong><pre><code>  unacceptableAsPrincipalDx</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>unacceptable_as_principal_dx</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Mdc13</strong><pre><code>  mdc13</code></pre></td>
+      <td>NUMERIC</td>
+      <td>mdc13</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Mdc24</strong><pre><code>  mdc24</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>mdc24</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>URINARY</strong></em><br/>1: <em><strong>HEAD</strong></em><br/>2: <em><strong>UPPER LIMB</strong></em><br/>3: <em><strong>CHEST</strong></em><br/>4: <em><strong>ABDOMEN</strong></em><br/>5: <em><strong>PRINCIPAL DX</strong></em><br/>6: <em><strong>PELVIS</strong></em><br/>7: <em><strong>KIDNEY</strong></em><br/>8: <em><strong>LOWER LIMB</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Mdc25</strong><pre><code>  mdc25</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>mdc25</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>NON-MAJOR HIV CONDITION</strong></em><br/>1: <em><strong>MAJOR HIV CONDITION</strong></em><br/>2: <em><strong>HIV INFECTION</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Icd Expanded</strong><pre><code>  icdExpanded</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>icd_expanded</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Poa Exempt</strong><pre><code>  poaExempt</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>poa_exempt</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>Not POA Exempt</strong></em><br/>1: <em><strong>POA Exempt</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Sex</strong><pre><code>  sex</code></pre></td>
+      <td>OBJECT</td>
+      <td>sex</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#sex">sex</a></td>
+    </tr>
+    <tr>
+      <td><strong>Age Low</strong><pre><code>  ageLow</code></pre></td>
+      <td>OBJECT</td>
+      <td>age_low</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#ageLow">ageLow</a></td>
+    </tr>
+    <tr>
+      <td><strong>Age High</strong><pre><code>  ageHigh</code></pre></td>
+      <td>OBJECT</td>
+      <td>age_high</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#ageHigh">ageHigh</a></td>
+    </tr>
+    <tr>
+      <td><strong>Icd Codes Not To Use With</strong><pre><code>  icdCodesNotToUseWith</code></pre></td>
+      <td>POINTER</td>
+      <td>icd_codes_not_to_use_with</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Icd Codes Required With</strong><pre><code>  icdCodesRequiredWith</code></pre></td>
+      <td>POINTER</td>
+      <td>icd_codes_required_with</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Icd Codes Not Cc With</strong><pre><code>  icdCodesNotCcWith</code></pre></td>
+      <td>POINTER</td>
+      <td>icd_codes_not_cc_with</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Status</strong><pre><code>  status</code></pre></td>
+      <td>OBJECT</td>
+      <td>status</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#status">status</a></td>
+    </tr>
+    <tr>
+      <td><strong>Diagnosis</strong><pre><code>  diagnosis</code></pre></td>
+      <td>OBJECT</td>
+      <td>diagnosis</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#diagnosis">diagnosis</a></td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong><pre><code>  description</code></pre></td>
+      <td>OBJECT</td>
+      <td>description</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#description">description</a></td>
+    </tr>
+    <tr>
+      <td><strong>Drg Grouper</strong><pre><code>  drgGrouper</code></pre></td>
+      <td>OBJECT</td>
+      <td>drg_grouper</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#drgGrouper">drgGrouper</a></td>
+    </tr>
+    <tr>
+      <td><strong>Major Diagnostic Category</strong><pre><code>  majorDiagnosticCategory</code></pre></td>
+      <td>OBJECT</td>
+      <td>major_diagnostic_category</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#majorDiagnosticCategory">majorDiagnosticCategory</a></td>
+    </tr>
+    <tr>
+      <td><strong>Drg Diagnosis Identifier Codes</strong><pre><code>  drgDiagnosisIdentifierCodes</code></pre></td>
+      <td>POINTER</td>
+      <td>drg_diagnosis_identifier_codes</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Complication/comorbidity</strong><pre><code>  complicationComorbidity</code></pre></td>
+      <td>OBJECT</td>
+      <td>complication_comorbidity</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#complicationComorbidity">complicationComorbidity</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-age-high"><a name="ageHigh"></a>1. Age High</h3>
+
+<p><strong>Field ID:</strong> ageHigh</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Age High Effective Date</strong><pre><code>  ageHighEffectiveDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>age_high_effective_date</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Age High</strong><pre><code>  ageHigh</code></pre></td>
+      <td>NUMERIC</td>
+      <td>age_high</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-age-low"><a name="ageLow"></a>2. Age Low</h3>
+
+<p><strong>Field ID:</strong> ageLow</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Age Low Effective Date</strong><pre><code>  ageLowEffectiveDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>age_low_effective_date</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Age Low</strong><pre><code>  ageLow</code></pre></td>
+      <td>NUMERIC</td>
+      <td>age_low</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="3-complication-comorbidity"><a name="complicationComorbidity"></a>3. Complication Comorbidity</h3>
+
+<p><strong>Field ID:</strong> complicationComorbidity</p>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Cc Effective Date</strong><pre><code>  ccEffectiveDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>cc_effective_date</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Complication/comorbidity</strong><pre><code>  complicationComorbidity</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>complication_comorbidity</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>CC</strong></em><br/>1: <em><strong>MCC when patient is discharged alive</strong></em><br/>2: <em><strong>MCC</strong></em><br/>3: <em><strong>non-CC</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Primary</strong><pre><code>  primary</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>primary</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>Primary DX is own CC/MCC</strong></em><br/>1: <em><strong>Primary DX is not own CC/MCC</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="4-description"><a name="description"></a>4. Description</h3>
+
+<p><strong>Field ID:</strong> description</p>
+
+<h4 id="properties-4">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Description Effective Date</strong><pre><code>  descriptionEffectiveDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>description_effective_date</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong><pre><code>  description</code></pre></td>
+      <td>STRING</td>
+      <td>description</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Supplemental</strong><pre><code>  supplemental</code></pre></td>
+      <td>STRING</td>
+      <td>supplemental</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="5-diagnosis"><a name="diagnosis"></a>5. Diagnosis</h3>
+
+<p><strong>Field ID:</strong> diagnosis</p>
+
+<h4 id="properties-5">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Diagnosis Effective Date</strong><pre><code>  diagnosisEffectiveDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>diagnosis_effective_date</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Diagnosis</strong><pre><code>  diagnosis</code></pre></td>
+      <td>STRING</td>
+      <td>diagnosis</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="6-drg-grouper"><a name="drgGrouper"></a>6. Drg Grouper</h3>
+
+<p><strong>Field ID:</strong> drgGrouper</p>
+
+<h4 id="properties-6">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Drg Grouper Effective Date</strong><pre><code>  drgGrouperEffectiveDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>drg_grouper_effective_date</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Drg</strong><pre><code>  drg</code></pre></td>
+      <td>POINTER</td>
+      <td>drg</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="7-major-diagnostic-category"><a name="majorDiagnosticCategory"></a>7. Major Diagnostic Category</h3>
+
+<p><strong>Field ID:</strong> majorDiagnosticCategory</p>
+
+<h4 id="properties-7">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Mdc Effective Date</strong><pre><code>  mdcEffectiveDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>mdc_effective_date</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Mdc</strong><pre><code>  mdc</code></pre></td>
+      <td>POINTER</td>
+      <td>mdc</td>
+      <td> </td>
+      <td> </td>
+      <td>Major_Diagnostic_Category-80_3</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="8-sex"><a name="sex"></a>8. Sex</h3>
+
+<p><strong>Field ID:</strong> sex</p>
+
+<h4 id="properties-8">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Sex Effective Date</strong><pre><code>  sexEffectiveDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>sex_effective_date</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Sex</strong><pre><code>  sex</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>sex</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>MALE</strong></em><br/>1: <em><strong>N/A</strong></em><br/>2: <em><strong>FEMALE</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="9-status"><a name="status"></a>9. Status</h3>
+
+<p><strong>Field ID:</strong> status</p>
+
+<h4 id="properties-9">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Status Effective Date</strong><pre><code>  statusEffectiveDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>status_effective_date</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Status</strong><pre><code>  status</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>status</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>ACTIVE</strong></em><br/>1: <em><strong>INACTIVE</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--accession"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Accession<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="accession">Accession</h1>
+
+<h3 id="accession-1">Accession</h3>
+
+<p>This file contains entries which represent the functional subdivisions
+or departments of the laboratory, referred to by the Laboratory package
+software as accession areas.  The file is used to define the site-specific
+information needed by your laboratory for each accession area.  This 
+includes the type of accession transform (or how often the accession 
+numbers assigned to test performed in that area will be reset to 1), the
+abbreviation of the area (which becomes part of the accession identifying
+the specimen and test results), the order in which the data for tests
+performed in the area will be displayed and other specific information.</p>
+
+<p>Definitions of variables used:
+ LRDFN = Internal entry in LR( that is being worked on.
+ LRIDT = Inverse date/time that data is stored at. ^LR(LRDFN,"CH",
+ LRAA = internal value of accession area ^LRO(68,
+ LRAD = date working on in accession area ^LRO(68,LRAA,1,
+ LRAN = accession number working on ^LRO(68,LRAA,1,LRAD,1,
+ LRODT = order date ^LRO(69,
+ LRSN = order entry within date ^LRO(69,LRORD,1,
+CROSS REFERENCE DESCRIPTION:
+ ^LRO(68,"B",'ACCESSION AREA',LRAA)
+ ^LRO(68,"AC",LRDFN,'DATE RESULTS AVAILABLE','DATA NODE') =
+    used by the cumulative
+ ^LRO(68,"AD",'LAB SECTION',LRAC)
+ ^LRO(68,"AVS",LRAA,LRAD,LRAN)=LRDFN^LRIDT
+    used by micro verify by supervisor
+ ^LRO(68,"MI",LRDFN,LRIDT)
+    used by micro for cumulative report
+ ^LRO(68,LRAA,1,LRAD,1,LRAN,"AE")
+    used for WKLD count</p>
+
+<p>^LRO(68,LRAA,1,LRAD,1,"B",'ENTRY FILE 69',LRAN)
+ ^LRO(68,LRAA,1,LRAD,1,"C",'IDENTITY',LRAN)
+ ^LRO(68,LRAA,1,LRAD,1,"E",'LAB ARRIVAL TIME',LRAN)
+ ^LRO(68,LRAA,1,LRAD,1,"D",'ORDER #',LRAN)
+ ^LRO(68,LRAA,1,LRAD,1,"AC",'DATE/TIME COMPLETE',LRAN)
+ ^LRO(68,LRAA,1,LRAD,1,"AD",'DATE COMPLETE',LRAN)
+ ^LRO(68,LRAA,1,LRAD,4,"B",'LAB TEST',LRAN)</p>
+
+<p><strong>Fileman ID:</strong> 68</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Accession-68">Accession-68</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 35</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 10</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#accessionNumber">Accession Number</a></td>
+      <td>accessionNumber</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#bullAlgorithmControlData">Bull Algorithm Control Data</a></td>
+      <td>bullAlgorithmControlData</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="#controlName">Control Name</a></td>
+      <td>controlName</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><a href="#date">Date</a></td>
+      <td>date</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><a href="#instrumentationControls">Instrumentation Controls</a></td>
+      <td>instrumentationControls</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><a href="#multiruleVaQc">Multirule Va Qc</a></td>
+      <td>multiruleVaQc</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td><a href="#specimen">Specimen</a></td>
+      <td>specimen</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td><a href="#test">Test</a></td>
+      <td>test</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td><a href="#tests">Tests</a></td>
+      <td>tests</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td><a href="#wkldCode">Wkld Code</a></td>
+      <td>wkldCode</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Area</strong><pre><code>  area</code></pre></td>
+      <td>STRING</td>
+      <td>area</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lr Subscript</strong><pre><code>  lrSubscript</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>lr_subscript</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>BLOOD BANK</strong></em><br/>1: <em><strong>ELECTRON MICROSCOPY</strong></em><br/>2: <em><strong>SURGICAL PATHOLOGY</strong></em><br/>3: <em><strong>CYTOLOGY</strong></em><br/>4: <em><strong>MICROBIOLOGY</strong></em><br/>5: <em><strong>CHEM, HEM, TOX, RIA, SER, etc.</strong></em><br/>6: <em><strong>AUTOPSY</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Clean Up</strong><pre><code>  cleanUp</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>clean_up</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>MONTHLY</strong></em><br/>1: <em><strong>QUARTERLY</strong></em><br/>2: <em><strong>YEARLY</strong></em><br/>3: <em><strong>DAILY</strong></em><br/>4: <em><strong>WEEKLY</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Common Accession #'s With Area</strong><pre><code>  commonAccessionNumbersWithArea</code></pre></td>
+      <td>POINTER</td>
+      <td>common_accession_numbers_with_area</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td><a href="../VDM/Accession-68">Accession-68</a></td>
+    </tr>
+    <tr>
+      <td><strong>Accession Transform</strong><pre><code>  accessionTransform</code></pre></td>
+      <td>POINTER</td>
+      <td>accession_transform</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>Execute_Code-62_07</td>
+    </tr>
+    <tr>
+      <td><strong>Acc Code</strong><pre><code>  accCode</code></pre></td>
+      <td>STRING</td>
+      <td>acc_code</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Verification Code</strong><pre><code>  verificationCode</code></pre></td>
+      <td>POINTER</td>
+      <td>verification_code</td>
+      <td> </td>
+      <td> </td>
+      <td>Execute_Code-62_07</td>
+    </tr>
+    <tr>
+      <td><strong>Ver Code</strong><pre><code>  verCode</code></pre></td>
+      <td>STRING</td>
+      <td>ver_code</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*identity Control</strong><pre><code>  identityControl</code></pre></td>
+      <td>POINTER</td>
+      <td>identity_control</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*ident Code</strong><pre><code>  identCode</code></pre></td>
+      <td>STRING</td>
+      <td>ident_code</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Print Order</strong><pre><code>  printOrder</code></pre></td>
+      <td>NUMERIC</td>
+      <td>print_order</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Bypass Rollover</strong><pre><code>  bypassRollover</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>bypass_rollover</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Abbreviation</strong><pre><code>  abbreviation</code></pre></td>
+      <td>STRING</td>
+      <td>abbreviation</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Associated Division</strong><pre><code>  associatedDivision</code></pre></td>
+      <td>POINTER</td>
+      <td>associated_division</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Type Of Accession Number</strong><pre><code>  typeOfAccessionNumber</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>type_of_accession_number</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>SHORT</strong></em><br/>1: <em><strong>LONG</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>*lab Section</strong><pre><code>  labSection</code></pre></td>
+      <td>POINTER</td>
+      <td>lab_section</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Non Lab Accession Area</strong><pre><code>  nonLabAccessionArea</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>non_lab_accession_area</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Responsible Official</strong><pre><code>  responsibleOfficial</code></pre></td>
+      <td>POINTER</td>
+      <td>responsible_official</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Inhibit Area Label Printing</strong><pre><code>  inhibitAreaLabelPrinting</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>inhibit_area_label_printing</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lab Division</strong><pre><code>  labDivision</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>lab_division</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>CLINICAL PATHOLOGY</strong></em><br/>1: <em><strong>ANATOMIC PATHOLOGY</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Numeric Identifier</strong><pre><code>  numericIdentifier</code></pre></td>
+      <td>STRING</td>
+      <td>numeric_identifier</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lock For Load/work List Build</strong><pre><code>  lockForLoadWorkListBuild</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>lock_for_load_work_list_build</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lab Oos Location</strong><pre><code>  labOosLocation</code></pre></td>
+      <td>POINTER</td>
+      <td>lab_oos_location</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Hospital_Location-44">Hospital_Location-44</a></td>
+    </tr>
+    <tr>
+      <td><strong>User Access Authorization</strong><pre><code>  userAccessAuthorization</code></pre></td>
+      <td>POINTER</td>
+      <td>user_access_authorization</td>
+      <td> </td>
+      <td> </td>
+      <td>Security_Key-19_1</td>
+    </tr>
+    <tr>
+      <td><strong>Instrumentation Controls</strong><pre><code>  instrumentationControls</code></pre></td>
+      <td>OBJECT</td>
+      <td>instrumentation_controls</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#instrumentationControls">instrumentationControls</a></td>
+    </tr>
+    <tr>
+      <td><strong>Date</strong><pre><code>  date</code></pre></td>
+      <td>OBJECT</td>
+      <td>date</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#date">date</a></td>
+    </tr>
+    <tr>
+      <td><strong>Bar Code Print</strong><pre><code>  barCodePrint</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>bar_code_print</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>CODE39 WITH CHECK DIGIT</strong></em><br/>1: <em><strong>NONE</strong></em><br/>2: <em><strong>CODE128</strong></em><br/>3: <em><strong>YES</strong></em><br/>4: <em><strong>CODE39</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Bar Code Pad</strong><pre><code>  barCodePad</code></pre></td>
+      <td>NUMERIC</td>
+      <td>bar_code_pad</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Alternate Label Entry</strong><pre><code>  alternateLabelEntry</code></pre></td>
+      <td>STRING</td>
+      <td>alternate_label_entry</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Alternate Label Routine</strong><pre><code>  alternateLabelRoutine</code></pre></td>
+      <td>STRING</td>
+      <td>alternate_label_routine</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Reserved</strong><pre><code>  reserved</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>reserved</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>ORDER # FIRST</strong></em><br/>1: <em><strong>MEDLAB</strong></em><br/>2: <em><strong>SITE FILE</strong></em><br/>3: <em><strong>2X5 UNEVEN</strong></em><br/>4: <em><strong>SITE DEVELOPED VAF 10-1392</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Work Area</strong><pre><code>  workArea</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>work_area</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>WORK AREA</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Workload On</strong><pre><code>  workloadOn</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>workload_on</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Collect Std/qc/repeats</strong><pre><code>  collectStdQcRepeats</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>collect_std_qc_repeats</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>External Service Area</strong><pre><code>  externalServiceArea</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>external_service_area</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-accession-number"><a name="accessionNumber"></a>1. Accession Number</h3>
+
+<p><strong>Field ID:</strong> accessionNumber</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Log</strong><pre><code>  log</code></pre></td>
+      <td>IEN</td>
+      <td>log</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lrdfn</strong><pre><code>  lrdfn</code></pre></td>
+      <td>POINTER</td>
+      <td>lrdfn</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>Lab_Data-63</td>
+    </tr>
+    <tr>
+      <td><strong>File #</strong><pre><code>  fileNumber</code></pre></td>
+      <td>POINTER</td>
+      <td>file_number</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/File-1">File-1</a></td>
+    </tr>
+    <tr>
+      <td><strong>Original Accn Date</strong><pre><code>  originalAccnDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>original_accn_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Date Ordered</strong><pre><code>  dateOrdered</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_ordered</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Specimen Number</strong><pre><code>  specimenNumber</code></pre></td>
+      <td>NUMERIC</td>
+      <td>specimen_number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Identity</strong><pre><code>  identity</code></pre></td>
+      <td>STRING</td>
+      <td>identity</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Report Routing Location</strong><pre><code>  reportRoutingLocation</code></pre></td>
+      <td>STRING</td>
+      <td>report_routing_location</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Provider</strong><pre><code>  provider</code></pre></td>
+      <td>POINTER</td>
+      <td>provider</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Treating Speciality</strong><pre><code>  treatingSpeciality</code></pre></td>
+      <td>POINTER</td>
+      <td>treating_speciality</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td><a href="../VDM/Facility_Treating_Specialty-45_7">Facility_Treating_Specialty-45_7</a></td>
+    </tr>
+    <tr>
+      <td><strong>Log-in Person</strong><pre><code>  loginPerson</code></pre></td>
+      <td>POINTER</td>
+      <td>login_person</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Hardware Special Numbers</strong><pre><code>  hardwareSpecialNumbers</code></pre></td>
+      <td>STRING</td>
+      <td>hardware_special_numbers</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Draw Time</strong><pre><code>  drawTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>draw_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Date/time Obtained Inexact</strong><pre><code>  dateTimeObtainedInexact</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>date_time_obtained_inexact</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Tests</strong><pre><code>  tests</code></pre></td>
+      <td>OBJECT</td>
+      <td>tests</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#tests">tests</a></td>
+    </tr>
+    <tr>
+      <td><strong>Lab Arrival Time</strong><pre><code>  labArrivalTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>lab_arrival_time</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Date/time Results Available</strong><pre><code>  dateTimeResultsAvailable</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_time_results_available</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Inverse Date</strong><pre><code>  inverseDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>inverse_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Comment</strong><pre><code>  comment</code></pre></td>
+      <td>STRING</td>
+      <td>comment</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Order #</strong><pre><code>  orderNumber</code></pre></td>
+      <td>STRING</td>
+      <td>order_number</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Accession</strong><pre><code>  accession</code></pre></td>
+      <td>STRING</td>
+      <td>accession</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>In Common Accession</strong><pre><code>  inCommonAccession</code></pre></td>
+      <td>STRING</td>
+      <td>in_common_accession</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Uid</strong><pre><code>  uid</code></pre></td>
+      <td>STRING</td>
+      <td>uid</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ordering Site</strong><pre><code>  orderingSite</code></pre></td>
+      <td>POINTER</td>
+      <td>ordering_site</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td><a href="../VDM/Institution-4">Institution-4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Collecting Site</strong><pre><code>  collectingSite</code></pre></td>
+      <td>POINTER</td>
+      <td>collecting_site</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Institution-4">Institution-4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Host Uid</strong><pre><code>  hostUid</code></pre></td>
+      <td>STRING</td>
+      <td>host_uid</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ordering Site Uid</strong><pre><code>  orderingSiteUid</code></pre></td>
+      <td>STRING</td>
+      <td>ordering_site_uid</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Div</strong><pre><code>  div</code></pre></td>
+      <td>POINTER</td>
+      <td>div</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td><a href="../VDM/Institution-4">Institution-4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Pce Enc #</strong><pre><code>  pceEncNumber</code></pre></td>
+      <td>STRING</td>
+      <td>pce_enc_number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Specimen</strong><pre><code>  specimen</code></pre></td>
+      <td>OBJECT</td>
+      <td>specimen</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#specimen">specimen</a></td>
+    </tr>
+    <tr>
+      <td><strong>Number Of Slides</strong><pre><code>  numberOfSlides</code></pre></td>
+      <td>NUMERIC</td>
+      <td>number_of_slides</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Paraffin Block(s)</strong><pre><code>  paraffinBlocks</code></pre></td>
+      <td>NUMERIC</td>
+      <td>paraffin_blocks</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Progress Notes</strong><pre><code>  progressNotes</code></pre></td>
+      <td>STRING</td>
+      <td>progress_notes</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Current Accession Date</strong><pre><code>  currentAccessionDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>current_accession_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Location Type</strong><pre><code>  locationType</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>location_type</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>NON-CLINIC STOP</strong></em><br/>1: <em><strong>OPERATION ROOM</strong></em><br/>2: <em><strong>MODULE</strong></em><br/>3: <em><strong>CLINIC</strong></em><br/>4: <em><strong>OTHER</strong></em><br/>5: <em><strong>FILE AREA</strong></em><br/>6: <em><strong>IMAGING</strong></em><br/>7: <em><strong>WARD</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Count For Wkld</strong><pre><code>  countForWkld</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>count_for_wkld</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>YES</strong></em><br/>1: <em><strong>no</strong></em><br/>2: <em><strong>yes</strong></em><br/>3: <em><strong>NO</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Ordering Location</strong><pre><code>  orderingLocation</code></pre></td>
+      <td>POINTER</td>
+      <td>ordering_location</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Hospital_Location-44">Hospital_Location-44</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-bull-algorithm-control-data"><a name="bullAlgorithmControlData"></a>2. Bull Algorithm Control Data</h3>
+
+<p><strong>Field ID:</strong> bullAlgorithmControlData</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Method Control Data</strong><pre><code>  methodControlData</code></pre></td>
+      <td>POINTER</td>
+      <td>method_control_data</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>Auto_Instrument-62_4</td>
+    </tr>
+    <tr>
+      <td><strong>Control Data</strong><pre><code>  controlData</code></pre></td>
+      <td>STRING</td>
+      <td>control_data</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Mean Data Value 1</strong><pre><code>  meanDataValue1</code></pre></td>
+      <td>NUMERIC</td>
+      <td>mean_data_value_1</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Mean Data Value 2</strong><pre><code>  meanDataValue2</code></pre></td>
+      <td>NUMERIC</td>
+      <td>mean_data_value_2</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Mean Data Value 3</strong><pre><code>  meanDataValue3</code></pre></td>
+      <td>NUMERIC</td>
+      <td>mean_data_value_3</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="3-control-name"><a name="controlName"></a>3. Control Name</h3>
+
+<p><strong>Field ID:</strong> controlName</p>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Acc #</strong><pre><code>  accNumber</code></pre></td>
+      <td>IEN</td>
+      <td>acc_number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Control Name</strong><pre><code>  controlName</code></pre></td>
+      <td>POINTER</td>
+      <td>control_name</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>Lab_Control_Name-62_3</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="4-date"><a name="date"></a>4. Date</h3>
+
+<p><strong>Field ID:</strong> date</p>
+
+<h4 id="properties-4">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Date</strong><pre><code>  date</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Accession Number</strong><pre><code>  accessionNumber</code></pre></td>
+      <td>OBJECT</td>
+      <td>accession_number</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#accessionNumber">accessionNumber</a></td>
+    </tr>
+    <tr>
+      <td><strong>*current Initials</strong><pre><code>  currentInitials</code></pre></td>
+      <td>STRING</td>
+      <td>current_initials</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Current Accession Number</strong><pre><code>  currentAccessionNumber</code></pre></td>
+      <td>STRING</td>
+      <td>current_accession_number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*current Identity</strong><pre><code>  currentIdentity</code></pre></td>
+      <td>STRING</td>
+      <td>current_identity</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Current Verify Acc #</strong><pre><code>  currentVerifyAccNumber</code></pre></td>
+      <td>NUMERIC</td>
+      <td>current_verify_acc_number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Bull Algorithm Control Data</strong><pre><code>  bullAlgorithmControlData</code></pre></td>
+      <td>OBJECT</td>
+      <td>bull_algorithm_control_data</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#bullAlgorithmControlData">bullAlgorithmControlData</a></td>
+    </tr>
+    <tr>
+      <td><strong>Multi-rule VA Qc</strong><pre><code>  multiruleVaQc</code></pre></td>
+      <td>OBJECT</td>
+      <td>multirule_va_qc</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#multiruleVaQc">multiruleVaQc</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="5-instrumentation-controls"><a name="instrumentationControls"></a>5. Instrumentation Controls</h3>
+
+<p><strong>Field ID:</strong> instrumentationControls</p>
+
+<h4 id="properties-5">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Instrumentation Controls</strong><pre><code>  instrumentationControls</code></pre></td>
+      <td>POINTER</td>
+      <td>instrumentation_controls</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>Auto_Instrument-62_4</td>
+    </tr>
+    <tr>
+      <td><strong>Control Name</strong><pre><code>  controlName</code></pre></td>
+      <td>OBJECT</td>
+      <td>control_name</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#controlName">controlName</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="6-multirule-va-qc"><a name="multiruleVaQc"></a>6. Multirule Va Qc</h3>
+
+<p><strong>Field ID:</strong> multiruleVaQc</p>
+
+<h4 id="properties-6">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Control Name</strong><pre><code>  controlName</code></pre></td>
+      <td>POINTER</td>
+      <td>control_name</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>Lab_Control_Name-62_3</td>
+    </tr>
+    <tr>
+      <td><strong>Control Data</strong><pre><code>  controlData</code></pre></td>
+      <td>POINTER</td>
+      <td>control_data</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Reject Reason</strong><pre><code>  rejectReason</code></pre></td>
+      <td>STRING</td>
+      <td>reject_reason</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="7-specimen"><a name="specimen"></a>7. Specimen</h3>
+
+<p><strong>Field ID:</strong> specimen</p>
+
+<h4 id="properties-7">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Specimen</strong><pre><code>  specimen</code></pre></td>
+      <td>POINTER</td>
+      <td>specimen</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td><a href="../VDM/Topography_Field-61">Topography_Field-61</a></td>
+    </tr>
+    <tr>
+      <td><strong>Collection Sample</strong><pre><code>  collectionSample</code></pre></td>
+      <td>POINTER</td>
+      <td>collection_sample</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Collection_Sample-62">Collection_Sample-62</a></td>
+    </tr>
+    <tr>
+      <td><strong>Test</strong><pre><code>  test</code></pre></td>
+      <td>OBJECT</td>
+      <td>test</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#test">test</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="8-test"><a name="test"></a>8. Test</h3>
+
+<p><strong>Field ID:</strong> test</p>
+
+<h4 id="properties-8">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Test</strong><pre><code>  test</code></pre></td>
+      <td>POINTER</td>
+      <td>test</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td><a href="../VDM/Laboratory_Test-60">Laboratory_Test-60</a></td>
+    </tr>
+    <tr>
+      <td><strong>Tissue Block(s)</strong><pre><code>  tissueBlocks</code></pre></td>
+      <td>STRING</td>
+      <td>tissue_blocks</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Total Slides</strong><pre><code>  totalSlides</code></pre></td>
+      <td>NUMERIC</td>
+      <td>total_slides</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="9-tests"><a name="tests"></a>9. Tests</h3>
+
+<p><strong>Field ID:</strong> tests</p>
+
+<h4 id="properties-9">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>** Test**<pre><code>  test</code></pre></td>
+      <td>POINTER</td>
+      <td>_test</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Laboratory_Test-60">Laboratory_Test-60</a></td>
+    </tr>
+    <tr>
+      <td><strong>Urgency Of Test</strong><pre><code>  urgencyOfTest</code></pre></td>
+      <td>POINTER</td>
+      <td>urgency_of_test</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>Urgency-62_05</td>
+    </tr>
+    <tr>
+      <td><strong>Load List Entry</strong><pre><code>  loadListEntry</code></pre></td>
+      <td>STRING</td>
+      <td>load_list_entry</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Technologist</strong><pre><code>  technologist</code></pre></td>
+      <td>POINTER</td>
+      <td>technologist</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Complete Date</strong><pre><code>  completeDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>complete_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Disposition</strong><pre><code>  disposition</code></pre></td>
+      <td>STRING</td>
+      <td>disposition</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Tally To Wkld</strong><pre><code>  tallyToWkld</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>tally_to_wkld</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>YES</strong></em><br/>1: <em><strong>HAS NOT</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Wkld Code</strong><pre><code>  wkldCode</code></pre></td>
+      <td>OBJECT</td>
+      <td>wkld_code</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#wkldCode">wkldCode</a></td>
+    </tr>
+    <tr>
+      <td><strong>*identity</strong><pre><code>  identity</code></pre></td>
+      <td>STRING</td>
+      <td>identity</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Wkld Suffix</strong><pre><code>  wkldSuffix</code></pre></td>
+      <td>STRING</td>
+      <td>wkld_suffix</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Parent Test</strong><pre><code>  parentTest</code></pre></td>
+      <td>POINTER</td>
+      <td>parent_test</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Laboratory_Test-60">Laboratory_Test-60</a></td>
+    </tr>
+    <tr>
+      <td><strong>Shipping Manifest</strong><pre><code>  shippingManifest</code></pre></td>
+      <td>POINTER</td>
+      <td>shipping_manifest</td>
+      <td> </td>
+      <td> </td>
+      <td>Lab_Shipping_Manifest-62_8</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="10-wkld-code"><a name="wkldCode"></a>10. Wkld Code</h3>
+
+<p><strong>Field ID:</strong> wkldCode</p>
+
+<h4 id="properties-10">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Wkld Code</strong><pre><code>  wkldCode</code></pre></td>
+      <td>POINTER</td>
+      <td>wkld_code</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td>Wkld_Code-64</td>
+    </tr>
+    <tr>
+      <td><strong>Test Multiply Factor</strong><pre><code>  testMultiplyFactor</code></pre></td>
+      <td>NUMERIC</td>
+      <td>test_multiply_factor</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Wkld Code Counted</strong><pre><code>  wkldCodeCounted</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>wkld_code_counted</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Wkld Code Tally</strong><pre><code>  wkldCodeTally</code></pre></td>
+      <td>NUMERIC</td>
+      <td>wkld_code_tally</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Wkld Code Repeat Count</strong><pre><code>  wkldCodeRepeatCount</code></pre></td>
+      <td>NUMERIC</td>
+      <td>wkld_code_repeat_count</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Completion Time</strong><pre><code>  completionTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>completion_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>User</strong><pre><code>  user</code></pre></td>
+      <td>POINTER</td>
+      <td>user</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Institution</strong><pre><code>  institution</code></pre></td>
+      <td>POINTER</td>
+      <td>institution</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Institution-4">Institution-4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Major Section</strong><pre><code>  majorSection</code></pre></td>
+      <td>POINTER</td>
+      <td>major_section</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Accession-68">Accession-68</a></td>
+    </tr>
+    <tr>
+      <td><strong>Lab Subsection</strong><pre><code>  labSubsection</code></pre></td>
+      <td>POINTER</td>
+      <td>lab_subsection</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Accession-68">Accession-68</a></td>
+    </tr>
+    <tr>
+      <td><strong>Work Area</strong><pre><code>  workArea</code></pre></td>
+      <td>POINTER</td>
+      <td>work_area</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Accession-68">Accession-68</a></td>
+    </tr>
+    <tr>
+      <td><strong>Manual Edit</strong><pre><code>  manualEdit</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>manual_edit</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>
