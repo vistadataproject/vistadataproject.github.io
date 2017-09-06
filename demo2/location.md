@@ -48,7 +48,7 @@ Clyde Jensen, a Psychiatrist, names this _Personal Location_. Mr Jensen no longe
 
 ![](imagesLocn/LocnZZIOW_C&P_JENSENMU.png)
 
-Note that inactivate dates may happen long after a locations lack of use - Mr Jensen's workload timeline shows that December 2008 was his last month but it took over a year for a system administrator to inactivate his location.
+Note that inactivate dates may happen long after a location is no longer in use - Mr Jensen's workload timeline shows that December 2008 was his last month but it took over a year for a system administrator to inactivate his location.
 
 ![](imagesLocn/LocnZZIOW_C&P_JENSEN_TIMELINE.png)
 
