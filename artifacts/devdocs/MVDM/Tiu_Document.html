@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--tiu_document"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Tiu_Document<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="tiu_document">Tiu_Document</h1>
+
+<h3 id="tiu-document">TIU Document</h3>
+
+<p>This file stores textual information for the clinical record database.
+Though it is designed to initially accommodate Progress Notes, Consult 
+Reports, and Discharge Summaries, it is intended to be sufficiently
+flexible to accommodate textual reports or provider narrative of any
+length or type, and to potentially accommodate such data transmitted 
+from remote sites, which may be excluded from the corresponding local 
+DHCP Package databases (e.g., Operative Reports, Radiology Reports, 
+Pathology Reports, etc.) to avoid confusion with local workload.</p>
+
+<p><strong>Fileman ID:</strong> 8925</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Tiu_Document-8925">Tiu_Document-8925</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 73</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>POINTER</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>DATE-TIME</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>STRING</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 0</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Document Type</strong><pre><code>  documentType</code></pre></td>
+      <td>POINTER</td>
+      <td>document_type</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Tiu_Document_Definition-8925_1">Tiu_Document_Definition-8925_1</a></td>
+    </tr>
+    <tr>
+      <td><strong>Patient</strong><pre><code>  patient</code></pre></td>
+      <td>POINTER</td>
+      <td>patient</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td><a href="../VDM/Patient_ihs-9000001">Patient_ihs-9000001</a></td>
+    </tr>
+    <tr>
+      <td><strong>Visit</strong><pre><code>  visit</code></pre></td>
+      <td>POINTER</td>
+      <td>visit</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td><a href="../VDM/Visit-9000010">Visit-9000010</a></td>
+    </tr>
+    <tr>
+      <td><strong>Parent Document Type</strong><pre><code>  parentDocumentType</code></pre></td>
+      <td>POINTER</td>
+      <td>parent_document_type</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Tiu_Document_Definition-8925_1">Tiu_Document_Definition-8925_1</a></td>
+    </tr>
+    <tr>
+      <td><strong>Status</strong><pre><code>  status</code></pre></td>
+      <td>POINTER</td>
+      <td>status</td>
+      <td> </td>
+      <td> </td>
+      <td>TIU_Status-8925_6</td>
+    </tr>
+    <tr>
+      <td><strong>Parent</strong><pre><code>  parent</code></pre></td>
+      <td>POINTER</td>
+      <td>parent</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td><a href="../VDM/Tiu_Document-8925">Tiu_Document-8925</a></td>
+    </tr>
+    <tr>
+      <td><strong>Episode Begin Date/time</strong><pre><code>  episodeBeginDateTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>episode_begin_date_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Episode End Date/time</strong><pre><code>  episodeEndDateTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>episode_end_date_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Urgency</strong><pre><code>  urgency</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>urgency</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>priority</strong></em><br/>1: <em><strong>routine</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Line Count</strong><pre><code>  lineCount</code></pre></td>
+      <td>STRING</td>
+      <td>line_count</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Credit Stop Code On Completion</strong><pre><code>  creditStopCodeOnCompletion</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>credit_stop_code_on_completion</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Mark Disch Dt For Correction</strong><pre><code>  markDischDtForCorrection</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>mark_disch_dt_for_correction</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Visit Type</strong><pre><code>  visitType</code></pre></td>
+      <td>STRING</td>
+      <td>visit_type</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Report Text</strong><pre><code>  reportText</code></pre></td>
+      <td>STRING</td>
+      <td>report_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Edit Text Buffer</strong><pre><code>  editTextBuffer</code></pre></td>
+      <td>STRING</td>
+      <td>edit_text_buffer</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Entry Date/time</strong><pre><code>  entryDateTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>entry_date_time</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Author/dictator</strong><pre><code>  authorDictator</code></pre></td>
+      <td>POINTER</td>
+      <td>author_dictator</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Clinic</strong><pre><code>  clinic</code></pre></td>
+      <td>POINTER</td>
+      <td>clinic</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Clinic_Stop-40_7">Clinic_Stop-40_7</a></td>
+    </tr>
+    <tr>
+      <td><strong>Expected Signer</strong><pre><code>  expectedSigner</code></pre></td>
+      <td>POINTER</td>
+      <td>expected_signer</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Hospital Location</strong><pre><code>  hospitalLocation</code></pre></td>
+      <td>POINTER</td>
+      <td>hospital_location</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Hospital_Location-44">Hospital_Location-44</a></td>
+    </tr>
+    <tr>
+      <td><strong>Service Credit Stop</strong><pre><code>  serviceCreditStop</code></pre></td>
+      <td>POINTER</td>
+      <td>service_credit_stop</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Clinic_Stop-40_7">Clinic_Stop-40_7</a></td>
+    </tr>
+    <tr>
+      <td><strong>Secondary Visit</strong><pre><code>  secondaryVisit</code></pre></td>
+      <td>POINTER</td>
+      <td>secondary_visit</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Visit-9000010">Visit-9000010</a></td>
+    </tr>
+    <tr>
+      <td><strong>Expected Cosigner</strong><pre><code>  expectedCosigner</code></pre></td>
+      <td>POINTER</td>
+      <td>expected_cosigner</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Attending Physician</strong><pre><code>  attendingPhysician</code></pre></td>
+      <td>POINTER</td>
+      <td>attending_physician</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Order Number</strong><pre><code>  orderNumber</code></pre></td>
+      <td>POINTER</td>
+      <td>order_number</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Order-100">Order-100</a></td>
+    </tr>
+    <tr>
+      <td><strong>Visit Location</strong><pre><code>  visitLocation</code></pre></td>
+      <td>POINTER</td>
+      <td>visit_location</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Hospital_Location-44">Hospital_Location-44</a></td>
+    </tr>
+    <tr>
+      <td><strong>Division</strong><pre><code>  division</code></pre></td>
+      <td>POINTER</td>
+      <td>division</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Institution-4">Institution-4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Reference Date</strong><pre><code>  referenceDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>reference_date</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Entered By</strong><pre><code>  enteredBy</code></pre></td>
+      <td>POINTER</td>
+      <td>entered_by</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Capture Method</strong><pre><code>  captureMethod</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>capture_method</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>remote procedure</strong></em><br/>1: <em><strong>copy</strong></em><br/>2: <em><strong>converted</strong></em><br/>3: <em><strong>direct</strong></em><br/>4: <em><strong>upload</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Release Date/time</strong><pre><code>  releaseDateTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>release_date_time</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Verification Date/time</strong><pre><code>  verificationDateTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>verification_date_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Verified By</strong><pre><code>  verifiedBy</code></pre></td>
+      <td>POINTER</td>
+      <td>verified_by</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Dictation Date</strong><pre><code>  dictationDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>dictation_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Suspense Date/time</strong><pre><code>  suspenseDateTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>suspense_date_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Patient Movement Record</strong><pre><code>  patientMovementRecord</code></pre></td>
+      <td>POINTER</td>
+      <td>patient_movement_record</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Patient_Movement-405">Patient_Movement-405</a></td>
+    </tr>
+    <tr>
+      <td><strong>Treating Specialty</strong><pre><code>  treatingSpecialty</code></pre></td>
+      <td>POINTER</td>
+      <td>treating_specialty</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td><a href="../VDM/Facility_Treating_Specialty-45_7">Facility_Treating_Specialty-45_7</a></td>
+    </tr>
+    <tr>
+      <td><strong>Irt Record</strong><pre><code>  irtRecord</code></pre></td>
+      <td>POINTER</td>
+      <td>irt_record</td>
+      <td> </td>
+      <td> </td>
+      <td>Incomplete_Records-393</td>
+    </tr>
+    <tr>
+      <td><strong>Service</strong><pre><code>  service</code></pre></td>
+      <td>POINTER</td>
+      <td>service</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td><a href="../VDM/Service_section-49">Service_section-49</a></td>
+    </tr>
+    <tr>
+      <td><strong>Requesting Package Reference</strong><pre><code>  requestingPackageReference</code></pre></td>
+      <td>POINTER</td>
+      <td>requesting_package_reference</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td>Request_consultation-123<br />Surgery-130</td>
+    </tr>
+    <tr>
+      <td><strong>Retracted Original</strong><pre><code>  retractedOriginal</code></pre></td>
+      <td>POINTER</td>
+      <td>retracted_original</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Tiu_Document-8925">Tiu_Document-8925</a></td>
+    </tr>
+    <tr>
+      <td><strong>Signature Date/time</strong><pre><code>  signatureDateTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>signature_date_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Signed By</strong><pre><code>  signedBy</code></pre></td>
+      <td>POINTER</td>
+      <td>signed_by</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Signature Block Name</strong><pre><code>  signatureBlockName</code></pre></td>
+      <td>STRING</td>
+      <td>signature_block_name</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Signature Block Title</strong><pre><code>  signatureBlockTitle</code></pre></td>
+      <td>STRING</td>
+      <td>signature_block_title</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Signature Mode</strong><pre><code>  signatureMode</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>signature_mode</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>electronic</strong></em><br/>1: <em><strong>chart</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Cosignature Needed</strong><pre><code>  cosignatureNeeded</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>cosignature_needed</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Cosignature Date/time</strong><pre><code>  cosignatureDateTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>cosignature_date_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Cosigned By</strong><pre><code>  cosignedBy</code></pre></td>
+      <td>POINTER</td>
+      <td>cosigned_by</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Cosignature Block Name</strong><pre><code>  cosignatureBlockName</code></pre></td>
+      <td>STRING</td>
+      <td>cosignature_block_name</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Cosignature Block Title</strong><pre><code>  cosignatureBlockTitle</code></pre></td>
+      <td>STRING</td>
+      <td>cosignature_block_title</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Cosignature Mode</strong><pre><code>  cosignatureMode</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>cosignature_mode</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>electronic</strong></em><br/>1: <em><strong>chart</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Marked Signed On Chart By</strong><pre><code>  markedSignedOnChartBy</code></pre></td>
+      <td>POINTER</td>
+      <td>marked_signed_on_chart_by</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Marked Cosigned On Chart By</strong><pre><code>  markedCosignedOnChartBy</code></pre></td>
+      <td>POINTER</td>
+      <td>marked_cosigned_on_chart_by</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Amendment Date/time</strong><pre><code>  amendmentDateTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>amendment_date_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Amended By</strong><pre><code>  amendedBy</code></pre></td>
+      <td>POINTER</td>
+      <td>amended_by</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Amendment Signed</strong><pre><code>  amendmentSigned</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>amendment_signed</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Amendment Sign Block Name</strong><pre><code>  amendmentSignBlockName</code></pre></td>
+      <td>STRING</td>
+      <td>amendment_sign_block_name</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Amendment Sign Block Title</strong><pre><code>  amendmentSignBlockTitle</code></pre></td>
+      <td>STRING</td>
+      <td>amendment_sign_block_title</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Administrative Closure Date</strong><pre><code>  administrativeClosureDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>administrative_closure_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Admin Closure Sig Block Name</strong><pre><code>  adminClosureSigBlockName</code></pre></td>
+      <td>STRING</td>
+      <td>admin_closure_sig_block_name</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Admin Closure Sig Block Title</strong><pre><code>  adminClosureSigBlockTitle</code></pre></td>
+      <td>STRING</td>
+      <td>admin_closure_sig_block_title</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Archive/purge Date/time</strong><pre><code>  archivePurgeDateTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>archive_purge_date_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Deleted By</strong><pre><code>  deletedBy</code></pre></td>
+      <td>POINTER</td>
+      <td>deleted_by</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Deletion Date</strong><pre><code>  deletionDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>deletion_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Reason For Deletion</strong><pre><code>  reasonForDeletion</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>reason_for_deletion</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>administrative</strong></em><br/>1: <em><strong>privacy act</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Administrative Closure Mode</strong><pre><code>  administrativeClosureMode</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>administrative_closure_mode</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>manual</strong></em><br/>1: <em><strong>scanned document</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Subject (optional Description)</strong><pre><code>  subjectOptionalDescription</code></pre></td>
+      <td>STRING</td>
+      <td>subject_optional_description</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Vbc Line Count</strong><pre><code>  vbcLineCount</code></pre></td>
+      <td>NUMERIC</td>
+      <td>vbc_line_count</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Id Parent</strong><pre><code>  idParent</code></pre></td>
+      <td>POINTER</td>
+      <td>id_parent</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td><a href="../VDM/Tiu_Document-8925">Tiu_Document-8925</a></td>
+    </tr>
+    <tr>
+      <td><strong>Visit Id</strong><pre><code>  visitId</code></pre></td>
+      <td>STRING</td>
+      <td>visit_id</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Procedure Summary Code</strong><pre><code>  procedureSummaryCode</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>procedure_summary_code</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>Machine Resulted</strong></em><br/>1: <em><strong>Abnormal</strong></em><br/>2: <em><strong>Incomplete</strong></em><br/>3: <em><strong>Borderline</strong></em><br/>4: <em><strong>Normal</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Date/time Performed</strong><pre><code>  dateTimePerformed</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_time_performed</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

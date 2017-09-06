@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--fh_site_parameters"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Fh_Site_Parameters<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="fh_site_parameters">Fh_Site_Parameters</h1>
+
+<h3 id="fh-site-parameters">Fh Site Parameters</h3>
+
+<p>This file contains an extensive set of site parameters designed to
+indicate characteristics of the Nutrition and Food Service and/or
+different methods by which the Service wishes the program to perform.</p>
+
+<p><strong>Fileman ID:</strong> 119.9</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Fh_Site_Parameters-119_9">Fh_Site_Parameters-119_9</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 62</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NUMERIC</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>STRING</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 3</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#drugClassifications">Drug Classifications</a></td>
+      <td>drugClassifications</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#labTest">Lab Test</a></td>
+      <td>labTest</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="#labelPrinters">Label Printers</a></td>
+      <td>labelPrinters</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Site</strong><pre><code>  site</code></pre></td>
+      <td>NUMERIC</td>
+      <td>site</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Label Printers</strong><pre><code>  labelPrinters</code></pre></td>
+      <td>OBJECT</td>
+      <td>label_printers</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#labelPrinters">labelPrinters</a></td>
+    </tr>
+    <tr>
+      <td><strong>Outpatient Meals Diet1</strong><pre><code>  outpatientMealsDiet1</code></pre></td>
+      <td>POINTER</td>
+      <td>outpatient_meals_diet1</td>
+      <td> </td>
+      <td> </td>
+      <td>Diets-111</td>
+    </tr>
+    <tr>
+      <td><strong>Outpatient Meals Diet2</strong><pre><code>  outpatientMealsDiet2</code></pre></td>
+      <td>POINTER</td>
+      <td>outpatient_meals_diet2</td>
+      <td> </td>
+      <td> </td>
+      <td>Diets-111</td>
+    </tr>
+    <tr>
+      <td><strong>Outpatient Meals Diet3</strong><pre><code>  outpatientMealsDiet3</code></pre></td>
+      <td>POINTER</td>
+      <td>outpatient_meals_diet3</td>
+      <td> </td>
+      <td> </td>
+      <td>Diets-111</td>
+    </tr>
+    <tr>
+      <td><strong>Outpatient Meals Diet4</strong><pre><code>  outpatientMealsDiet4</code></pre></td>
+      <td>POINTER</td>
+      <td>outpatient_meals_diet4</td>
+      <td> </td>
+      <td> </td>
+      <td>Diets-111</td>
+    </tr>
+    <tr>
+      <td><strong>Outpatient Meals Diet5</strong><pre><code>  outpatientMealsDiet5</code></pre></td>
+      <td>POINTER</td>
+      <td>outpatient_meals_diet5</td>
+      <td> </td>
+      <td> </td>
+      <td>Diets-111</td>
+    </tr>
+    <tr>
+      <td><strong>Authorizor 1</strong><pre><code>  authorizor1</code></pre></td>
+      <td>POINTER</td>
+      <td>authorizor_1</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Authorizor 2</strong><pre><code>  authorizor2</code></pre></td>
+      <td>POINTER</td>
+      <td>authorizor_2</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Authorizor 3</strong><pre><code>  authorizor3</code></pre></td>
+      <td>POINTER</td>
+      <td>authorizor_3</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Authorizor 4</strong><pre><code>  authorizor4</code></pre></td>
+      <td>POINTER</td>
+      <td>authorizor_4</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Authorizor 5</strong><pre><code>  authorizor5</code></pre></td>
+      <td>POINTER</td>
+      <td>authorizor_5</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Employee Class</strong><pre><code>  employeeClass</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>employee_class</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Paid Class</strong><pre><code>  paidClass</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>paid_class</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ood Class</strong><pre><code>  oodClass</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>ood_class</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Volunteer Class</strong><pre><code>  volunteerClass</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>volunteer_class</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Gratuitous Class</strong><pre><code>  gratuitousClass</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>gratuitous_class</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Multidivisional Site?</strong><pre><code>  multidivisionalSite</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>multidivisional_site</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Employee Breakfast Charge</strong><pre><code>  employeeBreakfastCharge</code></pre></td>
+      <td>NUMERIC</td>
+      <td>employee_breakfast_charge</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Employee Noon Charge</strong><pre><code>  employeeNoonCharge</code></pre></td>
+      <td>NUMERIC</td>
+      <td>employee_noon_charge</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Employee Evening Charge</strong><pre><code>  employeeEveningCharge</code></pre></td>
+      <td>NUMERIC</td>
+      <td>employee_evening_charge</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Paid Breakfast Charge</strong><pre><code>  paidBreakfastCharge</code></pre></td>
+      <td>NUMERIC</td>
+      <td>paid_breakfast_charge</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Paid Noon Charge</strong><pre><code>  paidNoonCharge</code></pre></td>
+      <td>NUMERIC</td>
+      <td>paid_noon_charge</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Paid Evening Charge</strong><pre><code>  paidEveningCharge</code></pre></td>
+      <td>NUMERIC</td>
+      <td>paid_evening_charge</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ood Breakfast Charge</strong><pre><code>  oodBreakfastCharge</code></pre></td>
+      <td>NUMERIC</td>
+      <td>ood_breakfast_charge</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ood Noon Charge</strong><pre><code>  oodNoonCharge</code></pre></td>
+      <td>NUMERIC</td>
+      <td>ood_noon_charge</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ood Evening Meal</strong><pre><code>  oodEveningMeal</code></pre></td>
+      <td>NUMERIC</td>
+      <td>ood_evening_meal</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Volunteer Breakfast Charge</strong><pre><code>  volunteerBreakfastCharge</code></pre></td>
+      <td>NUMERIC</td>
+      <td>volunteer_breakfast_charge</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Volunteer Noon Charge</strong><pre><code>  volunteerNoonCharge</code></pre></td>
+      <td>NUMERIC</td>
+      <td>volunteer_noon_charge</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Volunteer Evening Charge</strong><pre><code>  volunteerEveningCharge</code></pre></td>
+      <td>NUMERIC</td>
+      <td>volunteer_evening_charge</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Gratuitous Breakfast Charge</strong><pre><code>  gratuitousBreakfastCharge</code></pre></td>
+      <td>NUMERIC</td>
+      <td>gratuitous_breakfast_charge</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Gratuitous Noon Charge</strong><pre><code>  gratuitousNoonCharge</code></pre></td>
+      <td>NUMERIC</td>
+      <td>gratuitous_noon_charge</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Gratuitous Evening Charge</strong><pre><code>  gratuitousEveningCharge</code></pre></td>
+      <td>NUMERIC</td>
+      <td>gratuitous_evening_charge</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Outpatient Meals Diet6</strong><pre><code>  outpatientMealsDiet6</code></pre></td>
+      <td>POINTER</td>
+      <td>outpatient_meals_diet6</td>
+      <td> </td>
+      <td> </td>
+      <td>Diets-111</td>
+    </tr>
+    <tr>
+      <td><strong>Outpatient Meals Diet7</strong><pre><code>  outpatientMealsDiet7</code></pre></td>
+      <td>POINTER</td>
+      <td>outpatient_meals_diet7</td>
+      <td> </td>
+      <td> </td>
+      <td>Diets-111</td>
+    </tr>
+    <tr>
+      <td><strong>Outpatient Meals Diet8</strong><pre><code>  outpatientMealsDiet8</code></pre></td>
+      <td>POINTER</td>
+      <td>outpatient_meals_diet8</td>
+      <td> </td>
+      <td> </td>
+      <td>Diets-111</td>
+    </tr>
+    <tr>
+      <td><strong>Outpatient Meals Diet9</strong><pre><code>  outpatientMealsDiet9</code></pre></td>
+      <td>POINTER</td>
+      <td>outpatient_meals_diet9</td>
+      <td> </td>
+      <td> </td>
+      <td>Diets-111</td>
+    </tr>
+    <tr>
+      <td><strong>Outpatient Meals Diet10</strong><pre><code>  outpatientMealsDiet10</code></pre></td>
+      <td>POINTER</td>
+      <td>outpatient_meals_diet10</td>
+      <td> </td>
+      <td> </td>
+      <td>Diets-111</td>
+    </tr>
+    <tr>
+      <td><strong>Outpatient Meals Diet11</strong><pre><code>  outpatientMealsDiet11</code></pre></td>
+      <td>POINTER</td>
+      <td>outpatient_meals_diet11</td>
+      <td> </td>
+      <td> </td>
+      <td>Diets-111</td>
+    </tr>
+    <tr>
+      <td><strong>Outpatient Meals Diet12</strong><pre><code>  outpatientMealsDiet12</code></pre></td>
+      <td>POINTER</td>
+      <td>outpatient_meals_diet12</td>
+      <td> </td>
+      <td> </td>
+      <td>Diets-111</td>
+    </tr>
+    <tr>
+      <td><strong>Outpatient Meals Diet13</strong><pre><code>  outpatientMealsDiet13</code></pre></td>
+      <td>POINTER</td>
+      <td>outpatient_meals_diet13</td>
+      <td> </td>
+      <td> </td>
+      <td>Diets-111</td>
+    </tr>
+    <tr>
+      <td><strong>Outpatient Meals Diet14</strong><pre><code>  outpatientMealsDiet14</code></pre></td>
+      <td>POINTER</td>
+      <td>outpatient_meals_diet14</td>
+      <td> </td>
+      <td> </td>
+      <td>Diets-111</td>
+    </tr>
+    <tr>
+      <td><strong>Outpatient Meals Diet15</strong><pre><code>  outpatientMealsDiet15</code></pre></td>
+      <td>POINTER</td>
+      <td>outpatient_meals_diet15</td>
+      <td> </td>
+      <td> </td>
+      <td>Diets-111</td>
+    </tr>
+    <tr>
+      <td><strong>Authorizor 6</strong><pre><code>  authorizor6</code></pre></td>
+      <td>POINTER</td>
+      <td>authorizor_6</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Authorizor 7</strong><pre><code>  authorizor7</code></pre></td>
+      <td>POINTER</td>
+      <td>authorizor_7</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Authorizor 8</strong><pre><code>  authorizor8</code></pre></td>
+      <td>POINTER</td>
+      <td>authorizor_8</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Authorizor 9</strong><pre><code>  authorizor9</code></pre></td>
+      <td>POINTER</td>
+      <td>authorizor_9</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Authorizor 10</strong><pre><code>  authorizor10</code></pre></td>
+      <td>POINTER</td>
+      <td>authorizor_10</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Authorizor 11</strong><pre><code>  authorizor11</code></pre></td>
+      <td>POINTER</td>
+      <td>authorizor_11</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Authorizor 12</strong><pre><code>  authorizor12</code></pre></td>
+      <td>POINTER</td>
+      <td>authorizor_12</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Authorizor 13</strong><pre><code>  authorizor13</code></pre></td>
+      <td>POINTER</td>
+      <td>authorizor_13</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Authorizor 14</strong><pre><code>  authorizor14</code></pre></td>
+      <td>POINTER</td>
+      <td>authorizor_14</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Authorizor 15</strong><pre><code>  authorizor15</code></pre></td>
+      <td>POINTER</td>
+      <td>authorizor_15</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Assessment Default Units</strong><pre><code>  assessmentDefaultUnits</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>assessment_default_units</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>METRIC</strong></em><br/>1: <em><strong>ENGLISH</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong># Of Days To Obtain Lab Data</strong><pre><code>  numberOfDaysToObtainLabData</code></pre></td>
+      <td>NUMERIC</td>
+      <td>number_of_days_to_obtain_lab_data</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Print Profile After Screening?</strong><pre><code>  printProfileAfterScreening</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>print_profile_after_screening</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>ASK USER</strong></em><br/>1: <em><strong>YES</strong></em><br/>2: <em><strong>NO</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Optional Screening Line</strong><pre><code>  optionalScreeningLine</code></pre></td>
+      <td>STRING</td>
+      <td>optional_screening_line</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lab Test</strong><pre><code>  labTest</code></pre></td>
+      <td>OBJECT</td>
+      <td>lab_test</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#labTest">labTest</a></td>
+    </tr>
+    <tr>
+      <td><strong>Drug Classifications</strong><pre><code>  drugClassifications</code></pre></td>
+      <td>OBJECT</td>
+      <td>drug_classifications</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#drugClassifications">drugClassifications</a></td>
+    </tr>
+    <tr>
+      <td><strong>Heading On Bottom Of Ticket?</strong><pre><code>  headingOnBottomOfTicket</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>heading_on_bottom_of_ticket</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Will You Use Tray Tickets?</strong><pre><code>  willYouUseTrayTickets</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>will_you_use_tray_tickets</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Outpatient Meals Installed</strong><pre><code>  outpatientMealsInstalled</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>outpatient_meals_installed</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-drug-classifications"><a name="drugClassifications"></a>1. Drug Classifications</h3>
+
+<p><strong>Field ID:</strong> drugClassifications</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Drug Classifications</strong><pre><code>  drugClassifications</code></pre></td>
+      <td>POINTER</td>
+      <td>drug_classifications</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/VA_Drug_Class-50_605">VA_Drug_Class-50_605</a></td>
+    </tr>
+    <tr>
+      <td><strong>Print On Assessment</strong><pre><code>  printOnAssessment</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>print_on_assessment</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Print On Screening/profile</strong><pre><code>  printOnScreeningProfile</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>print_on_screening_profile</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Print Order</strong><pre><code>  printOrder</code></pre></td>
+      <td>NUMERIC</td>
+      <td>print_order</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Create Alert</strong><pre><code>  createAlert</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>create_alert</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-lab-test"><a name="labTest"></a>2. Lab Test</h3>
+
+<p><strong>Field ID:</strong> labTest</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Lab Test</strong><pre><code>  labTest</code></pre></td>
+      <td>POINTER</td>
+      <td>lab_test</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Laboratory_Test-60">Laboratory_Test-60</a></td>
+    </tr>
+    <tr>
+      <td><strong>Specimen</strong><pre><code>  specimen</code></pre></td>
+      <td>STRING</td>
+      <td>specimen</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Print On Assessment?</strong><pre><code>  printOnAssessment</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>print_on_assessment</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Print On Screening?</strong><pre><code>  printOnScreening</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>print_on_screening</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Print Order</strong><pre><code>  printOrder</code></pre></td>
+      <td>NUMERIC</td>
+      <td>print_order</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Serum Albumin?</strong><pre><code>  serumAlbumin</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>serum_albumin</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="3-label-printers"><a name="labelPrinters"></a>3. Label Printers</h3>
+
+<p><strong>Field ID:</strong> labelPrinters</p>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Label Printers</strong><pre><code>  labelPrinters</code></pre></td>
+      <td>POINTER</td>
+      <td>label_printers</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Device-3_5">Device-3_5</a></td>
+    </tr>
+    <tr>
+      <td><strong>Size Of Labels</strong><pre><code>  sizeOfLabels</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>size_of_labels</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>4 x 1-1/3 (Laser labels - 14 labels per sheet)</strong></em><br/>1: <em><strong>2-5/8 x 1 (Laser labels - 30 labels per sheet)</strong></em><br/>2: <em><strong>3-1/2 x 15/16 (Single strip labels)</strong></em><br/>3: <em><strong>4 x 1-7/16 (Single strip labels)</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

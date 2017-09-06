@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--install"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Install<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="install">Install</h1>
+
+<h3 id="install-1">Install</h3>
+
+<p>This file contains the installation information for a site from the Kernel
+Installation &amp; Distribution System.  This file should not be edited.
+All information is updated when a new package is installed at a site.</p>
+
+<p><strong>Fileman ID:</strong> 9.7</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Install-9_7">Install-9_7</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 27</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>DATE-TIME</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>7</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 7</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#buildComponents">Build Components</a></td>
+      <td>buildComponents</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#file">File</a></td>
+      <td>file</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="#globals">Globals</a></td>
+      <td>globals</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><a href="#installAnswers">Install Answers</a></td>
+      <td>installAnswers</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><a href="#postinitCheckPoints">Postinit Check Points</a></td>
+      <td>postinitCheckPoints</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><a href="#preinitCheckPoints">Preinit Check Points</a></td>
+      <td>preinitCheckPoints</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td><a href="#volumeSet">Volume Set</a></td>
+      <td>volumeSet</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>STRING</td>
+      <td>name</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Status</strong><pre><code>  status</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>status</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>Queued for Install</strong></em><br/>1: <em><strong>Start of Install</strong></em><br/>2: <em><strong>Install Completed</strong></em><br/>3: <em><strong>De-Installed</strong></em><br/>4: <em><strong>Loaded from Distribution</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Package File Link</strong><pre><code>  packageFileLink</code></pre></td>
+      <td>POINTER</td>
+      <td>package_file_link</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Package-9_4">Package-9_4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Date Loaded</strong><pre><code>  dateLoaded</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_loaded</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Starting Package</strong><pre><code>  startingPackage</code></pre></td>
+      <td>POINTER</td>
+      <td>starting_package</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Install-9_7">Install-9_7</a></td>
+    </tr>
+    <tr>
+      <td><strong>Install Order</strong><pre><code>  installOrder</code></pre></td>
+      <td>NUMERIC</td>
+      <td>install_order</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Queued Task Number</strong><pre><code>  queuedTaskNumber</code></pre></td>
+      <td>NUMERIC</td>
+      <td>queued_task_number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>File Comment</strong><pre><code>  fileComment</code></pre></td>
+      <td>STRING</td>
+      <td>file_comment</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Required To Continue</strong><pre><code>  requiredToContinue</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>required_to_continue</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Setname</strong><pre><code>  setname</code></pre></td>
+      <td>STRING</td>
+      <td>setname</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Disable Option Delay</strong><pre><code>  disableOptionDelay</code></pre></td>
+      <td>NUMERIC</td>
+      <td>disable_option_delay</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Installed By</strong><pre><code>  installedBy</code></pre></td>
+      <td>POINTER</td>
+      <td>installed_by</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Install Start Time</strong><pre><code>  installStartTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>install_start_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Routine Install Time</strong><pre><code>  routineInstallTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>routine_install_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Pre-init Check Points</strong><pre><code>  preinitCheckPoints</code></pre></td>
+      <td>OBJECT</td>
+      <td>preinit_check_points</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#preinitCheckPoints">preinitCheckPoints</a></td>
+    </tr>
+    <tr>
+      <td><strong>File</strong><pre><code>  file</code></pre></td>
+      <td>OBJECT</td>
+      <td>file</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#file">file</a></td>
+    </tr>
+    <tr>
+      <td><strong>Build Components</strong><pre><code>  buildComponents</code></pre></td>
+      <td>OBJECT</td>
+      <td>build_components</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#buildComponents">buildComponents</a></td>
+    </tr>
+    <tr>
+      <td><strong>Post-init Check Points</strong><pre><code>  postinitCheckPoints</code></pre></td>
+      <td>OBJECT</td>
+      <td>postinit_check_points</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#postinitCheckPoints">postinitCheckPoints</a></td>
+    </tr>
+    <tr>
+      <td><strong>Install Complete Time</strong><pre><code>  installCompleteTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>install_complete_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Globals</strong><pre><code>  globals</code></pre></td>
+      <td>OBJECT</td>
+      <td>globals</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#globals">globals</a></td>
+    </tr>
+    <tr>
+      <td><strong>Messages</strong><pre><code>  messages</code></pre></td>
+      <td>STRING</td>
+      <td>messages</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Volume Set</strong><pre><code>  volumeSet</code></pre></td>
+      <td>OBJECT</td>
+      <td>volume_set</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#volumeSet">volumeSet</a></td>
+    </tr>
+    <tr>
+      <td><strong>Routines</strong><pre><code>  routines</code></pre></td>
+      <td>STRING</td>
+      <td>routines</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Install Answers</strong><pre><code>  installAnswers</code></pre></td>
+      <td>OBJECT</td>
+      <td>install_answers</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#installAnswers">installAnswers</a></td>
+    </tr>
+    <tr>
+      <td><strong>Distribution Date</strong><pre><code>  distributionDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>distribution_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Test#</strong><pre><code>  testnumber</code></pre></td>
+      <td>NUMERIC</td>
+      <td>testnumber</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Seq#</strong><pre><code>  seqnumber</code></pre></td>
+      <td>NUMERIC</td>
+      <td>seqnumber</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-build-components"><a name="buildComponents"></a>1. Build Components</h3>
+
+<p><strong>Field ID:</strong> buildComponents</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Build Component</strong><pre><code>  buildComponent</code></pre></td>
+      <td>POINTER</td>
+      <td>build_component</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/File-1">File-1</a></td>
+    </tr>
+    <tr>
+      <td><strong>Data Time</strong><pre><code>  dataTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>data_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Install Order</strong><pre><code>  installOrder</code></pre></td>
+      <td>NUMERIC</td>
+      <td>install_order</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-file"><a name="file"></a>2. File</h3>
+
+<p><strong>Field ID:</strong> file</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>File</strong><pre><code>  file</code></pre></td>
+      <td>POINTER</td>
+      <td>file</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/File-1">File-1</a></td>
+    </tr>
+    <tr>
+      <td><strong>Data Dictionary Time</strong><pre><code>  dataDictionaryTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>data_dictionary_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Data Time</strong><pre><code>  dataTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>data_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="3-globals"><a name="globals"></a>3. Globals</h3>
+
+<p><strong>Field ID:</strong> globals</p>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Globals</strong><pre><code>  globals</code></pre></td>
+      <td>STRING</td>
+      <td>globals</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Completed Time</strong><pre><code>  completedTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>completed_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="4-install-answers"><a name="installAnswers"></a>4. Install Answers</h3>
+
+<p><strong>Field ID:</strong> installAnswers</p>
+
+<h4 id="properties-4">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>STRING</td>
+      <td>name</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Prompt</strong><pre><code>  prompt</code></pre></td>
+      <td>STRING</td>
+      <td>prompt</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>External Answer</strong><pre><code>  externalAnswer</code></pre></td>
+      <td>STRING</td>
+      <td>external_answer</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Answer</strong><pre><code>  answer</code></pre></td>
+      <td>STRING</td>
+      <td>answer</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="5-postinit-check-points"><a name="postinitCheckPoints"></a>5. Postinit Check Points</h3>
+
+<p><strong>Field ID:</strong> postinitCheckPoints</p>
+
+<h4 id="properties-5">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Post-init Check Points</strong><pre><code>  postinitCheckPoints</code></pre></td>
+      <td>STRING</td>
+      <td>postinit_check_points</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Completed Time</strong><pre><code>  completedTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>completed_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Callback</strong><pre><code>  callback</code></pre></td>
+      <td>STRING</td>
+      <td>callback</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Parameters</strong><pre><code>  parameters</code></pre></td>
+      <td>STRING</td>
+      <td>parameters</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="6-preinit-check-points"><a name="preinitCheckPoints"></a>6. Preinit Check Points</h3>
+
+<p><strong>Field ID:</strong> preinitCheckPoints</p>
+
+<h4 id="properties-6">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Pre-init Check Points</strong><pre><code>  preinitCheckPoints</code></pre></td>
+      <td>STRING</td>
+      <td>preinit_check_points</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Completed Time</strong><pre><code>  completedTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>completed_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Callback</strong><pre><code>  callback</code></pre></td>
+      <td>STRING</td>
+      <td>callback</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Parameters</strong><pre><code>  parameters</code></pre></td>
+      <td>STRING</td>
+      <td>parameters</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="7-volume-set"><a name="volumeSet"></a>7. Volume Set</h3>
+
+<p><strong>Field ID:</strong> volumeSet</p>
+
+<h4 id="properties-7">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Volume Set</strong><pre><code>  volumeSet</code></pre></td>
+      <td>STRING</td>
+      <td>volume_set</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Completed Time</strong><pre><code>  completedTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>completed_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Start Time</strong><pre><code>  startTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>start_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Queued Task Number</strong><pre><code>  queuedTaskNumber</code></pre></td>
+      <td>NUMERIC</td>
+      <td>queued_task_number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Last Update</strong><pre><code>  lastUpdate</code></pre></td>
+      <td>STRING</td>
+      <td>last_update</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

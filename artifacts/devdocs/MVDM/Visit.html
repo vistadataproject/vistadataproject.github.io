@@ -47,7 +47,6 @@
         <nav>
             <a href="/demo">Demo 1</a>
             <a href="/demo2">Demo 2</a>
-            <a href="/artifacts/devdocs">DevDocs</a>
         </nav>
     </div>
     </header>
@@ -62,7 +61,29 @@
 
 <h3 id="visit-1">Visit</h3>
 
-<p>No Description</p>
+<p>This file contains a record of all patient visits at health care
+facilities or by health care providers, including direct outpatient
+and clinic visits, as well as inpatient encounters with providers of care.
+All other 
+visit related files, such as purpose of visit (diagnoses), operative
+procedures, immunizations, examinations, etc. will point to a visit
+in this file.  The records are maintained by date/time of visit, and
+the patient name field is a pointer to the IHS Patient file,
+where the patient must exist before data can be added here.
+Cross References:
+   ("AA",&lt;patient pointer&gt;,&lt;9's-visit date+time&gt;,IEN)=&lt;eligibility pointer&gt;
+   ("AAH",&lt;patient pointer&gt;,&lt;9's-visit date+time&gt;,IEN)=""
+      set conditional SERVICE CATEGORY = Hospitalization
+   ("ABILL",&lt;date visit created&gt;, IEN)=""
+      set conditional to site parameter
+   ("AC",&lt;patient pointer&gt;,IEN)=""
+   ("AD", &lt;parent visit pointer&gt;,IEN)=""
+   ("ADEL",&lt;visit date&amp;time&gt;,IEN)=""
+      set conditional DEPENDENT ENTRY COUNT '&gt; 0
+   ("AI",IEN)=""
+      set conditional SERVICE CATEGORY = In hospital
+   ("AMRG",&lt;date visit created&gt;,IEN)=""
+   ("APCIS",&lt;date visit created&gt;,IEN)=""</p>
 
 <p><strong>Fileman ID:</strong> 9000010</p>
 
@@ -70,7 +91,7 @@
 
 <h2 id="property-summary">Property Summary</h2>
 
-<p><strong>Property Count:</strong> 39</p>
+<p><strong>Property Count:</strong> 41</p>
 
 <table>
   <thead>
@@ -81,24 +102,24 @@
   </thead>
   <tbody>
     <tr>
-      <td>POINTER</td>
-      <td>12</td>
-    </tr>
-    <tr>
       <td>DATE-TIME</td>
       <td>4</td>
     </tr>
     <tr>
       <td>ENUMERATION</td>
-      <td>11</td>
+      <td>13</td>
     </tr>
     <tr>
-      <td>STRING</td>
-      <td>3</td>
+      <td>POINTER</td>
+      <td>12</td>
     </tr>
     <tr>
       <td>NUMERIC</td>
       <td>1</td>
+    </tr>
+    <tr>
+      <td>STRING</td>
+      <td>3</td>
     </tr>
     <tr>
       <td>BOOLEAN</td>
@@ -124,71 +145,39 @@
   </thead>
   <tbody>
     <tr>
-      <td><strong>Patient</strong><pre><code>  patient</code></pre></td>
+      <td><strong>Visit/admit Date&amp;time</strong><pre><code>  visitAdmitDatetime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>visit_admit_datetime</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Date Visit Created</strong><pre><code>  dateVisitCreated</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_visit_created</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Type</strong><pre><code>  type03</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>type-_03</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>VA</strong></em><br/>1: <em><strong>IHS</strong></em><br/>2: <em><strong>TRIBAL</strong></em><br/>3: <em><strong>CONTRACT</strong></em><br/>4: <em><strong>OTHER</strong></em><br/>5: <em><strong>638 PROGRAM</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Patient Name</strong><pre><code>  patientName</code></pre></td>
       <td>POINTER</td>
       <td>patient_name</td>
       <td> </td>
-      <td>REQUIRED</td>
-      <td>Patient_Ihs-9000001</td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Patient_ihs-9000001">Patient_ihs-9000001</a></td>
     </tr>
     <tr>
-      <td><strong>Date Time Event</strong><pre><code>  dateTimeEvent</code></pre></td>
-      <td>DATE-TIME</td>
-      <td>visit_admit_datetime</td>
-      <td>$NOW</td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><strong>Date Time Entered</strong><pre><code>  dateTimeEntered</code></pre></td>
-      <td>DATE-TIME</td>
-      <td>date_visit_created</td>
-      <td>$NOW</td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><strong>Date Time Last Modified</strong><pre><code>  dateTimeLastModified</code></pre></td>
-      <td>DATE-TIME</td>
-      <td>date_last_modified</td>
-      <td>$NOW</td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><strong>Date Time Checked Out</strong><pre><code>  dateTimeCheckedOut</code></pre></td>
-      <td>DATE-TIME</td>
-      <td>check_out_datetime</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><strong>Entered By</strong><pre><code>  enteredBy</code></pre></td>
-      <td>POINTER</td>
-      <td>created_by_user</td>
-      <td>$USERID</td>
-      <td> </td>
-      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
-    </tr>
-    <tr>
-      <td><strong>Parent Visit</strong><pre><code>  parentVisit</code></pre></td>
-      <td>POINTER</td>
-      <td>parent_visit_link</td>
-      <td> </td>
-      <td> </td>
-      <td>Visit</td>
-    </tr>
-    <tr>
-      <td><strong>Visit Type</strong><pre><code>  visitType</code></pre></td>
-      <td>ENUMERATION</td>
-      <td>encounter_type</td>
-      <td> </td>
-      <td> </td>
-      <td>PRIMARY: <em><strong>P</strong></em><br/>OCCASION OF SERVICE: <em><strong>O</strong></em><br/>STOP CODE: <em><strong>S</strong></em><br/>ANCILLARY: <em><strong>A</strong></em><br/>CREDIT STOP: <em><strong>C</strong></em></td>
-    </tr>
-    <tr>
-      <td><strong>Facility</strong><pre><code>  facility</code></pre></td>
+      <td><strong>Loc. Of Encounter</strong><pre><code>  locOfEncounter</code></pre></td>
       <td>POINTER</td>
       <td>loc_of_encounter</td>
       <td> </td>
@@ -196,20 +185,20 @@
       <td><a href="../VDM/Location-9999999_06">Location-9999999_06</a></td>
     </tr>
     <tr>
-      <td><strong>Hospital Location</strong><pre><code>  hospitalLocation</code></pre></td>
-      <td>POINTER</td>
-      <td>hospital_location</td>
+      <td><strong>Service Category</strong><pre><code>  serviceCategory</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>service_category</td>
       <td> </td>
       <td> </td>
-      <td><a href="../VDM/Hospital_Location-44">Hospital_Location-44</a></td>
+      <td>0: <em><strong>IN HOSPITAL</strong></em><br/>1: <em><strong>NURSING HOME</strong></em><br/>2: <em><strong>HOSPITALIZATION</strong></em><br/>3: <em><strong>ANCILLARY PACKAGE DAILY DATA</strong></em><br/>4: <em><strong>NOT FOUND</strong></em><br/>5: <em><strong>DAY SURGERY</strong></em><br/>6: <em><strong>AMBULATORY</strong></em><br/>7: <em><strong>DAILY HOSPITALIZATION DATA</strong></em><br/>8: <em><strong>CHART REVIEW</strong></em><br/>9: <em><strong>EVENT (HISTORICAL)</strong></em><br/>10: <em><strong>TELECOMMUNICATIONS</strong></em><br/>11: <em><strong>OBSERVATION</strong></em></td>
     </tr>
     <tr>
-      <td><strong>Outside Location</strong><pre><code>  outsideLocation</code></pre></td>
-      <td>STRING</td>
-      <td>outside_location</td>
+      <td><strong>Dss Id</strong><pre><code>  dssId</code></pre></td>
+      <td>POINTER</td>
+      <td>dss_id</td>
       <td> </td>
       <td> </td>
-      <td> </td>
+      <td><a href="../VDM/Clinic_Stop-40_7">Clinic_Stop-40_7</a></td>
     </tr>
     <tr>
       <td><strong>Dependent Entry Count</strong><pre><code>  dependentEntryCount</code></pre></td>
@@ -220,23 +209,39 @@
       <td> </td>
     </tr>
     <tr>
-      <td><strong>Is Removed</strong><pre><code>  isRemoved</code></pre></td>
+      <td><strong>Delete Flag</strong><pre><code>  deleteFlag</code></pre></td>
       <td>ENUMERATION</td>
       <td>delete_flag</td>
       <td> </td>
       <td> </td>
-      <td>ACTIVE: <em><strong>0</strong></em><br/>DELETED: <em><strong>1</strong></em></td>
+      <td>0: <em><strong>ACTIVE</strong></em><br/>1: <em><strong>DELETED</strong></em></td>
     </tr>
     <tr>
-      <td><strong>Clinic Stop</strong><pre><code>  clinicStop</code></pre></td>
+      <td><strong>Parent Visit Link</strong><pre><code>  parentVisitLink</code></pre></td>
       <td>POINTER</td>
-      <td>dss_id</td>
+      <td>parent_visit_link</td>
       <td> </td>
-      <td> </td>
-      <td><a href="../VDM/Clinic_Stop-40_7">Clinic_Stop-40_7</a></td>
+      <td>INDEXED</td>
+      <td><a href="../VDM/Visit-9000010">Visit-9000010</a></td>
     </tr>
     <tr>
-      <td><strong>Patient Eligibility</strong><pre><code>  patientEligibility</code></pre></td>
+      <td><strong>Date Last Modified</strong><pre><code>  dateLastModified</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_last_modified</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Check Out Date&amp;time</strong><pre><code>  checkOutDatetime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>check_out_datetime</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Eligibility</strong><pre><code>  eligibility</code></pre></td>
       <td>POINTER</td>
       <td>eligibility</td>
       <td> </td>
@@ -244,7 +249,39 @@
       <td><a href="../VDM/Eligibility_Code-8">Eligibility_Code-8</a></td>
     </tr>
     <tr>
-      <td><strong>Pfss Account</strong><pre><code>  pfssAccount</code></pre></td>
+      <td><strong>Hospital Location</strong><pre><code>  hospitalLocation</code></pre></td>
+      <td>POINTER</td>
+      <td>hospital_location</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Hospital_Location-44">Hospital_Location-44</a></td>
+    </tr>
+    <tr>
+      <td><strong>Created By User</strong><pre><code>  createdByUser</code></pre></td>
+      <td>POINTER</td>
+      <td>created_by_user</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Option Used To Create</strong><pre><code>  optionUsedToCreate</code></pre></td>
+      <td>POINTER</td>
+      <td>option_used_to_create</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Option-19">Option-19</a></td>
+    </tr>
+    <tr>
+      <td><strong>Protocol</strong><pre><code>  protocol</code></pre></td>
+      <td>POINTER</td>
+      <td>protocol</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Protocol-101">Protocol-101</a></td>
+    </tr>
+    <tr>
+      <td><strong>Pfss Account Reference</strong><pre><code>  pfssAccountReference</code></pre></td>
       <td>POINTER</td>
       <td>pfss_account_reference</td>
       <td> </td>
@@ -252,23 +289,39 @@
       <td>Pfss_Account-375</td>
     </tr>
     <tr>
+      <td><strong>Outside Location</strong><pre><code>  outsideLocation</code></pre></td>
+      <td>STRING</td>
+      <td>outside_location</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
       <td><strong>Visit Id</strong><pre><code>  visitId</code></pre></td>
       <td>STRING</td>
       <td>visit_id</td>
       <td> </td>
-      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
       <td> </td>
     </tr>
     <tr>
-      <td><strong>Patient In Or Out</strong><pre><code>  patientInOrOut</code></pre></td>
+      <td><strong>Patient Status In/out</strong><pre><code>  patientStatusInOut</code></pre></td>
       <td>ENUMERATION</td>
       <td>patient_status_in_out</td>
       <td> </td>
       <td> </td>
-      <td>IN: <em><strong>1</strong></em><br/>OUT: <em><strong>0</strong></em></td>
+      <td>0: <em><strong>OUT</strong></em><br/>1: <em><strong>IN</strong></em></td>
     </tr>
     <tr>
-      <td><strong>Is Service Connected</strong><pre><code>  isServiceConnected</code></pre></td>
+      <td><strong>Encounter Type</strong><pre><code>  encounterType</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>encounter_type</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>STOP CODE</strong></em><br/>1: <em><strong>ANCILLARY</strong></em><br/>2: <em><strong>CREDIT STOP</strong></em><br/>3: <em><strong>PRIMARY</strong></em><br/>4: <em><strong>OCCASION OF SERVICE</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Service Connected</strong><pre><code>  serviceConnected</code></pre></td>
       <td>BOOLEAN</td>
       <td>service_connected</td>
       <td> </td>
@@ -308,7 +361,7 @@
       <td> </td>
     </tr>
     <tr>
-      <td><strong>Head And Or Neck Cancer</strong><pre><code>  headAndOrNeckCancer</code></pre></td>
+      <td><strong>Head And/or Neck Cancer</strong><pre><code>  headAndOrNeckCancer</code></pre></td>
       <td>BOOLEAN</td>
       <td>head_and_or_neck_cancer</td>
       <td> </td>
@@ -324,7 +377,7 @@
       <td> </td>
     </tr>
     <tr>
-      <td><strong>Proj 112 Shad</strong><pre><code>  proj112Shad</code></pre></td>
+      <td><strong>Proj 112/shad</strong><pre><code>  proj112Shad</code></pre></td>
       <td>BOOLEAN</td>
       <td>proj_112_shad</td>
       <td> </td>
@@ -337,7 +390,7 @@
       <td>service_connection_edit_flag</td>
       <td> </td>
       <td> </td>
-      <td>EDITABLE: <em><strong>0</strong></em><br/>NOT EDITABLE: <em><strong>1</strong></em></td>
+      <td>0: <em><strong>EDITABLE</strong></em><br/>1: <em><strong>NOT EDITABLE</strong></em></td>
     </tr>
     <tr>
       <td><strong>Agent Orange Edit Flag</strong><pre><code>  agentOrangeEditFlag</code></pre></td>
@@ -345,7 +398,7 @@
       <td>agent_orange_edit_flag</td>
       <td> </td>
       <td> </td>
-      <td>EDITABLE: <em><strong>0</strong></em><br/>NOT EDITABLE: <em><strong>1</strong></em></td>
+      <td>0: <em><strong>EDITABLE</strong></em><br/>1: <em><strong>NOT EDITABLE</strong></em></td>
     </tr>
     <tr>
       <td><strong>Ionizing Radiation Edit Flag</strong><pre><code>  ionizingRadiationEditFlag</code></pre></td>
@@ -353,7 +406,7 @@
       <td>ionizing_radiation_edit_flag</td>
       <td> </td>
       <td> </td>
-      <td>EDITABLE: <em><strong>0</strong></em><br/>NOT EDITABLE: <em><strong>1</strong></em></td>
+      <td>0: <em><strong>EDITABLE</strong></em><br/>1: <em><strong>NOT EDITABLE</strong></em></td>
     </tr>
     <tr>
       <td><strong>Sw Asia Conditions Edit Flag</strong><pre><code>  swAsiaConditionsEditFlag</code></pre></td>
@@ -361,7 +414,7 @@
       <td>sw_asia_conditions_edit_flag</td>
       <td> </td>
       <td> </td>
-      <td>EDITABLE: <em><strong>0</strong></em><br/>NOT EDITABLE: <em><strong>1</strong></em></td>
+      <td>0: <em><strong>EDITABLE</strong></em><br/>1: <em><strong>NOT EDITABLE</strong></em></td>
     </tr>
     <tr>
       <td><strong>Mst Edit Flag</strong><pre><code>  mstEditFlag</code></pre></td>
@@ -369,7 +422,7 @@
       <td>mst_edit_flag</td>
       <td> </td>
       <td> </td>
-      <td>EDITABLE: <em><strong>0</strong></em><br/>NOT EDITABLE: <em><strong>1</strong></em></td>
+      <td>0: <em><strong>EDITABLE</strong></em><br/>1: <em><strong>NOT EDITABLE</strong></em></td>
     </tr>
     <tr>
       <td><strong>Head And Neck Cancer Edit Flag</strong><pre><code>  headAndNeckCancerEditFlag</code></pre></td>
@@ -377,7 +430,7 @@
       <td>head_and_neck_cancer_edit_flag</td>
       <td> </td>
       <td> </td>
-      <td>EDITABLE: <em><strong>0</strong></em><br/>NOT EDITABLE: <em><strong>1</strong></em></td>
+      <td>0: <em><strong>EDITABLE</strong></em><br/>1: <em><strong>NOT EDITABLE</strong></em></td>
     </tr>
     <tr>
       <td><strong>Combat Veteran Edit Flag</strong><pre><code>  combatVeteranEditFlag</code></pre></td>
@@ -385,15 +438,15 @@
       <td>combat_veteran_edit_flag</td>
       <td> </td>
       <td> </td>
-      <td>EDITABLE: <em><strong>0</strong></em><br/>NOT EDITABLE: <em><strong>1</strong></em></td>
+      <td>0: <em><strong>EDITABLE</strong></em><br/>1: <em><strong>NOT EDITABLE</strong></em></td>
     </tr>
     <tr>
-      <td><strong>Proj 112 Shad Edit Flag</strong><pre><code>  proj112ShadEditFlag</code></pre></td>
+      <td><strong>Proj 112/shad Edit Flag</strong><pre><code>  proj112ShadEditFlag</code></pre></td>
       <td>ENUMERATION</td>
       <td>proj_112_shad_edit_flag</td>
       <td> </td>
       <td> </td>
-      <td>EDITABLE: <em><strong>0</strong></em><br/>NOT EDITABLE: <em><strong>1</strong></em></td>
+      <td>0: <em><strong>EDITABLE</strong></em><br/>1: <em><strong>NOT EDITABLE</strong></em></td>
     </tr>
     <tr>
       <td><strong>Comments</strong><pre><code>  comments</code></pre></td>
@@ -404,23 +457,7 @@
       <td> </td>
     </tr>
     <tr>
-      <td><strong>Option Used To Enter</strong><pre><code>  optionUsedToEnter</code></pre></td>
-      <td>POINTER</td>
-      <td>option_used_to_create</td>
-      <td> </td>
-      <td> </td>
-      <td><a href="../VDM/Option-19">Option-19</a></td>
-    </tr>
-    <tr>
-      <td><strong>Protocol Used To Enter</strong><pre><code>  protocolUsedToEnter</code></pre></td>
-      <td>POINTER</td>
-      <td>protocol</td>
-      <td> </td>
-      <td> </td>
-      <td><a href="../VDM/Protocol-101">Protocol-101</a></td>
-    </tr>
-    <tr>
-      <td><strong>Entered With Package</strong><pre><code>  enteredWithPackage</code></pre></td>
+      <td><strong>Package</strong><pre><code>  package</code></pre></td>
       <td>POINTER</td>
       <td>package</td>
       <td> </td>
@@ -428,7 +465,7 @@
       <td><a href="../VDM/Package-9_4">Package-9_4</a></td>
     </tr>
     <tr>
-      <td><strong>Entered With PCE Data Source</strong><pre><code>  enteredWithPCEDataSource</code></pre></td>
+      <td><strong>Data Source</strong><pre><code>  dataSource</code></pre></td>
       <td>POINTER</td>
       <td>data_source</td>
       <td> </td>
@@ -440,13 +477,13 @@
 
 <p><a href="#top">↑ Return to top</a><br /></p>
 
-<p> <br/><p style="font-size: 11px">Document generated on August 24th 2017, 3:29:31 pm</p></p>
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
 
       </main>
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2017-08-24T15:29:31-10:00">2017</time>. VISTA Data Project. All rights reserved.
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
         </small>
       </footer>
 

@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--option"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Option<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="option">Option</h1>
+
+<h3 id="option-1">Option</h3>
+
+<p>Information in this file is used to drive the menu system.  Options are
+created, associated with others on menus, locked, set out-of-order,
+assigned prohibited times or devices, or given entry/exit actions.  The
+Edit Options of Menu Management should be used (instead of VA FileMan)
+so that the global root (DIC) and other such fields are given the correct
+values.  Options may be tailored by setting FileMan variables via this file. 
+The Order Enter/Results Reporting package is accessed by using the appropriate
+option type.  It is cross-referenced by name, menu text, uppercase menu text,
+type, item, synonym, help frame, out-of-order message, lock, prohibited times,
+restricted devices, and priority.</p>
+
+<p><strong>Fileman ID:</strong> 19</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Option-19">Option-19</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 106</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>62</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>DATE-TIME</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 7</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#dispar0N">Dispar 0 N</a></td>
+      <td>dispar0N</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#fr0N">Fr 0 N</a></td>
+      <td>fr0N</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="#menu">Menu</a></td>
+      <td>menu</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><a href="#queuingRequired">Queuing Required</a></td>
+      <td>queuingRequired</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><a href="#rpc">Rpc</a></td>
+      <td>rpc</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><a href="#timesDaysProhibited">Times Days Prohibited</a></td>
+      <td>timesDaysProhibited</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td><a href="#to0N">To 0 N</a></td>
+      <td>to0N</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>STRING</td>
+      <td>name</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>X Action Present</strong><pre><code>  xActionPresent</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>x_action_present</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Rev Key Present</strong><pre><code>  revKeyPresent</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>rev_key_present</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Header Present?</strong><pre><code>  headerPresent</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>header_present</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Menu Text</strong><pre><code>  menuText</code></pre></td>
+      <td>STRING</td>
+      <td>menu_text</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Uppercase Menu Text</strong><pre><code>  uppercaseMenuText</code></pre></td>
+      <td>STRING</td>
+      <td>uppercase_menu_text</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Out Of Order Message</strong><pre><code>  outOfOrderMessage</code></pre></td>
+      <td>STRING</td>
+      <td>out_of_order_message</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lock</strong><pre><code>  lock</code></pre></td>
+      <td>STRING</td>
+      <td>lock</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Reverse/negative Lock</strong><pre><code>  reverseNegativeLock</code></pre></td>
+      <td>STRING</td>
+      <td>reverse_negative_lock</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong><pre><code>  description</code></pre></td>
+      <td>STRING</td>
+      <td>description</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Creator</strong><pre><code>  creator</code></pre></td>
+      <td>POINTER</td>
+      <td>creator</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Help Frame</strong><pre><code>  helpFrame</code></pre></td>
+      <td>POINTER</td>
+      <td>help_frame</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td><a href="../VDM/Help_Frame-9_2">Help_Frame-9_2</a></td>
+    </tr>
+    <tr>
+      <td><strong>Priority</strong><pre><code>  priority</code></pre></td>
+      <td>NUMERIC</td>
+      <td>priority</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Prohibited Times</strong><pre><code>  prohibitedTimes</code></pre></td>
+      <td>STRING</td>
+      <td>prohibited_times</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Times/days Prohibited</strong><pre><code>  timesDaysProhibited</code></pre></td>
+      <td>OBJECT</td>
+      <td>times_days_prohibited</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#timesDaysProhibited">timesDaysProhibited</a></td>
+    </tr>
+    <tr>
+      <td><strong>Queuing Required</strong><pre><code>  queuingRequired</code></pre></td>
+      <td>OBJECT</td>
+      <td>queuing_required</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#queuingRequired">queuingRequired</a></td>
+    </tr>
+    <tr>
+      <td><strong>Output Restricted?</strong><pre><code>  outputRestricted</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>output_restricted</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Restrict Devices?</strong><pre><code>  restrictDevices</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>restrict_devices</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Permitted Device</strong><pre><code>  permittedDevice</code></pre></td>
+      <td>POINTER</td>
+      <td>permitted_device</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Type</strong><pre><code>  type4</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>type-4</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>limited</strong></em><br/>1: <em><strong>protocol</strong></em><br/>2: <em><strong>edit</strong></em><br/>3: <em><strong>menu</strong></em><br/>4: <em><strong>Window Suite</strong></em><br/>5: <em><strong>print</strong></em><br/>6: <em><strong>protocol menu</strong></em><br/>7: <em><strong>server</strong></em><br/>8: <em><strong>inquire</strong></em><br/>9: <em><strong>Window</strong></em><br/>10: <em><strong>run routine</strong></em><br/>11: <em><strong>ScreenMan</strong></em><br/>12: <em><strong>action</strong></em><br/>13: <em><strong>extended action</strong></em><br/>14: <em><strong>Broker (Client/Server)</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Menu</strong><pre><code>  menu</code></pre></td>
+      <td>OBJECT</td>
+      <td>menu</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#menu">menu</a></td>
+    </tr>
+    <tr>
+      <td><strong>Short Menu Text</strong><pre><code>  shortMenuText</code></pre></td>
+      <td>STRING</td>
+      <td>short_menu_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Display Option?</strong><pre><code>  displayOption</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>display_option</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Package</strong><pre><code>  package</code></pre></td>
+      <td>POINTER</td>
+      <td>package</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Package-9_4">Package-9_4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Delegable</strong><pre><code>  delegable</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>delegable</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>E Action Present</strong><pre><code>  eActionPresent</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>e_action_present</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Exit Action</strong><pre><code>  exitAction</code></pre></td>
+      <td>STRING</td>
+      <td>exit_action</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Entry Action</strong><pre><code>  entryAction</code></pre></td>
+      <td>STRING</td>
+      <td>entry_action</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Xquit Message</strong><pre><code>  xquitMessage</code></pre></td>
+      <td>STRING</td>
+      <td>xquit_message</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Xquit Executable</strong><pre><code>  xquitExecutable</code></pre></td>
+      <td>STRING</td>
+      <td>xquit_executable</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Routine</strong><pre><code>  routine</code></pre></td>
+      <td>STRING</td>
+      <td>routine</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Header</strong><pre><code>  header</code></pre></td>
+      <td>STRING</td>
+      <td>header</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dic {dic}</strong><pre><code>  dicDic</code></pre></td>
+      <td>STRING</td>
+      <td>dic_dic</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dic(0)</strong><pre><code>  dic0</code></pre></td>
+      <td>STRING</td>
+      <td>dic0</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dic(a)</strong><pre><code>  dica</code></pre></td>
+      <td>STRING</td>
+      <td>dica</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dic(b)</strong><pre><code>  dicb</code></pre></td>
+      <td>STRING</td>
+      <td>dicb</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dic(s)</strong><pre><code>  dics</code></pre></td>
+      <td>STRING</td>
+      <td>dics</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dic(w)</strong><pre><code>  dicw</code></pre></td>
+      <td>STRING</td>
+      <td>dicw</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>D.</strong><pre><code>  d</code></pre></td>
+      <td>STRING</td>
+      <td>d</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dr{dds}</strong><pre><code>  drdds</code></pre></td>
+      <td>STRING</td>
+      <td>drdds</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ddsfile</strong><pre><code>  ddsfile</code></pre></td>
+      <td>STRING</td>
+      <td>ddsfile</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ddsfile(1)</strong><pre><code>  ddsfile1</code></pre></td>
+      <td>STRING</td>
+      <td>ddsfile1</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ddspage</strong><pre><code>  ddspage</code></pre></td>
+      <td>NUMERIC</td>
+      <td>ddspage</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ddsparm</strong><pre><code>  ddsparm</code></pre></td>
+      <td>STRING</td>
+      <td>ddsparm</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Die</strong><pre><code>  die</code></pre></td>
+      <td>STRING</td>
+      <td>die</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dr {die}</strong><pre><code>  drDie</code></pre></td>
+      <td>STRING</td>
+      <td>dr_die</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*dr()</strong><pre><code>  dr</code></pre></td>
+      <td>STRING</td>
+      <td>dr</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>No Up-arrow</strong><pre><code>  noUparrow</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>no_uparrow</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>BACK JUMPING OK, NO EXIT</strong></em><br/>1: <em><strong>NO UP-ARROWING ALLOWED</strong></em><br/>2: <em><strong>UP-ARROW OUT OK, NO BRANCHING</strong></em><br/>3: <em><strong>EXIT AND BACK JUMPING OK</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>*die(w)</strong><pre><code>  diew</code></pre></td>
+      <td>STRING</td>
+      <td>diew</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dic {dip}</strong><pre><code>  dicDip</code></pre></td>
+      <td>STRING</td>
+      <td>dic_dip</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Pg</strong><pre><code>  pg</code></pre></td>
+      <td>NUMERIC</td>
+      <td>pg</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>L.</strong><pre><code>  l</code></pre></td>
+      <td>STRING</td>
+      <td>l</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Flds</strong><pre><code>  flds</code></pre></td>
+      <td>STRING</td>
+      <td>flds</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>By</strong><pre><code>  by</code></pre></td>
+      <td>STRING</td>
+      <td>by</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Fr</strong><pre><code>  fr</code></pre></td>
+      <td>STRING</td>
+      <td>fr</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>To</strong><pre><code>  to</code></pre></td>
+      <td>STRING</td>
+      <td>to</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dhd</strong><pre><code>  dhd</code></pre></td>
+      <td>STRING</td>
+      <td>dhd</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dcopies</strong><pre><code>  dcopies</code></pre></td>
+      <td>NUMERIC</td>
+      <td>dcopies</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dis(0)</strong><pre><code>  dis0</code></pre></td>
+      <td>STRING</td>
+      <td>dis0</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dis(1)</strong><pre><code>  dis1</code></pre></td>
+      <td>STRING</td>
+      <td>dis1</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dis(2)</strong><pre><code>  dis2</code></pre></td>
+      <td>STRING</td>
+      <td>dis2</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dis(3)</strong><pre><code>  dis3</code></pre></td>
+      <td>STRING</td>
+      <td>dis3</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Iop</strong><pre><code>  iop</code></pre></td>
+      <td>STRING</td>
+      <td>iop</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dhit</strong><pre><code>  dhit</code></pre></td>
+      <td>STRING</td>
+      <td>dhit</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Diobeg</strong><pre><code>  diobeg</code></pre></td>
+      <td>STRING</td>
+      <td>diobeg</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dioend</strong><pre><code>  dioend</code></pre></td>
+      <td>STRING</td>
+      <td>dioend</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>By(0)</strong><pre><code>  by0</code></pre></td>
+      <td>STRING</td>
+      <td>by0</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>L(0)</strong><pre><code>  l0</code></pre></td>
+      <td>NUMERIC</td>
+      <td>l0</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Fr(0,n)</strong><pre><code>  fr0N</code></pre></td>
+      <td>OBJECT</td>
+      <td>fr0n</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#fr0N">fr0N</a></td>
+    </tr>
+    <tr>
+      <td><strong>To(0,n)</strong><pre><code>  to0N</code></pre></td>
+      <td>OBJECT</td>
+      <td>to0n</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#to0N">to0N</a></td>
+    </tr>
+    <tr>
+      <td><strong>Dispar(0,n)</strong><pre><code>  dispar0N</code></pre></td>
+      <td>OBJECT</td>
+      <td>dispar0n</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#dispar0N">dispar0N</a></td>
+    </tr>
+    <tr>
+      <td><strong>Disupno</strong><pre><code>  disupno</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>disupno</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>SUPPRESS HEADER IF NO RECORDS</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Dipcrit</strong><pre><code>  dipcrit</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>dipcrit</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>PRINT SEARCH/SORT CRITERIA</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Diaskhd</strong><pre><code>  diaskhd</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>diaskhd</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>Do not ask user for a header</strong></em><br/>1: <em><strong>Ask user for a header</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Distemp</strong><pre><code>  distemp</code></pre></td>
+      <td>STRING</td>
+      <td>distemp</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dic {diq}</strong><pre><code>  dicDiq</code></pre></td>
+      <td>STRING</td>
+      <td>dic_diq</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dr {diq}</strong><pre><code>  drDiq</code></pre></td>
+      <td>STRING</td>
+      <td>dr_diq</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Diq(0)</strong><pre><code>  diq0</code></pre></td>
+      <td>STRING</td>
+      <td>diq0</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Supress Device Prompt</strong><pre><code>  supressDevicePrompt</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>supress_device_prompt</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Timestamp</strong><pre><code>  timestamp</code></pre></td>
+      <td>STRING</td>
+      <td>timestamp</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Timestamp Of Primary Menu</strong><pre><code>  timestampOfPrimaryMenu</code></pre></td>
+      <td>STRING</td>
+      <td>timestamp_of_primary_menu</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*order Print Action</strong><pre><code>  orderPrintAction</code></pre></td>
+      <td>STRING</td>
+      <td>order_print_action</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*order Cancel Action</strong><pre><code>  orderCancelAction</code></pre></td>
+      <td>STRING</td>
+      <td>order_cancel_action</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*order Purge Action</strong><pre><code>  orderPurgeAction</code></pre></td>
+      <td>STRING</td>
+      <td>order_purge_action</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Independently Invocable</strong><pre><code>  independentlyInvocable</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>independently_invocable</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*queued To Run At What Time</strong><pre><code>  queuedToRunAtWhatTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>queued_to_run_at_what_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*device For Queued Job Output</strong><pre><code>  deviceForQueuedJobOutput</code></pre></td>
+      <td>STRING</td>
+      <td>device_for_queued_job_output</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*rescheduling Frequency</strong><pre><code>  reschedulingFrequency</code></pre></td>
+      <td>STRING</td>
+      <td>rescheduling_frequency</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*queued To Run On Volume Set</strong><pre><code>  queuedToRunOnVolumeSet</code></pre></td>
+      <td>STRING</td>
+      <td>queued_to_run_on_volume_set</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Scheduling Recommended</strong><pre><code>  schedulingRecommended</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>scheduling_recommended</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>YES</strong></em><br/>1: <em><strong>STARTUP</strong></em><br/>2: <em><strong>NO</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Keep From Deleting</strong><pre><code>  keepFromDeleting</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>keep_from_deleting</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Server Bulletin</strong><pre><code>  serverBulletin</code></pre></td>
+      <td>POINTER</td>
+      <td>server_bulletin</td>
+      <td> </td>
+      <td> </td>
+      <td>Bulletin-3_6</td>
+    </tr>
+    <tr>
+      <td><strong>Server Action</strong><pre><code>  serverAction</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>server_action</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>NOTIFY MAIL GROUP (DO NOT RUN)</strong></em><br/>1: <em><strong>RUN IMMEDIATELY</strong></em><br/>2: <em><strong>QUEUE SERVER ROUTINE</strong></em><br/>3: <em><strong>IGNORE REQUESTS</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Server Mail Group</strong><pre><code>  serverMailGroup</code></pre></td>
+      <td>POINTER</td>
+      <td>server_mail_group</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Mail_Group-3_8">Mail_Group-3_8</a></td>
+    </tr>
+    <tr>
+      <td><strong>Server Audit</strong><pre><code>  serverAudit</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>server_audit</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Supress Bulletin</strong><pre><code>  supressBulletin</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>supress_bulletin</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>NO (DEFAULT) SEND A BULLETIN</strong></em><br/>1: <em><strong>YES, SUPRESS IT</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Server Reply</strong><pre><code>  serverReply</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>server_reply</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>NO REPLY (DEFAULT)</strong></em><br/>1: <em><strong>SEND REPLY IN ALL CASES</strong></em><br/>2: <em><strong>REPLY ON ERROR ONLY</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Save Request</strong><pre><code>  saveRequest</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>save_request</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>Save request in Postmaster basket</strong></em><br/>1: <em><strong>Do not save request</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Server Device</strong><pre><code>  serverDevice</code></pre></td>
+      <td>POINTER</td>
+      <td>server_device</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Device-3_5">Device-3_5</a></td>
+    </tr>
+    <tr>
+      <td><strong>Ztsk Retention Days</strong><pre><code>  ztskRetentionDays</code></pre></td>
+      <td>NUMERIC</td>
+      <td>ztsk_retention_days</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Icon</strong><pre><code>  icon</code></pre></td>
+      <td>STRING</td>
+      <td>icon</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Title</strong><pre><code>  title</code></pre></td>
+      <td>STRING</td>
+      <td>title</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Rpc</strong><pre><code>  rpc</code></pre></td>
+      <td>OBJECT</td>
+      <td>rpc</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#rpc">rpc</a></td>
+    </tr>
+    <tr>
+      <td><strong>Primary Menu</strong><pre><code>  primaryMenu</code></pre></td>
+      <td>STRING</td>
+      <td>primary_menu</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Protected Variables</strong><pre><code>  protectedVariables</code></pre></td>
+      <td>STRING</td>
+      <td>protected_variables</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*special Queueing</strong><pre><code>  specialQueueing</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>special_queueing</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-dispar-0-n"><a name="dispar0N"></a>1. Dispar 0 N</h3>
+
+<p><strong>Field ID:</strong> dispar0N</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Subscript Level Number</strong><pre><code>  subscriptLevelNumber</code></pre></td>
+      <td>NUMERIC</td>
+      <td>subscript_level_number</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Statistical Control Characters</strong><pre><code>  statisticalControlCharacters</code></pre></td>
+      <td>STRING</td>
+      <td>statistical_control_characters</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Subheader Format Characters</strong><pre><code>  subheaderFormatCharacters</code></pre></td>
+      <td>STRING</td>
+      <td>subheader_format_characters</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Subheader Output Transform</strong><pre><code>  subheaderOutputTransform</code></pre></td>
+      <td>STRING</td>
+      <td>subheader_output_transform</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-fr-0-n"><a name="fr0N"></a>2. Fr 0 N</h3>
+
+<p><strong>Field ID:</strong> fr0N</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Subscript Level Number</strong><pre><code>  subscriptLevelNumber</code></pre></td>
+      <td>NUMERIC</td>
+      <td>subscript_level_number</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>From Value</strong><pre><code>  fromValue</code></pre></td>
+      <td>STRING</td>
+      <td>from_value</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="3-menu"><a name="menu"></a>3. Menu</h3>
+
+<p><strong>Field ID:</strong> menu</p>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Item</strong><pre><code>  item</code></pre></td>
+      <td>POINTER</td>
+      <td>item</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td><a href="../VDM/Option-19">Option-19</a></td>
+    </tr>
+    <tr>
+      <td><strong>Synonym</strong><pre><code>  synonym</code></pre></td>
+      <td>STRING</td>
+      <td>synonym</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Display Order</strong><pre><code>  displayOrder</code></pre></td>
+      <td>NUMERIC</td>
+      <td>display_order</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="4-queuing-required"><a name="queuingRequired"></a>4. Queuing Required</h3>
+
+<p><strong>Field ID:</strong> queuingRequired</p>
+
+<h4 id="properties-4">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Time Period</strong><pre><code>  timePeriod</code></pre></td>
+      <td>STRING</td>
+      <td>time_period</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Day(s) For Time Period</strong><pre><code>  daysForTimePeriod</code></pre></td>
+      <td>STRING</td>
+      <td>days_for_time_period</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="5-rpc"><a name="rpc"></a>5. Rpc</h3>
+
+<p><strong>Field ID:</strong> rpc</p>
+
+<h4 id="properties-5">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Rpc</strong><pre><code>  rpc</code></pre></td>
+      <td>POINTER</td>
+      <td>rpc</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Remote_Procedure-8994">Remote_Procedure-8994</a></td>
+    </tr>
+    <tr>
+      <td><strong>Rpckey</strong><pre><code>  rpckey</code></pre></td>
+      <td>STRING</td>
+      <td>rpckey</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Rules</strong><pre><code>  rules</code></pre></td>
+      <td>STRING</td>
+      <td>rules</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="6-times-days-prohibited"><a name="timesDaysProhibited"></a>6. Times Days Prohibited</h3>
+
+<p><strong>Field ID:</strong> timesDaysProhibited</p>
+
+<h4 id="properties-6">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Times Prohibited</strong><pre><code>  timesProhibited</code></pre></td>
+      <td>STRING</td>
+      <td>times_prohibited</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Days Prohibited</strong><pre><code>  daysProhibited</code></pre></td>
+      <td>STRING</td>
+      <td>days_prohibited</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="7-to-0-n"><a name="to0N"></a>7. To 0 N</h3>
+
+<p><strong>Field ID:</strong> to0N</p>
+
+<h4 id="properties-7">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Subscript Level Number</strong><pre><code>  subscriptLevelNumber</code></pre></td>
+      <td>NUMERIC</td>
+      <td>subscript_level_number</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>To Value</strong><pre><code>  toValue</code></pre></td>
+      <td>STRING</td>
+      <td>to_value</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--codes"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Codes<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="codes">Codes</h1>
+
+<h3 id="codes-1">Codes</h3>
+
+<p>This file contains classification codes from multiple classification
+systems (i.e., ICD, CPT, DSM, SNOMED, Title 38, NANDA, NIC, COSTAR, COSTART,
+CRISP, etc.).</p>
+
+<p><strong>Fileman ID:</strong> 757.02</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Codes-757_02">Codes-757_02</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 9</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>POINTER</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>STRING</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 1</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#activationStatus">Activation Status</a></td>
+      <td>activationStatus</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Expression</strong><pre><code>  expression</code></pre></td>
+      <td>POINTER</td>
+      <td>expression</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Expressions-757_01">Expressions-757_01</a></td>
+    </tr>
+    <tr>
+      <td><strong>Code</strong><pre><code>  code</code></pre></td>
+      <td>STRING</td>
+      <td>code</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Classification Source</strong><pre><code>  classificationSource</code></pre></td>
+      <td>POINTER</td>
+      <td>classification_source</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>Coding_Systems-757_03</td>
+    </tr>
+    <tr>
+      <td><strong>Major Concept</strong><pre><code>  majorConcept</code></pre></td>
+      <td>POINTER</td>
+      <td>major_concept</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Major_Concept_Map-757">Major_Concept_Map-757</a></td>
+    </tr>
+    <tr>
+      <td><strong>Preference Flag</strong><pre><code>  preferenceFlag</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>preference_flag</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>PREFERRED TERM</strong></em><br/>1: <em><strong>OTHER THAN PREFERRED TERM</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Deactivation Flag</strong><pre><code>  deactivationFlag</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>deactivation_flag</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>DEACTIVATED CODE</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Primary Flag</strong><pre><code>  primaryFlag</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>primary_flag</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>PRIMARY CODE</strong></em><br/>1: <em><strong>SUPPLEMENTAL CODE</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Activation Status</strong><pre><code>  activationStatus</code></pre></td>
+      <td>OBJECT</td>
+      <td>activation_status</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#activationStatus">activationStatus</a></td>
+    </tr>
+    <tr>
+      <td><strong>Legacy Code</strong><pre><code>  legacyCode</code></pre></td>
+      <td>STRING</td>
+      <td>legacy_code</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-activation-status"><a name="activationStatus"></a>1. Activation Status</h3>
+
+<p><strong>Field ID:</strong> activationStatus</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Activation Effective Date</strong><pre><code>  activationEffectiveDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>activation_effective_date</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Activation Status</strong><pre><code>  activationStatus</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>activation_status</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>ACTIVE</strong></em><br/>1: <em><strong>INACTIVE</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

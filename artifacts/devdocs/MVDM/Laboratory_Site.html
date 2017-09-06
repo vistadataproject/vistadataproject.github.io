@@ -1,0 +1,1659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--laboratory_site"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Laboratory_Site<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="laboratory_site">Laboratory_Site</h1>
+
+<h3 id="laboratory-site">Laboratory Site</h3>
+
+<p>This file holds specific information which defines certain site parameters
+relating to the actual functioning of your laboratory.  The parameters
+include the official laboratory site name, whether the physician's name must
+be entered when ordering and/or accessioning tests, what type of accession
+label format (if any) the lab will be using, and scheduled hours of routine
+phlebotomy collection times, as well as others.</p>
+
+<p><strong>Fileman ID:</strong> 69.9</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Laboratory_Site-69_9">Laboratory_Site-69_9</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 87</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>DATE-TIME</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 9</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#archiveData">Archive Data</a></td>
+      <td>archiveData</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#bloodBankDefaults">Blood Bank Defaults</a></td>
+      <td>bloodBankDefaults</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="#bloodBankDivision">Blood Bank Division</a></td>
+      <td>bloodBankDivision</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><a href="#divisionParameters">Division Parameters</a></td>
+      <td>divisionParameters</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><a href="#hospitalSite">Hospital Site</a></td>
+      <td>hospitalSite</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><a href="#immedLabCollectDiv">Immed Lab Collect Div</a></td>
+      <td>immedLabCollectDiv</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td><a href="#labelDevice">Label Device</a></td>
+      <td>labelDevice</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td><a href="#phlebotomyOrderCutoffTime">Phlebotomy Order Cutoff Time</a></td>
+      <td>phlebotomyOrderCutoffTime</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td><a href="#printerDivision">Printer Division</a></td>
+      <td>printerDivision</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Site Name</strong><pre><code>  siteName</code></pre></td>
+      <td>STRING</td>
+      <td>site_name</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Blood Donor Unit Id Prefix</strong><pre><code>  bloodDonorUnitIdPrefix</code></pre></td>
+      <td>NUMERIC</td>
+      <td>blood_donor_unit_id_prefix</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Default Lab Oos Location</strong><pre><code>  defaultLabOosLocation</code></pre></td>
+      <td>POINTER</td>
+      <td>default_lab_oos_location</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Hospital_Location-44">Hospital_Location-44</a></td>
+    </tr>
+    <tr>
+      <td><strong>Default Institution</strong><pre><code>  defaultInstitution</code></pre></td>
+      <td>POINTER</td>
+      <td>default_institution</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Institution-4">Institution-4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Immed Lab Collect Div.</strong><pre><code>  immedLabCollectDiv</code></pre></td>
+      <td>OBJECT</td>
+      <td>immed_lab_collect_div</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#immedLabCollectDiv">immedLabCollectDiv</a></td>
+    </tr>
+    <tr>
+      <td><strong>Blood Bank Defaults</strong><pre><code>  bloodBankDefaults</code></pre></td>
+      <td>OBJECT</td>
+      <td>blood_bank_defaults</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#bloodBankDefaults">bloodBankDefaults</a></td>
+    </tr>
+    <tr>
+      <td><strong>Blood Bank Division</strong><pre><code>  bloodBankDivision</code></pre></td>
+      <td>OBJECT</td>
+      <td>blood_bank_division</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#bloodBankDivision">bloodBankDivision</a></td>
+    </tr>
+    <tr>
+      <td><strong>Hospital Site</strong><pre><code>  hospitalSite</code></pre></td>
+      <td>OBJECT</td>
+      <td>hospital_site</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#hospitalSite">hospitalSite</a></td>
+    </tr>
+    <tr>
+      <td><strong>*ask Provider</strong><pre><code>  askProvider</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>ask_provider</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Que Ch,he,etc Verified Test(s)</strong><pre><code>  queChheetcVerifiedTests</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>que_chheetc_verified_tests</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ask Frozen Section</strong><pre><code>  askFrozenSection</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>ask_frozen_section</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>YES</strong></em><br/>1: <em><strong>no</strong></em><br/>2: <em><strong>yes</strong></em><br/>3: <em><strong>NO</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Ask Surg Path Diagnosis</strong><pre><code>  askSurgPathDiagnosis</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>ask_surg_path_diagnosis</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>YES</strong></em><br/>1: <em><strong>no</strong></em><br/>2: <em><strong>yes</strong></em><br/>3: <em><strong>NO</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Ask Cytopath Diagnosis</strong><pre><code>  askCytopathDiagnosis</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>ask_cytopath_diagnosis</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>YES</strong></em><br/>1: <em><strong>no</strong></em><br/>2: <em><strong>yes</strong></em><br/>3: <em><strong>NO</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Ask Em Diagnosis</strong><pre><code>  askEmDiagnosis</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>ask_em_diagnosis</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>YES</strong></em><br/>1: <em><strong>no</strong></em><br/>2: <em><strong>yes</strong></em><br/>3: <em><strong>NO</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Que Micro Verified Tests(s)</strong><pre><code>  queMicroVerifiedTestss</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>que_micro_verified_testss</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Print Labels</strong><pre><code>  printLabels</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>print_labels</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Allow Lab To Add Patients</strong><pre><code>  allowLabToAddPatients</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>allow_lab_to_add_patients</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Choice Of Accession Numbers</strong><pre><code>  choiceOfAccessionNumbers</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>choice_of_accession_numbers</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>NOT ALLOWED</strong></em><br/>1: <em><strong>ALLOWED</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Grace Period For Orders</strong><pre><code>  gracePeriodForOrders</code></pre></td>
+      <td>NUMERIC</td>
+      <td>grace_period_for_orders</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Grace Period For Cumulative</strong><pre><code>  gracePeriodForCumulative</code></pre></td>
+      <td>NUMERIC</td>
+      <td>grace_period_for_cumulative</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Wkld Stats On</strong><pre><code>  wkldStatsOn</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>wkld_stats_on</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*amis/cap Default</strong><pre><code>  amisCapDefault</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>amis_cap_default</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*grace Period For Statistics</strong><pre><code>  gracePeriodForStatistics</code></pre></td>
+      <td>NUMERIC</td>
+      <td>grace_period_for_statistics</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Grace Period For Inactivity</strong><pre><code>  gracePeriodForInactivity</code></pre></td>
+      <td>NUMERIC</td>
+      <td>grace_period_for_inactivity</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Days Back For Delta Checks</strong><pre><code>  daysBackForDeltaChecks</code></pre></td>
+      <td>NUMERIC</td>
+      <td>days_back_for_delta_checks</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Last Ien Processed</strong><pre><code>  lastIenProcessed</code></pre></td>
+      <td>NUMERIC</td>
+      <td>last_ien_processed</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Last Date Processed</strong><pre><code>  lastDateProcessed</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>last_date_processed</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Loinc Historical Mapping Date</strong><pre><code>  loincHistoricalMappingDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>loinc_historical_mapping_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Loinc Historical Last Lrdfn</strong><pre><code>  loincHistoricalLastLrdfn</code></pre></td>
+      <td>NUMERIC</td>
+      <td>loinc_historical_last_lrdfn</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Default Blood Specimen</strong><pre><code>  defaultBloodSpecimen</code></pre></td>
+      <td>POINTER</td>
+      <td>default_blood_specimen</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td><a href="../VDM/Topography_Field-61">Topography_Field-61</a></td>
+    </tr>
+    <tr>
+      <td><strong>Default Urine Specimen</strong><pre><code>  defaultUrineSpecimen</code></pre></td>
+      <td>POINTER</td>
+      <td>default_urine_specimen</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td><a href="../VDM/Topography_Field-61">Topography_Field-61</a></td>
+    </tr>
+    <tr>
+      <td><strong>Default Serum Specimen</strong><pre><code>  defaultSerumSpecimen</code></pre></td>
+      <td>POINTER</td>
+      <td>default_serum_specimen</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td><a href="../VDM/Topography_Field-61">Topography_Field-61</a></td>
+    </tr>
+    <tr>
+      <td><strong>Default Plasma Specimen</strong><pre><code>  defaultPlasmaSpecimen</code></pre></td>
+      <td>POINTER</td>
+      <td>default_plasma_specimen</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td><a href="../VDM/Topography_Field-61">Topography_Field-61</a></td>
+    </tr>
+    <tr>
+      <td><strong>Default Unknown Specimen</strong><pre><code>  defaultUnknownSpecimen</code></pre></td>
+      <td>POINTER</td>
+      <td>default_unknown_specimen</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td><a href="../VDM/Topography_Field-61">Topography_Field-61</a></td>
+    </tr>
+    <tr>
+      <td><strong>Default Nature Of Order</strong><pre><code>  defaultNatureOfOrder</code></pre></td>
+      <td>POINTER</td>
+      <td>default_nature_of_order</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Nature_Of_Order-100_02">Nature_Of_Order-100_02</a></td>
+    </tr>
+    <tr>
+      <td><strong>Default Dc Reason</strong><pre><code>  defaultDcReason</code></pre></td>
+      <td>POINTER</td>
+      <td>default_dc_reason</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Order_Reason-100_03">Order_Reason-100_03</a></td>
+    </tr>
+    <tr>
+      <td><strong>Micro Survey Report Defaults</strong><pre><code>  microSurveyReportDefaults</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>micro_survey_report_defaults</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Micro Trend Report Defaults</strong><pre><code>  microTrendReportDefaults</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>micro_trend_report_defaults</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Micro Report Format</strong><pre><code>  microReportFormat</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>micro_report_format</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>BOTH INTERPRETATION AND RESULT</strong></em><br/>1: <em><strong>RESULT ONLY</strong></em><br/>2: <em><strong>INTERPRETATION ONLY</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Micro Default Template</strong><pre><code>  microDefaultTemplate</code></pre></td>
+      <td>STRING</td>
+      <td>micro_default_template</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Micro Other Template</strong><pre><code>  microOtherTemplate</code></pre></td>
+      <td>STRING</td>
+      <td>micro_other_template</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Download Full Data</strong><pre><code>  downloadFullData</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>download_full_data</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Hold-over Sort Urgency</strong><pre><code>  holdoverSortUrgency</code></pre></td>
+      <td>NUMERIC</td>
+      <td>holdover_sort_urgency</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Default Urgency</strong><pre><code>  defaultUrgency</code></pre></td>
+      <td>POINTER</td>
+      <td>default_urgency</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>Urgency-62_05</td>
+    </tr>
+    <tr>
+      <td><strong>Label Type</strong><pre><code>  labelType</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>label_type</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>INTERMEC 1X3</strong></em><br/>1: <em><strong>ORDER # FIRST</strong></em><br/>2: <em><strong>SITE FILE</strong></em><br/>3: <em><strong>2X5 UNEVEN</strong></em><br/>4: <em><strong>MEDLAB</strong></em><br/>5: <em><strong>SITE DEVELOPED (VAF 10-1392)</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Log Printer For Routine Lc</strong><pre><code>  logPrinterForRoutineLc</code></pre></td>
+      <td>POINTER</td>
+      <td>log_printer_for_routine_lc</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Device-3_5">Device-3_5</a></td>
+    </tr>
+    <tr>
+      <td><strong>Reserved Field #1</strong><pre><code>  reservedFieldNumber1</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>reserved_field_number1</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Printer Division</strong><pre><code>  printerDivision</code></pre></td>
+      <td>OBJECT</td>
+      <td>printer_division</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#printerDivision">printerDivision</a></td>
+    </tr>
+    <tr>
+      <td><strong>Label Device</strong><pre><code>  labelDevice</code></pre></td>
+      <td>OBJECT</td>
+      <td>label_device</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#labelDevice">labelDevice</a></td>
+    </tr>
+    <tr>
+      <td><strong>Phlebotomy Order Cut-off Time</strong><pre><code>  phlebotomyOrderCutoffTime</code></pre></td>
+      <td>OBJECT</td>
+      <td>phlebotomy_order_cutoff_time</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#phlebotomyOrderCutoffTime">phlebotomyOrderCutoffTime</a></td>
+    </tr>
+    <tr>
+      <td>**Collect Thursday Orders In **<pre><code>  collectThursdayOrdersIn</code></pre></td>
+      <td>NUMERIC</td>
+      <td>collect_thursday_orders_in_</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Collect Fridays Orders In</strong><pre><code>  collectFridaysOrdersIn</code></pre></td>
+      <td>NUMERIC</td>
+      <td>collect_fridays_orders_in</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Collect Saturdays Orders In</strong><pre><code>  collectSaturdaysOrdersIn</code></pre></td>
+      <td>NUMERIC</td>
+      <td>collect_saturdays_orders_in</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Collect Sundays Orders In</strong><pre><code>  collectSundaysOrdersIn</code></pre></td>
+      <td>NUMERIC</td>
+      <td>collect_sundays_orders_in</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Collect Mondays Orders In</strong><pre><code>  collectMondaysOrdersIn</code></pre></td>
+      <td>NUMERIC</td>
+      <td>collect_mondays_orders_in</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Collect Tuesdays Orders In</strong><pre><code>  collectTuesdaysOrdersIn</code></pre></td>
+      <td>NUMERIC</td>
+      <td>collect_tuesdays_orders_in</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Collect Wednesdays Orders In</strong><pre><code>  collectWednesdaysOrdersIn</code></pre></td>
+      <td>NUMERIC</td>
+      <td>collect_wednesdays_orders_in</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ignore Holidays</strong><pre><code>  ignoreHolidays</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>ignore_holidays</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Excepted Locations</strong><pre><code>  exceptedLocations</code></pre></td>
+      <td>POINTER</td>
+      <td>excepted_locations</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Building Collection List</strong><pre><code>  buildingCollectionList</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>building_collection_list</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Collection List Build $h</strong><pre><code>  collectionListBuildH</code></pre></td>
+      <td>STRING</td>
+      <td>collection_list_build_h</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Collection List Builder (duz)</strong><pre><code>  collectionListBuilderDuz</code></pre></td>
+      <td>NUMERIC</td>
+      <td>collection_list_builder_duz</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Collection List Time</strong><pre><code>  collectionListTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>collection_list_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Collection List Print Count</strong><pre><code>  collectionListPrintCount</code></pre></td>
+      <td>NUMERIC</td>
+      <td>collection_list_print_count</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Date Rollover Last Run</strong><pre><code>  dateRolloverLastRun</code></pre></td>
+      <td>STRING</td>
+      <td>date_rollover_last_run</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Rollover Running</strong><pre><code>  rolloverRunning</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>rollover_running</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Standard Locations Only</strong><pre><code>  standardLocationsOnly</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>standard_locations_only</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Archive Data</strong><pre><code>  archiveData</code></pre></td>
+      <td>OBJECT</td>
+      <td>archive_data</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#archiveData">archiveData</a></td>
+    </tr>
+    <tr>
+      <td><strong>Default Provider</strong><pre><code>  defaultProvider</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>default_provider</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Combine Test During Order</strong><pre><code>  combineTestDuringOrder</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>combine_test_during_order</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Last Lrdfn Archive Search</strong><pre><code>  lastLrdfnArchiveSearch</code></pre></td>
+      <td>NUMERIC</td>
+      <td>last_lrdfn_archive_search</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Last Purged Lrdfn From Archive</strong><pre><code>  lastPurgedLrdfnFromArchive</code></pre></td>
+      <td>NUMERIC</td>
+      <td>last_purged_lrdfn_from_archive</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Tape Number</strong><pre><code>  tapeNumber</code></pre></td>
+      <td>NUMERIC</td>
+      <td>tape_number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong># Of Days For Errors</strong><pre><code>  numberOfDaysForErrors</code></pre></td>
+      <td>NUMERIC</td>
+      <td>number_of_days_for_errors</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>**Default Opt Treating Sp. **<pre><code>  defaultOptTreatingSp</code></pre></td>
+      <td>POINTER</td>
+      <td>default_opt_treating_sp_</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Facility_Treating_Specialty-45_7">Facility_Treating_Specialty-45_7</a></td>
+    </tr>
+    <tr>
+      <td><strong>Lrnight</strong><pre><code>  lrnight</code></pre></td>
+      <td>STRING</td>
+      <td>lrnight</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Phleb/stop Code Running</strong><pre><code>  phlebStopCodeRunning</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>phleb_stop_code_running</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Clinic Stop Code</strong><pre><code>  clinicStopCode</code></pre></td>
+      <td>POINTER</td>
+      <td>clinic_stop_code</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Clinic_Stop-40_7">Clinic_Stop-40_7</a></td>
+    </tr>
+    <tr>
+      <td><strong>Counting Bb Workload</strong><pre><code>  countingBbWorkload</code></pre></td>
+      <td>STRING</td>
+      <td>counting_bb_workload</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Urgency Alert</strong><pre><code>  urgencyAlert</code></pre></td>
+      <td>POINTER</td>
+      <td>urgency_alert</td>
+      <td> </td>
+      <td> </td>
+      <td>Urgency-62_05</td>
+    </tr>
+    <tr>
+      <td><strong>*tramsmit Clinic Stop Codes</strong><pre><code>  tramsmitClinicStopCodes</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>tramsmit_clinic_stop_codes</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Pce/vsit On</strong><pre><code>  pceVsitOn</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>pce_vsit_on</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>PCE/VSIT ONLY</strong></em><br/>1: <em><strong>BOTH PCE/VSIT AND STOP CODES</strong></em><br/>2: <em><strong>OFF</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Collect Wkld Log File Data</strong><pre><code>  collectWkldLogFileData</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>collect_wkld_log_file_data</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Pce Default Provider</strong><pre><code>  pceDefaultProvider</code></pre></td>
+      <td>POINTER</td>
+      <td>pce_default_provider</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Division Parameters</strong><pre><code>  divisionParameters</code></pre></td>
+      <td>OBJECT</td>
+      <td>division_parameters</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#divisionParameters">divisionParameters</a></td>
+    </tr>
+    <tr>
+      <td><strong>Ap Esig On</strong><pre><code>  apEsigOn</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>ap_esig_on</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Panel Process Date</strong><pre><code>  panelProcessDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>panel_process_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-archive-data"><a name="archiveData"></a>1. Archive Data</h3>
+
+<p><strong>Field ID:</strong> archiveData</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Logical Name</strong><pre><code>  logicalName</code></pre></td>
+      <td>STRING</td>
+      <td>logical_name</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Physical Name</strong><pre><code>  physicalName</code></pre></td>
+      <td>STRING</td>
+      <td>physical_name</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Run Date</strong><pre><code>  runDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>run_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Status</strong><pre><code>  status</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>status</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>Purge done</strong></em><br/>1: <em><strong>Clear</strong></em><br/>2: <em><strong>Purging</strong></em><br/>3: <em><strong>Searching</strong></em><br/>4: <em><strong>Search done</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>For Data Before Date</strong><pre><code>  forDataBeforeDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>for_data_before_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-blood-bank-defaults"><a name="bloodBankDefaults"></a>2. Blood Bank Defaults</h3>
+
+<p><strong>Field ID:</strong> bloodBankDefaults</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Number</strong><pre><code>  number</code></pre></td>
+      <td>IEN</td>
+      <td>number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Blood Bank Option</strong><pre><code>  bloodBankOption</code></pre></td>
+      <td>STRING</td>
+      <td>blood_bank_option</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>First Default</strong><pre><code>  firstDefault</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>first_default</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Second Default</strong><pre><code>  secondDefault</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>second_default</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Third Default</strong><pre><code>  thirdDefault</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>third_default</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Fourth Default</strong><pre><code>  fourthDefault</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>fourth_default</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Fifth Default</strong><pre><code>  fifthDefault</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>fifth_default</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Sixth Default</strong><pre><code>  sixthDefault</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>sixth_default</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Seventh Default</strong><pre><code>  seventhDefault</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>seventh_default</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Major Section</strong><pre><code>  majorSection</code></pre></td>
+      <td>POINTER</td>
+      <td>major_section</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Accession-68">Accession-68</a></td>
+    </tr>
+    <tr>
+      <td><strong>Subsection</strong><pre><code>  subsection</code></pre></td>
+      <td>POINTER</td>
+      <td>subsection</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Accession-68">Accession-68</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="3-blood-bank-division"><a name="bloodBankDivision"></a>3. Blood Bank Division</h3>
+
+<p><strong>Field ID:</strong> bloodBankDivision</p>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Blood Bank Division</strong><pre><code>  bloodBankDivision</code></pre></td>
+      <td>POINTER</td>
+      <td>blood_bank_division</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Institution-4">Institution-4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Inventory Major Section</strong><pre><code>  inventoryMajorSection</code></pre></td>
+      <td>POINTER</td>
+      <td>inventory_major_section</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Accession-68">Accession-68</a></td>
+    </tr>
+    <tr>
+      <td><strong>Inventory Subsection</strong><pre><code>  inventorySubsection</code></pre></td>
+      <td>POINTER</td>
+      <td>inventory_subsection</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Accession-68">Accession-68</a></td>
+    </tr>
+    <tr>
+      <td><strong>Donor Major Section</strong><pre><code>  donorMajorSection</code></pre></td>
+      <td>POINTER</td>
+      <td>donor_major_section</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Accession-68">Accession-68</a></td>
+    </tr>
+    <tr>
+      <td><strong>Donor Subsection</strong><pre><code>  donorSubsection</code></pre></td>
+      <td>POINTER</td>
+      <td>donor_subsection</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Accession-68">Accession-68</a></td>
+    </tr>
+    <tr>
+      <td><strong>Multiple Accession Area</strong><pre><code>  multipleAccessionArea</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>multiple_accession_area</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>YES</strong></em><br/>1: <em><strong>no</strong></em><br/>2: <em><strong>yes</strong></em><br/>3: <em><strong>NO</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="4-division-parameters"><a name="divisionParameters"></a>4. Division Parameters</h3>
+
+<p><strong>Field ID:</strong> divisionParameters</p>
+
+<h4 id="properties-4">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Division Parameters</strong><pre><code>  divisionParameters</code></pre></td>
+      <td>POINTER</td>
+      <td>division_parameters</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Institution-4">Institution-4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Venipuncture Default Acc Area</strong><pre><code>  venipunctureDefaultAccArea</code></pre></td>
+      <td>POINTER</td>
+      <td>venipuncture_default_acc_area</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Accession-68">Accession-68</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="5-hospital-site"><a name="hospitalSite"></a>5. Hospital Site</h3>
+
+<p><strong>Field ID:</strong> hospitalSite</p>
+
+<h4 id="properties-5">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Hospital Site</strong><pre><code>  hospitalSite</code></pre></td>
+      <td>POINTER</td>
+      <td>hospital_site</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td><a href="../VDM/Hospital_Location-44">Hospital_Location-44</a></td>
+    </tr>
+    <tr>
+      <td><strong>Max Days For Continuous Orders</strong><pre><code>  maxDaysForContinuousOrders</code></pre></td>
+      <td>NUMERIC</td>
+      <td>max_days_for_continuous_orders</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ask Urgency</strong><pre><code>  askUrgency</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>ask_urgency</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Default Type For Quick Orders</strong><pre><code>  defaultTypeForQuickOrders</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>default_type_for_quick_orders</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>LAB COLLECT</strong></em><br/>1: <em><strong>WARD COLLECT</strong></em><br/>2: <em><strong>SEND PATIENT</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="6-immed-lab-collect-div"><a name="immedLabCollectDiv"></a>6. Immed Lab Collect Div</h3>
+
+<p><strong>Field ID:</strong> immedLabCollectDiv</p>
+
+<h4 id="properties-6">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Immed Collection Div.</strong><pre><code>  immedCollectionDiv</code></pre></td>
+      <td>POINTER</td>
+      <td>immed_collection_div</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td><a href="../VDM/Institution-4">Institution-4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Holidays ?</strong><pre><code>  holidays</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>holidays_</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Immed Lab Collect Printer</strong><pre><code>  immedLabCollectPrinter</code></pre></td>
+      <td>POINTER</td>
+      <td>immed_lab_collect_printer</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Device-3_5">Device-3_5</a></td>
+    </tr>
+    <tr>
+      <td><strong>Minimum Response Time</strong><pre><code>  minimumResponseTime</code></pre></td>
+      <td>NUMERIC</td>
+      <td>minimum_response_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Maxium Hours Ahead Allowed</strong><pre><code>  maxiumHoursAheadAllowed</code></pre></td>
+      <td>NUMERIC</td>
+      <td>maxium_hours_ahead_allowed</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Sunday</strong><pre><code>  sunday</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>sunday</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Sun Start Time</strong><pre><code>  sunStartTime</code></pre></td>
+      <td>NUMERIC</td>
+      <td>sun_start_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Sun End Time</strong><pre><code>  sunEndTime</code></pre></td>
+      <td>NUMERIC</td>
+      <td>sun_end_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Monday</strong><pre><code>  monday</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>monday</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Mon Start Time</strong><pre><code>  monStartTime</code></pre></td>
+      <td>NUMERIC</td>
+      <td>mon_start_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Mon End Time</strong><pre><code>  monEndTime</code></pre></td>
+      <td>NUMERIC</td>
+      <td>mon_end_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Tuesday</strong><pre><code>  tuesday</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>tuesday</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Tue Start Time</strong><pre><code>  tueStartTime</code></pre></td>
+      <td>NUMERIC</td>
+      <td>tue_start_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Tue End Time</strong><pre><code>  tueEndTime</code></pre></td>
+      <td>NUMERIC</td>
+      <td>tue_end_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Wednesday</strong><pre><code>  wednesday</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>wednesday</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Wed Start Time</strong><pre><code>  wedStartTime</code></pre></td>
+      <td>NUMERIC</td>
+      <td>wed_start_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Wed End Time</strong><pre><code>  wedEndTime</code></pre></td>
+      <td>NUMERIC</td>
+      <td>wed_end_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Thursday</strong><pre><code>  thursday</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>thursday</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Thu Start Time</strong><pre><code>  thuStartTime</code></pre></td>
+      <td>NUMERIC</td>
+      <td>thu_start_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Thu End Time</strong><pre><code>  thuEndTime</code></pre></td>
+      <td>NUMERIC</td>
+      <td>thu_end_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Friday</strong><pre><code>  friday</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>friday</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Fri Start Time</strong><pre><code>  friStartTime</code></pre></td>
+      <td>NUMERIC</td>
+      <td>fri_start_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Fri End Time</strong><pre><code>  friEndTime</code></pre></td>
+      <td>NUMERIC</td>
+      <td>fri_end_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Saturday</strong><pre><code>  saturday</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>saturday</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Sat Start Time</strong><pre><code>  satStartTime</code></pre></td>
+      <td>NUMERIC</td>
+      <td>sat_start_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Sat End Time</strong><pre><code>  satEndTime</code></pre></td>
+      <td>NUMERIC</td>
+      <td>sat_end_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Immed Collect On</strong><pre><code>  immedCollectOn</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>immed_collect_on</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="7-label-device"><a name="labelDevice"></a>7. Label Device</h3>
+
+<p><strong>Field ID:</strong> labelDevice</p>
+
+<h4 id="properties-7">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Label Device</strong><pre><code>  labelDevice</code></pre></td>
+      <td>POINTER</td>
+      <td>label_device</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Device-3_5">Device-3_5</a></td>
+    </tr>
+    <tr>
+      <td><strong>Printer Type</strong><pre><code>  printerType</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>printer_type</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>ZEBRA ZPL II COMPATIBLE</strong></em><br/>1: <em><strong>OTHER</strong></em><br/>2: <em><strong>INTERMEC 3000/4000 SERIES</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Label Stock</strong><pre><code>  labelStock</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>label_stock</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>1X2</strong></em><br/>1: <em><strong>1X3</strong></em><br/>2: <em><strong>2.5X4 10 PART</strong></em><br/>3: <em><strong>OTHER</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Alternate Label Entry</strong><pre><code>  alternateLabelEntry</code></pre></td>
+      <td>STRING</td>
+      <td>alternate_label_entry</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Alternate Label Routine</strong><pre><code>  alternateLabelRoutine</code></pre></td>
+      <td>STRING</td>
+      <td>alternate_label_routine</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Default Accession Area</strong><pre><code>  defaultAccessionArea</code></pre></td>
+      <td>POINTER</td>
+      <td>default_accession_area</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Accession-68">Accession-68</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="8-phlebotomy-order-cutoff-time"><a name="phlebotomyOrderCutoffTime"></a>8. Phlebotomy Order Cutoff Time</h3>
+
+<p><strong>Field ID:</strong> phlebotomyOrderCutoffTime</p>
+
+<h4 id="properties-8">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Phlebotomy Order Cut-off Time</strong><pre><code>  phlebotomyOrderCutoffTime</code></pre></td>
+      <td>NUMERIC</td>
+      <td>phlebotomy_order_cutoff_time</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Phlebotomy Collection Time</strong><pre><code>  phlebotomyCollectionTime</code></pre></td>
+      <td>NUMERIC</td>
+      <td>phlebotomy_collection_time</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>$h Format For Collection Time</strong><pre><code>  hFormatForCollectionTime</code></pre></td>
+      <td>NUMERIC</td>
+      <td>h_format_for_collection_time</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Division</strong><pre><code>  division</code></pre></td>
+      <td>POINTER</td>
+      <td>division</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Institution-4">Institution-4</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="9-printer-division"><a name="printerDivision"></a>9. Printer Division</h3>
+
+<p><strong>Field ID:</strong> printerDivision</p>
+
+<h4 id="properties-9">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Printer Division</strong><pre><code>  printerDivision</code></pre></td>
+      <td>POINTER</td>
+      <td>printer_division</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Institution-4">Institution-4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Log Printer For Routine Lc</strong><pre><code>  logPrinterForRoutineLc</code></pre></td>
+      <td>POINTER</td>
+      <td>log_printer_for_routine_lc</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Device-3_5">Device-3_5</a></td>
+    </tr>
+    <tr>
+      <td><strong>Accession Printer</strong><pre><code>  accessionPrinter</code></pre></td>
+      <td>POINTER</td>
+      <td>accession_printer</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Device-3_5">Device-3_5</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

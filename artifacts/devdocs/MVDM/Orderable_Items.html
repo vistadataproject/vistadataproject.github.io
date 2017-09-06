@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--orderable_items"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Orderable_Items<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="orderable_items">Orderable_Items</h1>
+
+<h3 id="orderable-items">Orderable Items</h3>
+
+<p>This file contains the orderable items for use within OE/RR.</p>
+
+<p><strong>Fileman ID:</strong> 101.43</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Orderable_Items-101_43">Orderable_Items-101_43</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 39</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>DATE-TIME</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 2</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#components">Components</a></td>
+      <td>components</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#setMembership">Set Membership</a></td>
+      <td>setMembership</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>STRING</td>
+      <td>name</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Inactivated</strong><pre><code>  inactivated</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>inactivated</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Notify On Order</strong><pre><code>  notifyOnOrder</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>notify_on_order</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Notify When Resulted</strong><pre><code>  notifyWhenResulted</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>notify_when_resulted</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Synonyms</strong><pre><code>  synonyms</code></pre></td>
+      <td>STRING</td>
+      <td>synonyms</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Package Name</strong><pre><code>  packageName</code></pre></td>
+      <td>STRING</td>
+      <td>package_name</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Id</strong><pre><code>  id2</code></pre></td>
+      <td>STRING</td>
+      <td>id-2</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Code</strong><pre><code>  code</code></pre></td>
+      <td>STRING</td>
+      <td>code</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Coding System</strong><pre><code>  codingSystem</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>coding_system</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>NATIONAL DRUG FILE</strong></em><br/>1: <em><strong>CPT4</strong></em><br/>2: <em><strong>NATIONAL LAB TEST FILE</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Display Group</strong><pre><code>  displayGroup</code></pre></td>
+      <td>POINTER</td>
+      <td>display_group</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Display_Group-100_98">Display_Group-100_98</a></td>
+    </tr>
+    <tr>
+      <td><strong>Cost</strong><pre><code>  cost</code></pre></td>
+      <td>NUMERIC</td>
+      <td>cost</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Authorization</strong><pre><code>  authorization</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>authorization</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>PHYSICIAN</strong></em><br/>1: <em><strong>NO SIGNATURE REQUIRED</strong></em><br/>2: <em><strong>SERVICE CHIEF</strong></em><br/>3: <em><strong>COSIGNATURE</strong></em><br/>4: <em><strong>SPECIALIST</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Order Message</strong><pre><code>  orderMessage</code></pre></td>
+      <td>STRING</td>
+      <td>order_message</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Set Membership</strong><pre><code>  setMembership</code></pre></td>
+      <td>OBJECT</td>
+      <td>set_membership</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#setMembership">setMembership</a></td>
+    </tr>
+    <tr>
+      <td><strong>Components</strong><pre><code>  components</code></pre></td>
+      <td>OBJECT</td>
+      <td>components</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#components">components</a></td>
+    </tr>
+    <tr>
+      <td><strong>Inpatient Med</strong><pre><code>  inpatientMed</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>inpatient_med</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>YES-IV</strong></em><br/>1: <em><strong>YES</strong></em><br/>2: <em><strong>NO</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Outpatient Med</strong><pre><code>  outpatientMed</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>outpatient_med</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Iv Base</strong><pre><code>  ivBase</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>iv_base</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Iv Additive</strong><pre><code>  ivAdditive</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>iv_additive</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Supply</strong><pre><code>  supply</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>supply</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Non-formulary</strong><pre><code>  nonformulary</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>nonformulary</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Non-va Meds</strong><pre><code>  nonvaMeds</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>nonva_meds</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Specimen</strong><pre><code>  specimen</code></pre></td>
+      <td>STRING</td>
+      <td>specimen</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Can Lab Collect</strong><pre><code>  canLabCollect</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>can_lab_collect</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Sequence</strong><pre><code>  sequence</code></pre></td>
+      <td>NUMERIC</td>
+      <td>sequence</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Max Order Frequency</strong><pre><code>  maxOrderFrequency</code></pre></td>
+      <td>NUMERIC</td>
+      <td>max_order_frequency</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Daily Order Max</strong><pre><code>  dailyOrderMax</code></pre></td>
+      <td>NUMERIC</td>
+      <td>daily_order_max</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lab Section</strong><pre><code>  labSection</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>lab_section</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>BLOOD BANK</strong></em><br/>1: <em><strong>ELECTRON MICROSCOPY</strong></em><br/>2: <em><strong>SURGICAL PATHOLOGY</strong></em><br/>3: <em><strong>CYTOLOGY</strong></em><br/>4: <em><strong>MICROBIOLOGY</strong></em><br/>5: <em><strong>CHEMISTRY</strong></em><br/>6: <em><strong>AUTOPSY</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Type</strong><pre><code>  type607</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>type-60_7</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>input</strong></em><br/>1: <em><strong>neither</strong></em><br/>2: <em><strong>both</strong></em><br/>3: <em><strong>output</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Contrast Media</strong><pre><code>  contrastMedia</code></pre></td>
+      <td>STRING</td>
+      <td>contrast_media</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Procedure Type</strong><pre><code>  procedureType</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>procedure_type</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>DETAILED</strong></em><br/>1: <em><strong>BROAD</strong></em><br/>2: <em><strong>PARENT</strong></em><br/>3: <em><strong>SERIES</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Imaging Type</strong><pre><code>  imagingType</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>imaging_type</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>CARDIOLOGY STUDIES</strong></em><br/>1: <em><strong>ANGIO/NEURO/INTERVENTIONAL</strong></em><br/>2: <em><strong>NUCLEAR MEDICINE</strong></em><br/>3: <em><strong>RADIOLOGY</strong></em><br/>4: <em><strong>CT SCAN</strong></em><br/>5: <em><strong>ULTRASOUND</strong></em><br/>6: <em><strong>MAGNETIC RESONANCE IMAGING</strong></em><br/>7: <em><strong>MAMMOGRAPHY</strong></em><br/>8: <em><strong>VASCULAR LAB</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Common Procedure</strong><pre><code>  commonProcedure</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>common_procedure</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Diet Type</strong><pre><code>  dietType</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>diet_type</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>TUBEFEEDING PRODUCT</strong></em><br/>1: <em><strong>DIET</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Precedence</strong><pre><code>  precedence</code></pre></td>
+      <td>NUMERIC</td>
+      <td>precedence</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ask Expiration Date?</strong><pre><code>  askExpirationDate</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>ask_expiration_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Service Usage</strong><pre><code>  serviceUsage</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>service_usage</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>GROUPER ONLY</strong></em><br/>1: <em><strong>TRACKING ONLY</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Blood Component</strong><pre><code>  bloodComponent</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>blood_component</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Diagnostic Test</strong><pre><code>  diagnosticTest</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>diagnostic_test</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>YES</strong></em><br/>1: <em><strong>TAS</strong></em><br/>2: <em><strong>NO</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-components"><a name="components"></a>1. Components</h3>
+
+<p><strong>Field ID:</strong> components</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>STRING</td>
+      <td>name</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Id</strong><pre><code>  id2</code></pre></td>
+      <td>STRING</td>
+      <td>id-2</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Code</strong><pre><code>  code</code></pre></td>
+      <td>STRING</td>
+      <td>code</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Coding System</strong><pre><code>  codingSystem</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>coding_system</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>NATIONAL DRUG FILE</strong></em><br/>1: <em><strong>CPT4</strong></em><br/>2: <em><strong>NATIONAL LAB TEST FILE</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-set-membership"><a name="setMembership"></a>2. Set Membership</h3>
+
+<p><strong>Field ID:</strong> setMembership</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Set</strong><pre><code>  set</code></pre></td>
+      <td>STRING</td>
+      <td>set</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Qo Only</strong><pre><code>  qoOnly</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>qo_only</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

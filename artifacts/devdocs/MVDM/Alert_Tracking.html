@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--alert_tracking"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Alert_Tracking<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="alert_tracking">Alert_Tracking</h1>
+
+<h3 id="alert-tracking">Alert Tracking</h3>
+
+<p>This file is used to track the content and interactions with an alert.
+Every alert which is generated is initially filed within this file.  Each
+entry has the date and time the alert was generated, which user generated
+the alert, whether the alert was generated in a background task, what
+action was to be taken if any (the entry point or option name to be used)
+and the data string, if any, for use with the alert.  There is a multiple
+field which also identifies each user that the alert was sent to, and when
+the user initially saw the displayed text, when the alert was selected for
+processing, when the processing was completed, and when the alert was
+deleted after processing or associated with another user's processing, or
+when the alert was deleted by a clean-up operation.</p>
+
+<p>Unless a longer lifetime is specified for the specific alert, it will be
+deleted from the file after 30 days.  If a longer lifetime is specified,
+it will not be deleted until after that period passes.</p>
+
+<p><strong>Fileman ID:</strong> 8992.1</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Alert_Tracking-8992_1">Alert_Tracking-8992_1</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 16</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>DATE-TIME</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 4</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#forwardedDateTime">Forwarded Date Time</a></td>
+      <td>forwardedDateTime</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#recipient">Recipient</a></td>
+      <td>recipient</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="#recipientType">Recipient Type</a></td>
+      <td>recipientType</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><a href="#surrogateFor">Surrogate For</a></td>
+      <td>surrogateFor</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>STRING</td>
+      <td>name</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Date Created</strong><pre><code>  dateCreated</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_created</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Pkg Id</strong><pre><code>  pkgId</code></pre></td>
+      <td>STRING</td>
+      <td>pkg_id</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Patient</strong><pre><code>  patient</code></pre></td>
+      <td>POINTER</td>
+      <td>patient</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td><a href="../VDM/Patient-2">Patient-2</a></td>
+    </tr>
+    <tr>
+      <td><strong>Generated By</strong><pre><code>  generatedBy</code></pre></td>
+      <td>POINTER</td>
+      <td>generated_by</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Generated While Queued</strong><pre><code>  generatedWhileQueued</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>generated_while_queued</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Status</strong><pre><code>  status</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>status</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>COMPLETELY READ</strong></em><br/>1: <em><strong>UNREAD-REMOVED BY DATE</strong></em><br/>2: <em><strong>PARTIALLY READ - REMOVED</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Retention Date</strong><pre><code>  retentionDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>retention_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Display Text</strong><pre><code>  displayText</code></pre></td>
+      <td>STRING</td>
+      <td>display_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Option For Processing</strong><pre><code>  optionForProcessing</code></pre></td>
+      <td>STRING</td>
+      <td>option_for_processing</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Routine Tag</strong><pre><code>  routineTag</code></pre></td>
+      <td>STRING</td>
+      <td>routine_tag</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Routine For Processing</strong><pre><code>  routineForProcessing</code></pre></td>
+      <td>STRING</td>
+      <td>routine_for_processing</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Data For Processing</strong><pre><code>  dataForProcessing</code></pre></td>
+      <td>STRING</td>
+      <td>data_for_processing</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Guid For Gui</strong><pre><code>  guidForGui</code></pre></td>
+      <td>STRING</td>
+      <td>guid_for_gui</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Long Info Text</strong><pre><code>  longInfoText</code></pre></td>
+      <td>STRING</td>
+      <td>long_info_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Recipient</strong><pre><code>  recipient</code></pre></td>
+      <td>OBJECT</td>
+      <td>recipient</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#recipient">recipient</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-forwarded-date-time"><a name="forwardedDateTime"></a>1. Forwarded Date Time</h3>
+
+<p><strong>Field ID:</strong> forwardedDateTime</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Forwarded Date/time</strong><pre><code>  forwardedDateTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>forwarded_date_time</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Forwarding Category</strong><pre><code>  forwardingCategory</code></pre></td>
+      <td>POINTER</td>
+      <td>forwarding_category</td>
+      <td> </td>
+      <td> </td>
+      <td>Alert_Recipient_Type-8992_2</td>
+    </tr>
+    <tr>
+      <td><strong>Forwarded By Or For</strong><pre><code>  forwardedByOrFor</code></pre></td>
+      <td>POINTER</td>
+      <td>forwarded_by_or_for</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Forwarding Comment</strong><pre><code>  forwardingComment</code></pre></td>
+      <td>STRING</td>
+      <td>forwarding_comment</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-recipient"><a name="recipient"></a>2. Recipient</h3>
+
+<p><strong>Field ID:</strong> recipient</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Recipient</strong><pre><code>  recipient</code></pre></td>
+      <td>POINTER</td>
+      <td>recipient</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Alert First Displayed</strong><pre><code>  alertFirstDisplayed</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>alert_first_displayed</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>First Selected Alert</strong><pre><code>  firstSelectedAlert</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>first_selected_alert</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Processed Alert</strong><pre><code>  processedAlert</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>processed_alert</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Deleted On</strong><pre><code>  deletedOn</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>deleted_on</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Auto Deleted</strong><pre><code>  autoDeleted</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>auto_deleted</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Forwarded By</strong><pre><code>  forwardedBy</code></pre></td>
+      <td>POINTER</td>
+      <td>forwarded_by</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Date/time Forwarded</strong><pre><code>  dateTimeForwarded</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_time_forwarded</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Deleted By User</strong><pre><code>  deletedByUser</code></pre></td>
+      <td>POINTER</td>
+      <td>deleted_by_user</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Recipient Type</strong><pre><code>  recipientType</code></pre></td>
+      <td>OBJECT</td>
+      <td>recipient_type</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#recipientType">recipientType</a></td>
+    </tr>
+    <tr>
+      <td><strong>Forwarded Date/time</strong><pre><code>  forwardedDateTime</code></pre></td>
+      <td>OBJECT</td>
+      <td>forwarded_date_time</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#forwardedDateTime">forwardedDateTime</a></td>
+    </tr>
+    <tr>
+      <td><strong>Surrogate For</strong><pre><code>  surrogateFor</code></pre></td>
+      <td>OBJECT</td>
+      <td>surrogate_for</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#surrogateFor">surrogateFor</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="3-recipient-type"><a name="recipientType"></a>3. Recipient Type</h3>
+
+<p><strong>Field ID:</strong> recipientType</p>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Recipient Type</strong><pre><code>  recipientType</code></pre></td>
+      <td>POINTER</td>
+      <td>recipient_type</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td>Alert_Recipient_Type-8992_2</td>
+    </tr>
+    <tr>
+      <td><strong>Sent To Surrogate</strong><pre><code>  sentToSurrogate</code></pre></td>
+      <td>POINTER</td>
+      <td>sent_to_surrogate</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Acting As Surrogate</strong><pre><code>  actingAsSurrogate</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>acting_as_surrogate</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Alert Date/time</strong><pre><code>  alertDateTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>alert_date_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="4-surrogate-for"><a name="surrogateFor"></a>4. Surrogate For</h3>
+
+<p><strong>Field ID:</strong> surrogateFor</p>
+
+<h4 id="properties-4">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Surrogate For</strong><pre><code>  surrogateFor</code></pre></td>
+      <td>POINTER</td>
+      <td>surrogate_for</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Date/time - Surrogate For</strong><pre><code>  dateTimeSurrogateFor</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_time__surrogate_for</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Date-time Returned</strong><pre><code>  datetimeReturned</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>datetime_returned</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

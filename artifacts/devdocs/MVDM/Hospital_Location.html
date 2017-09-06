@@ -1,0 +1,1867 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--hospital_location"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Hospital_Location<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="hospital_location">Hospital_Location</h1>
+
+<h3 id="hospital-location">Hospital Location</h3>
+
+<p>Contains locations found in the hospital (ie. Wards, Clinics)
+ <strong>**</strong><strong><em>DO NOT RE-INDEX THIS FILE</em></strong><strong>**</strong>*</p>
+
+<p><strong>Fileman ID:</strong> 44</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Hospital_Location-44">Hospital_Location-44</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 95</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>DATE-TIME</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 18</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#appointment">Appointment</a></td>
+      <td>appointment</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#availability">Availability</a></td>
+      <td>availability</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="#cancelDateTimeBegin">Cancel Date Time Begin</a></td>
+      <td>cancelDateTimeBegin</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><a href="#chartCheck">Chart Check</a></td>
+      <td>chartCheck</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><a href="#diagnosis">Diagnosis</a></td>
+      <td>diagnosis</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><a href="#fridayTemplate">Friday Template</a></td>
+      <td>fridayTemplate</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td><a href="#mondayTemplate">Monday Template</a></td>
+      <td>mondayTemplate</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td><a href="#patient">Patient</a></td>
+      <td>patient</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td><a href="#pattern">Pattern</a></td>
+      <td>pattern</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td><a href="#provider">Provider</a></td>
+      <td>provider</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td><a href="#saturdayTemplate">Saturday Template</a></td>
+      <td>saturdayTemplate</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td><a href="#scheduleTime">Schedule Time</a></td>
+      <td>scheduleTime</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td><a href="#specialPattern">Special Pattern</a></td>
+      <td>specialPattern</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td><a href="#sundayTemplate">Sunday Template</a></td>
+      <td>sundayTemplate</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td><a href="#teamPositions">Team Positions</a></td>
+      <td>teamPositions</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td><a href="#thursdayTemplate">Thursday Template</a></td>
+      <td>thursdayTemplate</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td><a href="#tuesdayTemplate">Tuesday Template</a></td>
+      <td>tuesdayTemplate</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td><a href="#wednesdayTemplate">Wednesday Template</a></td>
+      <td>wednesdayTemplate</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>STRING</td>
+      <td>name</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Abbreviation</strong><pre><code>  abbreviation</code></pre></td>
+      <td>STRING</td>
+      <td>abbreviation</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Type</strong><pre><code>  type2</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>type-2</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>NON-CLINIC STOP</strong></em><br/>1: <em><strong>MODULE</strong></em><br/>2: <em><strong>OPERATING ROOM</strong></em><br/>3: <em><strong>OTHER LOCATION</strong></em><br/>4: <em><strong>CLINIC</strong></em><br/>5: <em><strong>FILE AREA</strong></em><br/>6: <em><strong>IMAGING</strong></em><br/>7: <em><strong>WARD</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Type Extension</strong><pre><code>  typeExtension</code></pre></td>
+      <td>POINTER</td>
+      <td>type_extension</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>Location_Type-40_9</td>
+    </tr>
+    <tr>
+      <td><strong>Institution</strong><pre><code>  institution</code></pre></td>
+      <td>POINTER</td>
+      <td>institution</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Institution-4">Institution-4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Division</strong><pre><code>  division</code></pre></td>
+      <td>POINTER</td>
+      <td>division</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Medical_Center_Division-40_8">Medical_Center_Division-40_8</a></td>
+    </tr>
+    <tr>
+      <td><strong>Module</strong><pre><code>  module</code></pre></td>
+      <td>POINTER</td>
+      <td>module</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Hospital_Location-44">Hospital_Location-44</a></td>
+    </tr>
+    <tr>
+      <td><strong>Default Device</strong><pre><code>  defaultDevice</code></pre></td>
+      <td>STRING</td>
+      <td>default_device</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Disposition Action</strong><pre><code>  dispositionAction</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>disposition_action</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>SCHEDULING</strong></em><br/>1: <em><strong>NONE</strong></em><br/>2: <em><strong>APPOINTMENT REC REQ</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Visit Location</strong><pre><code>  visitLocation</code></pre></td>
+      <td>STRING</td>
+      <td>visit_location</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Stop Code Number</strong><pre><code>  stopCodeNumber</code></pre></td>
+      <td>POINTER</td>
+      <td>stop_code_number</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td><a href="../VDM/Clinic_Stop-40_7">Clinic_Stop-40_7</a></td>
+    </tr>
+    <tr>
+      <td><strong>Prv. Year Stop Code</strong><pre><code>  prvYearStopCode</code></pre></td>
+      <td>POINTER</td>
+      <td>prv_year_stop_code</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Clinic_Stop-40_7">Clinic_Stop-40_7</a></td>
+    </tr>
+    <tr>
+      <td><strong>Service</strong><pre><code>  service</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>service</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>NONE</strong></em><br/>1: <em><strong>REHAB MEDICINE</strong></em><br/>2: <em><strong>PSYCHIATRY</strong></em><br/>3: <em><strong>NEUROLOGY</strong></em><br/>4: <em><strong>MEDICINE</strong></em><br/>5: <em><strong>SURGERY</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Treating Specialty</strong><pre><code>  treatingSpecialty</code></pre></td>
+      <td>POINTER</td>
+      <td>treating_specialty</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td><a href="../VDM/Facility_Treating_Specialty-45_7">Facility_Treating_Specialty-45_7</a></td>
+    </tr>
+    <tr>
+      <td><strong>Physical Location</strong><pre><code>  physicalLocation</code></pre></td>
+      <td>STRING</td>
+      <td>physical_location</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*okc A</strong><pre><code>  okcA</code></pre></td>
+      <td>STRING</td>
+      <td>okc_a</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*okc B</strong><pre><code>  okcB</code></pre></td>
+      <td>STRING</td>
+      <td>okc_b</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Synonym</strong><pre><code>  synonym</code></pre></td>
+      <td>STRING</td>
+      <td>synonym</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Special Amis Stop</strong><pre><code>  specialAmisStop</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>special_amis_stop</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>MENTAL HYGEINE</strong></em><br/>1: <em><strong>EMPLOYEE HEALTH</strong></em><br/>2: <em><strong>ALCOHOL TREATMENT</strong></em><br/>3: <em><strong>DAY HOSPITAL</strong></em><br/>4: <em><strong>EMERGENCY UNIT</strong></em><br/>5: <em><strong>DRUG DEPENDANCE</strong></em><br/>6: <em><strong>DAY TREATMENT</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Category Of Visit</strong><pre><code>  categoryOfVisit</code></pre></td>
+      <td>STRING</td>
+      <td>category_of_visit</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Default Provider</strong><pre><code>  defaultProvider</code></pre></td>
+      <td>POINTER</td>
+      <td>default_provider</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Prohibited Terminal</strong><pre><code>  prohibitedTerminal</code></pre></td>
+      <td>STRING</td>
+      <td>prohibited_terminal</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Agency</strong><pre><code>  agency</code></pre></td>
+      <td>POINTER</td>
+      <td>agency</td>
+      <td> </td>
+      <td> </td>
+      <td>Agency-4_11</td>
+    </tr>
+    <tr>
+      <td><strong>Ask For Check In/out Time</strong><pre><code>  askForCheckInOutTime</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>ask_for_check_in_out_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*clinic Services Resource</strong><pre><code>  clinicServicesResource</code></pre></td>
+      <td>STRING</td>
+      <td>clinic_services_resource</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Workload Validation At Chk Out</strong><pre><code>  workloadValidationAtChkOut</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>workload_validation_at_chk_out</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Clinic Group (reports)</strong><pre><code>  clinicGroupReports</code></pre></td>
+      <td>POINTER</td>
+      <td>clinic_group_reports</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td>Clinic_Group-409_67</td>
+    </tr>
+    <tr>
+      <td><strong>Ward Location File Pointer</strong><pre><code>  wardLocationFilePointer</code></pre></td>
+      <td>POINTER</td>
+      <td>ward_location_file_pointer</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Ward_Location-42">Ward_Location-42</a></td>
+    </tr>
+    <tr>
+      <td><strong>Occasion Of Service Clinic?</strong><pre><code>  occasionOfServiceClinic</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>occasion_of_service_clinic</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Oos Calling Package</strong><pre><code>  oosCallingPackage</code></pre></td>
+      <td>POINTER</td>
+      <td>oos_calling_package</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Package-9_4">Package-9_4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Patient Friendly Name</strong><pre><code>  patientFriendlyName</code></pre></td>
+      <td>STRING</td>
+      <td>patient_friendly_name</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Direct Patient Scheduling?</strong><pre><code>  directPatientScheduling</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>direct_patient_scheduling</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Display Clin Appt To Patients?</strong><pre><code>  displayClinApptToPatients</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>display_clin_appt_to_patients</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Telephone</strong><pre><code>  telephone</code></pre></td>
+      <td>STRING</td>
+      <td>telephone</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Telephone Extension</strong><pre><code>  telephoneExtension</code></pre></td>
+      <td>STRING</td>
+      <td>telephone_extension</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Associated Location Types</strong><pre><code>  associatedLocationTypes</code></pre></td>
+      <td>POINTER</td>
+      <td>associated_location_types</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Appointment</strong><pre><code>  appointment</code></pre></td>
+      <td>OBJECT</td>
+      <td>appointment</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#appointment">appointment</a></td>
+    </tr>
+    <tr>
+      <td><strong>Cancel Date/time Begin</strong><pre><code>  cancelDateTimeBegin</code></pre></td>
+      <td>OBJECT</td>
+      <td>cancel_date_time_begin</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#cancelDateTimeBegin">cancelDateTimeBegin</a></td>
+    </tr>
+    <tr>
+      <td><strong>Chart Check</strong><pre><code>  chartCheck</code></pre></td>
+      <td>OBJECT</td>
+      <td>chart_check</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#chartCheck">chartCheck</a></td>
+    </tr>
+    <tr>
+      <td><strong>Special Instructions</strong><pre><code>  specialInstructions</code></pre></td>
+      <td>STRING</td>
+      <td>special_instructions</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Length Of App't</strong><pre><code>  lengthOfAppt</code></pre></td>
+      <td>NUMERIC</td>
+      <td>length_of_appt</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Variable App'ntment Length</strong><pre><code>  variableAppntmentLength</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>variable_appntment_length</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>YES, VARIABLE LENGTH</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Hour Clinic Display Begins</strong><pre><code>  hourClinicDisplayBegins</code></pre></td>
+      <td>NUMERIC</td>
+      <td>hour_clinic_display_begins</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Hold Sc Slots Until # Of Days</strong><pre><code>  holdScSlotsUntilNumberOfDays</code></pre></td>
+      <td>NUMERIC</td>
+      <td>hold_sc_slots_until_number_of_days</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Principal Clinic</strong><pre><code>  principalClinic</code></pre></td>
+      <td>POINTER</td>
+      <td>principal_clinic</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Hospital_Location-44">Hospital_Location-44</a></td>
+    </tr>
+    <tr>
+      <td><strong>Display Increments Per Hour</strong><pre><code>  displayIncrementsPerHour</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>display_increments_per_hour</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>15-MIN </strong></em><br/>1: <em><strong>30-MIN </strong></em><br/>2: <em><strong>20-MIN </strong></em><br/>3: <em><strong>60-MIN </strong></em><br/>4: <em><strong>10-MIN </strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Overbooks/day Maximum</strong><pre><code>  overbooksDayMaximum</code></pre></td>
+      <td>NUMERIC</td>
+      <td>overbooks_day_maximum</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Schedule On Holidays?</strong><pre><code>  scheduleOnHolidays</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>schedule_on_holidays</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Copies</strong><pre><code>  copies</code></pre></td>
+      <td>NUMERIC</td>
+      <td>copies</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Availability</strong><pre><code>  availability</code></pre></td>
+      <td>OBJECT</td>
+      <td>availability</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#availability">availability</a></td>
+    </tr>
+    <tr>
+      <td><strong>Availability Flag</strong><pre><code>  availabilityFlag</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>availability_flag</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Pattern</strong><pre><code>  pattern</code></pre></td>
+      <td>OBJECT</td>
+      <td>pattern</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#pattern">pattern</a></td>
+    </tr>
+    <tr>
+      <td><strong>Special Pattern</strong><pre><code>  specialPattern</code></pre></td>
+      <td>OBJECT</td>
+      <td>special_pattern</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#specialPattern">specialPattern</a></td>
+    </tr>
+    <tr>
+      <td><strong>Sunday Template</strong><pre><code>  sundayTemplate</code></pre></td>
+      <td>OBJECT</td>
+      <td>sunday_template</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#sundayTemplate">sundayTemplate</a></td>
+    </tr>
+    <tr>
+      <td><strong>Monday Template</strong><pre><code>  mondayTemplate</code></pre></td>
+      <td>OBJECT</td>
+      <td>monday_template</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#mondayTemplate">mondayTemplate</a></td>
+    </tr>
+    <tr>
+      <td><strong>Tuesday Template</strong><pre><code>  tuesdayTemplate</code></pre></td>
+      <td>OBJECT</td>
+      <td>tuesday_template</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#tuesdayTemplate">tuesdayTemplate</a></td>
+    </tr>
+    <tr>
+      <td><strong>Wednesday Template</strong><pre><code>  wednesdayTemplate</code></pre></td>
+      <td>OBJECT</td>
+      <td>wednesday_template</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#wednesdayTemplate">wednesdayTemplate</a></td>
+    </tr>
+    <tr>
+      <td><strong>Thursday Template</strong><pre><code>  thursdayTemplate</code></pre></td>
+      <td>OBJECT</td>
+      <td>thursday_template</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#thursdayTemplate">thursdayTemplate</a></td>
+    </tr>
+    <tr>
+      <td><strong>Friday Template</strong><pre><code>  fridayTemplate</code></pre></td>
+      <td>OBJECT</td>
+      <td>friday_template</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#fridayTemplate">fridayTemplate</a></td>
+    </tr>
+    <tr>
+      <td><strong>Saturday Template</strong><pre><code>  saturdayTemplate</code></pre></td>
+      <td>OBJECT</td>
+      <td>saturday_template</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#saturdayTemplate">saturdayTemplate</a></td>
+    </tr>
+    <tr>
+      <td><strong>Require X-ray Films?</strong><pre><code>  requireXrayFilms</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>require_xray_films</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Require Action Profiles?</strong><pre><code>  requireActionProfiles</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>require_action_profiles</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>YES</strong></em><br/>1: <em><strong>NO</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Allowable Consecutive No-shows</strong><pre><code>  allowableConsecutiveNoshows</code></pre></td>
+      <td>NUMERIC</td>
+      <td>allowable_consecutive_noshows</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Max # Days For Future Booking</strong><pre><code>  maxNumberDaysForFutureBooking</code></pre></td>
+      <td>NUMERIC</td>
+      <td>max_number_days_for_future_booking</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Start Time For Auto Rebook</strong><pre><code>  startTimeForAutoRebook</code></pre></td>
+      <td>NUMERIC</td>
+      <td>start_time_for_auto_rebook</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Collateral Visits? (y Or N)</strong><pre><code>  collateralVisitsYOrN</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>collateral_visits_y_or_n</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Max # Days For Auto-rebook</strong><pre><code>  maxNumberDaysForAutorebook</code></pre></td>
+      <td>NUMERIC</td>
+      <td>max_number_days_for_autorebook</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*record Tracking Communication</strong><pre><code>  recordTrackingCommunication</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>record_tracking_communication</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*communication Format</strong><pre><code>  communicationFormat</code></pre></td>
+      <td>STRING</td>
+      <td>communication_format</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*record Request Device</strong><pre><code>  recordRequestDevice</code></pre></td>
+      <td>STRING</td>
+      <td>record_request_device</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*rt At Home Retreiver</strong><pre><code>  rtAtHomeRetreiver</code></pre></td>
+      <td>POINTER</td>
+      <td>rt_at_home_retreiver</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*rt Not At Home Retreiver</strong><pre><code>  rtNotAtHomeRetreiver</code></pre></td>
+      <td>POINTER</td>
+      <td>rt_not_at_home_retreiver</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*record Request Priority</strong><pre><code>  recordRequestPriority</code></pre></td>
+      <td>NUMERIC</td>
+      <td>record_request_priority</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*record Appointment Status</strong><pre><code>  recordAppointmentStatus</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>record_appointment_status</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Prohibit Access To Clinic?</strong><pre><code>  prohibitAccessToClinic</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>prohibit_access_to_clinic</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Privileged User</strong><pre><code>  privilegedUser</code></pre></td>
+      <td>POINTER</td>
+      <td>privileged_user</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Non-count Clinic? (y Or N)</strong><pre><code>  noncountClinicYOrN</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>noncount_clinic_y_or_n</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Include On File Room Lists?</strong><pre><code>  includeOnFileRoomLists</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>include_on_file_room_lists</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Credit Stop Code</strong><pre><code>  creditStopCode</code></pre></td>
+      <td>POINTER</td>
+      <td>credit_stop_code</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Clinic_Stop-40_7">Clinic_Stop-40_7</a></td>
+    </tr>
+    <tr>
+      <td><strong>Prv. Year Credit Stop Code</strong><pre><code>  prvYearCreditStopCode</code></pre></td>
+      <td>POINTER</td>
+      <td>prv_year_credit_stop_code</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Clinic_Stop-40_7">Clinic_Stop-40_7</a></td>
+    </tr>
+    <tr>
+      <td><strong>Clinic Meets At This Facility?</strong><pre><code>  clinicMeetsAtThisFacility</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>clinic_meets_at_this_facility</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Inactivate Date</strong><pre><code>  inactivateDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>inactivate_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Reactivate Date</strong><pre><code>  reactivateDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>reactivate_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Default Appointment Type</strong><pre><code>  defaultAppointmentType</code></pre></td>
+      <td>POINTER</td>
+      <td>default_appointment_type</td>
+      <td> </td>
+      <td> </td>
+      <td>Appointment_Type-409_1</td>
+    </tr>
+    <tr>
+      <td><strong>No Show Letter</strong><pre><code>  noShowLetter</code></pre></td>
+      <td>POINTER</td>
+      <td>no_show_letter</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td>Letter-407_5</td>
+    </tr>
+    <tr>
+      <td><strong>Pre-appointment Letter</strong><pre><code>  preappointmentLetter</code></pre></td>
+      <td>POINTER</td>
+      <td>preappointment_letter</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td>Letter-407_5</td>
+    </tr>
+    <tr>
+      <td><strong>Clinic Cancellation Letter</strong><pre><code>  clinicCancellationLetter</code></pre></td>
+      <td>POINTER</td>
+      <td>clinic_cancellation_letter</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td>Letter-407_5</td>
+    </tr>
+    <tr>
+      <td><strong>Appt. Cancellation Letter</strong><pre><code>  apptCancellationLetter</code></pre></td>
+      <td>POINTER</td>
+      <td>appt_cancellation_letter</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td>Letter-407_5</td>
+    </tr>
+    <tr>
+      <td><strong>Provider</strong><pre><code>  provider</code></pre></td>
+      <td>OBJECT</td>
+      <td>provider</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#provider">provider</a></td>
+    </tr>
+    <tr>
+      <td><strong>Diagnosis</strong><pre><code>  diagnosis</code></pre></td>
+      <td>OBJECT</td>
+      <td>diagnosis</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#diagnosis">diagnosis</a></td>
+    </tr>
+    <tr>
+      <td><strong>Team Positions</strong><pre><code>  teamPositions</code></pre></td>
+      <td>OBJECT</td>
+      <td>team_positions</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#teamPositions">teamPositions</a></td>
+    </tr>
+    <tr>
+      <td><strong>Default To Pc Practitioner?</strong><pre><code>  defaultToPcPractitioner</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>default_to_pc_practitioner</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Administer Inpatient Meds?</strong><pre><code>  administerInpatientMeds</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>administer_inpatient_meds</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Autofinish Rx Site</strong><pre><code>  autofinishRxSite</code></pre></td>
+      <td>POINTER</td>
+      <td>autofinish_rx_site</td>
+      <td> </td>
+      <td> </td>
+      <td>Outpatient_Site-59</td>
+    </tr>
+    <tr>
+      <td><strong>Autofinish Clinic Printer</strong><pre><code>  autofinishClinicPrinter</code></pre></td>
+      <td>POINTER</td>
+      <td>autofinish_clinic_printer</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Device-3_5">Device-3_5</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-appointment"><a name="appointment"></a>1. Appointment</h3>
+
+<p><strong>Field ID:</strong> appointment</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Appointment Date/time</strong><pre><code>  appointmentDateTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>appointment_date_time</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Patient</strong><pre><code>  patient</code></pre></td>
+      <td>OBJECT</td>
+      <td>patient</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#patient">patient</a></td>
+    </tr>
+    <tr>
+      <td><strong>Message</strong><pre><code>  message</code></pre></td>
+      <td>STRING</td>
+      <td>message</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-availability"><a name="availability"></a>2. Availability</h3>
+
+<p><strong>Field ID:</strong> availability</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Availability</strong><pre><code>  availability</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>availability</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Schedule Time</strong><pre><code>  scheduleTime</code></pre></td>
+      <td>OBJECT</td>
+      <td>schedule_time</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#scheduleTime">scheduleTime</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="3-cancel-date-time-begin"><a name="cancelDateTimeBegin"></a>3. Cancel Date Time Begin</h3>
+
+<p><strong>Field ID:</strong> cancelDateTimeBegin</p>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Cancel Date/time Begin</strong><pre><code>  cancelDateTimeBegin</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>cancel_date_time_begin</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Cancel Ending Time</strong><pre><code>  cancelEndingTime</code></pre></td>
+      <td>STRING</td>
+      <td>cancel_ending_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="4-chart-check"><a name="chartCheck"></a>4. Chart Check</h3>
+
+<p><strong>Field ID:</strong> chartCheck</p>
+
+<h4 id="properties-4">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Date</strong><pre><code>  date</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Patient</strong><pre><code>  patient</code></pre></td>
+      <td>POINTER</td>
+      <td>patient</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="5-diagnosis"><a name="diagnosis"></a>5. Diagnosis</h3>
+
+<p><strong>Field ID:</strong> diagnosis</p>
+
+<h4 id="properties-5">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Diagnosis</strong><pre><code>  diagnosis</code></pre></td>
+      <td>POINTER</td>
+      <td>diagnosis</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Icd_Diagnosis-80">Icd_Diagnosis-80</a></td>
+    </tr>
+    <tr>
+      <td><strong>Default Diagnosis</strong><pre><code>  defaultDiagnosis</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>default_diagnosis</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="6-friday-template"><a name="fridayTemplate"></a>6. Friday Template</h3>
+
+<p><strong>Field ID:</strong> fridayTemplate</p>
+
+<h4 id="properties-6">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Limit Date</strong><pre><code>  limitDate</code></pre></td>
+      <td>NUMERIC</td>
+      <td>limit_date</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Master Pattern</strong><pre><code>  masterPattern</code></pre></td>
+      <td>STRING</td>
+      <td>master_pattern</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="7-monday-template"><a name="mondayTemplate"></a>7. Monday Template</h3>
+
+<p><strong>Field ID:</strong> mondayTemplate</p>
+
+<h4 id="properties-7">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Limit Date</strong><pre><code>  limitDate</code></pre></td>
+      <td>NUMERIC</td>
+      <td>limit_date</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Master Pattern</strong><pre><code>  masterPattern</code></pre></td>
+      <td>STRING</td>
+      <td>master_pattern</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="8-patient"><a name="patient"></a>8. Patient</h3>
+
+<p><strong>Field ID:</strong> patient</p>
+
+<h4 id="properties-8">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Patient</strong><pre><code>  patient</code></pre></td>
+      <td>POINTER</td>
+      <td>patient</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td><a href="../VDM/Patient-2">Patient-2</a></td>
+    </tr>
+    <tr>
+      <td><strong>Length Of App't</strong><pre><code>  lengthOfAppt</code></pre></td>
+      <td>NUMERIC</td>
+      <td>length_of_appt</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Xray</strong><pre><code>  xray</code></pre></td>
+      <td>STRING</td>
+      <td>xray</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Other</strong><pre><code>  other</code></pre></td>
+      <td>STRING</td>
+      <td>other</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ward Loc</strong><pre><code>  wardLoc</code></pre></td>
+      <td>STRING</td>
+      <td>ward_loc</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Data Entry Clerk</strong><pre><code>  dataEntryClerk</code></pre></td>
+      <td>POINTER</td>
+      <td>data_entry_clerk</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Date Appointment Made</strong><pre><code>  dateAppointmentMade</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_appointment_made</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Overbook</strong><pre><code>  overbook</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>overbook</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>OVERBOOK</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Prior X-ray Results To Clinic?</strong><pre><code>  priorXrayResultsToClinic</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>prior_xray_results_to_clinic</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Eligibility Of Visit</strong><pre><code>  eligibilityOfVisit</code></pre></td>
+      <td>POINTER</td>
+      <td>eligibility_of_visit</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Eligibility_Code-8">Eligibility_Code-8</a></td>
+    </tr>
+    <tr>
+      <td><strong>Parent Record Request #</strong><pre><code>  parentRecordRequestNumber</code></pre></td>
+      <td>POINTER</td>
+      <td>parent_record_request_number</td>
+      <td> </td>
+      <td> </td>
+      <td>Requested_Records-190_1</td>
+    </tr>
+    <tr>
+      <td><strong>Check In User</strong><pre><code>  checkInUser</code></pre></td>
+      <td>POINTER</td>
+      <td>check_in_user</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Checked Out</strong><pre><code>  checkedOut</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>checked_out</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Check Out User</strong><pre><code>  checkOutUser</code></pre></td>
+      <td>POINTER</td>
+      <td>check_out_user</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Check In Entered</strong><pre><code>  checkInEntered</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>check_in_entered</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Check Out Entered</strong><pre><code>  checkOutEntered</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>check_out_entered</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Checked-in</strong><pre><code>  checkedin</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>checkedin</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Appointment Cancelled?</strong><pre><code>  appointmentCancelled</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>appointment_cancelled</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>CANCELLED</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Consult Link</strong><pre><code>  consultLink</code></pre></td>
+      <td>POINTER</td>
+      <td>consult_link</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td>Request_consultation-123</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="9-pattern"><a name="pattern"></a>9. Pattern</h3>
+
+<p><strong>Field ID:</strong> pattern</p>
+
+<h4 id="properties-9">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Pattern Date</strong><pre><code>  patternDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>pattern_date</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Current Availability</strong><pre><code>  currentAvailability</code></pre></td>
+      <td>STRING</td>
+      <td>current_availability</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Special Availability Flag</strong><pre><code>  specialAvailabilityFlag</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>special_availability_flag</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="10-provider"><a name="provider"></a>10. Provider</h3>
+
+<p><strong>Field ID:</strong> provider</p>
+
+<h4 id="properties-10">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Provider</strong><pre><code>  provider</code></pre></td>
+      <td>POINTER</td>
+      <td>provider</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Default Provider</strong><pre><code>  defaultProvider</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>default_provider</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="11-saturday-template"><a name="saturdayTemplate"></a>11. Saturday Template</h3>
+
+<p><strong>Field ID:</strong> saturdayTemplate</p>
+
+<h4 id="properties-11">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Limit Date</strong><pre><code>  limitDate</code></pre></td>
+      <td>NUMERIC</td>
+      <td>limit_date</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Master Pattern</strong><pre><code>  masterPattern</code></pre></td>
+      <td>STRING</td>
+      <td>master_pattern</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="12-schedule-time"><a name="scheduleTime"></a>12. Schedule Time</h3>
+
+<p><strong>Field ID:</strong> scheduleTime</p>
+
+<h4 id="properties-12">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Schedule Time</strong><pre><code>  scheduleTime</code></pre></td>
+      <td>STRING</td>
+      <td>schedule_time</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Number Of Patients</strong><pre><code>  numberOfPatients</code></pre></td>
+      <td>NUMERIC</td>
+      <td>number_of_patients</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="13-special-pattern"><a name="specialPattern"></a>13. Special Pattern</h3>
+
+<p><strong>Field ID:</strong> specialPattern</p>
+
+<h4 id="properties-13">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Pattern Date</strong><pre><code>  patternDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>pattern_date</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Original Availability</strong><pre><code>  originalAvailability</code></pre></td>
+      <td>STRING</td>
+      <td>original_availability</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="14-sunday-template"><a name="sundayTemplate"></a>14. Sunday Template</h3>
+
+<p><strong>Field ID:</strong> sundayTemplate</p>
+
+<h4 id="properties-14">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Limit Date</strong><pre><code>  limitDate</code></pre></td>
+      <td>NUMERIC</td>
+      <td>limit_date</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Master Pattern</strong><pre><code>  masterPattern</code></pre></td>
+      <td>STRING</td>
+      <td>master_pattern</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="15-team-positions"><a name="teamPositions"></a>15. Team Positions</h3>
+
+<p><strong>Field ID:</strong> teamPositions</p>
+
+<h4 id="properties-15">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Team Positions</strong><pre><code>  teamPositions</code></pre></td>
+      <td>POINTER</td>
+      <td>team_positions</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td>Team_Position-404_57</td>
+    </tr>
+    <tr>
+      <td><strong>Team</strong><pre><code>  team</code></pre></td>
+      <td>POINTER</td>
+      <td>team</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td>Team-404_51</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="16-thursday-template"><a name="thursdayTemplate"></a>16. Thursday Template</h3>
+
+<p><strong>Field ID:</strong> thursdayTemplate</p>
+
+<h4 id="properties-16">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Limit Date</strong><pre><code>  limitDate</code></pre></td>
+      <td>NUMERIC</td>
+      <td>limit_date</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Master Pattern</strong><pre><code>  masterPattern</code></pre></td>
+      <td>STRING</td>
+      <td>master_pattern</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="17-tuesday-template"><a name="tuesdayTemplate"></a>17. Tuesday Template</h3>
+
+<p><strong>Field ID:</strong> tuesdayTemplate</p>
+
+<h4 id="properties-17">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Limit Date</strong><pre><code>  limitDate</code></pre></td>
+      <td>NUMERIC</td>
+      <td>limit_date</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Master Pattern</strong><pre><code>  masterPattern</code></pre></td>
+      <td>STRING</td>
+      <td>master_pattern</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="18-wednesday-template"><a name="wednesdayTemplate"></a>18. Wednesday Template</h3>
+
+<p><strong>Field ID:</strong> wednesdayTemplate</p>
+
+<h4 id="properties-18">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Limit Date</strong><pre><code>  limitDate</code></pre></td>
+      <td>NUMERIC</td>
+      <td>limit_date</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Master Pattern</strong><pre><code>  masterPattern</code></pre></td>
+      <td>STRING</td>
+      <td>master_pattern</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

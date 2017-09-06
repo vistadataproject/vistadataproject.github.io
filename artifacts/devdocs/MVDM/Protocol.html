@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--protocol"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Protocol<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="protocol">Protocol</h1>
+
+<h3 id="protocol-1">Protocol</h3>
+
+<p>This file contains the orderables and methods for accomplishing orders
+(protocols) within OE/RR.</p>
+
+<p><strong>Fileman ID:</strong> 101</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Protocol-101">Protocol-101</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 62</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>7</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 2</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#item">Item</a></td>
+      <td>item</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#method">Method</a></td>
+      <td>method</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>STRING</td>
+      <td>name</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Item Text</strong><pre><code>  itemText</code></pre></td>
+      <td>STRING</td>
+      <td>item_text</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Synonym</strong><pre><code>  synonym</code></pre></td>
+      <td>STRING</td>
+      <td>synonym</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Print Name</strong><pre><code>  printName</code></pre></td>
+      <td>STRING</td>
+      <td>print_name</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Disable</strong><pre><code>  disable</code></pre></td>
+      <td>STRING</td>
+      <td>disable</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lock</strong><pre><code>  lock</code></pre></td>
+      <td>STRING</td>
+      <td>lock</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong><pre><code>  description</code></pre></td>
+      <td>STRING</td>
+      <td>description</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Prohibited Times</strong><pre><code>  prohibitedTimes</code></pre></td>
+      <td>STRING</td>
+      <td>prohibited_times</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Type</strong><pre><code>  type4</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>type-4</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>term</strong></em><br/>1: <em><strong>protocol</strong></em><br/>2: <em><strong>menu</strong></em><br/>3: <em><strong>protocol menu</strong></em><br/>4: <em><strong>event driver</strong></em><br/>5: <em><strong>subscriber</strong></em><br/>6: <em><strong>extended action</strong></em><br/>7: <em><strong>dialog</strong></em><br/>8: <em><strong>action</strong></em><br/>9: <em><strong>limited protocol</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Creator</strong><pre><code>  creator</code></pre></td>
+      <td>POINTER</td>
+      <td>creator</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>File Link</strong><pre><code>  fileLink</code></pre></td>
+      <td>POINTER</td>
+      <td>file_link</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td><a href="../VDM/Option-19">Option-19</a><br /><a href="../VDM/Laboratory_Test-60">Laboratory_Test-60</a><br /><a href="../VDM/Collection_Sample-62">Collection_Sample-62</a><br /><a href="../VDM/Topography_Field-61">Topography_Field-61</a><br />Rad_nuc_Med_Procedures-71<br />Urgency-62_05<br />Execute_Code-62_07<br /><a href="../VDM/Request_Services-123_5">Request_Services-123_5</a><br /><a href="../VDM/Request_Action_Types-123_1">Request_Action_Types-123_1</a></td>
+    </tr>
+    <tr>
+      <td><strong>Cost</strong><pre><code>  cost</code></pre></td>
+      <td>NUMERIC</td>
+      <td>cost</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Item</strong><pre><code>  item</code></pre></td>
+      <td>OBJECT</td>
+      <td>item</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#item">item</a></td>
+    </tr>
+    <tr>
+      <td><strong>Package</strong><pre><code>  package</code></pre></td>
+      <td>POINTER</td>
+      <td>package</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Package-9_4">Package-9_4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Exit Action</strong><pre><code>  exitAction</code></pre></td>
+      <td>STRING</td>
+      <td>exit_action</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Entry Action</strong><pre><code>  entryAction</code></pre></td>
+      <td>STRING</td>
+      <td>entry_action</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Required Variables</strong><pre><code>  requiredVariables</code></pre></td>
+      <td>STRING</td>
+      <td>required_variables</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Screen</strong><pre><code>  screen</code></pre></td>
+      <td>STRING</td>
+      <td>screen</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Header</strong><pre><code>  header</code></pre></td>
+      <td>STRING</td>
+      <td>header</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Menu Help</strong><pre><code>  menuHelp</code></pre></td>
+      <td>STRING</td>
+      <td>menu_help</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Menu Prompt</strong><pre><code>  menuPrompt</code></pre></td>
+      <td>STRING</td>
+      <td>menu_prompt</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Menu Default</strong><pre><code>  menuDefault</code></pre></td>
+      <td>STRING</td>
+      <td>menu_default</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dic {dic}</strong><pre><code>  dicDic</code></pre></td>
+      <td>STRING</td>
+      <td>dic_dic</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Column Width</strong><pre><code>  columnWidth</code></pre></td>
+      <td>NUMERIC</td>
+      <td>column_width</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Mnemonic Width</strong><pre><code>  mnemonicWidth</code></pre></td>
+      <td>NUMERIC</td>
+      <td>mnemonic_width</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Path Switch</strong><pre><code>  pathSwitch</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>path_switch</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Identifier</strong><pre><code>  identifier</code></pre></td>
+      <td>STRING</td>
+      <td>identifier</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Timestamp</strong><pre><code>  timestamp</code></pre></td>
+      <td>STRING</td>
+      <td>timestamp</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*order Print Action</strong><pre><code>  orderPrintAction</code></pre></td>
+      <td>STRING</td>
+      <td>order_print_action</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*order Cancel Action</strong><pre><code>  orderCancelAction</code></pre></td>
+      <td>STRING</td>
+      <td>order_cancel_action</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*order Purge Action</strong><pre><code>  orderPurgeAction</code></pre></td>
+      <td>STRING</td>
+      <td>order_purge_action</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Access</strong><pre><code>  access</code></pre></td>
+      <td>POINTER</td>
+      <td>access</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Requires Signature</strong><pre><code>  requiresSignature</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>requires_signature</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>NO SIGNATURE REQUIRED</strong></em><br/>1: <em><strong>PHYSICIAN SIGNATURE</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Domain (data Type)</strong><pre><code>  domainDataType</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>domain_data_type</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>free text</strong></em><br/>1: <em><strong>set of codes</strong></em><br/>2: <em><strong>list or range</strong></em><br/>3: <em><strong>menu</strong></em><br/>4: <em><strong>numeric</strong></em><br/>5: <em><strong>yes/no</strong></em><br/>6: <em><strong>date/time</strong></em><br/>7: <em><strong>word processing</strong></em><br/>8: <em><strong>pointer</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Default Prompt</strong><pre><code>  defaultPrompt</code></pre></td>
+      <td>STRING</td>
+      <td>default_prompt</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Default Answer</strong><pre><code>  defaultAnswer</code></pre></td>
+      <td>STRING</td>
+      <td>default_answer</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Default Word Processing Answer</strong><pre><code>  defaultWordProcessingAnswer</code></pre></td>
+      <td>STRING</td>
+      <td>default_word_processing_answer</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Default Help</strong><pre><code>  defaultHelp</code></pre></td>
+      <td>STRING</td>
+      <td>default_help</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Domain Parameter</strong><pre><code>  domainParameter</code></pre></td>
+      <td>STRING</td>
+      <td>domain_parameter</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Method</strong><pre><code>  method</code></pre></td>
+      <td>OBJECT</td>
+      <td>method</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#method">method</a></td>
+    </tr>
+    <tr>
+      <td><strong>Set Membership</strong><pre><code>  setMembership</code></pre></td>
+      <td>STRING</td>
+      <td>set_membership</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Sending Application</strong><pre><code>  sendingApplication</code></pre></td>
+      <td>POINTER</td>
+      <td>sending_application</td>
+      <td> </td>
+      <td> </td>
+      <td>Hl7_Application_Parameter-771</td>
+    </tr>
+    <tr>
+      <td><strong>Response Message Type</strong><pre><code>  responseMessageType</code></pre></td>
+      <td>POINTER</td>
+      <td>response_message_type</td>
+      <td> </td>
+      <td> </td>
+      <td>Hl7_Message_Type-771_2</td>
+    </tr>
+    <tr>
+      <td><strong>Batch/file Message Commit Ack</strong><pre><code>  batchFileMessageCommitAck</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>batch_file_message_commit_ack</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Receiving Application</strong><pre><code>  receivingApplication</code></pre></td>
+      <td>POINTER</td>
+      <td>receiving_application</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td>Hl7_Application_Parameter-771</td>
+    </tr>
+    <tr>
+      <td><strong>Transaction Message Type</strong><pre><code>  transactionMessageType</code></pre></td>
+      <td>POINTER</td>
+      <td>transaction_message_type</td>
+      <td> </td>
+      <td> </td>
+      <td>Hl7_Message_Type-771_2</td>
+    </tr>
+    <tr>
+      <td><strong>Event Type</strong><pre><code>  eventType</code></pre></td>
+      <td>POINTER</td>
+      <td>event_type</td>
+      <td> </td>
+      <td> </td>
+      <td>Hl7_Event_Type_Code-779_001</td>
+    </tr>
+    <tr>
+      <td><strong>Message Structure</strong><pre><code>  messageStructure</code></pre></td>
+      <td>POINTER</td>
+      <td>message_structure</td>
+      <td> </td>
+      <td> </td>
+      <td>Hl7_Message_Structure_Code-779_005</td>
+    </tr>
+    <tr>
+      <td><strong>Processing Id</strong><pre><code>  processingId</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>processing_id</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>debug</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Logical Link</strong><pre><code>  logicalLink</code></pre></td>
+      <td>POINTER</td>
+      <td>logical_link</td>
+      <td> </td>
+      <td> </td>
+      <td>Hl_Logical_Link-870</td>
+    </tr>
+    <tr>
+      <td><strong>Accept Ack Code</strong><pre><code>  acceptAckCode</code></pre></td>
+      <td>POINTER</td>
+      <td>accept_ack_code</td>
+      <td> </td>
+      <td> </td>
+      <td>Hl7_Accept_application_Ack_Condition-779_003</td>
+    </tr>
+    <tr>
+      <td><strong>Application Ack Type</strong><pre><code>  applicationAckType</code></pre></td>
+      <td>POINTER</td>
+      <td>application_ack_type</td>
+      <td> </td>
+      <td> </td>
+      <td>Hl7_Accept_application_Ack_Condition-779_003</td>
+    </tr>
+    <tr>
+      <td><strong>Version Id</strong><pre><code>  versionId</code></pre></td>
+      <td>POINTER</td>
+      <td>version_id</td>
+      <td> </td>
+      <td> </td>
+      <td>Hl7_Version-771_5</td>
+    </tr>
+    <tr>
+      <td><strong>Processing Routine</strong><pre><code>  processingRoutine</code></pre></td>
+      <td>STRING</td>
+      <td>processing_routine</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Response Processing Routine</strong><pre><code>  responseProcessingRoutine</code></pre></td>
+      <td>STRING</td>
+      <td>response_processing_routine</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Sending Facility Required?</strong><pre><code>  sendingFacilityRequired</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>sending_facility_required</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Receiving Facility Required?</strong><pre><code>  receivingFacilityRequired</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>receiving_facility_required</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Security Required?</strong><pre><code>  securityRequired</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>security_required</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Date/time Of Message Required?</strong><pre><code>  dateTimeOfMessageRequired</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>date_time_of_message_required</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ack Mode Set In Subscriber</strong><pre><code>  ackModeSetInSubscriber</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>ack_mode_set_in_subscriber</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Routing Logic</strong><pre><code>  routingLogic</code></pre></td>
+      <td>STRING</td>
+      <td>routing_logic</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Subscribers</strong><pre><code>  subscribers</code></pre></td>
+      <td>POINTER</td>
+      <td>subscribers</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-item"><a name="item"></a>1. Item</h3>
+
+<p><strong>Field ID:</strong> item</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Item</strong><pre><code>  item</code></pre></td>
+      <td>POINTER</td>
+      <td>item</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Protocol-101">Protocol-101</a></td>
+    </tr>
+    <tr>
+      <td><strong>Mnemonic</strong><pre><code>  mnemonic</code></pre></td>
+      <td>STRING</td>
+      <td>mnemonic</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Sequence</strong><pre><code>  sequence</code></pre></td>
+      <td>NUMERIC</td>
+      <td>sequence</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Modifying Action</strong><pre><code>  modifyingAction</code></pre></td>
+      <td>POINTER</td>
+      <td>modifying_action</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Protocol-101">Protocol-101</a></td>
+    </tr>
+    <tr>
+      <td><strong>Format Code</strong><pre><code>  formatCode</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>format_code</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>output only</strong></em><br/>1: <em><strong>header</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Display Name</strong><pre><code>  displayName</code></pre></td>
+      <td>STRING</td>
+      <td>display_name</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Prompt</strong><pre><code>  prompt</code></pre></td>
+      <td>STRING</td>
+      <td>prompt</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Default</strong><pre><code>  default</code></pre></td>
+      <td>STRING</td>
+      <td>default</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Help</strong><pre><code>  help</code></pre></td>
+      <td>STRING</td>
+      <td>help</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Mode</strong><pre><code>  mode</code></pre></td>
+      <td>STRING</td>
+      <td>mode</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-method"><a name="method"></a>2. Method</h3>
+
+<p><strong>Field ID:</strong> method</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Method</strong><pre><code>  method</code></pre></td>
+      <td>NUMERIC</td>
+      <td>method</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Method Action</strong><pre><code>  methodAction</code></pre></td>
+      <td>STRING</td>
+      <td>method_action</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

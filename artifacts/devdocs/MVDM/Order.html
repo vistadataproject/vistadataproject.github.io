@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--order"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Order<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="order">Order</h1>
+
+<h3 id="order-1">Order</h3>
+
+<p>This is the file of orders/requisitions made for any package through the
+Order Entry Option (OR).</p>
+
+<p><strong>Fileman ID:</strong> 100</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Order-100">Order-100</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 65</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NUMERIC</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>DATE-TIME</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>STRING</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>17</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 4</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#orderActions">Order Actions</a></td>
+      <td>orderActions</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#orderChecks">Order Checks</a></td>
+      <td>orderChecks</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="#orderDiagnoses">Order Diagnoses</a></td>
+      <td>orderDiagnoses</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><a href="#responses">Responses</a></td>
+      <td>responses</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Order #</strong><pre><code>  orderNumber</code></pre></td>
+      <td>NUMERIC</td>
+      <td>order_number</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Object Of Order</strong><pre><code>  objectOfOrder</code></pre></td>
+      <td>POINTER</td>
+      <td>object_of_order</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td><a href="../VDM/Patient-2">Patient-2</a><br />Referral_Patient-67</td>
+    </tr>
+    <tr>
+      <td><strong>Orderable Items</strong><pre><code>  orderableItems</code></pre></td>
+      <td>POINTER</td>
+      <td>orderable_items</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Order Actions</strong><pre><code>  orderActions</code></pre></td>
+      <td>OBJECT</td>
+      <td>order_actions</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#orderActions">orderActions</a></td>
+    </tr>
+    <tr>
+      <td><strong>Order Checks</strong><pre><code>  orderChecks</code></pre></td>
+      <td>OBJECT</td>
+      <td>order_checks</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#orderChecks">orderChecks</a></td>
+    </tr>
+    <tr>
+      <td><strong>Current Agent/provider</strong><pre><code>  currentAgentProvider</code></pre></td>
+      <td>POINTER</td>
+      <td>current_agent_provider</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Dialog</strong><pre><code>  dialog</code></pre></td>
+      <td>POINTER</td>
+      <td>dialog</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td><a href="../VDM/Option-19">Option-19</a><br /><a href="../VDM/Protocol-101">Protocol-101</a><br /><a href="../VDM/Order_Dialog-101_41">Order_Dialog-101_41</a></td>
+    </tr>
+    <tr>
+      <td><strong>Who Entered</strong><pre><code>  whoEntered</code></pre></td>
+      <td>POINTER</td>
+      <td>who_entered</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>When Entered</strong><pre><code>  whenEntered</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>when_entered</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Responses</strong><pre><code>  responses</code></pre></td>
+      <td>OBJECT</td>
+      <td>responses</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#responses">responses</a></td>
+    </tr>
+    <tr>
+      <td><strong>Status</strong><pre><code>  status</code></pre></td>
+      <td>POINTER</td>
+      <td>status</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Order_Status-100_01">Order_Status-100_01</a></td>
+    </tr>
+    <tr>
+      <td><strong>Order Diagnoses</strong><pre><code>  orderDiagnoses</code></pre></td>
+      <td>OBJECT</td>
+      <td>order_diagnoses</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#orderDiagnoses">orderDiagnoses</a></td>
+    </tr>
+    <tr>
+      <td><strong>Patient Location</strong><pre><code>  patientLocation</code></pre></td>
+      <td>POINTER</td>
+      <td>patient_location</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Hospital_Location-44">Hospital_Location-44</a></td>
+    </tr>
+    <tr>
+      <td><strong>Item Ordered</strong><pre><code>  itemOrdered</code></pre></td>
+      <td>POINTER</td>
+      <td>item_ordered</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Option-19">Option-19</a><br /><a href="../VDM/Laboratory_Test-60">Laboratory_Test-60</a><br /><a href="../VDM/Order_Dialog-101_41">Order_Dialog-101_41</a></td>
+    </tr>
+    <tr>
+      <td><strong>Veiled</strong><pre><code>  veiled</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>veiled</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>VEILED</strong></em><br/>1: <em><strong>UNVEILED</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Type</strong><pre><code>  type81</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>type-8_1</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>BCMA</strong></em><br/>1: <em><strong>PACKAGE</strong></em><br/>2: <em><strong>EDIT</strong></em><br/>3: <em><strong>TRANSFER</strong></em><br/>4: <em><strong>DISCONTINUE</strong></em><br/>5: <em><strong>COPY</strong></em><br/>6: <em><strong>STANDARD</strong></em><br/>7: <em><strong>RENEW</strong></em><br/>8: <em><strong>HOLD</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Replaced Order</strong><pre><code>  replacedOrder</code></pre></td>
+      <td>POINTER</td>
+      <td>replaced_order</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Order-100">Order-100</a></td>
+    </tr>
+    <tr>
+      <td><strong>Replacement Order</strong><pre><code>  replacementOrder</code></pre></td>
+      <td>POINTER</td>
+      <td>replacement_order</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Order-100">Order-100</a></td>
+    </tr>
+    <tr>
+      <td><strong>Patient Class</strong><pre><code>  patientClass</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>patient_class</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>INPATIENT</strong></em><br/>1: <em><strong>OUTPATIENT</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Treating Specialty</strong><pre><code>  treatingSpecialty</code></pre></td>
+      <td>POINTER</td>
+      <td>treating_specialty</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Facility_Treating_Specialty-45_7">Facility_Treating_Specialty-45_7</a></td>
+    </tr>
+    <tr>
+      <td><strong>Package</strong><pre><code>  package</code></pre></td>
+      <td>POINTER</td>
+      <td>package</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td><a href="../VDM/Package-9_4">Package-9_4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Cost</strong><pre><code>  cost</code></pre></td>
+      <td>NUMERIC</td>
+      <td>cost</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Signature Required</strong><pre><code>  signatureRequired</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>signature_required</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>NONE</strong></em><br/>1: <em><strong>ORELSE</strong></em><br/>2: <em><strong>ORES</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Event</strong><pre><code>  event</code></pre></td>
+      <td>POINTER</td>
+      <td>event</td>
+      <td> </td>
+      <td> </td>
+      <td>Oe_rr_Patient_Event-100_2</td>
+    </tr>
+    <tr>
+      <td><strong>Patient Appointment</strong><pre><code>  patientAppointment</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>patient_appointment</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Children</strong><pre><code>  children</code></pre></td>
+      <td>POINTER</td>
+      <td>children</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Start Date</strong><pre><code>  startDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>start_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Stop Date</strong><pre><code>  stopDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>stop_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>To</strong><pre><code>  to</code></pre></td>
+      <td>POINTER</td>
+      <td>to</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td><a href="../VDM/Display_Group-100_98">Display_Group-100_98</a></td>
+    </tr>
+    <tr>
+      <td><strong>Current Action</strong><pre><code>  currentAction</code></pre></td>
+      <td>NUMERIC</td>
+      <td>current_action</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Date Of Last Activity</strong><pre><code>  dateOfLastActivity</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_of_last_activity</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Grace Days Before Purge</strong><pre><code>  graceDaysBeforePurge</code></pre></td>
+      <td>NUMERIC</td>
+      <td>grace_days_before_purge</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Package Reference</strong><pre><code>  packageReference</code></pre></td>
+      <td>STRING</td>
+      <td>package_reference</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Alert On Results</strong><pre><code>  alertOnResults</code></pre></td>
+      <td>POINTER</td>
+      <td>alert_on_results</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Parent</strong><pre><code>  parent</code></pre></td>
+      <td>POINTER</td>
+      <td>parent</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Order-100">Order-100</a></td>
+    </tr>
+    <tr>
+      <td><strong>Lapsed Date/time</strong><pre><code>  lapsedDateTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>lapsed_date_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Service Connected Condition</strong><pre><code>  serviceConnectedCondition</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>service_connected_condition</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Mst</strong><pre><code>  mst</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>mst</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Agent Orange Exposure</strong><pre><code>  agentOrangeExposure</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>agent_orange_exposure</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ionizing Radiation Exposure</strong><pre><code>  ionizingRadiationExposure</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>ionizing_radiation_exposure</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Southwest Asia Conditions</strong><pre><code>  southwestAsiaConditions</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>southwest_asia_conditions</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Head And/or Neck Cancer</strong><pre><code>  headAndOrNeckCancer</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>head_and_or_neck_cancer</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Combat Veteran</strong><pre><code>  combatVeteran</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>combat_veteran</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Shipboard Hazard</strong><pre><code>  shipboardHazard</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>shipboard_hazard</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Nature Of Dc</strong><pre><code>  natureOfDc</code></pre></td>
+      <td>POINTER</td>
+      <td>nature_of_dc</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Nature_Of_Order-100_02">Nature_Of_Order-100_02</a></td>
+    </tr>
+    <tr>
+      <td><strong>Dc'ed By</strong><pre><code>  dcedBy</code></pre></td>
+      <td>POINTER</td>
+      <td>dced_by</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Dc Date/time</strong><pre><code>  dcDateTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>dc_date_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dc Reason</strong><pre><code>  dcReason</code></pre></td>
+      <td>POINTER</td>
+      <td>dc_reason</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Order_Reason-100_03">Order_Reason-100_03</a></td>
+    </tr>
+    <tr>
+      <td><strong>Dc Reason Text</strong><pre><code>  dcReasonText</code></pre></td>
+      <td>STRING</td>
+      <td>dc_reason_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Completed</strong><pre><code>  completed</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>completed</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Completed By</strong><pre><code>  completedBy</code></pre></td>
+      <td>POINTER</td>
+      <td>completed_by</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Dc Event</strong><pre><code>  dcEvent</code></pre></td>
+      <td>POINTER</td>
+      <td>dc_event</td>
+      <td> </td>
+      <td> </td>
+      <td>Oe_rr_Patient_Event-100_2</td>
+    </tr>
+    <tr>
+      <td><strong>Dc Original Order</strong><pre><code>  dcOriginalOrder</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>dc_original_order</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>FALSE</strong></em><br/>1: <em><strong>TRUE</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Results Date/time</strong><pre><code>  resultsDateTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>results_date_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Abnormal Results</strong><pre><code>  abnormalResults</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>abnormal_results</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Findings</strong><pre><code>  findings</code></pre></td>
+      <td>STRING</td>
+      <td>findings</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ba Service Connected Condition</strong><pre><code>  baServiceConnectedCondition</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>ba_service_connected_condition</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ba Military Sexual Trauma</strong><pre><code>  baMilitarySexualTrauma</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>ba_military_sexual_trauma</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ba Agent Orange Exposure</strong><pre><code>  baAgentOrangeExposure</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>ba_agent_orange_exposure</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ba Ionizing Radiation Exposure</strong><pre><code>  baIonizingRadiationExposure</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>ba_ionizing_radiation_exposure</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ba Southwest Asia Conditions</strong><pre><code>  baSouthwestAsiaConditions</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>ba_southwest_asia_conditions</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ba Head And/or Neck Cancer</strong><pre><code>  baHeadAndOrNeckCancer</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>ba_head_and_or_neck_cancer</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ba Combat Veteran</strong><pre><code>  baCombatVeteran</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>ba_combat_veteran</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Pfss Account Reference</strong><pre><code>  pfssAccountReference</code></pre></td>
+      <td>POINTER</td>
+      <td>pfss_account_reference</td>
+      <td> </td>
+      <td> </td>
+      <td>Pfss_Account-375</td>
+    </tr>
+    <tr>
+      <td><strong>Ba Shipboard Hazard</strong><pre><code>  baShipboardHazard</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>ba_shipboard_hazard</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-order-actions"><a name="orderActions"></a>1. Order Actions</h3>
+
+<p><strong>Field ID:</strong> orderActions</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Date/time Ordered</strong><pre><code>  dateTimeOrdered</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_time_ordered</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Order Text</strong><pre><code>  orderText</code></pre></td>
+      <td>STRING</td>
+      <td>order_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>External Text</strong><pre><code>  externalText</code></pre></td>
+      <td>STRING</td>
+      <td>external_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Reason For Action/reject</strong><pre><code>  reasonForActionReject</code></pre></td>
+      <td>STRING</td>
+      <td>reason_for_action_reject</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Action</strong><pre><code>  action</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>action</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td>0: <em><strong>NEW</strong></em><br/>1: <em><strong>HOLD</strong></em><br/>2: <em><strong>DISCONTINUE</strong></em><br/>3: <em><strong>CHANGE</strong></em><br/>4: <em><strong>RELEASE HOLD</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Provider</strong><pre><code>  provider</code></pre></td>
+      <td>POINTER</td>
+      <td>provider</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Signature Status</strong><pre><code>  signatureStatus</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>signature_status</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>NOT REQUIRED due to cancel/lapse</strong></em><br/>1: <em><strong>ON PARENT order</strong></em><br/>2: <em><strong>DIGITALLY SIGNED</strong></em><br/>3: <em><strong>NOT SIGNED</strong></em><br/>4: <em><strong>ON CHART w/written orders</strong></em><br/>5: <em><strong>NOT REQUIRED</strong></em><br/>6: <em><strong>ON CHART w/printed orders</strong></em><br/>7: <em><strong>SERVICE CORRECTION to signed order</strong></em><br/>8: <em><strong>ELECTRONIC</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Signed By</strong><pre><code>  signedBy</code></pre></td>
+      <td>POINTER</td>
+      <td>signed_by</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Date/time Signed</strong><pre><code>  dateTimeSigned</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_time_signed</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Signed On Chart</strong><pre><code>  signedOnChart</code></pre></td>
+      <td>POINTER</td>
+      <td>signed_on_chart</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Verifying Nurse</strong><pre><code>  verifyingNurse</code></pre></td>
+      <td>POINTER</td>
+      <td>verifying_nurse</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Date/time Nurse Verified</strong><pre><code>  dateTimeNurseVerified</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_time_nurse_verified</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Verifying Clerk</strong><pre><code>  verifyingClerk</code></pre></td>
+      <td>POINTER</td>
+      <td>verifying_clerk</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Date/time Clerk Verified</strong><pre><code>  dateTimeClerkVerified</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_time_clerk_verified</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Nature Of Order</strong><pre><code>  natureOfOrder</code></pre></td>
+      <td>POINTER</td>
+      <td>nature_of_order</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Nature_Of_Order-100_02">Nature_Of_Order-100_02</a></td>
+    </tr>
+    <tr>
+      <td><strong>Entered By</strong><pre><code>  enteredBy</code></pre></td>
+      <td>POINTER</td>
+      <td>entered_by</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Text Reference</strong><pre><code>  textReference</code></pre></td>
+      <td>NUMERIC</td>
+      <td>text_reference</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Release Status</strong><pre><code>  releaseStatus</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>release_status</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>pre-release</strong></em><br/>1: <em><strong>dc/edit</strong></em><br/>2: <em><strong>rejected</strong></em><br/>3: <em><strong>unreleased</strong></em><br/>4: <em><strong>lapsed</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Release Date/time</strong><pre><code>  releaseDateTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>release_date_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Releasing Person</strong><pre><code>  releasingPerson</code></pre></td>
+      <td>POINTER</td>
+      <td>releasing_person</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Chart Reviewed By</strong><pre><code>  chartReviewedBy</code></pre></td>
+      <td>POINTER</td>
+      <td>chart_reviewed_by</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Date/time Chart Reviewed</strong><pre><code>  dateTimeChartReviewed</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_time_chart_reviewed</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dc/hold Until</strong><pre><code>  dcHoldUntil</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>dc_hold_until</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dc/hold Released By</strong><pre><code>  dcHoldReleasedBy</code></pre></td>
+      <td>POINTER</td>
+      <td>dc_hold_released_by</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Digital Signature</strong><pre><code>  digitalSignature</code></pre></td>
+      <td>STRING</td>
+      <td>digital_signature</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Drug Schedule</strong><pre><code>  drugSchedule</code></pre></td>
+      <td>STRING</td>
+      <td>drug_schedule</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Digital Signature Required</strong><pre><code>  digitalSignatureRequired</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>digital_signature_required</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Flagged</strong><pre><code>  flagged</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>flagged</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Bulletin</strong><pre><code>  bulletin</code></pre></td>
+      <td>POINTER</td>
+      <td>bulletin</td>
+      <td> </td>
+      <td> </td>
+      <td>Message-3_9</td>
+    </tr>
+    <tr>
+      <td><strong>Date/time Flagged</strong><pre><code>  dateTimeFlagged</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_time_flagged</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Flagged By</strong><pre><code>  flaggedBy</code></pre></td>
+      <td>POINTER</td>
+      <td>flagged_by</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Reason For Flag</strong><pre><code>  reasonForFlag</code></pre></td>
+      <td>STRING</td>
+      <td>reason_for_flag</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Date/time Unflagged</strong><pre><code>  dateTimeUnflagged</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_time_unflagged</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Unflagged By</strong><pre><code>  unflaggedBy</code></pre></td>
+      <td>POINTER</td>
+      <td>unflagged_by</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Reason For Unflag</strong><pre><code>  reasonForUnflag</code></pre></td>
+      <td>STRING</td>
+      <td>reason_for_unflag</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Alerted Provider</strong><pre><code>  alertedProvider</code></pre></td>
+      <td>POINTER</td>
+      <td>alerted_provider</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Ward Comments</strong><pre><code>  wardComments</code></pre></td>
+      <td>STRING</td>
+      <td>ward_comments</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Chart Copy Printed</strong><pre><code>  chartCopyPrinted</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>chart_copy_printed</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Chart Copy Printed When</strong><pre><code>  chartCopyPrintedWhen</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>chart_copy_printed_when</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Chart Copy Printed By</strong><pre><code>  chartCopyPrintedBy</code></pre></td>
+      <td>POINTER</td>
+      <td>chart_copy_printed_by</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Chart Copy Printer</strong><pre><code>  chartCopyPrinter</code></pre></td>
+      <td>STRING</td>
+      <td>chart_copy_printer</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-order-checks"><a name="orderChecks"></a>2. Order Checks</h3>
+
+<p><strong>Field ID:</strong> orderChecks</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Order Check</strong><pre><code>  orderCheck</code></pre></td>
+      <td>POINTER</td>
+      <td>order_check</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Order_Checks-100_8">Order_Checks-100_8</a></td>
+    </tr>
+    <tr>
+      <td><strong>Clinical Danger Level</strong><pre><code>  clinicalDangerLevel</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>clinical_danger_level</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>HIGH</strong></em><br/>1: <em><strong>MODERATE</strong></em><br/>2: <em><strong>LOW</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Override Reason</strong><pre><code>  overrideReason</code></pre></td>
+      <td>STRING</td>
+      <td>override_reason</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Overridden By</strong><pre><code>  overriddenBy</code></pre></td>
+      <td>POINTER</td>
+      <td>overridden_by</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Date/time Overridden</strong><pre><code>  dateTimeOverridden</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_time_overridden</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Order Check Message</strong><pre><code>  orderCheckMessage</code></pre></td>
+      <td>STRING</td>
+      <td>order_check_message</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="3-order-diagnoses"><a name="orderDiagnoses"></a>3. Order Diagnoses</h3>
+
+<p><strong>Field ID:</strong> orderDiagnoses</p>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Order Diagnoses</strong><pre><code>  orderDiagnoses</code></pre></td>
+      <td>POINTER</td>
+      <td>order_diagnoses</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Icd_Diagnosis-80">Icd_Diagnosis-80</a></td>
+    </tr>
+    <tr>
+      <td><strong>Expression</strong><pre><code>  expression</code></pre></td>
+      <td>POINTER</td>
+      <td>expression</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Expressions-757_01">Expressions-757_01</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="4-responses"><a name="responses"></a>4. Responses</h3>
+
+<p><strong>Field ID:</strong> responses</p>
+
+<h4 id="properties-4">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Item Entry</strong><pre><code>  itemEntry</code></pre></td>
+      <td>NUMERIC</td>
+      <td>item_entry</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dialog</strong><pre><code>  dialog</code></pre></td>
+      <td>POINTER</td>
+      <td>dialog</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Order_Dialog-101_41">Order_Dialog-101_41</a></td>
+    </tr>
+    <tr>
+      <td><strong>Instance</strong><pre><code>  instance</code></pre></td>
+      <td>NUMERIC</td>
+      <td>instance</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Id</strong><pre><code>  id04</code></pre></td>
+      <td>STRING</td>
+      <td>id-_04</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Value</strong><pre><code>  value</code></pre></td>
+      <td>STRING</td>
+      <td>value</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Text</strong><pre><code>  text</code></pre></td>
+      <td>STRING</td>
+      <td>text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

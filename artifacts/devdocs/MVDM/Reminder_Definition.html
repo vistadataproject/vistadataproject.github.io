@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--reminder_definition"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Reminder_Definition<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="reminder_definition">Reminder_Definition</h1>
+
+<h3 id="reminder-definition">Reminder Definition</h3>
+
+<p>This file contains Clinical Reminder definitions. For a detailed
+description of the contents of this file, see the Clinical Reminders
+Manager Manual. Additional information may be found at the Clinical
+Reminders web site: http//vista.domain.ext/reminders</p>
+
+<p>This file contains a combination of nationally distributed and local
+entries. Any local entries are assigned an internal entry number
+prefixed with your site number. Nationally distributed entries have
+their name prefixed with VA-. Local entry names cannot start with VA-.</p>
+
+<p><strong>Fileman ID:</strong> 811.9</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Reminder_Definition-811_9">Reminder_Definition-811_9</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 54</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>DATE-TIME</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 7</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#baselineAgeFindings">Baseline Age Findings</a></td>
+      <td>baselineAgeFindings</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#customDateDueArgList">Custom Date Due Arg List</a></td>
+      <td>customDateDueArgList</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="#editHistory">Edit History</a></td>
+      <td>editHistory</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><a href="#findings">Findings</a></td>
+      <td>findings</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><a href="#functionFindings">Function Findings</a></td>
+      <td>functionFindings</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><a href="#functionList">Function List</a></td>
+      <td>functionList</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td><a href="#webSites">Web Sites</a></td>
+      <td>webSites</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>STRING</td>
+      <td>name</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Print Name</strong><pre><code>  printName</code></pre></td>
+      <td>STRING</td>
+      <td>print_name</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Do In Advance Time Frame</strong><pre><code>  doInAdvanceTimeFrame</code></pre></td>
+      <td>STRING</td>
+      <td>do_in_advance_time_frame</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Related Reminder Guideline</strong><pre><code>  relatedReminderGuideline</code></pre></td>
+      <td>POINTER</td>
+      <td>related_reminder_guideline</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Reminder_Definition-811_9">Reminder_Definition-811_9</a></td>
+    </tr>
+    <tr>
+      <td><strong>Inactive Flag</strong><pre><code>  inactiveFlag</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>inactive_flag</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>INACTIVE</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Inactive Change Date</strong><pre><code>  inactiveChangeDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>inactive_change_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ignore On N/a</strong><pre><code>  ignoreOnNA</code></pre></td>
+      <td>STRING</td>
+      <td>ignore_on_n_a</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Sex Specific</strong><pre><code>  sexSpecific</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>sex_specific</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>MALE</strong></em><br/>1: <em><strong>FEMALE</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Priority</strong><pre><code>  priority</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>priority</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>HIGH</strong></em><br/>1: <em><strong>MEDIUM</strong></em><br/>2: <em><strong>LOW</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong><pre><code>  description</code></pre></td>
+      <td>STRING</td>
+      <td>description</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Technical Description</strong><pre><code>  technicalDescription</code></pre></td>
+      <td>STRING</td>
+      <td>technical_description</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Baseline Age Findings</strong><pre><code>  baselineAgeFindings</code></pre></td>
+      <td>OBJECT</td>
+      <td>baseline_age_findings</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#baselineAgeFindings">baselineAgeFindings</a></td>
+    </tr>
+    <tr>
+      <td><strong>Findings</strong><pre><code>  findings</code></pre></td>
+      <td>OBJECT</td>
+      <td>findings</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#findings">findings</a></td>
+    </tr>
+    <tr>
+      <td><strong>Function Findings</strong><pre><code>  functionFindings</code></pre></td>
+      <td>OBJECT</td>
+      <td>function_findings</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#functionFindings">functionFindings</a></td>
+    </tr>
+    <tr>
+      <td><strong>Customized Cohort Logic</strong><pre><code>  customizedCohortLogic</code></pre></td>
+      <td>STRING</td>
+      <td>customized_cohort_logic</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Internal Patient Cohort Logic</strong><pre><code>  internalPatientCohortLogic</code></pre></td>
+      <td>STRING</td>
+      <td>internal_patient_cohort_logic</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Patient Cohort Findings Count</strong><pre><code>  patientCohortFindingsCount</code></pre></td>
+      <td>NUMERIC</td>
+      <td>patient_cohort_findings_count</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Patient Cohort Findings List</strong><pre><code>  patientCohortFindingsList</code></pre></td>
+      <td>STRING</td>
+      <td>patient_cohort_findings_list</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Customized Resolution Logic</strong><pre><code>  customizedResolutionLogic</code></pre></td>
+      <td>STRING</td>
+      <td>customized_resolution_logic</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Internal Resolution Logic</strong><pre><code>  internalResolutionLogic</code></pre></td>
+      <td>STRING</td>
+      <td>internal_resolution_logic</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Resolution Findings Count</strong><pre><code>  resolutionFindingsCount</code></pre></td>
+      <td>NUMERIC</td>
+      <td>resolution_findings_count</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Resolution Findings List</strong><pre><code>  resolutionFindingsList</code></pre></td>
+      <td>STRING</td>
+      <td>resolution_findings_list</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Age Findings Count</strong><pre><code>  ageFindingsCount</code></pre></td>
+      <td>NUMERIC</td>
+      <td>age_findings_count</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Age Findings List</strong><pre><code>  ageFindingsList</code></pre></td>
+      <td>STRING</td>
+      <td>age_findings_list</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Information Findings Count</strong><pre><code>  informationFindingsCount</code></pre></td>
+      <td>NUMERIC</td>
+      <td>information_findings_count</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Information Findings List</strong><pre><code>  informationFindingsList</code></pre></td>
+      <td>STRING</td>
+      <td>information_findings_list</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Custom Date Due</strong><pre><code>  customDateDue</code></pre></td>
+      <td>STRING</td>
+      <td>custom_date_due</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Custom Date Due Function</strong><pre><code>  customDateDueFunction</code></pre></td>
+      <td>STRING</td>
+      <td>custom_date_due_function</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Number Of Arguments</strong><pre><code>  numberOfArguments</code></pre></td>
+      <td>NUMERIC</td>
+      <td>number_of_arguments</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Custom Date Due Arg List</strong><pre><code>  customDateDueArgList</code></pre></td>
+      <td>OBJECT</td>
+      <td>custom_date_due_arg_list</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#customDateDueArgList">customDateDueArgList</a></td>
+    </tr>
+    <tr>
+      <td><strong>Web Sites</strong><pre><code>  webSites</code></pre></td>
+      <td>OBJECT</td>
+      <td>web_sites</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#webSites">webSites</a></td>
+    </tr>
+    <tr>
+      <td><strong>Linked Reminder Dialog</strong><pre><code>  linkedReminderDialog</code></pre></td>
+      <td>POINTER</td>
+      <td>linked_reminder_dialog</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td><a href="../VDM/Reminder_Dialog-801_41">Reminder_Dialog-801_41</a></td>
+    </tr>
+    <tr>
+      <td><strong>General Cohort Found Text</strong><pre><code>  generalCohortFoundText</code></pre></td>
+      <td>STRING</td>
+      <td>general_cohort_found_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>General Cohort Not Found Text</strong><pre><code>  generalCohortNotFoundText</code></pre></td>
+      <td>STRING</td>
+      <td>general_cohort_not_found_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong># Of Gen. Cohort Found Lines</strong><pre><code>  numberOfGenCohortFoundLines</code></pre></td>
+      <td>STRING</td>
+      <td>number_of_gen_cohort_found_lines</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong># Gen. Cohort Not Found Lines</strong><pre><code>  numberGenCohortNotFoundLines</code></pre></td>
+      <td>STRING</td>
+      <td>number_gen_cohort_not_found_lines</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>General Res. Found Text</strong><pre><code>  generalResFoundText</code></pre></td>
+      <td>STRING</td>
+      <td>general_res_found_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>General Res. Not Found Text</strong><pre><code>  generalResNotFoundText</code></pre></td>
+      <td>STRING</td>
+      <td>general_res_not_found_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong># Gen. Res. Found Lines</strong><pre><code>  numberGenResFoundLines</code></pre></td>
+      <td>STRING</td>
+      <td>number_gen_res_found_lines</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong># Gen. Res. Not Found Lines</strong><pre><code>  numberGenResNotFoundLines</code></pre></td>
+      <td>STRING</td>
+      <td>number_gen_res_not_found_lines</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Rescission Date</strong><pre><code>  rescissionDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>rescission_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Summary Cohort Found Text</strong><pre><code>  summaryCohortFoundText</code></pre></td>
+      <td>STRING</td>
+      <td>summary_cohort_found_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Summary Cohort Not Found Text</strong><pre><code>  summaryCohortNotFoundText</code></pre></td>
+      <td>STRING</td>
+      <td>summary_cohort_not_found_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong># Sum. Cohort Found Lines</strong><pre><code>  numberSumCohortFoundLines</code></pre></td>
+      <td>STRING</td>
+      <td>number_sum_cohort_found_lines</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong># Sum. Cohort Not Found Lines</strong><pre><code>  numberSumCohortNotFoundLines</code></pre></td>
+      <td>STRING</td>
+      <td>number_sum_cohort_not_found_lines</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Summary Res. Found Text</strong><pre><code>  summaryResFoundText</code></pre></td>
+      <td>STRING</td>
+      <td>summary_res_found_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Summary Res. Not Found Text</strong><pre><code>  summaryResNotFoundText</code></pre></td>
+      <td>STRING</td>
+      <td>summary_res_not_found_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong># Sum. Res. Found Lines</strong><pre><code>  numberSumResFoundLines</code></pre></td>
+      <td>STRING</td>
+      <td>number_sum_res_found_lines</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong># Sum. Res. Not Found Lines</strong><pre><code>  numberSumResNotFoundLines</code></pre></td>
+      <td>STRING</td>
+      <td>number_sum_res_not_found_lines</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Class</strong><pre><code>  class</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>class</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>LOCAL</strong></em><br/>1: <em><strong>NATIONAL</strong></em><br/>2: <em><strong>VISN</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Sponsor</strong><pre><code>  sponsor</code></pre></td>
+      <td>POINTER</td>
+      <td>sponsor</td>
+      <td> </td>
+      <td> </td>
+      <td>Reminder_Sponsor-811_6</td>
+    </tr>
+    <tr>
+      <td><strong>Review Date</strong><pre><code>  reviewDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>review_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Usage</strong><pre><code>  usage</code></pre></td>
+      <td>STRING</td>
+      <td>usage</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Edit History</strong><pre><code>  editHistory</code></pre></td>
+      <td>OBJECT</td>
+      <td>edit_history</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#editHistory">editHistory</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-baseline-age-findings"><a name="baselineAgeFindings"></a>1. Baseline Age Findings</h3>
+
+<p><strong>Field ID:</strong> baselineAgeFindings</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Reminder Frequency</strong><pre><code>  reminderFrequency</code></pre></td>
+      <td>STRING</td>
+      <td>reminder_frequency</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Minimum Age</strong><pre><code>  minimumAge</code></pre></td>
+      <td>NUMERIC</td>
+      <td>minimum_age</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Maximum Age</strong><pre><code>  maximumAge</code></pre></td>
+      <td>NUMERIC</td>
+      <td>maximum_age</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Age Match Text</strong><pre><code>  ageMatchText</code></pre></td>
+      <td>STRING</td>
+      <td>age_match_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Age No Match Text</strong><pre><code>  ageNoMatchText</code></pre></td>
+      <td>STRING</td>
+      <td>age_no_match_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>No. Of Age Match Lines</strong><pre><code>  noOfAgeMatchLines</code></pre></td>
+      <td>STRING</td>
+      <td>no_of_age_match_lines</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>No. Of Age No Match Lines</strong><pre><code>  noOfAgeNoMatchLines</code></pre></td>
+      <td>STRING</td>
+      <td>no_of_age_no_match_lines</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-custom-date-due-arg-list"><a name="customDateDueArgList"></a>2. Custom Date Due Arg List</h3>
+
+<p><strong>Field ID:</strong> customDateDueArgList</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Finding</strong><pre><code>  finding</code></pre></td>
+      <td>NUMERIC</td>
+      <td>finding</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Frequency</strong><pre><code>  frequency</code></pre></td>
+      <td>STRING</td>
+      <td>frequency</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Operator</strong><pre><code>  operator</code></pre></td>
+      <td>STRING</td>
+      <td>operator</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="3-edit-history"><a name="editHistory"></a>3. Edit History</h3>
+
+<p><strong>Field ID:</strong> editHistory</p>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Edit Date</strong><pre><code>  editDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>edit_date</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Edit By</strong><pre><code>  editBy</code></pre></td>
+      <td>POINTER</td>
+      <td>edit_by</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Edit Comments</strong><pre><code>  editComments</code></pre></td>
+      <td>STRING</td>
+      <td>edit_comments</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="4-findings"><a name="findings"></a>4. Findings</h3>
+
+<p><strong>Field ID:</strong> findings</p>
+
+<h4 id="properties-4">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Finding Item</strong><pre><code>  findingItem</code></pre></td>
+      <td>POINTER</td>
+      <td>finding_item</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Drug-50">Drug-50</a><br /><a href="../VDM/Education_Topics-9999999_09">Education_Topics-9999999_09</a><br /><a href="../VDM/Exam-9999999_15">Exam-9999999_15</a><br /><a href="../VDM/Health_Factors-9999999_64">Health_Factors-9999999_64</a><br /><a href="../VDM/Immunization-9999999_14">Immunization-9999999_14</a><br /><a href="../VDM/Laboratory_Test-60">Laboratory_Test-60</a><br /><a href="../VDM/Mh_Tests_And_Surveys-601_71">Mh_Tests_And_Surveys-601_71</a><br /><a href="../VDM/Orderable_Items-101_43">Orderable_Items-101_43</a><br />Rad_nuc_Med_Procedures-71<br />Reminder_Computed_Findings-811_4<br />Reminder_Taxonomy-811_2<br />Reminder_Term-811_5<br /><a href="../VDM/Skin_Test-9999999_28">Skin_Test-9999999_28</a><br /><a href="../VDM/VA_Drug_Class-50_605">VA_Drug_Class-50_605</a><br /><a href="../VDM/VA_Generic-50_6">VA_Generic-50_6</a><br /><a href="../VDM/Gmrv_Vital_Type-120_51">Gmrv_Vital_Type-120_51</a><br />Reminder_Location_List-810_9</td>
+    </tr>
+    <tr>
+      <td><strong>Minimum Age</strong><pre><code>  minimumAge</code></pre></td>
+      <td>NUMERIC</td>
+      <td>minimum_age</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Maximum Age</strong><pre><code>  maximumAge</code></pre></td>
+      <td>NUMERIC</td>
+      <td>maximum_age</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Reminder Frequency</strong><pre><code>  reminderFrequency</code></pre></td>
+      <td>STRING</td>
+      <td>reminder_frequency</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Found Text</strong><pre><code>  foundText</code></pre></td>
+      <td>STRING</td>
+      <td>found_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Not Found Text</strong><pre><code>  notFoundText</code></pre></td>
+      <td>STRING</td>
+      <td>not_found_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Rank Frequency</strong><pre><code>  rankFrequency</code></pre></td>
+      <td>NUMERIC</td>
+      <td>rank_frequency</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Use In Resolution Logic</strong><pre><code>  useInResolutionLogic</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>use_in_resolution_logic</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>AND</strong></em><br/>1: <em><strong>AND NOT</strong></em><br/>2: <em><strong>OR</strong></em><br/>3: <em><strong>OR NOT</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Use In Patient Cohort Logic</strong><pre><code>  useInPatientCohortLogic</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>use_in_patient_cohort_logic</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>AND</strong></em><br/>1: <em><strong>AND NOT</strong></em><br/>2: <em><strong>OR</strong></em><br/>3: <em><strong>OR NOT</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Beginning Date/time</strong><pre><code>  beginningDateTime</code></pre></td>
+      <td>STRING</td>
+      <td>beginning_date_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Use Inactive Problems</strong><pre><code>  useInactiveProblems</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>use_inactive_problems</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>YES</strong></em><br/>1: <em><strong>N</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Within Category Rank</strong><pre><code>  withinCategoryRank</code></pre></td>
+      <td>NUMERIC</td>
+      <td>within_category_rank</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ending Date/time</strong><pre><code>  endingDateTime</code></pre></td>
+      <td>STRING</td>
+      <td>ending_date_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Mh Scale</strong><pre><code>  mhScale</code></pre></td>
+      <td>NUMERIC</td>
+      <td>mh_scale</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Condition</strong><pre><code>  condition</code></pre></td>
+      <td>STRING</td>
+      <td>condition</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Condition Case Sensitive</strong><pre><code>  conditionCaseSensitive</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>condition_case_sensitive</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Rxtype</strong><pre><code>  rxtype</code></pre></td>
+      <td>STRING</td>
+      <td>rxtype</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Occurrence Count</strong><pre><code>  occurrenceCount</code></pre></td>
+      <td>NUMERIC</td>
+      <td>occurrence_count</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Use Status/cond In Search</strong><pre><code>  useStatusCondInSearch</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>use_status_cond_in_search</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Status List</strong><pre><code>  statusList</code></pre></td>
+      <td>STRING</td>
+      <td>status_list</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Internal Condition</strong><pre><code>  internalCondition</code></pre></td>
+      <td>STRING</td>
+      <td>internal_condition</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>V Subscript List</strong><pre><code>  vSubscriptList</code></pre></td>
+      <td>STRING</td>
+      <td>v_subscript_list</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>No. Of Found Text Lines</strong><pre><code>  noOfFoundTextLines</code></pre></td>
+      <td>STRING</td>
+      <td>no_of_found_text_lines</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>No. Not Found Text Lines</strong><pre><code>  noNotFoundTextLines</code></pre></td>
+      <td>STRING</td>
+      <td>no_not_found_text_lines</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Computed Finding Parameter</strong><pre><code>  computedFindingParameter</code></pre></td>
+      <td>STRING</td>
+      <td>computed_finding_parameter</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Use Start Date</strong><pre><code>  useStartDate</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>use_start_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Include Visit Data</strong><pre><code>  includeVisitData</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>include_visit_data</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="5-function-findings"><a name="functionFindings"></a>5. Function Findings</h3>
+
+<p><strong>Field ID:</strong> functionFindings</p>
+
+<h4 id="properties-5">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Function Finding Number</strong><pre><code>  functionFindingNumber</code></pre></td>
+      <td>NUMERIC</td>
+      <td>function_finding_number</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Found Text</strong><pre><code>  foundText</code></pre></td>
+      <td>STRING</td>
+      <td>found_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Not Found Text</strong><pre><code>  notFoundText</code></pre></td>
+      <td>STRING</td>
+      <td>not_found_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Function String</strong><pre><code>  functionString</code></pre></td>
+      <td>STRING</td>
+      <td>function_string</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Function List</strong><pre><code>  functionList</code></pre></td>
+      <td>OBJECT</td>
+      <td>function_list</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#functionList">functionList</a></td>
+    </tr>
+    <tr>
+      <td><strong>Logic</strong><pre><code>  logic</code></pre></td>
+      <td>STRING</td>
+      <td>logic</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Use In Resolution Logic</strong><pre><code>  useInResolutionLogic</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>use_in_resolution_logic</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>AND</strong></em><br/>1: <em><strong>AND NOT</strong></em><br/>2: <em><strong>OR</strong></em><br/>3: <em><strong>OR NOT</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Use In Patient Cohort Logic</strong><pre><code>  useInPatientCohortLogic</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>use_in_patient_cohort_logic</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>AND</strong></em><br/>1: <em><strong>AND NOT</strong></em><br/>2: <em><strong>OR</strong></em><br/>3: <em><strong>OR NOT</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Minimum Age</strong><pre><code>  minimumAge</code></pre></td>
+      <td>NUMERIC</td>
+      <td>minimum_age</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Maximum Age</strong><pre><code>  maximumAge</code></pre></td>
+      <td>NUMERIC</td>
+      <td>maximum_age</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Reminder Frequency</strong><pre><code>  reminderFrequency</code></pre></td>
+      <td>STRING</td>
+      <td>reminder_frequency</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Rank Frequency</strong><pre><code>  rankFrequency</code></pre></td>
+      <td>NUMERIC</td>
+      <td>rank_frequency</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>STRING</td>
+      <td>name</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>No. Found Text Lines</strong><pre><code>  noFoundTextLines</code></pre></td>
+      <td>STRING</td>
+      <td>no_found_text_lines</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>No. Not Found Text Lines</strong><pre><code>  noNotFoundTextLines</code></pre></td>
+      <td>STRING</td>
+      <td>no_not_found_text_lines</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="6-function-list"><a name="functionList"></a>6. Function List</h3>
+
+<p><strong>Field ID:</strong> functionList</p>
+
+<h4 id="properties-6">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Function Number</strong><pre><code>  functionNumber</code></pre></td>
+      <td>NUMERIC</td>
+      <td>function_number</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Function</strong><pre><code>  function</code></pre></td>
+      <td>POINTER</td>
+      <td>function</td>
+      <td> </td>
+      <td> </td>
+      <td>Reminder_Function_Finding_Functions-802_4</td>
+    </tr>
+    <tr>
+      <td><strong>Function Argument List</strong><pre><code>  functionArgumentList</code></pre></td>
+      <td>NUMERIC</td>
+      <td>function_argument_list</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="7-web-sites"><a name="webSites"></a>7. Web Sites</h3>
+
+<p><strong>Field ID:</strong> webSites</p>
+
+<h4 id="properties-7">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Url</strong><pre><code>  url</code></pre></td>
+      <td>STRING</td>
+      <td>url</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Web Site Title</strong><pre><code>  webSiteTitle</code></pre></td>
+      <td>STRING</td>
+      <td>web_site_title</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Web Site Description</strong><pre><code>  webSiteDescription</code></pre></td>
+      <td>STRING</td>
+      <td>web_site_description</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

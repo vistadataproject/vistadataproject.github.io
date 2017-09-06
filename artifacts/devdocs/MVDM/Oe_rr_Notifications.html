@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--oe_rr_notifications"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Oe_rr_Notifications<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="oe_rr_notifications">Oe_rr_Notifications</h1>
+
+<h3 id="oerr-notifications">Oe/rr Notifications</h3>
+
+<p>This file contains data used to generate notifications.  Packages
+determine if a notification should be sent then send the patient ID and
+notification ID (IEN in this file) to order entry routines.  Based on the
+notification IEN, data from this file is used to generate the notification
+and help determine its recipients.</p>
+
+<p><strong>Fileman ID:</strong> 100.9</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Oe_rr_Notifications-100_9">Oe_rr_Notifications-100_9</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 12</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IEN</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>STRING</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 0</p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Number</strong><pre><code>  number</code></pre></td>
+      <td>IEN</td>
+      <td>number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>STRING</td>
+      <td>name</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Package Id</strong><pre><code>  packageId</code></pre></td>
+      <td>STRING</td>
+      <td>package_id</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Message Text</strong><pre><code>  messageText</code></pre></td>
+      <td>STRING</td>
+      <td>message_text</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Message Type</strong><pre><code>  messageType</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>message_type</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>NOTIFICATION FILE PROVIDES MESSAGE</strong></em><br/>1: <em><strong>PACKAGE PROVIDES A VARIABLE MESSAGE</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Action Flag</strong><pre><code>  actionFlag</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>action_flag</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>RUN ROUTINE</strong></em><br/>1: <em><strong>INFORMATION ONLY</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Entry Point</strong><pre><code>  entryPoint</code></pre></td>
+      <td>STRING</td>
+      <td>entry_point</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Routine Name</strong><pre><code>  routineName</code></pre></td>
+      <td>STRING</td>
+      <td>routine_name</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Non-menu Type Option Action</strong><pre><code>  nonmenuTypeOptionAction</code></pre></td>
+      <td>POINTER</td>
+      <td>nonmenu_type_option_action</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Option-19">Option-19</a></td>
+    </tr>
+    <tr>
+      <td><strong>Related Package</strong><pre><code>  relatedPackage</code></pre></td>
+      <td>STRING</td>
+      <td>related_package</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong><pre><code>  description</code></pre></td>
+      <td>STRING</td>
+      <td>description</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Follow-up Type</strong><pre><code>  followupType</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>followup_type</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>EXPIRING_ORDER</strong></em><br/>1: <em><strong>COSIGN_ORDER</strong></em><br/>2: <em><strong>COSIGN_PN</strong></em><br/>3: <em><strong>FLAGGED_ORDER</strong></em><br/>4: <em><strong>UNVERIFIED_MED</strong></em><br/>5: <em><strong>NEW_ORDER</strong></em><br/>6: <em><strong>NEW_CONSULT</strong></em><br/>7: <em><strong>UNSIGN_PN</strong></em><br/>8: <em><strong>REPORT</strong></em><br/>9: <em><strong>ES_ORDER</strong></em><br/>10: <em><strong>UNLINKED</strong></em><br/>11: <em><strong>ORDER</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

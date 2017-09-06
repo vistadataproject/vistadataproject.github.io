@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--oe_rr_release_events"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Oe_rr_Release_Events<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="oe_rr_release_events">Oe_rr_Release_Events</h1>
+
+<h3 id="oerr-release-events">Oe/rr Release Events</h3>
+
+<p>This file contains the locally-defined events that can release delayed
+orders within each division.</p>
+
+<p>It is strongly recommended that this file not be edited with
+File Manager.  Please use the edit options provided within CPRS.</p>
+
+<p><strong>Fileman ID:</strong> 100.5</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Oe_rr_Release_Events-100_5">Oe_rr_Release_Events-100_5</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 17</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>DATE-TIME</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 3</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#activationHistory">Activation History</a></td>
+      <td>activationHistory</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#editHistory">Edit History</a></td>
+      <td>editHistory</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="#includedTreatingSpecialties">Included Treating Specialties</a></td>
+      <td>includedTreatingSpecialties</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>STRING</td>
+      <td>name</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Short Name</strong><pre><code>  shortName</code></pre></td>
+      <td>STRING</td>
+      <td>short_name</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Inactivated</strong><pre><code>  inactivated</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>inactivated</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Activation History</strong><pre><code>  activationHistory</code></pre></td>
+      <td>OBJECT</td>
+      <td>activation_history</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#activationHistory">activationHistory</a></td>
+    </tr>
+    <tr>
+      <td><strong>Type Of Event</strong><pre><code>  typeOfEvent</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>type_of_event</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td>0: <em><strong>TRANSFER</strong></em><br/>1: <em><strong>ADMISSION</strong></em><br/>2: <em><strong>O.R.</strong></em><br/>3: <em><strong>MANUAL RELEASE</strong></em><br/>4: <em><strong>DISCHARGE</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Division</strong><pre><code>  division</code></pre></td>
+      <td>POINTER</td>
+      <td>division</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td><a href="../VDM/Institution-4">Institution-4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Event Order Dialog</strong><pre><code>  eventOrderDialog</code></pre></td>
+      <td>POINTER</td>
+      <td>event_order_dialog</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Order_Dialog-101_41">Order_Dialog-101_41</a></td>
+    </tr>
+    <tr>
+      <td><strong>Order Set/menu</strong><pre><code>  orderSetMenu</code></pre></td>
+      <td>POINTER</td>
+      <td>order_set_menu</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Order_Dialog-101_41">Order_Dialog-101_41</a></td>
+    </tr>
+    <tr>
+      <td><strong>Lapse In #days</strong><pre><code>  lapseInNumberdays</code></pre></td>
+      <td>NUMERIC</td>
+      <td>lapse_in_numberdays</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Mas Movement Type</strong><pre><code>  masMovementType</code></pre></td>
+      <td>POINTER</td>
+      <td>mas_movement_type</td>
+      <td> </td>
+      <td> </td>
+      <td>Mas_Movement_Type-405_2</td>
+    </tr>
+    <tr>
+      <td><strong>Display Text</strong><pre><code>  displayText</code></pre></td>
+      <td>STRING</td>
+      <td>display_text</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ordering Parameters Location</strong><pre><code>  orderingParametersLocation</code></pre></td>
+      <td>POINTER</td>
+      <td>ordering_parameters_location</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Hospital_Location-44">Hospital_Location-44</a></td>
+    </tr>
+    <tr>
+      <td><strong>Included Treating Specialties</strong><pre><code>  includedTreatingSpecialties</code></pre></td>
+      <td>OBJECT</td>
+      <td>included_treating_specialties</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#includedTreatingSpecialties">includedTreatingSpecialties</a></td>
+    </tr>
+    <tr>
+      <td><strong>Included Locations</strong><pre><code>  includedLocations</code></pre></td>
+      <td>POINTER</td>
+      <td>included_locations</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Edit History</strong><pre><code>  editHistory</code></pre></td>
+      <td>OBJECT</td>
+      <td>edit_history</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#editHistory">editHistory</a></td>
+    </tr>
+    <tr>
+      <td><strong>Copy Active Orders</strong><pre><code>  copyActiveOrders</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>copy_active_orders</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Parent</strong><pre><code>  parent</code></pre></td>
+      <td>POINTER</td>
+      <td>parent</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td><a href="../VDM/Oe_rr_Release_Events-100_5">Oe_rr_Release_Events-100_5</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-activation-history"><a name="activationHistory"></a>1. Activation History</h3>
+
+<p><strong>Field ID:</strong> activationHistory</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Activation Date/time</strong><pre><code>  activationDateTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>activation_date_time</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Inactivation Date/time</strong><pre><code>  inactivationDateTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>inactivation_date_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-edit-history"><a name="editHistory"></a>2. Edit History</h3>
+
+<p><strong>Field ID:</strong> editHistory</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Edit History</strong><pre><code>  editHistory</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>edit_history</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Who Entered/edited</strong><pre><code>  whoEnteredEdited</code></pre></td>
+      <td>POINTER</td>
+      <td>who_entered_edited</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Action</strong><pre><code>  action</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>action</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>EDIT</strong></em><br/>1: <em><strong>NEW</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="3-included-treating-specialties"><a name="includedTreatingSpecialties"></a>3. Included Treating Specialties</h3>
+
+<p><strong>Field ID:</strong> includedTreatingSpecialties</p>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Included Treating Specialties</strong><pre><code>  includedTreatingSpecialties</code></pre></td>
+      <td>POINTER</td>
+      <td>included_treating_specialties</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Facility_Treating_Specialty-45_7">Facility_Treating_Specialty-45_7</a></td>
+    </tr>
+    <tr>
+      <td><strong>Default</strong><pre><code>  default</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>default</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--tiu_template"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » TIU_Template<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="tiu_template">TIU_Template</h1>
+
+<h3 id="tiu-template">TIU Template</h3>
+
+<p>This file stores TIU Templates, which are on-the-fly boilerplates that
+can be added to any note or addendum in the CPRS GUI.  All shared and
+personal templates, as well as template hierarchy, are stored within
+this file.</p>
+
+<p>Duplicate template names are allowed, usually distinguished by personal
+owner.</p>
+
+<p>This file is intended for the CPRS GUI only.  No server side
+implementation is provided or feasible.  Maintenance of this file
+should only be performed using the Template Editor, which is contained
+within the CPRS GUI.  Bypassing the template editor can cause file
+structure problems.</p>
+
+<p><strong>Fileman ID:</strong> 8927</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/TIU_Template-8927">TIU_Template-8927</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 22</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 1</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#items">Items</a></td>
+      <td>items</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>STRING</td>
+      <td>name</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Blank Lines</strong><pre><code>  blankLines</code></pre></td>
+      <td>NUMERIC</td>
+      <td>blank_lines</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Type</strong><pre><code>  type03</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>type-_03</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>PROCEDURE ROOT FOLDER</strong></em><br/>1: <em><strong>CONSULT ROOT FOLDER</strong></em><br/>2: <em><strong>SHARED ROOT CONTAINER</strong></em><br/>3: <em><strong>CLASS CONTAINER</strong></em><br/>4: <em><strong>TITLE ROOT FOLDER</strong></em><br/>5: <em><strong>PERSONAL ROOT CONTAINER</strong></em><br/>6: <em><strong>TEMPLATE</strong></em><br/>7: <em><strong>GROUP TEMPLATE</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Status</strong><pre><code>  status</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>status</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>ACTIVE</strong></em><br/>1: <em><strong>INACTIVE</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Exclude From Group Boilerplate</strong><pre><code>  excludeFromGroupBoilerplate</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>exclude_from_group_boilerplate</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Personal Owner</strong><pre><code>  personalOwner</code></pre></td>
+      <td>POINTER</td>
+      <td>personal_owner</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Editor Class</strong><pre><code>  editorClass</code></pre></td>
+      <td>POINTER</td>
+      <td>editor_class</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Usr_Class-8930">Usr_Class-8930</a></td>
+    </tr>
+    <tr>
+      <td><strong>Dialog</strong><pre><code>  dialog</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>dialog</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Display Only</strong><pre><code>  displayOnly</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>display_only</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>First Line</strong><pre><code>  firstLine</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>first_line</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>One Item Only</strong><pre><code>  oneItemOnly</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>one_item_only</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Hide Dialog Items</strong><pre><code>  hideDialogItems</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>hide_dialog_items</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Hide Tree Items</strong><pre><code>  hideTreeItems</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>hide_tree_items</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Indent Items</strong><pre><code>  indentItems</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>indent_items</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Reminder Dialog</strong><pre><code>  reminderDialog</code></pre></td>
+      <td>POINTER</td>
+      <td>reminder_dialog</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Reminder_Dialog-801_41">Reminder_Dialog-801_41</a></td>
+    </tr>
+    <tr>
+      <td><strong>Lock</strong><pre><code>  lock</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>lock</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>Locked</strong></em><br/>1: <em><strong>Not Locked</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Com Object</strong><pre><code>  comObject</code></pre></td>
+      <td>POINTER</td>
+      <td>com_object</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Oe_rr_Com_Objects-101_15">Oe_rr_Com_Objects-101_15</a></td>
+    </tr>
+    <tr>
+      <td><strong>Com Param</strong><pre><code>  comParam</code></pre></td>
+      <td>STRING</td>
+      <td>com_param</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Link</strong><pre><code>  link</code></pre></td>
+      <td>POINTER</td>
+      <td>link</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td><a href="../VDM/Tiu_Document_Definition-8925_1">Tiu_Document_Definition-8925_1</a><br /><a href="../VDM/Request_Services-123_5">Request_Services-123_5</a><br /><a href="../VDM/Gmrc_Procedure-123_3">Gmrc_Procedure-123_3</a></td>
+    </tr>
+    <tr>
+      <td><strong>Boilerplate Text</strong><pre><code>  boilerplateText</code></pre></td>
+      <td>STRING</td>
+      <td>boilerplate_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong><pre><code>  description</code></pre></td>
+      <td>STRING</td>
+      <td>description</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Items</strong><pre><code>  items</code></pre></td>
+      <td>OBJECT</td>
+      <td>items</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#items">items</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-items"><a name="items"></a>1. Items</h3>
+
+<p><strong>Field ID:</strong> items</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Sequence</strong><pre><code>  sequence</code></pre></td>
+      <td>NUMERIC</td>
+      <td>sequence</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Item</strong><pre><code>  item</code></pre></td>
+      <td>POINTER</td>
+      <td>item</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/TIU_Template-8927">TIU_Template-8927</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

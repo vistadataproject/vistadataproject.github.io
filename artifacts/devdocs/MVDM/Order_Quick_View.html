@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--order_quick_view"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Order_Quick_View<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="order_quick_view">Order_Quick_View</h1>
+
+<h3 id="order-quick-view">Order Quick View</h3>
+
+<p>The newer CPRS ordering dialogs use a Windows Listview control for
+displaying lists of orderable items and quick orders.  Using this control
+will help us rely less on custom built controls to handle long lists of
+items.  While the Listview control is able to operate on long lists of
+items, it must know at the outset how many items are potentially going to
+display and must be able to map from any sequence number produced by the
+Listview control  to a specific item in the list.  The ORDER QUICK VIEW
+file (101.44) provides this mapping.  It maps a subset of orderable items
+or quick orders in alphabetical order to specific sequence numbers.</p>
+
+<p><strong>Fileman ID:</strong> 101.44</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Order_Quick_View-101_44">Order_Quick_View-101_44</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 4</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 2</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#quickOrder">Quick Order</a></td>
+      <td>quickOrder</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#setMember">Set Member</a></td>
+      <td>setMember</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>STRING</td>
+      <td>name</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Last Update</strong><pre><code>  lastUpdate</code></pre></td>
+      <td>STRING</td>
+      <td>last_update</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Quick Order</strong><pre><code>  quickOrder</code></pre></td>
+      <td>OBJECT</td>
+      <td>quick_order</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#quickOrder">quickOrder</a></td>
+    </tr>
+    <tr>
+      <td><strong>Set Member</strong><pre><code>  setMember</code></pre></td>
+      <td>OBJECT</td>
+      <td>set_member</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#setMember">setMember</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-quick-order"><a name="quickOrder"></a>1. Quick Order</h3>
+
+<p><strong>Field ID:</strong> quickOrder</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Quick Order</strong><pre><code>  quickOrder</code></pre></td>
+      <td>POINTER</td>
+      <td>quick_order</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Order_Dialog-101_41">Order_Dialog-101_41</a></td>
+    </tr>
+    <tr>
+      <td><strong>Display Text</strong><pre><code>  displayText</code></pre></td>
+      <td>STRING</td>
+      <td>display_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-set-member"><a name="setMember"></a>2. Set Member</h3>
+
+<p><strong>Field ID:</strong> setMember</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Set Member</strong><pre><code>  setMember</code></pre></td>
+      <td>POINTER</td>
+      <td>set_member</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Orderable_Items-101_43">Orderable_Items-101_43</a></td>
+    </tr>
+    <tr>
+      <td><strong>Display Text</strong><pre><code>  displayText</code></pre></td>
+      <td>STRING</td>
+      <td>display_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--oe_rr_list"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Oe_rr_List<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="oe_rr_list">Oe_rr_List</h1>
+
+<h3 id="oerr-list">Oe/rr List</h3>
+
+<p>This file contains data related to lists.  Generally these lists take the
+form of provider(s)/patients.</p>
+
+<p><strong>Fileman ID:</strong> 100.21</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Oe_rr_List-100_21">Oe_rr_List-100_21</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 11</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>DATE-TIME</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 3</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#autolink">Autolink</a></td>
+      <td>autolink</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#member">Member</a></td>
+      <td>member</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="#user">User</a></td>
+      <td>user</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>STRING</td>
+      <td>name</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Upper Case</strong><pre><code>  upperCase</code></pre></td>
+      <td>STRING</td>
+      <td>upper_case</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Type</strong><pre><code>  type1</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>type-1</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>PERSONAL PATIENT</strong></em><br/>1: <em><strong>MANUAL REMOVAL/AUTOLINK ADDITION</strong></em><br/>2: <em><strong>TEAM PATIENT AUTOLINKED</strong></em><br/>3: <em><strong>TEAM PATIENT MANUAL</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Device</strong><pre><code>  device</code></pre></td>
+      <td>POINTER</td>
+      <td>device</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Device-3_5">Device-3_5</a></td>
+    </tr>
+    <tr>
+      <td><strong>Creator</strong><pre><code>  creator</code></pre></td>
+      <td>POINTER</td>
+      <td>creator</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Creation D/t</strong><pre><code>  creationDT</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>creation_d_t</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Subscribe</strong><pre><code>  subscribe</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>subscribe</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>User</strong><pre><code>  user</code></pre></td>
+      <td>OBJECT</td>
+      <td>user</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#user">user</a></td>
+    </tr>
+    <tr>
+      <td><strong>Autolink</strong><pre><code>  autolink</code></pre></td>
+      <td>OBJECT</td>
+      <td>autolink</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#autolink">autolink</a></td>
+    </tr>
+    <tr>
+      <td><strong>Member</strong><pre><code>  member</code></pre></td>
+      <td>OBJECT</td>
+      <td>member</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#member">member</a></td>
+    </tr>
+    <tr>
+      <td><strong>Visibility</strong><pre><code>  visibility</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>visibility</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>OWNER</strong></em><br/>1: <em><strong>ALLUSERS</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-autolink"><a name="autolink"></a>1. Autolink</h3>
+
+<p><strong>Field ID:</strong> autolink</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Autolink</strong><pre><code>  autolink</code></pre></td>
+      <td>POINTER</td>
+      <td>autolink</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Ward_Location-42">Ward_Location-42</a><br />Roombed-405_4<br /><a href="../VDM/New_Person-200">New_Person-200</a><br /><a href="../VDM/Facility_Treating_Specialty-45_7">Facility_Treating_Specialty-45_7</a><br /><a href="../VDM/Hospital_Location-44">Hospital_Location-44</a></td>
+    </tr>
+    <tr>
+      <td><strong>Primary Or Attending</strong><pre><code>  primaryOrAttending</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>primary_or_attending</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>attending</strong></em><br/>1: <em><strong>primary</strong></em><br/>2: <em><strong>both</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-member"><a name="member"></a>2. Member</h3>
+
+<p><strong>Field ID:</strong> member</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Member</strong><pre><code>  member</code></pre></td>
+      <td>POINTER</td>
+      <td>member</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Patient-2">Patient-2</a></td>
+    </tr>
+    <tr>
+      <td><strong>View Date/time</strong><pre><code>  viewDateTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>view_date_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*notification Selection</strong><pre><code>  notificationSelection</code></pre></td>
+      <td>POINTER</td>
+      <td>notification_selection</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="3-user"><a name="user"></a>3. User</h3>
+
+<p><strong>Field ID:</strong> user</p>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>User</strong><pre><code>  user</code></pre></td>
+      <td>POINTER</td>
+      <td>user</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Last Date/time Used</strong><pre><code>  lastDateTimeUsed</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>last_date_time_used</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--vimmunization"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » VImmunization<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="vimmunization">VImmunization</h1>
+
+<h3 id="v-immunization">V Immunization</h3>
+
+<p>Contains patient visit encounter immunization information.</p>
+
+<p><strong>Fileman ID:</strong> 9000010.11</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/V_Immunization-9000010_11">V_Immunization-9000010_11</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 50</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>POINTER</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>DATE-TIME</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>UNKNOWN</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>STRING</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 3</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#LoincCodes9000010_1127">Loinc Codes</a></td>
+      <td>LoincCodes9000010_1127</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#SnomedCt9000010_1126">Snomed Ct</a></td>
+      <td>SnomedCt9000010_1126</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="#VisOfferedGivenToPatient-9000010_112">Vis Offered/given To Patient</a></td>
+      <td>VisOfferedGivenToPatient-9000010_112</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Immunization</strong><pre><code>  immunizationType</code></pre></td>
+      <td>POINTER</td>
+      <td>immunization</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Immunization-9999999_14">Immunization-9999999_14</a></td>
+    </tr>
+    <tr>
+      <td><strong>Patient</strong><pre><code>  patient</code></pre></td>
+      <td>POINTER</td>
+      <td><em>GENERATED</em></td>
+      <td>$PATIENTID</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Visit</strong><pre><code>  visit</code></pre></td>
+      <td>POINTER</td>
+      <td>visit</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Visit-9000010">Visit-9000010</a></td>
+    </tr>
+    <tr>
+      <td><strong>Level/series</strong><pre><code>  series</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>series</td>
+      <td> </td>
+      <td> </td>
+      <td>COMPLETE: <em><strong>C</strong></em><br/>PARTIALLY COMPLETE: <em><strong>P</strong></em><br/>SERIES 8: <em><strong>8</strong></em><br/>SERIES 7: <em><strong>7</strong></em><br/>SERIES 6: <em><strong>6</strong></em><br/>SERIES 5: <em><strong>5</strong></em><br/>SERIES 4: <em><strong>4</strong></em><br/>SERIES 3: <em><strong>3</strong></em><br/>SERIES 2: <em><strong>2</strong></em><br/>SERIES 1: <em><strong>1</strong></em><br/>BOOSTER: <em><strong>B</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Lot</strong><pre><code>  lot</code></pre></td>
+      <td>POINTER</td>
+      <td>lot</td>
+      <td> </td>
+      <td> </td>
+      <td>Immunization_Lot-9999999_41</td>
+    </tr>
+    <tr>
+      <td><strong>Reaction</strong><pre><code>  reaction</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>reaction</td>
+      <td> </td>
+      <td> </td>
+      <td>IRRITABILITY: <em><strong>2</strong></em><br/>ANAPHYLAXIS OR COLLAPSE: <em><strong>9</strong></em><br/>NONE: <em><strong>0</strong></em><br/>FEVER: <em><strong>1</strong></em><br/>LETHARGY: <em><strong>6</strong></em><br/>RESPIRATORY DISTRESS: <em><strong>10</strong></em><br/>OTHER: <em><strong>11</strong></em><br/>VOMITING: <em><strong>4</strong></em><br/>ARTHRITIS OR ARTHRALGIAS: <em><strong>8</strong></em><br/>LOCAL REACTION OR SWELLING: <em><strong>3</strong></em><br/>RASH OR ITCHING: <em><strong>5</strong></em><br/>CONVULSIONS: <em><strong>7</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Contraindicated</strong><pre><code>  contraindicated</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>contraindicated</td>
+      <td> </td>
+      <td> </td>
+      <td>NO (OK TO USE IN THE FUTURE): <em><strong>0</strong></em><br/>YES (DO NOT REPEAT THIS VACCINE).: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Dose Override</strong><pre><code>  doseOverride</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>dose_override</td>
+      <td> </td>
+      <td> </td>
+      <td>@: <em><strong>0</strong></em><br/>INVALID--ADMIN ERROR: <em><strong>4</strong></em><br/>FORCED VALID: <em><strong>9</strong></em><br/>INVALID--DEFECTIVE: <em><strong>2</strong></em><br/>INVALID--EXPIRED: <em><strong>3</strong></em><br/>INVALID--BAD STORAGE: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Injection Site</strong><pre><code>  injectionSite</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>injection_site</td>
+      <td> </td>
+      <td> </td>
+      <td>Left Arm Intradermal: <em><strong>LID</strong></em><br/>Both Thighs IM: <em><strong>BTI</strong></em><br/>Oral: <em><strong>O</strong></em><br/>Left Delt IM: <em><strong>LDI</strong></em><br/>Nasal: <em><strong>IN</strong></em><br/>Right Arm SQ: <em><strong>RAS</strong></em><br/>Left Thigh SQ: <em><strong>LTS</strong></em><br/>Right Thigh IM: <em><strong>RTI</strong></em><br/>Left Arm SQ: <em><strong>LAS</strong></em><br/>Left Thigh IM: <em><strong>LTI</strong></em><br/>Right Thigh SQ: <em><strong>RTS</strong></em><br/>Right Delt IM: <em><strong>RDI</strong></em><br/>Right Arm Intradermal: <em><strong>RID</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Volume</strong><pre><code>  volume</code></pre></td>
+      <td>NUMERIC</td>
+      <td>volume</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Date Of Vac Info Statement</strong><pre><code>  dateOfVacInfoStatement</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_of_vac_info_statement</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Created By V Cpt Entry</strong><pre><code>  created_by_v_cpt_entry</code></pre></td>
+      <td>NUMERIC</td>
+      <td>createdByVCptEntry</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Vac Eligibility</strong><pre><code>  vac_eligibility</code></pre></td>
+      <td> </td>
+      <td>vacEligibility</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Import From Outside Registry</strong><pre><code>  import_from_outside_registry</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>importFromOutsideRegistry</td>
+      <td> </td>
+      <td> </td>
+      <td>IMPORTED: <em><strong>1</strong></em><br/>NOT IMPORTED: <em><strong>0</strong></em><br/>EDITED AFTER IMPORT: <em><strong>2</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Ndc</strong><pre><code>  ndc</code></pre></td>
+      <td> </td>
+      <td>ndc</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Administrative Notes</strong><pre><code>  administrative_notes</code></pre></td>
+      <td>STRING</td>
+      <td>administrativeNotes</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Vis Offered/given To Patient</strong><pre><code>  vis_offered_given_to_patient</code></pre></td>
+      <td>OBJECT</td>
+      <td>visOfferedGivenToPatient</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#VisOfferedGivenToPatient-9000010_112">VisOfferedGivenToPatient-9000010_112</a></td>
+    </tr>
+    <tr>
+      <td><strong>Other Diagnosis</strong><pre><code>  otherDiagnosis</code></pre></td>
+      <td>POINTER</td>
+      <td>other_diagnosis</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Icd_Diagnosis-80">Icd_Diagnosis-80</a></td>
+    </tr>
+    <tr>
+      <td><strong>Remarks</strong><pre><code>  remarks</code></pre></td>
+      <td>STRING</td>
+      <td>remarks</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Event Date And Time</strong><pre><code>  eventDateAndTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>event_date_and_time</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ordering Provider</strong><pre><code>  orderingProvider</code></pre></td>
+      <td>POINTER</td>
+      <td>ordering_provider</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Clinic</strong><pre><code>  clinic</code></pre></td>
+      <td>POINTER</td>
+      <td>clinic</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Clinic_Stop-40_7">Clinic_Stop-40_7</a></td>
+    </tr>
+    <tr>
+      <td><strong>Encounter Provider</strong><pre><code>  encounterProvider</code></pre></td>
+      <td>POINTER</td>
+      <td>encounter_provider</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Date/time Recorded</strong><pre><code>  dateTimeRecorded</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_time_recorded</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Immunization Documenter</strong><pre><code>  immunizationDocumenter</code></pre></td>
+      <td>POINTER</td>
+      <td>immunization_documenter</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Lot Number</strong><pre><code>  lotNumber</code></pre></td>
+      <td>POINTER</td>
+      <td>lot_number</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td>Immunization_Lot-9999999_41</td>
+    </tr>
+    <tr>
+      <td><strong>Parent</strong><pre><code>  parent</code></pre></td>
+      <td>POINTER</td>
+      <td>parent</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/V_Immunization-9000010_11">V_Immunization-9000010_11</a></td>
+    </tr>
+    <tr>
+      <td><strong>External Key</strong><pre><code>  externalKey</code></pre></td>
+      <td>STRING</td>
+      <td>external_key</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Outside Provider Name</strong><pre><code>  outsideProviderName</code></pre></td>
+      <td>STRING</td>
+      <td>outside_provider_name</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ancillary POV</strong><pre><code>  ancillaryPov</code></pre></td>
+      <td>POINTER</td>
+      <td>ancillary_pov</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Icd_Diagnosis-80">Icd_Diagnosis-80</a></td>
+    </tr>
+    <tr>
+      <td><strong>User Last Update</strong><pre><code>  userLastUpdate</code></pre></td>
+      <td>POINTER</td>
+      <td>user_last_update</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Ordering Location</strong><pre><code>  orderingLocation</code></pre></td>
+      <td>POINTER</td>
+      <td>ordering_location</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Hospital_Location-44">Hospital_Location-44</a></td>
+    </tr>
+    <tr>
+      <td><strong>Date/time Entered</strong><pre><code>  dateTimeEntered</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_time_entered</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Entered By</strong><pre><code>  enteredBy</code></pre></td>
+      <td>POINTER</td>
+      <td>entered_by</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Date/time Last Modified</strong><pre><code>  dateTimeLastModified</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_time_last_modified</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Last Modified By</strong><pre><code>  lastModifiedBy</code></pre></td>
+      <td>POINTER</td>
+      <td>last_modified_by</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>timestamp</strong><pre><code>  timestamp</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>timestamp</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Event Information Source</strong><pre><code>  eventInformationSource</code></pre></td>
+      <td>POINTER</td>
+      <td>event_information_source</td>
+      <td> </td>
+      <td> </td>
+      <td>Immunization_Info_Source-920_1</td>
+    </tr>
+    <tr>
+      <td><strong>Route Of Administration</strong><pre><code>  routeOfAdministration</code></pre></td>
+      <td>POINTER</td>
+      <td>route_of_administration</td>
+      <td> </td>
+      <td> </td>
+      <td>Imm_Administration_Route-920_2</td>
+    </tr>
+    <tr>
+      <td><strong>Site Of Administration (body)</strong><pre><code>  siteOfAdministrationBody</code></pre></td>
+      <td>POINTER</td>
+      <td>site_of_administration_body</td>
+      <td> </td>
+      <td> </td>
+      <td>Imm_Administration_Site_body-920_3</td>
+    </tr>
+    <tr>
+      <td><strong>Primary Diagnosis</strong><pre><code>  primaryDiagnosis</code></pre></td>
+      <td>POINTER</td>
+      <td>primary_diagnosis</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Icd_Diagnosis-80">Icd_Diagnosis-80</a></td>
+    </tr>
+    <tr>
+      <td><strong>Dosage</strong><pre><code>  dosage</code></pre></td>
+      <td>STRING</td>
+      <td>dosage</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Snomed Ct</strong><pre><code>  snomedCt</code></pre></td>
+      <td>OBJECT</td>
+      <td>snomed_ct</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#SnomedCt9000010_1126">SnomedCt9000010_1126</a></td>
+    </tr>
+    <tr>
+      <td><strong>Loinc Codes</strong><pre><code>  loincCodes</code></pre></td>
+      <td>OBJECT</td>
+      <td>loinc_codes</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#LoincCodes9000010_1127">LoincCodes9000010_1127</a></td>
+    </tr>
+    <tr>
+      <td><strong>Edited Flag</strong><pre><code>  editedFlag</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>edited_flag</td>
+      <td> </td>
+      <td> </td>
+      <td>EDITED: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Audit Trail</strong><pre><code>  auditTrail</code></pre></td>
+      <td>STRING</td>
+      <td>audit_trail</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Comments</strong><pre><code>  comments</code></pre></td>
+      <td>STRING</td>
+      <td>comments</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Verified</strong><pre><code>  verified</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>verified</td>
+      <td> </td>
+      <td> </td>
+      <td>VERIFIED BY PACKAGE: <em><strong>2</strong></em><br/>ELECTRONICALLY SIGNED: <em><strong>1</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Package</strong><pre><code>  package</code></pre></td>
+      <td>POINTER</td>
+      <td>package</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Package-9_4">Package-9_4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Data Source</strong><pre><code>  dataSource</code></pre></td>
+      <td>POINTER</td>
+      <td>data_source</td>
+      <td> </td>
+      <td> </td>
+      <td>Pce_Data_Source-839_7</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-loinc-codes"><a name="LoincCodes9000010_1127"></a>1. Loinc Codes</h3>
+
+<p><strong>Field ID:</strong> LoincCodes9000010_1127</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Loinc Codes</strong><pre><code>  loincCodes</code></pre></td>
+      <td>STRING</td>
+      <td>loinc_codes</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-snomed-ct"><a name="SnomedCt9000010_1126"></a>2. Snomed Ct</h3>
+
+<p><strong>Field ID:</strong> SnomedCt9000010_1126</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Snomed Ct</strong><pre><code>  snomedCt</code></pre></td>
+      <td>STRING</td>
+      <td>snomed_ct</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="3-vis-offeredgiven-to-patient"><a name="VisOfferedGivenToPatient-9000010_112"></a>3. Vis Offered/given To Patient</h3>
+
+<p><strong>Field ID:</strong> VisOfferedGivenToPatient-9000010_112</p>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Vis Offered/given To Patient</strong><pre><code>  visOfferedGivenToPatient</code></pre></td>
+      <td>POINTER</td>
+      <td>vis_offered_given_to_patient</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td>Vaccine_Information_Statement-920</td>
+    </tr>
+    <tr>
+      <td><strong>Date Vis Offered/given</strong><pre><code>  dateVisOfferedGiven</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_vis_offered_given</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

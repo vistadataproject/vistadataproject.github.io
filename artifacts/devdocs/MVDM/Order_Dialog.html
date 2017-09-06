@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--order_dialog"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Order_Dialog<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="order_dialog">Order_Dialog</h1>
+
+<h3 id="order-dialog">Order Dialog</h3>
+
+<p>This file contains the information needed to define how to prompt for each
+order, what values are acceptable, etc.</p>
+
+<p><strong>Fileman ID:</strong> 101.41</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Order_Dialog-101_41">Order_Dialog-101_41</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 30</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 3</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#controls">Controls</a></td>
+      <td>controls</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#items">Items</a></td>
+      <td>items</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="#responses">Responses</a></td>
+      <td>responses</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>STRING</td>
+      <td>name</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Display Text</strong><pre><code>  displayText</code></pre></td>
+      <td>STRING</td>
+      <td>display_text</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Disable</strong><pre><code>  disable</code></pre></td>
+      <td>STRING</td>
+      <td>disable</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Type</strong><pre><code>  type4</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>type-4</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>prompt</strong></em><br/>1: <em><strong>dialog</strong></em><br/>2: <em><strong>menu</strong></em><br/>3: <em><strong>order set</strong></em><br/>4: <em><strong>quick order</strong></em><br/>5: <em><strong>action</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Display Group</strong><pre><code>  displayGroup</code></pre></td>
+      <td>POINTER</td>
+      <td>display_group</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Display_Group-100_98">Display_Group-100_98</a></td>
+    </tr>
+    <tr>
+      <td><strong>Signature Required</strong><pre><code>  signatureRequired</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>signature_required</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>NONE</strong></em><br/>1: <em><strong>ORELSE</strong></em><br/>2: <em><strong>ORES</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Package</strong><pre><code>  package</code></pre></td>
+      <td>POINTER</td>
+      <td>package</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td><a href="../VDM/Package-9_4">Package-9_4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Verify Order</strong><pre><code>  verifyOrder</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>verify_order</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ask For Another Order</strong><pre><code>  askForAnotherOrder</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>ask_for_another_order</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>YES</strong></em><br/>1: <em><strong>YES-DON'T ASK</strong></em><br/>2: <em><strong>NO</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Items</strong><pre><code>  items</code></pre></td>
+      <td>OBJECT</td>
+      <td>items</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#items">items</a></td>
+    </tr>
+    <tr>
+      <td><strong>Data Type</strong><pre><code>  dataType</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>data_type</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>free text</strong></em><br/>1: <em><strong>set of codes</strong></em><br/>2: <em><strong>numeric</strong></em><br/>3: <em><strong>yes/no</strong></em><br/>4: <em><strong>date/time</strong></em><br/>5: <em><strong>word processing</strong></em><br/>6: <em><strong>free text date/time</strong></em><br/>7: <em><strong>pointer</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Domain</strong><pre><code>  domain</code></pre></td>
+      <td>STRING</td>
+      <td>domain</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Id</strong><pre><code>  id13</code></pre></td>
+      <td>STRING</td>
+      <td>id-13</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Validation</strong><pre><code>  validation</code></pre></td>
+      <td>STRING</td>
+      <td>validation</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Additional Text</strong><pre><code>  additionalText</code></pre></td>
+      <td>STRING</td>
+      <td>additional_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong><pre><code>  description</code></pre></td>
+      <td>STRING</td>
+      <td>description</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Responses</strong><pre><code>  responses</code></pre></td>
+      <td>OBJECT</td>
+      <td>responses</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#responses">responses</a></td>
+    </tr>
+    <tr>
+      <td><strong>Entry Action</strong><pre><code>  entryAction</code></pre></td>
+      <td>STRING</td>
+      <td>entry_action</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Quick Setup</strong><pre><code>  quickSetup</code></pre></td>
+      <td>STRING</td>
+      <td>quick_setup</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Exit Action</strong><pre><code>  exitAction</code></pre></td>
+      <td>STRING</td>
+      <td>exit_action</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Controls</strong><pre><code>  controls</code></pre></td>
+      <td>OBJECT</td>
+      <td>controls</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#controls">controls</a></td>
+    </tr>
+    <tr>
+      <td><strong>Column Width</strong><pre><code>  columnWidth</code></pre></td>
+      <td>NUMERIC</td>
+      <td>column_width</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Mnemonic Width</strong><pre><code>  mnemonicWidth</code></pre></td>
+      <td>NUMERIC</td>
+      <td>mnemonic_width</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Path Switch</strong><pre><code>  pathSwitch</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>path_switch</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Listbox Text</strong><pre><code>  listboxText</code></pre></td>
+      <td>STRING</td>
+      <td>listbox_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Window Form Id</strong><pre><code>  windowFormId</code></pre></td>
+      <td>NUMERIC</td>
+      <td>window_form_id</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Create Parent Order</strong><pre><code>  createParentOrder</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>create_parent_order</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Display Subheader</strong><pre><code>  displaySubheader</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>display_subheader</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Auto-accept Quick Order</strong><pre><code>  autoacceptQuickOrder</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>autoaccept_quick_order</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Timestamp</strong><pre><code>  timestamp</code></pre></td>
+      <td>STRING</td>
+      <td>timestamp</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-controls"><a name="controls"></a>1. Controls</h3>
+
+<p><strong>Field ID:</strong> controls</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Logical Name</strong><pre><code>  logicalName</code></pre></td>
+      <td>STRING</td>
+      <td>logical_name</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Item</strong><pre><code>  item</code></pre></td>
+      <td>POINTER</td>
+      <td>item</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Order_Dialog-101_41">Order_Dialog-101_41</a></td>
+    </tr>
+    <tr>
+      <td><strong>Create Sequence</strong><pre><code>  createSequence</code></pre></td>
+      <td>NUMERIC</td>
+      <td>create_sequence</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Control Type</strong><pre><code>  controlType</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>control_type</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>LongCombo</strong></em><br/>1: <em><strong>Edit</strong></em><br/>2: <em><strong>Button</strong></em><br/>3: <em><strong>Label</strong></em><br/>4: <em><strong>SimpleCombo</strong></em><br/>5: <em><strong>ListBox</strong></em><br/>6: <em><strong>Memo</strong></em><br/>7: <em><strong>DropDownList</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Label</strong><pre><code>  label5</code></pre></td>
+      <td>STRING</td>
+      <td>label-5</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Beside</strong><pre><code>  beside</code></pre></td>
+      <td>STRING</td>
+      <td>beside</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Below</strong><pre><code>  below</code></pre></td>
+      <td>STRING</td>
+      <td>below</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Width</strong><pre><code>  width</code></pre></td>
+      <td>NUMERIC</td>
+      <td>width</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Left Control</strong><pre><code>  leftControl</code></pre></td>
+      <td>STRING</td>
+      <td>left_control</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Right Control</strong><pre><code>  rightControl</code></pre></td>
+      <td>STRING</td>
+      <td>right_control</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Height</strong><pre><code>  height</code></pre></td>
+      <td>NUMERIC</td>
+      <td>height</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Upper Control</strong><pre><code>  upperControl</code></pre></td>
+      <td>STRING</td>
+      <td>upper_control</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lower Control</strong><pre><code>  lowerControl</code></pre></td>
+      <td>STRING</td>
+      <td>lower_control</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Tab Sequence</strong><pre><code>  tabSequence</code></pre></td>
+      <td>NUMERIC</td>
+      <td>tab_sequence</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-items"><a name="items"></a>2. Items</h3>
+
+<p><strong>Field ID:</strong> items</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Sequence</strong><pre><code>  sequence</code></pre></td>
+      <td>NUMERIC</td>
+      <td>sequence</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Input Transform</strong><pre><code>  inputTransform</code></pre></td>
+      <td>STRING</td>
+      <td>input_transform</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Parent</strong><pre><code>  parent</code></pre></td>
+      <td>POINTER</td>
+      <td>parent</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Order_Dialog-101_41">Order_Dialog-101_41</a></td>
+    </tr>
+    <tr>
+      <td><strong>Item</strong><pre><code>  item</code></pre></td>
+      <td>POINTER</td>
+      <td>item</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td><a href="../VDM/Order_Dialog-101_41">Order_Dialog-101_41</a></td>
+    </tr>
+    <tr>
+      <td><strong>Mnemonic</strong><pre><code>  mnemonic</code></pre></td>
+      <td>STRING</td>
+      <td>mnemonic</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Display Text</strong><pre><code>  displayText</code></pre></td>
+      <td>STRING</td>
+      <td>display_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Display Only?</strong><pre><code>  displayOnly</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>display_only</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>YES</strong></em><br/>1: <em><strong>YES-HEADER</strong></em><br/>2: <em><strong>NO</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Required</strong><pre><code>  required</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>required</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Multiple Valued</strong><pre><code>  multipleValued</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>multiple_valued</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Max Number Of Multiples</strong><pre><code>  maxNumberOfMultiples</code></pre></td>
+      <td>NUMERIC</td>
+      <td>max_number_of_multiples</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Title</strong><pre><code>  title</code></pre></td>
+      <td>STRING</td>
+      <td>title</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Prompt</strong><pre><code>  prompt</code></pre></td>
+      <td>STRING</td>
+      <td>prompt</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ask On Edit Only</strong><pre><code>  askOnEditOnly</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>ask_on_edit_only</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ask On Action</strong><pre><code>  askOnAction</code></pre></td>
+      <td>STRING</td>
+      <td>ask_on_action</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Index</strong><pre><code>  index</code></pre></td>
+      <td>STRING</td>
+      <td>index</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Help Message</strong><pre><code>  helpMessage</code></pre></td>
+      <td>STRING</td>
+      <td>help_message</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Special Lookup Routine</strong><pre><code>  specialLookupRoutine</code></pre></td>
+      <td>STRING</td>
+      <td>special_lookup_routine</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ask On Condition</strong><pre><code>  askOnCondition</code></pre></td>
+      <td>STRING</td>
+      <td>ask_on_condition</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Screen</strong><pre><code>  screen</code></pre></td>
+      <td>STRING</td>
+      <td>screen</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Post-selection Action</strong><pre><code>  postselectionAction</code></pre></td>
+      <td>STRING</td>
+      <td>postselection_action</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Xecutable Help</strong><pre><code>  xecutableHelp</code></pre></td>
+      <td>STRING</td>
+      <td>xecutable_help</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Default</strong><pre><code>  default</code></pre></td>
+      <td>STRING</td>
+      <td>default</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Default Word-processing Text</strong><pre><code>  defaultWordprocessingText</code></pre></td>
+      <td>STRING</td>
+      <td>default_wordprocessing_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Entry Action</strong><pre><code>  entryAction</code></pre></td>
+      <td>STRING</td>
+      <td>entry_action</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Exit Action</strong><pre><code>  exitAction</code></pre></td>
+      <td>STRING</td>
+      <td>exit_action</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Order Text Sequence</strong><pre><code>  orderTextSequence</code></pre></td>
+      <td>NUMERIC</td>
+      <td>order_text_sequence</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Format</strong><pre><code>  format</code></pre></td>
+      <td>STRING</td>
+      <td>format</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Omit Text</strong><pre><code>  omitText</code></pre></td>
+      <td>STRING</td>
+      <td>omit_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Leading Text</strong><pre><code>  leadingText</code></pre></td>
+      <td>STRING</td>
+      <td>leading_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Trailing Text</strong><pre><code>  trailingText</code></pre></td>
+      <td>STRING</td>
+      <td>trailing_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Start New Line</strong><pre><code>  startNewLine</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>start_new_line</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Word-wrap</strong><pre><code>  wordwrap</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>wordwrap</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>DON'T WRAP</strong></em><br/>1: <em><strong>WRAP</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Windows Control</strong><pre><code>  windowsControl</code></pre></td>
+      <td>STRING</td>
+      <td>windows_control</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Api Name</strong><pre><code>  apiName</code></pre></td>
+      <td>STRING</td>
+      <td>api_name</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Api Parameter #1</strong><pre><code>  apiParameterNumber1</code></pre></td>
+      <td>STRING</td>
+      <td>api_parameter_number1</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Windows Condition</strong><pre><code>  windowsCondition</code></pre></td>
+      <td>STRING</td>
+      <td>windows_condition</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Windows Default</strong><pre><code>  windowsDefault</code></pre></td>
+      <td>STRING</td>
+      <td>windows_default</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="3-responses"><a name="responses"></a>3. Responses</h3>
+
+<p><strong>Field ID:</strong> responses</p>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Item Entry</strong><pre><code>  itemEntry</code></pre></td>
+      <td>NUMERIC</td>
+      <td>item_entry</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dialog</strong><pre><code>  dialog</code></pre></td>
+      <td>POINTER</td>
+      <td>dialog</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td><a href="../VDM/Order_Dialog-101_41">Order_Dialog-101_41</a></td>
+    </tr>
+    <tr>
+      <td><strong>Instance</strong><pre><code>  instance</code></pre></td>
+      <td>NUMERIC</td>
+      <td>instance</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Value</strong><pre><code>  value</code></pre></td>
+      <td>STRING</td>
+      <td>value</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Text</strong><pre><code>  text</code></pre></td>
+      <td>STRING</td>
+      <td>text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

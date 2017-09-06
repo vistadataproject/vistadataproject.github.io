@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--prosthetics_patient"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Prosthetics_Patient<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="prosthetics_patient">Prosthetics_Patient</h1>
+
+<h3 id="prosthetics-patient">Prosthetics Patient</h3>
+
+<p>This file holds vital 10-2319 patient information.  Included is PSC,
+Auto Adaptive Equipment, Clothing Allowance, Hearing Aid,
+Returned Status and other critical patient data.</p>
+
+<p><strong>Fileman ID:</strong> 665</p>
+
+<p><strong>Base VDM Class:</strong> Prosthetics_Patient-665</p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 27</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>POINTER</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>STRING</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>DATE-TIME</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 5</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#dateOfClothingAllowance">Date Of Clothing Allowance</a></td>
+      <td>dateOfClothingAllowance</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#homeOxygenItem">Home Oxygen Item</a></td>
+      <td>homeOxygenItem</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="#homeOxygenPrescription">Home Oxygen Prescription</a></td>
+      <td>homeOxygenPrescription</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><a href="#prostheticDisabilityCode">Prosthetic Disability Code</a></td>
+      <td>prostheticDisabilityCode</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><a href="#pscIssueCard">Psc Issue Card</a></td>
+      <td>pscIssueCard</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>POINTER</td>
+      <td>name</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Patient-2">Patient-2</a></td>
+    </tr>
+    <tr>
+      <td><strong>Station</strong><pre><code>  station</code></pre></td>
+      <td>POINTER</td>
+      <td>station</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td><a href="../VDM/Institution-4">Institution-4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Date Of Clothing Allowance</strong><pre><code>  dateOfClothingAllowance</code></pre></td>
+      <td>OBJECT</td>
+      <td>date_of_clothing_allowance</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#dateOfClothingAllowance">dateOfClothingAllowance</a></td>
+    </tr>
+    <tr>
+      <td><strong>Prosthetic Disability Code</strong><pre><code>  prostheticDisabilityCode</code></pre></td>
+      <td>OBJECT</td>
+      <td>prosthetic_disability_code</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#prostheticDisabilityCode">prostheticDisabilityCode</a></td>
+    </tr>
+    <tr>
+      <td><strong>Psc Issue Card</strong><pre><code>  pscIssueCard</code></pre></td>
+      <td>OBJECT</td>
+      <td>psc_issue_card</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#pscIssueCard">pscIssueCard</a></td>
+    </tr>
+    <tr>
+      <td><strong>Other Data</strong><pre><code>  otherData</code></pre></td>
+      <td>STRING</td>
+      <td>other_data</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Home Oxygen Eligibility</strong><pre><code>  homeOxygenEligibility</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>home_oxygen_eligibility</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>NSC/OP</strong></em><br/>1: <em><strong>SC/OP</strong></em><br/>2: <em><strong>NSC/IP</strong></em><br/>3: <em><strong>SC/IP</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Special Nsc/op Category</strong><pre><code>  specialNscOpCategory</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>special_nsc_op_category</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>PHC</strong></em><br/>1: <em><strong>A & A</strong></em><br/>2: <em><strong>SPECIAL LEGISLATION</strong></em><br/>3: <em><strong>ELIGIBILITY REFORM</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Home Oxygen Contract Location</strong><pre><code>  homeOxygenContractLocation</code></pre></td>
+      <td>POINTER</td>
+      <td>home_oxygen_contract_location</td>
+      <td> </td>
+      <td> </td>
+      <td>Prosthetics_Site_Parameters-669_9</td>
+    </tr>
+    <tr>
+      <td><strong>Home Oxygen Letter To Be Sent</strong><pre><code>  homeOxygenLetterToBeSent</code></pre></td>
+      <td>POINTER</td>
+      <td>home_oxygen_letter_to_be_sent</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td>Pros_Letter-665_2</td>
+    </tr>
+    <tr>
+      <td><strong>Ho Letter 1 Date</strong><pre><code>  hoLetter1Date</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>ho_letter_1_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ho Letter 1 Code</strong><pre><code>  hoLetter1Code</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>ho_letter_1_code</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>DELETED</strong></em><br/>1: <em><strong>PRINTED</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Ho Letter 2 Date</strong><pre><code>  hoLetter2Date</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>ho_letter_2_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ho Letter 2 Code</strong><pre><code>  hoLetter2Code</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>ho_letter_2_code</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>DELETED</strong></em><br/>1: <em><strong>PRINTED</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Ho Letter 3 Date</strong><pre><code>  hoLetter3Date</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>ho_letter_3_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ho Letter 3 Code</strong><pre><code>  hoLetter3Code</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>ho_letter_3_code</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>DELETED</strong></em><br/>1: <em><strong>PRINTED</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Home Oxygen Activation Date</strong><pre><code>  homeOxygenActivationDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>home_oxygen_activation_date</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Home Oxygen Prescription</strong><pre><code>  homeOxygenPrescription</code></pre></td>
+      <td>OBJECT</td>
+      <td>home_oxygen_prescription</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#homeOxygenPrescription">homeOxygenPrescription</a></td>
+    </tr>
+    <tr>
+      <td><strong>Home Oxygen Item</strong><pre><code>  homeOxygenItem</code></pre></td>
+      <td>OBJECT</td>
+      <td>home_oxygen_item</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#homeOxygenItem">homeOxygenItem</a></td>
+    </tr>
+    <tr>
+      <td><strong>Home Oxygen Inactivation Date</strong><pre><code>  homeOxygenInactivationDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>home_oxygen_inactivation_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Home Oxygen Inactivat. Reason</strong><pre><code>  homeOxygenInactivatReason</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>home_oxygen_inactivat_reason</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>MD DISCONTINUED</strong></em><br/>1: <em><strong>ENTERED IN ERROR</strong></em><br/>2: <em><strong>Rx EXPIRED</strong></em><br/>3: <em><strong>DISCONTINUED BY PATIENT</strong></em><br/>4: <em><strong>INPATIENT STATUS</strong></em><br/>5: <em><strong>PATIENT DECEASED</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Home Oxygen Inactivated By</strong><pre><code>  homeOxygenInactivatedBy</code></pre></td>
+      <td>POINTER</td>
+      <td>home_oxygen_inactivated_by</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Height (inches)</strong><pre><code>  heightInches</code></pre></td>
+      <td>NUMERIC</td>
+      <td>height_inches</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Weight (pounds)</strong><pre><code>  weightPounds</code></pre></td>
+      <td>NUMERIC</td>
+      <td>weight_pounds</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Eye Color</strong><pre><code>  eyeColor</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>eye_color</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>BLUE</strong></em><br/>1: <em><strong>BROWN</strong></em><br/>2: <em><strong>GRAY</strong></em><br/>3: <em><strong>HAZEL</strong></em><br/>4: <em><strong>GREEN</strong></em><br/>5: <em><strong>PINK</strong></em><br/>6: <em><strong>BLACK</strong></em><br/>7: <em><strong>WHITE</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Hair Color</strong><pre><code>  hairColor</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>hair_color</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>BROWN</strong></em><br/>1: <em><strong>GRAY</strong></em><br/>2: <em><strong>AUBURN</strong></em><br/>3: <em><strong>BLACK</strong></em><br/>4: <em><strong>WHITE</strong></em><br/>5: <em><strong>BLONDE</strong></em><br/>6: <em><strong>RED</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Critical Comments</strong><pre><code>  criticalComments</code></pre></td>
+      <td>STRING</td>
+      <td>critical_comments</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-date-of-clothing-allowance"><a name="dateOfClothingAllowance"></a>1. Date Of Clothing Allowance</h3>
+
+<p><strong>Field ID:</strong> dateOfClothingAllowance</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Date Of Clothing Allowance</strong><pre><code>  dateOfClothingAllowance</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_of_clothing_allowance</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Eligible/not Eligible</strong><pre><code>  eligibleNotEligible</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>eligible_not_eligible</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>UNKNOWN</strong></em><br/>1: <em><strong>NOT-ELIGIBLE</strong></em><br/>2: <em><strong>ELIGIBLE</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Static/non-static</strong><pre><code>  staticNonstatic</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>static_nonstatic</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>UNKNOWN</strong></em><br/>1: <em><strong>NON-STATIC</strong></em><br/>2: <em><strong>STATIC</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Clothing Allowance Description</strong><pre><code>  clothingAllowanceDescription</code></pre></td>
+      <td>STRING</td>
+      <td>clothing_allowance_description</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Clothing Allowance Exam</strong><pre><code>  clothingAllowanceExam</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>clothing_allowance_exam</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Date Of Exam</strong><pre><code>  dateOfExam</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_of_exam</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Examiner</strong><pre><code>  examiner</code></pre></td>
+      <td>POINTER</td>
+      <td>examiner</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-home-oxygen-item"><a name="homeOxygenItem"></a>2. Home Oxygen Item</h3>
+
+<p><strong>Field ID:</strong> homeOxygenItem</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Item</strong><pre><code>  item</code></pre></td>
+      <td>POINTER</td>
+      <td>item</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td>Pros_Item_Master-661</td>
+    </tr>
+    <tr>
+      <td><strong>Vendor</strong><pre><code>  vendor</code></pre></td>
+      <td>POINTER</td>
+      <td>vendor</td>
+      <td> </td>
+      <td> </td>
+      <td>Vendor-440</td>
+    </tr>
+    <tr>
+      <td><strong>Quantity</strong><pre><code>  quantity</code></pre></td>
+      <td>NUMERIC</td>
+      <td>quantity</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Unit Cost</strong><pre><code>  unitCost</code></pre></td>
+      <td>NUMERIC</td>
+      <td>unit_cost</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Unit Of Issue</strong><pre><code>  unitOfIssue</code></pre></td>
+      <td>POINTER</td>
+      <td>unit_of_issue</td>
+      <td> </td>
+      <td> </td>
+      <td>Unit_Of_Issue-420_5</td>
+    </tr>
+    <tr>
+      <td><strong>Fund Control Point</strong><pre><code>  fundControlPoint</code></pre></td>
+      <td>STRING</td>
+      <td>fund_control_point</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Hcpcs Code</strong><pre><code>  hcpcsCode</code></pre></td>
+      <td>POINTER</td>
+      <td>hcpcs_code</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>Prosthetic_Hcpcs-661_1</td>
+    </tr>
+    <tr>
+      <td><strong>Icd Code</strong><pre><code>  icdCode</code></pre></td>
+      <td>POINTER</td>
+      <td>icd_code</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Icd_Diagnosis-80">Icd_Diagnosis-80</a></td>
+    </tr>
+    <tr>
+      <td><strong>Remarks</strong><pre><code>  remarks</code></pre></td>
+      <td>STRING</td>
+      <td>remarks</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Item Type</strong><pre><code>  itemType</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>item_type</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>Initial Issue</strong></em><br/>1: <em><strong>Repair</strong></em><br/>2: <em><strong>Replace</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Primary Item</strong><pre><code>  primaryItem</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>primary_item</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Home Oxygen Rental Flag</strong><pre><code>  homeOxygenRentalFlag</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>home_oxygen_rental_flag</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>YES</strong></em><br/>1: <em><strong>N</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Home Oxygen Conserving Flag</strong><pre><code>  homeOxygenConservingFlag</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>home_oxygen_conserving_flag</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Pfss Account Flag</strong><pre><code>  pfssAccountFlag</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>pfss_account_flag</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td>0: <em><strong>READY TO PROCESS</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Pfss Account Reference</strong><pre><code>  pfssAccountReference</code></pre></td>
+      <td>POINTER</td>
+      <td>pfss_account_reference</td>
+      <td> </td>
+      <td> </td>
+      <td>Pfss_Account-375</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="3-home-oxygen-prescription"><a name="homeOxygenPrescription"></a>3. Home Oxygen Prescription</h3>
+
+<p><strong>Field ID:</strong> homeOxygenPrescription</p>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Date</strong><pre><code>  date</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Expiration Date</strong><pre><code>  expirationDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>expiration_date</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong><pre><code>  description</code></pre></td>
+      <td>STRING</td>
+      <td>description</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>A&amp;b Letters Sent</strong><pre><code>  abLettersSent</code></pre></td>
+      <td>STRING</td>
+      <td>ab_letters_sent</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Primary Icd Diagnosis Code</strong><pre><code>  primaryIcdDiagnosisCode</code></pre></td>
+      <td>POINTER</td>
+      <td>primary_icd_diagnosis_code</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Icd_Diagnosis-80">Icd_Diagnosis-80</a></td>
+    </tr>
+    <tr>
+      <td><strong>Primary Agent Orange</strong><pre><code>  primaryAgentOrange</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>primary_agent_orange</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Primary Ionized Radiation</strong><pre><code>  primaryIonizedRadiation</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>primary_ionized_radiation</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Primary Service Connected</strong><pre><code>  primaryServiceConnected</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>primary_service_connected</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Primary Environmental Cont.</strong><pre><code>  primaryEnvironmentalCont</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>primary_environmental_cont</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Primary Mst</strong><pre><code>  primaryMst</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>primary_mst</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Primary Head/neck Cancer</strong><pre><code>  primaryHeadNeckCancer</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>primary_head_neck_cancer</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Primary Combat Vet</strong><pre><code>  primaryCombatVet</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>primary_combat_vet</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Secondary Icd Diagnosis Code 1</strong><pre><code>  secondaryIcdDiagnosisCode1</code></pre></td>
+      <td>POINTER</td>
+      <td>secondary_icd_diagnosis_code_1</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Icd_Diagnosis-80">Icd_Diagnosis-80</a></td>
+    </tr>
+    <tr>
+      <td><strong>Secondary Agent Orange 1</strong><pre><code>  secondaryAgentOrange1</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>secondary_agent_orange_1</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Secondary Ionized Radiation 1</strong><pre><code>  secondaryIonizedRadiation1</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>secondary_ionized_radiation_1</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Secondary Service Connected 1</strong><pre><code>  secondaryServiceConnected1</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>secondary_service_connected_1</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Secondary Environmental Cont 1</strong><pre><code>  secondaryEnvironmentalCont1</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>secondary_environmental_cont_1</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Secondary Mst 1</strong><pre><code>  secondaryMst1</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>secondary_mst_1</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Secondary Head/neck Cancer 1</strong><pre><code>  secondaryHeadNeckCancer1</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>secondary_head_neck_cancer_1</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Secondary Combat Vet 1</strong><pre><code>  secondaryCombatVet1</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>secondary_combat_vet_1</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Secondary Icd Diagnosis Code 2</strong><pre><code>  secondaryIcdDiagnosisCode2</code></pre></td>
+      <td>POINTER</td>
+      <td>secondary_icd_diagnosis_code_2</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Icd_Diagnosis-80">Icd_Diagnosis-80</a></td>
+    </tr>
+    <tr>
+      <td><strong>Secondary Agent Orange 2</strong><pre><code>  secondaryAgentOrange2</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>secondary_agent_orange_2</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Secondary Ionized Radiation 2</strong><pre><code>  secondaryIonizedRadiation2</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>secondary_ionized_radiation_2</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Secondary Service Connected 2</strong><pre><code>  secondaryServiceConnected2</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>secondary_service_connected_2</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Secondary Environmental Cont 2</strong><pre><code>  secondaryEnvironmentalCont2</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>secondary_environmental_cont_2</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Secondary Mst 2</strong><pre><code>  secondaryMst2</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>secondary_mst_2</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Secondary Head/neck Cancer 2</strong><pre><code>  secondaryHeadNeckCancer2</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>secondary_head_neck_cancer_2</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Secondary Combat Vet 2</strong><pre><code>  secondaryCombatVet2</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>secondary_combat_vet_2</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Secondary Icd Diagnosis Code 3</strong><pre><code>  secondaryIcdDiagnosisCode3</code></pre></td>
+      <td>POINTER</td>
+      <td>secondary_icd_diagnosis_code_3</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Icd_Diagnosis-80">Icd_Diagnosis-80</a></td>
+    </tr>
+    <tr>
+      <td><strong>Secondary Agent Orange 3</strong><pre><code>  secondaryAgentOrange3</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>secondary_agent_orange_3</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Secondary Ionized Radiation 3</strong><pre><code>  secondaryIonizedRadiation3</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>secondary_ionized_radiation_3</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Secondary Service Connected 3</strong><pre><code>  secondaryServiceConnected3</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>secondary_service_connected_3</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Secondary Environmental Cont 3</strong><pre><code>  secondaryEnvironmentalCont3</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>secondary_environmental_cont_3</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Secondary Mst 3</strong><pre><code>  secondaryMst3</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>secondary_mst_3</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Secondary Head/neck Cancer 3</strong><pre><code>  secondaryHeadNeckCancer3</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>secondary_head_neck_cancer_3</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Secondary Combat Vet 3</strong><pre><code>  secondaryCombatVet3</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>secondary_combat_vet_3</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Pfss New Prescription Flag</strong><pre><code>  pfssNewPrescriptionFlag</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>pfss_new_prescription_flag</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td>0: <em><strong>READY TO PROCESS</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Requestor</strong><pre><code>  requestor</code></pre></td>
+      <td>POINTER</td>
+      <td>requestor</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="4-prosthetic-disability-code"><a name="prostheticDisabilityCode"></a>4. Prosthetic Disability Code</h3>
+
+<p><strong>Field ID:</strong> prostheticDisabilityCode</p>
+
+<h4 id="properties-4">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Prosthetic Disability Code</strong><pre><code>  prostheticDisabilityCode</code></pre></td>
+      <td>POINTER</td>
+      <td>prosthetic_disability_code</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td>Pros_Disability_Code-662</td>
+    </tr>
+    <tr>
+      <td><strong>Date Code Added</strong><pre><code>  dateCodeAdded</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_code_added</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Service/non-service</strong><pre><code>  serviceNonservice</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>service_nonservice</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>SERVICE CONNECTED</strong></em><br/>1: <em><strong>NON-SERVICE CONNECTED</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Eligibility Category</strong><pre><code>  eligibilityCategory</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>eligibility_category</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>V.I.S.T.</strong></em><br/>1: <em><strong>ALL OTHER SERVICE-CONNECTED</strong></em><br/>2: <em><strong>PHC</strong></em><br/>3: <em><strong>VOC REHAB</strong></em><br/>4: <em><strong>OTHERS ELIGIBLE</strong></em><br/>5: <em><strong>SC VIETNAM</strong></em><br/>6: <em><strong>NSC A&A</strong></em><br/>7: <em><strong>EMPLOYEE</strong></em><br/>8: <em><strong>INPATIENT</strong></em><br/>9: <em><strong>PRIMA FACIA</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Special Legislation</strong><pre><code>  specialLegislation</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>special_legislation</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>PL-91-666 (AUTO GRANT)</strong></em><br/>1: <em><strong>PL-91-102</strong></em><br/>2: <em><strong>PL-91-500</strong></em><br/>3: <em><strong>PL-104-262 (ELIG. REFORM)</strong></em><br/>4: <em><strong>PL-97-37</strong></em><br/>5: <em><strong>HOUSEBOUND</strong></em><br/>6: <em><strong>PL-94-581</strong></em><br/>7: <em><strong>PL-96-151</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Add/delete</strong><pre><code>  addDelete</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>add_delete</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>ADD</strong></em><br/>1: <em><strong>DELETE</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Amis Date</strong><pre><code>  amisDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>amis_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Entered By</strong><pre><code>  enteredBy</code></pre></td>
+      <td>POINTER</td>
+      <td>entered_by</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>Remove Code Flag</strong><pre><code>  removeCodeFlag</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>remove_code_flag</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>REMOVED</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Date Code Deleted</strong><pre><code>  dateCodeDeleted</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>date_code_deleted</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="5-psc-issue-card"><a name="pscIssueCard"></a>5. Psc Issue Card</h3>
+
+<p><strong>Field ID:</strong> pscIssueCard</p>
+
+<h4 id="properties-5">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Psc Issue Card Date</strong><pre><code>  pscIssueCardDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>psc_issue_card_date</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Item</strong><pre><code>  item</code></pre></td>
+      <td>POINTER</td>
+      <td>item</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td>Pros_Item_Master-661</td>
+    </tr>
+    <tr>
+      <td><strong>Detailed Description</strong><pre><code>  detailedDescription</code></pre></td>
+      <td>STRING</td>
+      <td>detailed_description</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Serial Number</strong><pre><code>  serialNumber</code></pre></td>
+      <td>STRING</td>
+      <td>serial_number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Psc Category</strong><pre><code>  pscCategory</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>psc_category</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>WHEELCHAIRS</strong></em><br/>1: <em><strong>BLIND AIDS</strong></em><br/>2: <em><strong>ART LIMBS</strong></em><br/>3: <em><strong>BRACES</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Cancelled</strong><pre><code>  cancelled</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>cancelled</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Remarks</strong><pre><code>  remarks</code></pre></td>
+      <td>STRING</td>
+      <td>remarks</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

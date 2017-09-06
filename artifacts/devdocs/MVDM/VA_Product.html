@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--va_product"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » VA_Product<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="va_product">VA_Product</h1>
+
+<h3 id="va-product">VA Product</h3>
+
+<p>Per VHA Directive 2005-044, this file has been "locked down"
+by Data Standardization (DS). The file definition (i.e. data dictionary)
+shall not be modified. All additions, changes and deletions to entries in
+the file shall be done by Enterprise Reference Terminology (ERT) using the
+Master File Server (MFS), provided by Common Services (CS). Creating and/or
+editing locally defined fields in the file are not permitted. Use of
+locally defined fields that were created prior to VHA Directive
+2005-044 shall not be supported.</p>
+
+<p>This file contains a list of available drug products.</p>
+
+<p><strong>Fileman ID:</strong> 50.68</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/VA_Product-50_68">VA_Product-50_68</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 38</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>DATE-TIME</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 3</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#activeIngredients">Active Ingredients</a></td>
+      <td>activeIngredients</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#copayTier">Copay Tier</a></td>
+      <td>copayTier</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="#effectiveDateTime">Effective Date Time</a></td>
+      <td>effectiveDateTime</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>STRING</td>
+      <td>name</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>VA Generic Name</strong><pre><code>  vaGenericName</code></pre></td>
+      <td>POINTER</td>
+      <td>va_generic_name</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/VA_Generic-50_6">VA_Generic-50_6</a></td>
+    </tr>
+    <tr>
+      <td><strong>Dosage Form</strong><pre><code>  dosageForm</code></pre></td>
+      <td>POINTER</td>
+      <td>dosage_form</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Dosage_Form-50_606">Dosage_Form-50_606</a></td>
+    </tr>
+    <tr>
+      <td><strong>Strength</strong><pre><code>  strength</code></pre></td>
+      <td>STRING</td>
+      <td>strength</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Units</strong><pre><code>  units</code></pre></td>
+      <td>POINTER</td>
+      <td>units</td>
+      <td> </td>
+      <td> </td>
+      <td>Drug_Units-50_607</td>
+    </tr>
+    <tr>
+      <td><strong>National Formulary Name</strong><pre><code>  nationalFormularyName</code></pre></td>
+      <td>STRING</td>
+      <td>national_formulary_name</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>VA Print Name</strong><pre><code>  vaPrintName</code></pre></td>
+      <td>STRING</td>
+      <td>va_print_name</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>VA Product Identifier</strong><pre><code>  vaProductIdentifier</code></pre></td>
+      <td>STRING</td>
+      <td>va_product_identifier</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Transmit To Cmop</strong><pre><code>  transmitToCmop</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>transmit_to_cmop</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>VA Dispense Unit</strong><pre><code>  vaDispenseUnit</code></pre></td>
+      <td>POINTER</td>
+      <td>va_dispense_unit</td>
+      <td> </td>
+      <td> </td>
+      <td>VA_Dispense_Unit-50_64</td>
+    </tr>
+    <tr>
+      <td><strong>Gcnseqno</strong><pre><code>  gcnseqno</code></pre></td>
+      <td>NUMERIC</td>
+      <td>gcnseqno</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Previous Gcnseqno</strong><pre><code>  previousGcnseqno</code></pre></td>
+      <td>NUMERIC</td>
+      <td>previous_gcnseqno</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ndc Link To Gcnseqno</strong><pre><code>  ndcLinkToGcnseqno</code></pre></td>
+      <td>STRING</td>
+      <td>ndc_link_to_gcnseqno</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Active Ingredients</strong><pre><code>  activeIngredients</code></pre></td>
+      <td>OBJECT</td>
+      <td>active_ingredients</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#activeIngredients">activeIngredients</a></td>
+    </tr>
+    <tr>
+      <td><strong>Primary VA Drug Class</strong><pre><code>  primaryVaDrugClass</code></pre></td>
+      <td>POINTER</td>
+      <td>primary_va_drug_class</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/VA_Drug_Class-50_605">VA_Drug_Class-50_605</a></td>
+    </tr>
+    <tr>
+      <td><strong>Secondary VA Drug Class</strong><pre><code>  secondaryVaDrugClass</code></pre></td>
+      <td>POINTER</td>
+      <td>secondary_va_drug_class</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>National Formulary Indicator</strong><pre><code>  nationalFormularyIndicator</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>national_formulary_indicator</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>National Formulary Restriction</strong><pre><code>  nationalFormularyRestriction</code></pre></td>
+      <td>STRING</td>
+      <td>national_formulary_restriction</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Cs Federal Schedule</strong><pre><code>  csFederalSchedule</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>cs_federal_schedule</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>Schedule I</strong></em><br/>1: <em><strong>Schedule II</strong></em><br/>2: <em><strong>Schedule III</strong></em><br/>3: <em><strong>Schedule II Non-Narcotics</strong></em><br/>4: <em><strong>Unscheduled</strong></em><br/>5: <em><strong>Schedule IV</strong></em><br/>6: <em><strong>Schedule III Non-Narcotics</strong></em><br/>7: <em><strong>Schedule V</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Single/multi Source Product</strong><pre><code>  singleMultiSourceProduct</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>single_multi_source_product</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>Multisource</strong></em><br/>1: <em><strong>Single source</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Inactivation Date</strong><pre><code>  inactivationDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>inactivation_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Exclude Drg-drg Interaction Ck</strong><pre><code>  excludeDrgdrgInteractionCk</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>exclude_drgdrg_interaction_ck</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Max Single Dose</strong><pre><code>  maxSingleDose</code></pre></td>
+      <td>NUMERIC</td>
+      <td>max_single_dose</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Min Single Dose</strong><pre><code>  minSingleDose</code></pre></td>
+      <td>NUMERIC</td>
+      <td>min_single_dose</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Max Daily Dose</strong><pre><code>  maxDailyDose</code></pre></td>
+      <td>NUMERIC</td>
+      <td>max_daily_dose</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Min Daily Dose</strong><pre><code>  minDailyDose</code></pre></td>
+      <td>NUMERIC</td>
+      <td>min_daily_dose</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Max Cumulative Dose</strong><pre><code>  maxCumulativeDose</code></pre></td>
+      <td>NUMERIC</td>
+      <td>max_cumulative_dose</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Dss Number</strong><pre><code>  dssNumber</code></pre></td>
+      <td>NUMERIC</td>
+      <td>dss_number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Override Df Dose Chk Exclusion</strong><pre><code>  overrideDfDoseChkExclusion</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>override_df_dose_chk_exclusion</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Create Default Possible Dosage</strong><pre><code>  createDefaultPossibleDosage</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>create_default_possible_dosage</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Possible Dosages To Create</strong><pre><code>  possibleDosagesToCreate</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>possible_dosages_to_create</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>1x Possible Dosage</strong></em><br/>1: <em><strong>No Possible Dosages</strong></em><br/>2: <em><strong>1x and 2x Possible Dosages</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Package</strong><pre><code>  package</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>package</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>Both Inpatient and Outpatient</strong></em><br/>1: <em><strong>Inpatient</strong></em><br/>2: <em><strong>Outpatient</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Copay Tier</strong><pre><code>  copayTier</code></pre></td>
+      <td>OBJECT</td>
+      <td>copay_tier</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#copayTier">copayTier</a></td>
+    </tr>
+    <tr>
+      <td><strong>Master Entry For VUID</strong><pre><code>  masterEntryForVuid</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>master_entry_for_vuid</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>VUID</strong><pre><code>  vuid</code></pre></td>
+      <td>STRING</td>
+      <td>vuid</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Effective Date/time</strong><pre><code>  effectiveDateTime</code></pre></td>
+      <td>OBJECT</td>
+      <td>effective_date_time</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#effectiveDateTime">effectiveDateTime</a></td>
+    </tr>
+    <tr>
+      <td><strong>Fda Med Guide</strong><pre><code>  fdaMedGuide</code></pre></td>
+      <td>STRING</td>
+      <td>fda_med_guide</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Service Code</strong><pre><code>  serviceCode</code></pre></td>
+      <td>NUMERIC</td>
+      <td>service_code</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-active-ingredients"><a name="activeIngredients"></a>1. Active Ingredients</h3>
+
+<p><strong>Field ID:</strong> activeIngredients</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Active Ingredients</strong><pre><code>  activeIngredients</code></pre></td>
+      <td>POINTER</td>
+      <td>active_ingredients</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td><a href="../VDM/Drug_Ingredients-50_416">Drug_Ingredients-50_416</a></td>
+    </tr>
+    <tr>
+      <td><strong>Strength</strong><pre><code>  strength</code></pre></td>
+      <td>STRING</td>
+      <td>strength</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Units</strong><pre><code>  units</code></pre></td>
+      <td>POINTER</td>
+      <td>units</td>
+      <td> </td>
+      <td> </td>
+      <td>Drug_Units-50_607</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-copay-tier"><a name="copayTier"></a>2. Copay Tier</h3>
+
+<p><strong>Field ID:</strong> copayTier</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Copay Tier Level</strong><pre><code>  copayTierLevel</code></pre></td>
+      <td>NUMERIC</td>
+      <td>copay_tier_level</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Copay Effective Date</strong><pre><code>  copayEffectiveDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>copay_effective_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Copay End Date</strong><pre><code>  copayEndDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>copay_end_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="3-effective-date-time"><a name="effectiveDateTime"></a>3. Effective Date Time</h3>
+
+<p><strong>Field ID:</strong> effectiveDateTime</p>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Effective Date/time</strong><pre><code>  effectiveDateTime</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>effective_date_time</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Status</strong><pre><code>  status</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>status</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>ACTIVE</strong></em><br/>1: <em><strong>INACTIVE</strong></em></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

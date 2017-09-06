@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--laboratory_test"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Laboratory_Test<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="laboratory_test">Laboratory_Test</h1>
+
+<h3 id="laboratory-test">Laboratory Test</h3>
+
+<p>This is the file that holds the names and ordering, display of tests.</p>
+
+<p><strong>Fileman ID:</strong> 60</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Laboratory_Test-60">Laboratory_Test-60</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 46</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>POINTER</td>
+      <td>13</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 10</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#accessionArea">Accession Area</a></td>
+      <td>accessionArea</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#accessionWkldCode">Accession Wkld Code</a></td>
+      <td>accessionWkldCode</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="#collectionSample">Collection Sample</a></td>
+      <td>collectionSample</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><a href="#foreignComputerSystem">Foreign Computer System</a></td>
+      <td>foreignComputerSystem</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><a href="#labTestIncludedInPanel">Lab Test Included In Panel</a></td>
+      <td>labTestIncludedInPanel</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><a href="#sampleWkldCode">Sample Wkld Code</a></td>
+      <td>sampleWkldCode</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td><a href="#siteNotesDate">Site Notes Date</a></td>
+      <td>siteNotesDate</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td><a href="#siteSpecimen">Site Specimen</a></td>
+      <td>siteSpecimen</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td><a href="#specimenCpt">Specimen Cpt</a></td>
+      <td>specimenCpt</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td><a href="#verifyWkldCode">Verify Wkld Code</a></td>
+      <td>verifyWkldCode</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name</strong><pre><code>  name</code></pre></td>
+      <td>STRING</td>
+      <td>name</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Test Cost</strong><pre><code>  testCost</code></pre></td>
+      <td>NUMERIC</td>
+      <td>test_cost</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Synonym</strong><pre><code>  synonym</code></pre></td>
+      <td>STRING</td>
+      <td>synonym</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Type</strong><pre><code>  type3</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>type-3</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>0: <em><strong>BOTH</strong></em><br/>1: <em><strong>INPUT (CAN BE ORDERED)</strong></em><br/>2: <em><strong>NEITHER</strong></em><br/>3: <em><strong>OUTPUT (CAN BE DISPLAYED)</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Subscript</strong><pre><code>  subscript</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>subscript</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>BLOOD BANK</strong></em><br/>1: <em><strong>ELECTRON MICROSCOPY</strong></em><br/>2: <em><strong>SURGICAL PATHOLOGY</strong></em><br/>3: <em><strong>CYTOLOGY</strong></em><br/>4: <em><strong>MICROBIOLOGY</strong></em><br/>5: <em><strong>CHEM, HEM, TOX, SER, RIA, ETC.</strong></em><br/>6: <em><strong>WORKLOAD</strong></em><br/>7: <em><strong>AUTOPSY</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Location (data Name)</strong><pre><code>  locationDataName</code></pre></td>
+      <td>STRING</td>
+      <td>location_data_name</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Accession Area</strong><pre><code>  accessionArea</code></pre></td>
+      <td>OBJECT</td>
+      <td>accession_area</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#accessionArea">accessionArea</a></td>
+    </tr>
+    <tr>
+      <td><strong>Unique Accession #</strong><pre><code>  uniqueAccessionNumber</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>unique_accession_number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Unique Collection Sample</strong><pre><code>  uniqueCollectionSample</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>unique_collection_sample</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lab Collection Sample</strong><pre><code>  labCollectionSample</code></pre></td>
+      <td>POINTER</td>
+      <td>lab_collection_sample</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Collection_Sample-62">Collection_Sample-62</a></td>
+    </tr>
+    <tr>
+      <td><strong>Required Test</strong><pre><code>  requiredTest</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>required_test</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Field</strong><pre><code>  field</code></pre></td>
+      <td>STRING</td>
+      <td>field</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Procedure (snomed)</strong><pre><code>  procedureSnomed</code></pre></td>
+      <td>POINTER</td>
+      <td>procedure_snomed</td>
+      <td> </td>
+      <td> </td>
+      <td>Procedure_Field-61_5</td>
+    </tr>
+    <tr>
+      <td><strong>*quick Index</strong><pre><code>  quickIndex</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>quick_index</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Extra Labels</strong><pre><code>  extraLabels</code></pre></td>
+      <td>NUMERIC</td>
+      <td>extra_labels</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Highest Urgency Allowed</strong><pre><code>  highestUrgencyAllowed</code></pre></td>
+      <td>POINTER</td>
+      <td>highest_urgency_allowed</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>Urgency-62_05</td>
+    </tr>
+    <tr>
+      <td><strong>Forced Urgency</strong><pre><code>  forcedUrgency</code></pre></td>
+      <td>POINTER</td>
+      <td>forced_urgency</td>
+      <td> </td>
+      <td> </td>
+      <td>Urgency-62_05</td>
+    </tr>
+    <tr>
+      <td><strong>Print Name</strong><pre><code>  printName</code></pre></td>
+      <td>STRING</td>
+      <td>print_name</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Reserved</strong><pre><code>  reserved</code></pre></td>
+      <td>STRING</td>
+      <td>reserved</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Print Code</strong><pre><code>  printCode</code></pre></td>
+      <td>STRING</td>
+      <td>print_code</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Pretty Print Entry</strong><pre><code>  prettyPrintEntry</code></pre></td>
+      <td>STRING</td>
+      <td>pretty_print_entry</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Pretty Print Routine</strong><pre><code>  prettyPrintRoutine</code></pre></td>
+      <td>STRING</td>
+      <td>pretty_print_routine</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Print Order</strong><pre><code>  printOrder</code></pre></td>
+      <td>NUMERIC</td>
+      <td>print_order</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>National VA Lab Code</strong><pre><code>  nationalVaLabCode</code></pre></td>
+      <td>POINTER</td>
+      <td>national_va_lab_code</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td>Wkld_Code-64</td>
+    </tr>
+    <tr>
+      <td><strong>Result Nlt Code</strong><pre><code>  resultNltCode</code></pre></td>
+      <td>POINTER</td>
+      <td>result_nlt_code</td>
+      <td> </td>
+      <td> </td>
+      <td>Wkld_Code-64</td>
+    </tr>
+    <tr>
+      <td><strong>Catalog Item</strong><pre><code>  catalogItem</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>catalog_item</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Edit Code</strong><pre><code>  editCode</code></pre></td>
+      <td>POINTER</td>
+      <td>edit_code</td>
+      <td> </td>
+      <td> </td>
+      <td>Execute_Code-62_07</td>
+    </tr>
+    <tr>
+      <td><strong>*batch Data Code</strong><pre><code>  batchDataCode</code></pre></td>
+      <td>POINTER</td>
+      <td>batch_data_code</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Execute On Data Review</strong><pre><code>  executeOnDataReview</code></pre></td>
+      <td>POINTER</td>
+      <td>execute_on_data_review</td>
+      <td> </td>
+      <td> </td>
+      <td>Execute_Code-62_07</td>
+    </tr>
+    <tr>
+      <td><strong>Site/specimen</strong><pre><code>  siteSpecimen</code></pre></td>
+      <td>OBJECT</td>
+      <td>site_specimen</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#siteSpecimen">siteSpecimen</a></td>
+    </tr>
+    <tr>
+      <td><strong>General Processing Inst.</strong><pre><code>  generalProcessingInst</code></pre></td>
+      <td>STRING</td>
+      <td>general_processing_inst</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lab Test Included In Panel</strong><pre><code>  labTestIncludedInPanel</code></pre></td>
+      <td>OBJECT</td>
+      <td>lab_test_included_in_panel</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#labTestIncludedInPanel">labTestIncludedInPanel</a></td>
+    </tr>
+    <tr>
+      <td><strong>Collection Sample</strong><pre><code>  collectionSample</code></pre></td>
+      <td>OBJECT</td>
+      <td>collection_sample</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#collectionSample">collectionSample</a></td>
+    </tr>
+    <tr>
+      <td><strong>General Ward Instructions</strong><pre><code>  generalWardInstructions</code></pre></td>
+      <td>STRING</td>
+      <td>general_ward_instructions</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Required Comment</strong><pre><code>  requiredComment</code></pre></td>
+      <td>POINTER</td>
+      <td>required_comment</td>
+      <td> </td>
+      <td> </td>
+      <td>Execute_Code-62_07</td>
+    </tr>
+    <tr>
+      <td><strong>Data Name</strong><pre><code>  dataName</code></pre></td>
+      <td>POINTER</td>
+      <td>data_name</td>
+      <td> </td>
+      <td> </td>
+      <td>Lab_Data-63</td>
+    </tr>
+    <tr>
+      <td><strong>Culture Id Prefix</strong><pre><code>  cultureIdPrefix</code></pre></td>
+      <td>NUMERIC</td>
+      <td>culture_id_prefix</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Verify Wkld Code</strong><pre><code>  verifyWkldCode</code></pre></td>
+      <td>OBJECT</td>
+      <td>verify_wkld_code</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#verifyWkldCode">verifyWkldCode</a></td>
+    </tr>
+    <tr>
+      <td><strong>Accession Wkld Code</strong><pre><code>  accessionWkldCode</code></pre></td>
+      <td>OBJECT</td>
+      <td>accession_wkld_code</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#accessionWkldCode">accessionWkldCode</a></td>
+    </tr>
+    <tr>
+      <td><strong>*ask Amis/cap Codes</strong><pre><code>  askAmisCapCodes</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>ask_amis_cap_codes</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Combine Test During Order</strong><pre><code>  combineTestDuringOrder</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>combine_test_during_order</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>YES</strong></em><br/>1: <em><strong>NO</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Cis Test Code</strong><pre><code>  cisTestCode</code></pre></td>
+      <td>STRING</td>
+      <td>cis_test_code</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Site Notes Date</strong><pre><code>  siteNotesDate</code></pre></td>
+      <td>OBJECT</td>
+      <td>site_notes_date</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#siteNotesDate">siteNotesDate</a></td>
+    </tr>
+    <tr>
+      <td><strong>Default Site/specimen Cpt</strong><pre><code>  defaultSiteSpecimenCpt</code></pre></td>
+      <td>POINTER</td>
+      <td>default_site_specimen_cpt</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Cpt-81">Cpt-81</a></td>
+    </tr>
+    <tr>
+      <td><strong>Hcpcs Code</strong><pre><code>  hcpcsCode</code></pre></td>
+      <td>POINTER</td>
+      <td>hcpcs_code</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Cpt-81">Cpt-81</a></td>
+    </tr>
+    <tr>
+      <td><strong>Ama Compliant/billable Panel</strong><pre><code>  amaCompliantBillablePanel</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>ama_compliant_billable_panel</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-accession-area"><a name="accessionArea"></a>1. Accession Area</h3>
+
+<p><strong>Field ID:</strong> accessionArea</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Institution</strong><pre><code>  institution</code></pre></td>
+      <td>POINTER</td>
+      <td>institution</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td><a href="../VDM/Institution-4">Institution-4</a></td>
+    </tr>
+    <tr>
+      <td><strong>Accession Area</strong><pre><code>  accessionArea</code></pre></td>
+      <td>POINTER</td>
+      <td>accession_area</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/Accession-68">Accession-68</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-accession-wkld-code"><a name="accessionWkldCode"></a>2. Accession Wkld Code</h3>
+
+<p><strong>Field ID:</strong> accessionWkldCode</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Accession Wkld Code</strong><pre><code>  accessionWkldCode</code></pre></td>
+      <td>POINTER</td>
+      <td>accession_wkld_code</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>Wkld_Code-64</td>
+    </tr>
+    <tr>
+      <td><strong>Accession Wkld Code #</strong><pre><code>  accessionWkldCodeNumber</code></pre></td>
+      <td>NUMERIC</td>
+      <td>accession_wkld_code_number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Test Multiply Factor</strong><pre><code>  testMultiplyFactor</code></pre></td>
+      <td>NUMERIC</td>
+      <td>test_multiply_factor</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="3-collection-sample"><a name="collectionSample"></a>3. Collection Sample</h3>
+
+<p><strong>Field ID:</strong> collectionSample</p>
+
+<h4 id="properties-3">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Collection Sample</strong><pre><code>  collectionSample</code></pre></td>
+      <td>POINTER</td>
+      <td>collection_sample</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Collection_Sample-62">Collection_Sample-62</a></td>
+    </tr>
+    <tr>
+      <td><strong>Form Name/number</strong><pre><code>  formNameNumber</code></pre></td>
+      <td>STRING</td>
+      <td>form_name_number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Min Vol (in Mls.)</strong><pre><code>  minVolInMls</code></pre></td>
+      <td>NUMERIC</td>
+      <td>min_vol_in_mls</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Max. Order Freq.</strong><pre><code>  maxOrderFreq</code></pre></td>
+      <td>NUMERIC</td>
+      <td>max_order_freq</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Single Day Max Order Freq</strong><pre><code>  singleDayMaxOrderFreq</code></pre></td>
+      <td>NUMERIC</td>
+      <td>single_day_max_order_freq</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Ward Remarks</strong><pre><code>  wardRemarks</code></pre></td>
+      <td>STRING</td>
+      <td>ward_remarks</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>**Lab Processing Instructions **<pre><code>  labProcessingInstructions</code></pre></td>
+      <td>STRING</td>
+      <td>lab_processing_instructions_</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Required Comment</strong><pre><code>  requiredComment</code></pre></td>
+      <td>POINTER</td>
+      <td>required_comment</td>
+      <td> </td>
+      <td> </td>
+      <td>Execute_Code-62_07</td>
+    </tr>
+    <tr>
+      <td><strong>Sample Wkld Code</strong><pre><code>  sampleWkldCode</code></pre></td>
+      <td>OBJECT</td>
+      <td>sample_wkld_code</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#sampleWkldCode">sampleWkldCode</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="4-foreign-computer-system"><a name="foreignComputerSystem"></a>4. Foreign Computer System</h3>
+
+<p><strong>Field ID:</strong> foreignComputerSystem</p>
+
+<h4 id="properties-4">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Foreign Computer System</strong><pre><code>  foreignComputerSystem</code></pre></td>
+      <td>STRING</td>
+      <td>foreign_computer_system</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Foreign Item #</strong><pre><code>  foreignItemNumber</code></pre></td>
+      <td>STRING</td>
+      <td>foreign_item_number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Integer</strong><pre><code>  integer</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>integer</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Unit Conversion</strong><pre><code>  unitConversion</code></pre></td>
+      <td>STRING</td>
+      <td>unit_conversion</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="5-lab-test-included-in-panel"><a name="labTestIncludedInPanel"></a>5. Lab Test Included In Panel</h3>
+
+<p><strong>Field ID:</strong> labTestIncludedInPanel</p>
+
+<h4 id="properties-5">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Number</strong><pre><code>  number</code></pre></td>
+      <td>IEN</td>
+      <td>number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Lab Test</strong><pre><code>  labTest</code></pre></td>
+      <td>POINTER</td>
+      <td>lab_test</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Laboratory_Test-60">Laboratory_Test-60</a></td>
+    </tr>
+    <tr>
+      <td><strong>Ap Multiply Factor</strong><pre><code>  apMultiplyFactor</code></pre></td>
+      <td>NUMERIC</td>
+      <td>ap_multiply_factor</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="6-sample-wkld-code"><a name="sampleWkldCode"></a>6. Sample Wkld Code</h3>
+
+<p><strong>Field ID:</strong> sampleWkldCode</p>
+
+<h4 id="properties-6">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Sample Wkld Code</strong><pre><code>  sampleWkldCode</code></pre></td>
+      <td>POINTER</td>
+      <td>sample_wkld_code</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td>Wkld_Code-64</td>
+    </tr>
+    <tr>
+      <td><strong>Sample Wkld Code #</strong><pre><code>  sampleWkldCodeNumber</code></pre></td>
+      <td>STRING</td>
+      <td>sample_wkld_code_number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Test Multiply Factor</strong><pre><code>  testMultiplyFactor</code></pre></td>
+      <td>NUMERIC</td>
+      <td>test_multiply_factor</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="7-site-notes-date"><a name="siteNotesDate"></a>7. Site Notes Date</h3>
+
+<p><strong>Field ID:</strong> siteNotesDate</p>
+
+<h4 id="properties-7">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Site Notes Date</strong><pre><code>  siteNotesDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>site_notes_date</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Text</strong><pre><code>  text</code></pre></td>
+      <td>STRING</td>
+      <td>text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="8-site-specimen"><a name="siteSpecimen"></a>8. Site Specimen</h3>
+
+<p><strong>Field ID:</strong> siteSpecimen</p>
+
+<h4 id="properties-8">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Site/specimen</strong><pre><code>  siteSpecimen</code></pre></td>
+      <td>POINTER</td>
+      <td>site_specimen</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Topography_Field-61">Topography_Field-61</a></td>
+    </tr>
+    <tr>
+      <td><strong>Reference Low</strong><pre><code>  referenceLow</code></pre></td>
+      <td>STRING</td>
+      <td>reference_low</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Reference High</strong><pre><code>  referenceHigh</code></pre></td>
+      <td>STRING</td>
+      <td>reference_high</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Critical Low</strong><pre><code>  criticalLow</code></pre></td>
+      <td>STRING</td>
+      <td>critical_low</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Critical High</strong><pre><code>  criticalHigh</code></pre></td>
+      <td>STRING</td>
+      <td>critical_high</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Interpretation</strong><pre><code>  interpretation</code></pre></td>
+      <td>STRING</td>
+      <td>interpretation</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Units</strong><pre><code>  units</code></pre></td>
+      <td>STRING</td>
+      <td>units</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Type Of Delta Check</strong><pre><code>  typeOfDeltaCheck</code></pre></td>
+      <td>POINTER</td>
+      <td>type_of_delta_check</td>
+      <td> </td>
+      <td> </td>
+      <td>Delta_Checks-62_1</td>
+    </tr>
+    <tr>
+      <td><strong>Delta Value</strong><pre><code>  deltaValue</code></pre></td>
+      <td>STRING</td>
+      <td>delta_value</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Default Value</strong><pre><code>  defaultValue</code></pre></td>
+      <td>STRING</td>
+      <td>default_value</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Therapeutic Low</strong><pre><code>  therapeuticLow</code></pre></td>
+      <td>STRING</td>
+      <td>therapeutic_low</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Therapeutic High</strong><pre><code>  therapeuticHigh</code></pre></td>
+      <td>STRING</td>
+      <td>therapeutic_high</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>*amis/rcs 14-4</strong><pre><code>  amisRcs144</code></pre></td>
+      <td>POINTER</td>
+      <td>amis_rcs_144</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Use For Reference Testing</strong><pre><code>  useForReferenceTesting</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>use_for_reference_testing</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Foreign Computer System</strong><pre><code>  foreignComputerSystem</code></pre></td>
+      <td>OBJECT</td>
+      <td>foreign_computer_system</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#foreignComputerSystem">foreignComputerSystem</a></td>
+    </tr>
+    <tr>
+      <td><strong>Loinc Code</strong><pre><code>  loincCode</code></pre></td>
+      <td>POINTER</td>
+      <td>loinc_code</td>
+      <td> </td>
+      <td>INDEXED</td>
+      <td>Lab_Loinc-95_3</td>
+    </tr>
+    <tr>
+      <td><strong>Specimen Cpt</strong><pre><code>  specimenCpt</code></pre></td>
+      <td>OBJECT</td>
+      <td>specimen_cpt</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#specimenCpt">specimenCpt</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="9-specimen-cpt"><a name="specimenCpt"></a>9. Specimen Cpt</h3>
+
+<p><strong>Field ID:</strong> specimenCpt</p>
+
+<h4 id="properties-9">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Specimen Cpt</strong><pre><code>  specimenCpt</code></pre></td>
+      <td>POINTER</td>
+      <td>specimen_cpt</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td><a href="../VDM/Cpt-81">Cpt-81</a></td>
+    </tr>
+    <tr>
+      <td><strong>Active Date (csv)</strong><pre><code>  activeDateCsv</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>active_date_csv</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="10-verify-wkld-code"><a name="verifyWkldCode"></a>10. Verify Wkld Code</h3>
+
+<p><strong>Field ID:</strong> verifyWkldCode</p>
+
+<h4 id="properties-10">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Verify Wkld Code</strong><pre><code>  verifyWkldCode</code></pre></td>
+      <td>POINTER</td>
+      <td>verify_wkld_code</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td>Wkld_Code-64</td>
+    </tr>
+    <tr>
+      <td><strong>Verify Wkld Code #</strong><pre><code>  verifyWkldCodeNumber</code></pre></td>
+      <td>STRING</td>
+      <td>verify_wkld_code_number</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Test Multiply Factor</strong><pre><code>  testMultiplyFactor</code></pre></td>
+      <td>NUMERIC</td>
+      <td>test_multiply_factor</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Protect Suffix</strong><pre><code>  protectSuffix</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>protect_suffix</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

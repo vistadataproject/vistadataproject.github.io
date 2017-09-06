@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      MVDM &middot; VISTA Data Project
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="VISTA Data Project" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73740841-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+<body>
+
+    <header class="masthead">
+    <div class="container">
+        <a href="/" title="Home" class="logo">VISTA Data Project</a>
+        <span class="tagline">The Master Data Model for Veteran Care</span>
+        <nav>
+            <a href="/demo">Demo 1</a>
+            <a href="/demo2">Demo 2</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="container content">
+
+      <main>
+        <h4 id="developer-documentation--mvdm--imaging_type"><a href="../index">Developer Documentation</a> » <a href="TableOfContents">MVDM</a> » Imaging_Type<br /></h4>
+<p><a name="top"></a></p>
+<h1 id="imaging_type">Imaging_Type</h1>
+
+<h3 id="imaging-type">Imaging Type</h3>
+
+<p>This file contains, for each imaging type entry, parameters that the module
+uses during various stages of exam and report processing and inquiring. The
+parameter switches allow the 'customizing' of the module for each type
+of imaging.</p>
+
+<p>WARNING:  ENTRIES SHOULD NOT BE DELETED FROM THIS FILE.</p>
+
+<p>Data Storage
+ ————
+The data for the 'IMAGING TYPE' file is stored in the ^RA(79.2,
+global. At the present time this file is very static after day-one
+initialization is complete.  However, it still should be journaled.
+It should also be translated if the operating system supports this function.</p>
+
+<p>Input Templates
+ —————
+The following is a list of input templates used by the package and
+the entry in the OPTIONS file (#19) that uses the template:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>                 Compiled  Name                Routine  Description; Option(s)  ----                -------  ----------------------  RA IMAGE PARAMETERS          Used to specify timeout seconds and whether
+                          the hardware system the module is running on
+                          is under fail-soft mode;
+                          RA FAILSOFT
+</code></pre>
+</div>
+
+<p>RA ON-LINE CRITERIA          Used to indicate how long certain data should
+                              remain on file before it can be purged;
+                              RA PURGE</p>
+
+<p>If any modifications to these input templates are needed for local
+purposes, then great care should be taken not to degrade any branching logic
+in the template.</p>
+
+<p>Print Templates
+ —————
+ The following is a list of print templates used by the package:</p>
+
+<p>Name                  Description; Option(s)
+ —-                  ———————-
+ RA ACTIVITY LOG       Prints a list of the activity log entries for the
+                       imaging type;</p>
+
+<p><strong>Fileman ID:</strong> 79.2</p>
+
+<p><strong>Base VDM Class:</strong> <a href="../VDM/Imaging_Type-79_2">Imaging_Type-79_2</a></p>
+
+<h2 id="property-summary">Property Summary</h2>
+
+<p><strong>Property Count:</strong> 15</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STRING</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>NUMERIC</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>ENUMERATION</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>BOOLEAN</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>DATE-TIME</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>OBJECT</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sub-Object Count:</strong> 2</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Field ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#activityLog">Activity Log</a></td>
+      <td>activityLog</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#workRvuWrvuScalingFactor">Work Rvu Wrvu Scaling Factor</a></td>
+      <td>workRvuWrvuScalingFactor</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Type Of Imaging</strong><pre><code>  typeOfImaging</code></pre></td>
+      <td>STRING</td>
+      <td>type_of_imaging</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Activity Log Cut-off</strong><pre><code>  activityLogCutoff</code></pre></td>
+      <td>NUMERIC</td>
+      <td>activity_log_cutoff</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Report Cut-off</strong><pre><code>  reportCutoff</code></pre></td>
+      <td>NUMERIC</td>
+      <td>report_cutoff</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Clinical History Cut-off</strong><pre><code>  clinicalHistoryCutoff</code></pre></td>
+      <td>NUMERIC</td>
+      <td>clinical_history_cutoff</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Tracking Time Cut-off</strong><pre><code>  trackingTimeCutoff</code></pre></td>
+      <td>NUMERIC</td>
+      <td>tracking_time_cutoff</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Order Data Cut-off</strong><pre><code>  orderDataCutoff</code></pre></td>
+      <td>NUMERIC</td>
+      <td>order_data_cutoff</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Abbreviation</strong><pre><code>  abbreviation</code></pre></td>
+      <td>STRING</td>
+      <td>abbreviation</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Operating Conditions</strong><pre><code>  operatingConditions</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>operating_conditions</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td>0: <em><strong>EMERGENCY(NORMAL COMPUTER DOWN)</strong></em><br/>1: <em><strong>NORMAL</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Radiopharmaceuticals Used?</strong><pre><code>  radiopharmaceuticalsUsed</code></pre></td>
+      <td>BOOLEAN</td>
+      <td>radiopharmaceuticals_used</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Next Case Number</strong><pre><code>  nextCaseNumber</code></pre></td>
+      <td>NUMERIC</td>
+      <td>next_case_number</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Case Number Turnover Date</strong><pre><code>  caseNumberTurnoverDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>case_number_turnover_date</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Introduction Text</strong><pre><code>  introductionText</code></pre></td>
+      <td>STRING</td>
+      <td>introduction_text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Pfss Dept. Code</strong><pre><code>  pfssDeptCode</code></pre></td>
+      <td>STRING</td>
+      <td>pfss_dept_code</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Activity Log</strong><pre><code>  activityLog</code></pre></td>
+      <td>OBJECT</td>
+      <td>activity_log</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#activityLog">activityLog</a></td>
+    </tr>
+    <tr>
+      <td><strong>Work Rvu (wrvu) Scaling Factor</strong><pre><code>  workRvuWrvuScalingFactor</code></pre></td>
+      <td>OBJECT</td>
+      <td>work_rvu_wrvu_scaling_factor</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="#workRvuWrvuScalingFactor">workRvuWrvuScalingFactor</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h2 id="sub-objects">Sub-Objects</h2>
+<h3 id="1-activity-log"><a name="activityLog"></a>1. Activity Log</h3>
+
+<p><strong>Field ID:</strong> activityLog</p>
+
+<h4 id="properties-1">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Log Date</strong><pre><code>  logDate</code></pre></td>
+      <td>DATE-TIME</td>
+      <td>log_date</td>
+      <td> </td>
+      <td>REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Type Of Action</strong><pre><code>  typeOfAction</code></pre></td>
+      <td>ENUMERATION</td>
+      <td>type_of_action</td>
+      <td> </td>
+      <td> </td>
+      <td>0: <em><strong>ON-LINE CRITERIA MODIFIED</strong></em><br/>1: <em><strong>SCHEDULE DATA PURGE</strong></em><br/>2: <em><strong>DATA PURGE COMPLETE</strong></em><br/>3: <em><strong>CHANGE IMAGE TYPE PARAMETERS</strong></em></td>
+    </tr>
+    <tr>
+      <td><strong>Computer User</strong><pre><code>  computerUser</code></pre></td>
+      <td>POINTER</td>
+      <td>computer_user</td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../VDM/New_Person-200">New_Person-200</a></td>
+    </tr>
+    <tr>
+      <td><strong>No. Of Exam Records Processed</strong><pre><code>  noOfExamRecordsProcessed</code></pre></td>
+      <td>NUMERIC</td>
+      <td>no_of_exam_records_processed</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>No. Of Reports Processed</strong><pre><code>  noOfReportsProcessed</code></pre></td>
+      <td>NUMERIC</td>
+      <td>no_of_reports_processed</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>No. Of Requests Processed</strong><pre><code>  noOfRequestsProcessed</code></pre></td>
+      <td>NUMERIC</td>
+      <td>no_of_requests_processed</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<h3 id="2-work-rvu-wrvu-scaling-factor"><a name="workRvuWrvuScalingFactor"></a>2. Work Rvu Wrvu Scaling Factor</h3>
+
+<p><strong>Field ID:</strong> workRvuWrvuScalingFactor</p>
+
+<h4 id="properties-2">Properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label/Field ID</th>
+      <th>Datatype</th>
+      <th>FromVDM</th>
+      <th>Default</th>
+      <th>Attributes</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Calendar Year</strong><pre><code>  calendarYear</code></pre></td>
+      <td>NUMERIC</td>
+      <td>calendar_year</td>
+      <td> </td>
+      <td>INDEXED<br />REQUIRED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Scaling Factor</strong><pre><code>  scalingFactor</code></pre></td>
+      <td>NUMERIC</td>
+      <td>scaling_factor</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#top">↑ Return to top</a><br /></p>
+
+<p> <br/><p style="font-size: 11px">Document generated on August 31st 2017, 2:55:48 pm</p></p>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2017-08-31T14:55:49-10:00">2017</time>. VISTA Data Project. All rights reserved.
+        </small>
+      </footer>
+
+    </div>
+
+  </body>
+</html>
