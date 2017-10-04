@@ -5,7 +5,7 @@ title: VDP Year 2 - V2 'Meta In Mongo Scope'
 
 # Scope of 'Meta in Mongo' Work
 
-__132__ RPCs, __103__ Primary Files, __185__ Secondary Files, __82__ Parameters. Note - still need to include files referenced by in scope files AND to __enumerate the distinct services__ we will be building.
+__132__ RPCs, __103__ Primary Files, __185__ Secondary Files, __82__ Parameters.
 
 
 
