@@ -5,7 +5,7 @@ title: VDP Year 2 - V2 'Meta In Mongo Scope'
 
 # Scope of 'Meta in Mongo' Work
 
-__132__ RPCs, __103__ Files, __82__ Parameters. Note - still need to include files referenced by in scope files AND to __enumerate the distinct services__ we will be building.
+__132__ RPCs, __103__ Primary Files, __185__ Secondary Files, __82__ Parameters. Note - still need to include files referenced by in scope files AND to __enumerate the distinct services__ we will be building.
 
 
 
@@ -207,7 +207,7 @@ __132__ RPCs.
 
 __Storage Size__ 520.7734375 MiB - __Objects__ 6,392,689 - __Collections__ 103
 
-__Total__ 103 - __National__ 41
+__Total__ 103 - __National__ 41 - of 3256 total files
 
 \# | Id | Name | National | Storage (KiB) | Avg Obj Size (B) | Count
 --- | --- | --- | --- | --- | --- | ---
@@ -334,6 +334,225 @@ __Total__ 103 - __National__ 41
 101 | 9999999_27 | [PROVIDER NARRATIVE](http://vistadataproject.info/artifacts/devdocs/VDM/Provider_Narrative-9999999_27) | &nbsp; | 3,612 | 194 | 61,678
 102 | 9999999_28 | [SKIN TEST](http://vistadataproject.info/artifacts/devdocs/VDM/Skin_Test-9999999_28) | YES | 16 | 172 | 9
 103 | 9999999_64 | [HEALTH FACTORS](http://vistadataproject.info/artifacts/devdocs/VDM/Health_Factors-9999999_64) | &nbsp; | 360 | 239 | 5,559
+
+
+
+## Files of Meta (Indirectly Used)
+
+Files referenced by files used directly by RPCs.
+
+__Total__ 185 - __National__ 22 - of 3256 total files
+
+\# | Id | Name | National | Missing
+--- | --- | --- | --- | ---
+1 | _402 | [INPUT TEMPLATE](http://vistadataproject.info/artifacts/devdocs/VDM/Input_Template-_402) | &nbsp; | &nbsp;
+2 | _85 | [LANGUAGE](http://vistadataproject.info/artifacts/devdocs/VDM/Language-_85) | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+3 | 1 | [FILE](http://vistadataproject.info/artifacts/devdocs/VDM/File-1) | &nbsp; | &nbsp;
+4 | 1_2 | [ALTERNATE EDITOR](http://vistadataproject.info/artifacts/devdocs/VDM/Alternate_Editor-1_2) | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+5 | 3_2 | [TERMINAL TYPE](http://vistadataproject.info/artifacts/devdocs/VDM/Terminal_Type-3_2) | &nbsp; | &nbsp;
+6 | 3_5 | [DEVICE](http://vistadataproject.info/artifacts/devdocs/VDM/Device-3_5) | &nbsp; | &nbsp;
+7 | 3_6 | [BULLETIN](http://vistadataproject.info/artifacts/devdocs/VDM/Bulletin-3_6) | &nbsp; | &nbsp;
+8 | 3_8 | [MAIL GROUP](http://vistadataproject.info/artifacts/devdocs/VDM/Mail_Group-3_8) | &nbsp; | &nbsp;
+9 | 3_816 | [DISTRIBUTION LIST](http://vistadataproject.info/artifacts/devdocs/VDM/Distribution_List-3_816) | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+10 | 4_1 | [FACILITY TYPE](http://vistadataproject.info/artifacts/devdocs/VDM/Facility_Type-4_1) | &nbsp; | &nbsp;
+11 | 4_11 | [AGENCY](http://vistadataproject.info/artifacts/devdocs/VDM/Agency-4_11) | YES | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+12 | 5 | [STATE](http://vistadataproject.info/artifacts/devdocs/VDM/State-5) | YES | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+13 | 7 | [PROVIDER CLASS](http://vistadataproject.info/artifacts/devdocs/VDM/Provider_Class-7) | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+14 | 8 | [ELIGIBILITY CODE](http://vistadataproject.info/artifacts/devdocs/VDM/Eligibility_Code-8) | &nbsp; | &nbsp;
+15 | 8_1 | [MAS ELIGIBILITY CODE](http://vistadataproject.info/artifacts/devdocs/VDM/Mas_Eligibility_Code-8_1) | &nbsp; | &nbsp;
+16 | 8_2 | [IDENTIFICATION FORMAT](http://vistadataproject.info/artifacts/devdocs/VDM/Identification_Format-8_2) | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+17 | 14_7 | [TASKMAN SITE PARAMETERS](http://vistadataproject.info/artifacts/devdocs/VDM/Taskman_Site_Parameters-14_7) | &nbsp; | &nbsp;
+18 | 19_1 | [SECURITY KEY](http://vistadataproject.info/artifacts/devdocs/VDM/Security_Key-19_1) | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+19 | 40_8 | [MEDICAL CENTER DIVISION](http://vistadataproject.info/artifacts/devdocs/VDM/Medical_Center_Division-40_8) | &nbsp; | &nbsp;
+20 | 40_9 | [LOCATION TYPE](http://vistadataproject.info/artifacts/devdocs/VDM/Location_Type-40_9) | &nbsp; | &nbsp;
+21 | 42 | [WARD LOCATION](http://vistadataproject.info/artifacts/devdocs/VDM/Ward_Location-42) | &nbsp; | &nbsp;
+22 | 42_4 | [SPECIALTY](http://vistadataproject.info/artifacts/devdocs/VDM/Specialty-42_4) | &nbsp; | &nbsp;
+23 | 45_7 | [FACILITY TREATING SPECIALTY](http://vistadataproject.info/artifacts/devdocs/VDM/Facility_Treating_Specialty-45_7) | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+24 | 50_3 | [PRIMARY DRUG](http://vistadataproject.info/artifacts/devdocs/VDM/Primary_Drug-50_3) | &nbsp; | &nbsp;
+25 | 50_607 | [DRUG UNITS](http://vistadataproject.info/artifacts/devdocs/VDM/Drug_Units-50_607) | &nbsp; | &nbsp;
+26 | 50_608 | [PACKAGE TYPE](http://vistadataproject.info/artifacts/devdocs/VDM/Package_Type-50_608) | &nbsp; | &nbsp;
+27 | 50_609 | [PACKAGE SIZE](http://vistadataproject.info/artifacts/devdocs/VDM/Package_Size-50_609) | &nbsp; | &nbsp;
+28 | 50_64 | [VA DISPENSE UNIT](http://vistadataproject.info/artifacts/devdocs/VDM/Va_Dispense_Unit-50_64) | &nbsp; | &nbsp;
+29 | 51_23 | [STANDARD MEDICATION ROUTES](http://vistadataproject.info/artifacts/devdocs/VDM/Standard_Medication_Routes-51_23) | YES | &nbsp;
+30 | 51_24 | [DOSE UNITS](http://vistadataproject.info/artifacts/devdocs/VDM/Dose_Units-51_24) | YES | &nbsp;
+31 | 51_5 | [ORDER UNIT](http://vistadataproject.info/artifacts/devdocs/VDM/Order_Unit-51_5) | &nbsp; | &nbsp;
+32 | 51_7 | [DRUG TEXT](http://vistadataproject.info/artifacts/devdocs/VDM/Drug_Text-51_7) | &nbsp; | &nbsp;
+33 | 52_53 | [PHARMACY AUTOMATED DISPENSING DEVICES](http://vistadataproject.info/artifacts/devdocs/VDM/Pharmacy_Automated_Dispensing_Devices-52_53) | &nbsp; | &nbsp;
+34 | 55_95 | [DRUG MANUFACTURER](http://vistadataproject.info/artifacts/devdocs/VDM/Drug_Manufacturer-55_95) | &nbsp; | &nbsp;
+35 | 57_5 | [WARD GROUP](http://vistadataproject.info/artifacts/devdocs/VDM/Ward_Group-57_5) | &nbsp; | &nbsp;
+36 | 59 | [OUTPATIENT SITE](http://vistadataproject.info/artifacts/devdocs/VDM/Outpatient_Site-59) | &nbsp; | &nbsp;
+37 | 59_3 | [GROUP DISPLAY](http://vistadataproject.info/artifacts/devdocs/VDM/Group_Display-59_3) | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+38 | 61 | [TOPOGRAPHY FIELD](http://vistadataproject.info/artifacts/devdocs/VDM/Topography_Field-61) | &nbsp; | &nbsp;
+39 | 61_1 | [MORPHOLOGY FIELD](http://vistadataproject.info/artifacts/devdocs/VDM/Morphology_Field-61_1) | &nbsp; | &nbsp;
+40 | 61_2 | [ETIOLOGY FIELD](http://vistadataproject.info/artifacts/devdocs/VDM/Etiology_Field-61_2) | &nbsp; | &nbsp;
+41 | 61_5 | [PROCEDURE FIELD](http://vistadataproject.info/artifacts/devdocs/VDM/Procedure_Field-61_5) | &nbsp; | &nbsp;
+42 | 62 | [COLLECTION SAMPLE](http://vistadataproject.info/artifacts/devdocs/VDM/Collection_Sample-62) | &nbsp; | &nbsp;
+43 | 62_05 | [URGENCY](http://vistadataproject.info/artifacts/devdocs/VDM/Urgency-62_05) | &nbsp; | &nbsp;
+44 | 62_06 | [ANTIMICROBIAL SUSCEPTIBILITY](http://vistadataproject.info/artifacts/devdocs/VDM/Antimicrobial_Susceptibility-62_06) | &nbsp; | &nbsp;
+45 | 62_07 | [EXECUTE CODE](http://vistadataproject.info/artifacts/devdocs/VDM/Execute_Code-62_07) | &nbsp; | &nbsp;
+46 | 62_1 | [DELTA CHECKS](http://vistadataproject.info/artifacts/devdocs/VDM/Delta_Checks-62_1) | &nbsp; | &nbsp;
+47 | 62_2 | [LAB SECTION](http://vistadataproject.info/artifacts/devdocs/VDM/Lab_Section-62_2) | &nbsp; | &nbsp;
+48 | 64 | [WKLD CODE](http://vistadataproject.info/artifacts/devdocs/VDM/Wkld_Code-64) | &nbsp; | &nbsp;
+49 | 64_061 | [LAB ELECTRONIC CODES](http://vistadataproject.info/artifacts/devdocs/VDM/Lab_Electronic_Codes-64_061) | &nbsp; | &nbsp;
+50 | 64_062 | [LAB ELECTRONIC SUBTYPES](http://vistadataproject.info/artifacts/devdocs/VDM/Lab_Electronic_Subtypes-64_062) | &nbsp; | &nbsp;
+51 | 64_2 | [WKLD SUFFIX CODES](http://vistadataproject.info/artifacts/devdocs/VDM/Wkld_Suffix_Codes-64_2) | &nbsp; | &nbsp;
+52 | 64_21 | [WKLD CODE LAB SECT](http://vistadataproject.info/artifacts/devdocs/VDM/Wkld_Code_Lab_Sect-64_21) | &nbsp; | &nbsp;
+53 | 64_22 | [WKLD ITEM FOR COUNT](http://vistadataproject.info/artifacts/devdocs/VDM/Wkld_Item_For_Count-64_22) | &nbsp; | &nbsp;
+54 | 64_3 | [WKLD INSTRUMENT MANUFACTURER](http://vistadataproject.info/artifacts/devdocs/VDM/Wkld_Instrument_Manufacturer-64_3) | &nbsp; | &nbsp;
+55 | 66 | [BLOOD PRODUCT](http://vistadataproject.info/artifacts/devdocs/VDM/Blood_Product-66) | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+56 | 71 | [RAD\/NUC MED PROCEDURES](http://vistadataproject.info/artifacts/devdocs/VDM/Rad_Nuc_Med_Procedures-71) | &nbsp; | &nbsp;
+57 | 71_1 | [MAJOR RAD\/NUC MED AMIS CODES](http://vistadataproject.info/artifacts/devdocs/VDM/Major_Rad_Nuc_Med_Amis_Codes-71_1) | &nbsp; | &nbsp;
+58 | 71_4 | [RAD\/NUC MED PROCEDURE MESSAGE](http://vistadataproject.info/artifacts/devdocs/VDM/Rad_Nuc_Med_Procedure_Message-71_4) | &nbsp; | &nbsp;
+59 | 71_6 | [ROUTE OF ADMINISTRATION](http://vistadataproject.info/artifacts/devdocs/VDM/Route_Of_Administration-71_6) | &nbsp; | &nbsp;
+60 | 71_7 | [SITE OF ADMINISTRATION](http://vistadataproject.info/artifacts/devdocs/VDM/Site_Of_Administration-71_7) | &nbsp; | &nbsp;
+61 | 73_1 | [RAD MODALITY DEFINED TERMS](http://vistadataproject.info/artifacts/devdocs/VDM/Rad_Modality_Defined_Terms-73_1) | &nbsp; | &nbsp;
+62 | 78_2 | [LBL\/HDR\/FTR FORMATS](http://vistadataproject.info/artifacts/devdocs/VDM/Lbl_Hdr_Ftr_Formats-78_2) | &nbsp; | &nbsp;
+63 | 78_4 | [FILM SIZES](http://vistadataproject.info/artifacts/devdocs/VDM/Film_Sizes-78_4) | &nbsp; | &nbsp;
+64 | 78_6 | [CAMERA\/EQUIP\/RM](http://vistadataproject.info/artifacts/devdocs/VDM/Camera_Equip_Rm-78_6) | &nbsp; | &nbsp;
+65 | 78_7 | [LABEL PRINT FIELDS](http://vistadataproject.info/artifacts/devdocs/VDM/Label_Print_Fields-78_7) | &nbsp; | &nbsp;
+66 | 79 | [RAD\/NUC MED DIVISION](http://vistadataproject.info/artifacts/devdocs/VDM/Rad_Nuc_Med_Division-79) | &nbsp; | &nbsp;
+67 | 79_1 | [IMAGING LOCATIONS](http://vistadataproject.info/artifacts/devdocs/VDM/Imaging_Locations-79_1) | &nbsp; | &nbsp;
+68 | 79_2 | [IMAGING TYPE](http://vistadataproject.info/artifacts/devdocs/VDM/Imaging_Type-79_2) | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+69 | 80_2 | [DRG](http://vistadataproject.info/artifacts/devdocs/VDM/Drg-80_2) | &nbsp; | &nbsp;
+70 | 80_3 | [MAJOR DIAGNOSTIC CATEGORY](http://vistadataproject.info/artifacts/devdocs/VDM/Major_Diagnostic_Category-80_3) | &nbsp; | &nbsp;
+71 | 81 | [CPT](http://vistadataproject.info/artifacts/devdocs/VDM/Cpt-81) | YES | &nbsp;
+72 | 81_1 | [CPT CATEGORY](http://vistadataproject.info/artifacts/devdocs/VDM/Cpt_Category-81_1) | YES | &nbsp;
+73 | 81_3 | [CPT MODIFIER](http://vistadataproject.info/artifacts/devdocs/VDM/Cpt_Modifier-81_3) | YES | &nbsp;
+74 | 82 | [DRG DIAGNOSIS IDENTIFIER CODES](http://vistadataproject.info/artifacts/devdocs/VDM/Drg_Diagnosis_Identifier_Codes-82) | &nbsp; | &nbsp;
+75 | 82_1 | [DRG PROCEDURE IDENTIFIER CODES](http://vistadataproject.info/artifacts/devdocs/VDM/Drg_Procedure_Identifier_Codes-82_1) | &nbsp; | &nbsp;
+76 | 82_13 | [DRG CC EXCLUSIONS](http://vistadataproject.info/artifacts/devdocs/VDM/Drg_Cc_Exclusions-82_13) | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+77 | 95 | [LAB JOURNAL](http://vistadataproject.info/artifacts/devdocs/VDM/Lab_Journal-95) | &nbsp; | &nbsp;
+78 | 95_3 | [LAB LOINC](http://vistadataproject.info/artifacts/devdocs/VDM/Lab_Loinc-95_3) | YES | &nbsp;
+79 | 95_31 | [LAB LOINC COMPONENT](http://vistadataproject.info/artifacts/devdocs/VDM/Lab_Loinc_Component-95_31) | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+80 | 100_01 | [ORDER STATUS](http://vistadataproject.info/artifacts/devdocs/VDM/Order_Status-100_01) | YES | &nbsp;
+81 | 101 | [PROTOCOL](http://vistadataproject.info/artifacts/devdocs/VDM/Protocol-101) | &nbsp; | &nbsp;
+82 | 101_15 | [OE\/RR COM OBJECTS](http://vistadataproject.info/artifacts/devdocs/VDM/Oe_Rr_Com_Objects-101_15) | &nbsp; | &nbsp;
+83 | 123_1 | [REQUEST ACTION TYPES](http://vistadataproject.info/artifacts/devdocs/VDM/Request_Action_Types-123_1) | &nbsp; | &nbsp;
+84 | 123_3 | [GMRC PROCEDURE](http://vistadataproject.info/artifacts/devdocs/VDM/Gmrc_Procedure-123_3) | &nbsp; | &nbsp;
+85 | 125 | [PROBLEM SELECTION LIST](http://vistadataproject.info/artifacts/devdocs/VDM/Problem_Selection_List-125) | &nbsp; | &nbsp;
+86 | 125_11 | [PROBLEM SELECTION CATEGORY](http://vistadataproject.info/artifacts/devdocs/VDM/Problem_Selection_Category-125_11) | &nbsp; | &nbsp;
+87 | 142 | [HEALTH SUMMARY TYPE](http://vistadataproject.info/artifacts/devdocs/VDM/Health_Summary_Type-142) | &nbsp; | &nbsp;
+88 | 142_1 | [HEALTH SUMMARY COMPONENT](http://vistadataproject.info/artifacts/devdocs/VDM/Health_Summary_Component-142_1) | &nbsp; | &nbsp;
+89 | 194_4 | [LABEL FORMAT](http://vistadataproject.info/artifacts/devdocs/VDM/Label_Format-194_4) | &nbsp; | &nbsp;
+90 | 194_5 | [LABEL PRINT FIELD](http://vistadataproject.info/artifacts/devdocs/VDM/Label_Print_Field-194_5) | &nbsp; | &nbsp;
+91 | 195_1 | [RECORD TRACKING APPLICATION](http://vistadataproject.info/artifacts/devdocs/VDM/Record_Tracking_Application-195_1) | &nbsp; | &nbsp;
+92 | 195_2 | [RECORD TYPES](http://vistadataproject.info/artifacts/devdocs/VDM/Record_Types-195_2) | &nbsp; | &nbsp;
+93 | 195_9 | [BORROWERS\/FILE AREAS](http://vistadataproject.info/artifacts/devdocs/VDM/Borrowers_File_Areas-195_9) | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+94 | 201 | [USER CLASS](http://vistadataproject.info/artifacts/devdocs/VDM/User_Class-201) | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+95 | 350_1 | [IB ACTION TYPE](http://vistadataproject.info/artifacts/devdocs/VDM/Ib_Action_Type-350_1) | YES | &nbsp;
+96 | 357 | [ENCOUNTER FORM](http://vistadataproject.info/artifacts/devdocs/VDM/Encounter_Form-357) | &nbsp; | &nbsp;
+97 | 357_91 | [MARKING AREA TYPE](http://vistadataproject.info/artifacts/devdocs/VDM/Marking_Area_Type-357_91) | &nbsp; | &nbsp;
+98 | 357_92 | [PRINT CONDITIONS](http://vistadataproject.info/artifacts/devdocs/VDM/Print_Conditions-357_92) | &nbsp; | &nbsp;
+99 | 357_98 | [AICS DATA QUALIFIERS](http://vistadataproject.info/artifacts/devdocs/VDM/Aics_Data_Qualifiers-357_98) | &nbsp; | &nbsp;
+100 | 359_1 | [AICS DATA ELEMENTS](http://vistadataproject.info/artifacts/devdocs/VDM/Aics_Data_Elements-359_1) | &nbsp; | &nbsp;
+101 | 399_1 | [MCCR UTILITY](http://vistadataproject.info/artifacts/devdocs/VDM/Mccr_Utility-399_1) | YES | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+102 | 403_46 | [STANDARD POSITION](http://vistadataproject.info/artifacts/devdocs/VDM/Standard_Position-403_46) | &nbsp; | &nbsp;
+103 | 403_47 | [TEAM PURPOSE](http://vistadataproject.info/artifacts/devdocs/VDM/Team_Purpose-403_47) | &nbsp; | &nbsp;
+104 | 404_51 | [TEAM](http://vistadataproject.info/artifacts/devdocs/VDM/Team-404_51) | &nbsp; | &nbsp;
+105 | 404_57 | [TEAM POSITION](http://vistadataproject.info/artifacts/devdocs/VDM/Team_Position-404_57) | &nbsp; | &nbsp;
+106 | 405_4 | [ROOM-BED](http://vistadataproject.info/artifacts/devdocs/VDM/Room-Bed-405_4) | &nbsp; | &nbsp;
+107 | 405_5 | [MAS OUT-OF-SERVICE](http://vistadataproject.info/artifacts/devdocs/VDM/Mas_Out-Of-Service-405_5) | &nbsp; | &nbsp;
+108 | 405_6 | [ROOM-BED DESCRIPTION](http://vistadataproject.info/artifacts/devdocs/VDM/Room-Bed_Description-405_6) | &nbsp; | &nbsp;
+109 | 407_5 | [LETTER](http://vistadataproject.info/artifacts/devdocs/VDM/Letter-407_5) | &nbsp; | &nbsp;
+110 | 409_1 | [APPOINTMENT TYPE](http://vistadataproject.info/artifacts/devdocs/VDM/Appointment_Type-409_1) | &nbsp; | &nbsp;
+111 | 409_67 | [CLINIC GROUP](http://vistadataproject.info/artifacts/devdocs/VDM/Clinic_Group-409_67) | &nbsp; | &nbsp;
+112 | 420_1 | [COST CENTER](http://vistadataproject.info/artifacts/devdocs/VDM/Cost_Center-420_1) | &nbsp; | &nbsp;
+113 | 420_2 | [BUDGET OBJECT CODE](http://vistadataproject.info/artifacts/devdocs/VDM/Budget_Object_Code-420_2) | &nbsp; | &nbsp;
+114 | 420_3 | [PRCD FUND\/APPROPRIATION CODE](http://vistadataproject.info/artifacts/devdocs/VDM/Prcd_Fund_Appropriation_Code-420_3) | &nbsp; | &nbsp;
+115 | 420_5 | [UNIT OF ISSUE](http://vistadataproject.info/artifacts/devdocs/VDM/Unit_Of_Issue-420_5) | &nbsp; | &nbsp;
+116 | 420_6 | [CODE INDEX](http://vistadataproject.info/artifacts/devdocs/VDM/Code_Index-420_6) | &nbsp; | &nbsp;
+117 | 420_8 | [SOURCE CODE](http://vistadataproject.info/artifacts/devdocs/VDM/Source_Code-420_8) | &nbsp; | &nbsp;
+118 | 423_9 | [CALM\/LOG BATCH TYPE](http://vistadataproject.info/artifacts/devdocs/VDM/Calm_Log_Batch_Type-423_9) | &nbsp; | &nbsp;
+119 | 430_2 | [ACCOUNTS RECEIVABLE CATEGORY](http://vistadataproject.info/artifacts/devdocs/VDM/Accounts_Receivable_Category-430_2) | YES | &nbsp;
+120 | 440 | [VENDOR](http://vistadataproject.info/artifacts/devdocs/VDM/Vendor-440) | &nbsp; | &nbsp;
+121 | 441 | [ITEM MASTER](http://vistadataproject.info/artifacts/devdocs/VDM/Item_Master-441) | &nbsp; | &nbsp;
+122 | 441_2 | [FEDERAL SUPPLY CLASSIFICATION](http://vistadataproject.info/artifacts/devdocs/VDM/Federal_Supply_Classification-441_2) | &nbsp; | &nbsp;
+123 | 441_3 | [FSC GROUP TITLES](http://vistadataproject.info/artifacts/devdocs/VDM/Fsc_Group_Titles-441_3) | &nbsp; | &nbsp;
+124 | 444_2 | [SIC CODE](http://vistadataproject.info/artifacts/devdocs/VDM/Sic_Code-444_2) | &nbsp; | &nbsp;
+125 | 444_21 | [SIC CODE GROUPS](http://vistadataproject.info/artifacts/devdocs/VDM/Sic_Code_Groups-444_21) | &nbsp; | &nbsp;
+126 | 445 | [GENERIC INVENTORY](http://vistadataproject.info/artifacts/devdocs/VDM/Generic_Inventory-445) | &nbsp; | &nbsp;
+127 | 445_4 | [STORAGE LOCATION](http://vistadataproject.info/artifacts/devdocs/VDM/Storage_Location-445_4) | &nbsp; | &nbsp;
+128 | 445_5 | [AUTOMATED SUPPLY STATIONS](http://vistadataproject.info/artifacts/devdocs/VDM/Automated_Supply_Stations-445_5) | &nbsp; | &nbsp;
+129 | 445_6 | [GROUP CATEGORY](http://vistadataproject.info/artifacts/devdocs/VDM/Group_Category-445_6) | &nbsp; | &nbsp;
+130 | 450 | [PAID EMPLOYEE](http://vistadataproject.info/artifacts/devdocs/VDM/Paid_Employee-450) | &nbsp; | &nbsp;
+131 | 452_1 | [PRSE PROGRAM\/CLASS](http://vistadataproject.info/artifacts/devdocs/VDM/Prse_Program_Class-452_1) | &nbsp; | &nbsp;
+132 | 452_3 | [PRSE MANDATORY TRAINING (MI) CLASS GROUP](http://vistadataproject.info/artifacts/devdocs/VDM/Prse_Mandatory_Training_(Mi)_Class_Group-452_3) | &nbsp; | &nbsp;
+133 | 454_1 | [PAID COST CENTER\/ORGANIZATION](http://vistadataproject.info/artifacts/devdocs/VDM/Paid_Cost_Center_Organization-454_1) | &nbsp; | &nbsp;
+134 | 455_5 | [T&L UNIT](http://vistadataproject.info/artifacts/devdocs/VDM/T&L_Unit-455_5) | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+135 | 601_71 | [MH TESTS AND SURVEYS](http://vistadataproject.info/artifacts/devdocs/VDM/Mh_Tests_And_Surveys-601_71) | &nbsp; | &nbsp;
+136 | 697_2 | [PROCEDURE\/SUBSPECIALTY](http://vistadataproject.info/artifacts/devdocs/VDM/Procedure_Subspecialty-697_2) | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+137 | 702_01 | [CP DEFINITION](http://vistadataproject.info/artifacts/devdocs/VDM/Cp_Definition-702_01) | &nbsp; | &nbsp;
+138 | 702_09 | [CP INSTRUMENT](http://vistadataproject.info/artifacts/devdocs/VDM/Cp_Instrument-702_09) | &nbsp; | &nbsp;
+139 | 723 | [MEDICAL SPECIALTY](http://vistadataproject.info/artifacts/devdocs/VDM/Medical_Specialty-723) | &nbsp; | &nbsp;
+140 | 724 | [DSS UNIT](http://vistadataproject.info/artifacts/devdocs/VDM/Dss_Unit-724) | &nbsp; | &nbsp;
+141 | 728_441 | [NATIONAL CLINIC](http://vistadataproject.info/artifacts/devdocs/VDM/National_Clinic-728_441) | &nbsp; | &nbsp;
+142 | 730 | [NATIONAL SERVICE](http://vistadataproject.info/artifacts/devdocs/VDM/National_Service-730) | &nbsp; | &nbsp;
+143 | 736 | [QUIC SORT DATA](http://vistadataproject.info/artifacts/devdocs/VDM/Quic_Sort_Data-736) | &nbsp; | &nbsp;
+144 | 771 | [HL7 APPLICATION PARAMETER](http://vistadataproject.info/artifacts/devdocs/VDM/Hl7_Application_Parameter-771) | &nbsp; | &nbsp;
+145 | 771_2 | [HL7 MESSAGE TYPE](http://vistadataproject.info/artifacts/devdocs/VDM/Hl7_Message_Type-771_2) | &nbsp; | &nbsp;
+146 | 771_3 | [HL7 SEGMENT TYPE](http://vistadataproject.info/artifacts/devdocs/VDM/Hl7_Segment_Type-771_3) | &nbsp; | &nbsp;
+147 | 771_5 | [HL7 VERSION](http://vistadataproject.info/artifacts/devdocs/VDM/Hl7_Version-771_5) | &nbsp; | &nbsp;
+148 | 771_7 | [HL7 ERROR MESSAGE](http://vistadataproject.info/artifacts/devdocs/VDM/Hl7_Error_Message-771_7) | &nbsp; | &nbsp;
+149 | 771_8 | [HL7 STANDARD](http://vistadataproject.info/artifacts/devdocs/VDM/Hl7_Standard-771_8) | &nbsp; | &nbsp;
+150 | 771_9 | [HL7 DEGREE](http://vistadataproject.info/artifacts/devdocs/VDM/Hl7_Degree-771_9) | &nbsp; | &nbsp;
+151 | 774 | [SUBSCRIPTION CONTROL](http://vistadataproject.info/artifacts/devdocs/VDM/Subscription_Control-774) | &nbsp; | &nbsp;
+152 | 779_001 | [HL7 EVENT TYPE CODE](http://vistadataproject.info/artifacts/devdocs/VDM/Hl7_Event_Type_Code-779_001) | &nbsp; | &nbsp;
+153 | 779_003 | [HL7 ACCEPT\/APPLICATION ACK CONDITION](http://vistadataproject.info/artifacts/devdocs/VDM/Hl7_Accept_Application_Ack_Condition-779_003) | &nbsp; | &nbsp;
+154 | 779_004 | [COUNTRY CODE](http://vistadataproject.info/artifacts/devdocs/VDM/Country_Code-779_004) | YES | &nbsp;
+155 | 779_005 | [HL7 MESSAGE STRUCTURE CODE](http://vistadataproject.info/artifacts/devdocs/VDM/Hl7_Message_Structure_Code-779_005) | &nbsp; | &nbsp;
+156 | 790_404 | [WV NOTIFICATION PURPOSE](http://vistadataproject.info/artifacts/devdocs/VDM/Wv_Notification_Purpose-790_404) | &nbsp; | &nbsp;
+157 | 790_5 | [WV CERVICAL TX NEED](http://vistadataproject.info/artifacts/devdocs/VDM/Wv_Cervical_Tx_Need-790_5) | &nbsp; | &nbsp;
+158 | 790_51 | [WV BREAST TX NEED](http://vistadataproject.info/artifacts/devdocs/VDM/Wv_Breast_Tx_Need-790_51) | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+159 | 801_42 | [REMINDER GUI PROCESS](http://vistadataproject.info/artifacts/devdocs/VDM/Reminder_Gui_Process-801_42) | &nbsp; | &nbsp;
+160 | 801_45 | [REMINDER FINDING TYPE PARAMETER](http://vistadataproject.info/artifacts/devdocs/VDM/Reminder_Finding_Type_Parameter-801_45) | &nbsp; | &nbsp;
+161 | 801_9 | [REMINDER RESOLUTION STATUS](http://vistadataproject.info/artifacts/devdocs/VDM/Reminder_Resolution_Status-801_9) | &nbsp; | &nbsp;
+162 | 802_4 | [REMINDER FUNCTION FINDING FUNCTIONS](http://vistadataproject.info/artifacts/devdocs/VDM/Reminder_Function_Finding_Functions-802_4) | &nbsp; | &nbsp;
+163 | 810_9 | [REMINDER LOCATION LIST](http://vistadataproject.info/artifacts/devdocs/VDM/Reminder_Location_List-810_9) | &nbsp; | &nbsp;
+164 | 811_2 | [REMINDER TAXONOMY](http://vistadataproject.info/artifacts/devdocs/VDM/Reminder_Taxonomy-811_2) | &nbsp; | &nbsp;
+165 | 811_4 | [REMINDER COMPUTED FINDINGS](http://vistadataproject.info/artifacts/devdocs/VDM/Reminder_Computed_Findings-811_4) | &nbsp; | &nbsp;
+166 | 811_5 | [REMINDER TERM](http://vistadataproject.info/artifacts/devdocs/VDM/Reminder_Term-811_5) | &nbsp; | &nbsp;
+167 | 811_6 | [REMINDER SPONSOR](http://vistadataproject.info/artifacts/devdocs/VDM/Reminder_Sponsor-811_6) | &nbsp; | &nbsp;
+168 | 869_1 | [HL LOWER LEVEL PROTOCOL TYPE](http://vistadataproject.info/artifacts/devdocs/VDM/Hl_Lower_Level_Protocol_Type-869_1) | &nbsp; | &nbsp;
+169 | 870 | [HL LOGICAL LINK](http://vistadataproject.info/artifacts/devdocs/VDM/Hl_Logical_Link-870) | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+170 | 920 | [VACCINE INFORMATION STATEMENT](http://vistadataproject.info/artifacts/devdocs/VDM/Vaccine_Information_Statement-920) | YES | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+171 | 8925_6 | [TIU STATUS](http://vistadataproject.info/artifacts/devdocs/VDM/Tiu_Status-8925_6) | YES | &nbsp;
+172 | 8926_1 | [TIU VHA ENTERPRISE STANDARD TITLE](http://vistadataproject.info/artifacts/devdocs/VDM/Tiu_Vha_Enterprise_Standard_Title-8926_1) | YES | &nbsp;
+173 | 8926_2 | [TIU LOINC SUBJECT MATTER DOMAIN](http://vistadataproject.info/artifacts/devdocs/VDM/Tiu_Loinc_Subject_Matter_Domain-8926_2) | YES | &nbsp;
+174 | 8926_3 | [TIU LOINC ROLE](http://vistadataproject.info/artifacts/devdocs/VDM/Tiu_Loinc_Role-8926_3) | YES | &nbsp;
+175 | 8926_4 | [TIU LOINC SETTING](http://vistadataproject.info/artifacts/devdocs/VDM/Tiu_Loinc_Setting-8926_4) | YES | &nbsp;
+176 | 8926_5 | [TIU LOINC SERVICE](http://vistadataproject.info/artifacts/devdocs/VDM/Tiu_Loinc_Service-8926_5) | YES | &nbsp;
+177 | 8926_6 | [TIU LOINC DOCUMENT TYPE](http://vistadataproject.info/artifacts/devdocs/VDM/Tiu_Loinc_Document_Type-8926_6) | YES | &nbsp;
+178 | 8930_2 | [USR ROLE](http://vistadataproject.info/artifacts/devdocs/VDM/Usr_Role-8930_2) | &nbsp; | &nbsp;
+179 | 8930_6 | [USR RECORD STATUS](http://vistadataproject.info/artifacts/devdocs/VDM/Usr_Record_Status-8930_6) | &nbsp; | &nbsp;
+180 | 8930_8 | [USR ACTION](http://vistadataproject.info/artifacts/devdocs/VDM/Usr_Action-8930_8) | &nbsp; | &nbsp;
+181 | 8932_2 | [PROGRAM OF STUDY](http://vistadataproject.info/artifacts/devdocs/VDM/Program_Of_Study-8932_2) | &nbsp; | &nbsp;
+182 | 8994 | [REMOTE PROCEDURE](http://vistadataproject.info/artifacts/devdocs/VDM/Remote_Procedure-8994) | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+183 | 9999999_04 | [IMM MANUFACTURER](http://vistadataproject.info/artifacts/devdocs/VDM/Imm_Manufacturer-9999999_04) | YES | &nbsp;
+184 | 9999999_06 | [LOCATION](http://vistadataproject.info/artifacts/devdocs/VDM/Location-9999999_06) | &nbsp; | &nbsp;
+185 | 9999999_41 | [IMMUNIZATION LOT](http://vistadataproject.info/artifacts/devdocs/VDM/Immunization_Lot-9999999_41) | &nbsp; | &nbsp;
 
 
 
