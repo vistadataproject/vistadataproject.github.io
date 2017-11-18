@@ -39,24 +39,24 @@ The following describes how to install **nodeVISTA** server in a VirtualBox virt
 
 ### Installation
 
-1. Install the `vagrant-timezone` Vagrant plugin by running the following command:
+1. Install the `vagrant-timezone` Vagrant plugin by running the following command from a terminal or command prompt:
     ```shell
     $ vagrant plugin install vagrant-timezone
     ```
 
-2. Download (`git clone`) or update (`git pull`) the **nodeVISTA** repository: [https://github.com/vistadataproject/nodeVISTA](https://github.com/vistadataproject/nodeVISTA)
+2. Clone the **nodeVISTA** repository: [https://github.com/vistadataproject/nodeVISTA](https://github.com/vistadataproject/nodeVISTA) by running the following command from a terminal or command prompt:
     ```shell
     $ git clone https://github.com/vistadataproject/nodeVISTA
     ```
 
-3. `cd` to the `nodeVista/setup/` directory
+3. `cd` to the `nodeVISTA/setup/` directory in a terminal or command prompt:
 
-4. If you have installed a **nodeVISTA** VM beforehand, clear out your current VM and setup by running the following command:
+4. If you have installed a **nodeVISTA** VM beforehand, clear out your current VM and setup by running the following command from a terminal or command prompt:
    ```shell
    $ vagrant destroy --force
    ```
 
-5. Create and configure the **nodeVISTA** VM by running the following command:
+5. Create and configure the **nodeVISTA** VM by running the following command from a terminal or command prompt:
     ```shell
     $ vagrant up
     ```
@@ -65,7 +65,7 @@ The following describes how to install **nodeVISTA** server in a VirtualBox virt
 
 ### Verify Installation
 
-1. Start the **nodeVISTA** VM by running the following command:
+1. Start the **nodeVISTA** VM by running the following command from a terminal or command prompt:
     ```shell
     $ vagrant reload
     ```
