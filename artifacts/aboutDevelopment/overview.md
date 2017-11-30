@@ -43,8 +43,11 @@ Regression ...
 
 ![Regression](/artifacts/aboutDevelopment/images/RegressionCapture.png)
 
+Jira ...
+
+![List of 71](images/JiraEmulationLists.png)
+
 Jenkins Setup ...
 
 ![JenkinsSetup](images/SetupScript.png)
-
 
