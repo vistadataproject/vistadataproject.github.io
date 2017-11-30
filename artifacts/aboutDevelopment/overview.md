@@ -33,18 +33,18 @@ __Demo VM For B1__
 
 Development in Branches ...
 
-![DevInBranches -width70](artifacts/aboutDevelopment/images/DevInBranches.png)
+![DevInBranches](artifacts/aboutDevelopment/images/DevInBranches.png)
 
 Unit Tests in CI ...
 
-![UnitTestsinCI -width70](artifacts/aboutDevelopment/images/GMVGETVITALIENUNITTESTS.png)
+![UnitTestsinCI](artifacts/aboutDevelopment/images/GMVGETVITALIENUNITTESTS.png)
 
 Regression ...
 
-![Regression -width70](artifacts/aboutDevelopment/images/RegressionCapture.png)
+![Regression](artifacts/aboutDevelopment/images/RegressionCapture.png)
 
 Jenkins Setup ...
 
-![JenkinsSetup -width70](artifacts/aboutDevelopment/images/SetupScript.png)
+![JenkinsSetup](artifacts/aboutDevelopment/images/SetupScript.png)
 
 
