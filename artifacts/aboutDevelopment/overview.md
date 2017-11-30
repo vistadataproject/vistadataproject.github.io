@@ -31,4 +31,20 @@ title: VAM Development Overview
 
 ## Background Shots
 
+Development in Branches ...
+
 ![DevInBranches -width70](artifacts/aboutDevelopment/images/DevInBranches.png)
+
+Unit Tests in CI ...
+
+![UnitTestsinCI -width70](artifacts/aboutDevelopment/images/GMV GET VITAL IEN UNIT TESTS.png)
+
+Regression ...
+
+![Regression -width70](artifacts/aboutDevelopment/images/RegressionCapture.png)
+
+Jenkins Setup ...
+
+![JenkinsSetup -width70](artifacts/aboutDevelopment/images/SetupScript.png)
+
+
