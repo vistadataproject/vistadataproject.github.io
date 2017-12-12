@@ -5,8 +5,8 @@ title: VAM B1
 
 ## Build 1
 
-  * [[vamArchitecture]]
-  * [[vamB1DemoPerformance]]
+  * [vamArchitecture](vamArchitecture.md)
+  * [vamB1DemoPerformance](vamB1DemoPerformance)
   * [[vamB1DemoSetup]]
   * [[vamB1ParametersAndFiles]]
   * [[vamB1RPCsEmulated]]
