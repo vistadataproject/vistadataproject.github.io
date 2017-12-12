@@ -5,13 +5,13 @@ title: VAM B1 RPC Unit Tests
 
 Taken from automated list - changes include removing "asynchronous", making a formal markdown table and separating RPCs with a blank row.
 
-Name | Description |
---- | --- |
-GMV DLL VERSION | empty string param should return NO
-GMV DLL VERSION | invalid numeric param should return NO
-GMV DLL VERSION | invalid string param should return NO
-GMV DLL VERSION | valid param should return YES or NO
-&nbsp; | &nbsp;
+| Name | Description |
+| --- | --- |
+| GMV DLL VERSION | empty string param should return NO |
+| GMV DLL VERSION | invalid numeric param should return NO |
+| GMV DLL VERSION | invalid string param should return NO |
+| GMV DLL VERSION | valid param should return YES or NO |
+| &nbsp; | &nbsp; |
 GMV GET VITAL TYPE IEN | valid array param should return list of caret-delimited ien/label pairs
 &nbsp; | &nbsp;
 ORB SORT METHOD | formatResult: valid param should return a sort method
