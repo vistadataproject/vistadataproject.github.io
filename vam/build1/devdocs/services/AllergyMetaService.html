@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>VAM Services Class: AllergyMetaService</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.dark.css">
+
+	<link type="text/css" rel="stylesheet" href="styles/site.cerulean.css">
+
+</head>
+
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top ">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">VAM Services</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="AllergyMetaService.html">AllergyMetaService</a></li><li><a href="BaseService.html">BaseService</a></li><li><a href="CprsMetaService.html">CprsMetaService</a></li><li><a href="DateTimeService.html">DateTimeService</a></li><li><a href="DocumentMetaService.html">DocumentMetaService</a></li><li><a href="FileManService.html">FileManService</a></li><li><a href="LocationMetaService.html">LocationMetaService</a></li><li><a href="MedMetaService.html">MedMetaService</a></li><li><a href="OrderMetaService.html">OrderMetaService</a></li><li><a href="ParameterService.html">ParameterService</a></li><li><a href="PCEMetaService.html">PCEMetaService</a></li><li><a href="SystemMetaService.html">SystemMetaService</a></li><li><a href="UserMetaService.html">UserMetaService</a></li><li><a href="VitalsMetaService.html">VitalsMetaService</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+        
+            <div class="col-sm-3 col-md-3">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="q" id="search-input">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" id="search-submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+	</div>
+
+</div>
+</div>
+
+
+<div class="container" id="toc-content">
+<div class="row">
+
+	
+	<div class="col-md-8">
+	
+		<div id="main">
+			
+
+	<h1 class="page-title">Class: AllergyMetaService</h1>
+<section>
+
+<header>
+    
+        <h2>
+        AllergyMetaService
+        </h2>
+        
+    
+</header>
+
+
+<article>
+    <div class="container-overview">
+    
+        
+<hr>
+<dt>
+    <h4 class="name" id="AllergyMetaService"><span class="type-signature"></span>new AllergyMetaService()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Service for Meta (non-clinical) queries relating to the Allergy clinical domain.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        <dl>
+            
+<hr>
+<dt>
+    <h4 class="name" id="lookupAllergyDefList"><span class="type-signature"></span>lookupAllergyDefList(context, callback)</h4>
+    
+    
+    <p class="summary"><p>Returns default values and list sets for Allergy ordering dialog.</p></p>
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>context</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the session data</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the callback function used to process results</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <ul>
+<li>Array containining top10Reaction object</li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="lookupAllergySiteParams"><span class="type-signature"></span>lookupAllergySiteParams(context, callback)</h4>
+    
+    
+    <p class="summary"><p>return a list of Allergy Site Parameters as an Object (see return docs for details)</p></p>
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>context</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the session data</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the function that will process results from lookupAllergySiteParams</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>Allergy Site Param list (see ResObj docs)</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">ResObj</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="lookupAllergySiteParams"><span class="type-signature"></span>lookupAllergySiteParams(context, callback)</h4>
+    
+    
+    <p class="summary"><p>return a list of Allergy Site Parameters as an Object (see return docs for details)</p></p>
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>context</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the session data</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the function that will process results from lookupAllergySiteParams</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>Allergy Site Param list (see ResObj docs)</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">ResObj</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        </dl>
+    
+
+    
+        <h3 class="subsection-title">Type Definitions</h3>
+
+        <dl>
+                
+<hr>
+<dt class="name" id=".ResObj">
+    <h4 id=".ResObj">ResObj</h4>
+
+    
+</dt>
+<dd>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">Object</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+<table class="props table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The name of this set of parameters, defaults to 'HOSPITAL'.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>autoverifyFoodDrugOther</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>This field determines which types of allergies a site wants autoverified at the user sign off.
+             0:NO AUTOVERIFY
+             1:AUTOVERIFY DRUG ONLY
+             2:AUTOVERIFY FOOD ONLY
+             3:AUTOVERIFY DRUG/FOOD
+             4:AUTOVERIFY OTHER ONLY
+             5:AUTOVERIFY DRUG/OTHER
+             6:AUTOVERIFY FOOD/OTHER
+             7:AUTOVERIFY ALL</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>autoverifyObservedHistorical</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>This field is configurable by the site to allow autoverification of observed or historical allergies.
+             0:NO AUTOVERIFY
+             1:AUTOVERIFY HISTORICAL ONLY
+             2:AUTOVERIFY OBSERVED ONLY
+             3:AUTOVERIFY BOTH</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>requireOriginatorComments</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>This field indicates whether the originator will be required to enter comments for an OBSERVED reaction.
+             0:NO
+             1:YES</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>markIdBandFlag</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>This field is an indicator to denote whether the site wants to document if the patient ID band should be
+             marked for a certain allergy. The system will assume the site wants to document the marking of inpatient
+             ID bands. If this field is answered NO, the site does not want to document the marking of inpatient ID
+             bands.
+             0:NO
+             1:YES</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>autoverifyLogicalOperator</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>This field will determine how the Autoverify Food/Drug/Other and Autoverify Observed/Historical
+             parameters relate to each other. OR means that the reaction will be autoverified if it meets the
+             criteria of one of the two parameters, while AND means the reaction will be autoverified only if it
+             meets the criteria of both parameters. If this field is left null, the OR condition will be used.
+             For example, if you want to verify only observed drug reactions, you would set the
+             Autoverify Food/Drug/Other parameter to AUTOVERIFY FOOD/OTHER and the Autoverify Observed/Historical to
+             AUTOVERIFY HISTORICAL ONLY , and the Autoverify Logical Operator to OR. This means that a reaction that
+             has a type of Food/Other OR is Historical will be autoverified, thus leaving observed drug reactions to
+             be verified. Another example would be if you wanted to verify all observed reactions and all drug
+             reactions whether observed or historical. The parameters should be set accordingly:
+             Autoverify Food/Drug/Other to AUTOVERIFY FOOD/OTHER, Autoverify Observed/Historical to AUTOVERIFY
+             HISTORICAL ONLY and Autoverify Logical Operator to AND. In this case to be autoverifed, a reaction has
+             to have a type of Food/Other AND it must be Historical, all other reactions will need to be verified.
+             !:OR
+             &amp;:AND</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>fdaDataRequired</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>This field will indicate whether the entry of FDA Data should be required during the Enter/Edit Patient
+             Reaction Data. If this field is answered &quot;YES&quot;, then the user must enter the FDA Data at the time of
+             entering a reaction. If this field is left null or answered &quot;NO&quot;, then the FDA Data entry will not be
+             required during the Enter/Edit Patient Reaction Data option.
+             y:YES
+             n:NO</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>methodOfNotification</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>This field tells ART if or how the users should be notified for chart or ID band markings. There are
+             three methods. The first method is the use of BULLETINs, which is the current way ART works. The
+             second method is the use of OE/RR Teams. If this method is used, then you will need to set up different
+             teams for each ward and also assign printers to these teams. The third method is to turn off the
+             function.
+             0:BULLETIN
+             1:OE/RR TEAMS
+             2:NO NOTIFICATION</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>alertIdBandChartMark</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>This field is to let the system know if you want to issue alerts if the fields have not been answered
+             in the Enter/Edit Patient Reaction Data portion of the system. If the field is answered yes(1) or is
+             null then, the system will continue to issue the alerts. If this field is no(0), then the system will
+             not issue alerts for this record.
+             1:YES
+             0:NO</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>newAdmissionChartMark</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>This is to indicate if the site wants to send chart mark bulletin for a new admission.
+             1:YES
+             0:NO</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>eEDescriptionActive</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Permit users to indicate why a reaction was Entered in Error.
+             1:YES
+             0:NO</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+</dl>
+
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+            </dl>
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+		<div class="col-md-3">
+			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
+		</div>
+	
+
+</div>
+</div>
+
+
+    <div class="modal fade" id="searchResults">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Search results</h4>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+
+
+<footer>
+
+
+	<span class="copyright">
+	© 2017. VISTA Adaptive Maintenance. All rights reserved.
+	</span>
+
+<span class="jsdoc-message">
+	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a>
+	
+		on December 11th 2017, 10:39:15 pm
+	
+	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
+</span>
+</footer>
+
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
+
+    <script type="text/javascript" src="scripts/fulltext-search-ui.js"></script>
+
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre, pre.prettyprint.source" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : true,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			return $( heading ).attr( "id" ) || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+
+<!--Google Analytics-->
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            SearcherDisplay.init();
+        });
+    </script>
+
+
+</body>
+</html>
