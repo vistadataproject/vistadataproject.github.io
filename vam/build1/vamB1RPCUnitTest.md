@@ -5,8 +5,8 @@ title: VAM B1 RPC Unit Tests
 
 Taken from automated list - changes include removing "asynchronous", making a formal markdown table and separating RPCs with a blank row.
 
-Name | Description
---- | ---
+Name | Description |
+--- | --- |
 GMV DLL VERSION | empty string param should return NO
 GMV DLL VERSION | invalid numeric param should return NO
 GMV DLL VERSION | invalid string param should return NO
