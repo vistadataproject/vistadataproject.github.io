@@ -19,3 +19,4 @@ and
 and 
 
   * [devdocs](devdocs/) - includes [services](devdocs/services/) and [test](devdocs/tests/)
+  * [manually reworked RPC Unit Test](vamB1RPCUnitTest)
