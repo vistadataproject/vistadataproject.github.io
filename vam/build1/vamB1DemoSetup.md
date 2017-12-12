@@ -40,9 +40,11 @@ Prior to enabling UFW, allow access the following ports:
 | 22 | SSH |
 | 443 | HTTPS |
 | 9000 | FMQL Server |
-| 9010 | RPC Router |
+| 9010 | VISTA RPC Broker |
 | 9011 | RPC Router |
 | 9012 | RPC Router Manager Client |
+
+Note that aside from the TCP ports listed above, no other ports should be open and/or accessible externally. 
 
 Allow access to the ports above using the following command:
 
@@ -112,7 +114,7 @@ rm -rf export
 
 1. Deploy/clone `VICSServer` source to the Linode demo server
 2. `cd VICSServer` => `npm install`
-3. `cd emulation/server` => `pm2 start --name "rpcEmulator" 
+3. `cd emulation/server` => `pm2 start --name "rpcEmulator"
 4. `pm2 save`
 
 #### Operation/Control
@@ -162,7 +164,7 @@ To test the RPC monitor page, direct your web brower to http://198.74.51.41:9012
 
 
 
-## Web Site of Linode with Demo page 
+## Web Site of Linode with Demo page
 
 Redirect to a _Demo 3_ on the [vistadataproject](http://vistadataproject.info/) web site. That set of _Demo 3_ pages should:
   * have a clear diagram numbering all active pieces of demo
