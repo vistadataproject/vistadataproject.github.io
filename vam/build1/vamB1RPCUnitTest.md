@@ -7,7 +7,7 @@ Taken from automated list - changes include removing "asynchronous", making a fo
 
 Name | Description
 --- | ---
-GMV DLL VERSION asynchronous specs  empty string param should return NO
+GMV DLL VERSION | empty string param should return NO
 GMV DLL VERSION | invalid numeric param should return NO
 GMV DLL VERSION | invalid string param should return NO
 GMV DLL VERSION | valid param should return YES or NO
