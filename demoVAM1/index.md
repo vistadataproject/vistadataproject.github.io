@@ -41,11 +41,15 @@ Back in the _Router Manager_, the _RPC Events_ tab shows the three RPCs sent by 
 
 ![RM Connect Before Login -width70](images/RM_2_ConnectBeforeLogin.png)
 
-Double lock on the row with the _XUS INTRO_ RPC ...
+Double click on the row with the _XUS INTRO_ RPC ...
 
 ![RM XUS INTRO DETAILS -width70](images/RM_2_XUS_INTRO_DETAILS.png)
 
-...
+This, like all detail popups, shows four key aspects of an RPC monitored by the Router:
+  1. When the RPC was received and where it was routed to. This RPC was routed to _VISTA_.
+  2. A unique transaction id is given to every RPC received by the Router. This id allows RPC traffic to be identified uniquely in audit logs.
+  3. The arguments passed in a request
+  4. The response from either VISTA or the VICS Server 
 
 Now briefly go back to CPRS and login as Dr Robert Alexander using the following credentials ...
 
