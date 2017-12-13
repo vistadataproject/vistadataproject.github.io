@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Model Unit Tests
+title: RPC Emulation Unit Tests
 ---
 
-## Model Unit Tests
+## RPC Emulation Unit Tests
 _Test run Dec 13, 2017 1:59 AM GMT+0000 (UTC)_
 
 | Group | Description |
