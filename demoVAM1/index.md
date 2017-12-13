@@ -5,6 +5,8 @@ title: VAM Demo 1 (Build 1)
 
 # VAM Demonstration Build 1 (December 2017)
 
+__TODO__: change to fix broken image links/sizes and flow from list of VAM emulated RPCs to one patient centric one from VISTA. Then say the VISTA one will move to VAM in build 2.
+
 The following walks through the _VAM Build 1_ demo. 
 
 ![pdeVICSServerSetup -width70](images/pdeVICSServer.png)
@@ -98,6 +100,7 @@ Back in the _Router Manager_ ...
 ...
 ![RM_3_ORWCV1_COVERSHEET_LIST -width70](images/RM_3_ORWCV1_COVERSHEET_LIST.png)
 ...
+![RM_4_MixOfRoutedRPCs](images/RM_4_MixOfRoutedRPCs.png)
 
 Finally, when you exit from CPRS ...
 
