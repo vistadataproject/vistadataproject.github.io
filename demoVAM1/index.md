@@ -70,6 +70,8 @@ The RPC, _XUS GET USER INFO_ is highlighted in red. Clicking on that row of the 
 
 ![RM_3_ORQPT_DEFAULT_LIST_SOURCE -width70](images/RM_3_XUS_GET_USER_INFO.png)
 
+Unlike _XUS INTRO DETAILS_, this RPC was handled by the _VICS Server_ and not by _VISTA_. The server knows about all the user's of _VISTA_ and their details and it could store details on the user's of all _130 VISTAs_ across the VA. 
+
 Back in CPRS, you are asked to select a Patient ...
 
 ![CPRS Patient Select Open -width70](images/CPRS_PSEL_Open.png)
