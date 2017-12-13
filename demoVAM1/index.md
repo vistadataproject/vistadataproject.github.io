@@ -21,31 +21,31 @@ It opens to an empty _RPC Events_ tab which lists the RPCs dispatched through Ro
 
 Click on the _Management_ tab. The first thing you see is a toggle for controlling whether supported RPCs are routed to the _VICS Server_ or sent to VISTA. 
 
-![RM Management Top -width70](images/RM_1_MgmtTop.png)
+![RM Management Top](images/RM_1_MgmtTop.png)
 
 It defaults to _On_ which means the Server will receive any RPC it supports. The second part of the Management tab lists the RPCs supported by the Server ...
 
-![RM Management Supported Start -width70](images/RM_1_MgmtSupStart.png)
+![RM Management Supported Start](images/RM_1_MgmtSupStart.png)
 
 This list is fetched from the Server by the Router using a custom RPC. As Server coverage grows with each VAM release, the Router will send more and more traffic its way. In _Build 1_, the Server supports _71 VISTA RPCs_ ...
 
-![RM Management Supported End -width70](images/RM_1_MgmtSupEnd.png)
+![RM Management Supported End](images/RM_1_MgmtSupEnd.png)
 
 Now, switch back to the _RPC Events_ tab and start _CPRS_ ...
 
-![CPRS Start -width70](images/CPRS_Start.png)
+![CPRS Start](images/CPRS_Start.png)
 
 CPRS should be connected to _vamdemo.vistadataproject.info:9011_. After connecting CPRS presents a login screen ...
 
-![CPRS Login -width70](images/CPRS_Login.png)
+![CPRS Login](images/CPRS_Login.png)
 
 Back in the _Router Manager_, the _RPC Events_ tab shows the three RPCs sent by CPRS, all of which were routed to VISTA ...
 
-![RM Connect Before Login -width70](images/RM_2_ConnectBeforeLogin.png)
+![RM Connect Before Login](images/RM_2_ConnectBeforeLogin.png)
 
 Double click on the row with the _XUS INTRO_ RPC ...
 
-![RM XUS INTRO DETAILS -width70](images/RM_2_XUS_INTRO_DETAILS.png)
+![RM XUS INTRO DETAILS](images/RM_2_XUS_INTRO_DETAILS.png)
 
 This, like all detail popups, shows four key aspects of an RPC monitored by the Router:
   1. When the RPC was received and where it was routed to. This RPC was routed to _VISTA_.
@@ -62,31 +62,31 @@ Now briefly go back to CPRS and login as Dr Robert Alexander using the following
 
 Back in the _Router Manager_, RPC after RPC cascades through the _RPC Event_ tab. CPRS is very "chatty" - Before any patient is selected, it sends over 80 RPCs. RPCs supported by the _VICS Server_ go to the server, not VISTA. As the Server emulates CPRS' RPC interface, CPRS proceeds as if all of its interactions are with the VISTA ...
 
-![RM Post Logon -width70](images/RM_3_5TAB_LIST_HIGHUSERINFO.png)
+![RM Post Logon](images/RM_3_5TAB_LIST_HIGHUSERINFO.png)
 
-Two quick highlights from the _Router Manager_ screen above: even before patient selection, CPRS has sent five pages of RPCs and some RPCs are handled in _VISTA_, some in the _VICS Server_.
+Note that even before patient selection, CPRS has sent five pages of RPCs, some handled in _VISTA_, some in the _VICS Server_. _ORWU DT_ is sent more than once by CPRS - CPRS asks for the date many many times.
 
 The RPC, _XUS GET USER INFO_ is highlighted in red. Clicking on that row of the table brings up its details ...
 
-![RM_3_ORQPT_DEFAULT_LIST_SOURCE -width70](images/RM_3_XUS_GET_USER_INFO.png)
+![RM_3_ORQPT_DEFAULT_LIST_SOURCE](images/RM_3_XUS_GET_USER_INFO.png)
 
 Unlike _XUS INTRO DETAILS_, this RPC was handled by the _VICS Server_ and not by _VISTA_. The server knows about all the user's of _VISTA_ and their details and it could store details on the user's of all _130 VISTAs_ across the VA. 
 
 Back in CPRS, you are asked to select a Patient ...
 
-![CPRS Patient Select Open -width70](images/CPRS_PSEL_Open.png)
+![CPRS Patient Select Open](images/CPRS_PSEL_Open.png)
 
 Single Click on _Carter, David_. You'll see that this patient's demographics appear to the left of the selection box ...
 
-![CPRS Patient Select Open -width70](images/CPRS_PSEL_See_Demos.png)
+![CPRS Patient Select Open](images/CPRS_PSEL_See_Demos.png)
 
 The Router Manager shows this information comes from three RPC calls ...
 
-![DM_3_1_SINGLE_CLICK_SEL_LIST -width25](images/DM_3_1_SINGLE_CLICK_SEL_LIST.png)
+![DM_3_1_SINGLE_CLICK_SEL_LIST](images/DM_3_1_SINGLE_CLICK_SEL_LIST.png)
 
 mainly from ...
 
-![DM_3_1_SINGLE_CLICK_SEL_LIST -width25](images/DM_3_1_ORWPT_ID_INFO.png).
+![DM_3_1_SINGLE_CLICK_SEL_LIST](images/DM_3_1_ORWPT_ID_INFO.png).
 
 Now as the image above shows, in Build1, this RPC continues to be processed by VISTA but it and other patient demographics will come from VICS Server in Build 2.
 
