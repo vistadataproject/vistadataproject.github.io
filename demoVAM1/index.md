@@ -94,7 +94,7 @@ As the image above shows, in Build1, this RPC continues to be processed by VISTA
 
 Clicking _Ok_ will bring you to the Patient's Chart ...
 
-![CPRS Coversheet -width70](images/CPRS_Coversheet.png)
+![CPRS Coversheet](images/CPRS_Coversheet.png)
 
 and fill two more tabs of RPCs from VistA ..
 
@@ -102,7 +102,7 @@ and fill two more tabs of RPCs from VistA ..
 
 one of which is the VICS Server-supported _ORWCV1 COVERSHEET LIST_ ...
 
-![RM_3_ORWCV1_COVERSHEET_LIST -width70](images/RM_3_ORWCV1_COVERSHEET_LIST.png)
+![RM_3_ORWCV1_COVERSHEET_LIST](images/RM_3_ORWCV1_COVERSHEET_LIST.png)
 
 an RPC that tells CPRS what to show. Just like VISTA, the VICS Server supports different coversheet configurations for different users but now the settings are maintained nationally in one place, in a _Parameter Service_. Such centralization of preferences, permissions and settings is key feature of VICS.
 
@@ -110,10 +110,26 @@ __TODO__: go through any Allergy, Problem, Vital called in this first sequence u
 
 Finally, when you exit from CPRS ...
 
-![CPRS Exit -width70](images/CPRS_Exit.png)
+![CPRS Exit](images/CPRS_Exit.png)
 
 the _Router Manager_ will show the RPC sign out messages ending in _BYE_ ...
 
-![RM END BYE -width70](images/RM_END_BYE.png)
+![RM END BYE](images/RM_END_BYE.png)
 
 Once CPRS disconnects, the Router will close its connection to both VISTA and the VICS Server.
+
+__BONUS__:
+
+![ORWU TOOLMENU](images/RM_3_ORWU_TOOLMENU.png)
+
+... example of CPRS Service. Centralize CPRS configuration ... but flexibly. You can using a Parameter Service similar to VISTA's, have national, per VISTA, per division, per location and per user settings.
+
+![RM_4_OREVNTX1_DLGIEN](images/RM_4_OREVNTX1_DLGIEN.png)
+
+... example of managing a local VistA's Id for a common concept, "PSH OERR" (ie/ among the links) ... supports lookup ...
+
+![RM_3_ORQPT_DEFAULT_LIST_SOURCE](images/RM_3_ORQPT_DEFAULT_LIST_SOURCE.png)
+
+... add in wednesday clinic ... gets from ??? 44?
+
+
