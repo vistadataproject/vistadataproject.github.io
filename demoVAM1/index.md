@@ -35,9 +35,9 @@ Now, switch back to the _RPC Events_ tab and start _CPRS_ ...
 
 ![CPRS Start -width70](images/CPRS_Start.png)
 
-CPRS should connect to _vamdemo.vistadataproject.info:9011_. After connecting CPRS presents a login screen ...
+CPRS should be connected to _vamdemo.vistadataproject.info:9011_. After connecting CPRS presents a login screen ...
 
-![RM Management Supported End -width70](images/RM_1_MgmtSupEnd.png)
+![CPRS Login -width70](images/CPRS_Login.png)
 
 Back in the _Router Manager_, the _RPC Events_ tab shows the three RPCs sent by CPRS, all of which were routed to VISTA ...
 
@@ -59,8 +59,6 @@ Now briefly go back to CPRS and login as Dr Robert Alexander using the following
    Access Code: fakedoc1
    Verify Code: 1doc!@#$
 ```
-
-![CPRS Login -width70](images/CPRS_Login.png)
 
 Back in the _Router Manager_, RPC after RPC cascades through the _RPC Event_ tab. CPRS is very "chatty" - Before any patient is selected, it sends over 80 RPCs. RPCs supported by the _VICS Server_ go to the server, not VISTA. As the Server emulates CPRS' RPC interface, CPRS proceeds as if all of its interactions are with the VISTA ...
 
@@ -101,6 +99,8 @@ Back in the _Router Manager_ ...
 ![RM_3_ORWCV1_COVERSHEET_LIST -width70](images/RM_3_ORWCV1_COVERSHEET_LIST.png)
 ...
 ![RM_4_MixOfRoutedRPCs](images/RM_4_MixOfRoutedRPCs.png)
+...
+![RM_4_ManySameRPCs](images/RM_4_ManySameRPCs.png)
 
 Finally, when you exit from CPRS ...
 
