@@ -72,7 +72,7 @@ The RPC, _XUS GET USER INFO_ is highlighted in red. Clicking on that row of the 
 
 ![RM_3_ORQPT_DEFAULT_LIST_SOURCE](images/RM_3_XUS_GET_USER_INFO.png)
 
-Unlike _XUS INTRO DETAILS_, this RPC was handled by the _VICS Server_ and not by _VISTA_. The server's _User Service_ knows about all the users of _VISTA_ - it is designed to manage the user's of all _130 VISTAs_ across the VA. 
+Unlike _XUS INTRO DETAILS_, this RPC was handled by the _VICS Server_ and not by _VISTA_. The server's _User Service_ knows about all the users of the demo _VISTA_ - it is designed to scale and should be able to handle the user's of all _130 VISTAs_ deployed in the VA. 
 
 Back in CPRS, you are asked to select a Patient ...
 
@@ -96,7 +96,7 @@ Clicking _Ok_ will bring you to the Patient's Chart ...
 
 ![CPRS Coversheet](images/CPRS_Coversheet.png)
 
-and fill two more tabs of RPCs from VistA ..
+and fill two more tabs of RPCs from VistA (__TODO__) ...
 
 ![RM_3_6TABS](images/RM_3_6TABS.png)
 
@@ -104,7 +104,7 @@ one of which is the VICS Server-supported _ORWCV1 COVERSHEET LIST_ ...
 
 ![RM_3_ORWCV1_COVERSHEET_LIST](images/RM_3_ORWCV1_COVERSHEET_LIST.png)
 
-an RPC that tells CPRS what to show. Just like VISTA, the VICS Server supports different coversheet configurations for different users but now the settings are maintained nationally in one place, in a _Parameter Service_. Such centralization of preferences, permissions and settings is key feature of VICS.
+an RPC that tells CPRS what to show in its _coversheet_. Just like VISTA, the VICS Server supports different coversheet configurations for different users in a _Parameter Service_. This service could manage the preferences, permissions and settings of all CPRS users in the VA.
 
 __TODO__: go through any Allergy, Problem, Vital called in this first sequence up to coversheet.
 
@@ -130,6 +130,6 @@ __BONUS__:
 
 ![RM_3_ORQPT_DEFAULT_LIST_SOURCE](images/RM_3_ORQPT_DEFAULT_LIST_SOURCE.png)
 
-... add in wednesday clinic ... gets from ??? 44?
+... add in wednesday clinic ... gets from ??? 44? See Patient Select ...
 
 
