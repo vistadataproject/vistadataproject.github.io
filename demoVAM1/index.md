@@ -49,7 +49,7 @@ Double click on the row with the _XUS INTRO_ RPC ...
 
 This, like all detail popups, shows four key aspects of an RPC monitored by the Router:
   1. When the RPC was received and where it was routed to. This RPC was routed to _VISTA_.
-  2. A unique transaction id is given to every RPC received by the Router. This id allows RPC traffic to be identified uniquely in audit logs.
+  2. A unique transaction id is given to every RPC received by the Router. This id allows RPC traffic to be [a] identified uniquely in audit logs and [b] RPC emulation to be traced through the VICS Services.
   3. The arguments passed in a request
   4. The response from either VISTA or the VICS Server 
 
@@ -80,7 +80,11 @@ Back in CPRS, you are asked to select a Patient ...
 
 ![CPRS Patient Select Open](images/CPRS_PSEL_Open.png)
 
-Single Click on _Carter, David_. You'll see that this patient's demographics appear to the left of the selection box ...
+Note that _Thursday Clinic_ is supplied by the VICS Server supported RPC, _ORQPT_DEFAULT_LIST_SOURCE_ which is emulated using the _Parameter Service_ ...
+
+![RM_3_ORQPT_DEFAULT_LIST_SOURCE_MONCLINICETC](images/RM_3_ORQPT_DEFAULT_LIST_SOURCE_MONCLINICETC.png)
+
+Back in Patient Selection, single click on _Carter, David_. You'll see that this patient's demographics appear to the left of the selection box ...
 
 ![CPRS Patient Select Open](images/CPRS_PSEL_See_Demos.png)
 
@@ -88,9 +92,11 @@ The Router Manager shows this information comes from three RPC calls ...
 
 ![DM_3_1_SINGLE_CLICK_SEL_LIST](images/DM_3_1_SINGLE_CLICK_SEL_LIST.png)
 
-mainly from ...
+The main RPC, _ORWPT ID INFO_, is resolved in VISTA in Build 1 like other Patient data RPCs. It asks for information on the patient with identifier "25" in the demo VISTA ...
 
 ![DM_3_1_SINGLE_CLICK_SEL_LIST](images/DM_3_1_ORWPT_ID_INFO.png)
+
+"25" represents a patient identifier of a particular VISTA. Like all VICS Services, the Patient Service of Build 2 will employ national identifiers for patients which will allow it to merge patient records from all 130 VA VISTAs.
 
 As the image above shows, in Build1, this RPC continues to be processed by VISTA in _Build 1_ - unlike user information, patient data is not yet in the VICS Server. It will migrate in _Build 2_.
 
@@ -108,11 +114,9 @@ Configurations are returned in the VICS-supported RPC, _ORWCV1 COVERSHEET LIST_,
 
 ![RM_3_ORWCV1_COVERSHEET_LIST](images/RM_3_ORWCV1_COVERSHEET_LIST.png)
 
-This RPC not only tells CPRS what data to show in its _coversheet_ including the allergies, vitals, problems and prescriptions. It also specifies further RPCs to invoke to return such data for the selected patient. The sixth tab shows those RPCs are invoked. For example, _ _ lists the allergies of a patient ...
+This RPC not only tells CPRS what data to show in its _coversheet_ including the allergies, vitals, problems and prescriptions. It also specifies further RPCs to invoke to return such data for the selected patient. The sixth tab shows those RPCs are invoked. For example, _ORQQAL LIST_ lists the allergies of a patient ...
 
 ![RM_5_ORQQAL_LIST](images/RM_5_ORQQAL_LIST.png)
-
-Like other patient data, this RPC is routed to VISTA in Build 1. Build 2 will migrate this and other patient data to the _VICS Server_.
 
 Finally, when you exit from CPRS ...
 
@@ -135,7 +139,3 @@ __BONUS__:
 ... example of managing a local VistA's Id for a common concept, "PSH OERR" (ie/ among the links) ... supports lookup ...
 
 ![RM_3_ORQPT_DEFAULT_LIST_SOURCE](images/RM_3_ORQPT_DEFAULT_LIST_SOURCE.png)
-
-... add in wednesday clinic ... gets from ??? 44? See Patient Select ...
-
-
