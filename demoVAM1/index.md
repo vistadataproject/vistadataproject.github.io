@@ -5,39 +5,41 @@ title: VAM Demo 1 (Build 1)
 
 # VAM Demonstration Build 1 (December 2017)
 
-The following demo illustrates the components of the _VAM Build 1_ release.
+The following demo illustrates how _VAM Build 1_ establishes the _VICS Architecture_. This architecture enables the incremental migration of VA provider workflow to one set of VA-wide national services and away from 130 separate, legacy VISTA Servers.
+
+_Build 1_ involves four components - the well established VISTA Server and its client CPRS and the VAM-developed _VICS Server_ and _RPC Router_. All but CPRS are hosted on a cloud-based virtual machine at _vamdemo.vistadataproject.info_. 
 
 ![pdeVICSServerSetup -width70](images/pdeVICSServer.png)
 
-_VAM Build 1_ involves four components, a _VISTA_, a _VICS Server_, an _RPC Router_ and a _CPRS Client_. The first three are hosted on a cloud-based VM at _vamdemo.vistadataproject.info_. You must install and run _CPRS_ from your local machine.
+Note how the _VICS Server_ is layered - RPC Emulation is built over well designed VICS Services which store their store in a generic NoSQL store.
 
-Start by opening your browser and opening the _RPC Router Manager_ at _[http://vamdemo.vistadataproject.info:9012](http://vamdemo.vistadataproject.info:9012)_. This client let's you monitor RPC traffic sent by _CPRS_ ...
+Start by opening your browser and going to the _RPC Router Manager_ at _[http://vamdemo.vistadataproject.info:9012](http://vamdemo.vistadataproject.info:9012)_. This web client let's you monitor RPCs sent by CPRS through the Router ...
 
 ![RM Open Empty -width70](images/RM_1_OpenEmpty.png)
 
-It opens to an empty _RPC Events_ tab which lists the RPCs dispatched through Router. The _Route_ column shows which RPCs go to _VISTA_ and which go to the _VICS Server_. 
+It opens to an empty _RPC Events_ tab which lists the RPCs seen by the Router. The _Route_ column shows which RPCs were sent to _VISTA_ and which went to the _VICS Server_. 
 
-Click on the _Management_ tab. The first thing you see is a toggle for controlling whether supported RPCs are routed to the _VICS Server_ or sent to VISTA. 
+Click on the _Management_ tab. The first thing you see is a toggle for controlling whether supported RPCs are routed to the _VICS Server_ or sent to VISTA ...
 
 ![RM Management Top](images/RM_1_MgmtTop.png)
 
-It defaults to _On_ which means the Server will receive any RPC it supports. The second part of the Management tab lists the RPCs supported by the Server ...
+It defaults to _On_ which means the Router will dispatch select RPCs to the Server. The second part of the Management tab lists the RPCs supported by the Server ...
 
 ![RM Management Supported Start](images/RM_1_MgmtSupStart.png)
 
-This list is fetched from the Server by the Router using a custom RPC. As Server coverage grows with each VAM release, the Router will send more and more traffic its way. In _Build 1_, the Server supports _71 VISTA RPCs_ ...
+This list is fetched from the Server by the Router using a custom RPC. In _Build 1_, the Server supports _71 VISTA RPCs_ ...
 
 ![RM Management Supported End](images/RM_1_MgmtSupEnd.png)
 
-Now, switch back to the _RPC Events_ tab and start _CPRS_ ...
+Now, switch back to the _RPC Events_ tab. To run this part of the demo, CPRS must be installed on your local machine. Start _CPRS_ ...
 
 ![CPRS Start](images/CPRS_Start.png)
 
-CPRS should be connected to _vamdemo.vistadataproject.info:9011_. After connecting CPRS presents a login screen ...
+CPRS should be connected to _vamdemo.vistadataproject.info:9011_. After connecting, CPRS presents a login screen ...
 
 ![CPRS Login](images/CPRS_Login.png)
 
-Back in the _Router Manager_, the _RPC Events_ tab shows the three RPCs sent by CPRS, all of which were routed to VISTA ...
+Back in the _Router Manager_, the _RPC Events_ tab shows the three RPCs sent by CPRS ...
 
 ![RM Connect Before Login](images/RM_2_ConnectBeforeLogin.png)
 
@@ -58,7 +60,7 @@ Now briefly go back to CPRS and login as Dr Robert Alexander using the following
    Verify Code: 1doc!@#$
 ```
 
-Back in the _Router Manager_, RPC after RPC cascades through the _RPC Event_ tab. CPRS is very "chatty" - Before any patient is selected, it sends over 80 RPCs. RPCs supported by the _VICS Server_ go to the server, not VISTA. As the Server emulates CPRS' RPC interface, CPRS proceeds as if all of its interactions are with the VISTA ...
+Back in the _Router Manager_, RPC after RPC cascades through the _RPC Event_ tab. CPRS is very "chatty" - before any patient is selected, it sends over 80 RPCs. RPCs supported by the _VICS Server_ go to the server, not VISTA but CPRS proceeds as if all of its traffic goes to and from VISTA ...
 
 ![RM Post Logon](images/RM_3_5TAB_LIST_HIGHUSERINFO.png)
 
@@ -66,9 +68,9 @@ Note that even before patient selection, CPRS has sent five pages of RPCs, some 
 
 ![RM_O_ORWU_DT](images/RM_O_ORWU_DT.png)
 
-which is now handled by the VICS Server's _Time Service_.
+This and other date and time queries are now handled by the VICS Server's _Time Service_.
 
-The RPC, _XUS GET USER INFO_ is highlighted in red. Clicking on that row of the table brings up its details ...
+The RPC, _XUS GET USER INFO_ is highlighted in red. Clicking on that row of the table brings up that RPC's details ...
 
 ![RM_3_ORQPT_DEFAULT_LIST_SOURCE](images/RM_3_XUS_GET_USER_INFO.png)
 
@@ -92,21 +94,25 @@ mainly from ...
 
 As the image above shows, in Build1, this RPC continues to be processed by VISTA in _Build 1_ - unlike user information, patient data is not yet in the VICS Server. It will migrate in _Build 2_.
 
-Clicking _Ok_ will bring you to the Patient's Chart ...
+Clicking _Ok_ will bring you to the Patient's "Coversheet" ...
 
 ![CPRS Coversheet](images/CPRS_Coversheet.png)
 
-and fill two more tabs of RPCs from VistA (__TODO__) ...
+and fill another tab of RPCs in the Router Manager ...
 
-![RM_3_6TABS](images/RM_3_6TABS.png)
+![RM_6TABS](images/RM_6TABS.png)
 
-one of which is the VICS Server-supported _ORWCV1 COVERSHEET LIST_ ...
+The VICS Server stores coversheet configurations for different users in its _Parameter Service_. In Build 1's demo, that service holds configurations of one VISTA but this and other VICS services have been built to hold and manage data from all 130 VA VISTAs.
+
+Configurations are returned in the VICS-supported RPC, _ORWCV1 COVERSHEET LIST_, ...
 
 ![RM_3_ORWCV1_COVERSHEET_LIST](images/RM_3_ORWCV1_COVERSHEET_LIST.png)
 
-an RPC that tells CPRS what to show in its _coversheet_. Just like VISTA, the VICS Server supports different coversheet configurations for different users in a _Parameter Service_. This service could manage the preferences, permissions and settings of all CPRS users in the VA.
+This RPC not only tells CPRS what data to show in its _coversheet_ including the allergies, vitals, problems and prescriptions. It also specifies further RPCs to invoke to return such data for the selected patient. The sixth tab shows those RPCs are invoked. For example, _ _ lists the allergies of a patient ...
 
-__TODO__: go through any Allergy, Problem, Vital called in this first sequence up to coversheet.
+![RM_5_ORQQAL_LIST](images/RM_5_ORQQAL_LIST.png)
+
+Like other patient data, this RPC is routed to VISTA in Build 1. Build 2 will migrate this and other patient data to the _VICS Server_.
 
 Finally, when you exit from CPRS ...
 
