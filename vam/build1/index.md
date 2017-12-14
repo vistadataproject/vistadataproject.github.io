@@ -12,6 +12,13 @@ Software Tagged _v1.0_:
   
 ... V1.1 complete meta emulation and add a _VICS Server Management Client_.
 
+Preliminary In-Code GIT documentation ...
+
+  * [VICS Server](https://github.com/vistadataproject/VICSServer/blob/master/README.md)
+  * [Services](https://github.com/vistadataproject/VICSServer/blob/master/services/README.md)
+  * [Emulation](https://github.com/vistadataproject/VICSServer/blob/master/emulation/README.md)
+  * [Parameter Service](https://github.com/vistadataproject/VICSServer/blob/master/services/docs/ParameterService.md)
+
   * [demo](/demoVAM1/)
 
 and
@@ -28,3 +35,4 @@ and
   * [devdocs](devdocs/) - includes [services](devdocs/services/) and [test](devdocs/tests/)
 
 and need setups right - [rpc router](https://github.com/vistadataproject/rpcRouter) and [vics server](https://github.com/vistadataproject/VICSServer/tree/master/setup)
+
