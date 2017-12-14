@@ -13,7 +13,7 @@ _Build 1_ involves four components - the pre-existing _VISTA Server_ and its cli
 
 Note how the _VICS Server_ is layered - Remote Procedure Call (RPC) Emulation is built over well designed  Services. These Services normalize and refine the cryptically-named and redundantly-implemented RPCs. 
 
-Build 1 focused on a generic _Parameter Service_ to hold system configurations, a basic _Time Service_, a _User Service_ for provider information and meta-data support for the four clinical services required in VAM - Allergy, Problem, Vital and Outpatient Pharmacy. Relevant RPCs were then emulated over these services.
+Build 1 focused on a generic _Parameter Service_ to hold system configurations, a basic _Time Service_, a _User Service_ for provider information, an _Identifier Service_ for working between local VISTA identifiers and national equivalents and meta-data support for the four clinical services required in VAM - Allergy, Problem, Vital and Outpatient Pharmacy. This facility Relevant RPCs were then emulated over these services.
 
 Open your browser and go to the _RPC Router Manager_ at _[http://vamdemo.vistadataproject.info:9012](http://vamdemo.vistadataproject.info:9012)_. This web client let's you monitor RPCs sent by CPRS through the Router ...
 
@@ -143,3 +143,5 @@ __BONUS__:
 ![RM_4_OREVNTX1_DLGIEN](images/RM_4_OREVNTX1_DLGIEN.png)
 
 ... example of managing a local VistA's Id for a common concept, "PSH OERR" (ie/ among the links) ... supports lookup ...
+
+![RM_3_ORWDX_DGNM_NVRX](images/RM_3_ORWDX_DGNM_NVRX.png) ... for Pharmacy, looking up id's
