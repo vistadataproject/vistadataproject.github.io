@@ -21,7 +21,7 @@ Open your browser and go to the _RPC Router Manager_ at _[http://vamdemo.vistada
 
 It opens to an empty _RPC Events_ tab which lists the RPCs seen by the Router. The _Route_ column shows which RPCs were sent to _VISTA_ and which went to the _VICS Server_. 
 
-Click on the _Management_ tab. The first thing you see is a toggle for controlling whether supported RPCs are routed to the _VICS Server_ or sent to VISTA ...
+Click on the _Management_ tab. The first thing you see is a toggle for controlling whether supported RPCs are routed to the _VICS Server_ or sent to Demo VISTA ...
 
 ![RM Management Top](images/RM_1_MgmtTop.png)
 
@@ -50,7 +50,7 @@ Double click on the row with the _XUS INTRO_ RPC ...
 ![RM XUS INTRO DETAILS](images/RM_2_XUS_INTRO_DETAILS.png)
 
 This, like all detail popups, shows four key aspects of an RPC monitored by the Router:
-  1. When the RPC was received and where it was routed to. This RPC was routed to _VISTA_.
+  1. When the RPC was received and where it was routed to. This RPC was routed to _Demo VISTA_.
   2. A unique transaction id is given to every RPC received by the Router. This id allows RPC traffic to be [a] identified uniquely in audit logs and [b] RPC emulation to be traced through the VICS Services.
   3. The arguments passed in a request
   4. The response from either VISTA or the VICS Server 
@@ -66,7 +66,7 @@ Back in the _Router Manager_, RPC after RPC cascades through the _RPC Event_ tab
 
 ![RM Post Logon](images/RM_3_5TAB_LIST_HIGHUSERINFO.png)
 
-Before patient selection, CPRS has sent five pages of RPCs, some handled in _VISTA_, some - those bolded - go to the _VICS Server_. _ORWU DT_ is sent more than once by CPRS - CPRS asks for the date many many times ...
+Before patient selection, CPRS has sent five pages of RPCs, some handled in _Demo VISTA_, some - those bolded - go to the _VICS Server_. _ORWU DT_ is sent more than once by CPRS - CPRS asks for the date many many times ...
 
 ![RM_O_ORWU_DT](images/RM_O_ORWU_DT.png)
 
@@ -78,7 +78,7 @@ The RPC, _XUS GET USER INFO_ is highlighted in red. Clicking on that row of the 
 
 Unlike _XUS INTRO DETAILS_, this RPC was handled by the _VICS Server_ and not by _VISTA_. The server's _User Service_ knows about all the users of the demo _VISTA_ - it is designed to scale and could centrally manage the users of all _130 VISTAs_ deployed in the VA. 
 
-Centralizing data requires unambiguous national identifiers for all VA data. Currently, data is identified within a single VISTA. For example, the response above of _XUS GET USER INFO_ shows _63_ is the demo VISTA's identifier of Robert Alexander. A different VISTA may use _63_ for a different user. The _VICS Identifier Service_ turns such per VISTA identifiers into national, unambiguous equivalents while maintaining per VISTA identification for CPRS RPC emulation.
+Centralizing data requires unambiguous national identifiers for all VA data. Currently, data is identified within a single VISTA. For example, the response above of _XUS GET USER INFO_ shows _63_ is _Demo VISTA_'s identifier of Robert Alexander. A different VISTA may use _63_ for a different user. The _VICS Identifier Service_ turns such per VISTA identifiers into national, unambiguous equivalents while maintaining per VISTA identification for CPRS RPC emulation.
 
 Back in CPRS, you are asked to select a Patient ...
 
@@ -96,7 +96,7 @@ The main RPC, _ORWPT ID INFO_, is resolved in VISTA in Build 1 like other Patien
 
 ![DM_3_1_SINGLE_CLICK_SEL_LIST](images/DM_3_1_ORWPT_ID_INFO.png)
 
-Patient information will move to the VICS Server in Build 2 following the pattern established for User management. "25" represents the identifier of this patient in the demo VISTA. In the same way it currently handles user identity, the VICS Server will "nationalize" patient identity.
+Patient information will move to the VICS Server in Build 2 following the pattern established for User management. "25" represents the identifier of this patient in _Demo VISTA_. In the same way it currently handles user identity, the VICS Server will "nationalize" patient identity.
 
 Clicking _Ok_ will bring you to the Patient's "Coversheet" ...
 
