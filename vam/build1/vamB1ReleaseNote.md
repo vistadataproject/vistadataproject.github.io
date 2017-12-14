@@ -3,7 +3,14 @@ layout: default
 title: VAM B1 Release Note
 ---
 
+Build 1 focused on the Meta or non patient data of VISTA and the RPCs that access that data. Specifically, it built out a generic _Parameter Service_ to hold system configurations, a basic _Time Service_, a _User Service_ for provider information, an _Identifier Service_ for working between local VISTA identifiers and national equivalents and meta-data support for the four clinical services required in VAM - Allergy, Problem, Vital and Outpatient Pharmacy. A selection of RPCs were then emulated over these services.
+
 __NOTE__: fill in properly the week of December 11th.
+
+__Known Issues__:
+  * [User Login Not Enforced in VICS Server for RPC invocation](https://hawaiirg.atlassian.net/browse/VAM-330) ... VAM:130
+  * Only one Client/User supported at any one time ... 
+  * Timezone is not set explicitly. It defaults to the timezone of the host VM/machine ...
 
 __TODO__: ensure code READMEs are like [VICS Server README](https://github.com/vistadataproject/VICSServer/tree/master/emulation/server#management-rpcs) with picture, descriptions ie/ not separate wiki's but doc in with code. ... TOC/index from here and in the demo trail (_Source Code Overview_) ... RPC Router will get one too (note: importance that station #, vista's match)
 
