@@ -17,14 +17,12 @@ __Git-based Software and Documentation Tagged v1.0__:
 
   * "web site" git documentation [final COB 12/14] 
     * [services](devdocs/services/)
-    * [test](devdocs/tests/)
+    * [test](devdocs/tests/) including [performance numbers](vamB1DemoPerformance)
     * [B1 Release Note](vamB1ReleaseNote)
 
 __Integrated Demonstration__
 
   * [demo build 1](/demoVAM1/)
-  * [performance numbers](vamB1DemoPerformance)
-  * [ReleaseNote](vamB1ReleaseNote)
 
 __Next Integration__:
 
