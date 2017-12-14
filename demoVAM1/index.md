@@ -5,9 +5,9 @@ title: VAM Demo 1 (Build 1)
 
 # VAM Demonstration Build 1 (December 2017)
 
-The following demo illustrates how _VAM Build 1_ establishes the _VICS Architecture_. This architecture enables the incremental migration of VA provider workflow from 130 separate, legacy VISTA Servers over to one set of VA-wide Veteran Integrated Care Services (VICS).
+The following demo illustrates how _VAM Build 1_ establishes the _VICS Architecture_. This architecture enables the incremental migration of VA provider workflow from 130 separate, legacy VISTA Servers to one set of VA-wide Veteran Integrated Care Services (VICS). It addresses how to centralize all VISTA data while ensuring continued support for per-VISTA clients such as CPRS using _identity management_ and _interface emulation_.
 
-_Build 1_ involves four components - the pre-existing _VISTA Server_ and its client _CPRS_ and the VAM-developed _VICS Server_ and _RPC Router_. All but CPRS are hosted on a cloud-based virtual machine at _vamdemo.vistadataproject.info_. 
+_Build 1_ involves four components - the pre-existing _VISTA Server_ ("Demo VISTA") and its client _CPRS_ and the VAM-developed _VICS Server_ and _RPC Router_. All but CPRS are hosted on a cloud-based virtual machine at _vamdemo.vistadataproject.info_. 
 
 ![build1Demo -width70](images/build1Demo.png)
 
