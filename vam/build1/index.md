@@ -3,7 +3,7 @@ layout: default
 title: VAM B1
 ---
 
-## Build 1
+## Build 1 (December 15th, 2017)
 
 __Git-based Software and Documentation Tagged v1.0__:
 
@@ -24,7 +24,7 @@ __Integrated Demonstration__
 
   * [demo build 1](demo/)
 
-__Next Integration__:
+__Next Integration__: end January 2018.
 
 ... V1.1 complete meta RPC emulation, provide a _VICS Server Management Client_, Performance (database and other), Utility Features (timezones, centralized 'concept' management).
 
