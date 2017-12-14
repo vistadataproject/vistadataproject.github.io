@@ -5,15 +5,15 @@ title: VAM Demo 1 (Build 1)
 
 # VAM Demonstration Build 1 (December 2017)
 
-The following demo illustrates how _VAM Build 1_ establishes the _VICS Architecture_. This architecture enables the incremental migration of VA provider workflow to one set of VA-wide national services and away from 130 separate, legacy VISTA Servers.
+The following demo illustrates how _VAM Build 1_ establishes the _VICS Architecture_. This architecture enables the incremental migration of VA provider workflow from 130 separate, legacy VISTA Servers over to one set of VA-wide Veteran Integrated Care Services (VICS).
 
-_Build 1_ involves four components - the well established VISTA Server and its client CPRS and the VAM-developed _VICS Server_ and _RPC Router_. All but CPRS are hosted on a cloud-based virtual machine at _vamdemo.vistadataproject.info_. 
+_Build 1_ involves four components - the pre-existing _VISTA Server_ and its client _CPRS_ and the VAM-developed _VICS Server_ and _RPC Router_. All but CPRS are hosted on a cloud-based virtual machine at _vamdemo.vistadataproject.info_. 
 
-![pdeVICSServerSetup -width70](images/pdeVICSServer.png)
+![build1Demo -width70](images/build1Demo.png)
 
-Note how the _VICS Server_ is layered - RPC Emulation is built over well designed VICS Services which store their store in a generic NoSQL store.
+Note how the _VICS Server_ is layered - Remote Procedure Call (RPC) Emulation is built over well designed  Services. These Services normalize and refine the cryptically-named and redundantly-implemented RPCs. Build 1 focused on a generic _Parameter Service_ to hold system configurations, a _User Service_ for provider information and meta-data support for the four clinical services required in VAM - Allergy, Problem, Vital and Outpatient Pharmacy.
 
-Start by opening your browser and going to the _RPC Router Manager_ at _[http://vamdemo.vistadataproject.info:9012](http://vamdemo.vistadataproject.info:9012)_. This web client let's you monitor RPCs sent by CPRS through the Router ...
+Open your browser and go to the _RPC Router Manager_ at _[http://vamdemo.vistadataproject.info:9012](http://vamdemo.vistadataproject.info:9012)_. This web client let's you monitor RPCs sent by CPRS through the Router ...
 
 ![RM Open Empty -width70](images/RM_1_OpenEmpty.png)
 
