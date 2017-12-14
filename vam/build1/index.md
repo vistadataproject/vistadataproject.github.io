@@ -22,7 +22,7 @@ __Git-based Software and Documentation Tagged v1.0__:
 
 __Integrated Demonstration__
 
-  * [demo build 1](/demoVAM1/)
+  * [demo build 1](demo/)
 
 __Next Integration__:
 
