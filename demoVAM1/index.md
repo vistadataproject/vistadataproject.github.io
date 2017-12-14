@@ -62,11 +62,11 @@ Now briefly go back to CPRS and login as Dr Robert Alexander using the following
    Verify Code: 1doc!@#$
 ```
 
-Back in the _Router Manager_, RPC after RPC cascades through the _RPC Event_ tab. CPRS is very "chatty" - before any patient is selected, it sends over 80 RPCs. RPCs supported by the _VICS Server_ go to the server, not VISTA but CPRS proceeds as if all of its traffic goes to and from VISTA ...
+Back in the _Router Manager_, RPC after RPC cascades through the _RPC Event_ tab. CPRS is very "chatty" ...
 
 ![RM Post Logon](images/RM_3_5TAB_LIST_HIGHUSERINFO.png)
 
-Note that even before patient selection, CPRS has sent five pages of RPCs, some handled in _VISTA_, some in the _VICS Server_. _ORWU DT_ is sent more than once by CPRS - CPRS asks for the date many many times ...
+Before patient selection, CPRS has sent five pages of RPCs, some handled in _VISTA_, some - those bolded - go to the _VICS Server_. _ORWU DT_ is sent more than once by CPRS - CPRS asks for the date many many times ...
 
 ![RM_O_ORWU_DT](images/RM_O_ORWU_DT.png)
 
@@ -92,13 +92,11 @@ The Router Manager shows this information comes from three RPC calls ...
 
 ![DM_3_1_SINGLE_CLICK_SEL_LIST](images/DM_3_1_SINGLE_CLICK_SEL_LIST.png)
 
-The main RPC, _ORWPT ID INFO_, is resolved in VISTA in Build 1 like other Patient data RPCs. It asks for information on the patient with identifier "25" in the demo VISTA ...
+The main RPC, _ORWPT ID INFO_, is resolved in VISTA in Build 1 like other Patient data RPCs ...
 
 ![DM_3_1_SINGLE_CLICK_SEL_LIST](images/DM_3_1_ORWPT_ID_INFO.png)
 
-"25" represents a patient identifier of a particular VISTA. Like all VICS Services, the Patient Service of Build 2 will employ national identifiers for patients which will allow it to merge patient records from all 130 VA VISTAs.
-
-As the image above shows, this RPC continues to be processed by VISTA in _Build 1_ - unlike user information, patient data is not yet in the VICS Server. It will migrate in _Build 2_.
+Patient information will move to the VICS Server in Build 2 following the pattern established for User management. "25" represents the identifier of this patient in the demo VISTA. In the same way it currently handles user identity, the VICS Server will "nationalize" patient identity.
 
 Clicking _Ok_ will bring you to the Patient's "Coversheet" ...
 
