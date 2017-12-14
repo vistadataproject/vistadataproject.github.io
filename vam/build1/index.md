@@ -12,8 +12,8 @@ __Git-based Software and Documentation Tagged v1.0__:
   * "in-Code Git" markdown documentation ...
     * [VICS Server](https://github.com/vistadataproject/VICSServer/blob/master/README.md)
     * [Services](https://github.com/vistadataproject/VICSServer/blob/master/services/README.md)
-    * [Emulation](https://github.com/vistadataproject/VICSServer/blob/master/emulation/README.md)
-    * [Parameter Service](https://github.com/vistadataproject/VICSServer/blob/master/services/docs/ParameterService.md)
+      * [Parameter Service](https://github.com/vistadataproject/VICSServer/blob/master/services/docs/ParameterService.md)
+    * [RPC Emulation](https://github.com/vistadataproject/VICSServer/blob/master/emulation/README.md)
 
   * "web site" git documentation [final COB 12/14] 
     * [services](devdocs/services/)
