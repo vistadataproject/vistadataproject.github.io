@@ -112,6 +112,8 @@ and fill another tab of RPCs in the Router Manager ...
 
 The VICS Server stores coversheet configurations for different users in its _Parameter Service_. In Build 1's demo, that service holds configurations of one VISTA but this and other VICS services have been built to hold and manage data from all 130 VA VISTAs.
 
+![RM_4_COVERSHEET_TO_RPCS](images/RM_4_COVERSHEET_TO_RPCS.png)
+
 Configurations are returned in the VICS-supported RPC, _ORWCV1 COVERSHEET LIST_, ...
 
 ![RM_3_ORWCV1_COVERSHEET_LIST](images/RM_3_ORWCV1_COVERSHEET_LIST.png)
