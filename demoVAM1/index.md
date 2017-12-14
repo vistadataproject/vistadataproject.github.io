@@ -13,7 +13,7 @@ _Build 1_ involves four components - the pre-existing _VISTA Server_ and its cli
 
 Note how the _VICS Server_ is layered - Remote Procedure Call (RPC) Emulation is built over well designed  Services. These Services normalize and refine the cryptically-named and redundantly-implemented RPCs. 
 
-Build 1 focused on a generic _Parameter Service_ to hold system configurations, a basic _Time Service_, a _User Service_ for provider information, an _Identifier Service_ for working between local VISTA identifiers and national equivalents and meta-data support for the four clinical services required in VAM - Allergy, Problem, Vital and Outpatient Pharmacy. This facility Relevant RPCs were then emulated over these services.
+Build 1 focused on a generic _Parameter Service_ to hold system configurations, a basic _Time Service_, a _User Service_ for provider information, an _Identifier Service_ for working between local VISTA identifiers and national equivalents and meta-data support for the four clinical services required in VAM - Allergy, Problem, Vital and Outpatient Pharmacy. A selection of RPCs were then emulated over these services.
 
 Open your browser and go to the _RPC Router Manager_ at _[http://vamdemo.vistadataproject.info:9012](http://vamdemo.vistadataproject.info:9012)_. This web client let's you monitor RPCs sent by CPRS through the Router ...
 
@@ -76,17 +76,15 @@ The RPC, _XUS GET USER INFO_ is highlighted in red. Clicking on that row of the 
 
 ![RM_3_ORQPT_DEFAULT_LIST_SOURCE](images/RM_3_XUS_GET_USER_INFO.png)
 
-Unlike _XUS INTRO DETAILS_, this RPC was handled by the _VICS Server_ and not by _VISTA_. The server's _User Service_ knows about all the users of the demo _VISTA_ - it is designed to scale and should be able to handle the user's of all _130 VISTAs_ deployed in the VA. 
+Unlike _XUS INTRO DETAILS_, this RPC was handled by the _VICS Server_ and not by _VISTA_. The server's _User Service_ knows about all the users of the demo _VISTA_ - it is designed to scale and could centrally manage the users of all _130 VISTAs_ deployed in the VA. 
+
+Centralizing data requires unambiguous national identifiers for all VA data. Currently, data is identified within a single VISTA. For example, the response above of _XUS GET USER INFO_ shows _63_ is the demo VISTA's identifier of Robert Alexander. A different VISTA may use _63_ for a different user. The _VICS Identifier Service_ turns such per VISTA identifiers into national, unambiguous equivalents while maintaining per VISTA identification for CPRS RPC emulation.
 
 Back in CPRS, you are asked to select a Patient ...
 
 ![CPRS Patient Select Open](images/CPRS_PSEL_Open.png)
 
-Note that _Thursday Clinic_ is supplied by the VICS Server supported RPC, _ORQPT_DEFAULT_LIST_SOURCE_ which is emulated using the _Parameter Service_ ...
-
-![RM_3_ORQPT_DEFAULT_LIST_SOURCE_MONCLINICETC](images/RM_3_ORQPT_DEFAULT_LIST_SOURCE_MONCLINICETC.png)
-
-Back in Patient Selection, single click on _Carter, David_. You'll see that this patient's demographics appear to the left of the selection box ...
+With a single click on _Carter, David_, you'll see that this patient's demographics appear to the right of the selection box ...
 
 ![CPRS Patient Select Open](images/CPRS_PSEL_See_Demos.png)
 
@@ -100,7 +98,7 @@ The main RPC, _ORWPT ID INFO_, is resolved in VISTA in Build 1 like other Patien
 
 "25" represents a patient identifier of a particular VISTA. Like all VICS Services, the Patient Service of Build 2 will employ national identifiers for patients which will allow it to merge patient records from all 130 VA VISTAs.
 
-As the image above shows, in Build1, this RPC continues to be processed by VISTA in _Build 1_ - unlike user information, patient data is not yet in the VICS Server. It will migrate in _Build 2_.
+As the image above shows, this RPC continues to be processed by VISTA in _Build 1_ - unlike user information, patient data is not yet in the VICS Server. It will migrate in _Build 2_.
 
 Clicking _Ok_ will bring you to the Patient's "Coversheet" ...
 
