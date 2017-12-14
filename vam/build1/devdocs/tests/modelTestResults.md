@@ -4,14 +4,20 @@ title: RPC Emulation Unit Tests
 ---
 
 ## RPC Emulation Unit Tests
-_Test run Dec 13, 2017 1:59 AM GMT+0000 (UTC)_
+_Test run Dec 14, 2017 9:14 AM GMT+0000 (UTC)_
 
 | Group | Description |
 | ----- | ----------- |
+| GMV CONVERT DATE | 'invokeRPC' called with argument(s) '0': result should be ''
+|  |  |
 | GMV DLL VERSION | empty string param should return NO
 | GMV DLL VERSION | invalid numeric param should return NO
 | GMV DLL VERSION | invalid string param should return NO
 | GMV DLL VERSION | valid param should return YES or NO
+|  |  |
+| GMV GET CURRENT TIME | 'invokeRPC' called with argument(s) '0': result should be 'a number'
+| GMV GET CURRENT TIME | 'invokeRPC' called with argument(s) 'NOW': result should be 'a number'
+| GMV GET CURRENT TIME | 'invokeRPC' called with no arguments: result should be 'a number'
 |  |  |
 | GMV GET VITAL TYPE IEN | valid array param should return list of caret-delimited ien/label pairs
 |  |  |
@@ -22,6 +28,11 @@ _Test run Dec 13, 2017 1:59 AM GMT+0000 (UTC)_
 | ORDEA DEATEXT | invoking invokeRPC with an invalid session context should return an empty array
 | ORDEA DEATEXT | invoking invokeRPC with empty arguments should return specific string
 | ORDEA DEATEXT | invoking invokeRPC with the default session context should return an empty array
+|  |  |
+| OREVNTX1 DLGIEN | 'invokeRPC' called with argument(s) '': result should be ''
+| OREVNTX1 DLGIEN | 'invokeRPC' called with argument(s) 'PSJ OR PAT OE': result should be '129'
+| OREVNTX1 DLGIEN | 'invokeRPC' called with argument(s) 'PSJI OR PAT FLUID OE': result should be '130'
+| OREVNTX1 DLGIEN | 'invokeRPC' called with argument(s) 'PSO OERR': result should be '147'
 |  |  |
 | ORIMO ISCLOC | invoking formatResult with boolean false gives 0
 | ORIMO ISCLOC | invoking formatResult with boolean true gives 1
@@ -76,6 +87,10 @@ _Test run Dec 13, 2017 1:59 AM GMT+0000 (UTC)_
 | ORWDRA32 LOCTYPE | Should handle [false]
 | ORWDRA32 LOCTYPE | invoking formatResult with valid object passes
 |  |  |
+| ORWDX DGNM | 'invokeRPC' called with argument(s) '': result should be ''
+| ORWDX DGNM | 'invokeRPC' called with argument(s) 'O RX': result should be '4'
+| ORWDX DGNM | 'invokeRPC' called with argument(s) 'UD RX': result should be '21'
+|  |  |
 | ORWDX WRLST | invoking formatResult with a valid object should return dialog Array
 | ORWDX WRLST | invoking formatResult with an invalid object should return Error
 |  |  |
@@ -106,6 +121,10 @@ _Test run Dec 13, 2017 1:59 AM GMT+0000 (UTC)_
 | ORWPCE ANYTIME | no params should return tool menu list
 |  |  |
 | ORWPCE ASKPCE | invokeRPC: Integer arg returns integer
+|  |  |
+| ORWPCE AUTO VISIT TYPE SELECT | 'invokeRPC' called with argument(s) '': result should be 'an error'
+| ORWPCE AUTO VISIT TYPE SELECT | 'invokeRPC' called with argument(s) '2': result should be '1'
+| ORWPCE AUTO VISIT TYPE SELECT | 'invokeRPC' called with argument(s) '3': result should be '1'
 |  |  |
 | ORWPCE GET EDUCATION TOPICS | valid array param should return list of caret-delimited ien/label pairs
 |  |  |
@@ -151,12 +170,27 @@ _Test run Dec 13, 2017 1:59 AM GMT+0000 (UTC)_
 | ORWU CLINLOC | formatResult: error Object should return empty array
 | ORWU CLINLOC | formatResult: valid Object Array should return Array of formatted Strings
 |  |  |
+| ORWU DT | 'invokeRPC' called with argument(s) '0': result should be 'a number'
+| ORWU DT | 'invokeRPC' called with argument(s) '01011999': result should be 'a number'
+| ORWU DT | 'invokeRPC' called with argument(s) 'NOW': result should be 'a number'
+|  |  |
 | ORWU PARAM | specific string param should return expected parameter value
 |  |  |
 | ORWU TOOLMENU | no params should return tool menu list
 |  |  |
+| ORWU VALDT | 'invokeRPC' called with argument(s) '0': result should be 'a number'
+| ORWU VALDT | 'invokeRPC' called with argument(s) 'NOW': result should be 'a number'
+|  |  |
+| ORWU VERSRV | 'invokeRPC' called with argument(s) 'OR CPRS GUI CHART 0': result should be 'a string'
+| ORWU VERSRV | 'invokeRPC' called with argument(s) 'OR CPRS GUI CHART 1.0.30.69': result should be '1.0.30.75'
+| ORWU VERSRV | 'invokeRPC' called with argument(s) 'OR CPRS GUI CHART 1.0.30.75': result should be '1.0.30.75'
+|  |  |
 | ORWU1 NEWLOC | formatResult: error Object should return empty array
 | ORWU1 NEWLOC | formatResult: valid Object Array should return Array of formatted Strings
+|  |  |
+| TIU GET PRINT NAME | 'invokeRPC' called with argument(s) '0': result should be 'UNKNOWN'
+| TIU GET PRINT NAME | 'invokeRPC' called with argument(s) '15': result should be 'CLINICAL WARNING'
+| TIU GET PRINT NAME | 'invokeRPC' called with argument(s) '8': result should be 'ADVANCE DIRECTIVE'
 |  |  |
 | TIU TEMPLATE ACCESS LEVEL | formatResult: should only accept Object param
 | TIU TEMPLATE ACCESS LEVEL | invoking formatResult with a valid Object input should return a value between 0 and 3
@@ -167,6 +201,8 @@ _Test run Dec 13, 2017 1:59 AM GMT+0000 (UTC)_
 | TIU TEMPLATE GET DEFAULTS | invoking invokeRPC with string arguments should return error
 |  |  |
 | XUS GET USER INFO | formatResult: Should return specfic array information about a user
+|  |  |
+| XUS PKI GET UPN | 'invokeRPC' called with no arguments: result should be ''
 |  |  |
 | XWB GET BROKER INFO | formatResult: Should return specfic array containing brokerActivityTimeout in seconds
 | XWB GET BROKER INFO | invokeRPC: Should return response object containing brokerActivityTimeout
