@@ -134,14 +134,4 @@ The _Router Manager_ shows this quick connect-logon-select patient-exit sequence
 
 ![RM_7TABS](images/RM_7TABS.png)
 
-And all 7 pages will be emulated or explicitly managed in VAM.
-
-__BONUS__:
-
-![RM_2_XUS_AV_CODE_USERIEN](images/RM_2_XUS_AV_CODE_USERIEN.png) - for user IEN and to bring out universal userids. Then the follow on of XUS GET USER INFO
-
-![RM_4_OREVNTX1_DLGIEN](images/RM_4_OREVNTX1_DLGIEN.png)
-
-... example of managing a local VistA's Id for a common concept, "PSH OERR" (ie/ among the links) ... supports lookup ...
-
-![RM_3_ORWDX_DGNM_NVRX](images/RM_3_ORWDX_DGNM_NVRX.png) ... for Pharmacy, looking up id's
+All 7 pages will be emulated or explicitly managed in VAM.
