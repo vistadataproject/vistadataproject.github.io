@@ -114,9 +114,11 @@ Configurations are returned in the VICS-supported RPC, _ORWCV1 COVERSHEET LIST_,
 
 ![RM_3_ORWCV1_COVERSHEET_LIST](images/RM_3_ORWCV1_COVERSHEET_LIST.png)
 
-This RPC not only tells CPRS what data to show in its _coversheet_ including the allergies, vitals, problems and prescriptions. It also specifies further RPCs to invoke to return such data for the selected patient. The sixth tab shows those RPCs are invoked. For example, _ORQQAL LIST_ lists the allergies of a patient ...
+This RPC not only tells CPRS what data to show in its _coversheet_ including the allergies, vitals, problems and prescriptions. It also specifies the RPCs that return such data for the selected patient and the Router Manager shows the invocation of those RPCs right after CPRS receives the coversheet list. For example, _ORQQAL LIST_ lists the allergies of a patient ...
 
 ![RM_5_ORQQAL_LIST](images/RM_5_ORQQAL_LIST.png)
+
+This and other coversheet invoked RPCs will move to the VICS Server in Build 2.
 
 Finally, when you exit from CPRS ...
 
