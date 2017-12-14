@@ -130,14 +130,16 @@ the _Router Manager_ will show the RPC sign out messages ending in _BYE_ ...
 
 Once CPRS disconnects, the Router will close its connection to both VISTA and the VICS Server.
 
+The _Router Manager_ shows this quick connect-logon-select patient-exit sequence took up 7 pages of RPCs ...
+
+![RM_7TABS](images/RM_7TABS.png)
+
+And all 7 pages will be emulated or explicitly managed in VAM.
+
 __BONUS__:
 
-![ORWU TOOLMENU](images/RM_3_ORWU_TOOLMENU.png)
-
-... example of CPRS Service. Centralize CPRS configuration ... but flexibly. You can using a Parameter Service similar to VISTA's, have national, per VISTA, per division, per location and per user settings.
+![RM_2_XUS_AV_CODE_USERIEN](images/RM_2_XUS_AV_CODE_USERIEN.png) - for user IEN and to bring out universal userids. Then the follow on of XUS GET USER INFO
 
 ![RM_4_OREVNTX1_DLGIEN](images/RM_4_OREVNTX1_DLGIEN.png)
 
 ... example of managing a local VistA's Id for a common concept, "PSH OERR" (ie/ among the links) ... supports lookup ...
-
-![RM_3_ORQPT_DEFAULT_LIST_SOURCE](images/RM_3_ORQPT_DEFAULT_LIST_SOURCE.png)
