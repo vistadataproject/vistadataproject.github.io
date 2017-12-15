@@ -28,5 +28,5 @@ __Tests (CI'ed):__ [Build 1 Tests](devdocs/tests/) including [performance number
 
 __Integrated Demonstration__: [demo build 1](demo/)
 
-__Next Integration (B1.1)__: an intermediate mini-build scheduled for the end of January 2018. This will complete VAM's Meta RPC Emulation.
+__Next Integration (B1.1)__: an intermediate mini-build scheduled for the end of January 2018 to complete VAM's Meta RPC Emulation and add Server demonstrability.
 
