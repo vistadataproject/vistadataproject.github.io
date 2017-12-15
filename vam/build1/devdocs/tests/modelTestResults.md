@@ -4,9 +4,9 @@ title: RPC Emulation Unit Tests
 ---
 
 ## RPC Emulation Unit Tests
-_Test run December 13th 2017, 11:30:26 pm_
+_Test run December 14th 2017, 4:34:27 pm_
 
-Total RPC Emulation test groups run: 70
+Total RPC Emulation test groups run: 71
 
 | Group | Description |
 | ----- | ----------- |
@@ -182,6 +182,10 @@ Total RPC Emulation test groups run: 70
 |  |  |
 | ORWU VALDT | 'invokeRPC' called with argument(s) '0': result should be 'a number'
 | ORWU VALDT | 'invokeRPC' called with argument(s) 'NOW': result should be 'a number'
+|  |  |
+| ORWU VALIDSIG | 'invokeRPC' called with argument(s) '&>C?r/}R(': result should be '1'
+| ORWU VALIDSIG | 'invokeRPC' called with argument(s) '/dK9=1b&#': result should be '1'
+| ORWU VALIDSIG | 'invokeRPC' called with argument(s) 'DEADBEEF': result should be '0'
 |  |  |
 | ORWU VERSRV | 'invokeRPC' called with argument(s) 'OR CPRS GUI CHART 0': result should be 'a string'
 | ORWU VERSRV | 'invokeRPC' called with argument(s) 'OR CPRS GUI CHART 1.0.30.69': result should be '1.0.30.75'
