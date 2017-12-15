@@ -14,13 +14,11 @@ __Git-based Software and Documentation Tagged v1.0__:
     * [Service Documentation](devdocs/services/)
     * [Demo VISTA Dataset](vamB1DemoVISTADatasetContents)
     
-__[Build 1 Tests](devdocs/tests/)__: includes [performance numbers](devdocs/tests/performanceReport)
-
-__Release Note:__ [B1 Release Note](vamB1ReleaseNote)
+__Tests (CI'ed):__ [Build 1 Tests](devdocs/tests/) including [performance numbers](devdocs/tests/performanceReport)
 
 __Integrated Demonstration__: [demo build 1](demo/)
 
-__Next Integration (B1.1)__: end January 2018 (Meta Finish).
+__Release Note:__ [B1 Release Note](vamB1ReleaseNote)
 
-... V1.1 complete meta RPC emulation, provide a _VICS Server Management Client_, Performance (database and other), Utility Features (timezones, centralized 'concept' management).
+__Next Integration (B1.1)__: end January 2018 (Meta Finish).
 
