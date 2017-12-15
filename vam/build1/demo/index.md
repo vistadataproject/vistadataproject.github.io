@@ -15,7 +15,7 @@ The _VICS Server_ is layered - Remote Procedure Call (RPC) Emulation is built ov
 
 In addition to establishing basic infrastructure, Build 1 focused on the Meta or non patient data of VISTA and the RPCs that access that data ("Meta Data RPCs"). Specifically, it built out a generic _Parameter Service_ to hold system configurations, a basic _Time Service_, a _User Service_ for provider information, an _Identifier Service_ for working between local VISTA identifiers and national equivalents and meta-data support for the four clinical services required in VAM - Allergy, Problem, Vital and Outpatient Pharmacy. Over half of the one hundred and forty Meta Data RPCs called for in VAM were then emulated over these services.
 
-__Note:__ by design the Router will communicate with one VICS Server and one VISTA. In Build 1, it only handles one CPRS. Build 2 will add support for many concurrent CPRSs.
+__Note:__ by design the Router communicates with one VICS Server and one VISTA. In Build 1, it only handles one CPRS. Build 2 will add support for many concurrent CPRSs.
 
 Open your browser and go to the _Router Manager_ at _[http://vamdemo.vistadataproject.info:9012](http://vamdemo.vistadataproject.info:9012)_. This web client let's you monitor RPCs sent by CPRS through the Router ...
 
