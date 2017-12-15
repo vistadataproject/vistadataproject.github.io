@@ -23,7 +23,7 @@ Open your browser and go to the _Router Manager_ at _[http://vamdemo.vistadatapr
 
 It opens to an empty _RPC Events_ tab which lists the RPCs seen by the Router. The _Route_ column shows which RPCs were sent to _VISTA_ and which were routed to the _VICS Server_. 
 
-Click on the _Management_ tab. The first thing you see is a toggle for controlling whether supported RPCs are routed to the _VICS Server_ or sent to Demo VISTA ...
+Click on the _Management_ tab. The first thing you see is a toggle for controlling whether supported RPCs are routed to the _VICS Server_ or sent to VISTA ...
 
 ![RM Management Top](images/RM_1_MgmtTop.png)
 
@@ -51,11 +51,12 @@ Double click on the row with the _XUS INTRO_ RPC ...
 
 ![RM XUS INTRO DETAILS](images/RM_2_XUS_INTRO_DETAILS.png)
 
-This, like all detail popups, shows four key aspects of an RPC monitored by the Router:
-  1. When the RPC was received and where it was routed to. This RPC was routed to _Demo VISTA_.
-  2. A unique transaction id is given to every RPC received by the Router. This id allows RPC traffic to be [a] identified uniquely in audit logs and [b] RPC emulation to be traced through the VICS Services.
-  3. The arguments passed in a request
-  4. The response from either VISTA or the VICS Server 
+Enhancing RPC auditing and security is a key requirement of VAM. The popup above, like all detail popups, shows five aspects of an RPC monitored by the Router:
+  1. When the RPC was received 
+  2. Where it was routed to - this RPC was routed to _Demo VISTA_.
+  3. A unique transaction id is given to every RPC received by the Router. This id allows RPC traffic to be [a] identified uniquely in audit logs and [b] RPC emulation to be traced through the VICS Services.
+  4. The arguments passed in a request
+  5. The response from either VISTA or the VICS Server 
 
 Now briefly go back to CPRS and login as Dr Robert Alexander using the following credentials ...
 
@@ -68,7 +69,7 @@ Back in the _Router Manager_, RPC after RPC cascades through the _RPC Event_ tab
 
 ![RM Post Logon](images/RM_3_5TAB_LIST_HIGHUSERINFO.png)
 
-Before patient selection, CPRS has sent five pages of RPCs, some handled in _Demo VISTA_, others - those bolded - dispatched to the _VICS Server_. _ORWU DT_ was sent more than once by CPRS - CPRS asks for the date and time many many times ...
+Before patient selection, CPRS has sent five pages of RPCs, some handled in _VISTA_, others - those bolded - dispatched to the _VICS Server_. _ORWU DT_ was sent more than once by CPRS - CPRS asks for the date and time many many times ...
 
 ![RM_O_ORWU_DT](images/RM_O_ORWU_DT.png)
 
