@@ -53,8 +53,8 @@ Double click on the row with the _XUS INTRO_ RPC ...
 
 Enhancing RPC auditing and security is a key requirement of VAM. The popup above, like all detail popups, shows five aspects of an RPC monitored by the Router:
   1. When the RPC was received 
-  2. Where it was routed to - this RPC was routed to _Demo VISTA_.
-  3. A unique transaction id is given to every RPC received by the Router. This id allows RPC traffic to be [a] identified uniquely in audit logs and [b] RPC emulation to be traced through the VICS Services.
+  2. Where it was routed to - this RPC was routed to _VISTA_.
+  3. A unique transaction id is given to every RPC received by the Router. This id allows RPC traffic to be [a] identified uniquely in audit logs and [b] RPC emulation to be traced through the VICS Server.
   4. The arguments passed in a request
   5. The response from either VISTA or the VICS Server 
 
@@ -71,13 +71,13 @@ Back in the _Router Manager_, RPC after RPC cascades through the _RPC Event_ tab
 
 Before patient selection, CPRS has sent five pages of RPCs, some handled in _VISTA_, others - those bolded - dispatched to the _VICS Server_. _ORWU DT_ was sent more than once by CPRS - CPRS asks for the date and time many many times ...
 
-![RM_O_ORWU_DT](images/RM_O_ORWU_DT.png)
+![RM_O_ORWU_DT -width70](images/RM_O_ORWU_DT.png)
 
 This and other date and time queries are handled by the VICS Server's _Time Service_.
 
 The RPC, _XUS GET USER INFO_ is highlighted in red. Clicking on that row of the table brings up that RPC's details ...
 
-![RM_3_ORQPT_DEFAULT_LIST_SOURCE](images/RM_3_XUS_GET_USER_INFO.png)
+![RM_3_ORQPT_DEFAULT_LIST_SOURCE -width70](images/RM_3_XUS_GET_USER_INFO.png)
 
 Unlike _XUS INTRO DETAILS_, this RPC was handled by the _VICS Server_ and not by _VISTA_. The server's _User Service_ knows about all the users of _Demo VISTA_. 
 
@@ -87,7 +87,7 @@ __Note__: the _User Service_ is designed to scale and could centrally manage the
 
 Back in CPRS, you are asked to select a Patient ...
 
-![CPRS Patient Select Open](images/CPRS_PSEL_Open.png)
+![CPRS Patient Select Open -width70](images/CPRS_PSEL_Open.png)
 
 With a single click on _Carter, David_, you'll see that this patient's demographics appear to the right of the selection box ...
 
@@ -99,13 +99,13 @@ The _Router Manager_ shows this information comes from three RPC calls ...
 
 The main RPC, _ORWPT ID INFO_, is resolved in VISTA in Build 1 like other Patient data RPCs ...
 
-![DM_3_1_SINGLE_CLICK_SEL_LIST](images/DM_3_1_ORWPT_ID_INFO.png)
+![DM_3_1_ORWPT_ID_INFO -width70](images/DM_3_1_ORWPT_ID_INFO.png)
 
 Patient information will move to the VICS Server in Build 2 following the pattern established for User management in Build 1. 
 
 Clicking _Ok_ will bring you to the Patient's "Coversheet" ...
 
-![CPRS Coversheet](images/CPRS_Coversheet.png)
+![CPRS Coversheet -width70](images/CPRS_Coversheet.png)
 
 and fill another tab of RPCs in the Router Manager ...
 
@@ -119,11 +119,11 @@ __Note__: in Build 1's demo, the Parameter Service holds configurations of one V
 
 Configurations are returned in the VICS-supported RPC, _ORWCV1 COVERSHEET LIST_, ...
 
-![RM_3_ORWCV1_COVERSHEET_LIST](images/RM_3_ORWCV1_COVERSHEET_LIST.png)
+![RM_3_ORWCV1_COVERSHEET_LIST -width70](images/RM_3_ORWCV1_COVERSHEET_LIST.png)
 
 This RPC not only tells CPRS what data to show in its _coversheet_ including the allergies, vitals, problems and prescriptions. It also specifies the RPCs that return such data for the selected patient and the Router Manager shows the invocation of those RPCs right after CPRS receives the coversheet list. For example, _ORQQAL LIST_ lists the allergies of a patient ...
 
-![RM_5_ORQQAL_LIST](images/RM_5_ORQQAL_LIST.png)
+![RM_5_ORQQAL_LIST -width70](images/RM_5_ORQQAL_LIST.png)
 
 This and other coversheet invoked RPCs will move to the VICS Server in Build 2.
 
@@ -133,12 +133,12 @@ Finally, when you exit from CPRS ...
 
 the _Router Manager_ will show the RPC sign out messages ending in _BYE_ ...
 
-![RM END BYE](images/RM_END_BYE.png)
+![RM END BYE -width70](images/RM_END_BYE.png)
 
 Once CPRS disconnects, the Router will close its connection to both VISTA and the VICS Server.
 
-The _Router Manager_ shows this quick connect-logon-select patient-exit sequence took up 7 pages of RPCs ...
+The _Router Manager_ shows this quick _connect-logon-select patient-exit_ sequence took up 7 pages of RPCs ...
 
 ![RM_7TABS](images/RM_7TABS.png)
 
-and in Build 2, all 7 pages will be emulated or explicitly managed in the VICS Server.
+and by Build 2, all 7 pages will be emulated or explicitly managed in the VICS Server.
