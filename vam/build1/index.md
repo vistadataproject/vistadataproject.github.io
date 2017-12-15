@@ -18,6 +18,7 @@ __Git-based Software and Documentation Tagged v1.0__:
   * "web site" git documentation [final COB 12/14] 
     * [services](devdocs/services/)
     * [test](devdocs/tests/) including [performance numbers](vamB1DemoPerformance)
+    * [demo vista dataset](vamB1DemoVISTADatasetContents)
     * [B1 Release Note](vamB1ReleaseNote)
 
 __Integrated Demonstration__
