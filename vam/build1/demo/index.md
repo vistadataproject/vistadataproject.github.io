@@ -37,19 +37,19 @@ This list is fetched from the Server by the Router using a custom RPC. In _Build
 
 Now, switch back to the _RPC Events_ tab. To run this part of the demo, CPRS must be installed on your local machine. Start _CPRS_ ...
 
-![CPRS Start](images/CPRS_Start.png)
+![CPRS Start -width70](images/CPRS_Start.png)
 
 CPRS should be connected to _vamdemo.vistadataproject.info:9011_. After connecting, CPRS presents a login screen ...
 
-![CPRS Login](images/CPRS_Login.png)
+![CPRS Login -width70](images/CPRS_Login.png)
 
 Back in the _Router Manager_, the _RPC Events_ tab shows the three RPCs sent by CPRS ...
 
-![RM Connect Before Login](images/RM_2_ConnectBeforeLogin.png)
+![RM Connect Before Login -width70](images/RM_2_ConnectBeforeLogin.png)
 
 Double click on the row with the _XUS INTRO_ RPC ...
 
-![RM XUS INTRO DETAILS](images/RM_2_XUS_INTRO_DETAILS.png)
+![RM XUS INTRO DETAILS -width70](images/RM_2_XUS_INTRO_DETAILS.png)
 
 Enhancing RPC auditing and security is a key requirement of VAM. The popup above, like all detail popups, shows five aspects of an RPC monitored by the Router:
   1. When the RPC was received 
