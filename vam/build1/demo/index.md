@@ -37,7 +37,7 @@ This list is fetched from the Server by the Router using a custom RPC. In _Build
 
 Now, switch back to the _RPC Events_ tab. To run this part of the demo, CPRS must be installed on your local machine. Start _CPRS_ ...
 
-![CPRS Start -width70](images/CPRS_Start.png)
+![CPRS Start](images/CPRS_Start.png)
 
 CPRS should be connected to _vamdemo.vistadataproject.info:9011_. After connecting, CPRS presents a login screen ...
 
