@@ -68,19 +68,21 @@ Back in the _Router Manager_, RPC after RPC cascades through the _RPC Event_ tab
 
 ![RM Post Logon](images/RM_3_5TAB_LIST_HIGHUSERINFO.png)
 
-Before patient selection, CPRS has sent five pages of RPCs, some handled in _Demo VISTA_, some - those bolded - go to the _VICS Server_. _ORWU DT_ is sent more than once by CPRS - CPRS asks for the date many many times ...
+Before patient selection, CPRS has sent five pages of RPCs, some handled in _Demo VISTA_, others - those bolded - dispatched to the _VICS Server_. _ORWU DT_ was sent more than once by CPRS - CPRS asks for the date and time many many times ...
 
 ![RM_O_ORWU_DT](images/RM_O_ORWU_DT.png)
 
-This and other date and time queries are now handled by the VICS Server's _Time Service_.
+This and other date and time queries are handled by the VICS Server's _Time Service_.
 
 The RPC, _XUS GET USER INFO_ is highlighted in red. Clicking on that row of the table brings up that RPC's details ...
 
 ![RM_3_ORQPT_DEFAULT_LIST_SOURCE](images/RM_3_XUS_GET_USER_INFO.png)
 
-Unlike _XUS INTRO DETAILS_, this RPC was handled by the _VICS Server_ and not by _VISTA_. The server's _User Service_ knows about all the users of the demo _VISTA_ - it is designed to scale and could centrally manage the users of all _130 VISTAs_ deployed in the VA. 
+Unlike _XUS INTRO DETAILS_, this RPC was handled by the _VICS Server_ and not by _VISTA_. The server's _User Service_ knows about all the users of _Demo VISTA_. 
 
-Centralizing data requires unambiguous national identifiers for all VA data. Currently, data is identified within a single VISTA. For example, the response above of _XUS GET USER INFO_ shows _63_ is _Demo VISTA_'s identifier of Robert Alexander. A different VISTA may use _63_ for a different user. The _VICS Identifier Service_ turns such per VISTA identifiers into national, unambiguous equivalents while maintaining per VISTA identification for CPRS RPC emulation.
+Centralizing data requires unambiguous national identifiers for all VA data. Traditionally, data is identified within a single VISTA. For example, the response above of _XUS GET USER INFO_ shows _63_ is _Demo VISTA_'s identifier of Robert Alexander. A different VISTA may use _63_ for a different user. The _VICS Identifier Service_ turns such per VISTA identifiers into national, unambiguous equivalents while maintaining per VISTA identification for CPRS RPC emulation.
+
+__Note__: the _User Service_ is designed to scale and could centrally manage the users of all 130 VISTAs deployed in the VA. 
 
 Back in CPRS, you are asked to select a Patient ...
 
@@ -98,7 +100,7 @@ The main RPC, _ORWPT ID INFO_, is resolved in VISTA in Build 1 like other Patien
 
 ![DM_3_1_SINGLE_CLICK_SEL_LIST](images/DM_3_1_ORWPT_ID_INFO.png)
 
-Patient information will move to the VICS Server in Build 2 following the pattern established for User management. "25" represents the identifier of this patient in _Demo VISTA_. In the same way it currently handles user identity, the VICS Server will "nationalize" patient identity.
+Patient information will move to the VICS Server in Build 2 following the pattern established for User management in Build 1. 
 
 Clicking _Ok_ will bring you to the Patient's "Coversheet" ...
 
@@ -108,7 +110,9 @@ and fill another tab of RPCs in the Router Manager ...
 
 ![RM_6TABS](images/RM_6TABS.png)
 
-The VICS Server stores coversheet configurations for different users in its _Parameter Service_. In Build 1's demo, that service holds configurations of one VISTA but this and other VICS services have been built to hold and manage data from all 130 VA VISTAs.
+The VICS Server stores coversheet configurations for different users in its _Parameter Service_. 
+
+__Note__: in Build 1's demo, the Parameter Service holds configurations of one VISTA but this and other VICS services have been built to store and unambiguously manage data from all 130 VA VISTAs.
 
 ![RM_4_COVERSHEET_TO_RPCS](images/RM_4_COVERSHEET_TO_RPCS.png)
 
