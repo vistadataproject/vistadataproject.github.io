@@ -9,7 +9,7 @@ The following demo illustrates how _VAM Build 1_ establishes the _VICS Architect
 
 The _Build 1 Demonstration_ involves five components - the pre-existing _VISTA Server_ ("Demo VISTA") and its client _CPRS_ and the VAM-developed _VICS Server_, _RPC Router_ and _RPC Router Manager_. All but CPRS are hosted on a cloud-based virtual machine at _vamdemo.vistadataproject.info_. 
 
-![build1Demo -width70](images/build1Demo.png)
+![build1Demo](images/build1DemoSmall.png)
 
 The _VICS Server_ is layered - Remote Procedure Call (RPC) Emulation is built over well designed  Services. These Services normalize and refine the cryptically-named and redundantly-implemented RPCs and rely on normalized copies of data from supported VISTAs.
 
