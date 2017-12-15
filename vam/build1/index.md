@@ -7,25 +7,20 @@ title: VAM B1
 
 __Git-based Software and Documentation Tagged v1.0__:
 
-  * Open Gits, one per runtime - [VICS Server](https://github.com/vistadataproject/VICSServer), [RPC Router](https://github.com/vistadataproject/rpcRouter) - and [Data Extract and Sync](https://github.com/vistadataproject/DataExtractNSync)
+  * Open Gits, one per runtime - [VICS Server](https://github.com/vistadataproject/VICSServer), [RPC Router](https://github.com/vistadataproject/rpcRouter) - and [Data Extract and Sync](https://github.com/vistadataproject/DataExtractNSync) - feature _"In-Code Markdown"_
 
-  * "in-Code Git" markdown documentation ...
-    * [VICS Server](https://github.com/vistadataproject/VICSServer/blob/master/README.md)
-    * [Services](https://github.com/vistadataproject/VICSServer/blob/master/services/README.md)
-      * [Parameter Service](https://github.com/vistadataproject/VICSServer/blob/master/services/docs/ParameterService.md)
-    * [RPC Emulation](https://github.com/vistadataproject/VICSServer/blob/master/emulation/README.md)
+  * Build 1 Reports and Specifications
+    * [RPCs Emulated](vamB1RPCsEmulated)
+    * [Service Documentation](devdocs/services/)
+    * [Demo VISTA Dataset](vamB1DemoVISTADatasetContents)
+    
+__[Build 1 Tests](devdocs/tests/)__: includes [performance numbers](devdocs/tests/performanceReport)
 
-  * "web site" git documentation [final COB 12/14] 
-    * [services](devdocs/services/)
-    * [test](devdocs/tests/) including [performance numbers](vamB1DemoPerformance)
-    * [demo vista dataset](vamB1DemoVISTADatasetContents)
-    * [B1 Release Note](vamB1ReleaseNote)
+__Release Note:__ [B1 Release Note](vamB1ReleaseNote)
 
-__Integrated Demonstration__
+__Integrated Demonstration__: [demo build 1](demo/)
 
-  * [demo build 1](demo/)
-
-__Next Integration__: end January 2018.
+__Next Integration (B1.1)__: end January 2018 (Meta Finish).
 
 ... V1.1 complete meta RPC emulation, provide a _VICS Server Management Client_, Performance (database and other), Utility Features (timezones, centralized 'concept' management).
 
