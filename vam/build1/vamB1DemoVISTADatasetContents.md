@@ -3,7 +3,7 @@ layout: default
 title: VAM B1 demoVISTA (999) Contents
 ---
 
-# Summary for demoVISTA (999)
+# Summary of Data Synced to VICS Server from demoVISTA (999)
 
 
 

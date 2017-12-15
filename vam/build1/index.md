@@ -22,7 +22,7 @@ __Git-based Software and Documentation Tagged v1.0__:
   * Build 1 Reports and Specifications
     * [RPCs Emulated](vamB1RPCsEmulated)
     * [Service Documentation](devdocs/services/)
-    * [Demo VISTA Dataset](vamB1DemoVISTADatasetContents)
+    * [Synced VISTA Data](vamB1DemoVISTADatasetContents)
     
 __Tests (CI'ed):__ [Build 1 Tests](devdocs/tests/) including [performance numbers](devdocs/tests/performanceReport)
 
