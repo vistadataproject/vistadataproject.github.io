@@ -5,9 +5,9 @@ title: VAM Demo 1 (Build 1)
 
 # VAM Demonstration Build 1 (December 2017)
 
-The following demostration illustrates how _VAM Build 1_ establishes the _VICS Architecture_. This architecture enables the incremental migration of VA provider workflow from 130 separate, legacy VISTA Servers to one set of VA-wide Veteran Integrated Care Services (VICS). It addresses how to centralize relevant VISTA data while ensuring continued support for CPRS, the VA's primary client for physicians.
+The following _Build 1 Demostration_ illustrates how _VAM Build 1_ establishes the _VICS Architecture_. This architecture enables the incremental migration of VA provider workflow from 130 separate, legacy VISTA Servers to one set of VA-wide Veteran Integrated Care Services (VICS). It addresses how to centralize relevant VISTA data while ensuring continued support for CPRS, the VA's primary client for physicians.
 
-The _Build 1 Demonstration_ involves five components - the pre-existing _VISTA Server_ ("Demo VISTA") and its client _CPRS_ and the VAM-developed _VICS Server_, _RPC Router_ and _RPC Router Manager_. The [meta data of Demo VISTA](../vamB1DemoVISTADatasetContents) is shadowed in the VICS Server. All but CPRS are hosted on a cloud-based virtual machine at _vamdemo.vistadataproject.info_. 
+The demonstration_ involves five components - the pre-existing _VISTA Server_ ("Demo VISTA") and its client _CPRS_ and the VAM-developed _VICS Server_, _RPC Router_ and _RPC Router Manager_. The [meta data of Demo VISTA](../vamB1DemoVISTADatasetContents) is shadowed in the VICS Server. All but CPRS are hosted on a cloud-based virtual machine at _vamdemo.vistadataproject.info_. 
 
 ![build1Demo](images/build1Demo.png)
 
@@ -16,6 +16,8 @@ The _VICS Server_ is layered - Remote Procedure Call (RPC) Emulation is built ov
 In addition to establishing basic routing and server infrastructure, Build 1 focused on the Meta or non patient data of VISTA and the RPCs that access that data ("Meta Data RPCs"). Specifically, it built out a generic _Parameter Service_ to hold system configurations, a basic _Time Service_, a _User Service_ for provider information, an _Identifier Service_ for working between local VISTA identifiers and national equivalents and meta-data support for the four clinical services required in VAM - Allergy, Problem, Vital and Outpatient Pharmacy. Over half of the one hundred and forty Meta Data RPCs called for in VAM were then emulated over these services.
 
 __Note:__ by design the Router communicates with one VICS Server and one VISTA. In Build 1, it only handles one CPRS. Build 2 will add support for many concurrent CPRSs.
+
+In this _Coversheet Demo_, CPRS connects, logs in, clicks on a patient's name ("soft select"), fully selects that patient ("hard select") and then exits. The _Router Manager_ will show the seven screens of RPCs that come from this simple interaction. Though many of these RPCs go to the VICS Server and not to VISTA, CPRS continues unaffected.
 
 Open your browser and go to the _Router Manager_ at _[http://vamdemo.vistadataproject.info:9012](http://vamdemo.vistadataproject.info:9012)_. This web client let's you monitor RPCs sent by CPRS through the Router ...
 
@@ -89,7 +91,7 @@ Back in CPRS, you are asked to select a Patient ...
 
 ![CPRS Patient Select Open -width70](images/CPRS_PSEL_Open.png)
 
-With a single click on _Carter, David_, you'll see that this patient's demographics appear to the right of the selection box ...
+With a single click ("soft select") on _Carter, David_, you'll see that this patient's demographics appear to the right of the selection box ...
 
 ![CPRS Patient Select Open](images/CPRS_PSEL_See_Demos.png)
 
@@ -103,7 +105,7 @@ The main RPC, _ORWPT ID INFO_, is resolved in VISTA in Build 1 like other Patien
 
 Patient information will move to the VICS Server in Build 2 following the pattern established for User management in Build 1. 
 
-Clicking _Ok_ will bring you to the Patient's "Coversheet" ...
+Clicking _Ok_ ("hard select") will bring you to the Patient's "Coversheet" ...
 
 ![CPRS Coversheet -width70](images/CPRS_Coversheet.png)
 
@@ -137,7 +139,7 @@ the _Router Manager_ will show the RPC sign out messages ending in _BYE_ ...
 
 Once CPRS disconnects, the Router will close its connection to both VISTA and the VICS Server.
 
-The _Router Manager_ shows this quick _connect-logon-select patient-exit_ sequence took up 7 pages of RPCs ...
+The _Router Manager_ shows this quick _connect-logon-patient select (soft and hard)-exit_ sequence took up 7 pages of RPCs ...
 
 ![RM_7TABS](images/RM_7TABS.png)
 
