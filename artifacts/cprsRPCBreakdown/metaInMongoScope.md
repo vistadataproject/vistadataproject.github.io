@@ -1,11 +1,11 @@
 ---
 layout: default
-title: VDP Year 2 - V2 'Meta In Mongo Scope' - station number 442
+title: VAM Year 1 - 'Meta In Mongo Scope 2' - station number 442
 ---
 
 # Scope of 'Meta in Mongo' Work
 
-__144__ RPCs, __104__ Primary Files, __175__ Secondary Files, __85__ Parameters.
+__146__ RPCs, __104__ Primary Files, __175__ Secondary Files, __84__ Parameters.
 
 __Storage Size__ 675.30078125 MiB - __Objects__ 6,543,200 - __Collections__ 279
 
@@ -15,244 +15,240 @@ __Storage Size__ 675.30078125 MiB - __Objects__ 6,543,200 - __Collections__ 279
 
 ## RPCs of Meta
 
-__144__ RPCs.
+__146__ RPCs (includes 6 VISTA Only).
 
 
 
-__Build One . One__: 71
+__Build 1.1 (End January)__: 69
 
-\# | Name | Complexity | Type | Domain | File(s) | Parameter(s)
---- | --- | --- | --- | --- | --- | ---
-1 | [GMV MANAGER](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/GMV_MANAGER) | DIFFICULT | UTILITY | VITAL | 120.51, 120.52, 120.53, 4.2, 4, 44, 200 | GMV TEMPLATE DEFAULT, GMV TEMPLATE, GMV ALLOW USER TEMPLATES
-2 | [GMV PARAMETER](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/GMV_PARAMETER) | MODERATE | CHANGE | CPRS | 8989.5, 8989.3, 8989.51, 8989.518 | GMV DLL VERSION, GMV GUI VERSION, GMV WEBLINK, GMV ALLOW USER TEMPLATES, GMV DEFAULT VALUES, GMV TEMPLATE, GMV TEMPLATE DEFAULT, GMV USER DEFAULTS
-3 | [GMV USER](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/GMV_USER) | MODERATE | CHANGE | CPRS | &nbsp; | GMV USER DEFAULTS
-4 | [GMV VITALS/CAT/QUAL](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/GMV_VITALS/CAT/QUAL) | &nbsp; | &nbsp; | &nbsp; | 120.51, 120.52, 120.53, 120.57 | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-5 | [ORIMO ISIVQO](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORIMO_ISIVQO) | &nbsp; | &nbsp; | &nbsp; | 101.41, 100.98 | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-6 | [ORQQCN SVC W/SYNONYMS](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORQQCN_SVC_W/SYNONYMS) | &nbsp; | &nbsp; | &nbsp; | 123.5, 101.43 | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-7 | [ORQQPL INIT USER](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORQQPL_INIT_USER) | MODERATE | READ | PROBLEM | 125.99, 49, 200 | ORCH CONTEXT PROBLEMS, ORQQPL SUPPRESS CODES
-8 | [ORQQPL USER PROB CATS](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORQQPL_USER_PROB_CATS) | &nbsp; | &nbsp; | &nbsp; | 125.1 | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-9 | [ORQQPL4 LEX](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORQQPL4_LEX) | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-10 | [ORQQPXRM REMINDER CATEGORIES](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORQQPXRM_REMINDER_CATEGORIES) | MODERATE | READ | CPRS | 811.7, 811.9, 801.41 | PXRM CPRS LOOKUP CATEGORIES
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-11 | [ORWCH SAVEALL](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWCH_SAVEALL) | MEDIUM | CHANGE | CPRS | &nbsp; | ORWCH BOUNDS, ORWCH WIDTH, ORWCH COLUMNS
-12 | [ORWCH SAVESIZ](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWCH_SAVESIZ) | LOW | CHANGE | &nbsp; | &nbsp; | ORWCH BOUNDS
-13 | [ORWCH SAVFONT](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWCH_SAVFONT) | LOW | CHANGE | CPRS | &nbsp; | ORWCH FONT SIZE
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-14 | [ORWCV POLL](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWCV_POLL) | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-15 | [ORWCV START](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWCV_START) | EASY | UTILITY | CPRS | 101.24 | ORWOR COVER RETRIEVAL NEW, ORWCV1 COVERSHEET LIST
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-16 | [ORWDAL32 ALLERGY MATCH](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWDAL32_ALLERGY_MATCH) | &nbsp; | &nbsp; | &nbsp; | 120.82, 50.6, 50.67, 50.416, 50.605, 50.68 | &nbsp;
-17 | [ORWDAL32 SYMPTOMS](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWDAL32_SYMPTOMS) | &nbsp; | &nbsp; | &nbsp; | 120.83 | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-18 | [ORWDBA3 HINTS](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWDBA3_HINTS) | &nbsp; | &nbsp; | &nbsp; | 9.2 | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-19 | [ORWDPS1 FAILDEA](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWDPS1_FAILDEA) | &nbsp; | &nbsp; | &nbsp; | 50, 50.68, 50.7, 50.606, 101.43, 200, 4, 4.05 | &nbsp;
-20 | [ORWDPS1 ODSLCT](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWDPS1_ODSLCT) | DIFFICULT | READ | ORDER | 550, 101.42 | ORWDPS ROUTING DEFAULT, ORWDPS SUPPRESS DISPENSE MSG
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-21 | [ORWDPS2 DAY2QTY](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWDPS2_DAY2QTY) | &nbsp; | &nbsp; | &nbsp; | 51, 51.1 | &nbsp;
-22 | [ORWDPS2 QOGRP](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWDPS2_QOGRP) | &nbsp; | &nbsp; | &nbsp; | 100.98, 101.41 | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-23 | [ORWDPS5 LESGRP](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWDPS5_LESGRP) | &nbsp; | &nbsp; | &nbsp; | 100.98 | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-24 | [ORWDX AGAIN](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWDX_AGAIN) | &nbsp; | &nbsp; | &nbsp; | 101.41 | &nbsp;
-25 | [ORWDX DLGDEF](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWDX_DLGDEF) | &nbsp; | &nbsp; | &nbsp; | 101.41 | &nbsp;
-26 | [ORWDX LOCK](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWDX_LOCK) | &nbsp; | &nbsp; | &nbsp; | 200 | &nbsp;
-27 | [ORWDX UNLOCK](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWDX_UNLOCK) | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-28 | [ORWDXA ISACTOI](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWDXA_ISACTOI) | &nbsp; | &nbsp; | &nbsp; | 101.43 | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-29 | [ORWDXM FORMID](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWDXM_FORMID) | &nbsp; | &nbsp; | &nbsp; | 101.41, 100.98, 9.4 | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-30 | [ORWDXM3 ISUDQO](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWDXM3_ISUDQO) | &nbsp; | &nbsp; | &nbsp; | 101.41, 100.98 | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-31 | [ORWDXR01 ISSPLY](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWDXR01_ISSPLY) | &nbsp; | &nbsp; | &nbsp; | 101.43, 100.98 | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-32 | [ORWGRPC ALLVIEWS](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWGRPC_ALLVIEWS) | MODERATE | READ | ORDER | 68, 69.2, 60 | ORWG GRAPH VIEW
-33 | [ORWGRPC GETPREF](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWGRPC_GETPREF) | MODERATE | READ | CPRS | &nbsp; | ORWG GRAPH SETTING
-34 | [ORWGRPC TESTSPEC](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWGRPC_TESTSPEC) | &nbsp; | &nbsp; | &nbsp; | 60 | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-35 | [ORWLEX GETFREQ](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWLEX_GETFREQ) | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-36 | [ORWOR VWGET](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWOR_VWGET) | MODERATE | READ | CPRS | 100.98 | ORCH CONTEXT ORDERS
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-37 | [ORWORB SETSORT](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWORB_SETSORT) | LOW | CHANGE | ORDER | &nbsp; | ORB SORT METHOD, ORB SORT DIRECTION
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-38 | [ORWORDG MAPSEQ](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWORDG_MAPSEQ) | Moderate | READ | ORDER | 100.98 | ORWOR CATEGORY SEQUENCE
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-39 | [ORWPCE ACTIVE PROV](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWPCE_ACTIVE_PROV) | &nbsp; | &nbsp; | &nbsp; | 200, 8932.1 | &nbsp;
-40 | [ORWPCE DIAG](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWPCE_DIAG) | &nbsp; | &nbsp; | &nbsp; | 409.95, 357.1, 357.2, 357.3, 357.4, 357.6, 80 | &nbsp;
-41 | [ORWPCE GET DX TEXT](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWPCE_GET_DX_TEXT) | &nbsp; | &nbsp; | &nbsp; | 80, 80.1, 80.4, 9999999.27 | &nbsp;
-42 | [ORWPCE GETSVC](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWPCE_GETSVC) | &nbsp; | &nbsp; | &nbsp; | 40.7, 44, 150.1 | &nbsp;
-43 | [ORWPCE HASCPT](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWPCE_HASCPT) | &nbsp; | &nbsp; | &nbsp; | 811.1 | &nbsp;
-44 | [ORWPCE HF](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWPCE_HF) | &nbsp; | &nbsp; | &nbsp; | 409.95, 357.1, 357.2, 357.3, 357.4, 357.6, 80 | &nbsp;
-45 | [ORWPCE I10IMPDT](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWPCE_I10IMPDT) | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-46 | [ORWPCE IMM](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWPCE_IMM) | &nbsp; | &nbsp; | &nbsp; | 409.95, 357.1, 357.2, 357.3, 357.4, 357.6, 80 | &nbsp;
-47 | [ORWPCE MHCLINIC](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWPCE_MHCLINIC) | &nbsp; | &nbsp; | &nbsp; | 40.7, 44 | &nbsp;
-48 | [ORWPCE PED](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWPCE_PED) | &nbsp; | &nbsp; | &nbsp; | 409.95, 357.1, 357.2, 357.3, 357.4, 357.6, 80 | &nbsp;
-49 | [ORWPCE PROC](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWPCE_PROC) | &nbsp; | &nbsp; | &nbsp; | 409.95, 357.1, 357.2, 357.3, 357.4, 357.6, 80 | &nbsp;
-50 | [ORWPCE SK](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWPCE_SK) | &nbsp; | &nbsp; | &nbsp; | 409.95, 357.1, 357.2, 357.3, 357.4, 357.6, 80 | &nbsp;
-51 | [ORWPCE VISIT](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWPCE_VISIT) | &nbsp; | &nbsp; | &nbsp; | 409.95, 357.1, 357.2, 357.3, 357.4, 357.6, 80 | &nbsp;
-52 | [ORWPCE XAM](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWPCE_XAM) | &nbsp; | &nbsp; | &nbsp; | 409.95, 357.1, 357.2, 357.3, 357.4, 357.6, 80 | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-53 | [ORWRP GET DEFAULT PRINTER](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWRP_GET_DEFAULT_PRINTER) | LOW | READ | &nbsp; | &nbsp; | ORWDP WINPRINT DEFAULT, ORWDP DEFAULT PRINTER
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-54 | [ORWTIU GET TIU CONTEXT](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWTIU_GET_TIU_CONTEXT) | MODERATE | READ | DOCUMENT | 8926 | ORCH CONTEXT NOTES
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-55 | [ORWU EXTNAME](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWU_EXTNAME) | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-56 | [ORWU HASKEY](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWU_HASKEY) | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-57 | [ORWU NEWPERS](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWU_NEWPERS) | &nbsp; | &nbsp; | &nbsp; | 3.1, 20, 49, 389.9, 200, 8932.1 | &nbsp;
-58 | [ORWU NPHASKEY](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWU_NPHASKEY) | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-59 | [ORWU OVERDL](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWU_OVERDL) | LOW | READ | &nbsp; | &nbsp; | ORPARAM OVER DATELINE
-60 | [ORWU PATCH](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWU_PATCH) | &nbsp; | &nbsp; | &nbsp; | 9.4 | &nbsp;
-61 | [ORWU USERINFO](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWU_USERINFO) | MODERATE | CHANGE | CPRS | 4.2, 101.13, 389.9, 8989.3 | ORCH INITIAL TAB, ORCH USE LAST TAB, ORWOR AUTO CLOSE PT MSG, ORWOR AUTOSAVE NOTE, ORWOR BROADCAST MESSAGES, ORWOR DISABLE HOLD ORDERS, ORWOR DISABLE ORDERING, ORWOR DISABLE WEB ACCESS, ORWOR ENABLE VERIFY, ORWOR TIMEOUT CHART, ORWOR TIMEOUT COUNTDOWN, PXRM GEC STATUS CHECK
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-62 | [ORWUL FVSUB](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWUL_FVSUB) | &nbsp; | &nbsp; | &nbsp; | 101.44 | &nbsp;
-63 | [ORWUL QV4DG](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWUL_QV4DG) | MODERATE | READ | ORDER | 100.98, 101.41, 101.44 | ORWDQ QUICK VIEW
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-64 | [TIU GET PERSONAL PREFERENCES](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/TIU_GET_PERSONAL_PREFERENCES) | &nbsp; | &nbsp; | &nbsp; | 8926 | &nbsp;
-65 | [TIU IS THIS A CONSULT?](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/TIU_IS_THIS_A_CONSULT?) | &nbsp; | &nbsp; | &nbsp; | 8925.1 | &nbsp;
-66 | [TIU IS USER A PROVIDER?](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/TIU_IS_USER_A_PROVIDER?) | &nbsp; | &nbsp; | &nbsp; | 200, 8930, 8930.3, 8932.1 | &nbsp;
-67 | [TIU ISPRF](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/TIU_ISPRF) | &nbsp; | &nbsp; | &nbsp; | 8925.1 | &nbsp;
-68 | [TIU LONG LIST OF TITLES](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/TIU_LONG_LIST_OF_TITLES) | &nbsp; | &nbsp; | &nbsp; | 8925.1, 8930.1 | &nbsp;
-69 | [TIU TEMPLATE GETLINK](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/TIU_TEMPLATE_GETLINK) | &nbsp; | &nbsp; | &nbsp; | 801.41, 8925.1, 8927 | &nbsp;
-70 | [TIU TEMPLATE SET DEFAULTS](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/TIU_TEMPLATE_SET_DEFAULTS) | LOW | CHANGE | DOCUMENT | &nbsp; | TIU DEFAULT TEMPLATES
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-71 | [XUS DIVISION GET](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/XUS_DIVISION_GET) | &nbsp; | &nbsp; | &nbsp; | 200, 4 | &nbsp;
+\# | Name | Type | File(s) | Parameter(s) | Comment
+--- | --- | --- | --- | --- | ---
+1 | [GMV MANAGER](http://vistadataproject.info/artifacts/devdocs/VISTARPC/GMV_MANAGER) | UTILITY | 120.51, 120.52, 120.53, 4.2, 4, 44, 200 | GMV TEMPLATE DEFAULT, GMV TEMPLATE, GMV ALLOW USER TEMPLATES | &nbsp;
+2 | [GMV PARAMETER](http://vistadataproject.info/artifacts/devdocs/VISTARPC/GMV_PARAMETER) | CHANGE | 8989.5, 8989.3, 8989.51, 8989.518 | GMV DLL VERSION, GMV GUI VERSION, GMV WEBLINK, GMV ALLOW USER TEMPLATES, GMV DEFAULT VALUES, GMV TEMPLATE, GMV TEMPLATE DEFAULT, GMV USER DEFAULTS | &nbsp;
+3 | [GMV USER](http://vistadataproject.info/artifacts/devdocs/VISTARPC/GMV_USER) | CHANGE | &nbsp; | GMV USER DEFAULTS | &nbsp;
+4 | [GMV VITALS/CAT/QUAL](http://vistadataproject.info/artifacts/devdocs/VISTARPC/GMV_VITALS/CAT/QUAL) | &nbsp; | 120.51, 120.52, 120.53, 120.57 | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+5 | [ORIMO ISIVQO](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORIMO_ISIVQO) | &nbsp; | 101.41, 100.98 | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+6 | [ORQQCN SVC W/SYNONYMS](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORQQCN_SVC_W/SYNONYMS) | &nbsp; | 123.5, 101.43 | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+7 | [ORQQPL INIT USER](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORQQPL_INIT_USER) | READ | 125.99, 49, 200 | ORCH CONTEXT PROBLEMS, ORQQPL SUPPRESS CODES | &nbsp;
+8 | [ORQQPL USER PROB CATS](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORQQPL_USER_PROB_CATS) | &nbsp; | 125.1 | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+9 | [ORQQPL4 LEX](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORQQPL4_LEX) | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+10 | [ORQQPXRM REMINDER CATEGORIES](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORQQPXRM_REMINDER_CATEGORIES) | READ | 811.7, 811.9, 801.41 | PXRM CPRS LOOKUP CATEGORIES | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+11 | [ORWCH SAVEALL](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWCH_SAVEALL) | CHANGE | &nbsp; | ORWCH BOUNDS, ORWCH WIDTH, ORWCH COLUMNS | &nbsp;
+12 | [ORWCH SAVESIZ](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWCH_SAVESIZ) | CHANGE | &nbsp; | ORWCH BOUNDS | &nbsp;
+13 | [ORWCH SAVFONT](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWCH_SAVFONT) | CHANGE | &nbsp; | ORWCH FONT SIZE | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+14 | [ORWDAL32 ALLERGY MATCH](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDAL32_ALLERGY_MATCH) | &nbsp; | 120.82, 50.6, 50.67, 50.416, 50.605, 50.68 | &nbsp; | &nbsp;
+15 | [ORWDAL32 SYMPTOMS](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDAL32_SYMPTOMS) | &nbsp; | 120.83 | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+16 | [ORWDBA3 HINTS](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDBA3_HINTS) | &nbsp; | 9.2 | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+17 | [ORWDPS1 FAILDEA](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDPS1_FAILDEA) | &nbsp; | 50, 50.68, 50.7, 50.606, 101.43, 200, 4, 4.05 | &nbsp; | &nbsp;
+18 | [ORWDPS1 ODSLCT](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDPS1_ODSLCT) | READ | 550, 101.42 | ORWDPS ROUTING DEFAULT, ORWDPS SUPPRESS DISPENSE MSG | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+19 | [ORWDPS2 DAY2QTY](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDPS2_DAY2QTY) | &nbsp; | 51, 51.1 | &nbsp; | &nbsp;
+20 | [ORWDPS2 QOGRP](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDPS2_QOGRP) | &nbsp; | 100.98, 101.41 | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+21 | [ORWDPS5 LESGRP](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDPS5_LESGRP) | &nbsp; | 100.98 | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+22 | [ORWDX AGAIN](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDX_AGAIN) | &nbsp; | 101.41 | &nbsp; | &nbsp;
+23 | [ORWDX DLGDEF](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDX_DLGDEF) | &nbsp; | 101.41 | &nbsp; | &nbsp;
+24 | [ORWDX LOCK](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDX_LOCK) | &nbsp; | 200 | &nbsp; | &nbsp;
+25 | [ORWDX UNLOCK](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDX_UNLOCK) | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+26 | [ORWDXA ISACTOI](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDXA_ISACTOI) | &nbsp; | 101.43 | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+27 | [ORWDXM FORMID](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDXM_FORMID) | &nbsp; | 101.41, 100.98, 9.4 | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+28 | [ORWDXM3 ISUDQO](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDXM3_ISUDQO) | &nbsp; | 101.41, 100.98 | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+29 | [ORWDXR01 ISSPLY](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDXR01_ISSPLY) | &nbsp; | 101.43, 100.98 | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+30 | [ORWGRPC ALLVIEWS](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWGRPC_ALLVIEWS) | READ | 68, 69.2, 60 | ORWG GRAPH VIEW | &nbsp;
+31 | [ORWGRPC GETPREF](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWGRPC_GETPREF) | READ | &nbsp; | ORWG GRAPH SETTING | &nbsp;
+32 | [ORWGRPC TESTSPEC](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWGRPC_TESTSPEC) | &nbsp; | 60 | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+33 | [ORWLEX GETFREQ](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWLEX_GETFREQ) | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+34 | [ORWOR VWGET](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWOR_VWGET) | READ | 100.98 | ORCH CONTEXT ORDERS | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+35 | [ORWORB SETSORT](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWORB_SETSORT) | CHANGE | &nbsp; | ORB SORT METHOD, ORB SORT DIRECTION | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+36 | [ORWORDG MAPSEQ](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWORDG_MAPSEQ) | READ | 100.98 | ORWOR CATEGORY SEQUENCE | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+37 | [ORWPCE ACTIVE PROV](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_ACTIVE_PROV) | &nbsp; | 200, 8932.1 | &nbsp; | &nbsp;
+38 | [ORWPCE DIAG](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_DIAG) | &nbsp; | 409.95, 357.1, 357.2, 357.3, 357.4, 357.6, 80 | &nbsp; | &nbsp;
+39 | [ORWPCE GET DX TEXT](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_GET_DX_TEXT) | &nbsp; | 80, 80.1, 80.4, 9999999.27 | &nbsp; | &nbsp;
+40 | [ORWPCE GETSVC](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_GETSVC) | &nbsp; | 40.7, 44, 150.1 | &nbsp; | &nbsp;
+41 | [ORWPCE HASCPT](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_HASCPT) | &nbsp; | 811.1 | &nbsp; | &nbsp;
+42 | [ORWPCE HF](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_HF) | &nbsp; | 409.95, 357.1, 357.2, 357.3, 357.4, 357.6, 80 | &nbsp; | &nbsp;
+43 | [ORWPCE I10IMPDT](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_I10IMPDT) | &nbsp; | &nbsp; | &nbsp; | LEXICON
+44 | [ORWPCE IMM](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_IMM) | &nbsp; | 409.95, 357.1, 357.2, 357.3, 357.4, 357.6, 80 | &nbsp; | &nbsp;
+45 | [ORWPCE MHCLINIC](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_MHCLINIC) | &nbsp; | 40.7, 44 | &nbsp; | &nbsp;
+46 | [ORWPCE PED](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_PED) | &nbsp; | 409.95, 357.1, 357.2, 357.3, 357.4, 357.6, 80 | &nbsp; | &nbsp;
+47 | [ORWPCE PROC](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_PROC) | &nbsp; | 409.95, 357.1, 357.2, 357.3, 357.4, 357.6, 80 | &nbsp; | &nbsp;
+48 | [ORWPCE SK](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_SK) | &nbsp; | 409.95, 357.1, 357.2, 357.3, 357.4, 357.6, 80 | &nbsp; | &nbsp;
+49 | [ORWPCE VISIT](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_VISIT) | &nbsp; | 409.95, 357.1, 357.2, 357.3, 357.4, 357.6, 80 | &nbsp; | &nbsp;
+50 | [ORWPCE XAM](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_XAM) | &nbsp; | 409.95, 357.1, 357.2, 357.3, 357.4, 357.6, 80 | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+51 | [ORWRP GET DEFAULT PRINTER](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWRP_GET_DEFAULT_PRINTER) | READ | &nbsp; | ORWDP WINPRINT DEFAULT, ORWDP DEFAULT PRINTER | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+52 | [ORWTIU GET TIU CONTEXT](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWTIU_GET_TIU_CONTEXT) | READ | 8926 | ORCH CONTEXT NOTES | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+53 | [ORWU EXTNAME](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWU_EXTNAME) | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+54 | [ORWU HASKEY](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWU_HASKEY) | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+55 | [ORWU NEWPERS](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWU_NEWPERS) | &nbsp; | 3.1, 20, 49, 389.9, 200, 8932.1 | &nbsp; | &nbsp;
+56 | [ORWU NPHASKEY](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWU_NPHASKEY) | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+57 | [ORWU OVERDL](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWU_OVERDL) | READ | &nbsp; | ORPARAM OVER DATELINE | &nbsp;
+58 | [ORWU PATCH](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWU_PATCH) | &nbsp; | 9.4 | &nbsp; | &nbsp;
+59 | [ORWU USERINFO](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWU_USERINFO) | CHANGE | 4.2, 101.13, 389.9, 8989.3 | ORCH INITIAL TAB, ORCH USE LAST TAB, ORWOR AUTO CLOSE PT MSG, ORWOR AUTOSAVE NOTE, ORWOR BROADCAST MESSAGES, ORWOR DISABLE HOLD ORDERS, ORWOR DISABLE ORDERING, ORWOR DISABLE WEB ACCESS, ORWOR ENABLE VERIFY, ORWOR TIMEOUT CHART, ORWOR TIMEOUT COUNTDOWN, PXRM GEC STATUS CHECK | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+60 | [ORWUL FVSUB](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWUL_FVSUB) | &nbsp; | 101.44 | &nbsp; | &nbsp;
+61 | [ORWUL QV4DG](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWUL_QV4DG) | READ | 100.98, 101.41, 101.44 | ORWDQ QUICK VIEW | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+62 | [TIU GET PERSONAL PREFERENCES](http://vistadataproject.info/artifacts/devdocs/VISTARPC/TIU_GET_PERSONAL_PREFERENCES) | &nbsp; | 8926 | &nbsp; | &nbsp;
+63 | [TIU IS THIS A CONSULT?](http://vistadataproject.info/artifacts/devdocs/VISTARPC/TIU_IS_THIS_A_CONSULT?) | &nbsp; | 8925.1 | &nbsp; | &nbsp;
+64 | [TIU IS USER A PROVIDER?](http://vistadataproject.info/artifacts/devdocs/VISTARPC/TIU_IS_USER_A_PROVIDER?) | &nbsp; | 200, 8930, 8930.3, 8932.1 | &nbsp; | &nbsp;
+65 | [TIU ISPRF](http://vistadataproject.info/artifacts/devdocs/VISTARPC/TIU_ISPRF) | &nbsp; | 8925.1 | &nbsp; | &nbsp;
+66 | [TIU LONG LIST OF TITLES](http://vistadataproject.info/artifacts/devdocs/VISTARPC/TIU_LONG_LIST_OF_TITLES) | &nbsp; | 8925.1, 8930.1 | &nbsp; | &nbsp;
+67 | [TIU TEMPLATE GETLINK](http://vistadataproject.info/artifacts/devdocs/VISTARPC/TIU_TEMPLATE_GETLINK) | &nbsp; | 801.41, 8925.1, 8927 | &nbsp; | &nbsp;
+68 | [TIU TEMPLATE SET DEFAULTS](http://vistadataproject.info/artifacts/devdocs/VISTARPC/TIU_TEMPLATE_SET_DEFAULTS) | CHANGE | &nbsp; | TIU DEFAULT TEMPLATES | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+69 | [XUS DIVISION GET](http://vistadataproject.info/artifacts/devdocs/VISTARPC/XUS_DIVISION_GET) | &nbsp; | 200, 4 | &nbsp; | RPC itself is easy but its response is key to multi-institution support in a VISTA and probably effects login. Need user with many divisions and (as now) one with only the default and see the effect on CPRS.
 
 
 __VISTA Only__: 6
 
-\# | Name | Complexity | Type | Domain | File(s) | Parameter(s)
---- | --- | --- | --- | --- | --- | ---
-1 | [ORPRF CLEAR](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORPRF_CLEAR) | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-2 | [ORWPT SHARE](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWPT_SHARE) | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-3 | [XUS INTRO MSG](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/XUS_INTRO_MSG) | &nbsp; | &nbsp; | &nbsp; | 8989.3 | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-4 | [XWB CREATE CONTEXT](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/XWB_CREATE_CONTEXT) | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-5 | [XWB DEFERRED CLEARALL](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/XWB_DEFERRED_CLEARALL) | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-6 | [XWB IM HERE](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/XWB_IM_HERE) | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+This list doesn't include the _connect_, _BYE_ and _XUS AV CODE_ RPCs, all of which are partially processed in the _Router_. Note that some of the following may be revisited AND be partially or wholly handled in either the Router or VICS Server going forward.
+
+\# | Name | Why VISTA Only?
+--- | --- | ---
+1 | [ORPRF CLEAR](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORPRF_CLEAR) | Clears the per process patient record flags TMP entry. Another VISTA cross RPC Global setter or clearer.
+2 | [ORWPT SHARE](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPT_SHARE) | Kills and Sets per process values of TMP to _share DFN with other applications_. Another VISTA cross RPC Global setter or clearer.
+3 | [XUS INTRO MSG](http://vistadataproject.info/artifacts/devdocs/VISTARPC/XUS_INTRO_MSG) | Text for this is kept in Kernel System Parameters. The RPC is sent in the CPRS connect step and before user login. Another VISTA cross RPC Global setter or clearer.
+4 | [XWB CREATE CONTEXT](http://vistadataproject.info/artifacts/devdocs/VISTARPC/XWB_CREATE_CONTEXT) | __This may come back to VICS__: this checks a broad option or context for a user but also sets up globals (XQY0, XQY). These MAY be used in later RPC interactions.
+5 | [XWB DEFERRED CLEARALL](http://vistadataproject.info/artifacts/devdocs/VISTARPC/XWB_DEFERRED_CLEARALL) | This clears a TMP per process setting and XTMP for a job as part of sign off. Another VISTA cross RPC Global setter or clearer.
+6 | [XWB IM HERE](http://vistadataproject.info/artifacts/devdocs/VISTARPC/XWB_IM_HERE) | CPRS connection 'keep alive' RPC. This isn't used between the Router and the emulating VICS Server
 
 
-__Build One__: 71
+__Build 1 (Done)__: 71
 
-\# | Name | Complexity | Type | Domain | File(s) | Parameter(s)
---- | --- | --- | --- | --- | --- | ---
-1 | [GMV CONVERT DATE](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/GMV_CONVERT_DATE) | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-2 | [GMV DLL VERSION](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/GMV_DLL_VERSION) | LOW | READ | CPRS | &nbsp; | GMV DLL VERSION
-3 | [GMV GET CURRENT TIME](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/GMV_GET_CURRENT_TIME) | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-4 | [GMV GET VITAL TYPE IEN](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/GMV_GET_VITAL_TYPE_IEN) | &nbsp; | &nbsp; | &nbsp; | 120.51 | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-5 | [ORB SORT METHOD](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORB_SORT_METHOD) | LOW | READ | CPRS | &nbsp; | ORB SORT METHOD
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-6 | [ORDEA DEATEXT](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORDEA_DEATEXT) | MEDIUM | READ | ORDER | &nbsp; | OR DEA TEXT
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-7 | [OREVNTX1 DLGIEN](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/OREVNTX1_DLGIEN) | &nbsp; | &nbsp; | &nbsp; | 101.41 | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-8 | [ORIMO ISCLOC](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORIMO_ISCLOC) | &nbsp; | &nbsp; | &nbsp; | 44 | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-9 | [ORQ NULL LIST](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORQ_NULL_LIST) | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-10 | [ORQORB SORT](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORQORB_SORT) | LOW | READ | CPRS | &nbsp; | ORB SORT METHOD
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-11 | [ORQPT DEFAULT LIST SOURCE](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORQPT_DEFAULT_LIST_SOURCE) | LOW | READ | CPRS | &nbsp; | ORLP DEFAULT LIST SOURCE, ORLP DEFAULT TEAM, ORLP DEFAULT WARD, ORLP DEFAULT PROVIDER, ORLP DEFAULT SPECIALTY, ORLP DEFAULT CLINIC MONDAY, ORLP DEFAULT CLINIC TUESDAY, ORLP DEFAULT CLINIC WEDNESDAY, ORLP DEFAULT CLINIC THURSDAY, ORLP DEFAULT CLINIC FRIDAY, ORLP DEFAULT CLINIC SATURDAY, ORLP DEFAULT CLINIC SUNDAY
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-12 | [ORQQCN2 GET CONTEXT](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORQQCN2_GET_CONTEXT) | LOW | READ | CPRS | &nbsp; | ORCH CONTEXT CONSULTS
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-13 | [ORQQPX NEW REMINDERS ACTIVE](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORQQPX_NEW_REMINDERS_ACTIVE) | MEDIUM | READ | ORDER | &nbsp; | PXRM GUI REMINDERS ACTIVE
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-14 | [ORWCH LDFONT](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWCH_LDFONT) | LOW | READ | CPRS | &nbsp; | ORWCH FONT SIZE
-15 | [ORWCH LOADALL](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWCH_LOADALL) | LOW | READ | ORDER | &nbsp; | ORWCH BOUNDS, ORWCH WIDTH, ORWCH COLUMNS
-16 | [ORWCH LOADSIZ](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWCH_LOADSIZ) | LOW | READ | ORDER | &nbsp; | ORWCH BOUNDS
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-17 | [ORWCIRN AUTORDV](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWCIRN_AUTORDV) | LOW | READ | ORDER | &nbsp; | ORWRP CIRN AUTOMATIC
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-18 | [ORWCOM ORDEROBJ](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWCOM_ORDEROBJ) | LOW | READ | CPRS | &nbsp; | ORWCOM ORDER ACCEPTED
-19 | [ORWCOM PTOBJ](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWCOM_PTOBJ) | LOW | READ | CPRS | &nbsp; | ORWCOM PATIENT SELECTED
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-20 | [ORWCV1 COVERSHEET LIST](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWCV1_COVERSHEET_LIST) | MODERATE | READ | ORDER | 101.24 | ORWCV1 COVERSHEET LIST
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-21 | [ORWDAL32 CLINUSER](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWDAL32_CLINUSER) | MODERATE | READ | ALLERGY | 8930, 8930.3 | OR ALLERGY ENTERED IN ERROR
-22 | [ORWDAL32 DEF](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWDAL32_DEF) | &nbsp; | &nbsp; | &nbsp; | 120.83, 120.84 | &nbsp;
-23 | [ORWDAL32 SITE PARAMS](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWDAL32_SITE_PARAMS) | &nbsp; | &nbsp; | &nbsp; | 120.84 | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-24 | [ORWDBA1 BASTATUS](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWDBA1_BASTATUS) | MODERATE | READ | CPRS | 9.7 | OR BILLING AWARENESS STATUS
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-25 | [ORWDPS32 VALQTY](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWDPS32_VALQTY) | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-26 | [ORWDPS32 VALROUTE](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWDPS32_VALROUTE) | &nbsp; | &nbsp; | &nbsp; | 51.2 | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-27 | [ORWDRA32 LOCTYPE](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWDRA32_LOCTYPE) | &nbsp; | &nbsp; | &nbsp; | 44 | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-28 | [ORWDX DGNM](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWDX_DGNM) | &nbsp; | &nbsp; | &nbsp; | 100.98 | &nbsp;
-29 | [ORWDX WRLST](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWDX_WRLST) | MODERATE | READ | ORDER | 101.41, 200 | ORWOR WRITE ORDERS LIST, ORWDX WRITE ORDERS LIST
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-30 | [ORWDX2 DCREASON](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWDX2_DCREASON) | MODERATE | READ | ORDER | 9.4, 100.02, 100.03 | OR DC REASON LIST
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-31 | [ORWDXC ON](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWDXC_ON) | LOW | READ | CPRS | &nbsp; | ORK SYSTEM ENABLE/DISABLE
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-32 | [ORWDXM MSTYLE](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWDXM_MSTYLE) | LOW | READ | CPRS | &nbsp; | ORWDXM ORDER MENU STYLE
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-33 | [ORWDXVB3 COLLTIM](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWDXVB3_COLLTIM) | LOW | READ | ORDER | &nbsp; | OR VBECS REMOVE COLL TIME
-34 | [ORWDXVB3 SWPANEL](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWDXVB3_SWPANEL) | LOW | READ | ORDER | &nbsp; | OR VBECS DIAGNOSTIC PANEL 1ST
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-35 | [ORWOR PKISITE](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWOR_PKISITE) | &nbsp; | &nbsp; | &nbsp; | 100.7 | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-36 | [ORWORB GETSORT](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWORB_GETSORT) | LOW | READ | ORDER | &nbsp; | ORB SORT METHOD, ORB SORT DIRECTION
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-37 | [ORWORDG IEN](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWORDG_IEN) | &nbsp; | &nbsp; | &nbsp; | 100.98 | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-38 | [ORWPCE ALWAYS CHECKOUT](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWPCE_ALWAYS_CHECKOUT) | EASY | READ | PCE | &nbsp; | ORWPCE DISABLE AUTO CHECKOUT
-39 | [ORWPCE ANYTIME](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWPCE_ANYTIME) | EASY | READ | PCE | &nbsp; | ORWPCE ANYTIME ENCOUNTERS
-40 | [ORWPCE ASKPCE](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWPCE_ASKPCE) | EASY | READ | PCE | &nbsp; | ORWPCE ASK ENCOUNTER UPDATE
-41 | [ORWPCE AUTO VISIT TYPE SELECT](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWPCE_AUTO_VISIT_TYPE_SELECT) | EASY | READ | PCE | &nbsp; | ORWPCE DISABLE AUTO VISIT TYPE
-42 | [ORWPCE GET EDUCATION TOPICS](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWPCE_GET_EDUCATION_TOPICS) | &nbsp; | &nbsp; | &nbsp; | 9999999.09 | &nbsp;
-43 | [ORWPCE GET EXAM TYPE](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWPCE_GET_EXAM_TYPE) | &nbsp; | &nbsp; | &nbsp; | 9999999.15 | &nbsp;
-44 | [ORWPCE GET EXCLUDED](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWPCE_GET_EXCLUDED) | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-45 | [ORWPCE GET HEALTH FACTORS TY](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWPCE_GET_HEALTH_FACTORS_TY) | &nbsp; | &nbsp; | &nbsp; | 9999999.64 | &nbsp;
-46 | [ORWPCE GET IMMUNIZATION TYPE](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWPCE_GET_IMMUNIZATION_TYPE) | &nbsp; | &nbsp; | &nbsp; | 9999999.14 | &nbsp;
-47 | [ORWPCE GET SET OF CODES](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWPCE_GET_SET_OF_CODES) | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-48 | [ORWPCE GET SKIN TEST TYPE](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWPCE_GET_SKIN_TEST_TYPE) | &nbsp; | &nbsp; | &nbsp; | 9999999.28 | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-49 | [ORWPCE1 NONCOUNT](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWPCE1_NONCOUNT) | &nbsp; | &nbsp; | &nbsp; | 44 | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-50 | [ORWPS REASON](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWPS_REASON) | LOW | READ | MED | &nbsp; | ORWD NONVA REASON
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-51 | [ORWPT CLINRNG](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWPT_CLINRNG) | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-52 | [ORWPT16 PSCNVT](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWPT16_PSCNVT) | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-53 | [ORWSR SHOW SURG TAB](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWSR_SHOW_SURG_TAB) | MODERATE | READ | CPRS | 9.4 | ORWOR SHOW SURGERY TAB
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-54 | [ORWTPD1 GETEAFL](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWTPD1_GETEAFL) | LOW | READ | ORDER | &nbsp; | ORQQEAFL ENC APPT FUTURE LIMIT
-55 | [ORWTPD1 GETEDATS](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWTPD1_GETEDATS) | MEDIUM | READ | ORDER | &nbsp; | ORQQEAPT ENC APPT START, ORQQEAPT ENC APPT STOP
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-56 | [ORWTPO CSARNGD](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWTPO_CSARNGD) | LOW | READ | ORDER | &nbsp; | ORQQCSDR CS RANGE START, ORQQCSDR CS RANGE STOP
-57 | [ORWTPO GETIMGD](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWTPO_GETIMGD) | LOW | READ | ORDER | &nbsp; | ORCH CONTEXT REPORTS
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-58 | [ORWU CLINLOC](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWU_CLINLOC) | &nbsp; | &nbsp; | &nbsp; | 44 | &nbsp;
-59 | [ORWU DT](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWU_DT) | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-60 | [ORWU PARAM](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWU_PARAM) | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-61 | [ORWU TOOLMENU](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWU_TOOLMENU) | LOW | READ | CPRS | &nbsp; | ORWT TOOLS MENU
-62 | [ORWU VALDT](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWU_VALDT) | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-63 | [ORWU VALIDSIG](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWU_VALIDSIG) | &nbsp; | &nbsp; | &nbsp; | 200 | &nbsp;
-64 | [ORWU VERSRV](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWU_VERSRV) | &nbsp; | &nbsp; | &nbsp; | 19 | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-65 | [ORWU1 NEWLOC](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/ORWU1_NEWLOC) | &nbsp; | &nbsp; | &nbsp; | 44 | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-66 | [TIU GET PRINT NAME](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/TIU_GET_PRINT_NAME) | &nbsp; | &nbsp; | &nbsp; | 8925.1 | &nbsp;
-67 | [TIU TEMPLATE ACCESS LEVEL](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/TIU_TEMPLATE_ACCESS_LEVEL) | DIFFICULT | READ | DOCUMENT | &nbsp; | TIU PERSONAL TEMPLATE ACCESS, TIU TEMPLATE ACCESS BY CLASS
-68 | [TIU TEMPLATE GET DEFAULTS](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/TIU_TEMPLATE_GET_DEFAULTS) | LOW | READ | DOCUMENT | &nbsp; | TIU DEFAULT TEMPLATES
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-69 | [XUS GET USER INFO](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/XUS_GET_USER_INFO) | &nbsp; | &nbsp; | &nbsp; | 200, 4, 20, 8989.3 | &nbsp;
-70 | [XUS PKI GET UPN](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/XUS_PKI_GET_UPN) | &nbsp; | &nbsp; | &nbsp; | 200 | &nbsp;
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-71 | [XWB GET BROKER INFO](http://vistadataproject.info/artifacts/devdocs/EmulatedRPC/XWB_GET_BROKER_INFO) | &nbsp; | &nbsp; | &nbsp; | 8989.3 | &nbsp;
+\# | Name | Type | File(s) | Parameter(s)
+--- | --- | --- | --- | ---
+1 | [GMV CONVERT DATE](http://vistadataproject.info/artifacts/devdocs/VISTARPC/GMV_CONVERT_DATE) | &nbsp; | &nbsp; | &nbsp;
+2 | [GMV DLL VERSION](http://vistadataproject.info/artifacts/devdocs/VISTARPC/GMV_DLL_VERSION) | READ | &nbsp; | GMV DLL VERSION
+3 | [GMV GET CURRENT TIME](http://vistadataproject.info/artifacts/devdocs/VISTARPC/GMV_GET_CURRENT_TIME) | &nbsp; | &nbsp; | &nbsp;
+4 | [GMV GET VITAL TYPE IEN](http://vistadataproject.info/artifacts/devdocs/VISTARPC/GMV_GET_VITAL_TYPE_IEN) | &nbsp; | 120.51 | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+5 | [ORB SORT METHOD](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORB_SORT_METHOD) | READ | &nbsp; | ORB SORT METHOD
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+6 | [ORDEA DEATEXT](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORDEA_DEATEXT) | READ | &nbsp; | OR DEA TEXT
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+7 | [OREVNTX1 DLGIEN](http://vistadataproject.info/artifacts/devdocs/VISTARPC/OREVNTX1_DLGIEN) | &nbsp; | 101.41 | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+8 | [ORIMO ISCLOC](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORIMO_ISCLOC) | &nbsp; | 44 | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+9 | [ORQ NULL LIST](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORQ_NULL_LIST) | &nbsp; | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+10 | [ORQORB SORT](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORQORB_SORT) | READ | &nbsp; | ORB SORT METHOD
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+11 | [ORQPT DEFAULT LIST SOURCE](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORQPT_DEFAULT_LIST_SOURCE) | READ | &nbsp; | ORLP DEFAULT LIST SOURCE, ORLP DEFAULT TEAM, ORLP DEFAULT WARD, ORLP DEFAULT PROVIDER, ORLP DEFAULT SPECIALTY, ORLP DEFAULT CLINIC MONDAY, ORLP DEFAULT CLINIC TUESDAY, ORLP DEFAULT CLINIC WEDNESDAY, ORLP DEFAULT CLINIC THURSDAY, ORLP DEFAULT CLINIC FRIDAY, ORLP DEFAULT CLINIC SATURDAY, ORLP DEFAULT CLINIC SUNDAY
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+12 | [ORQQCN2 GET CONTEXT](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORQQCN2_GET_CONTEXT) | READ | &nbsp; | ORCH CONTEXT CONSULTS
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+13 | [ORQQPX NEW REMINDERS ACTIVE](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORQQPX_NEW_REMINDERS_ACTIVE) | READ | &nbsp; | PXRM GUI REMINDERS ACTIVE
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+14 | [ORWCH LDFONT](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWCH_LDFONT) | READ | &nbsp; | ORWCH FONT SIZE
+15 | [ORWCH LOADALL](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWCH_LOADALL) | READ | &nbsp; | ORWCH BOUNDS, ORWCH WIDTH, ORWCH COLUMNS
+16 | [ORWCH LOADSIZ](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWCH_LOADSIZ) | READ | &nbsp; | ORWCH BOUNDS
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+17 | [ORWCIRN AUTORDV](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWCIRN_AUTORDV) | READ | &nbsp; | ORWRP CIRN AUTOMATIC
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+18 | [ORWCOM ORDEROBJ](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWCOM_ORDEROBJ) | READ | &nbsp; | ORWCOM ORDER ACCEPTED
+19 | [ORWCOM PTOBJ](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWCOM_PTOBJ) | READ | &nbsp; | ORWCOM PATIENT SELECTED
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+20 | [ORWCV1 COVERSHEET LIST](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWCV1_COVERSHEET_LIST) | READ | 101.24 | ORWCV1 COVERSHEET LIST
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+21 | [ORWDAL32 CLINUSER](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDAL32_CLINUSER) | READ | 8930, 8930.3 | OR ALLERGY ENTERED IN ERROR
+22 | [ORWDAL32 DEF](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDAL32_DEF) | &nbsp; | 120.83, 120.84 | &nbsp;
+23 | [ORWDAL32 SITE PARAMS](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDAL32_SITE_PARAMS) | &nbsp; | 120.84 | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+24 | [ORWDBA1 BASTATUS](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDBA1_BASTATUS) | READ | 9.7 | OR BILLING AWARENESS STATUS
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+25 | [ORWDPS32 VALQTY](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDPS32_VALQTY) | &nbsp; | &nbsp; | &nbsp;
+26 | [ORWDPS32 VALROUTE](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDPS32_VALROUTE) | &nbsp; | 51.2 | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+27 | [ORWDRA32 LOCTYPE](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDRA32_LOCTYPE) | &nbsp; | 44 | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+28 | [ORWDX DGNM](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDX_DGNM) | &nbsp; | 100.98 | &nbsp;
+29 | [ORWDX WRLST](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDX_WRLST) | READ | 101.41, 200 | ORWOR WRITE ORDERS LIST, ORWDX WRITE ORDERS LIST
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+30 | [ORWDX2 DCREASON](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDX2_DCREASON) | READ | 9.4, 100.02, 100.03 | OR DC REASON LIST
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+31 | [ORWDXC ON](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDXC_ON) | READ | &nbsp; | ORK SYSTEM ENABLE/DISABLE
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+32 | [ORWDXM MSTYLE](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDXM_MSTYLE) | READ | &nbsp; | ORWDXM ORDER MENU STYLE
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+33 | [ORWDXVB3 COLLTIM](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDXVB3_COLLTIM) | READ | &nbsp; | OR VBECS REMOVE COLL TIME
+34 | [ORWDXVB3 SWPANEL](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDXVB3_SWPANEL) | READ | &nbsp; | OR VBECS DIAGNOSTIC PANEL 1ST
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+35 | [ORWOR PKISITE](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWOR_PKISITE) | &nbsp; | 100.7 | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+36 | [ORWORB GETSORT](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWORB_GETSORT) | READ | &nbsp; | ORB SORT METHOD, ORB SORT DIRECTION
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+37 | [ORWORDG IEN](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWORDG_IEN) | &nbsp; | 100.98 | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+38 | [ORWPCE ALWAYS CHECKOUT](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_ALWAYS_CHECKOUT) | READ | &nbsp; | ORWPCE DISABLE AUTO CHECKOUT
+39 | [ORWPCE ANYTIME](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_ANYTIME) | READ | &nbsp; | ORWPCE ANYTIME ENCOUNTERS
+40 | [ORWPCE ASKPCE](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_ASKPCE) | READ | &nbsp; | ORWPCE ASK ENCOUNTER UPDATE
+41 | [ORWPCE AUTO VISIT TYPE SELECT](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_AUTO_VISIT_TYPE_SELECT) | READ | &nbsp; | ORWPCE DISABLE AUTO VISIT TYPE
+42 | [ORWPCE GET EDUCATION TOPICS](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_GET_EDUCATION_TOPICS) | &nbsp; | 9999999.09 | &nbsp;
+43 | [ORWPCE GET EXAM TYPE](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_GET_EXAM_TYPE) | &nbsp; | 9999999.15 | &nbsp;
+44 | [ORWPCE GET EXCLUDED](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_GET_EXCLUDED) | &nbsp; | &nbsp; | &nbsp;
+45 | [ORWPCE GET HEALTH FACTORS TY](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_GET_HEALTH_FACTORS_TY) | &nbsp; | 9999999.64 | &nbsp;
+46 | [ORWPCE GET IMMUNIZATION TYPE](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_GET_IMMUNIZATION_TYPE) | &nbsp; | 9999999.14 | &nbsp;
+47 | [ORWPCE GET SET OF CODES](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_GET_SET_OF_CODES) | &nbsp; | &nbsp; | &nbsp;
+48 | [ORWPCE GET SKIN TEST TYPE](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_GET_SKIN_TEST_TYPE) | &nbsp; | 9999999.28 | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+49 | [ORWPCE1 NONCOUNT](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE1_NONCOUNT) | &nbsp; | 44 | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+50 | [ORWPS REASON](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPS_REASON) | READ | &nbsp; | ORWD NONVA REASON
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+51 | [ORWPT CLINRNG](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPT_CLINRNG) | &nbsp; | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+52 | [ORWPT16 PSCNVT](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPT16_PSCNVT) | &nbsp; | &nbsp; | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+53 | [ORWSR SHOW SURG TAB](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWSR_SHOW_SURG_TAB) | READ | 9.4 | ORWOR SHOW SURGERY TAB
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+54 | [ORWTPD1 GETEAFL](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWTPD1_GETEAFL) | READ | &nbsp; | ORQQEAFL ENC APPT FUTURE LIMIT
+55 | [ORWTPD1 GETEDATS](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWTPD1_GETEDATS) | READ | &nbsp; | ORQQEAPT ENC APPT START, ORQQEAPT ENC APPT STOP
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+56 | [ORWTPO CSARNGD](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWTPO_CSARNGD) | READ | &nbsp; | ORQQCSDR CS RANGE START, ORQQCSDR CS RANGE STOP
+57 | [ORWTPO GETIMGD](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWTPO_GETIMGD) | READ | &nbsp; | ORCH CONTEXT REPORTS
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+58 | [ORWU CLINLOC](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWU_CLINLOC) | &nbsp; | 44 | &nbsp;
+59 | [ORWU DT](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWU_DT) | &nbsp; | &nbsp; | &nbsp;
+60 | [ORWU PARAM](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWU_PARAM) | &nbsp; | &nbsp; | &nbsp;
+61 | [ORWU TOOLMENU](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWU_TOOLMENU) | READ | &nbsp; | ORWT TOOLS MENU
+62 | [ORWU VALDT](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWU_VALDT) | &nbsp; | &nbsp; | &nbsp;
+63 | [ORWU VALIDSIG](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWU_VALIDSIG) | &nbsp; | 200 | &nbsp;
+64 | [ORWU VERSRV](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWU_VERSRV) | &nbsp; | 19 | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+65 | [ORWU1 NEWLOC](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWU1_NEWLOC) | &nbsp; | 44 | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+66 | [TIU GET PRINT NAME](http://vistadataproject.info/artifacts/devdocs/VISTARPC/TIU_GET_PRINT_NAME) | &nbsp; | 8925.1 | &nbsp;
+67 | [TIU TEMPLATE ACCESS LEVEL](http://vistadataproject.info/artifacts/devdocs/VISTARPC/TIU_TEMPLATE_ACCESS_LEVEL) | READ | &nbsp; | TIU PERSONAL TEMPLATE ACCESS, TIU TEMPLATE ACCESS BY CLASS
+68 | [TIU TEMPLATE GET DEFAULTS](http://vistadataproject.info/artifacts/devdocs/VISTARPC/TIU_TEMPLATE_GET_DEFAULTS) | READ | &nbsp; | TIU DEFAULT TEMPLATES
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+69 | [XUS GET USER INFO](http://vistadataproject.info/artifacts/devdocs/VISTARPC/XUS_GET_USER_INFO) | &nbsp; | 200, 4, 20, 8989.3 | &nbsp;
+70 | [XUS PKI GET UPN](http://vistadataproject.info/artifacts/devdocs/VISTARPC/XUS_PKI_GET_UPN) | &nbsp; | 200 | &nbsp;
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+71 | [XWB GET BROKER INFO](http://vistadataproject.info/artifacts/devdocs/VISTARPC/XWB_GET_BROKER_INFO) | &nbsp; | 8989.3 | &nbsp;
 
 
 ## Files of Meta (Directly Used)
@@ -599,7 +595,7 @@ __Total__ 175 - __National__ 22 - of 3256 total files
 
 ## Parameters of Meta
 
-__85__ parameter types. _Uses_ means number of assertions of a parameter in the clone's meta data.
+__84__ parameter types. _Uses_ means number of assertions of a parameter in the clone's meta data.
 
 \# | Name | File(s) | RPC(s) | Description | Uses
 --- | --- | --- | --- | --- | ---
@@ -664,7 +660,7 @@ __85__ parameter types. _Uses_ means number of assertions of a parameter in the 
 47 | [ORWCOM ORDER ACCEPTED](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWCOM_ORDER_ACCEPTED) | &nbsp; | ORWCOM ORDEROBJ | COM Objects to activate on order acceptance | &nbsp;
 48 | [ORWCOM PATIENT SELECTED](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWCOM_PATIENT_SELECTED) | &nbsp; | ORWCOM PTOBJ | COM Object to Activate on CPRS GUI Patient Selection | &nbsp;
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-49 | [ORWCV1 COVERSHEET LIST](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWCV1_COVERSHEET_LIST) | &nbsp; | ORWCV1 COVERSHEET LIST, ORWCV START | This parameter allows a custom view of the Cover sheet in the CPRS Gui. | __16__
+49 | [ORWCV1 COVERSHEET LIST](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWCV1_COVERSHEET_LIST) | &nbsp; | ORWCV1 COVERSHEET LIST | This parameter allows a custom view of the Cover sheet in the CPRS Gui. | __16__
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 50 | [ORWD NONVA REASON](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWD_NONVA_REASON) | &nbsp; | ORWPS REASON | This parameter lists the reasons and statements for ordering/documenting  a non-VA medication.  Non-VA meds include herbals, OTCs (over-the-counter  medications) and prescriptions not obtained at VA pharmacies or from VA mail delivery services. | __4__
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
@@ -684,29 +680,28 @@ __85__ parameter types. _Uses_ means number of assertions of a parameter in the 
 59 | [ORWOR AUTOSAVE NOTE](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWOR_AUTOSAVE_NOTE) | &nbsp; | ORWU USERINFO | This parameter determines how many seconds should elapse between each auto-save of a note that is being edited in the GUI. | __27__
 60 | [ORWOR BROADCAST MESSAGES](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWOR_BROADCAST_MESSAGES) | &nbsp; | ORWU USERINFO | This parameter may be used to disable the use of windows messaging to notify other applications of CPRS events.  Normally, this parameter should be set to 'Yes'.  If other applications do not respond appropriately to broadcast messages, this parameter may be set to 'No' to debug these applications. | __2__
 61 | [ORWOR CATEGORY SEQUENCE](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWOR_CATEGORY_SEQUENCE) | &nbsp; | ORWORDG MAPSEQ | Multiple instances of this parameter combine to form a list of the display groups shown in the order review screen.  Orders are displayed by the sequence identified in this list. | __38__
-62 | [ORWOR COVER RETRIEVAL NEW](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWOR_COVER_RETRIEVAL_NEW) | &nbsp; | ORWCV START | This parameter controls whether each cover sheet section is loaded in the foreground or background. | __6__
-63 | [ORWOR DISABLE HOLD ORDERS](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWOR_DISABLE_HOLD_ORDERS) | &nbsp; | ORWU USERINFO | This parameter will prevent orders from being placed on hold. | &nbsp;
-64 | [ORWOR DISABLE ORDERING](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWOR_DISABLE_ORDERING) | &nbsp; | ORWU USERINFO | This parameter disables writing orders and taking actions on orders in the GUI. | __2__
-65 | [ORWOR DISABLE WEB ACCESS](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWOR_DISABLE_WEB_ACCESS) | &nbsp; | ORWU USERINFO | When this parameter is set to yes, web links in the CPRS GUI will be disabled or hidden. | &nbsp;
-66 | [ORWOR ENABLE VERIFY](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWOR_ENABLE_VERIFY) | &nbsp; | ORWU USERINFO | This parameter controls whether nurses are allowed to verify orders in the GUI.  The default value is 0, which allows nurses to verify orders only when ordering is enabled.  To allow nurses to verify orders when ordering is disabled, set the value to 1.  To never allow the verify actions, set the value to 2.   This parameter applies to the "Verify" and "Chart Review" on the Actions menu on the Order tab. | __1__
-67 | [ORWOR SHOW SURGERY TAB](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWOR_SHOW_SURGERY_TAB) | &nbsp; | ORWSR SHOW SURG TAB | Should the Surgery tab be shown in the GUI? ((0=No, 1=Yes) | __2__
-68 | [ORWOR TIMEOUT CHART](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWOR_TIMEOUT_CHART) | &nbsp; | ORWU USERINFO | This value overrides the user's DTIME only in the case of the CPRS chart, Windows version (CPRSChart.exe). | __2__
-69 | [ORWOR TIMEOUT COUNTDOWN](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWOR_TIMEOUT_COUNTDOWN) | &nbsp; | ORWU USERINFO | This value is the number of seconds used for the countdown when the timeout notification window appears. | __2__
-70 | [ORWOR WRITE ORDERS LIST](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWOR_WRITE_ORDERS_LIST) | &nbsp; | ORWDX WRLST | ***This parameter has been superseded by ORWDX WRITE ORDERS LIST.*** Currently, the GUI references only for backward compatibility reasons.   This parameter is used do list the order dialog names that should appear in the Write Orders list box of the CPRS GUI.  This is the list of dialogs that should be used in the inpatient setting. | __30__
+62 | [ORWOR DISABLE HOLD ORDERS](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWOR_DISABLE_HOLD_ORDERS) | &nbsp; | ORWU USERINFO | This parameter will prevent orders from being placed on hold. | &nbsp;
+63 | [ORWOR DISABLE ORDERING](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWOR_DISABLE_ORDERING) | &nbsp; | ORWU USERINFO | This parameter disables writing orders and taking actions on orders in the GUI. | __2__
+64 | [ORWOR DISABLE WEB ACCESS](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWOR_DISABLE_WEB_ACCESS) | &nbsp; | ORWU USERINFO | When this parameter is set to yes, web links in the CPRS GUI will be disabled or hidden. | &nbsp;
+65 | [ORWOR ENABLE VERIFY](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWOR_ENABLE_VERIFY) | &nbsp; | ORWU USERINFO | This parameter controls whether nurses are allowed to verify orders in the GUI.  The default value is 0, which allows nurses to verify orders only when ordering is enabled.  To allow nurses to verify orders when ordering is disabled, set the value to 1.  To never allow the verify actions, set the value to 2.   This parameter applies to the "Verify" and "Chart Review" on the Actions menu on the Order tab. | __1__
+66 | [ORWOR SHOW SURGERY TAB](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWOR_SHOW_SURGERY_TAB) | &nbsp; | ORWSR SHOW SURG TAB | Should the Surgery tab be shown in the GUI? ((0=No, 1=Yes) | __2__
+67 | [ORWOR TIMEOUT CHART](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWOR_TIMEOUT_CHART) | &nbsp; | ORWU USERINFO | This value overrides the user's DTIME only in the case of the CPRS chart, Windows version (CPRSChart.exe). | __2__
+68 | [ORWOR TIMEOUT COUNTDOWN](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWOR_TIMEOUT_COUNTDOWN) | &nbsp; | ORWU USERINFO | This value is the number of seconds used for the countdown when the timeout notification window appears. | __2__
+69 | [ORWOR WRITE ORDERS LIST](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWOR_WRITE_ORDERS_LIST) | &nbsp; | ORWDX WRLST | ***This parameter has been superseded by ORWDX WRITE ORDERS LIST.*** Currently, the GUI references only for backward compatibility reasons.   This parameter is used do list the order dialog names that should appear in the Write Orders list box of the CPRS GUI.  This is the list of dialogs that should be used in the inpatient setting. | __30__
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-71 | [ORWPCE ANYTIME ENCOUNTERS](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWPCE_ANYTIME_ENCOUNTERS) | &nbsp; | ORWPCE ANYTIME | Allows encounter data to be entered at any time, even when a note is not being edited. | __16__
-72 | [ORWPCE ASK ENCOUNTER UPDATE](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWPCE_ASK_ENCOUNTER_UPDATE) | &nbsp; | ORWPCE ASKPCE | When signing a note in the CPRS GUI, this parameter is used to determine under what conditions to request the user enter encounter information. Note that encounter data is never required for inpatients.  0 = User is the Primary Encounter Provider, and Encounter Data is Needed 1 = User is the Primary Encounter Provider, and Patient is an Outpatient 2 = User is the Primary Encounter Provider 3 = Encounter Data is Needed 4 = Patient is an Outpatient 5 = Always 6 = Never 7 = Disable - Same as Never but disables the Encounter button | __42__
-73 | [ORWPCE DISABLE AUTO CHECKOUT](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWPCE_DISABLE_AUTO_CHECKOUT) | &nbsp; | ORWPCE ALWAYS CHECKOUT | Disables the automatic checkout of encounters that do not have a diagnosis, procedure or provider information. | &nbsp;
-74 | [ORWPCE DISABLE AUTO VISIT TYPE](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWPCE_DISABLE_AUTO_VISIT_TYPE) | &nbsp; | ORWPCE AUTO VISIT TYPE SELECT | When set to Yes, this parameter prevents the automatic selection of a Type of Visit on the Visit Tab of the encounter form. | &nbsp;
+70 | [ORWPCE ANYTIME ENCOUNTERS](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWPCE_ANYTIME_ENCOUNTERS) | &nbsp; | ORWPCE ANYTIME | Allows encounter data to be entered at any time, even when a note is not being edited. | __16__
+71 | [ORWPCE ASK ENCOUNTER UPDATE](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWPCE_ASK_ENCOUNTER_UPDATE) | &nbsp; | ORWPCE ASKPCE | When signing a note in the CPRS GUI, this parameter is used to determine under what conditions to request the user enter encounter information. Note that encounter data is never required for inpatients.  0 = User is the Primary Encounter Provider, and Encounter Data is Needed 1 = User is the Primary Encounter Provider, and Patient is an Outpatient 2 = User is the Primary Encounter Provider 3 = Encounter Data is Needed 4 = Patient is an Outpatient 5 = Always 6 = Never 7 = Disable - Same as Never but disables the Encounter button | __42__
+72 | [ORWPCE DISABLE AUTO CHECKOUT](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWPCE_DISABLE_AUTO_CHECKOUT) | &nbsp; | ORWPCE ALWAYS CHECKOUT | Disables the automatic checkout of encounters that do not have a diagnosis, procedure or provider information. | &nbsp;
+73 | [ORWPCE DISABLE AUTO VISIT TYPE](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWPCE_DISABLE_AUTO_VISIT_TYPE) | &nbsp; | ORWPCE AUTO VISIT TYPE SELECT | When set to Yes, this parameter prevents the automatic selection of a Type of Visit on the Visit Tab of the encounter form. | &nbsp;
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-75 | [ORWRP CIRN AUTOMATIC](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWRP_CIRN_AUTOMATIC) | &nbsp; | ORWCIRN AUTORDV | This parameter determines if Remote patient queries are done automatically for all sites.  The values for this parameter can be controlled down to the USER entity. | &nbsp;
+74 | [ORWRP CIRN AUTOMATIC](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWRP_CIRN_AUTOMATIC) | &nbsp; | ORWCIRN AUTORDV | This parameter determines if Remote patient queries are done automatically for all sites.  The values for this parameter can be controlled down to the USER entity. | &nbsp;
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-76 | [ORWT TOOLS MENU](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWT_TOOLS_MENU) | &nbsp; | ORWU TOOLMENU | This parameter may be used to identify which items should appear on the tools menu which is displayed by the CPRS GUI.  Each item should contain a name that should be displayed on the menu, followed by an equal sign, followed by the command string used to invoke the executable.  This string may also include parameters that are passed to the executable. Some example entries are:        Hospital Policy=C:\WINNT\SYSTEM32\VIEWERS\QUIKVIEW.EXE LOCPLCY.DOC      VISTA Terminal=C:\PROGRA~1\KEA\KEAVT.EXE VISTA.KTC   An ampersand may be used in the name portion to identify a letter that should be underlined on the menu for quick keyboard access.  For example, to underscore the letter H in Hospital Policy, enter &Hospital Policy as the name part.   To use submenus on the tools menu, you must place special text in the caption and action values.  Submenus must have action text SUBMENU ID, where ID is a unique identifier for the submenu.  Menu items belonging to the submenu must specify which submenu they belong to by appending [ID] after the caption.  Thus the following entries create a Utilities submenu with 2 child items:        Utilities=SUBMENU 1      Calculator[1]=calc.exe      Notepad[1]=notepad.exe   To create a nested submenu, you create a submenu that belongs to another submenu s ID.  For example, to create a nested submenu belonging the above Utilities submenu, you would do the following:        Utility Web Sites[1]=SUBMENU UtilWeb      MicroSoft Tools[UtilWeb]=http:\\www.msdn   While submenu IDs at the end of a caption are not displayed on the Tools menu, this is only true if a corresponding menu ID is found.  If no Menu ID is found, the square brackets and included text will appear as part of the caption on the Tools menu.  This allows for existing bracketed text to remain displayed.   If two submenus share the same menu ID, the second submenu will be treated as belonging to the first menu.   One point worth noting.  If you have a caption of a single dash (or a single dash followed by a submenu id), it will create a separator line in the menu or submenu.  This is not new functionality, but may not have been previously documented.   Finally, if more than 30 menu items are assigned to the top level menu (i.e. they are not part of a submenu), a "More..." submenu will automatically be created at the top of the Tools menu, with additional menu items spilling into the newly created "More..." submenu.  If more than 30 menu items spill into the "More..." submenu, another "More..." submenu will be created inside the first "More..." submenu, with additional menu items spilling into it, and so on, as needed.  Note, however, that there is a limit of 99 total menu items, since you can only enter an integer sequence number from 1-99 when defining the ORWT TOOLS MENU parameter. | __35__
+75 | [ORWT TOOLS MENU](http://vistadataproject.info/artifacts/devdocs/Parameters/ORWT_TOOLS_MENU) | &nbsp; | ORWU TOOLMENU | This parameter may be used to identify which items should appear on the tools menu which is displayed by the CPRS GUI.  Each item should contain a name that should be displayed on the menu, followed by an equal sign, followed by the command string used to invoke the executable.  This string may also include parameters that are passed to the executable. Some example entries are:        Hospital Policy=C:\WINNT\SYSTEM32\VIEWERS\QUIKVIEW.EXE LOCPLCY.DOC      VISTA Terminal=C:\PROGRA~1\KEA\KEAVT.EXE VISTA.KTC   An ampersand may be used in the name portion to identify a letter that should be underlined on the menu for quick keyboard access.  For example, to underscore the letter H in Hospital Policy, enter &Hospital Policy as the name part.   To use submenus on the tools menu, you must place special text in the caption and action values.  Submenus must have action text SUBMENU ID, where ID is a unique identifier for the submenu.  Menu items belonging to the submenu must specify which submenu they belong to by appending [ID] after the caption.  Thus the following entries create a Utilities submenu with 2 child items:        Utilities=SUBMENU 1      Calculator[1]=calc.exe      Notepad[1]=notepad.exe   To create a nested submenu, you create a submenu that belongs to another submenu s ID.  For example, to create a nested submenu belonging the above Utilities submenu, you would do the following:        Utility Web Sites[1]=SUBMENU UtilWeb      MicroSoft Tools[UtilWeb]=http:\\www.msdn   While submenu IDs at the end of a caption are not displayed on the Tools menu, this is only true if a corresponding menu ID is found.  If no Menu ID is found, the square brackets and included text will appear as part of the caption on the Tools menu.  This allows for existing bracketed text to remain displayed.   If two submenus share the same menu ID, the second submenu will be treated as belonging to the first menu.   One point worth noting.  If you have a caption of a single dash (or a single dash followed by a submenu id), it will create a separator line in the menu or submenu.  This is not new functionality, but may not have been previously documented.   Finally, if more than 30 menu items are assigned to the top level menu (i.e. they are not part of a submenu), a "More..." submenu will automatically be created at the top of the Tools menu, with additional menu items spilling into the newly created "More..." submenu.  If more than 30 menu items spill into the "More..." submenu, another "More..." submenu will be created inside the first "More..." submenu, with additional menu items spilling into it, and so on, as needed.  Note, however, that there is a limit of 99 total menu items, since you can only enter an integer sequence number from 1-99 when defining the ORWT TOOLS MENU parameter. | __35__
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-77 | [PXRM CPRS LOOKUP CATEGORIES](http://vistadataproject.info/artifacts/devdocs/Parameters/PXRM_CPRS_LOOKUP_CATEGORIES) | &nbsp; | ORQQPXRM REMINDER CATEGORIES | Returns an array of reminder categories which can then be used within GUI reminder processing. | __9__
-78 | [PXRM GEC STATUS CHECK](http://vistadataproject.info/artifacts/devdocs/Parameters/PXRM_GEC_STATUS_CHECK) | &nbsp; | ORWU USERINFO | &nbsp; | __5__
-79 | [PXRM GUI REMINDERS ACTIVE](http://vistadataproject.info/artifacts/devdocs/Parameters/PXRM_GUI_REMINDERS_ACTIVE) | &nbsp; | ORQQPX NEW REMINDERS ACTIVE | Indicate if Interactive Reminders are Active.  Enter 0 (No) or 1 (Yes). | __5__
+76 | [PXRM CPRS LOOKUP CATEGORIES](http://vistadataproject.info/artifacts/devdocs/Parameters/PXRM_CPRS_LOOKUP_CATEGORIES) | &nbsp; | ORQQPXRM REMINDER CATEGORIES | Returns an array of reminder categories which can then be used within GUI reminder processing. | __9__
+77 | [PXRM GEC STATUS CHECK](http://vistadataproject.info/artifacts/devdocs/Parameters/PXRM_GEC_STATUS_CHECK) | &nbsp; | ORWU USERINFO | &nbsp; | __5__
+78 | [PXRM GUI REMINDERS ACTIVE](http://vistadataproject.info/artifacts/devdocs/Parameters/PXRM_GUI_REMINDERS_ACTIVE) | &nbsp; | ORQQPX NEW REMINDERS ACTIVE | Indicate if Interactive Reminders are Active.  Enter 0 (No) or 1 (Yes). | __5__
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-80 | [TIU DEFAULT TEMPLATES](http://vistadataproject.info/artifacts/devdocs/Parameters/TIU_DEFAULT_TEMPLATES) | &nbsp; | TIU TEMPLATE SET DEFAULTS, TIU TEMPLATE GET DEFAULTS | Default Template for Notes;Consults;DC Summ tabs | __1599__
-81 | [TIU PERSONAL TEMPLATE ACCESS](http://vistadataproject.info/artifacts/devdocs/Parameters/TIU_PERSONAL_TEMPLATE_ACCESS) | &nbsp; | TIU TEMPLATE ACCESS LEVEL | This parameter is used to specify access to personal templates.  A setting  of READ ONLY allows the use of personal templates, but does not allow the  creation of new personal templates.  To restrict template use by USER CLASS, use the TIU TEMPLATE ACCESS BY CLASS parameter.  These two parameters work  together, in the following precedence order:   Precedence  Parameter ----------  ---------------------------- USER        TIU PERSONAL TEMPLATE ACCESS USER CLASS  TIU TEMPLATE ACCESS BY CLASS LOCATION    TIU PERSONAL TEMPLATE ACCESS SERVICE     TIU PERSONAL TEMPLATE ACCESS DIVISION    TIU PERSONAL TEMPLATE ACCESS SYSTEM      TIU PERSONAL TEMPLATE ACCESS | &nbsp;
-82 | [TIU TEMPLATE ACCESS BY CLASS](http://vistadataproject.info/artifacts/devdocs/Parameters/TIU_TEMPLATE_ACCESS_BY_CLASS) | &nbsp; | TIU TEMPLATE ACCESS LEVEL | This parameter is used to specify access to personal templates for a  specific user class.  A setting of READ ONLY allows the use of personal  templates, but does not allow the creation of new personal templates.   To restrict template use by USER, DIVISION or SYSTEM, use the TIU PERSONAL TEMPLATE ACCESS parameter.  These two parameters work  together, in the following precedence order:   Precedence  Parameter ----------  ---------------------------- USER        TIU PERSONAL TEMPLATE ACCESS USER CLASS  TIU TEMPLATE ACCESS BY CLASS LOCATION    TIU PERSONAL TEMPLATE ACCESS SERVICE     TIU PERSONAL TEMPLATE ACCESS DIVISION    TIU PERSONAL TEMPLATE ACCESS SYSTEM      TIU PERSONAL TEMPLATE ACCESS | &nbsp;
+79 | [TIU DEFAULT TEMPLATES](http://vistadataproject.info/artifacts/devdocs/Parameters/TIU_DEFAULT_TEMPLATES) | &nbsp; | TIU TEMPLATE SET DEFAULTS, TIU TEMPLATE GET DEFAULTS | Default Template for Notes;Consults;DC Summ tabs | __1599__
+80 | [TIU PERSONAL TEMPLATE ACCESS](http://vistadataproject.info/artifacts/devdocs/Parameters/TIU_PERSONAL_TEMPLATE_ACCESS) | &nbsp; | TIU TEMPLATE ACCESS LEVEL | This parameter is used to specify access to personal templates.  A setting  of READ ONLY allows the use of personal templates, but does not allow the  creation of new personal templates.  To restrict template use by USER CLASS, use the TIU TEMPLATE ACCESS BY CLASS parameter.  These two parameters work  together, in the following precedence order:   Precedence  Parameter ----------  ---------------------------- USER        TIU PERSONAL TEMPLATE ACCESS USER CLASS  TIU TEMPLATE ACCESS BY CLASS LOCATION    TIU PERSONAL TEMPLATE ACCESS SERVICE     TIU PERSONAL TEMPLATE ACCESS DIVISION    TIU PERSONAL TEMPLATE ACCESS SYSTEM      TIU PERSONAL TEMPLATE ACCESS | &nbsp;
+81 | [TIU TEMPLATE ACCESS BY CLASS](http://vistadataproject.info/artifacts/devdocs/Parameters/TIU_TEMPLATE_ACCESS_BY_CLASS) | &nbsp; | TIU TEMPLATE ACCESS LEVEL | This parameter is used to specify access to personal templates for a  specific user class.  A setting of READ ONLY allows the use of personal  templates, but does not allow the creation of new personal templates.   To restrict template use by USER, DIVISION or SYSTEM, use the TIU PERSONAL TEMPLATE ACCESS parameter.  These two parameters work  together, in the following precedence order:   Precedence  Parameter ----------  ---------------------------- USER        TIU PERSONAL TEMPLATE ACCESS USER CLASS  TIU TEMPLATE ACCESS BY CLASS LOCATION    TIU PERSONAL TEMPLATE ACCESS SERVICE     TIU PERSONAL TEMPLATE ACCESS DIVISION    TIU PERSONAL TEMPLATE ACCESS SYSTEM      TIU PERSONAL TEMPLATE ACCESS | &nbsp;
