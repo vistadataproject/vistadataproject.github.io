@@ -123,7 +123,7 @@ __Build 1.1 (End January)__: 68
 
 __VISTA Only__: 5
 
-This list doesn't include the _connect_, _BYE_ and _XUS AV CODE_ RPCs, all of which are partially processed in the _Router_. Note that some of the following may be revisited AND be partially or wholly handled in either the Router or VICS Server going forward.
+This list doesn't include _connect_ or _BYE_. Note that some of the following may be revisited AND be partially or wholly handled in either the Router or VICS Server going forward.
 
 \# | Name | Why VISTA Only?
 --- | --- | ---
