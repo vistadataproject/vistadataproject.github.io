@@ -44,26 +44,26 @@ __Build 1.1 (End January)__: 65
 13 | [ORWCH SAVFONT](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWCH_SAVFONT) | CHANGE | &nbsp; | ORWCH FONT SIZE | [EASY] [PARAMETER] [SAVE] easy one parameter save
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 14 | [ORWDAL32 ALLERGY MATCH](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDAL32_ALLERGY_MATCH) | &nbsp; | 120.82, 50.6, 50.67, 50.416, 50.605, 50.68 | &nbsp; | [DIFFICULT] [ALLERGY] [LOOKUP] big and needs analysis of its Mongo efficiency so difficult.
-15 | [ORWDAL32 SYMPTOMS](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDAL32_SYMPTOMS) | &nbsp; | 120.83 | &nbsp; | [MEDIUM] [ALLERGY] [LOOKUP] easier than MATCH -  Partial pre 1.1 implementation was missing a filter for 'active'. Must have test for skipping inactive entries.
+15 | [ORWDAL32 SYMPTOMS](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDAL32_SYMPTOMS) | &nbsp; | 120.83 | &nbsp; | [MEDIUM] [ALLERGY] [LOOKUP] [INACTIVE] easier than MATCH -  Partial pre 1.1 implementation was missing a filter for 'active'. Must have test for skipping inactive entries.
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 16 | [ORWDBA3 HINTS](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDBA3_HINTS) | &nbsp; | 9.2 | &nbsp; | [MEDIUM] [TREATMENT FACTOR] [LOOKUP] format hints from file 9.2. Do along with Allergy RPCs
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 17 | [ORWDPS1 FAILDEA](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDPS1_FAILDEA) | &nbsp; | 50, 50.68, 50.7, 50.606, 101.43, 200, 4, 4.05 | &nbsp; | [DIFFICULT] [USER] really returns DEA status of a User. Difficult due to nuances and so need enough test data and test code
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-18 | [ORWDPS2 QOGRP](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDPS2_QOGRP) | &nbsp; | 100.98, 101.41 | &nbsp; | &nbsp;
+18 | [ORWDPS2 QOGRP](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDPS2_QOGRP) | &nbsp; | 100.98, 101.41 | &nbsp; | [MEDIUM] [ORDER] [ISA] is quick order belong to a certain group. Checking values in 100.98. One or more Mongo filters? MEDIUM as need to have multiple test for different options - find appropriate entries in 100.98
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-19 | [ORWDPS5 LESGRP](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDPS5_LESGRP) | &nbsp; | 100.98 | &nbsp; | &nbsp;
+19 | [ORWDPS5 LESGRP](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDPS5_LESGRP) | &nbsp; | 100.98 | &nbsp; | [MEDIUM] [ORDER] [LOOKUP] return 100.98 entries for Lab. Mongo filters again. MEDIUM as need to try with different data.
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-20 | [ORWDX AGAIN](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDX_AGAIN) | &nbsp; | 101.41 | &nbsp; | &nbsp;
-21 | [ORWDX DLGDEF](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDX_DLGDEF) | &nbsp; | 101.41 | &nbsp; | &nbsp;
+20 | [ORWDX AGAIN](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDX_AGAIN) | &nbsp; | 101.41 | &nbsp; | [EASY] [ORDER] [ISA] one liner isA for one 101.41 entry
+21 | [ORWDX DLGDEF](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDX_DLGDEF) | &nbsp; | 101.41 | &nbsp; | [EASY] [ORDER] describe for one 101.41 entry ie/ format a OrderService.getOrderDialog(...) reply into RPC form.
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-22 | [ORWDXA ISACTOI](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDXA_ISACTOI) | &nbsp; | 101.43 | &nbsp; | &nbsp;
+22 | [ORWDXA ISACTOI](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDXA_ISACTOI) | &nbsp; | 101.43 | &nbsp; | [EASY] [ORDER] [INACTIVE] [ISA] inactive check for 101.43. Note - fit into way we handle inactives in general. See Allergy Symptoms
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-23 | [ORWDXM FORMID](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDXM_FORMID) | &nbsp; | 101.41, 100.98, 9.4 | &nbsp; | &nbsp;
+23 | [ORWDXM FORMID](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDXM_FORMID) | &nbsp; | 101.41, 100.98, 9.4 | &nbsp; | [MEDIUM] [ORDER] Medium as branching logic that will have to be fully tested. Really just a getFormId for a dialog
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-24 | [ORWDXM3 ISUDQO](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDXM3_ISUDQO) | &nbsp; | 101.41, 100.98 | &nbsp; | &nbsp;
+24 | [ORWDXM3 ISUDQO](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDXM3_ISUDQO) | &nbsp; | 101.41, 100.98 | &nbsp; | [EASY] [ORDER] [ISA] isA on type of Order Dialog. Like ISACTOI etc or the GRP checks
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-25 | [ORWDXR01 ISSPLY](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDXR01_ISSPLY) | &nbsp; | 101.43, 100.98 | &nbsp; | &nbsp;
+25 | [ORWDXR01 ISSPLY](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDXR01_ISSPLY) | &nbsp; | 101.43, 100.98 | &nbsp; | [EASY] [ORDER] [ISA]
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 26 | [ORWGRPC ALLVIEWS](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWGRPC_ALLVIEWS) | READ | 68, 69.2, 60 | ORWG GRAPH VIEW | &nbsp;
 27 | [ORWGRPC GETPREF](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWGRPC_GETPREF) | READ | &nbsp; | ORWG GRAPH SETTING | &nbsp;
