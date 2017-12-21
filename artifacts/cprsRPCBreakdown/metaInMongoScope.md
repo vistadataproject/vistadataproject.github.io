@@ -21,6 +21,8 @@ __141__ RPCs (includes 5 VISTA Only).
 
 __Build 1.1 (End January)__: 65
 
+__Note__: may have more RPCs when _XUS DIVISION GET_ is analyzed. It may lead CPRS to send more location retrieval RPCs and we'll have to support those. But for now, the list below is definitive.
+
 \# | Name | Type | File(s) | Parameter(s) | Comment
 --- | --- | --- | --- | --- | ---
 1 | [GMV MANAGER](http://vistadataproject.info/artifacts/devdocs/VISTARPC/GMV_MANAGER) | UTILITY | 120.51, 120.52, 120.53, 4.2, 4, 44, 200 | GMV TEMPLATE DEFAULT, GMV TEMPLATE, GMV ALLOW USER TEMPLATES | [DIFFICULT] [VITAL] [XUSEC] have partial impl. Difficulty is _Test Code Coverage_ and ensuring all CPRS invoked variations are fully covered. Largely falls back on Parameter service but does have Vital specific notions and so belongs in the Vital Service
