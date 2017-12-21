@@ -5,6 +5,8 @@ title: VAM B2
 
 Need to further emphasize move off VISTA and quantity of data now retired in VISTA vs that needs a VISTA shadow for now.
 
+> [a] turning off VISTA piece by piece as we nationalize, [b] upgrading existing security (while wait for EHRM), [c] isolating VA specials and [d] continuing to support upstream systems (bulletins etc) which also identifies what they are ... __transparently__
+
 Rough notes:
   * show VICS Server manager
     * want to show extend of VISTAs and their datasets as well as traffic

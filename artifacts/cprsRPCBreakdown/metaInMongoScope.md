@@ -26,11 +26,11 @@ __Build 1.1 (End January)__: 66
 1 | [GMV MANAGER](http://vistadataproject.info/artifacts/devdocs/VISTARPC/GMV_MANAGER) | UTILITY | 120.51, 120.52, 120.53, 4.2, 4, 44, 200 | GMV TEMPLATE DEFAULT, GMV TEMPLATE, GMV ALLOW USER TEMPLATES | &nbsp;
 2 | [GMV PARAMETER](http://vistadataproject.info/artifacts/devdocs/VISTARPC/GMV_PARAMETER) | CHANGE | 8989.5, 8989.3, 8989.51, 8989.518 | GMV DLL VERSION, GMV GUI VERSION, GMV WEBLINK, GMV ALLOW USER TEMPLATES, GMV DEFAULT VALUES, GMV TEMPLATE, GMV TEMPLATE DEFAULT, GMV USER DEFAULTS | &nbsp;
 3 | [GMV USER](http://vistadataproject.info/artifacts/devdocs/VISTARPC/GMV_USER) | CHANGE | &nbsp; | GMV USER DEFAULTS | &nbsp;
-4 | [GMV VITALS/CAT/QUAL](http://vistadataproject.info/artifacts/devdocs/VISTARPC/GMV_VITALS/CAT/QUAL) | &nbsp; | 120.51, 120.52, 120.53, 120.57 | &nbsp; | &nbsp;
+4 | [GMV VITALS/CAT/QUAL](http://vistadataproject.info/artifacts/devdocs/VISTARPC/GMV_VITALS_CAT_QUAL) | &nbsp; | 120.51, 120.52, 120.53, 120.57 | &nbsp; | &nbsp;
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 5 | [ORIMO ISIVQO](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORIMO_ISIVQO) | &nbsp; | 101.41, 100.98 | &nbsp; | [EASY] [ORDER] is something an IV quick order (_isIVQuickOrder_) - simple record check, preferably in one Mongo query. Returns 1 or 0
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-6 | [ORQQCN SVC W/SYNONYMS](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORQQCN_SVC_W/SYNONYMS) | &nbsp; | 123.5, 101.43 | &nbsp; | &nbsp;
+6 | [ORQQCN SVC W/SYNONYMS](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORQQCN_SVC_W_SYNONYMS) | &nbsp; | 123.5, 101.43 | &nbsp; | [MEDIUM] [ORDER]
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 7 | [ORQQPL INIT USER](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORQQPL_INIT_USER) | READ | 125.99, 49, 200 | ORCH CONTEXT PROBLEMS, ORQQPL SUPPRESS CODES | [MEDIUM] [PROBLEM] [USERPREF] medium due to size. User preferences for Problem -- note: name the method the same way Document names its User Preferences call. ie/ _ProblemMetaService.getUserPreferences_ (do by whoever is doing document and other preferences?). Note ala other RPCs that take 'DUZ', service should not take DUZ and RPC needs to enforce that argument passed in == ID of Session's User
 8 | [ORQQPL USER PROB CATS](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORQQPL_USER_PROB_CATS) | &nbsp; | 125.1 | &nbsp; | [DIFFICULT] [PROBLEM] [NVTEST] _GETUSLST_ goes to 200/problem selection list pointer and gets appropriate list from file 125_1. If none then checks of list of clinic. Issue that this index seems to be outside FileMan. Note that the DUZ passed in is ignored (and per our coding standards must == userId of logged in User AND will not be passed explicitly to the Service). __Test Dataset needs enough data__ AND __need good isolation nodeVISTA test__
@@ -78,8 +78,8 @@ __Build 1.1 (End January)__: 66
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 33 | [ORWORDG MAPSEQ](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWORDG_MAPSEQ) | READ | 100.98 | ORWOR CATEGORY SEQUENCE | &nbsp;
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-34 | [ORWPCE ACTIVE PROV](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_ACTIVE_PROV) | &nbsp; | 200, 8932.1 | &nbsp; | &nbsp;
-35 | [ORWPCE DIAG](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_DIAG) | &nbsp; | 409.95, 357.1, 357.2, 357.3, 357.4, 357.6, 80 | &nbsp; | &nbsp;
+34 | [ORWPCE ACTIVE PROV](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_ACTIVE_PROV) | &nbsp; | 200, 8932.1 | &nbsp; | [EASY] [USER] see if Active. Just look at today's date and termination date. Do with other User items
+35 | [ORWPCE DIAG](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_DIAG) | &nbsp; | 409.95, 357.1, 357.2, 357.3, 357.4, 357.6, 80 | &nbsp; | [DIFFICULT] [PCE] [LOOKUP] serializes information - difficult as large so needs more tests
 36 | [ORWPCE GET DX TEXT](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_GET_DX_TEXT) | &nbsp; | 80, 80.1, 80.4, 9999999.27 | &nbsp; | &nbsp;
 37 | [ORWPCE GETSVC](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_GETSVC) | &nbsp; | 40.7, 44, 150.1 | &nbsp; | &nbsp;
 38 | [ORWPCE HASCPT](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_HASCPT) | &nbsp; | 811.1 | &nbsp; | &nbsp;
