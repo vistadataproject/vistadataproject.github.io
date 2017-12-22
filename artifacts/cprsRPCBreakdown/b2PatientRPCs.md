@@ -11,6 +11,7 @@ The [Meta RPCs](metaInMongoScope) (those not accessing or changing Patient data)
 
 __Notes__: 
   * The captures were created during the VISTA Data Project (VDP). CPRS has been rereleased since the project ended. A final definitive list of Patient RPCs will be generated with the latest version of CPRS once that is made available to VAM.
+  * VDM prototyping for Clinical focused on CHANGE RPCs so some relatively simple READ RPCs were never emulated.
   * Some captures like Vitals seem to take in P2 RPCs and need to be cleaned (__TODO__). We may need a _P4_ to cover the common exit sequence. Post cleanup some RPCs (TIU?) may be moved _out of scope_.
   * Unlike the Meta RPC report, the report below doesn't detail the Files (and Parameters) accessed by Patient RPCs. These need to be filled in __TODO__.
   * Besides _BYE_ etc, out of scope RPCs include parts of _P2_ that fill in the coversheet. These 
