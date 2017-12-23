@@ -3,7 +3,7 @@ layout: default
 title: VAM Year 1 - 'Meta Scope 2' - station number 442
 ---
 
-# Scope of 'Meta in Mongo' Work
+# Scope of 'Meta RPC' Work
 
 __141__ RPCs, __101__ Primary Files, __175__ Secondary Files, __82__ Parameters.
 
