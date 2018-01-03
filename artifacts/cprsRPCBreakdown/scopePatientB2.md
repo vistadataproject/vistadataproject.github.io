@@ -10,6 +10,7 @@ With Build 2, the VICS Service must emulate the RPCs seen in _capture_ files cov
 The [Meta RPCs](scopeMetaB1_1) (those not accessing or changing Patient data) are due to be completed in Build 1.1. The following details the in-scope _Patient RPCs_ which need to be emulated by _Build 2_ (mid March 2018).
 
 __Notes__: 
+  * like Meta RPCs, __most Patient RPCs are reads__ - change RPCs will be marked __DUAL__ below meaning a call will be sent to BOTH the national VICS and VISTA
   * the key Patient Select RPC (_ORWPT SELECT_) may only get a PARTIAL implementation - some of the data in its reply is not in scope for PDE/B2
   * The captures were created during the VISTA Data Project (VDP). CPRS has been rereleased since the project ended. A final definitive list of Patient RPCs will be generated with the latest version of CPRS once that is made available to VAM.
   * The captures cover __OUTPATIENT__ and not __INPATIENT__ - INPATIENT Patient RPCs are not covered
@@ -29,8 +30,8 @@ __P2 Patient RPCs:__ 45
 
 \# | Name | Phase/Domain | VDM | Comment
 --- | --- | --- | --- | ---
-1 | [DG CHK BS5 XREF ARRAY](http://vistadataproject.info/artifacts/devdocs/VISTARPC/DG_CHK_BS5_XREF_ARRAY) | P2 | [patient](https://github.com/vistadataproject/VDM/blob/master/prototypes/patient/rpcEmulatorPatientModel.js) | [DIFFICULT] as need to establish range of test data to cover cases and __may lead to more CPRS RPCs__ if return 1 ie/ that partial name/ssn combo is not unique. First work is to test and establish boundaries and see what additional indexes are needed in Mongo/Patient to cover the calculations of this RPC
-2 | [DG SENSITIVE RECORD ACCESS](http://vistadataproject.info/artifacts/devdocs/VISTARPC/DG_SENSITIVE_RECORD_ACCESS) | P2 | [patient](https://github.com/vistadataproject/VDM/blob/master/prototypes/patient/rpcEmulatorPatientModel.js) | [MEDIUM] [SECURITY] need to establish test data for KEY setting combinations
+1 | [DG CHK BS5 XREF ARRAY](http://vistadataproject.info/artifacts/devdocs/VISTARPC/DG_CHK_BS5_XREF_ARRAY) | P2 | [patient](https://github.com/vistadataproject/VDM/blob/master/prototypes/patient/rpcEmulatorPatientModel.js) | [DIFFICULT] mainly as need to see CPRS behavior (and other RPCs?) if return that there's ambiguity with a name/social combo. See [Pei's Test](https://github.com/vistadataproject/VDM/blob/master/prototypes/patientVICS/rpcPatientHardselect-spec.js#L196). Want to see CHEYCLONE data too
+2 | [DG SENSITIVE RECORD ACCESS](http://vistadataproject.info/artifacts/devdocs/VISTARPC/DG_SENSITIVE_RECORD_ACCESS) | P2 | [patient](https://github.com/vistadataproject/VDM/blob/master/prototypes/patient/rpcEmulatorPatientModel.js) | [DIFFICULT] [SECURITY]. Involves setting file 38.1 (mark patient as sensitive) and using the key _DG SENSITIVITY_ - see [Pei's Tests](https://github.com/vistadataproject/VDM/blob/master/prototypes/patientVICS/rpcPatientHardselect-spec.js#L256). See CPRS behavior for sensitive vs non sensitive patient selection both when a provider lacks the appropriate key and when she has that key. Want to see CHEYCLONE data too.
 3 | [GMV ADD VM](http://vistadataproject.info/artifacts/devdocs/VISTARPC/GMV_ADD_VM) | VITALS | [vitals](https://github.com/vistadataproject/VDM/blob/master/prototypes/vitals/rpcEmulatorVitalsModel.js) | &nbsp;
 4 | [GMV CLOSEST READING](http://vistadataproject.info/artifacts/devdocs/VISTARPC/GMV_CLOSEST_READING) | VITALS | &nbsp; | &nbsp;
 5 | [GMV EXTRACT REC](http://vistadataproject.info/artifacts/devdocs/VISTARPC/GMV_EXTRACT_REC) | VITALS | &nbsp; | &nbsp;
