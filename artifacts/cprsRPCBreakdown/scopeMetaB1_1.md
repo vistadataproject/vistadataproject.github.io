@@ -5,7 +5,7 @@ title: VAM Year 1 - 'Meta Scope 2' - station number 442
 
 # Scope of 'Meta RPC' Work
 
-__141__ RPCs, __101__ Primary Files, __175__ Secondary Files, __82__ Parameters.
+__143__ RPCs, __101__ Primary Files, __175__ Secondary Files, __82__ Parameters.
 
 __Storage Size__ 675.30078125 MiB - __Objects__ 6,543,200 - __Collections__ 279
 
@@ -15,11 +15,11 @@ __Storage Size__ 675.30078125 MiB - __Objects__ 6,543,200 - __Collections__ 279
 
 ## RPCs of Meta
 
-__141__ RPCs (includes 5 VISTA Only).
+__143__ RPCs (includes 5 VISTA Only).
 
 
 
-__Build 1.1 (End January PDE)__: 33
+__Build 1.1 (End January PDE)__: 35
 
 __Note__: may have more RPCs when/if [a] _XUS DIVISION GET_ is analyzed - it may lead CPRS to send more location retrieval RPCs and we'll have to support those and [b] a newer CPRS may introduce new RPCs                                                        . But for now, the list below is definitive.
 
@@ -54,24 +54,26 @@ __Note__: may have more RPCs when/if [a] _XUS DIVISION GET_ is analyzed - it may
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 19 | [ORWORB SETSORT](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWORB_SETSORT) | CHANGE | &nbsp; | ORB SORT METHOD, ORB SORT DIRECTION | [EASY] [PARAMETER] [SAVE]
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-20 | [ORWPCE ACTIVE PROV](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_ACTIVE_PROV) | &nbsp; | 200, 8932.1 | &nbsp; | [EASY] [USER] see if Active. Just look at today's date and termination date. Do with other User items - __Want in B1_1 as generic concept__
-21 | [ORWPCE GETSVC](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_GETSVC) | &nbsp; | 40.7, 44, 150.1 | &nbsp; | [MEDIUM] [LOCATION] medium as must calculate service category based on location and whether a patient is an in or outpatient. ... _lookupServiceCategory(...)
-22 | [ORWPCE I10IMPDT](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_I10IMPDT) | &nbsp; | &nbsp; | &nbsp; | [MEDIUM] [LEXICON]
-23 | [ORWPCE MHCLINIC](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_MHCLINIC) | &nbsp; | 40.7, 44 | &nbsp; | [EASY] [LOCATION] [ISA] is it a mental health clinic. __In B1_1 as generic concept__
+20 | [ORWPCE ACTIVE CODE](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_ACTIVE_CODE) | &nbsp; | &nbsp; | &nbsp; | [EASY] [LEXICON] is a code active - uses same Lexicon method twice. Need to replicate that method and data in Mongo.
+21 | [ORWPCE ACTIVE PROV](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_ACTIVE_PROV) | &nbsp; | 200, 8932.1 | &nbsp; | [EASY] [USER] see if Active. Just look at today's date and termination date. Do with other User items - __Want in B1_1 as generic concept__
+22 | [ORWPCE GETSVC](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_GETSVC) | &nbsp; | 40.7, 44, 150.1 | &nbsp; | [MEDIUM] [LOCATION] medium as must calculate service category based on location and whether a patient is an in or outpatient. ... _lookupServiceCategory(...)
+23 | [ORWPCE I10IMPDT](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_I10IMPDT) | &nbsp; | &nbsp; | &nbsp; | [MEDIUM] [LEXICON]
+24 | [ORWPCE MHCLINIC](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPCE_MHCLINIC) | &nbsp; | 40.7, 44 | &nbsp; | [EASY] [LOCATION] [ISA] is it a mental health clinic. __In B1_1 as generic concept__
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-24 | [ORWRP GET DEFAULT PRINTER](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWRP_GET_DEFAULT_PRINTER) | READ | &nbsp; | ORWDP WINPRINT DEFAULT, ORWDP DEFAULT PRINTER | [EASY] [PARAMETER] Two parameter GET (was missed before which is why not in B1).
+25 | [ORWRP GET DEFAULT PRINTER](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWRP_GET_DEFAULT_PRINTER) | READ | &nbsp; | ORWDP WINPRINT DEFAULT, ORWDP DEFAULT PRINTER | [EASY] [PARAMETER] Two parameter GET (was missed before which is why not in B1).
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-25 | [ORWU HASKEY](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWU_HASKEY) | &nbsp; | &nbsp; | &nbsp; | [MEDIUM] [USER] [XUSEC] hasKey? Pure XUSEC - same as ORWU HASKEY
-26 | [ORWU NEWPERS](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWU_NEWPERS) | &nbsp; | 3.1, 20, 49, 389.9, 200, 8932.1 | &nbsp; | [DIFFICULT] [USER] list users according to criteria. Note from our captures (see definitions/RPC/captures) seems as if this is used for just one entry as a sort of 'describe user'. If that is so then only support that variation in our emulation ie/ limit=1, one piece of a name. To implement, see captures. __IMPORTANT TO QUALIFY THE EXTENT WE EMULATE THIS RPC__ - only to suit what we see from in-scope CPRS screens. Part of this work is scoping from captures.
-27 | [ORWU NPHASKEY](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWU_NPHASKEY) | &nbsp; | &nbsp; | &nbsp; | [MEDIUM] [USER] [XUSEC] Pure XUSEC
-28 | [ORWU OVERDL](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWU_OVERDL) | READ | &nbsp; | ORPARAM OVER DATELINE | [EASY] [PARAMETER] Parameter Service only. Simplest of simple GETs. See ORWU.m. Note missing RPC docs as wasn't in older VISTA/CPRS. __Can be a stand alone as not related to anything__
-29 | [ORWU PATCH](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWU_PATCH) | &nbsp; | 9.4 | &nbsp; | [MEDIUM] [VISTA] Points to having a _VISTA Service_ for things about VISTA. See issue with FileMan 'service' which is going away.
-30 | [ORWU USERINFO](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWU_USERINFO) | CHANGE | 4.2, 101.13, 389.9, 8989.3 | ORCH INITIAL TAB, ORCH USE LAST TAB, ORWOR AUTO CLOSE PT MSG, ORWOR AUTOSAVE NOTE, ORWOR BROADCAST MESSAGES, ORWOR DISABLE HOLD ORDERS, ORWOR DISABLE ORDERING, ORWOR DISABLE WEB ACCESS, ORWOR ENABLE VERIFY, ORWOR TIMEOUT CHART, ORWOR TIMEOUT COUNTDOWN, PXRM GEC STATUS CHECK | [MEDIUM] [USER] [XUSEC] Difficult because of size. Another user details call but pulls in many parameter values and uses __XUSEC__ (the index of a user's keys) as well. Tackle once approach to XUSEC is finalized. Preferably fit in with existing _userDetails_ User Service method. Note in reply, could list parameter values in a name-value list where name is the parameter name
+26 | [ORWU HASKEY](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWU_HASKEY) | &nbsp; | &nbsp; | &nbsp; | [MEDIUM] [USER] [XUSEC] hasKey? Pure XUSEC - same as ORWU HASKEY
+27 | [ORWU NEWPERS](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWU_NEWPERS) | &nbsp; | 3.1, 20, 49, 389.9, 200, 8932.1 | &nbsp; | [DIFFICULT] [USER] list users according to criteria. Note from our captures (see definitions/RPC/captures) seems as if this is used for just one entry as a sort of 'describe user'. If that is so then only support that variation in our emulation ie/ limit=1, one piece of a name. To implement, see captures. __IMPORTANT TO QUALIFY THE EXTENT WE EMULATE THIS RPC__ - only to suit what we see from in-scope CPRS screens. Part of this work is scoping from captures.
+28 | [ORWU NPHASKEY](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWU_NPHASKEY) | &nbsp; | &nbsp; | &nbsp; | [MEDIUM] [USER] [XUSEC] Pure XUSEC
+29 | [ORWU OVERDL](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWU_OVERDL) | READ | &nbsp; | ORPARAM OVER DATELINE | [EASY] [PARAMETER] Parameter Service only. Simplest of simple GETs. See ORWU.m. Note missing RPC docs as wasn't in older VISTA/CPRS. __Can be a stand alone as not related to anything__
+30 | [ORWU PATCH](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWU_PATCH) | &nbsp; | 9.4 | &nbsp; | [MEDIUM] [VISTA] Points to having a _VISTA Service_ for things about VISTA. See issue with FileMan 'service' which is going away.
+31 | [ORWU USERINFO](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWU_USERINFO) | CHANGE | 4.2, 101.13, 389.9, 8989.3 | ORCH INITIAL TAB, ORCH USE LAST TAB, ORWOR AUTO CLOSE PT MSG, ORWOR AUTOSAVE NOTE, ORWOR BROADCAST MESSAGES, ORWOR DISABLE HOLD ORDERS, ORWOR DISABLE ORDERING, ORWOR DISABLE WEB ACCESS, ORWOR ENABLE VERIFY, ORWOR TIMEOUT CHART, ORWOR TIMEOUT COUNTDOWN, PXRM GEC STATUS CHECK | [MEDIUM] [USER] [XUSEC] Difficult because of size. Another user details call but pulls in many parameter values and uses __XUSEC__ (the index of a user's keys) as well. Tackle once approach to XUSEC is finalized. Preferably fit in with existing _userDetails_ User Service method. Note in reply, could list parameter values in a name-value list where name is the parameter name
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-31 | [TIU IS USER A PROVIDER?](http://vistadataproject.info/artifacts/devdocs/VISTARPC/TIU_IS_USER_A_PROVIDER?) | &nbsp; | 200, 8930, 8930.3, 8932.1 | &nbsp; | [EASY] [USER] though TIU, this is a User Service call checking if a User is a provider. __In B1_1 as generic concept__
-32 | [TIU TEMPLATE SET DEFAULTS](http://vistadataproject.info/artifacts/devdocs/VISTARPC/TIU_TEMPLATE_SET_DEFAULTS) | CHANGE | &nbsp; | TIU DEFAULT TEMPLATES | [EASY] [PARAMETER] [SAVE] Simple Parameter Set - __As a simple parameter SET, could go in Simple Set Group__ instead of TIU group for work. Note has matching GET from 1.1.
+32 | [TIU IS USER A PROVIDER?](http://vistadataproject.info/artifacts/devdocs/VISTARPC/TIU_IS_USER_A_PROVIDER?) | &nbsp; | 200, 8930, 8930.3, 8932.1 | &nbsp; | [EASY] [USER] though TIU, this is a User Service call checking if a User is a provider. __In B1_1 as generic concept__
+33 | [TIU TEMPLATE GETROOTS](http://vistadataproject.info/artifacts/devdocs/VISTARPC/TIU_TEMPLATE_GETROOTS) | &nbsp; | &nbsp; | &nbsp; | [MEDIUM] [DOCUMENT] Template meta data - referenced from vitals and problems.
+34 | [TIU TEMPLATE SET DEFAULTS](http://vistadataproject.info/artifacts/devdocs/VISTARPC/TIU_TEMPLATE_SET_DEFAULTS) | CHANGE | &nbsp; | TIU DEFAULT TEMPLATES | [EASY] [PARAMETER] [SAVE] Simple Parameter Set - __As a simple parameter SET, could go in Simple Set Group__ instead of TIU group for work. Note has matching GET from 1.1.
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-33 | [XUS DIVISION GET](http://vistadataproject.info/artifacts/devdocs/VISTARPC/XUS_DIVISION_GET) | &nbsp; | 200, 4 | &nbsp; | [DIFFICULT] [USER] [NVTEST] RPC itself is easy but its response is key to multi-institution support in a VISTA and probably effects login. Need user with many divisions and (as now) one with only the default and see the effect on CPRS.
+35 | [XUS DIVISION GET](http://vistadataproject.info/artifacts/devdocs/VISTARPC/XUS_DIVISION_GET) | &nbsp; | 200, 4 | &nbsp; | [DIFFICULT] [USER] [NVTEST] RPC itself is easy but its response is key to multi-institution support in a VISTA and probably effects login. Need user with many divisions and (as now) one with only the default and see the effect on CPRS.
 
 
 __Build 3 (Post Build 2 Beyond PDE)__: 32
