@@ -9,7 +9,7 @@ VISTA's data model - the roadmap to all of VA's institutional, business, and cli
 
 In the VISTA Data Project (VDP), this organic data model is comprehensively exposed and incrementally normalized across all VISTA systems to produce a national, standardized Master VISTA Data Model (MVDM) spanning all VISTA systems. An operationalized MVDM provides new clients with a single, secure, symmetric read-write interface to every VISTA and, through _emulation_ of existing interfaces, VISTA's current clients such as CPRS and JLV work unchanged, but with greatly enhanced security. 
 
-Through this same MVDM-driven mechanism, the functionality across all VISTA systems can be centralized to a single secure, cloud-based, veteran-specific Veteran Integrated Care Service (VICS),  allowing  the corresponding functionality of the 130 decentralized VISTA systems to be decomissioned while maintaining seamless continuity of veteran-specific care and services. An overview of this migration of veteran services to the cloud is as follows:
+Through this same MVDM-driven mechanism, the functionality across all VISTA systems can be centralized to a single secure, cloud-based, veteran-specific Veteran Integrated Care Service (VICS),  allowing  the corresponding functionality of the 130 decentralized VISTA systems to be decomissioned while maintaining seamless continuity of veteran-specific care and services.
 
 ![vdp-transition -width70](assets/vdp-vista-vics-v3.png)
 
