@@ -7,7 +7,7 @@ title: Workload "DSS" VICS Demo
 
 ## VISTA is a lot more than an EHR
 
-VISTA is a lot more than an EHR. It also provides Non Clinical Services for managing hospitals and clinics. One key example is _Workload Measurement_, the accounting for work performed by providers for patients. Such measurement helps the VA manage hospital costs and is the basis for billing. 
+VISTA is a lot more than a Clinical information system (EHR). It also provides much of VA's Non-Clinical Services for managing hospitals and clinics. One key example is _Workload Measurement_, the accounting for work performed by providers for patients. Such measurement helps the VA manage hospital costs, enables resource and staffing allocation, and is the basis for billing.
 
 Like much else in VISTA, the applications and utilities for Workload are bound up with other functionality. As part of separating VISTA's Clinical and Non Clinical function, the VISTA Data Project (VDP) has created a _Veteran Workload Service_ and _Browser_ which distinguish and demonstrate how VISTA manages and monitors workload. Both service and browser provide a basis for VA-wide, VISTA-system independent workload management. Such a National Service would centralize workload collection, storage and presentation.
 
