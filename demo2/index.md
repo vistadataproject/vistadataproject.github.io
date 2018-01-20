@@ -5,7 +5,8 @@ title: Workload "DSS" VICS Demo
 
 # Veteran Integrated Cloud Service (VICS)
 
-The following demonstration is an example of a Veteran Integrated Cloud Service (VICS) specific to Workload. This provides a single, centralized cloud-based Workload service which has the same functionality originally within 130 decentralized VISTA systems.
+The following demonstration is an example of a Veteran Integrated Cloud Service (VICS) for Workload. This provides a single, centralized cloud-based Workload service with the identical functionality of the composite of Workload functionality of the 130 decentralized VISTA systems.
+
 
 ## VISTA is a lot more than an EHR
 
