@@ -3,7 +3,7 @@ layout: default
 title: Workload "DSS" VICS Demo
 ---
 
-# Veteran Integrated Cloud Service (VICS) Demo: Workload Service
+# Veteran Integrated Cloud Service (VICS) Demo
 
 ## VISTA is a lot more than an EHR
 
@@ -19,9 +19,9 @@ and
 
 > VHA facilities are required to report all electronic data concerning the provision of services in VHA facilities to the National Patient Care Database (NPCD) in Austin, TX. VHA facilities must ensure that all encounters in outpatient settings, inpatient appointments in outpatient clinics and inpatient billable services are identified, coded, completed and reside in the Patient Care Encounter (PCE) package for transmission to NPCD.
 
-## Workload Service and Browser Demo
+## VICS: Workload Service and Browser Demo
 
-The Workload Service and its Browser client are available at [https://workload.vistadataproject.info/](https://workload.vistadataproject.info) (login required).
+The Veteran Integrated Cloud Service (VICS) Workload Service and its Browser client are available at [https://workload.vistadataproject.info/](https://workload.vistadataproject.info) (login required).
 
 The _Service_ houses a typical VA workload dataset generated from a statistical analysis of production VISTAs. The dataset depicts the workload of a fictional _IOWA Hospital_ which matches the attributes of a typical VA medical center. The _Browser_ allows you to examine workload based on time, location and patient.
 
