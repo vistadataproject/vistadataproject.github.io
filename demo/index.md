@@ -5,7 +5,9 @@ title: CloudVISTA MVDM Emulation Demo
 
 # cloudVISTA Demonstration
 
-The following describes how to install and run the cloudVISTA demonstration to exercise the Master VISTA Data Model (MVDM). CloudVISTA  is based on pure cloud/web technology (no MUMPS) and runs on a Node.js web server, and is thus also referred to as nodeVISTA.  __The demonstration focuses on how MVDM audits, secures, and emulates current production VISTA clients such as CPRS using the RPC Emulator__:
+The following describes how to install and run the cloudVISTA demonstration to exercise the Master VISTA Data Model (MVDM). CloudVISTA  is based on pure cloud/web technology (no MUMPS) and runs on a Node.js web server, and is thus also referred to as nodeVISTA. 
+
+__This demonstration focuses on how MVDM audits, secures, and emulates current production VISTA clients such as CPRS using the RPC Emulator__:
 
 <br>
 
