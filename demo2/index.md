@@ -3,9 +3,9 @@ layout: default
 title: Workload "DSS" VICS Demo
 ---
 
-# Veteran Integrated Cloud Service (VICS) Demo
+# Veteran Integrated Cloud Service (VICS) Demo: Workload Service
 
-## About Workload in the VA and VISTA
+## VISTA is a lot more than an EHR
 
 VISTA is a lot more than an EHR. It also provides Non Clinical Services for managing hospitals and clinics. One key example is _Workload Measurement_, the accounting for work performed by providers for patients. Such measurement helps the VA manage hospital costs and is the basis for billing. 
 
