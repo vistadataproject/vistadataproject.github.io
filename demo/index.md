@@ -1,11 +1,13 @@
 ---
 layout: default
-title: MVDM Emulation Demo
+title: CloudVISTA MVDM Emulation Demo
 ---
 
-# nodeVISTA Emulation Demonstration
+# CloudVISTA
 
-The following sections describe how to run the nodeVISTA demo to exercise the Master VISTA Data Model (MVDM). __The demo focuses on how MVDM audits, secures, and emulates current production VISTA clients such as CPRS using the RPC Emulator__:
+The following describes how to install and run the CloudVISTA demo to exercise the Master VISTA Data Model (MVDM). CloudVISTA  is a pure cloud/web-based version of VISTA (no MUMPS) and runs on a Node.js web server, and is thus referred to as nodeVISTA in the remainder of this document.
+
+__This demonstration focuses on how MVDM audits, secures, and emulates current production VISTA clients such as CPRS using the RPC Emulator__:
 
 <br>
 
@@ -15,7 +17,7 @@ The following sections describe how to run the nodeVISTA demo to exercise the Ma
 1. [Install nodeVISTA](#nodevista)
 2. [Install CPRS](#cprs)
 
-## nodeVISTA
+## nodeVISTA (cloudVISTA)
 The **nodeVISTA** system provides the core MVDM Emulation services required for this demo. **nodeVISTA** typically runs within the context of a virtual host, managed by Vagrant.
 
 The following describes how to install **nodeVISTA** server in a VirtualBox virtual machine.
