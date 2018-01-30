@@ -33,7 +33,7 @@ It defaults to _On_ which means the Router will dispatch select RPCs to the Serv
 
 ![RM Management Supported Start](images/RM_1_MgmtSupStart.png)
 
-This list is fetched from the Server by the Router using a custom RPC. In _Build 1.1_, the Server supports _103 VISTA RPCs_. In other words, 103 RPCs have been migrated from VISTA to centralized services ...
+This list is fetched from the Server by the Router using a custom RPC. In _Build 1.1_, the Server supports [_103 VISTA RPCs_](../vamB1_1RPCsEmulated.md). In other words, 103 RPCs have been migrated from VISTA to centralized services ...
 
 ![RM Management Supported End](images/RM_1_MgmtSupEnd.png)
 
