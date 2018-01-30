@@ -5,7 +5,7 @@ title: Home
 
 The Veterans Information Systems Technology Architecture ([VISTA](https://en.wikipedia.org/wiki/VistA)) is the comprehensive  longitudinal  clinical, business, and administrative information system of the U.S. Veterans Health Administration ([VHA](https://www.va.gov/health/aboutVHA.asp)). 130 decentralized VISTA instances support the operations of over 1200 VA hospitals and clinics nationwide.
 
-In the VISTA Data Project (currently in its third year, funded under VISTA adaptive maintenance), the functionality across all decentralized VISTA systems is centralized to a single, secure, commercial cloud-based __Veteran Integrated Care Service (VICS)__,  allowing  the corresponding functionality of the 130 decentralized VISTA systems to be safely and systematically decomissioned while maintaining seamless continuity of veteran-specific care and services.
+In the VISTA Data Project (currently in its third year, VISTA adaptive maintenance), the functionality across all 130 decentralized VISTA systems is centralized to a single, secure, federally-endorsed commercial cloud-based __Veteran Integrated Care Service (VICS)__,  allowing  the corresponding functionality of the decentralized VISTA systems to be safely and systematically decomissioned while maintaining seamless continuity of veteran-specific care and services.
 
 ## The Key to VA Modernization with Continuity of Care
 
