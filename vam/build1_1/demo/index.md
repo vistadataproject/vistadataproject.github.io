@@ -1,19 +1,19 @@
 ---
 layout: default
-title: VAM Demo 1.1 (Build 1.1)
+title: VICS Demo 1.1 (Build 1.1)
 ---
 
-# VAM Demonstration Build 1.1 (January 2018)
+# VICS Demonstration Build 1.1 (January 2018)
 
 The following _Coversheet Demo_ illustrates the _Veteran Integrated Care Services (VICS) Architecture_. This architecture enables the incremental migration of VA provider workflow from 130 separate, legacy VISTA Servers to one set of enterprise-wide care services. It addresses how to centralize relevant VISTA data while ensuring continued support for CPRS, the VA's primary client for physicians.
 
-The demonstration involves five components - the pre-existing _VISTA Server_ ("Demo VISTA") and its client _CPRS_ and the VAM-developed _VICS Server_, _RPC Router_ and _RPC Router Manager_. The [meta data of Demo VISTA](../vamB1_1DemoVISTADatasetContents) is shadowed in the VICS Server. All but CPRS are hosted on a cloud-based virtual machine at _vamdemo.vistadataproject.info_. 
+The demonstration involves five components - the pre-existing _VISTA Server_ ("Demo VISTA") and its client _CPRS_ and the new _VICS Server_, _RPC Router_ and _RPC Router Manager_. The [meta data of Demo VISTA](../vamB1_1DemoVISTADatasetContents) is shadowed in the VICS Server. All but CPRS are hosted on a cloud-based virtual machine at _vamdemo.vistadataproject.info_. 
 
 ![build1_1Demo](images/build1_1Demo.png)
 
 The _VICS Server_ is layered - Remote Procedure Call (RPC) Emulation is built over well designed  Services. These Services normalize and refine the cryptically-named and redundantly-implemented RPCs and rely on normalized copies of data from supported VISTAs.
 
-In addition to establishing basic routing and server infrastructure, the VAM builds focused on the Meta or non patient data of VISTA and the RPCs that access that data ("Meta Data RPCs"). Specifically, they built out a generic _Parameter Service_ to hold system configurations, a basic _Time Service_, a _User Service_ for provider information, a _Location Service_ for managing clinical care locations, an _Identifier Service_ for working between local VISTA identifiers and national equivalents, a _Lexicon Service_ for medical concept management and meta-data support for the four clinical services required in VAM - Allergy, Problem, Vital and Outpatient Pharmacy. Over half of the one hundred and forty Meta Data RPCs called for in VAM were then emulated over these services.
+In addition to establishing basic routing and server infrastructure, the first builds focused on the Meta or non patient data of VISTA and the RPCs that access that data ("Meta Data RPCs"). Specifically, they built out a generic _Parameter Service_ to hold system configurations, a basic _Time Service_, a _User Service_ for provider information, a _Location Service_ for managing clinical care locations, an _Identifier Service_ for working between local VISTA identifiers and national equivalents, a _Lexicon Service_ for medical concept management and meta-data support for the four clinical services required in VICS - Allergy, Problem, Vital and Outpatient Pharmacy. 
 
 __Note:__ by design the Router communicates with one VICS Server and one VISTA. In Build 1.1, it only handles one CPRS. Build 2 will add support for many concurrent CPRSs.
 
@@ -53,7 +53,7 @@ Double click on the row with the _XUS INTRO_ RPC ...
 
 ![RM XUS INTRO DETAILS -width70](images/RM_2_XUS_INTRO_DETAILS.png)
 
-Enhancing RPC auditing and security is a key requirement of VAM. The popup above, like all detail popups, shows five aspects of an RPC monitored by the Router:
+Enhancing RPC auditing and security is a key requirement for VICS. The popup above, like all detail popups, shows five aspects of an RPC monitored by the Router:
   1. When the RPC was received 
   2. Where it was routed to - this RPC was routed to _VISTA_.
   3. A unique transaction id is given to every RPC received by the Router. This id allows RPC traffic to be [a] identified uniquely in audit logs and [b] RPC emulation to be traced through the VICS Server.
