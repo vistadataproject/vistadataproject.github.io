@@ -65,15 +65,23 @@ This size of each of the boxes on the screen come from the RPC _ORWCH LOADALL_ .
 
 When the user resizes the screen to ...
 
-a change reflected in _ORWCH LOADALL_ ...
+![Search Original Coversheet -width70](highlightImages/CoversheetNewSize.png)
+
+the change will be set in _SAVEALL_ 
+
+![Search Original Coversheet -width70](highlightImages/SAVEALL.png)
+
+and reflected in _ORWCH LOADALL_ ...
 
 ![Search Original Coversheet -width70](highlightImages/LOADALL-POSTCHANGE.png)
+
+and if you exit CPRS and the login again, you'll see that the preference has been persisted in VICS.
 
 __Question__: why would a project focused on migrating Vitals, Allergies and Problems to national services be migrating user preferences and other parameter settings? 
 
 > Parameter Normalization. Vitals are configured using parameters and the Vital Domain RPCs, _GMV PARAMETER_ and _GMV MANAGER_, both emulated in Build 1.1, required a Parameter Service. Though VISTA segregates Vital parameter management in custom RPCs, for VICS, these are just more parameter access functions and these same functions can just as easily emulate other parameter access such as user preferences for the Coversheet. It illustrates an important principle: __VICS has many less services and service calls than the number of CPRS RPCs it supports__ - and its multi-purpose services can support RPCs across more than one domain and function.
 
-Moving user preferences from VISTA to VICS means retiring a subsystem of VISTA and centralized preference management across the enterprise. And such preferences are just the beginning - user permissions (see the discussion of keys below) and demographics are also centralized with this move to VICS. In effect, the "VISTA User" is now an enterprise-wide concept.
+Moving user preferences from VISTA to VICS means retiring a subsystem of VISTA and centralized preference management across the enterprise. And such preferences are just the beginning - user permissions (see the discussion of keys below) and demographics may also be centralized with this move to VICS. In effect, the "VISTA User" can become an enterprise-wide concept.
 
 
 
