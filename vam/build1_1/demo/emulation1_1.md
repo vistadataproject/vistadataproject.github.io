@@ -115,4 +115,4 @@ and, typical of VISTA, there are variations of _has key_ RPCs ...
 
 but in VICS, all such variants reduce to one _hasKey_ service call.
 
-While __testing was the major motivation for moving key management to VICS__ - VICS-based key management will be significantly easier than manipulating VISTA structures - the implication of this move are much broader - VA could centralize user permission management.
+While __testing was the major motivation for moving key management to VICS__ - changing keys in VICS will be significantly easier than manipulating VISTA structures - the implication of this move are much broader. It shows that VA could centralize user permission management.
