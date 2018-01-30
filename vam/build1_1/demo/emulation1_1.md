@@ -8,10 +8,10 @@ title: Emulation 1.1
 Emulation was added in four major areas:
   * Lexicon Terminology Search for problems and allergies
   * Division (hospital location) management and selection
-  * User Preference centralized enabled by general-purpose parameter management
+  * User Preferences centralized through general-purpose parameter management
   * User Permissions (keys) as a key to further testing
   
-In each case, what were VISTA by VISTA separate data sets and services can be moved to one enterprise-wide offering.
+In each case, an enterprise-wide offering replaces per VISTA functionality.
   
 ## Lexicon Search
 
@@ -45,7 +45,7 @@ The VICS Lexicon follows the algorithm and word indexing used in VISTA but re-im
 
 ![VICSLexFourTimesFaster](highlightImages/VICSLexFourTimesFaster.png)
 
-In addition to Problem List Lookup, the VICS Lexicon also supports Allergin ("Peanuts") and Symptom ("Hives") search. In VISTA, these are implemented in distinct subsystems, each with their own approaches to phrase indexing and synonym handling - the approaches taken in Symptom Search are reflected in [these VICS Service Tests](https://github.com/vistadataproject/VICSServer/blob/master/services/tests/lookupSymptoms-spec.js). The VICS Service emulated these unique algorithms as easy to upgrade __legacy terminology lookups__, giving the VA the option to unify its approach to terminology search in the future.
+In addition to Problem List Lookup, the VICS Lexicon also supports Allergin ("Peanuts") and Symptom ("Hives") search. In VISTA, these are implemented in distinct subsystems, each with their own approaches to phrase indexing and synonym handling - the approaches taken in Symptom Search are reflected in [these VICS Service Tests](https://github.com/vistadataproject/VICSServer/blob/master/services/tests/lookupSymptoms-spec.js). The VICS Service emulated these unique algorithms as upgradable __legacy terminology lookups__. VICS allows VA to maintain its multitude of Lexicon algorithms but provides for a move to one approach in the future.
 
 All of this Lexicon Search is centralized in VICS - rather than updating and managing a variety of Lexicons in 130 separate VISTAs, VICS allows one Lexicon with clearly defined and tested behaviors to support the whole enterprise.
 
@@ -53,13 +53,13 @@ All of this Lexicon Search is centralized in VICS - rather than updating and man
 
 Most VISTAs support more than one facility or _division_. Typically there is one main center, a _VAMC_, and multiple clinics and other remote facilities. There is a default division for the system as a whole and users may have access to different sets of available divisions. The context of care varies depending on the division chosen.
 
-CPRS uses two RPCs, _XUS DIVISION GET_ and _XUS_DIVISION_SET_ to list and choose divisions for users and by users and these appears in the first set of RPCs invoked by CPRS ...
+CPRS uses two RPCs, _XUS DIVISION GET_ and _XUS DIVISION SET_ to list and choose divisions for users and these appear in the first set of RPCs it invokes ...
 
 ![XUS DIVISION FIRST FIVE](highlightImages/RM_1_First8_Division.png)
 
 __Note__: in one scenario, _XUS DIVISION GET_ is actually a _set_, a behavior VICS had to support.
 
-In build 1.1, VICS received support for multiple divisions and full support for these _XUS DIVISION_ RPCs ...
+In build 1.1, VICS gained full support for _division management_ and full support for _XUS DIVISION_ RPCs ...
 
 ![XUS DIVISION GET -width70](highlightImages/RM_XUS_DIVISION_GET.png)
 
@@ -91,13 +91,13 @@ and if you exit CPRS and the login again, you'll see that the preference has bee
 
 __Question__: why would a project focused on migrating Vitals, Allergies and Problems to national services be migrating user preferences and other parameter settings? 
 
-__Answer__: VICS provides one flexible Parameter Service.
+__Answer__: VICS provides one flexible Parameter Service to enable testing and implement required RPCs.
 
 > Vitals are configured using parameters and the Vital Domain RPCs, _GMV PARAMETER_ and _GMV MANAGER_, both emulated in Build 1.1, are built over a generic and powerful parameter service in VISTA and VICS required an equivalent. The difficult part was emulating the power of the service as seen in the Vitals RPCs but once made, it became trivial to emulate other parameter-bound RPCs such as _ORWCH LOADALL_ and _SAVEALL_. 
 >
 > This illustrates an underlying aspect of the VICS Architecture: __VICS has many less services and service calls than the number of CPRS RPCs it supports__. The most significant work is implementing a generic service such as Lexicon or Parameter - the RPC emulation itself becomes much less onerous once that service is in place.
 
-Moving user preferences from VISTA to VICS would mean retiring a subsystem of VISTA and centralized preference management across the enterprise. And such preferences are just the beginning - user permissions (see the discussion of keys below) and demographics may also be centralized using the VICS pattern. In effect, the _VISTA User_ can become an enterprise-wide concept with one set of permissions and known divisions and keys, no matter where they operate in VA.
+Moving user preferences from VISTA to VICS would mean retiring a subsystem of VISTA and centralized preference management across the enterprise. And such preferences are just the beginning - user permissions (see the discussion of keys below) and demographics may also be centralized using the VICS pattern. In effect, the _VISTA User_ can become an enterprise-wide concept, unbound from individual VISTAs.
 
 ## User Permissions
 
@@ -115,4 +115,4 @@ and, typical of VISTA, there are variations of _has key_ RPCs ...
 
 but in VICS, all such variants reduce to one _hasKey_ service call.
 
-While __testing was the major motivation for moving key management to VICS__ - changing keys in VICS will be significantly easier than manipulating VISTA structures - the implication of this move are much broader. It shows that VA could centralize user permission management.
+While __testing was the major motivation for moving key management to VICS__ - changing keys effect CPRS behaviors and changing keys in VICS will be significantly easier than manipulating VISTA structures - the implication of this move is much broader. It shows that VA could centralize user permission management.
