@@ -7,7 +7,7 @@ The Veterans Information Systems Technology Architecture ([VISTA](https://en.wik
 
 In the VISTA Data Project (currently in its third year, VISTA adaptive maintenance), the functionality across all 130 decentralized VISTA systems is centralized to a single, secure, federally-endorsed commercial cloud-based __Veteran Integrated Care Service (VICS)__,  allowing  the corresponding functionality of the decentralized VISTA systems to be safely and systematically decomissioned while maintaining seamless continuity of veteran-specific care and services.
 
-## The Key to VA Modernization with Continuity of Care
+## VA Modernization with Continuity of Care
 
 ![vdp-transition -width90](assets/vdp-vics-ehrm-oneVA-20180130.png)
 
