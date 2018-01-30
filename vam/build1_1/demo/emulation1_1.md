@@ -19,15 +19,15 @@ In order to enter Problems or Allergies or Vitals, a physician must designate di
 
 Build 1.1 moved vital, problem and allergy terminology management to a VICS Lexicon Service.
 
-Bring up the problem 
+Select the problem tab and choose _New Problem_ ...
 
-![Pick New Problem -width70](highlightImages/PickNewProblem.png)
+![Pick New Problem](highlightImages/PickNewProblem.png)
 
 and after selecting a clinic, you will be brought to a problem search dialog. Type in __Hypert__ ...
 
 ![Search Box Hypert -width70](highlightImages/SearchBoxHypert.png)
 
-and press search. You'll eventually see ...
+and press search. You'll _eventually_ see ...
 
 ![Search Benign Hypertension -width70](highlightImages/SearchResponseHypert.png)
 
@@ -35,7 +35,9 @@ If you were looking in the Router Management Client, you'd have seen that the VI
 
 ![Router LEX Hypert -width70](highlightImages/RM_LEX_HYPERT.png)
 
-The delay is CPRS's as it renders 822 matches. Note how the Lexicon Service both expanded the partial match "hypert" to "hypertension" and "hypertropia" but also pulled in terms such as "Excessive Hairiness". Like any "search engine", the VISTA Lexicon, as emulated in VICS, uses synonyms and associated phrases to range beyond literal matching. 
+The delay is CPRS's as it renders 822 matches. Note how the Lexicon Service both expanded the partial match "hypert" to "hypertension" and "hypertropia" but also pulled in terms such as "Excessive Hairiness". Like any _search engine_, the VISTA Lexicon, as emulated in VICS, uses synonyms and associated phrases to range beyond literal matching. 
+
+__Note__: The VICS Lexicon is not a generic search - it __mimics exactly the algorithm followed in VISTA__. 
 
 Let's be more precise. Type __Benign Hypertension__ in the search box and hit _Search_
 
@@ -65,11 +67,11 @@ This size of each of the boxes on the screen come from the RPC _ORWCH LOADALL_ .
 
 When the user resizes the screen to ...
 
-![Search Original Coversheet -width70](highlightImages/CoversheetNewSize.png)
+![Search Original Coversheet -width70](highlightImages/CoversheetResized.png)
 
 the change will be set in _SAVEALL_ 
 
-![Search Original Coversheet -width70](highlightImages/SAVEALL.png)
+![Search Original Coversheet -width70](highlightImages/SAVEALL-POSTCHANGE.png)
 
 and reflected in _ORWCH LOADALL_ ...
 
