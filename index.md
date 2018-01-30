@@ -7,9 +7,9 @@ The Veterans Information Systems Technology Architecture ([VISTA](https://en.wik
 
 In the VISTA Data Project (VDP), the functionality across all decentralized VISTA systems is centralized to a single secure, cloud-based, veteran-specific Veteran Integrated Care Service (VICS),  allowing  the corresponding functionality of the 130 decentralized VISTA systems to be decomissioned while maintaining seamless continuity of veteran-specific care and services.
 
-# Veteran Integrated Care Services: Key to modernizing  VA
+# VA Modernization: One VA Care System
 
-![vdp-transition -width70](assets/vdp-vics-ehrm-oneVA-20180130.png)
+![vdp-transition -width90](assets/vdp-vics-ehrm-oneVA-20180130.png)
 
 <br>
 
