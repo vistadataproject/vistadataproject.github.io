@@ -11,7 +11,7 @@ Emulation was added in four major areas:
   * User Preferences centralized through general-purpose parameter management
   * User Permissions (keys) as a key to further testing
   
-In each case, an enterprise-wide offering replaces per VISTA functionality.
+In each case, an enterprise-wide offering replaces per VISTA functionality and for significant function, VISTA-tied CPRS becomes Enterprise-wide CPRS.
   
 ## Lexicon Search
 
