@@ -45,7 +45,19 @@ The VICS Lexicon follows the algorithm and word indexing used in VISTA but re-im
 
 ![VICSLexFourTimesFaster](highlightImages/VICSLexFourTimesFaster.png)
 
-In addition to Problem List Lookup, the VICS Lexicon also supports Allergin ("Peanuts") and Symptom ("Hives") search. In VISTA, these are implemented in distinct subsystems, each with their own approaches to phrase indexing and synonym handling - the approaches taken in Symptom Search are reflected in [these VICS Service Tests](https://github.com/vistadataproject/VICSServer/blob/master/services/tests/lookupSymptoms-spec.js). The VICS Service emulated these unique algorithms as upgradable __legacy terminology lookups__. VICS allows VA to maintain its multitude of Lexicon algorithms but provides for a move to one approach in the future.
+In addition to Problem List Lookup, the VICS Lexicon also supports Allergin Search ("Chocolate") ...
+
+![CPRS Allergen Chocolate](highlightImages/CPRS_ALLERGIN_SEARCH_CHOCOLATE.png)
+
+and Symptom ("Hives") search ... 
+
+![CPRS Symptom Hives](highlightImages/CPRS_SYMPTOMS_HIV.png)
+
+In VISTA, these are implemented in distinct subsystems, each with their own approaches to phrase indexing and synonym handling. For example, a search for _HIV_ is turned into _HIU~_ for the RPC, _ORWDAL32 SYMPTOMS_ which doesn't return just matches for _HIV_ but  the next matches from VISTA's symptom list whether they start with _HIV_ or not ...
+
+![Search Benign Hypertension -width70](highlightImages/RM_ORWDAL32_SYMPTOMS_PARTHIVES.png)
+
+The VICS Service emulated these unique algorithms as upgradable __legacy terminology lookups__. VICS allows VA to maintain its multitude of Lexicon algorithms but provides for a move to one approach in the future.
 
 All of this Lexicon Search is centralized in VICS - rather than updating and managing a variety of Lexicons in 130 separate VISTAs, VICS allows one Lexicon with clearly defined and tested behaviors to support the whole enterprise.
 
