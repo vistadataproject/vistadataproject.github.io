@@ -13,7 +13,7 @@ The demonstration involves five components - the pre-existing _VISTA Server_ ("D
 
 The _VICS Server_ is layered - Remote Procedure Call (RPC) Emulation is built over well designed  Services. These Services normalize and refine the cryptically-named and redundantly-implemented RPCs and rely on normalized copies of data from supported VISTAs.
 
-In addition to establishing basic routing and server infrastructure, Build 1.1 focused on the Meta or non patient data of VISTA and the RPCs that access that data ("Meta Data RPCs"). Specifically, it built out a generic _Parameter Service_ to hold system configurations, a basic _Time Service_, a _User Service_ for provider information, an _Identifier Service_ for working between local VISTA identifiers and national equivalents and meta-data support for the four clinical services required in VAM - Allergy, Problem, Vital and Outpatient Pharmacy. Over half of the one hundred and forty Meta Data RPCs called for in VAM were then emulated over these services.
+In addition to establishing basic routing and server infrastructure, Build 1 and 1.1 focused on the Meta or non patient data of VISTA and the RPCs that access that data ("Meta Data RPCs"). Specifically, it built out a generic _Parameter Service_ to hold system configurations, a basic _Time Service_, a _User Service_ for provider information, an _Identifier Service_ for working between local VISTA identifiers and national equivalents, a _Lexicon Service_ for medical concept management and meta-data support for the four clinical services required in VAM - Allergy, Problem, Vital and Outpatient Pharmacy. Over half of the one hundred and forty Meta Data RPCs called for in VAM were then emulated over these services.
 
 __Note:__ by design the Router communicates with one VICS Server and one VISTA. In Build 1.1, it only handles one CPRS. Build 2 will add support for many concurrent CPRSs.
 
@@ -33,7 +33,7 @@ It defaults to _On_ which means the Router will dispatch select RPCs to the Serv
 
 ![RM Management Supported Start](images/RM_1_MgmtSupStart.png)
 
-This list is fetched from the Server by the Router using a custom RPC. In _Build 1.1_, the Server supports _71 VISTA RPCs_ ...
+This list is fetched from the Server by the Router using a custom RPC. In _Build 1.1_, the Server supports _103 VISTA RPCs_. In other words, 103 RPCs have been migrated from VISTA to centralized services ...
 
 ![RM Management Supported End](images/RM_1_MgmtSupEnd.png)
 
@@ -99,11 +99,11 @@ The _Router Manager_ shows this information comes from three RPC calls ...
 
 ![DM_3_1_SINGLE_CLICK_SEL_LIST](images/DM_3_1_SINGLE_CLICK_SEL_LIST.png)
 
-The main RPC, _ORWPT ID INFO_, is resolved in VISTA in Build 1.1 like other Patient data RPCs ...
+The main RPC, _ORWPT ID INFO_, is resolved in VISTA like other Patient data RPCs ...
 
 ![DM_3_1_ORWPT_ID_INFO -width70](images/DM_3_1_ORWPT_ID_INFO.png)
 
-Patient information will move to the VICS Server in Build 2 following the pattern established for User management in Build 1.1. 
+Patient information will move to the VICS Server in Build 2 following the pattern established for User management in earlier builds. 
 
 Clicking _Ok_ ("hard select") will bring you to the Patient's "Coversheet" ...
 
@@ -115,7 +115,7 @@ and fill another tab of RPCs in the Router Manager ...
 
 The VICS Server stores coversheet configurations for different users in its _Parameter Service_. 
 
-__Note__: in Build 1.1's demo, the Parameter Service holds configurations of one VISTA but this and other VICS services have been built to store and unambiguously manage data from all 130 VA VISTAs.
+__Note__: in VICS, the Parameter Service holds configurations of one VISTA but this and other VICS services have been built to store and unambiguously manage data from all 130 VA VISTAs.
 
 ![RM_4_COVERSHEET_TO_RPCS](images/RM_4_COVERSHEET_TO_RPCS.png)
 
@@ -127,7 +127,7 @@ This RPC not only tells CPRS what data to show in its _coversheet_ including the
 
 ![RM_5_ORQQAL_LIST -width70](images/RM_5_ORQQAL_LIST.png)
 
-This and other coversheet invoked RPCs will move to the VICS Server in Build 2.
+This and other coversheet invoked Patient Data RPCs will move to the VICS Server in Build 2.
 
 Finally, when you exit from CPRS ...
 
