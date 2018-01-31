@@ -19,6 +19,6 @@ __Strategic Benefits__:
 
 <br>
 
-__Show Me:__ browse through and run VDP's [Clinical](/demo) and [Non Clinical](/demo2) Demos.
+__Show Me:__ browse through and run VDP's [Clinical](/vam/build1_1/demo) and [Non Clinical](/demo2) Demos.
 
 
