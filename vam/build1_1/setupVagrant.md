@@ -124,8 +124,8 @@ __CPRS runs on all currently supported versions of Microsoft Windows__.  If one 
 
 <br><br><br><br>
 # Next
-* [Coversheet Demo](Allergies) - ignore the instructions to login to a remote server. Just connect CPRS to the Vagrant instead at _s=10.2.2.222 p=9011_
-* [Highlights of Build 1.1](Problems)
+* [Coversheet Demo](demo/) - ignore the instructions to login to a remote server. Just connect CPRS to the Vagrant instead at _s=10.2.2.222 p=9011_
+* [Highlights of Build 1.1](demo/emulation1_1)
 
 [ Back to top ↑](#top)
 
