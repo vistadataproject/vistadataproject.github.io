@@ -10,12 +10,12 @@ The components of VICS (VICS Server and Router) and a VISTA with sample data ("n
 <br>
 
 # Installation
-1. [Install VICS Server](#Vagrant)
+1. [Install VICS Server](#vagrant)
 2. [Install CPRS Client](#cprs)
 
 ## Vagrant
 
-The following describes how to install the VICS components (VICS Server and Router) and an example VISTA in a VirtualBox virtual machine.
+The following describes how to install the VICS components (VICS Server and Router) and a test VISTA server all in a VirtualBox virtual machine.
 
 ### Prerequisites
 
