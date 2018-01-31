@@ -141,7 +141,7 @@ Note the free versions of Windows above have some restrictions, but nothing that
 10. Start CPRS by double-clicking the "RPC Server" desktop shortcut ...
 ![CPRS Open -width70](images/cprs_open_vagrant.png)
 
-11. The initial username/password is:
+11. The initial username/verify codes are:
 
 ```shell
 user:   fakedoc1
@@ -152,7 +152,7 @@ verify: 1doc!@#$
 
 <br><br>
 # Next
-* [Coversheet Demo](demo/) - ignore the instructions to login to a remote server. Just connect CPRS to the Vagrant instead at _s=10.2.2.222 p=9011_
+* [Coversheet Demo](demo/) - ignore the instructions to login to a remote server. Just connect CPRS to the VICS Server instead at _s=10.2.2.222 p=9011_
 * [Highlights of Build 1.1](demo/emulation1_1)
 
 [ Back to top ↑](#top)
