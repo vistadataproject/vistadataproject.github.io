@@ -7,7 +7,7 @@ title: VICS Demo 1.1 (Build 1.1)
 
 The following _Coversheet Demo_ illustrates the _Veteran Integrated Care Services (VICS) Architecture_. This architecture enables the incremental migration of VA provider workflow from 130 separate, legacy VISTA Servers to one set of enterprise-wide care services. It addresses how to centralize relevant VISTA data while ensuring continued support for CPRS, the VA's primary client for physicians.
 
-The demonstration involves five components - the pre-existing _VISTA Server_ ("Demo VISTA") and its client _CPRS_ and the new _VICS Server_, _RPC Router_ and _RPC Router Manager_. The [meta data of Demo VISTA](../vamB1_1DemoVISTADatasetContents) is shadowed in the VICS Server. To run the demonstration yourself, you'll need first follow the [VICS Vagrant Setup instructions](vam/build1_1/setupVagrant). 
+The demonstration involves five components - the pre-existing _VISTA Server_ ("Demo VISTA") and its client _CPRS_ and the new _VICS Server_, _RPC Router_ and _RPC Router Manager_. The [meta data of Demo VISTA](../vamB1_1DemoVISTADatasetContents) is shadowed in the VICS Server. To run the demonstration yourself, you'll need first follow the [VICS Vagrant Setup instructions](/vam/build1_1/setupVagrant). 
 
 ![build1_1Demo](images/build1_1Demo.png)
 
