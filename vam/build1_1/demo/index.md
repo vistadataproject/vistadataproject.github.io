@@ -3,11 +3,11 @@ layout: default
 title: VICS Demo 1.1 (Build 1.1)
 ---
 
-# VICS Demonstration Build 1.1 (January 2018)
+# VICS Demonstration (January 2018)
 
 The following _Coversheet Demo_ illustrates the _Veteran Integrated Care Services (VICS) Architecture_. This architecture enables the incremental migration of VA provider workflow from 130 separate, legacy VISTA Servers to one set of enterprise-wide care services. It addresses how to centralize relevant VISTA data while ensuring continued support for CPRS, the VA's primary client for physicians.
 
-The demonstration involves five components - the pre-existing _VISTA Server_ ("Demo VISTA") and its client _CPRS_ and the new _VICS Server_, _RPC Router_ and _RPC Router Manager_. The [meta data of Demo VISTA](../vamB1_1DemoVISTADatasetContents) is shadowed in the VICS Server. All but CPRS are hosted on a cloud-based virtual machine at _vamdemo.vistadataproject.info_. 
+The demonstration involves five components - the pre-existing _VISTA Server_ ("Demo VISTA") and its client _CPRS_ and the new _VICS Server_, _RPC Router_ and _RPC Router Manager_. The [meta data of Demo VISTA](../vamB1_1DemoVISTADatasetContents) is shadowed in the VICS Server. To run the demonstration yourself, you'll need first follow the [VICS Vagrant Setup instructions](vam/build1_1/setupVagrant). 
 
 ![build1_1Demo](images/build1_1Demo.png)
 
@@ -19,7 +19,7 @@ __Note:__ by design the Router communicates with one VICS Server and one VISTA. 
 
 In this _Coversheet Demo_, CPRS connects, logs in, clicks on a patient's name ("soft select"), fully selects that patient ("hard select") and then exits. The _Router Manager_ will show the seven screens of RPCs that come from this simple interaction. Though many of these RPCs go to the VICS Server and not to VISTA, CPRS continues unaffected.
 
-Open your browser and go to the _Router Manager_ at _[http://vamdemo.vistadataproject.info:9012](http://vamdemo.vistadataproject.info:9012)_. This web client let's you monitor RPCs sent by CPRS through the Router ...
+After setting up the VICS Vagrant, open your browser and go to the _Router Manager_ at _[http://10.2.2.222:9012](http://10.2.2.222:9012)_. This web client let's you monitor RPCs sent by CPRS through the Router ...
 
 ![RM Open Empty -width70](images/RM_1_OpenEmpty.png)
 
@@ -41,7 +41,7 @@ Now, switch back to the _RPC Events_ tab. To run this part of the demo, CPRS mus
 
 ![CPRS Start](images/CPRS_Start.png)
 
-CPRS should be connected to _vamdemo.vistadataproject.info:9011_. After connecting, CPRS presents a login screen ...
+CPRS should be connected to _10.2.2.222:9011_. After connecting, CPRS presents a login screen ...
 
 ![CPRS Login -width70](images/CPRS_Login.png)
 
