@@ -4,7 +4,7 @@ permalink:           /blog/:title
 
 # Setup
 title:               VISTA Data Project 
-tagline:             The Master Data Model for Veteran Care 
+tagline:             Continuity of Veteran Care 
 url:                 http://vistadataproject.info
 paginate:            1
 baseurl:             ""
