@@ -13,8 +13,9 @@ Contents:
   * [RPCs Emulated](vamB1_1RPCsEmulated)
   * [Build 1.1 Highlights](demo/emulation1_1) - four functional areas addressed in build 1.1 
   * [Build 1.1 Demo](demo/) - upgrade to the _Coversheet Demo_ of Build 1
-
-In addition, _Build 1.1_ has been packaged as a self contained Vagrant install. See [Vagrant Install Instructions](https://github.com/vistadataproject/VICSServer/wiki/Setup-Testing-Environment#installation) for how to install and run Build 1.1 in your own environment.
+  * Full Vagrant Installation (all pieces needed to test, develop and demonstrate)
+    * [Basic setup](setupVagrant)
+    * [Detailed setup](https://github.com/vistadataproject/VICSServer/wiki/Setup-Testing-Environment#installation) including how to run unit, regression and performance tests within your Vagrant setup
 
 Known issues with Build 1.1:
   * Lexicon Search doesn't support spell check (VAM-484)
