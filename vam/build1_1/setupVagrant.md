@@ -23,14 +23,14 @@ The following describes how to install the VICS components (VICS Server and Rout
 * [Virtualbox](https://www.virtualbox.org/wiki/Downloads?replytocom=98578) and Extension Pack.
 * [Vagrant](https://www.vagrantup.com/downloads.html)
 
-* Verify that Git, Virtualbox, and Vagrant are installed properly and are the latest version:
+* Verify that Git, Virtualbox, and Vagrant are installed properly and are updated to the latest version available:
     ```shell
     $ git --version
     $ VBoxManage --version
     $ vagrant --version
     ```
 
-### Installation
+### VICS Server Installation
 
 Open a terminal and 
 
@@ -53,13 +53,13 @@ The Vagrant VM will have an IP address of __`10.2.2.222`__.
 
 __Note__: The initial `vagrant up` process will download a pre-built **VICSServer** Vagrant VM. The VM is large and may take awhile to initially download, depending on your network connection speed. If during this initial download the connection is interrupted,the  directory will need to be deleted (_vagrant destroy -f_) and the process started again.  The process caches the pre-built VM, and subsequent deployments will not take as long.  Note:  On MacOS, VirtualBox VMs are stored under `/Users/{user}/VirtualBox VMs/`.
 
-### Verify Installation
+### Verify VICS Server Installation
 
 Verify that the installation was successful by performing any or all of the following steps:
 
-1. In your browser, open the FileMan Rambler at _http://10.2.2.222:9000/schema_ to view the contents of _nodeVISTA_
+1. In your browser, open the VISTA Data Model (VDM) browser at _http://10.2.2.222:9000/schema_ to view the contents of _nodeVISTA_
 
-2. In your browser, open up the Router Manager at _http://10.2.2.222:9012/_
+2. In your browser, open up the RPC Router Manager at _http://10.2.2.222:9012/_
 
 3. Login into the VM and verify the contents of the _vdp user's_ home directory with:
 ```shell
@@ -84,17 +84,63 @@ Password: vdp
 
 
 <br><br><br>
-## CPRS
+# CPRS
 
-The Computerized Patient Record System (CPRS) is the graphical user interface (Client) through which physicians interact with VISTA (Server).  Because end-users don't ever "see" VISTA, __most users think that CPRS *is* the EHR (i.e. "CPRS is VISTA")__. In this regard, according to the most recent national survey of over 15,000 physician end-users of EHRs ( [Medscape 2016 National EHR Survey](http://www.medscape.com/features/slideshow/public/ehr2016#page=8) ), CPRS remains one of the highest regarded integrated EHR in the U.S.
+The Computerized Patient Record System (CPRS) is a Windows desktop user interface (Client) through which physicians interact with VISTA (Server).  Because end-users don't ever "see" VISTA, __most users think that CPRS *is* VISTA (i.e. "CPRS is the EHR")__.  According the ( [Medscape 2016 National EHR Survey](http://www.medscape.com/features/slideshow/public/ehr2016#page=8) ) of over 15,000 physician end-users of EHRs, CPRS was rated highest overall in the U.S. for usability.  It is thus important to preserve the CPRS workflows via RPC emulation to minimize service disruption as VA modernizes its EHR.
 
-### Prerequisites
+### CPRS Prerequisites
 
-__CPRS runs on all currently supported versions of Microsoft Windows__.  If one wishes to run CPRS on MacOS or LinuxOS, one first needs to create a virtual Windows environment by downloading the free open-source [Virtualbox](https://www.virtualbox.org) or commercial [VMWare](http://www.vmware.com/products/fusion.html) hypervisor, and then install the free  [Windows 10 image](https://www.microsoft.com/en-us/software-download/windows10ISO) within this hypervisor. Alternately, Microsoft offers free pre-built, virtualized versions of Windows prepackaged for several different hypervisors, which one can download [here](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/#downloads).  Note all the free versions of Windows above have some restrictions, but nothing that affects the installation or execution of CPRS.
+CPRS runs on all currently supported versions of Microsoft Windows. 
 
-### Installation
+* For Windows users, skip to CPRS Installation below.
+* For MacOS and Linux users one must create a virtual Windows environment.
 
-1. From your Windows-based workstation (physical or virtual), download, unzip, and run the OSEHRA CPRS installer: [CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip)
+### Virtual Windows Environment
+
+There are three options to create a Virtual Windows environment. Note the free versions of Windows below have some restrictions, but nothing that affects the installation or execution of CPRS.
+
+1. Create a Windows Virtual Machine (VM): 
+  * Download the free open-source [Virtualbox](https://www.virtualbox.org) or commercial [VMWare](http://www.vmware.com/products/fusion.html) virtual machine. 
+  * Install the free  [Windows 10 image](https://www.microsoft.com/en-us/software-download/windows10ISO) within this virtual machine. 
+
+2. Pre-built Windows Virtual Machine: 
+  * Microsoft offers free pre-built, virtualized versions of Windows prepackaged for several different hypervisors, which one can download [here](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/#downloads). 
+3. Windows Emulation (WINE)
+	* Wikipedia: https://en.wikipedia.org/wiki/Wine_(software)
+	* Website:  https://www.winehq.org
+	* Download: https://www.winehq.org/download]
+	* Mac Install: https://www.davidbaumgold.com/tutorials/wine-mac/
+
+a. Install homebrew, the Mac package manager:
+
+```shell
+>ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+b. Brew install XQuartz and Wine:
+
+```shell
+>brew cask install xquartz
+>brew install wine
+```
+
+c. Download and move the CPRS.exe and any supporting files (dlls) into the Wine Program Files directory
+
+```shell
+>cd ~/.wine/drive_c/Program\ Files/
+```
+
+d. To start CPRS, change to the Program Files directory, and execute wine
+
+```shell
+>wine CPRS.exe
+```
+
+<br><br><br>
+
+## CPRS Installation
+
+1. From your Windows-based workstation (physical or virtual), download, unzip, and run the CPRS installer: [CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip)
 
 2. Download the latest version of VA's CPRS binary: [CPRSChart30v75.zip (v1.0.30.75)](https://demoservices.vistadataproject.info/archive/CPRSChart30v75.zip).
 
@@ -116,8 +162,14 @@ __CPRS runs on all currently supported versions of Microsoft Windows__.  If one 
     ```
 
 10. Start CPRS by double-clicking the "RPC Server" desktop shortcut ...
-
 ![CPRS Open -width70](images/cprs_open_vagrant.png)
+
+11. The initial username/password is:
+
+```shell
+user:   fakedoc1
+verify: 1doc!@#$
+```
 
 
 [ Back to top ↑](#top)
