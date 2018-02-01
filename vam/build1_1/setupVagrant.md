@@ -10,12 +10,12 @@ The components of VICS (VICS Server and Router) and a VISTA with sample data ("n
 <br>
 
 # Installation
-1. [Install VICS Vagrant](#Vagrant)
-2. [Install CPRS](#cprs)
+1. [Install VICS Server](#vagrant)
+2. [Install CPRS Client](#cprs)
 
 ## Vagrant
 
-The following describes how to install the VICS components (VICS Server and Router) and an example VISTA in a VirtualBox virtual machine.
+The following describes how to install the VICS components (VICS Server and Router) and a test VISTA server all in a VirtualBox virtual machine.
 
 ### Prerequisites
 
@@ -30,7 +30,7 @@ The following describes how to install the VICS components (VICS Server and Rout
     $ vagrant --version
     ```
 
-### VICS Server Installation
+## VICS Server Installation
 
 Open a terminal and 
 
@@ -51,15 +51,15 @@ Open a terminal and
 
 The Vagrant VM will have an IP address of __`10.2.2.222`__.
 
-__Note__: The initial `vagrant up` process will download a pre-built **VICSServer** Vagrant VM. The VM is large and may take awhile to initially download, depending on your network connection speed. If during this initial download the connection is interrupted,the  directory will need to be deleted (_vagrant destroy -f_) and the process started again.  The process caches the pre-built VM, and subsequent deployments will not take as long.  Note:  On MacOS, VirtualBox VMs are stored under `/Users/{user}/VirtualBox VMs/`.
+__Note__: The initial `vagrant up` process will download a pre-built **VICSServer** Vagrant VM. The VM is large and may take awhile to initially download, depending on your network connection speed. If during this initial download the connection is interrupted, the directory will need to be deleted (_vagrant destroy -f_) and the process started again.  The process caches the pre-built VM, and subsequent deployments will not take as long.  Note:  On MacOS, VirtualBox VMs are stored under `/Users/{user}/VirtualBox VMs/`.
 
-### Verify VICS Server Installation
+## Verify VICS Server Installation
 
 Verify that the installation was successful by performing any or all of the following steps:
 
-1. In your browser, open the VISTA Data Model (VDM) browser at _http://10.2.2.222:9000/schema_ to view the contents of _nodeVISTA_
+1. In your browser, open the VISTA Data Model (VDM) browser at [http://10.2.2.222:9000/schema](http://10.2.2.222:9000/schema) to view the contents of _nodeVISTA_
 
-2. In your browser, open up the RPC Router Manager at _http://10.2.2.222:9012/_
+2. In your browser, open up the RPC Router Manager at [http://10.2.2.222:9012/](http://10.2.2.222:9012/)
 
 3. Login into the VM and verify the contents of the _vdp user's_ home directory with:
 ```shell
@@ -88,16 +88,16 @@ Password: vdp
 
 The Computerized Patient Record System (CPRS) is a Windows desktop user interface (Client) through which physicians interact with VISTA (Server).  Because end-users don't ever "see" VISTA, __most users think that CPRS *is* VISTA (i.e. "CPRS is the EHR")__.  According the ( [Medscape 2016 National EHR Survey](http://www.medscape.com/features/slideshow/public/ehr2016#page=8) ) of over 15,000 physician end-users of EHRs, CPRS was rated highest overall in the U.S. for usability.  It is thus important to preserve the CPRS workflows via RPC emulation to minimize service disruption as VA modernizes its EHR.
 
-### CPRS Prerequisites
+## CPRS Prerequisites
 
 CPRS runs on all currently supported versions of Microsoft Windows. 
 
 * For Windows users, skip to CPRS Installation below.
 * For MacOS and Linux users one must create a virtual Windows environment.
 
-### Virtual Windows Environment
+## Virtual Windows Environment
 
-There are three options to create a Virtual Windows environment. Note the free versions of Windows below have some restrictions, but nothing that affects the installation or execution of CPRS.
+There are three options to create a Virtual Windows environment:
 
 1. Create a Windows Virtual Machine (VM): 
   * Download the free open-source [Virtualbox](https://www.virtualbox.org) or commercial [VMWare](http://www.vmware.com/products/fusion.html) virtual machine. 
@@ -106,35 +106,12 @@ There are three options to create a Virtual Windows environment. Note the free v
 2. Pre-built Windows Virtual Machine: 
   * Microsoft offers free pre-built, virtualized versions of Windows prepackaged for several different hypervisors, which one can download [here](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/#downloads). 
 3. Windows Emulation (WINE)
-	* Wikipedia: https://en.wikipedia.org/wiki/Wine_(software)
 	* Website:  https://www.winehq.org
 	* Download: https://www.winehq.org/download]
 	* Mac Install: https://www.davidbaumgold.com/tutorials/wine-mac/
 
-a. Install homebrew, the Mac package manager:
+Note the free versions of Windows above have some restrictions, but nothing that affects the installation or execution of CPRS.
 
-```shell
->ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-
-b. Brew install XQuartz and Wine:
-
-```shell
->brew cask install xquartz
->brew install wine
-```
-
-c. Download and move the CPRS.exe and any supporting files (dlls) into the Wine Program Files directory
-
-```shell
->cd ~/.wine/drive_c/Program\ Files/
-```
-
-d. To start CPRS, change to the Program Files directory, and execute wine
-
-```shell
->wine CPRS.exe
-```
 
 <br><br><br>
 
@@ -164,19 +141,18 @@ d. To start CPRS, change to the Program Files directory, and execute wine
 10. Start CPRS by double-clicking the "RPC Server" desktop shortcut ...
 ![CPRS Open -width70](images/cprs_open_vagrant.png)
 
-11. The initial username/password is:
+11. The initial username/verify codes are:
 
 ```shell
 user:   fakedoc1
 verify: 1doc!@#$
 ```
-
-
+<br>
 [ Back to top ↑](#top)
 
-<br><br><br><br>
+<br><br>
 # Next
-* [Coversheet Demo](demo/) - ignore the instructions to login to a remote server. Just connect CPRS to the Vagrant instead at _s=10.2.2.222 p=9011_
+* [Coversheet Demo](demo/) - ignore the instructions to login to a remote server. Just connect CPRS to the VICS Server instead at _s=10.2.2.222 p=9011_
 * [Highlights of Build 1.1](demo/emulation1_1)
 
 [ Back to top ↑](#top)
