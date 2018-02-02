@@ -2,7 +2,9 @@
 layout: default
 title: OneVA - Veteran Integrated Care Services
 ---
-![vdp-transition -width70](/assets/vdp-vics-oneva-20180130v2.png)
+
+![](images/vdp-vics-main-20180202v1.png)
+
 
 
 ## VA Modernization with Continuity of Care
