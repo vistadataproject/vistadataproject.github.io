@@ -11,7 +11,7 @@ In the VISTA Data Project (VDP), this organic data model is comprehensively expo
 
 Through this same MVDM-driven mechanism, the functionality across all VISTA systems can be centralized to a single secure, cloud-based, veteran-specific Veteran Integrated Care Service (VICS),  allowing  the corresponding functionality of the 130 decentralized VISTA systems to be decomissioned while maintaining seamless continuity of veteran-specific care and services.
 
-![vdp-transition -width70](assets/vdp-vista-vics-v3.png)
+![vdp-transition -width70](/assets/vdp-vista-vics-v3.png)
 
 <br>
 
