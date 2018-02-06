@@ -7,7 +7,7 @@ title: VAM Year 1 - 'Patient (Non Meta RPCs) for Build 2'
     
 With Build 2, the VICS Service must emulate the RPCs seen in _capture_ files covering CPRS [P1] connecting to VISTA up to Patient Select, [P2] selecting a patient up to domain specific work and [P3s] specific activity for the PDE domains, _Allergy_, _Vital_ and _Problem_.
 
-The [Meta RPCs](scopeMetaB1_1) (those not accessing or changing Patient data) are due to be completed in Build 1.1. The following details the in-scope _Patient RPCs_ which need to be emulated by _Build 2_ (mid March 2018).
+The following details the in-scope _Patient RPCs_ which need to be emulated by _Build 2_ (mid March 2018).
 
 __Notes__: 
   * like Meta RPCs, __most Patient RPCs are reads__ - change RPCs will be marked __DUAL__ below meaning a call will be sent to BOTH the national VICS and VISTA
@@ -24,7 +24,7 @@ __Notes__:
 __Scope Conor/Mike__: see _CM_ tag below for RPCs that need Conor/Mike scoping. May involve dataset expansion or mumps codes walks or both. Certainly involves nodeVISTA tests.
 
 Total RPCs in PDE Captures: __138__
-  * Meta RPCs (B1.1): __146__
+  * Meta RPCs: __146__
   * Out of Scope RPCs (BYE etc): __3__
   * VDM Emulated RPCs: __25__
 
