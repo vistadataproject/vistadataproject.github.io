@@ -66,9 +66,13 @@ Verify that the installation was successful by performing any or all of the foll
 > vagrant ssh
 > su vdp
 Password: vdp
-> cd
+> cd /home
 > ls
-... nodevista  ...  rpcRouter  ...  VICSServer
+> cd nodevista
+> cd /home
+> cd vdp
+> ls
+ ...  rpcRouter  ...  VICSServer
 > exit
 > exit
 ```
@@ -139,7 +143,7 @@ Note the free versions of Windows above have some restrictions, but nothing that
     ```
 
 10. Start CPRS by double-clicking the "RPC Server" desktop shortcut ...
-![CPRS Open -width70](images/cprs_open_vagrant.png)
+![CPRS Open -width50](images/cprs_open_vagrant.png)
 
 11. The initial username/verify codes are:
 
