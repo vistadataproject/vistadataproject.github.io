@@ -25,11 +25,11 @@ __Note__: missed from B1.1 - tracked for ease in the Patient clinical list on Ji
 
 \# | Name | Type | File(s) | Parameter(s) | Comment
 --- | --- | --- | --- | --- | ---
-1 | [ORQPT DEFAULT LIST SORT](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORQPT_DEFAULT_LIST_SORT) | READ | &nbsp; | ORLP DEFAULT LIST ORDER | &nbsp;
+1 | [ORQPT DEFAULT LIST SORT](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORQPT_DEFAULT_LIST_SORT) | READ | &nbsp; | ORLP DEFAULT LIST ORDER | [EASY] Parameter access - missed in B1.1 due to capture mistake. Tracked in Patient RPC list
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-2 | [ORWPT DFLTSRC](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPT_DFLTSRC) | READ | &nbsp; | ORLP DEFAULT LIST SOURCE | &nbsp;
+2 | [ORWPT DFLTSRC](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWPT_DFLTSRC) | READ | &nbsp; | ORLP DEFAULT LIST SOURCE | [EASY] Parameter access - missed in B1.1 due to capture mistake. Tracked in Patient RPC list
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-3 | [ORWU NEWPERS](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWU_NEWPERS) | &nbsp; | 3.1, 20, 49, 389.9, 200, 8932.1 | &nbsp; | &nbsp;
+3 | [ORWU NEWPERS](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWU_NEWPERS) | &nbsp; | 3.1, 20, 49, 389.9, 200, 8932.1 | &nbsp; | [DIFFICULT] [USER] [METAWITHPATIENT] list users using AUSER/active user cross reference, a list we'd have to emulate behind the User Service. Part of this work is scoping from captures. In the Problem capture, see argument _PROVIDER_ passed which seems to limit it to providers (those with that key?). See [issue](https://github.com/vistadataproject/DataExtractNSync/issues/44) that goes into AUSER, ACTIVE and the concept of CPRS active users and their effect. Not patient per say but 'meta with patient' - hence tag METAWITHPATIENT
 
 
 __Build 3 (Post Build 2 Beyond PDE)__: 35
@@ -42,7 +42,7 @@ __Note__: these are Meta RPCs for Pharmacy, PCE, Graph and other ancillary domai
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 2 | [ORQQCN SVC W/SYNONYMS](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORQQCN_SVC_W_SYNONYMS) | &nbsp; | 123.5, 101.43 | &nbsp; | [MEDIUM] [ORDER]
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-3 | [ORQQPXRM REMINDER CATEGORIES](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORQQPXRM_REMINDER_CATEGORIES) | READ | 811.7, 811.9, 801.41 | PXRM CPRS LOOKUP CATEGORIES | &nbsp;
+3 | [ORQQPXRM REMINDER CATEGORIES](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORQQPXRM_REMINDER_CATEGORIES) | READ | 811.7, 811.9, 801.41 | PXRM CPRS LOOKUP CATEGORIES | [MEDIUM] [PARAMETER] Medium for volume - routine seems to just lookup parameters
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 4 | [ORWDPS1 FAILDEA](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDPS1_FAILDEA) | &nbsp; | 50, 50.68, 50.7, 50.606, 101.43, 200, 4, 4.05 | &nbsp; | [DIFFICULT] [USER] really returns DEA status of a User. Difficult due to nuances and so need enough test data and test code
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
@@ -59,9 +59,9 @@ __Note__: these are Meta RPCs for Pharmacy, PCE, Graph and other ancillary domai
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 11 | [ORWDXR01 ISSPLY](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWDXR01_ISSPLY) | &nbsp; | 101.43, 100.98 | &nbsp; | [EASY] [ORDER] [ISA]
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-12 | [ORWGRPC ALLVIEWS](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWGRPC_ALLVIEWS) | READ | 68, 69.2, 60 | ORWG GRAPH VIEW | &nbsp;
-13 | [ORWGRPC GETPREF](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWGRPC_GETPREF) | READ | &nbsp; | ORWG GRAPH SETTING | &nbsp;
-14 | [ORWGRPC TESTSPEC](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWGRPC_TESTSPEC) | &nbsp; | 60 | &nbsp; | &nbsp;
+12 | [ORWGRPC ALLVIEWS](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWGRPC_ALLVIEWS) | READ | 68, 69.2, 60 | ORWG GRAPH VIEW | [DIFFICULT] [GRAPHING] [LEAVEEND] difficult as three branches - -1, -2, -3 called by CPRS. Parameters looked up. Effectively three RPCs in one and should be tested appropriately. See if leads to PARAMETER calls directly or three different service methods or ... __LEAVE TO END AS MAY BE OUT OF SCOPE__
+13 | [ORWGRPC GETPREF](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWGRPC_GETPREF) | READ | &nbsp; | ORWG GRAPH SETTING | [DIFFICULT] [GRAPHING] [USERPREF] [LEAVEEND] involves parameters but also XTMP checks. Need to see how those XTMPs are set. (SETPREF?) We either support this fully or not at all. __LEAVE TO END AS MAY BE OUT OF SCOPE__
+14 | [ORWGRPC TESTSPEC](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWGRPC_TESTSPEC) | &nbsp; | 60 | &nbsp; | [MEDIUM] [LAB] describe a test - serialize JSON of 'getLabTest()' into appropriate form. Difficulty is making sure formatter is right and testing that.
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 15 | [ORWOR VWGET](http://vistadataproject.info/artifacts/devdocs/VISTARPC/ORWOR_VWGET) | READ | 100.98 | ORCH CONTEXT ORDERS | [MEDIUM] [ORDER] Parameter with mumps logic added - configures CPRS
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
@@ -88,7 +88,7 @@ __Note__: these are Meta RPCs for Pharmacy, PCE, Graph and other ancillary domai
 32 | [TIU ISPRF](http://vistadataproject.info/artifacts/devdocs/VISTARPC/TIU_ISPRF) | &nbsp; | 8925.1 | &nbsp; | [EASY] [DOCUMENT] check document title type - is Check for Document Service
 33 | [TIU LONG LIST OF TITLES](http://vistadataproject.info/artifacts/devdocs/VISTARPC/TIU_LONG_LIST_OF_TITLES) | &nbsp; | 8925.1, 8930.1 | &nbsp; | [MEDIUM] [DOCUMENT] List by criteria - listTitlesByClass in DocumentService.
 34 | [TIU TEMPLATE GETLINK](http://vistadataproject.info/artifacts/devdocs/VISTARPC/TIU_TEMPLATE_GETLINK) | &nbsp; | 801.41, 8925.1, 8927 | &nbsp; | [MEDIUM] [DOCUMENT] Serializes data from an entity pointed to by another. __Test Dataset needs enough data__
-35 | [TIU TEMPLATE GETROOTS](http://vistadataproject.info/artifacts/devdocs/VISTARPC/TIU_TEMPLATE_GETROOTS) | &nbsp; | 8927 | &nbsp; | &nbsp;
+35 | [TIU TEMPLATE GETROOTS](http://vistadataproject.info/artifacts/devdocs/VISTARPC/TIU_TEMPLATE_GETROOTS) | &nbsp; | 8927 | &nbsp; | [MEDIUM] [DOCUMENT] Template meta data - referenced from vitals and problems.
 
 
 __VISTA Only__: 5
