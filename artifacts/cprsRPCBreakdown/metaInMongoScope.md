@@ -1,6 +1,10 @@
 ---
 layout: default
-title: VAM Year 1 - 'Meta In Mongo Scope 2' - station number 442
+title: VAM Year 1 - 'Meta In Mongo Scope 3' - station number 442
 ---
 
-Replaced by [scopeMetaB1_1](scopeMetaB1_1)
+Replaced by [scopeMetaB2](scopeMetaB2)
+
+and
+
+[scopePatientB2](scopePatientB2)
