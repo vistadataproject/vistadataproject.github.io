@@ -3,7 +3,7 @@ layout: default
 title: OneVA - Veteran Integrated Care Services
 ---
 
-![](images/vdp-vics-main-20180204v4.png)
+![](images/vdp-vics-main-20180206v1.png)
 
 
 
