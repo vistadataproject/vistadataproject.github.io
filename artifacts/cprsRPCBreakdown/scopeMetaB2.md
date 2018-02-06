@@ -21,8 +21,6 @@ __146__ RPCs (includes 5 VISTA Only).
 
 __Build 2 (Remainder post 1.1)__: 3
 
-__Note__: these are Meta RPCs for Pharmacy, PCE, Graph and other ancillary domains/functions that are beyond PDE scope. It is an open question how many should be done in VAM year 1.
-
 __Note__: missed from B1.1 - tracked for ease in the Patient clinical list on Jira
 
 \# | Name | Type | File(s) | Parameter(s) | Comment
