@@ -24,3 +24,20 @@ __Strategic Benefits__:
 __Show Me:__ browse through and run VDP's [Clinical](/vam/build1_1/demo) and [Non Clinical](/demo2) Demos.
 
 
+### Background
+
+The VISTA Data Project (VDP) has progressed in two phases.
+
+In the Discovery phase (FY16-17) under the VistA Metadata Audit, Analytics, and Automation project, the underlying model that drives all VISTA systems was exposed in machine-processable form, audited, and normalized to create a Master VistA Data model (MVDM) spanning all VistA systems.  The MVDM provides the foundations for a modern, web-standard secure, symmetric, read-write interface spanning all VistA systems.  The business logic of the interface was also 
+
+In the initial operating capability phase (FY18-19) under the VistA Adaptive Maintenance (VAM) project, the Master VistA Data Model and its secure read-write interface is being operationalized in a secure commercial cloud.
+
+
+### Feature-Function-Benefit
+
+Feature | Function | Benefit
+--- | --- | ----
+
+
+
+
