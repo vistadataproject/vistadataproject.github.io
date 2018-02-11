@@ -1,4 +1,4 @@
-# Command line shortcuts to manage VICS Server
+# VICS Server management command line shortcuts
 
 To create a menu of commands that appears when one types "vics"
 
