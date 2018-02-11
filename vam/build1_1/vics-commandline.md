@@ -1,6 +1,7 @@
+# Command line shortcuts to manage VICS Server
 
-
-# Create file "vics.sh" at user's root  (~/)
+## To create a menu of commands that appears when one types "vics"
+## Create file "vics.sh" at user's root  (~/vics.sh) with the following:
 
 ```shell
 clear
@@ -18,8 +19,7 @@ echo ' -----------------------------------------------------'
 ```
 
 
-
-# Add to users shell profile (dotfile) in user's root directory (~/.profile)
+## Add the following users shell profile in user's root (~/.profile)
 
 ```shell
 # VICS - Veteran Integrated Care Services
