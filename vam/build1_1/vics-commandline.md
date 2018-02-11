@@ -19,7 +19,7 @@ echo ' -----------------------------------------------------'
 
 
 
-# Add to users shell profile at user's root  (i.e. in ~/.profile)
+# Add to users shell profile (dotfile) in user's root directory (~/.profile)
 
 ```shell
 # VICS - Veteran Integrated Care Services
