@@ -41,7 +41,7 @@ alias vics-ssh='echo "VICSServer ssh user/pass: vdp/vdp"; vagrant ssh'
 # Web Clients
 alias vics-model='open http://10.2.2.222:9000/schema'
 alias vics-query='open http://10.2.2.222:9000/query'
-alias vics-router='open http://10.2.2.222:9020/#rpcCounts'
+alias vics-router='open http://10.2.2.222:9012'
 
 # CPRS Client (wine)
 #user/pass:  fakedoc1 / 1doc!@#$ -> fakedoc1#
