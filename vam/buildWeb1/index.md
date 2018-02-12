@@ -11,3 +11,5 @@ First release [demo](demo1/)
 
 (follow flow of [vistadataproject.info/vam/build1/](http://vistadataproject.info/vam/build1/))
 
+__Important to emphasize motif/approach and have screenshots that just go into the underlying framework__.
+
