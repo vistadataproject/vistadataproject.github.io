@@ -25,16 +25,16 @@ __Show Me:__ browse through and run VDP's [Clinical](/vam/build1_1/demo) and [No
 
 The VISTA Data Project (VDP) has progressed in two phases.
 
-* __VDP Discovery (FY16-17)__: Under the VistA Metadata Audit, Analytics, and Automation project, the underlying model that drives all VISTA systems was exposed in machine-processable form, audited, and normalized to create a Master VistA Data model (MVDM) spanning all VistA systems.  The MVDM provides a modern, secure, symmetric, standardized, model-driven read-write interface across all VistA systems. The business logic of the clinical interfaces are also exposed, captured, and emulated with the same modern, web-standard technology on top of the MVDM.
-* __VDP Initial Operating Capability (FY18-19)__: Under the VistA Adaptive Maintenance (VAM) project, the Master VistA Data Model and its secure read-write interfaces are operationalized in a modern, secure, VA-endorsed enterprise commercial cloud (Amazon).
-
+* __VDP Discovery (FY16-17)__: Under the VistA Metadata Audit, Analytics, and Automation project, the underlying model that drives all VISTA systems was exposed in machine-processable form, audited, and normalized to create a Master VistA Data model (MVDM) spanning all VistA systems.  The MVDM provides a modern, secure, symmetric, standardized, model-driven read-write interface across all VistA systems. The business logic of the clinical interfaces are exposed, captured, and emulated as services in same modern, web-standard technology of MVDM.
+* __VDP Operationalized (FY18-19)__: Under the VistA Adaptive Maintenance (VAM) project, MVDM and its secure read-write service interfaces are operationalized in a modern VA- and Federally-endorsed, secure enterprise commercial cloud (Amazon).
 
 
 ### Feature-Function-Benefit
 
 Feature | Function | Benefit
 --- | --- | ----
-Cloud-native | modern, industry-standard, commmercially supported  | Easily move to the commercial cloud with no impedance
+Cloud-native | modern, industry-standard, commodity technology  | Seamlessly and rapidly move to the commercial cloud, with full commercial support; no legacy VISTA/MUMPS technology to support
+
 
 
 
