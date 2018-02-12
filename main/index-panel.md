@@ -7,6 +7,12 @@ keywords: safe, continuity, maintainence
 
 (rem: no EHRM)
 
+
+Mac evolution to the cloud leverages emulation:
+
+
+
+
 ## Emulate to the Future 
 
 ... OS X story line and picture of emulation
