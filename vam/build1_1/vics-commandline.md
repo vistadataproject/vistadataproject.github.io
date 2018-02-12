@@ -33,7 +33,7 @@ alias vics-status='cd ~/vagrant/VICSServer/setup; vagrant status'
 
 # Server Access:  IP 10.2.2.222
 # web ssh: Install on guest VM: sudo apt-get install shellinabox
-alias vics-web='echo "VICSServer ssh user/pass: vdp/vdp"; open https://10.2.2.222:4200/'
+# alias vics-webssh='echo "VICSServer ssh user/pass: vdp/vdp"; open https://10.2.2.222:4200/'
 alias vics-ssh='echo "VICSServer ssh user/pass: vdp/vdp"; vagrant ssh'
 # or:  ssh vdp@10.2.2.222'
 
