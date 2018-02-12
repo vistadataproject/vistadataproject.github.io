@@ -25,8 +25,8 @@ __Show Me:__ browse through and run VDP's [Clinical](/vam/build1_1/demo) and [No
 
 The VISTA Data Project (VDP) has progressed in two phases.
 
-* __VDP Discovery (FY16-17)__: In the VistA Metadata Audit, Analytics, and Automation project, the underlying model that drives all VISTA systems are exposed in machine-processable form, audited, and normalized to create a Master VistA Data model (MVDM) spanning all VistA systems.  The MVDM provides a modern, secure, symmetric, industry-standard, model-driven read-write interface across all VistA systems. The business logic of the clinical interfaces (remote procedure calls) are exposed, captured, and emulated as services in same modern, web-standard technology within MVDM.
-* __VDP Operations (FY18-19)__: In the VistA Adaptive Maintenance (VAM) project, MVDM and its secure read-write service interfaces are operationalized - via RPC routing - to VA's new Federally-mandated, HIPAA-secured enterprise commercial cloud (Amazon).
+* __VDP Discovery (FY16-17)__: In the VistA Metadata Audit, Analytics, and Automation project, the underlying model that drives all VISTA systems are exposed in industry-standard, machine-processable form, audited, and normalized to create a Master VistA Data model (MVDM) spanning all VistA systems.  The MVDM provides a modern, secure, symmetric, standards-based, model-driven read-write interface across all VistA systems. The business logic of the clinical interface (CPRS) are exposed in industry-standard form, and emulated as services using the same modern, web-standard technology within MVDM.
+* __VDP Operations (FY18-19)__: In the VistA Adaptive Maintenance (VAM) project, MVDM and its secure read-write service interfaces to CPRS are operationalized - via RPC routing - to VA's new Federally-mandated, HIPAA-secured enterprise commercial cloud (Amazon).
 
 ### Feature-Function-Benefit
 
