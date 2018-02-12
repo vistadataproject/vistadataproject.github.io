@@ -7,4 +7,6 @@ title: VAM Web1 Demo
 
 TBD ... screenshots and show using CPRS too
 
+Look like [vistadataproject.info/vam/build1_1/demo/](http://vistadataproject.info/vam/build1_1/demo/)
+
 
