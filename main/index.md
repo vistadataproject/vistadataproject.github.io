@@ -5,6 +5,16 @@ title: OneVA - Veteran Integrated Care Services
 
 ![](images/vdp-vics-communitycare-20180212v3.png)
 
+1. Decentralized VISTA x130 is comprised of over 100 functional domains (colors: blue, red, yellow) integrated within a single database (gray)
+2. Incremental Centralization: As functionality is moved to Centralized Services (red, yellow), the corresponding functionality across all VISTA systems may safely “go dark”.
+3. Centralized Services provides the same functionality as in the original function of the decentralized 130 VISTA systems (red, yellow).
+4. RPC Emulation incrementally normalizes and standardizes the business logic across all VISTA systems.
+5. RPC Routing incrementally redirects (centralizes) CPRS to the cloud while providing backwards compatibility  to all 130 VISTA systems 
+6. Continuity of Care: CPRS continues to work unchanged using the new Centralized Services (via RPC Routing and Emulation) providing continuity of care for veterans during centralization.
+7. Community Care: Anywhere-to-Anywhere care between any VA clinician and any Community care physician using Web or Mobile access through Centralized Services.
+8. VISTA Decommissioning:  As VISTA functionality is incrementally centralized, all 130 VISTA systems may be safely decommissioned with no loss of continuity of care.
+
+
 ## VA Modernization with Continuity of Care
 The Veterans Information Systems Technology Architecture ([VISTA](https://en.wikipedia.org/wiki/VistA)) is the comprehensive  longitudinal  clinical, business, and administrative information system of the U.S. Veterans Health Administration ([VHA](https://www.va.gov/health/aboutVHA.asp)). 130 VISTA instances support the operations of over 1200 VA hospitals and clinics nationwide.
 
