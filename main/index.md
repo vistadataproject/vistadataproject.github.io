@@ -3,7 +3,7 @@ layout: default
 title: OneVA - Veteran Integrated Care Services
 ---
 
-![](images/vdp-vics-communitycare-20180212v3.png)
+![](images/vdp-vics-main-cc-20180213v1.png)
 
 1. Decentralized VISTA x130 is comprised of over 100 functional domains (colors: blue, red, yellow) integrated within a single database (gray)
 2. Incremental Centralization: As functionality is moved to Centralized Services (red, yellow), the corresponding functionality across all VISTA systems may safely “go dark”.
