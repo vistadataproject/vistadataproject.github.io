@@ -21,11 +21,15 @@ Specifically it shows how the client allows a Physician to:
      * Enter specific allergy information
   6. Review details of the entered Allergy
   7. Login to CPRS and view this newly entered Allergy
-  8. Return to the Web Client and remove the Allergy by marking it as _entered in error_ 
+  8. Either:
+     * Return to the Web Client and remove the Allergy by marking it as _entered in error_ OR
+     * Remove the allergy in CPRS and then return to the Web Client and confirm the Allergy's removal
 
-Image ClientLogin ...
+Start by selecting a user and division ...
 
 ![ClientLogin -width70](images/webclient/ClientLogin.png)
+
+__Note__: the first builds of the Web Client will not support authentication. This should be addressed in the third and final build.
 
 Image PatientSelectionPlain ...
 
@@ -35,58 +39,77 @@ Image PatientSelectionSearchCSelectDCSeeDemo ...
 
 ![PatientSelectionSearchCSelectDCSeeDemo -width70](images/webclient/PatientSelectionSearchCSelectDCSeeDemo.png)
 
-Image PatientMainSummaryTitleTwoWidgets ...
+You will be a taken to a _Coversheet_ with widgets displaying different classes of Patient data ...
 
 ![PatientMainSummaryTitleTwoWidgets -width70](images/webclient/PatientMainSummaryTitleTwoWidgets.png)
 
-Image ActionsAddThreeWidgets ...
+This is a variation of the Coversheet seen in CPRS but is much easier to configure and rearrange by Physicians ...
 
-![ActionsAddThreeWidgets -width70](images/webclient/ActionsAddThreeWidgets.png)
+![Coversheet -width70](images/cprs/Coversheet.png)
 
-Image PatientMainSummaryThreeWidgets ...
+Let's add one more Widget, a Vitals widget ...
+
+![ActionsAddThreeWidgets](images/webclient/ActionsAddThreeWidgets.png)
+
+The added widget is now in the coversheet ...
 
 ![PatientMainSummaryThreeWidgets -width70](images/webclient/PatientMainSummaryThreeWidgets.png)
 
-Image AllergiesWidgetEmpty ...
+__Note__: the current VICS Server persists a User's CPRS preferences. In the final build of the Web Client and VICS Server, an individual user's preferences for Web Client layout will also be persisted.
+
+Note how the Patient has no allergies ...
 
 ![AllergiesWidgetEmpty -width70](images/webclient/AllergiesWidgetEmpty.png)
 
-Image AllergyEnterSearchEmpty ...
-
-![AllergyEnterSearchEmpty -width70](images/webclient/AllergyEnterSearchEmpty.png)
-
-Image AllergyEnterSearchChoc ...
+_Build 1_ of the Web Client let's you add one. Click on the _+_ icon on the title bar of the Allergy Widget and a popup will show which allows you to search for Allergins. It automatically searches once you've typed three or more letters ...
 
 ![AllergyEnterSearchChoc -width70](images/webclient/AllergyEnterSearchChoc.png)
 
-Image AllergyEnterChocolateFilled ...
+This _autocomplete_ means you don't need to explicitly click on a _Search_ button as you do in CPRS ...
+
+![CPRSAllergyEnterSearchChoc -width70](images/cprs/AllergyEnterSearchCho.png)
+
+This approach to search will be followed throughout the Web Client and will demand appropriate support from the meta data services of the VICS Server.
+
+Back in the Web Client, choose Chocolate and press ok. The next window let's you fill in Allergy details ...
 
 ![AllergyEnterChocolateFilled -width70](images/webclient/AllergyEnterChocolateFilled.png)
 
-Image AllergiesWidgetChocolateEntry ...
+__Note__: Build 1 of the Web Client let's you enter _Historical_ Allergies. 
+
+Back in the Coversheet, the Allergy Widget nows displays the newly entered Allergy ...
 
 ![AllergiesWidgetChocolateEntry -width70](images/webclient/AllergiesWidgetChocolateEntry.png)
 
-Image AllergyDetailChocolate ...
+Click on this entry and a popup will appear with the details you just entered ...
 
 ![AllergyDetailChocolate -width70](images/webclient/AllergyDetailChocolate.png)
 
-Image AllergyDetailPintButton ...
+The popup supports printing ...
 
 ![AllergyDetailPintButton](images/webclient/AllergyDetailPintButton.png)
 
-Image AllergyDetailsEnterInErrorButton ...
+And allows you to reconsider and mark the allergy as _entered in error_ ...
 
 ![AllergyDetailsEnterInErrorButton](images/webclient/AllergyDetailsEnterInErrorButton.png)
 
-Image AllergyEnterInErrorReason ...
+Clicking that icon leads to a dialog where you can comment on the error and confirm you want the allergy removed ...
 
 ![AllergyEnterInErrorReason -width70](images/webclient/AllergyEnterInErrorReason.png)
 
-Image AllergiesWidgetEmpty ...
+After you confirm removal, the Allergy Widget once again shows no active allergies ...
 
 ![AllergiesWidgetEmpty -width70](images/webclient/AllergiesWidgetEmpty.png)
 
+The Web Client is compatible with CPRS. Start CPRS right after Allergy Entry and you'll see ...
+
+![CPRSShowsAllergyEntered -width70](images/cprs/CPRSShowsAllergyEntered.png)
+
+You can go on to mark that allergy as _entered in error_ ...
+
+![CPRSEnterInError -width70](images/cprs/CPRSEnterInError.png)
+
+a removal that will be reflected in the Web Client.
 
 ## CPRS Part (Backup)
 
