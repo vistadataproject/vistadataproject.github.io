@@ -19,10 +19,6 @@ Image PatientSelectionPlain ...
 
 ![PatientSelectionPlain -width70](images/webclient/PatientSelectionPlain.png)
 
-Image PatientSelectionSearchC ...
-
-![PatientSelectionSearchC](images/webclient/PatientSelectionSearchC.png)
-
 Image PatientSelectionSearchCSelectDCSeeDemo ...
 
 ![PatientSelectionSearchCSelectDCSeeDemo -width70](images/webclient/PatientSelectionSearchCSelectDCSeeDemo.png)
@@ -74,6 +70,10 @@ Image AllergyDetailsEnterInErrorButton ...
 Image AllergyEnterInErrorReason ...
 
 ![AllergyEnterInErrorReason -width70](images/webclient/AllergyEnterInErrorReason.png)
+
+Image AllergiesWidgetEmpty ...
+
+![AllergiesWidgetEmpty -width70](images/webclient/AllergiesWidgetEmpty.png)
 
 
 
