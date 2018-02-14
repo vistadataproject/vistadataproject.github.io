@@ -7,6 +7,11 @@ title: VAM Web1 Demo
 
 Look like [vistadataproject.info/vam/build1_1/demo/](http://vistadataproject.info/vam/build1_1/demo/)
 
+__Expand__:
+  * user preferences (side by side CPRS)
+  * users/patient data for both
+  * meta data searches
+
 __Need background__
 
 Web Images to use (__need highlights/blurbs and to add CPRS part__) ...
