@@ -5,11 +5,11 @@ title: VAM Web1 Demo
 
 ## Build Web 1 Demo (February 15th, 2018)
 
-TBD ... screenshots and show using CPRS too
-
 Look like [vistadataproject.info/vam/build1_1/demo/](http://vistadataproject.info/vam/build1_1/demo/)
 
-Web Images to use (some order, need highlights/blurbs) ...
+__Need background__
+
+Web Images to use (__need highlights/blurbs and to add CPRS part__) ...
 
 Image ClientLogin ...
 
