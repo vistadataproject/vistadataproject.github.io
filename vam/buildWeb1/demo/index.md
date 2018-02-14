@@ -25,7 +25,7 @@ Specifically it shows how the client allows a Physician to:
      * Return to the Web Client and remove the Allergy by marking it as _entered in error_ OR
      * Remove the allergy in CPRS and then return to the Web Client and confirm the Allergy's removal
 
-Start by selecting a user and division ...
+Start by selecting a user and facility ...
 
 ![ClientLogin -width70](images/webclient/ClientLogin.png)
 
@@ -43,10 +43,6 @@ You will be a taken to a _Coversheet_ with widgets displaying different classes 
 
 ![PatientMainSummaryTitleTwoWidgets -width70](images/webclient/PatientMainSummaryTitleTwoWidgets.png)
 
-This is a variation of the Coversheet seen in CPRS but is much easier to configure and rearrange by Physicians ...
-
-![Coversheet -width70](images/cprs/Coversheet.png)
-
 Let's add one more Widget, a Vitals widget ...
 
 ![ActionsAddThreeWidgets](images/webclient/ActionsAddThreeWidgets.png)
@@ -55,7 +51,11 @@ The added widget is now in the coversheet ...
 
 ![PatientMainSummaryThreeWidgets -width70](images/webclient/PatientMainSummaryThreeWidgets.png)
 
-__Note__: the current VICS Server persists a User's CPRS preferences. In the final build of the Web Client and VICS Server, an individual user's preferences for Web Client layout will also be persisted.
+The Web Client's Coversheet is a variation of the Coversheet seen in CPRS but is much easier to configure and rearrange by Physicians ...
+
+![Coversheet -width70](images/cprs/Coversheet.png)
+
+__Note__: the current VICS Server persists a User's CPRS preferences. In the final build of the Web Client and VICS Server, a user's Web Client preferences will also be persisted - the VICS Server will manage User profiles and preferences for every client it supports.
 
 Note how the Patient has no allergies ...
 
