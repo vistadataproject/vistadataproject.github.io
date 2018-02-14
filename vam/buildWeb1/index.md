@@ -9,7 +9,7 @@ VAM has three Web releases.
 
 (follow flow of [vistadataproject.info/vam/build1/](http://vistadataproject.info/vam/build1/))
 
-First release [demo](demo1/)
+First release [demo](demo/)
 
 __Important to emphasize__:
   * motif/approach and have screenshots that just go into the underlying flexible framework
