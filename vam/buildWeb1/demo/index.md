@@ -12,8 +12,8 @@ It employs [a] a _"nodeVISTA"_ which supports a REST interface for Patient data 
 __INSERT DIAGRAM__
 
 Specifically it shows how the client allows a Physician to:
-  1. Log in
-  2. Choose a Patient and seeing basic demographics
+  1. Choose a facility
+  2. Choose a Patient and see basic demographics
   3. Add an additional widget (Vitals) to the coversheet
   4. View summaries of a Patient's Vitals, Allergies and Problems
   5. Enter a new Allergy
