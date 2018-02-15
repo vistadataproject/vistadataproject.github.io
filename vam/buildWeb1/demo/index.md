@@ -61,7 +61,7 @@ __Note__: the current VICS Server persists a User's CPRS preferences. In the fin
 
 Note how the Patient has no allergies ...
 
-![AllergiesWidgetEmpty -width70](images/webclient/AllergiesWidgetEmpty.png)
+![AllergiesWidgetEmpty -width70](images/webclient/AllergiesWidgetEmptyRedPencil.png)
 
 _Build 1_ of the Web Client let's you add one. Click on the _pencil_ icon on the title bar of the Allergy Widget and a popup will show which allows you to search for Allergins. It automatically searches once you've typed three or more letters ...
 
@@ -103,7 +103,9 @@ You can go on to mark that allergy as _entered in error_ ...
 
 ![CPRSEnterInError -width70](images/cprs/CPRSEnterInError.png)
 
-a removal that will be reflected in the Web Client. You just need to hit refresh in the title bar of the Allergy widget.
+a removal that will be reflected in the Web Client. You just need to hit refresh in the title bar of the Allergy widget ...
+
+![AllergiesWidgetEmptyRedRefresh -width70](images/cprs/AllergiesWidgetEmptyRedRefresh.png)
 
 __Note__: future releases of the client may support web sockets and event based updates.
 
