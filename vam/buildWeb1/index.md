@@ -5,7 +5,7 @@ title: VICS Web1
 
 ## Build Web 1 (of 3) (February 15th, 2018)
 
-The VICS Client will [a] establish an open source, industry-standard development framework for clinical and non clinical, web-based VICS clients, [b] demonstrate that such clients can operate seemlessly along side CPRS and [c] show that VICS _directly enables_ clients with cross VA as opposed to per-VISTA scope.
+The VICS Client will [i] establish an open source, industry-standard development framework for clinical and non clinical, web-based VICS clients, [ii] demonstrate that a new VICS-based clinical client can operate seemlessly along side CPRS and [iii] show that VICS _directly enables_ a cross VA as opposed to per-VISTA clinical care client.
 
 This Web Client will __support all the relevant functionality of CPRS__ in a web-friendly form and deliver modern visual motifs and features missing from CPRS such as auto-complete in search dialogs and ease of personalization.
 
