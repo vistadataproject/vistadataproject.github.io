@@ -9,6 +9,8 @@ The following demonstrates [1] the basic functionality and layout of the _VICS C
 
 It employs [a] a _"nodeVISTA"_ which supports a REST interface for Patient data access and entry, [b] a Web Service which implements basic meta-data services and proxies to _nodeVISTA_ for Patient Data, [c] the VICS Web Client and [d] CPRS. This collection of components are housed on a cloud-based VM. 
 
+The Web Client will cover all the relevant functionality of CPRS in a web-friendly form and deliver modern visual motifs and features missing from CPRS such as auto-complete in search dialogs and ease of personalization.
+
 __INSERT DIAGRAM__
 
 Specifically it shows how the client allows a Physician to:
@@ -65,7 +67,7 @@ _Build 1_ of the Web Client let's you add one. Click on the _+_ icon on the titl
 
 ![AllergyEnterSearchChoc -width70](images/webclient/AllergyEnterSearchChoc.png)
 
-This _autocomplete_ means you don't need to explicitly click on a _Search_ button as you do in CPRS ...
+This _autocomplete_ means you don't need to explicitly click on a _Search_ button as you would have to in CPRS ...
 
 ![CPRSAllergyEnterSearchChoc -width70](images/cprs/AllergyEnterSearchCho.png)
 
@@ -109,66 +111,10 @@ You can go on to mark that allergy as _entered in error_ ...
 
 ![CPRSEnterInError -width70](images/cprs/CPRSEnterInError.png)
 
-a removal that will be reflected in the Web Client.
+a removal that will be reflected in the Web Client. You just need to hit refresh in the title bar of the Allergy widget.
 
-## CPRS Part (Backup)
+__Note__: future releases of the client may support web sockets and event based updates.
 
-
-AllergyEnterDetails ...
-
-![AllergyEnterDetails -width70](images/cprs/AllergyEnterDetails.png)
-
-AllergyEnterSearch ...
-
-![AllergyEnterSearch -width70](images/cprs/AllergyEnterSearch.png)
-
-AllergyEnterSearchCho ...
-
-![AllergyEnterSearchCho -width70](images/cprs/AllergyEnterSearchCho.png)
-
-AllergyEnterSearchChoEnter ...
-
-![AllergyEnterSearchChoEnter -width70](images/cprs/AllergyEnterSearchChoEnter.png)
-
-Coversheet ...
-
-![Coversheet -width70](images/cprs/Coversheet.png)
-
-CoversheetProblemWidgetThree ...
-
-![CoversheetProblemWidgetThree -width70](images/cprs/CoversheetProblemWidgetThree.png)
-
-CoversheetVitalsWidgetMany ...
-
-![CoversheetVitalsWidgetMany -width70](images/cprs/CoversheetVitalsWidgetMany.png)
-
-MainThree ...
-
-![MainThree -width70](images/cprs/MainThree.png)
-
-MainTwoColumns ...
-
-![MainTwoColumns -width70](images/cprs/MainTwoColumns.png)
-
-PatientCoversheetAllergyOptions ...
-
-![PatientCoversheetAllergyOptions -width70](images/cprs/PatientCoversheetAllergyOptions.png)
-
-PatientSelectionChoice ...
-
-![PatientSelectionChoice -width70](images/cprs/PatientSelectionChoice.png)
-
-PatientSelectionNoChoice ...
-
-![PatientSelectionNoChoice -width70](images/cprs/PatientSelectionNoChoice.png)
-
-ProblemDetailPopup ...
-
-![ProblemDetailPopup -width70](images/cprs/ProblemDetailPopup.png)
-
-VitalsAndProblemsWidgets ...
-
-![VitalsAndProblemsWidgets -width70](images/cprs/VitalsAndProblemsWidgets.png)
 
 
 
