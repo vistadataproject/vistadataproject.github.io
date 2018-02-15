@@ -105,7 +105,7 @@ You can go on to mark that allergy as _entered in error_ ...
 
 a removal that will be reflected in the Web Client. You just need to hit refresh in the title bar of the Allergy widget ...
 
-![AllergiesWidgetEmptyRedRefresh -width70](images/cprs/AllergiesWidgetEmptyRedRefresh.png)
+![AllergiesWidgetEmptyRedRefresh -width70](images/webclient/AllergiesWidgetEmptyRedRefresh.png)
 
 __Note__: future releases of the client may support web sockets and event based updates.
 
