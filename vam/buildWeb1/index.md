@@ -29,9 +29,13 @@ __Development__: the client uses the popular React.js framework and, like the VI
 
 __Demo__: 
 
-Both the VICS Server and Client are being developed in parallel. The focus of the first two builds of VICS Server is RPC Emulation to provide CPRS support. It will not gain REST services until its third build. So VICS Client development depends on [1] a set of in-VISTA, Patient Services developed during the VISTA Data Project and simple versions of the Meta Services scheduled to be supported by the VICS Server in its Build 3. Both Patient Service proxying and Meta Service basics are supplied to the Client by a ligthweight _VICS Test Server_ which allows development of the basic framework and functionality of the VICS Client independent of VICS Server development. As VICS Server support for REST increases, the client will migrate from this test server to VICS Server proper with its fuller datasets and behaviors.  
+Both the VICS Server and Client are being developed in parallel. The focus of the first two builds of VICS Server is RPC Emulation to provide CPRS support. It will not gain REST services until its third build. 
 
-![Web1Demo -width70](images/Web1Demo.png)
+So VICS Client development depends on [1] a set of in-VISTA, Patient Services developed during the VISTA Data Project and simple versions of the Meta Services scheduled to be fully supported by the VICS Server in its Build 3. Both Patient Service proxying and Meta Service basics are supplied to the Client by a ligthweight _VICS Test Server_ which allows development of the basic framework and functionality of the VICS Client independent of VICS Server development. 
+
+Starting with Meta Services, as VICS Server support for REST increases, the client will migrate from this test server to VICS Server proper with its fuller datasets and behaviors.  
+
+![Web1Demo](images/Web1Demo.png)
 
 see [demo](demo/)
 
