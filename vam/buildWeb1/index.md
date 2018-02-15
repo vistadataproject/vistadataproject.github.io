@@ -34,6 +34,6 @@ See [demo](demo/)
 __Development__: the client uses the popular React.js framework and, like the VICS Server, is being developed in open gits:
   * [React.js](https://reactjs.org/)
   * Development Gits: (note: due to move to own git in W2)
-    * [VAM Client](https://github.com/vistadataproject/nodeVISTAClients/tree/master/vam-client)
-    * [VAM Proxy Server](https://github.com/vistadataproject/nodeVISTAClients/tree/master/vam-server)
+    * [VICS Client](https://github.com/vistadataproject/nodeVISTAClients/tree/master/vam-client)
+    * [VICS Test Server](https://github.com/vistadataproject/nodeVISTAClients/tree/master/vam-server)
 
