@@ -19,8 +19,6 @@ W1 | Establish | [a] Basic GUI Component Framework,<br>[b] __Subset of CPRS__,<b
 W2 | CPRS Coverage Complete | [a] __CPRS-compatible and equivalent__ Client for User, Division, Patient and three PDE domains,<br>[b] __VICS for Meta Data__ | May 18
 W3 | Scalable National Client | [a] __VICS for all Data__,<br>[b] All CPRS interaction scenarios (locking),<br>[c] Cross VA, national client (VICS station #),<br>[d] AWS deployment,<br>[e] Proven scalability | August 18
 
-__Diagram showing Web 1__ and __Diagram showing ultimate deployment__
-
 __Development__: the client uses the popular React.js framework and, like the VICS Server, is being developed in open gits:
   * [React.js](https://reactjs.org/)
   * Development Gits: (note: due to move to own git in W2)
