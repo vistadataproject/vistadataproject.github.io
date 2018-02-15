@@ -11,7 +11,7 @@ The demonstration employs [a] a _"nodeVISTA"_ which supports a REST interface fo
 
 Ultimately, the Web Client will cover all the relevant functionality of CPRS in a web-friendly form and deliver modern visual motifs and features missing from CPRS such as auto-complete in search dialogs and ease of personalization. This demonstration illustrates the functionality delivered in Build 1.
 
-__INSERT DIAGRAM__
+![Web1Demo](../images/Web1Demo.png)
 
 Specifically it shows how the client allows a Physician to:
   1. Choose a facility

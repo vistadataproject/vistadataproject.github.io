@@ -37,5 +37,5 @@ Starting with Meta Services, as VICS Server support for REST increases, the clie
 
 ![Web1Demo](images/Web1Demo.png)
 
-see [demo](demo/)
+See [demo](demo/)
 
