@@ -87,15 +87,7 @@ Click on this entry and a popup will appear with the details you just entered ..
 
 ![AllergyDetailChocolate -width70](images/webclient/AllergyDetailChocolate.png)
 
-The popup supports printing ...
-
-![AllergyDetailPintButton](images/webclient/AllergyDetailPintButton.png)
-
-And allows you to reconsider and mark the allergy as _entered in error_ ...
-
-![AllergyDetailsEnterInErrorButton](images/webclient/AllergyDetailsEnterInErrorButton.png)
-
-Clicking that icon leads to a dialog where you can comment on the error and confirm you want the allergy removed ...
+The titlebar (in red above) has icons for printing and for marking the allergy as being _entered in error_. Clicking the _entered in error_ icon leads to a dialog where you can comment on the error and confirm you want the allergy removed ...
 
 ![AllergyEnterInErrorReason -width70](images/webclient/AllergyEnterInErrorReason.png)
 
