@@ -27,5 +27,9 @@ __Development__: the client uses the popular React.js framework and, like the VI
     * [VAM Client](https://github.com/vistadataproject/nodeVISTAClients/tree/master/vam-client)
     * [VAM Proxy Server](https://github.com/vistadataproject/nodeVISTAClients/tree/master/vam-server)
 
-__Demo__: see [demo](demo/)
+__Demo__: 
+
+![Web1Demo -width70](images/Web1Demo.png)
+
+see [demo](demo/)
 
