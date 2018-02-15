@@ -85,7 +85,7 @@ Back in the Coversheet, the Allergy Widget nows displays the newly entered Aller
 
 Click on this entry and a popup will appear with the details you just entered ...
 
-![AllergyDetailChocolate -width70](images/webclient/AllergyDetailChocolate.png)
+![AllergyDetailChocolateRedPrintEIE -width70](images/webclient/AllergyDetailChocolateRedPrintEIE.png)
 
 The titlebar (in red above) has icons for printing and for marking the allergy as being _entered in error_. Clicking the _entered in error_ icon leads to a dialog where you can comment on the error and confirm you want the allergy removed ...
 
