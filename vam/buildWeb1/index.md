@@ -16,7 +16,7 @@ VAM has three _PDE Clinical Web Client_ (_"VICS Client"_) releases:
 Release | Name | Content | Due
 --- | --- | --- | ---
 W1 | Establish | [a] Basic GUI Component Framework,<br>[b] __Subset of CPRS__,<br>[c] against __nodeVISTA__ (from VDP) | February 18
-W2 | CPRS Coverage Complete | [a] __CPRS-compatible and equivalent__ Client for User, Division, Patient and three PDE domains,<br>[b] uses __VICS for Meta Data__ | May 18
+W2 | CPRS Coverage Complete | [a] __CPRS-compatible and equivalent__ Client for User, Division, Patient and three PDE domains,<br>[b] __VICS for Meta Data__ | May 18
 W3 | Scalable National Client | [a] __VICS for all Data__,<br>[b] All CPRS interaction scenarios (locking),<br>[c] Cross VA, national client (VICS station #),<br>[d] AWS deployment,<br>[e] Proven scalability | August 18
 
 __Diagram showing Web 1__ and __Diagram showing ultimate deployment__
