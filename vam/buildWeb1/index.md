@@ -19,12 +19,6 @@ W1 | Establish | [a] Basic GUI Component Framework,<br>[b] __Subset of CPRS__,<b
 W2 | CPRS Coverage Complete | [a] __CPRS-compatible and equivalent__ Client for User, Division, Patient and three PDE domains,<br>[b] __VICS for Meta Data__ | May 18
 W3 | Scalable National Client | [a] __VICS for all Data__,<br>[b] All CPRS interaction scenarios (locking),<br>[c] Cross VA, national client (VICS station #),<br>[d] AWS deployment,<br>[e] Proven scalability | August 18
 
-__Development__: the client uses the popular React.js framework and, like the VICS Server, is being developed in open gits:
-  * [React.js](https://reactjs.org/)
-  * Development Gits: (note: due to move to own git in W2)
-    * [VAM Client](https://github.com/vistadataproject/nodeVISTAClients/tree/master/vam-client)
-    * [VAM Proxy Server](https://github.com/vistadataproject/nodeVISTAClients/tree/master/vam-server)
-
 __Demo__: 
 
 Both the VICS Server and Client are being developed in parallel. The focus of the first two builds of VICS Server is RPC Emulation to provide CPRS support. It will not gain REST services until its third build. 
@@ -36,4 +30,10 @@ Starting with Meta Services, as VICS Server support for REST increases, the clie
 ![Web1Demo](images/Web1Demo.png)
 
 See [demo](demo/)
+
+__Development__: the client uses the popular React.js framework and, like the VICS Server, is being developed in open gits:
+  * [React.js](https://reactjs.org/)
+  * Development Gits: (note: due to move to own git in W2)
+    * [VAM Client](https://github.com/vistadataproject/nodeVISTAClients/tree/master/vam-client)
+    * [VAM Proxy Server](https://github.com/vistadataproject/nodeVISTAClients/tree/master/vam-server)
 
