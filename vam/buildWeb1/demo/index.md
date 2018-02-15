@@ -43,7 +43,7 @@ Despite the small list of patients here, enter "C" in the search box to narrow t
 
 You will be a taken to a _Coversheet_ with widgets displaying different classes of Patient data ...
 
-![PatientMainSummaryTitleTwoWidgets -width70](images/webclient/PatientMainSummaryTitleTwoWidgets.png)
+![PatientMainSummaryTitleTwoWidgets](images/webclient/PatientMainSummaryTitleTwoWidgets.png)
 
 Let's add one more Widget, a Vitals widget ...
 
@@ -57,13 +57,13 @@ The Web Client's Coversheet is a variation of the Coversheet seen in CPRS but is
 
 ![Coversheet -width70](images/cprs/Coversheet.png)
 
-__Note__: the current VICS Server persists a User's CPRS preferences. In the final build of the Web Client and VICS Server, a user's Web Client preferences will also be persisted - the VICS Server will manage User profiles and preferences for every client it supports.
+__Note__: the current VICS Server persists a User's CPRS preferences. In the final build of the Web Client and VICS Server, a user's Web Client preferences will also be persisted.
 
 Note how the Patient has no allergies ...
 
 ![AllergiesWidgetEmpty -width70](images/webclient/AllergiesWidgetEmpty.png)
 
-_Build 1_ of the Web Client let's you add one. Click on the _+_ icon on the title bar of the Allergy Widget and a popup will show which allows you to search for Allergins. It automatically searches once you've typed three or more letters ...
+_Build 1_ of the Web Client let's you add one. Click on the _pencil_ icon on the title bar of the Allergy Widget and a popup will show which allows you to search for Allergins. It automatically searches once you've typed three or more letters ...
 
 ![AllergyEnterSearchChoc -width70](images/webclient/AllergyEnterSearchChoc.png)
 
