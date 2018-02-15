@@ -7,9 +7,9 @@ title: VICS Web1 Demo
 
 The following demonstrates [1] the basic functionality and layout of the _VICS Client_ and [2] shows basic CPRS interaction with the Web Client. 
 
-It employs [a] a _"nodeVISTA"_ which supports a REST interface for Patient data access and entry, [b] a Web Service which implements basic meta-data services and proxies to _nodeVISTA_ for Patient Data, [c] the VICS Web Client and [d] CPRS. This collection of components are housed on a cloud-based VM. 
+It employs [a] a _"nodeVISTA"_ which supports a REST interface for Patient data access and entry, [b] a Web Service which implements basic meta-data services and proxies to _nodeVISTA_ for Patient Data, [c] the VICS Web Client and [d] CPRS. These components are housed on a cloud-based VM. 
 
-The Web Client will cover all the relevant functionality of CPRS in a web-friendly form and deliver modern visual motifs and features missing from CPRS such as auto-complete in search dialogs and ease of personalization.
+Ultimately, the Web Client will cover all the relevant functionality of CPRS in a web-friendly form and deliver modern visual motifs and features missing from CPRS such as auto-complete in search dialogs and ease of personalization. This demonstration illustrates the functionality delivered in Build 1.
 
 __INSERT DIAGRAM__
 
