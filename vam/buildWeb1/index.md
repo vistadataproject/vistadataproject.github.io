@@ -9,6 +9,8 @@ The VICS Client [a] establishes an open source, industry-standard development fr
 
 This Web Client will cover all the relevant functionality of CPRS in a web-friendly form and deliver modern visual motifs and features missing from CPRS such as auto-complete in search dialogs and ease of personalization.
 
+![ComboVICS -width70](images/ComboVICS.png)
+
 VAM has three _PDE Clinical Web Client_ (_"VICS Client"_) releases:
 
 Release | Name | Content | Due
