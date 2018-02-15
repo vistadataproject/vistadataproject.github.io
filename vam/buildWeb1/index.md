@@ -23,7 +23,7 @@ __Demo__:
 
 Both the VICS Server and Client are being developed in parallel. The focus of the first two builds of VICS Server is RPC Emulation to provide CPRS support. It will not gain REST services until its third build. 
 
-So VICS Client development depends on a lightweight _VICS Test Server_ which [1] proxies Patient service calls to a set of in-VISTA services developed during the VISTA Data Project and which has hard coded, simple versions of Meta Services. This ligthweight _VICS Test Server_ allows development of the basic framework and functionality of the VICS Client independent of VICS Server development. 
+So VICS Client development depends on a lightweight _VICS Test Server_ which [1] proxies Patient service calls to a set of in-VISTA services developed during the VISTA Data Project and which has hard coded, simple versions of Meta Services. This lightweight _VICS Test Server_ allows development of the basic framework and functionality of the VICS Client independent of VICS Server development. 
 
 The first Web Client build (W1) relies completely on this test server. In its second build (W2), the client will migrate to VICS Server proper for meta services. In its final build (W3), all interactions will be with the VICS Server.
 

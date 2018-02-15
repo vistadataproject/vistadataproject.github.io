@@ -7,7 +7,7 @@ title: VICS Web1 Demo
 
 The following demonstrates [1] the basic functionality and layout of the _VICS Client_ and [2] shows basic CPRS compatibility with the Web Client. 
 
-Ultimately, the Web Client will cover all the relevant functionality of CPRS in a web-friendly form and deliver modern visual motifs and features missing from CPRS such as auto-complete in search dialogs and ease of personalization. This demonstration illustrates the functionality delivered in the first build (W1) which uses a lightweight VICS Test Server as a stand-in for the VICS Server proper.
+Ultimately, the Web Client will cover all the relevant functionality of CPRS in a web-friendly form and deliver modern visual motifs and features missing from CPRS such as auto-complete in search dialogs and ease of personalization. This demonstration illustrates the functionality delivered in the first client build (W1) which uses a lightweight VICS Test Server as a stand-in for the VICS Server proper.
 
 ![Web1Demo](../images/Web1Demo.png)
 
