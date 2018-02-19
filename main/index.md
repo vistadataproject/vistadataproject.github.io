@@ -3,7 +3,7 @@ layout: default
 title: OneVA Cloud - Veteran Integrated Care Services
 ---
 
-![](images/vdp-vics-main-2018-02-19v1.png)
+![](images/vdp-vics-main-20180219v2.png)
 
 ## VA Modernization with Continuity of Care
 The Veterans Information Systems Technology Architecture ([VISTA](https://en.wikipedia.org/wiki/VistA)) is the comprehensive  longitudinal  clinical, business, and administrative information system of the U.S. Veterans Health Administration ([VHA](https://www.va.gov/health/aboutVHA.asp)). 130 VISTA instances support the operations of over 1200 VA hospitals and clinics nationwide.
