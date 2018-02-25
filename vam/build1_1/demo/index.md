@@ -9,9 +9,9 @@ The following _CPRS Coversheet Demo_ illustrates the _Veteran Integrated Care Se
 
 The demonstration involves five components - the pre-existing _VISTA Server_ ("Demo VISTA") and its client _CPRS_ and the new _VICS Server_, _RPC Router_ and _RPC Router Manager_. Relevant meta data of Demo VISTA is synchronized with the VICS Server. To run the demonstration yourself, you'll first need to follow the [VICS Vagrant Setup instructions](/vam/build1_1/setupVagrant). 
 
-![build1_1Demo](images/build1-demo-vics-server.png)
+![build1_1Demo-vics-server -width70](images/build1-demo-vics-server.png)
 
-The _VICS Server_ is layered - Remote Procedure Call (RPC) Emulation is built over well designed  Services. These Services normalize and refine the cryptically-named and redundantly-implemented RPCs and rely on normalized copies of data from supported VISTAs.
+The _VICS Server_ is *layered* - Remote Procedure Call (RPC) Emulation is built over well designed  Services. These Services normalize and refine the cryptically-named and redundantly-implemented RPCs,  and rely on normalized copy of data from supported VISTAs modelled  (as the Master VistA Data Model, or MVDM) on industry-standard JSON.
 
 In addition to establishing basic routing and server infrastructure, the first builds focused on the Meta or non patient data of VISTA and the RPCs that access that data ("Meta Data RPCs"). Specifically, they built out a generic _Parameter Service_ to hold system configurations, a basic _Time Service_, a _User Service_ for provider information, a _Location Service_ for managing clinical care locations, an _Identifier Service_ for working between local VISTA identifiers and national equivalents, a _Lexicon Service_ for medical concept management and meta-data support for the four clinical services required in VICS - Allergy, Problem, Vital and Outpatient Pharmacy. 
 
@@ -144,3 +144,4 @@ The _Router Manager_ shows this quick _connect-logon-patient select (soft and ha
 ![RM_7TABS](images/RM_7TABS.png)
 
 and by Build 2, the majority of content in all 7 pages will be emulated or explicitly managed in the VICS Server.
+
