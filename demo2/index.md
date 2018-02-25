@@ -11,30 +11,6 @@ The following demonstration is an example of a Veteran Integrated Cloud Service 
 ![vics-workload ](images/vics-workload-v5.png)
 
 
-30
-
-![vics-workload -witth30](images/vics-workload-v5.png)
-
-40
-
-![vics-workload -witth40](images/vics-workload-v5.png)
-
-50
-
-![vics-workload -witth50](images/vics-workload-v5.png)
-
-70
-
-![vics-workload -width70](images/vics-workload-v5.png)
-
-80
-
-![vics-workload -witth80](images/vics-workload-v5.png)
-
-90
-![vics-workload -width90](images/vics-workload-v5.png)
-
-
 ## VISTA is a lot more than an EHR
 
 VISTA is a lot more than a Clinical information system (EHR). It also provides much of VA's Non-Clinical Services for managing hospitals and clinics. One key example is _Workload Measurement_, the accounting for work performed by providers for patients. Such measurement helps the VA manage hospital costs, allocate resources and staffing, and is the basis for billing.
@@ -55,7 +31,7 @@ The Veteran Integrated Cloud Service (VICS) for Workload and its Browser client 
 
 The _Service_ houses a typical VA workload dataset generated from a statistical analysis of production VISTAs. The dataset depicts the workload of a fictional _IOWA Hospital_ which matches the attributes of a typical VA medical center. The _Browser_ allows you to examine workload based on time, location and patient.
 
-![](images/workloadServiceBanner.jpg)
+![workloadBanner -width70](images/workloadServiceBanner.jpg)
 
 The following guides show the _Workload Browser_ examining workload based on [__Location__](location) and [__Patient__](patient).
 
