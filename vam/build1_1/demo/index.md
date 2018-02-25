@@ -7,11 +7,11 @@ title: VICS Demo 1.1 (Build 1.1)
 
 The following _CPRS Coversheet Demo_ illustrates the _Veteran Integrated Care Services (VICS) Architecture_. This architecture enables the incremental migration of VA provider workflow from 130 separate, legacy VISTA Servers to one set of enterprise-wide care services. It addresses how to centralize relevant VISTA data while ensuring continued support for CPRS, the VA's primary client for physicians.
 
-The demonstration involves five components - the pre-existing _VISTA Server_ ("Demo VISTA") and its client _CPRS_ and the new _VICS Server_, _RPC Router_ and _RPC Router Manager_. Relevant meta data of Demo VISTA is synchronized with the VICS Server. To run the demonstration yourself, you'll first need to follow the [VICS Vagrant Setup instructions](/vam/build1_1/setupVagrant). 
+The demonstration involves five components - the pre-existing _VISTA Server_ ("Demo VISTA") and its client _CPRS_  (gray) and the new _VICS Server_, _RPC Router_ and _RPC Router Manager_ (blue). Relevant meta data of Demo VISTA is synchronized with the VICS Server. To run the demonstration yourself, you'll first need to follow the [VICS Vagrant Setup instructions](/vam/build1_1/setupVagrant). 
 
-![build1_1Demo-vics-server -width95](images/build1-demo-vics-server-v2.png)
+![build1_1Demo-vics-server -width95](images/vam-vics-build11-demo-v5.png)
 
-The _VICS Server_ is *layered* - Remote Procedure Call (RPC) Emulation is built over well designed  Services. These Services normalize and refine the cryptically-named and redundantly-implemented RPCs,  and rely on normalized copy of data from supported VISTAs modelled  (as the Master VistA Data Model, or MVDM) on industry-standard JSON.
+The _VICS Server_ is *layered* - Remote Procedure Call (RPC) Emulation is built over well designed  Services. These Services normalize and refine the cryptically-named and redundantly-implemented RPC logic, and rely on a normalized copy of data from supported VISTAs modelled (as the Master VISTA Data Model - MVDM) and stored on industry-standard JSON.
 
 In addition to establishing basic routing and server infrastructure, the first builds focused on the Meta or non patient data of VISTA and the RPCs that access that data ("Meta Data RPCs"). Specifically, they built out a generic _Parameter Service_ to hold system configurations, a basic _Time Service_, a _User Service_ for provider information, a _Location Service_ for managing clinical care locations, an _Identifier Service_ for working between local VISTA identifiers and national equivalents, a _Lexicon Service_ for medical concept management and meta-data support for the four clinical services required in VICS - Allergy, Problem, Vital and Outpatient Pharmacy. 
 
