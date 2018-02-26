@@ -2,7 +2,7 @@
 layout: default
 title: One VA Cloud - Veteran Integrated Care Services
 ---
-![vdp-transition -width95](assets/vam-vics-main-20180225-v6.png)
+![vdp-transition -width95](assets/vdp-vics-main-20180226-v1.png)
 
 
 ## VA Modernization with Continuity of Care
