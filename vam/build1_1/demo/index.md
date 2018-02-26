@@ -9,7 +9,7 @@ The following _CPRS Coversheet Demo_ illustrates the _Veteran Integrated Care Se
 
 The demonstration involves five components - the pre-existing _VISTA Server_ ("Demo VISTA") and its client _CPRS_  (gray) and the new _VICS Server_, _RPC Router_ and _RPC Router Manager_ (blue). Relevant meta data of Demo VISTA is synchronized with the VICS Server. To run the demonstration yourself, you'll first need to follow the [VICS Vagrant Setup instructions](/vam/build1_1/setupVagrant). 
 
-![build1_1Demo-vics-server](images/vics-server-architecture-v2.png)
+![build1_1Demo-vics-server](images/vics-server-architecture-demo1.png)
 
 The _VICS Server_ is *layered* - Remote Procedure Call (RPC) Emulation is built over well designed  Services. These Services normalize and refine the cryptically-named and redundantly-implemented RPC logic, and rely on a normalized copy of data from supported VISTAs modelled (as the Master VISTA Data Model - MVDM) and stored on industry-standard JSON.
 

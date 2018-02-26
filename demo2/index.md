@@ -8,12 +8,18 @@ title: Workload "DSS" VICS Demo
 The following demonstration is an example of a Veteran Integrated Cloud Service (VICS) for Workload. This provides a single, centralized cloud-based Workload service with the identical functionality of the composite of Workload functionality of the 130 decentralized VISTA systems.
 
 
-![vics-workload](images/vics-workload-v3.png)
+![vics-workload](images/vics-workload-cloud-web.png)
 
 
 ## VISTA is a lot more than an EHR
 
-VISTA is a lot more than a Clinical information system (EHR). It also provides much of VA's Non-Clinical Services for managing hospitals and clinics. One key example is _Workload Measurement_, the accounting for work performed by providers for patients. Such measurement helps the VA manage hospital costs, allocate resources and staffing, and is the basis for billing.
+VISTA is a lot more than a Clinical information system ("EHR"). In fact, more than half of VISTA function and data is Non-Clinical and Business ("ERP") related. This VISTA data is the source of information for the financial, regulatory, quality, safety, access, and efficiency reports provided to Congressional, Federal, State, and local VA facilities to ensure the highest quality of VA- and Veteran-specific care and benefits.
+
+![vista-is-mostly-business](images/vista-is-mostly-business2.png)
+
+![vista-function-types](images/vista-functionality-grid.png)
+
+One specific example is _Workload Measurement_, the accounting for work performed by providers for patients. Such measurement helps the VA manage hospital costs, allocate resources and staffing, and is the basis for billing.
 
 Like much else in VISTA, the applications and utilities for Workload are bound up with other functionality. As part of separating VISTA's Clinical and Non Clinical function, the VISTA Data Project (VDP) has created a _Veteran Workload Service_ and _Browser_ which distinguish and demonstrate how VISTA manages and monitors workload. Both service and browser provide a basis for VA-wide, VISTA-system independent workload management. Such a National Service would centralize workload collection, storage and presentation.
 
