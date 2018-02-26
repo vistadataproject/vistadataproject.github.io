@@ -32,6 +32,6 @@ The VISTA Data Project (VDP) has progressed in two phases.
 
 ## VA Modernization in Context
 
-![internet-roadmap-to-evolution](assets/va-roadmap-of-the-internet.png)
+![internet-roadmap-to-evolution](assets/internet-roadmap-for-va-modernization.png)
 
 
