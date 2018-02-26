@@ -13,15 +13,17 @@ The following demonstration is an example of a Veteran Integrated Cloud Service 
 
 ## VISTA is a lot more than an EHR
 
-VISTA is a lot more than a Clinical information system ("EHR"). In fact, more than half of VISTA function and data is Non-Clinical and Business ("ERP") related. This VISTA data is the source of information for the financial, regulatory, quality, safety, access, and efficiency reports provided to Congressional, Federal, State, and local VA facilities to ensure the highest quality of VA- and Veteran-specific care and benefits.
+VISTA is a lot more than a Clinical information system ("EHR"). In fact, more than half of VISTA function and data is Non-clinical and Business ("ERP") related. This VISTA functionality generates the thousands of required financial, regulatory, quality, safety, access, and efficiency reports to Congress, to Federal and State regulators, and all 1200+ VA care facilities to ensure the highest quality and access to VA- and Veteran-specific care and benefits.
 
 ![vista-is-mostly-business](images/vista-is-mostly-business2.png)
 
-![vista-function-types](images/vista-functionality-grid.png)
+![vista-function-types](images/vista-functionality-types.png)
 
-One specific example is _Workload Measurement_, the accounting for work performed by providers for patients. Such measurement helps the VA manage hospital costs, allocate resources and staffing, and is the basis for billing.
+One example of Non-clinical functionality in VISTA is _Workload Measurement_, the accounting for work performed by providers for patients. Such measurement helps the VA manage hospital costs, allocate resources and staffing, and is the basis for billing.
 
-Like much else in VISTA, the applications and utilities for Workload are bound up with other functionality. As part of separating VISTA's Clinical and Non Clinical function, the VISTA Data Project (VDP) has created a _Veteran Workload Service_ and _Browser_ which distinguish and demonstrate how VISTA manages and monitors workload. Both service and browser provide a basis for VA-wide, VISTA-system independent workload management. Such a National Service would centralize workload collection, storage and presentation.
+Like much else in VISTA, the applications and utilities for Workload are bound up with other functionality. As part of separating VISTA's Clinical (EHR) and Non Clinical (ERP) function, the VISTA Data Project (VDP) has created a _Veteran Workload Service_ and _Browser_ which distinguish and demonstrate how VISTA manages and monitors workload. 
+
+Both the Workload Service and the Workload Browser provide a basis for VA-wide, VISTA-system independent workload management. Such a National Service would centralize workload collection, storage and presentation.
 
 ## About Workload in the VA and VISTA
 
