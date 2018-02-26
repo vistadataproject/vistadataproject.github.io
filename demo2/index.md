@@ -37,7 +37,7 @@ and
 
 The Veteran Integrated Cloud Service (VICS) for Workload and its Browser client are available at [https://workload.vistadataproject.info/](https://workload.vistadataproject.info) (login required).
 
-![vics-workload-demo](images/vics-workload-demo-v1.png)
+![vics-workload-demo](images/vics-workload-ehrm.png)
 
 
 The _Service_ houses a typical VA workload dataset generated from a statistical analysis of production VISTAs. The dataset depicts the workload of a fictional _IOWA Hospital_ which matches the attributes of a typical VA medical center. The _Browser_ allows you to examine workload based on time, location and patient.
