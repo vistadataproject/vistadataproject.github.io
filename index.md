@@ -2,7 +2,7 @@
 layout: default
 title: VAM - Veteran Continuity of Care during EHRM transition
 ---
-![vdp-transition -width95](assets/vam-ehrm-main-20180227-v2.png)
+![vdp-transition -width95](assets/vam-ehrm-main-20180227-v3.png)
 
 
 ## Continuity of Veteran Care during EHRM Transition
