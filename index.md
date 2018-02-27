@@ -19,4 +19,4 @@ __Strategic Benefits__:
   * Implement commodity commercial clinical (EHR) and business (ERP) systems, while preserving veteran-specific care and services
   * Move from disparate data centers to single Fedramp-approved cloud without disturbing veteran care
 
-__Show Me:__ browse through and run VAM's [CPRS](/builds/build1_1/demo/) and [Web Client](/builds/buildWeb1/demo/) Demos.
+__Show Me:__ browse through and run VAM's [CPRS](/vam/build1_1/demo/) and [Web Client](/vam/buildWeb1/demo/) Demos.
