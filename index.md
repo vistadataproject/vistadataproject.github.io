@@ -6,10 +6,8 @@ title: VAM - Veteran Continuity of Care during EHRM transition
 
 
 ## Continuity of Veteran Care during EHRM Transition
-The Veterans Information Systems Technology Architecture ([VISTA](https://en.wikipedia.org/wiki/VistA)) is the comprehensive  longitudinal  clinical, business, and administrative information system of the U.S. Veterans Health Administration ([VHA](https://www.va.gov/health/aboutVHA.asp)). 130 VISTA instances support the operations of over 1200 VA hospitals and clinics nationwide.
 
-__VISTA Adaptive Maintenance (VAM)__ provides a cloud-based roadmap and software for maintaining VISTA and the VA workflows it supports during the multi-year transition to VA's new EHRM. VAM enables VA to move from 130 separate, complex, unmaintainable VISTA systems to modern, simplified, commercially-managed centralized cloud-based services.
-
+VISTA Adaptive Maintenance (VAM)  is a Veteran-focused Integration Program (VIP) that provides a cloud-based roadmap and software for maintaining VISTA and the VA workflows it supports in an efficient, cost-effective manner during the multi-year transition to VA’s new commercial EHR. VAM enables VA to transition from 130 separate, complex, unmaintainable VISTA systems  to a single, secure, commercially-managed set of centralized cloud-based services - Veteran Integrated Care Services (VICS) -  while maintaining full backwards-compatibility and continuity of care and workflows of the Computerized Patient Record System (CPRS). VAM will be hosted in production within the VA’s Enterprise Cloud (VAEC) using Amazon Web Services (AWS).
 
 __Strategic Benefits__:
 
