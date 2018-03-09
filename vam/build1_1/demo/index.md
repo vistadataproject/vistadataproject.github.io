@@ -7,11 +7,11 @@ title: VICS Demo 1.1 (Build 1.1)
 
 The following _CPRS Coversheet Demo_ illustrates the _Veteran Integrated Care Services (VICS) Architecture_. This architecture enables the incremental migration of VA provider workflow from 130 separate, legacy VISTA Servers to one set of enterprise-wide care services. It addresses how to centralize relevant VISTA data while ensuring continued support for CPRS, the VA's primary client for physicians.
 
-The demonstration involves five components - the pre-existing _VISTA Server_ ("Demo VISTA") and its client _CPRS_  (gray) and the new _VICS Server_, _RPC Router_ and _RPC Router Manager_ (blue). Relevant meta data of Demo VISTA is synchronized with the VICS Server. To run the demonstration yourself, you'll first need to follow the [VICS Vagrant Setup instructions](/vam/build1_1/setupVagrant). 
+The demonstration involves five components - the pre-existing _VISTA Server_ ("Demo VISTA") and its client _CPRS_ and the new _VICS Server_, _RPC Router_ and _RPC Router Manager_. Relevant meta data of Demo VISTA is synchronized with the VICS Server. To run the demonstration yourself, you'll first need to follow the [VICS Vagrant Setup instructions](/vam/build1_1/setupVagrant). 
 
-![build1_1Demo-vics-server](images/vics-server-architecture-demo1.png)
+![build1_1Demo](images/build1_1Demo.png)
 
-The _VICS Server_ is *layered* - Remote Procedure Call (RPC) Emulation is built over well designed  Services. These Services normalize and refine the cryptically-named and redundantly-implemented RPC logic, and rely on a normalized copy of data from supported VISTAs modelled (as the Master VISTA Data Model - MVDM) and stored on industry-standard JSON.
+The _VICS Server_ is layered - Remote Procedure Call (RPC) Emulation is built over well designed  Services. These Services normalize and refine the cryptically-named and redundantly-implemented RPCs and rely on normalized copies of data from supported VISTAs.
 
 In addition to establishing basic routing and server infrastructure, the first builds focused on the Meta or non patient data of VISTA and the RPCs that access that data ("Meta Data RPCs"). Specifically, they built out a generic _Parameter Service_ to hold system configurations, a basic _Time Service_, a _User Service_ for provider information, a _Location Service_ for managing clinical care locations, an _Identifier Service_ for working between local VISTA identifiers and national equivalents, a _Lexicon Service_ for medical concept management and meta-data support for the four clinical services required in VICS - Allergy, Problem, Vital and Outpatient Pharmacy. 
 
@@ -27,19 +27,19 @@ It opens to an empty _RPC Events_ tab which lists the RPCs seen by the Router. T
 
 Click on the _Management_ tab. The first thing you see is a toggle for controlling whether supported RPCs are routed to the _VICS Server_ or sent to VISTA ...
 
-![RM Management Top -width70](images/RM_1_MgmtTop.png)
+![RM Management Top](images/RM_1_MgmtTop.png)
 
 It defaults to _On_ which means the Router will dispatch select RPCs to the Server. The second part of the Management tab lists the RPCs supported by the Server ...
 
-![RM Management Supported Start -width70](images/RM_1_MgmtSupStart.png)
+![RM Management Supported Start](images/RM_1_MgmtSupStart.png)
 
 This list is fetched from the Server by the Router using a custom RPC. In _Build 1.1_, the Server supports [_103 VISTA RPCs_](../vamB1_1RPCsEmulated.md). In other words, 103 RPCs have been migrated from VISTA to centralized services ...
 
-![RM Management Supported End -width70](images/RM_1_MgmtSupEnd.png)
+![RM Management Supported End](images/RM_1_MgmtSupEnd.png)
 
 Now, switch back to the _RPC Events_ tab. To run this part of the demo, CPRS must be installed on your local machine. Start _CPRS_ ...
 
-![CPRS Start -width70](images/CPRS_Start.png)
+![CPRS Start](images/CPRS_Start.png)
 
 CPRS should be connected to _10.2.2.222:9011_. After connecting, CPRS presents a login screen ...
 
@@ -69,7 +69,7 @@ Now briefly go back to CPRS and login as Dr Robert Alexander using the following
 
 Back in the _Router Manager_, RPC after RPC cascades through the _RPC Event_ tab. CPRS is very "chatty" ...
 
-![RM Post Logon -width70](images/RM_3_5TAB_LIST_HIGHUSERINFO.png)
+![RM Post Logon](images/RM_3_5TAB_LIST_HIGHUSERINFO.png)
 
 Before patient selection, CPRS has sent five pages of RPCs, some handled in _VISTA_, others - those bolded - dispatched to the _VICS Server_. _ORWU DT_ was sent more than once by CPRS - CPRS asks for the date and time many many times ...
 
@@ -93,11 +93,11 @@ Back in CPRS, you are asked to select a Patient ...
 
 With a single click ("soft select") on _Carter, David_, you'll see that this patient's demographics appear to the right of the selection box ...
 
-![CPRS Patient Select Open -width70](images/CPRS_PSEL_See_Demos.png)
+![CPRS Patient Select Open](images/CPRS_PSEL_See_Demos.png)
 
 The _Router Manager_ shows this information comes from three RPC calls ...
 
-![DM_3_1_SINGLE_CLICK_SEL_LIST -width70](images/DM_3_1_SINGLE_CLICK_SEL_LIST.png)
+![DM_3_1_SINGLE_CLICK_SEL_LIST](images/DM_3_1_SINGLE_CLICK_SEL_LIST.png)
 
 The main RPC, _ORWPT ID INFO_, is resolved in VISTA like other Patient data RPCs ...
 
@@ -111,13 +111,13 @@ Clicking _Ok_ ("hard select") will bring you to the Patient's "Coversheet" ...
 
 and fill another tab of RPCs in the Router Manager ...
 
-![RM_6TABS -width70](images/RM_6TABS.png)
+![RM_6TABS](images/RM_6TABS.png)
 
 The VICS Server stores coversheet configurations for different users in its _Parameter Service_. 
 
 __Note__: in VICS, the Parameter Service holds configurations of one VISTA but this and other VICS services have been built to store and unambiguously manage data from all 130 VA VISTAs.
 
-![RM_4_COVERSHEET_TO_RPCS -width70](images/RM_4_COVERSHEET_TO_RPCS.png)
+![RM_4_COVERSHEET_TO_RPCS](images/RM_4_COVERSHEET_TO_RPCS.png)
 
 Configurations are returned in the VICS-supported RPC, _ORWCV1 COVERSHEET LIST_, ...
 
@@ -131,7 +131,7 @@ This and other coversheet invoked Patient Data RPCs will move to the VICS Server
 
 Finally, when you exit from CPRS ...
 
-![CPRS Exit -width70](images/CPRS_Exit.png)
+![CPRS Exit](images/CPRS_Exit.png)
 
 the _Router Manager_ will show the RPC sign out messages ending in _BYE_ ...
 
@@ -141,7 +141,6 @@ Once CPRS disconnects, the Router will close its connection to both VISTA and th
 
 The _Router Manager_ shows this quick _connect-logon-patient select (soft and hard)-exit_ sequence took up 7 pages of RPCs ...
 
-![RM_7TABS -width70](images/RM_7TABS.png)
+![RM_7TABS](images/RM_7TABS.png)
 
 and by Build 2, the majority of content in all 7 pages will be emulated or explicitly managed in the VICS Server.
-
