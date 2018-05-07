@@ -15,7 +15,7 @@ VAM will be deployed within the VA’s Enterprise Cloud (VAEC) using Amazon Web 
 
 __Strategic Benefits__:
 
-  * Minimize cost, complexity, and risks of maintaining each of the 130 distinct legacy VistA systems during multi-year commercial clinical (EHR) and business (ERP) transition.
+  * Minimize cost, complexity, and risks of maintaining each of the 100+ distinct legacy VistA systems during multi-year commercial EHR transition.
   * Current VA clients (CPRS/JLV) and workflows fully supported and secured
   * Safely and incrementally migrate and retire VistA functionality enterprise-wide, with *no loss of veteran-specific care or services*
   * Implement commodity commercial clinical (EHR) and business (ERP) systems, while preserving veteran-specific care and services
