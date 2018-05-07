@@ -1,0 +1,6 @@
++ official Mongo JSON Schema backing for all
++ be backward compat for 1.1 FMQL
++ remove ALL tmp transforms
++ reports
+
+[DO AROUND 442 caching]

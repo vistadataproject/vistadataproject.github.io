@@ -6,17 +6,18 @@ title: VAM - Veteran Integrated Continuity of Care Cloud Services (VICS)
 ![vam-aws -width95](assets/vam-aws-main-v1.png)
 
 
-__VISTA Adaptive Maintenance__ (VAM) provides a cloud-based roadmap and software for maintaining VistA and the VA workflows it supports using straightforward off-the-shelf commercial cloud services and microservices during the multi-year transition to VA’s new commercial EHR.
 
-VAM enables VA to transition the many distinct, decentralized, legacy VistA systems to a single set of centralized cloud-based microservices - Veteran Integrated Care Services (VICS) - while maintaining backwards-compatibility and continuity of care and services of the VA's Computerized Patient Record System (CPRS).
+__VISTA Adaptive Maintenance__ (VAM) provides a cloud-based roadmap and software for maintaining VistA and the VA workflows it supports using straightforward off-the-shelf commercial cloud services and microservices during the multi-year transition to VA’s new commercial EHR. 
 
 VAM will be deployed within the VA’s Enterprise Cloud (VAEC) using Amazon Web Services (AWS) and Amazon CloudWatch.
 
 
 __Strategic Benefits__:
 
+
   * Minimize cost, complexity, and risks of maintaining each of the 100+ distinct legacy VistA systems during multi-year commercial EHR transition.
   * Current VA clients (CPRS/JLV) and workflows fully supported and secured
+  * Centralized, cloud-based, off the shelf monitoring and security of VistA Client activity
   * Safely and incrementally migrate and retire VistA functionality enterprise-wide, with *no loss of veteran-specific care or services*
   * Implement commodity commercial clinical (EHR) and business (ERP) systems, while preserving veteran-specific care and services
   * Move from disparate data centers to single Fedramp-approved commercial cloud without disturbing veteran care
