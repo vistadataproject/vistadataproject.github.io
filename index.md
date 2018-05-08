@@ -3,7 +3,7 @@ layout: default
 title: VAM - Veteran Integrated Continuity of Care Cloud Services (VICS)
 ---
 
-![vam-aws -width95](assets/vam-aws-main-v2.png)
+![vam-aws -width95](assets/vam-aws-main-v1.png)
 
 
 
