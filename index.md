@@ -21,16 +21,12 @@ The VISTA Data Model is in turn normalized across all local VISTA system data mo
 ![vdp-transition](https://github.com/vistadataproject/documents/blob/master/images/vdp-transition-20170607d.png)
 
 *The figure above summarizes the evolution from __thousands of unique, inconsistent, insecure, unidirectional code-based interfaces__ to that of a __single, standardized, secure, server-side, symmetric (bidirectional), service-based, master data model-driven interface__.*   
-
-### Technical
-For a technical overview of the VistA Data Project, [click here](https://github.com/vistadataproject/documents/tree/master/Background)
+__For a technical overview__ of the VistA Data Project, [click here](https://github.com/vistadataproject/documents/tree/master/Background)
 
 
-### Centralized, Cloud-based services
+## Towards centralized, cloud-based services
 
-The VistA Adaptive Maintenance (VAM) project leverages the VistA Data Project's normalized master model-driven interface to VistA, and provides a cloud-based roadmap and software for maintaining VistA and the VA workflows it supports using straightforward off-the-shelf commercial cloud services and microservices. VAM will be deployed within the VA’s Enterprise Cloud using Amazon Web Services.  
-
-For the current state of VistA's migration to centralized cloud-based services, click here:  http://vistaadaptivemaintenance.info/
+The VistA Adaptive Maintenance project leverages the VistA Data Project's  master model-driven interface to VistA, and provides a cloud-based roadmap and software for maintaining VistA and the VA workflows it supports using straightforward off-the-shelf commercial cloud services and microservices.  For the current state of VistA's migration to centralized cloud-based services, click here:  http://vistaadaptivemaintenance.info/
 
 
 
