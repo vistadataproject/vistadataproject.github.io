@@ -7,7 +7,7 @@ title: VistA Data Project - Continuity of Veteran Data
 
 # VISTA Data Project
 
-The Veterans Information Systems Technology Architecture ([VistA](https://en.wikipedia.org/wiki/VistA)) is the U.S. Department of Veterans Affairs integrated longitudinal  clinical, business, and administrative information system that has supported the operations of the 1200+ VA hospitals and clinics nationwide for the past 35 years.  [ [VISTA Background](https://github.com/vistadataproject/documents/tree/master/Background/vista) ]. 
+The Veterans Information Systems Technology Architecture ([VistA](https://en.wikipedia.org/wiki/VistA)) is the U.S. Department of Veterans Affairs integrated longitudinal  clinical, business, and administrative information system that has supported the operations of the 1200+ VA hospitals and clinics nationwide for the past 35 years.  [ [VistA Background](https://github.com/vistadataproject/documents/tree/master/Background/vista) ]. 
 
 The 130 VistA systems in operation today encapsulate over three decades of VA institutional knowhow and Veteran data, which is necessary preserve for the lifetime and continuity of care for all Veterans - which could be many more decades to come.  
 
