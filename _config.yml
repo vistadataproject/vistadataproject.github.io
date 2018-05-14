@@ -3,7 +3,7 @@
 permalink:           /blog/:title
 
 # Setup
-title:               VistA Data Project
+title:               VISTA Data Project
 tagline:             Continuity of Veteran Care 
 url:                 http://vistadataproject.info
 paginate:            1
