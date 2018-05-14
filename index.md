@@ -18,12 +18,12 @@ __In the VistA Data Project__,  VistA's native operational clinical and business
 <br><br>
 ![vdp-transition](assets/vdp-transition-20170607d.png)
 
-*The figure above summarizes the evolution from __thousands of unique, inconsistent, insecure, unidirectional code-based interfaces__ to that of a __single, secure, server-side, symmetric (bidirectional), service-based, web-standard, master data model-driven interface__.* For more details on the VistA Data Project, [click here](https://github.com/vistadataproject/documents/tree/master/Background)
+*The figure above summarizes the evolution from __thousands of unique, inconsistent, insecure, unidirectional code-based interfaces__ to that of a __single, secure, server-side, symmetric (bidirectional), service-based, web-standard, master data model-driven interface__.* For more details on the VistA Data Project, [click here](https://github.com/vistadataproject/documents/tree/master/Background#vista-data-project)
 
-## Supporting cloud-based veteran services
 
-Leveraging the VistA Data Project's master model-driven service interface to VistA, the VistA Adaptive Maintenance (VAM) project provides a cloud-based roadmap and software for maintaining VistA and the VA workflows it supports using straightforward off-the-shelf commercial cloud services and microservices.
+## Supporting cloud-based veteran integrated care services
 
+Leveraging the VistA Data Project's web-standard, model-driven service interface to VistA's data, the VistA Adaptive Maintenance (VAM) project provides a cloud-based roadmap and software for maintaining VistA and the VA workflows it supports using straightforward off-the-shelf commercial cloud services and microservices.  
 
 For the state of VistA's migration to centralized cloud-based services, see [VistA Adaptive Maintenance](http://vistaadaptivemaintenance.info/)
 
