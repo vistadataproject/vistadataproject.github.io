@@ -26,7 +26,9 @@ __For a technical overview__ of the VistA Data Project, [click here](https://git
 
 ## Towards centralized, cloud-based services
 
-The VistA Adaptive Maintenance project leverages the VistA Data Project's  master model-driven interface to VistA, and provides a cloud-based roadmap and software for maintaining VistA and the VA workflows it supports using straightforward off-the-shelf commercial cloud services and microservices.  For the current state of VistA's migration to centralized cloud-based services, click here:  http://vistaadaptivemaintenance.info/
+The VistA Adaptive Maintenance project leverages the VistA Data Project's  master model-driven interface to VistA, and provides a cloud-based roadmap and software for maintaining VistA and the VA workflows it supports using straightforward off-the-shelf commercial cloud services and microservices.  
+
+For the current state of VistA's migration to centralized cloud-based services, click here:  http://vistaadaptivemaintenance.info/
 
 
 
