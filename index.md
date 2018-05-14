@@ -9,11 +9,13 @@ title: VistA Data Project - Continuity of Veteran Data
 
 The Veterans Information Systems Technology Architecture ([VistA](https://en.wikipedia.org/wiki/VistA)) is the U.S. Department of Veterans Affairs integrated longitudinal  clinical, business, and administrative information system that has supported the operations of the 1200+ VA hospitals and clinics nationwide for the past 35 years.  [ [VistA Background](https://github.com/vistadataproject/documents/tree/master/Background/vista) ]. 
 
-The 130 VistA systems in operation today encapsulate over three decades of VA- and Veteran-specific institutional know-how and data, which is necessary preserve *in fully computable form* for the *lifetime and continuity of care for all Veterans* - which is for many decades to come.  VistA's data, however, is currently opaque an uniquely defined and challenging to access in each of the distinct systems.
+The 130 VistA systems in operation today encapsulate over three decades of VA- and Veteran-specific institutional know-how and data, which is necessary preserve *in fully computable form* for the *lifetime and continuity of care for all Veterans* - which is for many decades to come.  
 
-VistA's data model - the roadmap to all of VA's institutional, business, and clinical processes and data - has evolved organically over the past 35 years, but has not been surfaced and leveraged in computable form.  
+VistA's data, however, is currently opaque, uniquely defined, and challenging to access in each of the distinct systems. VistA's data model - the roadmap to all of VA's institutional, business, and clinical processes and data - has evolved organically within each system over the past 35 years, but has not been surfaced and leveraged in modern, computable form.  
 
-In the VistA Data Project,  VistA's native operational clinical and business data model - the VistA Data Model (VDM) -  is comprehensively exposed, enriched, and operationalized as a modern, web-standard, server-side interface for all VistA data. The VDM is in turn normalized across all local VistA systems to create a national, standardized Master Veteran Data Model (MVDM), which allows *secure read-write transactions* across *all VA VistA systems* with a *single master-model-driven mechanism*, MVDM Services: 
+In the VistA Data Project,  VistA's native operational clinical and business model - the VistA Data Model -  is comprehensively exposed, enriched, and operationalized as a modern, web-standard, computable, server-side interface for all VistA data. 
+
+The VistA Data Model is in turn normalized across all local VistA systems to create a national, standardized Master Veteran Data Model (MVDM), which allows *secure read-write transactions* across *all VA VistA systems* with a *single master-model-driven mechanism*, MVDM Services: 
 
 <br><br>
 ![vdp-transition](https://github.com/vistadataproject/documents/blob/master/images/vdp-transition-20170607d.png)
