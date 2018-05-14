@@ -13,9 +13,7 @@ The 130 VistA systems in operation today encapsulate over three decades of VA- a
 
 VistA's data, however, is currently uniquely defined, opaque, and challenging to access in each of these distinct systems.  VistA's data model - the roadmap to all of VA's institutional, business, and clinical processes and data - has evolved organically within each system over the past 35 years, but has never been comprehensively exposed and represented in modern, computable form.  
 
-In the VistA Data Project,  VistA's native operational clinical and business model - the VistA Data Model -  is comprehensively exposed, enriched, and operationalized as a modern, web-standard, computable, server-side, model-driven interface for all VistA data.
-
-The VistA Data Model is in turn normalized across all VistA systems to create a national, standardized Master Veteran Data Model (MVDM), which allows __secure read-write__ transactions across __all__ VistA systems with a __single__ master-model-driven mechanism, MVDM Services: 
+__In the VistA Data Project__,  VistA's native operational clinical and business model - the VistA Data Model -  is comprehensively exposed, enriched, and operationalized as a modern, web-standard, computable, server-side, model-driven interface for all VistA data. The VistA Data Model is in turn normalized across all VistA systems to create a national, standardized Master Veteran Data Model (MVDM), which allows __secure read-write__ transactions across __all__ VistA systems with a __single__ master-model-driven mechanism, MVDM Services: 
 
 <br><br>
 ![vdp-transition](assets/vdp-transition-20170607d.png)
