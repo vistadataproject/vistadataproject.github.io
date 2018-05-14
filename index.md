@@ -22,7 +22,8 @@ In the VistA Data Project,  VistA's native operational clinical and business dat
 __For more details__ on the VistA Data Project, [click here](https://github.com/vistadataproject/documents/tree/master/Background)
 
 
-## Towards centralized, cloud-based veteran services
+<br><br>
+## Supporting cloud-based veteran services
 
 Leveraging the VistA Data Project's master model-driven service interface to VistA, the VistA Adaptive Maintenance (VAM) project provides a cloud-based roadmap and software for maintaining VistA and the VA workflows it supports using straightforward off-the-shelf commercial cloud services and microservices.
 
