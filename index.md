@@ -17,8 +17,3 @@ __Strategic Benefits__:
   * Safely and incrementally migrate and retire VistA functionality enterprise-wide, with *no loss of veteran-specific care or services*
   * Implement commodity commercial clinical and business systems, while preserving veteran-specific care and services
   * Move from disparate data centers to single Fedramp-approved commercial cloud without disturbing veteran care
-
-__Show Me:__ browse through and run VAM's [CPRS](/vam/build1_1/demo/) and [Web Client](/vam/buildWeb1/demo/) Demos.
-
-
-(assets/vam-aws-main-v1.png)
