@@ -21,8 +21,7 @@ The VistA Data Model is in turn normalized across all local VistA systems to cre
 ![vdp-transition](https://github.com/vistadataproject/documents/blob/master/images/vdp-transition-20170607d.png)
 
 *The figure above summarizes the evolution from __thousands of unique, inconsistent, insecure, unidirectional code-based interfaces__ to that of a __single, standardized, secure, server-side, symmetric (bidirectional), service-based, master data model-driven interface__.* 
-<br><br>
-__For more technical details__ on the VistA Data Project, [click here](https://github.com/vistadataproject/documents/tree/master/Background)
+__For more details__ on the VistA Data Project, [click here](https://github.com/vistadataproject/documents/tree/master/Background)
 
 
 ## Towards centralized, cloud-based veteran services
