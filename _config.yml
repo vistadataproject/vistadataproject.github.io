@@ -3,7 +3,7 @@
 permalink:           /blog/:title
 
 # Setup
-title:               VISTA Adaptive Maintenance
+title:               VistA Data Project
 tagline:             Continuity of Veteran Care 
 url:                 http://vistadataproject.info
 paginate:            1
