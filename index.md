@@ -20,10 +20,9 @@ The VistA Data Model is in turn normalized across all VistA systems to create a 
 <br><br>
 ![vdp-transition](assets/vdp-transition-20170607d.png)
 
-*The figure above summarizes the evolution from __thousands of unique, inconsistent, insecure, unidirectional code-based interfaces__ to that of a __single, standardized, secure, server-side, symmetric (bidirectional), service-based, master data model-driven interface__.* 
+*The figure above summarizes the evolution from __thousands of unique, inconsistent, insecure, unidirectional code-based interfaces__ to that of a __single, secure, server-side, symmetric (bidirectional), service-based, web-standard, master data model-driven interface__.* 
 
-<br>
-__For more details__ on the VistA Data Project, [click here](https://github.com/vistadataproject/documents/tree/master/Background)
+For more details on the VistA Data Project, [click here](https://github.com/vistadataproject/documents/tree/master/Background)
 
 
 <br><br>
