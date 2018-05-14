@@ -22,7 +22,7 @@ __In the VISTA Data Project__,  VISTA's native operational clinical and business
 For more details on the VISTA Data Project, [click here](https://github.com/vistadataproject/documents/tree/master/Background#vista-data-project)
 
 
-## Coming next... Cloud-based veteran care services
+## What's next... Cloud-based veteran care services
 
 Leveraging the VISTA Data Project's secure model-driven interface to all VISTA data, the VISTA Adaptive Maintenance project provides a cloud-based roadmap and software for maintaining VISTA and the VA workflows it supports using straightforward off-the-shelf commercial cloud services and microservices.  
 
