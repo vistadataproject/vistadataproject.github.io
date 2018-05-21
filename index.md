@@ -17,16 +17,12 @@ __In the VISTA Data Project__,  VISTA's native operational clinical and business
 <br><br>
 ![vdp-transition](assets/vdp-transition-20170607d.png)
 
-*The figure above summarizes the evolution of interfacing to VISTA data: From __thousands of unique, inconsistent, insecure, unidirectional code-based interfaces__ to that of a __single, secure, server-side, symmetric (bidirectional), service-based, web-standard, normalized, master data-model-driven interface__.* 
-
-For more details on the VISTA Data Project, [click here](https://github.com/vistadataproject/documents/tree/master/Background#vista-data-project)
+*The figure above summarizes the evolution of interfacing to VISTA data: From __thousands of unique, inconsistent, insecure, unidirectional code-based interfaces__ to that of a __single, secure, server-side, symmetric (bidirectional), service-based, web-standard, normalized, master data-model-driven interface__.*   For more details on the VISTA Data Project, [click here](https://github.com/vistadataproject/documents/tree/master/Background#vista-data-project)
 
 
-## What's next... Cloud-based veteran care services
+## What's next... VISTA
 
-Leveraging the VISTA Data Project's secure model-driven interface to all VISTA data, the VISTA Adaptive Maintenance project provides a cloud-based roadmap and software for maintaining VISTA and the VA workflows it supports using straightforward off-the-shelf commercial cloud services and microservices.  
-
-For the current state of VISTA's migration to centralized, cloud-based services, see [VISTA Adaptive Maintenance](http://vistaadaptivemaintenance.info/)
+Leveraging the VISTA Data Project's model-driven interface to all VISTA data, the VISTA Adaptive Maintenance project provides a cloud-based roadmap and software for maintaining VISTA and the VA workflows it supports using straightforward off-the-shelf commercial cloud services and microservices. For the current state of VISTA's migration to centralized, cloud-based services, see [VISTA Adaptive Maintenance](http://vistaadaptivemaintenance.info/)
 
 
 
