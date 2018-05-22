@@ -17,12 +17,12 @@ __In the VISTA Data Project__,  VISTA's native operational clinical and business
 <br><br>
 ![vdp-transition](assets/vdp-transition-20170607d.png)
 
-*The figure above summarizes the evolution of interfacing to VISTA data: From __thousands of unique, inconsistent, insecure, unidirectional code-based interfaces__ to that of a __single, secure, server-side, symmetric (bidirectional), service-based, web-standard, normalized, master data-model-driven interface__.*    For details on the VISTA Data Project, [click here](https://github.com/vistadataproject/documents/tree/master/Background#vista-data-project)
+*The figure above summarizes the evolution of interfacing to VISTA data: From __thousands of unique, inconsistent, insecure, unidirectional, cryptic code-based interfaces__ to that of a __single, secure, server-side, symmetric (bidirectional), service-based, web-standard, normalized, master veteran data-model (MVDM)-driven interface__.*    For complete documentation on the VISTA Data Project, [click here](https://github.com/vistadataproject/documents/tree/master/Background#vista-data-project)
 
 
 ## VISTA Data ... In the Cloud
 
-Leveraging the Master Veteran Data Model (above), the VISTA Adaptive Maintenance project provides a cloud-based roadmap and software for maintaining VISTA and the VA workflows it supports using web-standard, model-driven, commercial cloud services and microservices.  For details on these VISTA Cloud Services, see [VISTA Adaptive Maintenance](http://vistaadaptivemaintenance.info/)
+Leveraging the Master Veteran Data Model (MVDM, above), the VISTA Adaptive Maintenance project provides a cloud-based roadmap and software for maintaining VISTA and the VA workflows it supports using web-standard, model-driven, commercial cloud services and microservices.  For information on VISTA Cloud Services, see [VISTA Adaptive Maintenance](http://vistaadaptivemaintenance.info/)
 
 
 
