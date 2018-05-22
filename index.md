@@ -4,7 +4,7 @@ title: VistA Data Project - Continuity of Veteran Data
 ---
 ![vdp-iceberg -width95](assets/iceberg.png)
 
-# VISTA Data Project
+### VISTA Data Project
 
 The Veterans Information Systems Technology Architecture ([VISTA](https://en.wikipedia.org/wiki/VistA)) is the U.S. Department of Veterans Affairs integrated longitudinal  clinical, business, and administrative information system that has supported the operations of the 1200+ VA hospitals and clinics nationwide for the past 35 years. (See: [VISTA Background](https://github.com/vistadataproject/documents/tree/master/Background/vista)).
 
@@ -19,14 +19,14 @@ __In the VISTA Data Project__,  VISTA's native operational clinical and business
 
 *The figure above summarizes the evolution of interfacing to VISTA data: From __thousands of unique, inconsistent, insecure, unidirectional code-based interfaces__ to that of a __single, secure, server-side, symmetric (bidirectional), service-based, web-standard, normalized, master data-model-driven interface__.*   
 
-For more details on the VISTA Data Project, [click here](https://github.com/vistadataproject/documents/tree/master/Background#vista-data-project)
+For details on the VISTA Data Project, [click here](https://github.com/vistadataproject/documents/tree/master/Background#vista-data-project)
 
 
-## What's next: VISTA in the Cloud
+## VISTA Data ... In the Cloud
 
-The VISTA Adaptive Maintenance project provides a cloud-based roadmap and software for maintaining VISTA data and the VA workflows it supports using model-driven, commercial cloud services and microservices. 
+The VISTA Adaptive Maintenance project provides a cloud-based roadmap and software for maintaining VISTA and the VA workflows it supports using web-standard, model-driven, commercial cloud services and microservices. 
 
-For details on these Veteran-specific Cloud Services, see [VISTA Adaptive Maintenance](http://vistaadaptivemaintenance.info/)
+For more details on these VISTA Data Cloud Services, see [VISTA Adaptive Maintenance](http://vistaadaptivemaintenance.info/)
 
 
 
