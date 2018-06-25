@@ -21,9 +21,9 @@ __In the VISTA Data Project__,  VISTA's native operational clinical and business
 
 
 ## VISTA Data ... Prepared for the Cloud
-![vdp-iceberg -width95](assets/vistaF16-blue-strip.png)
-
 Leveraging the Master Veteran Data Model (MVDM, above), the VISTA Adaptive Maintenance project provides a cloud-based roadmap and software for maintaining VISTA and the VA workflows it supports using web-standard, model-driven, commercial cloud services and microservices.  For information on VISTA Cloud Services, see [VISTA Adaptive Maintenance](http://vistaadaptivemaintenance.info/)
+
+![vdp-iceberg -width95](assets/vdp-cloudvista-F16.png)
 
 
 
