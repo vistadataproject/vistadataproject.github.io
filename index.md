@@ -2,7 +2,7 @@
 layout: default
 title: VistA Data Project - Continuity of Veteran Data
 ---
-![vdp-iceberg -width95](assets/vdp-iceberg.png)
+![vdp-iceberg -width95](assets/vdp-iceberg2.png)
 
 ### VISTA Data Project
 
@@ -20,7 +20,14 @@ __In the VISTA Data Project__,  VISTA's native operational clinical and business
 *The figure above summarizes the evolution of interfacing to VISTA data: From __thousands of unique, inconsistent, insecure, unidirectional, cryptic code-based interfaces__ to that of a __single, secure, server-side, symmetric (bidirectional), service-based, web-standard, normalized, master veteran data-model (MVDM)-driven interface__.*    For complete documentation on the VISTA Data Project, [click here](https://github.com/vistadataproject/documents/tree/master/Background#vista-data-project)
 
 
-## VISTA Data ... In the Cloud
+## VISTA Data ... Prepared for the Cloud
+
+![vdp-iceberg -width95](assets/vistaF16-black.png)
+![vdp-iceberg -width95](assets/vistaF16-blue.png)
+![vdp-iceberg -width95](assets/vistaF16-white.png)
+
+Leveraging the Master Veteran Data Model (MVDM, above), the VISTA Adaptive Maintenance project provides a cloud-based roadmap and software for maintaining VISTA and the VA workflows it supports using web-standard, model-driven, commercial cloud services and microservices.  For information on VISTA Cloud Services, see [VISTA Adaptive Maintenance](http://vistaadaptivemaintenance.info/)
+
 
 ![vistaF16 -width95](assets/vistaF16/vistaF16-white.png)
 ![vistaF16 -width95](assets/vistaF16/vistaF16-white2.png)
@@ -31,9 +38,6 @@ __In the VISTA Data Project__,  VISTA's native operational clinical and business
 ![vistaF16 -width95](assets/vistaF16/vistaF16-cloud2.png)
 ![vistaF16 -width95](assets/vistaF16/vistaF16-cloud3.png)
 ![vistaF16 -width95](assets/vistaF16/vistaF16-night.png)
-
-
-Leveraging the Master Veteran Data Model (MVDM, above), the VISTA Adaptive Maintenance project provides a cloud-based roadmap and software for maintaining VISTA and the VA workflows it supports using web-standard, model-driven, commercial cloud services and microservices.  For information on VISTA Cloud Services, see [VISTA Adaptive Maintenance](http://vistaadaptivemaintenance.info/)
 
 
 
