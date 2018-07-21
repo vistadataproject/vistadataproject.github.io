@@ -2,7 +2,7 @@
 layout: default
 title: VistA Data Project - Continuity of Veteran Data
 ---
-![vdp-iceberg -width95](assets/vdp-iceberg-b.png)
+![vdp-iceberg -width95](assets/vdp-iceberg.png)
 
 ### VISTA Data Project
 
@@ -15,7 +15,7 @@ VISTA's data model - the roadmap to all of VA's institutional, business, and cli
 __In the VISTA Data Project__,  VISTA's native operational clinical and business model - the VISTA Data Model - is comprehensively exposed, enriched, and operationalized using a modern, computable, web-standard data model. This VISTA Data Model is in turn normalized across all VISTA systems to create a national, normalized Master Veteran Data Model (MVDM), which allows secure read-write transactions across all VISTA systems using a single model-driven mechanism, MVDM Services:
 
 <br><br>
-![vdp-transition](assets/vdp-transition-2018-07-21b.png)
+![vdp-transition](assets/vdp-transition-20180721a.png)
 
 
 *The figure above summarizes the evolution of interfacing to VISTA data: From __thousands of unique, inconsistent, insecure, unidirectional, cryptic code-based interfaces__ to that of a __single, secure, server-side, symmetric (bidirectional), service-based, web-standard, normalized, master veteran data-model-driven interface__.*    For complete documentation on the VISTA Data Project, [click here](https://github.com/vistadataproject/documents/tree/master/Background#vista-data-project)
