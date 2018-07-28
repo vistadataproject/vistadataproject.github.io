@@ -15,7 +15,7 @@ VISTA's data model - the roadmap to all of VA's institutional, business, and cli
 __In the VISTA Data Project__,  VISTA's native operational clinical and business model - the VISTA Data Model - is comprehensively exposed, enriched, and operationalized using a modern, computable, web-standard data model. This VISTA Data Model is in turn normalized across all VISTA systems to create a national, normalized Master Veteran Data Model (MVDM), which allows secure read-write transactions across all VISTA systems using a single model-driven mechanism, MVDM Services:
 
 <br><br>
-![vdp-transition](assets/vdp-transition-20180725.png)
+![vdp-transition](assets/vdp-transition-20180726.png)
 
 
 
