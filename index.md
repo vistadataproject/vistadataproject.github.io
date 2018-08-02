@@ -8,7 +8,7 @@ title: VistA Data Project - Continuity of Veteran Data
 
 The Veterans Information Systems Technology Architecture ([VISTA](https://en.wikipedia.org/wiki/VistA)) is the U.S. Department of Veterans Affairs integrated longitudinal  clinical, business, and administrative information system that supports the operations of the 1200+ Veterans Health Administration (VHA) hospitals and clinics across the United States. (See: [VISTA Background](https://github.com/vistadataproject/documents/tree/master/Background/vista)).
 
-The 130 VISTA systems in operation today encompass over three decades of VA- and Veteran-specific know-how and data, including over three hundred million veteran-years of health data, and continues to grow at the rate of over a million new clinical documents, lab tests, and radiographs each day. The [VHA Records Control Schedule](https://www.va.gov/vhapublications/rcs10/rcs10-1.pdf) (Section 6000.2(b), page 185) mandates the full veterans electronic health record shall be accessible for 75 years after the last episode of care. Thus it is necessary to comprehensively preserve VISTA's data in computable form to support veteran continuity of care now, and for many decades into the future.
+The 130 VISTA systems in operation today encompass over three decades of VA- and Veteran-specific know-how and data, including over three hundred million veteran-years of health data, and continues to grow at the rate of over a million new clinical documents, lab tests, and radiographs each day. The [VHA Records Control Schedule](https://www.va.gov/vhapublications/rcs10/rcs10-1.pdf)(page 185, Section 6000.2(b)) mandates the veterans electronic health record must be accessible for 75 years after the last episode of care. It is thus necessary to guarantee access to VISTA's data to support continuity of veteran care now, and for many decades into the future.
 
 VISTA's data model - the roadmap to all of VA's institutional, business, and clinical processes and data - has evolved organically within each system over the past 35 years, but has not been exposed and represented in modern, computable form. VISTA's data thus remains uniquely defined, opaque, and challenging to access in each of these distinct systems. 
 
@@ -19,7 +19,7 @@ __In the VISTA Data Project__,  VISTA's native operational clinical and business
 
 
 
-*The figure above summarizes the evolution of accessing VISTA data: From __thousands of unique, inconsistent, insecure, unidirectional, cryptic legacy code-based interfaces__ to that of a __single, secure, modern, service-based, industry-standard, normalized, master veteran data-model (MVDM)-driven interface__.*    For complete documentation on the VISTA Data Project, [click here](https://github.com/vistadataproject/documents/tree/master/Background#vista-data-project)
+*The figure above summarizes the evolution of access to VISTA data: From __thousands of unique, inconsistent, insecure, unidirectional, cryptic legacy code-based interfaces__ to that of a __single, secure, modern, service-based, industry-standard, normalized, master veteran data-model (MVDM)-driven interface__.*    For complete documentation on the VISTA Data Project, [click here](https://github.com/vistadataproject/documents/tree/master/Background#vista-data-project)
 
 
 ### VISTA Data ... Ready for the Cloud
