@@ -14,7 +14,7 @@ VISTA's data, however, remains uniquely defined, opaque, and challenging to acce
 
 *__In the VISTA Data Project__*,  *VISTA's* native operatonal clinical and business model is comprehensively exposed, enriched, and operationalized using a modern, computable, web-standard data model. This *VISTA Data Model* is in turn normalized across all *VISTA* systems to create a national, normalized Master Veteran Data Model, which provides secure read-write transactions across all *VISTA* systems using a single model-driven services interface.
 
-![vdp-transition](assets/vdp-transition-20180806.png)
+![vdp-transition](assets/vdp-transition-20180805.png)
 
 
 *The figure above summarizes the evolution of access to VISTA data: From __thousands of unique, inconsistent, insecure, unidirectional, cryptic legacy code-based interfaces__ to that of a __single, secure, modern, service-based, industry-standard, normalized, master veteran data-model (MVDM)-driven interface__.*    For complete documentation on the VISTA Data Project, [click here](https://github.com/vistadataproject/documents/tree/master/Background#vista-data-project)
