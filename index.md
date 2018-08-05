@@ -12,7 +12,7 @@ The 130 VISTA systems in operation today contain over three hundred million vete
 
 VISTA's data, however, remains uniquely defined, opaque, and challenging to access under thousands of undocumented legacy code interfaces in each of these distinct systems.  VISTA's internal operational data model - the roadmap to all of VA's institutional, business, and clinical processes and data - has evolved organically within each system over the past 35 years, but has not been exposed and represented in modern, computable form.  
 
-*__In the VISTA Data Project__*,  *VISTA's* native operatonal clinical and business model is comprehensively exposed, enriched, and operationalized using a modern, computable, web-standard data model. This *VISTA Data Model* is in turn normalized across all *VISTA* systems to create a national, normalized Master Veteran Data Model, which provides secure read-write transactions across all *VISTA* systems using a single model-driven services interface.
+*__In the VISTA Data Project__*,  *VISTA's* native, internal operatonal data model - the *VISTA Data Model* - is incrementally exposed, enriched, and operationalized using a modern, computable, web-standard data model. This *VISTA Data Model* is in turn normalized across all *VISTA* systems to create a national, normalized Master Veteran Data Model (MVDM), which provides secure read-write transactions across all *VISTA* systems using a single model-driven services interface.
 
 ![vdp-transition](assets/vdp-transition-20180805.png)
 
