@@ -14037,6 +14037,7 @@ Electronic version of source information obtained from other electronic database
 
 Temporary; destroy/delete after migration of information to another electronic medium. Destruction of interim version of information is not to occur until it has been determined that the migrated information represents an exact duplicate of the previous version of the migrated information. (N1-15-02-3, Item 2)
 
+<br><br>
 
 ## b.	Electronic Final Version of Health Record. 
 Final, consolidated, electronic version of a Patient Medical Record. Includes information migrated from interim electronic information systems, electronic medical equipment, or information entered directly into the patient medical record information system. May be stored on optical disks or other magnetic media.
@@ -14044,6 +14045,7 @@ Final, consolidated, electronic version of a Patient Medical Record. Includes in
 __Retain 75 years after the last episode of patient care__. (N1-15-02-3, Item 3)
 
 
+<br><br>
 
 c.	Output.
 
@@ -14073,8 +14075,9 @@ e.	Word Processing and Electronic Records. Superseded by General Records Schedul
 
 
 
-6000.3.  Application for Medical Benefits (Applicants
-Not in Need of Care File).
+
+# 6000.3.  Application for Medical Benefits 
+(Applicants Not in Need of Care File).
 
 ??Rejected applications for hospital treatment, domiciliary care, and related material not resulting in a treatment or member status.
 ??Rejected applications for outpatient dental treatment
@@ -14083,7 +14086,8 @@ and found not to be in need of care.
 
 Temporary; destroy after 2 years applications dated prior to September 24, 1969. Rejected applications initiated after September 24, 1969, will be filed in the patientÕs health records folder, if one exists within the facility or a health records folder will be created. (II-NN-3293, Item 1)
 
-6000.4.  Application for Medical Benefits (Transfer-Out
+
+# 6000.4.  Application for Medical Benefits (Transfer-Out
 File).
 
 Record of applications for medical benefits transferred to other VA facilities.
@@ -14093,20 +14097,23 @@ Nonrecord; destroy after 1 year.
 
 
 
-6000.5. Privacy Complaint Files.
+# 6000.5. Privacy Complaint Files.
 
 Records relating to the general agency implementation of HIPAA and, the Privacy Act, including notices, memoranda, routine correspondence, and related records. The files consist of complaints, concerns, and issues alleging a violation of the Privacy Act.
 
 Temporary; cut off closed files at the end of the fiscal year. Destroy 6 years after cut off. (N1-015-08-1)
 
-6000.6.  Electronic Tracking System Files.
+
+
+# 6000.6.  Electronic Tracking System Files.
 
 Electronic complaint files created to produce a tracking system such as the Privacy and Security Event Tracking System (PSETS) which is retrievable by a number. The
 files are used to track any grievance concerning an actual or suspected breach of privacy of personal information.
 
 Temporary; delete files 6 years after corresponding case file is closed. (N1-015-08-1)
 
-6000.7.  Domiciliary Members Treatment Folder.
+
+# 6000.7.  Domiciliary Members Treatment Folder.
 
 Type J medical and dental treatment records, which document services rendered to a domiciliary member during his/her stay at a domiciliary. This records folder series was discontinued at domiciliary on May 15, 1971, and was replaced by the Health Records Folder Series.
 
