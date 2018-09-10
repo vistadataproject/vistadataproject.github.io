@@ -14017,9 +14017,9 @@ Temporary; retire annually to the records storage facility. If not recalled by t
 
 
 
-6000.2.  Electronic Health Record (EHR).
+# 6000.2.  Electronic Health Record (EHR).
 
-a.	Input.
+## a. Input
 
 (1)   Paper Source Documents.
 
@@ -14029,19 +14029,21 @@ Temporary; destroy after verification of accurate entry of information into EHRS
 
 (b)   Hardcopy version of information scanned onto optical disk or other magnetic media.
 
-Temporary; destroy after verification of accurate scan onto optical disk or other magnetic media. (N1-15-02-3, Item
-1b)
+Temporary; destroy after verification of accurate scan onto optical disk or other magnetic media. (N1-15-02-3, Item 1b)
+
 
 (2)   Interim Electronic Source Information.
-Electronic version of source information obtained from other electronic databases, optical disk, or other magnetic media not considered as part of the consolidated patient medical record. May include information generated
-electronically by medical equipment.
+Electronic version of source information obtained from other electronic databases, optical disk, or other magnetic media not considered as part of the consolidated patient medical record. May include information generated electronically by medical equipment.
 
-Temporary; destroy/delete after migration of information to another electronic medium. Destruction of interim version of information is not to occur until it has been determined that the migrated information represents an exact duplicate of the previous version of the migrated information. (N1-
-15-02-3, Item 2)
+Temporary; destroy/delete after migration of information to another electronic medium. Destruction of interim version of information is not to occur until it has been determined that the migrated information represents an exact duplicate of the previous version of the migrated information. (N1-15-02-3, Item 2)
 
-b.	Electronic Final Version of Health Record. Final, consolidated, electronic version of a Patient Medical Record. Includes information migrated from interim electronic information systems, electronic medical equipment, or information entered directly into the patient medical record information system. May be stored on optical disks or other magnetic media.
 
-Temporary; destroy/delete 75 years after the last episode of patient care. (N1-15-02-3, Item 3)
+## b.	Electronic Final Version of Health Record. 
+Final, consolidated, electronic version of a Patient Medical Record. Includes information migrated from interim electronic information systems, electronic medical equipment, or information entered directly into the patient medical record information system. May be stored on optical disks or other magnetic media.
+
+__Retain 75 years after the last episode of patient care__. (N1-15-02-3, Item 3)
+
+
 
 c.	Output.
 
@@ -14053,14 +14055,23 @@ Temporary; destroy/delete when no longer needed for administrative or clinical o
 
 Temporary; destroy when no longer needed for administrative or clinical operations. (N1-15-02-3, Item 5)
 
+
+
 d.	Documentation. May include data dictionaries, field layouts, data entry instructions, and other manuals
 in paper and electronic form.
 
 Temporary; destroy/delete when superseded or obsolete. (N1-15-02-3, Item 6)
-e.	Word Processing and Electronic Records. Superseded by General Records Schedule 4.3, Item
-040 (SIC 2200.4).
 
-[NOTE: any item, scanned into the Patient Electronic Health Record regardless of origination will take on the records disposal schedule of the electronic record. Examples are: immunization or other healthcare treatment from non-Veterans Health Administration provider after review of relevanceÕs by a HA provider.]
+
+e.	Word Processing and Electronic Records. Superseded by General Records Schedule 4.3, Item 040 (SIC 2200.4).
+
+
+[NOTE: any item, scanned into the Patient Electronic Health Record regardless of origination will take on the records disposal schedule of the electronic record. Examples are: immunization or other healthcare treatment from non-Veterans Health Administration provider after review of relevanceÕs by a VA provider.]
+
+
+
+
+
 
 6000.3.  Application for Medical Benefits (Applicants
 Not in Need of Care File).
