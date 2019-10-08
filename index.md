@@ -4,7 +4,7 @@ title: VistA Data Project - Continuity of Veteran Data
 ---
 ![vdp-iceberg -width95](assets/vdp-iceberg.png)
 
-### VISTA Data Project
+# VISTA Data Project
 
 __*The VISTA Data Project provides a new model-driven service-based approach to access, interfacing, security, and master data management for all Veteran health information across all VA VistA systems*__
 
