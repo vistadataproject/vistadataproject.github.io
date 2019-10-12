@@ -2,7 +2,7 @@
 layout: default
 title: VistA Data Project - Continuity of Veteran Data
 ---
-![vdp-iceberg -width95](assets/vdp-iceberg.png)
+![vdp-iceberg -width95](assets/vdp-iceberg-2019.png)
 
 # VISTA Data Project
 
