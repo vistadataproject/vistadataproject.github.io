@@ -6,7 +6,7 @@ title: VistA Data Project - Continuity of Veteran Data
 
 # VISTA Data Project
 
-__*The VISTA Data Project provides a cloud-based model-driven solution for comprehensive access, interfacing, security, and management of all Veteran health information within VA's VistA systems*__
+__*The VISTA Data Project provides a comprehensive cloud-based solution for access, interfacing, security, and management of all Veteran  information within the VA's VistA systems*__
 
 
 The U.S. Veterans Health Information Systems Technology and Architecture ([VISTA](https://en.wikipedia.org/wiki/VistA)) is the U.S. Department of Veterans Affairs national integrated clinical, business, and administrative information system supporting the operations of 1500+ Veterans Health Administration hospitals and clinics across the United States. (See: [VISTA Background](https://github.com/vistadataproject/documents/tree/master/Background/vista)). 
@@ -15,7 +15,7 @@ The 130 VISTA systems in operation today contain over three hundred million vete
 
 VISTA's data is currently inconsistently defined within and across each system, with access limited to piecemeal extractions through thousands of cryptic code interfaces, making it challenging to understand, access or manage VISTA data. VISTA's internal operational data model - the roadmap to all of VA's institutional, business, and clinical processes and data - has evolved organically within each system over the past 35 years, but has never been exposed in a modern, computable form.  
 
-*__In the VISTA Data Project__*,  *VISTA's* native, internal operational data model is fully exposed, enriched, and operationalized using a modern, computable, industry-standard form. This *VISTA Data Model* is in turn incrementally normalized across all *VISTA* systems to create a national Master Veteran Data Model (MVDM), which provides secure read-write access for all data in all *VISTA* systems using a single, modern, maintainable, industry-standard model-driven services interface.
+*__In the VISTA Data Project__*,  *VISTA's* native, internal operational data model is fully exposed, enriched, and operationalized using a modern, computable, industry-standard form. This *VISTA Data Model* is in turn incrementally normalized across all *VISTA* systems to create a single national Master Veteran Data Model (MVDM), which provides secure read-write access for all data in all *VISTA* systems using a single, modern, maintainable, industry-standard model-driven services interface.
 
 ![vdp-transition](assets/vdp-transition-20180805.png)
 
