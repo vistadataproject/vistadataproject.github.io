@@ -24,16 +24,9 @@ The 130 VISTA systems in operation today contain over three hundred million vete
 
 
 
-## VISTA Cloud Services
+## Cloud VISTA and beyond...
 
-Leveraging the Master Veteran Data Model above, the *VISTA* Adaptive Maintenance (VAM) project provides a cloud-based roadmap and software for maintaining *VISTA* and the VA workflows it supports using web-standard, model-driven, commercial cloud services and microservices.  For information on VISTA Cloud Services, see [VISTA Adaptive Maintenance](http://vistaadaptivemaintenance.info/)
-
-
-
-![vam-aws -width95](assets/vam-aws-main-20180615c.png)
-
-
-__VISTA Adaptive Maintenance__ (VAM) provides a cloud-based roadmap and software for maintaining continuity of the Veterans Information Systems Technology Architecture ([VISTA](https://en.wikipedia.org/wiki/VistA)) and the VA workflows it supports using straightforward off-the-shelf commercial cloud services and microservices during the multi-year EHR modernization ([EHRM](https://www.fedscoop.com/va-cio-expect-another-10-years-vista-facilities-new-ehr-rollout/)) program. VAM will be deployed within the VA’s Enterprise Cloud using Amazon Web Services (AWS).  __VA's Cloud-First, Cloud-Native strategy and roadmap__ including policies, documents, and architecture are [here](/va-cloud). 
+As VA migrates its *VISTA* systems from the legacy on-premises data centers to the VA Enterprise Cloud,  __*VISTA* Adaptive Maintenance__ (VAM) provides a cloud-based roadmap and software for maintaining continuity of *VISTA* and the VA workflows it supports using straightforward off-the-shelf commercial cloud services and microservices during the multi-year EHR modernization ([EHRM](https://www.fedscoop.com/va-cio-expect-another-10-years-vista-facilities-new-ehr-rollout/)) program. VAM will be deployed within the VA’s Enterprise Cloud using Amazon Web Services (AWS).  __VA's Cloud-First, Cloud-Native strategy and roadmap__ including policies, documents, and architecture are [here](/va-cloud). 
 
 
 __Strategic Benefits__:
