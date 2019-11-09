@@ -38,7 +38,7 @@ __Strategic Benefits__:
   * Minimize cost, complexity, and risks of maintaining each of the 130 distinct, decentralized VISTA systems during multi-year VA modernization transition.
 
 
-<img src="https://github.com/vistadataproject/vistadataproject.github.io/blob/master/assets/vistaF16/vistaF16-night.png" height="150" width="200">
+<img src="https://github.com/vistadataproject/vistadataproject.github.io/blob/master/assets/vistaF16/vistaF16-night.png" height="150" width="400">
 
 ![vistaF16 -width75](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/assets/vistaF16/vistaF16-night.png)
 F16-VISTA taking off to the Cloud with the highest speed, scalability, and security.
