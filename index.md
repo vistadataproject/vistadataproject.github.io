@@ -25,7 +25,7 @@ The 130 VISTA systems in operation today contain over three hundred million vete
 
 
 
-# VISTA to the Cloud and beyond
+# VISTA taking off to the Cloud and beyond
 
 ![](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/assets/vistaF16/vistaF16-night.png)
 
