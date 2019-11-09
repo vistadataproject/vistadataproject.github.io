@@ -1,12 +1,11 @@
-# Cloud VISTA: Cloud-First.  Cloud-Smart.
-<br>
+# Cloud VISTA
+
 <p align="center">
 <img src="/assets/f16-vista/f16-vista-B.jpg" height="300" width="600">
- <br>
+ 
  VISTA in the Cloud has vastly improved speed, scalability, security, and reliability.
 </p>
 
-<br>
 
 ## Cloud-First
 VA is currently implementing the [U.S. Federal Cloud Computing Strategy](https://cloud.cio.gov/strategy/) enterprise-wide. In accordance with the *U.S. Cloud-First Strategy*, VA is migrating *VISTA* from the many diverse, decentralized, legacy on-premises data centers across the country to a single, centralizedm modern commercial cloud, the VA Enterprise Cloud (VAEC).
