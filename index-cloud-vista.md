@@ -15,7 +15,7 @@ In addition to the Cloud-First strategy for *VISTA*,  VA is implementing [*U.S. 
 Both *VISTA* and VAM will be implemented within VA’s Enterprise Cloud leveraging Amazon Web Services ([AWS](https://aws.amazon.com)).  
 
 
-## Strategic Benefits
+## Cloud VISTA: Strategic Benefits
   * Move VISTA from disparate VA data centers to single Federally-certified commercial cloud without disturbing veteran care
   * Safely and incrementally centralize VISTA functionality in the Cloud, with *no loss of VA- or veteran-specific care or services*
   * Centralized, cloud-based, off the shelf monitoring and security of VISTA client activity
