@@ -8,7 +8,7 @@
 
 
 <p align="center">
-![](assets/fed-cloud-computing-strategy.png)
+<img src="/assets/fed-cloud-computing-strategy.png" height="300" width="600">
 </p>
 
 <img src="/assets/f16-vista/f16-vista-B.jpg" height="300" width="600">
