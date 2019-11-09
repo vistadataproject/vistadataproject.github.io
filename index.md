@@ -27,9 +27,15 @@ The 130 VISTA systems in operation today contain over three hundred million vete
 
 # Cloud VISTA and beyond...
 
-![vistaF16-night -width50](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/assets/vistaF16/vistaF16-night.png)
+![vistaF16-night -width10](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/assets/vistaF16/vistaF16-night.png)
+
+![](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/assets/vistaF16/vistaF16-night.png)
+
+![](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/assets/vistaF16/vistaF16-night.png =250x250
+)
 
 <img src="https://https://github.com/vistadataproject/vistadataproject.github.io/blob/master/assets/vistaF16/vistaF16-blue2.png" width="100" height="100">
+
 
 ![vistaF16-blue -width90](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/assets/vistaF16/vistaF16-blue2.png)
 
