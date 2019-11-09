@@ -25,8 +25,7 @@ The 130 VISTA systems in operation today contain over three hundred million vete
 <br>
 <br>
 <br>
-<br>
-<br>
+
 
 # Cloud VISTA and beyond
 
@@ -39,6 +38,7 @@ __Strategic Benefits__:
   * Current VISTA clients and workflows fully supported and secured
   * Minimize cost, complexity, and risks of maintaining each of the 130 distinct, decentralized VISTA systems during multi-year VA modernization transition.
 
+<br>
 
 <p align="center">
 <img src="https://github.com/vistadataproject/vistadataproject.github.io/blob/master/assets/f16-vista/f16-vista-B.jpg" height="350" width="700">
