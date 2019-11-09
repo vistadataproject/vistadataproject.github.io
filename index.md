@@ -26,7 +26,7 @@ The 130 VISTA systems in operation today contain over three hundred million vete
 
 ## Cloud VISTA and beyond...
 
-As VA migrates its *VISTA* systems from many disparate legacy on-premises data centers to a single, secure, centralized commercial cloud, __*VISTA* Adaptive Maintenance__ (VAM) provides the cloud-based roadmap and software for maintaining security and continuity of *VISTA* and the VA workflows it supports using straightforward off-the-shelf commercial cloud services and microservices in the VA Enterprise Cloud (VAEC). VAM will be deployed along with *VISTA* within the VA’s Enterprise Cloud using Amazon Web Services (AWS).  __VA's Cloud-First, Cloud-Native strategy and roadmap__ including policies, documents, and architecture are [here](/va-cloud). 
+As VA modernizes its IT infrastructure and migrates its hundreds of systems hosted in scores of legacy, disconnected, decentralized on-premises data centers to a single, secure, centralized commercial cloud, __*VISTA* Adaptive Maintenance__ (VAM) provides the cloud-based roadmap and software for maintaining security and continuity of *VISTA* and the VA workflows it supports using straightforward off-the-shelf commercial cloud services and microservices. *VISTA* will be deployed with VAM within the VA’s Enterprise Cloud using Amazon Web Services (AWS).  __VA's Cloud-First, Cloud-Native strategy and roadmap__ including policies, documents, and architecture are [here](/va-cloud). 
 
 
 __Strategic Benefits__:
