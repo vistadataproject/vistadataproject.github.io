@@ -27,13 +27,6 @@ The 130 VISTA systems in operation today contain over three hundred million vete
 <br>
 <br>
 
-<p align="center">
-<img src="/assets/f16-vista/f16-vista-B.jpg" height="350" width="700">
- <br>
- VISTA in the Cloud has vastly improved speed, scalability, security, and reliability.
-</p>
-
-
 # Cloud VISTA: Cloud-First.  Cloud-Smart.
 
 VA is currently implementing the [U.S. Federal Cloud Computing Strategy](https://cloud.cio.gov) and migrating the VA's *VISTA* systems from the many diverse, legacy on-premises data centers across the country to a single, modern, centralized commercial cloud (*Cloud-First Strategy*). 
@@ -51,5 +44,10 @@ __Strategic Benefits__:
   * Current VISTA clients and workflows fully supported and secured
   * Minimize cost, complexity, and risks of maintaining each of the 130 distinct, decentralized VISTA systems during multi-year VA modernization transition.
 
+<p align="center">
+<img src="/assets/f16-vista/f16-vista-B.jpg" height="350" width="700">
+ <br>
+ VISTA in the Cloud has vastly improved speed, scalability, security, and reliability.
+</p>
 
 
