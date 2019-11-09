@@ -25,12 +25,9 @@ The 130 VISTA systems in operation today contain over three hundred million vete
 
 
 
-## Cloud VISTA and beyond...
-.
-.
-.
+# Cloud VISTA and beyond...
 
-![vistaF16-night -width80](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/assets/vistaF16/vistaF16-night.png)
+![vistaF16-night -width50](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/assets/vistaF16/vistaF16-night.png)
 
 
 As VA implements the [U.S. Federal Cloud Computing Strategy](https://cloud.cio.gov) and migrates the *VISTA* systems from disparate legacy on-premises data centers to a single, modern, centralized commercial cloud (*Cloud-First Strategy*), __*VISTA* Adaptive Maintenance__ (VAM) provides the cloud-based roadmap and software for cloud-native optimization and security of *VISTA* to the highest standards in the U.S. government, using straightforward off-the-shelf commercial cloud services and microservices ([Cloud-Smart Strategy](https://cloud.cio.gov/strategy/#cloud-smart)). *VISTA* will be deployed with VAM within the VA’s Enterprise Cloud using Amazon Web Services ([AWS](https://aws.amazon.com)).  
