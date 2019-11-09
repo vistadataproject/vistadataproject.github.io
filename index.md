@@ -32,8 +32,10 @@ The 130 VISTA systems in operation today contain over three hundred million vete
 </p>
 
 # Cloud VISTA: Cloud-First.  Cloud-Smart.
-
-<br>
+<p align="center">
+<img src="/assets/f16-vista/f16-vista-B.jpg" height="450" width="900">
+ VISTA in the Cloud has vastly improved speed, scalability, security, and reliability.
+</p>
 
 VA is currently implementing the [U.S. Federal Cloud Computing Strategy](https://cloud.cio.gov) enterprise-wide. In the *Cloud-First Strategy* for VISTA, VA is migrating the *VISTA* systems from the many diverse, decentralized, legacy on-premises data centers across the country to a single, modern, centralized commercial cloud, the VA Enterprise Cloud (VAEC).
 
