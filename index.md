@@ -45,7 +45,7 @@ __Strategic Benefits__:
 <p align="center">
 <img src="/assets/f16-vista/f16-vista-B.jpg" height="350" width="700">
  <br>
- VISTA in the Cloud has vastly improved speed, scalability, and security.
+ VISTA in the Cloud has vastly improved speed, scalability, security, and reliability.
 </p>
 
 
