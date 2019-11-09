@@ -42,8 +42,6 @@ __Strategic Benefits__:
 <img src="https://github.com/vistadataproject/vistadataproject.github.io/blob/master/assets/f16-vista/f16-vista-B.jpg" height="350" width="700">
  <br>
  VISTA in the Cloud has the greatest speed, scalability, and security.
- <br>
- Reference: [F16-VISTA](https://en.wikipedia.org/wiki/General_Dynamics_F-16_VISTA)
 </p>
 
-[F16-VISTA](https://en.wikipedia.org/wiki/General_Dynamics_F-16_VISTA)
+* Reference: [F16-VISTA](https://en.wikipedia.org/wiki/General_Dynamics_F-16_VISTA)
