@@ -6,10 +6,7 @@
 VISTA in the Cloud has vastly improved speed, scalability, security, and reliability.  This is by virtue of VA implementing  the U.S. Federal Cloud Computing Strategy fully for the VA *VISTA* systems.
 
 
-<p align="center">
-<img src="/assets/fed-cloud-computing-strategy.png">
-</p>
-
+![](/assets/fed-cloud-computing-strategy.png)
 
 
 ### Cloud-First
