@@ -38,11 +38,6 @@ __Strategic Benefits__:
   * Minimize cost, complexity, and risks of maintaining each of the 130 distinct, decentralized VISTA systems during multi-year VA modernization transition.
 
 
-
-<p align="center">
-<img src="https://github.com/vistadataproject/vistadataproject.github.io/blob/master/assets/vistaF16/vistaF16-night.png" height="150" width="500">
-</p>
-
 <p align="center">
 <img src="https://github.com/vistadataproject/vistadataproject.github.io/blob/master/assets/f16-vista/f16-vista-B.jpg" height="400" width="800">
 </p>
