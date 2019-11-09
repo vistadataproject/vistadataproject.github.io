@@ -24,6 +24,12 @@ The 130 VISTA systems in operation today contain over three hundred million vete
 
 <br>
 <br>
+<br>
+
+<p align="center">
+<img src="/assets/f16-vista/f16-vista-B.jpg" height="450" width="900">
+ VISTA in the Cloud has vastly improved speed, scalability, security, and reliability.
+</p>
 
 # Cloud VISTA: Cloud-First.  Cloud-Smart.
 
@@ -48,7 +54,6 @@ __Strategic Benefits__:
 
 <p align="center">
 <img src="/assets/f16-vista/f16-vista-B.jpg" height="450" width="900">
- <br>
  VISTA in the Cloud has vastly improved speed, scalability, security, and reliability.
 </p>
 
