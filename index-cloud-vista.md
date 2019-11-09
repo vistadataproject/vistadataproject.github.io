@@ -1,21 +1,19 @@
 
-<p align="center">
-<img src="/assets/f16-vista/f16-vista-B.jpg" height="300" width="600">
- <br> 
-</p>
-
 ![](assets/vistaF16-blue-strip-logo.png)
+
+
+# Cloud VISTA
+ VISTA in the Cloud has vastly improved speed, scalability, security, and reliability.  This is by virtue of VA implementing  the U.S. Federal Cloud Computing Strategy fully for the VA *VISTA* systems.
+
 
 ![](assets/fed-cloud-computing-strategy.png)
 
-# Cloud VISTA
- VISTA in the Cloud has vastly improved speed, scalability, security, and reliability.  This is by virtue of VA adopting both the Cloud-First and Cloud-Smart approach to cloud migration.
 
 ### Cloud-First
-VA is currently implementing the [U.S. Federal Cloud Computing Strategy](https://cloud.cio.gov/strategy/) enterprise-wide. In accordance with the *U.S. Cloud-First Strategy*, VA is migrating *VISTA* from the many diverse, decentralized, legacy on-premises data centers across the country to a single, centralizedm modern commercial cloud, the VA Enterprise Cloud (VAEC).
+VA is currently implementing the [U.S. Federal Cloud Computing Strategy](https://cloud.cio.gov/strategy/) for its most mission-critical enterprise systems such as *VISTA*. The first phase *U.S. Cloud-First Strategy*, VA is migrating *VISTA* from the many diverse, decentralized, legacy on-premises data centers to a single, modern, centralizedm commercial cloud, the VA Enterprise Cloud.
 
 ### Cloud-Smart
-In addition to the Cloud-First strategy for *VISTA*,  VA is implementing [*U.S. Cloud-Smart Strategy*](https://cloud.cio.gov/strategy/#cloud-smart) through cloud-specific  __*VISTA* Adaptive Maintenance__ (VAM), which provides a cloud-based roadmap and software for cloud-native optimization and security for *VISTA* to the highest standards in the U.S. government, using straightforward off-the-shelf commercial cloud services and microservices.
+VA is implementing [*U.S. Cloud-Smart Strategy*](https://cloud.cio.gov/strategy/#cloud-smart) for *VISTA* through cloud-specific  __*VISTA* Adaptive Maintenance__ (VAM), which provides a cloud-based roadmap and software for cloud-native optimization and security for *VISTA* to the highest standards in the U.S. government, using straightforward off-the-shelf commercial cloud services and microservices.
 
 Both *VISTA* and VAM will be implemented within VA’s Enterprise Cloud leveraging Amazon Web Services ([AWS](https://aws.amazon.com)).  
 
@@ -26,3 +24,9 @@ Both *VISTA* and VAM will be implemented within VA’s Enterprise Cloud leveragi
   * Centralized, cloud-based, off the shelf monitoring and security of VISTA client activity
   * Current VISTA clients and workflows fully supported and secured
   * Minimize cost, complexity, and risks of maintaining each of the 130 distinct, decentralized VISTA systems during multi-year VA modernization transition.
+
+
+<p align="center">
+<img src="/assets/f16-vista/f16-vista-B.jpg" height="300" width="600">
+ <br> 
+</p>
