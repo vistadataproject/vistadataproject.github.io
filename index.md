@@ -44,6 +44,5 @@ __Strategic Benefits__:
  VISTA in the Cloud has the greatest speed, scalability, and security.
  <br>
  Reference: Wikipedia [F16-VISTA](https://en.wikipedia.org/wiki/General_Dynamics_F-16_VISTA)
- 
 </p>
 
