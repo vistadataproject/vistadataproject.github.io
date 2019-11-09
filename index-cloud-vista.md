@@ -1,12 +1,19 @@
 
 ![](assets/vistaF16-blue-strip-logo.png)
 
+<p align="center">
+</p>
 
-# Cloud VISTA
  VISTA in the Cloud has vastly improved speed, scalability, security, and reliability.  This is by virtue of VA implementing  the U.S. Federal Cloud Computing Strategy fully for the VA *VISTA* systems.
 
 
+<p align="center">
 ![](assets/fed-cloud-computing-strategy.png)
+</p>
+
+<img src="/assets/f16-vista/f16-vista-B.jpg" height="300" width="600">
+
+
 
 
 ### Cloud-First
@@ -27,8 +34,3 @@ Both *VISTA* and VAM will be implemented within VA’s Enterprise Cloud leveragi
   * Current VISTA clients and workflows fully supported and secured
   * Minimize cost, complexity, and risks of maintaining each of the 130 distinct, decentralized VISTA systems during multi-year VA modernization transition.
 
-
-<p align="center">
-<img src="/assets/f16-vista/f16-vista-B.jpg" height="300" width="600">
- <br> 
-</p>
