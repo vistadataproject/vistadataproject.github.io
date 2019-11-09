@@ -46,3 +46,13 @@ __Strategic Benefits__:
  VISTA in the Cloud has vastly improved speed, scalability, and security.
 </p>
 
+
+<p align="center">
+<img src="https://github.com/vistadataproject/vistadataproject.github.io/blob/master/assets/f16-vista/f16-vista-B.jpg">
+ <br>
+ VISTA in the Cloud has vastly improved speed, scalability, and security.
+</p>
+
+![f16-vista](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/assets/f16-vista/f16-vista-B.jpg)
+ VISTA in the Cloud has vastly improved speed, scalability, and security.
+
