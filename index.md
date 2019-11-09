@@ -22,15 +22,10 @@ The 130 VISTA systems in operation today contain over three hundred million vete
 
 *The figure above summarizes the evolution of access to VISTA data: From __thousands of unique, inconsistent, insecure, unidirectional, cryptic legacy code-based interfaces__ to that of a __single, secure, modern, service-based, industry-standard, normalized, master veteran data-model (MVDM)-driven interface__.*    For complete documentation on the VISTA Data Project, [click here](https://github.com/vistadataproject/documents/tree/master/Background#vista-data-project)
 
-.
-
-.
-
-.
 
 
 
-# Cloud VISTA and beyond...
+# VISTA to the Cloud and beyond
 
 ![](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/assets/vistaF16/vistaF16-night.png)
 
