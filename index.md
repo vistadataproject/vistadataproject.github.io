@@ -41,6 +41,7 @@ __Strategic Benefits__:
 
 <p align="center">
 <img src="https://github.com/vistadataproject/vistadataproject.github.io/blob/master/assets/vistaF16/vistaF16-night.png" height="150" width="500">
+ 
  F16-VISTA taking off to the Cloud with the highest speed, scalability, and security.
 </p>
 
