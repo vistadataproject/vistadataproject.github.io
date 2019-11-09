@@ -24,7 +24,7 @@ The 130 VISTA systems in operation today contain over three hundred million vete
 
 
 
-## VISTA Data ... Ready for the Cloud
+## VISTA Data Cloud Services
 
 Leveraging the Master Veteran Data Model above, the *VISTA* Adaptive Maintenance (VAM) project provides a cloud-based roadmap and software for maintaining *VISTA* and the VA workflows it supports using web-standard, model-driven, commercial cloud services and microservices.  For information on VISTA Cloud Services, see [VISTA Adaptive Maintenance](http://vistaadaptivemaintenance.info/)
 
