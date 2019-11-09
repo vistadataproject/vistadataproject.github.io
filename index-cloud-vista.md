@@ -6,6 +6,8 @@
 
 ![](assets/vistaF16-blue-strip-logo.png)
 
+![](assets/fed-cloud-computing-strategy.png)
+
 # Cloud VISTA
  VISTA in the Cloud has vastly improved speed, scalability, security, and reliability.  This is by virtue of VA adopting both the Cloud-First and Cloud-Smart approach to cloud migration.
 
