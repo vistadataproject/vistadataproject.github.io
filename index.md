@@ -32,7 +32,6 @@ The 130 VISTA systems in operation today contain over three hundred million vete
 
 .
 
-.
 
 
 ![](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/assets/vistaF16/vistaF16-night.png)
@@ -41,13 +40,12 @@ The 130 VISTA systems in operation today contain over three hundred million vete
 
 As VA implements the [U.S. Federal Cloud Computing Strategy](https://cloud.cio.gov) and migrates the *VISTA* systems from the many diverse, legacy on-premises data centers across the country to a single, centralized, modern commercial cloud (*"Cloud VISTA"*), __*VISTA* Adaptive Maintenance__ (VAM) provides the cloud-based roadmap and software for cloud-native optimization and security of *VISTA* data to the highest standards in the U.S. government, using straightforward off-the-shelf commercial cloud services and microservices ([Cloud-Smart Strategy](https://cloud.cio.gov/strategy/#cloud-smart)). *VISTA* will be migrated with VAM within the VA’s Enterprise Cloud using Amazon Web Services ([AWS](https://aws.amazon.com)).  
 
-
 __Strategic Benefits__:
-  * Minimize cost, complexity, and risks of maintaining each of the 100+ distinct, decentralized VISTA systems during multi-year VA modernization transition.
-  * Move from disparate VA data centers to single Federally-certified commercial cloud without disturbing veteran care
+  * Move VISTA from disparate VA data centers to single Federally-certified commercial cloud without disturbing veteran care
   * Safely and incrementally centralize VISTA functionality in the Cloud, with *no loss of VA- or veteran-specific care or services*
   * Centralized, cloud-based, off the shelf monitoring and security of VISTA client activity
   * Current VISTA clients and workflows fully supported and secured
+  * Minimize cost, complexity, and risks of maintaining each of the 130 distinct, decentralized VISTA systems during multi-year VA modernization transition.
 
 
 
