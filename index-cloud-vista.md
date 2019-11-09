@@ -1,4 +1,3 @@
-# Cloud VISTA
 
 <p align="center">
 <img src="/assets/f16-vista/f16-vista-B.jpg" height="300" width="600">
