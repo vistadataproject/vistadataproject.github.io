@@ -30,11 +30,11 @@ The 130 VISTA systems in operation today contain over three hundred million vete
 # Cloud VISTA: Cloud-First.  Cloud-Smart.
 
 
-VA is currently implementing the [U.S. Federal Cloud Computing Strategy](https://cloud.cio.gov) in stages. Under the *Cloud-First Strategy* VA is migrating the VA's *VISTA* systems from the many diverse, legacy on-premises data centers across the country to a single, modern, centralized commercial cloud.
+VA is currently implementing the [U.S. Federal Cloud Computing Strategy](https://cloud.cio.gov) enterprise-wide. In the *Cloud-First Strategy* for VISTA, VA is migrating the *VISTA* systems from the many diverse, decentralized, legacy on-premises data centers across the country to a single, modern, centralized commercial cloud, the VA Enterprise Cloud (VAEC).
 
-In addition to the Cloud-First strategy for VISTA,  VA is implementing [*Cloud-Smart Strategy*](https://cloud.cio.gov/strategy/#cloud-smart) through  __*VISTA* Adaptive Maintenance__ (VAM), which provides a cloud-based roadmap and software for cloud-native optimization and security of *VISTA* to the highest standards in the U.S. government, using straightforward off-the-shelf commercial cloud services and microservices.
+Beyond the Cloud-First strategy for VISTA,  VA is implementing [*Cloud-Smart Strategy*](https://cloud.cio.gov/strategy/#cloud-smart) through  __*VISTA* Adaptive Maintenance__ (VAM), which provides a cloud-based roadmap and software for cloud-native optimization and security monitoring of *VISTA* to the highest standards in the U.S. government, using straightforward off-the-shelf commercial cloud services and microservices.
 
-*VISTA* will be migrated with VAM in the VA’s Enterprise Cloud leveraging Amazon Web Services ([AWS](https://aws.amazon.com)).  
+Both *VISTA* and VAM will be implemented within VA’s Enterprise Cloud leveraging Amazon Web Services ([AWS](https://aws.amazon.com)).  
 
 <br>
 
