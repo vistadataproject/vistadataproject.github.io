@@ -7,7 +7,7 @@ VA is implementing the [U.S. Federal Cloud Computing Strategy](https://cloud.cio
 <br>
 
 ### Cloud-First
-In VA's *Cloud-First Strategy* for *VISTA*,  VA is migrating *VISTA* from the many diverse, decentralized, legacy on-premises data centers to a single, modern, centralized, commercial cloud:  the VA Enterprise Cloud.  This "lift-and-shift" phase does not involve any modifications to the migrated system to take advantage of any cloud-native capabilities of the Cloud.
+In VA's *Cloud-First Strategy* for *VISTA*,  VA is migrating *VISTA* from the many diverse, decentralized, legacy on-premises data centers to a single, modern, centralized, commercial cloud:  the VA Enterprise Cloud.  This phase does not involve any modifications to the migrated system to take advantage of any cloud-native capabilities of the Cloud ("lift-and-shift").
 
 <br>
 
@@ -27,11 +27,13 @@ Both *VISTA* and VAM will be implemented within VA’s Enterprise Cloud leveragi
 
 <br>
 
+
+
 <p align="center">
-  <img src="/assets/vistaF16/vistaF16-white.png">
+  <img src="/assets/vistaF16/vistaF16-white.png" width="400" height="300">
  <br>
   VISTA in the Cloud has much improved speed, scalability, security, and reliability. 
  <br><br><br><br>
- <img src="/assets/fed-cloud-computing-strategy.png">
+ <img src="/assets/fed-cloud-computing-strategy.png" width="400" height="200">
 </p>
 
