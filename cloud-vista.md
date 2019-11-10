@@ -1,8 +1,7 @@
 
 <p align="center">
   <img src="/assets/vistaF16/vistaF16-night.png">
-  
-    F16-VISTA preparing for takeoff at Andrews AFB
+  F16-VISTA preparing for takeoff at Andrews AFB
 </p>
 
 # Cloud VISTA
