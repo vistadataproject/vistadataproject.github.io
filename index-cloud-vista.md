@@ -17,7 +17,7 @@ Both *VISTA* and VAM will be implemented within VA’s Enterprise Cloud leveragi
   * Minimize cost, complexity, and risks of maintaining each of the 130 distinct, decentralized VISTA systems during multi-year VA modernization transition.
 
 
-![](assets/vistaF16-blue-middle.png)
+![](assets/strip-vistaF16-black.png)
 VISTA in the Cloud has much improved speed, scalability, security, and reliability. 
 
 ![](/assets/fed-cloud-computing-strategy.png)
