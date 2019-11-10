@@ -1,6 +1,9 @@
 
-<img src="/assets/vistaF16/vistaF16-white.png" align="center" width="600" height="300">
-
+<p align="center">
+  <img src="/assets/vistaF16/vistaF16-white.png" width="600" height="300">
+ <br>
+  VISTA in the Cloud has much improved speed, scalability, security, and reliability. 
+</p>
 
 # Cloud VISTA: Cloud First. Cloud Smart.
 
