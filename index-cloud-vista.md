@@ -1,4 +1,5 @@
-  <img src="/assets/vistaF16/vistaF16-white.png" align="center" width="600" height="300">
+
+<img src="/assets/vistaF16/vistaF16-white.png" align="center" width="600" height="300">
 
 
 # Cloud VISTA: Cloud First. Cloud Smart.
