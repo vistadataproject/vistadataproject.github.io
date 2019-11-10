@@ -30,6 +30,6 @@ Both *VISTA* and VAM will be implemented within VA’s Enterprise Cloud leveragi
  <br>
   VISTA in the Cloud has much improved speed, scalability, security, and reliability. 
  <br><br><br><br>
- <img src="/assets/fed-cloud-computing-strategy.png" width="300" height="150">
+ <img src="/assets/fed-cloud-computing-strategy.png" width="300" height="85">
 </p>
 
