@@ -23,7 +23,7 @@ Both *VISTA* and VAM will be implemented within VA’s Enterprise Cloud leveragi
   * Current VISTA clients and workflows fully supported and secured
   * Minimize cost, complexity, and risks of maintaining each of the 130 distinct, decentralized VISTA systems during multi-year VA modernization transition.
 
-<br><br>
+<br>
 
 <p align="center">
   <img src="/assets/vistaF16/vistaF16-white.png">
