@@ -3,9 +3,6 @@
 
 VISTA in the Cloud has much improved speed, scalability, security, and reliability.  This is by virtue of VA implementing the [U.S. Federal Cloud Computing Strategy](https://cloud.cio.gov/strategy/) for the VA *VISTA* systems. This strategy is comprised of the Cloud-First phase  (migration) and Cloud-Smart phase (optimizations).
 
-![](/assets/fed-cloud-computing-strategy.png)
-
-
 ### Cloud-First
 In the *Cloud-First Strategy* phase,  VA is migrating *VISTA* from the many diverse, decentralized, legacy on-premises data centers to a single, modern, centralizedm commercial cloud, the VA Enterprise Cloud. 
 
@@ -24,3 +21,5 @@ Both *VISTA* and VAM will be implemented within VA’s Enterprise Cloud leveragi
   * Current VISTA clients and workflows fully supported and secured
   * Minimize cost, complexity, and risks of maintaining each of the 130 distinct, decentralized VISTA systems during multi-year VA modernization transition.
 
+
+![](/assets/fed-cloud-computing-strategy.png)
