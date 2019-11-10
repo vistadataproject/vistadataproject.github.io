@@ -24,7 +24,7 @@ Both *VISTA* and VAM will be implemented within VA’s Enterprise Cloud leveragi
 <br>
 
 <p align="center">
-    <img src="/assets/vistaF16/vistaF16-white.png" width="600" height="300">
+    <img src="/assets/vistaF16/vistaF16-white.png" width="800" height="500">
  <br>
   VISTA in the Cloud has much improved speed, scalability, security, and reliability. 
  <br><br>
