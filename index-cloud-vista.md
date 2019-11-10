@@ -6,13 +6,11 @@ VISTA in the Cloud has much improved speed, scalability, security, and reliabili
 # Cloud VISTA
 VA is implementing the [U.S. Federal Cloud Computing Strategy](https://cloud.cio.gov/strategy/) for the VA *VISTA* systems. This strategy is comprised of the Cloud-First Strategy (cloud migration) and Cloud-Smart Strategy (cloud-native optimizations).
 
-### Cloud-First
-In the *Cloud-First Strategy* phase,  VA is migrating *VISTA* from the many diverse, decentralized, legacy on-premises data centers to a single, modern, centralizedm commercial cloud, the VA Enterprise Cloud. 
+### Cloud-First Strategy
+In the *Cloud-First Strategy* for *VISTA*,  VA is migrating *VISTA* from the many diverse, decentralized, legacy on-premises data centers to a single, centralized, modern commercial cloud, the VA Enterprise Cloud.  This foundational phase is also known as "lift-and-shift". It does not involve any modifications to the migrated system to take advantage of any cloud-native capabilities of the Cloud.
 
-This foundational phase is also known as "lift-and-shift". It does not involve any modifications to the migrated system to take advantage of any cloud-native capabilities of the Cloud.
-
-### Cloud-Smart
-In the [*Cloud-Smart Strategy*](https://cloud.cio.gov/strategy/#cloud-smart) phase, VA is implementing cloud-native __*VISTA* Adaptive Maintenance__ (VAM), which provides a cloud-based roadmap and software for cloud-native optimization and security for *VISTA* to the highest standards in the U.S. government, using straightforward off-the-shelf commercial cloud services and microservices.
+### Cloud-Smart Strategy
+In the [*Cloud-Smart Strategy*](https://cloud.cio.gov/strategy/#cloud-smart) for VISTA, VA is implementing cloud-native __*VISTA* Adaptive Maintenance__ (VAM), which provides a cloud-based roadmap and software for cloud-native optimization and security for *VISTA* to the highest standards in the U.S. government, using straightforward off-the-shelf commercial cloud services and microservices.
 
 Both *VISTA* and VAM will be implemented within VA’s Enterprise Cloud leveraging Amazon Web Services ([AWS](https://aws.amazon.com)).  
 
