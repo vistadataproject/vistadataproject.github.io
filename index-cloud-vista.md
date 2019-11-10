@@ -1,6 +1,7 @@
 
 ![](assets/vistaF16-blue-strip-logo.png)
 
+# Cloud VISTA
 VISTA in the Cloud has much improved speed, scalability, security, and reliability.  This is by virtue of VA implementing the [U.S. Federal Cloud Computing Strategy](https://cloud.cio.gov/strategy/) for the VA *VISTA* systems. This strategy is comprised of the Cloud-First phase  (migration) and Cloud-Smart phase (optimizations).
 
 ### Cloud-First
