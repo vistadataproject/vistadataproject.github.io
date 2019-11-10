@@ -7,7 +7,7 @@
 VA is implementing the [U.S. Federal Cloud Computing Strategy](https://cloud.cio.gov/strategy/) for the VA's *VISTA* systems. This strategy incorporates both the U.S. Cloud-First Strategy and U.S. Cloud-Smart Strategy.
 
 ## Cloud-First
-In VA's *Cloud-First Strategy* for *VISTA*, VA is migrating *VISTA* from the many diverse, decentralized, legacy on-premises data centers to a single, centralized, modern commercial cloud: the VA Enterprise Cloud.  This simplifies and unifies management of the 130 *VISTA* systems from a single centralized location, modernizes VA's enterprise IT infrastructure, and eliminates then need to manage and maintain many duplicative data centers, allowing legacy infrastructure to be decomissioned.
+In VA's *Cloud-First Strategy* for *VISTA*, VA is migrating *VISTA* from the many diverse, decentralized, legacy on-premises data centers to a single, centralized, modern commercial cloud: the VA Enterprise Cloud.  This simplifies and unifies management of the 130 *VISTA* systems within a single centralized location, modernizes VA's enterprise IT infrastructure, and eliminates then need to manage and maintain many duplicative data centers, allowing legacy infrastructure to be decomissioned.
 
 ## Cloud-Smart
 In VA's [*Cloud-Smart Strategy*](https://cloud.cio.gov/strategy/#cloud-smart) for VISTA, VA is implementing cloud-specific *VISTA* Adaptive Maintenance (VAM), which provides a cloud-based roadmap and software for cloud-native optimization and security for *VISTA* to the highest standards in the U.S. government, using straightforward off-the-shelf commercial cloud services and microservices.
