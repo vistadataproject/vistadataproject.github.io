@@ -7,7 +7,7 @@ VISTA in the Cloud has vastly improved speed, scalability, security, and reliabi
 
 
 ### Cloud-First
-In the *Cloud-First Strategy* phase,  VA is migrating *VISTA* from the many diverse, decentralized, legacy on-premises data centers to a single, modern, centralizedm commercial cloud, the VA Enterprise Cloud.
+In the *Cloud-First Strategy* phase,  VA is migrating *VISTA* from the many diverse, decentralized, legacy on-premises data centers to a single, modern, centralizedm commercial cloud, the VA Enterprise Cloud. This phase is also known as "lift-and-shift" and does not involve any modifications to the migrated system.
 
 ### Cloud-Smart
 In the [*Cloud-Smart Strategy*](https://cloud.cio.gov/strategy/#cloud-smart) phase, VA is implementing cloud-native __*VISTA* Adaptive Maintenance__ (VAM), which provides a cloud-based roadmap and software for cloud-native optimization and security for *VISTA* to the highest standards in the U.S. government, using straightforward off-the-shelf commercial cloud services and microservices.
