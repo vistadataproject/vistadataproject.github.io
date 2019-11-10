@@ -4,7 +4,7 @@
 </p>
 
 # Cloud VISTA
-VA is implementing the [U.S. Federal Cloud Computing Strategy](https://cloud.cio.gov/strategy/) for the VA's *VISTA* systems. This strategy is comprised of both the U.S. Cloud-First Strategy and U.S. Cloud-Smart Strategy.
+VA is implementing the [U.S. Federal Cloud Computing Strategy](https://cloud.cio.gov/strategy/) for the VA's *VISTA* systems. This strategy incorporates both the U.S. Cloud-First Strategy and U.S. Cloud-Smart Strategy.
 
 ## Cloud-First
 In VA's *Cloud-First Strategy* for *VISTA*, VA is migrating *VISTA* from the many diverse, decentralized, legacy on-premises data centers to a single, modern, centralized, commercial cloud, the VA Enterprise Cloud.  This phase does not include any modifications to the  system to take advantage of any cloud-native capabilities of the Cloud.
