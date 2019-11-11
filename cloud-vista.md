@@ -1,7 +1,7 @@
 
 <p align="center">
   <img src="/assets/vistaF16/vistaF16-night.png">
-  Final flight optimizations of the F16-VISTA nearing completion
+  Final flight preparations of the F16-VISTA are nearing completion
 </p>
 
 # Cloud VISTA Strategy
