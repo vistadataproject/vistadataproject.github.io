@@ -25,7 +25,7 @@ In VA's [*Cloud-Smart Strategy*](https://cloud.cio.gov/strategy/#cloud-smart) fo
 <p align="center">
     <img src="/assets/vistaF16/vistaF16-white.png" width="800" height="500">
   
-  VISTA in the Cloud has much improved speed, scalability, simplicity, security, and reliability. 
+  VISTA in the Cloud has much improved performance, scalability, security, and reliability. 
  <br><br>
  <img src="/assets/fed-cloud-computing-strategy.png" >
 </p>
