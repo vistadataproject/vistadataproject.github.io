@@ -1,10 +1,10 @@
 
 <p align="center">
   <img src="/assets/vistaF16/vistaF16-night.png">
-  Flight preparations for the F16-VISTA nearing completion
+  Flight preparations for the F16-VISTA near completion
 </p>
 
-# Cloud VISTA
+# Cloud VISTA Strategy
 VA is implementing the [U.S. Federal Cloud Computing Strategy](https://cloud.cio.gov/strategy/) for the VA's Veteran Integrated Systems Technology and Architecture (VISTA) systems. This strategy incorporates both the U.S. Cloud-First Strategy and U.S. Cloud-Smart Strategy.
 
 ## Cloud-First
