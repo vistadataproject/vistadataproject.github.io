@@ -4,7 +4,7 @@
   Final preflight checks of the F16-VISTA are being completed
 </p>
 
-# Cloud VISTA
+# Cloud VISTA Strategy
 VA is implementing the [U.S. Federal Cloud Computing Strategy](https://cloud.cio.gov/strategy/) for the VA's Veteran Information Systems Technology and Architecture (VISTA) systems. This strategy incorporates both the U.S. Cloud-First Strategy and U.S. Cloud-Smart Strategy.
 
 ## Cloud-First
