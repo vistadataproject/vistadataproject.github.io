@@ -3,7 +3,8 @@ layout: default
 title: CloudVISTA MVDM Emulation Demo
 ---
 
-#nodeVISTA (cloudVISTA)
+
+# CloudVISTA (nodeVISTA)
 
 nodeVISTA is a pure web-based, cloud-native, Node.js-driven version of VISTA (no MUMPS) and runs on a Node.js web server in the cloud. The following describes how to install and run the nodeVISTA demo to exercise the Master VISTA Data Model (MVDM). 
 
