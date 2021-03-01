@@ -4,13 +4,13 @@ title: Veteran Integrated Cloud Services
 ---
 
 <p align="center">
- <img src="/assets/vam-vics-main-20180223-v4.png" >
+ <img src="/assets/vam-vics-main-20180223-v5.png" >
 </p>
 
 
 
-## EHR Modernization with Continuity of Care
-The Veteran Integrated Systems Technology and Architecture ([VistA](https://en.wikipedia.org/wiki/VistA)) is the comprehensive longitudinal  inpatient-outpatient clinical, business, and administrative information system that runs the U.S. federal integrated healthcare system of the  Veterans Health Administration ([VHA](https://www.va.gov/health/aboutVHA.asp)). 130 VistA systems support the operations of over 1200 VA hospitals and clinics nationwide.
+## VA Modernization with Continuity of Care
+The Veterans Health Information Systems Technology and Architecture ([VistA](https://en.wikipedia.org/wiki/VistA)) is the comprehensive lifelong inpatient-outpatient clinical, business, and administrative information system that manages all veteran care of the U.S.  Veterans Health Administration ([VHA](https://www.va.gov/health/aboutVHA.asp)). 130 VistA systems support the operations of over 1200 VA hospitals and clinics nationwide.
 
 The _Veteran Integraged Cloud Services (VICS)_ project demonstrates how to safely migrate functionality from the 130 decentralized VistA systems to single centralized commercial cloud-based services -  __Veteran Integrated Cloud Service (VICS)__ - ensuring seamless continuity of veteran care and enabling enterprise-wide transition of VistA services to a new commercially-supported health information system.
 
@@ -34,8 +34,6 @@ The Veteran Integrated Cloud Services (VICS) project has progressed in two phase
 * __VICS Operations (FY18-20)__: In the VistA Adaptive Maintenance project, MVDM and its secure read-write service interfaces to CPRS are operationalized - via remote proceedure call  routing - to VA's new Federally-mandated, HIPAA-secured enterprise commercial cloud leveraging Amazon Web Services (AWS).
 
 
-![vics-slides](assets/gif/vics-overview.gif)
-
 
 <p align="center">
  <img src="/assets/fed-cloud-computing-strategy.png" >
@@ -45,12 +43,3 @@ The Veteran Integrated Cloud Services (VICS) project has progressed in two phase
 <p align="center">
  <img src="/assets/gif/vics-overview.gif" >
 </p>
-
-
-
-
-![vics-transition](assets/vam-vics-main-20180223-v4.png)
-
-
-__Show Me:__ browse through and run VDP's [Clinical](/vam/build1_1/demo) and [Non Clinical](/demo2) demonstrations.
-
