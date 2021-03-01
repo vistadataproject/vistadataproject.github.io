@@ -2,7 +2,12 @@
 layout: default
 title: Veteran Integrated Cloud Services
 ---
-![vics-transition](assets/vam-vics-main-20180223-v4.png)
+
+<p align="center">
+ <img src="/assets/vam-vics-main-20180223-v4.png" >
+</p>
+
+
 
 ## EHR Modernization with Continuity of Care
 The Veteran Integrated Systems Technology and Architecture ([VistA](https://en.wikipedia.org/wiki/VistA)) is the comprehensive longitudinal  inpatient-outpatient clinical, business, and administrative information system that runs the U.S. federal integrated healthcare system of the  Veterans Health Administration ([VHA](https://www.va.gov/health/aboutVHA.asp)). 130 VistA systems support the operations of over 1200 VA hospitals and clinics nationwide.
@@ -36,6 +41,15 @@ The Veteran Integrated Cloud Services (VICS) project has progressed in two phase
  <img src="/assets/fed-cloud-computing-strategy.png" >
 </p>
 
+
+<p align="center">
+ <img src="/assets/gif/vics-overview.gif" >
+</p>
+
+
+
+
+![vics-transition](assets/vam-vics-main-20180223-v4.png)
 
 
 __Show Me:__ browse through and run VDP's [Clinical](/vam/build1_1/demo) and [Non Clinical](/demo2) demonstrations.
