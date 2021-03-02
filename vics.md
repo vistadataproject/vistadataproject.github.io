@@ -2,10 +2,9 @@
 layout: default
 title: VA Cloud - Veteran Integrated Care Services
 ---
-![vdp-transition -width95](assets/vdp-vics-main-20180226-v1.png)
 
 <p align="center">
- <img src="/assets/vdp-vics-main-20180226-v1.png" >
+ <img src="/assets/vics-cloud-main.png" >
 </p>
 
 
@@ -27,10 +26,6 @@ __Strategic Benefits__:
 __Show Me:__ browse through and run VDP's [Clinical](/vam/build1_1/demo) and [Non Clinical](/demo2) Demos.
 
 
-<p align="center">
- <img src="/assets/fed-cloud-computing-strategy.png" >
-</p>
-
 
 ## Background
 
@@ -40,8 +35,6 @@ The VISTA Cloud Adaptive Maintenance has progressed in two phases.
 * __Cloud Data Operations (FY18-20)__: In the VistA Cloud Adaptive Maintenance (VAM) project, MVDM and its secure read-write service interfaces to CPRS are operationalized - via RPC routing - to VA's new Federally-mandated, HIPAA-secured enterprise commercial cloud (Amazon).
 
 
-
-
 <p align="center">
- <img src="/assets/vics-overview.gif" >
+ <img src="/assets/fed-cloud-computing-strategy.png" >
 </p>
