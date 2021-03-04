@@ -17,7 +17,7 @@ The 130 VISTA systems in operation today contain over three hundred million vete
 
 *__In the VISTA Data Project__*,  *VISTA's* internal operational data model is comprehensively exposed, enriched, and operationalized in a modern industry-standard computable form. This *VISTA Data Model* is in turn incrementally normalized across all *VISTA* systems to create a single national Master Veteran Data Model (MVDM), which enables *secure read-write access* for *all data* in *all 130 VISTA* systems using a single, modern, maintainable, industry-standard model-driven services interface.
 
-![vdp-transition](assets/vdp-transition-20180805.png)
+![vdp-transition](assets/vdp-transition-20170607d.png)
 
 
 *The figure above summarizes the evolution of access to VISTA data: From __thousands of unique, inconsistent, insecure, unidirectional, cryptic legacy code-based interfaces__ to that of a __single, secure, modern, service-based, industry-standard, normalized, master veteran data-model (MVDM)-driven interface__.*    
